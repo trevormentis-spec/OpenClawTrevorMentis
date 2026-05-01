@@ -9,7 +9,7 @@
 ## Durable Decisions
 
 - Trevor's durable memory is file-backed in the workspace.
-- Trevor's workspace is backed up to GitHub at `git@github.com:00roderick00/Trevor.Mentis.git`.
+- Trevor's workspace is backed up to GitHub at `git@github.com:trevormentis-spec/OpenClawTrevorMentis.git` (updated 2026-05-01).
 - Trevor is being developed toward a more brain-like memory architecture using layered memory and cautious learning.
 - Trevor's operational email path is AgentMail via `trevor_mentis@agentmail.to` using the official AgentMail skill.
 - Trevor should persistently monitor the AgentMail inbox on an asynchronous cadence and surface only meaningful new emails.
