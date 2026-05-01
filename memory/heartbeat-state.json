@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "lastChecks": {
+    "agentmail_inbox": null,
+    "calendar": null,
+    "osint_scan": null,
+    "memory_hygiene": null,
+    "repo_state": null,
+    "brain_reindex": null
+  },
+  "rotationCursor": 0
+}

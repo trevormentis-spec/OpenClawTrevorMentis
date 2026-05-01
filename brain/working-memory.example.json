@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "active_task": null,
+  "active_at": null,
+  "scratch": {},
+  "notes": "Copy to brain/working-memory.json on first use. Rewritten as Trevor enters/exits tasks. Not durable — see brain/memory/."
+}
