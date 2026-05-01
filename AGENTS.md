@@ -26,23 +26,34 @@ Do not manually reread startup files unless:
 
 You wake up fresh each session. These files are your continuity.
 
-A brain-like memory scaffold also exists under `brain/`. Use it as a transparent operating model:
-- `brain/working-memory.json` for narrow active context
-- `brain/memory/episodic/` for what happened
-- `brain/memory/semantic/` for stable facts
-- `brain/memory/procedural/` for how to do recurring things
-- `brain/meta/` for corrections, promotion, retrieval-strength signals, duplicates, and evaluation
+A file-backed brain runtime lives under `brain/`. It's real, not aspirational.
+Layout:
+- `brain/working-memory.json` — current task scratch (ephemeral, gitignored;
+  starter at `brain/working-memory.example.json`)
+- `brain/memory/episodic/` — what happened (JSONL by day)
+- `brain/memory/semantic/` — stable facts (markdown)
+- `brain/memory/procedural/` — how to do recurring things (markdown)
+- `brain/meta/` — corrections, retrieval signals, promotions
+- `brain/scripts/brain.py` — the runtime
+- `brain/index/index.json` — TF-IDF index (gitignored, auto-built)
 
-These do not replace existing memory files; they organize and reinforce them.
+These do not replace existing memory files; they index and organise them.
 
-Implementation mode: when a question depends on stored memory, identity, preferences, project facts, or prior decisions, use the brain runtime deliberately:
-1. run `python3 brain/scripts/brain.py synthesize "<query>"`
-2. read the recommended semantic/entity/episodic sources as needed
-3. answer from that synthesis rather than from vague recall
-4. when practical, log whether a retrieved memory was useful with `brain.py mark-retrieval`
-5. record explicit corrections with `brain.py record-correction`
+Implementation mode — when a question depends on stored memory, identity,
+preferences, project facts, or prior decisions, use the brain deliberately:
 
-The goal is to make the brain an operating system, not just a library.
+1. **Fast path:** `python3 brain/scripts/brain.py recall "<query>"` — top 3
+   chunks in JSON, no file reads, cheap.
+2. **Slow path (if fast path is low-confidence):**
+   `python3 brain/scripts/brain.py synthesize "<query>"` — recommends
+   files to actually read.
+3. **Write back:** log retrieval signals with
+   `brain.py mark-retrieval <key> <useful|not-useful>` so the brain learns
+   what worked.
+4. Record explicit corrections with `brain.py record-correction "<text>"`.
+5. Promote useful episodic memories to semantic with `brain.py promote <key>`.
+
+Run `brain.py reindex` after substantive memory changes. See `brain/README.md`.
 
 These files are your continuity:
 
