@@ -1,0 +1,2 @@
+# OpenClawTrevorMentis
+MyClaw Instance
