@@ -1,0 +1,67 @@
+{
+  "durable_sources": [
+    {
+      "name": "Joint Maritime Information Center (JMIC)",
+      "type": "Maritime Alerts/Bulletins",
+      "focus": "Strait of Hormuz kinetic risks, AIS jamming, drone/USV threats",
+      "url": "https://www.ukmto.org/jmic",
+      "signal_level": "High"
+    },
+    {
+      "name": "UK Maritime Trade Operations (UKMTO)",
+      "type": "OSINT/Alerts",
+      "focus": "Real-time vessel incidents, gunboat attacks, maritime security alerts",
+      "url": "https://www.ukmto.org",
+      "signal_level": "High"
+    },
+    {
+      "name": "Windward Maritime Intelligence",
+      "type": "Commercial OSINT",
+      "focus": "Traffic analysis, AIS dark ship detection, behavioral closure monitoring",
+      "url": "https://windward.ai/blog",
+      "signal_level": "High"
+    },
+    {
+      "name": "Skuld Maritime Security Updates",
+      "type": "Insurance/Risk",
+      "focus": "Port risks, blockade enforcement details, risk matrix",
+      "url": "https://www.skuld.com",
+      "signal_level": "Medium-High"
+    },
+    {
+      "name": "Atlas Institute",
+      "type": "Policy/Strategy",
+      "focus": "Middle East maritime defense, GCC-led security task force",
+      "url": "https://atlasinstitute.org",
+      "signal_level": "Medium"
+    },
+    {
+      "name": "Stimson Center - Energy & Gulf",
+      "type": "Think Tank",
+      "focus": "Economic shockwaves, Strait of Hormuz energy market volatility",
+      "url": "https://www.stimson.org",
+      "signal_level": "Medium-High"
+    }
+    {
+      "name": "The Hormuz Trap (Julian Alexander Brown)",
+      "type": "Substack",
+      "focus": "Double blockade dynamics, U.S. policy under Trump, Brent crude price links",
+      "url": "https://julianalexanderbrown.substack.com",
+      "signal_level": "Medium-High"
+    },
+    {
+      "name": "HTSF (Paul Mason)",
+      "type": "Substack",
+      "focus": "U.S. ultimatums, desalination plant threats, long-term energy options",
+      "url": "https://htsf.substack.com",
+      "signal_level": "Medium"
+    },
+    {
+      "name": "Richard Haass Substack",
+      "type": "Substack/Geopolitics",
+      "focus": "U.S.-led defensive patrols, diplomatic/military framing of the Strait",
+      "url": "https://richardhaass.substack.com",
+      "signal_level": "High"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "geospatial-osint": {
+      "version": "1.0.0",
+      "installedAt": 1777663803019
+    },
+    "mermaid": {
+      "version": "1.0.0",
+      "installedAt": 1777663861908
+    },
+    "quick-translation": {
+      "version": "1.0.0",
+      "installedAt": 1777663924883
+    }
+  }
+}

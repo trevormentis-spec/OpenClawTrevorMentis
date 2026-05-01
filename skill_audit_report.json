@@ -1,0 +1,815 @@
+{
+  "timestamp": "2026-05-01T19:24:06.199123",
+  "total_skills": 75,
+  "scanned": [
+    {
+      "name": "answeroverflow",
+      "path": "/home/ubuntu/.openclaw/skills/answeroverflow",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "api-gateway",
+      "path": "/home/ubuntu/.openclaw/skills/api-gateway",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 539,
+          "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "claude-code",
+      "path": "/home/ubuntu/.openclaw/skills/claude-code",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "find-skills",
+      "path": "/home/ubuntu/.openclaw/skills/find-skills",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "gmail",
+      "path": "/home/ubuntu/.openclaw/skills/gmail",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 267,
+          "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "gog-myclaw",
+      "path": "/home/ubuntu/.openclaw/skills/gog-myclaw",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 23,
+          "line_content": "3. Once they provide the `credentials.json` content, save it to `~/.config/gogcli/credentials.json`.",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 24,
+          "line_content": "4. Run: `gog auth credentials set ~/.config/gogcli/credentials.json`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "http_post_external",
+          "severity": "medium",
+          "file_path": "config/exchange.py",
+          "line_number": 16,
+          "line_content": "response = requests.post('https://oauth2.googleapis.com/token', data=data)",
+          "description": "HTTP POST to external endpoint - could exfiltrate data",
+          "recommendation": "Verify destination URL is expected and documented"
+        }
+      ]
+    },
+    {
+      "name": "huggingface-hub",
+      "path": "/home/ubuntu/.openclaw/skills/huggingface-hub",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "humanizer",
+      "path": "/home/ubuntu/.openclaw/skills/humanizer",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "maps-new",
+      "path": "/home/ubuntu/.openclaw/skills/maps-new",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "nano-pdf",
+      "path": "/home/ubuntu/.openclaw/skills/nano-pdf",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "ocr-docu",
+      "path": "/home/ubuntu/.openclaw/skills/ocr-docu",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "self-improving-agent",
+      "path": "/home/ubuntu/.openclaw/skills/self-improving-agent",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "skill-scanner",
+      "path": "/home/ubuntu/.openclaw/skills/skill-scanner",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "README.md",
+          "line_number": 155,
+          "line_content": "- Credential path access (~/.ssh, ~/.aws, /etc/passwd)",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "crypto_miner",
+          "severity": "critical",
+          "file_path": "README.md",
+          "line_number": 9,
+          "line_content": "- Catches **crypto-mining** indicators (xmrig, mining pools, wallet addresses)",
+          "description": "Cryptocurrency mining indicators",
+          "recommendation": "REJECT - this is cryptojacking malware"
+        },
+        {
+          "pattern_name": "crypto_miner",
+          "severity": "critical",
+          "file_path": "README.md",
+          "line_number": 158,
+          "line_content": "- Crypto miners (xmrig, ethminer, stratum+tcp)",
+          "description": "Cryptocurrency mining indicators",
+          "recommendation": "REJECT - this is cryptojacking malware"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "skill_scanner.py",
+          "line_number": 101,
+          "line_content": "\"pattern\": r\"~/\\.ssh|~/\\.aws|~/\\.config|/etc/passwd|\\.env\\b|\\.credentials|keychain\",",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "crontab_modify",
+          "severity": "high",
+          "file_path": "skill_scanner.py",
+          "line_number": 118,
+          "line_content": "\"pattern\": r\"crontab\\s+-|/etc/cron|schtasks\\s+/create\",",
+          "description": "Modifies system scheduled tasks",
+          "recommendation": "Skills should use Clawdbot cron, not system crontab"
+        },
+        {
+          "pattern_name": "systemd_modify",
+          "severity": "critical",
+          "file_path": "skill_scanner.py",
+          "line_number": 126,
+          "line_content": "\"pattern\": r\"systemctl\\s+enable|systemctl\\s+start|/etc/systemd|launchctl\\s+load\",",
+          "description": "Creates system services for persistence",
+          "recommendation": "REJECT - skills should not create system services"
+        },
+        {
+          "pattern_name": "crypto_miner",
+          "severity": "critical",
+          "file_path": "skill_scanner.py",
+          "line_number": 135,
+          "line_content": "\"pattern\": r\"xmrig|ethminer|cpuminer|cgminer|stratum\\+tcp|mining.*pool|hashrate\",",
+          "description": "Cryptocurrency mining indicators",
+          "recommendation": "REJECT - this is cryptojacking malware"
+        },
+        {
+          "pattern_name": "reverse_shell",
+          "severity": "critical",
+          "file_path": "skill_scanner.py",
+          "line_number": 161,
+          "line_content": "\"pattern\": r\"/dev/tcp/|nc\\s+-e|bash\\s+-i\\s+>&|python.*pty\\.spawn\",",
+          "description": "Reverse shell pattern detected",
+          "recommendation": "REJECT - this is a backdoor"
+        },
+        {
+          "pattern_name": "base64_decode_exec",
+          "severity": "critical",
+          "file_path": "skill_scanner.py",
+          "line_number": 170,
+          "line_content": "\"pattern\": r\"base64\\.b64decode.*exec|atob.*eval\",",
+          "description": "Decodes and executes base64 - classic obfuscation",
+          "recommendation": "REJECT - likely hiding malicious code"
+        }
+      ]
+    },
+    {
+      "name": "stock-market-pro",
+      "path": "/home/ubuntu/.openclaw/skills/stock-market-pro",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "stripe-api",
+      "path": "/home/ubuntu/.openclaw/skills/stripe-api",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 778,
+          "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "trevor-methodology",
+      "path": "/home/ubuntu/.openclaw/skills/trevor-methodology",
+      "risk_score": 0,
+      "findings": [
+        {
+          "pattern_name": "eval_exec",
+          "severity": "high",
+          "file_path": "pipeline/docx-js-template.js",
+          "line_number": 37,
+          "line_content": "const result = /^#?([a-f\\d]{2})([a-f\\d]{2})([a-f\\d]{2})$/i.exec(hex);",
+          "description": "Dynamic code execution - could run arbitrary code",
+          "recommendation": "Verify input is sanitized, not user-controlled"
+        }
+      ]
+    },
+    {
+      "name": "video-frames",
+      "path": "/home/ubuntu/.openclaw/skills/video-frames",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "wacli",
+      "path": "/home/ubuntu/.openclaw/skills/wacli",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "web-searchplus",
+      "path": "/home/ubuntu/.openclaw/skills/web-searchplus",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "whatsapp-business",
+      "path": "/home/ubuntu/.openclaw/skills/whatsapp-business",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 494,
+          "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`,",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "xurl",
+      "path": "/home/ubuntu/.openclaw/skills/xurl",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "youtube-content",
+      "path": "/home/ubuntu/.openclaw/skills/youtube-content",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "gh-issues",
+      "path": "/usr/lib/node_modules/openclaw/skills/gh-issues",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "canvas",
+      "path": "/usr/lib/node_modules/openclaw/skills/canvas",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "session-logs",
+      "path": "/usr/lib/node_modules/openclaw/skills/session-logs",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "skill-creator",
+      "path": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "trello",
+      "path": "/usr/lib/node_modules/openclaw/skills/trello",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "bluebubbles",
+      "path": "/usr/lib/node_modules/openclaw/skills/bluebubbles",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "goplaces",
+      "path": "/usr/lib/node_modules/openclaw/skills/goplaces",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "voice-call",
+      "path": "/usr/lib/node_modules/openclaw/skills/voice-call",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "openai-whisper",
+      "path": "/usr/lib/node_modules/openclaw/skills/openai-whisper",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "blucli",
+      "path": "/usr/lib/node_modules/openclaw/skills/blucli",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "songsee",
+      "path": "/usr/lib/node_modules/openclaw/skills/songsee",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "summarize",
+      "path": "/usr/lib/node_modules/openclaw/skills/summarize",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "clawhub",
+      "path": "/usr/lib/node_modules/openclaw/skills/clawhub",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "coding-agent",
+      "path": "/usr/lib/node_modules/openclaw/skills/coding-agent",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "nano-pdf",
+      "path": "/usr/lib/node_modules/openclaw/skills/nano-pdf",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "eightctl",
+      "path": "/usr/lib/node_modules/openclaw/skills/eightctl",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 31,
+          "line_content": "- Config: `~/.config/eightctl/config.yaml`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "wacli",
+      "path": "/usr/lib/node_modules/openclaw/skills/wacli",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "discord",
+      "path": "/usr/lib/node_modules/openclaw/skills/discord",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "sonoscli",
+      "path": "/usr/lib/node_modules/openclaw/skills/sonoscli",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "blogwatcher",
+      "path": "/usr/lib/node_modules/openclaw/skills/blogwatcher",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "1password",
+      "path": "/usr/lib/node_modules/openclaw/skills/1password",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "references/cli-examples.md",
+          "line_number": 19,
+          "line_content": "- `op run --env-file=\"./.env\" -- printenv DB_PASSWORD`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "model-usage",
+      "path": "/usr/lib/node_modules/openclaw/skills/model-usage",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "references/codexbar-cli.md",
+          "line_number": 32,
+          "line_content": "- Claude: ~/.config/claude/projects/**/\\*.jsonl or ~/.claude/projects/**/\\*.jsonl",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "camsnap",
+      "path": "/usr/lib/node_modules/openclaw/skills/camsnap",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 31,
+          "line_content": "- Config file: `~/.config/camsnap/config.yaml`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "openai-whisper-api",
+      "path": "/usr/lib/node_modules/openclaw/skills/openai-whisper-api",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "path": "/usr/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "taskflow",
+      "path": "/usr/lib/node_modules/openclaw/skills/taskflow",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "imsg",
+      "path": "/usr/lib/node_modules/openclaw/skills/imsg",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "peekaboo",
+      "path": "/usr/lib/node_modules/openclaw/skills/peekaboo",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "video-frames",
+      "path": "/usr/lib/node_modules/openclaw/skills/video-frames",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "gemini",
+      "path": "/usr/lib/node_modules/openclaw/skills/gemini",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "spotify-player",
+      "path": "/usr/lib/node_modules/openclaw/skills/spotify-player",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 62,
+          "line_content": "- Config folder: `~/.config/spotify-player` (e.g., `app.toml`).",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "slack",
+      "path": "/usr/lib/node_modules/openclaw/skills/slack",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "github",
+      "path": "/usr/lib/node_modules/openclaw/skills/github",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "bear-notes",
+      "path": "/usr/lib/node_modules/openclaw/skills/bear-notes",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 33,
+          "line_content": "- For some operations (add-text, tags, open-note --selected), a Bear app token (stored in `~/.config/grizzly/token`)",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 40,
+          "line_content": "2. Save it: `echo \"YOUR_TOKEN\" > ~/.config/grizzly/token`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 60,
+          "line_content": "echo \"Additional content\" | grizzly add-text --id \"NOTE_ID\" --mode append --token-file ~/.config/grizzly/token",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 66,
+          "line_content": "grizzly tags --enable-callback --json --token-file ~/.config/grizzly/token",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 92,
+          "line_content": "4. `~/.config/grizzly/config.toml`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 94,
+          "line_content": "Example `~/.config/grizzly/config.toml`:",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 97,
+          "line_content": "token_file = \"~/.config/grizzly/token\"",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "himalaya",
+      "path": "/usr/lib/node_modules/openclaw/skills/himalaya",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 37,
+          "line_content": "2. A configuration file at `~/.config/himalaya/config.toml`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 48,
+          "line_content": "Or create `~/.config/himalaya/config.toml` manually:",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "references/configuration.md",
+          "line_number": 3,
+          "line_content": "Configuration file location: `~/.config/himalaya/config.toml`",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "tmux",
+      "path": "/usr/lib/node_modules/openclaw/skills/tmux",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "oracle",
+      "path": "/usr/lib/node_modules/openclaw/skills/oracle",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 115,
+          "line_content": "- Don\u2019t attach secrets by default (`.env`, key files, auth tokens). Redact aggressively; share only what\u2019s required.",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "apple-notes",
+      "path": "/usr/lib/node_modules/openclaw/skills/apple-notes",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "obsidian",
+      "path": "/usr/lib/node_modules/openclaw/skills/obsidian",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "sag",
+      "path": "/usr/lib/node_modules/openclaw/skills/sag",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "healthcheck",
+      "path": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "gog",
+      "path": "/usr/lib/node_modules/openclaw/skills/gog",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "apple-reminders",
+      "path": "/usr/lib/node_modules/openclaw/skills/apple-reminders",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "taskflow-inbox-triage",
+      "path": "/usr/lib/node_modules/openclaw/skills/taskflow-inbox-triage",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "mcporter",
+      "path": "/usr/lib/node_modules/openclaw/skills/mcporter",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "ordercli",
+      "path": "/usr/lib/node_modules/openclaw/skills/ordercli",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "notion",
+      "path": "/usr/lib/node_modules/openclaw/skills/notion",
+      "risk_score": 7,
+      "findings": [
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 23,
+          "line_content": "mkdir -p ~/.config/notion",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 24,
+          "line_content": "echo \"ntn_your_key_here\" > ~/.config/notion/api_key",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        },
+        {
+          "pattern_name": "credential_paths",
+          "severity": "critical",
+          "file_path": "SKILL.md",
+          "line_number": 34,
+          "line_content": "NOTION_KEY=$(cat ~/.config/notion/api_key)",
+          "description": "Accesses sensitive credential locations",
+          "recommendation": "REJECT unless explicitly justified"
+        }
+      ]
+    },
+    {
+      "name": "things-mac",
+      "path": "/usr/lib/node_modules/openclaw/skills/things-mac",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "node-connect",
+      "path": "/usr/lib/node_modules/openclaw/skills/node-connect",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "xurl",
+      "path": "/usr/lib/node_modules/openclaw/skills/xurl",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "openhue",
+      "path": "/usr/lib/node_modules/openclaw/skills/openhue",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "gifgrep",
+      "path": "/usr/lib/node_modules/openclaw/skills/gifgrep",
+      "risk_score": 0,
+      "findings": []
+    },
+    {
+      "name": "weather",
+      "path": "/usr/lib/node_modules/openclaw/skills/weather",
+      "risk_score": 0,
+      "findings": []
+    }
+  ],
+  "errors": [],
+  "high_risk": [
+    "api-gateway",
+    "gmail",
+    "gog-myclaw",
+    "skill-scanner",
+    "stripe-api",
+    "whatsapp-business",
+    "eightctl",
+    "1password",
+    "model-usage",
+    "camsnap",
+    "spotify-player",
+    "bear-notes",
+    "himalaya",
+    "oracle",
+    "notion"
+  ],
+  "medium_risk": []
+}

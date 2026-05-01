@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-01T19:38:35.807Z",
+  "entries": {
+    "memory:memory/2026-04-25.md:1:8": {
+      "key": "memory:memory/2026-04-25.md:1:8",
+      "path": "memory/2026-04-25.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-04-25 - Confirmed Telegram channel was connected. - Switched to a balanced model configuration. - Configured local git identity and established GitHub SSH backup. - User defined Trevor as: Threat Research and Evaluation Virtual Operations Resource. - Began building a file-backed brain architecture with episodic, semantic, procedural, and meta-memory layers.",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.537396667991838,
+      "maxScore": 0.6343492273588783,
+      "firstRecalledAt": "2026-04-26T06:15:14.500Z",
+      "lastRecalledAt": "2026-04-29T09:01:32.019Z",
+      "queryHashes": [
+        "4d30fa9e2fff",
+        "e6f3be8e47a7",
+        "0b7e24068149",
+        "326adb9da76c"
+      ],
+      "recallDays": [
+        "2026-04-26",
+        "2026-04-28",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "backup",
+        "file-backed",
+        "meta-memory",
+        "confirmed",
+        "telegram",
+        "channel",
+        "was",
+        "connected"
+      ]
+    },
+    "memory:memory/2026-03-05.md:51:82": {
+      "key": "memory:memory/2026-03-05.md:51:82",
+      "path": "memory/2026-03-05.md",
+      "startLine": 51,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "**Military:** 17 Iranian ships destroyed including submarine; IRIS Dena sunk in Indian Ocean; 10th wave of Israeli strikes; Turkey's NATO intercepts Iranian missile (first NATO-Iran engagement). **Economic:** US crude $78.80 (highest since Jan 2025); Brent ~$82–83; European gas +70%; 1,100 ships affected by GPS spoofing. **Social:** Minab girls' school toll: 165+ students + 14 teachers killed; photography of strike sites banned in Iran. **Infrastructure:** Bushehr nuclear plant shut down; 639 Russian specialists remain on site; confirmed strikes on Fordow, Natanz, Tehran nuclear research reactor. --- ### Analytical Notes This assessment demonstrates TREVOR v2 methodology in production:",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-28T18:42:43.699Z",
+      "lastRecalledAt": "2026-04-30T02:42:27.384Z",
+      "queryHashes": [
+        "0b7e24068149",
+        "77ed4c792413",
+        "326adb9da76c",
+        "a71b5f6d4bc7"
+      ],
+      "recallDays": [
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "nato-iran",
+        "78.80",
+        "military",
+        "iranian",
+        "ships",
+        "destroyed",
+        "including",
+        "submarine"
+      ]
+    },
+    "memory:memory/2026-04-27.md:31:54": {
+      "key": "memory:memory/2026-04-27.md:31:54",
+      "path": "memory/2026-04-27.md",
+      "startLine": 31,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.822581752459579,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-28T18:42:43.699Z",
+      "lastRecalledAt": "2026-04-30T05:16:59.692Z",
+      "queryHashes": [
+        "0b7e24068149",
+        "77ed4c792413",
+        "326adb9da76c",
+        "a71b5f6d4bc7",
+        "ed33c096e095"
+      ],
+      "recallDays": [
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gateway",
+        "israel-lebanon",
+        "55-65",
+        "20-30",
+        "de-escalation",
+        "10-20",
+        "russian-mediated",
+        "5-10"
+      ]
+    },
+    "memory:memory/2026-03-05.md:1:36": {
+      "key": "memory:memory/2026-03-05.md:1:36",
+      "path": "memory/2026-03-05.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.833085955744004,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-28T18:42:43.699Z",
+      "lastRecalledAt": "2026-04-30T05:16:59.692Z",
+      "queryHashes": [
+        "0b7e24068149",
+        "77ed4c792413",
+        "326adb9da76c",
+        "a71b5f6d4bc7",
+        "ed33c096e095"
+      ],
+      "recallDays": [
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "date/time",
+        "us-israeli",
+        "march",
+        "trevor",
+        "intelligence",
+        "assessment",
+        "operation",
+        "epic"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:35": {
+      "key": "memory:memory/2026-04-27.md:1:35",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5.761797780675523,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-28T18:42:43.699Z",
+      "lastRecalledAt": "2026-05-01T19:38:35.807Z",
+      "queryHashes": [
+        "0b7e24068149",
+        "77ed4c792413",
+        "326adb9da76c",
+        "a71b5f6d4bc7",
+        "ed33c096e095",
+        "72f0b7e4bcc2"
+      ],
+      "recallDays": [
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30",
+        "2026-05-01"
+      ],
+      "conceptTags": [
+        "us-israel-iran",
+        "multi-phase",
+        "tmp/iran-war-news-data.md",
+        "g1-g10",
+        "putin-araghchi",
+        "tmp/gap-analysis.md",
+        "x/twitter",
+        "april"
+      ]
+    },
+    "memory:memory/2026-03-05.md:78:86": {
+      "key": "memory:memory/2026-03-05.md:78:86",
+      "path": "memory/2026-03-05.md",
+      "startLine": 78,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "This is a high-quality example of TREVOR methodology applied to a fast-moving crisis. The assessment correctly: 1. Calibrated probabilities using Sherman Kent bands 2. Maintained hypothesis discipline with explicit probability ranges 3. Integrated PMESII-PT for comprehensive environmental scan 4. Flagged critical uncertainties (Houthi Red Sea activation, Kurdish ground incursion) 5. Used BLUF-led structure for executive consumption Document archived as reference example of TREVOR v2 production output.",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.9473896109185675,
+      "maxScore": 0.8406162440871724,
+      "firstRecalledAt": "2026-04-28T18:42:43.699Z",
+      "lastRecalledAt": "2026-04-30T05:16:59.692Z",
+      "queryHashes": [
+        "0b7e24068149",
+        "326adb9da76c",
+        "a71b5f6d4bc7",
+        "ed33c096e095"
+      ],
+      "recallDays": [
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "high-quality",
+        "fast-moving",
+        "pmesii-pt",
+        "bluf-led",
+        "high",
+        "quality",
+        "example",
+        "trevor"
+      ]
+    },
+    "memory:memory/2026-03-05.md:24:56": {
+      "key": "memory:memory/2026-03-05.md:24:56",
+      "path": "memory/2026-03-05.md",
+      "startLine": 24,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- Strait of Hormuz effectively hard-closed (P&I insurance removed from 5 March) **Hypothesis Probabilities:** - H3 (Regional War): 30–40% - H2 (Sustained Campaign): 35–45% - H1 (De-escalation): <20% --- ### Key Judgments **KJ-1:** US-Israeli campaign approaching air supremacy (>93% confidence). Iran's naval capacity \"effectively neutralised\" per JCS Chairman Caine. **KJ-2:** Strait of Hormuz closed minimum 10–14 days, likely (70–85%) longer. Brent at $82+; analysts projecting $100+ if sustained. **KJ-3:** Lebanon now an active war within a war. Hezbollah declares open war; Lebanese government banned Hezbollah military activities. **KJ-4:** Mojtaba Khamenei selected as Supreme Leader u",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T08:02:41.160Z",
+      "lastRecalledAt": "2026-04-29T08:02:41.160Z",
+      "queryHashes": [
+        "77ed4c792413"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "hard-closed",
+        "de-escalation",
+        "kj-1",
+        "us-israeli",
+        "kj-2",
+        "kj-3",
+        "kj-4",
+        "strait"
+      ]
+    },
+    "memory:memory/2026-04-27.md:51:57": {
+      "key": "memory:memory/2026-04-27.md:51:57",
+      "path": "memory/2026-04-27.md",
+      "startLine": 51,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-29T09:01:32.019Z",
+      "lastRecalledAt": "2026-04-29T09:01:32.019Z",
+      "queryHashes": [
+        "326adb9da76c"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway.maton.ai/google-docs/v1",
+        "google-docs/docs/v1",
+        "maton-api-key",
+        "openclaw.json",
+        "maton.ai",
+        "matonic.ai",
+        "gateway.maton.ai"
+      ]
+    }
+  }
+}

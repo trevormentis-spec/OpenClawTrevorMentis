@@ -1,0 +1,17 @@
+# Secrets and credentials
+*.key
+*.pem
+**/credentials/
+**/auth-state.json
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
