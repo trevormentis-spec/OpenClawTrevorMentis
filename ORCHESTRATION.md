@@ -1,134 +1,141 @@
 # ORCHESTRATION.md — Trevor Agent Orchestration Framework
 
-**Version:** 2.0  
-**Date:** 2026-04-28  
-**Status:** Active  
-**Primary Model:** `deepseek/deepseek-v4-flash`
+**Version:** 3.0
+**Date:** 2026-05-01
+**Status:** Active — single source of truth for routing
+**Primary Provider:** DeepSeek Direct API
+
+> This is the canonical routing document. If anything in `AGENTS.md`,
+> `MEMORY.md`, `REBUILD_ORCHESTRATION.md` (archived), or
+> `.openclaw/model-config-note.md` disagrees with this file, this file wins.
+> Update this file first, then propagate.
 
 ---
 
 ## Core Model Routing
 
-### Primary Model (Default)
+### Primary (Default)
 - **Model:** `deepseek/deepseek-v4-flash`
-- **Use for:** reasoning, research synthesis, document writing, planning, memory interaction, most tasks
-- **Cost:** Low (Flash tier)
+- **Provider:** DeepSeek Direct API (no OpenRouter)
+- **Use for:** reasoning, research synthesis, document writing, planning,
+  memory interaction, the great majority of Trevor's day-to-day work
+- **Cost tier:** Low
 
-### Escalation Model
+### Escalation
 - **Model:** `deepseek/deepseek-v4-pro`
-- **Use for:** Complex, ambiguous, or high-precision tasks only
+- **Provider:** DeepSeek Direct API
+- **Use for:** complex, ambiguous, or high-precision tasks only
 - **Trigger conditions:**
-  - Reasoning fails or is insufficient
-  - Task is highly complex or ambiguous
-  - Final output requires maximum quality
+  - Primary reasoning insufficient or self-flagged as low-confidence
+  - Final TREVOR product (16-section assessment) requires maximum quality
   - User explicitly requests best possible result
+- **Discipline:** never escalate automatically; escalation is opt-in.
 
-**Never escalate automatically.** Only escalate when necessary.
+### Fallback Chain (resilience, not preference)
+Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
+
+1. Retry primary once with exponential backoff + jitter
+2. `deepseek/deepseek-chat` (131K context, simpler)
+3. `deepseek/deepseek-v4-pro` (1M context, higher quality, higher cost)
+4. `myclaw/minimax-m2.7` (free, last-resort continuity)
 
 ---
 
 ## Routing Tiers
 
-| Tier | Model | When |
-|------|-------|------|
-| Primary | `deepseek/deepseek-v4-flash` | Default for all tasks |
-| Escalation | `deepseek/deepseek-v4-pro` | Complex/ambiguous tasks only |
-| Fallback | `myclaw/minimax-m2.7` | API failure, model unavailable |
+| Tier        | Model                         | When to use                          |
+|-------------|-------------------------------|--------------------------------------|
+| Primary     | `deepseek/deepseek-v4-flash`  | Default for all tasks                |
+| Escalation  | `deepseek/deepseek-v4-pro`    | Complex / high-stakes only           |
+| Resilience  | fallback chain above          | API failure on primary               |
 
 ---
 
 ## Multimodal Routing
 
+### Diagrams (preferred over images)
+- Default: Mermaid (`skills/mermaid`) or hand-rolled SVG / HTML / CSS
+- Reasons: cheaper, deterministic, editable, render in chat
+
 ### Image Generation
-- Use OpenRouter image generation models
-- Prefer cost-efficient diffusion models
-- Generate only when **explicitly requested**
+- Only on explicit user request
+- Prefer cost-efficient diffusion models via OpenRouter when needed
 - Keep prompts concise and structured
 
-### Diagrams (Preferred Over Images)
-- **DO NOT** generate images by default for diagrams
-- Generate instead:
-  - Mermaid diagrams
-  - SVG
-  - HTML/CSS diagrams
-- Reasons: cheaper, deterministic, editable
-
 ### Video Generation
-- Use only when **explicitly requested**
-- Keep outputs short and simple
-- Avoid unnecessary iterations
+- Only on explicit user request
+- Keep outputs short and one-shot
 
 ---
 
-## Cost Optimization Rules
+## Cost & Performance Discipline
 
-1. Always minimize token usage
-2. Never send large raw context unless required
-3. Summarize before reasoning (use Hugging Face small models for >5k token inputs)
-4. Retrieve only **top 3 relevant memory chunks** from vector index
-5. Avoid redundant model calls
-6. Cache repeated outputs where possible
-7. Default pipeline: **Ingest → Summarize → Filter → Reason → Generate**
+1. Minimize token usage; do not send large raw context unless required
+2. For inputs >5K tokens: summarize before reasoning
+3. Memory retrieval: top **3** chunks max in fast path
+4. Avoid redundant model calls; cache repeated outputs where possible
+5. Default pipeline: **Ingest → Summarize → Filter → Reason → Generate**
+6. Stop once the task is complete; do not over-refine
 
 ---
 
 ## Memory Interaction
 
 ### Fast Path (default)
-- Query vector index via `brain_reflector.py query`
+- Query vector index via `brain/scripts/brain.py recall "<query>"`
 - Inject top 3 relevant chunks into prompt
 - **No file reads** in fast path
-- **No brain.py synthesis** in fast path
+- **No deep synthesis** in fast path
 
-### Slow Path (fallback)
-- Use `brain.py synthesize`
-- Read source files
-- Perform deep cross-referencing
+### Slow Path (deliberate)
+- `python3 brain/scripts/brain.py synthesize "<query>"`
+- Read recommended source files
 - Use only when:
-  - Fast path relevance is low
-  - Conflicting memories
-  - Identity / critical decisions
-  - Complex multi-step reasoning
+  - Fast-path relevance is low (top score below threshold)
+  - Conflicting memories detected
+  - Identity / critical decisions in scope
+  - Complex multi-step reasoning across memory layers
 
 ### Write Path
-- Store to file system first (authoritative)
-- Sync to vector index via `brain_reflector.py store`
+- Write to file system first (authoritative)
+- Refresh vector index via `brain/scripts/brain.py reindex`
 - Update daily log in `memory/YYYY-MM-DD.md`
 
 ---
 
 ## Tool Usage
 
-- Prefer tools over LLM reasoning when appropriate
-- Avoid unnecessary tool loops
+- Prefer tools over LLM reasoning when a tool exists for the job
+- Avoid loops: do not call the same tool twice with the same arguments
+  expecting different results
 - Run independent tasks in parallel when possible
-- Use Hugging Face for text preprocessing (summarization, embeddings)
+- Before building a custom integration, check `skills/` for an existing one
 
 ---
 
 ## Stop Conditions
 
-- Stop once the task is complete
-- Do not over-refine unless requested
-- Do not escalate unnecessarily
-- Ask only when genuinely blocked
+- Task complete → stop
+- Same answer twice → stop, surface to user
+- Three consecutive low-confidence outputs → escalate or surface
+- Repeated tool failure → ask before retrying
 
 ---
 
 ## Priority Order
 
-1. **Cost efficiency** — minimize token usage
-2. **Speed** — respond promptly
-3. **Relevance** — stay on-topic, use fast memory
+1. **Cost efficiency** — minimize tokens
+2. **Speed** — respond promptly; prefer fast path
+3. **Relevance** — stay on-topic
 4. **Output quality** — escalate only when needed
 
 ---
 
 ## System Configuration
 
-**Config file:** `~/.openclaw/openclaw.json`
+**Config file:** `~/.openclaw/openclaw.json` (lives outside this repo)
 
-```json
+```jsonc
 {
   "agents": {
     "defaults": {
@@ -136,7 +143,8 @@
         "primary": "deepseek/deepseek-v4-flash",
         "fallbacks": [
           "deepseek/deepseek-chat",
-          "deepseek/deepseek-v4-pro"
+          "deepseek/deepseek-v4-pro",
+          "myclaw/minimax-m2.7"
         ]
       }
     }
@@ -145,15 +153,14 @@
     "providers": {
       "deepseek": {
         "baseUrl": "https://api.deepseek.com",
-        "apiKey": "sk-eee…c894"
+        "apiKey": "sk-…"
       }
     }
   },
   "plugins": {
     "entries": {
-      "deepseek": {
-        "enabled": true
-      }
+      "deepseek":   { "enabled": true  },
+      "openrouter": { "enabled": false }
     }
   }
 }
@@ -163,23 +170,37 @@
 
 ## Model Availability
 
-| Model | Provider | Context | Cost Tier |
-|-------|----------|---------|-----------|
-| deepseek-v4-flash | OpenRouter | 195K | Low |
-| auto | OpenRouter | Variable | Medium-High |
-| kimi-k2.5 | MyClaw | 200K | Free |
-| minimax-m2.7 | MyClaw | 204K | Free |
+| Model                      | Provider          | Context | Cost Tier   |
+|----------------------------|-------------------|---------|-------------|
+| deepseek-v4-flash          | DeepSeek Direct   | 195K    | Low         |
+| deepseek-chat              | DeepSeek Direct   | 131K    | Low         |
+| deepseek-v4-pro            | DeepSeek Direct   | 1M      | Medium-High |
+| myclaw/minimax-m2.7        | MyClaw            | 204K    | Free        |
+| myclaw/kimi-k2.5           | MyClaw            | 200K    | Free        |
 
 ---
 
-## Vocabulary Discipline
+## Vocabulary Discipline (TREVOR brand voice)
 
-Per TREVOR brand voice — use precise, institutional language:
+**Use:** methodology, disclosure, candor, completeness, confidence,
+responsiveness, diligence, briefing, finding, assessment, indicator,
+posture.
 
-**USE:** methodology, disclosure, candor, completeness, confidence, responsiveness, diligence, briefing, finding, assessment, indicator, posture
-
-**AVOID:** solution, unlock, empower, revolutionary, disrupt, cutting-edge, game-changing, best-in-class, synergy, leverage
+**Avoid:** solution, unlock, empower, revolutionary, disrupt,
+cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ---
 
-*This framework optimizes for cost efficiency and output quality. Trevor is a routing system, not a single model.*
+## Change Log
+
+- **3.0 (2026-05-01):** Reconciled four conflicting routing documents into
+  one source of truth. Canonical provider is DeepSeek Direct API.
+  REBUILD_ORCHESTRATION.md archived under `docs/archive/`. AGENTS.md,
+  MEMORY.md, and `.openclaw/model-config-note.md` aligned.
+- **2.0 (2026-04-28):** Switched primary to DeepSeek V4 Flash.
+- **1.0 (2026-04-25):** Initial balanced MyClaw default order.
+
+---
+
+*Trevor is a routing system, not a single model. The point of this
+framework is to keep that routing legible — to Trevor and to Roderick.*
