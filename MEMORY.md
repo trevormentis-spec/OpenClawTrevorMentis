@@ -17,7 +17,10 @@
 - For future integrations, Trevor should check existing skills/integrations before building custom alternatives.
 
 ## Durable Decisions - Orchestration
-- [2026-04-28] Rebuilt orchestration layer to default to OpenRouter (DeepSeek V4 Flash).
-- Established tiered routing: Default (DeepSeek), Escalation (Auto), Fast Path.
+- [2026-05-01] **Canonical routing is DeepSeek Direct API.** OpenRouter is disabled.
+  Primary `deepseek/deepseek-v4-flash`, escalation `deepseek/deepseek-v4-pro`,
+  resilience fallback chain `deepseek-chat` → `deepseek-v4-pro` → `myclaw/minimax-m2.7`.
+- [2026-05-01] `ORCHESTRATION.md` v3.0 is the single source of truth for routing.
+  REBUILD_ORCHESTRATION.md archived to `docs/archive/`.
 - Diagrams (Mermaid/SVG) preferred over image generation.
 - Memory retrieval limited to top 3 relevant chunks for cost optimization.

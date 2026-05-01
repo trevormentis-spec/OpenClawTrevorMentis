@@ -240,6 +240,12 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
 
 ## Orchestration Rules
-- Primary: `openrouter/deepseek/deepseek-v4-flash`
-- Fallback/Escalation: `openrouter/auto`
-- Follow `REBUILD_ORCHESTRATION.md` for routing logic.
+
+- **Primary:** `deepseek/deepseek-v4-flash` via DeepSeek Direct API
+- **Escalation:** `deepseek/deepseek-v4-pro` (manual, only when warranted)
+- **Resilience fallback chain:** `deepseek-chat` → `deepseek-v4-pro` → `myclaw/minimax-m2.7`
+- **OpenRouter:** disabled.
+
+Canonical source of truth for routing is `ORCHESTRATION.md`. If you change
+routing, update that file first, then propagate to `AGENTS.md`, `MEMORY.md`,
+and `.openclaw/model-config-note.md`.
