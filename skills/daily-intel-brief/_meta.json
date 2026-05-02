@@ -1,0 +1,7 @@
+{
+  "slug": "daily-intel-brief",
+  "version": "1.0.0",
+  "ownerId": "trevor-mentis",
+  "publishedAt": null,
+  "description": "Trevor's Daily Intelligence Brief — orchestrates collector, analyst (DeepSeek V4 Pro), and visuals subagents into a six-region + finance daily product with calibrated key judgments and 7-day prediction bands."
+}
