@@ -1,0 +1,22 @@
+{
+  "thesis": "Falsifiable thesis goes here. Example: market X underprices outcome Y because public information Z is being underweighted.",
+  "max_total_usdc": 10,
+  "risk_notes": [
+    "Prediction markets can lose 100% of committed capital.",
+    "Confirm platform eligibility and local legal/tax obligations before trading.",
+    "Confirm resolution criteria and token_id manually before execution."
+  ],
+  "orders": [
+    {
+      "market_slug": "example-market-slug",
+      "outcome": "YES",
+      "token_id": "REPLACE_WITH_CONFIRMED_OUTCOME_TOKEN_ID",
+      "side": "BUY",
+      "order_type": "GTC",
+      "price": 0.42,
+      "size": 5,
+      "rationale": "Why this order expresses the thesis at this price.",
+      "invalidation": "What new evidence, price move, or time condition would make this trade wrong."
+    }
+  ]
+}
