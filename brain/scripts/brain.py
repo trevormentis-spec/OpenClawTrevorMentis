@@ -330,10 +330,84 @@ def cmd_status() -> int:
     return 0
 
 
+def cmd_doctor() -> int:
+    """Run a lightweight health check for Trevor's memory runtime."""
+    checks: list[tuple[str, str, str]] = []
+
+    def ok(name: str, detail: str = "") -> None:
+        checks.append(("ok", name, detail))
+
+    def warn(name: str, detail: str = "") -> None:
+        checks.append(("warn", name, detail))
+
+    def fail(name: str, detail: str = "") -> None:
+        checks.append(("fail", name, detail))
+
+    if (ROOT / ".git").exists(): ok("git repository", rel(ROOT / ".git"))
+    else: warn("git repository", "workspace is not a git checkout")
+
+    if BRAIN.exists(): ok("brain directory", rel(BRAIN))
+    else: fail("brain directory", "brain/ is missing")
+
+    for d in [META, EPISODIC, SEMANTIC, PROCEDURAL]:
+        if d.exists(): ok(f"directory {rel(d)}")
+        else: warn(f"directory {rel(d)}", "will be created when first written")
+
+    files = candidates()
+    if files: ok("indexable files", f"{len(files)} candidate files")
+    else: fail("indexable files", "no files matched INDEXABLE_GLOBS")
+
+    idx = load_index()
+    if manifest_matches(idx): ok("index freshness", f"version {idx.get('version')} manifest matches")
+    else: fail("index freshness", "manifest mismatch after load_index")
+
+    if idx.get("n_chunks", 0) > 0: ok("chunks", f"{idx.get('n_chunks')} chunks indexed")
+    else: fail("chunks", "index has no chunks")
+
+    ignored_chunks = [c.get("path", "") for c in idx.get("chunks", []) if excluded(ROOT / c.get("path", ""))]
+    if ignored_chunks: fail("ignored files excluded", ", ".join(sorted(set(ignored_chunks))[:5]))
+    else: ok("ignored files excluded")
+
+    tiny = []
+    for c in idx.get("chunks", []):
+        snippet = str(c.get("preview", ""))
+        if len(toks(snippet)) < 3:
+            tiny.append(c.get("key", "<unknown>"))
+    if tiny: warn("tiny chunks", f"{len(tiny)} tiny chunks; sample: {tiny[0]}")
+    else: ok("tiny chunks", "none detected")
+
+    probes = [
+        "Trevor routing memory",
+        "durable decisions",
+        "AgentMail email path",
+        "analyst training program",
+    ]
+    for q in probes:
+        hits = score(toks(q), idx)[:1]
+        if not hits:
+            warn(f"probe: {q}", "no results")
+            continue
+        top, _, chunk = hits[0]
+        conf = confidence(top)
+        detail = f"{conf} {top:.3f} -> {chunk['key']}"
+        if conf == "low": warn(f"probe: {q}", detail)
+        else: ok(f"probe: {q}", detail)
+
+    print("# Trevor brain doctor\n")
+    for status, name, detail in checks:
+        icon = {"ok": "OK", "warn": "WARN", "fail": "FAIL"}[status]
+        print(f"[{icon}] {name}" + (f" — {detail}" if detail else ""))
+
+    fails = sum(1 for s, _, _ in checks if s == "fail")
+    warns = sum(1 for s, _, _ in checks if s == "warn")
+    print(f"\nSummary: {fails} fail(s), {warns} warning(s), {len(checks) - fails - warns} ok.")
+    return 1 if fails else 0
+
+
 def main(argv: list[str]) -> int:
     p = argparse.ArgumentParser(description="Trevor brain runtime"); sub = p.add_subparsers(dest="cmd", required=True)
     sp = sub.add_parser("recall"); sp.add_argument("query"); sp.add_argument("--top-k", type=int, default=3)
-    sub.add_parser("synthesize").add_argument("query"); sub.add_parser("reindex"); sub.add_parser("status"); sub.add_parser("store-episodic").add_argument("text")
+    sub.add_parser("synthesize").add_argument("query"); sub.add_parser("reindex"); sub.add_parser("status"); sub.add_parser("doctor"); sub.add_parser("store-episodic").add_argument("text")
     sp = sub.add_parser("store-semantic"); sp.add_argument("topic"); sp.add_argument("text")
     sp = sub.add_parser("store-procedural"); sp.add_argument("slug"); sp.add_argument("text")
     sp = sub.add_parser("mark-retrieval"); sp.add_argument("key"); sp.add_argument("signal", choices=["useful", "not-useful"])
@@ -343,6 +417,7 @@ def main(argv: list[str]) -> int:
     if a.cmd == "synthesize": return cmd_synthesize(a.query)
     if a.cmd == "reindex": build_index(); print("reindexed."); return 0
     if a.cmd == "status": return cmd_status()
+    if a.cmd == "doctor": return cmd_doctor()
     if a.cmd == "store-episodic": return cmd_store_episodic(a.text)
     if a.cmd == "store-semantic": return cmd_store_semantic(a.topic, a.text)
     if a.cmd == "store-procedural": return cmd_store_procedural(a.slug, a.text)
