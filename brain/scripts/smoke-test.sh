@@ -7,15 +7,15 @@ echo "== compile =="
 python3 -m py_compile brain/scripts/brain.py
 
 echo
- echo "== reindex =="
+echo "== reindex =="
 python3 brain/scripts/brain.py reindex
 
 echo
- echo "== doctor =="
+echo "== doctor =="
 python3 brain/scripts/brain.py doctor
 
 echo
- echo "== recall probes =="
+echo "== recall probes =="
 queries=(
   "Trevor routing memory"
   "durable decisions"
@@ -28,4 +28,4 @@ for q in "${queries[@]}"; do
   echo
   echo "-- $q --"
   python3 brain/scripts/brain.py recall "$q" --top-k 3
- done
+done
