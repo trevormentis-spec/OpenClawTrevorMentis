@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daily Intelligence Briefing</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 18mm 14mm 22mm 14mm;
+        @bottom-right {
+          content: counter(page) " / " counter(pages);
+          font-size: 8pt;
+          color: #66717d;
+        }
+      }
+
+      :root {
+        --ink: #182026;
+        --muted: #66717d;
+        --line: #d6dde5;
+        --soft: #f5f7fa;
+        --accent: #0e5c7a;
+      }
+
+      body {
+        font-family: "DejaVu Sans", "Noto Sans", Arial, sans-serif;
+        color: var(--ink);
+        font-size: 11pt;
+        line-height: 1.45;
+      }
+
+      h1, h2, h3, p {
+        margin: 0;
+      }
+
+      .header {
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+      }
+
+      .title {
+        font-size: 22pt;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      .subtitle {
+        margin-top: 4px;
+        font-size: 11pt;
+        color: var(--muted);
+      }
+
+      .generated-at {
+        margin-top: 8px;
+        font-size: 9pt;
+        color: var(--muted);
+      }
+
+      .summary {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+        margin-bottom: 18px;
+      }
+
+      .summary h2 {
+        font-size: 11pt;
+        margin-bottom: 8px;
+      }
+
+      .summary ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .section {
+        margin-bottom: 18px;
+        page-break-inside: avoid;
+      }
+
+      .section h2 {
+        font-size: 14pt;
+        margin-bottom: 6px;
+        color: var(--accent);
+      }
+
+      .section .lead {
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+
+      .section ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .section li {
+        margin-bottom: 4px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 10pt;
+      }
+
+      thead th {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        text-align: left;
+        padding: 8px;
+      }
+
+      tbody td {
+        border: 1px solid var(--line);
+        padding: 8px;
+        vertical-align: top;
+      }
+
+      .chart {
+        margin-top: 12px;
+        page-break-inside: avoid;
+      }
+
+      .chart img {
+        width: 100%;
+        max-height: 360px;
+        object-fit: contain;
+        border: 1px solid var(--line);
+        background: white;
+      }
+
+      .chart-title {
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .chart-caption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      .note {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      .footer {
+        margin-top: 18px;
+        padding-top: 8px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 9pt;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">Daily Intelligence Briefing</div>
+      <div class="subtitle">Geopolitical &amp; Security Assessment — 1 May 2026</div>
+      <div class="generated-at">Genere le 1 May 2026 20:30 UTC</div>
+    </header>
+
+    <section class="summary">
+      <h2>Resume</h2>
+      <ul>
+        <li>Operation Epic Fury shifts from kinetic ops to maritime blockade and coercive pressure; ceasefire holding but fragile</li>
+        <li>Strait of Hormuz remains effectively closed; Brent crude at $124.67/bbl under blockade enforcement</li>
+        <li>Iran signals asymmetric retaliation capability; 400+ militia strikes across 6 countries since conflict began</li>
+        <li>No defined political end-state risks protracted regional standoff</li>
+        <li>Ukraine leverages crisis for Gulf security partnerships; China tensions simmer in South China Sea</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>1. Middle East — Operation Epic Fury</h2>
+
+      <p class="lead">The US-Israeli campaign has transitioned from high-intensity strikes to a maritime blockade strategy, with 42 vessels turned back from the Strait of Hormuz. 200 aircraft and 25 ships are now involved in blockade enforcement.</p>
+
+      <ul>
+        <li>Ceasefire holding on an open-ended basis but no diplomatic off-ramp defined</li>
+        <li>Admiral Cooper and CJCS Caine briefed President Trump on options including limited ground interventions and energy infrastructure strikes</li>
+        <li>Iran-aligned Iraqi militias (Islamic Resistance in Iraq coalition) have launched 400+ strikes across Iraq, Saudi Arabia, Kuwait, UAE, Qatar, Bahrain, and Jordan</li>
+        <li>Israel delivered advanced defensive weaponry to UAE for missile/drone protection</li>
+        <li>Israel on heightened alert; media reports suggest Trump nearing decision on renewed military action</li>
+        <li>Iran&#39;s decentralized power structure increasingly dominated by IRGC elements, complicating diplomatic pathways</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Indicator</th>
+            <th>Status</th>
+            <th>Trend</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ceasefire stability</td>
+            <td>Fragile</td>
+            <td>↘ Deteriorating</td>
+          </tr>
+          <tr>
+            <td>Blockade enforcement</td>
+            <td>Active (42 vessels turned back)</td>
+            <td>→ Stable</td>
+          </tr>
+          <tr>
+            <td>Oil price (Brent)</td>
+            <td>$124.67/bbl</td>
+            <td>↗ Rising</td>
+          </tr>
+          <tr>
+            <td>Iran militia activity</td>
+            <td>400+ strikes total</td>
+            <td>↗ Increasing</td>
+          </tr>
+          <tr>
+            <td>Diplomatic backchannel</td>
+            <td>None visible</td>
+            <td>→ Stalled</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </section>
+    <section class="section">
+      <h2>2. Energy &amp; Economic Disruption</h2>
+
+      <p class="lead">The Strait of Hormuz closure continues to impact global energy markets with no timeline for reopening under the US-proposed Maritime Freedom Construct.</p>
+
+      <ul>
+        <li>Brent crude at $124.67/bbl — highest since 2022 energy crisis</li>
+        <li>US proposes &#39;Maritime Freedom Construct&#39; coalition for safe passage; diplomatic buy-in uncertain</li>
+        <li>Iran restates claim to Strait of Hormuz as sovereign waterway</li>
+        <li>Global shipping disruptions continue; insurance premiums for Gulf transits remain elevated</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Commodity</th>
+            <th>Current Price</th>
+            <th>7-day Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Brent Crude</td>
+            <td>$124.67/bbl</td>
+            <td>+7.2%</td>
+          </tr>
+          <tr>
+            <td>WTI Crude</td>
+            <td>$119.80/bbl</td>
+            <td>+6.8%</td>
+          </tr>
+          <tr>
+            <td>European Natural Gas</td>
+            <td>€48.50/MWh</td>
+            <td>+12%</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </section>
+    <section class="section">
+      <h2>3. Ukraine — Strategic Adaptation</h2>
+
+      <p class="lead">Ukraine has used the Middle East crisis as a strategic window to deepen Gulf security partnerships.</p>
+
+      <ul>
+        <li>Kyiv sent anti-drone specialists to 5 Gulf states</li>
+        <li>Long-term security partnership signed with Saudi Arabia, Qatar, and UAE</li>
+        <li>Zelenskyy cites Iran conflict distraction as obstacle to Russia peace talks</li>
+        <li>Ukraine formally asked Israel to seize ship carrying grain stolen by Russia</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Partner</th>
+            <th>Deal Type</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Saudi Arabia</td>
+            <td>Security partnership</td>
+            <td>Signed</td>
+          </tr>
+          <tr>
+            <td>Qatar</td>
+            <td>Security partnership</td>
+            <td>Signed</td>
+          </tr>
+          <tr>
+            <td>UAE</td>
+            <td>Anti-drone deployment</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Israel</td>
+            <td>Stolen grain seizure request</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </section>
+    <section class="section">
+      <h2>4. Indo-Pacific &amp; China</h2>
+
+      <p class="lead">China conducted combat readiness patrols near Scarborough Shoal as US attention remains fixed on the Middle East.</p>
+
+      <ul>
+        <li>PLA patrols near Scarborough Shoal in disputed South China Sea</li>
+        <li>Foreign Minister Wang Yi warns Taiwan issue is &#39;biggest point of risk&#39; for US-China relations</li>
+        <li>Trump scheduled to visit Beijing in 2 weeks with Strait of Hormuz still closed</li>
+        <li>Australia publishes 2026 National Defence Strategy emphasizing regional deterrence</li>
+      </ul>
+
+
+
+    </section>
+
+    <footer class="footer">TREVOR Assessment — 1 May 2026 20:30 UTC — Prepared for Roderick Jones</footer>
+  </body>
+</html>

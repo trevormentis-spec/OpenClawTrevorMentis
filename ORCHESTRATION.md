@@ -57,6 +57,16 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 - Default: Mermaid (`skills/mermaid`) or hand-rolled SVG / HTML / CSS
 - Reasons: cheaper, deterministic, editable, render in chat
 
+### OpenRouter (Specialist LLMs Only)
+- OpenRouter plugin is **enabled** but strictly for specialist models:
+  - Image generation (diffusion, Gemini image models)
+  - Video generation (Veo, etc.)
+  - Text-to-speech
+  - Any model not available via DeepSeek Direct or MyClaw
+- **Never** route DeepSeek models through OpenRouter — use DeepSeek Direct API.
+- Routed via `openrouter/google/...`, `openrouter/auto`, etc.
+- Monitored by `scripts/openrouter_monitor.py` on heartbeat cycle.
+
 ### Image Generation
 - Only on explicit user request
 - Prefer cost-efficient diffusion models via OpenRouter when needed

@@ -16,6 +16,18 @@ __pycache__/
 .venv/
 venv/
 
+# Netlify deploy cache
+.netlify/
+
+# PDF venv (generated)
+.venv_pdf/
+
+# Generated images (regenerated each run)
+exports/images/
+
+# Generated PDFs (regenerated each run)
+exports/pdfs/
+
 # brain/ runtime — index is regenerated, working memory is ephemeral
 brain/index/index.json
 brain/working-memory.json

@@ -1,0 +1,84 @@
+{
+  "version": "3.0.0",
+  "generated": "2026-05-02T04:16:00Z",
+  "dtg": "01 MAY 2026 / 2030 UTC",
+  "sia": "TREVOR V3",
+  "title": "PROJECT SENTINEL",
+  "subtitle": "Institutional Geopolitical Intelligence Dashboard",
+  "classification": "CONFIDENTIAL — CLIENT USE ONLY",
+  "briefing_id": "GIB-2026-05-01-001",
+  "bluf": {
+    "label": "HORMUZ STORAGE CONSTRAINTS GOVERNING TIMELINE",
+    "severity": "critical",
+    "text": "The US-Iran confrontation has entered a critical phase where physical storage constraints, not diplomatic rhetoric, now govern the decision timeline. Tehran has roughly <strong>12–22 days of onshore storage remaining</strong> before forced production shut-ins cause irreversible reservoir damage. <strong>Strategic advantage: United States (80–93% probability).</strong>"
+  },
+  "key_judgments": [
+    { "id": "KJ1", "text": "Iran faces forced crude production shut-ins within 15–30 days", "confidence": "80-93%", "trend": "advancing" },
+    { "id": "KJ2", "text": "US-Iran diplomatic track effectively stalled for the next 30 days", "confidence": "63-80%", "trend": "stable" },
+    { "id": "KJ3", "text": "UAE exit from OPEC+ marks a structural realignment of global oil governance", "confidence": "High Confidence", "trend": "stable" },
+    { "id": "KJ4", "text": "Russia military intervention in Iran theater remains unlikely", "confidence": "20-40%", "trend": "stable" },
+    { "id": "KJ5", "text": "European energy markets will face acute jet fuel shortages within 3–6 weeks", "confidence": "80-93%", "trend": "advancing" },
+    { "id": "KJ6", "text": "Strategic trajectory of European far-right resurgence remains uncertain", "confidence": "Roughly even chance", "trend": "watch" },
+    { "id": "KJ7", "text": "Somali piracy re-emerging as significant threat to Indian Ocean shipping", "confidence": "63-80%", "trend": "advancing" }
+  ],
+  "sections": [
+    {
+      "title": "Operation Epic Fury — Maritime Blockade",
+      "icon": "anchor",
+      "body": "The US-Israeli campaign has transitioned from high-intensity strikes to a maritime blockade strategy. 42 vessels turned back from the Strait of Hormuz. 200 aircraft and 25 ships now involved in blockade enforcement. Ceasefire holding on an open-ended basis but no diplomatic off-ramp defined.",
+      "indicators": [
+        { "label": "Ceasefire Stability", "value": "Fragile", "status": "deteriorating" },
+        { "label": "Blockade Enforcement", "value": "42 vessels turned back", "status": "stable" },
+        { "label": "Iran Militia Activity", "value": "400+ strikes across 6 countries", "status": "increasing" },
+        { "label": "Diplomatic Backchannel", "value": "None visible", "status": "stalled" }
+      ]
+    },
+    {
+      "title": "Energy & Economic Disruption",
+      "icon": "bar-chart",
+      "body": "Strait of Hormuz closure continues to impact global energy markets with no timeline for reopening under the US-proposed Maritime Freedom Construct.",
+      "indicators": [
+        { "label": "Brent Crude", "value": "$124.67/bbl", "status": "increasing" },
+        { "label": "WTI Crude", "value": "$119.80/bbl", "status": "increasing" },
+        { "label": "European Natural Gas", "value": "€48.50/MWh", "status": "increasing" },
+        { "label": "Global Shipping Disruption", "value": "Insurance premiums elevated", "status": "stable" }
+      ]
+    },
+    {
+      "title": "Ukraine — Strategic Adaptation",
+      "icon": "globe",
+      "body": "Ukraine has used the Middle East crisis as a strategic window to deepen Gulf security partnerships, including anti-drone deployments and long-term security agreements.",
+      "indicators": [
+        { "label": "Saudi Arabia", "value": "Security partnership signed", "status": "stable" },
+        { "label": "Qatar", "value": "Security partnership signed", "status": "stable" },
+        { "label": "UAE", "value": "Anti-drone deployment active", "status": "stable" },
+        { "label": "Israel", "value": "Stolen grain seizure request", "status": "watch" }
+      ]
+    },
+    {
+      "title": "Indo-Pacific & China",
+      "icon": "map",
+      "body": "China conducted combat readiness patrols near Scarborough Shoal as US attention remains fixed on the Middle East. Testing US capacity for two-theater engagement.",
+      "indicators": [
+        { "label": "PLA Patrols", "value": "Scarborough Shoal area", "status": "increasing" },
+        { "label": "US-China Relations", "value": "Trump Beijing visit in 2 weeks", "status": "watch" },
+        { "label": "Australia Defence", "value": "2026 National Defence Strategy", "status": "stable" },
+        { "label": "Taiwan Risk", "value": "Biggest point of risk per Wang Yi", "status": "watch" }
+      ]
+    }
+  ],
+  "images": [
+    { "src": "images/map-infographic-hormuz.png", "alt": "Strait of Hormuz Blockade Zone", "caption": "Map 1: Strait of Hormuz — Blockade Enforcement Zone · 1 May 2026" },
+    { "src": "images/infographic-strategic-flow.png", "alt": "Scenario Decision Tree", "caption": "Figure 1: Scenario Decision Tree — Operation Epic Fury Pathways" },
+    { "src": "images/infographic-oil-price.png", "alt": "Oil Price Trajectory", "caption": "Figure 2: Brent Crude Oil Price Trajectory — Jan-May 2026" },
+    { "src": "images/infographic-iw-summary.png", "alt": "Indicators & Warnings Dashboard", "caption": "Figure 3: Indicators & Warnings Dashboard — All Tracks" },
+    { "src": "images/infographic-threat-landscape.png", "alt": "Threat Actor Quadrant", "caption": "Figure 4: Intent × Capability Assessment" }
+  ],
+  "horizon_items": [
+    "Next 24-48h: Ceasefire decision point — Trump briefed on options, decision on renewed kinetic ops likely imminent",
+    "Next 7 days: Maritime Freedom Construct diplomatic push; coalition-building for safe passage through Hormuz",
+    "Next 30 days: Risk of protracted standoff without diplomatic breakthrough; potential for Iranian asymmetric retaliation in cyber domain",
+    "Watch items: IRGC leadership signals, Houthi Red Sea activation, China South China Sea posture during Trump visit"
+  ],
+  "footer": "TREVOR Assessment — 1 May 2026 20:30 UTC — Prepared for Roderick Jones"
+}

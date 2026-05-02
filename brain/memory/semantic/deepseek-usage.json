@@ -1,0 +1,762 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-05-02T04:55:46.941743+00:00",
+      "balance": {
+        "total_balance": 99.08,
+        "topped_up_balance": 99.08,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-02T04:55:46.941724+00:00"
+      },
+      "total_sessions_tracked": 39,
+      "cumulative": {
+        "total_sessions": 39,
+        "total_input_tokens": 7269816,
+        "total_output_tokens": 129993,
+        "total_tokens": 8082305,
+        "total_cost_usd": 0.470656
+      }
+    },
+    {
+      "timestamp": "2026-05-02T09:20:39.403186+00:00",
+      "balance": {
+        "total_balance": 98.57,
+        "topped_up_balance": 98.57,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-02T09:20:39.403163+00:00"
+      },
+      "total_sessions_tracked": 42,
+      "cumulative": {
+        "total_sessions": 42,
+        "total_input_tokens": 7364553,
+        "total_output_tokens": 148873,
+        "total_tokens": 10409170,
+        "total_cost_usd": 0.489206
+      }
+    },
+    {
+      "timestamp": "2026-05-02T16:07:55.665217+00:00",
+      "balance": {
+        "total_balance": 98.3,
+        "topped_up_balance": 98.3,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-02T16:07:55.665198+00:00"
+      },
+      "total_sessions_tracked": 46,
+      "cumulative": {
+        "total_sessions": 46,
+        "total_input_tokens": 7468113,
+        "total_output_tokens": 169240,
+        "total_tokens": 12391017,
+        "total_cost_usd": 0.509407
+      }
+    }
+  ],
+  "daily_summaries": {
+    "2026-05-02": {
+      "sessions": 8,
+      "input_tokens": 207744,
+      "output_tokens": 40452,
+      "total_tokens": 4438404,
+      "cache_read": 4190208,
+      "cache_write": 0,
+      "cost_usd": 0.04041072,
+      "by_model": {
+        "deepseek-v4-flash": {
+          "sessions": 8,
+          "tokens": 4438404,
+          "cost": 0.04041072
+        }
+      }
+    },
+    "2026-05-01": {
+      "sessions": 8,
+      "input_tokens": 496793,
+      "output_tokens": 35986,
+      "total_tokens": 979243,
+      "cache_read": 446464,
+      "cache_write": 0,
+      "cost_usd": 0.030392540000000003,
+      "by_model": {
+        "gemini-3-flash": {
+          "sessions": 6,
+          "tokens": 459829,
+          "cost": 0.0
+        },
+        "deepseek-v4-flash": {
+          "sessions": 1,
+          "tokens": 227632,
+          "cost": 0.00429646
+        },
+        "deepseek-v4-pro": {
+          "sessions": 1,
+          "tokens": 291782,
+          "cost": 0.02609608
+        }
+      }
+    },
+    "2026-04-30": {
+      "sessions": 5,
+      "input_tokens": 1768186,
+      "output_tokens": 24383,
+      "total_tokens": 1909561,
+      "cache_read": 116992,
+      "cache_write": 0,
+      "cost_usd": 0.24881415999999998,
+      "by_model": {
+        "deepseek/deepseek-v4-flash": {
+          "sessions": 4,
+          "tokens": 1870245,
+          "cost": 0.24881415999999998
+        },
+        "gemini-3-flash": {
+          "sessions": 1,
+          "tokens": 39316,
+          "cost": 0.0
+        }
+      }
+    },
+    "2026-04-29": {
+      "sessions": 10,
+      "input_tokens": 2605759,
+      "output_tokens": 23265,
+      "total_tokens": 2629024,
+      "cache_read": 0,
+      "cache_write": 0,
+      "cost_usd": 0.13685266000000001,
+      "by_model": {
+        "gemini-3-flash": {
+          "sessions": 5,
+          "tokens": 1657012,
+          "cost": 0.0
+        },
+        "deepseek/deepseek-v4-flash": {
+          "sessions": 5,
+          "tokens": 972012,
+          "cost": 0.13685266000000001
+        }
+      }
+    },
+    "2026-04-28": {
+      "sessions": 9,
+      "input_tokens": 733755,
+      "output_tokens": 18584,
+      "total_tokens": 752339,
+      "cache_read": 0,
+      "cache_write": 0,
+      "cost_usd": 0.005964560000000001,
+      "by_model": {
+        "kimi-k2.5": {
+          "sessions": 1,
+          "tokens": 31975,
+          "cost": 0.0
+        },
+        "deepseek/deepseek-v4-flash": {
+          "sessions": 2,
+          "tokens": 42264,
+          "cost": 0.005964560000000001
+        },
+        "gemini-3-flash": {
+          "sessions": 6,
+          "tokens": 678100,
+          "cost": 0.0
+        }
+      }
+    },
+    "2026-04-27": {
+      "sessions": 4,
+      "input_tokens": 632549,
+      "output_tokens": 11731,
+      "total_tokens": 644280,
+      "cache_read": 0,
+      "cache_write": 0,
+      "cost_usd": 0.04697224,
+      "by_model": {
+        "kimi-k2.5": {
+          "sessions": 3,
+          "tokens": 317634,
+          "cost": 0.0
+        },
+        "deepseek/deepseek-v4-flash": {
+          "sessions": 1,
+          "tokens": 326646,
+          "cost": 0.04697224
+        }
+      }
+    },
+    "2026-04-26": {
+      "sessions": 2,
+      "input_tokens": 1023327,
+      "output_tokens": 14839,
+      "total_tokens": 1038166,
+      "cache_read": 0,
+      "cache_write": 0,
+      "cost_usd": 0.0,
+      "by_model": {
+        "minimax-m2.7": {
+          "sessions": 2,
+          "tokens": 1038166,
+          "cost": 0.0
+        }
+      }
+    }
+  },
+  "session_usage": [
+    {
+      "session_id": "abfce1cb-d2c4-4a77-ab1a-6db7328b227f",
+      "timestamp": "2026-04-26T18:59:21.425Z",
+      "input_tokens": 846861,
+      "output_tokens": 9696,
+      "total_tokens": 856557,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "minimax-m2.7",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "cd44ff20-4d18-48cf-bc54-8e2765960622",
+      "timestamp": "2026-04-26T20:03:52.046Z",
+      "input_tokens": 176466,
+      "output_tokens": 5143,
+      "total_tokens": 181609,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "minimax-m2.7",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "97e111bf-07b8-4d88-92e1-43f90f2f3c43",
+      "timestamp": "2026-04-27T03:23:49.757Z",
+      "input_tokens": 36965,
+      "output_tokens": 195,
+      "total_tokens": 37160,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "kimi-k2.5",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "aeb97b01-0011-4f03-8d0f-61118539a67b",
+      "timestamp": "2026-04-27T04:07:01.693Z",
+      "input_tokens": 69665,
+      "output_tokens": 373,
+      "total_tokens": 70038,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "kimi-k2.5",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "d4ce5d32-fadb-4158-abd9-6e10e7eacc5f",
+      "timestamp": "2026-04-27T05:23:01.944Z",
+      "input_tokens": 317776,
+      "output_tokens": 8870,
+      "total_tokens": 326646,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.04697224,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "807062fc-21aa-44ca-8d7f-8ba6b19c01a5",
+      "timestamp": "2026-04-27T20:04:26.559Z",
+      "input_tokens": 208143,
+      "output_tokens": 2293,
+      "total_tokens": 210436,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "kimi-k2.5",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "f315ddab-95d6-4509-9131-f39cc7ec6616",
+      "timestamp": "2026-04-28T04:05:19.594Z",
+      "input_tokens": 31562,
+      "output_tokens": 413,
+      "total_tokens": 31975,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "kimi-k2.5",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "f78191ac-2a36-46d8-a145-370b05707d14",
+      "timestamp": "2026-04-28T05:21:44.550Z",
+      "input_tokens": 22043,
+      "output_tokens": 79,
+      "total_tokens": 22122,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.00310814,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "1ab07d50-d99f-4070-8220-5a879380f48e",
+      "timestamp": "2026-04-28T18:01:31.232Z",
+      "input_tokens": 19881,
+      "output_tokens": 261,
+      "total_tokens": 20142,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.00285642,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "bb8e5080-c2e6-429b-a518-af5510b7b9df",
+      "timestamp": "2026-04-28T18:19:52.160Z",
+      "input_tokens": 19339,
+      "output_tokens": 25,
+      "total_tokens": 19364,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "fcb8000d-1fbc-47c0-942b-3f4be547323e",
+      "timestamp": "2026-04-28T19:02:14.976Z",
+      "input_tokens": 52497,
+      "output_tokens": 725,
+      "total_tokens": 53222,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "b73963b1-fd3b-4779-96be-31080d50fa6f",
+      "timestamp": "2026-04-28T19:12:12.416Z",
+      "input_tokens": 156598,
+      "output_tokens": 4699,
+      "total_tokens": 161297,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "9f179002-3f00-4235-9aed-778c86d908ab",
+      "timestamp": "2026-04-28T20:03:46.490Z",
+      "input_tokens": 232543,
+      "output_tokens": 6491,
+      "total_tokens": 239034,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "32ff54a4-6300-4e99-b774-b226f38da6bc",
+      "timestamp": "2026-04-28T22:16:53.921Z",
+      "input_tokens": 118174,
+      "output_tokens": 726,
+      "total_tokens": 118900,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "aa19f8a5-29a6-46b9-bde2-fca7e9233af6",
+      "timestamp": "2026-04-28T23:15:15.689Z",
+      "input_tokens": 81118,
+      "output_tokens": 5165,
+      "total_tokens": 86283,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "3174e0e3-7a3f-4166-86bc-9b5ac440013a",
+      "timestamp": "2026-04-29T00:04:04.891Z",
+      "input_tokens": 1325679,
+      "output_tokens": 4444,
+      "total_tokens": 1330123,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "df87ab71-70b4-485c-a800-8c7e5f7cfd7e",
+      "timestamp": "2026-04-29T01:02:14.387Z",
+      "input_tokens": 36342,
+      "output_tokens": 4298,
+      "total_tokens": 40640,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "3b9e1cf8-7d3a-497e-b40e-edfb07ccc26c",
+      "timestamp": "2026-04-29T02:03:19.798Z",
+      "input_tokens": 187857,
+      "output_tokens": 7085,
+      "total_tokens": 194942,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "75313924-6ac3-462a-b379-31f32987721a",
+      "timestamp": "2026-04-29T04:13:44.380Z",
+      "input_tokens": 72784,
+      "output_tokens": 1791,
+      "total_tokens": 74575,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "b5c0d723-9441-4e51-8056-121bffc41b83",
+      "timestamp": "2026-04-29T08:04:36.208Z",
+      "input_tokens": 39901,
+      "output_tokens": 823,
+      "total_tokens": 40724,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.00581658,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "702934c5-3ecf-4308-8bab-c15361dfabd2",
+      "timestamp": "2026-04-29T09:14:48.511Z",
+      "input_tokens": 851806,
+      "output_tokens": 4016,
+      "total_tokens": 855822,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.12037732,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "358e85db-9083-44d1-a838-0d0305143f32",
+      "timestamp": "2026-04-29T09:19:35.377Z",
+      "input_tokens": 18892,
+      "output_tokens": 131,
+      "total_tokens": 19023,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.00268156,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "862c7370-0065-460a-be85-b93164aa8b4d",
+      "timestamp": "2026-04-29T12:02:09.313Z",
+      "input_tokens": 18470,
+      "output_tokens": 225,
+      "total_tokens": 18695,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0026488,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "dff64e6e-63c6-44e1-8d17-2812aa50d3e9",
+      "timestamp": "2026-04-29T12:06:57.031Z",
+      "input_tokens": 37436,
+      "output_tokens": 312,
+      "total_tokens": 37748,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0053284,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "2ad4a6d0-6a9a-44dc-8e18-b459346ac42b",
+      "timestamp": "2026-04-29T19:07:13.868Z",
+      "input_tokens": 16592,
+      "output_tokens": 140,
+      "total_tokens": 16732,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "8aba30f4-82c8-4313-bfc6-c96ab8daf8f0",
+      "timestamp": "2026-04-30T03:36:04.947Z",
+      "input_tokens": 547536,
+      "output_tokens": 13202,
+      "total_tokens": 560738,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0803516,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "df738c35-be1e-4ae6-94e5-093252bcd7b4",
+      "timestamp": "2026-04-30T05:15:46.987Z",
+      "input_tokens": 38924,
+      "output_tokens": 392,
+      "total_tokens": 39316,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "b41089de-32bc-4c09-a7ce-c34552a7e7a8",
+      "timestamp": "2026-04-30T08:08:31.387Z",
+      "input_tokens": 386841,
+      "output_tokens": 6101,
+      "total_tokens": 434414,
+      "cache_read": 41472,
+      "cache_write": 0,
+      "estimated_cost": 0.05586602,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "047513d2-dfba-4771-bc98-6e3c1451cc5a",
+      "timestamp": "2026-04-30T09:16:32.357Z",
+      "input_tokens": 18850,
+      "output_tokens": 72,
+      "total_tokens": 18922,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.00265916,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "423795a3-5203-4712-b1d9-e367dacef5e8",
+      "timestamp": "2026-04-30T12:17:25.401Z",
+      "input_tokens": 776035,
+      "output_tokens": 4616,
+      "total_tokens": 856171,
+      "cache_read": 75520,
+      "cache_write": 0,
+      "estimated_cost": 0.10993738,
+      "model": "deepseek/deepseek-v4-flash",
+      "provider": "openrouter"
+    },
+    {
+      "session_id": "379bef5b-bf80-4889-8f35-3d4b4c4835da",
+      "timestamp": "2026-05-01T19:22:37.580Z",
+      "input_tokens": 28014,
+      "output_tokens": 2509,
+      "total_tokens": 30523,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "80493ae5-4166-46fa-82f2-b84a41a79949",
+      "timestamp": "2026-05-01T19:22:53.709Z",
+      "input_tokens": 101272,
+      "output_tokens": 2886,
+      "total_tokens": 104158,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "bd302340-cf5a-4198-bee7-2d3c14ff1fbc",
+      "timestamp": "2026-05-01T19:24:42.677Z",
+      "input_tokens": 122285,
+      "output_tokens": 3715,
+      "total_tokens": 126000,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "cea01246-c318-4e3a-bd73-272f8c1d5ba0",
+      "timestamp": "2026-05-01T19:28:14.875Z",
+      "input_tokens": 91116,
+      "output_tokens": 4742,
+      "total_tokens": 95858,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "f845502d-3289-4148-87dc-a5eba07b807c",
+      "timestamp": "2026-05-01T19:32:25.763Z",
+      "input_tokens": 79632,
+      "output_tokens": 4398,
+      "total_tokens": 84030,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "2abb8262-097a-4a4a-a5b2-0d556cf2cddb",
+      "timestamp": "2026-05-01T19:32:40.608Z",
+      "input_tokens": 19254,
+      "output_tokens": 6,
+      "total_tokens": 19260,
+      "cache_read": 0,
+      "cache_write": 0,
+      "estimated_cost": 0.0,
+      "model": "gemini-3-flash",
+      "provider": "myclaw"
+    },
+    {
+      "session_id": "469f8e64-9f7b-46c7-9360-8a930e6a21cb",
+      "timestamp": "2026-05-01T19:39:40.239Z",
+      "input_tokens": 24447,
+      "output_tokens": 3121,
+      "total_tokens": 227632,
+      "cache_read": 200064,
+      "cache_write": 0,
+      "estimated_cost": 0.00429646,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "6d7c5c7b-f103-4086-b518-841b5fdb83fc",
+      "timestamp": "2026-05-01T22:44:21.877Z",
+      "input_tokens": 30773,
+      "output_tokens": 14609,
+      "total_tokens": 291782,
+      "cache_read": 246400,
+      "cache_write": 0,
+      "estimated_cost": 0.02609608,
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "182ccdae-7a2c-4b43-a45c-3d7c8302d627",
+      "timestamp": "2026-05-02T04:13:06.958Z",
+      "input_tokens": 9447,
+      "output_tokens": 1205,
+      "total_tokens": 129692,
+      "cache_read": 119040,
+      "cache_write": 0,
+      "estimated_cost": 0.00165998,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "2b00b87c-f54e-4e9f-9e3d-7d0da288e250",
+      "timestamp": "2026-05-02T07:04:15.540Z",
+      "input_tokens": 16534,
+      "output_tokens": 2085,
+      "total_tokens": 87227,
+      "cache_read": 68608,
+      "cache_write": 0,
+      "estimated_cost": 0.00289856,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "7f949c5e-ac9b-46b4-ae45-ab3bc9570786",
+      "timestamp": "2026-05-02T07:07:09.953Z",
+      "input_tokens": 54110,
+      "output_tokens": 9084,
+      "total_tokens": 662490,
+      "cache_read": 599296,
+      "cache_write": 0,
+      "estimated_cost": 0.01011892,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "23a4b8d2-b245-4687-b53a-9e6d345ab6ab",
+      "timestamp": "2026-05-02T09:20:10.381Z",
+      "input_tokens": 24093,
+      "output_tokens": 7711,
+      "total_tokens": 1577148,
+      "cache_read": 1545344,
+      "cache_write": 0,
+      "estimated_cost": 0.0055321,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "156396b2-a5ce-46b0-902b-223925f688cd",
+      "timestamp": "2026-05-02T13:03:57.091Z",
+      "input_tokens": 3387,
+      "output_tokens": 768,
+      "total_tokens": 31803,
+      "cache_read": 27648,
+      "cache_write": 0,
+      "estimated_cost": 0.00068922,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "9fcc0fda-ac33-4bbd-b1f2-1a49c7e1201c",
+      "timestamp": "2026-05-02T13:08:05.343Z",
+      "input_tokens": 45262,
+      "output_tokens": 9432,
+      "total_tokens": 676902,
+      "cache_read": 622208,
+      "cache_write": 0,
+      "estimated_cost": 0.00897764,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "bd925abe-6ab1-4887-abf5-97d649ff345c",
+      "timestamp": "2026-05-02T13:08:57.646Z",
+      "input_tokens": 16360,
+      "output_tokens": 2270,
+      "total_tokens": 163526,
+      "cache_read": 144896,
+      "cache_write": 0,
+      "estimated_cost": 0.002926,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "e184c121-988d-4851-b46a-54abe1c4abfc",
+      "timestamp": "2026-05-02T16:07:30.129Z",
+      "input_tokens": 38551,
+      "output_tokens": 7897,
+      "total_tokens": 1109616,
+      "cache_read": 1063168,
+      "cache_write": 0,
+      "estimated_cost": 0.0076083,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    }
+  ],
+  "last_scan_time": "2026-05-02T16:07:55.349371+00:00"
+}

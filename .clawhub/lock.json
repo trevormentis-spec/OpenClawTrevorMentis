@@ -12,6 +12,14 @@
     "quick-translation": {
       "version": "1.0.0",
       "installedAt": 1777663924883
+    },
+    "data-visualization-studio": {
+      "version": "1.0.0",
+      "installedAt": 1777712526890
+    },
+    "agent-intelligence-network-scan": {
+      "version": "0.1.0",
+      "installedAt": 1777713243146
     }
   }
 }

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 1.6cm 1.6cm 2cm 1.6cm;
+    @bottom-left {
+      content: "TREVOR Intelligence Assessment  ·  1 May 2026";
+      font-size: 6.5pt;
+      color: #999;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 6.5pt;
+      color: #999;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+  }
+  @page :first {
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 9pt;
+    line-height: 1.55;
+    color: #222;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover {
+    page-break-after: always;
+    background: #1a1a2e;
+    color: white;
+    padding: 100px 60px 60px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover:before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(192,57,43,0.15), transparent);
+    border-radius: 50%;
+  }
+  .cover .brand {
+    font-size: 8pt;
+    color: #c0392b;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+    line-height: 1.15;
+  }
+  .cover h1 strong { font-weight: 700; color: #c0392b; }
+  .cover .subtitle {
+    font-size: 13pt;
+    color: #bbb;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .cover .meta-grid {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .cover .meta-grid .col {
+    flex: 1;
+  }
+  .cover .meta-grid .label {
+    font-size: 6.5pt;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .cover .meta-grid .value {
+    font-size: 9pt;
+    color: #ddd;
+  }
+  .cover .classification {
+    display: inline-block;
+    border: 1px solid #c0392b;
+    color: #c0392b;
+    font-size: 7pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 5px 14px;
+    margin-top: 40px;
+  }
+
+  /* ===== BODY STYLES ===== */
+  h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 28px 0 12px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c0392b;
+  }
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 18px 0 6px 0;
+  }
+  h4 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #555;
+    margin: 12px 0 4px 0;
+  }
+  p { margin: 6px 0; }
+
+  /* BLUF box */
+  .bluf-box {
+    background: linear-gradient(135deg, #f8f4f0, #fefcf9);
+    border-left: 4px solid #c0392b;
+    padding: 14px 18px;
+    margin: 0 0 20px 0;
+    font-size: 9.5pt;
+    line-height: 1.6;
+  }
+  .bluf-box .bluf-label {
+    font-size: 7pt;
+    color: #c0392b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  /* Key Judgments */
+  .kj-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 12px 0;
+  }
+  .kj-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    page-break-inside: avoid;
+  }
+  .kj-item:last-child { border-bottom: none; }
+  .kj-item .kj-id {
+    font-size: 7pt;
+    color: #c0392b;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 50px;
+    display: inline-block;
+  }
+  .kj-item .kj-text {
+    font-size: 9pt;
+    color: #222;
+  }
+  .kj-item .kj-meta {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 2px;
+  }
+  .kj-item .kj-conf {
+    display: inline-block;
+    background: #f0f4f8;
+    padding: 1px 6px;
+    border-radius: 2px;
+    font-size: 6.5pt;
+    color: #2c3e50;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 8pt;
+  }
+  thead th {
+    background: #1a1a2e;
+    color: white;
+    padding: 5px 8px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.5px;
+  }
+  tbody td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  tbody tr:nth-child(even) td { background: #fafafa; }
+
+  /* Images */
+  .img-container {
+    text-align: center;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .img-container img {
+    max-width: 100%;
+    max-height: 200mm;
+  }
+  .img-container .caption {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  /* Info/sidebar boxes */
+  .info-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+    font-size: 8.5pt;
+  }
+  .info-box h4 { margin-top: 0; font-size: 9pt; color: #1a1a2e; }
+
+  /* Threat matrix */
+  .threat-matrix td { font-size: 8pt; }
+  .risk-critical { color: #c0392b; font-weight: bold; }
+  .risk-high { color: #e67e22; font-weight: bold; }
+  .risk-moderate { color: #f1c40f; }
+
+  /* Indicator badges */
+  .badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 2px;
+    font-size: 6.5pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .badge-red { background: #e74c3c; color: white; }
+  .badge-amber { background: #e67e22; color: white; }
+  .badge-green { background: #27ae60; color: white; }
+
+  /* Scenarios */
+  .scenario-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    margin: 6px 0;
+    page-break-inside: avoid;
+  }
+  .scenario-box .sc-name { font-weight: bold; font-size: 9pt; color: #1a1a2e; }
+  .scenario-box .sc-prob { font-size: 7.5pt; color: #c0392b; }
+
+  /* Dissent box */
+  .dissent-box {
+    background: #fef5ee;
+    border: 1px solid #f5d5b0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+  }
+
+  /* Gaps */
+  .gaps-box {
+    background: #fafaf5;
+    border: 1px solid #e8e0c8;
+    padding: 10px 14px;
+    margin: 10px 0;
+  }
+
+  /* ACH evidence */
+  .ach-grid {
+    margin: 10px 0;
+  }
+  .ach-grid .hyp { margin: 4px 0; padding: 3px 0; }
+  .ach-grid .hyp-label { font-weight: bold; color: #1a1a2e; }
+
+  /* Recommendations */
+  .rec-block { margin: 12px 0; }
+  .rec-header {
+    padding: 5px 10px;
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .rec-p1 { background: #c0392b; }
+  .rec-p2 { background: #e67e22; }
+  .rec-p3 { background: #2c3e50; }
+
+  .rec-block ul { margin: 4px 0 10px 18px; padding: 0; }
+  .rec-block li { margin: 2px 0; font-size: 8.5pt; }
+
+  .page-break { page-break-before: always; }
+
+  .source-summary {
+    font-size: 7.5pt;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    margin-top: 20px;
+  }
+  .footer-text {
+    font-size: 7pt;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+  }
+
+  /* HR dividers */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="brand">TREVOR Intelligence</div>
+  <h1>Global Security <strong>Assessment</strong></h1>
+  <div class="subtitle">Operation Epic Fury · Strategic Risk Analysis · 1 May 2026</div>
+  <hr style="width: 60px; border-color: #c0392b; margin: 30px 0;">
+  <div class="classification">CONFIDENTIAL — CLIENT USE ONLY</div>
+  <div class="meta-grid">
+    <div class="col">
+      <div class="label">Date</div>
+      <div class="value">{{ generated_at }}</div>
+    </div>
+    <div class="col">
+      <div class="label">Methodology</div>
+      <div class="value">TREVOR v2 · 11 SATs · 6 Calibrations</div>
+    </div>
+    <div class="col">
+      <div class="label">Classification</div>
+      <div class="value">Confidential — Client Use Only</div>
+    </div>
+  </div>
+</div>
+
+<!-- BLUF -->
+<div class="bluf-box">
+  <div class="bluf-label">▼ Bottom Line Up Front</div>
+  {{ flash_alert }}
+</div>
+
+<!-- KEY JUDGMENTS -->
+<h2>1. Key Judgments</h2>
+<div class="kj-grid">
+{% for kj in key_judgments %}
+<div class="kj-item">
+  <span class="kj-id">{{ kj.id }}</span>
+  <span class="kj-text">{{ kj.judgment }}</span>
+  <div class="kj-meta">
+    <span class="kj-conf">{{ kj.confidence }}</span> &nbsp;·&nbsp; Source: {{ kj.source_rating }}
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<!-- SITUATION OVERVIEW -->
+<h2>2. Situation Overview</h2>
+<p>{{ situation_overview }}</p>
+
+<!-- MAP: HORMUZ BLOCKADE -->
+<div class="img-container">
+  <img src="images/map-infographic-hormuz.png" alt="Strait of Hormuz Blockade Zone">
+  <div class="caption">Map 1: Strait of Hormuz — Blockade Enforcement Zone · 1 May 2026</div>
+</div>
+
+<!-- MAP: MILITIA STRIKES -->
+<div class="img-container">
+<!-- PMESII-PT -->
+<div class="page-break"></div>
+<h2>3. PMESII-PT Environmental Scan</h2>
+{% for dim, text in pmesii_pt.items() %}
+<h4>{{ dim|replace('_', ' ') }}</h4>
+<p>{{ text }}</p>
+{% endfor %}
+
+<!-- SCENARIO TREE -->
+<div class="img-container">
+  <img src="images/infographic-strategic-flow.png" alt="Scenario Decision Tree">
+  <div class="caption">Figure 1: Scenario Decision Tree — Operation Epic Fury Pathways</div>
+</div>
+
+<!-- ACH -->
+<div class="page-break"></div>
+<h2>4. Analysis of Competing Hypotheses</h2>
+<div class="ach-grid">
+{% for h in ach_matrix.hypotheses %}
+<div class="hyp"><span class="hyp-label">{{ loop.index }}.</span> {{ h }}</div>
+{% endfor %}
+</div>
+<h4>Diagnostic Evidence</h4>
+<ol>
+{% for e in ach_matrix.evidence %}
+  <li style="margin: 2px 0;">{{ e }}</li>
+{% endfor %}
+</ol>
+<p><strong>Narrative:</strong> {{ ach_matrix.matrix_narrative }}</p>
+
+<!-- SCENARIOS -->
+<h2>5. Scenario Generation</h2>
+{% for sc in scenarios %}
+<div class="scenario-box">
+  <div class="sc-name">{{ sc.name }}</div>
+  <div class="sc-prob">{{ sc.probability }}</div>
+  <p style="margin: 4px 0;"><strong>Description:</strong> {{ sc.description }}</p>
+  <p style="margin: 2px 0;"><strong>Timeline:</strong> {{ sc.timeline }}</p>
+</div>
+{% endfor %}
+
+<!-- THREAT MATRIX -->
+<h2>6. Threat Assessment Matrix</h2>
+<div class="img-container" style="float: right; width: 45%; margin-left: 12px;">
+  <img src="images/infographic-threat-landscape.png" alt="Threat Actor Quadrant">
+  <div class="caption">Figure 2: Intent × Capability Assessment</div>
+</div>
+<table class="threat-matrix">
+  <thead><tr><th>Actor</th><th>Intent</th><th>Capability</th><th>Opportunity</th><th>Risk</th></tr></thead>
+  <tbody>
+  {% for a in threat_matrix.actors %}
+  <tr>
+    <td><strong>{{ a.actor }}</strong></td>
+    <td>{{ a.intent }}</td>
+    <td>{{ a.capability }}</td>
+    <td>{{ a.opportunity }}</td>
+    <td class="risk-{{ a.overall_risk|lower }}">{{ a.overall_risk }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<div style="clear:both;"></div>
+
+<!-- MAP: GLOBAL IMPACT -->
+<h2>7. Global Energy Impact</h2>
+<div class="img-container">
+<!-- MAP: UKRAINE -->
+<h2>8. Ukraine Strategic Adaptation</h2>
+<div class="img-container">
+<!-- RED TEAM -->
+<div class="page-break"></div>
+<h2>9. Red Team Analysis</h2>
+<p>{{ red_team }}</p>
+
+<!-- I&W -->
+<h2>10. Indicators & Warnings</h2>
+<table>
+  <thead><tr><th>Indicator</th><th>Track</th><th>Status</th></tr></thead>
+  <tbody>
+  {% for iw in indicators_warnings %}
+  <tr>
+    <td>{{ iw.indicator }}</td>
+    <td>{{ iw.track }}</td>
+    <td>
+      {% set s = iw.status|lower %}
+      {% if s in ['triggered', 'active', 'advancing'] %}
+        <span class="badge badge-red">{{ iw.status }}</span>
+      {% elif s in ['watch', 'potential', 'elevated'] %}
+        <span class="badge badge-amber">{{ iw.status }}</span>
+      {% else %}
+        <span class="badge badge-green">{{ iw.status }}</span>
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<!-- I&W Dashboard -->
+<div class="img-container">
+  <img src="images/infographic-iw-summary.png" alt="I&W Dashboard">
+  <div class="caption">Figure 3: Indicators & Warnings Dashboard — All Tracks</div>
+</div>
+
+<!-- OIL PRICE -->
+<div class="img-container">
+  <img src="images/infographic-oil-price.png" alt="Oil Price Trajectory">
+  <div class="caption">Figure 4: Brent Crude Oil Price Trajectory — Jan-May 2026</div>
+</div>
+
+<!-- INTELLIGENCE GAPS -->
+<h2>11. Intelligence Gaps</h2>
+<div class="gaps-box">
+  <ol>
+  {% for g in intelligence_gaps %}
+    <li style="margin: 3px 0;">{{ g }}</li>
+  {% endfor %}
+  </ol>
+</div>
+
+<!-- DISSENT -->
+<h2>12. Dissenting View</h2>
+<div class="dissent-box">
+  <p>{{ dissenting_view }}</p>
+</div>
+
+<!-- RECOMMENDATIONS -->
+<div class="page-break"></div>
+<h2>13. Recommendations</h2>
+<div class="rec-block">
+  <div class="rec-header rec-p1">PRIORITY 1 — IMMEDIATE (0-12 HOURS)</div>
+  <ul>
+  {% for r in recommendations.immediate %}
+    <li>{{ r }}</li>
+  {% endfor %}
+  </ul>
+</div>
+<div class="rec-block">
+  <div class="rec-header rec-p2">PRIORITY 2 — WITHIN 72 HOURS</div>
+  <ul>
+  {% for r in recommendations.within_72hrs %}
+    <li>{{ r }}</li>
+  {% endfor %}
+  </ul>
+</div>
+<div class="rec-block">
+  <div class="rec-header rec-p3">PRIORITY 3 — WITHIN 30 DAYS</div>
+  <ul>
+  {% for r in recommendations.within_30days %}
+    <li>{{ r }}</li>
+  {% endfor %}
+  </ul>
+</div>
+
+<!-- ASSESSMENT REVIEW -->
+<h2>14. Assessment Review</h2>
+<p>{{ assessment_review }}</p>
+
+<!-- SOURCE SUMMARY -->
+<h2>15. Source Summary</h2>
+<div class="source-summary">
+  <p>{{ source_summary }}</p>
+</div>
+
+<div class="footer-text">
+  {{ footer }}
+</div>
+</body>
+</html>

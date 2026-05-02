@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 1.6cm 1.6cm 2cm 1.6cm;
+    @bottom-left {
+      content: "TREVOR Intelligence Assessment  ·  1 May 2026";
+      font-size: 6.5pt;
+      color: #999;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 6.5pt;
+      color: #999;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+  }
+  @page :first {
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 9pt;
+    line-height: 1.55;
+    color: #222;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover {
+    page-break-after: always;
+    background: #1a1a2e;
+    color: white;
+    padding: 100px 60px 60px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover:before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(192,57,43,0.15), transparent);
+    border-radius: 50%;
+  }
+  .cover .brand {
+    font-size: 8pt;
+    color: #c0392b;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .cover h1 {
+    font-size: 26pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+    line-height: 1.15;
+  }
+  .cover h1 strong { font-weight: 700; color: #c0392b; }
+  .cover .subtitle {
+    font-size: 13pt;
+    color: #bbb;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .cover .meta-grid {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .cover .meta-grid .col {
+    flex: 1;
+  }
+  .cover .meta-grid .label {
+    font-size: 6.5pt;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .cover .meta-grid .value {
+    font-size: 9pt;
+    color: #ddd;
+  }
+  .cover .classification {
+    display: inline-block;
+    border: 1px solid #c0392b;
+    color: #c0392b;
+    font-size: 7pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 5px 14px;
+    margin-top: 40px;
+  }
+
+  /* ===== BODY STYLES ===== */
+  h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 28px 0 12px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c0392b;
+  }
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 18px 0 6px 0;
+  }
+  h4 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #555;
+    margin: 12px 0 4px 0;
+  }
+  p { margin: 6px 0; }
+
+  /* BLUF box */
+  .bluf-box {
+    background: linear-gradient(135deg, #f8f4f0, #fefcf9);
+    border-left: 4px solid #c0392b;
+    padding: 14px 18px;
+    margin: 0 0 20px 0;
+    font-size: 9.5pt;
+    line-height: 1.6;
+  }
+  .bluf-box .bluf-label {
+    font-size: 7pt;
+    color: #c0392b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  /* Key Judgments */
+  .kj-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 12px 0;
+  }
+  .kj-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    page-break-inside: avoid;
+  }
+  .kj-item:last-child { border-bottom: none; }
+  .kj-item .kj-id {
+    font-size: 7pt;
+    color: #c0392b;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 50px;
+    display: inline-block;
+  }
+  .kj-item .kj-text {
+    font-size: 9pt;
+    color: #222;
+  }
+  .kj-item .kj-meta {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 2px;
+  }
+  .kj-item .kj-conf {
+    display: inline-block;
+    background: #f0f4f8;
+    padding: 1px 6px;
+    border-radius: 2px;
+    font-size: 6.5pt;
+    color: #2c3e50;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 8pt;
+  }
+  thead th {
+    background: #1a1a2e;
+    color: white;
+    padding: 5px 8px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 7.5pt;
+    letter-spacing: 0.5px;
+  }
+  tbody td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  tbody tr:nth-child(even) td { background: #fafafa; }
+
+  /* Images */
+  .img-container {
+    text-align: center;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .img-container img {
+    max-width: 100%;
+    max-height: 200mm;
+  }
+  .img-container .caption {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  /* Info/sidebar boxes */
+  .info-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+    font-size: 8.5pt;
+  }
+  .info-box h4 { margin-top: 0; font-size: 9pt; color: #1a1a2e; }
+
+  /* Threat matrix */
+  .threat-matrix td { font-size: 8pt; }
+  .risk-critical { color: #c0392b; font-weight: bold; }
+  .risk-high { color: #e67e22; font-weight: bold; }
+  .risk-moderate { color: #f1c40f; }
+
+  /* Indicator badges */
+  .badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 2px;
+    font-size: 6.5pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .badge-red { background: #e74c3c; color: white; }
+  .badge-amber { background: #e67e22; color: white; }
+  .badge-green { background: #27ae60; color: white; }
+
+  /* Scenarios */
+  .scenario-box {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+    margin: 6px 0;
+    page-break-inside: avoid;
+  }
+  .scenario-box .sc-name { font-weight: bold; font-size: 9pt; color: #1a1a2e; }
+  .scenario-box .sc-prob { font-size: 7.5pt; color: #c0392b; }
+
+  /* Dissent box */
+  .dissent-box {
+    background: #fef5ee;
+    border: 1px solid #f5d5b0;
+    padding: 10px 14px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+  }
+
+  /* Gaps */
+  .gaps-box {
+    background: #fafaf5;
+    border: 1px solid #e8e0c8;
+    padding: 10px 14px;
+    margin: 10px 0;
+  }
+
+  /* ACH evidence */
+  .ach-grid {
+    margin: 10px 0;
+  }
+  .ach-grid .hyp { margin: 4px 0; padding: 3px 0; }
+  .ach-grid .hyp-label { font-weight: bold; color: #1a1a2e; }
+
+  /* Recommendations */
+  .rec-block { margin: 12px 0; }
+  .rec-header {
+    padding: 5px 10px;
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .rec-p1 { background: #c0392b; }
+  .rec-p2 { background: #e67e22; }
+  .rec-p3 { background: #2c3e50; }
+
+  .rec-block ul { margin: 4px 0 10px 18px; padding: 0; }
+  .rec-block li { margin: 2px 0; font-size: 8.5pt; }
+
+  .page-break { page-break-before: always; }
+
+  .source-summary {
+    font-size: 7.5pt;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    margin-top: 20px;
+  }
+  .footer-text {
+    font-size: 7pt;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+  }
+
+  /* HR dividers */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="brand">TREVOR Intelligence</div>
+  <h1>Global Security <strong>Assessment</strong></h1>
+  <div class="subtitle">Operation Epic Fury · Strategic Risk Analysis · 1 May 2026</div>
+  <hr style="width: 60px; border-color: #c0392b; margin: 30px 0;">
+  <div class="classification">CONFIDENTIAL — CLIENT USE ONLY</div>
+  <div class="meta-grid">
+    <div class="col">
+      <div class="label">Date</div>
+      <div class="value">1 May 2026 22:00 UTC</div>
+    </div>
+    <div class="col">
+      <div class="label">Methodology</div>
+      <div class="value">TREVOR v2 · 11 SATs · 6 Calibrations</div>
+    </div>
+    <div class="col">
+      <div class="label">Classification</div>
+      <div class="value">Confidential — Client Use Only</div>
+    </div>
+  </div>
+</div>
+
+<!-- BLUF -->
+<div class="bluf-box">
+  <div class="bluf-label">▼ Bottom Line Up Front</div>
+  The global security environment has entered its most dangerous period since the 1973 Yom Kippur War, driven by the active US-Israeli war against Iran (Operation Epic Fury, commenced 28 February 2026), concurrent Russian-Ukrainian attrition warfare entering its fifth year, and a sharp escalation in US-EU trade hostilities. The Strait of Hormuz — conduit for 20 million barrels per day of crude — is under contested US naval blockade (13 April), with oil prices 50% above pre-war levels and rising. The United States and Iran are engaged in a fragile pause as the 60-day War Powers Resolution deadline lands today, 1 May 2026; President Trump has declared hostilities 'terminated' in a letter to Congress citing a ceasefire, yet Iran's IRGC simultaneously threatens 'long and painful strikes' on US regional positions. Concurrently, China is exploiting US strategic absorption in the Middle East to accelerate creeping militarisation in the Taiwan Strait and South China Sea, while Russia's collapsing spring offensive and cratering oil-export capacity (down ~20%) are driving Moscow toward dangerous escalation-or-negotiation decision points ahead of the 9 May Victory Day. Clients should activate crisis management protocols, stress-test energy-price-exposed supply chains, and prepare for the 7–14 day window in which multiple theaters may compound simultaneously. This assessment applies the full TREVOR v2 methodology with six calibration corrections from the Iran Campaign Accuracy Review.
+</div>
+
+<!-- KEY JUDGMENTS -->
+<h2>1. Key Judgments</h2>
+<div class="kj-grid">
+
+<div class="kj-item">
+  <span class="kj-id">KJ-1</span>
+  <span class="kj-text">The US-Iran war ceasefire, declared by President Trump on 1 May 2026 under War Powers Resolution pressure, is a temporary operational pause rather than a durable settlement. Iran retains intact nuclear latency capability, IRGC command-and-control, and Hormuz disruption capacity. The probability of resumed kinetic hostilities within 90 days is Likely (63–80%).</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Likely (63-80%)</span> &nbsp;·&nbsp; Source: A-2
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-2</span>
+  <span class="kj-text">The Strait of Hormuz will remain a contested chokepoint through at least Q3 2026. The US naval blockade (CENTCOM, 13 April) has turned back 45 commercial vessels; Iranian AIS-spoofing and dark-shipping tactics have enabled approximately 52 vessel passages in 72 hours according to Iranian claims (unverified). Full Hormuz closure — even partial and intermittent — will sustain oil prices above $95/bbl through summer 2026, with US Energy Secretary Wright confirming no rapid post-conflict price drop is expected.</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Highly likely (80-93%)</span> &nbsp;·&nbsp; Source: B-2
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-3</span>
+  <span class="kj-text">Russia's spring 2026 offensive in eastern Ukraine has failed to achieve operational breakthrough and is collapsing under unsustainable personnel losses, while Ukrainian deep-strike drone campaign against Russian oil export infrastructure has reduced Russian crude export capacity by approximately 1 million barrels per day (20%). Russian 2026 GDP growth has been revised to 0.5–0.7% by the Kremlin-linked CMAKP institute. This dual pressure makes a Russian Victory Day (9 May) ceasefire proposal Likely (63–80%), but it will be tactical and conditional — not a pathway to settlement.</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Likely (63-80%)</span> &nbsp;·&nbsp; Source: B-2
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-4</span>
+  <span class="kj-text">China is actively exploiting the US strategic distraction in the Iran theater and political-economic strain from the newly announced 25% EU auto tariff (Section 232, 1 May 2026) to accelerate creeping militarisation across the First Island Chain. The deployment of an amphibious warship to the South China Sea and an aircraft carrier through the Taiwan Strait following Taiwan's Itu Aba drills signals Beijing's willingness to test US resolve when it perceives Washington as overstretched. The probability of a serious Taiwan Strait incident within 12 months is Likely (63–80%).</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Likely (63-80%)</span> &nbsp;·&nbsp; Source: A-1
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-5</span>
+  <span class="kj-text">The cumulative economic shocks — 50% oil price increase from Hormuz disruption, 25% US tariffs on EU auto imports, and cascading effects on LNG, petrochemicals, and shipping insurance — will push global inflation 1.5–2.5 percentage points above baseline forecasts through Q4 2026, with US inflation already at 3.3% and EU auto sector facing €500–600 million/month in lost savings. The probability of at least one G7 economy entering technical recession by Q1 2027 is Highly Likely (80–93%).</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Highly likely (80-93%)</span> &nbsp;·&nbsp; Source: A-2
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-6</span>
+  <span class="kj-text">Chinese state-sponsored APT activity — specifically Volt Typhoon (critical infrastructure botnet) and Salt Typhoon (telecommunications breaches affecting 200+ organizations across 80 countries) — represents the most significant cyber-espionage threat to US and allied critical infrastructure in 2026. Salt Typhoon's exfiltration of 1,462 configuration files from 70 government entities constitutes a pre-positioning for potential disruptive cyber operations if the US-China relationship deteriorates further over Taiwan or trade.</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Highly likely (80-93%)</span> &nbsp;·&nbsp; Source: A-1
+  </div>
+</div>
+
+<div class="kj-item">
+  <span class="kj-id">KJ-7</span>
+  <span class="kj-text">The Sahel-Horn of Africa terrorism nexus is intensifying, with documented Houthi weapons transfers (drones, IEDs) to Al Shabaab via Gulf of Aden routes, concurrent with ISIS-GS and JNIM territorial expansion across Mali, Niger, and Burkina Faso. The UK raising its terrorism threat level to 'severe' on 30 April 2026 — citing both Islamist and extreme right-wing threats — signals that downstream terrorism risk to Western homelands from these upstream conflicts is escalating, not contained.</span>
+  <div class="kj-meta">
+    <span class="kj-conf">Likely (63-80%)</span> &nbsp;·&nbsp; Source: B-3
+  </div>
+</div>
+
+</div>
+
+<!-- SITUATION OVERVIEW -->
+<h2>2. Situation Overview</h2>
+<p>1 May 2026 represents a convergence point for multiple security crises that have been developing along separate trajectories but are now interacting through energy markets, alliance politics, and adversary opportunism. The US-Israeli war against Iran (Operation Epic Fury), launched 28 February 2026 after failed post-strike negotiations to dismantle Iran's nuclear program, has entered its 62nd day. US and Israeli airstrikes in early 2025 damaged but did not destroy Iran's nuclear infrastructure; Iran's rejection of dismantlement demands triggered the February 2026 war. The conflict has followed a pattern: US airpower failed to achieve capitulation (consistent with historical precedent from Vietnam, Iraq, and Afghanistan); Iran retaliated by disrupting the Strait of Hormuz beginning 2 March 2026; oil prices surged 50%; and the US imposed a naval blockade on 13 April 2026 under CENTCOM's Operation Epic Fury. Today, the 60-day War Powers Resolution clock expires. President Trump has declared hostilities 'terminated' in a letter to Congress, citing a ceasefire and no recent exchange of fire. However, Iran's IRGC simultaneously threatens 'long and painful strikes,' the US Navy has just signed a $100M AI mine-hunting contract for Hormuz operations, and 45 commercial vessels have been turned back by CENTCOM enforcement. A US-China summit scheduled for May 2026 — with China potentially mediating an Iran settlement in exchange for US trade concessions — is now the most significant diplomatic variable. In Ukraine, Russia's spring 2026 offensive has produced no operational breakthroughs, with intensified but unsuccessful infantry assaults near Kostyantynivka, Pokrovsk, and Novopavlivka. Ukraine's long-range drone campaign against Russian oil infrastructure has achieved disproportionate strategic effect: export capacity reduced by ~1 million bpd, refinery throughput at 2009 lows, GDP growth forecast halved to 0.5–0.7%. Putin proposed a Victory Day (9 May) ceasefire via a Trump call on 29 April; Zelenskyy dismissed it as propaganda. Russia's Security Council Deputy Medvedev and Foreign Minister Lavrov have reasserted maximalist war aims. In East Asia, Taiwan's ocean affairs minister visited Itu Aba (Taiping Island) for humanitarian drills on 1 May, triggering Chinese naval deployments including an amphibious warship and aircraft carrier transit. The largest-ever US-Philippines Balikatan exercises have added to the security-dilemma dynamic. Economically, President Trump announced 25% tariffs on EU cars and trucks under Section 232 on 1 May, directly challenging the 2025 Turnberry Agreement that capped most EU goods at 10–15%. The combined energy and trade shocks are pushing US inflation (3.3% in March) and global economic vulnerability to levels not seen since the 2008 financial crisis. North Korea continues its nuclear-missile buildup with new theater launch platforms tested on 15 April. Pakistan commissioned its first Chinese-built Hangor-class submarine, deepening the China-Pakistan 'threshold alliance.' The UK raised its terrorism threat level to 'severe' on 30 April. The Sahel deteriorates as ISIS and JNIM expand territorial control. This is not a collection of discrete crises but an interconnected security ecosystem where energy markets transmit shocks across theaters, alliance credibility is being tested simultaneously in Europe (NATO), the Middle East (US-Israel-Gulf), and the Indo-Pacific (US-Philippines-Japan-Taiwan), and adversaries are actively coordinating exploitation of US strategic bandwidth constraints.</p>
+
+<!-- MAP: HORMUZ BLOCKADE -->
+<div class="img-container">
+  <img src="images/map-infographic-hormuz.png" alt="Strait of Hormuz Blockade Zone">
+  <div class="caption">Map 1: Strait of Hormuz — Blockade Enforcement Zone · 1 May 2026</div>
+</div>
+
+<!-- MAP: MILITIA STRIKES -->
+<div class="img-container">
+<!-- PMESII-PT -->
+<div class="page-break"></div>
+<h2>3. PMESII-PT Environmental Scan</h2>
+
+<h4>political</h4>
+<p>The global political order is fragmenting along three axes simultaneously: (1) US unilateralism under Trump — the Iran war was launched without UN Security Council authorization and the 25% EU auto tariff under Section 232 unilaterally challenges the Turnberry Agreement; (2) NATO cohesion strain — Trump has threatened withdrawal over European support for the Iran war, spurring European Security Council proposals and €90 billion EU defense loans; (3) great-power realignment — the US-China summit scheduled for May 2026 positions Beijing as potential mediator in the Iran conflict, while Russia and Iran deepen their 'anti-Western' alignment. Iran's political structure has absorbed the Supreme Leader transition (to Ayatollah Mojtaba Khamenei) without fragmentation; the IRGC has consolidated internal control through violent suppression of dissent. In Ukraine, Zelenskyy maintains parliamentary support despite war fatigue. The UK's raising of the terror threat level to 'severe' on 30 April signals domestic political vulnerability to imported conflict. UAE's exit from OPEC and deepening US-Israel alignment fractures Gulf Sunni coordination.</p>
+
+<h4>military</h4>
+<p>The US military is operationally stretched across three theaters simultaneously: CENTCOM (Iran blockade, Hormuz mine clearance, regional force protection), EUCOM (Ukraine support, NATO reassurance), and INDOPACOM (China deterrence, Balikatan exercises). Key indicators: US Navy $100M AI mine-hunting contract for Hormuz (1 May); 45 vessels turned back by CENTCOM blockade; China's amphibious warship + carrier deployment to South China Sea/Taiwan Strait; Russia's spring offensive producing no breakthroughs with heavy casualties — units shifting to individual infantry assaults with paper maps; Ukraine's F-16 mobile simulators delivered; North Korea tested new theater launch platforms + anti-ship cruise missiles from new destroyer (15 April); India signed $1.2B deal for 300 Russian R-37M ultra-long-range missiles (Mach 6, 300–400 km range) to counter China-backed Pakistan; Pakistan commissioned first Hangor-class AIP submarine from China; 14 IRGC members killed in UXO clearance explosion in Zanjan province, Iran. Force readiness concerns: US Navy mine-countermeasure surge capacity, precision-guided munition stockpile depletion rates, and INDOPACOM carrier availability during CENTCOM concentration.</p>
+
+<h4>economic</h4>
+<p>Three simultaneous economic shocks are compounding: (1) Energy price shock — oil up 50% from pre-Iran-war levels, Strait of Hormuz throughput disrupted, US Energy Secretary confirms no rapid post-conflict price decline; (2) Trade tariff shock — Trump's 25% EU auto tariff threatens €1.7 trillion annual US-EU trade relationship, EU automakers face €500–600M/month cost increases; (3) Russian supply disruption — Ukrainian drone strikes cut Russian crude exports by ~1M bpd, forcing production cuts, with Russian GDP growth revised to 0.5–0.7% (halved from earlier forecasts). Second-order effects: LNG prices rising (Europe competing for non-Hormuz supply), petrochemical feedstock costs increasing, shipping insurance premiums surging for Gulf transits. Third-order effects: US inflation at 3.3% (March 2026), Russia inflation at 5.3–5.6%, ruble weakening to 73–77/USD, global consumer price increases, airline fuel surcharges, food cost inflation in import-dependent economies. Russian refinery throughput at lowest since 2009. Sberbank reports no clear signs of economic improvement. EU economy facing simultaneous energy-cost and tariff headwinds. Chinese economy pressured by both oil import costs and potential US tariff concessions in summit negotiations. UAE exit from OPEC complicates production coordination.</p>
+
+<h4>social</h4>
+<p>US domestic war fatigue is emerging as a critical variable — the Iran war is 'widely unpopular across the ideological spectrum' per Geopolitical Futures analysis, echoing Vietnam/Iraq/Afghanistan patterns. Trump's political vulnerability increases the longer the Hormuz crisis persists, particularly with rising pump prices. In Iran, large-scale pre-war protests were violently suppressed by the IRGC; a 40-year-old man detained for Starlink use died after alleged beating by security forces, and Trump expressed displeasure with weapons deliveries to Kurdish intermediaries during protests — indicating reduced US commitment to internal regime-change strategy. In Russia, economic deterioration is not yet translating to visible social unrest, but Sberbank data shows declining consumption and investment. In Europe, populist ambivalence toward Moscow threats persists alongside defense spending increases. The US Embassy in London issued a security alert to Americans following the UK terror threat level increase, warning of both Islamist and extreme right-wing terrorism. Anti-immigration sentiment in Europe is being fueled by Sahel-origin migration pressure. Ukraine's civilian population faces continued infrastructure stress from Russian drone barrages (206 drones in a single overnight launch).</p>
+
+<h4>information</h4>
+<p>The information environment is characterized by three competing narratives that cannot all be simultaneously true: (1) US narrative — the blockade is effective, 45 vessels turned back, Iran economy 'crashing,' ceasefire holding, war effectively terminated per Trump letter to Congress; (2) Iranian narrative — 52 vessels broke the blockade in 72 hours using AIS-spoofing and dark-shipping, resistance is succeeding, nuclear capability will be preserved, US forces 'belong at the bottom of the Persian Gulf'; (3) ambiguous verification environment — electronic interference and restricted visibility in the Gulf make independent satellite verification difficult, creating a 'fog of war' that both sides exploit. Putin's Victory Day ceasefire proposal is assessed as information operations designed to position Russia as peace-seeker while retaining maximalist demands. Zelenskyy's swift rejection framing it as 'propaganda' demonstrates Ukrainian information-operations competence. Chinese state media frames South China Sea militarisation as 'defensive response to provocations.' The Iran Starlink arrest-and-death incident is circulating in diaspora media. Russian state media minimizes the economic impact of Ukrainian drone strikes while Kremlin-linked think tanks publish starkly pessimistic forecasts — a divergence that may indicate internal information-management tension.</p>
+
+<h4>infrastructure</h4>
+<p>Critical infrastructure vulnerability is most acute in three domains. Energy infrastructure: Ukrainian drone strikes have damaged Russian Baltic ports (Ust-Luga, Primorsk), the Sheskharis oil terminal in Novorossiysk (Black Sea), and the Tuapse refinery (offline since 16 April), reducing Russian refinery throughput to 2009 lows; Iranian strikes on regional oil facilities have damaged Gulf energy infrastructure; the Druzhba pipeline remains vulnerable to Ukrainian disruption. Maritime infrastructure: Strait of Hormuz — 20% of global oil transit — is a contested chokepoint; the Bab al-Mandeb Strait faces Houthi closure threats; the Port of Nagoya (Japan) was paralyzed by ransomware in 2026, demonstrating cyber-physical infrastructure convergence risk. Digital infrastructure: Salt Typhoon's breach of 9 US telecoms and exfiltration of configuration files from 70 government entities represents infrastructure pre-positioning; Volt Typhoon's embedding in 30% of targeted Cisco routers within 37 days demonstrates critical-infrastructure botnet capability; the US Army National Guard systems were breached by Chinese hackers for network configurations. NATO's Defence Planning Process is being updated to incorporate emerging technologies following Hedgehog 2025 exercises which exposed Western drone-warfare shortcomings.</p>
+
+<h4>physical environment</h4>
+<p>The Strait of Hormuz (21 nautical miles at narrowest point, Iranian territorial waters on one side, Omani on the other) remains the single most critical geographical chokepoint in global security. Iran's coastline along the northern Gulf provides natural basing for anti-ship missiles, mine-laying, and small-boat swarming. The South China Sea's Itu Aba (Taiping Island) — the largest natural feature in the Spratlys, with an airstrip and fresh water — is the focus of multi-claimant contestation (Taiwan, China, Vietnam, Philippines) that makes any incident there escalatory by default due to the density of overlapping claims. Climate and weather factors: typhoon season in the Western Pacific will stress Taiwan's Itu Aba humanitarian-drill rationale; spring thaw in Ukraine is enabling maneuver operations; summer 2026 heat will increase energy demand for cooling, compounding the oil-price stress. Environmental hazards: the Tuapse refinery strikes have produced 'oil rains' in Perm, Russia — indicating downwind environmental contamination from infrastructure strikes. Desertification and water scarcity in the Sahel are being exploited by jihadist groups as governance-recruitment tools, documented by GNET Research as 'the darkest shade of green' — strategic weaponisation of environmental governance.</p>
+
+<h4>time</h4>
+<p>Time is the single most critical dimension in this assessment, and it cuts asymmetrically across actors. For the United States: time is a liability — the 60-day War Powers clock expired today (1 May), domestic war fatigue will increase with each week of elevated pump prices, and the 2026 midterm election cycle is beginning to exert political gravity on decision-making. The temporal compression multiplier (Correction 1) is ACTIVE: three I&W indicators have triggered simultaneously (Hormuz blockade contested, EU tariff escalation, UK terror threat level raised), compressing assessed timelines by 75%. For Iran: time is an asset — the regime believes prolonged economic pain will fracture US domestic will faster than Iranian social cohesion, a calculation consistent with the Vietnam/Iraq/Afghanistan pattern. The succession to Ayatollah Mojtaba Khamenei has consolidated without visible challenge, removing the regime-change vulnerability window that the US may have anticipated. For Russia: time is running out — the spring offensive window is closing without gains, oil-export capacity is degrading faster than can be repaired, and the 9 May Victory Day creates a politically salient decision point for either escalation or ceasefire posture. For China: time is an opportunity — the longer US forces are concentrated in CENTCOM, the more Beijing can normalize its military presence in the South China Sea and Taiwan Strait without triggering a decisive US response. For Ukraine: time requires continued Western support — €90 billion EU loans and bilateral deals provide runway, but US political attention is divided across three theaters. The Ukraine-Russia conflict enters its fifth year; the Iran war is in its third month; both timelines intersect at the US-China summit scheduled for May 2026, which may produce trade-offs across all three theaters.</p>
+
+
+<!-- SCENARIO TREE -->
+<div class="img-container">
+  <img src="images/infographic-strategic-flow.png" alt="Scenario Decision Tree">
+  <div class="caption">Figure 1: Scenario Decision Tree — Operation Epic Fury Pathways</div>
+</div>
+
+<!-- ACH -->
+<div class="page-break"></div>
+<h2>4. Analysis of Competing Hypotheses</h2>
+<div class="ach-grid">
+
+<div class="hyp"><span class="hyp-label">1.</span> H1 — Negotiated Settlement in Q3 2026: The US-Iran ceasefire holds through the US-China May summit, China brokers a deal exchanging Iranian nuclear concessions for US trade and economic relief, and a formal agreement is reached by September 2026.</div>
+
+<div class="hyp"><span class="hyp-label">2.</span> H2 — Protracted Low-Intensity Conflict: The ceasefire is operational cover for de facto Hormuz contestation continuing into 2027. Neither side achieves decisive outcome. Oil prices remain elevated but not catastrophic. Iran preserves nuclear latency. US maintains blockade posture without congressional authorization beyond War Powers constraints.</div>
+
+<div class="hyp"><span class="hyp-label">3.</span> H3 — Escalation Cascade: The ceasefire collapses within 30 days. Iran resumes attacks on Gulf oil infrastructure and US positions. The US escalates to strikes on IRGC leadership and nuclear sites. At least one other theater (Ukraine, Taiwan Strait, or North Korea) escalates simultaneously, creating a multi-front US crisis.</div>
+
+</div>
+<h4>Diagnostic Evidence</h4>
+<ol>
+
+  <li style="margin: 2px 0;">E1: Trump declared hostilities 'terminated' in letter to Congress on 1 May 2026 — consistent with H1 and H2, inconsistent with H3 in the immediate term.</li>
+
+  <li style="margin: 2px 0;">E2: Iran's IRGC simultaneously threatened 'long and painful strikes' on US positions — inconsistent with H1, consistent with H2 and H3.</li>
+
+  <li style="margin: 2px 0;">E3: US Navy signed $100M AI mine-hunting contract for Hormuz on 1 May 2026 — consistent with H2 (preparing for protracted contestation) and H3 (preparing for escalation), inconsistent with H1 (which implies rapid demilitarization).</li>
+
+  <li style="margin: 2px 0;">E4: CENTCOM reports 45 vessels turned back under blockade; Iran claims 52 vessels breached in 72 hours via AIS spoofing — consistent with H2 (contested, neither side achieving decisive control).</li>
+
+  <li style="margin: 2px 0;">E5: US-China summit scheduled for May 2026 with Iran mediation potential — consistent with H1 (diplomatic off-ramp exists), not diagnostic for H2 or H3.</li>
+
+  <li style="margin: 2px 0;">E6: Oil prices up 50% from pre-war levels; US Energy Secretary Wright says no rapid post-conflict decline expected even if war ends — consistent with H2 (sustained economic pain), inconsistent with H1's assumption of rapid normalization.</li>
+
+  <li style="margin: 2px 0;">E7: Iran has absorbed Supreme Leader succession and suppressed internal dissent without fragmentation — inconsistent with H3 assumptions about regime vulnerability to pressure, consistent with H2 (Iranian resilience).</li>
+
+  <li style="margin: 2px 0;">E8: 14 IRGC members killed in UXO clearance in Zanjan province — indicates prior US/Israeli strike effects, consistent with all three hypotheses.</li>
+
+  <li style="margin: 2px 0;">E9: Trump faces domestic political pressure — war 'widely unpopular across ideological spectrum,' rising pump prices, midterm cycle approaching — consistent with H1 (incentive to settle) but also H2 (can't sustain escalation politically).</li>
+
+  <li style="margin: 2px 0;">E10: UAE exited OPEC, deepening US-Israel alignment; Saudi-UAE tensions — consistent with H2 and H3 (regional fragmentation), inconsistent with H1 (which requires unified diplomatic coalition).</li>
+
+  <li style="margin: 2px 0;">E11: US simultaneously imposed 25% EU auto tariff on 1 May, straining alliance coordination — consistent with H2 (reduced US capacity for coalition warfare), not diagnostic for H1 vs H3.</li>
+
+</ol>
+<p><strong>Narrative:</strong> H2 — Protracted Low-Intensity Conflict — is the hypothesis most consistent with the available evidence. Of 11 diagnostic evidence items, H2 has zero clear inconsistencies, while H1 has three significant inconsistencies (E2, E3, E6) and H3 has two (E1, E9). H1 (Negotiated Settlement) is the desirable outcome but depends on Chinese mediation leverage that remains untested and Iranian willingness to trade nuclear concessions that Tehran has consistently rejected. E6 (no rapid post-conflict oil price decline) directly contradicts H1's core assumption of rapid normalization. H3 (Escalation Cascade) requires the ceasefire to collapse, but E1 (Trump's termination declaration) and E9 (domestic political constraints) suggest the US has strong incentives to avoid renewed kinetic operations, at least in the immediate term. However, H3's probability increases significantly if the US-China summit fails to produce an Iran framework OR if a Taiwan Strait incident forces US military rebalancing toward INDOPACOM before a Hormuz settlement is reached. The primary H2 assessment carries the caveat that 'protracted low-intensity' does not mean 'stable' — the Hormuz contestation could escalate suddenly if a US vessel is struck or an Iranian nuclear facility is attacked. Per Calibration Correction 5 (Hypothesis Evolution Discipline), an explicit trigger for upgrading H3 to primary is established: if (Iran resumes attacks on Gulf oil infrastructure) AND (US resumes strikes on Iranian territory) AND (oil prices breach $120/bbl), then H3 becomes primary immediately regardless of prior assessment momentum.</p>
+
+<!-- SCENARIOS -->
+<h2>5. Scenario Generation</h2>
+
+<div class="scenario-box">
+  <div class="sc-name">Most Likely</div>
+  <div class="sc-prob">Likely (63-80%)</div>
+  <p style="margin: 4px 0;"><strong>Description:</strong> Protracted Contestation (H2). The ceasefire holds as an operational pause rather than a settlement. The US maintains the naval blockade posture but limits kinetic escalation. Iran continues AIS-spoofing and dark-shipping to sustain some export revenue. The US-China May summit produces a framework for negotiation but no immediate deal. Oil prices remain in the $90–$110/bbl range through Q3 2026. Russia's economic deterioration forces a tactical ceasefire in Ukraine by summer, but without territorial concessions from either side. China continues incremental militarisation in the South China Sea and Taiwan Strait, testing but not crossing US red lines. Global economic growth slows 1–2 percentage points below pre-crisis forecasts. The US enters the 2026 midterm election with elevated inflation and an unresolved Iran commitment.</p>
+  <p style="margin: 2px 0;"><strong>Timeline:</strong> June 2026 – Q1 2027: protracted contestation across all three theaters without decisive resolution in any.</p>
+</div>
+
+<div class="scenario-box">
+  <div class="sc-name">Most Dangerous</div>
+  <div class="sc-prob">Unlikely (20-40%)</div>
+  <p style="margin: 4px 0;"><strong>Description:</strong> Multi-Theater Escalation Cascade (H3). The Iran ceasefire collapses by early June 2026 — triggered by an IRGC attack on a US vessel in the Gulf or a US/Israeli strike on an Iranian nuclear site. Iran responds with comprehensive Hormuz mining and anti-ship missile salvos, temporarily closing the strait. Oil prices spike to $150+/bbl. China, assessing the US as operationally overstretched, increases military pressure on Taiwan — potentially a blockade of Itu Aba or a live-fire exclusion zone in the Taiwan Strait. North Korea conducts a seventh nuclear test during the crisis window, exploiting US bandwidth saturation. Russia, seeing US distraction, launches a mass mobilization and renewed offensive in Ukraine timed to the crisis. The UK/EU face domestic terrorism incidents linked to the upstream conflicts. Global recession becomes near-certain. The US faces a genuine three-front military crisis for the first time since 1943.</p>
+  <p style="margin: 2px 0;"><strong>Timeline:</strong> June–September 2026: rapid escalation cascade within 4–12 weeks of ceasefire collapse.</p>
+</div>
+
+<div class="scenario-box">
+  <div class="sc-name">Best Case</div>
+  <div class="sc-prob">Unlikely (20-40%)</div>
+  <p style="margin: 4px 0;"><strong>Description:</strong> Diplomatic Off-Ramps Achieved (H1). The US-China May summit produces a substantive Iran framework: China pressures Iran to accept verified nuclear constraints (not full dismantlement) and Hormuz freedom-of-navigation guarantees, in exchange for phased US sanctions relief and tariff concessions on Chinese exports. A formal agreement is reached by September 2026. Oil prices decline to $75–$85/bbl by Q4. In Ukraine, the combination of Russian economic pressure and US diplomatic bandwidth freed from the Iran theater enables a genuine ceasefire negotiation, though territorial status remains frozen. China, incentivized by trade concessions, moderates South China Sea behavior and defers Taiwan Strait escalation. European-US trade tensions de-escalate. The global economy avoids recession. This scenario requires three low-probability events to coincide: Chinese mediation success, Iranian willingness to compromise, and Russian battlefield calculus shift — hence the Unlikely rating despite being the desirable path.</p>
+  <p style="margin: 2px 0;"><strong>Timeline:</strong> May–December 2026: diplomatic progress across all theaters, gradual economic normalization.</p>
+</div>
+
+<div class="scenario-box">
+  <div class="sc-name">Wildcard</div>
+  <div class="sc-prob">Highly Unlikely (7-20%)</div>
+  <p style="margin: 4px 0;"><strong>Description:</strong> Iranian Regime Collapse or Internal Upheaval. The economic pressure from the blockade proves more devastating than external assessments anticipate, triggering a fracturing within the IRGC or a renewed popular uprising that the security apparatus cannot fully suppress. The outcome is not a controlled transition but a chaotic fragmentation — potentially involving ethnic minority insurgencies (Baloch, Arab, Kurdish), IRGC factional infighting, and loss of positive control over some nuclear-related sites or materials. The US and Israel face the 'nightmare wildcard' of having to secure Iranian WMD-related sites in a failed-state scenario without a partner government. This scenario is rated Highly Unlikely because the IRGC's demonstrated brutality in suppressing the pre-war protests, the consolidation of the Mojtaba Khamenei succession, and the rally-around-the-flag effect of foreign attack have strengthened regime cohesion. However, the 1979 revolution itself was a low-probability event until it happened — the wildcard must be carried.</p>
+  <p style="margin: 2px 0;"><strong>Timeline:</strong> Uncertain — could trigger within weeks if blockade-induced economic pain reaches a tipping point, or could take 12+ months.</p>
+</div>
+
+
+<!-- THREAT MATRIX -->
+<h2>6. Threat Assessment Matrix</h2>
+<div class="img-container" style="float: right; width: 45%; margin-left: 12px;">
+  <img src="images/infographic-threat-landscape.png" alt="Threat Actor Quadrant">
+  <div class="caption">Figure 2: Intent × Capability Assessment</div>
+</div>
+<table class="threat-matrix">
+  <thead><tr><th>Actor</th><th>Intent</th><th>Capability</th><th>Opportunity</th><th>Risk</th></tr></thead>
+  <tbody>
+  
+  <tr>
+    <td><strong>Iran (Islamic Revolutionary Guard Corps)</strong></td>
+    <td>High</td>
+    <td>Medium</td>
+    <td>High</td>
+    <td class="risk-critical">CRITICAL</td>
+  </tr>
+  
+  <tr>
+    <td><strong>China (PLA / MSS / State-Sponsored APTs)</strong></td>
+    <td>Medium</td>
+    <td>Very High</td>
+    <td>Medium</td>
+    <td class="risk-high">HIGH</td>
+  </tr>
+  
+  <tr>
+    <td><strong>Russia (MoD / GRU / SVR)</strong></td>
+    <td>High</td>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td class="risk-high">HIGH</td>
+  </tr>
+  
+  <tr>
+    <td><strong>North Korea (KPA Strategic Force / RGB)</strong></td>
+    <td>Medium</td>
+    <td>Low-Medium</td>
+    <td>Medium</td>
+    <td class="risk-moderate-high">MODERATE-HIGH</td>
+  </tr>
+  
+  <tr>
+    <td><strong>Al Qaeda / ISIS Affiliates (Sahel & Horn of Africa)</strong></td>
+    <td>High</td>
+    <td>Low</td>
+    <td>High</td>
+    <td class="risk-moderate-high">MODERATE-HIGH</td>
+  </tr>
+  
+  <tr>
+    <td><strong>Houthi Movement (Ansar Allah, Yemen)</strong></td>
+    <td>High</td>
+    <td>Low-Medium</td>
+    <td>High</td>
+    <td class="risk-moderate-high">MODERATE-HIGH</td>
+  </tr>
+  
+  <tr>
+    <td><strong>China-Pakistan Threshold Alliance</strong></td>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td class="risk-moderate">MODERATE</td>
+  </tr>
+  
+  <tr>
+    <td><strong>Ransomware-as-a-Service Criminal Networks</strong></td>
+    <td>High (financial)</td>
+    <td>Medium</td>
+    <td>Very High</td>
+    <td class="risk-moderate">MODERATE</td>
+  </tr>
+  
+  </tbody>
+</table>
+<div style="clear:both;"></div>
+
+<!-- MAP: GLOBAL IMPACT -->
+<h2>7. Global Energy Impact</h2>
+<div class="img-container">
+<!-- MAP: UKRAINE -->
+<h2>8. Ukraine Strategic Adaptation</h2>
+<div class="img-container">
+<!-- RED TEAM -->
+<div class="page-break"></div>
+<h2>9. Red Team Analysis</h2>
+<p>Red Team Analysis — Adversary Perspective (Iran/IRGC). From Tehran's vantage point, the situation as of 1 May 2026 is assessed as follows: The United States has initiated a war it cannot win with airpower alone (a pattern Iran has observed in Vietnam, Iraq, and Afghanistan), has failed to achieve regime change or even nuclear program destruction, and now faces a War Powers Resolution deadline that exposes deep domestic political fractures over the conflict. The American president must simultaneously manage: (1) a naval blockade that Iran is already penetrating via AIS-spoofing and dark-shipping — proving to domestic and allied audiences that the blockade is not hermetic; (2) rising oil prices that are politically toxic for a US president who campaigned on economic relief; (3) a newly announced trade war with Europe that fractures the very alliance cohesion needed for sustained pressure on Iran; (4) a rising China that is exploiting the US Middle East distraction; and (5) a ticking clock toward midterm elections. Iran's rational strategy is to sustain the current posture — contest but not fully close the Strait, maintain nuclear latency without crossing weaponization red lines, absorb economic pain (which is distributed across the population while the IRGC controls black-market trade), and wait for US domestic politics to force a favorable settlement. The regime has already absorbed two critical shocks (Supreme Leader succession and massive pre-war protests) without cracking. Iran's irrational-but-possible moves include: (a) a mass-casualty attack on a US Navy vessel designed to shock American public opinion and accelerate withdrawal (the Beirut 1983 model); (b) use of unconventional weapons including mine-carrying marine mammals (reported under consideration by Iranian officials, per WSJ); (c) a cyber attack on US energy infrastructure designed to demonstrate symmetrical pain capability. Iran's key vulnerability is not military but economic — the blockade's cumulative effect on imports of food, medicine, and industrial inputs may trigger unrest that the IRGC cannot suppress. But Iran assesses that this timeline (6–12 months) is longer than the US political timeline (midterms in November). This asymmetry is Iran's central strategic calculation and it is, historically, a well-founded one.</p>
+
+<!-- I&W -->
+<h2>10. Indicators & Warnings</h2>
+<table>
+  <thead><tr><th>Indicator</th><th>Track</th><th>Status</th></tr></thead>
+  <tbody>
+  
+  <tr>
+    <td>US-Iran: Resumed exchange of fire between US and Iranian forces in the Gulf</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Iran: Closure of Strait of Hormuz by mining or anti-ship missile barrage</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>US-Iran: Formal ceasefire agreement signed or US-China summit produces Iran framework</td>
+    <td>De-escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Oil: Brent crude breaches $120/bbl for more than 3 consecutive trading days</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>US Politics: Congress passes binding War Powers resolution restricting Iran operations</td>
+    <td>De-escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>China: PLAN amphibious warship or carrier group conducts live-fire exercises within Taiwan's ADIZ</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Ukraine: Russia announces general mobilization or martial law</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Ukraine: Russia and Ukraine agree to localized ceasefire or humanitarian corridor</td>
+    <td>De-escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Russia: Putin makes major address acknowledging economic crisis or offering genuine negotiation terms</td>
+    <td>De-escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>North Korea: Seventh nuclear test conducted or ICBM launched on lofted trajectory over Japan</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Cyber: Salt Typhoon or Volt Typhoon conducts disruptive (not just espionage) operation against US critical infrastructure</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Terrorism: Major attack on Western homeland linked to Iran/Houthi/Al Shabaab nexus</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-red">Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Maritime: Houthi strike sinks or severely damages commercial vessel in Bab al-Mandeb</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>EU-US: EU imposes retaliatory tariffs on US goods in response to 25% auto tariff</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>Diplomatic: US-China May summit cancelled or postponed</td>
+    <td>Escalation</td>
+    <td>
+      
+      
+        <span class="badge badge-green">Not Triggered</span>
+      
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+<!-- I&W Dashboard -->
+<div class="img-container">
+  <img src="images/infographic-iw-summary.png" alt="I&W Dashboard">
+  <div class="caption">Figure 3: Indicators & Warnings Dashboard — All Tracks</div>
+</div>
+
+<!-- OIL PRICE -->
+<div class="img-container">
+  <img src="images/infographic-oil-price.png" alt="Oil Price Trajectory">
+  <div class="caption">Figure 4: Brent Crude Oil Price Trajectory — Jan-May 2026</div>
+</div>
+
+<!-- INTELLIGENCE GAPS -->
+<h2>11. Intelligence Gaps</h2>
+<div class="gaps-box">
+  <ol>
+  
+    <li style="margin: 3px 0;">G1: Independent verification of Strait of Hormuz throughput — conflicting US (effective blockade, 45 vessels turned back) and Iranian (52 vessels breached in 72 hours) claims cannot be resolved without commercial satellite imagery analysis of Gulf shipping patterns. Collection requirement: task commercial SAR and optical satellite constellations for daily Gulf coverage; cross-reference with marine insurance and Lloyds shipping data. This gap directly affects KJ-2 confidence.</li>
+  
+    <li style="margin: 3px 0;">G2: Status of Iranian nuclear program post-US/Israeli strikes — the extent of damage to enrichment facilities, centrifuge stockpiles, and weaponization research sites is unknown. Collection requirement: IAEA inspector access (currently blocked) or national technical means tasking. This gap affects KJ-1 assessment of Iranian nuclear latency capability.</li>
+  
+    <li style="margin: 3px 0;">G3: Chinese leadership decision calculus on Taiwan — whether Beijing views the Iran crisis as a window for Taiwan Strait escalation or a moment to demonstrate 'responsible great power' behavior through mediation. Collection requirement: SIGINT on PLA commands, POLAD reporting from Beijing embassy, Xi Jinping inner-circle communications. This gap affects KJ-4 probability assessment.</li>
+  
+    <li style="margin: 3px 0;">G4: Russian military personnel and equipment reserves — the true state of Russian manpower, armor stocks, and precision-guided munition inventory after four years of high-intensity warfare is poorly constrained by open-source analysis. Collection requirement: NATO ISR sharing with Ukraine, commercial satellite analysis of Russian storage bases, defector/intercept reporting. This gap affects KJ-3 confidence on whether Russia can sustain offensive operations beyond spring 2026.</li>
+  
+    <li style="margin: 3px 0;">G5: Iran domestic stability threshold — the level of economic deprivation at which the IRGC's internal control apparatus fails is unknown. Pre-war protests were suppressed with mass killings, but the blockade adds sustained deprivation. Collection requirement: diaspora reporting, Starlink-derived social media monitoring, Iranian banking and trade data leakers. This gap affects the Wildcard scenario probability.</li>
+  
+    <li style="margin: 3px 0;">G6: Al Shabaab-Houthi weapons transfer volume and routes — UN documentation confirms the nexus exists, but the scale, frequency, and specific maritime routes of drone and IED transfers are poorly characterized. Collection requirement: maritime patrol aircraft tasking over Gulf of Aden, human intelligence in Somali ports, signals intercept of Houthi logistics communications. This gap affects KJ-7 confidence.</li>
+  
+    <li style="margin: 3px 0;">G7: EU retaliatory tariff decision-making — whether Brussels will respond proportionally to the 25% US auto tariff or escalate to broader trade measures affecting US tech/services exports. Collection requirement: EU Trade Commissioner and Council working group reporting, European auto industry lobbying positions. This gap affects KJ-5 economic impact assessment.</li>
+  
+  </ol>
+</div>
+
+<!-- DISSENT -->
+<h2>12. Dissenting View</h2>
+<div class="dissent-box">
+  <p>Dissenting View: The 'Coercion-Not-War' Interpretation. A substantive alternative interpretation holds that the Iran crisis has already peaked and is in structural decline toward settlement — not protracted contestation. The argument rests on four pillars. First, President Trump's 1 May letter to Congress declaring hostilities 'terminated' is not merely a War Powers workaround but reflects a genuine strategic decision to pivot from military to economic coercion, consistent with Trump's long-stated aversion to 'forever wars.' Second, the US-China May summit provides a face-saving mechanism for Iran to accept nuclear constraints in exchange for economic relief without appearing to capitulate to US military pressure — the Chinese mediation path is more likely to succeed than the primary assessment credits, because China's own economic interest in stable Hormuz transit (~50% of its oil imports) creates genuine alignment with US objectives. Third, Iran's 'long and painful strikes' rhetoric is assessed as domestic-posturing for regime audience rather than operational signaling — the IRGC has not actually attacked US positions since the ceasefire began, suggesting restraint not bluster. Fourth, the oil price trajectory has already peaked (per US Energy Secretary Wright's assessment), and prices will decline through Q3 as alternative supply routes and strategic petroleum reserve releases take effect. Under this interpretation, KJ-1 confidence should be rated 'Highly Likely (80–93%)' for durable settlement by Q4 2026 rather than 'Likely' for resumed hostilities. TREVOR Calibration Correction 3 is specifically relevant here: the primary assessment correctly notes that diplomatic tracks can mask continued preparations, but the dissent argues that Correction 3 should not be applied mechanically — the evidence for genuine de-escalation (Trump letter, summit scheduling, absence of recent kinetic exchange, Wright's price-peak statement) is qualitatively different from the 'diplomacy-as-cover' pattern observed in Suez 1956, Six-Day War 1967, and Iraq 2003. Key assumption most vulnerable to disconfirmation: that Iranian regime cost-tolerance is higher than American domestic cost-tolerance. If US midterm polling shows the Iran war as a decisive electoral liability, Trump's settlement incentive increases dramatically.</p>
+</div>
+
+<!-- RECOMMENDATIONS -->
+<div class="page-break"></div>
+<h2>13. Recommendations</h2>
+<div class="rec-block">
+  <div class="rec-header rec-p1">PRIORITY 1 — IMMEDIATE (0-12 HOURS)</div>
+  <ul>
+  
+    <li>PRIORITY 1: Activate crisis management cell. Convene cross-functional team (security, logistics, finance, legal) for 24/7 monitoring of Hormuz situation, oil price thresholds, and War Powers Resolution developments. This is not a drill — the 60-day clock expires today.</li>
+  
+    <li>PRIORITY 1: Initiate energy supply chain stress-test. Map all exposure points to Hormuz-transiting crude, LNG, and petrochemical feedstocks. Identify alternative suppliers (US shale, North Sea, West Africa, Brazil pre-salt) and quantify cost differentials at current $95+/bbl pricing. Activate force majeure review of any contracts dependent on Gulf transit.</li>
+  
+    <li>PRIORITY 1: Issue personnel security advisory for all staff in or transiting through: Gulf states (UAE, Bahrain, Qatar, Kuwait, Saudi Arabia Eastern Province), Israel, Lebanon, Iraq, Turkey (border regions), UK (elevated terror threat). Register all travelers with embassy/consular services.</li>
+  
+  </ul>
+</div>
+<div class="rec-block">
+  <div class="rec-header rec-p2">PRIORITY 2 — WITHIN 72 HOURS</div>
+  <ul>
+  
+    <li>PRIORITY 2: Engage cyber-security team for heightened threat posture. Chinese APT activity (Salt Typhoon, Volt Typhoon) and Iranian retaliatory cyber capability create elevated risk of infrastructure intrusion. Implement: mandatory MFA on all remote access, SOC monitoring escalation to 24/7, vulnerability scanning of all internet-facing assets, segment OT/ICS networks from IT where feasible.</li>
+  
+    <li>PRIORITY 2: Review and update business continuity plans for three scenarios mapped to this assessment: (a) Sustained $90–110/bbl oil through Q4 2026; (b) Spike to $150+/bbl with temporary Hormuz closure; (c) Expansion/reduction of Russia sanctions affecting counterparty risk.</li>
+  
+    <li>PRIORITY 2: Brief board/senior leadership on Iran situation with scenario framework from this assessment. Flag the temporal compression finding — if three or more I&W indicators trigger simultaneously, timelines compress by 75%. Current status: one indicator triggered (UK terror threat level).</li>
+  
+    <li>PRIORITY 2: Task legal team to review contractual force majeure provisions, trade compliance exposure to the 25% EU auto tariff (if applicable), and sanctions compliance obligations under evolving Iran and Russia regimes.</li>
+  
+  </ul>
+</div>
+<div class="rec-block">
+  <div class="rec-header rec-p3">PRIORITY 3 — WITHIN 30 DAYS</div>
+  <ul>
+  
+    <li>PRIORITY 3: Develop strategic hedging plan for US-China summit outcomes — both positive (trade concessions that may affect supply chains/competition) and negative (breakdown that accelerates decoupling and Taiwan Strait risk).</li>
+  
+    <li>PRIORITY 3: Commission insurance review — marine cargo, political risk, business interruption, and cyber insurance coverage in light of Hormuz transit disruption, elevated terrorism risk (UK and Europe), and state-sponsored cyber threat levels.</li>
+  
+    <li>PRIORITY 3: Evaluate strategic repositioning of physical assets and inventory buffers. Consider: pre-positioning critical inventory in non-Gulf-dependent regions, diversifying logistics routes away from chokepoint-dependent corridors, and evaluating data sovereignty/residency requirements in light of Salt Typhoon telecoms breaches.</li>
+  
+    <li>PRIORITY 3: Establish a recurring TREVOR intelligence briefing cycle — weekly situation updates with I&W dashboard, hypothesis evolution tracker, and recalibrated probability assessments. The current environment demands structured analytic tradecraft, not intuitive monitoring.</li>
+  
+  </ul>
+</div>
+
+<!-- ASSESSMENT REVIEW -->
+<h2>14. Assessment Review</h2>
+<p>N/A — First report in this series. Future TREVOR assessments will grade previous key judgments against observed outcomes using the scoring rubric: CONFIRMED / PARTIALLY CONFIRMED / NOT YET TESTABLE / DISCONFIRMED, per Calibration Correction 6.</p>
+
+<!-- SOURCE SUMMARY -->
+<h2>15. Source Summary</h2>
+<div class="source-summary">
+  <p>This assessment draws on 18 primary and secondary sources collected on 1 May 2026, spanning open-source intelligence (OSINT), official government statements, specialized defense and geopolitical analysis outlets, and technical cyber-threat reporting. Source ratings follow NATO Admiralty System (Reliability A–F, Credibility 1–6). Key sources: Geopolitical Futures (George Friedman analysis — rated B-2: generally reliable analytical outlet with track record of strategic forecast accuracy but single-analyst perspective); Fox News live coverage of Iran war developments including CENTCOM and White House statements (rated B-2: direct quotes from named US officials including Adm. Brad Cooper and Energy Secretary Wright are A-1; unattributed claims rated lower); The Moscow Times / CMAKP economic analysis with specific GDP and export figures (rated B-2: Kremlin-linked institute provides authoritative data on Russian economy but state proximity introduces potential bias); UnderstandingWar.org Russian Offensive Campaign Assessment 30 April 2026 (rated A-1: established conflict-monitoring organization with transparent sourcing methodology); Atlantic Council / CEPA European defense analysis (rated B-2: expert commentary, policy-advocacy orientation); North Korea analysis from 38North (rated A-1: premier open-source DPRK monitoring project at Stimson Center, Van Diepen is recognized weapons expert); Asia Times India-Pakistan military reporting (rated B-3: knowledgeable regional reporting but mixed sourcing); CybersecurityNews and ITIF for APT activity (rated B-2: trade press and think-tank, cross-referenced); Horn Review / WarWatchLive for Sahel-Horn terrorism (rated C-3: specialist outlets with limited independent verification capacity); Crisis Group trigger list (rated A-1: gold-standard conflict prevention NGO, rigorous methodology); Fortune / EDC Canada for economic impact (rated B-2: reputable business press); Wall Street Journal reported on mine-carrying dolphin consideration (rated A-1: premier US newspaper, attributed sourcing). The primary information gap — lack of independent satellite verification of Strait of Hormuz shipping throughput — is explicitly flagged as Intelligence Gap G1. Full source list with individual NATO Admiralty ratings is available in the working file at analyst/meta/sources.json. All Sherman Kent probability language conforms to TREVOR v2 standards. All assessments are PENDING HUMAN ANALYST QC REVIEW.</p>
+</div>
+
+<div class="footer-text">
+  TREVOR Assessment — 1 May 2026 22:00 UTC | PENDING HUMAN ANALYST QC REVIEW | CONFIDENTIAL — CLIENT USE ONLY
+</div>
+</body>
+</html>
