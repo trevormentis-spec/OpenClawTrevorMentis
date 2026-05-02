@@ -53,6 +53,30 @@ preferences, project facts, or prior decisions, use the brain deliberately:
 4. Record explicit corrections with `brain.py record-correction "<text>"`.
 5. Promote useful episodic memories to semantic with `brain.py promote <key>`.
 
+### Brain recall confidence workflow
+
+`brain.py recall` returns `confidence` and `recommendation` fields.
+Use them as operating rules:
+
+- **high** — use the fast-path chunks directly unless the task is high-stakes
+  or the user asked for a deep audit.
+- **medium** — use the chunks, but sanity-check against the source file if the
+  answer affects identity, routing, safety, credentials, or long-term memory.
+- **low / none** — do not rely on the recall result. Run
+  `python3 brain/scripts/brain.py synthesize "<query>"`, then read the
+  recommended source files before answering.
+
+After using a retrieved chunk, record whether it helped:
+
+```bash
+python3 brain/scripts/brain.py mark-retrieval "<key>" useful
+python3 brain/scripts/brain.py mark-retrieval "<key>" not-useful
+```
+
+Run `python3 brain/scripts/brain.py doctor` after pulls, memory migrations, or
+odd recall behavior. Run `bash brain/scripts/smoke-test.sh` before pushing
+brain-runtime changes.
+
 Run `brain.py reindex` after substantive memory changes. See `brain/README.md`.
 
 These files are your continuity:
@@ -214,7 +238,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 **When to reach out:**
 
 - Important email arrived
-- Calendar event coming up (&lt;2h)
+- Calendar event coming up (<2h)
 - Something interesting you found
 - It's been >8h since you said anything
 
@@ -223,7 +247,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Late night (23:00-08:00) unless urgent
 - Human is clearly busy
 - Nothing new since last check
-- You just checked &lt;30 minutes ago
+- You just checked <30 minutes ago
 
 **Proactive work you can do without asking:**
 
