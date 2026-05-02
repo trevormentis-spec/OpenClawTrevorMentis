@@ -43,7 +43,16 @@ TOKEN_RX = re.compile(r"[A-Za-z][A-Za-z0-9_\-]{1,}")
 STOP = set("""the a an and or of to in on for is are be as by with this that it at from but not if we you your our their they them do does did have has had was were will would should could can may might into than then so no yes also what when where which who how use used using via off out up down""".split())
 
 
+def utc_now() -> dt.datetime:
+    return dt.datetime.now(dt.UTC)
+
+
+def utc_stamp() -> str:
+    return utc_now().isoformat().replace("+00:00", "Z")
+
+
 def rel(p: Path) -> str: return p.relative_to(ROOT).as_posix()
+
 
 def git_ignored(r: str) -> bool:
     try:
@@ -51,9 +60,11 @@ def git_ignored(r: str) -> bool:
     except Exception:
         return False
 
+
 def excluded(p: Path) -> bool:
     r = rel(p); sp = "/" + r
     return any(rx.search(sp) for rx in EXCLUDES) or git_ignored(r)
+
 
 def candidates() -> list[Path]:
     out: list[Path] = []
@@ -66,11 +77,13 @@ def candidates() -> list[Path]:
             seen.add(s); uniq.append(p)
     return uniq
 
+
 def sha256(p: Path) -> str:
     h = hashlib.sha256()
     with p.open("rb") as f:
         for b in iter(lambda: f.read(1024 * 1024), b""): h.update(b)
     return h.hexdigest()
+
 
 def manifest(files: list[Path]) -> dict[str, dict[str, Any]]:
     m = {}
@@ -79,6 +92,7 @@ def manifest(files: list[Path]) -> dict[str, dict[str, Any]]:
             s = p.stat(); m[rel(p)] = {"mtime_ns": s.st_mtime_ns, "size": s.st_size, "sha256": sha256(p)}
         except OSError: pass
     return m
+
 
 def manifest_matches(idx: dict[str, Any]) -> bool:
     return idx.get("version") == VERSION and idx.get("manifest") == manifest(candidates())
@@ -92,12 +106,41 @@ def windows(start: int, end: int) -> list[tuple[int, int]]:
         i = max(j - OVERLAP, i + 1)
     return out
 
+
 def md_sections(lines: list[str]) -> list[tuple[int, int]]:
+    """Return heading-aware sections, merging heading-only stubs forward.
+
+    Markdown often has a top-level title followed immediately by a subsection,
+    or a parent heading followed immediately by child headings. Indexing those
+    heading-only stubs creates high-scoring chunks with almost no useful memory
+    content, so we merge them into the next meaningful section.
+    """
     hs = [i for i, line in enumerate(lines) if re.match(r"^#{1,6}\s+", line)]
-    if not hs: return [(0, len(lines))]
-    out = [(s, hs[i + 1] if i + 1 < len(hs) else len(lines)) for i, s in enumerate(hs)]
-    if hs[0] > 0: out.insert(0, (0, hs[0]))
-    return out
+    if not hs:
+        return [(0, len(lines))]
+
+    raw: list[tuple[int, int]] = []
+    if hs[0] > 0:
+        raw.append((0, hs[0]))
+    raw.extend((s, hs[i + 1] if i + 1 < len(hs) else len(lines)) for i, s in enumerate(hs))
+
+    def has_body(s: int, e: int) -> bool:
+        return any(line.strip() and not re.match(r"^#{1,6}\s+", line) for line in lines[s:e])
+
+    merged: list[tuple[int, int]] = []
+    pending_start: int | None = None
+    for s, e in raw:
+        if pending_start is not None:
+            s = pending_start
+            pending_start = None
+        if not has_body(s, e) and e < len(lines):
+            pending_start = s
+            continue
+        merged.append((s, e))
+    if pending_start is not None:
+        merged.append((pending_start, len(lines)))
+    return merged
+
 
 def read_lines(path: str, a: int, b: int) -> str:
     p = ROOT / path
@@ -105,6 +148,7 @@ def read_lines(path: str, a: int, b: int) -> str:
     try: lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
     except Exception: return ""
     return "\n".join(lines[a - 1:b]).strip()
+
 
 def chunk_file(p: Path) -> list[dict[str, Any]]:
     try: lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
@@ -117,6 +161,7 @@ def chunk_file(p: Path) -> list[dict[str, Any]]:
             body = "\n".join(lines[a - 1:b]).strip()
             if body: chunks.append({"key": f"{r}:{a}:{b}", "path": r, "start_line": a, "end_line": b, "preview": body[:PREVIEW]})
     return chunks
+
 
 def toks(text: str) -> list[str]:
     return [t.lower() for t in TOKEN_RX.findall(text) if t.lower() not in STOP and len(t) > 1]
@@ -134,10 +179,11 @@ def build_index() -> dict[str, Any]:
     n = max(1, len(chunks)); idf = {t: math.log((n + 1) / (c + 1)) + 1 for t, c in df.items()}
     for c in chunks:
         c["norm"] = math.sqrt(sum((f * idf.get(t, 0.0)) ** 2 for t, f in c["tf"].items())) or 1.0
-    idx = {"version": VERSION, "built_at": dt.datetime.utcnow().isoformat() + "Z", "n_files": len(files), "n_chunks": len(chunks), "manifest": manifest(files), "idf": idf, "chunks": chunks}
+    idx = {"version": VERSION, "built_at": utc_stamp(), "n_files": len(files), "n_chunks": len(chunks), "manifest": manifest(files), "idf": idf, "chunks": chunks}
     INDEX.parent.mkdir(parents=True, exist_ok=True)
     INDEX.write_text(json.dumps(idx, separators=(",", ":")), encoding="utf-8")
     return idx
+
 
 def load_index() -> dict[str, Any]:
     if not INDEX.exists(): return build_index()
@@ -151,11 +197,13 @@ def source_weight(path: str) -> float:
         if path == prefix or path.startswith(prefix): return w
     return 1.0
 
+
 def date_from_path(path: str) -> dt.date | None:
     m = re.search(r"(20\d{2}-\d{2}-\d{2})", path)
     if not m: return None
     try: return dt.date.fromisoformat(m.group(1))
     except ValueError: return None
+
 
 def recency_weight(path: str) -> float:
     if not (path.startswith("memory/") or path.startswith("brain/memory/episodic/")): return 1.0
@@ -163,10 +211,11 @@ def recency_weight(path: str) -> float:
     if not d: return 1.0
     return max(0.50, 0.5 ** (max(0, (dt.date.today() - d).days) / EPISODIC_HALF_LIFE_DAYS))
 
+
 def signal_weights() -> dict[str, float]:
     p = META / "retrieval-signals.jsonl"
     if not p.exists(): return {}
-    now, scores = dt.datetime.utcnow(), {}
+    now, scores = utc_now(), {}
     for line in p.read_text(encoding="utf-8", errors="replace").splitlines():
         try: rec = json.loads(line)
         except json.JSONDecodeError: continue
@@ -174,15 +223,19 @@ def signal_weights() -> dict[str, float]:
         if not isinstance(key, str) or sig not in {"useful", "not-useful"}: continue
         age = 0.0
         try:
-            then = dt.datetime.fromisoformat(str(rec.get("ts", "")).replace("Z", "+00:00")).replace(tzinfo=None)
+            then = dt.datetime.fromisoformat(str(rec.get("ts", "")).replace("Z", "+00:00"))
+            if then.tzinfo is None:
+                then = then.replace(tzinfo=dt.UTC)
             age = max(0.0, (now - then).total_seconds() / 86400.0)
         except ValueError: pass
         decay = 0.5 ** (age / SIGNAL_HALF_LIFE_DAYS)
         scores[key] = scores.get(key, 0.0) + (decay if sig == "useful" else -decay)
     return {k: (min(1.30, 1 + 0.10 * s) if s >= 0 else max(0.70, 1 + 0.15 * s)) for k, s in scores.items()}
 
+
 def confidence(score: float) -> str:
     return "high" if score >= 0.18 else "medium" if score >= 0.10 else "low"
+
 
 def score(qtokens: list[str], idx: dict[str, Any]) -> list[tuple[float, float, dict[str, Any]]]:
     idf, sigs, qtf, out = idx["idf"], signal_weights(), {}, []
@@ -208,6 +261,7 @@ def cmd_recall(query: str, top_k: int = 3) -> int:
     rows = [{"key": c["key"], "path": c["path"], "lines": [c["start_line"], c["end_line"]], "score": round(final, 4), "raw_score": round(raw, 4), "source_weight": source_weight(c["path"]), "recency_weight": round(recency_weight(c["path"]), 4), "snippet": c.get("preview", "")} for final, raw, c in results]
     print(json.dumps({"query": query, "top_score": round(top, 4), "confidence": conf, "recommendation": "Use fast-path results." if conf != "low" else "Low confidence: run `brain.py synthesize` or read source files before relying on this memory.", "results": rows}, indent=2)); return 0
 
+
 def cmd_synthesize(query: str) -> int:
     qtokens = toks(query)
     if not qtokens: print("(no useful query tokens)"); return 1
@@ -225,30 +279,36 @@ def cmd_synthesize(query: str) -> int:
 
 def today() -> str: return dt.date.today().isoformat()
 
+
 def cmd_store_episodic(text: str) -> int:
     EPISODIC.mkdir(parents=True, exist_ok=True); p = EPISODIC / f"{today()}.jsonl"
-    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": dt.datetime.utcnow().isoformat() + "Z", "text": text}) + "\n")
+    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": utc_stamp(), "text": text}) + "\n")
     build_index(); print(f"stored: {p}\nreindexed."); return 0
+
 
 def cmd_store_semantic(topic: str, text: str) -> int:
     SEMANTIC.mkdir(parents=True, exist_ok=True); safe = re.sub(r"[^a-z0-9_-]+", "-", topic.lower()).strip("-") or "untitled"; p = SEMANTIC / f"{safe}.md"
     body = (p.read_text(encoding="utf-8", errors="replace").rstrip() + "\n\n" if p.exists() else f"# {topic}\n\n") + f"## {today()}\n\n{text}\n"
     p.write_text(body, encoding="utf-8"); build_index(); print(f"stored: {p}\nreindexed."); return 0
 
+
 def cmd_store_procedural(slug: str, text: str) -> int:
     PROCEDURAL.mkdir(parents=True, exist_ok=True); safe = re.sub(r"[^a-z0-9_-]+", "-", slug.lower()).strip("-") or "untitled"; p = PROCEDURAL / f"{safe}.md"
     body = (p.read_text(encoding="utf-8", errors="replace").rstrip() + "\n\n" if p.exists() else f"# {slug}\n\n") + f"## {today()}\n\n{text}\n"
     p.write_text(body, encoding="utf-8"); build_index(); print(f"stored: {p}\nreindexed."); return 0
 
+
 def cmd_mark_retrieval(key: str, signal: str) -> int:
     META.mkdir(parents=True, exist_ok=True); p = META / "retrieval-signals.jsonl"
-    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": dt.datetime.utcnow().isoformat() + "Z", "key": key, "signal": signal}) + "\n")
+    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": utc_stamp(), "key": key, "signal": signal}) + "\n")
     print(f"logged: {p}"); return 0
+
 
 def cmd_record_correction(text: str) -> int:
     META.mkdir(parents=True, exist_ok=True); p = META / "corrections.jsonl"
-    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": dt.datetime.utcnow().isoformat() + "Z", "text": text}) + "\n")
+    with p.open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": utc_stamp(), "text": text}) + "\n")
     print(f"logged: {p}"); return 0
+
 
 def cmd_promote(key: str) -> int:
     idx = load_index(); c = next((x for x in idx["chunks"] if x["key"] == key), None)
@@ -259,8 +319,9 @@ def cmd_promote(key: str) -> int:
     topic = c["path"].split("/")[-1].replace(".md", "").replace(".jsonl", ""); target = SEMANTIC / f"promoted-{topic}.md"
     addition = f"## promoted {today()} from {key}\n\n{body}\n"
     target.write_text((target.read_text(encoding="utf-8", errors="replace").rstrip() + "\n\n" if target.exists() else f"# {topic} (promoted)\n\n") + addition, encoding="utf-8")
-    with (META / "promotions.jsonl").open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": dt.datetime.utcnow().isoformat() + "Z", "key": key, "target": rel(target)}) + "\n")
+    with (META / "promotions.jsonl").open("a", encoding="utf-8") as f: f.write(json.dumps({"ts": utc_stamp(), "key": key, "target": rel(target)}) + "\n")
     build_index(); print(f"promoted: {target}\nreindexed."); return 0
+
 
 def cmd_status() -> int:
     if not INDEX.exists(): print("no index yet - run `brain.py reindex`"); return 0
@@ -289,5 +350,6 @@ def main(argv: list[str]) -> int:
     if a.cmd == "record-correction": return cmd_record_correction(a.text)
     if a.cmd == "promote": return cmd_promote(a.key)
     return 1
+
 
 if __name__ == "__main__": sys.exit(main(sys.argv[1:]))
