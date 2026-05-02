@@ -1,0 +1,1082 @@
+{
+  "will-the-democrats-win-the-maine-governor-race-in-2026": {
+    "no": 0.135,
+    "yes": 0.865,
+    "question": "Will the Democrats win the Maine governor race in 2026?",
+    "liquidity": "12065.2935",
+    "volume": "4464.300600999997",
+    "query_time": "2026-05-02T13:06:36Z"
+  },
+  "will-the-democrats-win-the-new-hampshire-senate-race-in-2026": {
+    "no": 0.165,
+    "yes": 0.835,
+    "question": "Will the Democrats win the New Hampshire Senate race in 2026?",
+    "liquidity": "9981.0602",
+    "volume": "17744.898029999997",
+    "query_time": "2026-05-02T13:06:36Z"
+  },
+  "will-esteban-lepaul-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season": {
+    "no": 0.167,
+    "yes": 0.833,
+    "question": "Will Esteban Lepaul be the top goal scorer in the 2025-26 Ligue 1 season?",
+    "liquidity": "110.09579",
+    "volume": "5033.983360000001",
+    "query_time": "2026-05-02T13:06:37Z"
+  },
+  "will-the-republicans-win-the-texas-governor-race-in-2026": {
+    "no": 0.175,
+    "yes": 0.825,
+    "question": "Will the Republicans win the Texas governor race in 2026?",
+    "liquidity": "11457.1542",
+    "volume": "5478.755884000001",
+    "query_time": "2026-05-02T13:06:37Z"
+  },
+  "will-ac-milan-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+    "no": 0.186,
+    "yes": 0.814,
+    "question": "Will AC Milan finish in the top 4 in the 2025-26 Serie A season?",
+    "liquidity": "6058.86899",
+    "volume": "12100.808637999991",
+    "query_time": "2026-05-02T13:06:37Z"
+  },
+  "will-manchester-united-finish-in-the-top-4-of-the-epl-202526-standings": {
+    "no": 0.185,
+    "yes": 0.815,
+    "question": "Will Manchester United finish in the top 4 of the EPL 2025\u201326 standings?",
+    "liquidity": "19402.4831",
+    "volume": "586363.3880380006",
+    "query_time": "2026-05-02T13:06:38Z"
+  },
+  "will-the-republicans-win-the-kansas-senate-race-in-2026": {
+    "no": 0.185,
+    "yes": 0.815,
+    "question": "Will the Republicans win the Kansas Senate race in 2026?",
+    "liquidity": "11495.4852",
+    "volume": "13832.85406299999",
+    "query_time": "2026-05-02T13:06:38Z"
+  },
+  "will-the-republicans-win-the-montana-senate-race-in-2026": {
+    "no": 0.195,
+    "yes": 0.805,
+    "question": "Will the Republicans win the Montana Senate race in 2026?",
+    "liquidity": "11643.5989",
+    "volume": "37074.768247000015",
+    "query_time": "2026-05-02T13:06:38Z"
+  },
+  "will-discord-not-ipo-by-june-30-2026": {
+    "no": 0.205,
+    "yes": 0.795,
+    "question": "Will Discord not IPO by June 30, 2026?",
+    "liquidity": "1467.4006",
+    "volume": "192222.3551709999",
+    "query_time": "2026-05-02T13:06:38Z"
+  },
+  "will-the-democrats-win-the-georgia-senate-race-in-2026": {
+    "no": 0.17,
+    "yes": 0.83,
+    "question": "Will the Democrats win the Georgia Senate race in 2026?",
+    "liquidity": "11507.0893",
+    "volume": "8922.946301000002",
+    "query_time": "2026-05-02T13:06:39Z"
+  },
+  "no-one-announced-as-next-james-bond-962": {
+    "no": 0.215,
+    "yes": 0.785,
+    "question": "No one announced as next James Bond?",
+    "liquidity": "3783.5328",
+    "volume": "260125.97361899973",
+    "query_time": "2026-05-02T13:06:39Z"
+  },
+  "will-the-democrat-win-the-arizona-governor-race-in-2026": {
+    "no": 0.23,
+    "yes": 0.77,
+    "question": "Will the Democrats win the Arizona governor race in 2026?",
+    "liquidity": "12205.5767",
+    "volume": "22233.818357",
+    "query_time": "2026-05-02T13:06:39Z"
+  },
+  "will-the-republicans-win-the-florida-governor-race-in-2026": {
+    "no": 0.23,
+    "yes": 0.77,
+    "question": "Will the Republicans win the Florida governor race in 2026?",
+    "liquidity": "11228.0566",
+    "volume": "6463.706853000004",
+    "query_time": "2026-05-02T13:06:40Z"
+  },
+  "will-the-democrats-win-the-michigan-senate-race-in-2026": {
+    "no": 0.235,
+    "yes": 0.765,
+    "question": "Will the Democrats win the Michigan Senate race in 2026?",
+    "liquidity": "11931.2822",
+    "volume": "79241.63443200004",
+    "query_time": "2026-05-02T13:06:40Z"
+  },
+  "will-the-republicans-win-the-south-carolina-senate-race-in-2026": {
+    "no": 0.21,
+    "yes": 0.79,
+    "question": "Will the Republicans win the South Carolina Senate race in 2026?",
+    "liquidity": "11638.2842",
+    "volume": "10276.069674",
+    "query_time": "2026-05-02T13:06:40Z"
+  },
+  "will-the-democrats-win-the-wisconsin-governor-race-in-2026": {
+    "no": 0.19,
+    "yes": 0.81,
+    "question": "Will the Democrats win the Wisconsin governor race in 2026?",
+    "liquidity": "11100.3903",
+    "volume": "11855.977571999974",
+    "query_time": "2026-05-02T13:06:40Z"
+  },
+  "will-the-republicans-win-the-florida-senate-race-in-2026": {
+    "no": 0.185,
+    "yes": 0.815,
+    "question": "Will the Republicans win the Florida Senate race in 2026?",
+    "liquidity": "10093.1266",
+    "volume": "19115.490781000015",
+    "query_time": "2026-05-02T13:06:41Z"
+  },
+  "will-the-democrats-win-the-maine-senate-race-in-2026": {
+    "no": 0.265,
+    "yes": 0.735,
+    "question": "Will the Democrats win the Maine Senate race in 2026?",
+    "liquidity": "239788.2819",
+    "volume": "53440.638535999904",
+    "query_time": "2026-05-02T13:06:41Z"
+  },
+  "will-openai-not-ipo-by-december-31-2026": {
+    "no": 0.265,
+    "yes": 0.735,
+    "question": "Will OpenAI not IPO by December 31, 2026?",
+    "liquidity": "4268.7805",
+    "volume": "300221.07610499935",
+    "query_time": "2026-05-02T13:06:41Z"
+  },
+  "will-the-republicans-win-the-vermont-governor-race-in-2026": {
+    "no": 0.225,
+    "yes": 0.775,
+    "question": "Will the Republicans win the Vermont governor race in 2026?",
+    "liquidity": "11447.1856",
+    "volume": "11669.381866000007",
+    "query_time": "2026-05-02T13:06:42Z"
+  },
+  "will-the-republicans-win-the-new-hampshire-governor-race-in-2026": {
+    "no": 0.365,
+    "yes": 0.635,
+    "question": "Will the Republicans win the New Hampshire governor race in 2026?",
+    "liquidity": "704.9339",
+    "volume": "2942.133007000001",
+    "query_time": "2026-05-02T13:06:42Z"
+  },
+  "will-anthropic-have-the-best-ai-model-at-the-end-of-june-2026": {
+    "no": 0.304,
+    "yes": 0.696,
+    "question": "Will Anthropic have the best AI model at the end of June 2026?",
+    "liquidity": "24441.86703",
+    "volume": "767564.6778179982",
+    "query_time": "2026-05-02T13:06:42Z"
+  },
+  "will-the-democrats-win-the-michigan-governor-race-in-2026": {
+    "no": 0.345,
+    "yes": 0.655,
+    "question": "Will the Democrats win the Michigan governor race in 2026?",
+    "liquidity": "19876.9218",
+    "volume": "38595.28395200003",
+    "query_time": "2026-05-02T13:06:42Z"
+  },
+  "will-marseille-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+    "no": 0.345,
+    "yes": 0.655,
+    "question": "Will Marseille finish in the top 4 of the Ligue 1 2025\u201326 standings?",
+    "liquidity": "3723.264",
+    "volume": "11308.735992",
+    "query_time": "2026-05-02T13:06:43Z"
+  },
+  "nhl-2025-26-jack-adams-award-lindy-ruff": {
+    "no": 0.13,
+    "yes": 0.87,
+    "question": "Will Lindy Ruff win the 2025\u20132026 NHL Jack Adams Award?",
+    "liquidity": "321.7226",
+    "volume": "7140.401127999993",
+    "query_time": "2026-05-02T13:06:43Z"
+  },
+  "will-gpt-6-be-released": {
+    "no": 0.345,
+    "yes": 0.655,
+    "question": "Will GPT-6 be released before GTA VI?",
+    "liquidity": "39715.308",
+    "volume": "628778.6817549984",
+    "query_time": "2026-05-02T13:06:43Z"
+  },
+  "will-anthropic-have-the-top-ai-model-at-the-end-of-june-2026-475": {
+    "no": 0.315,
+    "yes": 0.685,
+    "question": "Will Anthropic have the top AI model at the end of June 2026?",
+    "liquidity": "13452.3547",
+    "volume": "26546.321682000013",
+    "query_time": "2026-05-02T13:06:44Z"
+  },
+  "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals": {
+    "no": 0.345,
+    "yes": 0.655,
+    "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
+    "liquidity": "50541.8737",
+    "volume": "732060.8969809997",
+    "query_time": "2026-05-02T13:06:44Z"
+  },
+  "will-the-democrats-win-the-iowa-governor-race-in-2026": {
+    "no": 0.355,
+    "yes": 0.645,
+    "question": "Will the Democrats win the Iowa governor race in 2026?",
+    "liquidity": "16797.1269",
+    "volume": "15066.206624999993",
+    "query_time": "2026-05-02T13:06:44Z"
+  },
+  "will-the-democrats-win-the-georgia-governor-race-in-2026": {
+    "no": 0.32,
+    "yes": 0.68,
+    "question": "Will the Democrats win the Georgia governor race in 2026?",
+    "liquidity": "11184.9254",
+    "volume": "19921.332102000015",
+    "query_time": "2026-05-02T13:06:44Z"
+  },
+  "will-lyon-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+    "no": 0.405,
+    "yes": 0.595,
+    "question": "Will Lyon finish in the top 4 of the Ligue 1 2025\u201326 standings?",
+    "liquidity": "532.60253",
+    "volume": null,
+    "query_time": "2026-05-02T13:06:45Z"
+  },
+  "will-aston-villa-finish-in-the-top-4-of-the-epl-202526-standings": {
+    "no": 0.369,
+    "yes": 0.631,
+    "question": "Will Aston Villa finish in the top 4 of the EPL 2025\u201326 standings?",
+    "liquidity": "9718.79447",
+    "volume": "421658.21669099986",
+    "query_time": "2026-05-02T13:06:45Z"
+  },
+  "will-manchester-united-finish-in-3rd-place-in-the-2025-26-english-premier-league": {
+    "no": 0.328,
+    "yes": 0.672,
+    "question": "Will Manchester United finish in 3rd place in the 2025-26 English Premier League?",
+    "liquidity": "2659.45586",
+    "volume": "25118.199384000014",
+    "query_time": "2026-05-02T13:06:45Z"
+  },
+  "will-the-republicans-win-the-iowa-senate-race-in-2026": {
+    "no": 0.4,
+    "yes": 0.6,
+    "question": "Will the Republicans win the Iowa Senate race in 2026?",
+    "liquidity": "24518.5912",
+    "volume": "51644.32212800015",
+    "query_time": "2026-05-02T13:06:46Z"
+  },
+  "will-the-democrats-win-the-ohio-senate-race-in-2026": {
+    "no": 0.405,
+    "yes": 0.595,
+    "question": "Will the Democrats win the Ohio Senate race in 2026?",
+    "liquidity": "24485.262",
+    "volume": "42156.69861399991",
+    "query_time": "2026-05-02T13:06:46Z"
+  },
+  "will-kylian-mbappe-be-the-20252026-top-ucl-goal-scorer": {
+    "no": 0.4,
+    "yes": 0.6,
+    "question": "Will Kylian Mbappe be the 2025/2026 top UCL goal scorer?",
+    "liquidity": "7570.0817",
+    "volume": "83552.37843600003",
+    "query_time": "2026-05-02T13:06:46Z"
+  },
+  "will-the-republicans-win-the-kansas-governor-race-in-2026": {
+    "no": 0.39,
+    "yes": 0.61,
+    "question": "Will the Republicans win the Kansas governor race in 2026?",
+    "liquidity": "19677.9203",
+    "volume": "2025.6142440000006",
+    "query_time": "2026-05-02T13:06:46Z"
+  },
+  "will-lille-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+    "no": 0.62,
+    "yes": 0.38,
+    "question": "Will Lille finish in the top 4 of the Ligue 1 2025\u201326 standings?",
+    "liquidity": "74.3115",
+    "volume": null,
+    "query_time": "2026-05-02T13:06:47Z"
+  },
+  "will-ken-paxton-win-the-2026-republican-primary": {
+    "no": 0.425,
+    "yes": 0.575,
+    "question": "Will Ken Paxton win the 2026 Texas Republican Primary?",
+    "liquidity": "44367.453",
+    "volume": "4330752.399386051",
+    "query_time": "2026-05-02T13:06:47Z"
+  },
+  "russia-ukraine-ceasefire-before-gta-vi-554": {
+    "no": 0.445,
+    "yes": 0.555,
+    "question": "Russia-Ukraine Ceasefire before GTA VI?",
+    "liquidity": "51326.4549",
+    "volume": "1639720.9617830508",
+    "query_time": "2026-05-02T13:06:47Z"
+  },
+  "will-the-colorado-avalanche-win-the-western-conference-993": {
+    "no": 0.455,
+    "yes": 0.545,
+    "question": "Will the Colorado Avalanche win the Western Conference?",
+    "liquidity": "52650.8745",
+    "volume": "114375.26354",
+    "query_time": "2026-05-02T13:06:47Z"
+  },
+  "will-juventus-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+    "no": 0.45,
+    "yes": 0.55,
+    "question": "Will Juventus finish in the top 4 in the 2025-26 Serie A season?",
+    "liquidity": "60.7605",
+    "volume": "38604.355802000005",
+    "query_time": "2026-05-02T13:06:48Z"
+  },
+  "will-freddie-macs-market-cap-be-between-150b-and-200b-at-market-close-on-ipo-day": {
+    "no": 0.9085,
+    "yes": 0.0915,
+    "question": "Will Freddie Mac\u2019s market cap be between $150B and $200B at market close on IPO day?",
+    "liquidity": "447.68402",
+    "volume": "31521.00087500002",
+    "query_time": "2026-05-02T13:06:48Z"
+  },
+  "will-the-republicans-win-the-texas-senate-race-in-2026": {
+    "no": 0.455,
+    "yes": 0.545,
+    "question": "Will the Republicans win the Texas Senate race in 2026?",
+    "liquidity": "32260.0151",
+    "volume": "106687.53111600007",
+    "query_time": "2026-05-02T13:06:48Z"
+  },
+  "will-liverpool-finish-in-the-top-4-of-the-epl-202526-standings": {
+    "no": 0.475,
+    "yes": 0.525,
+    "question": "Will Liverpool finish in the top 4 of the EPL 2025\u201326 standings?",
+    "liquidity": "12870.5047",
+    "volume": "97101.52901300004",
+    "query_time": "2026-05-02T13:06:48Z"
+  },
+  "will-the-republicans-win-the-ohio-governor-race-in-2026": {
+    "no": 0.48,
+    "yes": 0.52,
+    "question": "Will the Republicans win the Ohio governor race in 2026?",
+    "liquidity": "23880.1487",
+    "volume": "43024.78458800003",
+    "query_time": "2026-05-02T13:06:49Z"
+  },
+  "trump-out-as-president-before-gta-vi-846": {
+    "no": 0.485,
+    "yes": 0.515,
+    "question": "Trump out as President before GTA VI?",
+    "liquidity": "53291.4308",
+    "volume": "631194.4826020094",
+    "query_time": "2026-05-02T13:06:49Z"
+  },
+  "will-arsenal-win-the-202526-english-premier-league": {
+    "no": 0.485,
+    "yes": 0.515,
+    "question": "Will Arsenal win the 2025\u201326 English Premier League?",
+    "liquidity": "102595.292",
+    "volume": "10818205.516548788",
+    "query_time": "2026-05-02T13:06:49Z"
+  },
+  "new-rhianna-album-before-gta-vi-926": {
+    "no": 0.475,
+    "yes": 0.525,
+    "question": "New Rihanna Album before GTA VI?",
+    "liquidity": "22347.7962",
+    "volume": "705614.5635050011",
+    "query_time": "2026-05-02T13:06:49Z"
+  },
+  "new-playboi-carti-album-before-gta-vi-421": {
+    "no": 0.475,
+    "yes": 0.525,
+    "question": "New Playboi Carti Album before GTA VI?",
+    "liquidity": "18111.4995",
+    "volume": "732079.6764399477",
+    "query_time": "2026-05-02T13:06:50Z"
+  },
+  "will-anthropic-have-the-second-best-ai-model-at-the-end-of-june-2026": {
+    "no": 0.48,
+    "yes": 0.52,
+    "question": "Will Anthropic have the second best AI model at the end of June 2026?",
+    "liquidity": "3354.4287",
+    "volume": "10963.612144000004",
+    "query_time": "2026-05-02T13:06:50Z"
+  },
+  "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league": {
+    "no": 0.495,
+    "yes": 0.505,
+    "question": "Will Manchester City finish in 2nd place in the 2025-26 English Premier League?",
+    "liquidity": "4483.0641",
+    "volume": "104199.31206299989",
+    "query_time": "2026-05-02T13:06:50Z"
+  },
+  "will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876": {
+    "no": 0.505,
+    "yes": 0.495,
+    "question": "Will Nithya Raman win the 2026 Los Angeles mayoral election?",
+    "liquidity": "64972.8765",
+    "volume": "23223.45715800001",
+    "query_time": "2026-05-02T13:06:50Z"
+  },
+  "will-china-invades-taiwan-before-gta-vi-716": {
+    "no": 0.495,
+    "yes": 0.505,
+    "question": "Will China invades Taiwan before GTA VI?",
+    "liquidity": "47872.1032",
+    "volume": "1807612.333636061",
+    "query_time": "2026-05-02T13:06:50Z"
+  },
+  "will-the-democrats-win-the-nevada-governor-race-in-2026": {
+    "no": 0.37,
+    "yes": 0.63,
+    "question": "Will the Democrats win the Nevada governor race in 2026?",
+    "liquidity": "17838.39",
+    "volume": "5588.157299000006",
+    "query_time": "2026-05-02T13:06:51Z"
+  },
+  "will-the-republicans-win-the-nevada-governor-race-in-2026": {
+    "no": 0.62,
+    "yes": 0.38,
+    "question": "Will the Republicans win the Nevada governor race in 2026?",
+    "liquidity": "22465.8604",
+    "volume": "15942.050753000007",
+    "query_time": "2026-05-02T13:06:51Z"
+  },
+  "will-the-democrats-win-the-ohio-governor-race-in-2026": {
+    "no": 0.515,
+    "yes": 0.485,
+    "question": "Will the Democrats win the Ohio governor race in 2026?",
+    "liquidity": "23433.1201",
+    "volume": "42072.258344999966",
+    "query_time": "2026-05-02T13:06:51Z"
+  },
+  "will-arsenal-finish-in-2nd-place-in-the-2025-26-english-premier-league": {
+    "no": 0.515,
+    "yes": 0.485,
+    "question": "Will Arsenal finish in 2nd place in the 2025-26 English Premier League?",
+    "liquidity": "4960.8865",
+    "volume": "80356.04023800002",
+    "query_time": "2026-05-02T13:06:52Z"
+  },
+  "will-manchester-city-win-the-202526-english-premier-league": {
+    "no": 0.515,
+    "yes": 0.485,
+    "question": "Will Manchester City win the 2025\u201326 English Premier League?",
+    "liquidity": "91867.4453",
+    "volume": "11686979.791919962",
+    "query_time": "2026-05-02T13:06:52Z"
+  },
+  "will-bitcoin-hit-1m-before-gta-vi-872": {
+    "no": 0.5115,
+    "yes": 0.4885,
+    "question": "Will bitcoin hit $1m before GTA VI?",
+    "liquidity": "118966.66188",
+    "volume": "4073383.6441425364",
+    "query_time": "2026-05-02T13:06:52Z"
+  },
+  "will-jesus-christ-return-before-gta-vi-665": {
+    "no": 0.515,
+    "yes": 0.485,
+    "question": "Will Jesus Christ return before GTA VI?",
+    "liquidity": "230779.1816",
+    "volume": "11192663.186113957",
+    "query_time": "2026-05-02T13:06:52Z"
+  },
+  "will-the-carolina-hurricanes-win-the-eastern-conference": {
+    "no": 0.515,
+    "yes": 0.485,
+    "question": "Will the Carolina Hurricanes win the Eastern Conference?",
+    "liquidity": "31525.1801",
+    "volume": "62914.418829000024",
+    "query_time": "2026-05-02T13:06:52Z"
+  },
+  "will-the-democrats-win-the-texas-senate-race-in-2026": {
+    "no": 0.545,
+    "yes": 0.455,
+    "question": "Will the Democrats win the Texas Senate race in 2026?",
+    "liquidity": "34086.7551",
+    "volume": "86897.57626700005",
+    "query_time": "2026-05-02T13:06:53Z"
+  },
+  "will-the-republicans-win-the-ohio-senate-race-in-2026": {
+    "no": 0.595,
+    "yes": 0.405,
+    "question": "Will the Republicans win the Ohio Senate race in 2026?",
+    "liquidity": "21746.3115",
+    "volume": "30233.676441999967",
+    "query_time": "2026-05-02T13:06:53Z"
+  },
+  "will-monaco-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+    "no": 0.662,
+    "yes": 0.338,
+    "question": "Will Monaco finish in the top 4 of the Ligue 1 2025\u201326 standings?",
+    "liquidity": "486.22319",
+    "volume": "3251.0878080000016",
+    "query_time": "2026-05-02T13:06:53Z"
+  },
+  "will-hoffenheim-finish-in-the-top-4-of-the-bundesliga-202526-standings": {
+    "no": 0.68,
+    "yes": 0.32,
+    "question": "Will Hoffenheim finish in the top 4 of the Bundesliga 2025\u201326 standings?",
+    "liquidity": "77.4238",
+    "volume": "6511.468172000004",
+    "query_time": "2026-05-02T13:06:54Z"
+  },
+  "nhl-2025-26-hart-memorial-trophy-connor-mcdavid": {
+    "no": 0.48,
+    "yes": 0.52,
+    "question": "Will Connor McDavid win the 2025\u20132026 NHL Hart Memorial Trophy?",
+    "liquidity": "1759.7651",
+    "volume": "50717.93910800001",
+    "query_time": "2026-05-02T13:06:54Z"
+  },
+  "will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election": {
+    "no": 0.585,
+    "yes": 0.415,
+    "question": "Will Ivan Cepeda Castro win the 2026 Colombian presidential election?",
+    "liquidity": "98958.3179",
+    "volume": "781964.9215080026",
+    "query_time": "2026-05-02T13:06:54Z"
+  },
+  "will-john-cornyn-win-the-2026-republican-primary": {
+    "no": 0.58,
+    "yes": 0.42,
+    "question": "Will John Cornyn win the 2026 Texas Republican Primary?",
+    "liquidity": "42493.8344",
+    "volume": "3235808.373503236",
+    "query_time": "2026-05-02T13:06:54Z"
+  },
+  "will-stuttgart-finish-in-the-top-4-of-the-bundesliga-202526-standings": {
+    "no": 0.49,
+    "yes": 0.51,
+    "question": "Will Stuttgart finish in the top 4 of the Bundesliga 2025\u201326 standings?",
+    "liquidity": "490.5337",
+    "volume": "1006.7012100000002",
+    "query_time": "2026-05-02T13:06:55Z"
+  },
+  "starmer-out-by-june-30-2026-862-594-548": {
+    "no": 0.595,
+    "yes": 0.405,
+    "question": "Starmer out by June 30, 2026?",
+    "liquidity": "72206.4574",
+    "volume": "1984306.6756830015",
+    "query_time": "2026-05-02T13:06:55Z"
+  },
+  "will-harry-kane-be-the-20252026-top-ucl-goal-scorer": {
+    "no": 0.6,
+    "yes": 0.4,
+    "question": "Will Harry Kane be the 2025/2026 top UCL goal scorer?",
+    "liquidity": "5279.0005",
+    "volume": "93468.822411",
+    "query_time": "2026-05-02T13:06:55Z"
+  },
+  "will-the-democrats-win-the-iowa-senate-race-in-2026": {
+    "no": 0.595,
+    "yes": 0.405,
+    "question": "Will the Democrats win the Iowa Senate race in 2026?",
+    "liquidity": "26916.8558",
+    "volume": "61094.42068700017",
+    "query_time": "2026-05-02T13:06:55Z"
+  },
+  "will-databricks-market-cap-be-between-100b-and-125b-at-market-close-on-ipo-day": {
+    "no": 0.9305,
+    "yes": 0.0695,
+    "question": "Will Databricks\u2019 market cap be between $100B and $125B at market close on IPO day?",
+    "liquidity": "768.18838",
+    "volume": "61038.57252899997",
+    "query_time": "2026-05-02T13:06:56Z"
+  },
+  "will-cagliari-be-relegated-from-serie-a-after-the-2025-26-season": {
+    "no": 0.618,
+    "yes": 0.382,
+    "question": "Will Cagliari be relegated from Serie A after the 2025-26 season?",
+    "liquidity": "56.59265",
+    "volume": "2004.2025939999999",
+    "query_time": "2026-05-02T13:06:56Z"
+  },
+  "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254": {
+    "no": 0.635,
+    "yes": 0.365,
+    "question": "Will MegaETH perform an airdrop by June 30? ",
+    "liquidity": "4834.56539",
+    "volume": "1515200.5562819971",
+    "query_time": "2026-05-02T13:06:56Z"
+  },
+  "will-harvey-weinstein-be-sentenced-to-no-prison-time": {
+    "no": 0.634,
+    "yes": 0.366,
+    "question": "Will Harvey Weinstein be sentenced to no prison time?",
+    "liquidity": "1445.24704",
+    "volume": "326012.89074100147",
+    "query_time": "2026-05-02T13:06:56Z"
+  },
+  "will-aston-villa-win-the-2025-26-uefa-europa-league": {
+    "no": 0.635,
+    "yes": 0.365,
+    "question": "Will Aston Villa win the 2025-26 UEFA Europa League?",
+    "liquidity": "43312.3159",
+    "volume": "538413.2701769995",
+    "query_time": "2026-05-02T13:06:57Z"
+  },
+  "will-cremonese-be-relegated-from-serie-a-after-the-2025-26-season": {
+    "no": 0.415,
+    "yes": 0.585,
+    "question": "Will Cremonese be relegated from Serie A after the 2025-26 season?",
+    "liquidity": "72.8086",
+    "volume": "2339.0221869999996",
+    "query_time": "2026-05-02T13:06:57Z"
+  },
+  "will-west-ham-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+    "no": 0.655,
+    "yes": 0.345,
+    "question": "Will West Ham be relegated from the English Premier League after the 2025\u201326 season?",
+    "liquidity": "8564.0611",
+    "volume": "99457.20473199993",
+    "query_time": "2026-05-02T13:06:57Z"
+  },
+  "will-alavs-be-relegated-from-la-liga-after-the-202526-season": {
+    "no": 0.6875,
+    "yes": 0.3125,
+    "question": "Will Alav\u00e9s be relegated from La Liga after the 2025\u201326 season?",
+    "liquidity": "234.94024",
+    "volume": "1828.494564",
+    "query_time": "2026-05-02T13:06:57Z"
+  },
+  "will-sevilla-be-relegated-from-la-liga-after-the-202526-season": {
+    "no": 0.81,
+    "yes": 0.19,
+    "question": "Will Sevilla be relegated from La Liga after the 2025\u201326 season?",
+    "liquidity": "559.417",
+    "volume": "15352.062972000003",
+    "query_time": "2026-05-02T13:06:58Z"
+  },
+  "will-the-republicans-win-the-georgia-governor-race-in-2026": {
+    "no": 0.7,
+    "yes": 0.3,
+    "question": "Will the Republicans win the Georgia governor race in 2026?",
+    "liquidity": "12993.735",
+    "volume": "14885.040096000006",
+    "query_time": "2026-05-02T13:06:58Z"
+  },
+  "will-nottm-forest-win-the-2025-26-uefa-europa-league": {
+    "no": 0.668,
+    "yes": 0.332,
+    "question": "Will Nott'm Forest win the 2025-26 UEFA Europa League?",
+    "liquidity": "51576.23742",
+    "volume": "176190.62188499988",
+    "query_time": "2026-05-02T13:06:58Z"
+  },
+  "will-the-boston-celtics-win-the-nba-eastern-conference-finals": {
+    "no": 0.6845,
+    "yes": 0.3155,
+    "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
+    "liquidity": "43953.70021",
+    "volume": "1012069.3175450012",
+    "query_time": "2026-05-02T13:06:58Z"
+  },
+  "will-paloma-valencia-win-the-2026-colombian-presidential-election": {
+    "no": 0.681,
+    "yes": 0.319,
+    "question": "Will Paloma Valencia win the 2026 Colombian presidential election?",
+    "liquidity": "90867.88353",
+    "volume": "952834.5359100024",
+    "query_time": "2026-05-02T13:06:59Z"
+  },
+  "will-tottenham-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+    "no": 0.6795,
+    "yes": 0.3205,
+    "question": "Will Tottenham be relegated from the English Premier League after the 2025\u201326 season?",
+    "liquidity": "22503.76734",
+    "volume": "504400.36135599995",
+    "query_time": "2026-05-02T13:06:59Z"
+  },
+  "will-the-democrats-win-the-kansas-governor-race-in-2026": {
+    "no": 0.635,
+    "yes": 0.365,
+    "question": "Will the Democrats win the Kansas governor race in 2026?",
+    "liquidity": "10546.5514",
+    "volume": "4286.428977000001",
+    "query_time": "2026-05-02T13:06:59Z"
+  },
+  "nhl-2025-26-hart-memorial-trophy-nikita-kucherov": {
+    "no": 0.707,
+    "yes": 0.293,
+    "question": "Will Nikita Kucherov win the 2025\u20132026 NHL Hart Memorial Trophy?",
+    "liquidity": "1132.12174",
+    "volume": "40505.29656800001",
+    "query_time": "2026-05-02T13:07:00Z"
+  },
+  "will-psg-win-the-202526-champions-league": {
+    "no": 0.685,
+    "yes": 0.315,
+    "question": "Will PSG win the 2025\u201326 Champions League?",
+    "liquidity": "174193.7265",
+    "volume": "7749397.991203059",
+    "query_time": "2026-05-02T13:07:00Z"
+  },
+  "will-bayern-munich-win-the-202526-champions-league": {
+    "no": 0.685,
+    "yes": 0.315,
+    "question": "Will Bayern Munich win the 2025\u201326 Champions League?",
+    "liquidity": "269496.5645",
+    "volume": "6009800.336319915",
+    "query_time": "2026-05-02T13:07:00Z"
+  },
+  "will-burnley-finish-in-last-place-in-the-2025-26-english-premier-league": {
+    "no": 0.6285,
+    "yes": 0.3715,
+    "question": "Will Burnley finish in last place in the 2025-26 English Premier League?",
+    "liquidity": "654.52509",
+    "volume": "23786.26879",
+    "query_time": "2026-05-02T13:07:00Z"
+  },
+  "will-the-san-antonio-spurs-win-the-nba-western-conference-finals": {
+    "no": 0.707,
+    "yes": 0.293,
+    "question": "Will the San Antonio Spurs win the NBA Western Conference Finals?",
+    "liquidity": "53516.05571",
+    "volume": "1135473.0203950007",
+    "query_time": "2026-05-02T13:07:01Z"
+  },
+  "will-the-republicans-win-the-maine-senate-race-in-2026": {
+    "no": 0.725,
+    "yes": 0.275,
+    "question": "Will the Republicans win the Maine Senate race in 2026?",
+    "liquidity": "262885.5784",
+    "volume": "35997.443386000006",
+    "query_time": "2026-05-02T13:07:01Z"
+  },
+  "will-arsenal-win-the-202526-champions-league": {
+    "no": 0.705,
+    "yes": 0.295,
+    "question": "Will Arsenal win the 2025\u201326 Champions League?",
+    "liquidity": "137554.1216",
+    "volume": "6223153.556059216",
+    "query_time": "2026-05-02T13:07:01Z"
+  },
+  "will-the-democrats-win-the-florida-senate-race-in-2026": {
+    "no": 0.82,
+    "yes": 0.18,
+    "question": "Will the Democrats win the Florida Senate race in 2026?",
+    "liquidity": "10235.303",
+    "volume": "17124.372785999996",
+    "query_time": "2026-05-02T13:07:01Z"
+  },
+  "will-hyperliquid-perform-an-airdrop-by-december-31-2026": {
+    "no": 0.71,
+    "yes": 0.29,
+    "question": "Will Hyperliquid perform an airdrop by December 31, 2026? ",
+    "liquidity": "3530.5928",
+    "volume": "107364.85827900015",
+    "query_time": "2026-05-02T13:07:02Z"
+  },
+  "will-st-pauli-be-relegated-from-the-bundesliga-after-the-202526-season-863": {
+    "no": 0.67,
+    "yes": 0.33,
+    "question": "Will St. Pauli be relegated from the Bundesliga after the 2025\u201326 season?",
+    "liquidity": "1448.0245",
+    "volume": "11270.794833999998",
+    "query_time": "2026-05-02T13:07:02Z"
+  },
+  "will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison": {
+    "no": 0.7135,
+    "yes": 0.2865,
+    "question": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+    "liquidity": "678.04878",
+    "volume": "184275.0170509998",
+    "query_time": "2026-05-02T13:07:02Z"
+  },
+  "will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election": {
+    "no": 0.725,
+    "yes": 0.275,
+    "question": "Will Abelardo de la Espriella  win the 2026 Colombian presidential election?",
+    "liquidity": "88618.5488",
+    "volume": "934776.4095509978",
+    "query_time": "2026-05-02T13:07:02Z"
+  },
+  "will-the-democrats-win-the-new-hampshire-governor-race-in-2026": {
+    "no": 0.735,
+    "yes": 0.265,
+    "question": "Will the Democrats win the New Hampshire governor race in 2026?",
+    "liquidity": "10041.4833",
+    "volume": "4209.266836999998",
+    "query_time": "2026-05-02T13:07:03Z"
+  },
+  "will-the-new-york-knicks-win-the-nba-eastern-conference-finals": {
+    "no": 0.73,
+    "yes": 0.27,
+    "question": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+    "liquidity": "55219.1298",
+    "volume": "485854.4541979978",
+    "query_time": "2026-05-02T13:07:03Z"
+  },
+  "will-openai-ipo-by-december-31-2026": {
+    "no": 0.74,
+    "yes": 0.26,
+    "question": "Will OpenAI IPO by December 31 2026?",
+    "liquidity": "4893.624",
+    "volume": "444983.5974219992",
+    "query_time": "2026-05-02T13:07:03Z"
+  },
+  "will-the-democrats-win-the-south-carolina-senate-race-in-2026": {
+    "no": 0.785,
+    "yes": 0.215,
+    "question": "Will the Democrats win the South Carolina Senate race in 2026?",
+    "liquidity": "12358.7513",
+    "volume": "17554.44630699999",
+    "query_time": "2026-05-02T13:07:04Z"
+  },
+  "will-roma-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+    "no": 0.76,
+    "yes": 0.24,
+    "question": "Will Roma finish in the top 4 in the 2025-26 Serie A season?",
+    "liquidity": "418.0785",
+    "volume": "7714.636710999999",
+    "query_time": "2026-05-02T13:07:04Z"
+  },
+  "will-the-democrats-win-the-texas-governor-race-in-2026": {
+    "no": 0.85,
+    "yes": 0.15,
+    "question": "Will the Democrats win the Texas governor race in 2026?",
+    "liquidity": "13680.106",
+    "volume": "5907.258537000001",
+    "query_time": "2026-05-02T13:07:04Z"
+  },
+  "will-google-have-the-best-ai-model-at-the-end-of-june-2026": {
+    "no": 0.785,
+    "yes": 0.215,
+    "question": "Will Google have the best AI model at the end of June 2026?",
+    "liquidity": "32801.881",
+    "volume": "451464.61529699975",
+    "query_time": "2026-05-02T13:07:05Z"
+  },
+  "will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983": {
+    "no": 0.785,
+    "yes": 0.215,
+    "question": "Will Spencer Pratt win the 2026 Los Angeles mayoral election?",
+    "liquidity": "39929.7404",
+    "volume": "166171.50606899988",
+    "query_time": "2026-05-02T13:07:05Z"
+  },
+  "will-google-have-the-second-best-ai-model-at-the-end-of-june-2026": {
+    "no": 0.78,
+    "yes": 0.22,
+    "question": "Will Google have the second best AI model at the end of June 2026?",
+    "liquidity": "3256.8809",
+    "volume": "5233.906754000001",
+    "query_time": "2026-05-02T13:07:05Z"
+  },
+  "will-the-republican-win-the-arizona-governor-race-in-2026": {
+    "no": 0.78,
+    "yes": 0.22,
+    "question": "Will the Republicans win the Arizona governor race in 2026?",
+    "liquidity": "12915.8525",
+    "volume": "19588.410521000023",
+    "query_time": "2026-05-02T13:07:05Z"
+  },
+  "will-the-democrats-win-the-florida-governor-race-in-2026": {
+    "no": 0.785,
+    "yes": 0.215,
+    "question": "Will the Democrats win the Florida governor race in 2026?",
+    "liquidity": "12729.0946",
+    "volume": "10251.677295999998",
+    "query_time": "2026-05-02T13:07:06Z"
+  },
+  "will-liverpool-finish-in-3rd-place-in-the-2025-26-english-premier-league": {
+    "no": 0.795,
+    "yes": 0.205,
+    "question": "Will Liverpool finish in 3rd place in the 2025-26 English Premier League?",
+    "liquidity": "1677.7591",
+    "volume": "12573.332085000018",
+    "query_time": "2026-05-02T13:07:06Z"
+  },
+  "will-karen-bass-win-the-2026-los-angeles-mayoral-election": {
+    "no": 0.795,
+    "yes": 0.205,
+    "question": "Will Karen Bass win the 2026 Los Angeles mayoral election?",
+    "liquidity": "18650.7547",
+    "volume": "37353.26844199999",
+    "query_time": "2026-05-02T13:07:06Z"
+  },
+  "will-the-republicans-win-the-michigan-governor-race-in-2026": {
+    "no": 0.795,
+    "yes": 0.205,
+    "question": "Will the Republicans win the Michigan governor race in 2026?",
+    "liquidity": "13318.3967",
+    "volume": "139191.39128099996",
+    "query_time": "2026-05-02T13:07:06Z"
+  },
+  "will-the-minnesota-wild-win-the-western-conference-742": {
+    "no": 0.8065,
+    "yes": 0.1935,
+    "question": "Will the Minnesota Wild win the Western Conference?",
+    "liquidity": "31734.29696",
+    "volume": "127694.183406",
+    "query_time": "2026-05-02T13:07:07Z"
+  },
+  "will-the-detroit-pistons-win-the-nba-eastern-conference-finals": {
+    "no": 0.83,
+    "yes": 0.17,
+    "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
+    "liquidity": "61520.83018",
+    "volume": "878480.6026230021",
+    "query_time": "2026-05-02T13:07:07Z"
+  },
+  "will-the-democrats-win-the-kansas-senate-race-in-2026": {
+    "no": 0.815,
+    "yes": 0.185,
+    "question": "Will the Democrats win the Kansas Senate race in 2026?",
+    "liquidity": "12580.382",
+    "volume": "10509.624022999995",
+    "query_time": "2026-05-02T13:07:07Z"
+  },
+  "will-the-republicans-win-the-michigan-senate-race-in-2026": {
+    "no": 0.77,
+    "yes": 0.23,
+    "question": "Will the Republicans win the Michigan Senate race in 2026?",
+    "liquidity": "13101.7193",
+    "volume": "27263.699859000008",
+    "query_time": "2026-05-02T13:07:08Z"
+  },
+  "will-leeds-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+    "no": 0.815,
+    "yes": 0.185,
+    "question": "Will Leeds be relegated from the English Premier League after the 2025\u201326 season?",
+    "liquidity": "9811.7196",
+    "volume": "85729.72366999988",
+    "query_time": "2026-05-02T13:07:08Z"
+  },
+  "will-the-republicans-win-the-georgia-senate-race-in-2026": {
+    "no": 0.8495,
+    "yes": 0.1505,
+    "question": "Will the Republicans win the Georgia Senate race in 2026?",
+    "liquidity": "14962.47006",
+    "volume": "15034.871756000004",
+    "query_time": "2026-05-02T13:07:08Z"
+  },
+  "will-the-buffalo-sabres-win-the-eastern-conference": {
+    "no": 0.8225,
+    "yes": 0.1775,
+    "question": "Will the Buffalo Sabres win the Eastern Conference?",
+    "liquidity": "12643.06735",
+    "volume": "203899.86083699996",
+    "query_time": "2026-05-02T13:07:08Z"
+  },
+  "will-google-have-the-top-ai-model-at-the-end-of-june-2026": {
+    "no": 0.835,
+    "yes": 0.165,
+    "question": "Will Google have the top AI model at the end of June 2026?",
+    "liquidity": "13203.2863",
+    "volume": "16599.984950000002",
+    "query_time": "2026-05-02T13:07:09Z"
+  },
+  "will-the-tampa-bay-lightning-win-the-eastern-conference": {
+    "no": 0.82,
+    "yes": 0.18,
+    "question": "Will the Tampa Bay Lightning win the Eastern Conference?",
+    "liquidity": "14484.71",
+    "volume": "37577.58722200001",
+    "query_time": "2026-05-02T13:07:09Z"
+  },
+  "will-the-vegas-golden-knights-win-the-western-conference-541": {
+    "no": 0.7925,
+    "yes": 0.2075,
+    "question": "Will the Vegas Golden Knights win the Western Conference?",
+    "liquidity": "26040.72519",
+    "volume": "56204.76420300001",
+    "query_time": "2026-05-02T13:07:09Z"
+  },
+  "will-mark-lynch-be-the-republican-nominee-for-senate-in-south-carolina": {
+    "no": 0.8855,
+    "yes": 0.1145,
+    "question": "Will Mark Lynch be the Republican nominee for Senate in South Carolina?",
+    "liquidity": "13362.92247",
+    "volume": "9583.931173999998",
+    "query_time": "2026-05-02T13:07:09Z"
+  },
+  "will-france-win-the-2026-fifa-world-cup-924": {
+    "no": 0.8355,
+    "yes": 0.1645,
+    "question": "Will France win the 2026 FIFA World Cup?",
+    "liquidity": "497082.13032",
+    "volume": "22801380.19237667",
+    "query_time": "2026-05-02T13:07:09Z"
+  },
+  "will-braga-win-the-2025-26-uefa-europa-league": {
+    "no": 0.835,
+    "yes": 0.165,
+    "question": "Will Braga win the 2025-26 UEFA Europa League?",
+    "liquidity": "41772.6229",
+    "volume": "169201.53195600028",
+    "query_time": "2026-05-02T13:07:10Z"
+  },
+  "will-vedat-muriqi-be-the-top-goal-scorer-in-the-202526-la-liga-season": {
+    "no": 0.9,
+    "yes": 0.1,
+    "question": "Will Vedat Muriqi be the top goal scorer in the 2025\u201326 La Liga season?",
+    "liquidity": "2836.60097",
+    "volume": "34766.242971999985",
+    "query_time": "2026-05-02T13:07:10Z"
+  },
+  "will-spain-win-the-2026-fifa-world-cup-963": {
+    "no": 0.8475,
+    "yes": 0.1525,
+    "question": "Will Spain win the 2026 FIFA World Cup?",
+    "liquidity": "979743.89156",
+    "volume": "17941601.373471417",
+    "query_time": "2026-05-02T13:07:10Z"
+  },
+  "will-the-cleveland-cavaliers-win-the-nba-eastern-conference-finals": {
+    "no": 0.835,
+    "yes": 0.165,
+    "question": "Will the Cleveland Cavaliers win the NBA Eastern Conference Finals?",
+    "liquidity": "49071.1363",
+    "volume": "293838.3200389997",
+    "query_time": "2026-05-02T13:07:10Z"
+  },
+  "will-the-republicans-win-the-north-carolina-senate-race-in-2026": {
+    "no": 0.855,
+    "yes": 0.145,
+    "question": "Will the Republicans win the North Carolina Senate race in 2026?",
+    "liquidity": "13354.4899",
+    "volume": "31884.236662000003",
+    "query_time": "2026-05-02T13:07:10Z"
+  },
+  "will-freiburg-win-the-2025-26-uefa-europa-league": {
+    "no": 0.848,
+    "yes": 0.152,
+    "question": "Will Freiburg win the 2025-26 UEFA Europa League?",
+    "liquidity": "44679.54547",
+    "volume": "175000.3897840001",
+    "query_time": "2026-05-02T13:07:11Z"
+  },
+  "will-the-republicans-win-the-new-hampshire-senate-race-in-2026": {
+    "no": 0.83,
+    "yes": 0.17,
+    "question": "Will the Republicans win the New Hampshire Senate race in 2026?",
+    "liquidity": "9926.2027",
+    "volume": "7717.549737",
+    "query_time": "2026-05-02T13:07:11Z"
+  },
+  "will-nottm-forest-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+    "no": 0.875,
+    "yes": 0.125,
+    "question": "Will Nottm Forest be relegated from the English Premier League after the 2025\u201326 season?",
+    "liquidity": "8366.8796",
+    "volume": "58335.07390699998",
+    "query_time": "2026-05-02T13:07:11Z"
+  },
+  "will-an-independent-win-the-montana-senate-race-in-2026": {
+    "no": 0.866,
+    "yes": 0.134,
+    "question": "Will an independent win the Montana Senate race in 2026?",
+    "liquidity": "12086.27875",
+    "volume": "345.52924",
+    "query_time": "2026-05-02T13:07:12Z"
+  }
+}

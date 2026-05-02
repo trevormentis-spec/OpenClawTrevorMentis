@@ -62,6 +62,134 @@
       "focus": "U.S.-led defensive patrols, diplomatic/military framing of the Strait",
       "url": "https://richardhaass.substack.com",
       "signal_level": "High"
+    },
+    {
+      "name": "TheBoardWorld",
+      "type": "Substack/Strategic Analysis",
+      "focus": "Complete strategic analysis of Hormuz crisis: military timeline, energy market rupture, allied non-participation, petrodollar implications",
+      "url": "https://theboardworld.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "Omid SoureSrafil",
+      "type": "Substack/Geopolitics",
+      "focus": "Iran leverage dynamics, de-dollarization, petrodollar collapse, economic warfare via Wolff/Hudson frameworks",
+      "url": "https://omidsouresrafil.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "Paul Stewart II (Oil Markets)",
+      "type": "Substack/Energy",
+      "focus": "Insurance market collapse, DFC backstop analysis, commercial vs physical blockage, transit metrics, Brent pricing",
+      "url": "https://paulstewartii.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "Ronald J. Botelho (Strategic Implications)",
+      "type": "Substack/Academic",
+      "focus": "Complex-systems analysis of Hormuz: multi-layer shocks, IMF/EIA data analysis, petrodollar invoicing stability, alliance network dynamics",
+      "url": "https://ronaldjbotelho.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "EIA Today in Energy",
+      "type": "US Gov/Energy Data",
+      "focus": "LNG price divergence (TTF/JKM/HH), Brent backwardation, SPR drawdowns, weekly petroleum status reports, official energy data pipeline",
+      "url": "https://www.eia.gov/todayinenergy/",
+      "signal_level": "High — authoritative",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "Safety4Sea",
+      "type": "Maritime Safety/News",
+      "focus": "IMO warnings, seafarer welfare, insurance rate tracking, Vortexa traffic data, dark fleet analysis, IMO Sec-Gen updates",
+      "url": "https://safety4sea.com",
+      "signal_level": "High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "MaritimeNews.com",
+      "type": "Maritime News",
+      "focus": "US blockade timeline, ship interdictions, Iran toll system status, military asset deployment details",
+      "url": "https://www.maritimenews.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "ISW/Critical Threats Project (UnderstandingWar.org)",
+      "type": "Think Tank/Intel",
+      "focus": "Daily Iran Update: running intelligence estimates of Iranian regional strategy, proxy forces, post-Assad Syria, geospatial mapping",
+      "url": "https://understandingwar.org/analysis/middle-east/iran-update/",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-02"
+    },
+    {
+      "name": "Radio007 (YouTube)",
+      "type": "YouTube/OSINT",
+      "focus": "OSINT Geopolitics Weekly — small channel producing weekly OSINT roundups covering Hormuz, Iran, oil shock",
+      "url": "https://www.youtube.com/@Radio-zq8yn",
+      "signal_level": "Medium",
+      "discovered": "2026-05-02",
+      "note": "Transcript fetch blocked. Small audience, OSINT-focused content."
+    }
+  ],
+  "moltbook_sources": [
+    {
+      "category": "Moltbook — geopolitics & intel agents",
+      "type": "Agent-Generated Geopolitical Analysis",
+      "focus": "Geopolitical risk, Iran conflict, oil markets, defense analysis, strategic assessment",
+      "signal_level": "Low-Medium",
+      "note": "Early-stage; output quality varies. Monitor for signal before upgrading.",
+      "key_agents": [
+        {"agent": "Noob_Original", "focus": "Geopolitical crisis analysis, oil markets, economic disruption"},
+        {"agent": "agent_smith_49375", "focus": "Market-geopolitics correlation, Iran sanctions impact, BTC/oil dynamics"},
+        {"agent": "adam-openclaw", "focus": "Iran conflict, US-Trump policy, Middle East developments"}
+      ]
+    },
+    {
+      "category": "Moltbook — OSINT agents",
+      "type": "Agent OSINT Collection",
+      "focus": "OSINT methodology, strategic research, privacy/security analysis",
+      "signal_level": "Low-Medium",
+      "key_agents": [
+        {"agent": "kai-osint", "focus": "Strategic research, OSINT collection, multi-domain analysis"},
+        {"agent": "dream_osint", "focus": "OSINT, privacy, data protection, digital confidentiality"}
+      ]
+    },
+    {
+      "category": "Moltbook — analytic tradecraft",
+      "type": "Agent Methodology Content",
+      "focus": "Source evaluation, burden of proof, critical thinking, analytic rigor",
+      "signal_level": "Medium",
+      "note": "Useful for analyst training curriculum; professorquantum's source evaluation framework aligns with structured analytic techniques.",
+      "key_agents": [
+        {"agent": "professorquantum", "focus": "Source evaluation methodology, epistemic rigor, burden of proof, falsifiability"}
+      ]
+    },
+    {
+      "category": "Moltbook — platform communities",
+      "type": "Agent Ecosystem Intel",
+      "focus": "OpenClaw ecosystem, tooling, skills infrastructure, agent capabilities",
+      "signal_level": "Medium",
+      "submolts": [
+        {"name": "m/openclaw-explorers", "focus": "OpenClaw platform developments, agent deployments"},
+        {"name": "m/tooling", "focus": "Agent skill discovery, prompt engineering, tooling frameworks"},
+        {"name": "m/infrastructure", "focus": "Agent infrastructure patterns"}
+      ]
+    },
+    {
+      "category": "Moltbook — skills ecosystem",
+      "type": "Agent Skill Registries",
+      "focus": "Agent skill discovery and indexing",
+      "signal_level": "Low-Medium",
+      "key_agents": [
+        {"agent": "skillshub", "focus": "5000+ skills indexed, AI agent skills registry API"},
+        {"agent": "neo_skills", "focus": "OpenClaw skill building, framework development"}
+      ]
     }
   ]
 }

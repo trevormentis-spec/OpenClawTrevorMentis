@@ -1,0 +1,96 @@
+{
+  "title": "Daily Intelligence Briefing",
+  "subtitle": "Geopolitical & Security Assessment — 1 May 2026",
+  "generated_at": "1 May 2026 20:30 UTC",
+  "classification": "CONFIDENTIAL — CLIENT USE ONLY",
+  "summary": [
+    "Operation Epic Fury shifts from kinetic ops to maritime blockade and coercive pressure; ceasefire holding but fragile",
+    "Strait of Hormuz remains effectively closed; Brent crude at $124.67/bbl under blockade enforcement",
+    "Iran signals asymmetric retaliation capability; 400+ militia strikes across 6 countries since conflict began",
+    "No defined political end-state risks protracted regional standoff",
+    "Ukraine leverages crisis for Gulf security partnerships; China tensions simmer in South China Sea"
+  ],
+  "sections": [
+    {
+      "title": "1. Middle East — Operation Epic Fury",
+      "lead": "The US-Israeli campaign has transitioned from high-intensity strikes to a maritime blockade strategy, with 42 vessels turned back from the Strait of Hormuz. 200 aircraft and 25 ships are now involved in blockade enforcement.",
+      "items": [
+        "Ceasefire holding on an open-ended basis but no diplomatic off-ramp defined",
+        "Admiral Cooper and CJCS Caine briefed President Trump on options including limited ground interventions and energy infrastructure strikes",
+        "Iran-aligned Iraqi militias (Islamic Resistance in Iraq coalition) have launched 400+ strikes across Iraq, Saudi Arabia, Kuwait, UAE, Qatar, Bahrain, and Jordan",
+        "Israel delivered advanced defensive weaponry to UAE for missile/drone protection",
+        "Israel on heightened alert; media reports suggest Trump nearing decision on renewed military action",
+        "Iran's decentralized power structure increasingly dominated by IRGC elements, complicating diplomatic pathways"
+      ],
+      "assessment": "Moderate-to-high probability of protracted standoff (65-75%). Risk of escalation to limited ground operations or energy infrastructure strikes. Absent diplomatic breakthrough, the current posture risks prolonged regional instability.",
+      "table": {
+        "headers": ["Indicator", "Status", "Trend"],
+        "rows": [
+          ["Ceasefire stability", "Fragile", "↘ Deteriorating"],
+          ["Blockade enforcement", "Active (42 vessels turned back)", "→ Stable"],
+          ["Oil price (Brent)", "$124.67/bbl", "↗ Rising"],
+          ["Iran militia activity", "400+ strikes total", "↗ Increasing"],
+          ["Diplomatic backchannel", "None visible", "→ Stalled"]
+        ]
+      }
+    },
+    {
+      "title": "2. Energy & Economic Disruption",
+      "lead": "The Strait of Hormuz closure continues to impact global energy markets with no timeline for reopening under the US-proposed Maritime Freedom Construct.",
+      "items": [
+        "Brent crude at $124.67/bbl — highest since 2022 energy crisis",
+        "US proposes 'Maritime Freedom Construct' coalition for safe passage; diplomatic buy-in uncertain",
+        "Iran restates claim to Strait of Hormuz as sovereign waterway",
+        "Global shipping disruptions continue; insurance premiums for Gulf transits remain elevated"
+      ],
+      "assessment": "Oil prices likely to remain elevated ($110-130/bbl range) for at least 2-3 weeks. Risk of sustained $100+ pricing if blockade continues beyond May.",
+      "table": {
+        "headers": ["Commodity", "Current Price", "7-day Change"],
+        "rows": [
+          ["Brent Crude", "$124.67/bbl", "+7.2%"],
+          ["WTI Crude", "$119.80/bbl", "+6.8%"],
+          ["European Natural Gas", "€48.50/MWh", "+12%"]
+        ]
+      }
+    },
+    {
+      "title": "3. Ukraine — Strategic Adaptation",
+      "lead": "Ukraine has used the Middle East crisis as a strategic window to deepen Gulf security partnerships.",
+      "items": [
+        "Kyiv sent anti-drone specialists to 5 Gulf states",
+        "Long-term security partnership signed with Saudi Arabia, Qatar, and UAE",
+        "Zelenskyy cites Iran conflict distraction as obstacle to Russia peace talks",
+        "Ukraine formally asked Israel to seize ship carrying grain stolen by Russia"
+      ],
+      "assessment": "Ukraine is effectively diversifying security relationships. The Iran crisis provides diplomatic cover for deeper Ukraine-Gulf ties that would have been politically difficult before.",
+      "table": {
+        "headers": ["Partner", "Deal Type", "Status"],
+        "rows": [
+          ["Saudi Arabia", "Security partnership", "Signed"],
+          ["Qatar", "Security partnership", "Signed"],
+          ["UAE", "Anti-drone deployment", "Active"],
+          ["Israel", "Stolen grain seizure request", "Pending"]
+        ]
+      }
+    },
+    {
+      "title": "4. Indo-Pacific & China",
+      "lead": "China conducted combat readiness patrols near Scarborough Shoal as US attention remains fixed on the Middle East.",
+      "items": [
+        "PLA patrols near Scarborough Shoal in disputed South China Sea",
+        "Foreign Minister Wang Yi warns Taiwan issue is 'biggest point of risk' for US-China relations",
+        "Trump scheduled to visit Beijing in 2 weeks with Strait of Hormuz still closed",
+        "Australia publishes 2026 National Defence Strategy emphasizing regional deterrence"
+      ],
+      "assessment": "China is testing US capacity for two-theater engagement. The Trump-Beijing visit will be a critical indicator of US-China tension management under current crisis conditions."
+    }
+  ],
+  "horizon": [
+    "Next 24-48h: Ceasefire decision point — Trump briefed on options, decision on renewed kinetic ops likely imminent",
+    "Next 7 days: Maritime Freedom Construct diplomatic push; coalition-building for safe passage through Hormuz",
+    "Next 30 days: Risk of protracted standoff without diplomatic breakthrough; potential for Iranian asymmetric retaliation in cyber domain",
+    "Watch items: IRGC leadership signals, Houthi Red Sea activation, China South China Sea posture during Trump visit"
+  ],
+  "confidence": "Medium-High (sources: US official statements, intelligence community briefings, open-source reporting). Maritime blockade data verified through naval tracking. Diplomatic assessments reflect stated positions; actual backchannel activity may differ.",
+  "footer": "TREVOR Assessment — 1 May 2026 20:30 UTC — Prepared for Roderick Jones"
+}

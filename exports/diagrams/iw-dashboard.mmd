@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph "I&W Dashboard — Escalation Track"
+        EW1[⚠️ IRGC leadership signals] -->|TRIGGERED| ST1[🟥 Active]
+        EW2[⚡ Militia strike frequency] -->|>3/day| ST2[🟥 Elevated]
+        EW3[🚢 Naval movement Hormuz] -->|MONITOR| ST3[🟨 Watch]
+        EW4[💬 Diplomatic channel status] -->|STALLED| ST4[🟨 No Progress]
+    end
+
+    subgraph "I&W Dashboard — De-escalation Track"
+        DW1[🤝 Direct negotiations] -->|NONE| DT1[🟩 Not Triggered]
+        DW2[📉 Oil price decline] -->|$124.67| DT2[↗ Rising]
+        DW3[🚫 Blockade relaxation] -->|NO| DT3[🟩 Not Triggered]
+        DW4[📰 Iranian moderation signals] -->|NONE| DT4[🟩 Not Triggered]
+    end
+
+    subgraph "I&W Dashboard — Instability Track"
+        IW1[🏛️ Iraqi political fracture] -->|ESCALATING| IT1[🟥 Advancing]
+        IW2[🌊 Red Sea Houthi activation] -->|PENDING| IT2[🟨 Potential]
+        IW3[💻 Cyber attack frequency] -->|ELEVATED| IT3[🟥 Active]
+        IW4[📊 Gulf state alignment shifts] -->|DIVERGENT| IT4[🟨 Fragmented]
+    end
+
+    style EW1 fill:#e74c3c,color:#fff
+    style EW2 fill:#e74c3c,color:#fff
+    style IW3 fill:#e74c3c,color:#fff
+    style IW1 fill:#e74c3c,color:#fff

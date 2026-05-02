@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor Intelligence Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: #0b1120;
+            color: #e2e8f0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ── Scrollbar ── */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* ── Layout ── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ── Status Bar ── */
+        .status-bar {
+            background: #0d1525;
+            border-bottom: 1px solid #1e293b;
+            padding: 8px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #64748b;
+        }
+        .status-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .status-bar .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .status-bar .dot {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .dot-green { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.4); }
+        .dot-amber { background: #eab308; box-shadow: 0 0 6px rgba(234,179,8,0.4); }
+        .dot-red { background: #ef4444; box-shadow: 0 0 6px rgba(239,68,68,0.4); }
+        .status-bar .sep { color: #334155; user-select: none; }
+        .status-bar .version { color: #3b82f6; }
+
+        /* ── Header ── */
+        header {
+            padding: 40px 0 32px;
+            border-bottom: 1px solid #1e293b;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        header .subtitle {
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+        header .meta {
+            display: flex;
+            gap: 24px;
+            margin-top: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #475569;
+            flex-wrap: wrap;
+        }
+        header .classification {
+            display: inline-block;
+            border: 1px solid #ef4444;
+            color: #ef4444;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 3px 12px;
+            margin-top: 16px;
+            background: rgba(239,68,68,0.08);
+        }
+
+        /* ── BLUF ── */
+        .bluf {
+            margin: 32px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #1e293b;
+        }
+        .bluf-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .bluf-header.critical { background: rgba(239,68,68,0.15); color: #fca5a5; border-bottom: 1px solid rgba(239,68,68,0.2); }
+        .bluf-header.high { background: rgba(249,115,22,0.15); color: #fdba74; border-bottom: 1px solid rgba(249,115,22,0.2); }
+        .bluf-header.watch { background: rgba(234,179,8,0.15); color: #fde047; border-bottom: 1px solid rgba(234,179,8,0.2); }
+        .bluf-body { padding: 18px 20px; background: #131c31; font-size: 15px; line-height: 1.7; color: #cbd5e1; }
+        .bluf-body strong { color: #f1f5f9; }
+
+        /* ── Key Judgments ── */
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin: 40px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, #1e293b, transparent);
+        }
+        .kj-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .kj-card {
+            background: #131c31;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 16px 18px;
+            transition: border-color 0.2s, transform 0.15s;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .kj-card:hover {
+            border-color: #334155;
+            transform: translateY(-1px);
+        }
+        .kj-card .kj-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .kj-card .kj-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #60a5fa;
+            background: rgba(96,165,250,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .kj-card .kj-trend {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .trend-advancing { background: rgba(239,68,68,0.15); color: #fca5a5; }
+        .trend-stable { background: rgba(34,197,94,0.12); color: #86efac; }
+        .trend-watch { background: rgba(234,179,8,0.12); color: #fde047; }
+        .kj-card .kj-text { font-size: 14px; color: #cbd5e1; line-height: 1.5; }
+        .kj-card .kj-conf {
+            font-size: 11px;
+            color: #64748b;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* ── Dashboard Grid ── */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .db-card {
+            background: #131c31;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+        .db-card:hover { border-color: #2d3a52; }
+        .db-card-header {
+            padding: 14px 18px;
+            border-bottom: 1px solid #1e293b;
+            font-weight: 600;
+            font-size: 14px;
+            color: #93c5fd;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .db-card-body { padding: 14px 18px; }
+        .db-card-body p { font-size: 13px; color: #94a3b8; line-height: 1.6; margin-bottom: 12px; }
+
+        .status-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        .status-table tr { border-bottom: 1px solid #1e2a3d; }
+        .status-table tr:last-child { border-bottom: none; }
+        .status-table td { padding: 7px 0; }
+        .status-table td:first-child { color: #94a3b8; width: 40%; }
+        .status-table td:nth-child(2) { color: #e2e8f0; font-weight: 500; }
+        .status-table td:last-child { text-align: right; }
+        .status-tag {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .status-stable { background: rgba(34,197,94,0.12); color: #86efac; }
+        .status-increasing { background: rgba(239,68,68,0.12); color: #fca5a5; }
+        .status-deteriorating { background: rgba(239,68,68,0.15); color: #fca5a5; }
+        .status-watch { background: rgba(234,179,8,0.12); color: #fde047; }
+        .status-stalled { background: rgba(148,163,184,0.12); color: #94a3b8; }
+
+        /* ── Images ── */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .image-card {
+            background: #131c31;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #1e293b;
+        }
+        .image-card .img-caption {
+            padding: 10px 16px;
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        /* ── Horizon / Watch Items ── */
+        .horizon-box {
+            background: linear-gradient(135deg, #0f172a, #131c31);
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .horizon-box h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .horizon-box ul { list-style: none; }
+        .horizon-box li {
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+            font-size: 13px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+        .horizon-box li:last-child { border-bottom: none; }
+        .horizon-box li::before {
+            content: '⏱';
+            margin-right: 10px;
+            font-size: 11px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid #1e293b;
+            text-align: center;
+        }
+        footer .brief-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+        footer .copyright {
+            font-size: 12px;
+            color: #475569;
+        }
+
+        /* ── Loading State ── */
+        .loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            gap: 16px;
+        }
+        .loading-screen .spinner {
+            width: 36px; height: 36px;
+            border: 3px solid #1e293b;
+            border-top-color: #60a5fa;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-screen p { color: #475569; font-size: 13px; }
+
+        /* ── Error State ── */
+        .error-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            gap: 12px;
+        }
+        .error-screen .error-icon {
+            font-size: 48px;
+            color: #ef4444;
+        }
+        .error-screen h2 { color: #fca5a5; font-size: 20px; }
+        .error-screen p { color: #64748b; font-size: 14px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .container { padding: 0 16px; }
+            header h1 { font-size: 24px; }
+            .kj-grid { grid-template-columns: 1fr; }
+            .dashboard-grid { grid-template-columns: 1fr; }
+            .image-gallery { grid-template-columns: 1fr; }
+            header .meta { gap: 12px; font-size: 10px; }
+            .status-bar .container { font-size: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Status Bar ── -->
+    <div class="status-bar">
+        <div class="container">
+            <div class="badge">
+                <span class="dot dot-green"></span>
+                SYSTEM ONLINE
+                <span class="sep">|</span>
+                <span class="version">v<span id="version-display">3.0.0</span></span>
+            </div>
+            <div class="badge" id="status-bar-right"></div>
+        </div>
+    </div>
+
+    <!-- ── Main Content ── -->
+    <div class="container" id="app">
+        <div class="loading-screen" id="loading">
+            <div class="spinner"></div>
+            <p>Loading dashboard data…</p>
+        </div>
+
+        <!-- Rendered content goes here -->
+        <div id="content" style="display: none;"></div>
+    </div>
+
+    <script>
+    (async function() {
+        const loading = document.getElementById('loading');
+        const content = document.getElementById('content');
+        const statusRight = document.getElementById('status-bar-right');
+        const versionDisplay = document.getElementById('version-display');
+
+        try {
+            const resp = await fetch('dashboard-data.json?_=' + Date.now());
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            const data = await resp.json();
+
+            // Update version / status
+            versionDisplay.textContent = data.version || '—';
+            statusRight.textContent = data.dtg || '';
+            document.title = data.title + ' — ' + (data.subtitle || '');
+
+            // ── Build HTML ──
+            let html = '';
+
+            // HEADER
+            html += `
+                <header>
+                    <h1>${data.title || 'PROJECT SENTINEL'}</h1>
+                    <p class="subtitle">${data.subtitle || ''}</p>
+                    <div class="meta">
+                        <span>DTG: ${data.dtg || '—'}</span>
+                        <span>SIA: ${data.sia || '—'}</span>
+                    </div>
+                    <div class="classification">${data.classification || ''}</div>
+                </header>
+            `;
+
+            // BLUF
+            if (data.bluf) {
+                const sev = data.bluf.severity || 'critical';
+                html += `
+                    <div class="bluf">
+                        <div class="bluf-header ${sev}">
+                            <span>▼</span> BLUF: ${data.bluf.label || ''}
+                        </div>
+                        <div class="bluf-body">${data.bluf.text || ''}</div>
+                    </div>
+                `;
+            }
+
+            // KEY JUDGMENTS
+            if (data.key_judgments && data.key_judgments.length) {
+                html += `<div class="section-title">Strategic Key Judgments</div><div class="kj-grid">`;
+                data.key_judgments.forEach(kj => {
+                    const trend = kj.trend || 'stable';
+                    const trendLabel = trend.charAt(0).toUpperCase() + trend.slice(1);
+                    html += `
+                        <div class="kj-card">
+                            <div class="kj-top">
+                                <span class="kj-id">${kj.id || ''}</span>
+                                <span class="kj-trend trend-${trend}">${trendLabel}</span>
+                            </div>
+                            <div class="kj-text">${kj.text || ''}</div>
+                            <div class="kj-conf">${kj.confidence || ''}</div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            }
+
+            // SECTIONS (Dashboard Grid)
+            if (data.sections && data.sections.length) {
+                html += `<div class="section-title">Situation Overview</div><div class="dashboard-grid">`;
+                data.sections.forEach(sec => {
+                    html += `
+                        <div class="db-card">
+                            <div class="db-card-header">
+                                <span>${sec.icon === 'anchor' ? '⚓' : sec.icon === 'bar-chart' ? '📊' : sec.icon === 'globe' ? '🌐' : '🗺'}</span>
+                                ${sec.title || ''}
+                            </div>
+                            <div class="db-card-body">
+                                <p>${sec.body || ''}</p>
+                                ${sec.indicators ? `
+                                    <table class="status-table">
+                                        ${sec.indicators.map(ind => {
+                                            const statusClass = (ind.status || 'stable').toLowerCase().replace(/[^a-z]/g, '');
+                                            return `<tr><td>${ind.label}</td><td>${ind.value}</td><td><span class="status-tag status-${statusClass}">${ind.status}</span></td></tr>`;
+                                        }).join('')}
+                                    </table>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            }
+
+            // IMAGES
+            if (data.images && data.images.length) {
+                html += `<div class="section-title">Visual Intelligence</div><div class="image-gallery">`;
+                data.images.forEach(img => {
+                    html += `
+                        <div class="image-card">
+                            <img src="${img.src}" alt="${img.alt || ''}" loading="lazy" onerror="this.parentElement.style.display='none'">
+                            <div class="img-caption">${img.caption || ''}</div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            }
+
+            // HORIZON / WATCH ITEMS
+            if (data.horizon_items && data.horizon_items.length) {
+                html += `
+                    <div class="horizon-box">
+                        <h3>⏰ Horizon Watch</h3>
+                        <ul>
+                            ${data.horizon_items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // FOOTER
+            html += `
+                <footer>
+                    <div class="brief-id">${data.briefing_id ? 'Briefing ID: ' + data.briefing_id : ''}</div>
+                    <div class="copyright">${data.footer || ''}</div>
+                </footer>
+            `;
+
+            // Inject and reveal
+            content.innerHTML = html;
+            loading.style.display = 'none';
+            content.style.display = 'block';
+
+        } catch (err) {
+            loading.innerHTML = `
+                <div class="error-screen">
+                    <div class="error-icon">⚠</div>
+                    <h2>Dashboard Unavailable</h2>
+                    <p>Could not load dashboard data. ${err.message}</p>
+                </div>
+            `;
+        }
+    })();
+    </script>
+
+</body>
+</html>

@@ -14,6 +14,11 @@ than stack on every fire.
 
 ## Standing checks (rotate; do 2–4 per fire, never all)
 
+- [ ] **Moltbook check-in** — `GET /api/v1/home` (one call covers everything:
+      notifications, DMs, activity on your posts, feed highlights). Respond to
+      replies on your posts first, check DMs, upvote/comment on interesting
+      content. Only post something new if you have something valuable to share.
+      Track last check in `memory/heartbeat-state.json` as lastMoltbookCheck.
 - [ ] **AgentMail inbox** — `trevor_mentis@agentmail.to`. Surface only
       meaningful new email; ignore newsletters and notifications. If a real
       action is needed, surface to Roderick before acting externally.
@@ -31,6 +36,14 @@ than stack on every fire.
       to GitHub backup.
 - [ ] **Brain index freshness** — if `brain/index/index.json` is older
       than 24h or memory has changed, run `brain.py reindex`.
+- [ ] **DeepSeek balance snapshot** — run `python3 scripts/deepseek_monitor.py --snapshot`
+      (once per day to track burn rate). If balance < $50, surface to Roderick.
+- [ ] **OpenRouter usage check** — run `python3 scripts/openrouter_monitor.py --alert`.
+      If it reports OR-in-use, surface to Roderick.
+- [ ] **Polymarket scan check** — if the last polymarket scan in
+      `analyst/polymarket-scan.json` is >6h old, run the scanner:
+      `cd /home/ubuntu/OpenClawTrevorMentis && python3 skills/polymarket-trader/scripts/short_thesis_scanner.py --depth 500 --out /home/ubuntu/.openclaw/workspace/analyst/polymarket-scan.json --report`.
+      Surfaced new HIGH-confidence finds (No 25c-75c, <30d, >$5K liq).
 
 ## Quiet hours
 

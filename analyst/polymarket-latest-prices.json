@@ -1,0 +1,473 @@
+{
+  "fetched_at": "2026-05-02T10:06:31.637896+00:00",
+  "markets_checked": 116,
+  "markets_total": 141,
+  "flips": 98,
+  "significant_moves": 5,
+  "price_snapshot": {
+    "russia-ukraine-ceasefire-before-gta-vi-554": {
+      "no": 0.445,
+      "yes": 0.555
+    },
+    "new-playboi-carti-album-before-gta-vi-421": {
+      "no": 0.47,
+      "yes": 0.53
+    },
+    "will-jesus-christ-return-before-gta-vi-665": {
+      "no": 0.515,
+      "yes": 0.485
+    },
+    "trump-out-as-president-before-gta-vi-846": {
+      "no": 0.485,
+      "yes": 0.515
+    },
+    "will-china-invades-taiwan-before-gta-vi-716": {
+      "no": 0.495,
+      "yes": 0.505
+    },
+    "will-bitcoin-hit-1m-before-gta-vi-872": {
+      "no": 0.5115,
+      "yes": 0.4885
+    },
+    "will-harvey-weinstein-be-sentenced-to-no-prison-time": {
+      "no": 0.634,
+      "yes": 0.366
+    },
+    "will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison": {
+      "no": 0.715,
+      "yes": 0.285
+    },
+    "will-ken-paxton-win-the-2026-republican-primary": {
+      "no": 0.425,
+      "yes": 0.575
+    },
+    "will-psg-win-the-202526-champions-league": {
+      "no": 0.685,
+      "yes": 0.315
+    },
+    "will-bayern-munich-win-the-202526-champions-league": {
+      "no": 0.685,
+      "yes": 0.315
+    },
+    "will-arsenal-win-the-202526-english-premier-league": {
+      "no": 0.485,
+      "yes": 0.515
+    },
+    "will-manchester-city-win-the-202526-english-premier-league": {
+      "no": 0.515,
+      "yes": 0.485
+    },
+    "will-abelardo-de-la-espriella-win-the-2026-colombian-presidential-election": {
+      "no": 0.725,
+      "yes": 0.275
+    },
+    "will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election": {
+      "no": 0.585,
+      "yes": 0.415
+    },
+    "will-paloma-valencia-win-the-2026-colombian-presidential-election": {
+      "no": 0.681,
+      "yes": 0.319
+    },
+    "will-gpt-6-be-released": {
+      "no": 0.345,
+      "yes": 0.655
+    },
+    "will-nottm-forest-win-the-2025-26-uefa-europa-league": {
+      "no": 0.665,
+      "yes": 0.335
+    },
+    "will-liverpool-finish-in-the-top-4-of-the-epl-202526-standings": {
+      "no": 0.475,
+      "yes": 0.525
+    },
+    "starmer-out-by-june-30-2026-862-594-548": {
+      "no": 0.595,
+      "yes": 0.405
+    },
+    "new-rhianna-album-before-gta-vi-926": {
+      "no": 0.455,
+      "yes": 0.545
+    },
+    "will-john-cornyn-win-the-2026-republican-primary": {
+      "no": 0.575,
+      "yes": 0.425
+    },
+    "will-the-boston-celtics-win-the-nba-eastern-conference-finals": {
+      "no": 0.685,
+      "yes": 0.315
+    },
+    "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals": {
+      "no": 0.345,
+      "yes": 0.655
+    },
+    "will-arsenal-win-the-202526-champions-league": {
+      "no": 0.705,
+      "yes": 0.295
+    },
+    "will-arsenal-finish-in-2nd-place-in-the-2025-26-english-premier-league": {
+      "no": 0.515,
+      "yes": 0.485
+    },
+    "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league": {
+      "no": 0.495,
+      "yes": 0.505
+    },
+    "will-tottenham-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+      "no": 0.6795,
+      "yes": 0.3205
+    },
+    "will-aston-villa-win-the-2025-26-uefa-europa-league": {
+      "no": 0.635,
+      "yes": 0.365
+    },
+    "will-aston-villa-finish-in-the-top-4-of-the-epl-202526-standings": {
+      "no": 0.369,
+      "yes": 0.631
+    },
+    "will-openai-not-ipo-by-december-31-2026": {
+      "no": 0.265,
+      "yes": 0.735
+    },
+    "will-nithya-raman-win-the-2026-los-angeles-mayoral-election-876": {
+      "no": 0.505,
+      "yes": 0.495
+    },
+    "will-the-carolina-hurricanes-win-the-eastern-conference": {
+      "no": 0.515,
+      "yes": 0.485
+    },
+    "will-the-democrats-win-the-ohio-governor-race-in-2026": {
+      "no": 0.5,
+      "yes": 0.5
+    },
+    "will-the-republicans-win-the-ohio-governor-race-in-2026": {
+      "no": 0.485,
+      "yes": 0.515
+    },
+    "will-the-democrats-win-the-iowa-senate-race-in-2026": {
+      "no": 0.595,
+      "yes": 0.405
+    },
+    "will-the-republicans-win-the-iowa-senate-race-in-2026": {
+      "no": 0.4,
+      "yes": 0.6
+    },
+    "will-the-democrats-win-the-maine-senate-race-in-2026": {
+      "no": 0.265,
+      "yes": 0.735
+    },
+    "will-the-republicans-win-the-maine-senate-race-in-2026": {
+      "no": 0.725,
+      "yes": 0.275
+    },
+    "will-the-democrats-win-the-south-carolina-senate-race-in-2026": {
+      "no": 0.785,
+      "yes": 0.215
+    },
+    "will-harvey-weinstein-be-sentenced-to-between-10-and-20-years-in-prison": {
+      "no": 0.8615,
+      "yes": 0.1385
+    },
+    "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254": {
+      "no": 0.6385,
+      "yes": 0.3615
+    },
+    "will-the-cleveland-cavaliers-win-the-nba-eastern-conference-finals": {
+      "no": 0.82,
+      "yes": 0.18
+    },
+    "will-the-new-york-knicks-win-the-nba-eastern-conference-finals": {
+      "no": 0.73,
+      "yes": 0.27
+    },
+    "will-the-san-antonio-spurs-win-the-nba-western-conference-finals": {
+      "no": 0.707,
+      "yes": 0.293
+    },
+    "will-west-ham-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+      "no": 0.655,
+      "yes": 0.345
+    },
+    "will-marseille-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+      "no": 0.345,
+      "yes": 0.655
+    },
+    "will-freddie-macs-market-cap-be-between-150b-and-200b-at-market-close-on-ipo-day": {
+      "no": 0.9035,
+      "yes": 0.0965
+    },
+    "will-databricks-market-cap-be-between-100b-and-125b-at-market-close-on-ipo-day": {
+      "no": 0.944,
+      "yes": 0.056
+    },
+    "will-the-democrats-win-the-georgia-governor-race-in-2026": {
+      "no": 0.315,
+      "yes": 0.685
+    },
+    "will-the-republicans-win-the-georgia-governor-race-in-2026": {
+      "no": 0.7,
+      "yes": 0.3
+    },
+    "will-the-democrats-win-the-iowa-governor-race-in-2026": {
+      "no": 0.355,
+      "yes": 0.645
+    },
+    "will-the-republicans-win-the-kansas-governor-race-in-2026": {
+      "no": 0.39,
+      "yes": 0.61
+    },
+    "will-the-democrats-win-the-michigan-governor-race-in-2026": {
+      "no": 0.345,
+      "yes": 0.655
+    },
+    "will-the-democrats-win-the-nevada-governor-race-in-2026": {
+      "no": 0.385,
+      "yes": 0.615
+    },
+    "will-the-republicans-win-the-nevada-governor-race-in-2026": {
+      "no": 0.62,
+      "yes": 0.38
+    },
+    "will-the-republicans-win-the-vermont-governor-race-in-2026": {
+      "no": 0.225,
+      "yes": 0.775
+    },
+    "will-the-democrats-win-the-georgia-senate-race-in-2026": {
+      "no": 0.175,
+      "yes": 0.825
+    },
+    "will-the-republicans-win-the-kansas-senate-race-in-2026": {
+      "no": 0.215,
+      "yes": 0.785
+    },
+    "will-the-democrats-win-the-michigan-senate-race-in-2026": {
+      "no": 0.235,
+      "yes": 0.765
+    },
+    "will-the-detroit-pistons-win-the-nba-eastern-conference-finals": {
+      "no": 0.8275,
+      "yes": 0.1725
+    },
+    "no-one-announced-as-next-james-bond-962": {
+      "no": 0.215,
+      "yes": 0.785
+    },
+    "will-manchester-united-finish-in-3rd-place-in-the-2025-26-english-premier-league": {
+      "no": 0.293,
+      "yes": 0.707
+    },
+    "will-juventus-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+      "no": 0.45,
+      "yes": 0.55
+    },
+    "will-manchester-united-finish-in-the-top-4-of-the-epl-202526-standings": {
+      "no": 0.185,
+      "yes": 0.815
+    },
+    "will-stuttgart-finish-in-the-top-4-of-the-bundesliga-202526-standings": {
+      "no": 0.49,
+      "yes": 0.51
+    },
+    "will-hoffenheim-finish-in-the-top-4-of-the-bundesliga-202526-standings": {
+      "no": 0.68,
+      "yes": 0.32
+    },
+    "will-monaco-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+      "no": 0.662,
+      "yes": 0.338
+    },
+    "will-lille-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+      "no": 0.62,
+      "yes": 0.38
+    },
+    "will-hyperliquid-perform-an-airdrop-by-december-31-2026": {
+      "no": 0.71,
+      "yes": 0.29
+    },
+    "will-karen-bass-win-the-2026-los-angeles-mayoral-election": {
+      "no": 0.795,
+      "yes": 0.205
+    },
+    "will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983": {
+      "no": 0.785,
+      "yes": 0.215
+    },
+    "will-the-minnesota-wild-win-the-western-conference-742": {
+      "no": 0.8065,
+      "yes": 0.1935
+    },
+    "will-the-democrat-win-the-arizona-governor-race-in-2026": {
+      "no": 0.23,
+      "yes": 0.77
+    },
+    "will-the-republicans-win-the-florida-governor-race-in-2026": {
+      "no": 0.23,
+      "yes": 0.77
+    },
+    "will-the-republicans-win-the-arkansas-senate-race-in-2026": {
+      "no": 0.075,
+      "yes": 0.925
+    },
+    "will-the-republicans-win-the-georgia-senate-race-in-2026": {
+      "no": 0.8495,
+      "yes": 0.1505
+    },
+    "will-the-democrats-win-the-kansas-senate-race-in-2026": {
+      "no": 0.82,
+      "yes": 0.18
+    },
+    "will-the-republicans-win-the-michigan-senate-race-in-2026": {
+      "no": 0.77,
+      "yes": 0.23
+    },
+    "will-the-republicans-win-the-montana-senate-race-in-2026": {
+      "no": 0.195,
+      "yes": 0.805
+    },
+    "will-spain-win-the-2026-fifa-world-cup-963": {
+      "no": 0.8475,
+      "yes": 0.1525
+    },
+    "will-france-win-the-2026-fifa-world-cup-924": {
+      "no": 0.8355,
+      "yes": 0.1645
+    },
+    "will-burnley-finish-in-last-place-in-the-2025-26-english-premier-league": {
+      "no": 0.6175,
+      "yes": 0.3825
+    },
+    "will-st-pauli-be-relegated-from-the-bundesliga-after-the-202526-season-863": {
+      "no": 0.67,
+      "yes": 0.33
+    },
+    "will-alavs-be-relegated-from-la-liga-after-the-202526-season": {
+      "no": 0.6875,
+      "yes": 0.3125
+    },
+    "will-sevilla-be-relegated-from-la-liga-after-the-202526-season": {
+      "no": 0.81,
+      "yes": 0.19
+    },
+    "will-vedat-muriqi-be-the-top-goal-scorer-in-the-202526-la-liga-season": {
+      "no": 0.9015,
+      "yes": 0.0985
+    },
+    "will-cremonese-be-relegated-from-serie-a-after-the-2025-26-season": {
+      "no": 0.415,
+      "yes": 0.585
+    },
+    "will-cagliari-be-relegated-from-serie-a-after-the-2025-26-season": {
+      "no": 0.618,
+      "yes": 0.382
+    },
+    "will-freiburg-win-the-2025-26-uefa-europa-league": {
+      "no": 0.848,
+      "yes": 0.152
+    },
+    "will-braga-win-the-2025-26-uefa-europa-league": {
+      "no": 0.835,
+      "yes": 0.165
+    },
+    "will-roma-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+      "no": 0.76,
+      "yes": 0.24
+    },
+    "will-lyon-finish-in-the-top-4-of-the-ligue-1-202526-standings": {
+      "no": 0.405,
+      "yes": 0.595
+    },
+    "will-discord-not-ipo-by-june-30-2026": {
+      "no": 0.205,
+      "yes": 0.795
+    },
+    "will-the-republican-win-the-arizona-governor-race-in-2026": {
+      "no": 0.78,
+      "yes": 0.22
+    },
+    "will-the-democrats-win-the-florida-governor-race-in-2026": {
+      "no": 0.785,
+      "yes": 0.215
+    },
+    "will-the-democrats-win-the-kansas-governor-race-in-2026": {
+      "no": 0.625,
+      "yes": 0.375
+    },
+    "will-the-democrats-win-the-maine-governor-race-in-2026": {
+      "no": 0.135,
+      "yes": 0.865
+    },
+    "will-the-republicans-win-the-michigan-governor-race-in-2026": {
+      "no": 0.795,
+      "yes": 0.205
+    },
+    "will-the-democrats-win-the-texas-governor-race-in-2026": {
+      "no": 0.85,
+      "yes": 0.15
+    },
+    "will-liverpool-finish-in-3rd-place-in-the-2025-26-english-premier-league": {
+      "no": 0.755,
+      "yes": 0.245
+    },
+    "will-wolves-finish-in-last-place-in-the-2025-26-english-premier-league": {
+      "no": 0.463,
+      "yes": 0.537
+    },
+    "will-nottm-forest-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+      "no": 0.875,
+      "yes": 0.125
+    },
+    "will-leeds-be-relegated-from-the-english-premier-league-after-the-202526-season": {
+      "no": 0.815,
+      "yes": 0.185
+    },
+    "will-esteban-lepaul-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season": {
+      "no": 0.167,
+      "yes": 0.833
+    },
+    "will-ac-milan-finish-in-the-top-4-in-the-2025-26-serie-a-season": {
+      "no": 0.186,
+      "yes": 0.814
+    },
+    "will-mark-lynch-be-the-republican-nominee-for-senate-in-south-carolina": {
+      "no": 0.884,
+      "yes": 0.116
+    },
+    "will-freddie-mac-not-ipo-by-june-30-2026": {
+      "no": 0.0985,
+      "yes": 0.9015
+    },
+    "will-the-buffalo-sabres-win-the-eastern-conference": {
+      "no": 0.823,
+      "yes": 0.177
+    },
+    "will-the-tampa-bay-lightning-win-the-eastern-conference": {
+      "no": 0.815,
+      "yes": 0.185
+    },
+    "will-the-vegas-golden-knights-win-the-western-conference-541": {
+      "no": 0.7865,
+      "yes": 0.2135
+    },
+    "will-the-democrats-win-the-new-hampshire-governor-race-in-2026": {
+      "no": 0.73,
+      "yes": 0.27
+    },
+    "will-the-republicans-win-the-new-hampshire-governor-race-in-2026": {
+      "no": 0.295,
+      "yes": 0.705
+    },
+    "will-the-democrats-win-the-vermont-governor-race-in-2026": {
+      "no": 0.795,
+      "yes": 0.205
+    },
+    "will-the-republicans-win-the-wisconsin-governor-race-in-2026": {
+      "no": 0.82,
+      "yes": 0.18
+    },
+    "nhl-2025-26-james-norris-memorial-trophy-zach-werenski": {
+      "no": 0.2855,
+      "yes": 0.7145
+    }
+  }
+}
