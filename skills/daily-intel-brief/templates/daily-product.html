@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+    @bottom-right { content: counter(page) " / " counter(pages); font-size: 9pt; color: #666; }
+    @top-center {
+      content: "UNCLASSIFIED // FOR OFFICIAL USE — TREVOR DAILY";
+      font-size: 8.5pt; letter-spacing: 1.2px; color: #b91c1c;
+      border-bottom: 0.6pt solid #b91c1c; padding-bottom: 2mm;
+    }
+  }
+  body {
+    font-family: "DejaVu Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 10.5pt; line-height: 1.42; color: #1f2937;
+  }
+  h1.product-title {
+    font-size: 22pt; margin: 0 0 4pt 0; letter-spacing: 0.5px;
+    color: #111827; text-transform: uppercase;
+  }
+  h2.product-subtitle {
+    font-size: 11pt; font-weight: normal; margin: 0 0 18pt 0; color: #4b5563;
+  }
+  div.bluf-box {
+    border-left: 4pt solid #b91c1c;
+    background: #fff7ed; padding: 10pt 12pt; margin: 14pt 0 22pt 0;
+  }
+  div.bluf-box .bluf-line { font-weight: bold; font-size: 12pt; margin-bottom: 6pt; }
+  div.bluf-box .ctx { color: #374151; }
+  ul.exec { padding-left: 18pt; }
+  ul.exec li { margin-bottom: 5pt; }
+  h3.section-title {
+    font-size: 14pt; color: #111827; margin: 20pt 0 4pt 0;
+    border-bottom: 0.6pt solid #d1d5db; padding-bottom: 3pt;
+  }
+  div.lead { color: #4b5563; font-style: italic; margin-bottom: 6pt; font-size: 10pt; }
+  table.incidents {
+    width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9.5pt;
+  }
+  table.incidents th {
+    background: #f3f4f6; text-align: left; padding: 4pt 6pt;
+    border-bottom: 0.6pt solid #9ca3af;
+  }
+  table.incidents td { padding: 3pt 6pt; border-bottom: 0.4pt solid #e5e7eb; vertical-align: top; }
+  div.kj { margin: 4pt 0; }
+  img.figure { max-width: 100%; height: auto; margin: 8pt 0; }
+  .figcap { font-size: 9pt; color: #6b7280; margin-bottom: 8pt; font-style: italic; }
+  .footer-note { color: #6b7280; font-size: 9pt; margin-top: 16pt; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1 class="product-title">{{ title }}</h1>
+<h2 class="product-subtitle">{{ subtitle }}</h2>
+
+{% if summary and summary|length > 0 %}
+<div class="bluf-box">
+  <div class="bluf-line">{{ summary[0] }}</div>
+  {% if summary|length > 1 %}<div class="ctx">{{ summary[1] }}</div>{% endif %}
+</div>
+
+{% if summary|length > 2 %}
+<h3 class="section-title">Executive Summary</h3>
+<ul class="exec">
+{% for kj in summary[2:] %}<li>{{ kj }}</li>{% endfor %}
+</ul>
+{% endif %}
+{% endif %}
+
+{% for s in sections %}
+<div class="page-break"></div>
+<h3 class="section-title">{{ s["title"] }}</h3>
+{% if s["lead"] %}<div class="lead">{{ s["lead"] }}</div>{% endif %}
+
+{% for ch in s["charts"] %}
+  <img class="figure" src="{{ ch["src"] }}" alt="{{ ch["title"] }}">
+  {% if ch["caption"] %}<div class="figcap">{{ ch["caption"] }}</div>{% endif %}
+{% endfor %}
+
+{% if s["items"] %}
+{% for item in s["items"] %}
+  <div class="kj">{{ item }}</div>
+{% endfor %}
+{% endif %}
+
+{% if s["table"] %}
+<table class="incidents">
+  <thead><tr>
+    {% for h in s["table"]["headers"] %}<th>{{ h }}</th>{% endfor %}
+  </tr></thead>
+  <tbody>
+    {% for row in s["table"]["rows"] %}
+      <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if s["note"] %}<div class="footer-note">{{ s["note"] }}</div>{% endif %}
+{% endfor %}
+
+{% if footer %}<div class="footer-note">{{ footer }}</div>{% endif %}
+
+</body>
+</html>

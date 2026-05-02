@@ -1,0 +1,83 @@
+{
+  "_comment": "Country -> region taxonomy for Trevor's Daily Intel Brief. The six regions are fixed; reassignments are by editing this file, never at runtime. 'global_finance' has no countries — it's incident-typed in the collector.",
+  "version": "1.0.0",
+  "regions": {
+    "europe": {
+      "label": "Europe",
+      "bbox_caps": { "min_lon": -25, "min_lat": 34, "max_lon": 60, "max_lat": 72 },
+      "countries": [
+        "United Kingdom", "Ireland", "France", "Germany", "Italy", "Spain", "Portugal",
+        "Netherlands", "Belgium", "Luxembourg", "Switzerland", "Austria", "Liechtenstein",
+        "Denmark", "Norway", "Sweden", "Finland", "Iceland",
+        "Poland", "Czechia", "Slovakia", "Hungary", "Romania", "Bulgaria",
+        "Greece", "Cyprus", "Malta",
+        "Estonia", "Latvia", "Lithuania", "Belarus", "Ukraine", "Moldova",
+        "Russia", "Russian Federation",
+        "Serbia", "Croatia", "Slovenia", "Bosnia and Herzegovina", "Montenegro",
+        "North Macedonia", "Albania", "Kosovo",
+        "Vatican City", "San Marino", "Andorra", "Monaco"
+      ]
+    },
+    "asia": {
+      "label": "Asia",
+      "bbox_caps": { "min_lon": 60, "min_lat": -11, "max_lon": 180, "max_lat": 55 },
+      "countries": [
+        "China", "Taiwan", "Hong Kong", "Macau", "Mongolia",
+        "Japan", "South Korea", "North Korea", "DPRK", "Republic of Korea",
+        "India", "Pakistan", "Bangladesh", "Nepal", "Bhutan", "Sri Lanka", "Maldives",
+        "Afghanistan",
+        "Myanmar", "Burma", "Thailand", "Laos", "Cambodia", "Vietnam",
+        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste",
+        "Kazakhstan", "Uzbekistan", "Turkmenistan", "Kyrgyzstan", "Tajikistan",
+        "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Islands",
+        "Vanuatu", "Samoa", "Tonga", "Kiribati", "Tuvalu", "Nauru", "Palau",
+        "Micronesia", "Marshall Islands"
+      ]
+    },
+    "middle_east": {
+      "label": "Middle East",
+      "_note": "Türkiye is in Middle East per analyst convention (not Europe). Includes North Africa for kinetic continuity (Libya, Egypt, Sudan). Iran is here, not Asia.",
+      "bbox_caps": { "min_lon": -18, "min_lat": 12, "max_lon": 65, "max_lat": 42 },
+      "countries": [
+        "Türkiye", "Turkey",
+        "Iran", "Iraq", "Syria", "Lebanon", "Israel", "Palestine", "Jordan",
+        "Saudi Arabia", "Yemen", "Oman", "United Arab Emirates", "Qatar", "Bahrain", "Kuwait",
+        "Egypt", "Libya", "Sudan", "South Sudan",
+        "Tunisia", "Algeria", "Morocco", "Western Sahara", "Mauritania",
+        "Azerbaijan", "Armenia", "Georgia"
+      ]
+    },
+    "north_america": {
+      "label": "North America",
+      "bbox_caps": { "min_lon": -170, "min_lat": 14, "max_lon": -50, "max_lat": 75 },
+      "countries": [
+        "United States", "USA", "United States of America",
+        "Canada",
+        "Mexico"
+      ]
+    },
+    "south_central_america": {
+      "label": "South & Central America (incl. Caribbean)",
+      "bbox_caps": { "min_lon": -95, "min_lat": -57, "max_lon": -33, "max_lat": 28 },
+      "countries": [
+        "Guatemala", "Belize", "Honduras", "El Salvador", "Nicaragua", "Costa Rica", "Panama",
+        "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana",
+        "Brazil", "Ecuador", "Peru", "Bolivia", "Paraguay", "Chile", "Argentina", "Uruguay",
+        "Cuba", "Jamaica", "Haiti", "Dominican Republic",
+        "Bahamas", "Barbados", "Trinidad and Tobago", "Grenada", "Saint Lucia",
+        "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica",
+        "Saint Kitts and Nevis", "Puerto Rico"
+      ]
+    },
+    "global_finance": {
+      "label": "Global Finance",
+      "_note": "Not geographic. Filled by incident-type in the collector (>1.5σ index moves, central-bank actions, sovereign yield moves >15bp, FX >1σ, commodity >3σ, major credit events).",
+      "bbox_caps": null,
+      "countries": []
+    }
+  },
+  "country_to_region_overrides": {
+    "_comment": "Edit here when the principal wants a one-off reclassification. Don't touch the country lists above.",
+    "Greenland": "north_america"
+  }
+}
