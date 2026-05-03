@@ -135,6 +135,216 @@
       "signal_level": "Medium",
       "discovered": "2026-05-02",
       "note": "Transcript fetch blocked. Small audience, OSINT-focused content."
+    },
+    {
+      "name": "IranWarLive.com",
+      "type": "OSINT Dashboard (Real-Time)",
+      "focus": "Live Iran war map, US naval blockade, Hormuz vessel seizures, ceasefire tracking. Updated every 2h from CENTCOM and verified OSINT.",
+      "url": "https://iranwarlive.com/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "IranMonitor.org",
+      "type": "OSINT Dashboard (Multi-Source)",
+      "focus": "Real-time Iran monitoring: news sentiment, X/Twitter feeds, flight radar, prediction markets, internet connectivity.",
+      "url": "https://www.iranmonitor.org/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "IranWar.info",
+      "type": "OSINT Dashboard (Intel)",
+      "focus": "US-Israel military campaign tracking, strike tracking, oil market data, diplomatic developments.",
+      "url": "https://iranwar.info/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "HormuzStraitMonitor.com",
+      "type": "Real-Time Shipping Monitor",
+      "focus": "Ship transits, oil prices, stranded vessels, global trade impact, crisis timeline.",
+      "url": "https://hormuzstraitmonitor.com/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "WarIntelHub.com",
+      "type": "Live War Tracker",
+      "focus": "Real-time strikes, casualties, ship/flight data, verified OSINT from wire services and official statements.",
+      "url": "https://warintelhub.com/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "IranWarTracker.com",
+      "type": "Regional Escalation Tracker",
+      "focus": "NOTAM airspace closures, commercial airline diversions, VLCC/LNG anchoring patterns as insurance market signals.",
+      "url": "https://iranwartracker.com/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Perun (YouTube Channel)",
+      "type": "YouTube/Military Analysis",
+      "focus": "Military-industrial complex analysis, Iran war lessons, blockade/bunker/missile assessment. Transcript-friendly long-form content.",
+      "url": "https://www.youtube.com/channel/UCC3ehuUksTyQ7bbjGntmx3Q",
+      "signal_level": "High",
+      "discovered": "2026-05-03",
+      "note": "\"Military Lessons of the Iran War (so far)\" — April 2026, 1 week old"
+    },
+    {
+      "name": "Bilawal Sidhu (YouTube Channel)",
+      "type": "YouTube/Geospatial OSINT",
+      "focus": "God's Eye View — 4D geospatial reconstruction of Iran strikes using public OSINT, ship tracking, dark vessel detection, pipeline routes, oil futures.",
+      "url": "https://www.youtube.com/@bilawalsidhu",
+      "signal_level": "High",
+      "discovered": "2026-05-03",
+      "note": "Ex-Google PM. Multiple videos covering Hormuz closure, ceasefire reality-check."
+    },
+    {
+      "name": "Napoleon's Corporal (Substack)",
+      "type": "Substack/Military Strategy",
+      "focus": "Weekly SITREPs tracking Hormuz spillover into markets, alliance access, border security, Indo-Pacific pressure. Retired US Army strategist/Infantry officer (24 years).",
+      "url": "https://napoleonscorporal.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Wajeeh Lion (Substack)",
+      "type": "Substack/Geopolitical Analysis",
+      "focus": "Game theory analysis of Hormuz crisis, US ability to secure strait, Brent crude $110-200 scenarios. Saudi dissident, PoliSci/Econ graduate. 8k+ subscribers.",
+      "url": "https://wajeehlion.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Defence Affairs Magazine (Substack)",
+      "type": "Substack/Defense Analysis",
+      "focus": "Modern warfare analysis, Iran rejects UAE maritime corridor proposal, IMO safe passage framework. 2k+ subscribers.",
+      "url": "https://defenceaffairs.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "GeoPolitiQ (Ismaele) (Substack)",
+      "type": "Substack/Geopolitics",
+      "focus": "Middle East crisis (Gaza, Lebanon, Syria, Iran, Yemen), Russo-Ukrainian war. 1k+ subscribers.",
+      "url": "https://geopolitiq.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "The Firing Line (Substack)",
+      "type": "Substack/Legal-Maritime",
+      "focus": "UNCLOS legal analysis of transit passage rights, US blockade lawfare, piracy frameworks in Hormuz context.",
+      "url": "https://thefiringline.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "TankerTrackers.com (@TankerTrackers)",
+      "type": "X/Twitter — Oil Tracking",
+      "focus": "Real-time Iranian supertanker movements, US blockade evasion tracking, dark fleet VLCC monitoring, NITC fleet.",
+      "url": "https://x.com/TankerTrackers",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "ACLED (Armed Conflict Location & Event Data)",
+      "type": "Conflict Data/Think Tank",
+      "focus": "Middle East Special Issues (March/April 2026): Israeli strikes in Lebanon, Hezbollah attack patterns, displacement data, fatality counts.",
+      "url": "https://acleddata.com",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "CSIS — War with Iran",
+      "type": "Think Tank",
+      "focus": "Expert analysis on Iranian conflict, Lebanese government challenges, military assessments, timeline analysis.",
+      "url": "https://www.csis.org/programs/latest-analysis-war-iran",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "CFR — Iran War Analysis and Updates",
+      "type": "Think Tank",
+      "focus": "Expert briefings on military dimensions, regional fallout, global implications of the Iran war.",
+      "url": "https://www.cfr.org/topics/iran-war-analysis-and-updates",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Recorded Future — Iran Conflict",
+      "type": "Threat Intelligence",
+      "focus": "Iran conflict analysis, threat actor tracking, cyber/physical convergence in Middle East.",
+      "url": "https://www.recordedfuture.com/blog/ongoing-iran-conflict-what-you-need-to-know",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Unit 42 (Palo Alto Networks) — Iran Cyber Threat Brief",
+      "type": "Cybersecurity/Threat Intel",
+      "focus": "Iran cyber attack tracking, APT group monitoring, Operation Epic Fury cyber dimension.",
+      "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "UANI Tanker Tracker (United Against Nuclear Iran)",
+      "type": "Iran Oil Tracking",
+      "focus": "Monthly Iran tanker tracking reports, ghost fleet monitoring, export volume estimates, blockade evasion patterns. Monthly data since before war.",
+      "url": "https://www.unitedagainstnucleariran.com/tanker-tracker",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Al Jazeera Centre for Studies",
+      "type": "Think Tank/Strategic Analysis",
+      "focus": "Deep analytical pieces on Iran war strategic predicament, requirements for way out.",
+      "url": "https://studies.aljazeera.net/en/analyses/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "IEA Oil Market Report",
+      "type": "Authoritative Energy Data",
+      "focus": "Monthly oil market reports with Strait Down scenario modeling, Hormuz flow data, supply disruption projections, SPR drawdowns.",
+      "url": "https://www.iea.org/reports/oil-market-report-april-2026",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Critical Threats Project (CriticalThreats.org)",
+      "type": "Think Tank/Intel",
+      "focus": "Iran Update evening/morning special reports, maritime security assessments, IRGC kinetic activity logs.",
+      "url": "https://www.criticalthreats.org/analysis/",
+      "signal_level": "High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Manara Magazine",
+      "type": "Magazine/Middle East Analysis",
+      "focus": "Hormuz crisis series (Prof. Rohan Gunaratna), Middle East foreign policy, Israel's military strategy in Iran.",
+      "url": "https://manaramagazine.org",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "Iran International",
+      "type": "News/Iran-Focused",
+      "focus": "Iran leadership stances on Hormuz, domestic political dynamics, diaspora perspectives.",
+      "url": "https://www.iranintl.com/en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
+    },
+    {
+      "name": "SOC Radar — Iran Cyber Conflict Dashboard",
+      "type": "Cyber Threat Intelligence",
+      "focus": "Iran-Israel/US cyber war tracking, drone incidents, APT group activity mapping.",
+      "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-03"
     }
   ],
   "moltbook_sources": [

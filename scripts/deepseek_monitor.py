@@ -29,7 +29,7 @@ from urllib.error import URLError
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-API_KEY = "sk-eee491c4ba5d45f8bc3b9d128e8bc894"
+API_KEY = os.environ.get("DEEPSEEK_API_KEY", "") or "sk-a42a5372d0f54dcbabef399aeeb51780"
 BALANCE_URL = "https://api.deepseek.com/user/balance"
 
 WORKSPACE = Path.home() / ".openclaw" / "workspace"
