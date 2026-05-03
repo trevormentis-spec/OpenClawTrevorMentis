@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T17:40:49.556Z",
+  "updatedAt": "2026-05-03T05:25:24.729Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -48,25 +48,27 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "**Military:** 17 Iranian ships destroyed including submarine; IRIS Dena sunk in Indian Ocean; 10th wave of Israeli strikes; Turkey's NATO intercepts Iranian missile (first NATO-Iran engagement). **Economic:** US crude $78.80 (highest since Jan 2025); Brent ~$82–83; European gas +70%; 1,100 ships affected by GPS spoofing. **Social:** Minab girls' school toll: 165+ students + 14 teachers killed; photography of strike sites banned in Iran. **Infrastructure:** Bushehr nuclear plant shut down; 639 Russian specialists remain on site; confirmed strikes on Fordow, Natanz, Tehran nuclear research reactor. --- ### Analytical Notes This assessment demonstrates TREVOR v2 methodology in production:",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T04:12:45.649Z",
+      "lastRecalledAt": "2026-05-03T05:25:24.729Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
         "326adb9da76c",
         "a71b5f6d4bc7",
-        "d3e9cdfcf64f"
+        "d3e9cdfcf64f",
+        "aa33db82b382"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "nato-iran",
@@ -129,20 +131,22 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.833085955744004,
+      "totalScore": 7.833085955744004,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T17:40:49.556Z",
+      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
         "326adb9da76c",
         "a71b5f6d4bc7",
         "ed33c096e095",
-        "705e0675696d"
+        "705e0675696d",
+        "39d99cc71b77",
+        "f513691b2bd0"
       ],
       "recallDays": [
         "2026-04-28",
@@ -168,13 +172,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.200436722705371,
+      "totalScore": 10.200436722705371,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T17:40:49.556Z",
+      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -184,7 +188,9 @@
         "72f0b7e4bcc2",
         "7b4024f16d8d",
         "b69bb4b76f7e",
-        "705e0675696d"
+        "705e0675696d",
+        "39d99cc71b77",
+        "f513691b2bd0"
       ],
       "recallDays": [
         "2026-04-28",
@@ -211,26 +217,28 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "This is a high-quality example of TREVOR methodology applied to a fast-moving crisis. The assessment correctly: 1. Calibrated probabilities using Sherman Kent bands 2. Maintained hypothesis discipline with explicit probability ranges 3. Integrated PMESII-PT for comprehensive environmental scan 4. Flagged critical uncertainties (Houthi Red Sea activation, Kurdish ground incursion) 5. Used BLUF-led structure for executive consumption Document archived as reference example of TREVOR v2 production output.",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.21354674556381,
-      "maxScore": 0.8406162440871724,
+      "totalScore": 5.21354674556381,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T12:00:16.230Z",
+      "lastRecalledAt": "2026-05-03T05:25:24.729Z",
       "queryHashes": [
         "0b7e24068149",
         "326adb9da76c",
         "a71b5f6d4bc7",
         "ed33c096e095",
         "7b4024f16d8d",
-        "b69bb4b76f7e"
+        "b69bb4b76f7e",
+        "aa33db82b382"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "high-quality",
@@ -281,18 +289,19 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.899863705575493,
+      "totalScore": 4.899863705575493,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-02T17:40:49.556Z",
+      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
         "b69bb4b76f7e",
-        "705e0675696d"
+        "705e0675696d",
+        "f513691b2bd0"
       ],
       "recallDays": [
         "2026-04-29",
@@ -307,6 +316,40 @@
         "maton.ai",
         "matonic.ai",
         "gateway.maton.ai"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:18": {
+      "key": "memory:memory/2026-05-02.md:1:18",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-02T19:04:40.812Z",
+      "lastRecalledAt": "2026-05-03T01:08:32.819Z",
+      "queryHashes": [
+        "f513691b2bd0",
+        "b2febc0de841",
+        "fb32c1f91fe5"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "saturday",
+        "overnight",
+        "morning",
+        "brain",
+        "infrastructure",
+        "initialized",
+        "reindexed",
+        "operational"
       ]
     }
   }

@@ -20,6 +20,58 @@
     "agent-intelligence-network-scan": {
       "version": "0.1.0",
       "installedAt": 1777713243146
+    },
+    "cross-poster": {
+      "version": "1.0.0",
+      "installedAt": 1777838085700
+    },
+    "social-pack": {
+      "version": "1.0.0",
+      "installedAt": 1777838090903
+    },
+    "social-media-scheduler": {
+      "version": "1.0.0",
+      "installedAt": 1777838092709
+    },
+    "content-marketing": {
+      "version": "1.0.0",
+      "installedAt": 1777838094727
+    },
+    "skill-stripe-monitor": {
+      "version": "1.0.2",
+      "installedAt": 1777838096640
+    },
+    "landing-page-generator": {
+      "version": "1.0.0",
+      "installedAt": 1777838113776
+    },
+    "landing-page-roast": {
+      "version": "1.0.1",
+      "installedAt": 1777838115649
+    },
+    "newsletter-creation-curation": {
+      "version": "1.0.0",
+      "installedAt": 1777838125719
+    },
+    "newsletter": {
+      "version": "1.0.0",
+      "installedAt": 1777838127556
+    },
+    "content-generation": {
+      "version": "1.0.0",
+      "installedAt": 1777838136980
+    },
+    "social-poster": {
+      "version": "1.0.0",
+      "installedAt": 1777838401532
+    },
+    "social-post": {
+      "version": "1.4.0",
+      "installedAt": 1777838403786
+    },
+    "social-media-agent": {
+      "version": "1.0.0",
+      "installedAt": 1777838405578
     }
   }
 }

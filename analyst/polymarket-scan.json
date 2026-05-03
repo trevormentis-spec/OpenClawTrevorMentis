@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T13:03:47.935894Z",
+  "generated_at": "2026-05-02T19:04:45.322370Z",
   "thesis": "Specificity Short: Bet No on vivid affirmative events. Look for markets where Yes requires precise human action, exact timing, exact wording, or official confirmation, while No can win in many ways. Target No at 25c-75c, 1-30 day resolution, with 8-15 points of edge.",
   "scan_depth": 500,
-  "markets_scanned": 141,
+  "markets_scanned": 137,
   "markets_by_rating": {
-    "HIGH": 67,
-    "MEDIUM": 68,
-    "LOW": 6
+    "HIGH": 66,
+    "MEDIUM": 63,
+    "LOW": 8
   },
   "recommendations": [
     {
@@ -24,12 +24,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11886.9556,
+      "liquidity": 11284.8986,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$11,887 liquidity \u2014 good",
+        "$11,285 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -56,7 +56,7 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 9981.0602,
+      "liquidity": 9901.1727,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -68,38 +68,7 @@
       "warnings": [
         "No at 85% \u2014 outside 25-75% range",
         "No end date",
-        "$9,981 liquidity \u2014 thin",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-esteban-lepaul-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season",
-      "question": "Will Esteban Lepaul be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "classification": [
-        "Exact Phrase",
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.849,
-      "yes_price_current": 0.15100000000000002,
-      "target_no_price_range": "93% - 100%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-30T00:00:00Z",
-      "days_to_resolution": 27,
-      "liquidity": 112.13141,
-      "spread": 0.032,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Exact Phrase, Official Announcement",
-        "Resolves in 27d \u2014 good window",
-        "Exact phrase \u2014 operatically fragile",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 85% \u2014 outside 25-75% range",
-        "$112 liquidity \u2014 avoid",
+        "$9,901 liquidity \u2014 thin",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -119,12 +88,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11457.1542,
+      "liquidity": 12914.9904,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$11,457 liquidity \u2014 good",
+        "$12,915 liquidity \u2014 good",
         "3.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -214,12 +183,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11495.4852,
+      "liquidity": 12456.5084,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$11,495 liquidity \u2014 good",
+        "$12,457 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -246,12 +215,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11643.5989,
+      "liquidity": 11355.7412,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$11,644 liquidity \u2014 good",
+        "$11,356 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -278,19 +247,19 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 1470.3832,
-      "spread": 0.03,
+      "liquidity": 1782.2726,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Narrow Count Band",
         "Resolves in ~58d \u2014 moderate window",
-        "3.0% spread \u2014 tight",
+        "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay",
         "Narrow band \u2014 high miss probability"
       ],
       "warnings": [
         "No at 80% \u2014 outside 25-75% range",
-        "$1,470 liquidity \u2014 thin",
+        "$1,782 liquidity \u2014 thin",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -310,51 +279,19 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11521.1393,
-      "spread": 0.02,
+      "liquidity": 11674.3912,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$11,521 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
+        "$11,674 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 79% \u2014 outside 25-75% range",
         "No end date"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "no-one-announced-as-next-james-bond-962",
-      "question": "No one announced as next James Bond?",
-      "classification": [
-        "Official Announcement",
-        "Narrow Count Band"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.79,
-      "yes_price_current": 0.20999999999999996,
-      "target_no_price_range": "87% - 94%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-30T00:00:00Z",
-      "days_to_resolution": 58,
-      "liquidity": 3785.5324,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Narrow Count Band",
-        "Resolves in ~58d \u2014 moderate window",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay",
-        "Narrow band \u2014 high miss probability"
-      ],
-      "warnings": [
-        "No at 79% \u2014 outside 25-75% range",
-        "$3,786 liquidity \u2014 thin",
-        "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -373,12 +310,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 12205.5767,
+      "liquidity": 11896.135,
       "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$12,206 liquidity \u2014 good",
+        "$11,896 liquidity \u2014 good",
         "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -404,12 +341,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11228.6438,
+      "liquidity": 11188.8718,
       "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$11,229 liquidity \u2014 good",
+        "$11,189 liquidity \u2014 good",
         "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -417,6 +354,38 @@
       "warnings": [
         "No at 78% \u2014 outside 25-75% range",
         "No end date"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "no-one-announced-as-next-james-bond-962",
+      "question": "No one announced as next James Bond?",
+      "classification": [
+        "Official Announcement",
+        "Narrow Count Band"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.78,
+      "yes_price_current": 0.21999999999999997,
+      "target_no_price_range": "86% - 93%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-30T00:00:00Z",
+      "days_to_resolution": 58,
+      "liquidity": 3987.6853,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Narrow Count Band",
+        "Resolves in ~58d \u2014 moderate window",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay",
+        "Narrow band \u2014 high miss probability"
+      ],
+      "warnings": [
+        "No at 78% \u2014 outside 25-75% range",
+        "$3,988 liquidity \u2014 thin",
+        "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -435,12 +404,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11933.4358,
+      "liquidity": 11962.8959,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$11,933 liquidity \u2014 good",
+        "$11,963 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -466,12 +435,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11704.6971,
+      "liquidity": 11235.8545,
       "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$11,705 liquidity \u2014 good",
+        "$11,236 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -496,12 +465,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11100.3903,
-      "spread": 0.06,
+      "liquidity": 11013.3863,
+      "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$11,100 liquidity \u2014 good",
+        "$11,013 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -526,12 +495,43 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 10091.1266,
+      "liquidity": 10888.0408,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$10,091 liquidity \u2014 good",
+        "$10,888 liquidity \u2014 good",
+        "3.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 76% \u2014 outside 25-75% range",
+        "No end date"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-republicans-win-the-vermont-governor-race-in-2026",
+      "question": "Will the Republicans win the Vermont governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.76,
+      "yes_price_current": 0.24,
+      "target_no_price_range": "84% - 91%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 11573.6937,
+      "spread": 0.03,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Multi-Condition, Official Announcement",
+        "$11,574 liquidity \u2014 good",
         "3.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -557,13 +557,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 239788.2819,
+      "liquidity": 192941.2469,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 74% \u2014 in range but near edge",
-        "$239,788 liquidity \u2014 excellent",
+        "$192,941 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -589,7 +589,7 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 4451.9171,
+      "liquidity": 4088.5766,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -601,38 +601,7 @@
         "Narrow band \u2014 high miss probability"
       ],
       "warnings": [
-        "$4,452 liquidity \u2014 thin"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-republicans-win-the-vermont-governor-race-in-2026",
-      "question": "Will the Republicans win the Vermont governor race in 2026?",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.72,
-      "yes_price_current": 0.28,
-      "target_no_price_range": "80% - 87%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 11447.3407,
-      "spread": 0.03,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Multi-Condition, Official Announcement",
-        "No at 72% \u2014 in range but near edge",
-        "$11,447 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No end date"
+        "$4,089 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -651,8 +620,8 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 709.8884,
-      "spread": 0.21,
+      "liquidity": 376.2534,
+      "spread": 0.16,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
@@ -662,8 +631,8 @@
       ],
       "warnings": [
         "No end date",
-        "$710 liquidity \u2014 avoid",
-        "21.0% spread \u2014 wide"
+        "$376 liquidity \u2014 avoid",
+        "16.0% spread \u2014 wide"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -676,22 +645,22 @@
         "Exact Phrase"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.702,
-      "yes_price_current": 0.29800000000000004,
-      "target_no_price_range": "78% - 85%",
+      "no_price_current": 0.69,
+      "yes_price_current": 0.31000000000000005,
+      "target_no_price_range": "77% - 84%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 24441.86703,
-      "spread": 0.002,
+      "liquidity": 23962.8961,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Multi-Condition, Exact Phrase",
-        "No at 70% \u2014 in range but near edge",
+        "No at 69% \u2014 in range but near edge",
         "Resolves in ~58d \u2014 moderate window",
-        "$24,442 liquidity \u2014 good",
-        "0.2% spread \u2014 tight",
+        "$23,963 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile"
       ],
@@ -713,13 +682,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 19876.9218,
+      "liquidity": 18798.9039,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 68% \u2014 in range but near edge",
-        "$19,877 liquidity \u2014 good",
+        "$18,799 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -773,19 +742,46 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 321.7226,
-      "spread": 0.03,
+      "liquidity": 295.33921,
+      "spread": 0.046,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 68% \u2014 in range but near edge",
         "Resolves in ~58d \u2014 moderate window",
-        "3.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$322 liquidity \u2014 avoid"
+        "$295 liquidity \u2014 avoid"
       ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals",
+      "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.67,
+      "yes_price_current": 0.32999999999999996,
+      "target_no_price_range": "75% - 82%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-16T00:00:00Z",
+      "days_to_resolution": 44,
+      "liquidity": 47084.7076,
+      "spread": 0.02,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 67% \u2014 in range but near edge",
+        "Resolves in ~44d \u2014 moderate window",
+        "$47,085 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -836,45 +832,17 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 13452.5546,
-      "spread": 0.03,
+      "liquidity": 12609.9513,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Multi-Condition, Exact Phrase",
         "No at 66% \u2014 in range but near edge",
         "Resolves in ~58d \u2014 moderate window",
-        "$13,453 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$12,610 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile"
-      ],
-      "warnings": [],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals",
-      "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.66,
-      "yes_price_current": 0.33999999999999997,
-      "target_no_price_range": "74% - 81%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-16T00:00:00Z",
-      "days_to_resolution": 44,
-      "liquidity": 50541.8737,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 66% \u2014 in range but near edge",
-        "Resolves in ~44d \u2014 moderate window",
-        "$50,542 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -894,19 +862,48 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 16797.1269,
+      "liquidity": 18206.4787,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 66% \u2014 in range but near edge",
-        "$16,797 liquidity \u2014 good",
+        "$18,206 liquidity \u2014 good",
         "3.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No end date"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league",
+      "question": "Will Manchester City finish in 2nd place in the 2025-26 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.66,
+      "yes_price_current": 0.33999999999999997,
+      "target_no_price_range": "74% - 81%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-05-27T00:00:00Z",
+      "days_to_resolution": 24,
+      "liquidity": 5046.1108,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 66% \u2014 in range but near edge",
+        "Resolves in 24d \u2014 good window",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "$5,046 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -925,13 +922,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 11016.9254,
+      "liquidity": 10936.1189,
       "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 65% \u2014 in range but near edge",
-        "$11,017 liquidity \u2014 good",
+        "$10,936 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1009,26 +1006,54 @@
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.635,
-      "yes_price_current": 0.365,
-      "target_no_price_range": "72% - 78%",
+      "no_price_current": 0.633,
+      "yes_price_current": 0.367,
+      "target_no_price_range": "71% - 78%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-05-27T00:00:00Z",
       "days_to_resolution": 24,
-      "liquidity": 2676.86491,
-      "spread": 0.082,
+      "liquidity": 2438.42233,
+      "spread": 0.081,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "No at 64% \u2014 in range but near edge",
+        "No at 63% \u2014 in range but near edge",
         "Resolves in 24d \u2014 good window",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$2,677 liquidity \u2014 thin",
-        "8.2% spread \u2014 wide"
+        "$2,438 liquidity \u2014 thin",
+        "8.1% spread \u2014 wide"
       ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-arsenal-win-the-202526-english-premier-league",
+      "question": "Will Arsenal win the 2025\u201326 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.62,
+      "yes_price_current": 0.38,
+      "target_no_price_range": "70% - 77%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-05-27T00:00:00Z",
+      "days_to_resolution": 24,
+      "liquidity": 46769.2828,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 62% \u2014 in range but near edge",
+        "Resolves in 24d \u2014 good window",
+        "$46,769 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -1046,44 +1071,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 24418.1586,
-      "spread": 0.02,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "No at 61% \u2014 in range but near edge",
-        "$24,418 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No end date"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-democrats-win-the-ohio-senate-race-in-2026",
-      "question": "Will the Democrats win the Ohio Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.61,
-      "yes_price_current": 0.39,
-      "target_no_price_range": "69% - 76%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 24485.262,
+      "liquidity": 23891.4922,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 61% \u2014 in range but near edge",
-        "$24,485 liquidity \u2014 good",
+        "$23,891 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -1109,20 +1103,51 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-05-30T00:00:00Z",
       "days_to_resolution": 27,
-      "liquidity": 7589.0817,
-      "spread": 0.02,
+      "liquidity": 5765.5769,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Exact Phrase, Official Announcement",
         "No at 60% \u2014 sweet spot",
         "Resolves in 27d \u2014 good window",
-        "2.0% spread \u2014 tight",
+        "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$7,589 liquidity \u2014 thin"
+        "$5,766 liquidity \u2014 thin"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-democrats-win-the-ohio-senate-race-in-2026",
+      "question": "Will the Democrats win the Ohio Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.59,
+      "yes_price_current": 0.41000000000000003,
+      "target_no_price_range": "67% - 74%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 26191.9429,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "No at 59% \u2014 sweet spot",
+        "$26,192 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No end date"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -1141,13 +1166,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 19677.9203,
+      "liquidity": 19038.3951,
       "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 59% \u2014 sweet spot",
-        "$19,678 liquidity \u2014 good",
+        "$19,038 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1201,14 +1226,14 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-05-26T00:00:00Z",
       "days_to_resolution": 23,
-      "liquidity": 44354.2238,
+      "liquidity": 45776.5075,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 57% \u2014 sweet spot",
         "Resolves in 23d \u2014 good window",
-        "$44,354 liquidity \u2014 good",
+        "$45,777 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1231,13 +1256,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 50483.694,
+      "liquidity": 51193.9222,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Tech Release, Multi-Condition",
         "No at 55% \u2014 sweet spot",
-        "$50,484 liquidity \u2014 excellent",
+        "$51,194 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay",
@@ -1249,10 +1274,11 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-the-colorado-avalanche-win-the-western-conference-993",
-      "question": "Will the Colorado Avalanche win the Western Conference?",
+      "market_slug": "will-the-republicans-win-the-texas-senate-race-in-2026",
+      "question": "Will the Republicans win the Texas Senate race in 2026?",
       "classification": [
-        "Official Announcement"
+        "Official Announcement",
+        "Multi-Condition"
       ],
       "recommended_side": "No",
       "no_price_current": 0.55,
@@ -1260,19 +1286,22 @@
       "target_no_price_range": "63% - 70%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-06-30T00:00:00Z",
-      "days_to_resolution": 58,
-      "liquidity": 52506.7621,
-      "spread": 0.05,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 30180.8399,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Official Announcement",
+        "Category match: Official Announcement, Multi-Condition",
         "No at 55% \u2014 sweet spot",
-        "Resolves in ~58d \u2014 moderate window",
-        "$52,507 liquidity \u2014 excellent",
+        "$30,181 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
-      "warnings": [],
+      "warnings": [
+        "No end date"
+      ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -1322,8 +1351,8 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 472.30161,
-      "spread": 0.156,
+      "liquidity": 961.11125,
+      "spread": 0.072,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Narrow Count Band, Multi-Condition",
@@ -1334,17 +1363,18 @@
         "Narrow band \u2014 high miss probability"
       ],
       "warnings": [
-        "$472 liquidity \u2014 avoid",
-        "15.6% spread \u2014 wide"
+        "$961 liquidity \u2014 avoid",
+        "7.2% spread \u2014 wide"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-the-republicans-win-the-texas-senate-race-in-2026",
-      "question": "Will the Republicans win the Texas Senate race in 2026?",
+      "market_slug": "will-anthropic-have-the-second-best-ai-model-at-the-end-of-june-2026",
+      "question": "Will Anthropic have the second best AI model at the end of June 2026?",
       "classification": [
-        "Official Announcement",
-        "Multi-Condition"
+        "Tech Release",
+        "Multi-Condition",
+        "Exact Phrase"
       ],
       "recommended_side": "No",
       "no_price_current": 0.54,
@@ -1352,21 +1382,21 @@
       "target_no_price_range": "62% - 69%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 32260.0151,
-      "spread": 0.01,
+      "resolves_by": "2026-06-30T00:00:00Z",
+      "days_to_resolution": 58,
+      "liquidity": 3663.5846,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
+        "Category match: Tech Release, Multi-Condition, Exact Phrase",
         "No at 54% \u2014 sweet spot",
-        "$32,260 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
+        "Resolves in ~58d \u2014 moderate window",
+        "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
+        "Exact phrase \u2014 operatically fragile"
       ],
       "warnings": [
-        "No end date"
+        "$3,664 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -1401,6 +1431,34 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
+      "market_slug": "will-the-colorado-avalanche-win-the-western-conference-993",
+      "question": "Will the Colorado Avalanche win the Western Conference?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.53,
+      "yes_price_current": 0.47,
+      "target_no_price_range": "61% - 68%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-30T00:00:00Z",
+      "days_to_resolution": 58,
+      "liquidity": 61739.1358,
+      "spread": 0.02,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 53% \u2014 sweet spot",
+        "Resolves in ~58d \u2014 moderate window",
+        "$61,739 liquidity \u2014 excellent",
+        "2.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
       "market_slug": "will-the-republicans-win-the-ohio-governor-race-in-2026",
       "question": "Will the Republicans win the Ohio governor race in 2026?",
       "classification": [
@@ -1415,13 +1473,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 23880.1487,
+      "liquidity": 23565.7447,
       "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 53% \u2014 sweet spot",
-        "$23,880 liquidity \u2014 good",
+        "$23,566 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1446,13 +1504,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 53291.4308,
+      "liquidity": 61276.9702,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Official Announcement, Multi-Condition",
         "No at 51% \u2014 sweet spot",
-        "$53,291 liquidity \u2014 excellent",
+        "$61,277 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -1460,34 +1518,6 @@
       "warnings": [
         "Resolves in ~89d \u2014 long tail"
       ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-arsenal-win-the-202526-english-premier-league",
-      "question": "Will Arsenal win the 2025\u201326 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.51,
-      "yes_price_current": 0.49,
-      "target_no_price_range": "59% - 66%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-27T00:00:00Z",
-      "days_to_resolution": 24,
-      "liquidity": 102595.292,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 51% \u2014 sweet spot",
-        "Resolves in 24d \u2014 good window",
-        "$102,595 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -1506,13 +1536,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 22340.9845,
+      "liquidity": 22582.705,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Official Announcement, Multi-Condition",
         "No at 51% \u2014 sweet spot",
-        "$22,341 liquidity \u2014 good",
+        "$22,583 liquidity \u2014 good",
         "3.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -1538,80 +1568,18 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 18112.1987,
-      "spread": 0.03,
+      "liquidity": 18592.0286,
+      "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Official Announcement, Multi-Condition",
         "No at 51% \u2014 sweet spot",
-        "$18,112 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$18,592 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "Resolves in ~89d \u2014 long tail"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-anthropic-have-the-second-best-ai-model-at-the-end-of-june-2026",
-      "question": "Will Anthropic have the second best AI model at the end of June 2026?",
-      "classification": [
-        "Tech Release",
-        "Multi-Condition",
-        "Exact Phrase"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.51,
-      "yes_price_current": 0.49,
-      "target_no_price_range": "59% - 66%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-30T00:00:00Z",
-      "days_to_resolution": 58,
-      "liquidity": 3501.008,
-      "spread": 0.02,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Tech Release, Multi-Condition, Exact Phrase",
-        "No at 51% \u2014 sweet spot",
-        "Resolves in ~58d \u2014 moderate window",
-        "2.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Exact phrase \u2014 operatically fragile"
-      ],
-      "warnings": [
-        "$3,501 liquidity \u2014 thin"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league",
-      "question": "Will Manchester City finish in 2nd place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.51,
-      "yes_price_current": 0.49,
-      "target_no_price_range": "59% - 66%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-27T00:00:00Z",
-      "days_to_resolution": 24,
-      "liquidity": 4496.1399,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 51% \u2014 sweet spot",
-        "Resolves in 24d \u2014 good window",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "$4,496 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -1629,15 +1597,15 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-02T00:00:00Z",
       "days_to_resolution": 30,
-      "liquidity": 64972.8765,
-      "spread": 0.01,
+      "liquidity": 60318.1458,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 50% \u2014 sweet spot",
         "Resolves in 30d \u2014 good window",
-        "$64,973 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
+        "$60,318 liquidity \u2014 excellent",
+        "2.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
@@ -1659,13 +1627,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 47927.0818,
+      "liquidity": 49018.0111,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Official Announcement, Multi-Condition",
         "No at 50% \u2014 sweet spot",
-        "$47,927 liquidity \u2014 good",
+        "$49,018 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -1690,14 +1658,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 17838.39,
-      "spread": 0.02,
+      "liquidity": 21265.4834,
+      "spread": 0.05,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 50% \u2014 sweet spot",
-        "$17,838 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
+        "$21,265 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1721,14 +1688,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 18565.7291,
-      "spread": 0.03,
+      "liquidity": 21855.4821,
+      "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 50% \u2014 sweet spot",
-        "$18,566 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$21,855 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1752,14 +1718,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 21970.4559,
-      "spread": 0.03,
+      "liquidity": 21850.0437,
+      "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 50% \u2014 sweet spot",
-        "$21,970 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$21,850 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1769,37 +1734,40 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-arsenal-finish-in-2nd-place-in-the-2025-26-english-premier-league",
-      "question": "Will Arsenal finish in 2nd place in the 2025-26 English Premier League?",
+      "market_slug": "will-jesus-christ-return-before-gta-vi-665",
+      "question": "Will Jesus Christ return before GTA VI?",
       "classification": [
-        "Official Announcement"
+        "Tech Release",
+        "Official Announcement",
+        "Multi-Condition"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.5,
-      "yes_price_current": 0.5,
-      "target_no_price_range": "58% - 65%",
+      "no_price_current": 0.49,
+      "yes_price_current": 0.51,
+      "target_no_price_range": "57% - 64%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-05-27T00:00:00Z",
-      "days_to_resolution": 24,
-      "liquidity": 4989.4096,
+      "resolves_by": "2026-07-31T12:00:00Z",
+      "days_to_resolution": 89,
+      "liquidity": 248198.7735,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Official Announcement",
-        "No at 50% \u2014 sweet spot",
-        "Resolves in 24d \u2014 good window",
+        "Category match: Tech Release, Official Announcement, Multi-Condition",
+        "No at 49% \u2014 sweet spot",
+        "$248,199 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$4,989 liquidity \u2014 thin"
+        "Resolves in ~89d \u2014 long tail"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-manchester-city-win-the-202526-english-premier-league",
-      "question": "Will Manchester City win the 2025\u201326 English Premier League?",
+      "market_slug": "will-the-carolina-hurricanes-win-the-eastern-conference",
+      "question": "Will the Carolina Hurricanes win the Eastern Conference?",
       "classification": [
         "Official Announcement"
       ],
@@ -1809,16 +1777,16 @@
       "target_no_price_range": "57% - 64%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-05-27T00:00:00Z",
-      "days_to_resolution": 24,
-      "liquidity": 91956.1453,
+      "resolves_by": "2026-06-30T00:00:00Z",
+      "days_to_resolution": 58,
+      "liquidity": 31012.8372,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 49% \u2014 sweet spot",
-        "Resolves in 24d \u2014 good window",
-        "$91,956 liquidity \u2014 excellent",
+        "Resolves in ~58d \u2014 moderate window",
+        "$31,013 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -1841,13 +1809,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-31T12:00:00Z",
       "days_to_resolution": 89,
-      "liquidity": 118954.3267,
+      "liquidity": 129341.89078,
       "spread": 0.001,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Official Announcement, Multi-Condition",
         "No at 49% \u2014 sweet spot",
-        "$118,954 liquidity \u2014 excellent",
+        "$129,342 liquidity \u2014 excellent",
         "0.1% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -1858,63 +1826,32 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-jesus-christ-return-before-gta-vi-665",
-      "question": "Will Jesus Christ return before GTA VI?",
+      "market_slug": "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254",
+      "question": "Will MegaETH perform an airdrop by June 30? ",
       "classification": [
-        "Tech Release",
-        "Official Announcement",
-        "Multi-Condition"
+        "Multi-Condition",
+        "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.48,
-      "yes_price_current": 0.52,
-      "target_no_price_range": "56% - 63%",
+      "no_price_current": 0.471,
+      "yes_price_current": 0.529,
+      "target_no_price_range": "55% - 62%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-07-31T12:00:00Z",
-      "days_to_resolution": 89,
-      "liquidity": 230779.1816,
-      "spread": 0.01,
+      "resolves_by": "2026-02-01T05:00:00Z",
+      "days_to_resolution": 0,
+      "liquidity": 5309.5362,
+      "spread": 0.039,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Tech Release, Official Announcement, Multi-Condition",
-        "No at 48% \u2014 sweet spot",
-        "$230,779 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
+        "Category match: Multi-Condition, Official Announcement",
+        "No at 47% \u2014 sweet spot",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "Resolves in ~89d \u2014 long tail"
+        "$5,310 liquidity \u2014 thin"
       ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-carolina-hurricanes-win-the-eastern-conference",
-      "question": "Will the Carolina Hurricanes win the Eastern Conference?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.47,
-      "yes_price_current": 0.53,
-      "target_no_price_range": "55% - 62%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-30T00:00:00Z",
-      "days_to_resolution": 58,
-      "liquidity": 31568.9801,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 47% \u2014 sweet spot",
-        "Resolves in ~58d \u2014 moderate window",
-        "$31,569 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -1925,52 +1862,21 @@
         "Multi-Condition"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.46,
-      "yes_price_current": 0.54,
-      "target_no_price_range": "54% - 61%",
+      "no_price_current": 0.47,
+      "yes_price_current": 0.53,
+      "target_no_price_range": "55% - 62%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 34086.7551,
-      "spread": 0.01,
+      "liquidity": 32139.5176,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "No at 46% \u2014 sweet spot",
-        "$34,087 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No end date"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-republicans-win-the-ohio-senate-race-in-2026",
-      "question": "Will the Republicans win the Ohio Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.46,
-      "yes_price_current": 0.54,
-      "target_no_price_range": "54% - 61%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 21748.4653,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "No at 46% \u2014 sweet spot",
-        "$21,748 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
+        "No at 47% \u2014 sweet spot",
+        "$32,140 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -2055,49 +1961,19 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 1774.7738,
-      "spread": 0.024,
+      "liquidity": 1629.63497,
+      "spread": 0.016,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 43% \u2014 sweet spot",
         "Resolves in ~58d \u2014 moderate window",
-        "2.4% spread \u2014 tight",
+        "1.6% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$1,775 liquidity \u2014 thin"
+        "$1,630 liquidity \u2014 thin"
       ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election",
-      "question": "Will Ivan Cepeda Castro win the 2026 Colombian presidential election?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.42,
-      "yes_price_current": 0.5800000000000001,
-      "target_no_price_range": "50% - 57%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-21T14:00:00Z",
-      "days_to_resolution": 50,
-      "liquidity": 105301.204,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "No at 42% \u2014 sweet spot",
-        "Resolves in ~50d \u2014 moderate window",
-        "$105,301 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2114,18 +1990,49 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-05-26T00:00:00Z",
       "days_to_resolution": 23,
-      "liquidity": 42893.2754,
-      "spread": 0.02,
+      "liquidity": 42611.9218,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 42% \u2014 sweet spot",
         "Resolves in 23d \u2014 good window",
-        "$42,893 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
+        "$42,612 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-republicans-win-the-ohio-senate-race-in-2026",
+      "question": "Will the Republicans win the Ohio Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.42,
+      "yes_price_current": 0.5800000000000001,
+      "target_no_price_range": "50% - 57%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 22771.6259,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "No at 42% \u2014 sweet spot",
+        "$22,772 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No end date"
+      ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2175,14 +2082,14 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T12:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 81322.9253,
+      "liquidity": 83280.2803,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement, Narrow Count Band",
         "No at 41% \u2014 sweet spot",
         "Resolves in ~58d \u2014 moderate window",
-        "$81,323 liquidity \u2014 excellent",
+        "$83,280 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay",
@@ -2200,28 +2107,58 @@
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.4,
-      "yes_price_current": 0.6,
-      "target_no_price_range": "48% - 55%",
+      "no_price_current": 0.41,
+      "yes_price_current": 0.5900000000000001,
+      "target_no_price_range": "49% - 56%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-05-30T00:00:00Z",
       "days_to_resolution": 27,
-      "liquidity": 5966.0367,
-      "spread": 0.02,
+      "liquidity": 5359.0546,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Exact Phrase, Official Announcement",
-        "No at 40% \u2014 sweet spot",
+        "No at 41% \u2014 sweet spot",
         "Resolves in 27d \u2014 good window",
-        "2.0% spread \u2014 tight",
+        "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$5,966 liquidity \u2014 thin"
+        "$5,359 liquidity \u2014 thin"
       ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-ivan-cepeda-castro-win-the-2026-colombian-presidential-election",
+      "question": "Will Ivan Cepeda Castro win the 2026 Colombian presidential election?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.41,
+      "yes_price_current": 0.5900000000000001,
+      "target_no_price_range": "49% - 56%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-21T14:00:00Z",
+      "days_to_resolution": 49,
+      "liquidity": 96103.2121,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "No at 41% \u2014 sweet spot",
+        "Resolves in ~49d \u2014 moderate window",
+        "$96,103 liquidity \u2014 excellent",
+        "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2232,20 +2169,20 @@
         "Multi-Condition"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.4,
-      "yes_price_current": 0.6,
-      "target_no_price_range": "48% - 55%",
+      "no_price_current": 0.41,
+      "yes_price_current": 0.5900000000000001,
+      "target_no_price_range": "49% - 56%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 25409.1753,
+      "liquidity": 26016.3836,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "No at 40% \u2014 sweet spot",
-        "$25,409 liquidity \u2014 good",
+        "No at 41% \u2014 sweet spot",
+        "$26,016 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -2271,8 +2208,8 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 768.18838,
-      "spread": 0.109,
+      "liquidity": 793.35426,
+      "spread": 0.085,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Narrow Count Band, Multi-Condition",
@@ -2283,9 +2220,97 @@
         "Narrow band \u2014 high miss probability"
       ],
       "warnings": [
-        "$768 liquidity \u2014 avoid",
-        "10.9% spread \u2014 wide"
+        "$793 liquidity \u2014 avoid",
+        "8.5% spread \u2014 wide"
       ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-harvey-weinstein-be-sentenced-to-no-prison-time",
+      "question": "Will Harvey Weinstein be sentenced to no prison time?",
+      "classification": [
+        "Exact Phrase",
+        "Official Announcement",
+        "Narrow Count Band"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.384,
+      "yes_price_current": 0.616,
+      "target_no_price_range": "46% - 53%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2025-12-31T12:00:00Z",
+      "days_to_resolution": 0,
+      "liquidity": 1551.70231,
+      "spread": 0.013,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Exact Phrase, Official Announcement, Narrow Count Band",
+        "No at 38% \u2014 sweet spot",
+        "1.3% spread \u2014 tight",
+        "Exact phrase \u2014 operatically fragile",
+        "Official announcement \u2014 bureaucracies delay",
+        "Narrow band \u2014 high miss probability"
+      ],
+      "warnings": [
+        "$1,552 liquidity \u2014 thin"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-manchester-city-win-the-202526-english-premier-league",
+      "question": "Will Manchester City win the 2025\u201326 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.37,
+      "yes_price_current": 0.63,
+      "target_no_price_range": "45% - 52%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-05-27T00:00:00Z",
+      "days_to_resolution": 24,
+      "liquidity": 43325.9771,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 37% \u2014 sweet spot",
+        "Resolves in 24d \u2014 good window",
+        "$43,326 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-aston-villa-win-the-2025-26-uefa-europa-league",
+      "question": "Will Aston Villa win the 2025-26 UEFA Europa League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.37,
+      "yes_price_current": 0.63,
+      "target_no_price_range": "45% - 52%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-05-24T00:00:00Z",
+      "days_to_resolution": 21,
+      "liquidity": 40913.7166,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 37% \u2014 sweet spot",
+        "Resolves in 21d \u2014 good window",
+        "$40,914 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2315,96 +2340,6 @@
         "$57 liquidity \u2014 avoid",
         "60.2% spread \u2014 wide"
       ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254",
-      "question": "Will MegaETH perform an airdrop by June 30? ",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.362,
-      "yes_price_current": 0.638,
-      "target_no_price_range": "44% - 51%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-02-01T05:00:00Z",
-      "days_to_resolution": 0,
-      "liquidity": 4839.6681,
-      "spread": 0.006,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Multi-Condition, Official Announcement",
-        "No at 36% \u2014 sweet spot",
-        "0.6% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "$4,840 liquidity \u2014 thin"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-harvey-weinstein-be-sentenced-to-no-prison-time",
-      "question": "Will Harvey Weinstein be sentenced to no prison time?",
-      "classification": [
-        "Exact Phrase",
-        "Official Announcement",
-        "Narrow Count Band"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.36,
-      "yes_price_current": 0.64,
-      "target_no_price_range": "44% - 51%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2025-12-31T12:00:00Z",
-      "days_to_resolution": 0,
-      "liquidity": 1607.20854,
-      "spread": 0.012,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Exact Phrase, Official Announcement, Narrow Count Band",
-        "No at 36% \u2014 sweet spot",
-        "1.2% spread \u2014 tight",
-        "Exact phrase \u2014 operatically fragile",
-        "Official announcement \u2014 bureaucracies delay",
-        "Narrow band \u2014 high miss probability"
-      ],
-      "warnings": [
-        "$1,607 liquidity \u2014 thin"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-aston-villa-win-the-2025-26-uefa-europa-league",
-      "question": "Will Aston Villa win the 2025-26 UEFA Europa League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.36,
-      "yes_price_current": 0.64,
-      "target_no_price_range": "44% - 51%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-24T00:00:00Z",
-      "days_to_resolution": 21,
-      "liquidity": 43332.72,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 36% \u2014 sweet spot",
-        "Resolves in 21d \u2014 good window",
-        "$43,333 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2538,18 +2473,50 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 12823.9706,
+      "liquidity": 13188.1977,
       "spread": 0.06,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 34% \u2014 sweet spot",
-        "$12,824 liquidity \u2014 good",
+        "$13,188 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No end date"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-openai-ipo-by-december-31-2026",
+      "question": "Will OpenAI IPO by December 31 2026?",
+      "classification": [
+        "Tech Release",
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.34,
+      "yes_price_current": 0.6599999999999999,
+      "target_no_price_range": "42% - 49%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 3157.7442,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Tech Release, Multi-Condition, Official Announcement",
+        "No at 34% \u2014 sweet spot",
+        "1.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No end date",
+        "$3,158 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -2567,54 +2534,25 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-05-24T00:00:00Z",
       "days_to_resolution": 21,
-      "liquidity": 51616.83104,
-      "spread": 0.01,
+      "liquidity": 53670.82735,
+      "spread": 0.009,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 33% \u2014 sweet spot",
         "Resolves in 21d \u2014 good window",
-        "$51,617 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
+        "$53,671 liquidity \u2014 excellent",
+        "0.9% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-the-boston-celtics-win-the-nba-eastern-conference-finals",
-      "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
+      "market_slug": "will-psg-win-the-202526-champions-league",
+      "question": "Will PSG win the 2025\u201326 Champions League?",
       "classification": [
         "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.323,
-      "yes_price_current": 0.677,
-      "target_no_price_range": "40% - 47%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-13T00:00:00Z",
-      "days_to_resolution": 41,
-      "liquidity": 40966.90698,
-      "spread": 0.005,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 32% \u2014 sweet spot",
-        "Resolves in ~41d \u2014 moderate window",
-        "$40,967 liquidity \u2014 good",
-        "0.5% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-paloma-valencia-win-the-2026-colombian-presidential-election",
-      "question": "Will Paloma Valencia win the 2026 Colombian presidential election?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
       ],
       "recommended_side": "No",
       "no_price_current": 0.32,
@@ -2622,18 +2560,45 @@
       "target_no_price_range": "40% - 47%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-06-21T14:00:00Z",
-      "days_to_resolution": 50,
-      "liquidity": 90355.52021,
-      "spread": 0.002,
+      "resolves_by": "2026-05-31T00:00:00Z",
+      "days_to_resolution": 28,
+      "liquidity": 154671.4109,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
+        "Category match: Official Announcement",
         "No at 32% \u2014 sweet spot",
-        "Resolves in ~50d \u2014 moderate window",
-        "$90,356 liquidity \u2014 excellent",
-        "0.2% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
+        "Resolves in 28d \u2014 good window",
+        "$154,671 liquidity \u2014 excellent",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-bayern-munich-win-the-202526-champions-league",
+      "question": "Will Bayern Munich win the 2025\u201326 Champions League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.32,
+      "yes_price_current": 0.6799999999999999,
+      "target_no_price_range": "40% - 47%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-05-31T00:00:00Z",
+      "days_to_resolution": 28,
+      "liquidity": 233966.6279,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 32% \u2014 sweet spot",
+        "Resolves in 28d \u2014 good window",
+        "$233,967 liquidity \u2014 excellent",
+        "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
@@ -2682,19 +2647,18 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 9961.7354,
-      "spread": 0.09,
+      "liquidity": 16656.5992,
+      "spread": 0.05,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
         "No at 32% \u2014 sweet spot",
+        "$16,657 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "No end date",
-        "$9,962 liquidity \u2014 thin",
-        "9.0% spread \u2014 wide"
+        "No end date"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -2712,7 +2676,7 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 1181.97101,
+      "liquidity": 1183.16734,
       "spread": 0.052,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -2722,13 +2686,43 @@
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$1,182 liquidity \u2014 thin"
+        "$1,183 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-psg-win-the-202526-champions-league",
-      "question": "Will PSG win the 2025\u201326 Champions League?",
+      "market_slug": "will-paloma-valencia-win-the-2026-colombian-presidential-election",
+      "question": "Will Paloma Valencia win the 2026 Colombian presidential election?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.315,
+      "yes_price_current": 0.685,
+      "target_no_price_range": "40% - 46%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-21T14:00:00Z",
+      "days_to_resolution": 49,
+      "liquidity": 76190.43427,
+      "spread": 0.002,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "No at 32% \u2014 sweet spot",
+        "Resolves in ~49d \u2014 moderate window",
+        "$76,190 liquidity \u2014 excellent",
+        "0.2% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-arsenal-win-the-202526-champions-league",
+      "question": "Will Arsenal win the 2025\u201326 Champions League?",
       "classification": [
         "Official Announcement"
       ],
@@ -2740,14 +2734,14 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-05-31T00:00:00Z",
       "days_to_resolution": 28,
-      "liquidity": 174193.7265,
+      "liquidity": 137321.4932,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 31% \u2014 sweet spot",
         "Resolves in 28d \u2014 good window",
-        "$174,194 liquidity \u2014 excellent",
+        "$137,321 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -2755,8 +2749,8 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-bayern-munich-win-the-202526-champions-league",
-      "question": "Will Bayern Munich win the 2025\u201326 Champions League?",
+      "market_slug": "will-arsenal-finish-in-2nd-place-in-the-2025-26-english-premier-league",
+      "question": "Will Arsenal finish in 2nd place in the 2025-26 English Premier League?",
       "classification": [
         "Official Announcement"
       ],
@@ -2764,50 +2758,22 @@
       "no_price_current": 0.31,
       "yes_price_current": 0.69,
       "target_no_price_range": "39% - 46%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-31T00:00:00Z",
-      "days_to_resolution": 28,
-      "liquidity": 269560.8532,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 31% \u2014 sweet spot",
-        "Resolves in 28d \u2014 good window",
-        "$269,561 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-burnley-finish-in-last-place-in-the-2025-26-english-premier-league",
-      "question": "Will Burnley finish in last place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.304,
-      "yes_price_current": 0.696,
-      "target_no_price_range": "38% - 45%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-05-27T00:00:00Z",
       "days_to_resolution": 24,
-      "liquidity": 646.26406,
-      "spread": 0.322,
+      "liquidity": 5066.8817,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "No at 30% \u2014 sweet spot",
+        "No at 31% \u2014 sweet spot",
         "Resolves in 24d \u2014 good window",
+        "2.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
-        "$646 liquidity \u2014 avoid",
-        "32.2% spread \u2014 wide"
+        "$5,067 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -2818,22 +2784,22 @@
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.291,
-      "yes_price_current": 0.7090000000000001,
+      "no_price_current": 0.292,
+      "yes_price_current": 0.708,
       "target_no_price_range": "37% - 44%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-06-16T00:00:00Z",
       "days_to_resolution": 44,
-      "liquidity": 53518.16091,
-      "spread": 0.004,
+      "liquidity": 43316.11812,
+      "spread": 0.007,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "No at 29% \u2014 in range but near edge",
         "Resolves in ~44d \u2014 moderate window",
-        "$53,518 liquidity \u2014 excellent",
-        "0.4% spread \u2014 tight",
+        "$43,316 liquidity \u2014 good",
+        "0.7% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
@@ -2854,13 +2820,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 277337.9835,
+      "liquidity": 300236.467,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 29% \u2014 in range but near edge",
-        "$277,338 liquidity \u2014 excellent",
+        "$300,236 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -2868,34 +2834,6 @@
       "warnings": [
         "No end date"
       ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-arsenal-win-the-202526-champions-league",
-      "question": "Will Arsenal win the 2025\u201326 Champions League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.29,
-      "yes_price_current": 0.71,
-      "target_no_price_range": "37% - 44%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-31T00:00:00Z",
-      "days_to_resolution": 28,
-      "liquidity": 149421.946,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "No at 29% \u2014 in range but near edge",
-        "Resolves in 28d \u2014 good window",
-        "$149,422 liquidity \u2014 excellent",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -2913,13 +2851,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 10233.303,
+      "liquidity": 10175.7493,
       "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 29% \u2014 in range but near edge",
-        "$10,233 liquidity \u2014 good",
+        "$10,176 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -2943,7 +2881,7 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 3530.5928,
+      "liquidity": 3878.0765,
       "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -2955,7 +2893,7 @@
       ],
       "warnings": [
         "No end date",
-        "$3,531 liquidity \u2014 thin"
+        "$3,878 liquidity \u2014 thin"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -2989,36 +2927,31 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison",
-      "question": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+      "market_slug": "will-the-boston-celtics-win-the-nba-eastern-conference-finals",
+      "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
       "classification": [
-        "Exact Phrase",
-        "Narrow Count Band",
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.284,
-      "yes_price_current": 0.716,
-      "target_no_price_range": "36% - 43%",
+      "no_price_current": 0.286,
+      "yes_price_current": 0.714,
+      "target_no_price_range": "37% - 44%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2025-12-31T12:00:00Z",
-      "days_to_resolution": 0,
-      "liquidity": 678.04878,
-      "spread": 0.005,
+      "resolves_by": "2026-06-13T00:00:00Z",
+      "days_to_resolution": 41,
+      "liquidity": 40484.50853,
+      "spread": 0.021,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Exact Phrase, Narrow Count Band, Official Announcement",
-        "No at 28% \u2014 in range but near edge",
-        "0.5% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Exact phrase \u2014 operatically fragile",
-        "Official announcement \u2014 bureaucracies delay",
-        "Narrow band \u2014 high miss probability"
+        "Category match: Official Announcement",
+        "No at 29% \u2014 in range but near edge",
+        "Resolves in ~41d \u2014 moderate window",
+        "$40,485 liquidity \u2014 good",
+        "2.1% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
       ],
-      "warnings": [
-        "$678 liquidity \u2014 avoid"
-      ],
+      "warnings": [],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -3035,17 +2968,78 @@
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-06-21T14:00:00Z",
-      "days_to_resolution": 50,
-      "liquidity": 87513.4479,
+      "days_to_resolution": 49,
+      "liquidity": 81925.7352,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 28% \u2014 in range but near edge",
-        "Resolves in ~50d \u2014 moderate window",
-        "$87,513 liquidity \u2014 excellent",
+        "Resolves in ~49d \u2014 moderate window",
+        "$81,926 liquidity \u2014 excellent",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison",
+      "question": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+      "classification": [
+        "Exact Phrase",
+        "Narrow Count Band",
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.28,
+      "yes_price_current": 0.72,
+      "target_no_price_range": "36% - 43%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2025-12-31T12:00:00Z",
+      "days_to_resolution": 0,
+      "liquidity": 484.81779,
+      "spread": 0.008,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Exact Phrase, Narrow Count Band, Official Announcement",
+        "No at 28% \u2014 in range but near edge",
+        "0.8% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Exact phrase \u2014 operatically fragile",
+        "Official announcement \u2014 bureaucracies delay",
+        "Narrow band \u2014 high miss probability"
+      ],
+      "warnings": [
+        "$485 liquidity \u2014 avoid"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-new-york-knicks-win-the-nba-eastern-conference-finals",
+      "question": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.28,
+      "yes_price_current": 0.72,
+      "target_no_price_range": "36% - 43%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-13T00:00:00Z",
+      "days_to_resolution": 41,
+      "liquidity": 56183.7104,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "No at 28% \u2014 in range but near edge",
+        "Resolves in ~41d \u2014 moderate window",
+        "$56,184 liquidity \u2014 excellent",
+        "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
@@ -3066,7 +3060,7 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 877.1589,
+      "liquidity": 862.2874,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -3078,69 +3072,35 @@
       ],
       "warnings": [
         "No end date",
-        "$877 liquidity \u2014 avoid"
+        "$862 liquidity \u2014 avoid"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-the-new-york-knicks-win-the-nba-eastern-conference-finals",
-      "question": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "market_slug": "will-the-vegas-golden-knights-win-the-western-conference-541",
+      "question": "Will the Vegas Golden Knights win the Western Conference?",
       "classification": [
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.27,
-      "yes_price_current": 0.73,
-      "target_no_price_range": "35% - 42%",
+      "no_price_current": 0.276,
+      "yes_price_current": 0.724,
+      "target_no_price_range": "36% - 43%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-06-13T00:00:00Z",
-      "days_to_resolution": 41,
-      "liquidity": 55219.1298,
-      "spread": 0.02,
+      "resolves_by": "2026-06-30T00:00:00Z",
+      "days_to_resolution": 58,
+      "liquidity": 30455.71571,
+      "spread": 0.055,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "No at 27% \u2014 in range but near edge",
-        "Resolves in ~41d \u2014 moderate window",
-        "$55,219 liquidity \u2014 excellent",
-        "2.0% spread \u2014 tight",
+        "No at 28% \u2014 in range but near edge",
+        "Resolves in ~58d \u2014 moderate window",
+        "$30,456 liquidity \u2014 good",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-openai-ipo-by-december-31-2026",
-      "question": "Will OpenAI IPO by December 31 2026?",
-      "classification": [
-        "Tech Release",
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.27,
-      "yes_price_current": 0.73,
-      "target_no_price_range": "35% - 42%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 4895.0239,
-      "spread": 0.02,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Tech Release, Multi-Condition, Official Announcement",
-        "No at 27% \u2014 in range but near edge",
-        "2.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No end date",
-        "$4,895 liquidity \u2014 thin",
-        "Some categories: price outside thesis range"
-      ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
@@ -3158,14 +3118,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 12514.8279,
-      "spread": 0.03,
+      "liquidity": 10397.8635,
+      "spread": 0.04,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "No at 25% \u2014 in range but near edge",
-        "$12,515 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$10,398 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -3220,12 +3179,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 13682.257,
+      "liquidity": 13229.977,
       "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$13,682 liquidity \u2014 good",
+        "$13,230 liquidity \u2014 good",
         "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -3246,56 +3205,27 @@
         "Exact Phrase"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.22,
-      "yes_price_current": 0.78,
-      "target_no_price_range": "30% - 37%",
+      "no_price_current": 0.23,
+      "yes_price_current": 0.77,
+      "target_no_price_range": "31% - 38%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 32815.6893,
-      "spread": 0.01,
+      "liquidity": 30852.9799,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Multi-Condition, Exact Phrase",
         "Resolves in ~58d \u2014 moderate window",
-        "$32,816 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
+        "$30,853 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile"
       ],
       "warnings": [
-        "No at 22% \u2014 outside 25-75% range",
+        "No at 23% \u2014 outside 25-75% range",
         "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983",
-      "question": "Will Spencer Pratt win the 2026 Los Angeles mayoral election?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.22,
-      "yes_price_current": 0.78,
-      "target_no_price_range": "30% - 37%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-02T00:00:00Z",
-      "days_to_resolution": 30,
-      "liquidity": 39582.3813,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in 30d \u2014 good window",
-        "$39,582 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 22% \u2014 outside 25-75% range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -3315,7 +3245,7 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 3381.8192,
+      "liquidity": 2724.3888,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
@@ -3327,8 +3257,98 @@
       ],
       "warnings": [
         "No at 22% \u2014 outside 25-75% range",
-        "$3,382 liquidity \u2014 thin",
+        "$2,724 liquidity \u2014 thin",
         "Some categories: price outside thesis range"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-republicans-win-the-michigan-senate-race-in-2026",
+      "question": "Will the Republicans win the Michigan Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.22,
+      "yes_price_current": 0.78,
+      "target_no_price_range": "30% - 37%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 12594.6527,
+      "spread": 0.02,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "$12,595 liquidity \u2014 good",
+        "2.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 22% \u2014 outside 25-75% range",
+        "No end date",
+        "Some categories: price outside thesis range"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-karen-bass-win-the-2026-los-angeles-mayoral-election",
+      "question": "Will Karen Bass win the 2026 Los Angeles mayoral election?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.21,
+      "yes_price_current": 0.79,
+      "target_no_price_range": "29% - 36%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-02T00:00:00Z",
+      "days_to_resolution": 30,
+      "liquidity": 19622.8319,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "Resolves in 30d \u2014 good window",
+        "$19,623 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 21% \u2014 outside 25-75% range"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-spencer-pratt-win-the-2026-los-angeles-mayoral-election-983",
+      "question": "Will Spencer Pratt win the 2026 Los Angeles mayoral election?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.21,
+      "yes_price_current": 0.79,
+      "target_no_price_range": "29% - 36%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-02T00:00:00Z",
+      "days_to_resolution": 30,
+      "liquidity": 37978.538,
+      "spread": 0.01,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "Resolves in 30d \u2014 good window",
+        "$37,979 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 21% \u2014 outside 25-75% range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -3347,12 +3367,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 13459.7642,
+      "liquidity": 11069.8176,
       "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$13,460 liquidity \u2014 good",
+        "$11,070 liquidity \u2014 good",
         "2.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -3379,12 +3399,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 12740.1807,
+      "liquidity": 12162.1178,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$12,740 liquidity \u2014 good",
+        "$12,162 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -3393,63 +3413,6 @@
         "No at 21% \u2014 outside 25-75% range",
         "No end date",
         "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-liverpool-finish-in-3rd-place-in-the-2025-26-english-premier-league",
-      "question": "Will Liverpool finish in 3rd place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.21,
-      "yes_price_current": 0.79,
-      "target_no_price_range": "29% - 36%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-27T00:00:00Z",
-      "days_to_resolution": 24,
-      "liquidity": 1705.0398,
-      "spread": 0.04,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in 24d \u2014 good window",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 21% \u2014 outside 25-75% range",
-        "$1,705 liquidity \u2014 thin"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-karen-bass-win-the-2026-los-angeles-mayoral-election",
-      "question": "Will Karen Bass win the 2026 Los Angeles mayoral election?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.2,
-      "yes_price_current": 0.8,
-      "target_no_price_range": "28% - 35%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-02T00:00:00Z",
-      "days_to_resolution": 30,
-      "liquidity": 18650.7547,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in 30d \u2014 good window",
-        "$18,651 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 20% \u2014 outside 25-75% range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
@@ -3468,12 +3431,12 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 13318.3967,
+      "liquidity": 12390.8611,
       "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Multi-Condition, Official Announcement",
-        "$13,318 liquidity \u2014 good",
+        "$12,391 liquidity \u2014 good",
         "1.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
@@ -3499,111 +3462,18 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 31785.40251,
-      "spread": 0.013,
+      "liquidity": 39826.1078,
+      "spread": 0.01,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "Resolves in ~58d \u2014 moderate window",
-        "$31,785 liquidity \u2014 good",
-        "1.3% spread \u2014 tight",
+        "$39,826 liquidity \u2014 good",
+        "1.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 19% \u2014 outside 25-75% range",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-detroit-pistons-win-the-nba-eastern-conference-finals",
-      "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.187,
-      "yes_price_current": 0.813,
-      "target_no_price_range": "27% - 34%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-06-13T00:00:00Z",
-      "days_to_resolution": 41,
-      "liquidity": 61505.79601,
-      "spread": 0.038,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in ~41d \u2014 moderate window",
-        "$61,506 liquidity \u2014 excellent",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 19% \u2014 outside 25-75% range",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-democrats-win-the-kansas-senate-race-in-2026",
-      "question": "Will the Democrats win the Kansas Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.18,
-      "yes_price_current": 0.8200000000000001,
-      "target_no_price_range": "26% - 33%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 12419.8535,
-      "spread": 0.03,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "$12,420 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 18% \u2014 outside 25-75% range",
-        "No end date",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-republicans-win-the-michigan-senate-race-in-2026",
-      "question": "Will the Republicans win the Michigan Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.18,
-      "yes_price_current": 0.8200000000000001,
-      "target_no_price_range": "26% - 33%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 13639.8727,
-      "spread": 0.02,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "$13,640 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 18% \u2014 outside 25-75% range",
-        "No end date",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -3653,13 +3523,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 14962.47006,
-      "spread": 0.019,
+      "liquidity": 14983.84025,
+      "spread": 0.025,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$14,962 liquidity \u2014 good",
-        "1.9% spread \u2014 tight",
+        "$14,984 liquidity \u2014 good",
+        "2.5% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -3684,13 +3554,13 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 12547.41354,
-      "spread": 0.055,
+      "liquidity": 12417.95464,
+      "spread": 0.052,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "Resolves in ~58d \u2014 moderate window",
-        "$12,547 liquidity \u2014 good",
+        "$12,418 liquidity \u2014 good",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
@@ -3715,19 +3585,51 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 13203.2863,
+      "liquidity": 12902.2713,
       "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Tech Release, Multi-Condition, Exact Phrase",
         "Resolves in ~58d \u2014 moderate window",
-        "$13,203 liquidity \u2014 good",
+        "$12,902 liquidity \u2014 good",
         "3.0% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Exact phrase \u2014 operatically fragile"
       ],
       "warnings": [
         "No at 17% \u2014 outside 25-75% range",
+        "Some categories: price outside thesis range"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-democrats-win-the-kansas-senate-race-in-2026",
+      "question": "Will the Democrats win the Kansas Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.17,
+      "yes_price_current": 0.83,
+      "target_no_price_range": "25% - 32%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 13095.1815,
+      "spread": 0.03,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement, Multi-Condition",
+        "$13,095 liquidity \u2014 good",
+        "3.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 17% \u2014 outside 25-75% range",
+        "No end date",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -3746,14 +3648,14 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-30T00:00:00Z",
       "days_to_resolution": 58,
-      "liquidity": 14515.2356,
-      "spread": 0.02,
+      "liquidity": 16506.3039,
+      "spread": 0.03,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
         "Resolves in ~58d \u2014 moderate window",
-        "$14,515 liquidity \u2014 good",
-        "2.0% spread \u2014 tight",
+        "$16,506 liquidity \u2014 good",
+        "3.0% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
@@ -3763,60 +3665,31 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-the-vegas-golden-knights-win-the-western-conference-541",
-      "question": "Will the Vegas Golden Knights win the Western Conference?",
+      "market_slug": "will-braga-win-the-2025-26-uefa-europa-league",
+      "question": "Will Braga win the 2025-26 UEFA Europa League?",
       "classification": [
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.17,
-      "yes_price_current": 0.83,
+      "no_price_current": 0.167,
+      "yes_price_current": 0.833,
       "target_no_price_range": "25% - 32%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-06-30T00:00:00Z",
-      "days_to_resolution": 58,
-      "liquidity": 26102.34051,
-      "spread": 0.037,
+      "resolves_by": "2026-05-24T00:00:00Z",
+      "days_to_resolution": 21,
+      "liquidity": 41388.59368,
+      "spread": 0.004,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "Resolves in ~58d \u2014 moderate window",
-        "$26,102 liquidity \u2014 good",
+        "Resolves in 21d \u2014 good window",
+        "$41,389 liquidity \u2014 good",
+        "0.4% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 17% \u2014 outside 25-75% range",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-mark-lynch-be-the-republican-nominee-for-senate-in-south-carolina",
-      "question": "Will Mark Lynch be the Republican nominee for Senate in South Carolina?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.165,
-      "yes_price_current": 0.835,
-      "target_no_price_range": "25% - 32%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-07-31T00:00:00Z",
-      "days_to_resolution": 89,
-      "liquidity": 13362.92247,
-      "spread": 0.007,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "$13,363 liquidity \u2014 good",
-        "0.7% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 16% \u2014 outside 25-75% range",
-        "Resolves in ~89d \u2014 long tail",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -3835,12 +3708,12 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-07-20T00:00:00Z",
       "days_to_resolution": 78,
-      "liquidity": 497129.2963,
+      "liquidity": 498895.59425,
       "spread": 0.001,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "$497,129 liquidity \u2014 excellent",
+        "$498,896 liquidity \u2014 excellent",
         "0.1% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -3852,63 +3725,63 @@
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-braga-win-the-2025-26-uefa-europa-league",
-      "question": "Will Braga win the 2025-26 UEFA Europa League?",
+      "market_slug": "will-the-republicans-win-the-new-hampshire-senate-race-in-2026",
+      "question": "Will the Republicans win the New Hampshire Senate race in 2026?",
       "classification": [
-        "Official Announcement"
+        "Official Announcement",
+        "Multi-Condition"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.162,
-      "yes_price_current": 0.838,
+      "no_price_current": 0.16,
+      "yes_price_current": 0.84,
       "target_no_price_range": "25% - 31%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-05-24T00:00:00Z",
-      "days_to_resolution": 21,
-      "liquidity": 41786.43479,
-      "spread": 0.006,
+      "resolves_by": null,
+      "days_to_resolution": null,
+      "liquidity": 9950.7541,
+      "spread": 0.02,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in 21d \u2014 good window",
-        "$41,786 liquidity \u2014 good",
-        "0.6% spread \u2014 tight",
+        "Category match: Official Announcement, Multi-Condition",
+        "2.0% spread \u2014 tight",
+        "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 16% \u2014 outside 25-75% range",
+        "No end date",
+        "$9,951 liquidity \u2014 thin",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
     },
     {
-      "market_slug": "will-vedat-muriqi-be-the-top-goal-scorer-in-the-202526-la-liga-season",
-      "question": "Will Vedat Muriqi be the top goal scorer in the 2025\u201326 La Liga season?",
+      "market_slug": "will-freiburg-win-the-2025-26-uefa-europa-league",
+      "question": "Will Freiburg win the 2025-26 UEFA Europa League?",
       "classification": [
-        "Exact Phrase",
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.154,
-      "yes_price_current": 0.846,
+      "no_price_current": 0.153,
+      "yes_price_current": 0.847,
       "target_no_price_range": "25% - 30%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
-      "resolves_by": "2026-05-30T00:00:00Z",
-      "days_to_resolution": 27,
-      "liquidity": 2841.74647,
-      "spread": 0.089,
+      "resolves_by": "2026-05-24T00:00:00Z",
+      "days_to_resolution": 21,
+      "liquidity": 43056.46041,
+      "spread": 0.003,
       "clob_token_id_no": "\"",
       "rationale": [
-        "Category match: Exact Phrase, Official Announcement",
-        "Resolves in 27d \u2014 good window",
-        "Exact phrase \u2014 operatically fragile",
+        "Category match: Official Announcement",
+        "Resolves in 21d \u2014 good window",
+        "$43,056 liquidity \u2014 good",
+        "0.3% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 15% \u2014 outside 25-75% range",
-        "$2,842 liquidity \u2014 thin",
-        "8.9% spread \u2014 wide",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -3920,25 +3793,55 @@
         "Official Announcement"
       ],
       "recommended_side": "No",
-      "no_price_current": 0.153,
-      "yes_price_current": 0.847,
+      "no_price_current": 0.152,
+      "yes_price_current": 0.848,
       "target_no_price_range": "25% - 30%",
       "entry_instruction": "Limit order, do not chase",
       "max_risk_usdc": null,
       "resolves_by": "2026-07-20T00:00:00Z",
       "days_to_resolution": 78,
-      "liquidity": 979743.89156,
+      "liquidity": 972782.47561,
       "spread": 0.001,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement",
-        "$979,744 liquidity \u2014 excellent",
+        "$972,782 liquidity \u2014 excellent",
         "0.1% spread \u2014 tight",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 15% \u2014 outside 25-75% range",
         "Resolves in ~78d \u2014 long tail",
+        "Some categories: price outside thesis range"
+      ],
+      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
+    },
+    {
+      "market_slug": "will-the-detroit-pistons-win-the-nba-eastern-conference-finals",
+      "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "recommended_side": "No",
+      "no_price_current": 0.15,
+      "yes_price_current": 0.85,
+      "target_no_price_range": "25% - 30%",
+      "entry_instruction": "Limit order, do not chase",
+      "max_risk_usdc": null,
+      "resolves_by": "2026-06-13T00:00:00Z",
+      "days_to_resolution": 41,
+      "liquidity": 67269.0218,
+      "spread": 0.024,
+      "clob_token_id_no": "\"",
+      "rationale": [
+        "Category match: Official Announcement",
+        "Resolves in ~41d \u2014 moderate window",
+        "$67,269 liquidity \u2014 excellent",
+        "2.4% spread \u2014 tight",
+        "Official announcement \u2014 bureaucracies delay"
+      ],
+      "warnings": [
+        "No at 15% \u2014 outside 25-75% range",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -3958,113 +3861,18 @@
       "max_risk_usdc": null,
       "resolves_by": "2026-06-13T00:00:00Z",
       "days_to_resolution": 41,
-      "liquidity": 48981.8249,
-      "spread": 0.03,
+      "liquidity": 49855.8733,
+      "spread": 0.05,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
         "Resolves in ~41d \u2014 moderate window",
-        "$48,982 liquidity \u2014 good",
-        "3.0% spread \u2014 tight",
+        "$49,856 liquidity \u2014 good",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
       "warnings": [
         "No at 15% \u2014 outside 25-75% range",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-republicans-win-the-north-carolina-senate-race-in-2026",
-      "question": "Will the Republicans win the North Carolina Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.15,
-      "yes_price_current": 0.85,
-      "target_no_price_range": "25% - 30%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 13354.4899,
-      "spread": 0.01,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "$13,354 liquidity \u2014 good",
-        "1.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 15% \u2014 outside 25-75% range",
-        "No end date",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-freiburg-win-the-2025-26-uefa-europa-league",
-      "question": "Will Freiburg win the 2025-26 UEFA Europa League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.15,
-      "yes_price_current": 0.85,
-      "target_no_price_range": "25% - 30%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": "2026-05-24T00:00:00Z",
-      "days_to_resolution": 21,
-      "liquidity": 44618.15521,
-      "spread": 0.004,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement",
-        "Resolves in 21d \u2014 good window",
-        "$44,618 liquidity \u2014 good",
-        "0.4% spread \u2014 tight",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 15% \u2014 outside 25-75% range",
-        "Some categories: price outside thesis range"
-      ],
-      "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
-    },
-    {
-      "market_slug": "will-the-republicans-win-the-new-hampshire-senate-race-in-2026",
-      "question": "Will the Republicans win the New Hampshire Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "recommended_side": "No",
-      "no_price_current": 0.15,
-      "yes_price_current": 0.85,
-      "target_no_price_range": "25% - 30%",
-      "entry_instruction": "Limit order, do not chase",
-      "max_risk_usdc": null,
-      "resolves_by": null,
-      "days_to_resolution": null,
-      "liquidity": 9944.3484,
-      "spread": 0.02,
-      "clob_token_id_no": "\"",
-      "rationale": [
-        "Category match: Official Announcement, Multi-Condition",
-        "2.0% spread \u2014 tight",
-        "Multi-condition \u2014 No wins if any condition fails",
-        "Official announcement \u2014 bureaucracies delay"
-      ],
-      "warnings": [
-        "No at 15% \u2014 outside 25-75% range",
-        "No end date",
-        "$9,944 liquidity \u2014 thin",
         "Some categories: price outside thesis range"
       ],
       "invalidation": "Market price moves above 85c No; thesis event actually occurs early"
@@ -4114,13 +3922,13 @@
       "max_risk_usdc": null,
       "resolves_by": null,
       "days_to_resolution": null,
-      "liquidity": 12086.27875,
-      "spread": 0.014,
+      "liquidity": 11595.52475,
+      "spread": 0.016,
       "clob_token_id_no": "\"",
       "rationale": [
         "Category match: Official Announcement, Multi-Condition",
-        "$12,086 liquidity \u2014 good",
-        "1.4% spread \u2014 tight",
+        "$11,596 liquidity \u2014 good",
+        "1.6% spread \u2014 tight",
         "Multi-condition \u2014 No wins if any condition fails",
         "Official announcement \u2014 bureaucracies delay"
       ],
@@ -4173,7 +3981,7 @@
         "Multi-Condition",
         "Exact Phrase"
       ],
-      "no_price": 0.4,
+      "no_price": 0.41,
       "rating": "HIGH",
       "score": 43.0
     },
@@ -4184,7 +3992,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.42,
+      "no_price": 0.41,
       "rating": "HIGH",
       "score": 41.666666666666664
     },
@@ -4195,7 +4003,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.32,
+      "no_price": 0.315,
       "rating": "HIGH",
       "score": 41.666666666666664
     },
@@ -4206,7 +4014,7 @@
         "Tech Release",
         "Official Announcement"
       ],
-      "no_price": 0.48,
+      "no_price": 0.49,
       "rating": "HIGH",
       "score": 41.0
     },
@@ -4249,6 +4057,16 @@
       "classification": [
         "Official Announcement"
       ],
+      "no_price": 0.32,
+      "rating": "HIGH",
+      "score": 39.333333333333336
+    },
+    {
+      "slug": "will-arsenal-win-the-202526-champions-league",
+      "question": "Will Arsenal win the 2025\u201326 Champions League?",
+      "classification": [
+        "Official Announcement"
+      ],
       "no_price": 0.31,
       "rating": "HIGH",
       "score": 39.333333333333336
@@ -4259,27 +4077,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.31,
-      "rating": "HIGH",
-      "score": 39.333333333333336
-    },
-    {
-      "slug": "will-arsenal-win-the-202526-english-premier-league",
-      "question": "Will Arsenal win the 2025\u201326 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.51,
-      "rating": "HIGH",
-      "score": 39.333333333333336
-    },
-    {
-      "slug": "will-manchester-city-win-the-202526-english-premier-league",
-      "question": "Will Manchester City win the 2025\u201326 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.49,
+      "no_price": 0.32,
       "rating": "HIGH",
       "score": 39.333333333333336
     },
@@ -4306,17 +4104,6 @@
     {
       "slug": "new-rhianna-album-before-gta-vi-926",
       "question": "New Rihanna Album before GTA VI?",
-      "classification": [
-        "Tech Release",
-        "Official Announcement"
-      ],
-      "no_price": 0.51,
-      "rating": "HIGH",
-      "score": 39.33333333333333
-    },
-    {
-      "slug": "new-playboi-carti-album-before-gta-vi-421",
-      "question": "New Playboi Carti Album before GTA VI?",
       "classification": [
         "Tech Release",
         "Official Announcement"
@@ -4354,7 +4141,7 @@
         "Tech Release",
         "Multi-Condition"
       ],
-      "no_price": 0.702,
+      "no_price": 0.69,
       "rating": "HIGH",
       "score": 39.0
     },
@@ -4387,9 +4174,19 @@
         "Tech Release",
         "Multi-Condition"
       ],
-      "no_price": 0.51,
+      "no_price": 0.54,
       "rating": "HIGH",
       "score": 38.0
+    },
+    {
+      "slug": "will-the-colorado-avalanche-win-the-western-conference-993",
+      "question": "Will the Colorado Avalanche win the Western Conference?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.53,
+      "rating": "HIGH",
+      "score": 37.333333333333336
     },
     {
       "slug": "will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison",
@@ -4398,7 +4195,7 @@
         "Exact Phrase",
         "Narrow Count Band"
       ],
-      "no_price": 0.284,
+      "no_price": 0.28,
       "rating": "HIGH",
       "score": 36.66666666666667
     },
@@ -4409,7 +4206,7 @@
         "Exact Phrase",
         "Official Announcement"
       ],
-      "no_price": 0.36,
+      "no_price": 0.384,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
@@ -4434,6 +4231,16 @@
       "score": 36.333333333333336
     },
     {
+      "slug": "will-manchester-city-win-the-202526-english-premier-league",
+      "question": "Will Manchester City win the 2025\u201326 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.37,
+      "rating": "HIGH",
+      "score": 36.333333333333336
+    },
+    {
       "slug": "will-tottenham-be-relegated-from-the-english-premier-league-after-the-202526-season",
       "question": "Will Tottenham be relegated from the English Premier League after the 2025\u201326 se",
       "classification": [
@@ -4449,7 +4256,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.36,
+      "no_price": 0.37,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
@@ -4460,7 +4267,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.4,
+      "no_price": 0.41,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
@@ -4493,7 +4300,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.46,
+      "no_price": 0.47,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
@@ -4504,7 +4311,18 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.54,
+      "no_price": 0.55,
+      "rating": "HIGH",
+      "score": 36.333333333333336
+    },
+    {
+      "slug": "will-the-democrats-win-the-ohio-senate-race-in-2026",
+      "question": "Will the Democrats win the Ohio Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "no_price": 0.59,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
@@ -4515,52 +4333,20 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.46,
+      "no_price": 0.42,
       "rating": "HIGH",
       "score": 36.333333333333336
     },
     {
-      "slug": "will-arsenal-win-the-202526-champions-league",
-      "question": "Will Arsenal win the 2025\u201326 Champions League?",
+      "slug": "new-playboi-carti-album-before-gta-vi-421",
+      "question": "New Playboi Carti Album before GTA VI?",
       "classification": [
+        "Tech Release",
         "Official Announcement"
       ],
-      "no_price": 0.29,
+      "no_price": 0.51,
       "rating": "HIGH",
       "score": 36.33333333333333
-    },
-    {
-      "slug": "will-the-democrats-win-the-nevada-governor-race-in-2026",
-      "question": "Will the Democrats win the Nevada governor race in 2026?",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "no_price": 0.5,
-      "rating": "HIGH",
-      "score": 35.333333333333336
-    },
-    {
-      "slug": "will-the-republicans-win-the-nevada-governor-race-in-2026",
-      "question": "Will the Republicans win the Nevada governor race in 2026?",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "no_price": 0.5,
-      "rating": "HIGH",
-      "score": 35.333333333333336
-    },
-    {
-      "slug": "will-the-democrats-win-the-ohio-governor-race-in-2026",
-      "question": "Will the Democrats win the Ohio governor race in 2026?",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "no_price": 0.5,
-      "rating": "HIGH",
-      "score": 35.333333333333336
     },
     {
       "slug": "will-the-new-york-knicks-win-the-nba-eastern-conference-finals",
@@ -4568,39 +4354,9 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.27,
+      "no_price": 0.28,
       "rating": "HIGH",
       "score": 34.66666666666667
-    },
-    {
-      "slug": "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals",
-      "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.66,
-      "rating": "HIGH",
-      "score": 34.66666666666667
-    },
-    {
-      "slug": "will-the-san-antonio-spurs-win-the-nba-western-conference-finals",
-      "question": "Will the San Antonio Spurs win the NBA Western Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.291,
-      "rating": "HIGH",
-      "score": 34.66666666666667
-    },
-    {
-      "slug": "will-the-boston-celtics-win-the-nba-eastern-conference-finals",
-      "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.323,
-      "rating": "HIGH",
-      "score": 34.666666666666664
     },
     {
       "slug": "will-the-carolina-hurricanes-win-the-eastern-conference",
@@ -4608,17 +4364,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.47,
-      "rating": "HIGH",
-      "score": 34.333333333333336
-    },
-    {
-      "slug": "will-the-colorado-avalanche-win-the-western-conference-993",
-      "question": "Will the Colorado Avalanche win the Western Conference?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.55,
+      "no_price": 0.49,
       "rating": "HIGH",
       "score": 34.333333333333336
     },
@@ -4656,26 +4402,14 @@
       "score": 33.333333333333336
     },
     {
-      "slug": "will-the-democrats-win-the-south-carolina-senate-race-in-2026",
-      "question": "Will the Democrats win the South Carolina Senate race in 2026?",
+      "slug": "will-arsenal-win-the-202526-english-premier-league",
+      "question": "Will Arsenal win the 2025\u201326 English Premier League?",
       "classification": [
-        "Official Announcement",
-        "Multi-Condition"
+        "Official Announcement"
       ],
-      "no_price": 0.25,
+      "no_price": 0.62,
       "rating": "HIGH",
-      "score": 33.333333333333336
-    },
-    {
-      "slug": "will-the-democrats-win-the-ohio-senate-race-in-2026",
-      "question": "Will the Democrats win the Ohio Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "no_price": 0.61,
-      "rating": "HIGH",
-      "score": 33.333333333333336
+      "score": 33.33333333333333
     },
     {
       "slug": "will-arsenal-finish-in-2nd-place-in-the-2025-26-english-premier-league",
@@ -4683,17 +4417,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.5,
-      "rating": "HIGH",
-      "score": 32.333333333333336
-    },
-    {
-      "slug": "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league",
-      "question": "Will Manchester City finish in 2nd place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.51,
+      "no_price": 0.31,
       "rating": "HIGH",
       "score": 32.333333333333336
     },
@@ -4719,6 +4443,17 @@
       "score": 32.333333333333336
     },
     {
+      "slug": "will-the-democrats-win-the-kansas-governor-race-in-2026",
+      "question": "Will the Democrats win the Kansas governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "no_price": 0.32,
+      "rating": "HIGH",
+      "score": 32.333333333333336
+    },
+    {
       "slug": "will-the-republicans-win-the-kansas-governor-race-in-2026",
       "question": "Will the Republicans win the Kansas governor race in 2026?",
       "classification": [
@@ -4730,6 +4465,39 @@
       "score": 32.333333333333336
     },
     {
+      "slug": "will-the-democrats-win-the-nevada-governor-race-in-2026",
+      "question": "Will the Democrats win the Nevada governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "no_price": 0.5,
+      "rating": "HIGH",
+      "score": 32.333333333333336
+    },
+    {
+      "slug": "will-the-republicans-win-the-nevada-governor-race-in-2026",
+      "question": "Will the Republicans win the Nevada governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "no_price": 0.5,
+      "rating": "HIGH",
+      "score": 32.333333333333336
+    },
+    {
+      "slug": "will-the-democrats-win-the-ohio-governor-race-in-2026",
+      "question": "Will the Democrats win the Ohio governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "no_price": 0.5,
+      "rating": "HIGH",
+      "score": 32.333333333333336
+    },
+    {
       "slug": "will-the-republicans-win-the-ohio-governor-race-in-2026",
       "question": "Will the Republicans win the Ohio governor race in 2026?",
       "classification": [
@@ -4737,6 +4505,17 @@
         "Official Announcement"
       ],
       "no_price": 0.53,
+      "rating": "HIGH",
+      "score": 32.333333333333336
+    },
+    {
+      "slug": "will-openai-ipo-by-december-31-2026",
+      "question": "Will OpenAI IPO by December 31 2026?",
+      "classification": [
+        "Tech Release",
+        "Multi-Condition"
+      ],
+      "no_price": 0.34,
       "rating": "HIGH",
       "score": 32.333333333333336
     },
@@ -4763,15 +4542,34 @@
       "score": 32.33333333333333
     },
     {
-      "slug": "will-the-republicans-win-the-vermont-governor-race-in-2026",
-      "question": "Will the Republicans win the Vermont governor race in 2026?",
+      "slug": "will-the-boston-celtics-win-the-nba-eastern-conference-finals",
+      "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
       "classification": [
-        "Multi-Condition",
         "Official Announcement"
       ],
-      "no_price": 0.72,
+      "no_price": 0.286,
       "rating": "HIGH",
-      "score": 32.33333333333333
+      "score": 31.666666666666668
+    },
+    {
+      "slug": "will-the-oklahoma-city-thunder-win-the-nba-western-conference-finals",
+      "question": "Will the Oklahoma City Thunder win the NBA Western Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.67,
+      "rating": "HIGH",
+      "score": 31.666666666666668
+    },
+    {
+      "slug": "will-the-san-antonio-spurs-win-the-nba-western-conference-finals",
+      "question": "Will the San Antonio Spurs win the NBA Western Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.292,
+      "rating": "HIGH",
+      "score": 31.666666666666668
     },
     {
       "slug": "will-freddie-macs-market-cap-be-between-150b-and-200b-at-market-close-on-ipo-day",
@@ -4794,17 +4592,6 @@
       "no_price": 0.4,
       "rating": "HIGH",
       "score": 31.666666666666664
-    },
-    {
-      "slug": "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254",
-      "question": "Will MegaETH perform an airdrop by June 30? ",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "no_price": 0.362,
-      "rating": "HIGH",
-      "score": 31.333333333333336
     },
     {
       "slug": "will-marseille-finish-in-the-top-4-of-the-ligue-1-202526-standings",
@@ -4835,9 +4622,20 @@
         "Tech Release",
         "Multi-Condition"
       ],
-      "no_price": 0.22,
+      "no_price": 0.23,
       "rating": "HIGH",
       "score": 31.0
+    },
+    {
+      "slug": "will-the-democrats-win-the-south-carolina-senate-race-in-2026",
+      "question": "Will the Democrats win the South Carolina Senate race in 2026?",
+      "classification": [
+        "Official Announcement",
+        "Multi-Condition"
+      ],
+      "no_price": 0.25,
+      "rating": "HIGH",
+      "score": 30.333333333333336
     },
     {
       "slug": "will-the-democrats-win-the-florida-senate-race-in-2026",
@@ -4861,6 +4659,16 @@
       "score": 29.333333333333336
     },
     {
+      "slug": "will-manchester-city-finish-in-2nd-place-in-the-2025-26-english-premier-league",
+      "question": "Will Manchester City finish in 2nd place in the 2025-26 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.66,
+      "rating": "MEDIUM",
+      "score": 29.333333333333332
+    },
+    {
       "slug": "will-the-democrats-win-the-georgia-governor-race-in-2026",
       "question": "Will the Democrats win the Georgia governor race in 2026?",
       "classification": [
@@ -4872,15 +4680,15 @@
       "score": 29.333333333333332
     },
     {
-      "slug": "will-the-cleveland-cavaliers-win-the-nba-eastern-conference-finals",
-      "question": "Will the Cleveland Cavaliers win the NBA Eastern Conference Finals?",
+      "slug": "will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254",
+      "question": "Will MegaETH perform an airdrop by June 30? ",
       "classification": [
-        "Official Announcement",
-        "Multi-Condition"
+        "Multi-Condition",
+        "Official Announcement"
       ],
-      "no_price": 0.15,
+      "no_price": 0.471,
       "rating": "MEDIUM",
-      "score": 29.0
+      "score": 28.333333333333336
     },
     {
       "slug": "will-the-democrats-win-the-georgia-senate-race-in-2026",
@@ -4921,7 +4729,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.2,
+      "no_price": 0.21,
       "rating": "MEDIUM",
       "score": 28.333333333333332
     },
@@ -4931,7 +4739,17 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.22,
+      "no_price": 0.21,
+      "rating": "MEDIUM",
+      "score": 28.333333333333332
+    },
+    {
+      "slug": "will-the-vegas-golden-knights-win-the-western-conference-541",
+      "question": "Will the Vegas Golden Knights win the Western Conference?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.276,
       "rating": "MEDIUM",
       "score": 28.333333333333332
     },
@@ -4965,6 +4783,17 @@
         "Official Announcement"
       ],
       "no_price": 0.78,
+      "rating": "MEDIUM",
+      "score": 27.333333333333336
+    },
+    {
+      "slug": "will-the-republicans-win-the-vermont-governor-race-in-2026",
+      "question": "Will the Republicans win the Vermont governor race in 2026?",
+      "classification": [
+        "Multi-Condition",
+        "Official Announcement"
+      ],
+      "no_price": 0.76,
       "rating": "MEDIUM",
       "score": 27.333333333333336
     },
@@ -5046,6 +4875,16 @@
       "score": 27.0
     },
     {
+      "slug": "will-the-detroit-pistons-win-the-nba-eastern-conference-finals",
+      "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.15,
+      "rating": "MEDIUM",
+      "score": 26.666666666666668
+    },
+    {
       "slug": "nhl-2025-26-hart-memorial-trophy-nikita-kucherov",
       "question": "Will Nikita Kucherov win the 2025\u20132026 NHL Hart Memorial Trophy?",
       "classification": [
@@ -5056,15 +4895,15 @@
       "score": 26.333333333333336
     },
     {
-      "slug": "will-openai-ipo-by-december-31-2026",
-      "question": "Will OpenAI IPO by December 31 2026?",
+      "slug": "will-the-cleveland-cavaliers-win-the-nba-eastern-conference-finals",
+      "question": "Will the Cleveland Cavaliers win the NBA Eastern Conference Finals?",
       "classification": [
-        "Tech Release",
+        "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.27,
+      "no_price": 0.15,
       "rating": "MEDIUM",
-      "score": 26.333333333333336
+      "score": 26.0
     },
     {
       "slug": "will-the-republicans-win-the-georgia-senate-race-in-2026",
@@ -5084,7 +4923,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.18,
+      "no_price": 0.17,
       "rating": "MEDIUM",
       "score": 25.333333333333336
     },
@@ -5106,7 +4945,7 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.18,
+      "no_price": 0.22,
       "rating": "MEDIUM",
       "score": 25.333333333333336
     },
@@ -5133,17 +4972,6 @@
       "score": 25.333333333333336
     },
     {
-      "slug": "will-the-republicans-win-the-north-carolina-senate-race-in-2026",
-      "question": "Will the Republicans win the North Carolina Senate race in 2026?",
-      "classification": [
-        "Official Announcement",
-        "Multi-Condition"
-      ],
-      "no_price": 0.15,
-      "rating": "MEDIUM",
-      "score": 25.333333333333336
-    },
-    {
       "slug": "will-the-republicans-win-the-south-carolina-senate-race-in-2026",
       "question": "Will the Republicans win the South Carolina Senate race in 2026?",
       "classification": [
@@ -5160,7 +4988,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.15,
+      "no_price": 0.153,
       "rating": "MEDIUM",
       "score": 25.333333333333332
     },
@@ -5170,7 +4998,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.162,
+      "no_price": 0.167,
       "rating": "MEDIUM",
       "score": 25.333333333333332
     },
@@ -5204,17 +5032,6 @@
         "Official Announcement"
       ],
       "no_price": 0.21,
-      "rating": "MEDIUM",
-      "score": 24.333333333333336
-    },
-    {
-      "slug": "will-the-democrats-win-the-kansas-governor-race-in-2026",
-      "question": "Will the Democrats win the Kansas governor race in 2026?",
-      "classification": [
-        "Multi-Condition",
-        "Official Announcement"
-      ],
-      "no_price": 0.32,
       "rating": "MEDIUM",
       "score": 24.333333333333336
     },
@@ -5307,16 +5124,6 @@
       "score": 24.0
     },
     {
-      "slug": "will-the-detroit-pistons-win-the-nba-eastern-conference-finals",
-      "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.187,
-      "rating": "MEDIUM",
-      "score": 23.666666666666668
-    },
-    {
       "slug": "will-the-tampa-bay-lightning-win-the-eastern-conference",
       "question": "Will the Tampa Bay Lightning win the Eastern Conference?",
       "classification": [
@@ -5337,23 +5144,13 @@
       "score": 23.333333333333332
     },
     {
-      "slug": "nhl-2025-26-jack-adams-award-lindy-ruff",
-      "question": "Will Lindy Ruff win the 2025\u20132026 NHL Jack Adams Award?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.679,
-      "rating": "MEDIUM",
-      "score": 23.333333333333332
-    },
-    {
       "slug": "no-one-announced-as-next-james-bond-962",
       "question": "No one announced as next James Bond?",
       "classification": [
         "Official Announcement",
         "Narrow Count Band"
       ],
-      "no_price": 0.79,
+      "no_price": 0.78,
       "rating": "MEDIUM",
       "score": 23.0
     },
@@ -5363,7 +5160,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.153,
+      "no_price": 0.152,
       "rating": "MEDIUM",
       "score": 22.333333333333336
     },
@@ -5374,16 +5171,6 @@
         "Official Announcement"
       ],
       "no_price": 0.164,
-      "rating": "MEDIUM",
-      "score": 22.333333333333336
-    },
-    {
-      "slug": "will-burnley-finish-in-last-place-in-the-2025-26-english-premier-league",
-      "question": "Will Burnley finish in last place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.304,
       "rating": "MEDIUM",
       "score": 22.333333333333336
     },
@@ -5433,7 +5220,7 @@
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.635,
+      "no_price": 0.633,
       "rating": "MEDIUM",
       "score": 22.333333333333332
     },
@@ -5465,19 +5252,9 @@
         "Official Announcement",
         "Multi-Condition"
       ],
-      "no_price": 0.15,
+      "no_price": 0.16,
       "rating": "MEDIUM",
       "score": 21.333333333333336
-    },
-    {
-      "slug": "will-liverpool-finish-in-3rd-place-in-the-2025-26-english-premier-league",
-      "question": "Will Liverpool finish in 3rd place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.21,
-      "rating": "MEDIUM",
-      "score": 21.333333333333332
     },
     {
       "slug": "will-nottm-forest-be-relegated-from-the-english-premier-league-after-the-202526-season",
@@ -5510,35 +5287,14 @@
       "score": 20.333333333333332
     },
     {
-      "slug": "will-the-vegas-golden-knights-win-the-western-conference-541",
-      "question": "Will the Vegas Golden Knights win the Western Conference?",
+      "slug": "nhl-2025-26-jack-adams-award-lindy-ruff",
+      "question": "Will Lindy Ruff win the 2025\u20132026 NHL Jack Adams Award?",
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.17,
+      "no_price": 0.679,
       "rating": "MEDIUM",
       "score": 20.333333333333332
-    },
-    {
-      "slug": "will-mark-lynch-be-the-republican-nominee-for-senate-in-south-carolina",
-      "question": "Will Mark Lynch be the Republican nominee for Senate in South Carolina?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.165,
-      "rating": "MEDIUM",
-      "score": 20.0
-    },
-    {
-      "slug": "will-esteban-lepaul-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season",
-      "question": "Will Esteban Lepaul be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "classification": [
-        "Exact Phrase",
-        "Official Announcement"
-      ],
-      "no_price": 0.849,
-      "rating": "MEDIUM",
-      "score": 19.666666666666668
     },
     {
       "slug": "will-ac-milan-finish-in-the-top-4-in-the-2025-26-serie-a-season",
@@ -5552,17 +5308,6 @@
       "score": 19.0
     },
     {
-      "slug": "will-vedat-muriqi-be-the-top-goal-scorer-in-the-202526-la-liga-season",
-      "question": "Will Vedat Muriqi be the top goal scorer in the 2025\u201326 La Liga season?",
-      "classification": [
-        "Exact Phrase",
-        "Official Announcement"
-      ],
-      "no_price": 0.154,
-      "rating": "MEDIUM",
-      "score": 18.666666666666668
-    },
-    {
       "slug": "will-the-republicans-win-the-new-hampshire-governor-race-in-2026",
       "question": "Will the Republicans win the New Hampshire governor race in 2026?",
       "classification": [
@@ -5574,14 +5319,45 @@
       "score": 18.333333333333332
     },
     {
-      "slug": "nhl-2025-26-james-norris-memorial-trophy-zach-werenski",
-      "question": "Will Zach Werenski win the 2025\u20132026 NHL James Norris Memorial Trophy?",
+      "slug": "will-liverpool-finish-in-3rd-place-in-the-2025-26-english-premier-league",
+      "question": "Will Liverpool finish in 3rd place in the 2025-26 English Premier League?",
       "classification": [
         "Official Announcement"
       ],
-      "no_price": 0.74,
+      "no_price": 0.21,
       "rating": "LOW",
-      "score": 16.333333333333332
+      "score": 17.333333333333332
+    },
+    {
+      "slug": "will-wolves-finish-in-last-place-in-the-2025-26-english-premier-league",
+      "question": "Will Wolves finish in last place in the 2025-26 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.233,
+      "rating": "LOW",
+      "score": 17.333333333333332
+    },
+    {
+      "slug": "will-burnley-finish-in-last-place-in-the-2025-26-english-premier-league",
+      "question": "Will Burnley finish in last place in the 2025-26 English Premier League?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.213,
+      "rating": "LOW",
+      "score": 17.333333333333332
+    },
+    {
+      "slug": "will-esteban-lepaul-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season",
+      "question": "Will Esteban Lepaul be the top goal scorer in the 2025-26 Ligue 1 season?",
+      "classification": [
+        "Exact Phrase",
+        "Official Announcement"
+      ],
+      "no_price": 0.85,
+      "rating": "LOW",
+      "score": 15.666666666666668
     },
     {
       "slug": "will-an-independent-win-the-rhode-island-governor-race-in-2026",
@@ -5595,16 +5371,6 @@
       "score": 14.666666666666668
     },
     {
-      "slug": "will-wolves-finish-in-last-place-in-the-2025-26-english-premier-league",
-      "question": "Will Wolves finish in last place in the 2025-26 English Premier League?",
-      "classification": [
-        "Official Announcement"
-      ],
-      "no_price": 0.764,
-      "rating": "LOW",
-      "score": 14.333333333333332
-    },
-    {
       "slug": "will-the-democrats-win-the-vermont-governor-race-in-2026",
       "question": "Will the Democrats win the Vermont governor race in 2026?",
       "classification": [
@@ -5616,17 +5382,6 @@
       "score": 14.333333333333332
     },
     {
-      "slug": "will-freddie-mac-not-ipo-by-june-30-2026",
-      "question": "Will Freddie Mac not IPO by June 30, 2026?",
-      "classification": [
-        "Official Announcement",
-        "Narrow Count Band"
-      ],
-      "no_price": 0.779,
-      "rating": "LOW",
-      "score": 14.0
-    },
-    {
       "slug": "will-the-republicans-win-the-wisconsin-governor-race-in-2026",
       "question": "Will the Republicans win the Wisconsin governor race in 2026?",
       "classification": [
@@ -5635,7 +5390,17 @@
       ],
       "no_price": 0.17,
       "rating": "LOW",
-      "score": 13.333333333333332
+      "score": 10.333333333333332
+    },
+    {
+      "slug": "nhl-2025-26-james-norris-memorial-trophy-zach-werenski",
+      "question": "Will Zach Werenski win the 2025\u20132026 NHL James Norris Memorial Trophy?",
+      "classification": [
+        "Official Announcement"
+      ],
+      "no_price": 0.847,
+      "rating": "LOW",
+      "score": 8.333333333333332
     }
   ]
 }

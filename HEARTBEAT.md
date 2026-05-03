@@ -40,11 +40,6 @@ than stack on every fire.
       (once per day to track burn rate). If balance < $50, surface to Roderick.
 - [ ] **OpenRouter usage check** — run `python3 scripts/openrouter_monitor.py --alert`.
       If it reports OR-in-use, surface to Roderick.
-- [ ] **Polymarket scan check** — if the last polymarket scan in
-      `analyst/polymarket-scan.json` is >6h old, run the scanner:
-      `cd /home/ubuntu/OpenClawTrevorMentis && python3 skills/polymarket-trader/scripts/short_thesis_scanner.py --depth 500 --out /home/ubuntu/.openclaw/workspace/analyst/polymarket-scan.json --report`.
-      Surfaced new HIGH-confidence finds (No 25c-75c, <30d, >$5K liq).
-
 ## Quiet hours
 
 - 23:00–08:00 Pacific Time: only respond on emergency-class triggers

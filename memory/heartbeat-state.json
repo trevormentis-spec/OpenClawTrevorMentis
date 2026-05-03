@@ -1,14 +1,14 @@
 {
   "version": 1,
   "lastChecks": {
-    "agentmail_inbox": 1777738119,
+    "agentmail_inbox": 1777786500,
     "osint_scan": 1714586400,
-    "memory_hygiene": 1714597200,
+    "memory_hygiene": 1777773000,
     "repo_state": 1777739616,
-    "brain_reindex": 1777739639,
-    "deepseek_balance": 1777738119,
-    "moltbook_check": 1777739639
+    "brain_reindex": 1777773000,
+    "deepseek_balance": 1777786500,
+    "moltbook_check": 1777766426
   },
-  "lastHeartbeat": 1777742394,
-  "rotationCursor": 4
+  "lastHeartbeat": 1777786500,
+  "rotationCursor": 0
 }

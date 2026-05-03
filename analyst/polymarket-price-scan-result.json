@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-05-03T01:08:06.692146+00:00",
+  "markets_checked": 129,
+  "errors": 0,
+  "significant_moves": 10,
+  "significant": [
+    {
+      "slug": "will-the-boston-celtics-win-the-nba-eastern-conference-finals",
+      "question": "Will the Boston Celtics win the NBA Eastern Conference Finals?",
+      "old_no": 0.75,
+      "new_no": 0.9165,
+      "old_yes": 0.25,
+      "new_yes": 0.0835,
+      "no_change_pct": 22.2,
+      "yes_change_pct": -66.6,
+      "max_abs_move": 0.1665,
+      "core": true
+    },
+    {
+      "slug": "will-the-democrats-win-the-new-hampshire-governor-race-in-2026",
+      "question": "Will the Democrats win the New Hampshire governor race in 2026?",
+      "old_no": 0.655,
+      "new_no": 0.77,
+      "old_yes": 0.345,
+      "new_yes": 0.23,
+      "no_change_pct": 17.6,
+      "yes_change_pct": -33.3,
+      "max_abs_move": 0.115,
+      "core": false
+    },
+    {
+      "slug": "will-the-republicans-win-the-kansas-governor-race-in-2026",
+      "question": "Will the Republicans win the Kansas governor race in 2026?",
+      "old_no": 0.39,
+      "new_no": 0.3,
+      "old_yes": 0.61,
+      "new_yes": 0.7,
+      "no_change_pct": -23.1,
+      "yes_change_pct": 14.8,
+      "max_abs_move": 0.09,
+      "core": false
+    },
+    {
+      "slug": "will-the-new-york-knicks-win-the-nba-eastern-conference-finals",
+      "question": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "old_no": 0.72,
+      "new_no": 0.63,
+      "old_yes": 0.28,
+      "new_yes": 0.37,
+      "no_change_pct": -12.5,
+      "yes_change_pct": 32.1,
+      "max_abs_move": 0.09,
+      "core": true
+    },
+    {
+      "slug": "will-the-republicans-win-the-new-hampshire-governor-race-in-2026",
+      "question": "Will the Republicans win the New Hampshire governor race in 2026?",
+      "old_no": 0.31,
+      "new_no": 0.225,
+      "old_yes": 0.69,
+      "new_yes": 0.775,
+      "no_change_pct": -27.4,
+      "yes_change_pct": 12.3,
+      "max_abs_move": 0.085,
+      "core": false
+    },
+    {
+      "slug": "will-the-democrats-win-the-wisconsin-governor-race-in-2026",
+      "question": "Will the Democrats win the Wisconsin governor race in 2026?",
+      "old_no": 0.185,
+      "new_no": 0.155,
+      "old_yes": 0.815,
+      "new_yes": 0.845,
+      "no_change_pct": -16.2,
+      "yes_change_pct": 3.7,
+      "max_abs_move": 0.03,
+      "core": false
+    },
+    {
+      "slug": "will-the-democrats-win-the-georgia-senate-race-in-2026",
+      "question": "Will the Democrats win the Georgia Senate race in 2026?",
+      "old_no": 0.175,
+      "new_no": 0.15,
+      "old_yes": 0.825,
+      "new_yes": 0.85,
+      "no_change_pct": -14.3,
+      "yes_change_pct": 3.0,
+      "max_abs_move": 0.025,
+      "core": false
+    },
+    {
+      "slug": "will-the-detroit-pistons-win-the-nba-eastern-conference-finals",
+      "question": "Will the Detroit Pistons win the NBA Eastern Conference Finals?",
+      "old_no": 0.84,
+      "new_no": 0.8195,
+      "old_yes": 0.16,
+      "new_yes": 0.1805,
+      "no_change_pct": -2.4,
+      "yes_change_pct": 12.8,
+      "max_abs_move": 0.0205,
+      "core": false
+    },
+    {
+      "slug": "will-databricks-market-cap-be-between-100b-and-125b-at-market-close-on-ipo-day",
+      "question": "Will Databricks\u2019 market cap be between $100B and $125B at market close on IPO day?",
+      "old_no": 0.9265,
+      "new_no": 0.9425,
+      "old_yes": 0.0735,
+      "new_yes": 0.0575,
+      "no_change_pct": 1.7,
+      "yes_change_pct": -21.8,
+      "max_abs_move": 0.016,
+      "core": false
+    },
+    {
+      "slug": "will-freddie-macs-market-cap-be-between-150b-and-200b-at-market-close-on-ipo-day",
+      "question": "Will Freddie Mac\u2019s market cap be between $150B and $200B at market close on IPO day?",
+      "old_no": 0.941,
+      "new_no": 0.9515,
+      "old_yes": 0.059,
+      "new_yes": 0.0485,
+      "no_change_pct": 1.1,
+      "yes_change_pct": -17.8,
+      "max_abs_move": 0.0105,
+      "core": false
+    }
+  ],
+  "error_slugs": []
+}
