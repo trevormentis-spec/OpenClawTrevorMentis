@@ -66,9 +66,10 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Official AgentMail skill is installed in `skills/agentmail` and enabled in OpenClaw config.
 - Fast send path when needed: use AgentMail REST API with bearer auth from local secrets only.
 
-### Netlify — Project Sentinel Dashboard
+### Netlify — OSINT Product Pages
 
-- **Dashboard URL:** https://glittering-croquembouche-68ad80.netlify.app/
+- **Landing page (live):** https://quiet-kangaroo-c0b94c.netlify.app/
+- **Old dashboard:** https://glittering-croquembouche-68ad80.netlify.app/
 - **Auth token:** stored in `.env` as `NETLIFY_AUTH_TOKEN` (not committed to git)
 - Source content lives in `exports/` directory — HTML files get deployed
 
@@ -96,6 +97,14 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Analyst training scaffold lives under `analyst/`
 - Start with `analyst/playbooks/analytic-workflow.md` and `analyst/templates/analytic-note.md` for real work
 - Use structured methods rather than intuitive summaries when the stakes are meaningful
+
+### Social Posting Pipeline
+
+- **Script:** `scripts/social-posting-pipeline.sh`
+- **Cron:** Daily at 13:00 PT (after intel brief completes)
+- **Output:** Export to `exports/social/{twitter,linkedin,reddit}.txt`
+- **Posting:** Content prepared for agent-facilitated posting via social-media-agent
+- **Status:** Content adaptation active ✅ — live posting needs Twitter API keys or VibePost key
 
 ### Content & OSINT Product Launch
 
