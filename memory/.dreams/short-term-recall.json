@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T05:25:24.729Z",
+  "updatedAt": "2026-05-04T05:59:11.937Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -48,27 +48,30 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "**Military:** 17 Iranian ships destroyed including submarine; IRIS Dena sunk in Indian Ocean; 10th wave of Israeli strikes; Turkey's NATO intercepts Iranian missile (first NATO-Iran engagement). **Economic:** US crude $78.80 (highest since Jan 2025); Brent ~$82–83; European gas +70%; 1,100 ships affected by GPS spoofing. **Social:** Minab girls' school toll: 165+ students + 14 teachers killed; photography of strike sites banned in Iran. **Infrastructure:** Bushehr nuclear plant shut down; 639 Russian specialists remain on site; confirmed strikes on Fordow, Natanz, Tehran nuclear research reactor. --- ### Analytical Notes This assessment demonstrates TREVOR v2 methodology in production:",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7.959692847546518,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-03T05:25:24.729Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
         "326adb9da76c",
         "a71b5f6d4bc7",
         "d3e9cdfcf64f",
-        "aa33db82b382"
+        "aa33db82b382",
+        "876b2ff03274",
+        "46ce8791f426"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
         "2026-05-02",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "nato-iran",
@@ -88,13 +91,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.71104016776524,
+      "totalScore": 11.688887194312036,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T17:40:49.556Z",
+      "lastRecalledAt": "2026-05-04T05:05:37.621Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -105,13 +108,16 @@
         "aeab992f0d8c",
         "7b4024f16d8d",
         "b69bb4b76f7e",
-        "705e0675696d"
+        "705e0675696d",
+        "69ecdd2685e7",
+        "876b2ff03274"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ],
       "conceptTags": [
         "gateway",
@@ -131,13 +137,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.833085955744004,
+      "totalScore": 8.833085955744004,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
+      "lastRecalledAt": "2026-05-04T05:05:31.168Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -146,13 +152,15 @@
         "ed33c096e095",
         "705e0675696d",
         "39d99cc71b77",
-        "f513691b2bd0"
+        "f513691b2bd0",
+        "69ecdd2685e7"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ],
       "conceptTags": [
         "date/time",
@@ -172,13 +180,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 11,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.200436722705371,
+      "totalScore": 13.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -190,14 +198,18 @@
         "b69bb4b76f7e",
         "705e0675696d",
         "39d99cc71b77",
-        "f513691b2bd0"
+        "f513691b2bd0",
+        "69ecdd2685e7",
+        "876b2ff03274",
+        "46ce8791f426"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-29",
         "2026-04-30",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -258,18 +270,20 @@
       "endLine": 56,
       "source": "memory",
       "snippet": "- Strait of Hormuz effectively hard-closed (P&I insurance removed from 5 March) **Hypothesis Probabilities:** - H3 (Regional War): 30–40% - H2 (Sustained Campaign): 35–45% - H1 (De-escalation): <20% --- ### Key Judgments **KJ-1:** US-Israeli campaign approaching air supremacy (>93% confidence). Iran's naval capacity \"effectively neutralised\" per JCS Chairman Caine. **KJ-2:** Strait of Hormuz closed minimum 10–14 days, likely (70–85%) longer. Brent at $82+; analysts projecting $100+ if sustained. **KJ-3:** Lebanon now an active war within a war. Hezbollah declares open war; Lebanese government banned Hezbollah military activities. **KJ-4:** Mojtaba Khamenei selected as Supreme Leader u",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 1.9567920002547348,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T08:02:41.160Z",
-      "lastRecalledAt": "2026-04-29T08:02:41.160Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
       "queryHashes": [
-        "77ed4c792413"
+        "77ed4c792413",
+        "46ce8791f426"
       ],
       "recallDays": [
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-04"
       ],
       "conceptTags": [
         "hard-closed",
@@ -289,23 +303,26 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.899863705575493,
+      "totalScore": 6.851556886735005,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-02T19:04:40.812Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
         "b69bb4b76f7e",
         "705e0675696d",
-        "f513691b2bd0"
+        "f513691b2bd0",
+        "876b2ff03274",
+        "46ce8791f426"
       ],
       "recallDays": [
         "2026-04-29",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-04"
       ],
       "conceptTags": [
         "gateway",
@@ -325,21 +342,25 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-05-03T01:08:32.819Z",
+      "lastRecalledAt": "2026-05-04T05:57:08.850Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
-        "fb32c1f91fe5"
+        "fb32c1f91fe5",
+        "69ecdd2685e7",
+        "fa003329a1a4",
+        "d2222a517dea"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "saturday",
@@ -350,6 +371,163 @@
         "initialized",
         "reindexed",
         "operational"
+      ]
+    },
+    "memory:memory/2026-05-03.md:1:8": {
+      "key": "memory:memory/2026-05-03.md:1:8",
+      "path": "memory/2026-05-03.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-05-03 — Sunday ## Overnight (01:08 UTC / 18:08 PT May 2) - AgentMail: checked, 5 most recent are outbound only (briefing/audit emails), no incoming external messages. Inbox clean. - DeepSeek balance: **$98.30** (down $0.27 from last check, burn ~$0.95/day, ~103 days runway) - Polymarket monitor ran with 129 errors / 0 successful queries — price-state.json empty (0 markets). Needs investigation. - Brain runtime: normal. Daily file started for May 3.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T05:05:31.168Z",
+      "lastRecalledAt": "2026-05-04T05:05:31.168Z",
+      "queryHashes": [
+        "69ecdd2685e7"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "briefing/audit",
+        "98.30",
+        "0.27",
+        "0.95/day",
+        "price-state.json",
+        "sunday",
+        "overnight",
+        "utc"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:22": {
+      "key": "memory:memory/2026-05-04.md:1:22",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T05:05:37.621Z",
+      "lastRecalledAt": "2026-05-04T05:34:31.420Z",
+      "queryHashes": [
+        "876b2ff03274",
+        "fa003329a1a4"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "roderick.jones",
+        "gmail.com",
+        "trevor-mentis",
+        "agentmail.to",
+        "openclaw/skills",
+        "openclaw/workspace/skills",
+        "env-scraping",
+        "credential-paths"
+      ]
+    },
+    "memory:memory/2026-05-04.md:21:43": {
+      "key": "memory:memory/2026-05-04.md:21:43",
+      "path": "memory/2026-05-04.md",
+      "startLine": 21,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T05:57:08.850Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
+      "queryHashes": [
+        "d2222a517dea",
+        "46ce8791f426"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "gateway",
+        "daily-intel-brief",
+        "build-pdf.py",
+        "scripts/daily-brief-cron.sh",
+        "orchestrate.py",
+        "roderick.jones",
+        "gmail.com",
+        "america/los-angeles"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:26": {
+      "key": "memory:memory/2026-05-04.md:1:26",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T05:57:08.850Z",
+      "lastRecalledAt": "2026-05-04T05:57:08.850Z",
+      "queryHashes": [
+        "d2222a517dea"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "roderick.jones",
+        "gmail.com",
+        "trevor-mentis",
+        "agentmail.to",
+        "openclaw/skills",
+        "openclaw/workspace/skills",
+        "env-scraping",
+        "credential-paths"
+      ]
+    },
+    "memory:memory/2026-05-04.md:38:52": {
+      "key": "memory:memory/2026-05-04.md:38:52",
+      "path": "memory/2026-05-04.md",
+      "startLine": 38,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- **Marketing graphics generated:** Hero image (16:9 globe/intel overlay), Social square (1:1 6-region map) - **Content sourced from:** 3 May 2026 edition — covers Ukraine Urals strikes, Sahel JNIM-FLA, India-Pak nuclear, Iran War Day 65, Mexico cartels, Venezuela post-Maduro ## Moltbook Promotion — Global Security & Intelligence Brief Posted 3 promotional posts: 1. **builds** — \"Launched: Global Security & Intelligence Brief\" — product launch with pipeline overview and signup link → https://www.moltbook.com/p/acd22887-69ba-4d06-8e64-60df7f6c87e7 2. **agents** — \"Running a daily intelligence pipeline\" — methodology deep-dive (flagged as spam but still accruing engagement) → https://w",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9887484545294176,
+      "maxScore": 0.9887484545294176,
+      "firstRecalledAt": "2026-05-04T05:59:11.937Z",
+      "lastRecalledAt": "2026-05-04T05:59:11.937Z",
+      "queryHashes": [
+        "46ce8791f426"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "globe/intel",
+        "6-region",
+        "jnim-fla",
+        "india-pak",
+        "post-maduro",
+        "deep-dive",
+        "marketing",
+        "graphics"
       ]
     }
   }

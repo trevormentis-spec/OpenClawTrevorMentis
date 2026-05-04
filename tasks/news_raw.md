@@ -929,3 +929,51 @@ _Feeds: 15/27 | 120 items_
 
 ---
 _Scanned at 2026-05-03 19:14 UTC by Trevor OSINT Deep Search (cron: 08cae30c)_
+
+---
+# Gmail Intelligence Digest — 2026-05-04 19:00 UTC
+
+## ISW Russian Offensive Campaign Assessment, May 3
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Mon, 4 May 2026 01:31 UTC
+
+**Key developments:**
+- Ukrainian forces continue long-range strike campaign against Russian military assets and oil infrastructure, exploiting vulnerabilities in Russian air defenses
+- Zelensky reported May 3: Ukraine struck a Russian Karakurt-class missile ship, patrol boat, and shadow fleet oil tanker near Port of Primorsk, Leningrad Oblast
+- Strikes significantly damaged oil loading infrastructure at the port
+- The Karakurt-class ship carried 8 Kalibr cruise missiles (2,000km range) and a Pantsir-M naval air defense system
+- NASA FIRMS data confirms heat anomalies at Port of Primorsk
+- Governor Drozdenko acknowledged over 60 drones downed, fires near the port
+- Ukraine also struck two shadow fleet ships at the entrance to Port of Novorossiysk with USVs
+- Satellite imagery shows April 28-May 1 strike on Transeft Perm station burned ~70% of facility
+
+## ISW Iran Update Special Report, May 3
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Sun, 3 May 2026 22:45 UTC
+
+**Key developments:**
+- Iran's counterproposal to US reportedly includes three-phase plan: (1) end war within 30 days, mutual non-aggression guarantee, end blockade for Strait reopening, compensation; (2) delayed nuclear program talks; (3) unspecified
+- Trump expressed doubt proposal "would be acceptable"
+- Iran's toll scheme for Strait transit (from April 26 proposal) may be part of compensation framing
+- Supreme Leader Mojtaba Khamenei's leadership under pressure
+
+## CTP Iran Update Evening Special Report, May 3
+- **Source:** CTP Publications <criticalthreats@aei.org>
+- **Date:** Sun, 3 May 2026 21:26 UTC
+
+**Key developments:**
+- Maritime attacks and security situation in Iran conflict theater
+- Regular update on political, security, and social developments
+
+## FP "This Week: The U.S. military drawdown in Europe"
+- **Source:** FP Amelia Lester <newsletters@foreignpolicy.com>
+- **Date:** Mon, 4 May 2026 17:42 UTC
+
+**Mentions:**
+- U.S. military drawdown in Europe
+- Modi hardball tactics
+- Putin paring back
+- Trump visit to Beijing
+
+---
+_Intel digest generated 2026-05-04 19:00 UTC by Gmail Intelligence Label scan_
