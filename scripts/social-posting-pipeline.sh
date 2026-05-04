@@ -85,3 +85,12 @@ echo "[$(date)] ✅ Posts saved to exports/social/" | tee -a "$LOG_FILE"
 echo "[$(date)]    Twitter:   ${#TWITTER} chars" | tee -a "$LOG_FILE"
 echo "[$(date)]    LinkedIn:  ${#LINKEDIN} chars" | tee -a "$LOG_FILE"
 echo "[$(date)]    Reddit:    ${#REDDIT_BODY} chars" | tee -a "$LOG_FILE"
+
+# ── Buttondown newsletter (if API key set) ──
+if [ -n "\${BUTTONDOWN_API_KEY:-}" ]; then
+  echo "[$(date)] ─── Buttondown ───" | tee -a "$LOG_FILE"
+  python3 "\${WORKSPACE}/scripts/buttondown-publish.py" --dry-run 2>&1 | tee -a "$LOG_FILE"
+  echo "[$(date)]    (set BUTTONDOWN_API_KEY to enable live publishing)" | tee -a "$LOG_FILE"
+else
+  echo "[$(date)]    ⏭️  Buttondown: no API key configured" | tee -a "$LOG_FILE"
+fi
