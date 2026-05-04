@@ -72,6 +72,10 @@
     "social-media-agent": {
       "version": "1.0.0",
       "installedAt": 1777838405578
+    },
+    "genviral": {
+      "version": "1.0.0",
+      "installedAt": 1777875145716
     }
   }
 }

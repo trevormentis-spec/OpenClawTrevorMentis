@@ -34,3 +34,10 @@
 [Mon May  4 01:38:44 UTC 2026]    Twitter:   199 chars
 [Mon May  4 01:38:44 UTC 2026]    LinkedIn:  1447 chars
 [Mon May  4 01:38:44 UTC 2026]    Reddit:    1380 chars
+[Mon May  4 20:30:39 UTC 2026] 📰 Pipeline — preparing posts for 2026-05-02
+[Mon May  4 20:30:39 UTC 2026] ✅ Posts saved to exports/social/
+[Mon May  4 20:30:39 UTC 2026]    Twitter:   199 chars
+[Mon May  4 20:30:39 UTC 2026]    LinkedIn:  1447 chars
+[Mon May  4 20:30:39 UTC 2026]    Reddit:    1380 chars
+[Mon May  4 20:30:39 UTC 2026] ─── Buttondown ───
+python3: can't open file '/home/ubuntu/.openclaw/workspace/${WORKSPACE}/scripts/buttondown-publish.py': [Errno 2] No such file or directory

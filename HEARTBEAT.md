@@ -22,6 +22,12 @@ than stack on every fire.
 - [ ] **AgentMail inbox** — `trevor_mentis@agentmail.to`. Surface only
       meaningful new email; ignore newsletters and notifications. If a real
       action is needed, surface to Roderick before acting externally.
+- [ ] **Gmail system check** — `trevor.mentis@gmail.com` via Gmail API.
+      Look for critical system emails: account confirmations, disabled
+      account alerts, 2FA codes, Stripe notifications, Buttondown emails,
+      Twitter/TikTok security alerts, API key rotations. Surface anything
+      that needs human action (confirmations, reactivations, security issues).
+      Ignore marketing, newsletters, and regular OSINT digests.
 - [ ] **Calendar** — anything in the next 24–48h that needs prep? Flag
       meetings without an agenda or briefing material.
 - [ ] **Durable OSINT scan** — pull from `analyst/meta/sources.json`

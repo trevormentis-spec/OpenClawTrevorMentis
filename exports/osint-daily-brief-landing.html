@@ -3,145 +3,852 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily OSINT Briefing - Intelligence You Can Act On — Delivered Daily</title>
-    <meta name="description" content="Intelligence You Can Act On — Delivered Daily. Transform your results today.">
+    <title>Global Security & Intelligence Brief — Daily Geo-political Intelligence by TREVOR</title>
+    <meta name="description" content="Professional-grade daily intelligence briefings. Six theatres. Structured methodology. Delivered at 0700 PT. By TREVOR — Threat Research and Evaluation Virtual Operations Resource.">
+    <meta property="og:title" content="Global Security & Intelligence Brief — TREVOR">
+    <meta property="og:description" content="Daily intelligence assessments across six theatres. Sherman-Kent methodology. Prediction markets. PDF delivered every morning at 0700 PT.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Security & Intelligence Brief by TREVOR">
+    <meta name="twitter:description" content="Professional daily intelligence delivered every morning.">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .hero { text-align: center; padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
-        .hero h1 { font-size: 3em; margin-bottom: 20px; }
-        .hero p { font-size: 1.2em; margin-bottom: 30px; opacity: 0.95; }
-        .cta { display: inline-block; padding: 15px 30px; background: #ff6b6b; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; }
-        .cta:hover { background: #ee5a5a; }
-        .section { padding: 60px 0; }
-        .section h2 { text-align: center; margin-bottom: 40px; }
-        ul { max-width: 600px; margin: 0 auto; }
-        li { font-size: 1.1em; margin-bottom: 15px; }
-        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
-        .feature-card { background: #f8f9fa; padding: 30px; border-radius: 10px; text-align: center; }
-        .testimonial-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .urgency { color: #e74c3c; font-weight: bold; text-align: center; margin-top: 20px; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2em; } .feature-grid { grid-template-columns: 1fr; } }
+        /* === RESET & BASE === */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #0d0d0d;
+            color: #e8e6e3;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
+        h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1; }
+        h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); color: #f0ede8; }
+        h3 { font-size: 1.15rem; color: #a8a29e; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; }
+        p { color: #a8a29e; font-size: 1.05rem; max-width: 680px; }
+        .accent { color: #7a8a3c; }
+        .gold { color: #c9a84c; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(122, 138, 60, 0.06) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 50%, rgba(201, 168, 76, 0.04) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-bg-grid {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 120px 0 80px;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-left { padding-right: 20px; }
+        .hero-right { text-align: center; }
+        .hero-badge {
+            display: inline-block;
+            border: 1px solid #7a8a3c;
+            color: #7a8a3c;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            padding: 6px 16px;
+            border-radius: 3px;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+        .hero h1 { margin-bottom: 16px; }
+        .hero h1 .highlight { color: #c9a84c; }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: #a8a29e;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .hero-meta {
+            display: flex;
+            gap: 32px;
+            margin: 28px 0 36px;
+            flex-wrap: wrap;
+        }
+        .hero-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: #78716c;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .hero-meta-item svg { width: 18px; height: 18px; stroke: #7a8a3c; fill: none; stroke-width: 2; }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #7a8a3c;
+            color: #0d0d0d;
+            padding: 16px 36px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-cta:hover { background: #8b9e46; transform: translateY(-1px); }
+        .hero-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #a8a29e;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 20px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .hero-cta-secondary:hover { border-color: #a8a29e; }
+
+        .hero-mockup {
+            position: relative;
+        }
+        .hero-mockup-inner {
+            background: linear-gradient(145deg, #1a1a1a, #222);
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 28px;
+            text-align: left;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .mockup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .mockup-header-left { display: flex; align-items: center; gap: 10px; }
+        .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .mockup-dot.red { background: #ef4444; }
+        .mockup-dot.yellow { background: #eab308; }
+        .mockup-dot.green { background: #22c55e; }
+        .mockup-classification {
+            font-size: 0.6rem;
+            color: #7a8a3c;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border: 1px solid #7a8a3c;
+            padding: 2px 8px;
+            border-radius: 2px;
+        }
+        .mockup-date {
+            font-size: 0.75rem;
+            color: #78716c;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        .mockup-body { font-family: 'SF Mono', 'Cascadia Code', monospace; font-size: 0.78rem; line-height: 1.8; color: #d6d3d1; }
+        .mockup-line { padding: 1px 0; }
+        .mockup-line .label { color: #78716c; }
+        .mockup-line .value { color: #e8e6e3; }
+        .mockup-line .tag { color: #7a8a3c; }
+        .mockup-line .tag-warn { color: #c9a84c; }
+        .mockup-line .tag-alert { color: #ef4444; }
+        .mockup-theatre {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #2a2a2a;
+        }
+        .mockup-theatre-item {
+            background: #1f1f1f;
+            padding: 8px 10px;
+            border-radius: 4px;
+            font-size: 0.68rem;
+        }
+        .mockup-theatre-item .name { color: #a8a29e; text-transform: uppercase; letter-spacing: 0.08em; }
+        .mockup-theatre-item .status { color: #c9a84c; font-weight: 600; }
+
+        /* === SECTION STYLES === */
+        section { padding: 100px 0; }
+        .section-label {
+            font-size: 0.75rem;
+            color: #7a8a3c;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .section-headline { margin-bottom: 16px; }
+        .section-subtitle { margin-bottom: 48px; color: #78716c; }
+
+        /* === FEATURES === */
+        .features { background: #111; }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            background: #222;
+            border: 1px solid #222;
+        }
+        .feature-card {
+            background: #111;
+            padding: 40px 32px;
+            transition: background 0.2s;
+        }
+        .feature-card:hover { background: #161616; }
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        .feature-card h3 { margin-bottom: 6px; color: #e8e6e3; text-transform: none; letter-spacing: normal; font-size: 1rem; }
+        .feature-card p { font-size: 0.9rem; color: #78716c; }
+
+        /* === THEATRES === */
+        .theatres { background: #0d0d0d; }
+        .theatre-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .theatre-card {
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 28px 24px;
+            background: #111;
+            position: relative;
+            overflow: hidden;
+        }
+        .theatre-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 3px;
+            height: 100%;
+            background: #7a8a3c;
+        }
+        .theatre-card h4 { font-size: 0.95rem; color: #e8e6e3; margin-bottom: 6px; }
+        .theatre-card .desc { font-size: 0.82rem; color: #78716c; line-height: 1.5; }
+        .theatre-card .tag-row { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+        .theatre-card .tag {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 3px 10px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            color: #78716c;
+        }
+        .theatre-card .tag.active { border-color: #7a8a3c; color: #7a8a3c; }
+
+        /* === METHODOLOGY === */
+        .methodology { background: #111; }
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .methodology-item { }
+        .methodology-item h4 { color: #c9a84c; font-size: 2.2rem; font-weight: 300; margin-bottom: 4px; }
+        .methodology-item h5 { color: #e8e6e3; font-size: 1rem; margin-bottom: 8px; }
+        .methodology-item p { font-size: 0.9rem; color: #78716c; }
+
+        /* === EDITIONS === */
+        .editions { background: #0d0d0d; }
+        .editions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .edition-card {
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 32px 28px;
+            background: #111;
+            transition: border-color 0.2s;
+        }
+        .edition-card:hover { border-color: #7a8a3c; }
+        .edition-card h4 { color: #e8e6e3; font-size: 1rem; margin-bottom: 4px; }
+        .edition-card .price { color: #c9a84c; font-size: 1.8rem; font-weight: 700; margin: 12px 0; }
+        .edition-card .price span { font-size: 0.9rem; color: #78716c; font-weight: 400; }
+        .edition-card ul { list-style: none; margin: 16px 0 24px; }
+        .edition-card ul li {
+            padding: 6px 0;
+            font-size: 0.88rem;
+            color: #a8a29e;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .edition-card ul li::before { content: '→ '; color: #7a8a3c; }
+        .edition-cta {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #2a2a2a;
+            color: #e8e6e3;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .edition-cta:hover { border-color: #7a8a3c; background: #7a8a3c; color: #0d0d0d; }
+        .edition-cta.primary { background: #7a8a3c; color: #0d0d0d; border-color: #7a8a3c; }
+        .edition-cta.primary:hover { background: #8b9e46; }
+
+        /* === PREDICTION MARKETS === */
+        .markets { background: #111; }
+        .markets-preview {
+            background: #161616;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 28px 32px;
+            max-width: 700px;
+        }
+        .markets-preview h4 { color: #c9a84c; font-size: 0.9rem; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .markets-preview .trade { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1f1f1f; font-size: 0.88rem; }
+        .markets-preview .trade:last-child { border-bottom: none; }
+        .markets-preview .trade .asset { color: #e8e6e3; }
+        .markets-preview .trade .direction { font-weight: 600; }
+        .markets-preview .trade .direction.yes { color: #22c55e; }
+        .markets-preview .trade .direction.no { color: #ef4444; }
+        .markets-preview .trade .price { color: #c9a84c; }
+
+        /* === SIGNUP FORM === */
+        .signup-form {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 40px 44px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group { text-align: left; }
+        .form-group label {
+            display: block;
+            font-size: 0.75rem;
+            color: #a8a29e;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 4px;
+            padding: 12px 14px;
+            color: #e8e6e3;
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+            outline: none;
+            font-family: inherit;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #7a8a3c;
+        }
+        .form-group input::placeholder { color: #57534e; }
+        .form-group select option { background: #1a1a1a; color: #e8e6e3; }
+        .signup-submit {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #7a8a3c;
+            color: #0d0d0d;
+            padding: 16px 40px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            margin-top: 8px;
+        }
+        .signup-submit:hover { background: #8b9e46; transform: translateY(-1px); }
+        .form-note {
+            font-size: 0.78rem;
+            color: #57534e;
+            margin-top: 16px;
+            text-align: center;
+        }
+        .hidden { display: none; }
+        .thank-you {
+            text-align: center;
+            padding: 100px 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .thank-you h1 { color: #c9a84c; margin-bottom: 16px; }
+        .thank-you p { font-size: 1.1rem; margin-bottom: 32px; }
+        .thank-you .hero-cta { display: inline-flex; }
+
+        /* === PRICING CARDS === */
+        .pricing-cards { background: #0d0d0d; }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+            text-align: center;
+            padding: 120px 0;
+        }
+        .cta-section h2 { margin-bottom: 16px; }
+        .cta-section p { margin: 0 auto 36px; }
+        .cta-section .hero-cta { font-size: 1rem; padding: 18px 44px; }
+
+        /* === FOOTER === */
+        footer {
+            border-top: 1px solid #1a1a1a;
+            padding: 40px 0;
+            background: #0d0d0d;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #78716c;
+        }
+        footer a { color: #a8a29e; text-decoration: none; }
+        footer a:hover { color: #e8e6e3; }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 900px) {
+            .hero .container { grid-template-columns: 1fr; gap: 40px; }
+            .hero-left { padding-right: 0; }
+            .features-grid { grid-template-columns: 1fr 1fr; }
+            .theatre-list { grid-template-columns: 1fr 1fr; }
+            .editions-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+            .methodology-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .features-grid { grid-template-columns: 1fr; }
+            .theatre-list { grid-template-columns: 1fr; }
+            .hero-meta { gap: 16px; }
+            section { padding: 60px 0; }
+        }
     </style>
 </head>
 <body>
-    <section class="hero">
-        <div class="container">
-            <h1>Intelligence You Can Act On — Delivered Daily</h1>
-            <p>Automated open-source intelligence analysis with calibrated judgments, regional coverage, and professional PDF exports. Built by Trevor, an AI analyst operating 24/7.</p>
-            <a href="#" class="cta">Subscribe Now — $19/mo</a>
-        </div>
-    </section>
 
-    <section class="section">
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
         <div class="container">
-            <h2>Why Choose Daily OSINT Briefing?</h2>
-            <ul>
-      <li>Actionable intelligence every morning</li>
-      <li>global 6-region coverage</li>
-      <li>calibrated probability judgments</li>
-      <li>professional PDF exports</li>
-      <li>infographics & visual summaries</li>
-      <li>AI analyst at your service 24/7</li>
-    </ul>
-        </div>
-    </section>
+            <div class="hero-left">
+                <div class="hero-badge">Daily Intelligence Briefing</div>
+                <h1>Global Security &<br><span class="highlight">Intelligence Brief</span></h1>
+                <p class="hero-subtitle">Professional-grade daily intelligence assessments across six theatres. Structured methodology. Delivered every morning at 0700 PT.</p>
+                <div class="hero-meta">
+                    <div class="hero-meta-item">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        Daily at 0700 PT
+                    </div>
+                    <div class="hero-meta-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        6 Theatres
+                    </div>
+                    <div class="hero-meta-item">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+                        PDF + Visuals
+                    </div>
+                </div>
+                <a href="#signup" class="hero-cta">
+                    Subscribe Now
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
 
-    <section class="section">
-        <div class="container">
-            <h2>What You'll Get</h2>
-            <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Daily 16-section assessment</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Bottom-Line-Up-Front structure</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>OSINT source scoring (Admiralty Code)</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Strait of Hormuz & chokepoint monitoring</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Structured Analytic Techniques (SATs)</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Polymarket geopolitical tracking</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Export to magazine-format PDF</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Regional coverage: Europe</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Asia</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Middle East</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Americas</h3>
-        <p>Feature description</p>
-      </div>
-      <div class="feature-card">
-        <h3>Global Finance</h3>
-        <p>Feature description</p>
-      </div>
-    </div>
+            <div class="hero-right">
+                <div class="hero-mockup">
+                    <div class="hero-mockup-inner">
+                        <div class="mockup-header">
+                            <div class="mockup-header-left">
+                                <div class="mockup-dot red"></div>
+                                <div class="mockup-dot yellow"></div>
+                                <div class="mockup-dot green"></div>
+                                <span class="mockup-classification">UNCLASSIFIED // FOUO</span>
+                            </div>
+                            <span class="mockup-date">03 MAY 2026</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-line"><span class="label">PRODUCT:</span> <span class="value">Global Security & Intelligence Brief</span></div>
+                            <div class="mockup-line"><span class="label">METHOD:</span> <span class="value">Sherman-Kent Structured Analysis</span></div>
+                            <div class="mockup-line"><span class="label">HORIZON:</span> <span class="value">7-Day Prediction Bands • 30-90 Day Forward Look</span></div>
+                            <div class="mockup-line"><span class="tag">▼ BLUF</span> <span class="value">Conflict enters decisive exploitation phase with asymmetric trajectories. US-Israeli military dominance accelerating; Iran retaliatory capacity visibly degrading.</span></div>
+                            <div class="mockup-theatre">
+                                <div class="mockup-theatre-item">
+                                    <div class="name">Europe</div>
+                                    <div class="status">Ukraine strikes reach Urals</div>
+                                </div>
+                                <div class="mockup-theatre-item">
+                                    <div class="name">Middle East</div>
+                                    <div class="status">Iran War Day 65</div>
+                                </div>
+                                <div class="mockup-theatre-item">
+                                    <div class="name">Sahel</div>
+                                    <div class="status">JNIM-FLA advance</div>
+                                </div>
+                                <div class="mockup-theatre-item">
+                                    <div class="name">South Asia</div>
+                                    <div class="status">India-Pak nuclear posture</div>
+                                </div>
+                                <div class="mockup-theatre-item">
+                                    <div class="name">N. America</div>
+                                    <div class="status">Cartel succession crisis</div>
+                                </div>
+                                <div class="mockup-theatre-item">
+                                    <div class="name">S. America</div>
+                                    <div class="status">Post-Maduro vacuum</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section class="section" style="background: #f8f9fa;">
-        <div class="container">
-            <h2>What People Are Saying</h2>
-            <div class="testimonials">
-      <div class="testimonial-card">
-        <p>"Amazing results! Daily OSINT Briefing exceeded my expectations."
-        <cite>- Satisfied customer 1</cite>
-      </div>
-      <div class="testimonial-card">
-        <p>"Amazing results! Daily OSINT Briefing exceeded my expectations."
-        <cite>- Satisfied customer 2</cite>
-      </div>
-      <div class="testimonial-card">
-        <p>"Amazing results! Daily OSINT Briefing exceeded my expectations."
-        <cite>- Satisfied customer 3</cite>
-      </div>
-    </div>
-        </div>
-    </section>
-
-    <section class="section">
-    <div class="container">
-    <h2>14-day money-back guarantee. If the brief doesn't sharpen your decisions, cancel anytime.</h2>
-    <p>Risk-free purchase with our satisfaction guarantee.</p>
     </div>
 </section>
 
-    <section class="section">
-        <div class="container" style="text-align: center;">
-            <a href="#" class="cta" style="font-size: 1.3em; padding: 20px 40px;">Subscribe Now — $19/mo</a>
-                <p class="urgency">⚠️ Launch pricing: first 50 subscribers get $19/mo locked in forever</p>
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-label">Capabilities</div>
+        <h2 class="section-headline">Intelligence-grade methodology.<br>Deliverable at your desk by 0700.</h2>
+        <p class="section-subtitle">Every brief is produced through a repeatable analytic tradecraft — not a chatbot dump.</p>
 
-            <p style="margin-top: 20px; font-size: 1.5em;">$19</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Key Judgments</h3>
+                <p>Sherman-Kent verbal anchors with calibrated 7-day prediction percentages. Every assessment rated for confidence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Coverage</h3>
+                <p>Six theatres: Europe, Sahel/MENA, South Asia, Middle East, North America, South America. Global Finance section with charts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Prediction Markets</h3>
+                <p>Daily Polymarket overlay: ten high-conviction trades sized for a balanced book, mapped against front-line intelligence read.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Geospatial Intel</h3>
+                <p>Regional maps with incident plotting, satellite damage assessments, and heat maps of kinetic activity.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>Multiple Editions</h3>
+                <p>Tactical (ThruDark visual language), Magazine (Economist-inspired), and Regular (full Sherman-Kent) editions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Source-Graded Intel</h3>
+                <p>NATO Admiralty reliability/credibility codes on every source. Single-source items flagged. Gap analysis included.</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer style="text-align: center; padding: 40px 0; background: #333; color: white;">
-        <p>&copy; 2026 Daily OSINT Briefing. All rights reserved.</p>
-    </footer>
+<!-- ===== THEATRES ===== -->
+<section class="theatres" id="theatres">
+    <div class="container">
+        <div class="section-label">Coverage</div>
+        <h2 class="section-headline">Six theatres. One briefing.<br>Every decision-relevant incident scored.</h2>
+        <p class="section-subtitle">5-10 incidents per theatre, selected for decision relevance. Not a news dump — a curated intelligence product.</p>
+
+        <div class="theatre-list">
+            <div class="theatre-card">
+                <h4>Europe</h4>
+                <div class="desc">Russia-Ukraine war, NATO posture, European security architecture, energy security implications</div>
+                <div class="tag-row"><span class="tag active">Kinetic</span><span class="tag">Political</span><span class="tag">Energy</span></div>
+            </div>
+            <div class="theatre-card">
+                <h4>Africa / Sahel</h4>
+                <div class="desc">JNIM-FLA offensives, Wagner posture, FAMa withdrawal, Sahelian state collapse dynamics</div>
+                <div class="tag-row"><span class="tag active">Kinetic</span><span class="tag active">Jihadist</span><span class="tag">Political</span></div>
+            </div>
+            <div class="theatre-card">
+                <h4>South Asia</h4>
+                <div class="desc">India-Pakistan nuclear overhang, China border posture, PNS Hangor commissioning</div>
+                <div class="tag-row"><span class="tag active">Nuclear</span><span class="tag">Maritime</span><span class="tag">Political</span></div>
+            </div>
+            <div class="theatre-card">
+                <h4>Middle East</h4>
+                <div class="desc">Iran War day-by-day, Operation Epic Fury, Strait of Hormuz, Axis of Resistance activity across 6 countries</div>
+                <div class="tag-row"><span class="tag active">Kinetic</span><span class="tag active">Maritime</span><span class="tag active">Nuclear</span></div>
+            </div>
+            <div class="theatre-card">
+                <h4>North America</h4>
+                <div class="desc">US policy shifts, cartel succession dynamics, Canada/Mexico security, CISA alerts</div>
+                <div class="tag-row"><span class="tag">Political</span><span class="tag active">Cartel</span><span class="tag">Cyber</span></div>
+            </div>
+            <div class="theatre-card">
+                <h4>South & Central America</h4>
+                <div class="desc">Venezuela post-Maduro vacuum, Caribbean security, Brazil geopolitics, Colombia FARC dissidents</div>
+                <div class="tag-row"><span class="tag active">Political</span><span class="tag">Security</span><span class="tag">Economic</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREDICTION MARKETS ===== -->
+<section class="markets" id="markets">
+    <div class="container">
+        <div class="section-label">Alpha Generation</div>
+        <h2 class="section-headline">Prediction markets meet<br>front-line intelligence.</h2>
+        <p class="section-subtitle">Every edition includes a high-conviction Polymarket overlay — ten trades sized for a balanced book, mapped against the brief's regional assessments.</p>
+
+        <div class="markets-preview">
+            <h4>3 May 2026 — Headline Calls</h4>
+            <div class="trade"><span class="asset">Russia-Ukraine ceasefire (JUN26)</span> <span class="direction no">NO</span> <span class="price">short @ entry</span></div>
+            <div class="trade"><span class="asset">Russia-Ukraine ceasefire (SEP26)</span> <span class="direction no">NO</span> <span class="price">short @ entry</span></div>
+            <div class="trade"><span class="asset">US-Iran deal (JUN26)</span> <span class="direction no">NO</span> <span class="price">short @ entry</span></div>
+            <div class="trade"><span class="asset">US-Iran deal (SEP26)</span> <span class="direction no">NO</span> <span class="price">short @ entry</span></div>
+            <div class="trade"><span class="asset">India-Pakistan exchange tail</span> <span class="direction yes">YES</span> <span class="price">long @ 28¢</span></div>
+            <div class="trade"><span class="asset">Venezuela Maduro exit</span> <span class="direction yes">YES</span> <span class="price">long @ 64¢</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== METHODOLOGY ===== -->
+<section class="methodology" id="methodology">
+    <div class="container">
+        <div class="section-label">Tradecraft</div>
+        <h2 class="section-headline">Built on structured analytic<br>techniques, not intuition.</h2>
+        <p class="section-subtitle">Every judgment is traceable to its source evidence. Every prediction is calibrated.</p>
+
+        <div class="methodology-grid">
+            <div class="methodology-item">
+                <h4>01</h4>
+                <h5>Multi-Source Collection</h5>
+                <p>24-hour pull from 15+ durable OSINT sources (ISW, CTP, Reuters, AP, BBC, Al Jazeera, AFP, Mercopress, wire feeds). Time-boxed at 30 minutes.</p>
+            </div>
+            <div class="methodology-item">
+                <h4>02</h4>
+                <h5>Source-Graded Evidence</h5>
+                <p>Every incident tagged with NATO Admiralty reliability/credibility codes. Single-source items explicitly flagged. Gap analysis recorded per region.</p>
+            </div>
+            <div class="methodology-item">
+                <h4>03</h4>
+                <h5>DeepSeek V4 Pro Analysis</h5>
+                <p>One API call per region. Sherman-Kent verbal bands with numeric 7-day prediction percentages. Calibration checks against over-confidence.</p>
+            </div>
+            <div class="methodology-item">
+                <h4>04</h4>
+                <h5>Quality Gates</h5>
+                <p>Five-stage validation: calibration consistency, source hygiene, red-team pass on at least one key judgment, structural completeness, visual integrity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SIGNUP / EDITIONS ===== -->
+<section class="editions" id="signup">
+    <div class="container">
+        <div class="section-label">Get Started</div>
+        <h2 class="section-headline">Subscribe to the<br>Global Security & Intelligence Brief.</h2>
+        <p class="section-subtitle">Choose your edition. Delivered daily at ~07:00 PT to your inbox. Full PDF + summary. Cancel anytime.</p>
+
+        <form class="signup-form" name="brief-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+            <input type="hidden" name="form-name" value="brief-signup" />
+            <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Jane Analyst" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g. jane@company.com" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="edition">Edition</label>
+                    <select id="edition" name="edition" required>
+                        <option value="">Select an edition…</option>
+                        <option value="Regular">Regular — $19/mo</option>
+                        <option value="Tactical">Tactical — $29/mo</option>
+                        <option value="Enterprise">Enterprise — $99/mo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="trial">Start with</label>
+                    <select id="trial" name="trial">
+                        <option value="7-day-free-trial">7-Day Free Trial</option>
+                        <option value="immediate-paid">Immediate Paid Subscription</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="org">Organization (optional)</label>
+                    <input type="text" id="org" name="organization" placeholder="e.g. Concentric" />
+                </div>
+                <div class="form-group">
+                    <label for="use-case">Use Case (optional)</label>
+                    <input type="text" id="use-case" name="use_case" placeholder="e.g. Geopolitical risk analysis" />
+                </div>
+            </div>
+
+            <button type="submit" class="signup-submit">
+                Subscribe Now
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form-note">No spam. Unsubscribe anytime. Your email is never shared.</p>
+        </form>
+    </div>
+</section>
+
+<!-- ===== PRICING CARDS ===== -->
+<section class="pricing-cards" id="pricing">
+    <div class="container">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-headline">Choose your edition.</h2>
+        <p class="section-subtitle">All editions include daily PDF delivery at ~07:00 PT with full assessments, maps, and prediction markets.</p>
+
+        <div class="editions-grid">
+            <div class="edition-card">
+                <h4>Regular</h4>
+                <div class="price">$19<span>/mo</span></div>
+                <ul>
+                    <li>Sherman-Kent analysis across 7 theatres</li>
+                    <li>Regional maps & infographics</li>
+                    <li>Key Judgments with confidence bands</li>
+                    <li>30-90 day forward assessments</li>
+                    <li>Indicators & Warnings board</li>
+                    <li>PDF + web archive</li>
+                </ul>
+                <a href="#signup" class="edition-cta primary" onclick="document.getElementById('edition').value='Regular'">Subscribe</a>
+            </div>
+            <div class="edition-card">
+                <h4>Tactical</h4>
+                <div class="price">$29<span>/mo</span></div>
+                <ul>
+                    <li>Everything in Regular</li>
+                    <li>ThruDark visual language design</li>
+                    <li>Condensed single-page theatre overviews</li>
+                    <li>Priority incident tracking</li>
+                    <li>PDF delivered by 0700 PT</li>
+                </ul>
+                <a href="#signup" class="edition-cta primary" onclick="document.getElementById('edition').value='Tactical'">Subscribe</a>
+            </div>
+            <div class="edition-card">
+                <h4>Enterprise</h4>
+                <div class="price">$99<span>/mo</span></div>
+                <ul>
+                    <li>All Tactical + Magazine editions</li>
+                    <li>Custom source integration</li>
+                    <li>API access for internal ingestion</li>
+                    <li>Team accounts (up to 10 seats)</li>
+                    <li>Dedicated analyst Q&A channel</li>
+                </ul>
+                <a href="#signup" class="edition-cta" onclick="document.getElementById('edition').value='Enterprise'">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Subscriber notification — sends signup data to our server
+// Falls back silently to Netlify form collection if server is down
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('.signup-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var edition = document.getElementById('edition').value;
+        var trial = document.getElementById('trial').value;
+        var org = document.getElementById('org').value;
+        var useCase = document.getElementById('use-case').value;
+
+        // Fire-and-forget POST to our notification server
+        if (name && email && edition) {
+            var payload = JSON.stringify({
+                name: name, email: email, edition: edition,
+                trial: trial, organization: org, use_case: useCase
+            });
+            fetch('http://localhost:19877/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: payload
+            }).catch(function() {
+                // Server unreachable — Netlify form will still collect
+                console.log('Subscriber notification server unavailable');
+            });
+        }
+    });
+});
+</script>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <span>© 2026 TREVOR — Threat Research and Evaluation Virtual Operations Resource</span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">About</a></span>
+    </div>
+</footer>
+
 </body>
 </html>

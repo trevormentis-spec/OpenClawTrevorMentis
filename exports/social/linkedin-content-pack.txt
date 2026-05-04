@@ -1,0 +1,113 @@
+================================================================================
+LINKEDIN CONTENT PACK — Global Security & Intelligence Brief by TREVOR
+================================================================================
+
+Post 1 of 3: Product Launch (Primary)
+
+Headline: I built a daily intelligence pipeline that runs itself — here's what I learned
+
+Body:
+
+Six months ago, I started building something that felt impossible: a fully autonomous daily intelligence briefing that produces professional-grade assessments every morning at 07:00 PT.
+
+Not a ChatGPT wrapper. Not a newsletter with automated summarization. A structured analytic pipeline.
+
+Here's what actually happens between midnight and 7am:
+
+1. Collection (30 min)
+Fifteen durable OSINT sources pulled simultaneously — ISW Publications, CTP/AEI, Reuters, AP, BBC, Al Jazeera, AFP, wire feeds. Every incident tagged with NATO Admiralty reliability/credibility codes at the point of capture. Not retroactively — at capture.
+
+2. Analysis (90 min)
+DeepSeek V4 Pro analyzes each of six theatres independently. Every judgment gets a Sherman-Kent verbal band AND a numeric 7-day prediction percentage. If the model returns everything at 80-95% confidence, that gets flagged as a calibration smell — over-confidence is the most common failure mode of LLM analysis, and the pipeline is designed to catch it.
+
+3. Quality gates (30 min)
+Five-stage validation: calibration consistency, source hygiene, red-team pass, structural completeness, visual integrity. If a gate fails, the pipeline stops — no degraded product ships silently.
+
+4. Production (60 min)
+Maps, charts, Mermaid diagrams, and final PDF assembly. Three editions: Regular (full Sherman-Kent, 43pp), Tactical (ThruDark visual language), Magazine (Economist-inspired editorial design).
+
+5. Delivery
+Lands in the subscriber's inbox at ~07:00 PT.
+
+The result is the Global Security & Intelligence Brief — a daily product that treats intelligence as a repeatable methodology, not an opinion page.
+
+Why this matters: Most "AI intelligence" products are summarization engines. This one is an analytic pipeline with structured tradecraft, source grading, calibration enforcement, and quality gates. It doesn't tell you what it thinks — it tells you what it knows, how confident it is, and what would change its mind.
+
+If you work in geopolitical risk, security analysis, or strategic intelligence, I'd love to hear your take on the methodology.
+
+[Link to signup page]
+
+#Intelligence #OSINT #Geopolitics #RiskAssessment #StructuredAnalytics #DeepSeek #TREVOR
+
+---
+
+Post 2 of 3: Methodology Deep-Dive (Thought Leadership)
+
+Headline: Why "I read 50 sources and here's what I think" is not intelligence
+
+Body:
+
+In the last three months I've tested dozens of AI "intelligence" products. Almost all of them follow the same pattern:
+
+1. Scrape headlines
+2. Feed to GPT
+3. Output a summary
+
+That's not intelligence. That's a reading comprehension exercise with better formatting.
+
+Real intelligence analysis requires:
+
+• Source grading before analysis — not after
+Every incident in our daily brief is tagged with a NATO Admiralty code at the point of capture. The analyst never sees an ungraded source. This prevents the model from treating a regime-aligned outlet the same as a wire service.
+
+• Calibrated judgment bands
+"Likely" doesn't mean "probably." In Sherman-Kent methodology, "likely" means 55-70%. "Highly likely" means 75-85%. If you're publishing assessments without numeric anchors, you're not making predictions — you're expressing opinions.
+
+• Alternative analysis baked in
+Every edition forces a red-team pass on at least one key judgment. If the evidence supports Hypothesis A, the pipeline explicitly asks: "What would need to be true for Hypothesis B to be correct?" This is basic structured analytic technique that most automated products skip entirely.
+
+• Transparency about gaps
+If a region has no usable reporting in a 24-hour window, we say so explicitly. Absence of evidence is not evidence of absence, and we flag collection gaps rather than pretending coverage is comprehensive.
+
+The Global Security & Intelligence Brief applies these techniques at daily cadence. Six theatres. Structured methodology. Delivered at 07:00 PT.
+
+I'm not claiming it replaces a human analyst. I'm claiming it's the most rigorous daily product that can be fully automated — and that the methodology matters more than the model.
+
+[Link to signup page]
+
+#IntelligenceMethodology #OSINT #StructuredAnalysis #ShermanKent #RiskIntelligence #AnalyticTradecraft
+
+---
+
+Post 3 of 3: Prediction Markets Angle (Trading/Finance Audience)
+
+Headline: I added prediction markets to an intelligence brief — here's why it works
+
+Body:
+
+Every edition of the Global Security & Intelligence Brief ends with the same section: ten Polymarket trades sized for a balanced book, with entry prices, edge, and a regional read-through.
+
+Why prediction markets belong in an intelligence product:
+
+1. They force precision
+When you say "the ceasefire is fragile," you can be right or wrong and nobody remembers. When you say "I'll short Russia-Ukraine ceasefire at current prices across JUN26 and SEP26 tenors," you have a timestamped, falsifiable prediction. The market settles it.
+
+2. They expose divergence
+The most valuable signal in the brief is where market consensus diverges from front-line collection. When Polymarket prices Ukraine ceasefire at 45¢ but your on-the-ground sources suggest something different — that's an edge worth surfacing.
+
+3. They create accountability
+Every edition's prediction market section is archived. You can go back and check which calls worked and which didn't. That's a feedback loop most intelligence products deliberately avoid.
+
+Recent calls (3 May edition):
+• Short Russia-Ukraine ceasefire — both JUN26 and SEP26 tenors
+• Short US-Iran deal — both tenors
+• Long India-Pakistan exchange tail at 28¢
+• Fade Maduro exit at 64¢
+
+Each backed by region-level structured analysis, not vibes.
+
+The prediction market section isn't a gimmick. It's a calibration tool — for the pipeline and for the reader.
+
+[Link to signup page]
+
+#PredictionMarkets #Polymarket #Intelligence #RiskAnalysis #GeopoliticalRisk #Trading
