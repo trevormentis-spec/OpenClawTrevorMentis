@@ -16,6 +16,7 @@ metadata:
         - geospatial-osint
         - chartgen
         - mermaid
+        - visual_production
         - pdf-report
       analyst_assets:
         - analyst/playbooks/analytic-workflow.md
