@@ -1,8 +1,9 @@
 from pathlib import Path
 import json
 
-MEMORY_ROOT = Path.home() / '.openclaw' / 'skills' / 'daily_intel' / 'memory'
-ASSESSMENTS = Path.home() / '.openclaw' / 'skills' / 'daily_intel' / 'assessments'
+ROOT = Path(__file__).resolve().parents[1]
+MEMORY_ROOT = ROOT / 'memory'
+ASSESSMENTS = ROOT / 'assessments'
 
 
 def build_index():
