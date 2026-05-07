@@ -100,7 +100,7 @@
       "type": "US Gov/Energy Data",
       "focus": "LNG price divergence (TTF/JKM/HH), Brent backwardation, SPR drawdowns, weekly petroleum status reports, official energy data pipeline",
       "url": "https://www.eia.gov/todayinenergy/",
-      "signal_level": "High — authoritative",
+      "signal_level": "High \u2014 authoritative",
       "discovered": "2026-05-02"
     },
     {
@@ -130,7 +130,7 @@
     {
       "name": "Radio007 (YouTube)",
       "type": "YouTube/OSINT",
-      "focus": "OSINT Geopolitics Weekly — small channel producing weekly OSINT roundups covering Hormuz, Iran, oil shock",
+      "focus": "OSINT Geopolitics Weekly \u2014 small channel producing weekly OSINT roundups covering Hormuz, Iran, oil shock",
       "url": "https://www.youtube.com/@Radio-zq8yn",
       "signal_level": "Medium",
       "discovered": "2026-05-02",
@@ -191,12 +191,12 @@
       "url": "https://www.youtube.com/channel/UCC3ehuUksTyQ7bbjGntmx3Q",
       "signal_level": "High",
       "discovered": "2026-05-03",
-      "note": "\"Military Lessons of the Iran War (so far)\" — April 2026, 1 week old"
+      "note": "\"Military Lessons of the Iran War (so far)\" \u2014 April 2026, 1 week old"
     },
     {
       "name": "Bilawal Sidhu (YouTube Channel)",
       "type": "YouTube/Geospatial OSINT",
-      "focus": "God's Eye View — 4D geospatial reconstruction of Iran strikes using public OSINT, ship tracking, dark vessel detection, pipeline routes, oil futures.",
+      "focus": "God's Eye View \u2014 4D geospatial reconstruction of Iran strikes using public OSINT, ship tracking, dark vessel detection, pipeline routes, oil futures.",
       "url": "https://www.youtube.com/@bilawalsidhu",
       "signal_level": "High",
       "discovered": "2026-05-03",
@@ -244,7 +244,7 @@
     },
     {
       "name": "TankerTrackers.com (@TankerTrackers)",
-      "type": "X/Twitter — Oil Tracking",
+      "type": "X/Twitter \u2014 Oil Tracking",
       "focus": "Real-time Iranian supertanker movements, US blockade evasion tracking, dark fleet VLCC monitoring, NITC fleet.",
       "url": "https://x.com/TankerTrackers",
       "signal_level": "High",
@@ -259,7 +259,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "CSIS — War with Iran",
+      "name": "CSIS \u2014 War with Iran",
       "type": "Think Tank",
       "focus": "Expert analysis on Iranian conflict, Lebanese government challenges, military assessments, timeline analysis.",
       "url": "https://www.csis.org/programs/latest-analysis-war-iran",
@@ -267,7 +267,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "CFR — Iran War Analysis and Updates",
+      "name": "CFR \u2014 Iran War Analysis and Updates",
       "type": "Think Tank",
       "focus": "Expert briefings on military dimensions, regional fallout, global implications of the Iran war.",
       "url": "https://www.cfr.org/topics/iran-war-analysis-and-updates",
@@ -275,7 +275,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "Recorded Future — Iran Conflict",
+      "name": "Recorded Future \u2014 Iran Conflict",
       "type": "Threat Intelligence",
       "focus": "Iran conflict analysis, threat actor tracking, cyber/physical convergence in Middle East.",
       "url": "https://www.recordedfuture.com/blog/ongoing-iran-conflict-what-you-need-to-know",
@@ -283,7 +283,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "Unit 42 (Palo Alto Networks) — Iran Cyber Threat Brief",
+      "name": "Unit 42 (Palo Alto Networks) \u2014 Iran Cyber Threat Brief",
       "type": "Cybersecurity/Threat Intel",
       "focus": "Iran cyber attack tracking, APT group monitoring, Operation Epic Fury cyber dimension.",
       "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
@@ -339,66 +339,279 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "SOC Radar — Iran Cyber Conflict Dashboard",
+      "name": "SOC Radar \u2014 Iran Cyber Conflict Dashboard",
       "type": "Cyber Threat Intelligence",
       "focus": "Iran-Israel/US cyber war tracking, drone incidents, APT group activity mapping.",
       "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/",
       "signal_level": "Medium-High",
       "discovered": "2026-05-03"
+    },
+    {
+      "name": "Al Jazeera English",
+      "type": "News/Journalism",
+      "focus": "Investigation reveals how Horus, a company led by ex-military intelligence officials, was hired during protest movement.",
+      "url": "https://www.aljazeera.com/news/2026/4/20/uk-universities-pay-to-spy-on-students-social-media-accounts",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Gizmodo.com",
+      "type": "News/Journalism",
+      "focus": "Gas prices and price of bitcoin could get a little more entangled.",
+      "url": "https://gizmodo.com/iran-demands-bitcoin-and-crypto-for-strait-of-hormuz-toll-payments-2000744120",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Scientific American",
+      "type": "News/Journalism",
+      "focus": "The SciFy program tests whether adversaries\u2019 most outlandish scientific claims add up or fall apart",
+      "url": "https://www.scientificamerican.com/article/darpa-built-an-ai-to-fact-check-enemy-weapons-claims/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "The Atlantic",
+      "type": "News/Journalism",
+      "focus": "In a new report, the World Bank thinks better of its old free-market absolutism.",
+      "url": "https://www.theatlantic.com/ideas/2026/04/world-bank-industrial-policy/686820/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Yahoo Entertainment",
+      "type": "News/Journalism",
+      "focus": "U.S. forces are pressing ahead Tuesday with an effort to guide commercial ships through the Strait of Hormuz, but so far only two vessels, both of them...",
+      "url": "https://www.yahoo.com/news/articles/latest-hegseth-caine-ceasefire-between-124930589.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "The Times of India",
+      "type": "News/Journalism",
+      "focus": "Market watchers responded cautiously to the latest quarterly numbers, which fell short of expectations in growth and margins. While new deal wins were announced, concerns linger about their quality an",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/hcl-techs-margins-and-constant-currency-growth-to-remain-under-pressure-aditya-shah/articleshow/130432375.cms",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Help Net Security",
+      "type": "News/Journalism",
+      "focus": "Financially motivated attacks continued to drive the bulk of cyber incidents against banks, insurers, and payment processors in 2025. Approximately 90% of breaches affecting financial institutions car",
+      "url": "https://www.helpnetsecurity.com/2026/04/22/financial-sector-cyber-threats-report/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Naturalnews.com",
+      "type": "News/Journalism",
+      "focus": "Introduction A former Canadian intelligence officer has warned a parliamentary committee that the proliferation of Chinese-made electric vehicles in Canada presents significant national security risks",
+      "url": "https://www.naturalnews.com/2026-04-21-intelligence-officer-warns-security-risks-chinese-ev.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Naturalnews.com",
+      "type": "News/Journalism",
+      "focus": "An intelligence source warns Iranian-made, Chinese-based MANPADs are inside the U.S. with kill teams targeting Trump. The source claims these portable missiles threaten Trump\u2019s aircraft during vulnera",
+      "url": "https://www.naturalnews.com/2026-04-16-intelligence-warns-of-iranian-mandpads-targeting-trumps-aircraft.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Nature.com",
+      "type": "News/Journalism",
+      "focus": "Daily satellite data reveal that Earth\u2019s artificial lights at night are highly volatile, with frequent brightening and dimming between 2014 and 2022.",
+      "url": "https://www.nature.com/articles/s41586-026-10260-w",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Digitimes",
+      "type": "News/Journalism",
+      "focus": "In a recent assessment of the semiconductor landscape, GlobalFoundries emphasized the critical need for supply chain resilience amid a \"fragmented geopolitical environment.\" The company is positioning",
+      "url": "https://www.digitimes.com/news/a20260506VL206/globalfoundries-manufacturing-demand-capacity-supply-chain.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Naturalnews.com",
+      "type": "News/Journalism",
+      "focus": "Ukrainian intelligence alleges Russia provided Iran with a list of 55 critical Israeli energy targets for potential strikes. The targets are categorized by strategic importance, with power plants like",
+      "url": "https://www.naturalnews.com/2026-04-08-russia-accused-of-arming-iran-israeli-grid-targets.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Barchart.com",
+      "type": "News/Journalism",
+      "focus": "Markets enter a pivotal week with key Mega-Cap earnings and Fed policy the main tings to watch along with any news from Iran.",
+      "url": "https://www.barchart.com/story/news/1525397/mega-cap-earnings-fomc-and-other-key-things-to-watch-this-week",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Shtfplan.com",
+      "type": "News/Journalism",
+      "focus": "Ukrainian intelligence alleges Russia provided Iran with a list of 55 critical Israeli energy targets for potential strikes.",
+      "url": "https://www.shtfplan.com/headline-news/russia-accused-of-arming-iran-with-israeli-grid-targets",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "The Points Guy",
+      "type": "News/Journalism",
+      "focus": "Lufthansa is grounding its Mitsubishi CRJs and Airbus A340-600s in response to high fuel prices.",
+      "url": "https://thepointsguy.com/news/lufthansa-flight-cuts-aircraft-grounded-fuel-costs/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Cointelegraph",
+      "type": "News/Journalism",
+      "focus": "Iran may require oil tankers to pay BTC tolls through the Strait of Hormuz, signaling a new use case for crypto as geopolitical tensions reshape global trade routes.",
+      "url": "https://cointelegraph.com/news/iran-bitcoin-strait-of-hormuz-oil-tolls",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "The Points Guy",
+      "type": "News/Journalism",
+      "focus": "Air Canada, Delta Air Lines and Norse Atlantic are among the airlines suspending routes to cut fuel expenses.",
+      "url": "https://thepointsguy.com/news/airlines-cut-suspend-routes-fuel-prices/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Nature.com",
+      "type": "News/Journalism",
+      "focus": "Researchers are increasingly sounding the alarm that artificial intelligence could end humanity. But such doomsday warnings carry their own risks.",
+      "url": "https://www.nature.com/articles/d41586-026-01257-6",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "CoinDesk",
+      "type": "News/Journalism",
+      "focus": "Iran plans to collect cryptocurrency and other digital payments as transit fees from fully loaded oil tankers passing through the Strait of Hormuz, an FT report said.",
+      "url": "https://www.coindesk.com/markets/2026/04/08/iran-eyes-crypto-toll-for-oil-tanker-transit-through-strait-of-hormuz",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "The Indian Express",
+      "type": "News/Journalism",
+      "focus": "India has enhanced its resilience to disruptions in energy supplies through measures ranging from the diversification of imports to the establishment of strategic reserves. What lessons it can draw fr",
+      "url": "https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/iran-war-lessons-from-past-oil-shocks-india-can-use-10642011/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-07",
+      "source": "NewsAPI"
     }
   ],
   "moltbook_sources": [
     {
-      "category": "Moltbook — geopolitics & intel agents",
+      "category": "Moltbook \u2014 geopolitics & intel agents",
       "type": "Agent-Generated Geopolitical Analysis",
       "focus": "Geopolitical risk, Iran conflict, oil markets, defense analysis, strategic assessment",
       "signal_level": "Low-Medium",
       "note": "Early-stage; output quality varies. Monitor for signal before upgrading.",
       "key_agents": [
-        {"agent": "Noob_Original", "focus": "Geopolitical crisis analysis, oil markets, economic disruption"},
-        {"agent": "agent_smith_49375", "focus": "Market-geopolitics correlation, Iran sanctions impact, BTC/oil dynamics"},
-        {"agent": "adam-openclaw", "focus": "Iran conflict, US-Trump policy, Middle East developments"}
+        {
+          "agent": "Noob_Original",
+          "focus": "Geopolitical crisis analysis, oil markets, economic disruption"
+        },
+        {
+          "agent": "agent_smith_49375",
+          "focus": "Market-geopolitics correlation, Iran sanctions impact, BTC/oil dynamics"
+        },
+        {
+          "agent": "adam-openclaw",
+          "focus": "Iran conflict, US-Trump policy, Middle East developments"
+        }
       ]
     },
     {
-      "category": "Moltbook — OSINT agents",
+      "category": "Moltbook \u2014 OSINT agents",
       "type": "Agent OSINT Collection",
       "focus": "OSINT methodology, strategic research, privacy/security analysis",
       "signal_level": "Low-Medium",
       "key_agents": [
-        {"agent": "kai-osint", "focus": "Strategic research, OSINT collection, multi-domain analysis"},
-        {"agent": "dream_osint", "focus": "OSINT, privacy, data protection, digital confidentiality"}
+        {
+          "agent": "kai-osint",
+          "focus": "Strategic research, OSINT collection, multi-domain analysis"
+        },
+        {
+          "agent": "dream_osint",
+          "focus": "OSINT, privacy, data protection, digital confidentiality"
+        }
       ]
     },
     {
-      "category": "Moltbook — analytic tradecraft",
+      "category": "Moltbook \u2014 analytic tradecraft",
       "type": "Agent Methodology Content",
       "focus": "Source evaluation, burden of proof, critical thinking, analytic rigor",
       "signal_level": "Medium",
       "note": "Useful for analyst training curriculum; professorquantum's source evaluation framework aligns with structured analytic techniques.",
       "key_agents": [
-        {"agent": "professorquantum", "focus": "Source evaluation methodology, epistemic rigor, burden of proof, falsifiability"}
+        {
+          "agent": "professorquantum",
+          "focus": "Source evaluation methodology, epistemic rigor, burden of proof, falsifiability"
+        }
       ]
     },
     {
-      "category": "Moltbook — platform communities",
+      "category": "Moltbook \u2014 platform communities",
       "type": "Agent Ecosystem Intel",
       "focus": "OpenClaw ecosystem, tooling, skills infrastructure, agent capabilities",
       "signal_level": "Medium",
       "submolts": [
-        {"name": "m/openclaw-explorers", "focus": "OpenClaw platform developments, agent deployments"},
-        {"name": "m/tooling", "focus": "Agent skill discovery, prompt engineering, tooling frameworks"},
-        {"name": "m/infrastructure", "focus": "Agent infrastructure patterns"}
+        {
+          "name": "m/openclaw-explorers",
+          "focus": "OpenClaw platform developments, agent deployments"
+        },
+        {
+          "name": "m/tooling",
+          "focus": "Agent skill discovery, prompt engineering, tooling frameworks"
+        },
+        {
+          "name": "m/infrastructure",
+          "focus": "Agent infrastructure patterns"
+        }
       ]
     },
     {
-      "category": "Moltbook — skills ecosystem",
+      "category": "Moltbook \u2014 skills ecosystem",
       "type": "Agent Skill Registries",
       "focus": "Agent skill discovery and indexing",
       "signal_level": "Low-Medium",
       "key_agents": [
-        {"agent": "skillshub", "focus": "5000+ skills indexed, AI agent skills registry API"},
-        {"agent": "neo_skills", "focus": "OpenClaw skill building, framework development"}
+        {
+          "agent": "skillshub",
+          "focus": "5000+ skills indexed, AI agent skills registry API"
+        },
+        {
+          "agent": "neo_skills",
+          "focus": "OpenClaw skill building, framework development"
+        }
       ]
     }
   ]
