@@ -16,6 +16,105 @@
   ⚠️  ISW/Critical Threats Project (UnderstandingWar.org) — No entries parsed
   ⚠️  Radio007 (YouTube) — No entries parsed
 
+---
+
+# Intelligence Label Digest — 2026-05-07 19:00 UTC
+
+**Source:** Gmail (trevor.mentis@gmail.com), `Intelligence` label
+**Emails:** 9 within last 24h (filtered from 10)
+**Excluded:** 1 outside window (CISA KEV, May 6 18:44 UTC), 2 commercial (CISA Course, FP subscription promo)
+
+---
+
+## 🔴 HIGH SIGNAL — Geopolitical / Military
+
+### 1. Iran: Strategic Objectives Beyond Survival
+**Source:** ISW Iran Special Report + CTP Iran Evening Update, May 6–7
+
+- Iran's principal strategic objective is **securing US recognition of sovereignty over the Strait of Hormuz** — a fundamental remaking of regional/maritime norms detrimental to US interests.
+- Iran's "Persian Gulf Strait Authority" emailed shipping companies May 6 demanding **payment in Iranian rials** and guarantees from Iranian banks (forcing sanctions violations).
+- Iran seeking **unfreezing of ~$100B USD in assets** and economic relief, which could fund ballistic missile reconstitution.
+- CNN reports Israel is **particularly worried** about sanctions relief enabling Iran's missile rebuild.
+- Iran preparing for **economic instability/domestic unrest** but not close to surrendering.
+
+### 2. US-Iran Negotiations: One-Page Framework
+**Source:** Cipher Brief Nightcap, May 6
+
+- U.S. and Iran reportedly **closing in on a one-page memorandum** to frame end-of-war terms.
+- Document calls for **lifting Hormuz restrictions**, but disagreements remain on key points.
+- Trump told PBS: "I think it's got a very good chance of ending… and if it doesn't end, we have to go back to **bombing the hell out of them**."
+- Trump proposed Iran export highly enriched uranium to the U.S.
+- IRGC indicated Strait could reopen if "aggressors' threats end."
+- Trump paused 'Project Freedom' mission; deal possibly before his **trip to China next week**.
+
+### 3. Ukraine: Ceasefire Rejected, Heavy Civilian Casualties
+**Source:** ISW Russian Offensive Campaign Assessment, May 6
+
+- Ukraine unilaterally enacted ceasefire midnight May 5–6, reciprocating Russia's declared Victory Day ceasefire (May 8–9).
+- **Russia ignored the ceasefire**: launched 108 drones, 2 Iskander-M, 1 Kh-31 cruise missile overnight May 5–6.
+- **At least 21 civilians killed, 82 injured** including:
+  - Zaporizhzhia City: 12 killed, 51 injured (missiles)
+  - Kramatorsk: 5 killed, 12 injured (FAB-250 glide bombs)
+  - Dnipro City: 4 killed, 19 injured (ballistic missile)
+- Kremlin accused Ukraine of violating its own ceasefire (strikes before midnight don't constitute violations).
+- Pattern: Russia has violated its own unilaterally-declared ceasefires repeatedly, including executing 4 Ukrainian POWs during the Easter ceasefire.
+
+### 4. CIA Officers Killed in Mexico — Political Fallout
+**Source:** Cipher Brief Nightcap, May 6
+
+- **Two CIA officers killed** in car accident in Chihuahua, Mexico.
+- Mexican President Sheinbaum **publicly criticized** U.S., claiming officers were unauthorized.
+- Former CIA station chiefs express disgust — Sheinbaum using incident to attack **domestic political opposition (PAN party)**.
+- Incident part of Trump admin's broader **Western Hemisphere/cartel operations focus**.
+
+### 5. Russia Industrializes Cognitive Warfare
+**Source:** Cipher Brief (Jennifer Ewbank, ex-CIA DD for Digital Innovation), May 6
+
+- Russia using **large-scale synthetic media** to target soldiers, civilians, and Westerners.
+- U.S. institutions for tracking/countering foreign influence being **cut down or scaled back** without replacements.
+
+### 6. US Nuclear Arsenal Modernization
+**Source:** Cipher Brief (Walter Pincus), May 6
+
+- Defense Department FY2027 request for **untold billions to modernize nuclear arsenal**.
+- Request includes authority to allocate funds at scale.
+
+### 7. Beijing Killed $2 Billion AI Deal
+**Source:** Foreign Policy Editors' Picks, May 6
+
+- China blocked a **$2B AI deal**, signaling capital flow friction.
+- Context: growing tech decoupling / investment screening.
+
+## 🟡 MEDIUM SIGNAL — Cybersecurity
+
+### 8. CISA: Ivanti EPMM Actively Exploited (CVE-2026-6973)
+**Source:** CISA KEV Catalog Alert, May 7 16:27 UTC
+
+- **CVE-2026-6973**: Ivanti Endpoint Manager Mobile (EPMM) — improper input validation vulnerability.
+- Evidence of **active exploitation** in the wild.
+- BOD 22-01 requires FCEB agencies remediate; CISA urges all orgs to prioritize.
+
+### 9. CISA Releases 5 ICS Advisories
+**Source:** CISA ICS Alert, May 7 18:22 UTC
+
+- **Maxhub Pivot** — ICSA-26-127-01
+- **Schneider Electric EcoStruxure / Modicon PLCs** — Update A (ICSA-24-331-03)
+- **Intrado 911 Emergency Gateway (EGW)** — Update A (ICSA-26-113-06)
+- **Medtronic MyCareLink 24950 Patient Monitor** — Update A (ICSMA-18-219-01)
+- **Medtronic MyCareLink Patient Monitor** — Update A (ICSMA-25-205-01)
+
+## ✅ Quality Review Notes
+
+- **Redundant merged**: ISW Iran Special Report + CTP Iran Evening report cover same Strait of Hormuz analysis; merged into single entry.
+- **Excluded**: CISA Cybersecurity Course announcement (training promo, not security intelligence), Foreign Policy subscription offer (commercial).
+- **Borderline included**: FP Editors' Picks (includes substantive articles on Iran forever war, Beijing AI deal, Iraq sovereignty — retained relevant items).
+- **FP Global Insight promo** entirely excluded (pure subscription marketing).
+- **High-signal flags**: Iran Strait sovereignty demand, US-Iran one-page memo, Trump force escalation threat, Ukraine ceasefire rejection with mass casualties, CIA Mexico operational insecurity, Ivanti EPMM 0-day in the wild.
+
+---
+*Generated by Intelligence Label Digest cron — 2026-05-07 19:00 UTC*
+
+
 ## Global News
 
 ### Germany says US troop withdrawal 'foreseeable' as Nato seeks clarification

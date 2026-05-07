@@ -215,22 +215,58 @@
         "total_tokens": 24735254,
         "total_cost_usd": 0.685786
       }
+    },
+    {
+      "timestamp": "2026-05-07T15:35:57.603608+00:00",
+      "balance": {
+        "total_balance": 90.61,
+        "topped_up_balance": 90.61,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-07T15:35:57.603587+00:00"
+      },
+      "total_sessions_tracked": 219,
+      "cumulative": {
+        "total_sessions": 219,
+        "total_input_tokens": 8403040,
+        "total_output_tokens": 331702,
+        "total_tokens": 24735254,
+        "total_cost_usd": 0.685786
+      }
+    },
+    {
+      "timestamp": "2026-05-07T16:05:49.935683+00:00",
+      "balance": {
+        "total_balance": 90.31,
+        "topped_up_balance": 90.31,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-07T16:05:49.935656+00:00"
+      },
+      "total_sessions_tracked": 220,
+      "cumulative": {
+        "total_sessions": 220,
+        "total_input_tokens": 8406096,
+        "total_output_tokens": 332075,
+        "total_tokens": 24750331,
+        "total_cost_usd": 0.686318
+      }
     }
   ],
   "daily_summaries": {
     "2026-05-07": {
-      "sessions": 7,
-      "input_tokens": 95349,
-      "output_tokens": 19554,
-      "total_tokens": 1390679,
-      "cache_read": 1275776,
+      "sessions": 8,
+      "input_tokens": 98405,
+      "output_tokens": 19927,
+      "total_tokens": 1405756,
+      "cache_read": 1287424,
       "cache_write": 0,
-      "cost_usd": 0.01882398,
+      "cost_usd": 0.01935626,
       "by_model": {
         "deepseek-v4-flash": {
-          "sessions": 7,
-          "tokens": 1390679,
-          "cost": 0.01882398
+          "sessions": 8,
+          "tokens": 1405756,
+          "cost": 0.01935626
         }
       }
     },
@@ -3074,7 +3110,19 @@
       "estimated_cost": 0.0014126,
       "model": "deepseek-v4-flash",
       "provider": "deepseek"
+    },
+    {
+      "session_id": "2d320e30-ab6d-4b77-b74d-b57d59df82c1",
+      "timestamp": "2026-05-07T16:00:20.222Z",
+      "input_tokens": 3056,
+      "output_tokens": 373,
+      "total_tokens": 15077,
+      "cache_read": 11648,
+      "cache_write": 0,
+      "estimated_cost": 0.00053228,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
     }
   ],
-  "last_scan_time": "2026-05-07T14:39:29.515913+00:00"
+  "last_scan_time": "2026-05-07T16:05:49.517023+00:00"
 }
