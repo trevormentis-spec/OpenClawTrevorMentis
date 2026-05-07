@@ -3,7 +3,7 @@
 # deploy_landing_page.sh — Update the GitHub Pages landing page with the latest
 #                          DailyIntelAgent product content.
 #==============================================================================
-set -euo pipefail
+set -uo pipefail
 
 REPO="/home/ubuntu/.openclaw/workspace"
 SKILL_DIR="$HOME/.openclaw/skills/OpenClawTrevorMentis/skills/daily_intel"
