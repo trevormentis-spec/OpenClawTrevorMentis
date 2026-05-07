@@ -1,0 +1,15 @@
+{
+  "subscribers": [],
+  "webhook_endpoint": "https://quiet-kangaroo-c0b94c.netlify.app/api/subscribe",
+  "schema": {
+    "event": "brief.published",
+    "payload": {
+      "event": "brief.published",
+      "brief_id": "gsib-YYYY-MM-DD",
+      "generated_at": "ISO8601 timestamp",
+      "theater_count": 6,
+      "download_url": "https://quiet-kangaroo-c0b94c.netlify.app/api/briefs/YYYY-MM-DD.json",
+      "schema_version": "1.0"
+    }
+  }
+}

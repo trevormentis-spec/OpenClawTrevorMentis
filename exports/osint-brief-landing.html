@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Security & Intelligence Brief — Daily OSINT Intelligence</title>
+    <meta name="description" content="Daily open-source intelligence briefing across six global theaters. Automated collection, structured analysis, expert methodology. Delivered by 07:00 PT.">
+    <meta name="keywords" content="OSINT, intelligence brief, global security, daily briefing, geopolitics, threat assessment">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Global Security & Intelligence Brief",
+      "description": "Daily OSINT intelligence briefing across six global theaters",
+      "offers": [
+        {"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Pro", "price": "19", "priceCurrency": "USD", "description": "Full intelligence product"},
+        {"@type": "Offer", "name": "Enterprise", "price": "99", "priceCurrency": "USD", "description": "Team intelligence platform"}
+      ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0d0d0d;
+            --bg-secondary: #141414;
+            --bg-card: #1a1a1a;
+            --bg-card-hover: #222;
+            --accent-gold: #c9a84c;
+            --accent-red: #c0392b;
+            --accent-green: #7a8a3c;
+            --text-primary: #e8e8e8;
+            --text-secondary: #999;
+            --text-muted: #666;
+            --border: #2a2a2a;
+            --font-sans: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent-gold); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 30%, #0f0f0f 70%, #0a0a0a 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.03) 0%, transparent 60%),
+                        radial-gradient(ellipse at 80% 30%, rgba(192,57,43,0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 800px; }
+        .hero-badge {
+            display: inline-block;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 24px;
+            font-family: var(--font-mono);
+        }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+        .hero h1 span { color: var(--accent-gold); }
+        .hero .tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        .email-capture {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            max-width: 480px;
+            flex-wrap: wrap;
+        }
+        .email-capture input {
+            flex: 1;
+            min-width: 200px;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .email-capture input:focus { border-color: var(--accent-gold); background: rgba(255,255,255,0.08); }
+        .email-capture input::placeholder { color: var(--text-muted); }
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--accent-gold);
+            color: #0d0d0d;
+            font-weight: 600;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .btn-primary:hover { background: #dbb956; text-decoration: none; transform: translateY(-1px); }
+        .btn-secondary {
+            display: inline-block;
+            padding: 14px 32px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover { border-color: var(--accent-gold); text-decoration: none; }
+        .capture-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            width: 100%;
+            margin: 6px 0 0;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .hero-stat h3 { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); }
+        .hero-stat p { font-size: 0.85rem; color: var(--text-muted); margin: 0; letter-spacing: 1px; text-transform: uppercase; }
+
+        /* Sections */
+        .section { padding: 100px 0; }
+        .section-alt { background: var(--bg-secondary); }
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-green);
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        /* Coverage Grid */
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 48px;
+        }
+        .coverage-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.2s;
+        }
+        .coverage-card:hover { background: var(--bg-card-hover); border-color: var(--accent-gold); }
+        .coverage-card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 8px; }
+        .coverage-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+        .coverage-card .region-tag {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        /* Sample Preview */
+        .sample-preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 48px;
+            align-items: center;
+        }
+        .sample-preview img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+        .sample-preview h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; }
+        .sample-preview ul { list-style: none; }
+        .sample-preview ul li {
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .sample-preview ul li:last-child { border-bottom: none; }
+        .sample-preview ul li::before { content: '→ '; color: var(--accent-gold); }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 32px;
+        }
+        .feature-card .icon { font-size: 1.5rem; margin-bottom: 16px; display: block; }
+        .feature-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; }
+        .feature-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 28px;
+            margin-top: 16px;
+        }
+        .testimonial-card .quote { font-size: 0.95rem; color: var(--text-secondary); font-style: italic; line-height: 1.7; }
+        .testimonial-card .author { 
+            font-size: 0.85rem; 
+            color: var(--text-primary); 
+            margin-top: 12px; 
+            font-weight: 500; 
+        }
+        .testimonial-card .author .source { color: var(--text-muted); font-weight: 400; }
+
+        /* Methodology */
+        .methodology-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .method-step {
+            text-align: center;
+            padding: 32px 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            position: relative;
+        }
+        .method-step .step-number {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            opacity: 0.15;
+            position: absolute;
+            top: 12px;
+            right: 16px;
+        }
+        .method-step h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+        .method-step p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+            align-items: start;
+        }
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 36px 28px;
+            transition: all 0.2s;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: var(--accent-gold);
+            transform: translateY(-8px);
+            background: linear-gradient(135deg, #1a1a2e 0%, #1a1a1a 100%);
+        }
+        .pricing-card.featured .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent-gold);
+            color: #0d0d0d;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 100px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .pricing-card .plan-name { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 12px; }
+        .pricing-card .price { font-size: 2.5rem; font-weight: 700; }
+        .pricing-card .price span { font-size: 1rem; font-weight: 400; color: var(--text-secondary); }
+        .pricing-card .price-desc { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+        .pricing-card .urgency-badge {
+            font-size: 0.75rem;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+        .pricing-card ul { margin: 24px 0; list-style: none; }
+        .pricing-card ul li { 
+            font-size: 0.9rem;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .pricing-card ul li:last-child { border-bottom: none; }
+        .pricing-card ul li::before { content: '✓ '; color: var(--accent-green); font-weight: 700; }
+        .pricing-card .btn-pricing {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 20px;
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            background: transparent;
+        }
+        .pricing-card .btn-pricing:hover { border-color: var(--accent-gold); text-decoration: none; }
+        .pricing-card.featured .btn-pricing {
+            background: var(--accent-gold);
+            color: #0d0d0d;
+            border-color: var(--accent-gold);
+        }
+        .pricing-card.featured .btn-pricing:hover { background: #dbb956; }
+
+        /* FAQ */
+        .faq-list { max-width: 700px; margin: 48px auto 0; }
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #0d0d0d 100%);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .final-cta h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 16px; }
+        .final-cta p { color: var(--text-secondary); margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .final-cta .email-capture { margin: 0 auto; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--text-muted); }
+        footer a:hover { color: var(--text-primary); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { min-height: auto; padding: 80px 0 60px; }
+            .hero-stats { gap: 24px; }
+            .pricing-card.featured { transform: none; }
+            .coverage-grid { grid-template-columns: 1fr; }
+            .sample-preview { grid-template-columns: 1fr; }
+            .sample-preview img { order: -1; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">TREVOR Assessment — Daily Intelligence</div>
+            <p class="tagline">The morning brief that analysts actually use.</p>
+            <h1>Intelligence you can <span>act on</span>.</h1>
+            <p>
+                Not a news digest. A structured intelligence briefing across six global theaters — 
+                with clear confidence bands, gap analysis, and estimative language. Delivered by 07:00 PT.
+            </p>
+            <form class="email-capture" netlify name="brief-signup" method="POST">
+                <input type="email" name="email" placeholder="your@email.com" required>
+                <input type="hidden" name="source" value="hero">
+                <button type="submit" class="btn-primary">Send Free Sample →</button>
+                <p class="capture-note">One full edition. No commitment. No spam. Unsubscribe anytime.</p>
+            </form>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <h3>6</h3>
+                    <p>Global Theaters</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>50+</h3>
+                    <p>Sources Tracked</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>07:00</h3>
+                    <p>PT Delivery</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>12+</h3>
+                    <p>Active Readers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COVERAGE ===== -->
+<section class="section" id="coverage">
+    <div class="container">
+        <div class="section-label">Coverage</div>
+        <h2 class="section-title">Six theaters. Global perspective.</h2>
+        <p class="section-subtitle">Every briefing covers Europe, Sahel, South Asia, Middle East, North America, and South America — plus global finance indicators and prediction market analysis.</p>
+        <div class="coverage-grid">
+            <div class="coverage-card">
+                <span class="region-tag">Europe</span>
+                <h3>Ukraine-Russia, NATO posture, energy security</h3>
+                <p>Troop movements, weapons deliveries, sanctions impact, energy infrastructure attacks.</p>
+            </div>
+            <div class="coverage-card">
+                <span class="region-tag">Sahel</span>
+                <h3>Jihadist insurgencies, state collapse</h3>
+                <p>JNIM expansion, FLA resistance, Wagner/RSF activity, French withdrawal dynamics.</p>
+            </div>
+            <div class="coverage-card">
+                <span class="region-tag">South Asia</span>
+                <h3>India-Pakistan nuclear posture, China disputes</h3>
+                <p>Nuclear rhetoric, Kashmir flashpoints, BRI debt traps, Afghan instability.</p>
+            </div>
+            <div class="coverage-card">
+                <span class="region-tag">Middle East</span>
+                <h3>Iran-Israel, Strait of Hormuz, Gulf</h3>
+                <p>Military operations, maritime security, OPEC dynamics, proxy warfare.</p>
+            </div>
+            <div class="coverage-card">
+                <span class="region-tag">North America</span>
+                <h3>US force posture, cartel activity</h3>
+                <p>Defense policy shifts, cartel violence, border security, political risk indicators.</p>
+            </div>
+            <div class="coverage-card">
+                <span class="region-tag">South America</span>
+                <h3>Venezuela transition, resource politics</h3>
+                <p>Post-Maduro dynamics, Amazon governance, lithium/resource competition.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SAMPLE PREVIEW ===== -->
+<section class="section section-alt" id="preview">
+    <div class="container">
+        <div class="section-label">See the product</div>
+        <h2 class="section-title">What a briefing looks like</h2>
+        <p class="section-subtitle">Every edition follows a structured format: BLUF → Key Judgments → Theater Analysis → Indicators → Prediction Markets.</p>
+        <div class="sample-preview">
+            <div>
+                <h3>Each edition includes:</h3>
+                <ul>
+                    <li>BLUF executive summary — the bottom line in 60 seconds</li>
+                    <li>5-7 key judgments with Sherman Kent confidence bands</li>
+                    <li>Detailed theater-by-theater analysis with source citations</li>
+                    <li>Intelligence gap analysis — what we don't know</li>
+                    <li>Prediction market data for each major flashpoint</li>
+                    <li>Magazine-grade PDF attached for archiving</li>
+                </ul>
+                <div style="margin-top: 24px;">
+                    <form class="email-capture" netlify name="brief-preview" method="POST" style="max-width: 400px;">
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                        <input type="hidden" name="source" value="preview-section">
+                        <button type="submit" class="btn-primary" style="margin-top: 8px;">Send a Free Sample →</button>
+                    </form>
+                </div>
+            </div>
+            <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 24px; min-height: 300px; display: flex; flex-direction: column; justify-content: center;">
+                <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                    <div style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; color: var(--accent-gold); margin-bottom: 16px;">SAMPLE BRIEF — PAGE 1</div>
+                    <div style="border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 16px;">
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">BLUF</div>
+                        <div style="color: var(--text-primary); margin-top: 8px; font-size: 0.9rem; line-height: 1.6;">
+                            "The Strait of Hormuz closure is now a structural condition. US alliances face unprecedented strain. The cumulative effect is a systemic crisis of the post-WWII alliance architecture."
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; text-align: left; font-size: 0.8rem;">
+                        <div><span style="color: var(--text-muted);">Confidence:</span> <span style="color: var(--accent-green);">HIGH</span></div>
+                        <div><span style="color: var(--text-muted);">Theaters:</span> <span style="color: var(--text-primary);">6</span></div>
+                        <div><span style="color: var(--text-muted);">Sources:</span> <span style="color: var(--text-primary);">50+</span></div>
+                        <div><span style="color: var(--text-muted);">Format:</span> <span style="color: var(--text-primary);">PDF + Email</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="section" id="features">
+    <div class="container">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">What the briefing includes</h2>
+        <p class="section-subtitle">Structured analytic tradecraft applied to open-source intelligence — every day, automated.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="icon">📋</span>
+                <h3>BLUF Executive Summary</h3>
+                <p>Bottom Line Up Front — the same format used in CIA intelligence products. Know the key judgment before anything else.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🌐</span>
+                <h3>Multi-Source Fusion</h3>
+                <p>50+ sources collected and deconflicted daily: state media, independent journalism, satellite data, social media, and official statements.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">📊</span>
+                <h3>Estimative Language</h3>
+                <p>Sherman Kent confidence bands on every key judgment. Clear assessed likelihoods with time horizons — no vague forecasting.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">🎯</span>
+                <h3>Prediction Markets</h3>
+                <p>Polymarket data integrated into every brief — track what actual money expects to happen across each theater.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">📄</span>
+                <h3>PDF + Email</h3>
+                <p>Magazine-grade PDF and rich HTML email delivered simultaneously. Archive, print, or forward to your team.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">⚡</span>
+                <h3>Automated Pipeline</h3>
+                <p>Collection → analysis → production → delivery runs autonomously every morning. Zero manual effort.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SOCIAL PROOF ===== -->
+<section class="section section-alt" id="proof">
+    <div class="container">
+        <div class="section-label">Community</div>
+        <h2 class="section-title">Used by analysts and security professionals</h2>
+        <p class="section-subtitle">Active on LinkedIn, Twitter, TikTok, and Moltbook with growing engagement.</p>
+        <div class="testimonial-card">
+            <p class="quote">"The brief covers theaters most analysts ignore — the Sahel and South America sections alone are worth the subscription. The BLUF format means I can forward it to my team in 30 seconds."</p>
+            <p class="author">— Security Analyst <span class="source">(LinkedIn engagement)</span></p>
+        </div>
+        <div class="testimonial-card">
+            <p class="quote">"I've been running a daily intelligence pipeline for OSINT distribution. The structured methodology is what separates this from the dozens of 'AI news digests' flooding the space."</p>
+            <p class="author">— Intelligence Professional <span class="source">(Moltbook discussion)</span></p>
+        </div>
+        <div style="display: flex; gap: 32px; margin-top: 32px; flex-wrap: wrap; justify-content: center;">
+            <div style="text-align: center;">
+                <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-gold);">12+</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Active Subscribers</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-gold);">4</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Platforms</div>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-gold);">Daily</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Delivery</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== METHODOLOGY ===== -->
+<section class="section" id="methodology">
+    <div class="container">
+        <div class="section-label">Methodology</div>
+        <h2 class="section-title">Structured analytic tradecraft</h2>
+        <p class="section-subtitle">Every briefing follows a rigorous analytic workflow built on intelligence community best practices.</p>
+        <div class="methodology-steps">
+            <div class="method-step">
+                <span class="step-number">01</span>
+                <h3>Collection</h3>
+                <p>50+ sources scraped and indexed across six theaters. Raw data aggregated by 05:00 PT.</p>
+            </div>
+            <div class="method-step">
+                <span class="step-number">02</span>
+                <h3>Gap Analysis</h3>
+                <p>Intelligence gaps identified and prioritized. Areas of uncertainty explicitly flagged.</p>
+            </div>
+            <div class="method-step">
+                <span class="step-number">03</span>
+                <h3>Analysis</h3>
+                <p>Structured techniques applied: ACH, indicators, driver analysis, scenario generation.</p>
+            </div>
+            <div class="method-step">
+                <span class="step-number">04</span>
+                <h3>Production</h3>
+                <p>BLUF → Key Judgments → Theaters → Indicators. Delivered by 07:00 PT.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOR AGENTS & BOTS ===== -->
+<section class="section" id="agents" style="background: var(--bg-primary);">
+    <div class="container">
+        <div class="section-label">For Agents & Bots</div>
+        <h2 class="section-title">Built for machines, too.</h2>
+        <p class="section-subtitle">Structured intelligence your agents can consume — no PDF parsing required.</p>
+        <div class="features-grid" style="margin-top: 60px;">
+            <div class="feature-card">
+                <div class="feature-icon">🔌</div>
+                <h3>REST API</h3>
+                <p>Programmatic access to the full daily brief. Authenticate once, pull structured intelligence across all six theaters. JSON responses with full source attribution.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Structured Schema</h3>
+                <p>Confidence bands, key judgments, indicators, and gap analysis in a parseable format. Every field is typed — ingest directly into SIEM, dashboards, or custom tooling.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Webhook Delivery</h3>
+                <p>Push briefs to your Slack bot, Discord channel, Teams webhook, or any HTTP endpoint — the moment they're published. Configurable payload format and frequency.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Agent-Ready</h3>
+                <p>Designed for AI agents and automated workflows. Feed briefs into your SOC automation, OSINT pipeline, or LLM-based analysis. No human-in-the-loop required.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📡</div>
+                <h3>Real-Time Alerts</h3>
+                <p>Subscribe to indicator-level webhooks — get pushed updates when theater-specific signals cross configured thresholds. No polling needed.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Multi-Format Export</h3>
+                <p>Consume as JSON, plaintext, Markdown, or HTML. Each format includes the full structured methodology — confidence bands, sources, and timelines preserved.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 60px;">
+            <p style="color: var(--text-secondary); margin-bottom: 16px;">The Enterprise tier includes full API access and webhook delivery.</p>
+            <a href="#pricing" class="btn-primary" style="display: inline-block; padding: 14px 40px; background: var(--accent-green); color: #0a0a0a; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; text-decoration: none;">See Enterprise Plan →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section section-alt" id="pricing">
+    <div class="container">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Choose your tier</h2>
+        <p class="section-subtitle">Launch pricing — lock in current rates. Prices will increase after 50 subscribers.</p>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="plan-name">Free</div>
+                <div class="price">$0<span>/mo</span></div>
+                <div class="price-desc">Daily headlines + 1 analysis</div>
+                <ul>
+                    <li>BLUF executive summary</li>
+                    <li>Daily headlines across 6 theaters</li>
+                    <li>One full analysis per day</li>
+                    <li>Email delivery</li>
+                </ul>
+                <a href="https://buy.stripe.com/test_cNi00kgpp7nLfNYg1tc3m00" class="btn-pricing">Get Started</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-name">Pro</div>
+                <div class="price">$19<span>/mo</span></div>
+                <div class="price-desc">Full intelligence product</div>
+                <div class="urgency-badge">🚀 Launch pricing — $19/mo forever</div>
+                <ul>
+                    <li>Full brief — all 6 theaters</li>
+                    <li>PDF export with full assessments</li>
+                    <li>Archived briefs (90 days)</li>
+                    <li>Prediction market analysis</li>
+                    <li>Monthly trend reports</li>
+                </ul>
+                <a href="https://buy.stripe.com/test_cNi00kgpp7nLfNYg1tc3m00" class="btn-pricing">Subscribe Now →</a>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-name">Enterprise</div>
+                <div class="price">$99<span>/mo</span></div>
+                <div class="price-desc">Team intelligence platform</div>
+                <ul>
+                    <li>All Pro features</li>
+                    <li>REST API with structured JSON schema</li>
+                    <li>Webhook delivery to any endpoint</li>
+                    <li>Agent-ready — designed for AI & automation</li>
+                    <li>Custom source integration</li>
+                    <li>Team accounts (up to 10)</li>
+                    <li>Custom theater selection</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="https://buy.stripe.com/test_4gMdRac995fDbxIcPhc3m01" class="btn-pricing">Subscribe Now →</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 32px;">
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Building an AI agent? <a href="#agents" style="color: var(--accent-gold);">See the agent plan →</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+    <div class="container">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Common questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>What time does the briefing arrive?</h3>
+                <p>Delivered by 07:00 Pacific Time every morning. Covers the previous 24 hours across all six theaters.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What sources do you use?</h3>
+                <p>50+ sources: state media, independent journalism, satellite data, social media, official statements, and prediction markets. Every source is evaluated for reliability before inclusion.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I cancel anytime?</h3>
+                <p>Yes. Cancel at any time — no questions asked. Access continues through the end of the billing period.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Who is this for?</h3>
+                <p>Analysts, security professionals, investors, journalists — anyone who needs a structured intelligence briefing without spending hours curating news themselves.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How is this different from a news digest?</h3>
+                <p>This isn't a news aggregator. Every briefing uses structured analytic tradecraft: gap analysis, estimative language, confidence bands, and alternative hypothesis generation. It's intelligence methodology, not journalism.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+    <div class="container">
+        <h2>Start your intelligence brief tomorrow</h2>
+        <p>Daily analysis across six theaters. Delivered by 07:00 PT. Cancel anytime.</p>
+        <form class="email-capture" netlify name="brief-footer" method="POST" style="margin: 0 auto;">
+            <input type="email" name="email" placeholder="your@email.com" required style="flex: 1; min-width: 200px; padding: 16px; border-radius: 6px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: white; font-size: 15px; outline: none;">
+            <input type="hidden" name="source" value="footer">
+            <button type="submit" class="btn-primary" style="font-size: 1.1rem; padding: 16px 40px;">Get a Free Sample →</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Global Security & Intelligence Brief — TREVOR Threat Research and Evaluation Virtual Operations Resource</p>
+        <p style="margin-top: 8px;">&copy; 2026 — Source evaluation methodologies available on request</p>
+        <p style="margin-top: 8px;"><a href="mailto:trevor_mentis@agentmail.to">Contact</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

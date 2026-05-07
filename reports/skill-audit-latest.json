@@ -1,0 +1,2111 @@
+{
+  "/home/ubuntu/.openclaw/skills/answeroverflow": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "answeroverflow",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 89
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/api-gateway": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "api-gateway",
+      "version": "1.0",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 639
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 539,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/claude-code": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "claude-code",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 85
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/find-skills": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "find-skills",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 134
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/gmail": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "gmail",
+      "version": "1.0",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 340
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 267,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/gog-myclaw": {
+    "verdict": "reject",
+    "verdict_reason": "Found 2 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "gog",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 1,
+      "total_lines": 90
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 23,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 24,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "http_post_external",
+        "severity": "medium",
+        "file": "config/exchange.py",
+        "line": 16,
+        "description": "HTTP POST to external endpoint - could exfiltrate data",
+        "recommendation": "Verify destination URL is expected and documented"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/huggingface-hub": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "huggingface-hub",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 36
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/humanizer": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "humanizer",
+      "version": "2.1.1",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 438
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/maps-new": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "maps",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 37
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/nano-pdf": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "nano-pdf",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 21
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/network-analysis": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Network Analysis",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 313
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/ocr-docu": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "ocr-and-documents",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 89
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/self-improving-agent": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "self-improvement",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 648
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/stock-market-pro": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "stock-market-pro",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 135
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/stripe-api": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "stripe",
+      "version": "1.0",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 855
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 778,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/trevor-methodology": {
+    "verdict": "caution",
+    "verdict_reason": "Found 1 high-severity issue(s): eval_exec",
+    "metadata": {
+      "name": "trevor-methodology",
+      "version": "unknown",
+      "file_count": 26,
+      "script_count": 3,
+      "total_lines": 5281
+    },
+    "findings": [
+      {
+        "pattern": "eval_exec",
+        "severity": "high",
+        "file": "pipeline/docx-js-template.js",
+        "line": 37,
+        "description": "Dynamic code execution - could run arbitrary code",
+        "recommendation": "Verify input is sanitized, not user-controlled"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/video-frames": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "video-frames",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 30
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/video-translation": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "video-translation",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 219
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 90,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/wacli": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "wacli",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 73
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/web-searchplus": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "web-search-plus",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 37
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/whatsapp-business": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "whatsapp-business",
+      "version": "1.0",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 637
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 494,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/skills/xurl": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "xurl",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 462
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/skills/youtube-content": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "youtube-content",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 35
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/agent-intelligence-network-scan": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "agent-intelligence",
+      "version": "unknown",
+      "file_count": 5,
+      "script_count": 0,
+      "total_lines": 901
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/agentmail": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "agentmail",
+      "version": "unknown",
+      "file_count": 9,
+      "script_count": 3,
+      "total_lines": 1745
+    },
+    "findings": [
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/check_inbox.py",
+        "line": 83,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/send_email.py",
+        "line": 46,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/setup_webhook.py",
+        "line": 51,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/baoyu-translate": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "baoyu-translate",
+      "version": "1.59.0",
+      "file_count": 13,
+      "script_count": 2,
+      "total_lines": 1263
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/bluf-report": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "bluf-report",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 86
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/chartgen-ai": {
+    "verdict": "reject",
+    "verdict_reason": "Found 5 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "chartgen",
+      "version": "unknown",
+      "file_count": 5,
+      "script_count": 1,
+      "total_lines": 826
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "tools/chartgen_api.js",
+        "line": 25,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "tools/chartgen_api.js",
+        "line": 40,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "tools/chartgen_api.js",
+        "line": 44,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "tools/chartgen_api.js",
+        "line": 45,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "tools/chartgen_api.js",
+        "line": 74,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/content-generation": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "content-generation",
+      "version": "1.0.0",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 385
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/content-marketing": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Content Marketing",
+      "version": "1.0.0",
+      "file_count": 7,
+      "script_count": 0,
+      "total_lines": 454
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/cross-poster": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "social-poster",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 145
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/daily-intel-brief": {
+    "verdict": "caution",
+    "verdict_reason": "Found 1 high-severity issue(s): bulk_env_access",
+    "metadata": {
+      "name": "daily-intel-brief",
+      "version": "unknown",
+      "file_count": 20,
+      "script_count": 6,
+      "total_lines": 3833
+    },
+    "findings": [
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/analyze.py",
+        "line": 35,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/analyze.py",
+        "line": 89,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "bulk_env_access",
+        "severity": "high",
+        "file": "scripts/build_pdf.py",
+        "line": 330,
+        "description": "Bulk access to all environment variables - likely exfiltration",
+        "recommendation": "REJECT - review carefully for data theft"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/build_visuals.py",
+        "line": 152,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/orchestrate.py",
+        "line": 54,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/orchestrate.py",
+        "line": 62,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/orchestrate.py",
+        "line": 332,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/data-analysis": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Data Analysis",
+      "version": "1.0.2",
+      "file_count": 8,
+      "script_count": 0,
+      "total_lines": 607
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/data-visualization-studio": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "data-visualization-studio",
+      "version": "unknown",
+      "file_count": 5,
+      "script_count": 1,
+      "total_lines": 352
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/genviral": {
+    "verdict": "reject",
+    "verdict_reason": "Found 2 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "genviral",
+      "version": "unknown",
+      "file_count": 34,
+      "script_count": 2,
+      "total_lines": 7500
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "scripts/genviral.sh",
+        "line": 192,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "scripts/genviral.sh",
+        "line": 219,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/geospatial-osint": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "geospatial-osint",
+      "version": "unknown",
+      "file_count": 8,
+      "script_count": 0,
+      "total_lines": 899
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/indicators-and-warnings": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "indicators-and-warnings",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 80
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/landing-page-generator": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "landing-page-generator",
+      "version": "unknown",
+      "file_count": 5,
+      "script_count": 2,
+      "total_lines": 534
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/landing-page-roast": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "landing-page-roast",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 59
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/mermaid": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "file_count": 6,
+      "script_count": 1,
+      "total_lines": 357
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/newsletter": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Newsletter",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 136
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/newsletter-creation-curation": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "newsletter-creation-curation",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 2039
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/pdf-report": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "pdf-report",
+      "version": "1.0.1",
+      "file_count": 5,
+      "script_count": 1,
+      "total_lines": 625
+    },
+    "findings": [
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/render_pdf.py",
+        "line": 17,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/polymarket-trader": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "polymarket-trader",
+      "version": "unknown",
+      "file_count": 5,
+      "script_count": 2,
+      "total_lines": 594
+    },
+    "findings": [
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/research.py",
+        "line": 18,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/research.py",
+        "line": 19,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 19,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 20,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 114,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 128,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 129,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 135,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 136,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      },
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "scripts/trade.py",
+        "line": 137,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/quick-translation": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 125
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/renderers": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 2,
+      "total_lines": 45
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/sat-toolkit": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sat-toolkit",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 120
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/skill-stripe-monitor": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "skill-stripe-monitor",
+      "version": "1.0.2",
+      "file_count": 5,
+      "script_count": 0,
+      "total_lines": 782
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/social-media-agent": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "social-media-agent",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 229
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/social-media-scheduler": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Social Media Scheduler",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 94
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/social-pack": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "SocialPack Multi-Platform Social Media Generator",
+      "version": "1.0.0",
+      "file_count": 6,
+      "script_count": 1,
+      "total_lines": 278
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/social-post": {
+    "verdict": "reject",
+    "verdict_reason": "Found 36 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "social-post",
+      "version": "1.4.0",
+      "file_count": 14,
+      "script_count": 9,
+      "total_lines": 2598
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "CHANGELOG.md",
+        "line": 42,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "CHANGELOG.md",
+        "line": 143,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "CHANGELOG.md",
+        "line": 175,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 44,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 91,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 92,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 180,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 308,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 311,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "README.md",
+        "line": 314,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 43,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 76,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 78,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 79,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 80,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 81,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 98,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 99,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 100,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 101,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 179,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 253,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 266,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 362,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 30,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 31,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 33,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 34,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 117,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 118,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 120,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 121,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 131,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/farcaster.sh",
+        "line": 132,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "lib/twitter.sh",
+        "line": 8,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "scripts/reply.sh",
+        "line": 272,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/social-poster": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 97
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/source-evaluation": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "source-evaluation",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 106
+    },
+    "findings": []
+  },
+  "/home/ubuntu/.openclaw/workspace/skills/visual_production": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "visual_production",
+      "version": "unknown",
+      "file_count": 26,
+      "script_count": 16,
+      "total_lines": 4032
+    },
+    "findings": [
+      {
+        "pattern": "env_scraping",
+        "severity": "medium",
+        "file": "visual_production/pipeline.py",
+        "line": 232,
+        "description": "Reads environment variables - could access secrets",
+        "recommendation": "Verify only expected env vars are read, not bulk scraping"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/1password": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "1password",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 119
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "references/cli-examples.md",
+        "line": 19,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/apple-notes": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "apple-notes",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 78
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/apple-reminders": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "apple-reminders",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 119
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/bear-notes": {
+    "verdict": "reject",
+    "verdict_reason": "Found 7 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "bear-notes",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 108
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 33,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 40,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 60,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 66,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 92,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 94,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 97,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/blogwatcher": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "blogwatcher",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 70
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/blucli": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "blucli",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 48
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/bluebubbles": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "bluebubbles",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 132
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/camsnap": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "camsnap",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 46
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 31,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/canvas": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 200
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/clawhub": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "clawhub",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 78
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/coding-agent": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "coding-agent",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 366
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/discord": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "discord",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 198
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/eightctl": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "eightctl",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 51
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 31,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/gemini": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gemini",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 44
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/gh-issues": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gh-issues",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 886
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/gifgrep": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gifgrep",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 86
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/github": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "github",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 164
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/gog": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gog",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 117
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/goplaces": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "goplaces",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 53
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/healthcheck": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "healthcheck",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 246
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/himalaya": {
+    "verdict": "reject",
+    "verdict_reason": "Found 3 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "himalaya",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 643
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 37,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 48,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "references/configuration.md",
+        "line": 3,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/imsg": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "imsg",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 123
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/mcporter": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "mcporter",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 62
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/model-usage": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "model-usage",
+      "version": "unknown",
+      "file_count": 4,
+      "script_count": 2,
+      "total_lines": 465
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "references/codexbar-cli.md",
+        "line": 32,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/nano-pdf": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "nano-pdf",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 39
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/node-connect": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "node-connect",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 143
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/notion": {
+    "verdict": "reject",
+    "verdict_reason": "Found 3 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "notion",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 175
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 23,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 24,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 34,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/obsidian": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "obsidian",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 82
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/openai-whisper": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openai-whisper",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 39
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/openai-whisper-api": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openai-whisper-api",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 1,
+      "total_lines": 152
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/openhue": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openhue",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 113
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/oracle": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "oracle",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 126
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 115,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/ordercli": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "ordercli",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 79
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/peekaboo": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "peekaboo",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 191
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/sag": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sag",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 88
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/session-logs": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "session-logs",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 152
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/sherpa-onnx-tts": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sherpa-onnx-tts",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 289
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/skill-creator": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "skill-creator",
+      "version": "unknown",
+      "file_count": 7,
+      "script_count": 5,
+      "total_lines": 1490
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/slack": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "slack",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 145
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/songsee": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "songsee",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 50
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/sonoscli": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sonoscli",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 66
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/spotify-player": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "spotify-player",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 65
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 62,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/skills/summarize": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "summarize",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 88
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/taskflow": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "taskflow",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 217
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/taskflow-inbox-triage": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "taskflow-inbox-triage",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 120
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/things-mac": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "things-mac",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 87
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/tmux": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "tmux",
+      "version": "unknown",
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 368
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/trello": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "trello",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 109
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/video-frames": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "video-frames",
+      "version": "unknown",
+      "file_count": 2,
+      "script_count": 1,
+      "total_lines": 129
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/voice-call": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "voice-call",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 46
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/wacli": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "wacli",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 73
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/weather": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "weather",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 130
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/skills/xurl": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "xurl",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 462
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/dist/extensions/acpx/skills/acp-router": {
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "acp-router",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 249
+    },
+    "findings": [
+      {
+        "pattern": "credential_paths",
+        "severity": "critical",
+        "file": "SKILL.md",
+        "line": 128,
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ]
+  },
+  "/usr/lib/node_modules/openclaw/dist/extensions/browser/skills/browser-automation": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "browser-automation",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 89
+    },
+    "findings": []
+  },
+  "/usr/lib/node_modules/openclaw/dist/extensions/tavily/skills/tavily": {
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "tavily",
+      "version": "unknown",
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 95
+    },
+    "findings": []
+  }
+}

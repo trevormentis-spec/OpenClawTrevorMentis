@@ -6,5 +6,13 @@
     "posted": false,
     "reason": "Skipped — latest brief is from 2026-05-02 (2 days stale). Protocol: skip if no fresh brief is ready.",
     "content_preview": ""
+  },
+  {
+    "date": "2026-05-05",
+    "time_utc": "20:30",
+    "platform": "twitter",
+    "posted": false,
+    "reason": "Skipped — latest analyzed brief is from 2026-05-02 (3 days stale). Raw news refreshed 2026-05-05 but analysis brief not regenerated. Protocol: skip if no fresh brief is ready.",
+    "content_preview": ""
   }
 ]

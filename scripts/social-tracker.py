@@ -20,7 +20,7 @@ def save_log(data):
 
 def check_moltbook():
     """Check Moltbook activity"""
-    mb_key = "moltbook_sk_cvBxNLMXe1lI2OveWhhxZaCjHWo9sdKb"
+    mb_key = os.environ.get("MOLTBOOK_API_KEY", "")
     try:
         req = urllib.request.Request(
             "https://www.moltbook.com/api/v1/home",

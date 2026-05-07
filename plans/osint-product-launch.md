@@ -4,6 +4,8 @@
 
 Sell Trevor's Daily Intelligence Brief as a subscription product. This document maps every skill to the pipeline.
 
+**Major update (2026-05-05):** GenViral replaces multiple fragmented posting tools — single API covers TikTok, Instagram, YouTube, Pinterest, LinkedIn, and Facebook through one pipeline.
+
 ---
 
 ## Pipeline Architecture
@@ -14,16 +16,25 @@ Daily Intel Brief cron (05:00 PT)
          ▼
    [TREVOR analysis engine]
          │
-         ├──→ Newsletter skill       → Email edition (AgentMail / Substack)
-         ├──→ cross-poster           → Platform-adapted social drafts
-         ├──→ social-pack            → Twitter/LinkedIn/Reddit variants
-         ├──→ social-media-scheduler → Posting calendar + cadence
-         ├──→ social-poster          → Live posting (VibePost API)
-         └──→ landing-page-generator → Product sales page
+         ├──→ Newsletter skill          → Email edition (AgentMail)
+         ├──→ GenViral skill            → 6-platform social posting
+         │       ├──→ TikTok (slideshow drafts)
+         │       ├──→ Instagram (carousels)
+         │       ├──→ YouTube (Shorts)
+         │       ├──→ LinkedIn (articles/snippets)
+         │       ├──→ Pinterest (infographics)
+         │       └──→ Facebook (cross-posts)
+         ├──→ landing-page-generator    → Product sales page
+         └──→ visual_production         → Magazine PDF output
                   │
                   ▼
-          skill-stripe-monitor       → Revenue tracking
+          skill-stripe-monitor          → Revenue tracking
 ```
+
+**Content prep layer** (runs before posting):
+- `cross-poster` → adapts the brief into platform-appropriate copy
+- `social-pack` → generates platform variants from one source
+- `social-media-scheduler` → manages calendar + cadence
 
 ---
 
@@ -36,7 +47,7 @@ Daily Intel Brief cron (05:00 PT)
 - Generate the product sales page
 - Deploy to Netlify (already have auth + pipeline)
 - Roast it with `landing-page-roast` before going live
-- URL: `https://glittering-croquembouche-68ad80.netlify.app/` (existing dashboard)
+- URL: `https://quiet-kangaroo-c0b94c.netlify.app/` (existing landing page)
 
 **Content:**
 - Hero: "Daily OSINT Briefing — Intelligence You Can Act On"
@@ -51,45 +62,78 @@ Daily Intel Brief cron (05:00 PT)
 - AgentMail is already set up for delivery (`trevor_mentis@agentmail.to`)
 - newsletter-creation-curation provides industry positioning and cadence
 
-### 1.3 Social Presence
+### 1.3 GenViral Account Setup
 
-**Skills:** `cross-poster`, `social-pack`, `social-media-scheduler`
+**Skill:** `genviral` ✅ (installed, key configured, subscription active)
 
-- **cross-poster** — Adapt each brief for Twitter/X, LinkedIn, Reddit
-- **social-pack** — Generate platform-specific variants from one brief
-- **social-media-scheduler** — Plan the posting calendar (daily at 06:00 PT)
+**Prerequisites — connect accounts:**
+GenViral has 0 accounts connected. You'll need to log into https://www.genviral.io and connect at least one platform account per target platform:
+
+| Platform | Recommended for OSINT | Priority |
+|---|---|---|
+| LinkedIn | Professional / analyst audience | 🥇 HIGH |
+| Twitter/X | Real-time thread distribution | 🥇 HIGH |
+| Instagram | Visual geopolitics / maps | 🥈 MEDIUM |
+| TikTok | Slideshow briefs (trending format) | 🥈 MEDIUM |
+| YouTube | Video analysis / Shorts | 🥉 LOWER |
+| Pinterest | Infographic distribution | 🥉 LOWER |
+
+**Hosted accounts** are available if you don't want to connect personal profiles. Check in the Genviral dashboard.
+
+**After connecting accounts**, run:
+```bash
+GENVIRAL_API_KEY="gva_live_..." bash skills/genviral/scripts/genviral.sh accounts
+```
+Then save the account IDs to `skills/genviral/defaults.yaml` under `posting.default_account_ids`.
 
 ---
 
 ## Phase 2: Distribution (week 2)
 
-### 2.1 Live Posting
+### 2.1 Live Posting — GenViral (Replaces ALL old posting tools)
 
-**Skills:** `social-poster`, `social-media-agent`
+**Legacy tools removed from the plan:**
+- ~~`social-poster` (VibePost)~~ → replaced by GenViral (6 platforms, 1 API)
+- ~~`social-post` (Twitter/Farcaster)~~ → replaced by GenViral API
+- ~~`social-media-agent` (browser automation)~~ → replaced by GenViral API
 
-| Skill | Method | API Key Needed? |
-|---|---|---|
-| `social-poster` | VibePost API (node script) | x-quack-api-key |
-| `social-post` | Twitter OAuth + Farcaster API | Twitter dev creds |
-| `social-media-agent` | Browser automation (no keys) | None ✅ |
+**GenViral posting workflow for daily briefs:**
 
-**Recommended path:** Start with `social-media-agent` (no API keys, browser automation via OpenClaw's `browser` tool). Upgrade to `social-poster` or `social-post` once traffic justifies API costs.
+1. **TREVOR finishes analysis** (05:00 PT cron)
+2. **cross-poster / social-pack** adapts content into platform-appropriate copy
+3. **GenViral create-post** pushes to all connected platforms:
+   - **LinkedIn:** Full brief highlight post (direct)
+   - **TikTok:** Slideshow draft (MEDIA_UPLOAD mode → human adds trending sound → publishes)
+   - **Instagram:** Carousel post (DIRECT_POST)
+   - **YouTube:** Shorts video (DIRECT_POST)
+   - **Facebook/Pinterest:** Cross-published (DIRECT_POST)
+4. **Performance tracking:** GenViral analytics → `workspace/performance/log.json` → weekly review
 
 ### 2.2 Content Calendar
 
-**Skills:** `social-media-scheduler`, `content-marketing`
+**Skills:** `social-media-scheduler`, `content-marketing`, `genviral`
 
 Weekly content mix from the brief:
 
-| Day | Content Type | Platform | Skill |
+| Day | Content Type | Platform(s) | Format |
 |---|---|---|---|
-| Mon | Full brief highlight | LinkedIn | cross-poster |
-| Tue | Key finding thread | Twitter/X | social-pack |
-| Wed | Analysis snippet | Reddit | cross-poster |
-| Thu | Infographic + caption | LinkedIn/Insta | social-pack |
-| Fri | Weekly roundup prompt | All | social-media-scheduler |
-| Sat | Community engagement | Twitter/X | social-media-agent |
-| Sun | Preview of Monday's brief | All | cross-poster |
+| Mon | Full brief highlight + BLUF | LinkedIn, Facebook | Text + key image |
+| Tue | Regional deep-dive thread | TikTok slideshow draft | 5-7 slide carousel |
+| Wed | Key insight + map | Instagram, Pinterest | Infographic carousel |
+| Thu | Analysis snippet + methodology | LinkedIn, Facebook | Text + data point |
+| Fri | Weekly roundup | YouTube Shorts | 60s video summary |
+| Sat | Featured intelligence graphic | Instagram, Pinterest | Visual only |
+| Sun | Monday preview hook | TikTok draft | 3-slide teaser |
+
+### 2.3 Trend Intelligence & Niche Research
+
+GenViral's `trend-brief` command provides fast niche intelligence:
+- Top hashtags in the OSINT/security space
+- Top sounds and creators
+- Best posting windows
+- Recommended hook angles
+
+This feeds back into content optimization without manual research.
 
 ---
 
@@ -121,23 +165,32 @@ Tiered pricing via Stripe:
 
 ---
 
-## Skill Inventory — Final Map
+## GenViral Subscription Details
+
+- **Tier:** Small (yearly billing)
+- **Status:** Active ✅
+- **Credits:** 2,400 / 2,400 remaining
+- **Reset:** Monthly
+- **Billing period:** 2026-05-05 → 2027-05-05
+- **Key:** Stored in TOOLS.md and env var `GENVIRAL_API_KEY`
+
+---
+
+## Skill Inventory — Updated Map
 
 ```
 Category       │ Skill                    │ Role
 ───────────────┼──────────────────────────┼───────────────────────────
-Content        │ cross-poster             │ Platform-adapted drafts
+Content Prep   │ cross-poster             │ Platform-adapted drafts
                │ social-pack              │ Multi-platform variants
                │ social-media-scheduler   │ Calendar + cadence
                │ content-marketing        │ Strategy + funnel
-               │ content-generation       │ Broader content creation
 ───────────────┼──────────────────────────┼───────────────────────────
-Posting        │ social-poster            │ VibePost API posting
-               │ social-post              │ Twitter/Farcaster API
-               │ social-media-agent       │ Browser automation posting
+Posting Engine │ genviral 🆕              │ 6-platform posting (TikTok, IG, YT, LI, FB, Pin)
 ───────────────┼──────────────────────────┼───────────────────────────
 Newsletter     │ newsletter               │ Monetization strategy
-               │ newsletter-creation-*     │ Industry positioning
+               │ newsletter-creation-*    │ Industry positioning
+               │ agentmail                │ Email delivery
 ───────────────┼──────────────────────────┼───────────────────────────
 Sales Page     │ landing-page-generator   │ Product page build
                │ landing-page-roast       │ Conversion audit
@@ -147,31 +200,59 @@ Revenue        │ skill-stripe-monitor     │ MRR / churn / alerts
 Existing       │ visual_production        │ Magazine PDF output
                │ bluf-report              │ Executive summaries
                │ daily-intel-brief (cron) │ The core product
-               │ agentmail                │ Email delivery
                │ moltdbook                │ Social presence / community
 ```
+
+**Retained (content prep only):**
+- `cross-poster` — still useful for adapting copy per platform before GenViral posts it
+- `social-pack` — still useful for multi-platform variants
+- `social-media-scheduler` — still useful for calendar management
+
+**Archived (replaced by GenViral):**
+- ~~`social-poster` (VibePost)~~ — replaced
+- ~~`social-post` (Twitter/Farcaster)~~ — replaced
+- ~~`social-media-agent` (browser automation)~~ — replaced
 
 ---
 
 ## Environment Variables Needed
 
-| Var | Required By | Source |
-|---|---|---|
-| `STRIPE_SECRET_KEY` | skill-stripe-monitor | Stripe dashboard |
-| `X_CONSUMER_KEY` | social-post | Twitter Developer Portal |
-| `X_CONSUMER_SECRET` | social-post | Twitter Developer Portal |
-| `X_ACCESS_TOKEN` | social-post | Twitter Developer Portal |
-| `X_ACCESS_TOKEN_SECRET` | social-post | Twitter Developer Portal |
-| `VIBEPOST_API_KEY` | social-poster | VibePost (third-party) |
-| `AGENTMAIL_API_KEY` | Newsletter delivery | Already configured ✅ |
+| Var | Required By | Source | Status |
+|---|---|---|---|
+| `GENVIRAL_API_KEY` | genviral skill | GenViral dashboard | ✅ Configured |
+| `AGENTMAIL_API_KEY` | Newsletter delivery | AgentMail | ✅ Already configured |
+| `STRIPE_SECRET_KEY` | skill-stripe-monitor | Stripe dashboard | ❌ Pending |
+| ~~`X_CONSUMER_KEY`~~ | ~~social-post~~ | ~~Twitter~~ | 🗑️ No longer needed |
+| ~~`X_CONSUMER_SECRET`~~ | ~~social-post~~ | ~~Twitter~~ | 🗑️ No longer needed |
+| ~~`X_ACCESS_TOKEN`~~ | ~~social-post~~ | ~~Twitter~~ | 🗑️ No longer needed |
+| ~~`X_ACCESS_TOKEN_SECRET`~~ | ~~social-post~~ | ~~Twitter~~ | 🗑️ No longer needed |
+| ~~`VIBEPOST_API_KEY`~~ | ~~social-poster~~ | ~~VibePost~~ | 🗑️ No longer needed |
 
 ---
 
+## Current Status — 2026-05-05
+
+### ✅ Completed
+
+| Step | Detail |
+|------|--------|
+| 1. Connect accounts | LinkedIn + TikTok + Twitter connected ✅ |
+| 2. Verify accounts | IDs saved to defaults.yaml ✅ |
+| 3. Generate landing page | Built, deployed to https://quiet-kangaroo-c0b94c.netlify.app ✅ |
+| 4. Roast landing page | Score 7/10 — full audit at exports/landing-roast.md ✅ |
+| 5. Wire GenViral to cron | scripts/genviral-post-brief.sh + Step 4 in daily-brief-cron.sh ✅ |
+| 6-7. Deploy | Netlify live, email capture via Netlify Forms, sample preview section ✅ |
+
+### 🔴 Remaining
+
+| Item | Blocked By |
+|------|-----------|
+| Stripe checkout links on pricing | Need valid sk_test key |
+| skill-stripe-monitor activation | Same — sk_test key |
+| Form submission backend routed to AgentMail | Netlify forms catch submissions but need auto-forward to brief pipeline |
+
 ## Immediate Next Steps
 
-1. **Generate the landing page** — `landing-page-generator` with product brief
-2. **Roast the landing page** — `landing-page-roast` for conversion audit
-3. **Wire cross-poster** to the daily brief output — adapt one brief into 3 platform drafts
-4. **Set up social-media-scheduler** — define the weekly content pillars
-5. **Configure Stripe** — create products + set `STRIPE_SECRET_KEY`
-6. **Deploy** — Push to Netlify, activate social posting, open subscriptions
+1. **Paste the Stripe sk_test key** cleanly → wire into pricing CTAs
+2. **Activate skill-stripe-monitor** with STRIPE_SECRET_KEY
+3. **Route Netlify form submissions** to AgentMail brief pipeline

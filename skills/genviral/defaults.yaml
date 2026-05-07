@@ -26,15 +26,17 @@ content:
 
 posting:
   # Your default account ID (run list-accounts to find it)
-  default_account_ids: ""
+  default_account_ids: "d3adbc5a-04fe-4dc1-93ab-b920f14ec968,b03637b7-7043-4412-a408-6aac3da0ac25,95f9ef18-1454-41aa-be98-0716c87791ca"
   privacy_level: "PUBLIC_TO_EVERYONE"
   post_mode: "DIRECT_POST"
 
 schedule:
   posts_per_day: 1
-  target_timezone: "America/New_York"
+  target_timezone: "America/Los_Angeles"
   posting_times:
-    - "14:00"
+    - "07:00"
+    - "12:00"
+    - "17:00"
   active_days: [0, 1, 2, 3, 4, 5, 6]
 
 hooks:

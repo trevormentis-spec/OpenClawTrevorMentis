@@ -1,33 +1,33 @@
-# Secrets and credentials
-*.key
-*.pem
-**/credentials/
-**/auth-state.json
-.env
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-
-# Netlify deploy cache
-.netlify/
-
-# PDF venv (generated)
-.venv_pdf/
-
-# Generated images (regenerated each run)
-exports/images/
 
 # Generated PDFs (regenerated each run)
-exports/pdfs/
-
+# Generated images (regenerated each run)
+# Netlify deploy cache
+# OS files
+# PDF venv (generated)
+# Python
+# Secrets and credentials
 # brain/ runtime — index is regenerated, working memory is ephemeral
+**/auth-state.json
+**/credentials/
+*.key
+*.pem
+*.pyc
+*.pyo
+.DS_Store
+.env
+.netlify/
+.venv/
+.venv_pdf/
+Thumbs.db
+__pycache__/
 brain/index/index.json
+brain/memory/semantic/deepseek-usage.json
 brain/working-memory.json
+exports/images/
+exports/pdfs/
+exports/social/
+logs/
+skills/genviral/defaults.yaml
+skills/genviral/workspace/
+tmp/
+venv/
