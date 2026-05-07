@@ -33,3 +33,10 @@
   REBUILD_ORCHESTRATION.md archived to `docs/archive/`.
 - Diagrams (Mermaid/SVG) preferred over image generation.
 - Memory retrieval limited to top 3 relevant chunks for cost optimization.
+
+## Durable Decisions — Pipeline & Operations
+- [2026-05-06] **`analyze.py` max_tokens=8192** for DeepSeek V4 Pro calls.
+  V4 Pro's reasoning token consumption eats default 2000 tokens leaving empty content.
+  Must use 8192+ for call_deepseek() to return substantive analysis.
+  See `analyst/pipeline/analyze.py` for the fix.
+- Social posting must source exclusively from Gmail daily brief PDF, never from local files.
