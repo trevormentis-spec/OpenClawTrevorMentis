@@ -977,3 +977,128 @@ _Scanned at 2026-05-03 19:14 UTC by Trevor OSINT Deep Search (cron: 08cae30c)_
 
 ---
 _Intel digest generated 2026-05-04 19:00 UTC by Gmail Intelligence Label scan_
+
+---
+
+# Gmail Intelligence Digest — 2026-05-05 19:00 UTC
+
+## ISW Iran Update Special Report, May 4
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 01:15 UTC
+
+**Key developments:**
+- Iran attempting to demonstrate "control" over Strait of Hormuz by attacking commercial vessels, UAE oil infrastructure, and a civilian building in Oman
+- Iran seeks to retain strait leverage as key bargaining chip against US
+- Strait "control" allows Iran to pressure global oil prices, imposing economic/political costs on US
+- Trump said May 3 that US Navy would escort commercial vessels through the strait
+
+## ISW Russian Offensive Campaign Assessment, May 4
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 00:15 UTC
+
+**Key developments:**
+- Leaked European intelligence report: Putin increasingly concerned over personal safety and senior officials' safety
+- Russian security forces increased measures — Putin fears assassination attempts including drone strikes
+- Putin spending most time in underground bunkers in Krasnodar Krai; stopped going to Moscow/Valdai residences
+- Internet shutdowns in Moscow City partially related to Putin's security and anti-drone measures
+
+## ISW Korean Peninsula Update, May 5
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 17:31 UTC
+
+**Key developments:**
+- North Korea can produce enough fissile material for up to 20 nuclear warheads annually
+- Projected to field 290 nuclear warheads by 2035 — equivalent to France's arsenal
+- This expansion could force US/South Korea to re-evaluate intercept capabilities and preemptive strike options
+
+## ISW SPECIAL: Russia's Resettlement Strategy in Occupied Ukraine
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 15:10 UTC
+
+**Key developments:**
+- Russia engaged in systematic campaign to repopulate occupied Ukraine with Russian citizens
+- Accelerated over past year as occupation formalized through administrative mechanisms
+- Methods: weaponized property law, "ownerless" housing seizures, state-backed financial incentives
+- Moscow using imported Russian labor/civil servants to staff institutions in occupied territories
+
+## CTP SPECIAL: Applying US Air Warfare Theory to Iran Campaign, Part II
+- **Source:** CTP Publications <criticalthreats@aei.org>
+- **Date:** Mon, 4 May 2026 21:04 UTC
+
+**Key developments:**
+- Second part of series assessing US-Israeli campaign against Iran
+- Focus: Iranian missile forces capabilities and vulnerabilities
+
+## ISW Intel Brief — April 2026
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 13:31 UTC
+
+**Key developments:**
+- Kremlin's Expanding Media Conglomerate 2026 — Russia's cognitive warfare infrastructure
+- PLA lessons-learned from Ukraine/Middle East adapting to modern warfare
+- Middle East security challenges across ISW research portfolios
+
+---
+_Intel digest generated 2026-05-05 19:00 UTC by Gmail Intelligence Label scan_
+
+---
+
+# Gmail Intelligence Digest — 2026-05-06 19:00 UTC
+
+## ISW Russian Offensive Campaign Assessment, May 5
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Wed, 6 May 2026 02:31 UTC
+
+**Key developments:**
+- Continued Ukrainian long-range strikes deep in Russian rear demonstrate Russia's inability to reliably defend major cities and infrastructure in European Russia
+- Ukrainian forces struck Kirishinefteorgsintez Oil Refinery near Kirishi, Leningrad Oblast, and VNIIR-Progress plant near Cheboksary, Republic of Chuvashia
+- VNIIR-Progress produces GLONASS/GPS/Galileo receivers, Kometa EW-resistant navigation components used in Russian long-range drones and missiles
+- Zelensky stated F-5 Flamingo missiles used from >1,500km; geolocated footage confirms 6 Flamingo missiles + An-196 "Lyutyi" drone strike
+- Cheboksary only ~300km from Alabuga Special Economic Zone (major Shahed drone production)
+- NASA FIRMS shows heat anomalies at Kirishi Oil Refinery
+
+## ISW Iran Update Special Report, May 5
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Tue, 5 May 2026 23:51 UTC
+
+**Key developments:**
+- Iran conducted series of attacks against UAE over past 48h, likely to isolate UAE from other Gulf states
+- UAE Defense Ministry reported air defenses engaged Iranian missiles and drones May 5
+- Iran previously launched four waves of attacks on UAE May 4, including drone attack on Fujairah Petroleum Industrial Zone
+- Iran targeting UAE alone (not multiple Gulf states) — calculated to exploit fractures, not unite Gulf states against Iran
+- Seen as response to UAE strengthening partnership with US and Israel
+
+## CTP Iran Update Evening Special Report, May 5
+- **Source:** CTP Publications <criticalthreats@aei.org>
+- **Date:** Tue, 5 May 2026 23:15 UTC
+
+**Key developments:**
+- Hezbollah attacks in Israel and Lebanon
+- Regular update on political, security, social developments in Iran region
+
+## The Cipher Brief — National Security Nightcap, May 5
+- **Source:** The Cipher Brief <dailybrief@thecipherbrief.com>
+- **Date:** Tue, 5 May 2026 20:05 UTC
+
+**Key developments:**
+- "Ceasefire" in the Strait of Hormuz — depends on definition; analysis of what's really happening
+- US intelligence assessment on Russia's strategic approach
+
+## Foreign Policy: Japan and China Edging Dangerously Close to Conflict
+- **Source:** Foreign Policy <reply@foreignpolicy.com>
+- **Date:** Wed, 6 May 2026 18:10 UTC
+
+**Key developments:**
+- Japan-China tensions escalating toward potential conflict
+- Implications for regional security architecture
+
+## Foreign Policy Editors' Picks: The New Critical Minerals Map
+- **Source:** Foreign Policy <newsletters@foreignpolicy.com>
+- **Date:** Tue, 5 May 2026 22:00 UTC
+
+**Mentions:**
+- New critical minerals map — supply chain geopolitics
+- Britain leaving two-party politics behind
+
+---
+_Intel digest generated 2026-05-06 19:00 UTC by Gmail Intelligence Label scan_

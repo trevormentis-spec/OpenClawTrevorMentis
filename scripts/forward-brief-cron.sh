@@ -17,7 +17,7 @@ echo "=== Forward Brief — ${DATE_UTC} ===" | tee -a "$LOG"
 echo "Started at $(date -u)" | tee -a "$LOG"
 
 source "$REPO/.env" 2>/dev/null || true
-MATON_API_KEY="${MATON_API_KEY:-v2.6nu4_hHJrTgK89bZgm51KLvKHkKptaQUJ-gCUQYtBccrIrto5Orulq6RYk8oE_kqxnj-Aros5JlV0o2D9W4l-usvIRllBBpZ_5jZiD0fyWDQBfzre1IXFEib}"
+MATON_API_KEY="${MATON_API_KEY:-}"
 
 cd "$REPO"
 
@@ -84,8 +84,8 @@ print(f'DATE:{date_str}')
 
 # Save message info for forwarding step
 info = {'msg_id': msg_id, 'subject': subject, 'date': date_str}
-    with open('/tmp/latest_brief_info.json', 'w') as f:
-        json.dump(info, f)
+with open('/tmp/latest_brief_info.json', 'w') as f:
+    json.dump(info, f)
 " 2>&1 | tee -a "$LOG"
 
 # Check if brief was found
@@ -131,7 +131,7 @@ except Exception as e:
     print(f'DATE:{date_str}')
     
     info = {'msg_id': msg_id, 'subject': subject, 'date': date_str}
-    with open('/tmp/latest_brief_info.json', 'w') as f:
+    with open("/tmp/latest_brief_info.json", "w") as f:
         json.dump(info, f)
 " 2>&1 | tee -a "$LOG"
 fi

@@ -2,6 +2,12 @@
 #==============================================================================
 # daily-brief-cron.sh — Run the Daily Intel Brief pipeline and deliver via Gmail
 #
+# ╔══════════════════════════════════════════════════════════════════════╗
+# ║  BINDING RULE: Only post the daily intel brief from Gmail.          ║
+# ║  No promotional content, no product announcements, no marketing     ║
+# ║  posts — ONLY the daily intel brief goes to social platforms.        ║
+# ╚══════════════════════════════════════════════════════════════════════╝
+#
 # Schedule: Triggered by OpenClaw cron at 05:00 PT
 # Flow:     05:00 PT — starts collection + analysis + visuals + PDF assembly
 #           07:00 PT — brief delivered to Roderick via Gmail
@@ -21,8 +27,11 @@ echo "Started at $(date -u)" | tee -a "$LOG"
 # Source environment
 source "$REPO/.env" 2>/dev/null || true
 export DEEPSEEK_API_KEY="${DEEPSEEK_API_KEY:-}"
-export MATON_API_KEY="${MATON_API_KEY:-v2.6nu4_hHJrTgK89bZgm51KLvKHkKptaQUJ-gCUQYtBccrIrto5Orulq6RYk8oE_kqxnj-Aros5JlV0o2D9W4l-usvIRllBBpZ_5jZiD0fyWDQBfzre1IXFEib}"
+export MATON_API_KEY="${MATON_API_KEY:-}"
 export AGENTMAIL_API_KEY="${AGENTMAIL_API_KEY:-}"
+export GENVIRAL_API_KEY="${GENVIRAL_API_KEY:-}"
+export STRIPE_SECRET_KEY="${STRIPE_SECRET_KEY:-}"
+export MOLTBOOK_API_KEY="${MOLTBOOK_API_KEY:-}"
 
 # Check DeepSeek key
 if [ -z "$DEEPSEEK_API_KEY" ]; then
@@ -179,5 +188,39 @@ except Exception as e:
     print(f'Delivery failed: {e}')
     exit(1)
 " 2>&1 | tee -a "$LOG"
+
+# Step 4: Post to social platforms via GenViral
+# Uses the same PDF that was just emailed to Roderick
+echo "--- Posting to social platforms via GenViral ---" | tee -a "$LOG"
+if [ -n "${GENVIRAL_API_KEY:-}" ]; then
+    if bash "$REPO/scripts/genviral-post-brief.sh" --pdf "$PDF_PATH" 2>&1 | tee -a "$LOG"; then
+        echo "Social posts successful" | tee -a "$LOG"
+    else
+        echo "WARNING: Social posting failed (non-fatal)" | tee -a "$LOG"
+    fi
+else
+    echo "GENVIRAL_API_KEY not set — skipping social posts" | tee -a "$LOG"
+fi
+
+# Step 5: Post to Moltbook
+# Uses the same PDF — posts brief content to builds + agents submolts
+echo "--- Posting to Moltbook ---" | tee -a "$LOG"
+if [ -n "${MOLTBOOK_API_KEY:-}" ]; then
+    if bash "$REPO/scripts/moltbook-post-brief.sh" --pdf "$PDF_PATH" 2>&1 | tee -a "$LOG"; then
+        echo "Moltbook posts successful" | tee -a "$LOG"
+    else
+        echo "WARNING: Moltbook posting failed (non-fatal)" | tee -a "$LOG"
+    fi
+else
+    echo "MOLTBOOK_API_KEY not set — skipping Moltbook" | tee -a "$LOG"
+fi
+
+# Step 6: Generate agent-optimized JSON and notify subscribers
+echo "--- Building agent API ---" | tee -a "$LOG"
+if bash "$REPO/scripts/agent-brief-api.sh" --publish 2>&1 | tee -a "$LOG"; then
+    echo "Agent API ready" | tee -a "$LOG"
+else
+    echo "WARNING: Agent API step failed (non-fatal)" | tee -a "$LOG"
+fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"

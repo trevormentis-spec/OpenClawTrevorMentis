@@ -1,0 +1,20 @@
+[
+  {
+    "brief_id": "gsib-2026-05-07",
+    "timestamp": "2026-05-07T12:21:26.595830",
+    "notified": 0,
+    "total_active": 0
+  },
+  {
+    "brief_id": "gsib-2026-05-05",
+    "timestamp": "2026-05-05T08:34:49.120561",
+    "notified": 1,
+    "total_active": 1
+  },
+  {
+    "brief_id": "gsib-2026-05-06",
+    "timestamp": "2026-05-06T16:56:03.681043",
+    "notified": 0,
+    "total_active": 0
+  }
+]

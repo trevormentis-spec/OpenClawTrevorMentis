@@ -38,10 +38,14 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ### Moltbook
 
 - Registered as `trevormentis` on Mon, May 2026
-- API key saved at `~/.config/moltbook/credentials.json`
+- API key saved at `~/.config/moltbook/credentials.json` and `.env` as `MOLTBOOK_API_KEY`
 - Profile: https://www.moltbook.com/u/trevormentis
 - Base URL: https://www.moltbook.com/api/v1
 - Status: active ✅
+- Posted to submolts: `builds` (primary), `agents` (secondary)
+- **Posting script:** `scripts/moltbook-post-brief.sh --gmail`
+- **API auth:** Bearer token in Authorization header
+- **Create post:** `POST /api/v1/posts` with `{title, content, submolt}`
 
 ## Search
 
@@ -50,6 +54,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **Provider:** Brave Search API (replaces Perplexity Sonar for web_search tool)
 - **Config:** 5 max results, 30s timeout, 15min cache TTL
 - **Plugin:** Brave plugin enabled in `plugins.entries.brave`
+
+### Kalshi Market Scanner
+
+- **API key:** `KALSHI_API_KEY=8733a0f8-22a6-4478-87b1-3a4b32dfb583` in `.env`
+- **Script:** `scripts/kalshi_scanner.py`
+- **Usage:** `python3 scripts/kalshi_scanner.py` (table), `--save` (to exports/), `--json` (JSON), `--compare-polymarket` (includes Polymarket ceasefire data)
+- **Scans:** 60+ geopolitics/war/oil/conflict series across Kalshi
+- **Output:** `exports/kalshi-scan-YYYY-MM-DD.md`
+- **Status:** Working ✅ — 88 active markets across 18 geopolitics series found
 
 ### NewsAPI
 - **API key:** `560850e45ebe4f79987a7a0961d3e275` (env var: `NEWSAPI_KEY`)
@@ -66,12 +79,16 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Official AgentMail skill is installed in `skills/agentmail` and enabled in OpenClaw config.
 - Fast send path when needed: use AgentMail REST API with bearer auth from local secrets only.
 
-### Netlify — OSINT Product Pages
+### GitHub Pages — OSINT Product Landing Page
 
-- **Landing page (live):** https://quiet-kangaroo-c0b94c.netlify.app/
-- **Old dashboard:** https://glittering-croquembouche-68ad80.netlify.app/
-- **Auth token:** stored in `.env` as `NETLIFY_AUTH_TOKEN` (not committed to git)
-- Source content lives in `exports/` directory — HTML files get deployed
+- **Live site:** https://trevormentis-spec.github.io/trevor-landing-page/
+- **Repo:** `trevormentis-spec/trevor-landing-page` (GitHub Pages)
+- **Deploy script:** `scripts/deploy_landing_page.sh` — updates daily with latest brief PDF, theatre summaries, Kalshi data
+- **Cron:** Runs automatically after DailyIntelAgent pipeline completes (Step 9)
+- **Auth token:** GitHub PAT in `.env` + git remote URL
+- **Old Netlify sites:** 
+  - Landing (paused - bandwidth limit): https://quiet-kangaroo-c0b94c.netlify.app/
+  - Dashboard: https://glittering-croquembouche-68ad80.netlify.app/
 
 ### DeepSeek Token Monitor
 
@@ -123,6 +140,20 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - `landing-page-generator` — Product page HTML/CSS
   - `landing-page-roast` — Conversion audit + copy rewrites
   - `skill-stripe-monitor` — MRR, churn, revenue alerts
+
+### GenViral API
+
+- **API key:** `gva_live_85f455afed.f31634f6c58668fb8414deb55eb526cbbabbbc7506feffc2`
+- **Usage:** Viral content generation / social media amplification
+- **Status:** Saved ✅
+
+### Stripe
+
+- **Mode:** Sandbox (test mode)
+- **Secret key:** Saved to `.env` as `STRIPE_SECRET_KEY`
+- **Products created:** GSIB Pro ($19/mo, `price_1TTe29KACGnQWpy5eEcHuAIN`), GSIB Enterprise ($99/mo, `price_1TTe2AKACGnQWpy5VskAsyhN`)
+- **Payment links:** Pro → https://buy.stripe.com/test_cNi00kgpp7nLfNYg1tc3m00, Enterprise → https://buy.stripe.com/test_4gMdRac995fDbxIcPhc3m01
+- **skill-stripe-monitor:** Installed and ready (query `/stripe status` or ask about MRR)
 
 ---
 

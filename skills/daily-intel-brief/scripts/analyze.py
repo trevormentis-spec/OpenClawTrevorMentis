@@ -84,7 +84,7 @@ def split_prompts(prompts_md: str) -> dict[str, str]:
 
 
 def call_deepseek(model: str, system: str, user: str,
-                  temperature: float = 0.3, max_tokens: int = 2000,
+                  temperature: float = 0.3, max_tokens: int = 8192,
                   json_mode: bool = True) -> str:
     api_key = os.environ.get("DEEPSEEK_API_KEY")
     if not api_key:

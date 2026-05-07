@@ -48,6 +48,9 @@ WIRE_FEEDS = [
     ("FT World", "https://www.ft.com/world?format=rss"),
 ]
 
+# Gmail intel digest — newsletters from Cipher Brief, Foreign Policy, etc.
+NEWS_RAW_PATH = pathlib.Path("/home/ubuntu/.openclaw/workspace/tasks/news_raw.md")
+
 DEFAULT_ADMIRALTY = ("B", 2)  # major wires default; downgrade for state media
 
 USER_AGENT = "TrevorDailyBrief/1.0 (+https://github.com/trevormentis-spec/OpenClawTrevorMentis)"
@@ -209,6 +212,87 @@ def make_id(occurred: str, country: str, headline: str) -> str:
     return f"i-{occurred[:10]}-{h}"
 
 
+def parse_news_raw(path: pathlib.Path) -> list[dict]:
+    """Parse news_raw.md into collector-compatible items.
+
+    Handles two formats:
+      1. Global News items (### Headline → Source/Summary/Link)
+      2. Gmail intel digest (## Newsletter → key development bullets)
+    """
+    items: list[dict] = []
+    if not path.exists():
+        return items
+
+    text = path.read_text(encoding="utf-8")
+    lines = text.split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+
+        # Format 1: ### Headline block
+        if line.startswith("### ") and not line.startswith("#### "):
+            headline = line[4:].strip()
+            source = ""
+            summary = ""
+            link = ""
+            j = i + 1
+            while j < len(lines) and j < i + 10:
+                s = lines[j].strip()
+                if s.startswith("- **Source:**"):
+                    source = s.split("**Source:**", 1)[-1].strip()
+                elif s.startswith("- **Summary:**"):
+                    summary = s.split("**Summary:**", 1)[-1].strip()
+                elif s.startswith("- **Link:**"):
+                    link = s.split("**Link:**", 1)[-1].strip()
+                elif s.startswith("### ") or s.startswith("## "):
+                    break
+                j += 1
+            if source:
+                items.append({
+                    "title": headline, "link": link,
+                    "summary": summary, "pub": "",
+                    "source": source.strip(),
+                    "admiralty": ("B", 2),
+                    "_bypass_filter": True,
+                })
+            i = j
+            continue
+
+        # Format 2: ## Newsletter section
+        if line.startswith("## ") and "\u2014" in line:
+            section_title = line[3:].strip()
+            bullet_source = section_title.split("\u2014")[0].strip()
+            j = i + 1
+            bullets = []
+            while j < len(lines):
+                s = lines[j]
+                if s.startswith("## ") and s != line:
+                    break
+                stripped = s.strip()
+                if stripped.startswith("- ") and len(stripped) > 20:
+                    if not any(stripped.startswith(x) for x in [
+                        "- **Source:**", "- **Date:**", "- **Mentions:**"
+                    ]):
+                        bullets.append(stripped[2:].strip())
+                j += 1
+            for b in bullets:
+                items.append({
+                    "title": f"[Intel] {b[:120]}", "link": "",
+                    "summary": f"{b} (via {section_title})",
+                    "pub": "",
+                    "source": bullet_source,
+                    "admiralty": ("C", 2),
+                    "_bypass_filter": True,
+                })
+            i = j
+            continue
+
+        i += 1
+
+    log(f"news_raw: {len(items)} items ({len([x for x in items if x['admiralty'][0]=='B'])} global + {len([x for x in items if x['admiralty'][0]=='C'])} intel)")
+    return items
+
+
 def collect_live(regions: dict, sources: dict) -> tuple[list[dict], list[str]]:
     raw: list[dict] = []
     gaps: list[str] = []
@@ -224,6 +308,8 @@ def collect_live(regions: dict, sources: dict) -> tuple[list[dict], list[str]]:
             gaps.append(f"feed unreachable: {fname}")
             continue
         raw.extend(parse_rss(body, fname))
+    # Gmail intel digest — newsletters collected by the 05:00 PT Gmail cron
+    raw.extend(parse_news_raw(NEWS_RAW_PATH))
     log(f"raw items: {len(raw)}")
     return raw, gaps
 
@@ -233,7 +319,7 @@ def normalise(items: list[dict], regions: dict, window_hours: int = 24) -> list[
     cutoff = now - dt.timedelta(hours=window_hours)
     out: list[dict] = []
     for it in items:
-        if not is_security_relevant(it):
+        if not is_security_relevant(it) and not it.get("_bypass_filter"):
             continue
         country = detect_country(f"{it.get('title','')} {it.get('summary','')}", regions)
         region = country_to_region(country or "", regions) if country else None
@@ -378,6 +464,10 @@ def main() -> int:
         incidents = normalise(raw, regions)
         incidents = deduplicate(incidents)
         incidents = cap_per_region(incidents, cap=args.cap_per_region)
+
+    # Strip internal-only keys from output
+    for inc in incidents:
+        inc.pop("_bypass_filter", None)
 
     out = {
         "generated_at_utc": dt.datetime.utcnow().isoformat() + "Z",
