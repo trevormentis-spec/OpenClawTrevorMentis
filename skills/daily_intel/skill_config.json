@@ -1,11 +1,21 @@
 {
   "name": "daily_intel",
   "description": "Autonomous geopolitical intelligence and PDF publication engine",
-  "primary_model": "openrouter/deepseek/deepseek-v4-flash",
+  "primary_provider": "deepseek",
+  "primary_model": "deepseek-chat",
+  "primary_endpoint": "https://api.deepseek.com/v1",
   "fallback_model": "ollama/qwen2.5:3b",
   "vector_memory": true,
   "autonomous": true,
   "schedule": "0 5 * * *",
+  "required_env": [
+    "DEEPSEEK_API_KEY"
+  ],
+  "optional_env": [
+    "OLLAMA_BASE_URL",
+    "POLYMARKET_API_BASE",
+    "KALSHI_API_BASE"
+  ],
   "capabilities": [
     "research",
     "forecasting",
@@ -13,6 +23,8 @@
     "maps",
     "infographics",
     "prediction_markets",
-    "memory_retrieval"
+    "memory_retrieval",
+    "image_refresh",
+    "daily_distribution"
   ]
 }
