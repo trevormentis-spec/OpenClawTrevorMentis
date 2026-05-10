@@ -35,6 +35,9 @@ from typing import Any
 DEEPSEEK_BASE = os.environ.get("DEEPSEEK_BASE", "https://api.deepseek.com")
 DEEPSEEK_PATH = "/v1/chat/completions"
 
+OPENROUTER_BASE = "https://openrouter.ai/api"
+OPENROUTER_PATH = "/v1/chat/completions"
+
 REGIONS_ORDER = [
     "europe", "asia", "middle_east",
     "north_america", "south_central_america", "global_finance",
@@ -85,12 +88,36 @@ def split_prompts(prompts_md: str) -> dict[str, str]:
 
 def call_deepseek(model: str, system: str, user: str,
                   temperature: float = 0.3, max_tokens: int = 8192,
-                  json_mode: bool = True) -> str:
-    api_key = os.environ.get("DEEPSEEK_API_KEY")
-    if not api_key:
-        raise RuntimeError("DEEPSEEK_API_KEY not set")
+                  json_mode: bool = True,
+                  provider: str = "deepseek") -> str:
+    if provider == "openrouter":
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise RuntimeError("OPENROUTER_API_KEY not set")
+        base_url = OPENROUTER_BASE
+        path = OPENROUTER_PATH
+        # OpenRouter expects full model name (provider/model)
+        api_model = model
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://github.com/trevormentis-spec",
+            "X-Title": "TREVOR Intel Brief",
+        }
+    else:
+        api_key = os.environ.get("DEEPSEEK_API_KEY")
+        if not api_key:
+            raise RuntimeError("DEEPSEEK_API_KEY not set")
+        base_url = DEEPSEEK_BASE
+        path = DEEPSEEK_PATH
+        # DeepSeek uses short model name (strip provider prefix)
+        api_model = model.split("/", 1)[-1] if "/" in model else model
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
     payload = {
-        "model": model.split("/", 1)[-1] if "/" in model else model,
+        "model": api_model,
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
@@ -102,19 +129,16 @@ def call_deepseek(model: str, system: str, user: str,
         payload["response_format"] = {"type": "json_object"}
     body = json.dumps(payload).encode()
     req = urllib.request.Request(
-        DEEPSEEK_BASE + DEEPSEEK_PATH,
+        base_url + path,
         data=body, method="POST",
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
+        headers=headers,
     )
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
+        with urllib.request.urlopen(req, timeout=180) as resp:
             payload = json.loads(resp.read())
     except urllib.error.HTTPError as exc:
         raise RuntimeError(
-            f"DeepSeek HTTPError {exc.code}: {exc.read().decode(errors='replace')[:500]}"
+            f"{provider.upper()} HTTPError {exc.code}: {exc.read().decode(errors='replace')[:500]}"
         )
     return payload["choices"][0]["message"]["content"]
 
@@ -278,6 +302,8 @@ def main() -> int:
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
     parser.add_argument("--model", default="deepseek/deepseek-v4-pro")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
+                        help="API provider to route through (default: deepseek)")
     parser.add_argument("--mock", action="store_true",
                         help="return canned analysis without calling the API")
     args = parser.parse_args()
@@ -321,7 +347,7 @@ def main() -> int:
             user, _short = regional_prompt(regional_template, region,
                                            incidents, iw_md, date_utc)
             try:
-                content = call_deepseek(args.model, system, user)
+                content = call_deepseek(args.model, system, user, provider=args.provider)
                 payload = parse_json_strict(content)
             except Exception as exc:
                 log(f"first attempt failed for {region}: {exc}; retrying with strict system")
@@ -329,7 +355,7 @@ def main() -> int:
                     "\n\nIMPORTANT: respond ONLY with a valid JSON object. "
                     "No prose, no markdown fences."
                 )
-                content = call_deepseek(args.model, strict_system, user)
+                content = call_deepseek(args.model, strict_system, user, provider=args.provider)
                 payload = parse_json_strict(content)
         (analysis_dir / f"{region}.json").write_text(json.dumps(payload, indent=2))
         regional_payloads[region] = payload
@@ -339,7 +365,7 @@ def main() -> int:
         exec_payload = mock_exec(regional_payloads, date_utc)
     else:
         user = exec_prompt(exec_template, regional_payloads, date_utc)
-        content = call_deepseek(args.model, system, user)
+        content = call_deepseek(args.model, system, user, provider=args.provider)
         exec_payload = parse_json_strict(content)
     (analysis_dir / "exec_summary.json").write_text(
         json.dumps(exec_payload, indent=2))
@@ -366,7 +392,7 @@ def main() -> int:
                                target_kj, target_payload.get("narrative", ""),
                                date_utc)
         red_md = call_deepseek(args.model, system, user, json_mode=False,
-                               temperature=0.4)
+                               temperature=0.4, provider=args.provider)
     (analysis_dir / "red_team.md").write_text(red_md)
 
     log(f"wrote 7 analysis files to {analysis_dir}")

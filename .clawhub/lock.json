@@ -76,6 +76,18 @@
     "genviral": {
       "version": "1.0.0",
       "installedAt": 1777875145716
+    },
+    "timeline-chart": {
+      "version": "1.0.0",
+      "installedAt": 1778317314623
+    },
+    "oraclaw-graph": {
+      "version": "1.0.0",
+      "installedAt": 1778403722138
+    },
+    "graph-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1778403754015
     }
   }
 }

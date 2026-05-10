@@ -36,8 +36,7 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]
 SKILL_DIR = pathlib.Path(__file__).resolve().parent.parent
 SCRIPTS = SKILL_DIR / "scripts"
 
-REQUIRED_ENV = ["DEEPSEEK_API_KEY"]
-OPTIONAL_ENV = ["MAPBOX_TOKEN", "CHARTGEN_API_KEY", "AGENTMAIL_API_KEY"]
+
 
 
 def log(msg: str) -> None:
@@ -48,6 +47,10 @@ def log(msg: str) -> None:
 def fail(msg: str, code: int = 2) -> "None":
     log(f"FATAL: {msg}")
     sys.exit(code)
+
+
+REQUIRED_ENV = ["OPENROUTER_API_KEY"]
+OPTIONAL_ENV = ["DEEPSEEK_API_KEY", "MAPBOX_TOKEN", "CHARTGEN_API_KEY", "AGENTMAIL_API_KEY"]
 
 
 def env_check(strict: bool = True) -> None:
@@ -226,8 +229,10 @@ def main() -> int:
                         help="use scripts/mock_incidents.json instead of live collection")
     parser.add_argument("--no-deliver", action="store_true",
                         help="produce the PDF/DOCX but skip agentmail")
-    parser.add_argument("--model", default="deepseek/deepseek-v4-pro",
-                        help="model for the analyst (default: V4 Pro per ORCHESTRATION.md)")
+    parser.add_argument("--model", default="anthropic/claude-opus-4.7",
+                        help="model for the analyst (default: Opus 4.7 via OpenRouter)")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
+                        help="API provider (default: openrouter)")
     parser.add_argument("--strict-env", action="store_true", default=True,
                         help="fail at start if required env vars are missing")
     args = parser.parse_args()
@@ -267,6 +272,7 @@ def main() -> int:
         "--prompts", str(SKILL_DIR / "references" / "deepseek-prompts.md"),
         "--regions", str(SKILL_DIR / "references" / "regions.json"),
         "--model", args.model,
+        "--provider", args.provider,
     ]
     if args.dry_run:
         analyst_cmd.append("--mock")

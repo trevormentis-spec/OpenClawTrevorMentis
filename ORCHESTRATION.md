@@ -47,6 +47,7 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 |-------------|-------------------------------|--------------------------------------|
 | Primary     | `deepseek/deepseek-v4-flash`  | Default for all tasks                |
 | Escalation  | `deepseek/deepseek-v4-pro`    | Complex / high-stakes only           |
+| Pipeline    | `anthropic/claude-opus-4.7`   | Daily Intel Brief analysis writing   |
 | Resilience  | fallback chain above          | API failure on primary               |
 
 ---
@@ -57,8 +58,9 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 - Default: Mermaid (`skills/mermaid`) or hand-rolled SVG / HTML / CSS
 - Reasons: cheaper, deterministic, editable, render in chat
 
-### OpenRouter (Specialist LLMs Only)
-- OpenRouter plugin is **enabled** but strictly for specialist models:
+### OpenRouter (Daily Intel Pipeline + Specialist LLMs)
+- OpenRouter plugin is **enabled** for:
+  - **Daily Intel Brief analysis writing** — `anthropic/claude-opus-4.7` via OpenRouter
   - Image generation (diffusion, Gemini image models)
   - Video generation (Veo, etc.)
   - Text-to-speech
@@ -185,6 +187,7 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 | deepseek-v4-flash          | DeepSeek Direct   | 195K    | Low         |
 | deepseek-chat              | DeepSeek Direct   | 131K    | Low         |
 | deepseek-v4-pro            | DeepSeek Direct   | 1M      | Medium-High |
+| anthropic/claude-opus-4.7  | OpenRouter        | 200K    | High ($5/M in, $25/M out) |
 | myclaw/minimax-m2.7        | MyClaw            | 204K    | Free        |
 | myclaw/kimi-k2.5           | MyClaw            | 200K    | Free        |
 
@@ -203,6 +206,10 @@ cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ## Change Log
 
+- **3.1 (2026-05-10):** Added Pipeline tier for daily intel brief analysis.
+  Writing routed through `anthropic/claude-opus-4.7` via OpenRouter.
+  Updated `orchestrate.py` and `daily-brief-cron.sh` accordingly.
+  OpenRouter doc updated from "Specialist LLMs Only" to include pipeline.
 - **3.0 (2026-05-01):** Reconciled four conflicting routing documents into
   one source of truth. Canonical provider is DeepSeek Direct API.
   REBUILD_ORCHESTRATION.md archived under `docs/archive/`. AGENTS.md,
