@@ -18,12 +18,11 @@
 
 ## Durable Decisions — Social Posting
 
-- **⚠️ BINDING RULE: Only the daily intel brief from Gmail.** The source PDF is in Gmail, labeled "Important Myclaw use this". Always fetch the most recent one with this label for ALL social posts. No exceptions.
-- **Content source: daily intel brief PDF from Gmail, period.** The brief content can go on any platform — LinkedIn, X/Twitter, TikTok, and Moltbook — but the content itself must originate from the Gmail PDF.
+- **Content source: the daily intel brief analysis from `tasks/news_analysis.md`.** The brief's structured intelligence (BLUF, key judgments, sections) is the source material for all social content.
+- **Original visuals via GenViral Studio AI.** No PDF page screenshots ever. Each platform gets AI-generated slideshows with proper text overlays, platform-appropriate aspect ratios, and native captions.
 - **No standalone promotional content.** No product launch posts, no methodology posts, no landing page marketing — nothing that isn't the daily intel brief itself.
-- Use pdftotext for content extraction; pdftoppm for page images.
-- Do not use cached/stale images from exports/images/.
-- The social posting pipeline must source content exclusively from the Gmail PDF, not from `tasks/news_analysis.md` or any other local file.
+- **Platforms:** LinkedIn (4:5 slideshow, professional), X/Twitter (16:9 slideshow, concise), TikTok (9:16 slideshow, draft mode).
+- **Pipeline:** `scripts/genviral-post-brief.sh` with GenViral API. Runs daily at 13:30 PT via cron. Performance tracked in `skills/genviral/workspace/performance/log.json`.
 
 ## Durable Decisions - Orchestration
 - [2026-05-01] **Canonical routing is DeepSeek Direct API.** OpenRouter is disabled.
@@ -39,4 +38,4 @@
   V4 Pro's reasoning token consumption eats default 2000 tokens leaving empty content.
   Must use 8192+ for call_deepseek() to return substantive analysis.
   See `analyst/pipeline/analyze.py` for the fix.
-- Social posting must source exclusively from Gmail daily brief PDF, never from local files.
+- Social posting generates original visuals via GenViral Studio AI from the daily intel brief analysis in `tasks/news_analysis.md`.

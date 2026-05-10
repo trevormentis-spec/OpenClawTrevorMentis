@@ -308,6 +308,251 @@
         "comments": 0,
         "shares": 0
       }
+    },
+    {
+      "id": "800b431e-6e38-4a37-ba46-45ccb2b3d96e",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 LinkedIn",
+      "hook_type": "educational",
+      "account_id": "d3adbc5a-04fe-4dc1-93ab-b920f14ec968",
+      "platform": "linkedin",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/trevor-briefings/2026-05-08/final/brief-2026-05-08.pdf",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "f4b16003-259c-4c33-94b4-64f33f424c38",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 X/Twitter",
+      "hook_type": "educational",
+      "account_id": "95f9ef18-1454-41aa-be98-0716c87791ca",
+      "platform": "twitter",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/trevor-briefings/2026-05-08/final/brief-2026-05-08.pdf",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "6ea687d0-9625-4d0e-9526-4af57a7aa870",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 TikTok draft",
+      "hook_type": "educational",
+      "account_id": "b03637b7-7043-4412-a408-6aac3da0ac25",
+      "platform": "tiktok",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/trevor-briefings/2026-05-08/final/brief-2026-05-08.pdf",
+      "notes": "Draft mode \u2014 needs trending sound before publishing",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "df5ccb8d-1f61-4a1a-855d-ae0d8ec6dd0f",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 LinkedIn",
+      "hook_type": "educational",
+      "account_id": "d3adbc5a-04fe-4dc1-93ab-b920f14ec968",
+      "platform": "linkedin",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis/skills/daily_intel/security_brief_2026-05-08.pdf",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "b8027d7b-3ff8-4a79-b5c8-853922194862",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 X/Twitter",
+      "hook_type": "educational",
+      "account_id": "95f9ef18-1454-41aa-be98-0716c87791ca",
+      "platform": "twitter",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis/skills/daily_intel/security_brief_2026-05-08.pdf",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "33e2f20b-9ca1-4c70-a030-d52b3dfbde20",
+      "date": "2026-05-08",
+      "hook": "Daily Intel Brief \u2014 TikTok draft",
+      "hook_type": "educational",
+      "account_id": "b03637b7-7043-4412-a408-6aac3da0ac25",
+      "platform": "tiktok",
+      "media_type": "slideshow",
+      "media_source": "/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis/skills/daily_intel/security_brief_2026-05-08.pdf",
+      "notes": "Draft mode \u2014 needs trending sound before publishing",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "a4f929a7-ed06-4d8c-9d65-e53ccf99f8de",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 LinkedIn",
+      "hook_type": "educational",
+      "account_id": "d3adbc5a-04fe-4dc1-93ab-b920f14ec968",
+      "platform": "linkedin",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "49a8d2dc-01ce-45ce-8d4f-8849337f40da",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 X/Twitter",
+      "hook_type": "educational",
+      "account_id": "95f9ef18-1454-41aa-be98-0716c87791ca",
+      "platform": "twitter",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "1f66e212-7798-4a13-88fc-fa7a42a9d438",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 TikTok draft",
+      "hook_type": "educational",
+      "account_id": "b03637b7-7043-4412-a408-6aac3da0ac25",
+      "platform": "tiktok",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "notes": "Draft mode \u2014 needs trending sound before publishing",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "d671bf7a-8ea4-49ca-9fab-46901f9ca816",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 linkedin",
+      "hook_type": "educational",
+      "account_id": "d3adbc5a-04fe-4dc1-93ab-b920f14ec968",
+      "platform": "linkedin",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "743cc5a6-2b60-4b99-91cf-0007fc74b2ff",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 twitter",
+      "hook_type": "educational",
+      "account_id": "95f9ef18-1454-41aa-be98-0716c87791ca",
+      "platform": "twitter",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "292c0d5a-6bdc-4bb9-8006-bafea965d814",
+      "date": "2026-05-09",
+      "hook": "Daily Intel Brief \u2014 tiktok",
+      "hook_type": "educational",
+      "account_id": "b03637b7-7043-4412-a408-6aac3da0ac25",
+      "platform": "tiktok",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "notes": "Draft mode \u2014 needs trending sound before publishing"
+    },
+    {
+      "id": "4d029a8c-8998-4d16-9b8f-e060592becf0",
+      "date": "2026-05-10",
+      "hook": "Daily Intel Brief \u2014 linkedin",
+      "hook_type": "educational",
+      "account_id": "d3adbc5a-04fe-4dc1-93ab-b920f14ec968",
+      "platform": "linkedin",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "87fe9bd0-2f18-4d95-95b0-735897c9a941",
+      "date": "2026-05-10",
+      "hook": "Daily Intel Brief \u2014 twitter",
+      "hook_type": "educational",
+      "account_id": "95f9ef18-1454-41aa-be98-0716c87791ca",
+      "platform": "twitter",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      }
+    },
+    {
+      "id": "8ce18945-c409-4d43-8a3f-a2fb3d68b2a1",
+      "date": "2026-05-10",
+      "hook": "Daily Intel Brief \u2014 tiktok",
+      "hook_type": "educational",
+      "account_id": "b03637b7-7043-4412-a408-6aac3da0ac25",
+      "platform": "tiktok",
+      "media_type": "slideshow_ai",
+      "media_source": "genviral_studio_ai",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0
+      },
+      "notes": "Draft mode \u2014 needs trending sound before publishing"
     }
   ]
 }

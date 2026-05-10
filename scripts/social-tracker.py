@@ -1,8 +1,18 @@
 #!/usr/bin/env python3
 """Social engagement tracker — polls all accessible platforms and generates a unified report."""
-import json, os, urllib.request, datetime
+import json, os, urllib.request, datetime, pathlib
 
-API_KEY = os.environ.get("MATON_API_KEY", "v2.6nu4_hHJrTgK89bZgm51KLvKHkKptaQUJ-gCUQYtBccrIrto5Orulq6RYk8oE_kqxnj-Aros5JlV0o2D9W4l-usvIRllBBpZ_5jZiD0fyWDQBfzre1IXFEib")
+# Auto-load .env if present (for cron context where env vars aren't pre-exported)
+_env = pathlib.Path(__file__).resolve().parent.parent / ".env"
+if _env.exists():
+    with open(_env) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
+API_KEY = os.environ.get("MATON_API_KEY", "")
 REPO = "/home/ubuntu/.openclaw/workspace"
 LOG = os.path.join(REPO, "exports/social/engagement-log.json")
 DASHBOARD = os.path.join(REPO, "exports/social/dashboard.json")

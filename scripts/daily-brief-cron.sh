@@ -2,11 +2,17 @@
 #==============================================================================
 # daily-brief-cron.sh — Run the Daily Intel Brief pipeline and deliver via Gmail
 #
-# ╔══════════════════════════════════════════════════════════════════════╗
-# ║  BINDING RULE: Only post the daily intel brief from Gmail.          ║
-# ║  No promotional content, no product announcements, no marketing     ║
-# ║  posts — ONLY the daily intel brief goes to social platforms.        ║
-# ╚══════════════════════════════════════════════════════════════════════╝
+# Pipeline:
+#   1. Orchestrate: gather sources → analyze → produce PDF + analysis file
+#   2. Deliver to Roderick via Gmail (PDF + HTML summary)
+#   3. Post to social via GenViral Studio AI (original visuals from analysis)
+#   4. Post to Moltbook
+#   5. Build agent API
+#
+# Schedule: Triggered by OpenClaw cron at 05:00 PT
+# Flow:     05:00 PT — collection + analysis + visuals + PDF assembly
+#           07:00 PT — delivered to Roderick via Gmail + social posts
+#==========================================================================
 #
 # Schedule: Triggered by OpenClaw cron at 05:00 PT
 # Flow:     05:00 PT — starts collection + analysis + visuals + PDF assembly
@@ -27,23 +33,28 @@ echo "Started at $(date -u)" | tee -a "$LOG"
 # Source environment
 source "$REPO/.env" 2>/dev/null || true
 export DEEPSEEK_API_KEY="${DEEPSEEK_API_KEY:-}"
+export OPENROUTER_API_KEY="${OPENROUTER_API_KEY:-}"
 export MATON_API_KEY="${MATON_API_KEY:-}"
 export AGENTMAIL_API_KEY="${AGENTMAIL_API_KEY:-}"
 export GENVIRAL_API_KEY="${GENVIRAL_API_KEY:-}"
 export STRIPE_SECRET_KEY="${STRIPE_SECRET_KEY:-}"
 export MOLTBOOK_API_KEY="${MOLTBOOK_API_KEY:-}"
 
-# Check DeepSeek key
-if [ -z "$DEEPSEEK_API_KEY" ]; then
-    echo "ERROR: DEEPSEEK_API_KEY not set" | tee -a "$LOG"
+# Check OpenRouter key (primary model provider for writing)
+if [ -z "$OPENROUTER_API_KEY" ]; then
+    echo "ERROR: OPENROUTER_API_KEY not set" | tee -a "$LOG"
     exit 1
 fi
 
 cd "$REPO"
 
 # Step 1: Run orchestrator (produce PDF but skip AgentMail delivery)
-echo "--- Running orchestrator ---" | tee -a "$LOG"
+# Using Claude Opus 4.7 via OpenRouter for analysis writing
+# (Switch --model deepseek/deepseek-v4-pro --provider deepseek to fall back)
+echo "--- Running orchestrator (Opus 4.7 via OpenRouter) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
+    --model "anthropic/claude-opus-4.7" \
+    --provider openrouter \
     --no-deliver \
     --strict-env 2>&1 | tee -a "$LOG"
 
@@ -93,6 +104,57 @@ if [ -z "$PDF_PATH" ]; then
     exit 1
 fi
 echo "PDF found: $PDF_PATH ($(du -h "$PDF_PATH" | cut -f1))" | tee -a "$LOG"
+
+# Step 2b: Generate theatre maps
+MAPS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/maps"
+echo "--- Generating theatre maps ---" | tee -a "$LOG"
+if python3 "$REPO/scripts/generate_brief_maps.py" \
+    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
+    --out-dir "$MAPS_DIR" 2>&1 | tee -a "$LOG"; then
+    echo "Theatre maps generated" | tee -a "$LOG"
+else
+    echo "WARNING: Map generation failed (non-fatal)" | tee -a "$LOG"
+    MAPS_DIR=""
+fi
+
+# Step 2c: Generate AI imagery for the brief sections (optional enhancement)
+IMAGES_JSON="$HOME/trevor-briefings/${DATE_UTC}/visuals/section-images.json"
+echo "--- Generating section imagery via GenViral Studio AI ---" | tee -a "$LOG"
+if [ -n "${GENVIRAL_API_KEY:-}" ]; then
+    if python3 "$REPO/scripts/generate_brief_images.py" \
+        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
+        --out-json "$IMAGES_JSON" 2>&1 | tee -a "$LOG"; then
+        echo "Section images generated" | tee -a "$LOG"
+    else
+        echo "WARNING: Image generation failed (non-fatal)" | tee -a "$LOG"
+        IMAGES_JSON=""
+    fi
+else
+    echo "GENVIRAL_API_KEY not set — skipping imagery" | tee -a "$LOG"
+    IMAGES_JSON=""
+fi
+
+# Step 2d: Generate magazine-quality PDF with maps + imagery
+MAGAZINE_PDF="$REPO/exports/pdfs/GSIB-${DATE_UTC}.pdf"
+echo "--- Generating magazine-quality PDF ---" | tee -a "$LOG"
+VENV_PYTHON="$REPO/.venv_pdf/bin/python"
+RENDER_ARGS="--working-dir $HOME/trevor-briefings/${DATE_UTC} --out-pdf $MAGAZINE_PDF"
+if [ -n "$MAPS_DIR" ] && [ -d "$MAPS_DIR" ]; then
+    RENDER_ARGS="$RENDER_ARGS --maps-dir $MAPS_DIR"
+fi
+if [ -n "$IMAGES_JSON" ] && [ -f "$IMAGES_JSON" ]; then
+    RENDER_ARGS="$RENDER_ARGS --images-json $IMAGES_JSON"
+fi
+if [ -f "$VENV_PYTHON" ]; then
+    if "$VENV_PYTHON" "$REPO/scripts/render_brief_magazine.py" $RENDER_ARGS 2>&1 | tee -a "$LOG"; then
+        echo "Magazine PDF generated: $MAGAZINE_PDF" | tee -a "$LOG"
+        PDF_PATH="$MAGAZINE_PDF"
+    else
+        echo "WARNING: Magazine PDF generation failed, using raw brief PDF" | tee -a "$LOG"
+    fi
+else
+    echo "WARNING: .venv_pdf not found, using raw brief PDF" | tee -a "$LOG"
+fi
 
 # Step 3: Deliver via Gmail to Roderick
 echo "--- Delivering via Gmail ---" | tee -a "$LOG"
@@ -189,11 +251,11 @@ except Exception as e:
     exit(1)
 " 2>&1 | tee -a "$LOG"
 
-# Step 4: Post to social platforms via GenViral
-# Uses the same PDF that was just emailed to Roderick
-echo "--- Posting to social platforms via GenViral ---" | tee -a "$LOG"
+# Step 4: Post to social platforms via GenViral Studio AI
+# Uses the brief analysis file to generate original per-platform visuals
+echo "--- Posting to social platforms via GenViral Studio AI ---" | tee -a "$LOG"
 if [ -n "${GENVIRAL_API_KEY:-}" ]; then
-    if bash "$REPO/scripts/genviral-post-brief.sh" --pdf "$PDF_PATH" 2>&1 | tee -a "$LOG"; then
+    if bash "$REPO/scripts/genviral-post-brief.sh" 2>&1 | tee -a "$LOG"; then
         echo "Social posts successful" | tee -a "$LOG"
     else
         echo "WARNING: Social posting failed (non-fatal)" | tee -a "$LOG"

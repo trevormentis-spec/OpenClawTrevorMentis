@@ -1,13 +1,8 @@
 #!/bin/bash
-# Social Posting Pipeline — Daily OSINT Brief → Platform Posts
-#
-# ╔══════════════════════════════════════════════════════════════════════╗
-# ║  BINDING RULE: Only post the daily intel brief from Gmail.          ║
-# ║  Source: Gmail label "Important Myclaw use this" — always fetch     ║
-# ║  the most recent one. No promotional content, no marketing posts,   ║
-# ║  no product announcements — ONLY the daily intel brief.              ║
-# ║  Social content is also posted via genviral-post-brief.sh --gmail   ║
-# ╚══════════════════════════════════════════════════════════════════════╝
+# DEPRECATED — Replaced by genviral-post-brief.sh
+# This script generates text posts for Twitter/LinkedIn/Reddit from PDF screenshots.
+# The new pipeline uses GenViral Studio AI to generate original visual slideshows
+# from the brief analysis. See scripts/genviral-post-brief.sh for the replacement.
 #
 # Outputs ready-to-post content to exports/social/*.md
 #

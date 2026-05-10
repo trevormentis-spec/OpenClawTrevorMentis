@@ -1,32 +1,24 @@
 #!/usr/bin/env bash
 #==============================================================================
-# genviral-post-brief.sh — Post the Daily Intel Brief to social platforms
+# genviral-post-brief.sh — Post the Daily Intel Brief via GenViral Studio AI
 #
 # ╔══════════════════════════════════════════════════════════════════════╗
-# ║  BINDING RULE: Content source is the daily intel brief from Gmail.  ║
-# ║  Source PDF labeled "Important Myclaw use this". Content can go to  ║
-# ║  any platform (LinkedIn, X, TikTok, Moltbook) but must originate    ║
-# ║  from that Gmail PDF. No standalone promotional/marketing posts.    ║
-# ║  --gmail mode is the ONLY authorized path for production posting.   ║
-# ║  --pdf mode is for testing/debugging only.                          ║
+# ║  Uses the orchestrator's structured analysis to generate original    ║
+# ║  per-platform visuals via GenViral Studio AI. No PDF screenshots.   ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 #
-# Usage:
-#   ./genviral-post-brief.sh --gmail                      [fetch from Gmail by label]
-#   ./genviral-post-brief.sh --pdf /path/to/brief.pdf    [TESTING ONLY]
+# Source detection (in priority order):
+#   1. ~/trevor-briefings/{DATE}/analysis/exec_summary.json (orchestrator output)
+#   2. ~/trevor-briefings/{DATE}/final/brief-{DATE}.pdf (orchestrator PDF)
+#   3. tasks/news_analysis.md (workspace analysis file)
+#   4. exports/pdfs/latest PDF (fallback)
 #
-# The Gmail PDF is labeled "Important Myclaw use this" — this is the
-# authoritative source for all GenViral social posts.
+# Pipeline per platform:
+#   Read BLUF + judgments → craft platform-native prompts → GenViral Studio AI
+#   slideshow → render → create-post → log
 #
-# Pipeline:
-#   1. Get the PDF (local path or fetch from Gmail)
-#   2. pdftotext → extract BLUF + key content for captions
-#   3. pdftoppm → extract pages as PNG images
-#   4. Upload images to GenViral CDN
-#   5. Post slideshow to LinkedIn (3 pages)
-#   6. Post slideshow to Twitter/X (2 pages, condensed caption)
-#   7. Post slideshow to TikTok (3 pages, draft mode)
-#   8. Log everything to genviral workspace performance log
+# Usage: ./genviral-post-brief.sh
+# Environment: GENVIRAL_API_KEY required
 #==============================================================================
 set -euo pipefail
 
@@ -37,263 +29,282 @@ DATE_PT=$(TZ='America/Los_Angeles' date +%Y-%m-%d)
 LOG="$REPO/logs/genviral-post-${DATE_UTC}.log"
 GENVIRAL_LOG="$REPO/skills/genviral/workspace/performance/log.json"
 TMPDIR="/tmp/genviral-brief-${DATE_UTC}"
-MATON_API_KEY="${MATON_API_KEY:-}"
-GENVIRAL_API_KEY="${GENVIRAL_API_KEY:-}"
+CONTEXT_DIR="$REPO/skills/genviral/workspace/context"
 
-mkdir -p "$TMPDIR" "$REPO/logs"
-
-echo "=== GenViral Post Brief — ${DATE_UTC} ===" | tee -a "$LOG"
-echo "Started at $(date -u)" | tee -a "$LOG"
-
-# Source environment and export for subprocesses
-source "$REPO/.env" 2>/dev/null || true
-export MATON_API_KEY
-export GENVIRAL_API_KEY
-
-# ---------- Dependencies ----------
-for cmd in pdftotext pdftoppm curl jq python3; do
-    if ! command -v "$cmd" &>/dev/null; then
-        echo "ERROR: $cmd not found" | tee -a "$LOG"
-        exit 1
-    fi
-done
-
-if [ -z "$GENVIRAL_API_KEY" ]; then
-    echo "ERROR: GENVIRAL_API_KEY not set" | tee -a "$LOG"
-    exit 1
-fi
-
-# ---------- Get the PDF ----------
-PDF_PATH=""
-FETCH_MODE=""
-
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --pdf) PDF_PATH="$2"; FETCH_MODE="local"; shift 2 ;;
-        --gmail) FETCH_MODE="gmail"; shift ;;
-        *) echo "Usage: $0 --pdf <path> | --gmail"; exit 1 ;;
-    esac
-done
-
-if [ "$FETCH_MODE" = "gmail" ]; then
-    if [ -z "$MATON_API_KEY" ]; then
-        echo "ERROR: MATON_API_KEY needed for Gmail fetch" | tee -a "$LOG"
-        exit 1
-    fi
-    echo "--- Fetching PDF from Gmail (label: Important Myclaw use this) ---" | tee -a "$LOG"
-
-    PDF_PATH=$(python3 << 'PYEOF'
-import urllib.request, urllib.parse, json, base64, os, sys
-import datetime
-
-api_key = os.environ.get('MATON_API_KEY', '')
-label_query = 'label:important-myclaw-use-this'
-tmpdir = os.environ.get('TMPDIR', '/tmp')
-date_utc = datetime.date.today().isoformat()
-
-# Search for messages
-url = 'https://gateway.maton.ai/google-mail/gmail/v1/users/me/messages?q=' + urllib.parse.quote(label_query) + '&maxResults=1'
-req = urllib.request.Request(url)
-req.add_header('Authorization', f'Bearer {api_key}')
-try:
-    resp = urllib.request.urlopen(req, timeout=30)
-    data = json.loads(resp.read())
-except Exception as e:
-    print(f'Gmail search failed: {e}', file=sys.stderr)
-    sys.exit(1)
-
-if not data.get('messages'):
-    print('No messages found with that label', file=sys.stderr)
-    sys.exit(1)
-
-msg_id = data['messages'][0]['id']
-
-# Get full message
-url2 = f'https://gateway.maton.ai/google-mail/gmail/v1/users/me/messages/{msg_id}'
-req2 = urllib.request.Request(url2)
-req2.add_header('Authorization', f'Bearer {api_key}')
-try:
-    resp2 = urllib.request.urlopen(req2, timeout=30)
-    msg = json.loads(resp2.read())
-except Exception as e:
-    print(f'Failed to fetch message: {e}', file=sys.stderr)
-    sys.exit(1)
-
-# Find PDF attachment in all parts
-def find_pdf(parts):
-    for part in parts:
-        if part.get('filename', '').endswith('.pdf'):
-            body = part.get('body', {})
-            if body.get('data'):
-                return base64.urlsafe_b64decode(body['data'])
-            elif body.get('attachmentId'):
-                att_id = body['attachmentId']
-                url3 = f'https://gateway.maton.ai/google-mail/gmail/v1/users/me/messages/{msg_id}/attachments/{att_id}'
-                req3 = urllib.request.Request(url3)
-                req3.add_header('Authorization', f'Bearer {api_key}')
-                try:
-                    resp3 = urllib.request.urlopen(req3, timeout=30)
-                    att = json.loads(resp3.read())
-                    if att.get('data'):
-                        return base64.urlsafe_b64decode(att['data'])
-                except:
-                    pass
-        if part.get('parts'):
-            result = find_pdf(part['parts'])
-            if result:
-                return result
-    return None
-
-pdf_data = find_pdf(msg.get('payload', {}).get('parts', []))
-
-if not pdf_data:
-    # Try inline payload
-    body = msg.get('payload', {}).get('body', {})
-    if body.get('data') and msg.get('payload', {}).get('filename', '').endswith('.pdf'):
-        pdf_data = base64.urlsafe_b64decode(body['data'])
-
-if not pdf_data:
-    print('No PDF attachment found in message', file=sys.stderr)
-    sys.exit(1)
-
-local_path = f'{tmpdir}/brief-from-gmail-{date_utc}.pdf'
-# Note: date_utc comes from heredoc env, fallback 'unknown' is cosmetic only
-with open(local_path, 'wb') as f:
-    f.write(pdf_data)
-print(local_path)
-PYEOF
-) || {
-    echo "ERROR: Failed to fetch PDF from Gmail" | tee -a "$LOG"
-    exit 1
-}
-    echo "PDF fetched: $PDF_PATH ($(du -h "$PDF_PATH" | cut -f1))" | tee -a "$LOG"
-fi
-
-if [ -z "$PDF_PATH" ] || [ ! -f "$PDF_PATH" ]; then
-    echo "ERROR: No PDF found at $PDF_PATH" | tee -a "$LOG"
-    exit 1
-fi
-
-# ---------- Extract text for captions ----------
-echo "--- Extracting content ---" | tee -a "$LOG"
-FULL_TEXT=$(pdftotext "$PDF_PATH" - 2>/dev/null)
-
-# Extract BLUF — try multiple formats (Perplexity brief, magazine brief, standard)
-BLUF=$(echo "$FULL_TEXT" | grep -i -A10 -m1 "BLUF\|BOTTOM LINE\|EXECUTIVE SUMMARY" 2>/dev/null | head -10 | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-400 || true)
-if [ -z "$BLUF" ]; then
-    # Fallback: first 300 chars of the text
-    BLUF=$(echo "$FULL_TEXT" | head -c 400 | tr '\n' ' ' | sed 's/  */ /g' || true)
-fi
-echo "BLUF: ${BLUF:0:120}..." | tee -a "$LOG"
-
-# ---------- Extract pages as images ----------
-echo "--- Extracting page images ---" | tee -a "$LOG"
-# Extract only first 5 pages (enough for slideshows, avoids timeout on large PDFs)
-pdftoppm -png -r 150 -l 5 "$PDF_PATH" "$TMPDIR/brief-page" 2>&1 | tee -a "$LOG"
-
-# Count pages
-PAGE_COUNT=$(ls "$TMPDIR"/brief-page-*.png 2>/dev/null | wc -l)
-if [ "$PAGE_COUNT" -eq 0 ]; then
-    echo "ERROR: No pages extracted" | tee -a "$LOG"
-    exit 1
-fi
-echo "Extracted $PAGE_COUNT pages" | tee -a "$LOG"
-
-# ---------- Upload to GenViral CDN ----------
-echo "--- Uploading pages to GenViral CDN ---" | tee -a "$LOG"
-ALL_URLS=()
-# Sort pages numerically
-mapfile -t PAGE_FILES < <(ls "$TMPDIR"/brief-page-*.png 2>/dev/null | sort -t- -k3 -n || true)
-for f in "${PAGE_FILES[@]}"; do
-    URL=$(GENVIRAL_API_KEY="$GENVIRAL_API_KEY" bash "$GENVIRAL_SCRIPT" upload --file "$f" --content-type image/png 2>&1 | grep -oP 'https://cdn\.vireel\.io[^[:space:]]+' | head -1)
-    if [ -n "$URL" ]; then
-        ALL_URLS+=("$URL")
-        echo "  Uploaded: $(basename $f)" | tee -a "$LOG"
-    else
-        echo "  WARN: Upload failed for $(basename $f)" | tee -a "$LOG"
-    fi
-done
-
-if [ ${#ALL_URLS[@]} -eq 0 ]; then
-    echo "ERROR: No images uploaded" | tee -a "$LOG"
-    exit 1
-fi
-
-# Build comma-separated URL strings (up to 3 for LinkedIn, 2 for X, 3 for TikTok)
-LI_URLS=$(IFS=,; echo "${ALL_URLS[*]:0:3}")
-X_URLS=$(IFS=,; echo "${ALL_URLS[*]:0:2}")
-TT_URLS=$(IFS=,; echo "${ALL_URLS[*]:0:3}")
-
-# ---------- Account IDs ----------
+# Account IDs
 LI_ACCOUNT="d3adbc5a-04fe-4dc1-93ab-b920f14ec968"
 X_ACCOUNT="95f9ef18-1454-41aa-be98-0716c87791ca"
 TT_ACCOUNT="b03637b7-7043-4412-a408-6aac3da0ac25"
 
-# Build LinkedIn caption (max 500 chars)
-LI_CAPTION="Global Security & Intelligence Brief — ${DATE_PT}
+# Image packs
+PACK_EARTH="ccd880e9-53b0-4d79-9810-4e867e30a805"
+PACK_FINANCE="9684c67e-cde6-45a7-a5ec-d9f61830cdc7"
+PACK_RETRO="72772438-d1fc-497a-bd89-2b4d0f0ca2b5"
 
-BLUF: ${BLUF:0:250}...
+mkdir -p "$TMPDIR" "$REPO/logs"
+exec > >(tee -a "$LOG") 2>&1
 
-Key developments across multiple theaters. Full assessment available to subscribers.
+echo "=== GenViral Post Brief — ${DATE_UTC} ==="
+echo "Started at $(date -u)"
 
-#OSINT #Intelligence #GlobalSecurity"
-LI_CAPTION=$(echo "$LI_CAPTION" | head -c 490)
+for cmd in python3 jq curl; do
+    command -v "$cmd" >/dev/null 2>&1 || { echo "ERROR: $cmd not found"; exit 1; }
+done
 
-# Build X/Twitter caption (max 280 chars)
-X_CAPTION="Global Security Brief — ${DATE_PT}
+# ---------- Confirm GenViral API ----------
+if ! GENV_CHECK=$(bash "$GENVIRAL_SCRIPT" accounts --json 2>&1); then
+    echo "ERROR: Cannot reach GenViral API"
+    exit 1
+fi
+echo "GenViral API: OK"
 
-${BLUF:0:180}...
+# ---------- Source detection ----------
+BRIEF_DIR="$HOME/trevor-briefings/${DATE_UTC}"
+BRIEF_TEXT=""
+BRIEF_TAG="unknown"
+BRIEF_DIR_ARG=""
 
-Full assessment available.
+# Priority 1: orchestrator exec_summary.json
+if [ -f "$BRIEF_DIR/analysis/exec_summary.json" ]; then
+    BRIEF_TEXT=$(cat "$BRIEF_DIR/analysis/exec_summary.json")
+    BRIEF_TAG="orchestrator-json"
+    BRIEF_DIR_ARG="$BRIEF_DIR"
+    echo "Source: $BRIEF_DIR/analysis/exec_summary.json (orchestrator)"
+fi
 
-#OSINT #GlobalSecurity"
-X_CAPTION=$(echo "$X_CAPTION" | head -c 270)
+# Priority 2: orchestrator final PDF
+if [ -z "$BRIEF_TEXT" ] && [ -f "$BRIEF_DIR/final/brief-${DATE_UTC}.pdf" ]; then
+    BRIEF_TEXT=$(pdftotext "$BRIEF_DIR/final/brief-${DATE_UTC}.pdf" - 2>/dev/null) || true
+    BRIEF_TAG="orchestrator-pdf"
+    echo "Source: $BRIEF_DIR/final/brief-${DATE_UTC}.pdf (orchestrator PDF)"
+fi
 
-# Build TikTok caption (max 500 chars)
-TT_CAPTION="Global Security & Intelligence Brief — ${DATE_PT}
+# Priority 3: workspace analysis file
+if [ -z "$BRIEF_TEXT" ] && [ -f "$REPO/tasks/news_analysis.md" ]; then
+    BRIEF_TEXT=$(cat "$REPO/tasks/news_analysis.md")
+    BRIEF_TAG="workspace-analysis"
+    echo "Source: $REPO/tasks/news_analysis.md (workspace)"
+fi
 
-${BLUF:0:200}...
+# Priority 4: latest exports PDF
+if [ -z "$BRIEF_TEXT" ]; then
+    LATEST_PDF=$(ls -t "$REPO/exports/pdfs"/*.pdf 2>/dev/null | head -1)
+    if [ -n "$LATEST_PDF" ]; then
+        BRIEF_TEXT=$(pdftotext "$LATEST_PDF" - 2>/dev/null) || true
+        BRIEF_TAG="exports-pdf"
+        echo "Source: $LATEST_PDF (exports PDF)"
+    fi
+fi
 
-#OSINT #GlobalSecurity"
-TT_CAPTION=$(echo "$TT_CAPTION" | head -c 490)
+if [ -z "$BRIEF_TEXT" ]; then
+    echo "ERROR: No brief source found anywhere"
+    exit 1
+fi
 
-# ---------- Post to LinkedIn ----------
-echo "--- Posting to LinkedIn ---" | tee -a "$LOG"
-POST_ID_LI=$(GENVIRAL_API_KEY="$GENVIRAL_API_KEY" bash "$GENVIRAL_SCRIPT" create-post \
-    --caption "$LI_CAPTION" \
-    --media-type slideshow \
-    --media-urls "$LI_URLS" \
-    --accounts "$LI_ACCOUNT" 2>&1 | grep -oP '"id": "[^"]+"' | head -1 | cut -d'"' -f4)
-echo "  LinkedIn post ID: $POST_ID_LI" | tee -a "$LOG"
+# Save extracted text to temp file for Python processing (avoids shell escaping issues)
+echo "$BRIEF_TEXT" > "$TMPDIR/brief-source.txt"
+BRIEF_LEN=$(wc -c < "$TMPDIR/brief-source.txt")
+echo "Source size: $BRIEF_LEN bytes"
 
-# ---------- Post to X/Twitter ----------
-echo "--- Posting to X/Twitter ---" | tee -a "$LOG"
-POST_ID_X=$(GENVIRAL_API_KEY="$GENVIRAL_API_KEY" bash "$GENVIRAL_SCRIPT" create-post \
-    --caption "$X_CAPTION" \
-    --media-type slideshow \
-    --media-urls "$X_URLS" \
-    --accounts "$X_ACCOUNT" 2>&1 | grep -oP '"id": "[^"]+"' | head -1 | cut -d'"' -f4)
-echo "  X/Twitter post ID: $POST_ID_X" | tee -a "$LOG"
+# ---------- Extract structured content with Python (reads from temp file) ----------
+echo "--- Extracting structured content ---"
+python3 "$REPO/scripts/_genviral_extract.py" "$TMPDIR/brief-source.txt" "$TMPDIR/structured.json" ${BRIEF_DIR_ARG:+--brief-dir "$BRIEF_DIR_ARG"} 2>&1 || {
+    echo "ERROR: Content extraction failed"
+    cat "$TMPDIR/structured.json" 2>/dev/null || true
+    exit 1
+}
 
-# ---------- Post to TikTok (draft mode) ----------
-echo "--- Posting to TikTok (draft) ---" | tee -a "$LOG"
-POST_ID_TT=$(GENVIRAL_API_KEY="$GENVIRAL_API_KEY" bash "$GENVIRAL_SCRIPT" create-post \
-    --caption "$TT_CAPTION" \
-    --media-type slideshow \
-    --media-urls "$TT_URLS" \
-    --accounts "$TT_ACCOUNT" \
-    --tiktok-post-mode MEDIA_UPLOAD \
-    --tiktok-privacy SELF_ONLY 2>&1 | grep -oP '"id": "[^"]+"' | head -1 | cut -d'"' -f4)
-echo "  TikTok draft ID: $POST_ID_TT" | tee -a "$LOG"
+BLUF=$(python3 -c "import json; print(json.load(open('$TMPDIR/structured.json'))['bluf'])" 2>/dev/null || echo "Intelligence briefing.")
+SECTIONS_LIST=$(python3 -c "import json; d=json.load(open('$TMPDIR/structured.json')); sections=d['sections']; print('\n'.join(sections[:6]))" 2>/dev/null || echo "Geopolitical analysis")
+JUDGMENTS_LIST=$(python3 -c "import json; d=json.load(open('$TMPDIR/structured.json')); judgments=d['judgments']; print('\n'.join(judgments[:4]))" 2>/dev/null || echo "")
+TOP_JUDGMENT=$(echo "$JUDGMENTS_LIST" | head -1)
 
-# ---------- Log to Performance ----------
-echo "--- Updating performance log ---" | tee -a "$LOG"
-python3 << PYEOF
+echo "BLUF: ${BLUF:0:120}..."
+echo "Sections extracted: $(python3 -c "import json; print(len(json.load(open('$TMPDIR/structured.json'))['sections']))" 2>/dev/null || echo 0)"
+echo "Judgments extracted: $(python3 -c "import json; print(len(json.load(open('$TMPDIR/structured.json'))['judgments']))" 2>/dev/null || echo 0)"
+
+# Write prompts to temp files to avoid shell escaping issues
+python3 -c "
 import json, os
 
-log_path = "$GENVIRAL_LOG"
-date_pt = "$DATE_PT"
-pdf_path = "$PDF_PATH"
+bluf = json.load(open('$TMPDIR/structured.json'))['bluf']
+sections = json.load(open('$TMPDIR/structured.json'))['sections']
+judgments = json.load(open('$TMPDIR/structured.json'))['judgments']
+date_pt = '$DATE_PT'
+
+# LinkedIn prompt — 4:5, professional, 3 slides
+li_prompt = f'''Global Security & Intelligence Brief — {date_pt}.
+
+BLUF: {bluf[:300]}
+
+Key developments: {' • '.join(sections[:4])}
+
+Format: professional intelligence briefing slides. First slide: title card with date and 'GLOBAL SECURITY & INTELLIGENCE BRIEF'. Second slide: BLUF text. Third slide: key developments as bullet list with call to action for full assessment. Clean, authoritative design.'''
+with open('$TMPDIR/prompt_linkedin.txt', 'w') as f:
+    f.write(li_prompt.strip())
+
+# X/Twitter prompt — 16:9, concise, 2 slides
+top_j = judgments[0] if judgments else 'Intelligence assessment available.'
+x_prompt = f'''Intelligence Briefing — {date_pt}.
+
+Headline: {bluf[:200]}
+
+Key data point: {top_j[:200]}
+
+Format: clean, striking slides for Twitter/X. First slide: bold headline with date and brief description. Second slide: key takeaway with 'Full assessment at link in bio' callout. Minimal text, high-impact design.'''
+with open('$TMPDIR/prompt_x.txt', 'w') as f:
+    f.write(x_prompt.strip())
+
+# TikTok prompt — 9:16, vertical, 3 slides
+tt_prompt = f'''Global Security Brief — {date_pt}.
+
+Hook: {bluf[:150]}
+
+Key judgment: {top_j[:200]}
+
+Format: vertical 9:16 TikTok slideshow. First slide: hook/attention slide with provocative headline. Second slide: key insight with data point. Third slide: call to action. Bold, readable text, modern design.'''
+with open('$TMPDIR/prompt_tiktok.txt', 'w') as f:
+    f.write(tt_prompt.strip())
+"
+
+# ---------- Post function ----------
+post_to_platform() {
+    local platform_name="$1"
+    local prompt_file="$2"
+    local pack_id="$3"
+    local aspect_ratio="$4"
+    local num_slides="$5"
+    local account_id="$6"
+    local caption="$7"
+    local tiktok_mode="$8"
+    
+    echo "=== ${platform_name} ==="
+    echo "  Generating slideshow..."
+    
+    SLIDESHOW_OUT=$(bash "$GENVIRAL_SCRIPT" generate \
+        --prompt "$(cat "$prompt_file")" \
+        --pack-id "$pack_id" \
+        --slides "$num_slides" \
+        --type educational \
+        --aspect-ratio "$aspect_ratio" \
+        --language en 2>&1) || {
+        local gen_status=$?
+        echo "  WARN: Slideshow generation failed for ${platform_name} (exit code ${gen_status})"
+        echo "  Error: $(echo "$SLIDESHOW_OUT" | grep -v '^Info:' | tail -3)"
+        return 1
+    }
+    
+    # Extract the JSON portion (genviral.sh prefixes info lines before the JSON)
+    JSON_PART=$(echo "$SLIDESHOW_OUT" | sed -n '/^{/,\$p')
+    SLIDE_ID=$(echo "$JSON_PART" | python3 -c "
+import sys, json
+try:
+    d = json.load(sys.stdin)
+    print(d.get('id', ''))
+except Exception as e:
+    sys.stderr.write(f'JSON parse error: {e}')
+    print('')
+" 2>/dev/null || echo "")
+    
+    if [ -z "$SLIDE_ID" ]; then
+        # Fallback: grep the ID from the 'OK:' line
+        SLIDE_ID=$(echo "$SLIDESHOW_OUT" | grep -oP 'Slideshow generated: \K[a-f0-9-]+' || echo "")
+    fi
+    
+    if [ -z "$SLIDE_ID" ]; then
+        echo "  WARN: Unable to parse slideshow ID for ${platform_name}"
+        echo "  GenViral output: $(echo "$SLIDESHOW_OUT" | tr '\n' ' ' | head -c 400)"
+        return 1
+    fi
+    
+    echo "  Slideshow ID: $SLIDE_ID"
+    echo "  Rendering..."
+    
+    bash "$GENVIRAL_SCRIPT" render --id "$SLIDE_ID" 2>&1 | tail -1 || true
+    sleep 5
+    
+    # Get rendered image URLs
+    IMAGE_URLS=$(bash "$GENVIRAL_SCRIPT" review --id "$SLIDE_ID" --json 2>/dev/null | python3 -c "
+import sys, json
+try:
+    d = json.load(sys.stdin)
+    urls = [s.get('image_url', '') for s in d.get('slides', []) if s.get('image_url', '')]
+    print(','.join(urls))
+except:
+    print('')
+" 2>/dev/null || echo "")
+    
+    if [ -z "$IMAGE_URLS" ]; then
+        echo "  WARN: No rendered images for ${platform_name}"
+        return 1
+    fi
+    
+    echo "  Posting..."
+    POST_CMD="bash \"$GENVIRAL_SCRIPT\" create-post \
+        --caption \"$caption\" \
+        --media-type slideshow \
+        --media-urls \"$IMAGE_URLS\" \
+        --accounts \"$account_id\""
+    
+    if [ -n "$tiktok_mode" ]; then
+        POST_CMD="$POST_CMD --tiktok-post-mode MEDIA_UPLOAD --tiktok-privacy SELF_ONLY"
+    fi
+    
+    POST_OUT=$(eval "$POST_CMD" 2>&1) || {
+        echo "  WARN: Post failed for ${platform_name}"
+        echo "  Error: $(echo "$POST_OUT" | tail -2)"
+        return 1
+    }
+    
+    POST_ID=$(echo "$POST_OUT" | grep -oP '"id": "[^"]+"' | head -1 | cut -d'"' -f4 || echo "")
+    echo "  Post ID: $POST_ID"
+    
+    # Save post ID for performance logging
+    local file_slug=$(printf '%s' "$platform_name" | tr '[:upper:]' '[:lower:]' | tr -c 'a-z' '_')
+    echo "$POST_ID" > "$TMPDIR/postid_${file_slug}"
+    return 0
+}
+
+# ---------- Platform 1: LinkedIn ----------
+LI_CAPTION=$(python3 -c "
+bluf = '''$BLUF'''
+sections = '''$SECTIONS_LIST'''
+cap = f'Global Security & Intelligence Brief — $DATE_PT\n\n{bluf[:250]}\n\n{sections[:200]}\n\nFull calibrated assessment with source-graded intelligence. #GlobalSecurity #Intelligence #OSINT #Geopolitics'
+print(cap[:490])
+")
+
+post_to_platform "LinkedIn" "$TMPDIR/prompt_linkedin.txt" "$PACK_EARTH" "4:5" 3 "$LI_ACCOUNT" "$LI_CAPTION" "" || true
+
+# ---------- Platform 2: X/Twitter ----------
+X_CAPTION=$(python3 -c "
+bluf = '''$BLUF'''
+cap = f'Global Security Brief — $DATE_PT\n\n{bluf[:180]}\n\nFull assessment available. #GlobalSecurity #OSINT'
+print(cap[:270])
+")
+
+post_to_platform "X/Twitter" "$TMPDIR/prompt_x.txt" "$PACK_RETRO" "1:1" 2 "$X_ACCOUNT" "$X_CAPTION" "" || true
+
+# ---------- Platform 3: TikTok (draft) ----------
+TT_CAPTION=$(python3 -c "
+bluf = '''$BLUF'''
+cap = f'Global Security & Intelligence Brief — $DATE_PT\n\n{bluf[:200]}\n\n#OSINT #GlobalSecurity'
+print(cap[:490])
+")
+
+post_to_platform "TikTok" "$TMPDIR/prompt_tiktok.txt" "$PACK_EARTH" "9:16" 3 "$TT_ACCOUNT" "$TT_CAPTION" "tiktok" || true
+
+# ---------- Read post IDs ----------
+LI_POST_ID=$(cat "$TMPDIR/postid_linkedin" 2>/dev/null || echo "")
+X_POST_ID=$(cat "$TMPDIR/postid_x_twitter" 2>/dev/null || echo "")
+TT_POST_ID=$(cat "$TMPDIR/postid_tiktok" 2>/dev/null || echo "")
+
+# ---------- Log to Performance ----------
+echo "--- Updating performance log ---"
+python3 -c "
+import json, os
+
+log_path = '$GENVIRAL_LOG'
+date_pt = '$DATE_PT'
 
 log_data = {'posts': []}
 if os.path.exists(log_path):
@@ -302,57 +313,42 @@ if os.path.exists(log_path):
             log_data = json.load(f)
     except:
         pass
-
 if 'posts' not in log_data:
     log_data['posts'] = []
 
 new_entries = []
-
-if "$POST_ID_LI":
-    new_entries.append({
-        'id': "$POST_ID_LI", 'date': date_pt,
-        'hook': 'Daily Intel Brief — LinkedIn',
-        'hook_type': 'educational',
-        'account_id': "$LI_ACCOUNT", 'platform': 'linkedin',
-        'media_type': 'slideshow', 'media_source': pdf_path,
-        'metrics': {'views': 0, 'likes': 0, 'comments': 0, 'shares': 0}
-    })
-
-if "$POST_ID_X":
-    new_entries.append({
-        'id': "$POST_ID_X", 'date': date_pt,
-        'hook': 'Daily Intel Brief — X/Twitter',
-        'hook_type': 'educational',
-        'account_id': "$X_ACCOUNT", 'platform': 'twitter',
-        'media_type': 'slideshow', 'media_source': pdf_path,
-        'metrics': {'views': 0, 'likes': 0, 'comments': 0, 'shares': 0}
-    })
-
-if "$POST_ID_TT":
-    new_entries.append({
-        'id': "$POST_ID_TT", 'date': date_pt,
-        'hook': 'Daily Intel Brief — TikTok draft',
-        'hook_type': 'educational',
-        'account_id': "$TT_ACCOUNT", 'platform': 'tiktok',
-        'media_type': 'slideshow', 'media_source': pdf_path,
-        'notes': 'Draft mode — needs trending sound before publishing',
-        'metrics': {'views': 0, 'likes': 0, 'comments': 0, 'shares': 0}
-    })
+for pid, plat, acc in [
+    ('$LI_POST_ID', 'linkedin', 'd3adbc5a-04fe-4dc1-93ab-b920f14ec968'),
+    ('$X_POST_ID', 'twitter', '95f9ef18-1454-41aa-be98-0716c87791ca'),
+    ('$TT_POST_ID', 'tiktok', 'b03637b7-7043-4412-a408-6aac3da0ac25'),
+]:
+    if pid:
+        entry = {
+            'id': pid, 'date': date_pt,
+            'hook': f'Daily Intel Brief — {plat}',
+            'hook_type': 'educational',
+            'account_id': acc,
+            'platform': plat,
+            'media_type': 'slideshow_ai',
+            'media_source': 'genviral_studio_ai',
+            'metrics': {'views': 0, 'likes': 0, 'comments': 0, 'shares': 0}
+        }
+        if plat == 'tiktok':
+            entry['notes'] = 'Draft mode — needs trending sound before publishing'
+        new_entries.append(entry)
 
 log_data['posts'].extend(new_entries)
-
-tmp_path = log_path + '.tmp'
-with open(tmp_path, 'w') as f:
+tmp = log_path + '.tmp'
+with open(tmp, 'w') as f:
     json.dump(log_data, f, indent=2)
-os.replace(tmp_path, log_path)
+os.replace(tmp, log_path)
 print(f'Performance log updated ({len(new_entries)} entries)')
-PYEOF
+"
 
 # ---------- Cleanup ----------
-echo "--- Cleanup ---" | tee -a "$LOG"
 rm -rf "$TMPDIR"
 
-echo "=== GenViral Post Brief — ${DATE_UTC} — Complete ===" | tee -a "$LOG"
-echo "LinkedIn: $POST_ID_LI" | tee -a "$LOG"
-echo "X/Twitter: $POST_ID_X" | tee -a "$LOG"
-echo "TikTok (draft): $POST_ID_TT" | tee -a "$LOG"
+echo "=== GenViral Post Brief — ${DATE_UTC} — Complete ==="
+echo "LinkedIn: ${LI_POST_ID:-FAILED}"
+echo "X/Twitter: ${X_POST_ID:-FAILED}"
+echo "TikTok: ${TT_POST_ID:-FAILED}"

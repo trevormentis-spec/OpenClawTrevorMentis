@@ -742,6 +742,72 @@ _Gathered at 2026-05-02 20:39 UTC by Trevor Global News Gatherer_
 _Feeds: 15/27 | 120 items_
 
 ---
+
+# Gmail Intelligence Digest — 2026-05-10 19:00 UTC
+
+**Source:** Gmail `Intelligence` label (trevor.mentis@gmail.com)
+**Emails:** 3 new since last digest (May 9 19:00 UTC)
+**Window:** May 9 15:47 EDT — May 9 21:46 EDT
+
+---
+
+## 🚨 UKRAINE: Ceasefire Day 1 — Limited Ops Continue Despite Truce
+**Source:** ISW (Russian Offensive Campaign Assessment, May 9)
+**Date:** Sat, 9 May 2026 21:46 EDT (May 10 01:46 UTC)
+
+**Key developments:**
+- **May 9–11 ceasefire entered its first day** with limited offensive operations continuing across the theater by both sides
+- Ukrainian General Staff reported **51 combat engagements** after ceasefire went into effect
+- Russia accused Ukraine of **8,970 ceasefire violations** incl. 12 ground attacks, 1,173 artillery/MLRS/mortar strikes, 7,151 drone strikes
+- Ukraine reported Russian drones struck **residential infrastructure in Kharkiv and Kherson oblasts** during ceasefire
+- NASA FIRMS satellite signatures + Ukrainian/Russian reporting indicate **reduction in hostilities** (especially in northern Ukraine) but **not a cessation**
+- **Russian forces used the ceasefire** to conduct rotations, reinforcements, redeployments, and logistics across the theater
+- Ukrainian 7th Rapid Reaction Corps observed **elements of Russia's 90th Tank Division** (41st CAA, Central Military District) redeploying in the Pokrovsk direction — forces last reported near Oleksandrivka/Novopavlivka on May 4
+- Russian command reportedly establishing **new command posts in Myrnohrad** (east of Pokrovsk) to support attacks toward Rodynske
+- Pattern consistent with prior Russian ceasefires: **using truce to reposition for follow-on offensive operations**
+
+---
+
+## 🚨 IRAN: Russia Ships Drone Components via Caspian — China Provided Satellite Imagery
+**Source:** ISW (Iran Update Special Report, May 9) + CTP (Iran Update, May 9)
+**Date:** Sat, 9 May 2026 15:47–16:03 EDT (19:47–20:03 UTC)
+
+**Key developments:**
+- **Russia sending drone components to Iran via the Caspian Sea** to help Iran rebuild offensive capabilities after the war (NYT, citing US officials)
+- This follows reports Russia **proposed giving Iran 5,000 short-range fiber-optic drones** + unspecified longer-range satellite-guided drones with Starlink terminals
+- IDF struck **Bandar Anzali Port** on the Caspian during the war to disrupt Russian Shahed/ammunition shipments
+- Russia and PRC both **provided Iran satellite imagery of US and allied bases** during the war
+- **US State Department sanctioned 4 entities** on May 8, including PRC firms Earth Eye and Chang Guand Satellite Technology, for supplying satellite imagery to support Iranian attacks on US forces
+- Iran previously used an **Earth Eye TEE-01B reconnaissance satellite** (acquired from PRC in 2024) to target US assets
+- Iran attempting to **recover weapons systems and launchers hidden underground or buried under debris** from US/Israeli airstrikes
+- Iran has **not yet responded to latest US proposal**; FM Baghaei stated May 9 Iran still reviewing, will "pay no attention to deadlines"
+- ISW assessment: **IRGC Cmdr Vahidi may prefer renewed confrontation** over compromise on strait sovereignty
+
+---
+
+## ✅ Quality Review Notes
+
+| Assessment | Decision | Rationale |
+|---|---|---|
+| CTP Iran Update + ISW Iran Special Report (overlapping) | **Merged** | Both cover same Russian drone components via Caspian + PRC satellite imagery; ISW provides more detail on IRGC command dynamics |
+| ISW Russian Campaign Assessment May 9 | **Retained as standalone** | Unique coverage of first-day ceasefire dynamics with tactical-level detail (51 engagements, 90th Tank Division redeployment, Myrnohrad command posts) |
+| FP Editors' Picks (May 8) | **Excluded** | Already covered in previous digest at May 9 19:00 UTC |
+| Cipher Brief Nightcap (May 8) | **Excluded** | Already covered in previous digest |
+| CISA KEV (May 8) | **Excluded** | Already covered in previous digest |
+| ISW China/Taiwan Update (May 8) | **Excluded** | Already covered in previous digest (Trump-Xi summit, Taiwan $14B arms deal) |
+
+---
+
+### 🔴 High-Signal Flags for Today's Brief
+- **Russia actively rearming Iran** via Caspian Sea drone components during ceasefire — direct challenge to US blockade and ceasefire terms
+- **PRC satellite imagery support** documented, entities sanctioned — escalates US-PRC tensions ahead of **Trump-Xi summit May 14–15**
+- **Ukraine ceasefire fragile**: 51 combat engagements day 1, Russia using truce for offensive repositioning (90th Tank Division to Pokrovsk)
+- **IRGC Cmdr Vahidi** may prefer return to conflict over strait sovereignty compromise — hardliners consolidating
+
+---
+*Intel digest generated 2026-05-10 19:00 UTC by Gmail Intelligence Label scan (cron: a1d90107)*
+
+---
 # Deep Horizon Scan — 2026-05-03 19:14 UTC
 
 **Methodology:** Multi-vector search (Brave/X/Twitter/YouTube/Substack) for alternative intelligence sources covering maritime security (Hormuz), regional escalation (Lebanon/Iran), and energy markets.
@@ -1201,3 +1267,446 @@ _Intel digest generated 2026-05-05 19:00 UTC by Gmail Intelligence Label scan_
 
 ---
 _Intel digest generated 2026-05-06 19:00 UTC by Gmail Intelligence Label scan_
+
+---
+## ISW — Iran Must Not Rule the Strait of Hormuz
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Fri, 8 May 2026 13:48 UTC
+
+**Key developments:**
+- Iran claiming sovereignty over Strait of Hormuz, seeking permanent control of maritime traffic — significant expansion of war aims
+- Newly selected Supreme Leader Mojtaba Khamenei previewed position: reparations from "the enemy," asset seizure
+- US/partners must defeat long-term Iranian threat to intl shipping as condition for ending war
+- Iran positioning to emerge from war with veto power over critical maritime chokepoint
+
+## CTP/ISW — Iran Update Evening Special Report & CENTCOM Strikes, May 7
+- **Source:** CTP Publications <criticalthreats@aei.org>
+- **Date:** Thu, 7 May 2026 23:20 UTC
+
+**Key developments:**
+- CENTCOM: US forces eliminated inbound threats after Iran targeted US naval assets (USS Truxtun, USS Rafael Peralta, USS Mason) transiting Strait of Hormuz
+- US struck Iranian military facilities: Bahman Port (Qeshm Island), Bandar Abbas, Bandar Kargan naval checkpoint — missile/drone launch sites, C2, ISR sites
+- Iran warned UAE civilians to "stay away from oil and military centers"
+- US official: strikes do not indicate resumption of war; US "does not seek escalation"
+- Active naval combat engagement between US and Iran in Strait of Hormuz
+
+## ISW — Iran Update Special Report, May 7
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Fri, 8 May 2026 00:45 UTC
+
+**Key developments:**
+- Detailed report on CENTCOM operations and Iranian attacks in Strait of Hormuz
+- Iranian forces launched multiple missiles, drones, fast attack craft at US naval assets
+- Munitions did not hit any US assets (confirmed by CENTCOM)
+- Iran fired missiles at US warships south of Chabahar Port after US forces targeted Iranian vessels near Jask and Fujairah Port (UAE)
+- Khatam ol Anbia warned Emirati civilians; follows Iran attacks on UAE May 4-5
+
+## ISW — Russian Offensive Campaign Assessment, May 7
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Fri, 8 May 2026 01:45 UTC
+
+**Key developments:**
+- Russia unilaterally declared Victory Day ceasefire (May 8-10 midnight-midnight local)
+- Russian MoD claims complete cessation of all hostilities; called on Ukraine to "follow this example"
+- Russia warns of "massive" missile strike against Kyiv City if Ukraine doesn't comply
+- Zelensky: Russia responded to Ukraine's May 5-6 ceasefire with additional strikes and new threats
+- Russia likely using ceasefire to justify escalation threats
+
+## ISW — Russian Occupation Update, May 7
+- **Source:** ISW Publications <publications@understandingwar.org>
+- **Date:** Thu, 7 May 2026 20:26 UTC
+
+**Key developments:**
+- Russia escalating forced transfer/deportation of Ukrainian children to Russian summer camps
+- 50,000 children from occupied Ukraine expected at camps in Russia and occupied Crimea
+- Karachay-Cherkessia, Voronezh Oblast, Crimea, Karelia receiving children
+- Kremlin Children's Rights Commissioner Lvova-Belova involved
+
+## CISA — Known Exploited Vulnerability Added
+- **Source:** CISA <cisa@messages.cisa.gov>
+- **Date:** Fri, 8 May 2026 17:43 UTC
+
+**Key developments:**
+- CVE-2026-42208: BerriAI LiteLLM SQL Injection — actively exploited (added to KEV Catalog)
+- Poses significant risk to federal enterprise; BOD 22-01 remediation required for FCEB agencies
+
+## CISA — Five ICS Advisories Released
+- **Source:** CISA <cisa@messages.cisa.gov>
+- **Date:** Thu, 7 May 2026 18:22 UTC
+
+**Key developments:**
+- Five Industrial Control Systems advisories released for remediation
+
+## FP Editors' Picks: Putin Much Weaker Than You Think
+- **Source:** Foreign Policy <newsletters@foreignpolicy.com>
+- **Date:** Thu, 7 May 2026 22:00 UTC
+
+**Key developments:**
+- Opinion: Putin's strategic position weaker than perceived — implications for ceasefire dynamics
+
+---
+_Intel digest generated 2026-05-08 19:00 UTC by Gmail Intelligence Label scan_
+
+---
+
+## 🚨 UKRAINE: Three-Day Ceasefire Agreed — Ukraine Strikes Deep in Mariupol
+- **Source:** ISW (Russian Offensive Campaign Assessment, May 8)
+- **Date:** Fri, 8 May 2026 21:43 EDT (May 9 01:43 UTC)
+- **Status:** UNREAD
+
+**Key developments:**
+- Ukraine & Russia agreed to a **three-day ceasefire (May 9–11)** for Russia's Victory Day parade + 1,000-for-1,000 POW exchange
+- Zelensky signed decree allowing Moscow parade to proceed; Ukraine will not strike Red Square during event
+- Ukrainian forces are **reconnoitering and interdicting Russian GLOCs in/near occupied Mariupol** (~105km from frontline) — demonstrating mid-range strike capability
+- Geolocated drone footage confirms Ukrainian strikes along T-0509 Mariupol-Donetsk highway and M-14 at 95–104km depth
+- **Russian forces likely eliminated from Kupyansk** — encirclement of ~20 soldiers since Dec 2025 ended with airstrike on hospital
+- Kremlin explicitly demands Ukrainian withdrawal from **remainder of Donetsk Oblast** as ceasefire precondition
+- Russian forces performing worse Spring 2026 than when Kremlin made same demand in 2025
+- Ukrainian forces advanced in Slovyansk and Hulyaipole directions
+- Russia launched 67 drones at Ukraine overnight
+
+---
+
+## 🚨 IRAN: Strait of Hormuz Sovereignty — Iran Seizes Sanctioned Tanker
+- **Source:** CTP-ISW (Iran Update Evening Special Report, May 8, 02:00 PM ET)
+- **Date:** Fri, 8 May 2026 20:00 EDT (May 9 00:00 UTC)
+- **Status:** UNREAD
+
+**Key developments:**
+- Supreme Leader adviser **Mokhber**: Strait of Hormuz control equals strategic value of a nuclear weapon — "we will not lose the strait under any circumstances"
+- Iran views strait control as essential to **restoring deterrence** after degradation of missiles, drones, proxies, air defense
+- **Artesh Navy seized JIN LI (aka OCEAN KOI)** — a US-sanctioned shadow fleet tanker — in Gulf of Oman
+- Iran accused vessel of disrupting Iranian oil exports / transiting without coordination
+- Iran escalating against UAE rhetorically and militarily — portraying UAE as hostile state
+- **Russian documents** (seen by The Economist) reveal proposal to supply Iran **thousands of drones + training** for Iranian operators, raising fiber-optic drone proliferation concerns
+- US maintains naval blockade; US-Iran remain divided on nuclear program, HEU stockpile, and strait sovereignty
+
+---
+
+## 🚨 IRAN POLICY: "Must Not Rule the Strait of Hormuz"
+- **Source:** ISW (Iran Must Not Rule the Strait of Hormuz)
+- **Date:** Fri, 8 May 2026 09:48 EDT (13:48 UTC)
+- **Status:** UNREAD
+
+**Key developments:**
+- ISW policy analysis: US must defeat long-term Iranian threat to international shipping as condition of ending the war
+- Iran now pursuing **permanent sovereignty over Strait of Hormuz** — expanded war aim beyond survival
+- New Supreme Leader **Mojtaba Khamenei** previewed: "We will seek reparations… if they refuse… we will take as much of their assets… if that is not possible, we will destroy that many of their assets"
+- Iran positioning to emerge from war with **veto power over global maritime chokepoint** — would severely undermine US position in Middle East, Europe, Indo-Pacific
+- Iran describing "new management" of strait as leverage to fine/coerce Gulf states
+
+---
+
+## 🚨 CHINA-TAIWAN: Trump-Xi Summit May 14–15 — Iran War on Agenda
+- **Source:** ISW-AEI (China & Taiwan Update, May 8)
+- **Date:** Fri, 8 May 2026 16:31 EDT (20:31 UTC)
+- **Status:** UNREAD
+
+**Key developments:**
+- **Trump-Xi summit in Beijing, May 14–15** — trade, Taiwan arms sales, and Iran War are top issues
+- **Iranian FM Araghchi visited PRC** for first time since Iran War began — met Wang Yi, likely coordinating before summit
+- PRC implemented new law (Apr 7) punishing firms that comply with sanctions against China
+- Trump approved **$11B Taiwan arms package** (Dec 2025); **$14B additional package reportedly under consideration**
+- Taiwan legislature approved **$25B special defense budget** to fund arms purchases
+- Wang Yi warned Rubio: Taiwan is "biggest risk factor" in US-PRC relations
+- PRC unlikely to strongly prioritize ending Iran War — benefits geopolitically from continued blockade
+- PRC seeks end to active hostilities and Strait reopening but won't increase involvement
+
+---
+
+## 🛡️ CYBER: CISA Adds LiteLLM SQL Injection to KEV Catalog
+- **Source:** CISA <cisa@messages.cisa.gov>
+- **Date:** Fri, 8 May 2026 17:43 UTC
+- **Status:** UNREAD
+
+**Key developments:**
+- **CVE-2026-42208**: BerriAI LiteLLM SQL Injection — actively exploited in the wild
+- Added to CISA Known Exploited Vulnerabilities Catalog (BOD 22-01)
+- Poses significant risk to federal enterprise; FCEB agencies must remediate
+- LiteLLM is widely used for LLM API gateway/proxy — significant supply-chain implications
+
+---
+
+## 📰 Cipher Brief: National Security Nightcap — May 8
+- **Source:** The Cipher Brief <dailybrief@thecipherbrief.com>
+- **Date:** Fri, 8 May 2026 20:04 UTC
+- **Status:** UNREAD
+
+Aggregated national security headlines roundup for Friday, May 8. Standard daily briefing compilation.
+
+---
+
+## 📰 FP Editors' Picks: Trump Tariffs Struck Down Again
+- **Source:** Foreign Policy <newsletters@foreignpolicy.com>
+- **Date:** Fri, 8 May 2026 18:04 EDT (22:04 UTC)
+- **Status:** UNREAD
+
+Editors' picks noting another court ruling against Trump's tariff authority under IEEPA — consistent with ISW's reference to Supreme Court canceling reciprocal tariffs in Feb 2026.
+
+---
+
+## ⚠️ IRAN UPDATE (EARLIER): Strait of Hormuz Deterrence Focus
+- **Source:** CTP-ISW (Iran Update Special Report, May 8)
+- **Date:** Fri, 8 May 2026 19:27 EDT (23:27 UTC)
+- **Status:** UNREAD
+
+Substantially overlaps with Evening report above. Key distinct detail: IRGC Cmdr Vahidi may prefer renewed confrontation over compromise on strait sovereignty. Iranian leaders assessing degraded traditional deterrence requires greater strait reliance.
+
+---
+_Intel digest generated 2026-05-09 19:00 UTC by Gmail Intelligence Label scan — 8 items from 6 sources_}
+
+---
+
+# Deep Horizon Scan — 2026-05-10 08:00 UTC
+
+**Cron:** 08cae30c-d4f8-4724-8fc5-786b422167e5 | **Methodology:** Multi-vector search (Brave/Perplexity/Web/YouTube/Substack) for alternative intelligence sources covering maritime security (Hormuz), regional escalation (Lebanon/Iran), and energy markets.
+
+---
+
+## 🔴 HIGH SIGNAL — Newly Discovered Sources
+
+### Substacks
+
+#### Badlands (Borzou Daragahi)
+- **Type:** Substack / Geopolitical Intelligence
+- **Author:** Borzou Daragahi — veteran Middle East correspondent (The Independent, The Atlantic, BuzzFeed)
+- **Focus:** Incisive daily intelligence on global affairs, Lebanon crisis, Iran war dynamics, Middle East geopolitics. 5-year track record.
+- **URL:** <https://borzou.substack.com>
+- **Signal Level:** 🔴 HIGH
+- **Notable recent post (May 7):** "Any Wrong Move Could Lead to Civil War" — analysis of Lebanese sectarian fragility amid Israel-Hezbollah strikes, Berri-Aoun rift, Iran-US negotiations.
+
+#### Mick Ryan — The Learning Curve
+- **Type:** Substack / Military-Strategic Analysis
+- **Author:** MGEN (Ret.) Mick Ryan — retired Australian Army general, distinguished strategist, visiting fellow at Oxford.
+- **Focus:** Military learning/adaptation across Ukraine, Middle East, and Indo-Pacific theatres. Unique linkage: PLA's study of Iran War + Ukraine's attrition campaign.
+- **URL:** <https://mickryan.substack.com>
+- **Signal Level:** 🔴 HIGH (authoritative)
+- **Notable post:** "Ukraine's Attrition Campaign and the PLA's Iran War Study" — analyzes CENTCOM Hormuz reopening ops, Chinese PLA learning from US capabilities/limits in Iran, Taiwanese drone procurement delays.
+
+#### Marc Schulman — Tel Aviv Diary
+- **Type:** Substack / Israel Security Analysis
+- **Focus:** Daily diaries from Tel Aviv covering Iran-Hormuz dynamics, Israel-Lebanon ceasefire violations, Hezbollah fiber-optic drone warfare (Ukraine-style tactics).
+- **URL:** <https://marcschulman.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+- **Notable (May 7-8):** Beirut assassination of Radwan commander, Hezbollah retaliatory drone attacks on IDF bases, Mount Meron Lag BaOmer cancellations.
+
+#### Hussain Abdul-Hussain
+- **Type:** Substack / Middle East Strategic Analysis
+- **Focus:** US-brokered Trump "Deal of the Century" for Lebanon — Hezbollah disarmament, Israeli withdrawal, border demarcation, reconstruction framework.
+- **URL:** <https://hussainabdulhussain.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+- **Notable (May 8):** "Trump's Deal of the Century for Lebanon" — detailed proposal analysis linking Lebanon ceasefire to Iran broader negotiations.
+
+#### Israel Insight
+- **Type:** Substack / Israeli Security Zone Analysis
+- **Focus:** Israel's expanding security zone/buffer in southern Lebanon, forward defense lines, operational justifications.
+- **URL:** <https://israelinsight.substack.com>
+- **Signal Level:** 🟡 MEDIUM
+
+#### Beirut Calling
+- **Type:** Substack / Lebanese Politics
+- **Focus:** Aoun-Netanyahu talks, Berri-Hezbollah resistance, internal Lebanese political dynamics around ceasefire.
+- **URL:** <https://beirutcalling.substack.com>
+- **Signal Level:** 🟡 MEDIUM
+
+#### The Cradle Media (Substack)
+- **Type:** Substack / Middle East Analysis
+- **Focus:** "Hezbollah's Difficult War" — how southern resilience rewrites engagement rules. Iran-aligned perspective.
+- **URL:** <https://thecradlemedia.substack.com>
+- **Signal Level:** 🟡 MEDIUM (treat as aligned source)
+
+#### Dropsite News (Substack)
+- **Type:** Substack / Investigative
+- **Focus:** US-Iran war, Israel-Lebanon strikes, New York/ICE enforcement angles.
+- **URL:** <https://dropsitenews.substack.com>
+- **Signal Level:** 🟡 MEDIUM
+
+#### Peter Zeihan — Zeihan on Geopolitics
+- **Type:** Substack / Geopolitical Risk
+- **Author:** Peter Zeihan — globally known geopolitical strategist, author of "The Accidental Superpower" and "The End of the World is Just the Beginning"
+- **Focus:** Data-driven forecasts on Hormuz as "Asian fuel artery," oil price shock modeling ($20-50/bbl spike scenarios), US-Iran blockade dynamics. 500k+ subscribers.
+- **URL:** <https://peterzeihan.substack.com>
+- **Signal Level:** 🔴 HIGH
+
+#### Maritime Executive Daily
+- **Type:** Substack / Maritime Security
+- **Focus:** Real-time shipping risks, insurance hikes, vessel rerouting, LNG trade exposure (93% Qatar LNG at risk). Industry staple with 100k+ readers.
+- **URL:** <https://maritime-executive.substack.com>
+- **Signal Level:** 🔴 HIGH
+
+#### Gulf Analysis (Gulf International Security)
+- **Type:** Substack / Gulf Security
+- **Focus:** Iran proxies, Hormuz diplomacy, Gulf energy security, deterrence limits. Authored by ex-diplomats. Niche but authoritative.
+- **URL:** <https://gulfinternationalsecurity.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+#### Iran Observer (Amir Taheri)
+- **Type:** Substack / Iran Politics
+- **Author:** Amir Taheri — exiled Iranian analyst and author, former editor of Kayhan
+- **Focus:** Daily breakdowns of Tehran politics, IRGC maneuvers, Hezbollah rearmament via Iranian smuggling routes. Hardliner consolidation post-ceasefire.
+- **URL:** <https://iranobserver.substack.com>
+- **Signal Level:** 🔴 HIGH
+
+#### The Levant Report (Hanin Ghaddar)
+- **Type:** Substack / Lebanon-Hezbollah
+- **Author:** Hanin Ghaddar — former Hudson Institute fellow, independent analyst
+- **Focus:** Lebanon-Hezbollah nexus with Iranian funding, on-the-ground Beirut reporting, IRGC grip on Lebanese ports.
+- **URL:** <https://thelevantreport.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+#### Axis of Resistance Watch
+- **Type:** Substack / Iran Proxy Intelligence
+- **Author:** Pseudonymous ex-IRGC affiliate
+- **Focus:** Raw intel on Iran-Hezbollah coordination, sanctions evasion, internal IRGC dynamics. High-signal, low-noise.
+- **URL:** <https://axiswatch.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH (verify against ISW/CTP)
+
+#### Middle East Contrarian (Jonathan Spyer)
+- **Type:** Substack / Field Journalism
+- **Author:** Jonathan Spyer — veteran field journalist, Syria-Lebanon-Iran triangle
+- **Focus:** Syria-Lebanon-Iran triangle, skeptical of Western proxy narratives, frequent Lebanon dispatches.
+- **URL:** <https://spyer.substack.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+---
+
+### 🟢 Newly Discovered: YouTube Channels
+
+#### World Brief Daily
+- **Type:** YouTube / OSINT Geopolitical Briefings
+- **Focus:** Daily geopolitical briefings on Middle East tensions with heavy geospatial/military OSINT: Iranian cave-hidden mobile anti-ship missiles (Noor, Ghader), US destroyer deployments, sea mine threats. High production value with maps and satellite breakdowns.
+- **URL:** <https://www.youtube.com/@WorldBriefDaily>
+- **Signal Level:** 🔴 HIGH
+- **Notable videos:**
+  - "Iran Challenges U.S. Navy in Hormuz — Pentagon Responds With Major Move" <https://www.youtube.com/watch?v=i6aGE8dgTYA>
+  - "U.S. Escalates Pressure in Hormuz — Iran's Strategy Faces Major Setback" <https://www.youtube.com/watch?v=FeRqtQ9audo>
+
+#### Iran War LIVE (Unnamed Channel)
+- **Type:** YouTube / Live Iran Updates
+- **Focus:** Real-time Iran war updates, IMO diplomacy, Gulf maritime corridor proposals, Hormuz sovereignty debates.
+- **Signal Level:** 🟡 MEDIUM-HIGH
+- **Notable:** "Iran War LIVE: Tehran Slams Gulf Maritime Corridor Plan For Hormuz" <https://www.youtube.com/watch?v=XHoWbbMre0o>
+
+#### Strait of Hormuz Vessel Tracker (LIVE)
+- **Type:** YouTube / Live Maritime Traffic Feed
+- **Focus:** Continuous live feed of oil tankers, cargo vessels, and naval vessels transiting the Strait of Hormuz (Persian Gulf to Gulf of Oman). Real-time chokepoint monitoring.
+- **URL:** <https://www.youtube.com/watch?v=SKiQKi6qsAw>
+- **Signal Level:** 🟡 MEDIUM-HIGH (operational monitoring)
+
+---
+
+### 🟢 Newly Discovered: X/Twitter Accounts
+
+#### @OSINT_613 (OSINT 613)
+- **Type:** X/Twitter — OSINT Aggregator
+- **Focus:** Primary aggregator for Iran war OSINT; Russian drone shipments to Bandar Anzali Port (Caspian Sea), IDF strikes on maritime routes, PRC satellite imagery support to IRGC. Vessel AIS data for Hormuz tanker disruptions. 245k followers.
+- **URL:** <https://x.com/OSINT_613>
+- **Signal Level:** 🔴 HIGH
+
+#### @AuroraIntel (Aurora Intel)
+- **Type:** X/Twitter — Maritime OSINT Specialist
+- **Focus:** Live AIS tracking of Iranian oil tankers evading Hormuz post-Kharg spill, Russian Black Sea-Caspian drone convoys to Iran. 180k followers.
+- **URL:** <https://x.com/AuroraIntel>
+- **Signal Level:** 🔴 HIGH
+
+#### @MT_Anderson (MT Anderson)
+- **Type:** X/Twitter — Independent Maritime Tracker
+- **Focus:** Qatar-mediated tanker routes, US sanctions on Chinese satellite firms aiding IRGC strikes, fiber-optic drone shipments via Bandar Abbas. 95k followers.
+- **URL:** <https://x.com/MT_Anderson>
+- **Signal Level:** 🔴 HIGH
+
+#### @IntelCrab (Intel Crab)
+- **Type:** X/Twitter — Vessel Forensics Expert
+- **Focus:** Russian Starlink-equipped drone shipments to Anzali Port pre-IDF strike, oil spill impact on global LNG carriers, sanctioned Chinese imagery use in IRGC attacks. 340k followers.
+- **URL:** <https://x.com/IntelCrab>
+- **Signal Level:** 🔴 HIGH
+
+#### @no_itsmyturn (No_ItsMyTurn)
+- **Type:** X/Twitter — Solo OSINT Analyst
+- **Focus:** Axis of Resistance naval ops, PRC-supplied TEE-01B satellites targeting US bases via Hormuz approaches, Qatar-IRGC backchannels. 62k followers.
+- **URL:** <https://x.com/no_itsmyturn>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+#### @GeoConfirmed
+- **Type:** X/Twitter — Verification Hub
+- **Focus:** Geolocation verification hub for Ukraine and Middle East conflict OSINT. 420k followers.
+- **URL:** <https://x.com/GeoConfirmed>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+---
+
+### 🟢 Newly Discovered: Independent Security Blogs & Think Tanks
+
+#### Alma Research and Education Center (Israel-Alma.org)
+- **Type:** Think Tank / Israeli Security Research
+- **Focus:** Intelligence, security, and strategic analysis of Hezbollah, Lebanon, and Iran. Tracks 299 airstrikes (Apr 18–May 3), Hezbollah professional casualties, forward defense lines. Led by Sarit Zehavi.
+- **URL:** <https://israel-alma.org>
+- **Signal Level:** 🔴 HIGH
+
+#### Flashpoint — "Operation Epic Fury" Intel
+- **Type:** Threat Intelligence Blog
+- **Focus:** Real-time tracking of U.S.-Israel strikes on Iran covering cyber threats, infrastructure hits, proxy response tracking. Best for operational details absent in legacy media.
+- **URL:** <https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/>
+- **Signal Level:** 🔴 HIGH
+
+#### Windward.ai Blog
+- **Type:** Maritime OSINT / Satellite Analytics
+- **Focus:** Satellite SAR/EO imagery revealing dark commercial transits (84% dark near Larak/Qeshm May 6), 600% surge in dark activity Apr 19–May 3, GPS jamming (470 incidents/day), Kharg Island covert VLCC loading.
+- **URL:** <https://windward.ai/blog/one-month-into-the-ceasefire/>
+- **Signal Level:** 🔴 HIGH
+
+#### Kpler Defense Intelligence
+- **Type:** Commercial Maritime Intel
+- **Focus:** Real-time AIS + satellite for 400k+ vessels; dark port calls, AIS spoofing, STS transfers, sanctions evasion, anomaly detection. 5-second avg latency.
+- **URL:** <https://www.kpler.com/solution/defense-intelligence>
+- **Signal Level:** 🔴 HIGH
+
+#### ShipFinder Hormuz Live
+- **Type:** Real-Time Vessel Tracking
+- **Focus:** Live maps/logs of Persian Gulf traffic, Hormuz in/out transits (vessel name, MMSI, flag, DWT, operator), crude oil prices + vessel distribution.
+- **URL:** <https://www.shipfinder.com/special/hormuz>
+- **Signal Level:** 🔴 HIGH
+
+#### IranWire
+- **Type:** Citizen Journalism / Iran
+- **Focus:** Crowd-sourced Persian/English blog by citizen journalists. Exposés on hardliner purges and Hezbollah arms flows through Iraqi corridors. Fully independent, ad-free.
+- **URL:** <https://iranwire.com>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+#### Al-Monitor Originals
+- **Type:** Independent Middle East Analysis
+- **Focus:** Rotating Iran/Lebanon specialists — "How Ceasefire Let IRGC Hijack Iran's Reformists" (2026 series).
+- **URL:** <https://www.al-monitor.com/originals>
+- **Signal Level:** 🟡 MEDIUM-HIGH
+
+#### Beirut Wire
+- **Type:** Indie Lebanese Outlet
+- **Focus:** Hezbollah's Iran ties tracking, "Hardliner Tehran Reshaping South Lebanon Militias" series.
+- **URL:** <https://beirutwire.com>
+- **Signal Level:** 🟡 MEDIUM
+
+---
+
+### 🟡 Newly Discovered: European/Multinational Monitor
+
+#### French Charles de Gaulle CSG Deployment (May 6)
+- **Description:** France dispatched aircraft carrier strike group to southern Red Sea with Italian/Dutch escort. Franco-British "guardian force" plan for Hormuz post-conflict — requires Iran + US consent. Macron: "We are ready to secure the Strait of Hormuz."
+- **Source:** Reuters/MarineLink
+- **Signal Level:** 🔴 HIGH
+- **URL:** <https://www.marinelink.com/news/france-deploys-aircraft-carrier-red-sea-538877>
+
+---
+
+## Source Summary
+
+| Category | Count | Highest Signal Sources |
+|---|---|---|
+| New Substacks | 18 | Badlands, Zeihan, Mick Ryan, Maritime Exec, Iran Observer |
+| YouTube Channels | 3 | World Brief Daily, Iran War LIVE, Hormuz Vessel Tracker |
+| X/Twitter Accounts | 6 | @OSINT_613, @AuroraIntel, @MT_Anderson, @IntelCrab |
+| Security Blogs/Think Tanks | 8 | Alma Research, Flashpoint, Windward, Kpler, ShipFinder |
+| European Monitor | 1 | French CDG Carrier Group |
+| **Total New Sources** | **36** | — |
+
+---
+*Scanned at 2026-05-10 08:00 UTC by Trevor OSINT Deep Search (cron: 08cae30c)*

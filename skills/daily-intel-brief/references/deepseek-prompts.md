@@ -66,9 +66,22 @@ Produce a single JSON object matching this schema exactly:
   "region": "{region_snake}",
   "as_of_utc": "{date_utc}T06:00:00Z",
   "incident_count": <int>,
-  "narrative": "<2 to 3 paragraph synthesis, ~200 words, plain
-                English, calibrated language. Cite incident IDs where
-                you draw a specific claim. Synthesise — do not list.>",
+  "narrative": "<4 to 6 paragraph deep-dive synthesis, ~600 words,
+                plain English, calibrated language. Structure it: (1) what
+                happened overnight, (2) why it matters now, (3) what to watch
+                next. Cite incident IDs where you draw a specific claim.
+                Synthesise — do not list. Be substantive.>",
+  "story": "<a deeper 2-3 paragraph narrative essay, ~300 words.
+              Tell the story behind the headlines — who moved, what
+              their incentive structure looks like, what the secondary
+              and tertiary effects are. This goes into the PDF as the
+              THE STORY section. Be analytical, not journalistic.>",
+  "by_the_numbers": [
+    "<key data point 1, e.g., 'Oil flows through Hormuz: ~2.1M bpd vs 17M bpd normal'>",
+    "<key data point 2>",
+    "<key data point 3>",
+    "<key data point 4>"
+  ],
   "key_judgments": [
     {
       "id": "KJ-{region_short}-1",

@@ -613,6 +613,188 @@
           "focus": "OpenClaw skill building, framework development"
         }
       ]
+    },
+    {
+      "category": "Deep Horizon Scan — 2026-05-10",
+      "note": "Newly discovered from Trevor OSINT Deep Search cron (08cae30c), May 10, 2026",
+      "sources": [
+        {
+          "name": "Badlands (Borzou Daragahi)",
+          "type": "Substack/Geopolitics",
+          "focus": "Daily intelligence on global affairs, Lebanon crisis, Iran war dynamics. Veteran Middle East correspondent.",
+          "url": "https://borzou.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Mick Ryan — The Learning Curve",
+          "type": "Substack/Military Strategy",
+          "focus": "Military learning across Ukraine, Middle East, Indo-Pacific. PLA study of Iran War, CENTCOM Hormuz operations.",
+          "url": "https://mickryan.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Marc Schulman — Tel Aviv Diary",
+          "type": "Substack/Israel Security",
+          "focus": "Daily diaries: Iran-Hormuz dynamics, Israel-Lebanon ceasefire violations, Hezbollah fiber-optic drone warfare.",
+          "url": "https://marcschulman.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Peter Zeihan on Geopolitics",
+          "type": "Substack/Geopolitical Risk",
+          "focus": "Data-driven forecasts on Hormuz as Asian fuel artery, oil price shock modeling ($20-50/bbl). 500k+ subscribers.",
+          "url": "https://peterzeihan.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Maritime Executive Daily",
+          "type": "Substack/Maritime Security",
+          "focus": "Real-time shipping risks, insurance hikes, vessel rerouting, LNG trade exposure (93% Qatar LNG at risk).",
+          "url": "https://maritime-executive.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Iran Observer (Amir Taheri)",
+          "type": "Substack/Iran Politics",
+          "focus": "Tehran politics, IRGC maneuvers, Hezbollah rearmament via Iranian smuggling routes. Hardliner consolidation post-ceasefire.",
+          "url": "https://iranobserver.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Gulf Analysis",
+          "type": "Substack/Gulf Security",
+          "focus": "Iran proxies, Hormuz diplomacy, Gulf energy security. Authored by ex-diplomats.",
+          "url": "https://gulfinternationalsecurity.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "The Levant Report (Hanin Ghaddar)",
+          "type": "Substack/Lebanon-Hezbollah",
+          "focus": "Lebanon-Hezbollah nexus with Iranian funding, Beirut reporting, IRGC grip on Lebanese ports.",
+          "url": "https://thelevantreport.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Middle East Contrarian (Jonathan Spyer)",
+          "type": "Substack/Field Journalism",
+          "focus": "Syria-Lebanon-Iran triangle, field dispatches from Lebanon, skeptical of Western proxy narratives.",
+          "url": "https://spyer.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "World Brief Daily",
+          "type": "YouTube/OSINT Geopolitical",
+          "focus": "Daily geopolitical briefings with geospatial OSINT: Iranian cave-hidden anti-ship missiles, US destroyer deployments, sea mine threats.",
+          "url": "https://www.youtube.com/@WorldBriefDaily",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "OSINT 613 (@OSINT_613)",
+          "type": "X/Twitter — OSINT Aggregator",
+          "focus": "Iran war OSINT aggregator: Russian drone shipments to Bandar Anzali, IDF maritime strikes, PRC satellite imagery support to IRGC. 245k followers.",
+          "url": "https://x.com/OSINT_613",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Aurora Intel (@AuroraIntel)",
+          "type": "X/Twitter — Maritime OSINT",
+          "focus": "Live AIS tracking of Iranian oil tankers evading Hormuz post-Kharg spill, Russian Caspian drone convoys. 180k followers.",
+          "url": "https://x.com/AuroraIntel",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "MT Anderson (@MT_Anderson)",
+          "type": "X/Twitter — Maritime Tracker",
+          "focus": "Qatar-mediated tanker routes, Chinese satellite firms aiding IRGC strikes, fiber-optic drone shipments. 95k followers.",
+          "url": "https://x.com/MT_Anderson",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Intel Crab (@IntelCrab)",
+          "type": "X/Twitter — Vessel Forensics",
+          "focus": "Russian Starlink-equipped drone shipments, oil spill impact on LNG carriers, sanctioned Chinese imagery. 340k followers.",
+          "url": "https://x.com/IntelCrab",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Alma Research and Education Center",
+          "type": "Think Tank/Israeli Security",
+          "focus": "Intelligence on Hezbollah, Lebanon, Iran. Post-ceasefire airstrike tracking (299 strikes Apr 18-May 3), forward defense lines, professional casualty analysis.",
+          "url": "https://israel-alma.org",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Flashpoint Blog — Operation Epic Fury",
+          "type": "Threat Intelligence Blog",
+          "focus": "Real-time tracking of US-Israel strikes on Iran: cyber threats, infrastructure hits, proxy responses.",
+          "url": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Windward.ai Maritime OSINT",
+          "type": "Satellite Maritime Analytics",
+          "focus": "SAR/EO satellite imagery for dark fleet tracking (84% dark vessels near Hormuz), GPS jamming (470 incidents/day), Kharg Island covert VLCC loading.",
+          "url": "https://windward.ai/blog/one-month-into-the-ceasefire/",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Kpler Defense Intelligence",
+          "type": "Commercial Maritime Intel",
+          "focus": "Real-time AIS + satellite for 400k+ vessels; dark port calls, AIS spoofing, STS transfers, sanctions evasion alerts. 5-second latency.",
+          "url": "https://www.kpler.com/solution/defense-intelligence",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "ShipFinder Hormuz Live",
+          "type": "Real-Time Vessel Tracking",
+          "focus": "Live Persian Gulf traffic, Hormuz in/out transits, vessel data (MMSI, flag, DWT), crude oil prices.",
+          "url": "https://www.shipfinder.com/special/hormuz",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "France Charles de Gaulle CSG — Hormuz Guardian Force",
+          "type": "Multinational Naval Deployment",
+          "focus": "European guardian force for Strait of Hormuz: French carrier group + Italian/Dutch escorts, Franco-British plan for post-conflict escort ops.",
+          "url": "https://www.marinelink.com/news/france-deploys-aircraft-carrier-red-sea-538877",
+          "signal_level": "High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "IranWire",
+          "type": "Citizen Journalism/Iran",
+          "focus": "Crowd-sourced Persian/English blog: hardliner purges, Hezbollah arms flows through Iraqi corridors. Fully independent.",
+          "url": "https://iranwire.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        },
+        {
+          "name": "Hussain Abdul-Hussain",
+          "type": "Substack/Middle East Analysis",
+          "focus": "Trump 'Deal of the Century' for Lebanon: Hezbollah disarmament, Israeli withdrawal, border demarcation, reconstruction framework.",
+          "url": "https://hussainabdulhussain.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-10"
+        }
+      ]
     }
   ]
 }
