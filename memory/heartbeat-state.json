@@ -1,15 +1,13 @@
 {
   "version": 1,
   "lastChecks": {
-    "agentmail_inbox": 1778354899,
-    "osint_scan": 1777840273,
-    "memory_hygiene": 1778239835,
-    "repo_state": 1778242215,
-    "brain_reindex": 1778241135,
-    "deepseek_balance": 1778354899,
-    "moltbook_check": 1778243708,
-    "gmail_system_check": 1778354899
+    "agentmail_inbox": 1778441241,
+    "moltbook_check": 1778441241,
+    "memory_hygiene": 1778441241,
+    "repo_state": 1778441241,
+    "deepseek_balance": 1778441241,
+    "gmail_system_check": 1778441241
   },
-  "lastHeartbeat": 1778354899,
-  "rotationCursor": 0
+  "lastHeartbeat": 1778441241,
+  "rotationCursor": 1
 }
