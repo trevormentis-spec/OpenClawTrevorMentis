@@ -20,6 +20,7 @@ sys.path.insert(0, str(SKILL_ROOT))
 from deepseek_client import DeepSeekClient
 from trevor_config import WORKSPACE, THEATRES
 from trevor_log import get_logger
+from trevor_memory import MemoryStore
 
 sys.path.insert(0, str(SKILL_ROOT / 'scripts'))
 from _fetch_intel_emails import fetch_emails
@@ -87,8 +88,15 @@ def format_source_text(emails):
     return '\n'.join(parts)
 
 
-def build_prompt(theatre_key, theatre_title, prev, source_text, kalshi_data):
-    """Build the DeepSeek V4 Pro prompt for TREVOR's own assessment."""
+def build_prompt(theatre_key, theatre_title, prev, source_text, kalshi_data, memory_context=None):
+    """Build the DeepSeek V4 Pro prompt with memory-conditioned retrieval."""
+    
+    # Memory context: prior narratives, KJs, trade theses, unresolved questions
+    mem_bluf = memory_context.get("prior_narrative", "") if memory_context else ""
+    mem_kjs = memory_context.get("prior_kjs", "") if memory_context else ""
+    mem_unresolved = memory_context.get("unresolved_questions", "") if memory_context else ""
+    mem_trade = memory_context.get("prior_trade_theses", "") if memory_context else ""
+    mem_drift = memory_context.get("narrative_drift", "") if memory_context else ""
     
     prompt = f"""You are TREVOR — Threat Research and Evaluation Virtual Operations Resource — a senior intelligence analysis system.
 
@@ -103,11 +111,17 @@ Assess them critically — weigh source credibility, look for corroboration and 
 
 {source_text}
 
---- NARRATIVE CONTINUITY (previous assessment) ---
-BLUF from last edition: {prev.get('bluf', 'N/A')[:1500]}
-Key Judgments from last edition: {prev.get('key_judgments', 'N/A')[:1500]}
+--- NARRATIVE CONTINUITY (memory retrieval) ---
+Prior BLUF: {mem_bluf[:1000]}
+Prior Key Judgments: {mem_kjs[:1000]}
+Unresolved questions from prior runs: {mem_unresolved[:800]}
+Prior trade theses: {mem_trade[:800]}
+
+--- NARRATIVE DRIFT DETECTION ---
+{mem_drift[:800]}
 
 Apply structured analytic techniques:
+- **Narrative Continuity:** Have narratives changed since the last assessment? If not, require fresh sourcing.
 - **ACH (Analysis of Competing Hypotheses):** Identify 2-3 alternative explanations for the key development
 - **Source Credibility Weighting:** Rate each source (1-5) for reliability and relevance
 - **Indicator Validation:** Track whether previous indicators were confirmed or refuted
@@ -152,12 +166,54 @@ def generate_assessments(source_data, kalshi_data):
     system = "You are TREVOR, a senior intelligence analysis system. Produce YOUR OWN structured assessment from the raw source material provided. Apply ACH, source credibility weighting, and Sherman Kent calibrated probabilities. Never say you cannot access external information — you already have the source material in the prompt."
     
     def generate_one(theatre):
-        print(f"Generating {theatre['key']}...", flush=True)
+        key = theatre['key']
+        print(f"Generating {key}...", flush=True)
         
-        prev = load_previous_assessment(theatre['key'])
-        emails = source_data.get(theatre['key'], [])
+        # Retrieve memory context for this theatre
+        try:
+            mem = MemoryStore()
+            prior_narr = mem.get_previous_narrative(key, days=30) or ""
+            prior_kjs_raw = mem.get_prior_judgment(key)
+            prior_kjs = json.dumps([j.get("content","")[:200] for j in prior_kjs_raw]) if prior_kjs_raw else ""
+            
+            # Search for unresolved questions and trade theses
+            unresolved_raw = mem.search("unresolved question", collection="narrative", region=key, top_k=3)
+            unresolved = json.dumps([r.get("content","")[:200] for r in unresolved_raw]) if unresolved_raw else ""
+            
+            trade_raw = mem.search("trade thesis", collection="trade_thesis", region=key, top_k=3)
+            trade = json.dumps([r.get("content","")[:200] for r in trade_raw]) if trade_raw else ""
+            
+            # Check narrative drift from story_tracker
+            drift = ""
+            drift_file = SKILL_ROOT / 'cron_tracking' / 'story_delta.json'
+            if drift_file.exists():
+                try:
+                    dd = json.loads(drift_file.read_text())
+                    for d in dd.get("diffs", []):
+                        if d.get("region") == key and d.get("status") == "stale":
+                            drift = f"⚠ Stale: same lead narrative for {d.get('days_same', '?')} days. Require fresh framing."
+                except: pass
+            
+            mem.close()
+        except Exception:
+            prior_narr = ""
+            prior_kjs = ""
+            unresolved = ""
+            trade = ""
+            drift = ""
+        
+        memory_context = {
+            "prior_narrative": prior_narr,
+            "prior_kjs": prior_kjs,
+            "unresolved_questions": unresolved,
+            "prior_trade_theses": trade,
+            "narrative_drift": drift,
+        }
+        
+        prev = load_previous_assessment(key)
+        emails = source_data.get(key, [])
         source_text = format_source_text(emails)
-        prompt = build_prompt(theatre['key'], theatre['title'], prev, source_text, kalshi_data)
+        prompt = build_prompt(key, theatre['title'], prev, source_text, kalshi_data, memory_context)
         
         client = DeepSeekClient(timeout=120)
         try:

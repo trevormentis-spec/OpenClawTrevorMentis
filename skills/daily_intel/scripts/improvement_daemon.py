@@ -142,8 +142,33 @@ def step_build_pdf():
     """Build the final PDF."""
     log("┌─ Build PDF")
     ok, msg = run_script('build_pdf.py', timeout=180)
-    if ok:
-        # Get file info
+    if not ok:
+        log.warning("PDF generation failed — generating text fallback")
+        try:
+            import subprocess
+            result = subprocess.run(
+                [sys.executable, '-c', '''
+import sys; sys.path.insert(0, "skills/daily_intel/scripts")
+from build_pdf import generate_text_fallback
+path = generate_text_fallback()
+print(f"TEXT_FALLBACK:{path}")
+'''],
+                capture_output=True, text=True, timeout=60,
+                cwd=str(SKILL_ROOT.parent.parent)
+            )
+            if "TEXT_FALLBACK:" in result.stdout:
+                fb_path = result.stdout.split("TEXT_FALLBACK:")[1].strip().split("\n")[0]
+                log.info(f"Text fallback written: {fb_path}")
+                # Update state to show fallback was used
+                if STATE_FILE.exists():
+                    state = json.loads(STATE_FILE.read_text())
+                    state["fallback_mode"] = "plain_text"
+                    state["fallback_path"] = fb_path
+                    STATE_FILE.write_text(json.dumps(state, indent=2))
+        except Exception as e:
+            log.error(f"Text fallback also failed: {e}")
+    else:
+        # Get file info for successful PDF
         pdfs = sorted(SKILL_ROOT.glob("security_brief_*.pdf"))
         if pdfs:
             latest = pdfs[-1]
@@ -412,6 +437,34 @@ def run_daily():
 
     # Phase 2: Generation
     log("\n── Phase 2: Content Generation ──")
+    
+    # Check if any narratives are stale — inject adaptation flag
+    adaptation_flag = ""
+    drift_file = CRON_DIR / 'story_delta.json'
+    if drift_file.exists():
+        try:
+            delta = json.loads(drift_file.read_text())
+            stale_count = delta.get("stale_count", 0)
+            if stale_count > 0:
+                adaptation_flag = f"ADAPT: {stale_count} stale narratives — apply fresh framing"
+                log.warning(f"Stale narratives detected: {stale_count}")
+        except:
+            pass
+    
+    # Check calibration — if bands are drifting, adjust
+    cal_file = CRON_DIR / 'brier_scores.json'
+    if cal_file.exists():
+        try:
+            cal = json.loads(cal_file.read_text())
+            by_band = cal.get("by_band", {})
+            for band, stats in by_band.items():
+                if stats.get("avg_brier", 0) > 0.25:  # Brier > 0.25 = poor calibration
+                    log.warning(f"Calibration drift in '{band}': Brier={stats['avg_brier']}")
+        except:
+            pass
+    
+    os.environ["TREVOR_ADAPTATION_FLAG"] = adaptation_flag
+    
     ok, _ = step_assessments()
     if not ok:
         log("  Assessments failed — continuing with fallback")
@@ -430,8 +483,28 @@ def run_daily():
 
     # Phase 3: Quality & Measurement
     log("\n── Phase 3: Quality & Measurement ──")
+    
+    # Run briefometer calibration check before quality audit
+    briefometer_ok, briefometer_msg = run_script('briefometer.py', ['--calibrate'], timeout=15)
+    
     step_quality_audit()
     step_story_tracker_save()
+    
+    # After quality audit: check state for critical issues and attempt auto-repair
+    if STATE_FILE.exists():
+        try:
+            state = json.loads(STATE_FILE.read_text())
+            criticals = state.get("health", {}).get("critical", 0)
+            if criticals > 0:
+                log.warning(f"Critical issues remain: {criticals} — triggering auto-repair loop")
+                for issue in state.get("health", {}).get("issues", []):
+                    if issue.get("severity") == "critical":
+                        issue_type = issue.get("type", "unknown")
+                        log.info(f"  Attempting repair: {issue_type}")
+                        run_script('quality_audit.py', timeout=60)
+                        break  # one repair cycle, don't loop indefinitely
+        except:
+            pass
 
     # Phase 4: Distribution
     log("\n── Phase 4: Distribution ──")
@@ -448,6 +521,18 @@ def run_daily():
     report_path.write_text(json.dumps(report, indent=2))
     log(f"  Report: {report_path.name}")
 
+    # Procedural memory: if pipeline succeeded, nudge to save skill
+    if success:
+        try:
+            from trevor_skills import SkillRegistry
+            reg = SkillRegistry()
+            existing = reg.count()
+            # If we have fewer than 5 skills, suggest creating one
+            if existing < 5:
+                log.info(f"Skill nudge: {existing}/5 skills — consider creating procedural memory from this run")
+        except:
+            pass
+    
     if success:
         log(f"\n✅ Daily pipeline complete: {date_str}")
     else:
