@@ -92,7 +92,7 @@ def band_color(b: str) -> str:
 
 REGIONS = {
     "europe": ("EUROPE", "Europe"),
-    "asia": ("SOUTH ASIA", "Asia"),
+    "asia": ("ASIA", "Asia"),
     "middle_east": ("MIDDLE EAST", "Middle East"),
     "north_america": ("NORTH AMERICA", "North America"),
     "south_central_america": ("SOUTH AMERICA", "S. & C. America"),
@@ -105,7 +105,7 @@ REGION_EMOJI = {
 }
 # Section subtitles (matching Perplexity's descriptive titles)
 SECTION_SUBTITLES = {
-    "europe": "Truce & Strategic Dynamics", "asia": "Doctrine & Posture",
+    "europe": "Truce & Strategic Dynamics", "asia": "Diplomacy & Power Projection",
     "middle_east": "Framework & Kinetic Cycle", "north_america": "Coordination & Sovereignty",
     "south_central_america": "Political & Financial Pressures",
     "global_finance": "Risk & Liquidity Conditions",
@@ -791,13 +791,13 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
                 b64 = base64.b64encode(raw).decode()
                 theatre_map_html = f'<img class="map-img" src="data:image/png;base64,{b64}" alt="Map of {label_full}">'
                 theatre_map_cap = f'<div class="map-cap">🗺 Theatre Map — {sec_header} — {ds}</div>'
-        # Map legend — colour-coded pin types, aligns with theatre geography
+        # Map legend — short labels, consistent with in-map legend
         map_legend_html = f"""
         <div class="map-legend">
-            <div class="leg-item"><span class="leg-dot" style="background:{RED};"></span><span class="leg-label">Conflict Zone / Active</span></div>
-            <div class="leg-item"><span class="leg-dot" style="background:{ORANGE};"></span><span class="leg-label">Strategic Interest</span></div>
-            <div class="leg-item"><span class="leg-dot" style="background:{BLUE};"></span><span class="leg-label">Capital / Key City</span></div>
-            <div class="leg-item"><span class="leg-line" style="background:{RED};"></span><span class="leg-label">Route / Vector</span></div>
+            <div class="leg-item"><span class="leg-dot" style="background:{RED};"></span><span class="leg-label">Conflict</span></div>
+            <div class="leg-item"><span class="leg-dot" style="background:{ORANGE};"></span><span class="leg-label">Strategic</span></div>
+            <div class="leg-item"><span class="leg-dot" style="background:{BLUE};"></span><span class="leg-label">City</span></div>
+            <div class="leg-item"><span class="leg-line" style="background:{RED};"></span><span class="leg-label">Route</span></div>
         </div>"""
         theatre_map_section = f'<div class="map-section">{theatre_map_html}{theatre_map_cap}{map_legend_html}</div>' if theatre_map_html else map_callout_html
 
@@ -943,7 +943,7 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         infographics_html = f"""
         <div class="mkt-page">
             <div class="sec-header">
-            <h2 class="sec-num" style="color: {GOLD};">{(sec_num-2):02d} / DATA</h2>
+            <h2 class="sec-num" style="color: {GOLD};">{(sec_num-1):02d} / DATA</h2>
             <h1 class="sec">📊 Data Visualizations</h1>
             <h2 class="s-sub" style="color: rgba(255,255,255,0.5);">{ds} — Analytical Infographics</h2>
             </div>
@@ -970,7 +970,7 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
     meth = f"""
     <div class="meth-page">
         <div class="sec-header">
-        <h2 class="sec-num" style="color: {GOLD};">{(sec_num-1):02d} / METHOD</h2>
+        <h2 class="sec-num" style="color: {GOLD};">{(sec_num):02d} / METHOD</h2>
         <h1 class="sec">⚙ Methodology</h1>
         <h2 class="s-sub" style="color: rgba(255,255,255,0.5);">Estimative Language &amp; Sourcing</h2>
         </div>

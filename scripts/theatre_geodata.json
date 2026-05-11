@@ -50,6 +50,9 @@
       {"name": "Taipei", "lon": 121.565, "lat": 25.033, "color": "#d47500", "size": 55},
       {"name": "Delhi", "lon": 77.103, "lat": 28.704, "color": "#2c6aa0", "size": 55},
       {"name": "Islamabad", "lon": 73.047, "lat": 33.684, "color": "#2c6aa0", "size": 40},
+      {"name": "Tokyo", "lon": 139.691, "lat": 35.689, "color": "#2c6aa0", "size": 50},
+      {"name": "Seoul", "lon": 126.978, "lat": 37.566, "color": "#2c6aa0", "size": 45},
+      {"name": "Shanghai", "lon": 121.473, "lat": 31.230, "color": "#2c6aa0", "size": 45},
       {"name": "Mbabane", "lon": 31.133, "lat": -26.317, "color": "#d47500", "size": 40}
     ],
     "conflict_zones": [

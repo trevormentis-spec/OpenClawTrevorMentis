@@ -49,9 +49,9 @@ REGION_MAPS = {
         "grid_color": "#1e3050",
     },
     "asia": {
-        "center": (30.0, 80.0), "zoom": 3,
-        "bbox": (60, 0, 100, 45),
-        "label": "South Asia",
+        "center": (30.0, 100.0), "zoom": 3,
+        "bbox": (55, -10, 150, 55),
+        "label": "Asia & Indo-Pacific",
         "land_color": "#1a2a4a",
         "water_color": "#0a1228",
         "grid_color": "#1e3050",
