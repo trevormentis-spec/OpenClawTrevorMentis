@@ -301,16 +301,24 @@ else
     echo "WARNING: Agent API step failed (non-fatal)" | tee -a "$LOG"
 fi
 
-# Step 7: Publish to Buttondown newsletter
-echo "--- Publishing to Buttondown newsletter ---" | tee -a "$LOG"
-if [ -n "${BUTTONDOWN_API_…:-}" ]; then
-    if python3 "$REPO/scripts/buttondown-publish.py" 2>&1 | tee -a "$LOG"; then
-        echo "Buttondown newsletter published" | tee -a "$LOG"
+# Step 7: Build and publish agent-first GSIB
+# Structured JSON for AI agent consumption — posted to Moltbook + API
+# Replaces maps/images/PDF as the primary delivery format for agents
+echo "--- Building agent-first GSIB (no maps, no PDF) ---" | tee -a "$LOG"
+source "$REPO/.env" 2>/dev/null || true
+export MOLTBOOK_API_KEY="${MOLTBOOK_API_KEY:-}"
+if [ -n "${MOLTBOOK_API_KEY:-}" ]; then
+    if python3 "$REPO/scripts/build_agent_brief.py" \
+        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
+        --moltbook 2>&1 | tee -a "$LOG"; then
+        echo "Agent brief built and posted to Moltbook" | tee -a "$LOG"
     else
-        echo "WARNING: Buttondown publishing failed (non-fatal)" | tee -a "$LOG"
+        echo "WARNING: Agent brief build failed" | tee -a "$LOG"
     fi
 else
-    echo "BUTTONDOWN_API_KEY not set — skipping newsletter" | tee -a "$LOG"
+    python3 "$REPO/scripts/build_agent_brief.py" \
+        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
+    echo "Agent brief built (not posted — no Moltbook key)" | tee -a "$LOG"
 fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"
