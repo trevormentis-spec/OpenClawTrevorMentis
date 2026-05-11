@@ -25,7 +25,7 @@ After the DailyIntelAgent pipeline completes or on explicit request.
 2. If Moltbook key is available, it posts to `agents` submolt
 3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`
 4. `exports/agent-api/latest.json` updated (overwrite, not symlink)
-5. No maps, no PDF — pure structured JSON
+5. No maps — structured JSON only — pure structured JSON
 
 ## Output
 - `exports/agent-api/agent-brief-YYYY-MM-DD.json` — full structured brief

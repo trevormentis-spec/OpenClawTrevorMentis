@@ -1,6 +1,6 @@
 {
   "schema": "https://trevormentis.spec/skill-registry/v1",
-  "generated": "2026-05-11T22:06:40Z",
+  "generated": "2026-05-11T22:09:46Z",
   "skill_count": 3,
   "categories": [
     "agent-brief",
@@ -32,14 +32,14 @@
         "lead": "# Build Agent-First GSIB",
         "When to Use": "After the DailyIntelAgent pipeline completes or on explicit request.",
         "Input Data": "- Analysis JSONs at `~/trevor-briefings/YYYY-MM-DD/analysis/*.json`\n- Kalshi scan at `exports/kalshi-scan-YYYY-MM-DD.md`\n- Previous brief at `exports/agent-api/agent-brief-YYYY-MM-DD.json`",
-        "Procedure": "1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps, no PDF \u2014 pure structured JSON",
+        "Procedure": "1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps \u2014 structured JSON only \u2014 pure structured JSON",
         "Output": "- `exports/agent-api/agent-brief-YYYY-MM-DD.json` \u2014 full structured brief\n- Moltbook post at `https://www.moltbook.com/posts/{id}` (if key available)",
         "Verification": "- Check file size > 10 KB\n- Verify `theatre_count` == 6\n- Verify Moltbook post has correct title if posted",
         "Pitfalls": "- Moltbook API key must be in .env or environment\n- No error if key missing \u2014 just skips posting, still saves JSON\n- DateTime deprecation warning is cosmetic, safe to ignore",
         "Related Skills": "- `build-gsib-pdf` \u2014 when PDF is also needed alongside JSON"
       },
-      "full_content": "# Build Agent-First GSIB\n\n## When to Use\nAfter the DailyIntelAgent pipeline completes or on explicit request.\n\n## Input Data\n- Analysis JSONs at `~/trevor-briefings/YYYY-MM-DD/analysis/*.json`\n- Kalshi scan at `exports/kalshi-scan-YYYY-MM-DD.md`\n- Previous brief at `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n\n## Procedure\n1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps, no PDF \u2014 pure structured JSON\n\n## Output\n- `exports/agent-api/agent-brief-YYYY-MM-DD.json` \u2014 full structured brief\n- Moltbook post at `https://www.moltbook.com/posts/{id}` (if key available)\n\n## Verification\n- Check file size > 10 KB\n- Verify `theatre_count` == 6\n- Verify Moltbook post has correct title if posted\n\n## Pitfalls\n- Moltbook API key must be in .env or environment\n- No error if key missing \u2014 just skips posting, still saves JSON\n- DateTime deprecation warning is cosmetic, safe to ignore\n\n## Related Skills\n- `build-gsib-pdf` \u2014 when PDF is also needed alongside JSON",
-      "char_count": 1216
+      "full_content": "# Build Agent-First GSIB\n\n## When to Use\nAfter the DailyIntelAgent pipeline completes or on explicit request.\n\n## Input Data\n- Analysis JSONs at `~/trevor-briefings/YYYY-MM-DD/analysis/*.json`\n- Kalshi scan at `exports/kalshi-scan-YYYY-MM-DD.md`\n- Previous brief at `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n\n## Procedure\n1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps \u2014 structured JSON only \u2014 pure structured JSON\n\n## Output\n- `exports/agent-api/agent-brief-YYYY-MM-DD.json` \u2014 full structured brief\n- Moltbook post at `https://www.moltbook.com/posts/{id}` (if key available)\n\n## Verification\n- Check file size > 10 KB\n- Verify `theatre_count` == 6\n- Verify Moltbook post has correct title if posted\n\n## Pitfalls\n- Moltbook API key must be in .env or environment\n- No error if key missing \u2014 just skips posting, still saves JSON\n- DateTime deprecation warning is cosmetic, safe to ignore\n\n## Related Skills\n- `build-gsib-pdf` \u2014 when PDF is also needed alongside JSON",
+      "char_count": 1231
     },
     {
       "path": "publishing/build-gsib-agent-brief-json.md",
