@@ -106,31 +106,15 @@ if [ -z "$PDF_PATH" ]; then
 fi
 echo "PDF found: $PDF_PATH ($(du -h "$PDF_PATH" | cut -f1))" | tee -a "$LOG"
 
-# Step 2b: Generate theatre maps (v3 — Natural Earth + GeoJSON overlays)
-MAPS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/maps"
-GEOJSON_DATA="$HOME/trevor-briefings/theatre_geodata.json"
-echo "--- Generating theatre maps (v3 engine) ---" | tee -a "$LOG"
-if python3 "$REPO/scripts/generate_brief_maps_v3.py" \
-    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-    --out-dir "$MAPS_DIR" \
-    --geojson-data "$GEOJSON_DATA" \
-    --width 1600 --height 1200 --dpi 150 2>&1 | tee -a "$LOG"; then
-    echo "Theatre maps (v3) generated" | tee -a "$LOG"
-else
-    echo "WARNING: v3 map generation failed, trying v2 fallback" | tee -a "$LOG"
-    if python3 "$REPO/scripts/generate_brief_maps.py" \
-        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-        --out-dir "$MAPS_DIR" 2>&1 | tee -a "$LOG"; then
-        echo "Theatre maps (v2 fallback) generated" | tee -a "$LOG"
-    else
-        echo "WARNING: All map generation failed (non-fatal)" | tee -a "$LOG"
-        MAPS_DIR=""
-    fi
-fi
+# Step 2b: Maps removed — quality wasn't meeting standards
+MAPS_DIR=""
+echo "--- Maps disabled per Roderick ---" | tee -a "$LOG"
 
 # Step 2c: Generate AI imagery for the brief sections (optional enhancement)
 IMAGES_JSON="$HOME/trevor-briefings/${DATE_UTC}/visuals/section-images.json"
 echo "--- Generating section imagery via GenViral Studio AI ---" | tee -a "$LOG"
+# Ensure GenViral key is loaded
+source "$REPO/.env" 2>/dev/null || true
 if [ -n "${GENVIRAL_API_KEY:-}" ]; then
     if python3 "$REPO/scripts/generate_brief_images.py" \
         --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \

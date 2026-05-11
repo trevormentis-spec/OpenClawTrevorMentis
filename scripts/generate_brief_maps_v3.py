@@ -91,8 +91,8 @@ REGION_MAPS = {
 }
 
 # ── Natural Earth URLs ──
-NE_LAND = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson"
-NE_COUNTRIES = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson"
+NE_LAND = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson"
+NE_COUNTRIES = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_boundary_lines_land.geojson"
 
 
 def log(msg):
@@ -204,7 +204,7 @@ def render_theatre_map(
     if clipped and "features" in clipped:
         for feat in clipped["features"]:
             geom = feat.get("geometry", {})
-            draw_geometry(ax, geom, color=cfg["land_color"], alpha=1.0, linewidth=0.1)
+            draw_geometry(ax, geom, color=cfg["land_color"], alpha=1.0, linewidth=0.3)
 
     # Draw theatre data overlays (cities, zones, routes)
     td = theatre_data.get(region, {}) if theatre_data else {}
@@ -248,7 +248,7 @@ def render_theatre_map(
                            arrowprops=dict(arrowstyle="->", color=route_color, lw=1.5),
                            zorder=6)
 
-    # 3. City/strategic markers
+    # 3. City/strategic markers with halo effect
     cities = td.get("cities", [])
     for city in cities:
         lon, lat = city.get("lon", 0), city.get("lat", 0)
@@ -258,14 +258,24 @@ def render_theatre_map(
         marker_type = city.get("marker", "o")
         if not point_in_bbox(lon, lat, bbox):
             continue
+        # White halo circle behind marker
+        ax.scatter(lon, lat, s=marker_size*2.5, c="white", marker=marker_type,
+                   edgecolors="none", linewidth=0, zorder=9, alpha=0.25)
+        # Actual marker
         ax.scatter(lon, lat, s=marker_size, c=marker_color, marker=marker_type,
-                   edgecolors=WHITE, linewidth=0.6, zorder=10, alpha=0.9)
-        # Label offset: alternate sides based on latitude to reduce overlap
-        x_off = 0.4 if lat > (min_lat + max_lat) / 2 else -0.4
-        y_off = -0.4 if abs(lon - (min_lon + max_lon) / 2) > 10 else 0.4
-        ax.text(lon + x_off, lat + y_off, name, fontsize=5.5, color=WHITE,
-                ha="left" if x_off > 0 else "right", va="top" if y_off < 0 else "bottom",
-                fontweight="bold", zorder=11)
+                   edgecolors=WHITE, linewidth=0.8, zorder=10, alpha=0.95)
+        # Label with offset based on position in viewport to avoid overlap
+        # Place label above marker if marker is in lower half, below if in upper half
+        mid_lat = (min_lat + max_lat) / 2
+        mid_lon = (min_lon + max_lon) / 2
+        x_off = 0.5 if lon < mid_lon else -0.5
+        y_off = -0.3 if lat < mid_lat else 0.3
+        ax.text(lon + x_off, lat + y_off, name, fontsize=5, color=WHITE,
+                ha="left" if x_off > 0 else "right",
+                va="top" if y_off < 0 else "bottom",
+                fontweight="bold", zorder=11,
+                bbox=dict(boxstyle="round,pad=0.1", facecolor=BG_MID,
+                          edgecolor="none", alpha=0.6))
 
     # 4. Labels for key geographic features
     features = td.get("features", [])
@@ -292,14 +302,15 @@ def render_theatre_map(
     ax.set_yticklabels([])
     ax.tick_params(which='both', length=0, pad=0, labelsize=0, colors=cfg["grid_color"])
 
-    # ── TITLE BAR (overlaid in plot space, top-center) ──
+    # ── TITLE BAR ──
     date_str = dt.date.today().strftime("%d %b %Y")
     title_text = f"{cfg['label']} — Theatre Overview"
-    ax.text(0.5, 0.98, title_text, transform=ax.transAxes, fontsize=12,
+    # Navy title bar
+    ax.text(0.5, 0.98, title_text, transform=ax.transAxes, fontsize=13,
             color=GOLD, fontweight="bold", ha="center", va="top",
             fontfamily="sans-serif")
-    ax.text(0.5, 0.935, f"TREVOR INTELLIGENCE · {date_str}",
-            transform=ax.transAxes, fontsize=5.5, color=LGRAY,
+    ax.text(0.5, 0.93, f"TREVOR INTELLIGENCE · {date_str}",
+            transform=ax.transAxes, fontsize=6, color=LGRAY,
             ha="center", va="top", fontfamily="sans-serif")
 
     # Spines
@@ -307,32 +318,9 @@ def render_theatre_map(
         spine.set_color(cfg["grid_color"])
         spine.set_linewidth(0.5)
 
-    # ── LEGEND (compact, readable, bottom-right) ──
-    legend_handles = []
-    if zones:
-        legend_handles.append(mpatches.Patch(facecolor=RED, alpha=0.2,
-                                              edgecolor=RED, linewidth=1,
-                                              label="Conflict"))
-    if routes:
-        legend_handles.append(plt.Line2D([0], [0], color=ORANGE, linewidth=2.5,
-                                          label="Route"))
-    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w',
-                                      markerfacecolor=BLUE, markersize=7,
-                                      label="City"))
-    legend_handles.append(plt.Line2D([0], [0], marker='o', color='w',
-                                      markerfacecolor=RED, markersize=7,
-                                      label="Incident"))
-    if legend_handles:
-        leg = ax.legend(handles=legend_handles, loc="lower right",
-                        fontsize=6.5, framealpha=0.85,
-                        facecolor=BG_MID, edgecolor=GOLD,
-                        labelcolor=WHITE, markerscale=0.7, ncol=4,
-                        columnspacing=10)
-        leg.get_frame().set_linewidth(0.5)
-
     # TREVOR watermark
     ax.text(0.99, 0.01, "TREVOR", transform=ax.transAxes, fontsize=8,
-            color=GOLD, alpha=0.25, ha="right", va="bottom",
+            color=GOLD, alpha=0.2, ha="right", va="bottom",
             fontweight="bold", fontfamily="sans-serif")
 
     fig.savefig(str(out_path), dpi=dpi, bbox_inches="tight",
