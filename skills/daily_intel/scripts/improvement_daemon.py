@@ -538,7 +538,7 @@ def run_daily():
         log.info("  Skipping distribution — PDF build failed")
 
     # Phase 5: Improvement report
-    log.info("\n── Phase 6: Improvement Report ──")
+    log.info("\n── Phase 7: Improvement Report ──")
     report = generate_improvement_report()
     report["pipeline_success"] = success
     report_path = CRON_DIR / f"daily_report_{date_str}.json"
