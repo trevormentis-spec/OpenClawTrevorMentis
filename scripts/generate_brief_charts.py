@@ -205,7 +205,7 @@ def make_prediction_chart(out_path: pathlib.Path) -> bool:
                     ha="center" if off[0] == 0 else "left",
                     fontsize=5.5, color=DARK2, fontweight="bold")
 
-    ax.set_xlabel("Market Price (cents)", fontsize=7, color=GRAY)
+    ax.set_xlabel("Market Price ($)", fontsize=7, color=GRAY)
     ax.set_ylabel("Assessed Confidence", fontsize=7, color=GRAY)
     ax.set_title("Prediction Market Map", fontsize=11, fontweight="bold", color=DARK2, pad=8)
     ax.set_xlim(0, 1)
