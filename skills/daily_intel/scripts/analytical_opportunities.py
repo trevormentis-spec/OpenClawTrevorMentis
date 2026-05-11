@@ -19,6 +19,7 @@ from __future__ import annotations
 import datetime
 import json
 import os
+import hashlib
 import re
 import sys
 from pathlib import Path
@@ -265,83 +266,169 @@ def generate_analytical_opportunities() -> dict:
                 "urgency": "high",
             })
 
-    # New product concepts (longitudinal, strategic, novel)
-    new_concepts = [
-        {
-            "name": "Escalation Ladder Monitor",
-            "type": "escalation_tracker",
-            "rationale": "Multiple theatres show escalation language. A structured escalation tracking "
-                        "framework across all theatres would provide early warning of escalation cascades.",
-            "emergence": "Concurrent crisis across Hormuz, Ukraine, Taiwan, Lebanon.",
-            "strategic_question": "Are escalation dynamics correlated across theatres?",
-            "forecasting_edge": "Cross-theatre view not available to single-theatre analysts.",
-            "methodology": "Structured escalation stages (1-10) per theatre, updated daily with trigger events.",
-            "value": 90,
-            "difficulty": "medium",
-            "urgency": "high",
-            "confidence": 75,
-        },
-        {
-            "name": "Narrative Regime-Change Detector",
-            "type": "strategic_model",
-            "rationale": "Narrative regime shifts are early indicators of strategic change. "
-                        "A detector that flags when narratives restructure would provide strategic warning.",
-            "emergence": "Narrative tracking infrastructure now exists (narrative_engine.py). "
-                        "Cross-edition comparison is operational.",
-            "strategic_question": "When does a narrative evolution become a regime shift?",
-            "forecasting_edge": "Structural narrative analysis across 7 theatres with FTS5 persistence.",
-            "methodology": "Fingerprint comparison across editions + header structure analysis.",
-            "value": 85,
-            "difficulty": "low",
-            "urgency": "medium",
-            "confidence": 80,
-        },
-        {
-            "name": "Prediction Market vs Assessment Divergence Report",
-            "type": "forecasting_product",
-            "rationale": "When prediction markets disagree with TREVOR's assessments, "
-                        "it signals either market inefficiency or analytical blind spot.",
-            "emergence": "Both Kalshi integration and assessment generation are operational. "
-                        "Divergence detection is now possible.",
-            "strategic_question": "Where is TREVOR's assessment diverging from market pricing?",
-            "forecasting_edge": "Direct comparison of estimative probability vs market-implied probability.",
-            "methodology": "Systematic comparison of key judgment probability ranges with prediction market prices.",
-            "value": 88,
-            "difficulty": "medium",
-            "urgency": "medium",
-            "confidence": 70,
-        },
-        {
-            "name": "Geopolitical Risk Heatmap",
-            "type": "monitoring_dashboard",
-            "rationale": "A visual risk heatmap across all 7 theatres would provide "
-                        "executive-level strategic awareness at a glance.",
-            "emergence": "Priority scoring infrastructure exists. Narrative engine provides drift data.",
-            "strategic_question": "Where is risk accumulating across the global security environment?",
-            "forecasting_edge": "Structured risk assessment across all theatres simultaneously.",
-            "methodology": "Aggregate priority scores, narrative volatility, escalation signals, "
-                        "and intel gaps into a weighted risk score per theatre.",
-            "value": 82,
-            "difficulty": "low",
-            "urgency": "medium",
-            "confidence": 85,
-        },
-        {
-            "name": "Forecast Track Record & Calibration Dashboard",
+    # ── Strategic product concept generation ──
+    # Each concept requires:
+    # - specific evidence from today's data (not generic rationale)
+    # - minimum evidence threshold before proposal
+    # - confidence range (lower-upper), not point estimate
+    # - dedup check against FTS5 memory for prior proposals
+    
+    # Check prior proposals to avoid repeating yesterday's ideas
+    prior_proposals = set()
+    try:
+        mem_check = MemoryStore()
+        prior_opps = mem_check.search("product_concept", collection="procedural", top_k=10)
+        for p in prior_opps:
+            content = p.get("content", "")[:120]
+            prior_proposals.add(hashlib.md5(content.encode()).hexdigest())
+        mem_check.close()
+    except:
+        pass
+    
+    def is_novel(name: str, rationale: str) -> bool:
+        """Check if a proposal is novel (not repeating prior proposals)."""
+        check_text = (name + rationale)[:200]
+        check_hash = hashlib.md5(check_text.encode()).hexdigest()
+        return check_hash not in prior_proposals
+    
+    new_concepts = []
+    
+    # Concept 1: Escalation Ladder Monitor
+    # Evidence: escalation signals detected across ALL 7 theatres
+    escalation_count = sum(1 for v in escalation_structures.values() if v)
+    if escalation_count >= 3:  # minimum evidence threshold
+        specific_signals = []
+        for region, signals in escalation_structures.items():
+            if signals:
+                specific_signals.append(f"{region}: {', '.join(signals[:2])}")
+        if is_novel("Escalation Ladder Monitor", str(specific_signals)):
+            new_concepts.append({
+                "name": "Escalation Ladder Monitor",
+                "type": "escalation_tracker",
+                "evidence": f"Escalation language detected in {escalation_count}/7 theatres",
+                "specific_signals": specific_signals[:4],
+                "strategic_question": "Are escalation dynamics correlated across theatres?",
+                "methodology": "Structured escalation stages per theatre, updated daily with trigger events.",
+                "value_lower": 75,
+                "value_upper": 90,
+                "difficulty": "medium",
+                "urgency": "high",
+                "confidence_lower": 65,
+                "confidence_upper": 80,
+            })
+    
+    # Concept 2: Prediction Market Divergence
+    # Evidence: market data exists and can be compared with assessments
+    if market_repricing:
+        if is_novel("Prediction Market Divergence", json.dumps(market_repricing[:3])):
+            new_concepts.append({
+                "name": "Prediction Market vs Assessment Divergence Report",
+                "type": "forecasting_product",
+                "evidence": f"{len(market_repricing)} significant repricing signals detected",
+                "specific_signals": market_repricing[:3],
+                "strategic_question": "Where is TREVOR's assessment probability diverging from market-implied probability?",
+                "methodology": "Systematic comparison of key judgment ranges with market prices.",
+                "value_lower": 70,
+                "value_upper": 88,
+                "difficulty": "medium",
+                "urgency": "medium",
+                "confidence_lower": 55,
+                "confidence_upper": 75,
+            })
+    
+    # Concept 3: Geopolitical Risk Heatmap
+    # Evidence: all 7 theatres have structured assessment data
+    populated_theatres = sum(1 for t in THEATRES if load_assessment(t))
+    if populated_theatres >= 5:
+        if is_novel("Geopolitical Risk Heatmap", f"{populated_theatres} theatres populated"):
+            new_concepts.append({
+                "name": "Geopolitical Risk Heatmap",
+                "type": "monitoring_dashboard",
+                "evidence": f"{populated_theatres}/7 theatres have structured assessment data",
+                "specific_signals": [f"{t}: {len(extract_key_judgments(load_assessment(t)))} KJs"
+                                    for t in THEATRES[:4] if load_assessment(t)],
+                "strategic_question": "Where is risk accumulating across the global security environment?",
+                "methodology": "Aggregate priority scores + volatility + escalation + gaps into weighted risk score.",
+                "value_lower": 65,
+                "value_upper": 82,
+                "difficulty": "low",
+                "urgency": "medium",
+                "confidence_lower": 70,
+                "confidence_upper": 90,
+            })
+    
+    # Concept 4: Narrative Regime-Change Detector
+    # Evidence: narrative_engine has baselines and can detect shifts
+    if NARRATIVE_FILE.exists():
+        try:
+            nf = json.loads(NARRATIVE_FILE.read_text())
+            if nf.get("theatre_count", 0) >= 5:
+                has_baseline = True
+            else:
+                has_baseline = False
+        except:
+            has_baseline = False
+        if has_baseline and is_novel("Narrative Regime-Change Detector", str(nf.get("drifts", [])[:3])):
+            new_concepts.append({
+                "name": "Narrative Regime-Change Detector",
+                "type": "strategic_warning",
+                "evidence": "Narrative baselines established across 7 theatres with cross-edition tracking",
+                "specific_signals": [f"{d['region']}: {d['status']}" for d in nf.get("drifts", [])[:4]],
+                "strategic_question": "When does narrative evolution become a regime shift?",
+                "methodology": "Structural fingerprint comparison + header analysis across editions.",
+                "value_lower": 60,
+                "value_upper": 85,
+                "difficulty": "low",
+                "urgency": "medium",
+                "confidence_lower": 60,
+                "confidence_upper": 85,
+            })
+    
+    # Concept 5: Intelligence Gap Monitor
+    # Evidence: recurring gaps detected in assessment text
+    if len(intel_gaps) >= 2:
+        if is_novel("Intelligence Gap Monitor", json.dumps(intel_gaps)):
+            new_concepts.append({
+                "name": "Intelligence Gap Monitor",
+                "type": "warning_report",
+                "evidence": f"{len(intel_gaps)} recurring intelligence gaps detected today",
+                "specific_signals": intel_gaps[:4],
+                "strategic_question": "Which intelligence gaps are structural vs situational? What alternative sources exist?",
+                "methodology": "Gap persistence tracking + source reliability scoring across editions.",
+                "value_lower": 55,
+                "value_upper": 75,
+                "difficulty": "medium",
+                "urgency": "high",
+                "confidence_lower": 60,
+                "confidence_upper": 80,
+            })
+    
+    # Concept 6: Forecast Calibration Dashboard
+    # Evidence: briefometer has recorded at least some data
+    brier_file = SKILL_ROOT / 'cron_tracking' / 'brier_scores.json'
+    has_brier = brier_file.exists()
+    if has_brier:
+        try:
+            brier_data = json.loads(brier_file.read_text())
+            has_brier = brier_data.get("total", 0) > 0
+        except:
+            has_brier = False
+    if is_novel("Forecast Calibration Dashboard", f"brier_exists={has_brier}"):
+        new_concepts.append({
+            "name": "Forecast Calibration Dashboard",
             "type": "longitudinal_study",
-            "rationale": "Trevor produces probabilistic key judgments but has never audited "
-                        "its own forecast accuracy. A calibration dashboard would enable "
-                        "continuous improvement.",
-            "emergence": "Briefometer infrastructure exists. Brier score collection is operational.",
-            "strategic_question": "How accurate is TREVOR's estimative analysis over time?",
-            "forecasting_edge": "Direct insight into own performance — rare in intelligence analysis.",
+            "evidence": f"Brier tracking infrastructure: {'operational' if has_brier else 'not yet populated'}",
+            "specific_signals": [],
+            "strategic_question": "How accurate is TREVOR's estimative analysis over time? Which bands need recalibration?",
             "methodology": "Daily Brier score logging + calibration curve analysis + over/under-confidence detection.",
-            "value": 78,
+            "value_lower": 50,
+            "value_upper": 78,
             "difficulty": "low",
-            "urgency": "medium",
-            "confidence": 90,
-        },
-    ]
+            "urgency": "low",
+            "confidence_lower": 50,
+            "confidence_upper": 75,
+        })
+    
     product_concepts.extend(new_concepts)
 
     # Build report
