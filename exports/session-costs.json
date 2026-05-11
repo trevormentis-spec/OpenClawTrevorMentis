@@ -1,0 +1,17 @@
+{
+  "generated": "2026-05-11T22:09:52Z",
+  "period_days": 1,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_tool_calls": 0,
+  "total_messages": 0,
+  "avg_cost_per_session": 0.0,
+  "by_model": {
+    "deepseek/deepseek-v4-flash": 0.0
+  },
+  "by_day": {
+    "2026-05-11": 0.0
+  },
+  "session_count": 2
+}
