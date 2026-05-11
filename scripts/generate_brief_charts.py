@@ -39,15 +39,19 @@ DARK = "#0f0f1a"
 DARK2 = "#1a1a2e"
 CREAM = "#fafaf5"
 WHITE = "#ffffff"
-RED = "#b82e2e"
-GREEN = "#4a7c3f"
+RED = "#c0392b"
+GREEN = "#3a7d44"
 BLUE = "#2c6aa0"
 GRAY = "#888888"
 
+# Confidence band colours — teal/amber scale (matched to render_brief_magazine.py)
 BAND_COLORS = {
-    "almost certain": "#1a5276", "highly likely": "#b82e2e",
-    "likely": "#bf8f00", "even chance": "#7a8a3c",
-    "unlikely": "#5a7a3a", "highly unlikely": "#4a6a2a",
+    "almost certain": "#0f5b7a",
+    "highly likely": "#2b7f8c",
+    "likely": "#d4943a",
+    "even chance": "#7a8a3c",
+    "unlikely": "#b36a3a",
+    "highly unlikely": "#a0553a",
     "almost no chance": "#888888",
 }
 
@@ -134,7 +138,7 @@ def make_incident_chart(analyses_dir: pathlib.Path, out_path: pathlib.Path) -> b
 
     colors = [GOLD, BLUE, RED, GREEN, "#d47500", GRAY][:len(counts)]
 
-    fig, ax = plt.subplots(figsize=(6, 3), dpi=200)
+    fig, ax = plt.subplots(figsize=(6.5, 3), dpi=200)
     fig.patch.set_facecolor(CREAM)
     ax.set_facecolor(CREAM)
 
@@ -172,19 +176,50 @@ def make_prediction_chart(out_path: pathlib.Path) -> bool:
         ("Trump-Xi\nMeeting", 0.60, 0.65, "YES"),
     ]
 
+    # Quadrant-based offset positioning — labels go opposite their chart position
+    # Left-side markets label-right, right-side markets label-left, top markets label-below, etc.
+    offsets = []
     for name, price, confidence, rec in markets:
+        if price < 0.35 and confidence >= 0.7:
+            # Top-left → label right-above
+            offsets.append((20, 5))
+        elif price < 0.35:
+            # Bottom-left → label right-below
+            offsets.append((20, -5))
+        elif price >= 0.55 and confidence >= 0.55:
+            # Top-right → label left-above
+            offsets.append((-25, 5))
+        elif price >= 0.55:
+            # Bottom-right → label left-below
+            offsets.append((-25, -5))
+        else:
+            # Middle → offset based on quadrant
+            offsets.append((0, 14) if confidence < 0.6 else (0, -18))
+    for i, (name, price, confidence, rec) in enumerate(markets):
         color = GREEN if rec == "YES" else RED
         size = confidence * 800
         ax.scatter(price, confidence, s=size, c=color, alpha=0.6, edgecolors=WHITE, linewidth=0.5)
+        off = offsets[i] if i < len(offsets) else (0, 12)
         ax.annotate(name, (price, confidence),
-                    textcoords="offset points", xytext=(0, 12),
-                    ha="center", fontsize=5.5, color=DARK2, fontweight="bold")
+                    textcoords="offset points", xytext=off,
+                    ha="center" if off[0] == 0 else "left",
+                    fontsize=5.5, color=DARK2, fontweight="bold")
 
     ax.set_xlabel("Market Price (cents)", fontsize=7, color=GRAY)
     ax.set_ylabel("Assessed Confidence", fontsize=7, color=GRAY)
     ax.set_title("Prediction Market Map", fontsize=11, fontweight="bold", color=DARK2, pad=8)
     ax.set_xlim(0, 1)
-    ax.set_ylim(0.3, 1)
+    ax.set_ylim(0, 1)
+    # Add light horizontal reference lines at common thresholds
+    for thresh in [0.25, 0.5, 0.75]:
+        ax.axhline(y=thresh, color='#ddd', linewidth=0.5, linestyle='--', zorder=0)
+    # Legend
+    from matplotlib.lines import Line2D
+    legend_elements = [
+        Line2D([0], [0], marker='o', color='w', markerfacecolor=GREEN, markersize=10, label='YES position (buy)'),
+        Line2D([0], [0], marker='o', color='w', markerfacecolor=RED, markersize=10, label='NO position (sell)'),
+    ]
+    ax.legend(handles=legend_elements, loc='lower right', fontsize=6, framealpha=0.8, edgecolor='#ddd')
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.spines["left"].set_color("#ddd")

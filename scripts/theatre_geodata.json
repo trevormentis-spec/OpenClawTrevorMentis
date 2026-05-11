@@ -1,0 +1,258 @@
+{
+  "europe": {
+    "cities": [
+      {"name": "Berlin", "lon": 13.405, "lat": 52.52, "color": "#2c6aa0", "size": 55},
+      {"name": "Kyiv", "lon": 30.523, "lat": 50.45, "color": "#c0392b", "size": 70},
+      {"name": "Moscow", "lon": 37.617, "lat": 55.756, "color": "#d47500", "size": 55},
+      {"name": "Oslo", "lon": 10.752, "lat": 59.914, "color": "#2c6aa0", "size": 40},
+      {"name": "Warsaw", "lon": 21.012, "lat": 52.237, "color": "#2c6aa0", "size": 40},
+      {"name": "Brussels", "lon": 4.352, "lat": 50.850, "color": "#2c6aa0", "size": 40}
+    ],
+    "conflict_zones": [
+      {
+        "coordinates": [
+          [36.0, 44.0], [40.0, 44.0], [40.0, 52.0], [36.0, 52.0], [36.0, 44.0]
+        ],
+        "label": "Ukraine War",
+        "color": "#c0392b"
+      },
+      {
+        "coordinates": [
+          [36.0, 52.0], [40.0, 52.0], [40.0, 55.0], [36.0, 55.0], [36.0, 52.0]
+        ],
+        "label": "Russian Border",
+        "color": "#d47500"
+      }
+    ],
+    "routes": [
+      {
+        "coordinates": [[37.617, 55.756], [36.0, 50.0], [30.523, 50.45]],
+        "color": "#c0392b",
+        "style": "-",
+        "linewidth": 2.0
+      },
+      {
+        "coordinates": [[13.405, 52.52], [21.012, 52.237], [30.523, 50.45]],
+        "color": "#2c6aa0",
+        "style": "--",
+        "linewidth": 1.5
+      }
+    ],
+    "features": [
+      {"name": "Black Sea", "lon": 35.0, "lat": 43.0, "color": "#4a6a8a"},
+      {"name": "Baltic Sea", "lon": 20.0, "lat": 57.0, "color": "#4a6a8a"},
+      {"name": "North Sea", "lon": 3.0, "lat": 55.0, "color": "#4a6a8a"}
+    ]
+  },
+  "asia": {
+    "cities": [
+      {"name": "Beijing", "lon": 116.407, "lat": 39.904, "color": "#2c6aa0", "size": 70},
+      {"name": "Taipei", "lon": 121.565, "lat": 25.033, "color": "#d47500", "size": 55},
+      {"name": "Delhi", "lon": 77.103, "lat": 28.704, "color": "#2c6aa0", "size": 55},
+      {"name": "Islamabad", "lon": 73.047, "lat": 33.684, "color": "#2c6aa0", "size": 40},
+      {"name": "Mbabane", "lon": 31.133, "lat": -26.317, "color": "#d47500", "size": 40}
+    ],
+    "conflict_zones": [
+      {
+        "coordinates": [
+          [73.0, 28.0], [80.0, 28.0], [80.0, 35.0], [73.0, 35.0], [73.0, 28.0]
+        ],
+        "label": "India-Pakistan",
+        "color": "#d47500"
+      },
+      {
+        "coordinates": [
+          [119.0, 22.0], [123.0, 22.0], [123.0, 26.0], [119.0, 26.0], [119.0, 22.0]
+        ],
+        "label": "Taiwan Strait",
+        "color": "#d47500"
+      }
+    ],
+    "routes": [
+      {
+        "coordinates": [[116.407, 39.904], [121.565, 25.033]],
+        "color": "#d47500",
+        "style": "--",
+        "linewidth": 2.0
+      },
+      {
+        "coordinates": [[77.103, 28.704], [73.047, 33.684]],
+        "color": "#c0392b",
+        "style": "--",
+        "linewidth": 1.5
+      }
+    ],
+    "features": [
+      {"name": "South China Sea", "lon": 115.0, "lat": 12.0, "color": "#4a6a8a"},
+      {"name": "Bay of Bengal", "lon": 88.0, "lat": 16.0, "color": "#4a6a8a"},
+      {"name": "Arabian Sea", "lon": 68.0, "lat": 15.0, "color": "#4a6a8a"}
+    ]
+  },
+  "middle_east": {
+    "cities": [
+      {"name": "Tehran", "lon": 51.389, "lat": 35.689, "color": "#c0392b", "size": 70},
+      {"name": "Baghdad", "lon": 44.366, "lat": 33.315, "color": "#d47500", "size": 55},
+      {"name": "Riyadh", "lon": 46.717, "lat": 24.714, "color": "#2c6aa0", "size": 55},
+      {"name": "Abu Dhabi", "lon": 54.369, "lat": 24.453, "color": "#2c6aa0", "size": 50},
+      {"name": "Sana'a", "lon": 44.191, "lat": 15.369, "color": "#c0392b", "size": 50},
+      {"name": "Beirut", "lon": 35.495, "lat": 33.894, "color": "#c0392b", "size": 45},
+      {"name": "Jerusalem", "lon": 35.213, "lat": 31.768, "color": "#2c6aa0", "size": 45},
+      {"name": "Damascus", "lon": 36.276, "lat": 33.513, "color": "#d47500", "size": 45},
+      {"name": "Muscat", "lon": 58.405, "lat": 23.588, "color": "#2c6aa0", "size": 40}
+    ],
+    "conflict_zones": [
+      {
+        "coordinates": [
+          [48.0, 24.0], [58.0, 24.0], [58.0, 28.0], [48.0, 28.0], [48.0, 24.0]
+        ],
+        "label": "Strait of Hormuz",
+        "color": "#c0392b"
+      },
+      {
+        "coordinates": [
+          [42.0, 12.0], [48.0, 12.0], [48.0, 18.0], [42.0, 18.0], [42.0, 12.0]
+        ],
+        "label": "Yemen Conflict",
+        "color": "#c0392b"
+      },
+      {
+        "coordinates": [
+          [35.0, 33.0], [36.5, 33.0], [36.5, 34.5], [35.0, 34.5], [35.0, 33.0]
+        ],
+        "label": "Israel-Lebanon",
+        "color": "#c0392b"
+      }
+    ],
+    "routes": [
+      {
+        "coordinates": [[46.717, 24.714], [44.366, 33.315], [36.276, 33.513], [35.495, 33.894]],
+        "color": "#d47500",
+        "style": "-",
+        "linewidth": 2.5
+      },
+      {
+        "coordinates": [[51.389, 35.689], [44.366, 33.315]],
+        "color": "#c0392b",
+        "style": "-",
+        "linewidth": 2.0
+      },
+      {
+        "coordinates": [[51.389, 35.689], [56.0, 26.0], [58.405, 23.588]],
+        "color": "#c0392b",
+        "style": "--",
+        "linewidth": 1.5
+      },
+      {
+        "coordinates": [[36.276, 33.513], [44.366, 33.315]],
+        "color": "#2b7f8c",
+        "style": "-",
+        "linewidth": 2.0
+      }
+    ],
+    "features": [
+      {"name": "Persian Gulf", "lon": 51.5, "lat": 27.0, "color": "#4a6a8a"},
+      {"name": "Gulf of Oman", "lon": 59.0, "lat": 23.0, "color": "#4a6a8a"},
+      {"name": "Red Sea", "lon": 40.0, "lat": 22.0, "color": "#4a6a8a"},
+      {"name": "Mediterranean", "lon": 34.0, "lat": 34.0, "color": "#4a6a8a"}
+    ]
+  },
+  "north_america": {
+    "cities": [
+      {"name": "Washington", "lon": -77.036, "lat": 38.907, "color": "#2c6aa0", "size": 70},
+      {"name": "Mexico City", "lon": -99.133, "lat": 19.433, "color": "#2c6aa0", "size": 55},
+      {"name": "Ottawa", "lon": -75.698, "lat": 45.421, "color": "#2c6aa0", "size": 45},
+      {"name": "Chihuahua", "lon": -106.083, "lat": 28.733, "color": "#c0392b", "size": 55},
+      {"name": "Caracas", "lon": -66.903, "lat": 10.491, "color": "#d47500", "size": 50},
+      {"name": "Houston", "lon": -95.369, "lat": 29.760, "color": "#2c6aa0", "size": 40}
+    ],
+    "conflict_zones": [
+      {
+        "coordinates": [
+          [-109.0, 28.0], [-104.0, 28.0], [-104.0, 32.0], [-109.0, 32.0], [-109.0, 28.0]
+        ],
+        "label": "Cartel Violence",
+        "color": "#c0392b"
+      }
+    ],
+    "routes": [
+      {
+        "coordinates": [[-77.036, 38.907], [-106.083, 28.733]],
+        "color": "#c0392b",
+        "style": "--",
+        "linewidth": 2.0
+      },
+      {
+        "coordinates": [[-66.903, 10.491], [-95.369, 29.760]],
+        "color": "#d47500",
+        "style": "-",
+        "linewidth": 2.5
+      }
+    ],
+    "features": [
+      {"name": "Gulf of Mexico", "lon": -92.0, "lat": 25.0, "color": "#4a6a8a"},
+      {"name": "Pacific", "lon": -120.0, "lat": 32.0, "color": "#4a6a8a"},
+      {"name": "Atlantic", "lon": -70.0, "lat": 36.0, "color": "#4a6a8a"}
+    ]
+  },
+  "south_central_america": {
+    "cities": [
+      {"name": "Havana", "lon": -82.366, "lat": 23.114, "color": "#c0392b", "size": 60},
+      {"name": "Brasília", "lon": -47.929, "lat": -15.826, "color": "#2c6aa0", "size": 55},
+      {"name": "Recife", "lon": -34.877, "lat": -8.057, "color": "#d47500", "size": 40},
+      {"name": "Bogotá", "lon": -74.072, "lat": 4.710, "color": "#2c6aa0", "size": 45},
+      {"name": "Lima", "lon": -77.042, "lat": -12.046, "color": "#2c6aa0", "size": 40},
+      {"name": "Buenos Aires", "lon": -58.381, "lat": -34.603, "color": "#2c6aa0", "size": 45}
+    ],
+    "conflict_zones": [
+      {
+        "coordinates": [
+          [-85.0, 20.0], [-75.0, 20.0], [-75.0, 24.0], [-85.0, 24.0], [-85.0, 20.0]
+        ],
+        "label": "Cuba Crisis",
+        "color": "#c0392b"
+      },
+      {
+        "coordinates": [
+          [-36.0, -10.0], [-34.0, -10.0], [-34.0, -5.0], [-36.0, -5.0], [-36.0, -10.0]
+        ],
+        "label": "Brazil Flooding",
+        "color": "#d47500"
+      }
+    ],
+    "features": [
+      {"name": "Caribbean Sea", "lon": -78.0, "lat": 16.0, "color": "#4a6a8a"},
+      {"name": "Atlantic", "lon": -40.0, "lat": -10.0, "color": "#4a6a8a"},
+      {"name": "Pacific", "lon": -80.0, "lat": -15.0, "color": "#4a6a8a"},
+      {"name": "Amazon Basin", "lon": -60.0, "lat": -5.0, "color": "#1e3050"}
+    ]
+  },
+  "global_finance": {
+    "cities": [
+      {"name": "New York", "lon": -74.006, "lat": 40.712, "color": "#2c6aa0", "size": 70},
+      {"name": "London", "lon": -0.127, "lat": 51.507, "color": "#2c6aa0", "size": 65},
+      {"name": "Tokyo", "lon": 139.691, "lat": 35.689, "color": "#2c6aa0", "size": 65},
+      {"name": "Shanghai", "lon": 121.473, "lat": 31.230, "color": "#2c6aa0", "size": 55},
+      {"name": "Dubai", "lon": 55.270, "lat": 25.204, "color": "#d47500", "size": 50},
+      {"name": "Singapore", "lon": 103.819, "lat": 1.352, "color": "#2c6aa0", "size": 50}
+    ],
+    "routes": [
+      {
+        "coordinates": [[-74.006, 40.712], [-0.127, 51.507], [55.270, 25.204], [103.819, 1.352], [139.691, 35.689]],
+        "color": "#2b7f8c",
+        "style": "-",
+        "linewidth": 1.5
+      },
+      {
+        "coordinates": [[51.389, 35.689], [55.270, 25.204]],
+        "color": "#c0392b",
+        "style": "--",
+        "linewidth": 2.0
+      }
+    ],
+    "features": [
+      {"name": "Atlantic", "lon": -30.0, "lat": 40.0, "color": "#4a6a8a"},
+      {"name": "Pacific", "lon": 160.0, "lat": 30.0, "color": "#4a6a8a"},
+      {"name": "Indian Ocean", "lon": 80.0, "lat": -5.0, "color": "#4a6a8a"}
+    ]
+  }
+}

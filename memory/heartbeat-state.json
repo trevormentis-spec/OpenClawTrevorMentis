@@ -4,10 +4,12 @@
     "agentmail_inbox": 1778441241,
     "moltbook_check": 1778441241,
     "memory_hygiene": 1778441241,
-    "repo_state": 1778441241,
+    "repo_state": 1778455670,
     "deepseek_balance": 1778441241,
-    "gmail_system_check": 1778441241
+    "gmail_system_check": 1778441241,
+    "brain_index_freshness": 1778455670,
+    "osint_scan": 1778455670
   },
-  "lastHeartbeat": 1778441241,
-  "rotationCursor": 1
+  "lastHeartbeat": 1778455670,
+  "rotationCursor": 2
 }

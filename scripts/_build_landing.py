@@ -112,6 +112,20 @@ def main():
     pricing_marker = '<div class="pricing-grid">'
     if cta and pricing_marker in html:
         html = inject_after(html, '</div><!-- end theatres -->', cta)
+    
+    # Add newsletter signup section before pricing
+    subscribe_html = '''        <div style="text-align:center; padding: 50px 24px; background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px;">✉️ Get the Brief in Your Inbox</h2>
+            <p style="color: var(--text-secondary); max-width: 480px; margin: 0 auto 20px;">Subscribe for daily intelligence assessments across six theatres, with calibrated probability judgments and prediction market analysis.</p>
+            <form action="https://buttondown.com/api/emails/embed-subscribe/trevormentis" method="post" target="_blank" style="max-width: 420px; margin: 0 auto; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+                <input type="email" name="email" id="bd-email" placeholder="you@example.com" required style="flex: 1; min-width: 220px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg-primary); color: var(--text-primary); font-size: 14px;">
+                <input type="hidden" value="1" name="embed">
+                <button type="submit" style="padding: 12px 28px; background: var(--accent-gold); color: #0d0d0d; font-weight: 600; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; font-size: 13px;">Subscribe</button>
+            </form>
+            <p style="color: var(--text-muted); font-size: 11px; margin-top: 12px;">No spam. Unsubscribe anytime. Powered by <a href="https://buttondown.com" style="color: var(--accent-gold);">Buttondown</a>.</p>
+        </div>'''
+    if pricing_marker in html:
+        html = html.replace(pricing_marker, subscribe_html + '\n' + pricing_marker, 1)
 
     # 4. Add market data section before pricing
     kalshi_rows = load_kalshi_table(args.kalshi)
