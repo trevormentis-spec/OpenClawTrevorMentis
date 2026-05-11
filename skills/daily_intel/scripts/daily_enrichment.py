@@ -1,317 +1,311 @@
 #!/usr/bin/env python3
-"""daily_enrichment.py — Before-assessment enrichment pipeline.
+"""daily_enrichment.py — Before-assessment enrichment with real feed fetching.
 
-Runs BEFORE the assessment generator to improve data quality:
-  1. Story freshness check (compare vs yesterday)
-  2. Source freshness check (are sources still active?)
-  3. Kalshi/Polymarket data integration
-  4. Web search for new developments per theatre
-  5. Produce enrichment report for the assessment generator
+Runs BEFORE generate_assessments.py to improve data quality:
+  1. RSS feed fetching from major news/analysis sources
+  2. Story freshness check (compare vs yesterday via story_tracker)
+  3. Source freshness check (identify unused high-priority sources)
+  4. Kalshi/Polymarket data integration
+  5. Cross-source validation (narrative conflict detection)
+  6. Produce enrichment report consumed by generate_assessments.py
 
-Output: cron_tracking/enrichment_report.json (consumed by generate_assessments.py)
+Output: cron_tracking/enrichment_report.json
 """
-import os, sys, json, datetime, urllib.request, urllib.parse, re
+from __future__ import annotations
+
+import datetime
+import json
+import os
+import sys
+import textwrap
+import traceback
 from pathlib import Path
 
 SKILL_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(SKILL_ROOT))
+
+from trevor_config import THEATRE_KEYS as THEATRES, WORKSPACE, EXPORTS_DIR
+from trevor_log import get_logger
+
+log = get_logger("enrichment")
+
 ASSESS_DIR = SKILL_ROOT / 'assessments'
 CRON_DIR = SKILL_ROOT / 'cron_tracking'
-from trevor_config import WORKSPACE
-
-STORY_TRACKER = CRON_DIR / 'story_tracker.json'
 STORY_DELTA = CRON_DIR / 'story_delta.json'
-ENRICHMENT = CRON_DIR / 'enrichment_report.json'
-KALSHI_SCAN = WORKSPACE / 'exports'
+ENRICHMENT_FILE = CRON_DIR / 'enrichment_report.json'
+STORY_TRACKER_FILE = CRON_DIR / 'story_tracker.json'
+KALSHI_SCAN_DIR = WORKSPACE / 'exports'
 
-from trevor_config import THEATRE_KEYS as THEATRES
+# ── RSS Feed Registry ──
+# Real RSS/Atom feeds that are actually fetched (not just listed)
+RSS_FEEDS = {
+    "bbc_world": {"url": "https://feeds.bbci.co.uk/news/world/rss.xml", "category": "NEWS", "priority": 5},
+    "bbc_middle_east": {"url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", "category": "NEWS", "priority": 5},
+    "reuters_world": {"url": "https://www.reutersagency.com/feed/", "category": "NEWS", "priority": 5},
+    "ap_news": {"url": "https://apnews.com/rss/world", "category": "NEWS", "priority": 5},
+    "al_jazeera": {"url": "https://www.aljazeera.com/xml/rss/all.xml", "category": "NEWS", "priority": 4},
+    "the_diplomat": {"url": "https://thediplomat.com/feed/", "category": "NEWS", "priority": 3},
+    "kyiv_post": {"url": "https://www.kyivpost.com/feed", "category": "NEWS", "priority": 3},
+    "defense_news": {"url": "https://www.defensenews.com/arc/outboundfeeds/rss/", "category": "NEWS", "priority": 3},
+    "stratfor": {"url": "https://worldview.stratfor.com/rss", "category": "INTEL", "priority": 3},
+}
 
-# Source freshness database — when was each source last used and how reliable?
+# ── Theatre → keyword mappings for relevance filtering ──
+THEATRE_KEYWORDS = {
+    "europe": ["ukraine", "russia", "nato", "eu", "europe", "germany", "norway", "poland", "baltic"],
+    "middle_east": ["iran", "hormuz", "israel", "gaza", "hezbollah", "yemen", "houthi", "iraq", "syria", "lebanon"],
+    "asia": ["china", "taiwan", "india", "pakistan", "japan", "korea", "south china sea", "indo-pacific"],
+    "north_america": ["mexico", "canada", "chihuahua", "cartel", "us mexico", "venezuela"],
+    "south_america": ["cuba", "brazil", "venezuela", "colombia", "argentina", "latin america"],
+    "africa": ["sahel", "mali", "niger", "burkina faso", "jnim", "nigeria", "ethiopia", "somalia"],
+    "global_finance": ["oil", "brent", "wti", "opec", "sanctions", "energy", "inflation", "fed", "treasury"],
+}
+
 SOURCE_REGISTRY = {
     "NEWS": [
         {"name": "BBC News", "url": "https://www.bbc.com/news", "priority": 5},
         {"name": "Reuters", "url": "https://www.reuters.com", "priority": 5},
         {"name": "Associated Press", "url": "https://apnews.com", "priority": 5},
         {"name": "Al Jazeera", "url": "https://www.aljazeera.com", "priority": 4},
-        {"name": "The New York Times", "url": "https://www.nytimes.com", "priority": 4},
-        {"name": "Axios", "url": "https://www.axios.com", "priority": 4},
-        {"name": "Bloomberg", "url": "https://www.bloomberg.com", "priority": 4},
         {"name": "The Diplomat", "url": "https://thediplomat.com", "priority": 3},
         {"name": "Kyiv Post", "url": "https://www.kyivpost.com", "priority": 3},
-        {"name": "NPR", "url": "https://www.npr.org", "priority": 3},
-        {"name": "Financial Times", "url": "https://www.ft.com", "priority": 3},
-        {"name": "The Guardian", "url": "https://www.theguardian.com", "priority": 3},
-        {"name": "Turkiye Today", "url": "https://www.turkiyetoday.com", "priority": 2},
-        {"name": "TASS", "url": "https://tass.com", "priority": 1},
-    ],
-    "ANALYSIS": [
-        {"name": "ISW", "url": "https://understandingwar.org", "priority": 5},
-        {"name": "Critical Threats", "url": "https://www.criticalthreats.org", "priority": 5},
-        {"name": "ACLED", "url": "https://acleddata.com", "priority": 4},
-        {"name": "CSIS", "url": "https://www.csis.org", "priority": 4},
-        {"name": "RAND", "url": "https://www.rand.org", "priority": 4},
-        {"name": "Chatham House", "url": "https://www.chathamhouse.org", "priority": 3},
-        {"name": "IISS", "url": "https://www.iiss.org", "priority": 3},
-        {"name": "AEI", "url": "https://www.aei.org", "priority": 3},
-        {"name": "Brookings", "url": "https://www.brookings.edu", "priority": 3},
-        {"name": "Jane's", "url": "https://janes.com", "priority": 3},
-    ],
-    "OFFICIAL": [
-        {"name": "US State Department", "url": "https://www.state.gov", "priority": 5},
-        {"name": "Pentagon", "url": "https://www.defense.gov", "priority": 5},
-        {"name": "CENTCOM", "url": "https://www.centcom.mil", "priority": 4},
-        {"name": "US Treasury", "url": "https://home.treasury.gov", "priority": 4},
-        {"name": "ECOWAS", "url": "https://www.ecowas.int", "priority": 3},
-        {"name": "NATO", "url": "https://www.nato.int", "priority": 4},
-        {"name": "UN", "url": "https://www.un.org", "priority": 3},
-        {"name": "UKMTO", "url": "https://www.ukmto.org", "priority": 3},
-    ],
-    "INTEL": [
-        {"name": "Polymarket", "url": "https://polymarket.com", "priority": 4},
-        {"name": "Kalshi", "url": "https://kalshi.com", "priority": 4},
-        {"name": "Stratfor", "url": "https://stratfor.com", "priority": 3},
-        {"name": "Shurkin", "url": "https://shurkin.substack.com", "priority": 2},
     ],
 }
 
-# ─── 1. STORY FRESHNESS CHECK ────────────────────────────
 
-def check_story_freshness():
-    """Compare yesterday vs today's states and flag stale stories."""
-    result = {"stalled": [], "developing": [], "new": [], "freshness_scores": {}}
-
-    if not STORY_DELTA.exists():
-        print("  No story delta available")
-        return result
-
-    delta = json.loads(STORY_DELTA.read_text())
-    deltas = delta.get("deltas", {})
-
-    for theatre in THEATRES:
-        d = deltas.get(theatre, {})
-        status = d.get("status", "unknown")
-
-        if status == "stalled":
-            result["stalled"].append(theatre)
-            result["freshness_scores"][theatre] = "stale"
-            print(f"  ⚠ {theatre}: STALLED — no new signatures")
-        elif status == "developing":
-            result["developing"].append(theatre)
-            result["freshness_scores"][theatre] = "fresh"
-            print(f"  → {theatre}: DEVELOPING — {len(d.get('new_signatures', []))} new sigs")
-        else:
-            result["new"].append(theatre)
-            result["freshness_scores"][theatre] = "new"
-            print(f"  🆕 {theatre}: NEW")
-
-    print(f"  Summary: {len(result['stalled'])} stalled, {len(result['developing'])} developing")
-    return result
-
-
-# ─── 2. SOURCE FRESHNESS CHECK ───────────────────────────
-
-def check_source_freshness():
-    """Check which sources were used vs what's available for each theatre."""
-    result = {"used": {}, "available": {}, "gaps": [], "recommendations": []}
-
-    # Load yesterday's sources from story tracker
-    if STORY_TRACKER.exists():
-        tracker = json.loads(STORY_TRACKER.read_text())
-        latest = tracker.get("latest", {})
-        for theatre in THEATRES:
-            t = latest.get("theatres", {}).get(theatre, {})
-            result["used"][theatre] = t.get("sources", [])
-    else:
-        # Read from assessment files if no tracker
-        for theatre in THEATRES:
-            ass = ASSESS_DIR / f"{theatre}.md"
-            if ass.exists():
-                text = ass.read_text().lower()
-                used = []
-                for cat, sources in SOURCE_REGISTRY.items():
-                    for src in sources:
-                        if src["name"].lower() in text:
-                            used.append(src["name"])
-                result["used"][theatre] = used
-            else:
-                result["used"][theatre] = []
-
-    # Check gaps: high-priority sources not being used
-    for theatre in THEATRES:
-        used = result["used"].get(theatre, [])
-        used_lower = [s.lower() for s in used]
-        for cat, sources in SOURCE_REGISTRY.items():
-            for src in sources:
-                if src["priority"] >= 4 and src["name"].lower() not in used_lower:
-                    result["gaps"].append({
-                        "theatre": theatre,
-                        "source": src["name"],
-                        "category": cat,
-                        "priority": src["priority"],
-                    })
-                    if src not in result["recommendations"]:
-                        result["recommendations"].append(src["name"])
-
-    # Report
-    for theatre in THEATRES:
-        used = result["used"].get(theatre, [])
-        theatre_gaps = [g for g in result["gaps"] if g["theatre"] == theatre]
-        print(f"  {theatre}: {len(used)} sources used, {len(theatre_gaps)} high-priority gaps")
-        if theatre_gaps:
-            for g in theatre_gaps[:2]:
-                print(f"    Missing: {g['source']} ({g['category']})")
-
-    return result
+def fetch_rss_feed(feed_id: str, feed_info: dict) -> list[dict]:
+    """Fetch and parse an RSS feed, returning article entries."""
+    import urllib.request
+    import xml.etree.ElementTree as ET
+    
+    entries = []
+    try:
+        req = urllib.request.Request(
+            feed_info["url"],
+            headers={"User-Agent": "TrevorIntelBot/1.0 (trevor@agentmail.to)"}
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            xml_data = resp.read()
+        
+        root = ET.fromstring(xml_data)
+        # Try standard RSS format first
+        for item in root.iter("item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            desc = item.findtext("description", "")
+            pub_date = item.findtext("pubDate", "")
+            entries.append({
+                "feed": feed_id,
+                "source": feed_info.get("url", ""),
+                "title": title,
+                "url": link,
+                "summary": desc[:500] if desc else "",
+                "published": pub_date,
+            })
+        
+        # Try Atom format
+        if not entries:
+            for entry in root.iter("{http://www.w3.org/2005/Atom}entry"):
+                title = entry.findtext("{http://www.w3.org/2005/Atom}title", "")
+                link_el = entry.find("{http://www.w3.org/2005/Atom}link")
+                link = link_el.get("href", "") if link_el is not None else ""
+                summary = entry.findtext("{http://www.w3.org/2005/Atom}summary", "")
+                updated = entry.findtext("{http://www.w3.org/2005/Atom}updated", "")
+                entries.append({
+                    "feed": feed_id,
+                    "source": feed_info.get("url", ""),
+                    "title": title,
+                    "url": link,
+                    "summary": summary[:500] if summary else "",
+                    "published": updated,
+                })
+    except Exception as e:
+        log.warning(f"Feed fetch failed: {feed_id}", error=str(e)[:100])
+    
+    return entries
 
 
-# ─── 3. PREDICTION MARKET CHECK ──────────────────────────
+def classify_to_theatre(article: dict) -> list[str]:
+    """Classify an article to relevant theatres based on keyword matching."""
+    text = (article.get("title", "") + " " + article.get("summary", "")).lower()
+    matches = []
+    for theatre, keywords in THEATRE_KEYWORDS.items():
+        for kw in keywords:
+            if kw in text:
+                matches.append(theatre)
+                break
+    return matches if matches else ["global"]
 
-def check_prediction_markets():
-    """Check if prediction market data has changed significantly."""
-    result = {"movements": [], "significant_moves": []}
 
-    # Read latest Kalshi scan
-    scans = sorted(KALSHI_SCAN.glob("kalshi-scan-*.md"))
-    if not scans:
-        print("  No Kalshi data available")
-        return result
+def fetch_all_feeds() -> list[dict]:
+    """Fetch all RSS feeds and classify to theatres."""
+    all_articles = []
+    for feed_id, feed_info in RSS_FEEDS.items():
+        articles = fetch_rss_feed(feed_id, feed_info)
+        for article in articles:
+            article["theatres"] = classify_to_theatre(article)
+        all_articles.extend(articles)
+        log.info(f"Feed {feed_id}: {len(articles)} articles")
+    return all_articles
 
-    latest = scans[-1]
-    text = latest.read_text()
 
-    # Parse for notable price movements
-    for line in text.split('\n'):
-        # Look for lines with percentage point changes
-        for pattern in [r'(\d+)¢\s*→\s*(\d+)¢', r'(\+|-)(\d+)pp', r'(\+|-)(\d+)¢']:
-            match = re.search(pattern, line)
-            if match:
-                try:
-                    change = abs(int(match.group(2)))
-                except:
-                    change = 0
-                if change >= 10:  # Significant move: 10+ points
-                    market = line.strip()[:60]
-                    result["significant_moves"].append({
-                        "market": market,
-                        "change": change,
+def cross_source_validate(articles: list[dict]) -> list[dict]:
+    """Detect narrative conflicts across sources.
+    Returns a list of conflict reports where sources disagree."""
+    conflicts = []
+    
+    # Group articles by rough topic (using first 50 chars of title as key)
+    topics = {}
+    for article in articles:
+        title = article.get("title", "")
+        if not title:
+            continue
+        # Use first significant word pair as topic key
+        words = title.split()[:3]
+        key = " ".join(words).lower().strip(" ,.!?")
+        if key not in topics:
+            topics[key] = []
+        topics[key].append(article)
+    
+    # Check for conflicting narratives within each topic group
+    for topic, topic_articles in topics.items():
+        if len(topic_articles) < 2:
+            continue
+        
+        # Simple conflict detection: if two sources have very different framing
+        # we flag it as potential conflict
+        sources = set(a.get("feed", "") for a in topic_articles)
+        if len(sources) >= 2:
+            summaries = [a.get("summary", "")[:100] for a in topic_articles]
+            # Check for contradictory language pairs
+            conflict_pairs = [
+                ("ceasefire", "strike"), ("deal", "collapse"), ("progress", "stall"),
+                ("win", "lose"), ("agree", "reject"), ("accept", "refuse"),
+            ]
+            all_text = " ".join(summaries).lower()
+            for pos, neg in conflict_pairs:
+                if pos in all_text and neg in all_text:
+                    conflicts.append({
+                        "topic": topic,
+                        "sources": list(sources),
+                        "narrative": f"Sources disagree: '{pos}' vs '{neg}'",
+                        "articles": [{"title": a.get("title"), "feed": a.get("feed")} for a in topic_articles[:3]],
                     })
                     break
-
-    if result["significant_moves"]:
-        print(f"  Notable market moves:")
-        for m in result["significant_moves"][:5]:
-            print(f"    {m['market']} ({m['change']}pp)")
-
-    return result
+    
+    return conflicts
 
 
-# ─── 4. WEB SEARCH FOR NEW DEVELOPMENTS ──────────────────
-
-def online_intel_check():
-    """Quick web search for breaking developments per theatre.
-
-    Uses web search to find new story angles.
-    Returns suggestions for what to investigate.
-    """
-    result = {}
-
-    # Only run full search if brave search is available
-    try:
-        from openclaw_extensions import web_search
-        has_search = True
-    except ImportError:
-        has_search = False
-
-    search_queries = {
-        "europe": "Ukraine Russia war latest developments May 2026",
-        "africa": "Sahel JNIM Mali latest May 2026",
-        "asia": "India Pakistan Sindoor latest",
-        "middle_east": "Iran nuclear talks latest May 2026",
-        "north_america": "Sinaloa cartel Mexico latest",
-        "south_america": "Venezuela Delcy Rodriguez latest",
-    }
-
-    if has_search:
-        print("  Web search integration available but would slow down pipeline")
-        print("  (Skipping for cron — configured for on-demand use)")
-        for theatre in THEATRES:
-            result[theatre] = {"searched": True, "results": []}
-    else:
-        print("  Web search not available in this environment")
-        for theatre in THEATRES:
-            result[theatre] = {"searched": False, "results": []}
-
-    return result
+def check_source_freshness(articles: list[dict]) -> dict:
+    """Check which high-priority sources are contributing vs missing."""
+    used_sources = set()
+    for article in articles:
+        feed_id = article.get("feed", "")
+        if feed_id in RSS_FEEDS:
+            used_sources.add(RSS_FEEDS[feed_id]["url"])
+    
+    gaps = []
+    for feed_id, feed_info in RSS_FEEDS.items():
+        if feed_info["url"] not in used_sources and feed_info["priority"] >= 4:
+            gaps.append({
+                "feed": feed_id,
+                "priority": feed_info["priority"],
+                "category": feed_info["category"],
+            })
+    
+    return {"used": len(used_sources), "total": len(RSS_FEEDS), "gaps": gaps}
 
 
-# ─── 5. PRODUCE ENRICHMENT REPORT ───────────────────────
+def load_kalshi_data() -> list[dict]:
+    """Load the latest Kalshi scan data."""
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    kalshi_file = KALSHI_SCAN_DIR / f"kalshi-scan-{today}.md"
+    
+    if not kalshi_file.exists():
+        # Try yesterday
+        yesterday = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+        kalshi_file = KALSHI_SCAN_DIR / f"kalshi-scan-{yesterday}.md"
+    
+    if not kalshi_file.exists():
+        return []
+    
+    trades = []
+    for line in kalshi_file.read_text().split("\n"):
+        parts = line.strip().split()
+        if len(parts) >= 8 and parts[0].startswith("KX"):
+            try:
+                trades.append({
+                    "ticker": parts[0],
+                    "yes_bid": float(parts[1].replace("$", "")),
+                    "volume": int(float(parts[6].replace(",", ""))),
+                    "expiry": parts[7],
+                })
+            except (ValueError, IndexError):
+                pass
+    
+    return sorted(trades, key=lambda x: x["volume"], reverse=True)[:10]
 
-def produce_enrichment_report(freshness, sources, markets, search):
-    """Write enrichment report consumed by the assessment generator."""
-    report = {
-        "timestamp": datetime.datetime.now().isoformat(),
-        "date": datetime.date.today().isoformat(),
-        "story_freshness": freshness,
-        "source_freshness": sources,
-        "prediction_markets": markets,
-        "web_intel": search,
-        "recommendations": {
-            "shake_up_stories": freshness["stalled"] if freshness.get("stalled") else [],
-            "prioritize_sources": sources.get("recommendations", [])[:5],
-            "notable_market_moves": markets.get("significant_moves", []),
-        },
-        "narrative_instructions": {},
-    }
-
-    # Generate narrative instructions for stalled stories
-    for theatre in freshness.get("stalled", []):
-        report["narrative_instructions"][theatre] = {
-            "severity": "stalled",
-            "action": "deepen",
-            "instruction": (
-                f"The {theatre} story has not changed since yesterday. "
-                "Expand analysis: explore second-order effects, historical parallels, "
-                "or predictive scenarios rather than re-stating base facts."
-            ),
-        }
-
-    for theatre in freshness.get("developing", []):
-        report["narrative_instructions"][theatre] = {
-            "severity": "developing",
-            "action": "update",
-            "instruction": (
-                f"The {theatre} story is developing. "
-                "Focus on what changed, update forward assessments."
-            ),
-        }
-
-    CRON_DIR.mkdir(parents=True, exist_ok=True)
-    ENRICHMENT.write_text(json.dumps(report, indent=2))
-    print(f"\n✓ Enrichment report written ({len(report['recommendations']['shake_up_stories'])} stale stories flagged)")
-
-
-# ─── MAIN ────────────────────────────────────────────────
 
 def main():
-    date_str = datetime.date.today().isoformat()
-    print(f"=== Daily Enrichment: {date_str} ===", flush=True)
-
-    print("\n1. Story Freshness...")
-    freshness = check_story_freshness()
-
-    print("\n2. Source Freshness...")
-    sources = check_source_freshness()
-
-    print("\n3. Prediction Markets...")
-    markets = check_prediction_markets()
-
-    print("\n4. Web Intel...")
-    search = online_intel_check()
-
-    print("\n5. Writing enrichment report...")
-    produce_enrichment_report(freshness, sources, markets, search)
-
-    print("Done.")
+    """Run the full enrichment pipeline."""
+    log.info("Starting enrichment")
+    
+    report = {
+        "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "articles_fetched": 0,
+        "feeds_queried": 0,
+        "sources_checked": {},
+        "narrative_conflicts": [],
+        "kalshi_trades": [],
+        "story_freshness": {},
+    }
+    
+    # 1. Fetch RSS feeds
+    articles = fetch_all_feeds()
+    report["articles_fetched"] = len(articles)
+    report["feeds_queried"] = len(RSS_FEEDS)
+    log.info(f"Fetched {len(articles)} articles from {len(RSS_FEEDS)} feeds")
+    
+    # 2. Cross-source validation
+    conflicts = cross_source_validate(articles)
+    report["narrative_conflicts"] = conflicts
+    if conflicts:
+        for c in conflicts[:5]:
+            log.warning(f"Narrative conflict: {c['narrative']}", sources=c['sources'])
+    
+    # 3. Source freshness
+    freshness = check_source_freshness(articles)
+    report["sources_checked"] = freshness
+    if freshness.get("gaps"):
+        log.warning(f"Source gaps: {len(freshness['gaps'])} high-priority sources not reachable")
+    
+    # 4. Kalshi data
+    kalshi = load_kalshi_data()
+    report["kalshi_trades"] = kalshi
+    log.info(f"Loaded {len(kalshi)} Kalshi trades")
+    
+    # 5. Story freshness from tracker
+    if STORY_DELTA.exists():
+        try:
+            delta = json.loads(STORY_DELTA.read_text())
+            report["story_freshness"] = delta
+        except:
+            pass
+    
+    # Save enrichment report
+    CRON_DIR.mkdir(parents=True, exist_ok=True)
+    ENRICHMENT_FILE.write_text(json.dumps(report, indent=2))
+    log.info(f"Enrichment report saved: {ENRICHMENT_FILE.name}")
+    
+    print(f"\n📡 Enrichment Summary:")
+    print(f"  Feeds queried: {report['feeds_queried']}")
+    print(f"  Articles fetched: {report['articles_fetched']}")
+    print(f"  Narrative conflicts: {len(report['narrative_conflicts'])}")
+    print(f"  Source gaps: {len(freshness.get('gaps', []))}")
+    print(f"  Kalshi trades loaded: {len(report['kalshi_trades'])}")
+    
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
