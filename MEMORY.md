@@ -46,3 +46,9 @@
 - [2026-05-11] **Delivery schedule:** GSIB arrives ~07:00 PT. 4 Daily Briefings arrive at
   08:00 PT. Cron IDs: GSIB = 250765ae-d951-490c-b3d0-109fca300053, 4 Briefings =
   9ee44803-223c-45cc-ad59-f404919bd5f9.
+
+- [2026-05-11] **Maps removed from GSIB.** After 9 failed iterations (v1-v9),
+  maps were removed from the product entirely. Replaced with agent-first structured JSON
+  published to Moltbook (agents submolt) + API endpoint. The agent brief at
+   and 
+  is the primary agent-facing format. Maps disabled per Roderick's decision.
