@@ -161,6 +161,7 @@ SECTIONS = [
 ]
 
 # Portable path resolution
+_SKILL_DIR = Path(__file__).resolve().parent.parent
 _BASE = _SKILL_DIR  # daily_intel skill directory
 _MAPS_DIR = _BASE / 'maps'
 _INFO_DIR = _BASE / 'infographics'

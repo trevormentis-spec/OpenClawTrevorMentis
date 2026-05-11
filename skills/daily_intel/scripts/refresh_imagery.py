@@ -17,6 +17,7 @@ import matplotlib.patheffects as pe
 import numpy as np
 
 SKILL_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(SKILL_ROOT))
 IMAGES_DIR = SKILL_ROOT / 'images'
 MAPS_DIR = SKILL_ROOT / 'maps'
 INFO_DIR = SKILL_ROOT / 'infographics'
@@ -457,6 +458,7 @@ import matplotlib.patheffects as pe
 import numpy as np
 
 SKILL_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(SKILL_ROOT))
 IMAGES_DIR = SKILL_ROOT / 'images'
 MAPS_DIR = SKILL_ROOT / 'maps'
 INFO_DIR = SKILL_ROOT / 'infographics'

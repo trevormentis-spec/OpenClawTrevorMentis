@@ -26,6 +26,30 @@ Cron schedule (as of 2026-05-07):
 import os, sys, json, datetime, subprocess, logging
 from pathlib import Path
 
+# Load .env for subprocess environment inheritance
+try:
+    from dotenv import load_dotenv
+    env_path = Path.home() / '.openclaw' / 'workspace' / '.env'
+    if env_path.exists():
+        load_dotenv(env_path)
+        # Also export to os.environ for subprocess calls
+        for k, v in os.environ.items():
+            pass  # already loaded by load_dotenv
+except ImportError:
+    pass
+
+env_path = Path.home() / '.openclaw' / 'workspace' / '.env'
+if env_path.exists():
+    with open(env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                k, _, v = line.partition('=')
+                k, v = k.strip(), v.strip().strip("'\"")
+                if not os.environ.get(k):
+                    os.environ[k] = v
+from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from trevor_config import WORKSPACE, EXPORTS_DIR, THEATRES, THEATRE_KEYS, HEARTBEAT_INTERVAL_SECONDS
 from trevor_log import get_logger
@@ -50,7 +74,7 @@ def run_script(name, args=None, timeout=300):
     """Run a pipeline script and capture output."""
     script = SCRIPTS_DIR / name
     if not script.exists():
-        log(f"✗ {name} not found")
+        log.info(f"✗ {name} not found")
         return False, "NOT_FOUND"
 
     cmd = ['python3', str(script)]
@@ -60,17 +84,17 @@ def run_script(name, args=None, timeout=300):
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
         if result.returncode == 0:
-            log(f"✓ {name} {' '.join(args) if args else ''}")
+            log.info(f"✓ {name} {' '.join(args) if args else ''}")
             return True, result.stdout[-500:]
         else:
-            log(f"✗ {name} failed (rc={result.returncode})")
-            log(f"  {result.stderr[-300:]}")
+            log.info(f"✗ {name} failed (rc={result.returncode})")
+            log.info(f"  {result.stderr[-300:]}")
             return False, result.stderr[-300:]
     except subprocess.TimeoutExpired:
-        log(f"✗ {name} timed out ({timeout}s)")
+        log.info(f"✗ {name} timed out ({timeout}s)")
         return False, "TIMEOUT"
     except Exception as e:
-        log(f"✗ {name} error: {e}")
+        log.info(f"✗ {name} error: {e}")
         return False, str(e)
 
 
@@ -122,25 +146,25 @@ def step_memory_index():
 
 def step_story_tracker_save():
     """Save today's story state."""
-    log("┌─ Story Tracker Save")
+    log.info("┌─ Story Tracker Save")
     return run_script('story_tracker.py', ['--save'], timeout=15)
 
 
 def step_story_tracker_diff():
     """Diff yesterday vs today."""
-    log("┌─ Story Tracker Diff")
+    log.info("┌─ Story Tracker Diff")
     return run_script('story_tracker.py', ['--diff'], timeout=15)
 
 
 def step_enrichment():
     """Run pre-assessment enrichment."""
-    log("┌─ Daily Enrichment")
+    log.info("┌─ Daily Enrichment")
     return run_script('daily_enrichment.py', timeout=60)
 
 
 def step_build_pdf():
     """Build the final PDF."""
-    log("┌─ Build PDF")
+    log.info("┌─ Build PDF")
     ok, msg = run_script('build_pdf.py', timeout=180)
     if not ok:
         log.warning("PDF generation failed — generating text fallback")
@@ -173,25 +197,25 @@ print(f"TEXT_FALLBACK:{path}")
         if pdfs:
             latest = pdfs[-1]
             size_kb = os.path.getsize(latest) // 1024
-            log(f"  PDF: {latest.name} ({size_kb}KB)")
+            log.info(f"  PDF: {latest.name} ({size_kb}KB)")
     return ok, msg
 
 
 def step_refresh_imagery():
     """Regenerate images, maps, infographics."""
-    log("┌─ Refresh Imagery")
+    log.info("┌─ Refresh Imagery")
     return run_script('refresh_imagery.py', timeout=300)
 
 
 def step_assessments():
     """Generate theatre assessments."""
-    log("┌─ Generate Assessments")
+    log.info("┌─ Generate Assessments")
     return run_script('generate_assessments.py', timeout=300)
 
 
 def step_kalshi_scan():
     """Scan prediction markets."""
-    log("┌─ Kalshi Scan")
+    log.info("┌─ Kalshi Scan")
     # Try skill scripts dir first, fall back to workspace scripts
     script = SCRIPTS_DIR / 'kalshi_scanner.py'
     if not script.exists():
@@ -201,15 +225,15 @@ def step_kalshi_scan():
             try:
                 result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
                 if result.returncode == 0:
-                    log(f"✓ kalshi_scanner.py --save (workspace)")
+                    log.info(f"✓ kalshi_scanner.py --save (workspace)")
                     return True, result.stdout[-500:]
                 else:
-                    log(f"✗ kalshi_scanner.py failed (rc={result.returncode})")
+                    log.info(f"✗ kalshi_scanner.py failed (rc={result.returncode})")
                     return False, result.stderr[-300:]
             except subprocess.TimeoutExpired:
-                log(f"✗ kalshi_scanner.py timed out (60s)")
+                log.info(f"✗ kalshi_scanner.py timed out (60s)")
                 return False, "TIMEOUT"
-        log(f"✗ kalshi_scanner.py not found in skill or workspace scripts")
+        log.info(f"✗ kalshi_scanner.py not found in skill or workspace scripts")
         return False, "NOT_FOUND"
     return run_script('kalshi_scanner.py', ['--save'], timeout=60)
 
@@ -225,12 +249,12 @@ def step_distribution():
     - GitHub Pages (if available)
     - Email (if configured)
     """
-    log("┌─ Distribution")
+    log.info("┌─ Distribution")
 
     # Find latest PDF
     pdfs = sorted(SKILL_ROOT.glob("security_brief_*.pdf"))
     if not pdfs:
-        log("  No PDF to distribute")
+        log.info("  No PDF to distribute")
         return False, "NO_PDF"
 
     latest_pdf = pdfs[-1]
@@ -239,35 +263,35 @@ def step_distribution():
 
     # Copy to exports
     os.system(f"cp '{latest_pdf}' '{exports_dir}/{latest_pdf.name}'")
-    log(f"  ✓ Copied to exports/pdfs/")
+    log.info(f"  ✓ Copied to exports/pdfs/")
 
     # Try landing page deploy
     deploy_script = WORKSPACE / 'scripts' / 'deploy_landing_page.sh'
     if deploy_script.exists():
-        log("  Attempting landing page deploy...")
+        log.info("  Attempting landing page deploy...")
         try:
             result = subprocess.run(['bash', str(deploy_script)],
                                    capture_output=True, text=True, timeout=120)
             if result.returncode == 0:
-                log("  ✓ Landing page deployed")
+                log.info("  ✓ Landing page deployed")
             else:
-                log(f"  Landing page deploy: {result.stderr[-200:]}")
+                log.info(f"  Landing page deploy: {result.stderr[-200:]}")
         except:
-            log("  Landing page deploy skipped (timeout or error)")
+            log.info("  Landing page deploy skipped (timeout or error)")
 
     # Try Moltbook posting
     moltbook_script = WORKSPACE / 'scripts' / 'moltbook-post-brief.sh'
     if moltbook_script.exists():
-        log("  Attempting Moltbook post...")
+        log.info("  Attempting Moltbook post...")
         try:
             result = subprocess.run(['bash', str(moltbook_script), '--gmail'],
                                    capture_output=True, text=True, timeout=60)
             if result.returncode == 0:
-                log("  ✓ Moltbook posted")
+                log.info("  ✓ Moltbook posted")
             else:
-                log(f"  Moltbook: {result.stderr[-200:]}")
+                log.info(f"  Moltbook: {result.stderr[-200:]}")
         except:
-            log("  Moltbook skipped")
+            log.info("  Moltbook skipped")
 
     return True, "OK"
 
@@ -312,18 +336,18 @@ def auto_recover(issues):
     for issue in issues:
         if issue.startswith("MISSING_ASSESSMENT:"):
             theatre = issue.split(":")[1]
-            log(f"  Creating placeholder for {theatre}")
+            log.info(f"  Creating placeholder for {theatre}")
             (ASSESS_DIR / f"{theatre}.md").write_text(
                 f"# {theatre.title()} Assessment\n\nAssessment pending.\n")
             fixed += 1
 
         elif issue == "NO_PDF":
-            log("  No PDF found — attempting rebuild")
+            log.info("  No PDF found — attempting rebuild")
             step_build_pdf()
             fixed += 1
 
         elif issue.startswith("EMPTY_DIR:"):
-            log(f"  Empty directory: {issue.split(':')[1]} — running imagery")
+            log.info(f"  Empty directory: {issue.split(':')[1]} — running imagery")
             step_refresh_imagery()
             fixed += 1
 
@@ -423,20 +447,20 @@ def show_status():
 def run_daily():
     """Full daily pipeline — the main daily improvement cycle."""
     date_str = datetime.date.today().isoformat()
-    log(f"\n{'='*60}")
-    log(f"IMPROVEMENT DAEMON — Daily Run: {date_str}")
-    log(f"{'='*60}")
+    log.info(f"\n{'='*60}")
+    log.info(f"IMPROVEMENT DAEMON — Daily Run: {date_str}")
+    log.info(f"{'='*60}")
 
     success = True
 
     # Phase 1: Enrichment (pre-assessment)
-    log("\n── Phase 1: Intelligence Enrichment ──")
+    log.info("\n── Phase 1: Intelligence Enrichment ──")
     step_story_tracker_diff()
     step_enrichment()
     step_kalshi_scan()
 
     # Phase 2: Generation
-    log("\n── Phase 2: Content Generation ──")
+    log.info("\n── Phase 2: Content Generation ──")
     
     # Check if any narratives are stale — inject adaptation flag
     adaptation_flag = ""
@@ -467,22 +491,22 @@ def run_daily():
     
     ok, _ = step_assessments()
     if not ok:
-        log("  Assessments failed — continuing with fallback")
+        log.info("  Assessments failed — continuing with fallback")
         success = False
 
     ok, _ = step_refresh_imagery()
     if not ok:
-        log("  Imagery failed — attempting recovery")
+        log.info("  Imagery failed — attempting recovery")
         quality_auto_fix()
         success = False
 
     ok, _ = step_build_pdf()
     if not ok:
-        log("  PDF build failed — will retry")
+        log.info("  PDF build failed — will retry")
         success = False
 
-    # Phase 3: Quality & Measurement
-    log("\n── Phase 3: Quality & Measurement ──")
+    # Phase 4: Quality & Measurement
+    log.info("\n── Phase 4: Quality & Measurement ──")
     
     # Run briefometer calibration check before quality audit
     briefometer_ok, briefometer_msg = run_script('briefometer.py', ['--calibrate'], timeout=15)
@@ -506,20 +530,20 @@ def run_daily():
         except:
             pass
 
-    # Phase 4: Distribution
-    log("\n── Phase 4: Distribution ──")
+    # Phase 5: Distribution
+    log.info("\n── Phase 5: Distribution ──")
     if ok:
         step_distribution()
     else:
-        log("  Skipping distribution — PDF build failed")
+        log.info("  Skipping distribution — PDF build failed")
 
     # Phase 5: Improvement report
-    log("\n── Phase 5: Improvement Report ──")
+    log.info("\n── Phase 6: Improvement Report ──")
     report = generate_improvement_report()
     report["pipeline_success"] = success
     report_path = CRON_DIR / f"daily_report_{date_str}.json"
     report_path.write_text(json.dumps(report, indent=2))
-    log(f"  Report: {report_path.name}")
+    log.info(f"  Report: {report_path.name}")
 
     # Procedural memory: if pipeline succeeded, nudge to save skill
     if success:
@@ -534,16 +558,16 @@ def run_daily():
             pass
     
     if success:
-        log(f"\n✅ Daily pipeline complete: {date_str}")
+        log.info(f"\n✅ Daily pipeline complete: {date_str}")
     else:
-        log(f"\n⚠ Daily pipeline completed with issues: {date_str}")
+        log.info(f"\n⚠ Daily pipeline completed with issues: {date_str}")
 
     return success
 
 
 def run_hourly():
     """Lightweight hourly checks — market moves, KJ tracking."""
-    log("\n── Hourly Check ──")
+    log.info("\n── Hourly Check ──")
 
     # Check Kalshi for significant moves
     script = SCRIPTS_DIR / 'kalshi_scanner.py'
@@ -561,14 +585,14 @@ def run_hourly():
             big_moves = [m for m in sig_moves if m.get("change", 0) >= 15]
             if big_moves:
                 for m in big_moves[:3]:
-                    log(f"  ⚡ Big market move: {m['market']} ({m['change']}pp)")
+                    log.info(f"  ⚡ Big market move: {m['market']} ({m['change']}pp)")
 
-    log("  Hourly check complete")
+    log.info("  Hourly check complete")
 
 
 def run_weekly():
     """Weekly analytics — trends, calibration, source diversity."""
-    log("\n── Weekly Analytics ──")
+    log.info("\n── Weekly Analytics ──")
 
     # Trend analysis from measurement_log
     meas_log = CRON_DIR / 'measurement_log.json'
@@ -578,8 +602,8 @@ def run_weekly():
         if len(runs) >= 2:
             visual_trend = [r.get("visual", 0) for r in runs]
             content_trend = [r.get("content", 0) for r in runs]
-            log(f"  Visual trend: {visual_trend[0]} → {visual_trend[-1]} ({visual_trend[-1] - visual_trend[0]:+d})")
-            log(f"  Content trend: {content_trend[0]} → {content_trend[-1]} ({content_trend[-1] - content_trend[0]:+d})")
+            log.info(f"  Visual trend: {visual_trend[0]} → {visual_trend[-1]} ({visual_trend[-1] - visual_trend[0]:+d})")
+            log.info(f"  Content trend: {content_trend[0]} → {content_trend[-1]} ({content_trend[-1] - content_trend[0]:+d})")
 
     # Story tracker trend
     tracker_file = CRON_DIR / 'story_tracker.json'
@@ -587,26 +611,26 @@ def run_weekly():
         tracker = json.loads(tracker_file.read_text())
         history = tracker.get("history", [])
         if len(history) >= 2:
-            log(f"  Story history: {len(history)} days tracked")
+            log.info(f"  Story history: {len(history)} days tracked")
             for h in history:
                 words = h.get("summary", {}).get("total_words", 0)
-                log(f"    {h['date']}: {words} words")
+                log.info(f"    {h['date']}: {words} words")
 
     # KJ calibration
     kj_file = CRON_DIR / 'key_judgments.json'
     if kj_file.exists():
         kjs = json.loads(kj_file.read_text())
         verdicts = [j for j in kjs.get("judgments", []) if j["outcome"] is not None]
-        log(f"  KJs verified: {len(verdicts)}")
+        log.info(f"  KJs verified: {len(verdicts)}")
         if verdicts and kjs.get("mean_brier"):
-            log(f"  Mean Brier: {kjs['mean_brier']}")
+            log.info(f"  Mean Brier: {kjs['mean_brier']}")
 
-    log("  Weekly analytics complete")
+    log.info("  Weekly analytics complete")
 
 
 def quality_auto_fix():
     """Auto-fix common quality issues."""
-    log("  Quality auto-fix running...")
+    log.info("  Quality auto-fix running...")
     run_script('quality_audit.py', ['--auto-fix'], timeout=120)
 
 
@@ -633,7 +657,7 @@ def main():
     elif args.auto_fix:
         issues = check_pipeline_health()
         fixed = auto_recover(issues)
-        log(f"Auto-fix: {fixed} issues resolved")
+        log.info(f"Auto-fix: {fixed} issues resolved")
     else:
         print("Usage: improvement_daemon.py --daily|--hourly|--weekly|--status|--auto-fix")
         print()

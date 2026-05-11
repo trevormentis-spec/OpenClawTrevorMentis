@@ -274,6 +274,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="Audit only, no repair")
+    parser.add_argument("--auto-fix", action="store_true", help="Auto-repair detected issues")
     parser.add_argument("--status", action="store_true", help="Show health summary")
     args = parser.parse_args()
     

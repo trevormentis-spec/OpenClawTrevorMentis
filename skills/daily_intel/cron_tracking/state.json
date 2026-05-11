@@ -1,8 +1,18 @@
 {
-  "issue_number": "18",
-  "last_run": "2026-05-11T12:19:25.997744",
-  "completed": true,
-  "pdf_path": "/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis/skills/daily_intel/security_brief_2026-05-11.pdf",
-  "pdf_size_bytes": 2558336,
-  "generated": true
+  "timestamp": "2026-05-11T23:04:51Z",
+  "health": {
+    "checked_at": "2026-05-11T23:04:51Z",
+    "issue_count": 0,
+    "critical": 0,
+    "warnings": 0,
+    "issues": []
+  },
+  "repairs": {
+    "attempted": 0,
+    "succeeded": 0,
+    "failed": 0,
+    "deferred": 0,
+    "details": []
+  },
+  "overall_status": "healthy"
 }

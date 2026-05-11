@@ -1,87 +1,48 @@
 {
-  "date": "2026-05-09",
-  "previous_date": "2026-05-08",
-  "deltas": {
-    "europe": {
-      "status": "developing",
-      "signature_overlap": 4,
-      "new_signatures": [
-        "fortress belt"
-      ],
-      "dropped_signatures": [],
-      "word_count_delta": 295,
-      "new_sources": [
-        "un ",
-        "ap ",
-        "npr",
-        "kalshi"
-      ],
-      "dropped_sources": [
-        "bloomberg"
-      ],
-      "bottom_line_changed": true
+  "generated": "2026-05-11T23:02:40Z",
+  "stale_count": 0,
+  "diffs": [
+    {
+      "region": "europe",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     },
-    "africa": {
-      "status": "stalled",
-      "signature_overlap": 5,
-      "new_signatures": [],
-      "dropped_signatures": [],
-      "word_count_delta": -287,
-      "new_sources": [],
-      "dropped_sources": [],
-      "bottom_line_changed": false
+    {
+      "region": "africa",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     },
-    "asia": {
-      "status": "stalled",
-      "signature_overlap": 7,
-      "new_signatures": [],
-      "dropped_signatures": [],
-      "word_count_delta": 36,
-      "new_sources": [
-        "the diplomat"
-      ],
-      "dropped_sources": [],
-      "bottom_line_changed": true
+    {
+      "region": "asia",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     },
-    "middle_east": {
-      "status": "stalled",
-      "signature_overlap": 2,
-      "new_signatures": [],
-      "dropped_signatures": [],
-      "word_count_delta": -196,
-      "new_sources": [],
-      "dropped_sources": [
-        "cnn"
-      ],
-      "bottom_line_changed": true
+    {
+      "region": "middle_east",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     },
-    "north_america": {
-      "status": "stalled",
-      "signature_overlap": 1,
-      "new_signatures": [],
-      "dropped_signatures": [],
-      "word_count_delta": 510,
-      "new_sources": [
-        "rand"
-      ],
-      "dropped_sources": [],
-      "bottom_line_changed": true
+    {
+      "region": "north_america",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     },
-    "south_america": {
-      "status": "stalled",
-      "signature_overlap": 2,
-      "new_signatures": [],
-      "dropped_signatures": [
-        "transition"
-      ],
-      "word_count_delta": 89,
-      "new_sources": [],
-      "dropped_sources": [
-        "rand"
-      ],
-      "bottom_line_changed": true
+    {
+      "region": "south_america",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "global_finance",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
     }
-  },
-  "stalled": 5,
-  "changing": 1
+  ]
 }

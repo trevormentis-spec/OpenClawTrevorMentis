@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-11",
+  "pipeline_success": true,
+  "metrics": {
+    "date": "2026-05-10",
+    "visual": 215,
+    "content": 243,
+    "pdf_quality": 25
+  },
+  "issues": [
+    "MISSING_ASSESSMENT:{'key': 'europe', 'title': 'Europe / Russia-Ukraine Conflict'}",
+    "MISSING_ASSESSMENT:{'key': 'africa', 'title': 'Sahel / Africa'}",
+    "MISSING_ASSESSMENT:{'key': 'asia', 'title': 'South Asia / Indo-Pacific'}",
+    "MISSING_ASSESSMENT:{'key': 'middle_east', 'title': 'Middle East / Iran'}",
+    "MISSING_ASSESSMENT:{'key': 'north_america', 'title': 'North America / Mexico Cartels'}",
+    "MISSING_ASSESSMENT:{'key': 'south_america', 'title': 'South America / Venezuela'}",
+    "MISSING_ASSESSMENT:{'key': 'global_finance', 'title': 'Global Finance / Prediction Markets'}"
+  ],
+  "improvements": [],
+  "story_state": {
+    "total_words": 0,
+    "total_sources": 0,
+    "theatres": []
+  },
+  "stale_stories": []
+}
