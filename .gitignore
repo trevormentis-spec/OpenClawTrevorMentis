@@ -31,3 +31,4 @@ skills/genviral/defaults.yaml
 skills/genviral/workspace/
 tmp/
 venv/
+tmp_review/
