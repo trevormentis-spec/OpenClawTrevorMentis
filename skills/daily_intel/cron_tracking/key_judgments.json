@@ -1,0 +1,42 @@
+{
+  "judgments": [
+    {
+      "id": "KJ-2026-05-07-1",
+      "date": "2026-05-07",
+      "theatre": "europe",
+      "text": "Iran will NOT sign the MoU by 31 May 2026",
+      "probability": 72,
+      "horizon_days": 30,
+      "verify_by": "2026-06-06",
+      "source": "Polymarket Iran Deal contract at 28\u00a2, trending down",
+      "outcome": null,
+      "verified_date": null
+    },
+    {
+      "id": "KJ-2026-05-07-2",
+      "date": "2026-05-07",
+      "theatre": "unknown",
+      "text": "JNIM will NOT seize Bamako within 30 days",
+      "probability": 83,
+      "horizon_days": 30,
+      "verify_by": "2026-06-06",
+      "source": "NYT/JA/NPR confirm JNIM multi-city capacity but ECOWAS standby is structural deterrent",
+      "outcome": null,
+      "verified_date": null
+    },
+    {
+      "id": "KJ-2026-05-07-3",
+      "date": "2026-05-07",
+      "theatre": "europe",
+      "text": "Russia will NOT declare a real ceasefire on 9 May 2026",
+      "probability": 91,
+      "horizon_days": 5,
+      "verify_by": "2026-05-12",
+      "source": "Moscow rejected Ukraine counter-truce 5-6 May; ISW read as strategic intent signal",
+      "outcome": null,
+      "verified_date": null
+    }
+  ],
+  "brier_scores": [],
+  "calibration": {}
+}

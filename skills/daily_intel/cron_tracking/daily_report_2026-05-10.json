@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-10",
+  "pipeline_success": false,
+  "metrics": {
+    "date": "2026-05-10",
+    "visual": 215,
+    "content": 243,
+    "pdf_quality": 25
+  },
+  "issues": [],
+  "improvements": [],
+  "story_state": {
+    "total_words": 15463,
+    "total_sources": 26,
+    "theatres": [
+      "europe",
+      "africa",
+      "asia",
+      "middle_east",
+      "north_america",
+      "south_america"
+    ]
+  },
+  "stale_stories": [
+    "africa",
+    "asia",
+    "middle_east",
+    "north_america",
+    "south_america"
+  ]
+}

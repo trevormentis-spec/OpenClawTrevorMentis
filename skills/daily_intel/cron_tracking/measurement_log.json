@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "date": "2026-05-07",
+      "visual": 215,
+      "content": 250,
+      "pdf_quality": 25
+    },
+    {
+      "date": "2026-05-08",
+      "visual": 215,
+      "content": 231,
+      "pdf_quality": 25
+    },
+    {
+      "date": "2026-05-09",
+      "visual": 215,
+      "content": 231,
+      "pdf_quality": 25
+    },
+    {
+      "date": "2026-05-10",
+      "visual": 215,
+      "content": 243,
+      "pdf_quality": 25
+    }
+  ],
+  "trends": {}
+}

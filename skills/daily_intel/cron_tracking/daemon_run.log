@@ -1,0 +1,433 @@
+2026-05-08T09:04:14.210112 | 
+── Hourly Check ──
+2026-05-08T09:04:14.210328 |   Hourly check complete
+2026-05-08T09:04:44.944203 | 
+── Hourly Check ──
+2026-05-08T09:04:44.944371 |   Hourly check complete
+2026-05-08T10:04:45.188251 | 
+── Hourly Check ──
+2026-05-08T10:04:45.188479 |   Hourly check complete
+2026-05-08T11:04:44.812101 | 
+── Hourly Check ──
+2026-05-08T11:04:44.812262 |   Hourly check complete
+2026-05-08T12:25:15.785749 | 
+── Hourly Check ──
+2026-05-08T12:25:15.785913 |   Hourly check complete
+2026-05-08T13:04:45.169484 | 
+── Hourly Check ──
+2026-05-08T13:04:45.169637 |   Hourly check complete
+2026-05-08T14:04:44.817307 | 
+── Hourly Check ──
+2026-05-08T14:04:44.817473 |   Hourly check complete
+2026-05-08T15:04:44.747982 | 
+── Hourly Check ──
+2026-05-08T15:04:44.748143 |   Hourly check complete
+2026-05-08T16:04:44.516298 | 
+── Hourly Check ──
+2026-05-08T16:04:44.516511 |   Hourly check complete
+2026-05-08T17:04:51.511093 | 
+── Hourly Check ──
+2026-05-08T17:04:51.511319 |   Hourly check complete
+2026-05-08T18:04:44.476583 | 
+── Hourly Check ──
+2026-05-08T18:04:44.476740 |   Hourly check complete
+2026-05-08T19:04:44.076358 | 
+── Hourly Check ──
+2026-05-08T19:04:44.076521 |   Hourly check complete
+2026-05-08T20:04:44.509789 | 
+── Hourly Check ──
+2026-05-08T20:04:44.509970 |   Hourly check complete
+2026-05-08T21:04:44.158360 | 
+── Hourly Check ──
+2026-05-08T21:04:44.158523 |   Hourly check complete
+2026-05-08T22:04:43.947713 | 
+── Hourly Check ──
+2026-05-08T22:04:43.947882 |   Hourly check complete
+2026-05-08T23:00:05.524591 | 
+============================================================
+2026-05-08T23:00:05.524693 | IMPROVEMENT DAEMON — Daily Run: 2026-05-08
+2026-05-08T23:00:05.524761 | ============================================================
+2026-05-08T23:00:05.524823 | 
+── Phase 1: Intelligence Enrichment ──
+2026-05-08T23:00:05.524885 | ┌─ Story Tracker Diff
+2026-05-08T23:00:05.564508 | ✓ story_tracker.py --diff
+2026-05-08T23:00:05.564602 | ┌─ Daily Enrichment
+2026-05-08T23:00:05.623853 | ✓ daily_enrichment.py 
+2026-05-08T23:00:05.623988 | ┌─ Kalshi Scan
+2026-05-08T23:00:05.624154 | ✗ kalshi_scanner.py not found
+2026-05-08T23:00:05.624249 | 
+── Phase 2: Content Generation ──
+2026-05-08T23:00:05.624340 | ┌─ Generate Assessments
+2026-05-08T23:00:53.726760 | ✗ generate_assessments.py failed (rc=1)
+2026-05-08T23:00:53.726860 |   Fetching up to 30 intel emails from Gmail...
+Found 30 messages
+Cached 20 emails across 4 theatres
+
+2026-05-08T23:00:53.726929 |   Assessments failed — continuing with fallback
+2026-05-08T23:00:53.727025 | ┌─ Refresh Imagery
+2026-05-08T23:01:16.294450 | ✓ refresh_imagery.py 
+2026-05-08T23:01:16.294592 | ┌─ Build PDF
+2026-05-08T23:01:17.867136 | ✓ build_pdf.py 
+2026-05-08T23:01:17.867543 |   PDF: security_brief_2026-05-08.pdf (2500KB)
+2026-05-08T23:02:13.020847 | 
+============================================================
+2026-05-08T23:02:13.020962 | IMPROVEMENT DAEMON — Daily Run: 2026-05-08
+2026-05-08T23:02:13.021036 | ============================================================
+2026-05-08T23:02:13.021101 | 
+── Phase 1: Intelligence Enrichment ──
+2026-05-08T23:02:13.021164 | ┌─ Story Tracker Diff
+2026-05-08T23:02:13.060558 | ✓ story_tracker.py --diff
+2026-05-08T23:02:13.060679 | ┌─ Daily Enrichment
+2026-05-08T23:02:13.116004 | ✓ daily_enrichment.py 
+2026-05-08T23:02:13.116112 | ┌─ Kalshi Scan
+2026-05-08T23:02:24.726213 | ✓ kalshi_scanner.py --save (workspace)
+2026-05-08T23:02:24.726316 | 
+── Phase 2: Content Generation ──
+2026-05-08T23:02:24.726387 | ┌─ Generate Assessments
+2026-05-08T23:02:26.069166 | ✗ generate_assessments.py failed (rc=1)
+2026-05-08T23:02:26.069291 |   Using cached emails (92s old)
+
+2026-05-08T23:02:26.069400 |   Assessments failed — continuing with fallback
+2026-05-08T23:02:26.069495 | ┌─ Refresh Imagery
+2026-05-08T23:02:36.162138 | ✓ refresh_imagery.py 
+2026-05-08T23:02:36.162277 | ┌─ Build PDF
+2026-05-08T23:02:37.674282 | ✓ build_pdf.py 
+2026-05-08T23:02:37.674789 |   PDF: security_brief_2026-05-08.pdf (2500KB)
+2026-05-08T23:02:37.674896 | 
+── Phase 3: Quality & Measurement ──
+2026-05-08T23:02:37.675033 | ┌─ Quality Audit
+2026-05-08T23:02:37.771818 | ✓ quality_audit.py 
+2026-05-08T23:02:37.965603 | ✓ briefometer.py 
+2026-05-08T23:02:37.965702 | ┌─ Story Tracker Save
+2026-05-08T23:02:38.039099 | ✓ story_tracker.py --save
+2026-05-08T23:02:38.039205 | 
+── Phase 4: Distribution ──
+2026-05-08T23:02:38.039301 | ┌─ Distribution
+2026-05-08T23:02:38.042235 |   ✓ Copied to exports/pdfs/
+2026-05-08T23:02:38.042370 |   Attempting landing page deploy...
+2026-05-08T23:02:40.425006 |   ✓ Landing page deployed
+2026-05-08T23:02:40.425157 |   Attempting Moltbook post...
+2026-05-08T23:02:56.910282 |   ✓ Moltbook posted
+2026-05-08T23:02:56.910374 | 
+── Phase 5: Improvement Report ──
+2026-05-08T23:02:56.911811 |   Report: daily_report_2026-05-08.json
+2026-05-08T23:02:56.911882 | 
+⚠ Daily pipeline completed with issues: 2026-05-08
+2026-05-08T23:04:44.147265 | 
+── Hourly Check ──
+2026-05-08T23:04:44.147589 |   Hourly check complete
+2026-05-09T00:04:43.876008 | 
+── Hourly Check ──
+2026-05-09T00:04:43.876339 |   Hourly check complete
+2026-05-09T01:04:44.531951 | 
+── Hourly Check ──
+2026-05-09T01:04:44.532315 |   Hourly check complete
+2026-05-09T02:04:44.310888 | 
+── Hourly Check ──
+2026-05-09T02:04:44.311472 |   Hourly check complete
+2026-05-09T03:04:44.450273 | 
+── Hourly Check ──
+2026-05-09T03:04:44.450624 |   Hourly check complete
+2026-05-09T04:04:44.128827 | 
+── Hourly Check ──
+2026-05-09T04:04:44.129358 |   Hourly check complete
+2026-05-09T05:04:44.452750 | 
+── Hourly Check ──
+2026-05-09T05:04:44.453096 |   Hourly check complete
+2026-05-09T06:04:44.593365 | 
+── Hourly Check ──
+2026-05-09T06:04:44.593702 |   Hourly check complete
+2026-05-09T07:04:44.892515 | 
+── Hourly Check ──
+2026-05-09T07:04:44.892865 |   Hourly check complete
+2026-05-09T08:04:44.688266 | 
+── Hourly Check ──
+2026-05-09T08:04:44.688625 |   Hourly check complete
+2026-05-09T09:04:45.252825 | 
+── Hourly Check ──
+2026-05-09T09:04:45.253265 |   Hourly check complete
+2026-05-09T10:04:45.299448 | 
+── Hourly Check ──
+2026-05-09T10:04:45.299912 |   Hourly check complete
+2026-05-09T11:04:45.137235 | 
+── Hourly Check ──
+2026-05-09T11:04:45.137579 |   Hourly check complete
+2026-05-09T12:21:45.697498 | 
+── Hourly Check ──
+2026-05-09T12:21:45.697824 |   Hourly check complete
+2026-05-09T13:04:44.864465 | 
+── Hourly Check ──
+2026-05-09T13:04:44.864797 |   Hourly check complete
+2026-05-09T14:04:45.378667 | 
+── Hourly Check ──
+2026-05-09T14:04:45.379011 |   Hourly check complete
+2026-05-09T15:04:44.908923 | 
+── Hourly Check ──
+2026-05-09T15:04:44.909288 |   Hourly check complete
+2026-05-09T16:04:44.672415 | 
+── Hourly Check ──
+2026-05-09T16:04:44.672739 |   Hourly check complete
+2026-05-09T17:04:44.794784 | 
+── Hourly Check ──
+2026-05-09T17:04:44.795138 |   Hourly check complete
+2026-05-09T18:04:44.835698 | 
+── Hourly Check ──
+2026-05-09T18:04:44.836038 |   Hourly check complete
+2026-05-09T19:04:44.664589 | 
+── Hourly Check ──
+2026-05-09T19:04:44.664919 |   Hourly check complete
+2026-05-09T20:04:44.440002 | 
+── Hourly Check ──
+2026-05-09T20:04:44.440485 |   Hourly check complete
+2026-05-09T21:04:44.298836 | 
+── Hourly Check ──
+2026-05-09T21:04:44.299165 |   Hourly check complete
+2026-05-09T22:04:44.369263 | 
+── Hourly Check ──
+2026-05-09T22:04:44.369615 |   Hourly check complete
+2026-05-09T23:00:05.141697 | 
+============================================================
+2026-05-09T23:00:05.141810 | IMPROVEMENT DAEMON — Daily Run: 2026-05-09
+2026-05-09T23:00:05.141878 | ============================================================
+2026-05-09T23:00:05.141941 | 
+── Phase 1: Intelligence Enrichment ──
+2026-05-09T23:00:05.142033 | ┌─ Story Tracker Diff
+2026-05-09T23:00:05.179599 | ✓ story_tracker.py --diff
+2026-05-09T23:00:05.179694 | ┌─ Daily Enrichment
+2026-05-09T23:00:05.235879 | ✓ daily_enrichment.py 
+2026-05-09T23:00:05.235998 | ┌─ Kalshi Scan
+2026-05-09T23:00:17.848794 | ✓ kalshi_scanner.py --save (workspace)
+2026-05-09T23:00:17.848889 | 
+── Phase 2: Content Generation ──
+2026-05-09T23:00:17.848994 | ┌─ Generate Assessments
+2026-05-09T23:01:19.233128 | ✗ generate_assessments.py failed (rc=1)
+2026-05-09T23:01:19.233226 |   Fetching up to 30 intel emails from Gmail...
+Found 30 messages
+Cached 20 emails across 4 theatres
+
+2026-05-09T23:01:19.233295 |   Assessments failed — continuing with fallback
+2026-05-09T23:01:19.233357 | ┌─ Refresh Imagery
+2026-05-09T23:01:41.829545 | ✓ refresh_imagery.py 
+2026-05-09T23:01:41.829660 | ┌─ Build PDF
+2026-05-09T23:01:43.362300 | ✓ build_pdf.py 
+2026-05-09T23:01:43.362705 |   PDF: security_brief_2026-05-09.pdf (2492KB)
+2026-05-09T23:01:43.362784 | 
+── Phase 3: Quality & Measurement ──
+2026-05-09T23:01:43.362852 | ┌─ Quality Audit
+2026-05-09T23:01:43.458838 | ✓ quality_audit.py 
+2026-05-09T23:01:43.645617 | ✓ briefometer.py 
+2026-05-09T23:01:43.645732 | ┌─ Story Tracker Save
+2026-05-09T23:01:43.717230 | ✓ story_tracker.py --save
+2026-05-09T23:01:43.717337 | 
+── Phase 4: Distribution ──
+2026-05-09T23:01:43.717407 | ┌─ Distribution
+2026-05-09T23:01:43.719995 |   ✓ Copied to exports/pdfs/
+2026-05-09T23:01:43.720125 |   Attempting landing page deploy...
+2026-05-09T23:01:45.985658 |   ✓ Landing page deployed
+2026-05-09T23:01:45.985872 |   Attempting Moltbook post...
+2026-05-09T23:01:54.781264 |   ✓ Moltbook posted
+2026-05-09T23:01:54.781382 | 
+── Phase 5: Improvement Report ──
+2026-05-09T23:01:54.783019 |   Report: daily_report_2026-05-09.json
+2026-05-09T23:01:54.783093 | 
+⚠ Daily pipeline completed with issues: 2026-05-09
+2026-05-09T23:04:44.631735 | 
+── Hourly Check ──
+2026-05-09T23:04:44.632091 |   Hourly check complete
+2026-05-10T00:10:39.111507 | 
+── Hourly Check ──
+2026-05-10T00:10:39.111844 |   Hourly check complete
+2026-05-10T01:04:44.359194 | 
+── Hourly Check ──
+2026-05-10T01:04:44.359528 |   Hourly check complete
+2026-05-10T02:04:44.534658 | 
+── Hourly Check ──
+2026-05-10T02:04:44.535003 |   Hourly check complete
+2026-05-10T03:04:44.860232 | 
+── Hourly Check ──
+2026-05-10T03:04:44.860591 |   Hourly check complete
+2026-05-10T04:04:44.603842 | 
+── Hourly Check ──
+2026-05-10T04:04:44.604199 |   Hourly check complete
+2026-05-10T05:04:44.787994 | 
+── Hourly Check ──
+2026-05-10T05:04:44.788335 |   Hourly check complete
+2026-05-10T06:04:44.766040 | 
+── Hourly Check ──
+2026-05-10T06:04:44.766384 |   Hourly check complete
+2026-05-10T07:04:44.612896 | 
+── Hourly Check ──
+2026-05-10T07:04:44.613305 |   Hourly check complete
+2026-05-10T08:04:44.795241 | 
+── Hourly Check ──
+2026-05-10T08:04:44.795597 |   Hourly check complete
+2026-05-10T09:04:45.167860 | 
+── Hourly Check ──
+2026-05-10T09:04:45.168222 |   Hourly check complete
+2026-05-10T10:04:44.521055 | 
+── Hourly Check ──
+2026-05-10T10:04:44.521390 |   Hourly check complete
+2026-05-10T11:00:06.195171 | 
+── Weekly Analytics ──
+2026-05-10T11:00:06.195487 |   Visual trend: 215 → 215 (+0)
+2026-05-10T11:00:06.195594 |   Content trend: 250 → 231 (-19)
+2026-05-10T11:00:06.196043 |   Story history: 3 days tracked
+2026-05-10T11:00:06.196147 |     2026-05-07: 15435 words
+2026-05-10T11:00:06.196230 |     2026-05-08: 14877 words
+2026-05-10T11:00:06.196325 |     2026-05-09: 15324 words
+2026-05-10T11:00:06.196535 |   KJs verified: 0
+2026-05-10T11:00:06.196633 |   Weekly analytics complete
+2026-05-10T11:04:44.624396 | 
+── Hourly Check ──
+2026-05-10T11:04:44.624747 |   Hourly check complete
+2026-05-10T12:07:50.053651 | 
+── Hourly Check ──
+2026-05-10T12:07:50.054018 |   Hourly check complete
+2026-05-10T13:04:44.684171 | 
+── Hourly Check ──
+2026-05-10T13:04:44.684526 |   Hourly check complete
+2026-05-10T14:04:44.484018 | 
+── Hourly Check ──
+2026-05-10T14:04:44.484363 |   Hourly check complete
+2026-05-10T15:04:44.760379 | 
+── Hourly Check ──
+2026-05-10T15:04:44.760726 |   Hourly check complete
+2026-05-10T16:04:44.761662 | 
+── Hourly Check ──
+2026-05-10T16:04:44.762237 |   Hourly check complete
+2026-05-10T17:04:44.451519 | 
+── Hourly Check ──
+2026-05-10T17:04:44.451861 |   Hourly check complete
+2026-05-10T18:04:44.828541 | 
+── Hourly Check ──
+2026-05-10T18:04:44.828885 |   Hourly check complete
+2026-05-10T19:04:44.596574 | 
+── Hourly Check ──
+2026-05-10T19:04:44.596911 |   Hourly check complete
+2026-05-10T20:04:44.358280 | 
+── Hourly Check ──
+2026-05-10T20:04:44.358630 |   Hourly check complete
+2026-05-10T21:04:44.250421 | 
+── Hourly Check ──
+2026-05-10T21:04:44.250751 |   Hourly check complete
+2026-05-10T22:04:44.408103 | 
+── Hourly Check ──
+2026-05-10T22:04:44.408458 |   Hourly check complete
+2026-05-10T23:00:05.536097 | 
+============================================================
+2026-05-10T23:00:05.536207 | IMPROVEMENT DAEMON — Daily Run: 2026-05-10
+2026-05-10T23:00:05.536275 | ============================================================
+2026-05-10T23:00:05.536338 | 
+── Phase 1: Intelligence Enrichment ──
+2026-05-10T23:00:05.536400 | ┌─ Story Tracker Diff
+2026-05-10T23:00:05.574761 | ✓ story_tracker.py --diff
+2026-05-10T23:00:05.574857 | ┌─ Daily Enrichment
+2026-05-10T23:00:05.636389 | ✓ daily_enrichment.py 
+2026-05-10T23:00:05.636494 | ┌─ Kalshi Scan
+2026-05-10T23:00:18.174419 | ✓ kalshi_scanner.py --save (workspace)
+2026-05-10T23:00:18.174540 | 
+── Phase 2: Content Generation ──
+2026-05-10T23:00:18.174636 | ┌─ Generate Assessments
+2026-05-10T23:00:56.922550 | ✗ generate_assessments.py failed (rc=1)
+2026-05-10T23:00:56.922657 |   Fetching up to 30 intel emails from Gmail...
+Found 30 messages
+Cached 20 emails across 4 theatres
+
+2026-05-10T23:00:56.922742 |   Assessments failed — continuing with fallback
+2026-05-10T23:00:56.922821 | ┌─ Refresh Imagery
+2026-05-10T23:01:19.608467 | ✓ refresh_imagery.py 
+2026-05-10T23:01:19.608591 | ┌─ Build PDF
+2026-05-10T23:01:21.168544 | ✓ build_pdf.py 
+2026-05-10T23:01:21.168947 |   PDF: security_brief_2026-05-10.pdf (2501KB)
+2026-05-10T23:01:21.169088 | 
+── Phase 3: Quality & Measurement ──
+2026-05-10T23:01:21.169176 | ┌─ Quality Audit
+2026-05-10T23:01:21.258932 | ✓ quality_audit.py 
+2026-05-10T23:01:21.446026 | ✓ briefometer.py 
+2026-05-10T23:01:21.446140 | ┌─ Story Tracker Save
+2026-05-10T23:01:21.517219 | ✓ story_tracker.py --save
+2026-05-10T23:01:21.517313 | 
+── Phase 4: Distribution ──
+2026-05-10T23:01:21.517381 | ┌─ Distribution
+2026-05-10T23:01:21.520492 |   ✓ Copied to exports/pdfs/
+2026-05-10T23:01:21.520612 |   Attempting landing page deploy...
+2026-05-10T23:01:23.864487 |   ✓ Landing page deployed
+2026-05-10T23:01:23.864634 |   Attempting Moltbook post...
+2026-05-10T23:01:29.534514 |   ✓ Moltbook posted
+2026-05-10T23:01:29.534648 | 
+── Phase 5: Improvement Report ──
+2026-05-10T23:01:29.536923 |   Report: daily_report_2026-05-10.json
+2026-05-10T23:01:29.537033 | 
+⚠ Daily pipeline completed with issues: 2026-05-10
+2026-05-10T23:04:44.162283 | 
+── Hourly Check ──
+2026-05-10T23:04:44.162819 |   Hourly check complete
+2026-05-11T00:04:44.136334 | 
+── Hourly Check ──
+2026-05-11T00:04:44.136672 |   Hourly check complete
+2026-05-11T01:04:45.609657 | 
+── Hourly Check ──
+2026-05-11T01:04:45.610003 |   Hourly check complete
+2026-05-11T02:04:44.931408 | 
+── Hourly Check ──
+2026-05-11T02:04:44.931755 |   Hourly check complete
+2026-05-11T03:04:45.299188 | 
+── Hourly Check ──
+2026-05-11T03:04:45.299536 |   Hourly check complete
+2026-05-11T04:04:44.468405 | 
+── Hourly Check ──
+2026-05-11T04:04:44.468876 |   Hourly check complete
+2026-05-11T05:04:45.286064 | 
+── Hourly Check ──
+2026-05-11T05:04:45.286432 |   Hourly check complete
+2026-05-11T06:04:45.207864 | 
+── Hourly Check ──
+2026-05-11T06:04:45.208211 |   Hourly check complete
+2026-05-11T07:04:45.379298 | 
+── Hourly Check ──
+2026-05-11T07:04:45.379653 |   Hourly check complete
+2026-05-11T08:06:41.963050 | 
+── Hourly Check ──
+2026-05-11T08:06:41.963414 |   Hourly check complete
+2026-05-11T09:04:44.564681 | 
+── Hourly Check ──
+2026-05-11T09:04:44.565040 |   Hourly check complete
+2026-05-11T10:04:44.384037 | 
+── Hourly Check ──
+2026-05-11T10:04:44.384598 |   Hourly check complete
+2026-05-11T11:04:43.682974 | 
+── Hourly Check ──
+2026-05-11T11:04:43.683314 |   Hourly check complete
+2026-05-11T12:22:33.603810 | 
+── Hourly Check ──
+2026-05-11T12:22:33.604160 |   Hourly check complete
+2026-05-11T13:04:43.877491 | 
+── Hourly Check ──
+2026-05-11T13:04:43.877833 |   Hourly check complete
+2026-05-11T14:04:44.023766 | 
+── Hourly Check ──
+2026-05-11T14:04:44.024107 |   Hourly check complete
+2026-05-11T15:04:43.597146 | 
+── Hourly Check ──
+2026-05-11T15:04:43.597473 |   Hourly check complete
+2026-05-11T16:04:44.170206 | 
+── Hourly Check ──
+2026-05-11T16:04:44.170548 |   Hourly check complete
+2026-05-11T17:04:43.911978 | 
+── Hourly Check ──
+2026-05-11T17:04:43.912336 |   Hourly check complete
+2026-05-11T18:04:43.859597 | 
+── Hourly Check ──
+2026-05-11T18:04:43.859950 |   Hourly check complete
+2026-05-11T19:04:43.873118 | 
+── Hourly Check ──
+2026-05-11T19:04:43.873450 |   Hourly check complete
+2026-05-11T20:04:43.718039 | 
+── Hourly Check ──
+2026-05-11T20:04:43.718374 |   Hourly check complete
+2026-05-11T21:04:43.584689 | 
+── Hourly Check ──
+2026-05-11T21:04:43.585165 |   Hourly check complete
+2026-05-11T22:04:43.631422 | 
+── Hourly Check ──
+2026-05-11T22:04:43.631902 |   Hourly check complete

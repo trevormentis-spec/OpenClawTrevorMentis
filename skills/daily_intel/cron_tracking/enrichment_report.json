@@ -1,0 +1,856 @@
+{
+  "timestamp": "2026-05-10T23:00:05.628483",
+  "date": "2026-05-10",
+  "story_freshness": {
+    "stalled": [
+      "africa",
+      "asia",
+      "middle_east",
+      "north_america",
+      "south_america"
+    ],
+    "developing": [
+      "europe"
+    ],
+    "new": [],
+    "freshness_scores": {
+      "europe": "fresh",
+      "africa": "stale",
+      "asia": "stale",
+      "middle_east": "stale",
+      "north_america": "stale",
+      "south_america": "stale"
+    }
+  },
+  "source_freshness": {
+    "used": {
+      "europe": [
+        "reuters",
+        "nato",
+        "un ",
+        "ap ",
+        "npr",
+        "kalshi",
+        "isw"
+      ],
+      "africa": [
+        "kalshi",
+        "ap ",
+        "ecowas"
+      ],
+      "asia": [
+        "polymarket",
+        "kalshi",
+        "the diplomat"
+      ],
+      "middle_east": [
+        "ap ",
+        "npr",
+        "critical threats",
+        "aei",
+        "kalshi",
+        "centcom",
+        "isw"
+      ],
+      "north_america": [
+        "ap ",
+        "rand"
+      ],
+      "south_america": [
+        "kalshi",
+        "ap "
+      ]
+    },
+    "available": {},
+    "gaps": [
+      {
+        "theatre": "europe",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "europe",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "europe",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "Critical Threats",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "europe",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "RAND",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "europe",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "europe",
+        "source": "CENTCOM",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "europe",
+        "source": "Polymarket",
+        "category": "INTEL",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "Reuters",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "ISW",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "Critical Threats",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "RAND",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "africa",
+        "source": "CENTCOM",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "NATO",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "africa",
+        "source": "Polymarket",
+        "category": "INTEL",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "Reuters",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "ISW",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "Critical Threats",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "RAND",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "asia",
+        "source": "CENTCOM",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "asia",
+        "source": "NATO",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Reuters",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "RAND",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "middle_east",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "NATO",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "middle_east",
+        "source": "Polymarket",
+        "category": "INTEL",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "Reuters",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "ISW",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "Critical Threats",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "north_america",
+        "source": "CENTCOM",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "NATO",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "Polymarket",
+        "category": "INTEL",
+        "priority": 4
+      },
+      {
+        "theatre": "north_america",
+        "source": "Kalshi",
+        "category": "INTEL",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "BBC News",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "Reuters",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "Associated Press",
+        "category": "NEWS",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "Al Jazeera",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "The New York Times",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "Axios",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "Bloomberg",
+        "category": "NEWS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "ISW",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "Critical Threats",
+        "category": "ANALYSIS",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "ACLED",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "CSIS",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "RAND",
+        "category": "ANALYSIS",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "US State Department",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "Pentagon",
+        "category": "OFFICIAL",
+        "priority": 5
+      },
+      {
+        "theatre": "south_america",
+        "source": "CENTCOM",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "US Treasury",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "NATO",
+        "category": "OFFICIAL",
+        "priority": 4
+      },
+      {
+        "theatre": "south_america",
+        "source": "Polymarket",
+        "category": "INTEL",
+        "priority": 4
+      }
+    ],
+    "recommendations": [
+      "BBC News",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "Critical Threats",
+      "ACLED",
+      "CSIS",
+      "RAND",
+      "US State Department",
+      "Pentagon",
+      "CENTCOM",
+      "US Treasury",
+      "Polymarket",
+      "BBC News",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "ISW",
+      "Critical Threats",
+      "ACLED",
+      "CSIS",
+      "RAND",
+      "US State Department",
+      "Pentagon",
+      "CENTCOM",
+      "US Treasury",
+      "NATO",
+      "Polymarket",
+      "BBC News",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "ISW",
+      "Critical Threats",
+      "ACLED",
+      "CSIS",
+      "RAND",
+      "US State Department",
+      "Pentagon",
+      "CENTCOM",
+      "US Treasury",
+      "NATO",
+      "BBC News",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "ACLED",
+      "CSIS",
+      "RAND",
+      "US State Department",
+      "Pentagon",
+      "US Treasury",
+      "NATO",
+      "Polymarket",
+      "BBC News",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "ISW",
+      "Critical Threats",
+      "ACLED",
+      "CSIS",
+      "US State Department",
+      "Pentagon",
+      "CENTCOM",
+      "US Treasury",
+      "NATO",
+      "Polymarket",
+      "Kalshi",
+      "BBC News",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios",
+      "Bloomberg",
+      "ISW",
+      "Critical Threats",
+      "ACLED",
+      "CSIS",
+      "RAND",
+      "US State Department",
+      "Pentagon",
+      "CENTCOM",
+      "US Treasury",
+      "NATO",
+      "Polymarket"
+    ]
+  },
+  "prediction_markets": {
+    "movements": [],
+    "significant_moves": []
+  },
+  "web_intel": {
+    "europe": {
+      "searched": false,
+      "results": []
+    },
+    "africa": {
+      "searched": false,
+      "results": []
+    },
+    "asia": {
+      "searched": false,
+      "results": []
+    },
+    "middle_east": {
+      "searched": false,
+      "results": []
+    },
+    "north_america": {
+      "searched": false,
+      "results": []
+    },
+    "south_america": {
+      "searched": false,
+      "results": []
+    }
+  },
+  "recommendations": {
+    "shake_up_stories": [
+      "africa",
+      "asia",
+      "middle_east",
+      "north_america",
+      "south_america"
+    ],
+    "prioritize_sources": [
+      "BBC News",
+      "Associated Press",
+      "Al Jazeera",
+      "The New York Times",
+      "Axios"
+    ],
+    "notable_market_moves": []
+  },
+  "narrative_instructions": {
+    "africa": {
+      "severity": "stalled",
+      "action": "deepen",
+      "instruction": "The africa story has not changed since yesterday. Expand analysis: explore second-order effects, historical parallels, or predictive scenarios rather than re-stating base facts."
+    },
+    "asia": {
+      "severity": "stalled",
+      "action": "deepen",
+      "instruction": "The asia story has not changed since yesterday. Expand analysis: explore second-order effects, historical parallels, or predictive scenarios rather than re-stating base facts."
+    },
+    "middle_east": {
+      "severity": "stalled",
+      "action": "deepen",
+      "instruction": "The middle_east story has not changed since yesterday. Expand analysis: explore second-order effects, historical parallels, or predictive scenarios rather than re-stating base facts."
+    },
+    "north_america": {
+      "severity": "stalled",
+      "action": "deepen",
+      "instruction": "The north_america story has not changed since yesterday. Expand analysis: explore second-order effects, historical parallels, or predictive scenarios rather than re-stating base facts."
+    },
+    "south_america": {
+      "severity": "stalled",
+      "action": "deepen",
+      "instruction": "The south_america story has not changed since yesterday. Expand analysis: explore second-order effects, historical parallels, or predictive scenarios rather than re-stating base facts."
+    },
+    "europe": {
+      "severity": "developing",
+      "action": "update",
+      "instruction": "The europe story is developing. Focus on what changed, update forward assessments."
+    }
+  }
+}
