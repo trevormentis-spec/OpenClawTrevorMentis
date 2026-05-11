@@ -1,0 +1,96 @@
+{
+  "schema": "https://trevormentis.spec/skill-registry/v1",
+  "generated": "2026-05-11T22:06:40Z",
+  "skill_count": 3,
+  "categories": [
+    "agent-brief",
+    "api",
+    "briefings",
+    "cron",
+    "daily-brief",
+    "email",
+    "json",
+    "moltbook",
+    "publishing"
+  ],
+  "skills": [
+    {
+      "path": "publishing/build-agent-brief.md",
+      "name": "build-agent-brief",
+      "description": "Build and publish the agent-first GSIB JSON to Moltbook + API endpoint",
+      "version": "1.0.0",
+      "tags": [
+        "publishing",
+        "moltbook",
+        "agent-brief",
+        "daily-brief"
+      ],
+      "author": "Trevor",
+      "created": "2026-05-11",
+      "triggers": "",
+      "sections": {
+        "lead": "# Build Agent-First GSIB",
+        "When to Use": "After the DailyIntelAgent pipeline completes or on explicit request.",
+        "Input Data": "- Analysis JSONs at `~/trevor-briefings/YYYY-MM-DD/analysis/*.json`\n- Kalshi scan at `exports/kalshi-scan-YYYY-MM-DD.md`\n- Previous brief at `exports/agent-api/agent-brief-YYYY-MM-DD.json`",
+        "Procedure": "1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps, no PDF \u2014 pure structured JSON",
+        "Output": "- `exports/agent-api/agent-brief-YYYY-MM-DD.json` \u2014 full structured brief\n- Moltbook post at `https://www.moltbook.com/posts/{id}` (if key available)",
+        "Verification": "- Check file size > 10 KB\n- Verify `theatre_count` == 6\n- Verify Moltbook post has correct title if posted",
+        "Pitfalls": "- Moltbook API key must be in .env or environment\n- No error if key missing \u2014 just skips posting, still saves JSON\n- DateTime deprecation warning is cosmetic, safe to ignore",
+        "Related Skills": "- `build-gsib-pdf` \u2014 when PDF is also needed alongside JSON"
+      },
+      "full_content": "# Build Agent-First GSIB\n\n## When to Use\nAfter the DailyIntelAgent pipeline completes or on explicit request.\n\n## Input Data\n- Analysis JSONs at `~/trevor-briefings/YYYY-MM-DD/analysis/*.json`\n- Kalshi scan at `exports/kalshi-scan-YYYY-MM-DD.md`\n- Previous brief at `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n\n## Procedure\n1. Run `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n2. If Moltbook key is available, it posts to `agents` submolt\n3. JSON saved to `exports/agent-api/agent-brief-YYYY-MM-DD.json`\n4. `exports/agent-api/latest.json` updated (overwrite, not symlink)\n5. No maps, no PDF \u2014 pure structured JSON\n\n## Output\n- `exports/agent-api/agent-brief-YYYY-MM-DD.json` \u2014 full structured brief\n- Moltbook post at `https://www.moltbook.com/posts/{id}` (if key available)\n\n## Verification\n- Check file size > 10 KB\n- Verify `theatre_count` == 6\n- Verify Moltbook post has correct title if posted\n\n## Pitfalls\n- Moltbook API key must be in .env or environment\n- No error if key missing \u2014 just skips posting, still saves JSON\n- DateTime deprecation warning is cosmetic, safe to ignore\n\n## Related Skills\n- `build-gsib-pdf` \u2014 when PDF is also needed alongside JSON",
+      "char_count": 1216
+    },
+    {
+      "path": "publishing/build-gsib-agent-brief-json.md",
+      "name": "build-gsib-agent-brief-json",
+      "description": "Generate structured JSON brief for AI agent consumption from analysis data",
+      "version": "1.0.0",
+      "tags": [
+        "agent-brief",
+        "json",
+        "publishing",
+        "api"
+      ],
+      "author": "Trevor",
+      "created": "2026-05-11",
+      "triggers": [],
+      "sections": {
+        "lead": "# Build Agent GSIB JSON",
+        "When to Use": "When producing the daily intelligence brief for AI agent subscribers.",
+        "Input": "- `scripts/build_agent_brief.py` \u2014 the generator script\n- Analysis JSONs in `~/trevor-briefings/YYYY-MM-DD/analysis/`\n- Kalshi market data at `exports/kalshi-scan-YYYY-MM-DD.md`",
+        "Procedure": "1. Change to workspace: `cd /home/ubuntu/.openclaw/workspace`\n2. Run: `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n3. Verify:\n   - Check file `exports/agent-api/agent-brief-YYYY-MM-DD.json` exists and > 10 KB\n   - Check latest.json is updated\n   - If Moltbook key set, check Moltbook post went through",
+        "Output Fields": "- `bluf` \u2014 Bottom Line Up Front, one-paragraph\n- `key_judgments[]` \u2014 array with id, statement, confidence_band, probability range, horizon, falsification\n- `theatres[]` \u2014 per-region analysis with narrative, judgments, indicators, incident count\n- `prediction_markets[]` \u2014 Kalshi + Polymarket with prices, volumes, expiry\n- `watch_items[]` \u2014 prioritized with timeframe and impact\n- `indicators` \u2014 dashboard-style status/trend/threshold",
+        "Schema Version": "Current: `https://trevormentis.spec/agent-brief/v1`",
+        "Pricing Note": "Free tier: today's brief, 24h delay. Pro tier: real-time webhook delivery."
+      },
+      "full_content": "# Build Agent GSIB JSON\n\n## When to Use\nWhen producing the daily intelligence brief for AI agent subscribers.\n\n## Input\n- `scripts/build_agent_brief.py` \u2014 the generator script\n- Analysis JSONs in `~/trevor-briefings/YYYY-MM-DD/analysis/`\n- Kalshi market data at `exports/kalshi-scan-YYYY-MM-DD.md`\n\n## Procedure\n1. Change to workspace: `cd /home/ubuntu/.openclaw/workspace`\n2. Run: `python3 scripts/build_agent_brief.py --working-dir ~/trevor-briefings/YYYY-MM-DD --moltbook`\n3. Verify:\n   - Check file `exports/agent-api/agent-brief-YYYY-MM-DD.json` exists and > 10 KB\n   - Check latest.json is updated\n   - If Moltbook key set, check Moltbook post went through\n\n## Output Fields\n- `bluf` \u2014 Bottom Line Up Front, one-paragraph\n- `key_judgments[]` \u2014 array with id, statement, confidence_band, probability range, horizon, falsification\n- `theatres[]` \u2014 per-region analysis with narrative, judgments, indicators, incident count\n- `prediction_markets[]` \u2014 Kalshi + Polymarket with prices, volumes, expiry\n- `watch_items[]` \u2014 prioritized with timeframe and impact\n- `indicators` \u2014 dashboard-style status/trend/threshold\n\n## Schema Version\nCurrent: `https://trevormentis.spec/agent-brief/v1`\n\n## Pricing Note\nFree tier: today's brief, 24h delay. Pro tier: real-time webhook delivery.",
+      "char_count": 1278
+    },
+    {
+      "path": "publishing/daily-4-briefings.md",
+      "name": "daily-4-briefings",
+      "description": "Compose and email 4 daily briefings (UK, Trump, Markets, Sports) at 8am PT",
+      "version": "1.0.0",
+      "tags": [
+        "publishing",
+        "email",
+        "briefings",
+        "cron"
+      ],
+      "author": "Trevor",
+      "created": "2026-05-11",
+      "triggers": [],
+      "sections": {
+        "lead": "# Daily 4 Briefings",
+        "When to Use": "Every day at 8am PT via cron ID `9ee44803-223c-45cc-ad59-f404919bd5f9`.",
+        "Sources": "- Web search for latest news in 4 categories\n- Existing brief analysis data for UK/Trump/Markets sections\n- Polymarket/Kalshi for prediction market odds\n- ESPN/Fox Sports/Soccerbase for sports",
+        "Format": "Plain text email, 4 sections separated by \u2550\u2550\u2550 dividers:\n1. UK News Update \u2014 politics, economy, international\n2. Trump Leadership Analysis \u2014 what he might do this week\n3. Financial Market Review \u2014 equities, oil, data calendar, bets\n4. Global Sports Review \u2014 leagues, playoffs, tournaments, bets",
+        "Delivery": "- To: roderick.jones@gmail.com\n- From: trevor.mentis@gmail.com\n- Via: Maton Gmail API\n- Subject: \"Your 4 Daily Briefings \u2014 <today date>\"",
+        "Pitfalls": "- Cross-section repetition (Trump Polymarket numbers appear in both \u00a72 and \u00a73)\n- Sports odds math verification needed\n- Oil price consistency (Brent vs WTI) must reconcile\n- Add \"Top 3 Today\" summary at the top for busy executive scan"
+      },
+      "full_content": "# Daily 4 Briefings\n\n## When to Use\nEvery day at 8am PT via cron ID `9ee44803-223c-45cc-ad59-f404919bd5f9`.\n\n## Sources\n- Web search for latest news in 4 categories\n- Existing brief analysis data for UK/Trump/Markets sections\n- Polymarket/Kalshi for prediction market odds\n- ESPN/Fox Sports/Soccerbase for sports\n\n## Format\nPlain text email, 4 sections separated by \u2550\u2550\u2550 dividers:\n1. UK News Update \u2014 politics, economy, international\n2. Trump Leadership Analysis \u2014 what he might do this week\n3. Financial Market Review \u2014 equities, oil, data calendar, bets\n4. Global Sports Review \u2014 leagues, playoffs, tournaments, bets\n\n## Delivery\n- To: roderick.jones@gmail.com\n- From: trevor.mentis@gmail.com\n- Via: Maton Gmail API\n- Subject: \"Your 4 Daily Briefings \u2014 <today date>\"\n\n## Pitfalls\n- Cross-section repetition (Trump Polymarket numbers appear in both \u00a72 and \u00a73)\n- Sports odds math verification needed\n- Oil price consistency (Brent vs WTI) must reconcile\n- Add \"Top 3 Today\" summary at the top for busy executive scan",
+      "char_count": 1015
+    }
+  ]
+}
