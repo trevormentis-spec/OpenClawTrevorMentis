@@ -21,7 +21,7 @@ from urllib.error import URLError
 
 WORKSPACE = Path("/home/ubuntu/.openclaw/workspace")
 API_URL = "https://api.buttondown.com/v1/emails"
-NEWSLETTER_SLUG = "daily-osint-brief"
+NEWSLETTER_ID = "news_3fze7q360q9kmrjsp8fvp6rqmr"
 
 # ── Parse args ──────────────────────────────────────────────────────
 
@@ -50,10 +50,7 @@ for line in text.split("\n"):
         bluf_line = line.replace("## BLUF", "").strip()
         break
 
-subject = f"Daily OSINT Brief — {date_str}"
-if bluf_line:
-    # Use first meaningful words for subject
-    subject = f"OSINT Brief {date_str}: {bluf_line[:80]}..."
+subject = f"GSIB Daily Brief — {date_str}"
 
 # ── Build email body ────────────────────────────────────────────────
 
@@ -77,7 +74,7 @@ if not api_key:
 payload = {
     "subject": subject,
     "body": body_html,
-    "newsletter": NEWSLETTER_SLUG,
+    "newsletter": NEWSLETTER_ID,
     "status": "draft" if dry_run else "about_to_send",
 }
 

@@ -1,0 +1,2004 @@
+[
+  {
+    "error": "Command '['/usr/bin/python3', '/home/ubuntu/.openclaw/skills/skill-scanner/skill_scanner.py', '/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis', '--json']' timed out after 60 seconds",
+    "skill_path": "/home/ubuntu/.openclaw/skills/OpenClawTrevorMentis",
+    "verdict": "error"
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/answeroverflow",
+    "scan_timestamp": "2026-05-11T00:01:53.530761",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "answeroverflow",
+      "version": "unknown",
+      "description": "Search indexed Discord community discussions via Answer Overflow. Find solutions to coding problems, library issues, and community Q&A that only exist in Discord conversations.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 89
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/api-gateway",
+    "scan_timestamp": "2026-05-11T00:01:53.583374",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "api-gateway",
+      "version": "1.0",
+      "description": "|",
+      "author": "maton",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 639
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 539,
+        "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/claude-code",
+    "scan_timestamp": "2026-05-11T00:01:53.642672",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "claude-code",
+      "version": "unknown",
+      "description": "\ud83e\udd16 Claude Code \u2014 delegate coding tasks to Anthropic's Claude Code CLI agent. For tech users. Use when the user wants help implementing features, refactoring code, reviewing pull requests, investigating bugs, running long coding sessions, or handing off a repo task to a coding sub-agent. Triggers on phrases like 'do this in Claude Code', 'ask Claude Code to fix it', 'have Claude review this PR', 'delegate this repo task', '\u7528 Claude Code \u6539\u4e00\u4e0b'. Assumes the `claude` CLI is installed and authenticated. Best for repository-scoped work where a dedicated coding agent can inspect files, propose edits, run tests, and iterate independently. Can be used for one-shot jobs or persistent coding sessions, depending on the surrounding agent framework.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 85
+    },
+    "findings": [],
+    "files_scanned": [
+      "README.md",
+      "SKILL.md",
+      "references/safety-notes.md",
+      "references/session-patterns.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/daily_intel",
+    "scan_timestamp": "2026-05-11T00:01:53.697628",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "description": "",
+      "author": "unknown",
+      "has_skill_md": false,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 1
+    },
+    "findings": [],
+    "files_scanned": [
+      "memory/vector_index.json"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/find-skills",
+    "scan_timestamp": "2026-05-11T00:01:53.748377",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "find-skills",
+      "version": "unknown",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 134
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/gmail",
+    "scan_timestamp": "2026-05-11T00:01:53.799998",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "gmail",
+      "version": "1.0",
+      "description": "|",
+      "author": "maton",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 340
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 267,
+        "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/gog-myclaw",
+    "scan_timestamp": "2026-05-11T00:01:53.851113",
+    "verdict": "reject",
+    "verdict_reason": "Found 2 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "gog",
+      "version": "unknown",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. Use this skill when the user asks to interact with their Google account services (read/send email, manage calendar events, search Drive, read/write Sheets/Docs).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 4,
+      "script_count": 1,
+      "total_lines": 90
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 23,
+        "line_content": "3. Once they provide the `credentials.json` content, save it to `~/.config/gogcli/credentials.json`.",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 24,
+        "line_content": "4. Run: `gog auth credentials set ~/.config/gogcli/credentials.json`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "http_post_external",
+        "severity": "medium",
+        "file_path": "config/exchange.py",
+        "line_number": 16,
+        "line_content": "response = requests.post('https://oauth2.googleapis.com/token', data=data)",
+        "description": "HTTP POST to external endpoint - could exfiltrate data",
+        "recommendation": "Verify destination URL is expected and documented"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "_meta.json",
+      "config/credentials.json",
+      "config/exchange.py"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/huggingface-hub",
+    "scan_timestamp": "2026-05-11T00:01:53.908173",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "huggingface-hub",
+      "version": "unknown",
+      "description": "\ud83e\udd17 Hugging Face Hub \u2014 search, download, and upload models and datasets, manage repos, query datasets with SQL, deploy inference endpoints, and manage Spaces. For tech users. Use when the user wants to find a model, pull a dataset, push to the Hub, query datasets, or deploy/manage inference endpoints and Spaces. Triggers on 'find a model', 'download dataset', 'push to HF', 'deploy endpoint', 'huggingface'. Assumes the `hf` CLI is available and the user is authenticated.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 36
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/humanizer",
+    "scan_timestamp": "2026-05-11T00:01:53.958390",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "humanizer",
+      "version": "2.1.1",
+      "description": "|",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 438
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/maps-new",
+    "scan_timestamp": "2026-05-11T00:01:54.013101",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "maps",
+      "version": "unknown",
+      "description": "\ud83d\uddfa\ufe0f Maps \u2014 location intelligence using OpenStreetMap, Overpass, and OSRM. Geocode places, reverse-geocode coordinates, find nearby POIs across 46 categories, get driving/walking/cycling distance and time, turn-by-turn directions, timezones, bounding boxes, and POI search inside a rectangle. Free, no API key required. Use when the user asks about places, addresses, distances, routes, or nearby points of interest. Triggers on 'how far', 'directions to', 'find nearby', 'geocode', '\u9644\u8fd1', '\u8def\u7ebf'.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 37
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/nano-pdf",
+    "scan_timestamp": "2026-05-11T00:01:54.070164",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "nano-pdf",
+      "version": "unknown",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 21
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.agents/skills/network-analysis",
+    "scan_timestamp": "2026-05-11T00:01:54.121200",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "Network Analysis",
+      "version": "unknown",
+      "description": "Analyze network structures, identify communities, measure centrality, and visualize relationships for social networks and organizational structures",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 313
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/scaffold-analysis.sh",
+      "templates/notebook-template.py"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/ocr-docu",
+    "scan_timestamp": "2026-05-11T00:01:54.180576",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "ocr-and-documents",
+      "version": "unknown",
+      "description": "\ud83d\udcc4 OCR and Documents \u2014 extract text and structure from PDFs, scanned documents, and common office files. For tech users. Use when the user needs to read a local or remote PDF, OCR a scan, extract text from images in documents, parse DOCX content, or prepare document text for summarization, indexing, or downstream analysis. Triggers on phrases like 'extract this PDF', 'OCR this scan', 'read this document', 'turn this file into text', '\u4ece PDF \u63d0\u53d6\u6587\u5b57', '\u8bc6\u522b\u626b\u63cf\u4ef6'. Can combine fast text extraction for born-digital PDFs with OCR pipelines for scanned documents. Typical implementations use PyMuPDF for text PDFs, OCR engines for image-heavy scans, and separate libraries for DOCX/PPTX. Best for preprocessing documents into clean text or structured markdown that other skills can use.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 4,
+      "script_count": 0,
+      "total_lines": 89
+    },
+    "findings": [],
+    "files_scanned": [
+      "README.md",
+      "SKILL.md",
+      "references/output-schema.md",
+      "references/tooling-matrix.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/self-improving-agent",
+    "scan_timestamp": "2026-05-11T00:01:54.232134",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "self-improvement",
+      "version": "unknown",
+      "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 648
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/skill-scanner",
+    "scan_timestamp": "2026-05-11T00:01:54.284831",
+    "verdict": "reject",
+    "verdict_reason": "Found 8 critical issue(s): crypto_miner, credential_paths, systemd_modify, base64_decode_exec, reverse_shell",
+    "metadata": {
+      "name": "skill-scanner",
+      "version": "unknown",
+      "description": "Scan Clawdbot and MCP skills for malware, spyware, crypto-miners, and malicious code patterns before you install them. Security audit tool that detects data exfiltration, system modification attempts, backdoors, and obfuscation techniques.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 6,
+      "script_count": 2,
+      "total_lines": 1091
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "README.md",
+        "line_number": 155,
+        "line_content": "- Credential path access (~/.ssh, ~/.aws, /etc/passwd)",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "crypto_miner",
+        "severity": "critical",
+        "file_path": "README.md",
+        "line_number": 9,
+        "line_content": "- Catches **crypto-mining** indicators (xmrig, mining pools, wallet addresses)",
+        "description": "Cryptocurrency mining indicators",
+        "recommendation": "REJECT - this is cryptojacking malware"
+      },
+      {
+        "pattern_name": "crypto_miner",
+        "severity": "critical",
+        "file_path": "README.md",
+        "line_number": 158,
+        "line_content": "- Crypto miners (xmrig, ethminer, stratum+tcp)",
+        "description": "Cryptocurrency mining indicators",
+        "recommendation": "REJECT - this is cryptojacking malware"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "skill_scanner.py",
+        "line_number": 101,
+        "line_content": "\"pattern\": r\"~/\\.ssh|~/\\.aws|~/\\.config|/etc/passwd|\\.env\\b|\\.credentials|keychain\",",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "crontab_modify",
+        "severity": "high",
+        "file_path": "skill_scanner.py",
+        "line_number": 118,
+        "line_content": "\"pattern\": r\"crontab\\s+-|/etc/cron|schtasks\\s+/create\",",
+        "description": "Modifies system scheduled tasks",
+        "recommendation": "Skills should use Clawdbot cron, not system crontab"
+      },
+      {
+        "pattern_name": "systemd_modify",
+        "severity": "critical",
+        "file_path": "skill_scanner.py",
+        "line_number": 126,
+        "line_content": "\"pattern\": r\"systemctl\\s+enable|systemctl\\s+start|/etc/systemd|launchctl\\s+load\",",
+        "description": "Creates system services for persistence",
+        "recommendation": "REJECT - skills should not create system services"
+      },
+      {
+        "pattern_name": "crypto_miner",
+        "severity": "critical",
+        "file_path": "skill_scanner.py",
+        "line_number": 135,
+        "line_content": "\"pattern\": r\"xmrig|ethminer|cpuminer|cgminer|stratum\\+tcp|mining.*pool|hashrate\",",
+        "description": "Cryptocurrency mining indicators",
+        "recommendation": "REJECT - this is cryptojacking malware"
+      },
+      {
+        "pattern_name": "reverse_shell",
+        "severity": "critical",
+        "file_path": "skill_scanner.py",
+        "line_number": 161,
+        "line_content": "\"pattern\": r\"/dev/tcp/|nc\\s+-e|bash\\s+-i\\s+>&|python.*pty\\.spawn\",",
+        "description": "Reverse shell pattern detected",
+        "recommendation": "REJECT - this is a backdoor"
+      },
+      {
+        "pattern_name": "base64_decode_exec",
+        "severity": "critical",
+        "file_path": "skill_scanner.py",
+        "line_number": 170,
+        "line_content": "\"pattern\": r\"base64\\.b64decode.*exec|atob.*eval\",",
+        "description": "Decodes and executes base64 - classic obfuscation",
+        "recommendation": "REJECT - likely hiding malicious code"
+      }
+    ],
+    "files_scanned": [
+      "README.md",
+      "SKILL.md",
+      "_meta.json",
+      "skill_scanner.py",
+      "streamlit_ui.py",
+      "__pycache__/skill_scanner.cpython-312.pyc"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/stock-market-pro",
+    "scan_timestamp": "2026-05-11T00:01:54.346560",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "stock-market-pro",
+      "version": "unknown",
+      "description": ">-",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 135
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/stripe-api",
+    "scan_timestamp": "2026-05-11T00:01:54.397132",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "stripe",
+      "version": "1.0",
+      "description": "|",
+      "author": "maton",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 855
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 778,
+        "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/timeline-chart",
+    "scan_timestamp": "2026-05-11T00:01:54.451258",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "timeline-chart",
+      "version": "unknown",
+      "description": "Professional timeline chart generator with Chinese/number support and dynamic layout",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 5,
+      "script_count": 1,
+      "total_lines": 340
+    },
+    "findings": [],
+    "files_scanned": [
+      "skill.json",
+      "SKILL.md",
+      "template.py",
+      "_meta.json",
+      ".clawhub/origin.json"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/trevor-methodology",
+    "scan_timestamp": "2026-05-11T00:01:54.504598",
+    "verdict": "caution",
+    "verdict_reason": "Found 1 high-severity issue(s): eval_exec",
+    "metadata": {
+      "name": "trevor-methodology",
+      "version": "unknown",
+      "description": "Use this skill whenever the user requests an intelligence assessment, threat analysis, security risk product, or geopolitical evaluation of ANY event, region, actor, or scenario. Triggers include: 'assess', 'threat assessment', 'intelligence product', 'TREVOR report', 'analyze the situation in [X]', 'what's the risk of [X]', 'brief me on [X]', or any request that requires structured analytical tradecraft applied to a security/intelligence question. Produces deliverables conforming to TREVOR v2 standards: BLUF-led, Sherman Kent calibrated, NATO Admiralty rated, with all mandatory sections and 6 calibration corrections from Iran Campaign Review.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 26,
+      "script_count": 3,
+      "total_lines": 5281
+    },
+    "findings": [
+      {
+        "pattern_name": "eval_exec",
+        "severity": "high",
+        "file_path": "pipeline/docx-js-template.js",
+        "line_number": 37,
+        "line_content": "const result = /^#?([a-f\\d]{2})([a-f\\d]{2})([a-f\\d]{2})$/i.exec(hex);",
+        "description": "Dynamic code execution - could run arbitrary code",
+        "recommendation": "Verify input is sanitized, not user-controlled"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "TREVOR-One-Page-Summary.md",
+      "sanitize.sh",
+      "trevor-methodology-sanitized.tar.gz",
+      "brands/README.md",
+      "brands/concentric.json",
+      "brands/eclipse.json",
+      "brands/neutral.json",
+      "brands/nova.json",
+      "brands/sps-global.json",
+      "methodology/11-SATs.md",
+      "methodology/16-sections.md",
+      "methodology/6-calibrations.md",
+      "methodology/actor-mapping.md",
+      "methodology/client-threat-matrix-templates.md",
+      "methodology/hypothesis-archetypes.md",
+      "methodology/nato-admiralty.md",
+      "methodology/quality-gates.md",
+      "methodology/scenario-triage.md",
+      "methodology/sherman-kent-bands.md",
+      "methodology/source-acquisition-guide.md",
+      "pipeline/docx-js-template.js",
+      "pipeline/output-format-variants.md",
+      "pipeline/validate.py",
+      "verification/phase4-self-test.md",
+      "verification/phase5-acceptance-demonstrations.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/video-frames",
+    "scan_timestamp": "2026-05-11T00:01:54.588501",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "video-frames",
+      "version": "unknown",
+      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 30
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.agents/skills/video-translation",
+    "scan_timestamp": "2026-05-11T00:01:54.643051",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "video-translation",
+      "version": "unknown",
+      "description": "Translate and dub videos from one language to another, replacing the original audio with TTS while keeping the video intact.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 219
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 90,
+        "line_content": "- `NOIZ_API_KEY` configured for the Noiz backend. If it is not set, first guide the user to get an API key from `https://developers.noiz.ai/api-keys`. After the user provides the key, ask whether they",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/replace_audio.sh",
+      "scripts/srt_to_duck.py"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/wacli",
+    "scan_timestamp": "2026-05-11T00:01:54.701355",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "wacli",
+      "version": "unknown",
+      "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 73
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/web-searchplus",
+    "scan_timestamp": "2026-05-11T00:01:54.751537",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "web-search-plus",
+      "version": "unknown",
+      "description": "\ud83d\udd0e Web Search Plus \u2014 unified web search skill with intelligent auto-routing across multiple search engines and AI answer providers. For tech users. Use when the user wants high-quality web search, AI-augmented research, or routing across providers like Serper, Tavily, Exa, Perplexity, You.com, and SearXNG. Triggers on phrases like 'search the web', 'research this topic', 'find latest news', '\u641c\u4e00\u4e0b', '\u5e2e\u6211\u7814\u7a76'. Picks the best engine for the query intent (factual, neural, news, multilingual, deep research). Best for builders who already have API keys for one or more search providers and want one consistent search interface.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 37
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/whatsapp-business",
+    "scan_timestamp": "2026-05-11T00:01:54.803202",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "whatsapp-business",
+      "version": "1.0",
+      "description": "|",
+      "author": "maton",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 637
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 494,
+        "line_content": "'Authorization': `Bearer ${process.env.MATON_API_KEY}`,",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/xurl",
+    "scan_timestamp": "2026-05-11T00:01:54.853357",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "xurl",
+      "version": "unknown",
+      "description": "A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 462
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/home/ubuntu/.openclaw/skills/youtube-content",
+    "scan_timestamp": "2026-05-11T00:01:54.905803",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "youtube-content",
+      "version": "unknown",
+      "description": "\ud83c\udfac YouTube Content \u2014 fetch YouTube transcripts and transform them into structured content like chapters, summaries, social threads, and blog posts. Use when the user shares a YouTube link, asks to summarize a video, requests a transcript, or wants to repurpose video content. Triggers on YouTube URLs and phrases like 'summarize this video', 'transcript', 'turn this video into a thread', '\u603b\u7ed3\u8fd9\u4e2a\u89c6\u9891', '\u628a\u89c6\u9891\u8f6c\u6210\u6587\u7ae0'. Best for content creators, researchers, and anyone repurposing long-form video into readable formats.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 35
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/1password",
+    "scan_timestamp": "2026-05-11T00:01:54.958756",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "1password",
+      "version": "unknown",
+      "description": "Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 119
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "references/cli-examples.md",
+        "line_number": 19,
+        "line_content": "- `op run --env-file=\"./.env\" -- printenv DB_PASSWORD`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "references/get-started.md",
+      "references/cli-examples.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/apple-notes",
+    "scan_timestamp": "2026-05-11T00:01:55.011401",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "apple-notes",
+      "version": "unknown",
+      "description": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 78
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/apple-reminders",
+    "scan_timestamp": "2026-05-11T00:01:55.063606",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "apple-reminders",
+      "version": "unknown",
+      "description": "List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 119
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/bear-notes",
+    "scan_timestamp": "2026-05-11T00:01:55.116124",
+    "verdict": "reject",
+    "verdict_reason": "Found 7 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "bear-notes",
+      "version": "unknown",
+      "description": "Create, search, and manage Bear notes via grizzly CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 108
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 33,
+        "line_content": "- For some operations (add-text, tags, open-note --selected), a Bear app token (stored in `~/.config/grizzly/token`)",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 40,
+        "line_content": "2. Save it: `echo \"YOUR_TOKEN\" > ~/.config/grizzly/token`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 60,
+        "line_content": "echo \"Additional content\" | grizzly add-text --id \"NOTE_ID\" --mode append --token-file ~/.config/grizzly/token",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 66,
+        "line_content": "grizzly tags --enable-callback --json --token-file ~/.config/grizzly/token",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 92,
+        "line_content": "4. `~/.config/grizzly/config.toml`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 94,
+        "line_content": "Example `~/.config/grizzly/config.toml`:",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 97,
+        "line_content": "token_file = \"~/.config/grizzly/token\"",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/blogwatcher",
+    "scan_timestamp": "2026-05-11T00:01:55.171373",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "blogwatcher",
+      "version": "unknown",
+      "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 70
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/blucli",
+    "scan_timestamp": "2026-05-11T00:01:55.223731",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "blucli",
+      "version": "unknown",
+      "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 48
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/bluebubbles",
+    "scan_timestamp": "2026-05-11T00:01:55.274125",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "bluebubbles",
+      "version": "unknown",
+      "description": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 132
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/camsnap",
+    "scan_timestamp": "2026-05-11T00:01:55.323443",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "camsnap",
+      "version": "unknown",
+      "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 46
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 31,
+        "line_content": "- Config file: `~/.config/camsnap/config.yaml`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/canvas",
+    "scan_timestamp": "2026-05-11T00:01:55.376490",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "unknown",
+      "version": "unknown",
+      "description": "",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 200
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/clawhub",
+    "scan_timestamp": "2026-05-11T00:01:55.428074",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "clawhub",
+      "version": "unknown",
+      "description": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 78
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/coding-agent",
+    "scan_timestamp": "2026-05-11T00:01:55.479793",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "coding-agent",
+      "version": "unknown",
+      "description": "Delegate coding tasks to Codex, Claude Code, OpenCode, or Pi agents via immediate background processes. Use when: (1) building or creating features/apps, (2) reviewing PRs in a temp clone/worktree, (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-line fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). All coding-agent runs start with background:true immediately. Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required. Completion notification must use openclaw message send, not system event/heartbeat.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 366
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/discord",
+    "scan_timestamp": "2026-05-11T00:01:55.529866",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "discord",
+      "version": "unknown",
+      "description": "Discord ops via the message tool (channel=discord).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 198
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/eightctl",
+    "scan_timestamp": "2026-05-11T00:01:55.578188",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "eightctl",
+      "version": "unknown",
+      "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 51
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 31,
+        "line_content": "- Config: `~/.config/eightctl/config.yaml`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/gemini",
+    "scan_timestamp": "2026-05-11T00:01:55.629885",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gemini",
+      "version": "unknown",
+      "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 44
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/gh-issues",
+    "scan_timestamp": "2026-05-11T00:01:55.683897",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gh-issues",
+      "version": "unknown",
+      "description": "Fetch GitHub issues, delegate fixes to subagents, open PRs, watch reviews, or run /gh-issues workflows.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 886
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/gifgrep",
+    "scan_timestamp": "2026-05-11T00:01:55.738028",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gifgrep",
+      "version": "unknown",
+      "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 86
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/github",
+    "scan_timestamp": "2026-05-11T00:01:55.789443",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "github",
+      "version": "unknown",
+      "description": "Use gh for GitHub issues, PR status, CI/logs, comments, reviews, releases, and API queries.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 164
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/gog",
+    "scan_timestamp": "2026-05-11T00:01:55.843627",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "gog",
+      "version": "unknown",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 117
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/goplaces",
+    "scan_timestamp": "2026-05-11T00:01:55.896736",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "goplaces",
+      "version": "unknown",
+      "description": "Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 53
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/healthcheck",
+    "scan_timestamp": "2026-05-11T00:01:55.949872",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "healthcheck",
+      "version": "unknown",
+      "description": "Audit and harden hosts running OpenClaw for SSH, firewall, updates, exposure, cron checks, and risk posture.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 246
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/himalaya",
+    "scan_timestamp": "2026-05-11T00:01:55.999203",
+    "verdict": "reject",
+    "verdict_reason": "Found 3 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "himalaya",
+      "version": "unknown",
+      "description": "Use himalaya to list, read, search, compose, reply, forward, and organize IMAP/SMTP email.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 643
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 37,
+        "line_content": "2. A configuration file at `~/.config/himalaya/config.toml`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 48,
+        "line_content": "Or create `~/.config/himalaya/config.toml` manually:",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "references/configuration.md",
+        "line_number": 3,
+        "line_content": "Configuration file location: `~/.config/himalaya/config.toml`",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "references/message-composition.md",
+      "references/configuration.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/imsg",
+    "scan_timestamp": "2026-05-11T00:01:56.054048",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "imsg",
+      "version": "unknown",
+      "description": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 123
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/mcporter",
+    "scan_timestamp": "2026-05-11T00:01:56.110379",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "mcporter",
+      "version": "unknown",
+      "description": "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 62
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/model-usage",
+    "scan_timestamp": "2026-05-11T00:01:56.165403",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "model-usage",
+      "version": "unknown",
+      "description": "Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 4,
+      "script_count": 2,
+      "total_lines": 465
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "references/codexbar-cli.md",
+        "line_number": 32,
+        "line_content": "- Claude: ~/.config/claude/projects/**/\\*.jsonl or ~/.claude/projects/**/\\*.jsonl",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/test_model_usage.py",
+      "scripts/model_usage.py",
+      "references/codexbar-cli.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/nano-pdf",
+    "scan_timestamp": "2026-05-11T00:01:56.222866",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "nano-pdf",
+      "version": "unknown",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 39
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/node-connect",
+    "scan_timestamp": "2026-05-11T00:01:56.274975",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "node-connect",
+      "version": "unknown",
+      "description": "Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 143
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/notion",
+    "scan_timestamp": "2026-05-11T00:01:56.326322",
+    "verdict": "reject",
+    "verdict_reason": "Found 3 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "notion",
+      "version": "unknown",
+      "description": "Notion API for creating and managing pages, databases, and blocks.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 175
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 23,
+        "line_content": "mkdir -p ~/.config/notion",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 24,
+        "line_content": "echo \"ntn_your_key_here\" > ~/.config/notion/api_key",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      },
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 34,
+        "line_content": "NOTION_KEY=$(cat ~/.config/notion/api_key)",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/obsidian",
+    "scan_timestamp": "2026-05-11T00:01:56.380072",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "obsidian",
+      "version": "unknown",
+      "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 82
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/openai-whisper",
+    "scan_timestamp": "2026-05-11T00:01:56.430031",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openai-whisper",
+      "version": "unknown",
+      "description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 39
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/openai-whisper-api",
+    "scan_timestamp": "2026-05-11T00:01:56.481924",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openai-whisper-api",
+      "version": "unknown",
+      "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 2,
+      "script_count": 1,
+      "total_lines": 152
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/transcribe.sh"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/openhue",
+    "scan_timestamp": "2026-05-11T00:01:56.538585",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "openhue",
+      "version": "unknown",
+      "description": "Control Philips Hue lights and scenes via the OpenHue CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 113
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/oracle",
+    "scan_timestamp": "2026-05-11T00:01:56.592097",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "oracle",
+      "version": "unknown",
+      "description": "Use oracle CLI to bundle prompts and files for second-model debugging, refactor, design, or review checks.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 126
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 115,
+        "line_content": "- Don\u2019t attach secrets by default (`.env`, key files, auth tokens). Redact aggressively; share only what\u2019s required.",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/ordercli",
+    "scan_timestamp": "2026-05-11T00:01:56.648466",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "ordercli",
+      "version": "unknown",
+      "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 79
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/peekaboo",
+    "scan_timestamp": "2026-05-11T00:01:56.703843",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "peekaboo",
+      "version": "unknown",
+      "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 191
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/sag",
+    "scan_timestamp": "2026-05-11T00:01:56.759740",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sag",
+      "version": "unknown",
+      "description": "ElevenLabs text-to-speech with mac-style say UX.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 88
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/session-logs",
+    "scan_timestamp": "2026-05-11T00:01:56.812647",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "session-logs",
+      "version": "unknown",
+      "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 152
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
+    "scan_timestamp": "2026-05-11T00:01:56.865031",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sherpa-onnx-tts",
+      "version": "unknown",
+      "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 2,
+      "script_count": 0,
+      "total_lines": 289
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "bin/sherpa-onnx-tts"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/skill-creator",
+    "scan_timestamp": "2026-05-11T00:01:56.916458",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "skill-creator",
+      "version": "unknown",
+      "description": "Create, edit, improve, tidy, review, audit, or restructure AgentSkills and SKILL.md files.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 7,
+      "script_count": 5,
+      "total_lines": 1490
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "license.txt",
+      "scripts/package_skill.py",
+      "scripts/test_quick_validate.py",
+      "scripts/init_skill.py",
+      "scripts/quick_validate.py",
+      "scripts/test_package_skill.py"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/slack",
+    "scan_timestamp": "2026-05-11T00:01:56.980894",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "slack",
+      "version": "unknown",
+      "description": "Use the Slack tool to react, pin/unpin, send, edit, delete messages, or fetch Slack member info.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 145
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/songsee",
+    "scan_timestamp": "2026-05-11T00:01:57.028786",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "songsee",
+      "version": "unknown",
+      "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 50
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/sonoscli",
+    "scan_timestamp": "2026-05-11T00:01:57.079898",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "sonoscli",
+      "version": "unknown",
+      "description": "Control Sonos speakers (discover/status/play/volume/group).",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 66
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/spotify-player",
+    "scan_timestamp": "2026-05-11T00:01:57.128103",
+    "verdict": "reject",
+    "verdict_reason": "Found 1 critical issue(s): credential_paths",
+    "metadata": {
+      "name": "spotify-player",
+      "version": "unknown",
+      "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 65
+    },
+    "findings": [
+      {
+        "pattern_name": "credential_paths",
+        "severity": "critical",
+        "file_path": "SKILL.md",
+        "line_number": 62,
+        "line_content": "- Config folder: `~/.config/spotify-player` (e.g., `app.toml`).",
+        "description": "Accesses sensitive credential locations",
+        "recommendation": "REJECT unless explicitly justified"
+      }
+    ],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/summarize",
+    "scan_timestamp": "2026-05-11T00:01:57.181562",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "summarize",
+      "version": "unknown",
+      "description": "Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 88
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/taskflow",
+    "scan_timestamp": "2026-05-11T00:01:57.235132",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "taskflow",
+      "version": "unknown",
+      "description": "Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 0,
+      "total_lines": 217
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "examples/inbox-triage.lobster",
+      "examples/pr-intake.lobster"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/taskflow-inbox-triage",
+    "scan_timestamp": "2026-05-11T00:01:57.288800",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "taskflow-inbox-triage",
+      "version": "unknown",
+      "description": "Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 120
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/things-mac",
+    "scan_timestamp": "2026-05-11T00:01:57.340099",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "things-mac",
+      "version": "unknown",
+      "description": "Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 87
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/tmux",
+    "scan_timestamp": "2026-05-11T00:01:57.390794",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "tmux",
+      "version": "unknown",
+      "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 3,
+      "script_count": 2,
+      "total_lines": 368
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/find-sessions.sh",
+      "scripts/wait-for-text.sh"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/trello",
+    "scan_timestamp": "2026-05-11T00:01:57.443293",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "trello",
+      "version": "unknown",
+      "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 109
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/video-frames",
+    "scan_timestamp": "2026-05-11T00:01:57.496269",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "video-frames",
+      "version": "unknown",
+      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 2,
+      "script_count": 1,
+      "total_lines": 129
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md",
+      "scripts/frame.sh"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/voice-call",
+    "scan_timestamp": "2026-05-11T00:01:57.550488",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "voice-call",
+      "version": "unknown",
+      "description": "Start voice calls via the OpenClaw voice-call plugin.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 46
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/wacli",
+    "scan_timestamp": "2026-05-11T00:01:57.602859",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "wacli",
+      "version": "unknown",
+      "description": "Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 73
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/weather",
+    "scan_timestamp": "2026-05-11T00:01:57.658010",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "weather",
+      "version": "unknown",
+      "description": "Get current weather, rain, temperature, and forecasts for locations or travel planning.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 130
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "skill_path": "/usr/lib/node_modules/openclaw/skills/xurl",
+    "scan_timestamp": "2026-05-11T00:01:57.713580",
+    "verdict": "approved",
+    "verdict_reason": "No critical or high-severity issues detected",
+    "metadata": {
+      "name": "xurl",
+      "version": "unknown",
+      "description": "Use xurl for authenticated X API posts, replies, search, DMs, media upload, followers, or raw v2 calls.",
+      "author": "unknown",
+      "has_skill_md": true,
+      "file_count": 1,
+      "script_count": 0,
+      "total_lines": 462
+    },
+    "findings": [],
+    "files_scanned": [
+      "SKILL.md"
+    ]
+  }
+]

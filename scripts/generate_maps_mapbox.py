@@ -1,497 +1,272 @@
 #!/usr/bin/env python3
 """
-generate_maps_mapbox.py v2 — Theatre maps via Mapbox Static API.
+generate_maps_mapbox.py v6 — Data-driven maps via Mapbox GeoJSON overlay.
 
-Uses Mapbox dark-v11 style with:
-- Auto-fitted viewports for each theatre's marker set
-- Gold-accented markers for major cities
-- Red markers for conflict zones/flashpoints
-- @2x resolution (2560x2560 effective at 1280x1280)
-- Country highlight overlays via marker clusters
-- Graceful fallback to matplotlib
-
-Style: mapbox/dark-v11 (matches our magazine's dark theme + gold accent)
+Each theatre's routes, zones, and cities are passed as a GeoJSON FeatureCollection
+to the Mapbox Static API, which renders them at the correct geographic positions.
+No PIL pixel-math needed — Mapbox handles all coordinate conversion.
 
 Usage:
     python3 generate_maps_mapbox.py \
         --working-dir ~/trevor-briefings/2026-05-10 \
         --out-dir ~/trevor-briefings/2026-05-10/visuals/maps
-
-Requires MAPBOX_TOKEN in environment.
 """
 from __future__ import annotations
 
 import argparse
 import datetime as dt
 import json
+import math
 import os
 import pathlib
 import sys
-import urllib.error
 import urllib.parse
 import urllib.request
 
-# ── Theatre map definitions ──
-# Key cities with coordinates and types for each theatre
-# type: "capital" (gold), "city" (gray), "flashpoint" (red)
-THEATRES = {
+MAPBOX_BASE = "https://api.mapbox.com"
+STYLE = "streets-v12"
+
+# ── Map configuration: fixed zoom/center per theatre ──
+MAP_CONFIG = {
+    "europe":              {"center": (52.0, 20.0), "zoom": 4.0},
+    "asia":                {"center": (30.0, 85.0), "zoom": 3.5},
+    "middle_east":         {"center": (28.0, 48.0), "zoom": 4.5},
+    "north_america":       {"center": (30.0, -95.0), "zoom": 3.5},
+    "south_central_america":{"center": (-5.0, -60.0), "zoom": 3.5},
+    "global_finance":      {"center": (30.0, 30.0), "zoom": 2.5},
+}
+
+# ── Thematic geographic data per theatre ──
+THEATRE_DATA = {
     "europe": {
-        "title": "Europe",
-        "zoom": 4.5,
-        "center": (50.0, 15.0),
-        "bbox": (-10, 36, 40, 60),
-        "markers": [
-            ("pin-l-city+c9a84c", (52.52, 13.40)),   # Berlin
-            ("pin-l-city+c9a84c", (48.86, 2.35)),    # Paris
-            ("pin-l-city+c9a84c", (51.51, -0.13)),   # London
-            ("pin-l-city+c9a84c", (55.76, 37.62)),   # Moscow
-            ("pin-l-city+c9a84c", (50.45, 30.52)),   # Kyiv
-            ("pin-l-city+c9a84c", (41.90, 12.50)),   # Rome
-            ("pin-l-city+777", (59.33, 18.07)),   # Stockholm
-            ("pin-l-danger+cc0000", (48.02, 37.80)),  # Donetsk
-            ("pin-l-danger+cc0000", (48.45, 37.75)),  # Kramatorsk
+        "title": "Europe — Strikes, Drawdown, and Watch",
+        "lines": [
+            {"coords": [[34.0, 50.0], [32.5, 49.5]], "color": "#cc0000", "width": 3, "label": "108 drones + 2 Iskander-M + 1 Kh-31"},
+            {"coords": [[8.0, 49.5], [4.5, 52.0]], "color": "#1e3caf", "width": 3, "label": "5,000-troop withdrawal"},
+            {"coords": [[27.5, 53.5], [30.0, 50.0]], "color": "#b37400", "width": 2, "label": "Belarus transit facilitation", "dash": [4, 6]},
+            {"coords": [[8.0, 49.5], [21.0, 52.0]], "color": "#3c78d8", "width": 2, "label": "Reinforcement corridor ~1,100 km", "dash": [6, 4]},
+        ],
+        "zones": [
+            {"coords": [[28.0, 50.0], [33.0, 50.0], [33.0, 47.5], [28.0, 47.5]], "color": "#cc0000", "fill_opacity": 0.12, "label": "Ukraine strike zone"},
+        ],
+        "cities": [
+            ("Kyiv", 50.45, 30.52, "target"), ("Berlin", 52.52, 13.40, "capital"),
+            ("Donetsk", 48.02, 37.80, "target"), ("Warsaw", 52.23, 21.01, "nato"),
+            ("Moscow", 55.76, 37.62, "source"), ("Minsk", 53.90, 27.57, "warning"),
         ],
     },
     "asia": {
-        "title": "Asia",
-        "zoom": 4.0,
-        "center": (30.0, 85.0),
-        "bbox": (60, 5, 130, 50),
-        "markers": [
-            ("pin-l-city+c9a84c", (39.91, 116.40)),  # Beijing
-            ("pin-l-city+c9a84c", (35.68, 139.69)),  # Tokyo
-            ("pin-l-city+c9a84c", (28.61, 77.23)),   # New Delhi
-            ("pin-l-city+c9a84c", (25.03, 121.51)),  # Taipei
-            ("pin-l-city+777", (33.68, 73.05)),   # Islamabad
-            ("pin-l-city+c9a84c", (37.57, 126.98)),  # Seoul
-            ("pin-l-city+c9a84c", (22.32, 114.17)),  # Hong Kong
-            ("pin-l-danger+cc0000", (34.56, 69.21)),  # Kabul
+        "title": "Asia — Pre-Summit Positioning",
+        "lines": [
+            {"coords": [[77.23, 28.61], [73.05, 33.68]], "color": "#b37400", "width": 2, "label": "India-Pakistan diplomatic friction", "dash": [4, 6]},
+            {"coords": [[85.0, 20.0], [95.0, 20.0]], "color": "#1e3caf", "width": 2, "label": "Maritime security patrols", "dash": [6, 4]},
+        ],
+        "zones": [
+            {"coords": [[69.0, 35.5], [72.0, 35.5], [72.0, 33.0], [69.0, 33.0]], "color": "#cc0000", "fill_opacity": 0.12, "label": "Afghanistan security zone"},
+        ],
+        "cities": [
+            ("Beijing", 39.91, 116.40, "capital"), ("Tokyo", 35.68, 139.69, "capital"),
+            ("New Delhi", 28.61, 77.23, "capital"), ("Seoul", 37.57, 126.98, "capital"),
+            ("Taipei", 25.03, 121.57, "flashpoint"), ("Kabul", 34.56, 69.21, "target"),
         ],
     },
     "middle_east": {
-        "title": "Middle East",
-        "zoom": 5.0,
-        "center": (28.0, 46.0),
-        "bbox": (25, 12, 60, 42),
-        "markers": [
-            ("pin-l-city+c9a84c", (35.69, 51.42)),  # Tehran
-            ("pin-l-city+c9a84c", (30.04, 31.24)),  # Cairo
-            ("pin-l-city+c9a84c", (39.93, 32.86)),  # Ankara
-            ("pin-l-city+777", (33.51, 36.29)),  # Damascus
-            ("pin-l-city+c9a84c", (24.71, 46.67)),  # Riyadh
-            ("pin-l-city+c9a84c", (32.08, 34.78)),  # Tel Aviv
-            ("pin-l-danger+cc0000", (26.27, 56.03)),  # Strait of Hormuz
-            ("pin-l-danger+cc0000", (33.32, 44.36)),  # Baghdad
-            ("pin-l-danger+cc0000", (15.35, 44.21)),  # Sanaa
+        "title": "Middle East — The Hormuz Toll Trap",
+        "lines": [
+            {"coords": [[55.0, 27.0], [56.0, 26.5], [56.5, 26.0]], "color": "#38761d", "width": 3, "label": "Inbound shipping lane"},
+            {"coords": [[56.5, 26.5], [56.0, 27.0], [55.5, 27.3]], "color": "#38761d", "width": 3, "label": "Outbound shipping lane"},
+            {"coords": [[56.27, 27.18], [56.25, 26.57]], "color": "#cc0000", "width": 3, "label": "Toll demand 6 May — rial/OFAC trap"},
+            {"coords": [[47.0, 29.0], [51.0, 30.0]], "color": "#b37400", "width": 2, "label": "IAF strike range arc", "dash": [4, 8]},
+        ],
+        "zones": [
+            {"coords": [[55.5, 27.0], [57.0, 27.0], [57.0, 25.5], [55.5, 25.5]], "color": "#cc0000", "fill_opacity": 0.18, "label": "HORMUZ — 33 km chokepoint"},
+        ],
+        "cities": [
+            ("Tehran", 35.69, 51.42, "capital"), ("Bandar Abbas", 27.18, 56.27, "military"),
+            ("Hormuz", 26.57, 56.25, "chokepoint"), ("Bahrain (5th Fleet)", 26.22, 50.58, "base"),
+            ("Baghdad", 33.32, 44.36, "capital"), ("Sanaa", 15.35, 44.21, "target"),
         ],
     },
     "north_america": {
-        "title": "North America",
-        "zoom": 4.0,
-        "center": (32.0, -100.0),
-        "bbox": (-130, 15, -60, 50),
-        "markers": [
-            ("pin-l-city+c9a84c", (38.91, -77.04)),  # Washington DC
-            ("pin-l-city+c9a84c", (40.71, -74.01)),  # New York
-            ("pin-l-city+777", (34.05, -118.24)), # Los Angeles
-            ("pin-l-city+c9a84c", (25.76, -80.19)),  # Miami
-            ("pin-l-city+c9a84c", (19.43, -99.13)),  # Mexico City
-            ("pin-l-danger+cc0000", (28.63, -106.07)), # Chihuahua
+        "title": "North America — Substitution & Security",
+        "lines": [
+            {"coords": [[-95.37, 29.76], [-66.90, 10.48]], "color": "#38761d", "width": 3, "label": "1.23M bpd Venezuelan crude → USGC"},
+            {"coords": [[-106.07, 28.63], [-77.04, 38.91]], "color": "#cc0000", "width": 3, "label": "Chihuahua incident — 2x CIA fatalities"},
+        ],
+        "zones": [
+            {"coords": [[-107.5, 30.0], [-105.0, 30.0], [-105.0, 27.0], [-107.5, 27.0]], "color": "#cc0000", "fill_opacity": 0.12, "label": "Chihuahua cartel corridor"},
+            {"coords": [[-97.0, 30.5], [-88.0, 30.5], [-88.0, 27.5], [-97.0, 27.5]], "color": "#38761d", "fill_opacity": 0.08, "label": "Gulf Coast refining ~9M bpd capacity"},
+        ],
+        "cities": [
+            ("Washington", 38.91, -77.04, "capital"), ("Mexico City", 19.43, -99.13, "capital"),
+            ("Chihuahua", 28.63, -106.07, "flashpoint"), ("Houston", 29.76, -95.37, "hub"),
         ],
     },
     "south_central_america": {
-        "title": "S. & C. America",
-        "zoom": 4.0,
-        "center": (-8.0, -60.0),
-        "bbox": (-85, -35, -30, 25),
-        "markers": [
-            ("pin-l-danger+cc0000", (23.11, -82.37)),  # Havana (crisis)
-            ("pin-l-city+c9a84c", (10.48, -66.90)),  # Caracas
-            ("pin-l-city+c9a84c", (-23.55, -46.63)), # São Paulo
-            ("pin-l-city+777", (-15.79, -47.88)), # Brasília
-            ("pin-l-city+c9a84c", (-34.60, -58.38)), # Buenos Aires
-            ("pin-l-city+c9a84c", (4.71, -74.07)),   # Bogotá
+        "title": "S. & C. America — Sanctions & Flooding",
+        "lines": [
+            {"coords": [[-77.04, 38.91], [-82.37, 23.11]], "color": "#cc0000", "width": 3, "label": "New US sanctions: energy, defence, mining"},
+            {"coords": [[-66.90, 10.48], [-82.37, 23.11]], "color": "#b37400", "width": 2, "label": "Venezuelan oil — under pressure", "dash": [4, 6]},
+        ],
+        "zones": [
+            {"coords": [[-84.0, 24.5], [-80.0, 24.5], [-80.0, 21.5], [-84.0, 21.5]], "color": "#cc0000", "fill_opacity": 0.12, "label": "Cuba — acute energy distress"},
+            {"coords": [[-36.0, -6.0], [-34.0, -6.0], [-34.0, -9.0], [-36.0, -9.0]], "color": "#1c6dc9", "fill_opacity": 0.12, "label": "Pernambuco/Paraiba — 6+ dead"},
+        ],
+        "cities": [
+            ("Havana", 23.11, -82.37, "capital"), ("Caracas", 10.48, -66.90, "capital"),
+            ("Brasilia", -15.79, -47.88, "capital"), ("Recife", -8.05, -34.88, "disaster"),
         ],
     },
     "global_finance": {
-        "title": "Global Finance",
-        "zoom": 2.5,
-        "center": (25.0, 15.0),
-        "bbox": (-130, -40, 150, 60),
-        "markers": [
-            ("pin-l-city+c9a84c", (40.71, -74.01)),  # NYSE
-            ("pin-l-city+c9a84c", (51.51, -0.13)),   # London
-            ("pin-l-city+c9a84c", (35.68, 139.69)),  # Tokyo
-            ("pin-l-city+c9a84c", (22.28, 114.16)),  # Hong Kong
-            ("pin-l-city+777", (1.28, 103.85)),   # Singapore
-            ("pin-l-city+c9a84c", (50.11, 8.68)),    # Frankfurt
-            ("pin-l-city+c9a84c", (48.86, 2.35)),    # Paris
-            ("pin-l-danger+cc0000", (25.20, 55.27)),   # Dubai (Hormuz proximity)
+        "title": "Global Finance — Energy Re-routing",
+        "lines": [
+            {"coords": [[56.25, 26.57], [38.06, 24.09]], "color": "#38761d", "width": 3, "label": "Petroline bypass: ~4.8M bpd capacity"},
+            {"coords": [[52.87, 25.15], [56.34, 25.13]], "color": "#38761d", "width": 2, "label": "Habshan-Fujairah bypass pipeline"},
+        ],
+        "zones": [
+            {"coords": [[55.0, 27.5], [57.5, 27.5], [57.5, 25.0], [55.0, 25.0]], "color": "#cc0000", "fill_opacity": 0.18, "label": "Hormuz chokepoint — ~20M bpd transit"},
+        ],
+        "cities": [
+            ("London (BP)", 51.51, -0.13, "capital"), ("NYC (Chevron)", 40.71, -74.01, "capital"),
+            ("Tokyo", 35.68, 139.69, "capital"), ("Hong Kong", 22.28, 114.16, "capital"),
+            ("Hormuz", 26.57, 56.25, "chokepoint"), ("Dubai", 25.20, 55.27, "hub"),
         ],
     },
 }
 
-MAPBOX_BASE = "https://api.mapbox.com"
 
-import matplotlib
-import io
-try:
-    from PIL import Image, ImageDraw, ImageFont
-except ImportError:
-    Image = None
-    ImageDraw = None
-    ImageFont = None
-
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-
-def log(msg: str) -> None:
+def log(msg):
     print(f"[maps] {msg}", file=sys.stderr, flush=True)
 
 
-def make_marker_overlay(markers: list) -> str:
-    """Build the overlay string for Mapbox static API.
-    Use pin-l (large) markers with custom colors.
-    Markers are semi-transparent to look professional."""
-    parts = []
-    for marker_spec, (lat, lng) in markers:
-        parts.append(f"{marker_spec}({lng},{lat})")
-    return ",".join(parts)
+def build_geojson(region) -> dict:
+    """Build a GeoJSON FeatureCollection for a theatre."""
+    data = THEATRE_DATA.get(region, {})
+    features = []
+
+    # Helper: create a marker point
+    def make_point(lng, lat, color, size="l", label=""):
+        props = {"marker-color": color, "marker-size": size}
+        if label:
+            props["marker-symbol"] = label
+        return {"type": "Feature", "properties": props,
+                "geometry": {"type": "Point", "coordinates": [lng, lat]}}
+
+    # Helper: create a line
+    def make_line(coords, color, width, opacity=0.8, dash=None):
+        props = {"stroke": color, "stroke-width": width, "stroke-opacity": opacity}
+        if dash:
+            props["stroke-dasharray"] = dash  # list, e.g. [4,6]
+        return {"type": "Feature", "properties": props,
+                "geometry": {"type": "LineString", "coordinates": coords}}
+
+    # Helper: create a polygon (auto-closes the ring)
+    def make_poly(coords, fill_color, fill_opacity, stroke_color="#666", stroke_width=1):
+        # Ensure ring is closed
+        ring = list(coords)
+        if ring and len(ring) > 1 and (ring[0][0] != ring[-1][0] or ring[0][1] != ring[-1][1]):
+            ring.append(ring[0])
+        return {"type": "Feature", "properties": {
+                    "fill": fill_color, "fill-opacity": fill_opacity,
+                    "stroke": stroke_color, "stroke-width": stroke_width, "stroke-opacity": 0.6},
+                "geometry": {"type": "Polygon", "coordinates": [ring]}}
+
+    # Routes as lines
+    for line in data.get("lines", []):
+        features.append(make_line(line["coords"], line["color"], line.get("width", 2),
+                                  dash=line.get("dash")))
+
+    # Zones as polygons
+    for zone in data.get("zones", []):
+        features.append(make_poly(zone["coords"], zone["color"], zone.get("fill_opacity", 0.12)))
+
+    # Cities as markers
+    for city in data.get("cities", []):
+        name, lat, lng, role = city
+        marker_color = {"capital": "#1e3caf", "target": "#cc0000", "source": "#cc0000",
+                        "nato": "#3c78d8", "warning": "#b37400", "flashpoint": "#cc0000",
+                        "chokepoint": "#cc0000", "military": "#6aa84f", "base": "#6aa84f",
+                        "hub": "#6aa84f", "disaster": "#1c6dc9"}.get(role, "#666")
+        features.append(make_point(lng, lat, marker_color, label="marker"))
+
+    return {"type": "FeatureCollection", "features": features}
 
 
-# Map label definitions: name -> (lat, lng, type)
-# type: "capital" (gold label), "flashpoint" (red label), "city" (grey label)
-MAP_LABELS = {
-    "europe": {
-        "Berlin": (52.52, 13.40, "capital"),
-        "Paris": (48.86, 2.35, "capital"),
-        "London": (51.51, -0.13, "capital"),
-        "Moscow": (55.76, 37.62, "capital"),
-        "Kyiv": (50.45, 30.52, "capital"),
-        "Rome": (41.90, 12.50, "city"),
-        "Stockholm": (59.33, 18.07, "city"),
-        "Donetsk": (48.02, 37.80, "flashpoint"),
-        "Kramatorsk": (48.45, 37.75, "flashpoint"),
-    },
-    "asia": {
-        "Beijing": (39.91, 116.40, "capital"),
-        "Tokyo": (35.68, 139.69, "capital"),
-        "New Delhi": (28.61, 77.23, "capital"),
-        "Taipei": (25.03, 121.51, "city"),
-        "Islamabad": (33.68, 73.05, "city"),
-        "Seoul": (37.57, 126.98, "city"),
-        "Hong Kong": (22.32, 114.17, "city"),
-        "Kabul": (34.56, 69.21, "flashpoint"),
-    },
-    "middle_east": {
-        "Tehran": (35.69, 51.42, "capital"),
-        "Cairo": (30.04, 31.24, "capital"),
-        "Ankara": (39.93, 32.86, "capital"),
-        "Damascus": (33.51, 36.29, "city"),
-        "Riyadh": (24.71, 46.67, "capital"),
-        "Tel Aviv": (32.08, 34.78, "city"),
-        "Strait of Hormuz": (26.27, 56.03, "flashpoint"),
-        "Baghdad": (33.32, 44.36, "flashpoint"),
-        "Sanaa": (15.35, 44.21, "flashpoint"),
-    },
-    "north_america": {
-        "Washington": (38.91, -77.04, "capital"),
-        "New York": (40.71, -74.01, "capital"),
-        "Los Angeles": (34.05, -118.24, "city"),
-        "Miami": (25.76, -80.19, "city"),
-        "Mexico City": (19.43, -99.13, "capital"),
-        "Chihuahua": (28.63, -106.07, "flashpoint"),
-    },
-    "south_central_america": {
-        "Havana": (23.11, -82.37, "flashpoint"),
-        "Caracas": (10.48, -66.90, "capital"),
-        "São Paulo": (-23.55, -46.63, "city"),
-        "Brasília": (-15.79, -47.88, "capital"),
-        "Buenos Aires": (-34.60, -58.38, "city"),
-        "Bogotá": (4.71, -74.07, "capital"),
-    },
-    "global_finance": {
-        "NYSE": (40.71, -74.01, "capital"),
-        "London": (51.51, -0.13, "capital"),
-        "Tokyo": (35.68, 139.69, "capital"),
-        "Hong Kong": (22.28, 114.16, "capital"),
-        "Singapore": (1.28, 103.85, "city"),
-        "Frankfurt": (50.11, 8.68, "city"),
-        "Paris": (48.86, 2.35, "city"),
-        "Dubai": (25.20, 55.27, "city"),
-    },
-}
-
-
-def latlng_to_px(lat: float, lng: float, center_lat: float, center_lng: float, zoom: float, img_w: int, img_h: int) -> tuple[int, int]:
-    """Convert lat/lng to pixel coordinates on a Web Mercator map image."""
-    import math
-    # Web Mercator projection
-    def merc_x(l): return (l + 180) / 360
-    def merc_y(l):
-        lat_rad = math.radians(l)
-        return 0.5 - math.log(math.tan(math.pi/4 + lat_rad/2)) / (2 * math.pi)
-    
-    # Center pixel
-    cx = merc_x(center_lng) * img_w
-    cy = merc_y(center_lat) * img_h
-    
-    # Point pixel
-    px = merc_x(lng) * img_w
-    py = merc_y(lat) * img_h
-    
-    # Zoom scale factor (each zoom level halves the visible world)
-    scale = 2 ** zoom
-    
-    # Convert to image coordinates
-    x = int(img_w/2 + (px - cx) * scale)
-    y = int(img_h/2 + (py - cy) * scale)
-    return (x, y)
-
-
-def add_labels_to_map(image_data: bytes, markers: list, region: str, theatre: dict) -> bytes | None:
-    """Add text labels to a Mapbox static map image using PIL."""
-    if Image is None:
-        return None
-    try:
-        img = Image.open(io.BytesIO(image_data)).convert("RGBA")
-        img_w, img_h = img.size
-        overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        draw = ImageDraw.Draw(overlay)
-        
-        # Try to load a font, fall back to default
-        try:
-            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 22)
-            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 16)
-        except Exception:
-            font_large = ImageFont.load_default()
-            font_small = font_large
-        
-        labels = MAP_LABELS.get(region, {})
-        center_lat, center_lng = theatre["center"]
-        zoom = theatre["zoom"]
-        
-        for name, (lat, lng, ltype) in labels.items():
-            px, py = latlng_to_px(lat, lng, center_lat, center_lng, zoom, img_w, img_h)
-            
-            # Skip if outside image bounds
-            if px < -50 or px > img_w + 50 or py < -50 or py > img_h + 50:
-                continue
-            
-            if ltype == "flashpoint":
-                # Red glow circle + red label
-                for r in range(20, 5, -5):
-                    alpha = 40 if r > 10 else 180
-                    draw.ellipse([px-r, py-r, px+r, py+r], fill=(204, 0, 0, alpha))
-                draw.ellipse([px-6, py-6, px+6, py+6], fill=(204, 0, 0, 220))
-                # White text label below marker
-                bbox = draw.textbbox((0, 0), name, font=font_small)
-                tw = bbox[2] - bbox[0]
-                tx = px - tw // 2
-                ty = py + 12
-                # Background pill for readability
-                draw.rounded_rectangle([tx-4, ty-2, tx+tw+4, ty+18], radius=3, fill=(0, 0, 0, 160))
-                draw.text((tx, ty), name, fill=(255, 255, 255, 240), font=font_large)
-            elif ltype == "capital":
-                # Gold circle marker
-                draw.ellipse([px-5, py-5, px+5, py+5], fill=(212, 168, 67, 220))
-                draw.ellipse([px-3, py-3, px+3, py+3], fill=(255, 215, 0, 200))
-                # Gold label
-                bbox = draw.textbbox((0, 0), name, font=font_small)
-                tw = bbox[2] - bbox[0]
-                tx = px - tw // 2
-                ty = py + 10
-                draw.rounded_rectangle([tx-3, ty-1, tx+tw+3, ty+17], radius=2, fill=(0, 0, 0, 140))
-                draw.text((tx, ty), name, fill=(212, 168, 67, 240), font=font_small)
-            else:
-                # Grey dot for other cities
-                draw.ellipse([px-3, py-3, px+3, py+3], fill=(150, 150, 150, 180))
-                bbox = draw.textbbox((0, 0), name, font=font_small)
-                tw = bbox[2] - bbox[0]
-                tx = px - tw // 2
-                ty = py + 10
-                draw.text((tx, ty), name, fill=(180, 180, 180, 180), font=font_small)
-        
-        # Add legend
-        legend_x, legend_y = 15, img_h - 80
-        draw.rounded_rectangle([legend_x, legend_y, legend_x + 155, legend_y + 70], radius=4, fill=(0, 0, 0, 160))
-        draw.text((legend_x + 8, legend_y + 6), "LEGEND", fill=(212, 168, 67, 200), font=font_small)
-        draw.ellipse([legend_x + 8, legend_y + 28, legend_x + 16, legend_y + 36], fill=(212, 168, 67, 220))
-        draw.text((legend_x + 22, legend_y + 25), "Capital / Key City", fill=(200, 200, 200, 200), font=font_small)
-        draw.ellipse([legend_x + 8, legend_y + 48, legend_x + 16, legend_y + 56], fill=(204, 0, 0, 220))
-        draw.text((legend_x + 22, legend_y + 45), "Conflict / Flashpoint", fill=(255, 200, 200, 200), font=font_small)
-        
-        img = Image.alpha_composite(img, overlay)
-        output = io.BytesIO()
-        img.save(output, format="PNG")
-        return output.getvalue()
-    except Exception as e:
-        log(f"  Label overlay failed: {e}")
-        return None
-
-
-def fetch_mapbox_static(region: str, out_path: pathlib.Path, token: str) -> bool:
-    """Fetch a professional static map from Mapbox dark-v11 style."""
-    theatre = THEATRES.get(region)
-    if not theatre:
+def draw_map(region, out_path, token):
+    """Fetch Mapbox static image with GeoJSON overlay."""
+    data = THEATRE_DATA.get(region)
+    if not data:
         return False
 
-    markers = theatre["markers"]
-    overlay = make_marker_overlay(markers)
-
-    # Use auto positioning with padding to fit all markers
-    # Max dimensions: 1280x1280 @2x = 2560x2560 effective
-    width, height = 1280, 1280
-    style = "mapbox/dark-v11"
-
-    # Build URL: use specific center + zoom for a clearer, more focused map
-    lat, lng = theatre["center"]
-    z = theatre["zoom"]
-    # Rectangle aspect ratio: 800x500 fits better on a page
+    cfg = MAP_CONFIG.get(region, {"center": (30, 0), "zoom": 2})
+    lat, lng = cfg["center"]
+    z = cfg["zoom"]
     w, h = 800, 500
-    
+
+    geojson = build_geojson(region)
+    geo_str = json.dumps(geojson, separators=(",", ":"))
+    geo_enc = urllib.parse.quote(geo_str)
+
+    overlay = f"geojson({geo_enc})"
     url = (
-        f"{MAPBOX_BASE}/styles/v1/{style}/static"
-        f"/{overlay}/{lng},{lat},{z},0,0"
-        f"/{w}x{h}@2x"
-        f"?access_token={token}"
-        f"&logo=false"
-        f"&attribution=true"
+        f"{MAPBOX_BASE}/styles/v1/mapbox/{STYLE}/static"
+        f"/{overlay}/{lng},{lat},{z},0,0/{w}x{h}@2x"
+        f"?access_token={token}&logo=false&attribution=true"
     )
 
-    log(f"  Fetching Mapbox {region} map ({w}x{h}@2x)...")
+    log(f"  Fetching {region} ({w}x{h}@2x, {z=})...")
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "TREVOR-Intel-Brief/1.0"})
         with urllib.request.urlopen(req, timeout=30) as resp:
-            data = resp.read()
-        if len(data) < 2000:
-            log(f"  Mapbox response too small: {len(data)} bytes")
+            map_data = resp.read()
+        if len(map_data) < 2000:
+            log(f"  Too small: {len(map_data)} bytes")
             return False
-        # Enhance map with text labels using PIL
-        enhanced = add_labels_to_map(data, markers, region, theatre)
-        if enhanced:
-            out_path.write_bytes(enhanced)
-        else:
-            out_path.write_bytes(data)
+        out_path.write_bytes(map_data)
         kb = out_path.stat().st_size // 1024
-        log(f"  ✅ Mapbox {region}: {out_path.name} ({kb} KB)")
+        log(f"  ✅ {region}: {out_path.name} ({kb} KB, {len(url)} URL chars)")
         return True
     except urllib.error.HTTPError as e:
-        log(f"  Mapbox HTTP {e.code}: {e.read().decode(errors='replace')[:200]}")
+        err = e.read().decode(errors="replace")[:200]
+        log(f"  HTTP {e.code}: {err}")
         return False
     except Exception as e:
-        log(f"  Mapbox error: {e}")
+        log(f"  Error: {e}")
         return False
 
 
-def render_matplotlib_fallback(region: str, out_path: pathlib.Path) -> bool:
-    """Fallback: matplotlib with improved styling."""
-    theatre = THEATRES.get(region)
-    if not theatre:
-        return False
-
-    try:
-        fig, ax = plt.subplots(figsize=(10, 10), dpi=150)
-        ax.set_facecolor("#0d1b3e")
-        fig.patch.set_facecolor("#0d1b3e")
-
-        # Calculate bounds from markers
-        all_lats = [m[1][0] for m in theatre["markers"]]
-        all_lngs = [m[1][1] for m in theatre["markers"]]
-        margin = 8
-        min_lat, max_lat = min(all_lats) - margin, max(all_lats) + margin
-        min_lng, max_lng = min(all_lngs) - margin, max(all_lngs) + margin
-
-        ax.set_xlim(min_lng, max_lng)
-        ax.set_ylim(min_lat, max_lat)
-
-        # Grid
-        ax.grid(True, color="#2a3a6e", linewidth=0.5, alpha=0.4)
-        ax.tick_params(colors="#555", labelsize=6)
-
-        # Plot markers
-        for spec, (lat, lng) in theatre["markers"]:
-            if "danger" in spec or "cc0000" in spec:
-                ax.plot(lng, lat, "o", color="#cc0000", markersize=10, zorder=5)
-                ax.annotate("⚠", (lng, lat), fontsize=8,
-                           ha="center", va="center", color="white", zorder=6)
-            else:
-                ax.plot(lng, lat, "o", color="#c9a84c", markersize=8, zorder=5,
-                       markeredgecolor="white", markeredgewidth=0.5)
-
-        # Title
-        ax.set_title(theatre["title"], fontsize=14, color="#c9a84c",
-                    fontweight="bold", pad=12)
-
-        for spine in ax.spines.values():
-            spine.set_color("#c9a84c")
-            spine.set_linewidth(0.3)
-
-        ax.text(0.5, -0.04, f"TREVOR INTELLIGENCE • {dt.date.today().strftime('%d %b %Y')}",
-                transform=ax.transAxes, fontsize=7, color="#666",
-                ha="center", va="center")
-
-        fig.savefig(str(out_path), dpi=150, bbox_inches="tight",
-                    facecolor="#0d1b3e", edgecolor="none")
-        plt.close(fig)
-        kb = out_path.stat().st_size // 1024
-        log(f"  matplotlib fallback: {out_path.name} ({kb} KB)")
-        return kb > 10
-    except Exception as e:
-        log(f"  matplotlib error: {e}")
-        return False
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+def main():
+    parser = argparse.ArgumentParser()
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--out-dir", required=True)
-    parser.add_argument("--no-mapbox", action="store_true",
-                        help="Skip Mapbox, use matplotlib only")
     args = parser.parse_args()
 
     out_dir = pathlib.Path(args.out_dir).expanduser()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     token = os.environ.get("MAPBOX_TOKEN", "")
-    use_mapbox = bool(token) and not args.no_mapbox
-
-    if use_mapbox:
-        log(f"Mapbox token found: {token[:10]}... — using Mapbox Static API")
-    else:
-        log("No MAPBOX_TOKEN — using matplotlib fallback")
+    if not token:
+        log("No MAPBOX_TOKEN")
+        return 1
 
     regions = ["europe", "asia", "middle_east", "north_america",
                "south_central_america", "global_finance"]
-    success = 0
 
     for region in regions:
+        log(f"Generating {region}...")
         out_path = out_dir / f"map_{region}.png"
-        rendered = False
+        draw_map(region, out_path, token)
 
-        if use_mapbox:
-            rendered = fetch_mapbox_static(region, out_path, token)
-
-        if not rendered:
-            rendered = render_matplotlib_fallback(region, out_path)
-
-        if rendered:
-            success += 1
-
-    # Write manifest
+    # Manifest
     manifest = []
     for f in sorted(out_dir.glob("map_*.png")):
-        manifest.append({
-            "region": f.stem.replace("map_", ""),
-            "path": str(f),
-            "size_kb": f.stat().st_size // 1024,
-        })
+        manifest.append({"region": f.stem.replace("map_", ""), "path": str(f), "size_kb": f.stat().st_size // 1024})
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
 
-    log(f"\nGenerated {success}/{len(regions)} maps in {out_dir}")
+    success = len([m for m in manifest if m["size_kb"] > 20])
+    log(f"\nGenerated {success}/{len(regions)} maps")
     for m in manifest:
         log(f"  {m['region']}: {m['size_kb']} KB")
-    return 0 if success > 0 else 1
 
 
 if __name__ == "__main__":

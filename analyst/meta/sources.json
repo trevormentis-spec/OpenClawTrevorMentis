@@ -525,6 +525,51 @@
       "signal_level": "Medium",
       "discovered": "2026-05-07",
       "source": "NewsAPI"
+    },
+    {
+      "name": "Forbes",
+      "type": "News/Journalism",
+      "focus": "The banking system remains resilient.  However, financial, technological, and operational risks are becoming inseparable and can catch the market off guard.",
+      "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/05/07/beyond-bank-runs-the-occ-warns-of-a-more-complex-financial-threat/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-11",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Ing.dk",
+      "type": "News/Journalism",
+      "focus": "Amid hybrid threats and geopolitical pressure, \u201cfatigue\u201d is dangerous, according to a consultant. In a new report, researchers describe the situation as a crossroads in security policy.",
+      "url": "https://ing.dk/artikel/energy-sector-warned-not-let-its-guard-down-threat-still-here",
+      "signal_level": "Medium",
+      "discovered": "2026-05-11",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "We Live Security",
+      "type": "News/Journalism",
+      "focus": "Your biggest risk may be a vendor you trust. How can SMBs map their third-party blind spots and build operational resilience?",
+      "url": "https://www.welivesecurity.com/en/business-security/supply-chain-dependencies-have-you-checked-your-blind-spot/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-11",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Forbes",
+      "type": "News/Journalism",
+      "focus": "Retail investors keep buying the dip as volatility rises, fueling the AI\u2011driven rally. This piece explores the behavior, risks and cultural forces shaping the trend.",
+      "url": "https://www.forbes.com/sites/rahkimsabree/2026/05/08/retail-investors-are-doubling-down-and-fear-may-be-driving-the-rally/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-11",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Naturalnews.com",
+      "type": "News/Journalism",
+      "focus": "International inspectors have assessed that Iran has accumulated nearly 1,000 pounds of uranium enriched to 60%, a stockpile that analysts state could fuel 10 to 11 nuclear devices if further processe",
+      "url": "https://www.naturalnews.com/2026-04-22-inspectors-iran-uranium-stockpile-fuel-multiple-weapons.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-11",
+      "source": "NewsAPI"
     }
   ],
   "moltbook_sources": [
@@ -615,7 +660,7 @@
       ]
     },
     {
-      "category": "Deep Horizon Scan — 2026-05-10",
+      "category": "Deep Horizon Scan \u2014 2026-05-10",
       "note": "Newly discovered from Trevor OSINT Deep Search cron (08cae30c), May 10, 2026",
       "sources": [
         {
@@ -627,7 +672,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Mick Ryan — The Learning Curve",
+          "name": "Mick Ryan \u2014 The Learning Curve",
           "type": "Substack/Military Strategy",
           "focus": "Military learning across Ukraine, Middle East, Indo-Pacific. PLA study of Iran War, CENTCOM Hormuz operations.",
           "url": "https://mickryan.substack.com",
@@ -635,7 +680,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Marc Schulman — Tel Aviv Diary",
+          "name": "Marc Schulman \u2014 Tel Aviv Diary",
           "type": "Substack/Israel Security",
           "focus": "Daily diaries: Iran-Hormuz dynamics, Israel-Lebanon ceasefire violations, Hezbollah fiber-optic drone warfare.",
           "url": "https://marcschulman.substack.com",
@@ -700,7 +745,7 @@
         },
         {
           "name": "OSINT 613 (@OSINT_613)",
-          "type": "X/Twitter — OSINT Aggregator",
+          "type": "X/Twitter \u2014 OSINT Aggregator",
           "focus": "Iran war OSINT aggregator: Russian drone shipments to Bandar Anzali, IDF maritime strikes, PRC satellite imagery support to IRGC. 245k followers.",
           "url": "https://x.com/OSINT_613",
           "signal_level": "High",
@@ -708,7 +753,7 @@
         },
         {
           "name": "Aurora Intel (@AuroraIntel)",
-          "type": "X/Twitter — Maritime OSINT",
+          "type": "X/Twitter \u2014 Maritime OSINT",
           "focus": "Live AIS tracking of Iranian oil tankers evading Hormuz post-Kharg spill, Russian Caspian drone convoys. 180k followers.",
           "url": "https://x.com/AuroraIntel",
           "signal_level": "High",
@@ -716,7 +761,7 @@
         },
         {
           "name": "MT Anderson (@MT_Anderson)",
-          "type": "X/Twitter — Maritime Tracker",
+          "type": "X/Twitter \u2014 Maritime Tracker",
           "focus": "Qatar-mediated tanker routes, Chinese satellite firms aiding IRGC strikes, fiber-optic drone shipments. 95k followers.",
           "url": "https://x.com/MT_Anderson",
           "signal_level": "High",
@@ -724,7 +769,7 @@
         },
         {
           "name": "Intel Crab (@IntelCrab)",
-          "type": "X/Twitter — Vessel Forensics",
+          "type": "X/Twitter \u2014 Vessel Forensics",
           "focus": "Russian Starlink-equipped drone shipments, oil spill impact on LNG carriers, sanctioned Chinese imagery. 340k followers.",
           "url": "https://x.com/IntelCrab",
           "signal_level": "High",
@@ -739,7 +784,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Flashpoint Blog — Operation Epic Fury",
+          "name": "Flashpoint Blog \u2014 Operation Epic Fury",
           "type": "Threat Intelligence Blog",
           "focus": "Real-time tracking of US-Israel strikes on Iran: cyber threats, infrastructure hits, proxy responses.",
           "url": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
@@ -771,7 +816,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "France Charles de Gaulle CSG — Hormuz Guardian Force",
+          "name": "France Charles de Gaulle CSG \u2014 Hormuz Guardian Force",
           "type": "Multinational Naval Deployment",
           "focus": "European guardian force for Strait of Hormuz: French carrier group + Italian/Dutch escorts, Franco-British plan for post-conflict escort ops.",
           "url": "https://www.marinelink.com/news/france-deploys-aircraft-carrier-red-sea-538877",
@@ -793,6 +838,99 @@
           "url": "https://hussainabdulhussain.substack.com",
           "signal_level": "Medium-High",
           "discovered": "2026-05-10"
+        }
+      ]
+    },
+    {
+      "note": "Deep Horizon Scan \u2014 2026-05-11 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
+      "sources": [
+        {
+          "name": "Global Geopolitics (globalgeopolitics.co.uk)",
+          "type": "Independent Security Blog",
+          "focus": "US maritime deterrence doctrine, Hormuz chokepoint attrition analysis, multipolar consequences. Destroyer withdrawal under missile pressure, inversions of US maritime supremacy doctrine.",
+          "url": "https://globalgeopolitics.co.uk",
+          "signal_level": "High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Applied Geopolitics (appliedgeopolitics.com)",
+          "type": "Independent Geopolitical Analysis Blog",
+          "focus": "Data-driven global oil disruption analysis: Energy Shock and Global Oil Market Disruption (May 11). Brent 14/bbl, 14.5M bpd offline. Uses Bloomberg, EIA, shipping index data.",
+          "url": "https://appliedgeopolitics.com",
+          "signal_level": "High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Responsible Statecraft (Quincy Institute)",
+          "type": "Think Tank/Foreign Policy",
+          "focus": "Critical analysis of US-Iran war, Hormuz as economic siege, limits of American primacy, Iran three-phase peace framework.",
+          "url": "https://responsiblestatecraft.org",
+          "signal_level": "High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "FFUS Substack (Louis-Vincent Gave / Gavekal Research)",
+          "type": "Substack/Macro Geostrategic",
+          "focus": "New Global Order analysis: Iran war structural implications, US Navy assumption breakdown, AI/China macro. Gavekal premier Hong Kong macro research house.",
+          "url": "https://ffus.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Loose Cannon (loosecannon.substack.com)",
+          "type": "Substack/Maritime Tactical",
+          "focus": "Navigational realities of Hormuz: US inshore southern channel vs Iranian toll route vs mined central channel. Former Navy SEAL/boatbuilder.",
+          "url": "https://loosecannon.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Michael D. Sellers (michaeldsellers.substack.com)",
+          "type": "Substack/Intel Assessment",
+          "focus": "CIA assessment on Iran blockade endurance (90-120 day survival), 75% missile launcher survival rate, blockade-as-endurance-test framework.",
+          "url": "https://michaeldsellers.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Jin Low (jinlow.substack.com)",
+          "type": "Substack/China Energy",
+          "focus": "China energy exposure to Hormuz closure: 45-50% crude imports via Hormuz, land route buffer capacity analysis.",
+          "url": "https://jinlow.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Spatial Intelligence (Bilawal Sidhu)",
+          "type": "Substack/Geospatial OSINT",
+          "focus": "Inside Palantir Maven Smart System: AI fusion for Iran war targeting, Kharg Island March 13 ops, God Eye View OSINT platform.",
+          "url": "https://spatialintelligence.ai",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Middle East Council (mecouncil.org)",
+          "type": "Think Tank",
+          "focus": "Iran War and Emerging Geopolitical Order: multipolarity analysis, supply chain security, semiconductor/digital infrastructure as new security domains.",
+          "url": "https://mecouncil.org",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Moon of Alabama (moonofalabama.org)",
+          "type": "Independent Alternative Blog",
+          "focus": "Alternative geopolitical analysis: Iran war on ground narratives, Project Freedom failure critique. Treat as contrarian perspective; cross-reference with ISW/CTP.",
+          "url": "https://www.moonofalabama.org",
+          "signal_level": "Medium",
+          "discovered": "2026-05-11"
+        },
+        {
+          "name": "Dr. Jennifer Considine (drjennifericonsidine.substack.com)",
+          "type": "Substack/Energy Markets",
+          "focus": "Energy politics and oil market updates, Hormuz disruption market impacts, Brent price analysis.",
+          "url": "https://drjennifericonsidine.substack.com",
+          "signal_level": "Medium",
+          "discovered": "2026-05-11"
         }
       ]
     }

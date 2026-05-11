@@ -39,6 +39,7 @@ export AGENTMAIL_API_KEY="${AGENTMAIL_API_KEY:-}"
 export GENVIRAL_API_KEY="${GENVIRAL_API_KEY:-}"
 export STRIPE_SECRET_KEY="${STRIPE_SECRET_KEY:-}"
 export MOLTBOOK_API_KEY="${MOLTBOOK_API_KEY:-}"
+export BUTTONDOWN_API_KEY="${BUTTONDOWN_API_KEY:-}"
 
 # Check OpenRouter key (primary model provider for writing)
 if [ -z "$OPENROUTER_API_KEY" ]; then
@@ -105,16 +106,26 @@ if [ -z "$PDF_PATH" ]; then
 fi
 echo "PDF found: $PDF_PATH ($(du -h "$PDF_PATH" | cut -f1))" | tee -a "$LOG"
 
-# Step 2b: Generate theatre maps
+# Step 2b: Generate theatre maps (v3 — Natural Earth + GeoJSON overlays)
 MAPS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/maps"
-echo "--- Generating theatre maps ---" | tee -a "$LOG"
-if python3 "$REPO/scripts/generate_brief_maps.py" \
+GEOJSON_DATA="$HOME/trevor-briefings/theatre_geodata.json"
+echo "--- Generating theatre maps (v3 engine) ---" | tee -a "$LOG"
+if python3 "$REPO/scripts/generate_brief_maps_v3.py" \
     --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-    --out-dir "$MAPS_DIR" 2>&1 | tee -a "$LOG"; then
-    echo "Theatre maps generated" | tee -a "$LOG"
+    --out-dir "$MAPS_DIR" \
+    --geojson-data "$GEOJSON_DATA" \
+    --width 1600 --height 1200 --dpi 150 2>&1 | tee -a "$LOG"; then
+    echo "Theatre maps (v3) generated" | tee -a "$LOG"
 else
-    echo "WARNING: Map generation failed (non-fatal)" | tee -a "$LOG"
-    MAPS_DIR=""
+    echo "WARNING: v3 map generation failed, trying v2 fallback" | tee -a "$LOG"
+    if python3 "$REPO/scripts/generate_brief_maps.py" \
+        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
+        --out-dir "$MAPS_DIR" 2>&1 | tee -a "$LOG"; then
+        echo "Theatre maps (v2 fallback) generated" | tee -a "$LOG"
+    else
+        echo "WARNING: All map generation failed (non-fatal)" | tee -a "$LOG"
+        MAPS_DIR=""
+    fi
 fi
 
 # Step 2c: Generate AI imagery for the brief sections (optional enhancement)
@@ -134,6 +145,18 @@ else
     IMAGES_JSON=""
 fi
 
+# Step 2c: Generate charts for magazine PDF
+CHARTS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/charts"
+echo "--- Generating infographic charts ---" | tee -a "$LOG"
+if python3 "$REPO/scripts/generate_brief_charts.py" \
+    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
+    --out-dir "$CHARTS_DIR" 2>&1 | tee -a "$LOG"; then
+    echo "Charts generated" | tee -a "$LOG"
+else
+    echo "WARNING: Chart generation failed (non-fatal)" | tee -a "$LOG"
+    CHARTS_DIR=""
+fi
+
 # Step 2d: Generate magazine-quality PDF with maps + imagery
 MAGAZINE_PDF="$REPO/exports/pdfs/GSIB-${DATE_UTC}.pdf"
 echo "--- Generating magazine-quality PDF ---" | tee -a "$LOG"
@@ -144,6 +167,15 @@ if [ -n "$MAPS_DIR" ] && [ -d "$MAPS_DIR" ]; then
 fi
 if [ -n "$IMAGES_JSON" ] && [ -f "$IMAGES_JSON" ]; then
     RENDER_ARGS="$RENDER_ARGS --images-json $IMAGES_JSON"
+fi
+# Add Kalshi data and charts
+KALSHI_FILE="$REPO/exports/kalshi-scan-${DATE_UTC}.md"
+if [ -f "$KALSHI_FILE" ]; then
+    RENDER_ARGS="$RENDER_ARGS --kalshi-json $KALSHI_FILE"
+fi
+CHARTS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/charts"
+if [ -d "$CHARTS_DIR" ]; then
+    RENDER_ARGS="$RENDER_ARGS --charts-dir $CHARTS_DIR"
 fi
 if [ -f "$VENV_PYTHON" ]; then
     if "$VENV_PYTHON" "$REPO/scripts/render_brief_magazine.py" $RENDER_ARGS 2>&1 | tee -a "$LOG"; then
@@ -283,6 +315,18 @@ if bash "$REPO/scripts/agent-brief-api.sh" --publish 2>&1 | tee -a "$LOG"; then
     echo "Agent API ready" | tee -a "$LOG"
 else
     echo "WARNING: Agent API step failed (non-fatal)" | tee -a "$LOG"
+fi
+
+# Step 7: Publish to Buttondown newsletter
+echo "--- Publishing to Buttondown newsletter ---" | tee -a "$LOG"
+if [ -n "${BUTTONDOWN_API_…:-}" ]; then
+    if python3 "$REPO/scripts/buttondown-publish.py" 2>&1 | tee -a "$LOG"; then
+        echo "Buttondown newsletter published" | tee -a "$LOG"
+    else
+        echo "WARNING: Buttondown publishing failed (non-fatal)" | tee -a "$LOG"
+    fi
+else
+    echo "BUTTONDOWN_API_KEY not set — skipping newsletter" | tee -a "$LOG"
 fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"

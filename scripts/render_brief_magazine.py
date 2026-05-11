@@ -60,19 +60,30 @@ BLUE = "#2c6aa0"
 ORANGE = "#d47500"
 GRAY = "#666666"
 LIGHT_GRAY = "#e0e0e0"
+# Confidence band colors — amber/teal scale (moves away from red=high)
+CONFIDENCE_COLORS = {
+    "almost certain": ("#0f5b7a", "Almost Certain"),
+    "highly likely": ("#2b7f8c", "Highly Likely"),
+    "likely": ("#d4943a", "Likely"),
+    "roughly even odds": ("#7a8a3c", "Even Odds"),
+    "even chance": ("#7a8a3c", "Even Chance"),
+    "unlikely": ("#b36a3a", "Unlikely"),
+    "very unlikely": ("#a0553a", "Very Unlikely"),
+    "almost no chance": ("#888888", "Almost No Chance"),
+}
 BODY = "Georgia, 'Times New Roman', serif"
 HEADER = "'Helvetica Neue', Helvetica, Arial, sans-serif"
 MONO = "'Courier New', Courier, monospace"
 SHEET = "letter"
 
 BANDS_COLORS = {
-    "almost certain": "#1a5276",
-    "highly likely": "#b82e2e",
-    "likely": "#bf8f00",
+    "almost certain": "#0f5b7a",
+    "highly likely": "#2b7f8c",
+    "likely": "#d4943a",
     "roughly even odds": "#7a8a3c",
     "even chance": "#7a8a3c",
-    "unlikely": "#5a7a3a",
-    "very unlikely": "#4a6a2a",
+    "unlikely": "#b36a3a",
+    "very unlikely": "#a0553a",
     "almost no chance": "#888888",
 }
 
@@ -148,14 +159,90 @@ def image_to_base64(url_or_path: str, max_size_kb: int = 800) -> str:
 def safe(s: Any, m: int = 0) -> str:
     if not s:
         return ""
-    s = str(s).replace("\\n", "\n").strip()
+    s = str(s).replace("\\n", " ").strip()
     if m and len(s) > m:
-        return s[:m].rsplit(" ", 1)[0] + "…"
+        truncated = s[:m]
+        sentence_break = truncated.rfind('.')
+        if sentence_break > m * 0.5:
+            return truncated[:sentence_break+1]
+        return truncated.rsplit(' ', 1)[0] + '…'
     return s
 
 def band_display(band: str) -> str:
     """Clean band name for display."""
     return band.strip().title()
+
+
+def clean_ticker_title(slug: str) -> str:
+    """Convert Kalshi ticker slugs like 'KXUSAIRANAGREEMENT' to readable human titles."""
+    import re
+    name = slug[2:] if slug.startswith('KX') else slug
+    PHRASE_MAP = {
+        "RUSSIAUKRAINECEASEFIRE": "Russia-Ukraine Ceasefire",
+        "USAIRANAGREEMENT": "US-Iran Agreement",
+        "USIRANAGREEMENT": "US-Iran Agreement",
+        "USAIRANFRAMEWORK": "US-Iran Framework",
+        "USIRANFRAMEWORK": "US-Iran Framework",
+        "PAHLAVIVISITA": "Pahlavi Iran Visit",
+        "PAHLAVIVISIT": "Pahlavi Iran Visit",
+        "ZELENSKYTRUCE": "Zelensky Truce",
+        "TRUMPCHINAMEETING": "Trump-Xi Meeting",
+        "INDIAUSFOULANGUAGE": "US-India Trade",
+        "INDIAUS.TRADE": "US-India Trade",
+        "ISRAELHEZBOLLAHCEASEFIRE": "Israel-Hezbollah Ceasefire",
+        "REACTOR": "Nuclear Reactor",
+        "WTIMAX": "WTI Crude Max Price",
+        "BRENTMAX": "Brent Crude Max",
+        "GOLDPRICE": "Gold Price",
+        "FEDRATECUT": "Fed Rate Cut",
+        "USRECESSION": "US Recession",
+        "MADUROEXIT": "Maduro Exit",
+        "TAIWANCHINA": "Taiwan-China Relations",
+        "MEXICOTARIFF": "Mexico Tariffs",
+        "ZELENSKYAPPROVAL": "Zelensky Approval",
+        "HORMUZBLOCKADE": "Hormuz Blockade",
+        "OILPRICECAP": "Oil Price Cap",
+        "USCPI": "US CPI Data",
+        "USGDP": "US GDP Growth",
+        "TRUMPIRAN": "Trump Iran Policy",
+        "IRANDEMOCRACY": "Iran Democracy",
+        "IRANEMBASSY": "Iran Embassy",
+        "ELECTIRAN": "Iran Election",
+        "WTI": "WTI Crude",
+    }
+    result = name.upper()
+    # First try exact phrase match (longest first)
+    for phrase, replacement in sorted(PHRASE_MAP.items(), key=lambda x: -len(x[0])):
+        if phrase in result:
+            return replacement
+    # Fallback to word map
+    WORD_MAP = {
+        "US": "US", "IRAN": "Iran", "AGREEMENT": "Agreement",
+        "RUSSIA": "Russia", "UKRAINE": "Ukraine", "CEASEFIRE": "Ceasefire",
+        "WTI": "WTI", "OIL": "Oil", "CRUDE": "Crude", "BRENT": "Brent",
+        "HORMUZ": "Hormuz", "STRAIT": "Strait", "BLOCKADE": "Blockade",
+        "PAHLAVI": "Pahlavi", "VISIT": "Visit", "ZELENSKY": "Zelensky",
+        "CHINA": "China", "TARIFF": "Tariff", "TRUMP": "Trump",
+        "TAIWAN": "Taiwan", "INDIA": "India", "PAKISTAN": "Pakistan",
+        "DEAL": "Deal", "NUCLEAR": "Nuclear", "MADURO": "Maduro",
+        "VENEZUELA": "Venezuela", "MEXICO": "Mexico",
+        "SANCTION": "Sanction", "SANCTIONS": "Sanctions",
+        "ISRAEL": "Israel", "HEZBOLLAH": "Hezbollah", "LEBANON": "Lebanon",
+        "GOLD": "Gold", "PRICE": "Price", "CPI": "CPI",
+        "FED": "Fed", "RATE": "Rate", "CUT": "Cut",
+        "RECESSION": "Recession", "GDP": "GDP", "MAX": "Max",
+        "APPROVAL": "Approval", "TRUCE": "Truce", "FRAMEWORK": "Framework",
+        "EXCHANGE": "Exchange", "MILITARY": "Military",
+    }
+    result = name
+    for key, val in WORD_MAP.items():
+        if key in result.upper():
+            # Case-insensitive replace
+            idx = result.upper().find(key)
+            result = result[:idx] + val + result[idx + len(key):]
+    result = re.sub(r'[^a-zA-Z0-9 ]', ' ', result)
+    result = ' '.join(result.split())
+    return result[:60] if result else slug[:50]
 
 def wrap_paragraphs(text: str, width: int = 500) -> str:
     """Split text into <p> wrapped paragraphs with sub-headings inserted."""
@@ -227,6 +314,9 @@ CSS = f"""
 }}
 * {{ box-sizing: border-box; }}
 body {{ font-family: {BODY}; font-size: 9.5pt; line-height: 1.55; color: #1a1a1a; background: {PAGE_BG}; margin: 0; padding: 0; text-align: justify; hyphens: auto; }}
+/* Fix ghost-text: h1.sec defaults to dark; .sec-header overrides to white */
+h1.sec {{ font-family: {HEADER}; font-size: 14pt; font-weight: 700; color: {DARK2}; margin: 0; }}
+.sec-header h1.sec {{ color: {WHITE}; }}
 p {{ text-align: justify; margin: 0 0 8px 0; }}
 
 /* ═══ COVER ═══ */
@@ -251,7 +341,7 @@ p {{ text-align: justify; margin: 0 0 8px 0; }}
 .cover .meta {{ font-family: {HEADER}; font-size: 6.5pt; letter-spacing: 2px; color: rgba(255,255,255,0.25); text-transform: uppercase; }}
 .cover .meta span {{ margin: 0 8px; }}
 .cover .author-line {{ position: absolute; bottom: 32px; left: 0; right: 0; font-family: {HEADER}; font-size: 5.5pt; letter-spacing: 2px; color: rgba(255,255,255,0.15); text-transform: uppercase; text-align: center; }}
-.cover .distro {{ position: absolute; bottom: 14px; left: 0; right: 0; font-family: {HEADER}; font-size: 5pt; letter-spacing: 1px; color: rgba(255,255,255,0.08); text-align: center; }}
+.cover .distro {{ position: absolute; bottom: 14px; left: 0; right: 0; font-family: {HEADER}; font-size: 5pt; letter-spacing: 1px; color: rgba(255,255,255,0.15); text-align: center; }}
 
 /* ═══ TOC ═══ */
 .toc-p {{ page: toc; page-break-after: always; padding: 0.3in 0 0 0; }}
@@ -272,7 +362,7 @@ p {{ text-align: justify; margin: 0 0 8px 0; }}
 .sec-start {{ page-break-before: always; }}
 .story-group {{ page-break-inside: avoid; }}
 .sec-header {{ background: {NAVY}; color: white; padding: 10px 14px; margin: 0 0 10px 0; border-radius: 2px; }}
-h1.sec {{ font-family: {HEADER}; font-size: 14pt; font-weight: 700; color: {WHITE}; margin: 0; }}
+h1.sec {{ font-family: {HEADER}; font-size: 14pt; font-weight: 700; color: {WHITE}; margin: 0; }} /* overridden by body-level h1.sec default; only white inside .sec-header */
 h2.s-sub {{ font-family: {HEADER}; font-size: 7pt; font-weight: 400; text-transform: uppercase; letter-spacing: 1.2px; color: #999; margin: 0 0 8px 0; }}
 h2.sec-num {{ font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: {GOLD}; margin: 0 0 2px 0; }}
 
@@ -307,14 +397,14 @@ h2.sec-num {{ font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-tran
 .btn-heading {{ font-family: {HEADER}; font-size: 6.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: {DARK2}; margin: 14px 0 5px 0; padding-bottom: 2px; border-bottom: 1px solid #ddd; }}
 .btn-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin: 6px 0; }}
 .btn-item {{ border: 1px solid #e0dcc0; border-radius: 3px; padding: 6px 10px; background: {CREAM2}; }}
-.btn-item .l {{ font-family: {HEADER}; font-size: 5.5pt; text-transform: uppercase; letter-spacing: 1px; color: #999; }}
+.btn-item .l {{ font-family: {HEADER}; font-size: 5.5pt; text-transform: uppercase; letter-spacing: 1px; color: #999; white-space: nowrap; }}
 .btn-item .v {{ font-family: {HEADER}; font-size: 11pt; font-weight: 700; color: {DARK2}; }}
 
 /* ═══ MAP CALLOUT ═══ */
-.map-callout {{ background: #f0eee6; border: 1px solid #e0dcc0; border-radius: 3px; padding: 8px 12px; margin: 10px 0; font-family: {HEADER}; font-size: 7pt; text-transform: uppercase; letter-spacing: 1px; color: #666; text-align: center; }}
+.map-callout {{ background: {DARK2}; border: 1px solid {DARK2}; border-radius: 3px; padding: 8px 12px; margin: 10px 0; font-family: {HEADER}; font-size: 7pt; text-transform: uppercase; letter-spacing: 1px; color: white; text-align: center; }}
 .map-section {{ page-break-inside: avoid; margin: 6px auto; text-align: center; max-width: 6in; }}
 .map-img {{ max-width: 100%; max-height: 3.8in; width: auto; height: auto; border-radius: 3px; border: 1px solid #ddd; }}
-.map-cap {{ font-family: {HEADER}; font-size: 6pt; letter-spacing: 1px; color: #999; margin: 3px 0; }}
+.map-cap {{ font-family: {HEADER}; font-size: 8pt; letter-spacing: 1px; color: #999; margin: 3px 0; }}
 .subhead {{ font-family: {HEADER}; font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: {DARK2}; margin: 16px 0 6px 0; padding-bottom: 1px; border-bottom: 1px solid {GOLD}; }}
 .subhead-sm {{ font-family: {HEADER}; font-size: 7pt; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: {GRAY}; margin: 10px 0 4px 0; }}
 
@@ -329,7 +419,7 @@ h2.sec-num {{ font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-tran
 .mkt-page {{ page-break-before: always; }}
 .mkt-page h1.sec {{ page-break-before: avoid; }}
 .mkt-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0; }}
-.mkt-card {{ border: 1px solid #e0dcc0; border-radius: 4px; overflow: hidden; background: {CREAM}; font-size: 8pt; }}
+.mkt-card {{ border: 1px solid #e0dcc0; border-radius: 4px; overflow: hidden; background: {CREAM}; font-size: 8pt; page-break-inside: avoid; }}
 .mkt-card .mkt-top {{ background: {DARK2}; color: {WHITE}; padding: 7px 10px; display: flex; justify-content: space-between; align-items: center; }}
 .mkt-card .mkt-top .mkt-num {{ font-family: {HEADER}; font-size: 6pt; font-weight: 700; letter-spacing: 1px; }}
 .mkt-card .mkt-top .mkt-action {{ font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-transform: uppercase; padding: 1px 6px; border-radius: 2px; }}
@@ -357,14 +447,22 @@ h2.sec-num {{ font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-tran
 .meth-box {{ background: {CREAM}; border-radius: 3px; padding: 8px 12px; margin: 6px 0; font-size: 7.5pt; line-height: 1.45; }}
 
 /* ═══ EXFIL ═══ */
-.exfil-page {{ page: exfil; page-break-before: always; text-align: center; padding-top: 1.5in; }}
+.exfil-page {{ page: exfil; page-break-before: always; text-align: center; padding-top: 1.2in; }}
 .exfil-page h1 {{ font-family: {HEADER}; font-size: 24pt; font-weight: 800; letter-spacing: 6px; text-transform: uppercase; color: {DARK2}; margin-bottom: 6px; }}
+.exfil-page .exfil-clas {{ font-family: {HEADER}; font-size: 5.5pt; letter-spacing: 1px; text-transform: uppercase; color: #bbb; text-align: center; padding-top: 6px; border-top: 1px solid #eee; margin-top: 16px; }}
 .exfil-page .exfil-sub {{ font-family: {HEADER}; font-size: 7pt; letter-spacing: 3px; text-transform: uppercase; color: {GOLD}; margin-bottom: 24px; }}
 .exfil-grid {{ max-width: 400px; margin: 0 auto; text-align: left; }}
 .exfil-item {{ border-left: 3px solid {GOLD}; padding: 8px 12px; margin: 6px 0; font-size: 8.5pt; line-height: 1.4; background: {CREAM}; }}
 
 /* ═══ FOOTER DIVIDER ═══ */
 .ftr {{ font-family: {HEADER}; font-size: 5pt; letter-spacing: 1px; text-transform: uppercase; color: #bbb; text-align: center; padding-top: 6px; border-top: 1px solid #eee; margin-top: 12px; }}
+
+/* ═══ MAP LEGEND ═══ */
+.map-legend {{ background: rgba(255,255,255,0.85); border: 1px solid #ddd; border-radius: 3px; padding: 5px 14px; margin: 4px auto; max-width: 100%; font-family: {HEADER}; font-size: 6pt; display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: center; }}
+.map-legend .leg-item {{ display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }}
+.map-legend .leg-dot {{ width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex-shrink: 0; }}
+.map-legend .leg-line {{ width: 14px; height: 2px; display: inline-block; flex-shrink: 0; }}
+.map-legend .leg-label {{ color: #555; letter-spacing: 0.3px; font-size: 6pt; }}
 """
 
 
@@ -432,7 +530,7 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
             <div class="meta"><span>ISSUE {issue_short}</span> · <span>{len(theatres)} THEATRES</span> · <span>OPEN-SOURCE ASSESSMENT</span></div>
         </div>
         <div class="author-line">TREVOR · Threat Research and Evaluation Virtual Operations Resource</div>
-        <div class="distro">UNRESTRICTED ▷ CLASSIFICATION: NONE</div>
+        <div class="distro">UNCLASSIFIED // FOR OFFICIAL USE ONLY</div>
     </div>
     """
 
@@ -520,6 +618,7 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         <div class="toc-issue">ISSUE {issue_short} / {ds}</div>
         <h2>Contents</h2>
         {toc_rows}
+        <div class="ftr">UNCLASSIFIED // FOR OFFICIAL USE ONLY — TREVOR DAILY INTELLIGENCE — ISSUE {issue_short}</div>
     </div>
     """
 
@@ -551,9 +650,11 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         theatre_section_titles[r] = t.get("section_title", "")
 
     exec_sec = f"""
-    <h2 class="sec-num">—</h2>
+    <div class="sec-header">
+    <h2 class="sec-num" style="color: {GOLD}; margin: 0 0 2px 0; font-family: {HEADER}; font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;">— / SUMMARY</h2>
     <h1 class="sec">Executive Summary</h1>
-    <h2 class="s-sub">{ds} — {dow}</h2>
+    <h2 class="s-sub" style="color: rgba(255,255,255,0.5); font-family: {HEADER}; font-size: 7pt; font-weight: 400; text-transform: uppercase; letter-spacing: 1.2px; margin: 0;">{ds} — {dow}</h2>
+    </div>
     <div class="bluf"><div class="lbl">▸ Bottom Line Up Front</div><p>{bluf}</p></div>
     <div class="narr"><p>{ctx}</p></div>
     <div class="kj-heading">Key Judgments — 7-Day Horizon</div>
@@ -630,9 +731,11 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         # BY THE NUMBERS — use rich data from analysis if available, or fall back to metrics
         btn_items = ""
         btd = t.get("by_the_numbers", [])
+        btn_labels = ["Key Metric", "Strategic Indicator", "Operational Data", "Trend Signal"]
         if btd and len(btd) >= 2:
-            for point in btd[:4]:
-                btn_items += f'<div class="btn-item"><div class="l">Data Point</div><div class="v">{safe(point, 80)}</div></div>'
+            for i, point in enumerate(btd[:4]):
+                label = btn_labels[i] if i < len(btn_labels) else "Data Point"
+                btn_items += f'<div class="btn-item"><div class="l">{label}</div><div class="v">{safe(point, 160)}</div></div>'
         inc_count = t.get("incident_count", 0)
         kj_count = len(kjs)
         max_pct = max((kj.get("prediction_pct", 0) for kj in kjs), default=0)
@@ -641,7 +744,7 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         btn_items += f'<div class="btn-item"><div class="l">Max Confidence</div><div class="v">{max_pct}%</div></div>'
         btn_items += f'<div class="btn-item"><div class="l">Horizon</div><div class="v">7 Days</div></div>'
         btn_html = f"""
-        <div class="btn-heading">▷ By the Numbers — Key data points underpinning this assessment</div>
+        <div class="btn-heading">▷ Key Indicators</div>
         <div class="btn-grid">{btn_items}</div>
         """ if btn_items else ""
 
@@ -688,7 +791,15 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
                 b64 = base64.b64encode(raw).decode()
                 theatre_map_html = f'<img class="map-img" src="data:image/png;base64,{b64}" alt="Map of {label_full}">'
                 theatre_map_cap = f'<div class="map-cap">🗺 Theatre Map — {sec_header} — {ds}</div>'
-        theatre_map_section = f'<div class="map-section">{theatre_map_html}{theatre_map_cap}</div>' if theatre_map_html else map_callout_html
+        # Map legend — colour-coded pin types, aligns with theatre geography
+        map_legend_html = f"""
+        <div class="map-legend">
+            <div class="leg-item"><span class="leg-dot" style="background:{RED};"></span><span class="leg-label">Conflict Zone / Active</span></div>
+            <div class="leg-item"><span class="leg-dot" style="background:{ORANGE};"></span><span class="leg-label">Strategic Interest</span></div>
+            <div class="leg-item"><span class="leg-dot" style="background:{BLUE};"></span><span class="leg-label">Capital / Key City</span></div>
+            <div class="leg-item"><span class="leg-line" style="background:{RED};"></span><span class="leg-label">Route / Vector</span></div>
+        </div>"""
+        theatre_map_section = f'<div class="map-section">{theatre_map_html}{theatre_map_cap}{map_legend_html}</div>' if theatre_map_html else map_callout_html
 
         tsecs += f"""
         <div class="sec-start">
@@ -800,9 +911,11 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
 
     mkt = f"""
     <div class="mkt-page">
-        <h2 class="sec-num">{(sec_num-2):02d}</h2>
+        <div class="sec-header">
+        <h2 class="sec-num" style="color: {GOLD};">{(sec_num-2):02d} / MARKETS</h2>
         <h1 class="sec">💹 Prediction Markets</h1>
-        <h2 class="s-sub">{ds} — High-Conviction Trades</h2>
+        <h2 class="s-sub" style="color: rgba(255,255,255,0.5);">{ds} — High-Conviction Trades</h2>
+        </div>
         <p style="font-size:8pt;color:#666;margin:0 0 8px;">Active positions tracked across Polymarket and Kalshi. Prices as of market close. Edge calculations reflect gap between market price and assessed fair value. All markets carry binary resolution risk.</p>
         <div class="mkt-grid">{mkt_cards}</div>
         {mkt_read}
@@ -829,9 +942,11 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         chart_rows = "\n".join(rows)
         infographics_html = f"""
         <div class="mkt-page">
-            <h2 class="sec-num">{(sec_num-2):02d} / DATA</h2>
+            <div class="sec-header">
+            <h2 class="sec-num" style="color: {GOLD};">{(sec_num-2):02d} / DATA</h2>
             <h1 class="sec">📊 Data Visualizations</h1>
-            <h2 class="s-sub">{ds} — Analytical Infographics</h2>
+            <h2 class="s-sub" style="color: rgba(255,255,255,0.5);">{ds} — Analytical Infographics</h2>
+            </div>
             {chart_rows}
             <div class="ftr">UNCLASSIFIED // FOR OFFICIAL USE ONLY — TREVOR DAILY INTELLIGENCE — ISSUE {issue_short}</div>
         </div>
@@ -854,9 +969,11 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
     """
     meth = f"""
     <div class="meth-page">
-        <h2 class="sec-num">{(sec_num-1):02d} / METHOD</h2>
+        <div class="sec-header">
+        <h2 class="sec-num" style="color: {GOLD};">{(sec_num-1):02d} / METHOD</h2>
         <h1 class="sec">⚙ Methodology</h1>
-        <h2 class="s-sub">Estimative Language &amp; Sourcing</h2>
+        <h2 class="s-sub" style="color: rgba(255,255,255,0.5);">Estimative Language &amp; Sourcing</h2>
+        </div>
         <p style="font-size:8pt;color:#444;line-height:1.45;">All probability statements follow Sherman Kent conventions for estimative intelligence. The percentage ranges next to each judgment are not predictions of certainty; they signal the analyst's confidence band, calibrated to the consilience of independent reporting.</p>
         {meth_table}
         <h3 style="font-family:{HEADER};font-size:7pt;text-transform:uppercase;letter-spacing:1px;margin:14px 0 4px;color:{DARK2};">Source Grading</h3>
@@ -887,8 +1004,8 @@ def build_html(data: dict, images: dict | None = None, maps_dir: str | None = No
         <div class="exfil-grid">
             {exfil_items}
         </div>
-        <p style="margin-top:24px;font-family:{HEADER};font-size:6pt;letter-spacing:1px;color:#999;">TREVOR — Threat Research and Evaluation Virtual Operations Resource<br>
-        Distribution: Unrestricted ▷ Classification: None</p>
+        <div class="exfil-clas">UNCLASSIFIED // FOR OFFICIAL USE ONLY — TREVOR DAILY INTELLIGENCE — ISSUE {issue_short}</div>
+        <p style="margin-top:12px;font-family:{HEADER};font-size:6pt;letter-spacing:1px;color:#999;">TREVOR — Threat Research and Evaluation Virtual Operations Resource</p>
     </div>
     """
 
@@ -971,7 +1088,7 @@ def main() -> None:
                         mid_price = (yes_bid + yes_ask) / 2
                         trades.append({
                             'id': parts[0],
-                            'title': parts[0][2:].replace('_',' ').title()[:50],
+                            'title': clean_ticker_title(parts[0])[:50],
                             'price': f'YES ${yes_bid:.2f}',
                             'price_display': f'${mid_price:.2f}',
                             'region': 'MIDDLE EAST' if 'IRAN' in parts[0] or 'HORMUZ' in parts[0] else
@@ -982,6 +1099,7 @@ def main() -> None:
                                      'GLOBAL',
                             'yes_pct': int(yes_bid * 100),
                             'volume': volume_int,
+                            'expiry': parts[7] if len(parts) > 7 else '',
                             'action': 'BUY' if mid_price < 0.3 else 'SELL' if mid_price > 0.7 else 'HOLD'
                         })
                     except (ValueError, IndexError):
@@ -1011,10 +1129,11 @@ def main() -> None:
             mapped_trades.append({
                 'id': f"{i+1:02d}",
                 'title': mt.get('title', f"Market {mt.get('id','?')}"),
+                'expiry': mt.get('expiry', ''),
                 'price': f"{'YES' if bid < 50 else 'NO'} @ {mt.get('price_display','?')}" if mt.get('price_display') else f"{'YES' if bid < 50 else 'NO'} ${bid}¢",
                 'region': f"{mt.get('region','GLOBAL')} - Kalshi",
-                'edge': f"Volume ${mt.get('volume',0):,} / {bid}% YES",
-                'analysis': f"Kalshi series {mt.get('id','?')}. Bid-ask spread tracked.",
+                'edge': f"{'Volume ${:,}'.format(mt.get('volume',0)) + f' / {bid}% YES' if mt.get('volume',0) > 0 else f'{bid}% YES'}",
+                'analysis': f"Expires {mt.get('expiry', '?')}. Bid-ask spread tracked.",
                 'action': action,
             })
         data['prediction_market_trades'] = mapped_trades

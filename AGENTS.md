@@ -110,6 +110,9 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When a user asks to add a capability like email, check existing OpenClaw/local skills and bundled integrations early before building custom scaffolding.
 - For Trevor email, prefer the official AgentMail skill over Gmail unless the user specifically needs Gmail.
 - When a platform-specific integration is already available and eligible, implement that path first.
+- **Fixes to Python scripts are not automatically deployed.** The cron pipeline (`daily-brief-cron.sh`) is the delivery mechanism — update THAT after changing renderer/map/chart scripts.
+- **Delivery pipeline != test pipeline.** Manual `python3 script.py --args` runs bypass the cron system entirely. Verify the cron's actual script paths and argument list before assuming fixes will ship.
+- **Cron schedule is source of truth for delivery times.** Don't manually send things early — it breaks the user's expectations.
 
 ## Red Lines
 

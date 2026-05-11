@@ -88,6 +88,14 @@
     "graph-analysis": {
       "version": "1.0.0",
       "installedAt": 1778403754015
+    },
+    "threat-intel-aggregator": {
+      "version": "1.0.0",
+      "installedAt": 1778490098445
+    },
+    "geopolitics-expert": {
+      "version": "1.0.0",
+      "installedAt": 1778490116147
     }
   }
 }

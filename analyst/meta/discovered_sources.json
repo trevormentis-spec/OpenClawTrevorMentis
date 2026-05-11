@@ -118,5 +118,35 @@
     "url": "https://indianexpress.com/article/upsc-current-affairs/upsc-essentials/iran-war-lessons-from-past-oil-shocks-india-can-use-10642011/",
     "signal_level": "Medium",
     "discovered": "2026-05-07"
+  },
+  {
+    "name": "Forbes",
+    "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/05/07/beyond-bank-runs-the-occ-warns-of-a-more-complex-financial-threat/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-11"
+  },
+  {
+    "name": "Ing.dk",
+    "url": "https://ing.dk/artikel/energy-sector-warned-not-let-its-guard-down-threat-still-here",
+    "signal_level": "Medium",
+    "discovered": "2026-05-11"
+  },
+  {
+    "name": "We Live Security",
+    "url": "https://www.welivesecurity.com/en/business-security/supply-chain-dependencies-have-you-checked-your-blind-spot/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-11"
+  },
+  {
+    "name": "Forbes",
+    "url": "https://www.forbes.com/sites/rahkimsabree/2026/05/08/retail-investors-are-doubling-down-and-fear-may-be-driving-the-rally/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-11"
+  },
+  {
+    "name": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-04-22-inspectors-iran-uranium-stockpile-fuel-multiple-weapons.html",
+    "signal_level": "Medium",
+    "discovered": "2026-05-11"
   }
 ]

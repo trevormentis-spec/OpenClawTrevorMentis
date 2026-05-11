@@ -39,3 +39,10 @@
   Must use 8192+ for call_deepseek() to return substantive analysis.
   See `analyst/pipeline/analyze.py` for the fix.
 - Social posting generates original visuals via GenViral Studio AI from the daily intel brief analysis in `tasks/news_analysis.md`.
+- [2026-05-11] **Pipeline integration is separate from script fixes.** The cron pipeline
+  (`daily-brief-cron.sh`) calls scripts with its OWN argument structure at 05:00 PT daily.
+  Manual test runs do not affect automated delivery. After changing render/map/chart scripts,
+  ALSO update the pipeline shell script to pass the new flags.
+- [2026-05-11] **Delivery schedule:** GSIB arrives ~07:00 PT. 4 Daily Briefings arrive at
+  08:00 PT. Cron IDs: GSIB = 250765ae-d951-490c-b3d0-109fca300053, 4 Briefings =
+  9ee44803-223c-45cc-ad59-f404919bd5f9.
