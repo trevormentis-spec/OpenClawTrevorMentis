@@ -38,6 +38,8 @@ than stack on every fire.
       `memory/YYYY-MM-DD.md`. Anything worth promoting to `MEMORY.md`?
       Anything to demote/remove? Use `brain.py promote <key>` for
       structured promotions.
+- [ ] **Nudge check** — run `python3 scripts/nudge_check.py`. If it
+      returns nudges, address them (create skill, update memory, etc.).
 - [ ] **Repo state** — uncommitted Trevor work? If yes, commit and push
       to GitHub backup.
 - [ ] **Brain index freshness** — if `brain/index/index.json` is older
