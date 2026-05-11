@@ -77,14 +77,46 @@ def run_script(name, args=None, timeout=300):
 # ─── PIPELINE STEPS ──────────────────────────────────────
 
 def step_quality_audit():
-    """Quality audit + auto-fix loop."""
-    log("┌─ Quality Audit")
+    """Quality audit with auto-repair loop."""
+    log.info("Starting quality audit")
     ok, msg = run_script('quality_audit.py', timeout=60)
-    if not ok:
-        log("  Attempting auto-fix...")
-        run_script('quality_audit.py', ['--auto-fix'], timeout=180)
+    
+    # If issues found, try auto-repair (quality_audit.py --auto-fix is now built in)
+    # The new quality_audit.py repairs inline — check state for any criticals
+    if STATE_FILE.exists():
+        try:
+            state = json.loads(STATE_FILE.read_text())
+            if state.get("health", {}).get("critical", 0) > 0:
+                log.warning(f"Critical issues remain after audit", critical=state['health']['critical'])
+                # Log to improvement tracker
+                improvement_log = CRON_DIR / 'improvement_log.json'
+                if improvement_log.exists():
+                    imp = json.loads(improvement_log.read_text())
+                    imp.setdefault("known_failures", {})
+                    for issue in state["health"].get("issues", []):
+                        if issue.get("severity") == "critical" and issue.get("type"):
+                            imp["known_failures"][issue["type"]] = imp["known_failures"].get(issue["type"], 0) + 1
+                    improvement_log.write_text(json.dumps(imp, indent=2))
+        except Exception:
+            pass
+    
     # Briefometer measurement
     run_script('briefometer.py', timeout=30)
+    return ok
+
+
+def step_story_tracking():
+    """Story tracking — detect stale narratives."""
+    log.info("Checking narrative freshness")
+    run_script('story_tracker.py', ['--save'], timeout=15)
+    ok, msg = run_script('story_tracker.py', ['--diff'], timeout=15)
+    return ok
+
+
+def step_memory_index():
+    """Index assessments into FTS5 memory store."""
+    log.info("Indexing memory")
+    ok, msg = run_script(str(SKILL_ROOT / 'memory' / 'index_memory.py'), timeout=30)
     return ok
 
 

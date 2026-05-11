@@ -1,417 +1,333 @@
 #!/usr/bin/env python3
-"""Quality audit + continuous improvement system for the daily intel pipeline.
+"""quality_audit.py — Active quality assurance + auto-repair for the daily intel pipeline.
 
-Checks all outputs, logs issues, attempts auto-fixes, and maintains
-an improvement log so the pipeline gets better over time.
+NOT a passive logger. Every detected issue triggers either:
+  - an automatic repair
+  - an escalation (puts failure in state.json for improvement_daemon)
+  - a deferral (notes it for the next pipeline run)
 
 Usage:
-  python3 quality_audit.py              # full audit + report
-  python3 quality_audit.py --auto-fix   # attempt fixes for known issues
-  python3 quality_audit.py --fix-list   # show known fixable issues
+  python3 quality_audit.py              # full audit + auto-repair
+  python3 quality_audit.py --check      # audit only, no repair
+  python3 quality_audit.py --status     # show health summary
 """
-import os, sys, json, datetime, hashlib
+from __future__ import annotations
+
+import datetime
+import json
+import os
+import subprocess
+import sys
 from pathlib import Path
 
 SKILL_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(SKILL_ROOT))
+
+from trevor_config import THEATRE_KEYS as THEATRES, WORKSPACE, EXPORTS_DIR
+from trevor_log import get_logger, HealthReport
+
+log = get_logger("quality_audit")
+
 IMAGES_DIR = SKILL_ROOT / 'images'
 MAPS_DIR = SKILL_ROOT / 'maps'
-INFO_DIR = SKILL_ROOT / 'infographics'
+ASSESS_DIR = SKILL_ROOT / 'assessments'
 SCRIPTS_DIR = SKILL_ROOT / 'scripts'
-EXPORTS_DIR = Path.home() / '.openclaw' / 'workspace' / 'exports' / 'pdfs'
+CRON_DIR = SKILL_ROOT / 'cron_tracking'
 
-IMPROVEMENT_LOG = SKILL_ROOT / 'cron_tracking' / 'improvement_log.json'
-STATE_FILE = SKILL_ROOT / 'cron_tracking' / 'state.json'
+STATE_FILE = CRON_DIR / 'state.json'
+IMPROVEMENT_LOG = CRON_DIR / 'improvement_log.json'
 
-from trevor_config import THEATRE_KEYS as THEATRES
-
-# ═══════════════════════════════════════════════════════════
-# QUALITY THRESHOLDS
-# ═══════════════════════════════════════════════════════════
-
-THRESHOLDS = {
-    "photo": {
-        "min_kb": 50,
-        "ideal_kb": 100,
-        "min_width": 1500,
-        "min_height": 1000,
-        "ideal_width": 2000,
-    },
-    "map": {
-        "min_kb": 25,
-        "ideal_kb": 60,
-        "min_width": 800,
-        "min_height": 500,
-        "ideal_width": 1200,
-    },
-    "infographic": {
-        "min_kb": 15,
-        "ideal_kb": 25,
-        "min_width": 800,
-        "min_height": 500,
-        "ideal_width": 1200,
-    },
-    "pdf": {
-        "min_kb": 500,
-        "min_pages": 20,
-        "max_pages": 50,
-        "min_images": 18,
-    },
-}
+# ── Repair registry: issue_type → repair action ──
+REPAIR_REGISTRY = {}
 
 
-# ═══════════════════════════════════════════════════════════
-# AUDIT FUNCTIONS
-# ═══════════════════════════════════════════════════════════
+def register_repair(issue_type: str):
+    """Decorator to register a repair function."""
+    def wrapper(fn):
+        REPAIR_REGISTRY[issue_type] = fn
+        return fn
+    return wrapper
 
-def audit_image(path, category, date_str):
-    """Audit a single image and return (score, issues)."""
-    issues = []
-    score = 0
-    
-    if not path.exists():
-        issues.append("MISSING")
-        return 0, issues
-    
-    size_kb = os.path.getsize(path) // 1024
+
+# ═══════════════════════════════════════════════════
+# REPAIR FUNCTIONS
+# ═══════════════════════════════════════════════════
+
+@register_repair("missing_assessment")
+def repair_missing_assessment(region: str) -> bool:
+    """Regenerate a missing assessment by running the generator for one theatre."""
+    log.info(f"Repairing missing assessment: {region}")
     try:
-        from PIL import Image
-        img = Image.open(path)
-        w, h = img.size
-    except Exception as e:
-        issues.append(f"CORRUPT: {e}")
-        return 10, issues
-
-    t = THRESHOLDS.get(category, {})
-    
-    # Size check
-    if size_kb < t.get("min_kb", 10):
-        issues.append(f"TOO_SMALL({size_kb}KB < {t['min_kb']}KB)")
-    elif size_kb >= t.get("ideal_kb", 100):
-        score += 3
-        issues.append(f"GOOD_SIZE({size_kb}KB)")
-    else:
-        score += 1
-        issues.append(f"ADEQUATE({size_kb}KB)")
-    
-    # Resolution check
-    if w < t.get("min_width", 800):
-        issues.append(f"LOW_RES({w}x{h})")
-    elif w >= t.get("ideal_width", 2000):
-        score += 2
-    else:
-        score += 1
-    
-    # Name check — file name should contain date
-    if date_str in path.name:
-        score += 1
-    else:
-        issues.append(f"STALE_DATE(has {path.name.split('_')[0]})")
-    
-    return score, issues
-
-
-def audit_pdf(date_str):
-    """Audit the final PDF."""
-    issues = []
-    score = 0
-    
-    pdf_paths = sorted(EXPORTS_DIR.glob(f"*{date_str}*.pdf"))
-    if not pdf_paths:
-        pdf_paths = sorted(SKILL_ROOT.glob(f"security_brief_{date_str}.pdf"))
-    if not pdf_paths:
-        pdf_paths = sorted(SKILL_ROOT.glob(f"security_brief_*.pdf"))
-    
-    if not pdf_paths:
-        return 0, ["PDF_MISSING"]
-    
-    pdf_path = pdf_paths[-1]
-    size_kb = os.path.getsize(pdf_path) // 1024
-    
-    if size_kb < THRESHOLDS["pdf"]["min_kb"]:
-        issues.append(f"PDF_TOO_SMALL({size_kb}KB)")
-    else:
-        score += 2
-        issues.append(f"PDF_SIZE({size_kb}KB)")
-    
-    # Count embedded images
-    try:
-        import subprocess
-        result = subprocess.run(['pdfimages', '-list', str(pdf_path)],
-                               capture_output=True, text=True, timeout=10)
-        img_count = len([l for l in result.stdout.split('\n') if l.strip()]) - 2
-        if img_count >= THRESHOLDS["pdf"]["min_images"]:
-            score += 2
-            issues.append(f"IMAGES({img_count})")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS_DIR / 'generate_assessments.py')],
+            capture_output=True, text=True, timeout=300
+        )
+        if result.returncode == 0:
+            log.info(f"Assessment regenerated for {region}")
+            return True
         else:
-            issues.append(f"FEW_IMAGES({img_count})")
-    except:
-        issues.append("PDF_CHECK_FAILED")
-    
-    return score, issues
+            log.error(f"Failed to regenerate {region}: {result.stderr[-200:]}")
+            return False
+    except subprocess.TimeoutExpired:
+        log.error(f"Timeout regenerating {region}")
+        return False
 
 
-def run_audit(date_str=None):
-    """Run full audit on all outputs."""
-    if date_str is None:
-        date_str = datetime.date.today().isoformat()
-    
+@register_repair("missing_image")
+def repair_missing_image() -> bool:
+    """Regenerate all images by running refresh_imagery."""
+    log.info("Repairing missing images")
+    try:
+        result = subprocess.run(
+            [sys.executable, str(SCRIPTS_DIR / 'refresh_imagery.py')],
+            capture_output=True, text=True, timeout=180
+        )
+        if result.returncode == 0:
+            log.info("Images regenerated")
+            return True
+        else:
+            log.error(f"Image regeneration failed: {result.stderr[-200:]}")
+            return False
+    except subprocess.TimeoutExpired:
+        log.error("Timeout regenerating images")
+        return False
+
+
+@register_repair("stale_memory")
+def repair_stale_memory() -> bool:
+    """Re-index assessments into FTS5 memory store."""
+    log.info("Repairing stale memory index")
+    try:
+        result = subprocess.run(
+            [sys.executable, str(SKILL_ROOT / 'memory' / 'index_memory.py')],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0:
+            log.info("Memory re-indexed")
+            return True
+        else:
+            log.error(f"Memory re-index failed: {result.stderr[-200:]}")
+            return False
+    except subprocess.TimeoutExpired:
+        log.error("Timeout re-indexing memory")
+        return False
+
+
+@register_repair("stale_kalshi")
+def repair_stale_kalshi() -> bool:
+    """Re-run the Kalshi scanner."""
+    log.info("Repairing stale Kalshi data")
+    scanner = WORKSPACE / 'scripts' / 'kalshi_scanner.py'
+    if not scanner.exists():
+        log.warning(f"Kalshi scanner not found at {scanner}")
+        return False
+    try:
+        result = subprocess.run(
+            [sys.executable, str(scanner), '--save'],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0:
+            log.info("Kalshi data refreshed")
+            return True
+        else:
+            log.error(f"Kalshi scan failed: {result.stderr[-200:]}")
+            return False
+    except subprocess.TimeoutExpired:
+        log.error("Timeout scanning Kalshi")
+        return False
+
+
+@register_repair("missing_font")
+def repair_missing_font() -> bool:
+    """Attempt to download missing fonts."""
+    log.info("Repairing missing fonts")
+    try:
+        sys.path.insert(0, str(SKILL_ROOT))
+        from trevor_fonts import ensure_fonts_downloaded
+        ok = ensure_fonts_downloaded()
+        if ok:
+            log.info("Fonts downloaded")
+        else:
+            log.warning("Some fonts could not be downloaded")
+        return ok
+    except Exception as e:
+        log.error(f"Font repair failed: {e}")
+        return False
+
+
+# ═══════════════════════════════════════════════════
+# AUDIT FUNCTIONS
+# ═══════════════════════════════════════════════════
+
+def check_assessments() -> list[dict]:
+    """Check all theatre assessments exist and have content."""
+    issues = []
+    for region in THEATRES:
+        path = ASSESS_DIR / f"{region}.md"
+        if not path.exists():
+            issues.append({
+                "type": "missing_assessment",
+                "severity": "critical",
+                "region": region,
+                "detail": f"Assessment missing for {region}",
+            })
+        elif path.stat().st_size < 100:
+            issues.append({
+                "type": "stale_assessment",
+                "severity": "warning",
+                "region": region,
+                "detail": f"Assessment for {region} is only {path.stat().st_size} bytes",
+            })
+    return issues
+
+
+def check_fonts() -> list[dict]:
+    """Check fonts are available, attempt auto-download if missing."""
+    issues = []
+    required_fonts = ["BebasNeue-Regular.ttf", "Inter-Regular.ttf", "Inter-Light.ttf",
+                      "Inter-Bold.ttf", "JetBrainsMono-Regular.ttf", "JetBrainsMono-Bold.ttf"]
+    fonts_dir = SKILL_ROOT / 'fonts'
+    for font in required_fonts:
+        if not (fonts_dir / font).exists():
+            issues.append({
+                "type": "missing_font",
+                "severity": "warning",
+                "detail": f"Font {font} missing",
+            })
+    return issues
+
+
+def check_memory() -> list[dict]:
+    """Check FTS5 memory store is healthy."""
+    issues = []
+    try:
+        from trevor_memory import MemoryStore
+        mem = MemoryStore()
+        count = mem.count("narrative")
+        if count < 3:
+            issues.append({
+                "type": "stale_memory",
+                "severity": "warning",
+                "detail": f"Only {count} narrative entries in memory (expected 7+)",
+            })
+        mem.close()
+    except Exception as e:
+        issues.append({
+            "type": "memory_error",
+            "severity": "critical",
+            "detail": str(e),
+        })
+    return issues
+
+
+# ═══════════════════════════════════════════════════
+# MAIN LOOP
+# ═══════════════════════════════════════════════════
+
+def run_auto_fix(issues: list[dict]) -> dict:
+    """Attempt repairs for all fixable issues. Returns repair results."""
     results = {
-        "date": date_str,
-        "timestamp": datetime.datetime.now().isoformat(),
-        "theatres": {},
-        "pdf": {},
-        "overall_score": 0,
-        "total_issues": 0,
+        "attempted": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "deferred": 0,
+        "details": [],
     }
     
-    for theatre_idx, theatre in enumerate(THEATRES, 1):
-        scores = {"photo": 0, "map": 0, "infographic": 0}
-        issues = {"photo": [], "map": [], "infographic": []}
-        
-        for category, directory in [
-            ("photo", IMAGES_DIR), ("map", MAPS_DIR), ("infographic", INFO_DIR)
-        ]:
-            if category == "photo":
-                path = directory / f"{date_str}_{theatre}.jpg"
-            else:
-                path = directory / f"{theatre_idx:02d}_{theatre}.png"
-            
-            s, iss = audit_image(path, category, date_str)
-            scores[category] = s
-            issues[category] = iss
-        
-        theatre_score = sum(scores.values())
-        theatre_issues = sum(len(v) for v in issues.values())
-        
-        results["theatres"][theatre] = {
-            "score": theatre_score,
-            "issues": theatre_issues,
-            "details": issues,
-        }
-        results["overall_score"] += theatre_score
-        results["total_issues"] += theatre_issues
-    
-    # PDF audit
-    pdf_score, pdf_issues = audit_pdf(date_str)
-    results["pdf"] = {"score": pdf_score, "issues": pdf_issues}
-    results["overall_score"] += pdf_score
-    results["total_issues"] += len(pdf_issues) if isinstance(pdf_issues, list) else 1
+    for issue in issues:
+        issue_type = issue.get("type", "")
+        if issue_type in REPAIR_REGISTRY:
+            repair_fn = REPAIR_REGISTRY[issue_type]
+            log.info(f"Attempting repair for {issue_type}", region=issue.get("region", ""))
+            results["attempted"] += 1
+            try:
+                success = repair_fn(**{k: v for k, v in issue.items() if k in ("region",)})
+                if success:
+                    results["succeeded"] += 1
+                    results["details"].append({"issue": issue_type, "status": "fixed"})
+                else:
+                    results["failed"] += 1
+                    results["details"].append({"issue": issue_type, "status": "failed"})
+            except Exception as e:
+                results["failed"] += 1
+                results["details"].append({"issue": issue_type, "status": "error", "detail": str(e)})
+        else:
+            results["deferred"] += 1
+            results["details"].append({"issue": issue_type, "status": "deferred"})
     
     return results
 
 
-# ═══════════════════════════════════════════════════════════
-# IMPROVEMENT TRACKING
-# ═══════════════════════════════════════════════════════════
-
-def load_improvement_log():
-    """Load the improvement tracking log."""
-    if IMPROVEMENT_LOG.exists():
-        return json.loads(IMPROVEMENT_LOG.read_text())
-    return {
-        "first_run": datetime.datetime.now().isoformat(),
-        "runs": [],
-        "fix_history": {},
-        "known_failures": {},
-        "score_trend": [],
+def save_state(health: dict, repairs: dict):
+    """Persist health state for the improvement daemon."""
+    state = {
+        "timestamp": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "health": health,
+        "repairs": repairs,
+        "overall_status": "healthy" if health["issue_count"] == 0 else "degraded" if all(r["status"] != "failed" for r in repairs["details"]) else "broken",
     }
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATE_FILE.write_text(json.dumps(state, indent=2))
 
-
-def save_improvement_log(log):
-    """Save the improvement tracking log."""
-    IMPROVEMENT_LOG.parent.mkdir(parents=True, exist_ok=True)
-    IMPROVEMENT_LOG.write_text(json.dumps(log, indent=2))
-
-
-def update_trend(results, log):
-    """Record audit results in the improvement trend."""
-    entry = {
-        "date": results["date"],
-        "score": results["overall_score"],
-        "issues": results["total_issues"],
-        "pdf_score": results["pdf"]["score"],
-    }
-    log["runs"].append(entry)
-    log["score_trend"].append({
-        "date": results["date"],
-        "score": results["overall_score"],
-    })
-    save_improvement_log(log)
-
-
-# ═══════════════════════════════════════════════════════════
-# REPORTING
-# ═══════════════════════════════════════════════════════════
-
-def print_report(results):
-    """Print human-readable quality report."""
-    date = results["date"]
-    print(f"\n{'='*60}")
-    print(f"QUALITY AUDIT  —  {date}")
-    print(f"{'='*60}")
-    
-    print(f"\n{'Theatre':<18} {'Photo':<18} {'Map':<18} {'Info':<18} {'Score':<8}")
-    print(f"{'-'*18} {'-'*18} {'-'*18} {'-'*18} {'-'*8}")
-    
-    for theatre in THEATRES:
-        t = results["theatres"][theatre]
-        p_issues = t["details"]["photo"]
-        m_issues = t["details"]["map"]
-        i_issues = t["details"]["infographic"]
-        
-        p_str = p_issues[0][:16] if p_issues else "OK"
-        m_str = m_issues[0][:16] if m_issues else "OK"
-        i_str = i_issues[0][:16] if i_issues else "OK"
-        
-        print(f"{theatre:<18} {p_str:<18} {m_str:<18} {i_str:<18} {t['score']:<8}")
-    
-    # PDF
-    pdf_issues = results["pdf"].get("issues", [])
-    pdf_str = pdf_issues[0][:16] if pdf_issues else "OK"
-    print(f"\nPDF: {pdf_str}  |  Score: {results['pdf']['score']}")
-    
-    # Summary — count only REAL problems (not status strings like GOOD_SIZE)
-    real_issues = 0
-    for theatre in THEATRES:
-        for cat in ["photo", "map", "infographic"]:
-            for iss in results["theatres"][theatre]["details"][cat]:
-                if any(iss.startswith(p) for p in ["MISSING", "TOO_SMALL", "LOW_RES", "CORRUPT", "STALE_DATE", "PDF_"]):
-                    real_issues += 1
-    real_issues += len(results["pdf"].get("issues", []))
-    
-    total = results["overall_score"]
-    grade = "A" if real_issues == 0 else "B" if real_issues <= 2 else "C" if real_issues <= 5 else "D"
-    
-    print(f"\n{'='*60}")
-    print(f"OVERALL: {total} pts  |  {real_issues} real issues  |  Grade: {grade}")
-    print(f"{'='*60}\n")
-    
-    return grade
-
-
-# ═══════════════════════════════════════════════════════════
-# AUTO-FIX FUNCTIONS
-# ═══════════════════════════════════════════════════════════
-
-def known_fixable_issues(log):
-    """Return list of issues that have known automatic fixes."""
-    fixes = []
-    
-    # Check if any known failures from previous runs
-    for issue_type, count in log.get("known_failures", {}).items():
-        if "WIKIMEDIA_DOWNLOAD" in issue_type:
-            fixes.append("Retry Wikimedia downloads with alternative search terms")
-        if "KALSHI_SCAN" in issue_type:
-            fixes.append("Re-run Kalshi scanner")
-        if "FONT_MISSING" in issue_type:
-            fixes.append("Install missing fonts from system alternatives")
-    
-    # Check if state.json indicates a failed partial run
-    if STATE_FILE.exists():
-        state = json.loads(STATE_FILE.read_text())
-        if state.get("quality_issues", 0) > 0:
-            fixes.append(f"Previous run had {state['quality_issues']} issues — re-run pipeline")
-    
-    return fixes
-
-
-def auto_fix(log):
-    """Attempt automatic fixes for known issues."""
-    from importlib import import_module
-    
-    fixes_applied = 0
-    print("\n=== Auto-Fix ===")
-    
-    # Re-read state for issues
-    if STATE_FILE.exists():
-        state = json.loads(STATE_FILE.read_text())
-        issues = state.get("quality_issues", 0)
-        if issues > 0:
-            print(f"  Previous run had {issues} issues — re-running pipeline...")
-            
-            # Run the pipeline
-            refresh_script = SCRIPTS_DIR / 'refresh_imagery.py'
-            build_script = SCRIPTS_DIR / 'build_pdf.py'
-            
-            if refresh_script.exists():
-                import subprocess
-                print("  Running refresh_imagery...")
-                result = subprocess.run(['python3', str(refresh_script)],
-                                       capture_output=True, text=True, timeout=180)
-                if result.returncode == 0:
-                    print("  ✓ Refresh succeeded")
-                    fixes_applied += 1
-                else:
-                    print(f"  ✗ Refresh failed: {result.stderr[-200:]}")
-            
-            if build_script.exists():
-                print("  Running build_pdf...")
-                result = subprocess.run(['python3', str(build_script)],
-                                       capture_output=True, text=True, timeout=120)
-                if result.returncode == 0:
-                    print("  ✓ Build succeeded")
-                    fixes_applied += 1
-                else:
-                    print(f"  ✗ Build failed: {result.stderr[-200:]}")
-    
-    if fixes_applied:
-        print(f"  {fixes_applied} fixes applied\n")
-    else:
-        print("  No fixes needed\n")
-    
-    return fixes_applied
-
-
-# ═══════════════════════════════════════════════════════════
-# MAIN
-# ═══════════════════════════════════════════════════════════
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Quality audit for intel pipeline")
-    parser.add_argument('--date', help='Date to audit (YYYY-MM-DD, default: today)')
-    parser.add_argument('--auto-fix', action='store_true', help='Attempt auto-fixes')
-    parser.add_argument('--fix-list', action='store_true', help='Show fixable issues')
-    parser.add_argument('--trend', action='store_true', help='Show improvement trend')
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true", help="Audit only, no repair")
+    parser.add_argument("--status", action="store_true", help="Show health summary")
     args = parser.parse_args()
     
-    date_str = args.date or datetime.date.today().isoformat()
-    log = load_improvement_log()
-    
-    if args.fix_list:
-        fixes = known_fixable_issues(log)
-        if fixes:
-            print("\nKnown fixable issues:")
-            for f in fixes:
-                print(f"  • {f}")
+    if args.status:
+        if STATE_FILE.exists():
+            print(json.dumps(json.loads(STATE_FILE.read_text()), indent=2))
         else:
-            print("\nNo known fixable issues.")
-        return
+            print("No state file — run audit first")
+        return 0
     
-    if args.auto_fix:
-        fixes = auto_fix(log)
-        # Re-audit after fixes
-        results = run_audit(date_str)
-        print_report(results)
-        update_trend(results, log)
-        return
+    log.info("Starting quality audit")
     
-    if args.trend:
-        print(f"\nScore trend ({len(log['score_trend'])} runs):")
-        for entry in log['score_trend']:
-            marker = "✓" if entry['score'] >= 15 else "⚠"
-            print(f"  {entry['date']}: {entry['score']} pts {marker}")
-        return
+    # Run all checks
+    all_issues = []
+    all_issues.extend(check_assessments())
+    all_issues.extend(check_fonts())
+    all_issues.extend(check_memory())
     
-    # Default: full audit
-    results = run_audit(date_str)
-    grade = print_report(results)
-    update_trend(results, log)
+    health = {
+        "checked_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "issue_count": len(all_issues),
+        "critical": len([i for i in all_issues if i.get("severity") == "critical"]),
+        "warnings": len([i for i in all_issues if i.get("severity") == "warning"]),
+        "issues": all_issues,
+    }
     
-    # If issues found, suggest auto-fix
-    if results["total_issues"] > 0:
-        print(f"Tip: Run with --auto-fix to attempt automatic fixes\n")
+    print(f"\n🔍 Quality Audit — {health['issue_count']} issues found "
+          f"({health['critical']} critical, {health['warnings']} warnings)")
+    
+    for issue in all_issues:
+        icon = "🔴" if issue["severity"] == "critical" else "🟡"
+        region_str = f" [{issue.get('region','')}]" if issue.get('region') else ""
+        print(f"  {icon} {issue['type']}{region_str}: {issue['detail'][:120]}")
+    
+    # Auto-repair (unless --check)
+    repairs = {"attempted": 0, "succeeded": 0, "failed": 0, "deferred": 0, "details": []}
+    if not args.check and all_issues:
+        print(f"\n🔧 Attempting repairs...")
+        repairs = run_auto_fix(all_issues)
+        print(f"  Repairs: {repairs['succeeded']} succeeded, "
+              f"{repairs['failed']} failed, {repairs['deferred']} deferred")
+    
+    # Save state
+    save_state(health, repairs)
+    
+    # Log
+    log.info("Audit complete",
+             issues=health['issue_count'],
+             critical=health['critical'],
+             repairs_ok=repairs['succeeded'],
+             repairs_failed=repairs['failed'])
+    
+    return 0 if health['critical'] == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
