@@ -96,6 +96,14 @@
     "geopolitics-expert": {
       "version": "1.0.0",
       "installedAt": 1778490116147
+    },
+    "akashic-doc-analyzer": {
+      "version": "1.0.0",
+      "installedAt": 1778576508060
+    },
+    "universal-translate": {
+      "version": "1.0.0",
+      "installedAt": 1778576600283
     }
   }
 }

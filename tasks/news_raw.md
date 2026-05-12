@@ -1,133 +1,125 @@
-# Global News Gather — 2026-05-02 20:39 UTC
-
-**Sources:** 15/27 fetched | **Items:** 120
-
-### Errors
-  ⚠️  Guardian Middle East — Failed to fetch
-  ⚠️  Joint Maritime Information Center (JMIC) — Failed to fetch
-  ⚠️  UK Maritime Trade Operations (UKMTO) — No entries parsed
-  ⚠️  Windward Maritime Intelligence — No entries parsed
-  ⚠️  Skuld Maritime Security Updates — No entries parsed
-  ⚠️  Atlas Institute — No entries parsed
-  ⚠️  Stimson Center - Energy & Gulf — No entries parsed
-  ⚠️  EIA Today in Energy — No entries parsed
-  ⚠️  Safety4Sea — No entries parsed
-  ⚠️  MaritimeNews.com — No entries parsed
-  ⚠️  ISW/Critical Threats Project (UnderstandingWar.org) — No entries parsed
-  ⚠️  Radio007 (YouTube) — No entries parsed
+# Raw Intelligence Feed
+*Generated: 2026-05-12 19:00 UTC*
+*Source: Gmail Intelligence label — unread emails from last 24h*
 
 ---
 
-# Intelligence Label Digest — 2026-05-07 19:00 UTC
+## 1. ISW Korean Peninsula Update — May 12, 2026
+**Source:** publications@understandingwar.org
+**Timestamp:** Tue, 12 May 2026 17:16 UTC
 
-**Source:** Gmail (trevor.mentis@gmail.com), `Intelligence` label
-**Emails:** 9 within last 24h (filtered from 10)
-**Excluded:** 1 outside window (CISA KEV, May 6 18:44 UTC), 2 commercial (CISA Course, FP subscription promo)
-
----
-
-## 🔴 HIGH SIGNAL — Geopolitical / Military
-
-### 1. Iran: Strategic Objectives Beyond Survival
-**Source:** ISW Iran Special Report + CTP Iran Evening Update, May 6–7
-
-- Iran's principal strategic objective is **securing US recognition of sovereignty over the Strait of Hormuz** — a fundamental remaking of regional/maritime norms detrimental to US interests.
-- Iran's "Persian Gulf Strait Authority" emailed shipping companies May 6 demanding **payment in Iranian rials** and guarantees from Iranian banks (forcing sanctions violations).
-- Iran seeking **unfreezing of ~$100B USD in assets** and economic relief, which could fund ballistic missile reconstitution.
-- CNN reports Israel is **particularly worried** about sanctions relief enabling Iran's missile rebuild.
-- Iran preparing for **economic instability/domestic unrest** but not close to surrendering.
-
-### 2. US-Iran Negotiations: One-Page Framework
-**Source:** Cipher Brief Nightcap, May 6
-
-- U.S. and Iran reportedly **closing in on a one-page memorandum** to frame end-of-war terms.
-- Document calls for **lifting Hormuz restrictions**, but disagreements remain on key points.
-- Trump told PBS: "I think it's got a very good chance of ending… and if it doesn't end, we have to go back to **bombing the hell out of them**."
-- Trump proposed Iran export highly enriched uranium to the U.S.
-- IRGC indicated Strait could reopen if "aggressors' threats end."
-- Trump paused 'Project Freedom' mission; deal possibly before his **trip to China next week**.
-
-### 3. Ukraine: Ceasefire Rejected, Heavy Civilian Casualties
+**Key Points:**
+- North Korea amended its constitution to remove all reunification objectives, define its territorial borders with the ROK
+- New language reframes national mission as "socialist construction" instead of reunification
+- Added provision defining NK territory as bordering China, Russia to north and ROK to south
+- Kim Jong Un's "hostile two-state" policy now codified — inter-Korean dialogue less likely
+- South Korean NIS assesses NK intends to maintain status quo; Lee Jae Myung administration's peace policy unlikely to revive engagement near-term
 
 ---
 
-# Intelligence Label Digest — 2026-05-11 19:00 UTC
+## 2. CISA — Seven ICS Advisories — May 12, 2026
+**Source:** cisa@messages.cisa.gov
+**Timestamp:** Tue, 12 May 2026 15:41 UTC
 
-**Source:** Gmail (trevor.mentis@gmail.com), `Intelligence` label
-**Emails:** 7 unread labelled emails within 24h (May 10–11)
-**Excluded:** 3 commercial/promotional (FP subscription offers ×2, Cipher Brief upsell)
-
----
-
-## 🔴 HIGH SIGNAL — Geopolitical / Military
-
-### 1. Iran Counterproposal Rejected — Strait of Hormuz Escalation
-**Sources:** ISW Iran Update Special Report, May 10 (publications@understandingwar.org); CTP Iran Update Evening Special Report, May 10 (criticalthreats@aei.org)
-
-**Trump Rejects Iran's Counterproposal:**
-- Trump stated May 10 Iran's counterproposal is **"totally unacceptable"** — posted on Truth Social that Iran has been **"playing games"** and delaying negotiations.
-- Iran sent counterproposal via **Pakistani mediators**; calls for an end to the war, **gradual reopening of the Strait of Hormuz**, and **lifting of the US naval blockade**.
-- Nuclear negotiations would occur over a **30-day period** per the counterproposal.
-- Iran offered to **dilute some HEU** and transfer the rest to a third country — but stipulated guarantees they could retrieve it if talks fail or US exits.
-- Iran offered to **halt enrichment for <20 years** but **refused to dismantle** nuclear facilities.
-- Trump demands Iran **hand over HEU permanently** and cease enrichment indefinitely.
-- Trump to call **Israeli PM Netanyahu** on May 10 to discuss Iran's response (per Israeli media).
-
-**Iranian Attacks During Negotiations:**
-- UKMTO reported May 10: **unspecified projectile struck the SAFESEA NEHA** bulk carrier near coast of **Doha, Qatar**.
-- **Emirati and Kuwaiti defense ministries** separately reported intercepting Iranian drones on May 10.
-- Iran has not claimed responsibility — timing appears designed to **sustain high oil prices** and coerce US concessions.
-
-**Strait of Hormuz Toll Scheme:**
-- Artesh Spokesperson Akraminia warned on May 10: vessels belonging to countries that have sanctioned Iran **"will face problems"** transiting the strait.
-- Iran's "Persian Gulf Strait Authority" emailed shipping companies demanding payment in **Iranian rials** and guarantees from **Iranian banks** — effectively forcing sanctions violations for passage.
-- Supreme Leader Khamenei signaled Iran would reap **"economic gains"** from new strait management.
-
-**Regime Dynamics:**
-- Iranian media publicizing meetings between **Supreme Leader Mojtaba Khamenei** and senior officials — likely attempting to portray him as active decision-maker amid reports he has been marginalized.
-
-### 2. Ukraine: May 9–11 Ceasefire Fraying
-**Source:** ISW Russian Offensive Campaign Assessment, May 10 (publications@understandingwar.org)
-
-- Russian and Ukrainian forces continued **limited offensive operations** through day 2 of the May 9–11 ceasefire.
-- **Zelensky:** 150+ Russian ground assaults, 100+ artillery strikes, ~10,000 drone strikes between May 9–10. No large missile packages.
-- **Russian MoD:** Ukraine conducted 8 ground assaults, 676 artillery/MLRS/mortar strikes, 6,331 drone strikes.
-- **NASA FIRMS** signatures confirm hostilities decreased on May 10 but did not cease.
-- Key insight: ceasefire **without enforcement mechanisms, monitoring, or dispute resolution is unlikely to hold**.
-
-**Putin's Rhetoric vs. Reality:**
-- Putin vaguely suggested war **"could end soon"** during May 9 press conference.
-- But simultaneously: intended to let Russian forces **"focus on the final defeat of Ukraine"** by excluding equipment from Victory Day Parade.
-- Demanded any meeting with Zelensky take place in **Moscow City** — signaling unwillingness for genuine negotiations.
-
-**POW Exchange:**
-- Putin accused Ukraine of sabotaging planned **1,000-for-1,000 POW exchange**.
-- Zelensky refuted: Ukraine fully committed, already provided lists, **US acting as guarantor**.
-- Russia appears to be **playing to domestic audience** feeling effects of 4+ years of war and inability to repel Ukrainian long-range strikes.
-
-### 3. Trump's Beijing Visit — China's Anti-Sanctions Arsenal
-**Source:** FP "This Week: Xi holds all the cards with Trump" newsletter, May 11 (newsletters@foreignpolicy.com)
-
-- Trump traveling to **Beijing on Wednesday** (May 13) — first US presidential visit to China since 2017, delayed by US-Iran war.
-- China tested a **rare sanctions countermeasure**: publicly barred Chinese companies from complying with US sanctions on **Iranian oil**.
-- China also took aim at **US sanctions on Cuba**.
-- Analysis: many analysts declare China the **strategic winner** of the US-Iran conflict, but FP notes great-power politics is not zero-sum — both sides could emerge as losers.
+**Advisories Released:**
+- Fuji Electric Tellus
+- Subnet Solutions PowerSYSTEM Center
+- ABB AC500 V3 (multiple vulnerabilities)
+- ABB Automation Builder Gateway for Windows
+- ABB AC500 V3 (stack buffer overflow in CMS)
+- ABB WebPro SNMP Card PowerValue
+- Ashlar-Vellum Cobalt/Xenon/Argon/Lithium (Update A)
 
 ---
 
-## 📊 Quality Assessment
+## 3. CISA & G7 — SBOM for AI Joint Guidance — May 12, 2026
+**Source:** cisa@messages.cisa.gov
+**Timestamp:** Tue, 12 May 2026 13:32 UTC
 
-| Item | Signal | Notes |
-|---|---|---|
-| Iran Counterproposal Rejected | 🔴 HIGH | Central to today's brief. Trump-Netanyahu call, Hormuz escalation, attack on vessel. Consolidates ISW + CTP reports (substantively identical) |
-| Ukraine Ceasefire Fraying | 🔴 HIGH | Ceasefire dynamics, Putin signaling, POW exchange. Directly relevant to theater assessment |
-| Trump Beijing / China Sanctions | 🟡 MEDIUM | Useful framing for US-China-Iran triangle. Trump trip context matters |
+**Key Points:**
+- CISA + G7 partners released joint guidance on minimum elements of a Software Bill of Materials (SBOM) for AI systems
+- Builds on prior shared SBOM framework; aims to improve transparency in AI supply chains
+- Non-binding, consensus-based; will expand over time
 
-**Duplicates flagged:** CTP Iran Update Evening Report is largely redundant with ISW Iran Special Report — consolidated into single entry above. Both cite same WSJ sourcing and events.
+---
 
-**Excluded (commercial/promotional):**
-1. Foreign Policy "Integral geopolitical coverage at our best rate" — subscription promo
-2. Foreign Policy "Unlock global insight and expertise" — subscription promo
-3. The Cipher Brief "We'd Love For You to Join Us" — Subscriber+ upsell ($17.99/mo)
+## 4. ISW Iran Update Special Report — May 11, 2026
+**Source:** publications@understandingwar.org
+**Timestamp:** Tue, 12 May 2026 00:32 UTC
 
-**Recommended for today's brief:** Items 1 (Iran) and 2 (Ukraine) should definitely be incorporated. Item 3 (China/Trump trip) provides useful strategic context for the Iran section.
+**Key Points:**
+- Iranian leaders dictating terms for ending the war — perceive upper hand
+- IRGC Major General Mohammad Ali Jafari (former IRGC commander 2007-2019) stated Iran won't negotiate until US accepts its terms
+- **Iran's terms:** End to war on "all fronts," lifting sanctions, release frozen assets, compensation for war damages, recognition of Iran's sovereignty over Strait of Hormuz
+- Conditions would strip US of leverage before nuclear talks; no guarantee Iran would engage in nuclear negotiations even if terms accepted
+- Tasnim News Agency rejected WSJ report that Iran offered to halt enrichment
+- AEOI head Eslami told parliament nuclear technology and enrichment are "not negotiable"
+- Jafari's position likely reflects IRGC Commander Vahidi's negotiating stance
+
+---
+
+## 5. ISW Russian Offensive Campaign Assessment — May 11, 2026
+**Source:** publications@understandingwar.org
+**Timestamp:** Mon, 11 May 2026 23:30 UTC
+
+**Key Points:**
+- Russian and Ukrainian forces continued limited offensive ops on final day of May 9-11 ceasefire
+- Mutual accusations of violations: artillery, air, drone strikes, limited ground ops
+- Ukraine CDD reports Russia conducted no long-range strikes overnight May 10-11
+- NASA FIRMS data shows hostilities decreased but did not cease
+- Ukrainian brigade in Lyman direction reports Russia used ceasefire to pull forward reserves, stockpile Molniya drones
+- **⚠️ Ceasefire assessment:** Without enforcement mechanisms, credible monitoring, and dispute resolution, ceasefires unlikely to hold
+- Ukrainian Hornet drones operating near occupied Mariupol targeting Russian logistics (T-0509 highway)
+- Russian milbloggers express serious concern about drone range paralyzing logistics — comparing conditions to M-30 highway where Ukrainian forces have paralyzed Russian logistics
+
+---
+
+## 6. CTP Iran Update — May 11, 2026
+**Source:** criticalthreats@aei.org
+**Timestamp:** Mon, 11 May 2026 22:57 UTC
+
+**Key Points:**
+- (Overlap with ISW Iran special report — Iranian leaders dictating terms, perceive upper hand)
+- **Additional signal:** Commercial maritime data suggests some vessels complying with Iran's new transit regulations in Strait of Hormuz
+- Recognition of Iran's sovereignty over Strait would fundamentally remake regional/global maritime norms detrimental to US interests
+- **FPV drones:** IRGC deployed 10,000 FPV drones to Artesh Ground Forces since June 2025 12-Day War
+- Iran would likely use these drones to defend against potential ground operations
+
+---
+
+## 7. FP Editors' Picks — May 11, 2026
+**Source:** newsletters@foreignpolicy.com
+**Timestamp:** Mon, 11 May 2026 22:00 UTC
+
+**Key Points:**
+- "Iran war chokes 'major driver' of global economy" — economic impact coverage
+- China's Malacca dilemma post-Hormuz
+- Newsletter format; editorial/commercial framing. Moderate signal.
+
+---
+
+## 8. The Cipher Brief — National Security Nightcap — May 11, 2026
+**Source:** dailybrief@thecipherbrief.com
+**Timestamp:** Mon, 11 May 2026 20:01 UTC
+
+**Key Points:**
+- Monday roundup of national security briefings
+- Lighter editorial content; lower signal for structured intelligence
+- Not incorporated as primary source
+
+---
+
+## Quality Review
+
+| Item | Duplicate? | Commercial? | High-Signal? |
+|------|-----------|-------------|-------------|
+| ISW Korea Update | No | No | ✅ High — constitutional change |
+| CISA ICS Advisories | No | No | ⬜ Medium — routine bulletin |
+| CISA G7 SBOM AI | No | No | ⬜ Medium — policy/standards |
+| ISW Iran Special Report | Partial overlap w/ CTP Iran | No | 🔴 High — terms of war, nuclear position |
+| ISW Russian Offensive | No | No | 🔴 High — ceasefire assessment, drone ops |
+| CTP Iran Update | Partial overlap w/ ISW Iran | No | ✅ High — Strait sovereignty, 10K FPV drones |
+| FP Editors' Picks | No | Mild promotional framing | ⬜ Low-Medium — editorial coverage |
+| Cipher Brief Nightcap | No | Lighter content | ⬜ Low |
+
+**Recommendation for today's brief:** Prioritize ISW Iran Special Report, CTP Iran Update, ISW Russian Offensive Assessment, and ISW Korea Update. CISA items are reference (not urgent). FP and Cipher Brief are supplementary editorial context.

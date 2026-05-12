@@ -1,0 +1,211 @@
+{
+  "version": 2,
+  "created": "2026-05-12T04:55:36.571819+00:00",
+  "last_updated": "2026-05-12T12:07:27.559030+00:00",
+  "source_utilization": {
+    "Reuters World": {
+      "fetched_count": 2,
+      "cited_count": 0,
+      "last_cited": null,
+      "consecutive_zero_runs": 1
+    },
+    "AP World": {
+      "fetched_count": 2,
+      "cited_count": 0,
+      "last_cited": null,
+      "consecutive_zero_runs": 1
+    },
+    "BBC World": {
+      "fetched_count": 2,
+      "cited_count": 0,
+      "last_cited": null,
+      "consecutive_zero_runs": 1
+    },
+    "Al Jazeera": {
+      "fetched_count": 2,
+      "cited_count": 1,
+      "last_cited": "2026-05-12T04:55:36.571919+00:00",
+      "consecutive_zero_runs": 1
+    },
+    "Reuters Business": {
+      "fetched_count": 2,
+      "cited_count": 0,
+      "last_cited": null,
+      "consecutive_zero_runs": 1
+    },
+    "FT World": {
+      "fetched_count": 2,
+      "cited_count": 0,
+      "last_cited": null,
+      "consecutive_zero_runs": 1
+    }
+  },
+  "region_activity": {
+    "europe": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 9
+        },
+        {
+          "date": "2026-05-12",
+          "count": 9
+        }
+      ],
+      "smoothed_score": 15.8
+    },
+    "asia": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 9
+        },
+        {
+          "date": "2026-05-12",
+          "count": 12
+        }
+      ],
+      "smoothed_score": 18.8
+    },
+    "middle_east": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 9
+        },
+        {
+          "date": "2026-05-12",
+          "count": 21
+        }
+      ],
+      "smoothed_score": 27.8
+    },
+    "north_america": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 9
+        },
+        {
+          "date": "2026-05-12",
+          "count": 1
+        }
+      ],
+      "smoothed_score": 7.8
+    },
+    "south_central_america": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 4
+        },
+        {
+          "date": "2026-05-12",
+          "count": 0
+        }
+      ],
+      "smoothed_score": 3.0
+    },
+    "global_finance": {
+      "incidents_history": [
+        {
+          "date": "2026-05-11",
+          "count": 9
+        },
+        {
+          "date": "2026-05-12",
+          "count": 9
+        }
+      ],
+      "smoothed_score": 15.8
+    }
+  },
+  "per_region_cap": {
+    "europe": 12,
+    "asia": 14,
+    "middle_east": 20,
+    "north_america": 7,
+    "south_central_america": 4,
+    "global_finance": 12
+  },
+  "region_metadata": {
+    "europe": {
+      "total_incidents": 18,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-12"
+    },
+    "asia": {
+      "total_incidents": 21,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-12"
+    },
+    "middle_east": {
+      "total_incidents": 30,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-12"
+    },
+    "north_america": {
+      "total_incidents": 10,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-12"
+    },
+    "south_central_america": {
+      "total_incidents": 4,
+      "days_with_data": 1,
+      "last_incident_date": "2026-05-11"
+    },
+    "global_finance": {
+      "total_incidents": 18,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-12"
+    }
+  },
+  "identified_gaps": [
+    "south_central_america: no data today (last: 2026-05-11)"
+  ],
+  "collection_history": [
+    {
+      "date": "2026-05-11",
+      "region_counts": {
+        "asia": 9,
+        "europe": 9,
+        "global_finance": 9,
+        "middle_east": 9,
+        "north_america": 9,
+        "south_central_america": 4
+      },
+      "source_citations": {
+        "Al Jazeera": 1
+      },
+      "caps": {
+        "europe": 20,
+        "asia": 20,
+        "middle_east": 20,
+        "north_america": 20,
+        "south_central_america": 10,
+        "global_finance": 20
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "region_counts": {
+        "asia": 12,
+        "europe": 9,
+        "global_finance": 9,
+        "middle_east": 21,
+        "north_america": 1,
+        "south_central_america": 0
+      },
+      "source_citations": {},
+      "caps": {
+        "europe": 12,
+        "asia": 14,
+        "middle_east": 20,
+        "north_america": 7,
+        "south_central_america": 4,
+        "global_finance": 12
+      }
+    }
+  ],
+  "active_escalations": []
+}
