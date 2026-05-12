@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "created": "2026-05-12T05:10:00Z",
+  "last_updated": "2026-05-12T12:07:56.020500+00:00Z",
+  "total_judgments": 25,
+  "correct": 1,
+  "incorrect": 0,
+  "unresolved": 4,
+  "by_confidence_band": {
+    "likely": {
+      "total": 16,
+      "correct": 1,
+      "incorrect": 0
+    },
+    "highly likely": {
+      "total": 8,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "even chance": {
+      "total": 1,
+      "correct": 0,
+      "incorrect": 0
+    }
+  },
+  "by_region": {
+    "europe": {
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "asia": {
+      "total": 5,
+      "correct": 1,
+      "incorrect": 0
+    },
+    "middle_east": {
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "north_america": {
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "south_central_america": {
+      "total": 3,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "global_finance": {
+      "total": 2,
+      "correct": 0,
+      "incorrect": 0
+    }
+  },
+  "daily_scores": [
+    {
+      "date": "2026-05-08",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 0.0
+    },
+    {
+      "date": "2026-05-09",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 0.0
+    },
+    {
+      "date": "2026-05-10",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 0.0
+    },
+    {
+      "date": "2026-05-11",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 0.0
+    },
+    {
+      "date": "2026-05-12",
+      "total": 5,
+      "correct": 1,
+      "incorrect": 0,
+      "unresolved": 4,
+      "accuracy_pct": 20.0,
+      "running_accuracy_pct": 4.0
+    }
+  ],
+  "overconfidence_flags": [
+    {
+      "date": "2026-05-11",
+      "region": "middle_east",
+      "band": "highly likely",
+      "pct": 82,
+      "sources": 2,
+      "flag": "overconfident given source diversity"
+    }
+  ],
+  "calibration_warnings": []
+}

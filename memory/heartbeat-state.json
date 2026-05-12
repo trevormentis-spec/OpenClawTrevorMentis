@@ -1,15 +1,16 @@
 {
   "version": 1,
   "lastChecks": {
-    "agentmail_inbox": 1778464620,
-    "moltbook_check": 1778464620,
-    "memory_hygiene": 1778441241,
-    "repo_state": 1778455670,
-    "deepseek_balance": 1778464620,
-    "gmail_system_check": 1778441241,
-    "brain_index_freshness": 1778455670,
-    "osint_scan": 1778455670
+    "agentmail_inbox": 1778614045,
+    "moltbook_check": 1778614045,
+    "memory_hygiene": 1778614045,
+    "repo_state": 1778614045,
+    "deepseek_balance": 1778614045,
+    "gmail_system_check": 1778614045,
+    "brain_index_freshness": 1778614045,
+    "osint_scan": 1778441241,
+    "nudge_check": 1778441241
   },
-  "lastHeartbeat": 1778464620,
-  "rotationCursor": 3
+  "lastHeartbeat": 1778614045,
+  "rotationCursor": 4
 }

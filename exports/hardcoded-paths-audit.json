@@ -1,0 +1,226 @@
+[
+  {
+    "file": "skills/daily_intel/cron/run_daily.py",
+    "line": 20,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE') with fallback to derived path from repo root",
+    "type": "absolute",
+    "details": "Fallback in os.environ.get('WORKSPACE', ...). Should derive from ROOT.parent.parent instead of hardcoding."
+  },
+  {
+    "file": "skills/daily_intel/cron/run_daily.py",
+    "line": 172,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "Define WORKSPACE at module level from env var or derived path, reuse",
+    "type": "absolute",
+    "details": "Moltbook script path. Same hardcoded fallback as line 20. Would break if the workspace moves."
+  },
+  {
+    "file": "skills/daily_intel/cron/run_daily.py",
+    "line": 178,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "Same WORKSPACE variable as above",
+    "type": "absolute",
+    "details": "GenViral script path. Same hardcoded fallback."
+  },
+  {
+    "file": "skills/daily_intel/cron/run_daily.py",
+    "line": 194,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "WORKSPACE variable (already computed)",
+    "type": "absolute",
+    "details": "Deploy landing page script path. Uses Path.home() instead of the WORKSPACE_ENV variable."
+  },
+  {
+    "file": "skills/daily_intel/scripts/generate_assessments.py",
+    "line": 25,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE', str(Path(__file__).resolve().parents[4]))",
+    "type": "absolute",
+    "details": "Top-level WORKSPACE variable. Script is at skills/daily_intel/scripts/generate_assessments.py — going up 4 parents reaches repo root which approximates workspace."
+  },
+  {
+    "file": "skills/daily_intel/scripts/generate_assessments.py",
+    "line": 74,
+    "path": "WORKSPACE / 'exports'",
+    "replacement": "Same, relies on the WORKSPACE fix above",
+    "type": "derived-absolute",
+    "details": "Derived from the hardcoded WORKSPACE variable. Transitive — will fix when WORKSPACE is fixed."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 23,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE') or derive via Path(__file__).resolve().parents[4]",
+    "type": "absolute",
+    "details": "First WORKSPACE definition. Script is at skills/daily_intel/scripts/refresh_imagery.py."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 24,
+    "path": "WORKSPACE / 'scripts'",
+    "replacement": "Derived, will fix with WORKSPACE above",
+    "type": "derived-absolute",
+    "details": "Derived from WORKSPACE. Transitive fix."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 163,
+    "path": "/tmp/ne_50m_admin_0_countries.geojson",
+    "replacement": "Configurable DATA_DIR variable (env var or script-relative path)",
+    "type": "absolute",
+    "details": "Hardcoded /tmp path for Natural Earth data. Should be configurable."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 164,
+    "path": "/tmp/ne_50m_populated_places_simple.geojson",
+    "replacement": "Configurable DATA_DIR variable (env var or script-relative path)",
+    "type": "absolute",
+    "details": "Hardcoded /tmp path for Natural Earth data. Should be configurable."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 463,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "Reuse existing WORKSPACE module-level variable (or import it)",
+    "type": "absolute",
+    "details": "Duplicate WORKSPACE definition (second instance in the same file). Redefines the same hardcoded path."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 464,
+    "path": "WORKSPACE / 'scripts'",
+    "replacement": "Reuse existing SCRIPTS_DIR or import",
+    "type": "derived-absolute",
+    "details": "Duplicate SCRIPTS_DIR definition."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 635,
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "replacement": "SKILL_ROOT / 'fonts' / 'DejaVuSans-Bold.ttf' (bundled font) or env var FONT_DIR",
+    "type": "absolute",
+    "details": "Fallback system font path. Not portable across Linux distributions."
+  },
+  {
+    "file": "skills/daily_intel/scripts/refresh_imagery.py",
+    "line": 636,
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "replacement": "SKILL_ROOT / 'fonts' / 'DejaVuSans.ttf' (bundled font) or env var FONT_DIR",
+    "type": "absolute",
+    "details": "Fallback system font path. Not portable across Linux distributions."
+  },
+  {
+    "file": "skills/daily_intel/scripts/quality_audit.py",
+    "line": 20,
+    "path": "Path.home() / '.openclaw' / 'workspace' / 'exports' / 'pdfs'",
+    "replacement": "os.environ.get('WORKSPACE') or derive via Path(__file__).resolve().parents[4] then /exports/pdfs",
+    "type": "absolute",
+    "details": "Hardcoded exports dir. Script is at skills/daily_intel/scripts/quality_audit.py."
+  },
+  {
+    "file": "skills/daily_intel/scripts/briefometer.py",
+    "line": 24,
+    "path": "Path.home() / '.openclaw' / 'workspace' / 'exports'",
+    "replacement": "os.environ.get('WORKSPACE') or derive via Path(__file__).resolve().parents[4]",
+    "type": "absolute",
+    "details": "EXPORTS_DIR hardcoded to workspace exports."
+  },
+  {
+    "file": "skills/daily_intel/scripts/briefometer.py",
+    "line": 25,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE') or derive",
+    "type": "absolute",
+    "details": "WORKSPACE variable hardcoded."
+  },
+  {
+    "file": "skills/daily_intel/scripts/daily_enrichment.py",
+    "line": 19,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE') or derive via Path(__file__).resolve().parents[4]",
+    "type": "absolute",
+    "details": "WORKSPACE variable hardcoded."
+  },
+  {
+    "file": "skills/daily_intel/scripts/daily_enrichment.py",
+    "line": 24,
+    "path": "WORKSPACE / 'exports'",
+    "replacement": "Derived, will fix with WORKSPACE above",
+    "type": "derived-absolute",
+    "details": "KALSHI_SCAN derived from WORKSPACE. Transitive."
+  },
+  {
+    "file": "skills/daily_intel/scripts/improvement_daemon.py",
+    "line": 36,
+    "path": "Path.home() / '.openclaw' / 'workspace'",
+    "replacement": "os.environ.get('WORKSPACE') or derive via Path(__file__).resolve().parents[4]",
+    "type": "absolute",
+    "details": "WORKSPACE variable hardcoded."
+  },
+  {
+    "file": "skills/daily_intel/scripts/improvement_daemon.py",
+    "line": 145,
+    "path": "Path(__file__).resolve().parent.parent.parent.parent.parent.parent / 'workspace'",
+    "replacement": "WORKSPACE module-level variable (already defined at line 36)",
+    "type": "absolute",
+    "details": "Fragile relative traversal (6x parent.parent) to reach workspace root from improvement_daemon.py. Should use the already-defined WORKSPACE variable instead."
+  },
+  {
+    "file": "skills/daily_intel/scripts/_email_brief.py",
+    "line": 20,
+    "path": "os.path.expanduser('~/.openclaw/workspace/.env')",
+    "replacement": "os.environ.get('WORKSPACE') + '/.env' or derive from script location",
+    "type": "absolute",
+    "details": "Hardcoded ~ expansion path for workspace .env file."
+  },
+  {
+    "file": "skills/daily_intel/scripts/_fetch_intel_emails.py",
+    "line": 108,
+    "path": "os.path.expanduser('~/.openclaw/workspace/.env')",
+    "replacement": "os.environ.get('WORKSPACE') + '/.env' or derive from script location",
+    "type": "absolute",
+    "details": "Hardcoded ~ expansion path for workspace .env file."
+  },
+  {
+    "file": "skills/daily_intel/scripts/_fetch_intel_emails.py",
+    "line": 101,
+    "path": "Path('/tmp/daily_intel_emails')",
+    "replacement": "Configurable CACHE_DIR variable or use XDG_CACHE_HOME",
+    "type": "absolute",
+    "details": "/tmp path — survives reboots on some systems but not portable for cache. Consider XDG_CACHE_HOME or workspace-local cache."
+  },
+  {
+    "file": "skills/daily_intel/scripts/build_pdf.py",
+    "line": 559,
+    "path": "/tmp/_crop_{os.path.basename(path)}",
+    "replacement": "tempfile module for secure temporary file creation",
+    "type": "absolute",
+    "details": "/tmp hardcoded path for cropped image. Low risk but should use tempfile.NamedTemporaryFile for security."
+  },
+  {
+    "file": "audit_skills.py",
+    "line": 46,
+    "path": "os.path.expanduser('~/.openclaw/skills/skill-scanner/skill_scanner.py')",
+    "replacement": "os.environ.get('SKILL_SCANNER_PATH') or derive from known install path",
+    "type": "absolute",
+    "details": "Hardcoded path to skill-scanner script."
+  },
+  {
+    "file": "audit_skills.py",
+    "line": 48,
+    "path": "os.path.expanduser('~/.openclaw/skills')",
+    "replacement": "os.environ.get('SKILL_DIR') or derive from known install path",
+    "type": "absolute",
+    "details": "Hardcoded path to user skills directory."
+  },
+  {
+    "file": "audit_skills.py",
+    "line": 49,
+    "path": "/usr/lib/node_modules/openclaw/skills",
+    "replacement": "os.environ.get('SYSTEM_SKILL_DIR') or derive from node_modules",
+    "type": "absolute",
+    "details": "Hardcoded absolute path to system-installed skills. Assumes OpenClaw installed via npm globally."
+  }
+]

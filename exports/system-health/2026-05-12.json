@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-12",
+  "overall": 89,
+  "dimensions": {
+    "collection": {
+      "score": 62,
+      "citation_rate": 0.17,
+      "gaps": 1,
+      "dead_regions": 0,
+      "problems": [
+        "Low source citation rate"
+      ]
+    },
+    "calibration": {
+      "score": 85,
+      "accuracy": 1.0,
+      "total": 25,
+      "correct": 1,
+      "incorrect": 0,
+      "unresolved": 4,
+      "flags": 1,
+      "problems": [
+        "Overconfidence: middle_east highly likely at 82%"
+      ]
+    },
+    "config": {
+      "score": 100,
+      "problems": []
+    },
+    "observation": {
+      "score": 100,
+      "log_count": 43,
+      "episodic_count": 3,
+      "problems": [
+        "No continuous monitor logs"
+      ]
+    },
+    "autonomy": {
+      "score": 100,
+      "closed_loops": 5,
+      "total_loops": 5,
+      "loops": [
+        "memory \u2192 cognition",
+        "collection confidence \u2192 analytical confidence",
+        "source quality \u2192 priority",
+        "calibration \u2192 prompt",
+        "event \u2192 escalation"
+      ],
+      "problems": []
+    },
+    "epistemic": {
+      "score": 100,
+      "band_count": 3,
+      "judgment_count": 25,
+      "problems": []
+    },
+    "routing": {
+      "score": 100,
+      "problems": []
+    }
+  },
+  "generated_at": "2026-05-12T16:24:55.515749+00:00Z"
+}
