@@ -293,11 +293,14 @@ def parse_news_raw(path: pathlib.Path) -> list[dict]:
     return items
 
 
-def collect_live(regions: dict, sources: dict) -> tuple[list[dict], list[str]]:
+def collect_live(regions: dict, sources: dict,
+                  feeds_to_try: list[tuple[str, str]] | None = None
+                  ) -> tuple[list[dict], list[str]]:
     raw: list[dict] = []
     gaps: list[str] = []
     durable = sources.get("durable_sources", []) or []
-    feeds_to_try = WIRE_FEEDS[:]
+    if feeds_to_try is None:
+        feeds_to_try = WIRE_FEEDS[:]
     # Durable sources without explicit feed URLs are skipped programmatically;
     # the collector subagent prompt explains how to do better with web_fetch
     # when a richer harness is available.
@@ -447,7 +450,12 @@ def main() -> int:
     parser.add_argument("--regions", required=True)
     parser.add_argument("--sources", required=True)
     parser.add_argument("--mock", action="store_true")
-    parser.add_argument("--cap-per-region", type=int, default=8)
+    parser.add_argument("--cap-per-region", type=int, default=8,
+                        help="uniform cap override (if no adaptive state provided)")
+    parser.add_argument("--adaptive-caps", default="",
+                        help="path to collection state JSON with adaptive per-region caps")
+    parser.add_argument("--feed-priorities", default="",
+                        help="path to feed priorities JSON from collection_state.py --feed-priorities")
     args = parser.parse_args()
 
     wd = pathlib.Path(args.working_dir).expanduser().resolve()
@@ -455,15 +463,78 @@ def main() -> int:
     regions = load_json(pathlib.Path(args.regions))
     sources = load_json(pathlib.Path(args.sources))
 
+    # Adaptive caps: load per-region caps from collection state if available
+    caps = {r: args.cap_per_region for r in ["europe", "asia", "middle_east",
+              "north_america", "south_central_america", "global_finance"]}
+    if args.adaptive_caps and os.path.exists(args.adaptive_caps):
+        try:
+            state_data = json.loads(pathlib.Path(args.adaptive_caps).read_text())
+            adaptive = state_data.get("per_region_cap", {})
+            if isinstance(adaptive, dict):
+                for r in caps:
+                    if r in adaptive:
+                        caps[r] = max(3, min(20, int(adaptive[r])))
+            log(f"adaptive caps loaded: {caps}")
+        except Exception as exc:
+            log(f"adaptive caps failed to load ({exc}), using uniform cap={args.cap_per_region}")
+
+    # Feed priority filtering — skip TIER-3, alternate TIER-2
+    skipped_feeds = []
+    if args.feed_priorities and os.path.exists(args.feed_priorities):
+        try:
+            priority_data = json.loads(pathlib.Path(args.feed_priorities).read_text())
+            feed_priorities = priority_data.get("feed_priorities", {})
+            run_count = priority_data.get("run_count", 1)
+            filtered = []
+            for fname, furl in WIRE_FEEDS:
+                pri = feed_priorities.get(fname, {})
+                tier = pri.get("tier", 1)
+                if tier >= 3:
+                    skipped_feeds.append(fname)
+                    log(f"  ⏭ skip {fname}: tier-3 (quality={pri.get('quality_score',0):.2f}, {pri.get('consecutive_zero',0)} zero-citation runs)")
+                    continue
+                elif tier == 2:
+                    if run_count % 2 == 0:
+                        skipped_feeds.append(fname)
+                        log(f"  ⏭ skip {fname}: tier-2 (alternating even run)")
+                        continue
+                    else:
+                        log(f"  ✓ fetch {fname}: tier-2 (odd run)")
+                else:
+                    log(f"  ✓ fetch {fname}: tier-1 (high priority)")
+                filtered.append((fname, furl))
+            feeds_to_try = filtered
+            log(f"feed priorities: {len(filtered)} active of {len(WIRE_FEEDS)} total")
+            if skipped_feeds:
+                log(f"skipped: {', '.join(skipped_feeds)}")
+        except Exception as exc:
+            log(f"feed priorities failed to load ({exc}), fetching all feeds")
+
     if args.mock:
         log("running in mock mode")
         incidents = mock_incidents(regions)
         gaps = ["mock mode: no live collection performed"]
     else:
-        raw, gaps = collect_live(regions, sources)
+        raw, gaps = collect_live(regions, sources,
+                                  feeds_to_try=feeds_to_try)
         incidents = normalise(raw, regions)
         incidents = deduplicate(incidents)
-        incidents = cap_per_region(incidents, cap=args.cap_per_region)
+        # Use adaptive per-region caps if available, else uniform cap
+        if caps and any(c != args.cap_per_region for c in caps.values()):
+            # Apply per-region caps
+            region_counts: dict[str, int] = {}
+            filtered = []
+            for inc in incidents:
+                region = inc["region"]
+                max_for_region = caps.get(region, args.cap_per_region)
+                region_counts[region] = region_counts.get(region, 0) + 1
+                if region_counts[region] <= max_for_region:
+                    filtered.append(inc)
+            incidents = filtered
+            log(f"adaptive caps: {[(r, caps[r]) for r in caps]}")
+        else:
+            incidents = cap_per_region(incidents, cap=args.cap_per_region)
+            log(f"uniform cap_per_region={args.cap_per_region}")
 
     # Strip internal-only keys from output
     for inc in incidents:

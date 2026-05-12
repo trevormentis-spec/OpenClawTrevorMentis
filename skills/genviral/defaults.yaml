@@ -12,7 +12,7 @@ genviral:
 workspace_dir: "workspace"
 
 content:
-  # Your default image pack ID (run list-packs to find it)
+  # Platform-specific presets for daily OSINT brief
   default_pack_id: ""
   default_slide_count: 5
   default_aspect_ratio: "9:16"
@@ -23,10 +23,36 @@ content:
     font_size: null
     text_preset: null
     text_width: null
+  platform:
+    linkedin:
+      aspect_ratio: "4:5"
+      style_preset: "professional"
+      slide_count: 6
+    twitter:
+      aspect_ratio: "16:9"
+      style_preset: "clean"
+      slide_count: 4
+    tiktok:
+      aspect_ratio: "9:16"
+      style_preset: "tiktok"
+      slide_count: 5
+    instagram:
+      aspect_ratio: "1:1"
+      style_preset: "modern"
+      slide_count: 5
+    youtube:
+      aspect_ratio: "16:9"
+      style_preset: "minimalist"
+      slide_count: 3
+    pinterest:
+      aspect_ratio: "2:3"
+      style_preset: "aesthetic"
+      slide_count: 3
 
 posting:
   # Your default account ID (run list-accounts to find it)
-  default_account_ids: "d3adbc5a-04fe-4dc1-93ab-b920f14ec968,b03637b7-7043-4412-a408-6aac3da0ac25,95f9ef18-1454-41aa-be98-0716c87791ca"
+  # All 6 connected accounts — LinkedIn, TikTok, Twitter, Instagram, YouTube, Pinterest
+  default_account_ids: "d3adbc5a-04fe-4dc1-93ab-b920f14ec968,b03637b7-7043-4412-a408-6aac3da0ac25,95f9ef18-1454-41aa-be98-0716c87791ca,515ca6e7-54c8-4145-9fcc-8dbaca24f1bb,37f30879-3e5c-42f6-ae5c-3d1a3c45dac7,25578210-e62d-45a3-bff3-91d8d0d7b41f"
   privacy_level: "PUBLIC_TO_EVERYONE"
   post_mode: "DIRECT_POST"
 

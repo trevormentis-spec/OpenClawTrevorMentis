@@ -58,6 +58,10 @@ I&W board for this region.")
 
 {iw_board_markdown_or_none}
 
+COLLECTION QUALITY ASSESSMENT (use this to calibrate your confidence)
+
+{collection_quality_markdown}
+
 YOUR TASK
 
 Produce a single JSON object matching this schema exactly:
@@ -137,6 +141,8 @@ SOUTH & CENTRAL AMERICA:
 
 GLOBAL FINANCE:
 {global_finance_json}
+
+{collection_quality_summary}
 
 YOUR TASK
 

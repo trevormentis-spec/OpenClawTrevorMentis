@@ -243,16 +243,26 @@ Existing       │ visual_production        │ Magazine PDF output
 | 5. Wire GenViral to cron | scripts/genviral-post-brief.sh + Step 4 in daily-brief-cron.sh ✅ |
 | 6-7. Deploy | Netlify live, email capture via Netlify Forms, sample preview section ✅ |
 
-### 🔴 Remaining
+### ✅ Completed (2026-05-12)
 
-| Item | Blocked By |
-|------|-----------|
-| Stripe checkout links on pricing | Need valid sk_test key |
-| skill-stripe-monitor activation | Same — sk_test key |
-| Form submission backend routed to AgentMail | Netlify forms catch submissions but need auto-forward to brief pipeline |
+| Item | Status |
+|------|--------|
+| Stripe checkout links on pricing | Done ✅ — Pro ($19/mo) + Enterprise ($99/mo) on landing page |
+| skill-stripe-monitor activation | Done ✅ — registered in OpenClaw config with STRIPE_SECRET_KEY |
+| Form submission backend | Resolved ✅ — GitHub Pages + Buttondown embed handles subscribe forms directly |
+| Buttondown newsletter pipeline | Done ✅ — buttondown-send.py auto-publishes daily brief |
+| GenViral social posting | Done ✅ — 6 accounts connected, posting verified |
+| Landing page auto-deploy | Done ✅ — wired into daily-brief-cron.sh Step 9 |
+| Daily cron jobs | Done ✅ — registered in OpenClaw config (daily-intel-brief, kalshi-daily-scan, skill-scanner-audit) |
 
-## Immediate Next Steps
+## Status — All integrations built and wired
 
-1. **Paste the Stripe sk_test key** cleanly → wire into pricing CTAs
-2. **Activate skill-stripe-monitor** with STRIPE_SECRET_KEY
-3. **Route Netlify form submissions** to AgentMail brief pipeline
+The pipeline now runs end-to-end:
+```
+05:00 PT → Brief analysis → Magazine PDF → Gmail delivery
+       → GenViral social posts (6 platforms)
+       → Moltbook posts (builds + agents)
+       → Agent API JSON build
+       → Buttondown newsletter publish
+       → Landing page deploy (GitHub Pages)
+```

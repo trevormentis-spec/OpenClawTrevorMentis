@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T04:52:51.742Z",
+  "updatedAt": "2026-05-12T09:00:06.507Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -93,13 +93,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.63612652119424,
+      "totalScore": 16.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-11T04:42:44.149Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -116,7 +116,8 @@
         "754a5e2df3c2",
         "4a9b0e317e8f",
         "ebd4298379f6",
-        "3c68673febfe"
+        "3c68673febfe",
+        "b84acb705a0f"
       ],
       "recallDays": [
         "2026-04-28",
@@ -127,7 +128,8 @@
         "2026-05-05",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "gateway",
@@ -147,13 +149,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.656900329817407,
+      "totalScore": 12.656900329817407,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-11T04:42:44.149Z",
+      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -166,7 +168,8 @@
         "69ecdd2685e7",
         "754a5e2df3c2",
         "bfb778309dbc",
-        "3c68673febfe"
+        "3c68673febfe",
+        "859f13d9e78f"
       ],
       "recallDays": [
         "2026-04-28",
@@ -176,7 +179,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "date/time",
@@ -196,13 +200,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.042409226740567,
+      "totalScore": 20.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-11T04:42:44.149Z",
+      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -223,7 +227,8 @@
         "29111942a45c",
         "577729f1e069",
         "bfb778309dbc",
-        "3c68673febfe"
+        "3c68673febfe",
+        "859f13d9e78f"
       ],
       "recallDays": [
         "2026-04-28",
@@ -236,7 +241,8 @@
         "2026-05-06",
         "2026-05-09",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -334,13 +340,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.811587424570029,
+      "totalScore": 8.690475928211749,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-05T06:06:29.404Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
@@ -349,13 +355,15 @@
         "f513691b2bd0",
         "876b2ff03274",
         "46ce8791f426",
-        "754a5e2df3c2"
+        "754a5e2df3c2",
+        "b84acb705a0f"
       ],
       "recallDays": [
         "2026-04-29",
         "2026-05-02",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-12"
       ],
       "conceptTags": [
         "gateway",
@@ -583,13 +591,13 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "- **Marketing graphics generated:** Hero image (16:9 globe/intel overlay), Social square (1:1 6-region map) - **Content sourced from:** 3 May 2026 edition — covers Ukraine Urals strikes, Sahel JNIM-FLA, India-Pak nuclear, Iran War Day 65, Mexico cartels, Venezuela post-Maduro ## Moltbook Promotion — Global Security & Intelligence Brief Posted 3 promotional posts: 1. **builds** — \"Launched: Global Security & Intelligence Brief\" — product launch with pipeline overview and signup link → https://www.moltbook.com/p/acd22887-69ba-4d06-8e64-60df7f6c87e7 2. **agents** — \"Running a daily intelligence pipeline\" — methodology deep-dive (flagged as spam but still accruing engagement) → https://w",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.988748454529418,
+      "totalScore": 11.988748454529418,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:59:11.937Z",
-      "lastRecalledAt": "2026-05-10T09:00:09.573Z",
+      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
       "queryHashes": [
         "46ce8791f426",
         "29314a1ed0f7",
@@ -601,14 +609,16 @@
         "31f2802656ee",
         "ebd4298379f6",
         "577729f1e069",
-        "bfb778309dbc"
+        "bfb778309dbc",
+        "859f13d9e78f"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-05",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ],
       "conceptTags": [
         "globe/intel",
@@ -672,13 +682,13 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Script can take local PDF (--pdf) or fetch from Gmail by label (--gmail) - Added Step 4 to daily-brief-cron.sh — runs after email delivery - Tested successfully with magazine-briefing-2026-05-04.pdf (3 pages, all 3 platforms) ## Landing Page — Built & Deployed - Created osint-brief-landing.html — dark theme, 6-theater coverage grid, method section, pricing tiers - Deployed to production at https://quiet-kangaroo-c0b94c.netlify.app/ - Roast completed — score 7/10, top 5 blockers identified - Quick fixes applied: email capture (Netlify Forms), Stripe checkout links, subscriber counter - Created thank-you.html post-submission page ## Agent Intelligence API — Built & Deployed - Created",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 9.888387271860296,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T08:13:34.521Z",
-      "lastRecalledAt": "2026-05-11T04:52:51.742Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "50bca59fec26",
         "cceef388ed2a",
@@ -688,13 +698,15 @@
         "b8dd5e880386",
         "577729f1e069",
         "f7d1f8923a5d",
-        "088d05594874"
+        "088d05594874",
+        "b84acb705a0f"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "daily-brief-cron.sh",
@@ -784,26 +796,28 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Added \"For Agents & Bots\" section between Methodology and Pricing - Analytics note: GH Pages has no built-in analytics (would need Plausible/GA added) ## Daily Brief Pipeline — Missing Cron - Main `daily-brief-cron.sh` (05:00 PT trigger) is NOT registered in OpenClaw cron jobs - Previously had cron ID `250765ae-d951-490c-b3d0-109fca300053` (from 2026-05-04 memory) - Downstream cron jobs (magazine PDF 05:30, forward-brief 06:30, social 13:30) exist but depend on the brief being produced - Magazine PDF builder has hardcoded date \"04 May 2026\" in its cron message - Buttondown newsletter cron (05:45) is enabled but no API key set - Asked Roderick if he wants me to re-register the missed cron",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.954928145170499,
+      "totalScore": 6.808350458818029,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T20:30:27.523Z",
-      "lastRecalledAt": "2026-05-11T04:42:22.263Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "945ebcfdc68d",
         "0b07f259823a",
         "b923ea0460ce",
         "c498ef76cb1d",
         "577729f1e069",
-        "f7d1f8923a5d"
+        "f7d1f8923a5d",
+        "b84acb705a0f"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "built-in",
@@ -823,25 +837,29 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-11T04:52:51.742Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
         "23c38c53aa26",
         "29111942a45c",
-        "088d05594874"
+        "088d05594874",
+        "4fdd6eb8041e",
+        "b5deefa4bb81",
+        "b84acb705a0f"
       ],
       "recallDays": [
         "2026-05-07",
         "2026-05-08",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -892,20 +910,24 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "- [europe] Russia will conduct at least one large-scale drone or missile strike against Ukrainian territory within the next 7 days. (likely; 65% / 7d) - [asia] Former President Trump will arrive in China for a diplomatic visit before 16 May 2026. (likely; 60% / 7d) - [middle_east] The United States and Iran will not publicly announce a mutually agreed framework document for ending hostilities by 16 May 2026. (likely; 65% / 7d) - [north_america] Within 7 days, the U.S. government will formally request Mexican cooperation in investigating the CIA officers' deaths, and Mexican authorities will publicly agree to a joint probe. (likely; 65% / 7d) - [south_central_america] Fuel shortages in Cuba w",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:42:22.263Z",
-      "lastRecalledAt": "2026-05-11T04:52:51.742Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
       "queryHashes": [
         "f7d1f8923a5d",
         "3c68673febfe",
-        "088d05594874"
+        "088d05594874",
+        "4fdd6eb8041e",
+        "b5deefa4bb81",
+        "b84acb705a0f"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "large-scale",
@@ -947,6 +969,103 @@
         "env/config",
         "low-priority",
         "social-post"
+      ]
+    },
+    "memory:memory/2026-05-11.md:91:121": {
+      "key": "memory:memory/2026-05-11.md:91:121",
+      "path": "memory/2026-05-11.md",
+      "startLine": 91,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "## 4 Daily Briefings — First Creation ### What was built - 4 email-only briefings: UK News, Trump Leadership, Financial Markets + Prediction Bets, Global Sports - Sent via Gmail Maton API from trevor.mentis@gmail.com to roderick.jones@gmail.com - Opus 4.7 graded first draft C+ (oil inconsistencies, no Top 3 summary, sports odds math) - Cron set for 8am PT daily delivery (confirmed user preferred time) ## Hermes Agent Architecture Audit ### What was done - Studied Hermes Agent docs from Nous Research - Audited Trevor against 10 Hermes dimensions - Full audit saved to analyst/audits/hermes-audit-2026-05-11.md ### Key findings - Two CRITICAL gaps: procedural memory (skills) and self-improvi",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T04:02:30.258Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "queryHashes": [
+        "4fdd6eb8041e",
+        "b5deefa4bb81",
+        "b84acb705a0f"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "email-only",
+        "trevor.mentis",
+        "gmail.com",
+        "roderick.jones",
+        "4.7",
+        "self-improvi",
+        "briefings",
+        "first"
+      ]
+    },
+    "memory:memory/2026-05-11.md:115:136": {
+      "key": "memory:memory/2026-05-11.md:115:136",
+      "path": "memory/2026-05-11.md",
+      "startLine": 115,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "- analyst/audits/hermes-audit-2026-05-11.md — full audit document ## Agent-First GSIB Product ### What was built - build_agent_brief.py — reads analysis JSONs, produces structured JSON with typed fields - Schema includes: bluf, key_judgments (typed array), theatre_analyses (nested), prediction_markets, watch_items, indicators_dashboard - Each judgment has: statement, confidence_band, probability_lower/upper, falsification, source_grading - Published to Moltbook agents submolt: https://www.moltbook.com/posts/2099c975-a192-4668-bebf-64e37cbf673c - JSON at exports/agent-api/latest.json (55 KB) - Wired into daily-brief-cron.sh as post-pipeline step ### Business model implications - Human-firs",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T04:02:30.258Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "queryHashes": [
+        "4fdd6eb8041e",
+        "b5deefa4bb81",
+        "b84acb705a0f"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "agent-first",
+        "build-agent-brief.py",
+        "key-judgments",
+        "theatre-analyses",
+        "prediction-markets",
+        "watch-items",
+        "indicators-dashboard",
+        "confidence-band"
+      ]
+    },
+    "memory:memory/2026-05-10.md:1:18": {
+      "key": "memory:memory/2026-05-10.md:1:18",
+      "path": "memory/2026-05-10.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# 2026-05-10 ## Cron: Improvement Daemon — Hourly Market Check - 04:04 UTC — improvement_daemon.py --hourly completed cleanly. No output beyond completion. ## Social Tracker Fix (16:00 UTC) **Issue:** Cron-run `social-tracker.py` couldn't read `MOLTBOOK_API_KEY` or `GENVIRAL_API_KEY` from `.env` — they were only available when `source .env` was run first. Cron jobs don't source `.env` automatically. **Fix:** Added `.env` auto-loader to `scripts/social-tracker.py` (lines 4-11) using `pathlib` + `os.environ.setdefault()`. This reads the `.env` file at startup regardless of execution context. **Result after fix:** - **Moltbook:** ✅ Working — karma 26, 4 posts, 5 upvotes, no spam flags - **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8740029116304046,
+      "maxScore": 0.8740029116304046,
+      "firstRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "queryHashes": [
+        "b84acb705a0f"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "improvement-daemon.py",
+        "cron-run",
+        "social-tracker.py",
+        "moltbook-api-key",
+        "genviral-api-key",
+        "auto-loader",
+        "scripts/social-tracker.py",
+        "4-11"
       ]
     }
   }

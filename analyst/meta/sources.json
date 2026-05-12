@@ -933,6 +933,203 @@
           "discovered": "2026-05-11"
         }
       ]
+    },
+    {
+      "note": "Deep Horizon Scan — 2026-05-12 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
+      "sources": [
+        {
+          "name": "Escalation Trap",
+          "type": "Substack/Strategic Analysis",
+          "focus": "Iran war stalling analysis: asymmetric warfare trap, 5 warning signs, 100+ daily escorts needed but unfeasible, insurance premiums $1K→$120K.",
+          "url": "https://escalationtrap.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "The Merchants News",
+          "type": "Substack/Shipping Intelligence",
+          "focus": "China Hormuz foreknowledge analysis, container shipping data: 42 vessels still trapped, $2B daily insurance/freight/war premium rewrite.",
+          "url": "https://themerchantsnews.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Geopolitics Unplugged (Justin McShane)",
+          "type": "Substack/US Energy Policy",
+          "focus": "Hormuz negotiations, US may accept partial Iranian control, Qatari LNG first transit. 14K subscribers.",
+          "url": "https://geopoliticsunplugged.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "SAMF / Sam Freedman",
+          "type": "Substack/War Studies",
+          "focus": "Split-screen war analysis: air dominance vs Iran counter-coercion via Hormuz. Iranian drone boat tactics, encrypted suicide skiffs.",
+          "url": "https://samf.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Tatsu Ikeda — Geopolitical Risk Assessment",
+          "type": "Substack/Risk Analysis",
+          "focus": "Lebanon/Hezbollah fiber-optic drone warfare, Level 4/5 risk posture. IDF admits no technical solution to jam-proof drones.",
+          "url": "https://tatsuikeda.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Houthi Watch",
+          "type": "Independent OSINT Blog",
+          "focus": "Hormuz/Red Sea chokepoint OSINT: AIS + satellite analysis, IRGC speedboat massing near Qeshm, 12% drop in supertanker transits.",
+          "url": "https://houthishippingwatch.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "OSINTdefender Blog (osintdefender.com)",
+          "type": "Independent OSINT Blog",
+          "focus": "Lloyd's List aggregated data, DIA FOIA, Khalij Fars missile battery mapping via Google Earth Pro.",
+          "url": "https://osintdefender.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Shadow War Journal",
+          "type": "Substack/Iran-Israel Hybrid Warfare",
+          "focus": "SAR imagery suspect vessels/minelayers near Abu Musa, AIS scrub of 5 LNG carriers rerouted via Bab el-Mandeb.",
+          "url": "https://shadowwarjournal.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Drop Site News",
+          "type": "Substack/Investigative Journalism",
+          "focus": "Daily Israel-Lebanon-Iran war coverage, AI targeting controversy (Palantir Maven), Iran counterproposal detail. 750K+ subscribers.",
+          "url": "https://www.dropsitenews.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Think BRICS / Voice of BRICS",
+          "type": "Substack/Geopolitics BRICS",
+          "focus": "Hormuz blockade multi-layered crisis analysis: tacit US-Iran agreement theory, 38% global crude trade affected.",
+          "url": "https://thinkbrics.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "The Crude Reality",
+          "type": "Substack/Energy Markets",
+          "focus": "5 Signals framework for Hormuz reopening indicators, pricing normalization signals.",
+          "url": "https://thecrudereality.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "The Oil Report",
+          "type": "Substack/Energy Analysis",
+          "focus": "13 mbpd structural gap analysis, Iran taxing ships via Persian Gulf Strait Authority.",
+          "url": "https://theoilreport.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Loose Cannon",
+          "type": "Substack/Maritime Tactical",
+          "focus": "Navigational realities of Hormuz: US southern channel vs Iranian toll route vs mined central channel. Ex-Navy SEAL/boatbuilder.",
+          "url": "https://loosecannon.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "ACOUP — Bret Devereaux (acoup.blog)",
+          "type": "Independent Academic/Military History Blog",
+          "focus": "US strategic miscalculation regime-change gamble failed. Iran's Hormuz as 'weapon of mass disruption'. Predictable and ignored.",
+          "url": "https://acoup.blog/2026/03/25/miscellanea-the-war-in-iran/",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Responsible Statecraft (Quincy Institute)",
+          "type": "Think Tank/Foreign Policy",
+          "focus": "Critical US-Iran war analysis, Hormuz as economic siege, limits of American primacy, Iran three-phase peace framework.",
+          "url": "https://responsiblestatecraft.org",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Pareto Investor",
+          "type": "Substack/Macro Analysis",
+          "focus": "2026 Oil Shock: Iran War, Hormuz, Recession analysis.",
+          "url": "https://paretoinvestor.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Michael Liebreich — Cleaning Up / Energy",
+          "type": "Substack/Energy Transition",
+          "focus": "Oil existential supply shock vs gas 3% total supply: clean energy acceleration as strategic response to Hormuz crisis.",
+          "url": "https://mliebreich.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "USNI News Fleet Tracker",
+          "type": "US Naval Institute / Fleet Monitoring",
+          "focus": "Weekly fleet maps of US/Israeli/Iranian naval deployments.",
+          "url": "https://news.usni.org",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Judean OSINT (Telegram: @judean_osint)",
+          "type": "Telegram/OSINT Channel",
+          "focus": "Dedicated Iran-Israel real-time OSINT: strikes, proxies, military intel.",
+          "url": "https://t.me/judean_osint",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Straits of Hormuz Monitor (Telegram: @HormuzMonitor)",
+          "type": "Telegram/Maritime Monitor",
+          "focus": "Real-time Strait of Hormuz tanker traffic bot: AIS tracking, IRGC movement.",
+          "url": "https://t.me/HormuzMonitor",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Anas Alhajji Energy Outlook (anasalhajjieoa.substack.com)",
+          "type": "Substack/Energy Markets",
+          "focus": "Hormuz crisis energy analysis, no-paywall public analysis.",
+          "url": "https://anasalhajjieoa.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Fry69.dev Security Dispatches",
+          "type": "Independent OSINT/Tech Blog",
+          "focus": "LLM-assisted OSINT, Python AIS scraping, Monte Carlo transit risk model (35%). Custom GitHub tool.",
+          "url": "https://fry69.dev/blog",
+          "signal_level": "Medium",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "Nitishastra (Navroop Singh)",
+          "type": "Substack/Geopolitics",
+          "focus": "Multipolar world order, India's strategic autonomy, Hormuz implications on Asian energy security.",
+          "url": "https://nitishastra.substack.com",
+          "signal_level": "Medium-High",
+          "discovered": "2026-05-12"
+        },
+        {
+          "name": "FFUS (Louis-Vincent Gave / Gavekal Research)",
+          "type": "Substack/Macro Geostrategic",
+          "focus": "New Global Order: Iran war structural implications, US Navy assumption breakdown, AI/China macro.",
+          "url": "https://ffus.substack.com",
+          "signal_level": "High",
+          "discovered": "2026-05-12"
+        }
+      ]
     }
   ]
 }
