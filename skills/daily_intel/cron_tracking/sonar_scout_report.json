@@ -1,75 +1,105 @@
 {
-  "generated_at": "2026-05-12T00:25:38Z",
+  "generated_at": "2026-05-12T00:26:43Z",
   "scout_executed": true,
   "regions_scouted": [
-    "middle_east",
-    "asia",
-    "europe"
+    "africa",
+    "south_america",
+    "north_america"
   ],
   "sonar_queries_used": 3,
-  "potential_sources_found": 17,
-  "new_unique_sources": 17,
-  "total_inventory": 17,
+  "potential_sources_found": 15,
+  "new_unique_sources": 15,
+  "total_inventory": 32,
+  "total_queries_all_time": 3,
+  "sources_per_query": 5.0,
+  "sonar_dependency_trend": "decreasing",
+  "region_self_sufficiency": {
+    "middle_east": {
+      "sources": 5,
+      "status": "self_sufficient"
+    },
+    "asia": {
+      "sources": 5,
+      "status": "self_sufficient"
+    },
+    "europe": {
+      "sources": 7,
+      "status": "self_sufficient"
+    },
+    "africa": {
+      "sources": 5,
+      "status": "self_sufficient"
+    },
+    "south_america": {
+      "sources": 5,
+      "status": "self_sufficient"
+    },
+    "north_america": {
+      "sources": 5,
+      "status": "self_sufficient"
+    }
+  },
+  "sources_promoted_to_direct_collection": 32,
   "new_sources": [
     {
-      "name": "Parseek",
-      "url": "https://parseek.com/",
-      "type": "search_engine",
-      "country": "Iran"
+      "name": "African Security Analysis Situation Reports",
+      "url": "https://www.africansecurityanalysis.com/reports",
+      "type": "security analysis",
+      "country": "Pan-Africa"
     },
     {
-      "name": "Iran Monitor",
-      "url": "https://iranmonitor.com/",
-      "type": "osint_aggregation",
-      "country": "Iran"
-    },
-    {
-      "name": "CENTCOM US-vs-Iran",
-      "url": "https://centcom.gov/us-vs-iran/",
-      "type": "geopolitical_platform",
+      "name": "Council on Foreign Relations Global Conflict Tracker - Viole",
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/violent-extremism-sahel",
+      "type": "think tank tracker",
       "country": "United States"
     },
     {
-      "name": "Al Zaytouna Centre",
-      "url": "https://eng.alzaytouna.net/",
-      "type": "think_tank",
-      "country": "Palestine"
+      "name": "Institute for Economics & Peace Global Terrorism Index 2024",
+      "url": "https://www.economicsandpeace.org/wp-content/uploads/2024/02/GTI-2024-web-290224",
+      "type": "research report",
+      "country": "Australia"
     },
     {
-      "name": "Digital Digging Middle East OSINT",
-      "url": "https://digitaldigging.org/osint/#middle-east",
-      "type": "resource_directory",
-      "country": "Global"
+      "name": "US Government Publishing Office - Addressing the Rise of Ter",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-118hhrg54955/html/CHRG-118hhrg54955.htm",
+      "type": "congressional hearing",
+      "country": "United States"
     },
     {
-      "name": "PLATracker",
-      "url": "https://www.platracker.com/",
-      "type": "Independent Research/Analysis",
-      "country": "Taiwan"
+      "name": "Insight Turkey - T\u00fcrkiye's Security Policy in Sub-Saharan Af",
+      "url": "https://www.insightturkey.com/articles/turkiyes-security-policy-in-sub-saharan-a",
+      "type": "academic journal",
+      "country": "Turkey"
     },
     {
-      "name": "Research Project on China's Defense Affairs (RCDA)",
-      "url": "https://rcdatw.org",
-      "type": "Think Tank/Research",
-      "country": "Taiwan"
+      "name": "Telesur TV",
+      "url": "https://www.telesurenglish.net/",
+      "type": "State-Aligned Media",
+      "country": "Venezuela"
     },
     {
-      "name": "Taiwan Defense News Tracker",
-      "url": "https://twitter.com/TaiwansDefense",
-      "type": "News Aggregator",
-      "country": "Taiwan"
+      "name": "Efecto Cocuyo",
+      "url": "https://efectococuyo.com/",
+      "type": "Independent Journalism",
+      "country": "Venezuela"
     },
     {
-      "name": "Recorded Future - China OSINT Research",
-      "url": "https://www.recordedfuture.com/research/private-eyes-chinas-embrace-open-source-",
-      "type": "Intelligence Analysis",
-      "country": "USA"
+      "name": "Cazadores de Fake News",
+      "url": "https://cazadoresdefakenews.com/",
+      "type": "Fact-Checking Collective",
+      "country": "Venezuela"
     },
     {
-      "name": "Geopolitics Monitor",
-      "url": "https://geopoliticsmonitor.com",
-      "type": "Intelligence Dashboard",
-      "country": "International"
+      "name": "Runrun.es",
+      "url": "https://runrun.es/",
+      "type": "Investigative Media",
+      "country": "Venezuela"
+    },
+    {
+      "name": "El Pitazo",
+      "url": "https://elpitazo.net/",
+      "type": "Regional Journalism",
+      "country": "Venezuela"
     }
   ]
 }

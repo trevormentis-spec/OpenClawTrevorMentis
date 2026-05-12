@@ -320,7 +320,35 @@ def main():
         for s in truly_new[:5]:
             print(f"  {s['source_type']:<20s} {s['country']:<15s} {s.get('name','')[:60]}")
     
-    # Persist scout report
+    # Load previous reports for trend tracking
+    prev_reports = []
+    if SCOUT_REPORT.exists():
+        try:
+            prev = json.loads(SCOUT_REPORT.read_text())
+            prev_reports.append(prev)
+        except:
+            pass
+    
+    # Compute dependency trend
+    total_queries_all_time = prev.get("total_queries_all_time", 0) + queries_used if prev_reports else queries_used
+    sources_per_query = round(len(truly_new) / max(queries_used, 1), 1) if queries_used > 0 else 0
+    
+    # Region self-sufficiency analysis
+    region_sufficiency = {}
+    for region in ["middle_east", "asia", "europe", "africa", "south_america", "north_america"]:
+        region_sources = [s for s in inventory if s.get("region", "").lower() == region or s.get("country", "").lower() == region]
+        region_count = len(region_sources)
+        if region_count >= 5:
+            level = "self_sufficient"
+        elif region_count >= 3:
+            level = "emerging"
+        elif region_count >= 1:
+            level = "developing"
+        else:
+            level = "dependent_on_scout"
+        region_sufficiency[region] = {"sources": region_count, "status": level}
+    
+    # Persist scout report with dependency tracking
     report = {
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "scout_executed": True,
@@ -329,6 +357,15 @@ def main():
         "potential_sources_found": len(all_new),
         "new_unique_sources": len(truly_new),
         "total_inventory": total_sources,
+        "total_queries_all_time": total_queries_all_time,
+        "sources_per_query": sources_per_query,
+        "sonar_dependency_trend": (
+            "decreasing" if total_sources > 30 else
+            "stable" if total_sources > 15 else
+            "active_scouting"
+        ),
+        "region_self_sufficiency": region_sufficiency,
+        "sources_promoted_to_direct_collection": total_sources,
         "new_sources": [
             {"name": s.get("name", "?")[:60], "url": s.get("url", "?")[:80],
              "type": s.get("source_type", "?"), "country": s.get("country", "?")}
