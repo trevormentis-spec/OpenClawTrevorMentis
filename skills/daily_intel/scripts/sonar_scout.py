@@ -209,8 +209,55 @@ def needs_scouting(inventory: list[dict]) -> list[str]:
     return needs[:3]  # Max 3 regions per run
 
 
-def scout_region(region: str) -> list[dict]:
-    """Scout a region for new OSINT sources using Sonar."""
+def brave_search_region(region: str, source_type: str = "government_portal") -> list[dict]:
+    """Search for sources using Brave Search API (no LLM cost)."""
+    import urllib.request, urllib.parse, json as _json
+    sources = []
+    brave_key = os.environ.get("BRAVE_API_KEY", "BSAoi5HoC5F2i5shy0yPcKtqQPtxwbE")
+    if not brave_key:
+        return sources
+    
+    # Build search query per region and source type
+    queries = {
+        "government_portal": f"{region} government portal official website intelligence",
+        "local_media": f"{region} local news media outlet english language",
+        "think_tank": f"{region} think tank policy analysis security studies",
+        "defense_procurement": f"{region} defense procurement contract military spending",
+        "academic_source": f"{region} university research center international relations security",
+    }
+    query = queries.get(source_type, f"{region} {source_type}")
+    query += " 2026"
+    
+    try:
+        url = f"https://api.search.brave.com/res/v1/web/search?q={urllib.parse.quote(query)}&count=5"
+        req = urllib.request.Request(url,
+            headers={"X-Subscription-Token": brave_key, "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = _json.loads(resp.read())
+        
+        for result in data.get("web", {}).get("results", []):
+            link = result.get("url", "")
+            title = result.get("title", "")
+            if link and title:
+                sources.append({
+                    "name": title[:100],
+                    "url": link[:500],
+                    "source_type": source_type,
+                    "country": region,
+                    "region": region,
+                    "language": "en",
+                    "description": result.get("description", "")[:200],
+                    "discovered_by": "brave_search",
+                    "discovered_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                })
+    except Exception as e:
+        log.warning(f"Brave search failed for {region}/{source_type}: {e}")
+    
+    return sources
+
+
+def sonar_scout_region(region: str) -> list[dict]:
+    """Fallback: scout a region for new OSINT sources using Sonar."""
     prompts = {
         "middle_east": (
             "Find 5 real, accessible OSINT sources for geopolitical intelligence on Iran, Israel, "
@@ -222,7 +269,7 @@ def scout_region(region: str) -> list[dict]:
             "Find 5 real OSINT sources for geopolitical intelligence on China, Taiwan, India, "
             "Pakistan, North Korea, and Japan. "
             "Include local-language media, government portals, think tanks, and security analysis. "
-            "Return as JSON list with name, url, source_type, country, language."
+            "Return as JSON list."
         ),
         "europe": (
             "Find 5 real OSINT sources for geopolitical intelligence on Ukraine, Russia, Turkey, "
@@ -240,19 +287,15 @@ def scout_region(region: str) -> list[dict]:
             "and regional analysis. Return as JSON list."
         ),
     }
-    
     prompt = prompts.get(region, f"Find 5 real OSINT sources for geopolitical intelligence on {region}. Return as JSON list.")
-    
-    log.info(f"Scouting {region} via Sonar")
+    log.info(f"Sonar fallback scouting {region}")
     response = query_sonar(prompt)
     if not response:
         return []
-    
     sources = parse_source_response(response)
     for s in sources:
         s["region"] = region
         s["discovery_method"] = "sonar_scout"
-    
     log.info(f"Sonar returned {len(sources)} potential sources for {region}")
     return sources
 
@@ -286,10 +329,20 @@ def main():
     for region in regions_to_scout:
         if queries_used >= MAX_SONAR_QUERIES_PER_RUN:
             break
-        sources = scout_region(region)
-        all_new.extend(sources)
-        queries_used += 1
-        time.sleep(0.5)  # Polite rate limiting
+        # Brave Search (no cost) for each source type
+        region_sources = []
+        for st in ["government_portal", "local_media", "think_tank", "academic_source"]:
+            found = brave_search_region(region, st)
+            region_sources.extend(found)
+            time.sleep(0.3)
+        # If Brave found nothing, fall back to Sonar
+        if not region_sources:
+            sources = sonar_scout_region(region)
+            region_sources.extend(sources)
+            queries_used += 1
+        else:
+            log.info(f"Brave found {len(region_sources)} sources for {region} (no Sonar cost)")
+        all_new.extend(region_sources)
     
     # Dedup against existing inventory
     truly_new = dedup_new(all_new, inventory)
