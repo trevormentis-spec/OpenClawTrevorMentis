@@ -1,0 +1,70 @@
+{
+  "run_time": "2026-05-12T00:18:05Z",
+  "new_events": 67,
+  "total_events": 67,
+  "triggers_fired": 0,
+  "escalation_alerts": 0,
+  "events": [
+    {
+      "feed": "bbc_world",
+      "title": "Dozens of Nigerian fishermen feared dead after Chad air strikes on Boko Haram",
+      "sig": 22,
+      "time": "2026-05-12T00:18:04Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "EU sanctions violent Israeli settlers after months of deadlock",
+      "sig": 16,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "EU agrees sanctions on Israeli West Bank settlers, Hamas leaders",
+      "sig": 16,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "UK sanctions network accused of planning attacks for Iran",
+      "sig": 16,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "Trump says Iran ceasefire is on 'massive life support'",
+      "sig": 15,
+      "time": "2026-05-12T00:18:04Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "Trump says ceasefire is on \u2018life support\u2019 after rejecting Iran\u2019s proposal",
+      "sig": 15,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "Trump says ceasefire on \u2018life support\u2019, slams Iran response to US proposal",
+      "sig": 15,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "Israeli killings in Lebanon rise: Is even the pretence of a ceasefire over?",
+      "sig": 15,
+      "time": "2026-05-12T00:18:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "Another year, another controversy for Eurovision - but fans are sticking by it",
+      "sig": 13,
+      "time": "2026-05-12T00:18:04Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "Australia's right-wing One Nation party scores historic parliamentary win ",
+      "sig": 12,
+      "time": "2026-05-12T00:18:04Z"
+    }
+  ],
+  "triggers": []
+}

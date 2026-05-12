@@ -297,6 +297,27 @@ def section4b_collection_health() -> dict:
     }
 
 
+def section_collection_daemon() -> dict:
+    """Collection daemon status."""
+    state = load_json(CRON_DIR / "collection_daemon_state.json")
+    events = load_json(CRON_DIR / "collection_events.json")
+    triggers = load_json(CRON_DIR / "cognition_triggers.json")
+    
+    return {
+        "daemon_active": state.get("run_count", 0) > 0,
+        "total_runs": state.get("run_count", 0),
+        "total_events_processed": state.get("events_processed", 0),
+        "cognition_triggers_fired_total": state.get("cognition_triggers_fired", 0),
+        "last_run": state.get("last_run", ""),
+        "last_cycle_events": events.get("new_events", 0),
+        "last_cycle_triggers": events.get("triggers_fired", 0),
+        "active_escalation_ladders": {k: v["level"] for k, v in state.get("escalation_ladders", {}).items() if v["level"] > 0},
+        "escalation_ladder_max": max((v["level"] for v in state.get("escalation_ladders", {}).values()), default=0),
+        "recent_triggers": triggers.get("triggers", [])[:3],
+        "collection_interval": "30m",
+    }
+
+
 def section7_runtime_health() -> dict:
     """Runtime health, dependencies, costs, repairs."""
     state = load_json(CRON_DIR / "state.json")
@@ -480,6 +501,7 @@ def generate_report() -> dict:
         "section_1_daily_activity": section1_daily_activity(),
         "section_3_autonomy_progress": section3_autonomy_progress(),
         "section_4_collection_health": section4b_collection_health(),
+        "section_collection_daemon": section_collection_daemon(),
         "section_4_osint_expansion": section4_osint_expansion(),
         "section_5_memory_retrieval": section5_memory_retrieval(),
         "section_6_analytical_opportunities": section6_analytical_opportunities(),

@@ -1,0 +1,119 @@
+{
+  "first_run": "2026-05-12T00:18:04Z",
+  "last_run": "2026-05-12T00:18:05Z",
+  "run_count": 1,
+  "events_processed": 67,
+  "cognition_triggers_fired": 0,
+  "active_alerts": [],
+  "last_event_hashes": {
+    "bbc_world": {
+      "11eec0aab040": true,
+      "87e8fe0bd041": true,
+      "3c1799e029d3": true,
+      "110094e97bde": true,
+      "ce22c3f28656": true,
+      "d82b5b369105": true,
+      "5ef8b7d3f0f9": true,
+      "8b7eeeb9fd4c": true,
+      "8f25527fdab3": true,
+      "9ce28b4ae223": true,
+      "6685ff50245c": true,
+      "b8a693fe36b6": true,
+      "d08d1c92268a": true,
+      "c3407e3661ff": true,
+      "ec157d214e10": true,
+      "a34aae3b888a": true,
+      "32d71c9e5c3e": true,
+      "148343adfee4": true,
+      "4919966c477e": true,
+      "c36a77b97c20": true,
+      "1c2d43de0bef": true,
+      "c5e478a112b3": true,
+      "b7f9c9405592": true,
+      "c3010ad2b1fa": true,
+      "12d3e3ca43be": true,
+      "6a30a3cc0acc": true,
+      "73e285b34623": true,
+      "450356bbaae9": true,
+      "63640e3afe1c": true,
+      "9d7b940366e5": true,
+      "a62648202da8": true,
+      "4c8ef5086b00": true,
+      "7d7450b7dbb8": true,
+      "cdf780779ea1": true,
+      "2ecb41ca1de0": true,
+      "c91a0015cec6": true,
+      "b10884c5ddd2": true,
+      "cade9c779a6e": true,
+      "f702e451d8ef": true,
+      "02984b8b491c": true,
+      "a0cc5d97c330": true,
+      "eb2b2c657ebf": true
+    },
+    "al_jazeera": {
+      "ac5697959e6c": true,
+      "542da72b3fbb": true,
+      "1c51af3de843": true,
+      "65736b481f8a": true,
+      "1e78d6bb85ba": true,
+      "35010e4a12d6": true,
+      "e4a6ebf1d306": true,
+      "88a6c612a747": true,
+      "59203ab3822c": true,
+      "157a4baf396b": true,
+      "ecd3fd415c26": true,
+      "7b0b9ca4f093": true,
+      "fc2575fb768c": true,
+      "bb77b9a7e573": true,
+      "d2fa317b6395": true,
+      "9b02586ffc2d": true,
+      "5587b035ced1": true,
+      "41e6644810f5": true,
+      "f51f36d2be26": true,
+      "1a196c47226b": true,
+      "16e89fdfaac5": true,
+      "eeeb0d73dc26": true,
+      "f1fdc174f2b0": true,
+      "fb7f70ff8ece": true,
+      "592a6cae1e4e": true
+    }
+  },
+  "escalation_ladders": {
+    "europe": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "africa": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "asia": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "middle_east": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "north_america": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "south_america": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    },
+    "global_finance": {
+      "level": 0,
+      "signals": [],
+      "last_escalation": ""
+    }
+  },
+  "region_volatility": {}
+}
