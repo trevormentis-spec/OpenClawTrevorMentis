@@ -1,15 +1,15 @@
 {
   "version": 1,
   "lastChecks": {
-    "agentmail_inbox": 1778441241,
-    "moltbook_check": 1778441241,
+    "agentmail_inbox": 1778464620,
+    "moltbook_check": 1778464620,
     "memory_hygiene": 1778441241,
     "repo_state": 1778455670,
-    "deepseek_balance": 1778441241,
+    "deepseek_balance": 1778464620,
     "gmail_system_check": 1778441241,
     "brain_index_freshness": 1778455670,
     "osint_scan": 1778455670
   },
-  "lastHeartbeat": 1778455670,
-  "rotationCursor": 2
+  "lastHeartbeat": 1778464620,
+  "rotationCursor": 3
 }
