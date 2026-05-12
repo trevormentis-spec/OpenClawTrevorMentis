@@ -1,9 +1,10 @@
 # ORCHESTRATION.md — Trevor Agent Orchestration Framework
 
-**Version:** 3.0
-**Date:** 2026-05-01
+**Version:** 3.2
+**Date:** 2026-05-12
 **Status:** Active — single source of truth for routing
-**Primary Provider:** DeepSeek Direct API
+**Primary Provider:** DeepSeek Direct API (non-strategic tasks)
+**Strategic Provider:** OpenRouter (Tier-1 strategic analysis only)
 
 > This is the canonical routing document. If anything in `AGENTS.md`,
 > `MEMORY.md`, `REBUILD_ORCHESTRATION.md` (archived), or
@@ -14,22 +15,32 @@
 
 ## Core Model Routing
 
-### Primary (Default)
-- **Model:** `deepseek/deepseek-v4-flash`
-- **Provider:** DeepSeek Direct API (no OpenRouter)
-- **Use for:** reasoning, research synthesis, document writing, planning,
-  memory interaction, the great majority of Trevor's day-to-day work
-- **Cost tier:** Low
+### Tier-1 — Strategic Analysis
+- **Model:** `anthropic/claude-opus-4.7`
+- **Provider:** OpenRouter
+- **Use for:** executive summary composition, key judgment calibration,
+  adversarial red-team analysis. Tasks requiring strategic reasoning,
+  complex trade-off analysis, and multi-factor synthesis.
+- **Cost tier:** High (~$5/M input, ~$25/M output)
+- **Discipline:** Only the daily intel brief's highest-value cognitive
+  work. Never for routine collection, regional data synthesis, chat
+  responses, or tool orchestration.
 
-### Escalation
-- **Model:** `deepseek/deepseek-v4-pro`
+### Tier-2 — Regional Data Synthesis
+- **Model:** `deepseek/deepseek-v4-flash`
 - **Provider:** DeepSeek Direct API
-- **Use for:** complex, ambiguous, or high-precision tasks only
-- **Trigger conditions:**
-  - Primary reasoning insufficient or self-flagged as low-confidence
-  - Final TREVOR product (16-section assessment) requires maximum quality
-  - User explicitly requests best possible result
-- **Discipline:** never escalate automatically; escalation is opt-in.
+- **Use for:** 6 regional analyses (Europe, Asia, Middle East, North
+  America, South America, Global Finance). Data synthesis from collected
+  incidents into structured analytical JSON.
+- **Cost tier:** Low ($0.14/M input, $0.28/M output)
+- **Context window:** 1M tokens (handles full incident dumps)
+
+### Tier-3 — Conversational & Tool Use
+- **Model:** `deepseek/deepseek-v4-flash`
+- **Provider:** DeepSeek Direct API
+- **Use for:** chat responses, file operations, memory queries, tool calls,
+  planning, document writing, the great majority of Trevor's day-to-day
+- **Cost tier:** Low
 
 ### Fallback Chain (resilience, not preference)
 Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
@@ -41,14 +52,14 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 
 ---
 
-## Routing Tiers
+## Routing Tiers Summary
 
-| Tier        | Model                         | When to use                          |
-|-------------|-------------------------------|--------------------------------------|
-| Primary     | `deepseek/deepseek-v4-flash`  | Default for all tasks                |
-| Escalation  | `deepseek/deepseek-v4-pro`    | Complex / high-stakes only           |
-| Pipeline    | `anthropic/claude-opus-4.7`   | Daily Intel Brief analysis writing   |
-| Resilience  | fallback chain above          | API failure on primary               |
+| Tier  | Model                         | Provider          | When to use                          |
+|-------|-------------------------------|-------------------|--------------------------------------|
+| 1     | `anthropic/claude-opus-4.7`  | OpenRouter        | Strategic analysis (exec summary, red-team) |
+| 2     | `deepseek/deepseek-v4-flash` | DeepSeek Direct   | Regional data synthesis (6 regions)  |
+| 3     | `deepseek/deepseek-v4-flash` | DeepSeek Direct   | All chat, tools, memory, planning    |
+| R     | fallback chain                | DeepSeek/MyClaw  | API failure on primary               |
 
 ---
 
@@ -58,15 +69,15 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 - Default: Mermaid (`skills/mermaid`) or hand-rolled SVG / HTML / CSS
 - Reasons: cheaper, deterministic, editable, render in chat
 
-### OpenRouter (Daily Intel Pipeline + Specialist LLMs)
+### OpenRouter Policy
 - OpenRouter plugin is **enabled** for:
-  - **Daily Intel Brief analysis writing** — `anthropic/claude-opus-4.7` via OpenRouter
+  - **Tier-1 strategic analysis** — `anthropic/claude-opus-4.7` via OpenRouter
   - Image generation (diffusion, Gemini image models)
   - Video generation (Veo, etc.)
   - Text-to-speech
   - Any model not available via DeepSeek Direct or MyClaw
 - **Never** route DeepSeek models through OpenRouter — use DeepSeek Direct API.
-- Routed via `openrouter/google/...`, `openrouter/auto`, etc.
+- **Never** use OpenRouter for Tier-2 or Tier-3 tasks.
 - Monitored by `scripts/openrouter_monitor.py` on heartbeat cycle.
 
 ### Image Generation
@@ -143,53 +154,16 @@ Triggered only on 429 / 5xx / timeout / provider-unavailable from primary:
 
 ---
 
-## System Configuration
-
-**Config file:** `~/.openclaw/openclaw.json` (lives outside this repo)
-
-```jsonc
-{
-  "agents": {
-    "defaults": {
-      "model": {
-        "primary": "deepseek/deepseek-v4-flash",
-        "fallbacks": [
-          "deepseek/deepseek-chat",
-          "deepseek/deepseek-v4-pro",
-          "myclaw/minimax-m2.7"
-        ]
-      }
-    }
-  },
-  "models": {
-    "providers": {
-      "deepseek": {
-        "baseUrl": "https://api.deepseek.com",
-        "apiKey": "sk-…"
-      }
-    }
-  },
-  "plugins": {
-    "entries": {
-      "deepseek":   { "enabled": true  },
-      "openrouter": { "enabled": false }
-    }
-  }
-}
-```
-
----
-
 ## Model Availability
 
-| Model                      | Provider          | Context | Cost Tier   |
-|----------------------------|-------------------|---------|-------------|
-| deepseek-v4-flash          | DeepSeek Direct   | 195K    | Low         |
-| deepseek-chat              | DeepSeek Direct   | 131K    | Low         |
-| deepseek-v4-pro            | DeepSeek Direct   | 1M      | Medium-High |
-| anthropic/claude-opus-4.7  | OpenRouter        | 200K    | High ($5/M in, $25/M out) |
-| myclaw/minimax-m2.7        | MyClaw            | 204K    | Free        |
-| myclaw/kimi-k2.5           | MyClaw            | 200K    | Free        |
+| Model                      | Provider          | Context | Cost Tier   | Tier  |
+|----------------------------|-------------------|---------|-------------|-------|
+| deepseek-v4-flash          | DeepSeek Direct   | 1M      | Low         | 2, 3  |
+| deepseek-chat              | DeepSeek Direct   | 131K    | Low         | R     |
+| deepseek-v4-pro            | DeepSeek Direct   | 1M      | Medium-High | R     |
+| anthropic/claude-opus-4.7  | OpenRouter        | 200K    | High        | 1     |
+| myclaw/minimax-m2.7        | MyClaw            | 204K    | Free        | R     |
+| myclaw/kimi-k2.5           | MyClaw            | 200K    | Free        | R     |
 
 ---
 
@@ -206,14 +180,18 @@ cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ## Change Log
 
+- **3.2 (2026-05-12):** Adopted tiered architecture (Tier-1 Opus 4.7 /
+  Tier-2/3 DeepSeek V4 Flash). Replaced "Primary/Escalation" model with
+  explicit tier names and use-case descriptions. OpenRouter policy
+  updated: Tier-1 strategic analysis is now explicitly in-scope.
+  Routing scanner updated with accurate policy constants.
+  DeepSeek models are never routed through OpenRouter.
 - **3.1 (2026-05-10):** Added Pipeline tier for daily intel brief analysis.
   Writing routed through `anthropic/claude-opus-4.7` via OpenRouter.
   Updated `orchestrate.py` and `daily-brief-cron.sh` accordingly.
-  OpenRouter doc updated from "Specialist LLMs Only" to include pipeline.
 - **3.0 (2026-05-01):** Reconciled four conflicting routing documents into
   one source of truth. Canonical provider is DeepSeek Direct API.
-  REBUILD_ORCHESTRATION.md archived under `docs/archive/`. AGENTS.md,
-  MEMORY.md, and `.openclaw/model-config-note.md` aligned.
+  REBUILD_ORCHESTRATION.md archived under `docs/archive/`.
 - **2.0 (2026-04-28):** Switched primary to DeepSeek V4 Flash.
 - **1.0 (2026-04-25):** Initial balanced MyClaw default order.
 

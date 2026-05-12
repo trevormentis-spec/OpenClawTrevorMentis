@@ -20,7 +20,9 @@
 #
 # The pipeline takes ~90-120 minutes. Output lands at ~07:00 PT.
 #==============================================================================
-set -euo pipefail
+set -uo pipefail
+# Trap: disable errexit for piped commands where failure is non-fatal
+_pipestatus() { return \${PIPESTATUS[0]}; }
 
 REPO="/home/ubuntu/.openclaw/workspace"
 DATE_UTC=$(date -u +%Y-%m-%d)
@@ -49,12 +51,14 @@ fi
 
 cd "$REPO"
 
-# Step 1: Run orchestrator (produce PDF but skip AgentMail delivery)
-# Using Claude Opus 4.7 via OpenRouter for analysis writing
+# Step 1: Run orchestrator — tiered model routing
+# Tier-1: Opus 4.7 (via OpenRouter) for exec summary + red-team
+# Tier-2: DeepSeek V4 Flash (via DeepSeek Direct) for 6 regional analyses
 # (Switch --model deepseek/deepseek-v4-pro --provider deepseek to fall back)
-echo "--- Running orchestrator (Opus 4.7 via OpenRouter) ---" | tee -a "$LOG"
+echo "--- Running orchestrator (tiered: Flash for regions, Opus 4.7 for exec) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
     --model "anthropic/claude-opus-4.7" \
+    --tier2-model "deepseek/deepseek-v4-flash" \
     --provider openrouter \
     --no-deliver \
     --strict-env 2>&1 | tee -a "$LOG"
@@ -98,227 +102,78 @@ except Exception as e:
     exit $ORCHESTRATE_RC
 fi
 
-# Step 2: Find the generated PDF
-PDF_PATH=$(find ~/trevor-briefings/${DATE_UTC}/final -name "brief-${DATE_UTC}.pdf" 2>/dev/null | head -1)
-if [ -z "$PDF_PATH" ]; then
-    echo "ERROR: No PDF found at ~/trevor-briefings/${DATE_UTC}/final/" | tee -a "$LOG"
-    exit 1
-fi
-echo "PDF found: $PDF_PATH ($(du -h "$PDF_PATH" | cut -f1))" | tee -a "$LOG"
+# Step 2: Deliver the brief as a clean email with prediction markets and suggested trades
+# No PDF. No graphics. No images. Email-only.
+echo "--- Delivering daily brief via AgentMail (email-only, no PDF) ---" | tee -a "$LOG"
+python3 "$REPO/scripts/deliver_brief_email.py" --date "$DATE_UTC" --send 2>&1 | tee -a "$LOG"
 
-# Step 2b: Maps removed — quality wasn't meeting standards
-MAPS_DIR=""
-echo "--- Maps disabled per Roderick ---" | tee -a "$LOG"
-
-# Step 2c: Generate AI imagery for the brief sections (optional enhancement)
-IMAGES_JSON="$HOME/trevor-briefings/${DATE_UTC}/visuals/section-images.json"
-echo "--- Generating section imagery via GenViral Studio AI ---" | tee -a "$LOG"
-# Ensure GenViral key is loaded
-source "$REPO/.env" 2>/dev/null || true
-if [ -n "${GENVIRAL_API_KEY:-}" ]; then
-    if python3 "$REPO/scripts/generate_brief_images.py" \
-        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-        --out-json "$IMAGES_JSON" 2>&1 | tee -a "$LOG"; then
-        echo "Section images generated" | tee -a "$LOG"
-    else
-        echo "WARNING: Image generation failed (non-fatal)" | tee -a "$LOG"
-        IMAGES_JSON=""
-    fi
-else
-    echo "GENVIRAL_API_KEY not set — skipping imagery" | tee -a "$LOG"
-    IMAGES_JSON=""
-fi
-
-# Step 2c: Generate charts for magazine PDF
-CHARTS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/charts"
-echo "--- Generating infographic charts ---" | tee -a "$LOG"
-if python3 "$REPO/scripts/generate_brief_charts.py" \
-    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-    --out-dir "$CHARTS_DIR" 2>&1 | tee -a "$LOG"; then
-    echo "Charts generated" | tee -a "$LOG"
-else
-    echo "WARNING: Chart generation failed (non-fatal)" | tee -a "$LOG"
-    CHARTS_DIR=""
-fi
-
-# Step 2d: Generate magazine-quality PDF with maps + imagery
-MAGAZINE_PDF="$REPO/exports/pdfs/GSIB-${DATE_UTC}.pdf"
-echo "--- Generating magazine-quality PDF ---" | tee -a "$LOG"
-VENV_PYTHON="$REPO/.venv_pdf/bin/python"
-RENDER_ARGS="--working-dir $HOME/trevor-briefings/${DATE_UTC} --out-pdf $MAGAZINE_PDF"
-if [ -n "$MAPS_DIR" ] && [ -d "$MAPS_DIR" ]; then
-    RENDER_ARGS="$RENDER_ARGS --maps-dir $MAPS_DIR"
-fi
-if [ -n "$IMAGES_JSON" ] && [ -f "$IMAGES_JSON" ]; then
-    RENDER_ARGS="$RENDER_ARGS --images-json $IMAGES_JSON"
-fi
-# Add Kalshi data and charts
-KALSHI_FILE="$REPO/exports/kalshi-scan-${DATE_UTC}.md"
-if [ -f "$KALSHI_FILE" ]; then
-    RENDER_ARGS="$RENDER_ARGS --kalshi-json $KALSHI_FILE"
-fi
-CHARTS_DIR="$HOME/trevor-briefings/${DATE_UTC}/visuals/charts"
-if [ -d "$CHARTS_DIR" ]; then
-    RENDER_ARGS="$RENDER_ARGS --charts-dir $CHARTS_DIR"
-fi
-if [ -f "$VENV_PYTHON" ]; then
-    if "$VENV_PYTHON" "$REPO/scripts/render_brief_magazine.py" $RENDER_ARGS 2>&1 | tee -a "$LOG"; then
-        echo "Magazine PDF generated: $MAGAZINE_PDF" | tee -a "$LOG"
-        PDF_PATH="$MAGAZINE_PDF"
-    else
-        echo "WARNING: Magazine PDF generation failed, using raw brief PDF" | tee -a "$LOG"
-    fi
-else
-    echo "WARNING: .venv_pdf not found, using raw brief PDF" | tee -a "$LOG"
-fi
-
-# Step 3: Deliver via Gmail to Roderick
-echo "--- Delivering via Gmail ---" | tee -a "$LOG"
-python3 -c "
-import urllib.request, json, base64, os
-
-api_key = '$MATON_API_KEY'
-pdf_path = '$PDF_PATH'
-date_utc = '${DATE_UTC}'
-
-with open(pdf_path, 'rb') as f:
-    pdf_data = f.read()
-pdf_b64 = base64.b64encode(pdf_data).decode()
-
-# Get analysis snippets for the email body
-import json as j
-exec_summary = {}
-try:
-    with open(os.path.expanduser(f'~/trevor-briefings/{date_utc}/analysis/exec_summary.json')) as f:
-        exec_summary = j.load(f)
-except:
-    pass
-
-bluf_text = exec_summary.get('bluf', 'Daily intelligence assessment across six theatres.')
-judgments = exec_summary.get('five_judgments', [])
-
-judgment_html = ''
-for kj in judgments[:5]:
-    region = kj.get('drawn_from_region', 'Global')
-    statement = kj.get('statement', '')
-    band = kj.get('sherman_kent_band', 'assessed')
-    pct = kj.get('prediction_pct', '')
-    judgment_html += f'<li><strong>[{region}]</strong> {statement} <em>({band}; {pct}% / 7d)</em></li>'
-
-boundary = '==TREVOR_BRIEF_001=='
-
-email_body = f'''From: Trevor <trevor.mentis@gmail.com>
-To: Roderick Jones <roderick.jones@gmail.com>
-Subject: Global Security & Intelligence Brief — {date_utc}
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary=\"{boundary}\"
-
---{boundary}
-Content-Type: text/html; charset=\"UTF-8\"
-
-<html>
-<body style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: #f5f5f0; padding: 24px;\">
-<div style=\"max-width: 600px; margin: 0 auto; background: white; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);\">
-<div style=\"background: #161616; color: #c9a84c; padding: 24px 32px;\">
-<h1 style=\"margin: 0; font-size: 20px; letter-spacing: 1px; text-transform: uppercase;\">Global Security &amp; Intelligence Brief</h1>
-<p style=\"margin: 6px 0 0; color: #7a8a3c; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;\">{date_utc} — TREVOR Assessment</p>
-</div>
-<div style=\"padding: 32px;\">
-<h2 style=\"color: #1a1a2e; font-size: 15px; border-left: 3px solid #c0392b; padding-left: 12px; margin: 0 0 16px;\">BLUF</h2>
-<p style=\"color: #444; font-size: 14px; line-height: 1.6;\">''' + bluf_text[:500] + '''</p>
-<h2 style=\"color: #1a1a2e; font-size: 15px; border-left: 3px solid #7a8a3c; padding-left: 12px; margin: 24px 0 16px;\">Key Judgments</h2>
-<ul style=\"color: #444; font-size: 14px; line-height: 1.7; padding-left: 20px;\">''' + judgment_html + '''</ul>
-<p style=\"color: #888; font-size: 12px; margin-top: 24px; padding-top: 16px; border-top: 1px solid #eee;\">Full PDF attached. Six theatres: Europe • Sahel • South Asia • Middle East • North America • South America + Global Finance + Prediction Markets</p>
-<p style=\"color: #888; font-size: 12px;\">TREVOR Threat Research and Evaluation Virtual Operations Resource</p>
-</div></div>
-</body>
-</html>
-
---{boundary}
-Content-Type: application/pdf
-Content-Disposition: attachment; filename=\"GSIB-{date_utc}.pdf\"
-Content-Transfer-Encoding: base64
-
-{pdf_b64}
-
---{boundary}--
-'''
-
-raw_b64 = base64.urlsafe_b64encode(email_body.encode()).decode()
-payload = json.dumps({'raw': raw_b64}).encode()
-
-req = urllib.request.Request(
-    'https://gateway.maton.ai/google-mail/gmail/v1/users/me/messages/send',
-    data=payload,
-    method='POST'
-)
-req.add_header('Authorization', f'Bearer {api_key}')
-req.add_header('Content-Type', 'application/json')
-
-try:
-    resp = urllib.request.urlopen(req, timeout=60)
-    result = j.loads(resp.read())
-    msg_id = result.get('id', 'unknown')
-    print(f'Email sent! Message ID: {msg_id}')
-    print(f'To: Roderick Jones <roderick.jones@gmail.com>')
-    print(f'Subject: Global Security & Intelligence Brief — {date_utc}')
-except Exception as e:
-    print(f'Delivery failed: {e}')
-    exit(1)
-" 2>&1 | tee -a "$LOG"
-
-# Step 4: Post to social platforms via GenViral Studio AI
-# Uses the brief analysis file to generate original per-platform visuals
+# Step 3: Post to social platforms via GenViral Studio AI
 echo "--- Posting to social platforms via GenViral Studio AI ---" | tee -a "$LOG"
 if [ -n "${GENVIRAL_API_KEY:-}" ]; then
-    if bash "$REPO/scripts/genviral-post-brief.sh" 2>&1 | tee -a "$LOG"; then
+    set +e
+    bash "$REPO/scripts/genviral-post-brief.sh" 2>&1 | tee -a "$LOG"
+    POST_RC=${PIPESTATUS[0]}
+    set -e 2>/dev/null || true
+    if [ $POST_RC -eq 0 ]; then
         echo "Social posts successful" | tee -a "$LOG"
     else
-        echo "WARNING: Social posting failed (non-fatal)" | tee -a "$LOG"
+        echo "WARNING: Social posting failed (exit code $POST_RC) — continuing" | tee -a "$LOG"
     fi
 else
     echo "GENVIRAL_API_KEY not set — skipping social posts" | tee -a "$LOG"
 fi
 
-# Step 5: Post to Moltbook
-# Uses the same PDF — posts brief content to builds + agents submolts
-echo "--- Posting to Moltbook ---" | tee -a "$LOG"
-if [ -n "${MOLTBOOK_API_KEY:-}" ]; then
-    if bash "$REPO/scripts/moltbook-post-brief.sh" --pdf "$PDF_PATH" 2>&1 | tee -a "$LOG"; then
-        echo "Moltbook posts successful" | tee -a "$LOG"
-    else
-        echo "WARNING: Moltbook posting failed (non-fatal)" | tee -a "$LOG"
-    fi
+# Step 4: Postdiction — check yesterday's predictions against today's evidence
+echo "--- Running postdiction (calibration check) ---" | tee -a "$LOG"
+YESTERDAY_DIR="$HOME/trevor-briefings/$(TZ='America/Los_Angeles' date -d 'yesterday' +%Y-%m-%d 2>/dev/null || echo '')"
+TODAY_DIR="$HOME/trevor-briefings/${DATE_UTC}"
+if [ -d "$YESTERDAY_DIR" ] && [ -f "$YESTERDAY_DIR/analysis/exec_summary.json" ]; then
+    set +e
+    python3 "$REPO/scripts/postdict.py" \
+        --today "$TODAY_DIR" \
+        --yesterday "$YESTERDAY_DIR" 2>&1 | tee -a "$LOG"
+    set -e 2>/dev/null || true
 else
-    echo "MOLTBOOK_API_KEY not set — skipping Moltbook" | tee -a "$LOG"
+    echo "No yesterday brief found — skipping postdiction" | tee -a "$LOG"
 fi
 
-# Step 6: Generate agent-optimized JSON and notify subscribers
+# Step 5: Build agent API + publish to Moltbook
 echo "--- Building agent API ---" | tee -a "$LOG"
-if bash "$REPO/scripts/agent-brief-api.sh" --publish 2>&1 | tee -a "$LOG"; then
-    echo "Agent API ready" | tee -a "$LOG"
-else
-    echo "WARNING: Agent API step failed (non-fatal)" | tee -a "$LOG"
-fi
+set +e
+bash "$REPO/scripts/agent-brief-api.sh" --publish 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+python3 "$REPO/scripts/build_agent_brief.py" \
+    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
 
-# Step 7: Build and publish agent-first GSIB
-# Structured JSON for AI agent consumption — posted to Moltbook + API
-# Replaces maps/images/PDF as the primary delivery format for agents
-echo "--- Building agent-first GSIB (no maps, no PDF) ---" | tee -a "$LOG"
+# Step 6: Publish to Buttondown newsletter
+# Sends the daily brief as a newsletter email to all subscribers
+echo "--- Publishing to Buttondown newsletter ---" | tee -a "$LOG"
 source "$REPO/.env" 2>/dev/null || true
-export MOLTBOOK_API_KEY="${MOLTBOOK_API_KEY:-}"
-if [ -n "${MOLTBOOK_API_KEY:-}" ]; then
-    if python3 "$REPO/scripts/build_agent_brief.py" \
-        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" \
-        --moltbook 2>&1 | tee -a "$LOG"; then
-        echo "Agent brief built and posted to Moltbook" | tee -a "$LOG"
+if [ -n "\${BUTTONDOWN_API_KEY:-}" ]; then
+    if bash "$REPO/scripts/buttondown-send.sh" --subject "GSIB Daily Brief — ${DATE_PT}" 2>&1 | tee -a "$LOG"; then
+        echo "Buttondown newsletter published" | tee -a "$LOG"
     else
-        echo "WARNING: Agent brief build failed" | tee -a "$LOG"
+        echo "WARNING: Buttondown publish failed (non-fatal)" | tee -a "$LOG"
     fi
 else
-    python3 "$REPO/scripts/build_agent_brief.py" \
-        --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
-    echo "Agent brief built (not posted — no Moltbook key)" | tee -a "$LOG"
+    echo "BUTTONDOWN_API_KEY not set — skipping newsletter" | tee -a "$LOG"
+fi
+
+# Step 7: Update and deploy landing page (GitHub Pages)
+echo "--- Deploying landing page ---" | tee -a "$LOG"
+if bash "$REPO/scripts/deploy_landing_page.sh" 2>&1 | tee -a "$LOG"; then
+    echo "Landing page deployed to GitHub Pages" | tee -a "$LOG"
+else
+    echo "WARNING: Landing page deploy failed (non-fatal)" | tee -a "$LOG"
+fi
+
+# Step 8: Self-assessment — run after everything else
+# Produces a system health report + prompt injection if critical issues found
+echo "--- Running self-assessment daemon ---" | tee -a "$LOG"
+if python3 "$REPO/scripts/self_assessment.py" 2>&1 | tee -a "$LOG"; then
+    echo "Self-assessment complete" | tee -a "$LOG"
+else
+    echo "WARNING: Self-assessment flagged issues (non-fatal, check report)" | tee -a "$LOG"
 fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"
