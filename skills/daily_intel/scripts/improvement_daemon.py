@@ -505,8 +505,8 @@ def run_daily():
         log.info("  PDF build failed — will retry")
         success = False
 
-    # Phase 4: Quality & Measurement
-    log.info("\n── Phase 4: Quality & Measurement ──")
+    # Phase 5: Quality & Measurement
+    log.info("\n── Phase 5: Quality & Measurement ──")
     
     # Run briefometer calibration check before quality audit
     briefometer_ok, briefometer_msg = run_script('briefometer.py', ['--calibrate'], timeout=15)
