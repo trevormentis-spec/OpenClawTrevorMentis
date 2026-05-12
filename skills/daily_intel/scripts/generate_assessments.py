@@ -254,7 +254,7 @@ def generate_assessments(source_data, kalshi_data):
         source_text = format_source_text(emails)
         prompt = build_prompt(key, theatre['title'], prev, source_text, kalshi_data, memory_context)
 
-        client = DeepSeekClient(timeout=120)
+        client = DeepSeekClient(timeout=180, tier=3)  # Tier 3 — strategic cognition
         try:
             content = client.chat(prompt, system=system)
             out_path = ASSESS_DIR / f"{key}.md"

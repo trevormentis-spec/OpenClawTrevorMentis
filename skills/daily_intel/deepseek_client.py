@@ -14,11 +14,23 @@ MODEL = DEEPSEEK_MODEL
 
 
 class DeepSeekClient:
-    def __init__(self, timeout=None, max_retries=None):
+    def __init__(self, timeout=None, max_retries=None, tier=None):
         self.base_url = BASE_URL
         self.api_key = API_KEY
+        # Tier-based model selection
         self.model = MODEL
-        self.timeout = timeout or DEEPSEEK_TIMEOUT_SECONDS
+        self.tier = tier
+        if tier == 1:
+            self.model = "deepseek/deepseek-chat"
+            self.timeout = timeout or 60
+        elif tier == 2:
+            self.model = "deepseek/deepseek-v4-flash"
+            self.timeout = timeout or DEEPSEEK_TIMEOUT_SECONDS
+        elif tier == 3:
+            self.model = "deepseek/deepseek-v4-pro"
+            self.timeout = timeout or 180
+        else:
+            self.timeout = timeout or DEEPSEEK_TIMEOUT_SECONDS
         self.max_retries = max_retries or DEEPSEEK_MAX_RETRIES
 
     def chat(self, prompt: str, system: str = 'You are an intelligence analysis system.'):
