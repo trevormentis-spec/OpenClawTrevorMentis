@@ -197,6 +197,68 @@ def assess_fake_autonomy() -> list[dict]:
     ]
 
 
+def assess_intelligence_product_evolution() -> list[dict]:
+    """Propose new intelligence products based on current coverage."""
+    return [
+        {"product": "Escalation Ladder Monitor",
+         "rationale": "Every theatre shows escalation signals. Cross-theatre tracking provides warning single-theatre analysis cannot.",
+         "strategic_value": 90, "complexity": "medium"},
+        {"product": "Forecast Track Record Dashboard",
+         "rationale": "Brier scores collected but never visualized. Calibration dashboard enables continuous improvement.",
+         "strategic_value": 85, "complexity": "low"},
+        {"product": "Geopolitical Risk Heatmap",
+         "rationale": "Priority scoring + volatility + escalation signals produce executive-level risk visualization.",
+         "strategic_value": 82, "complexity": "low"},
+        {"product": "Prediction Market Divergence Report",
+         "rationale": "Systematic comparison of TREVOR estimates vs market prices would flag blind spots.",
+         "strategic_value": 78, "complexity": "medium"},
+        {"product": "Intelligence Gap Monitor",
+         "rationale": "3 recurring gaps detected. Persistent tracking identifies structural collection deficiencies.",
+         "strategic_value": 75, "complexity": "low"},
+    ]
+
+def assess_long_horizon_roadmap() -> list[dict]:
+    """6-12 month capability evolution roadmap."""
+    return [
+        {"horizon": "next_30d", "priority": "Activate memory-conditioned gen + Telegram alerting",
+         "value": 85, "effort": "low",
+         "rationale": "Highest ROI — closes scaffolded loops"},
+        {"horizon": "30-60d", "priority": "Cross-session learning loop (Brier→nudge→skill→adaptation)",
+         "value": 95, "effort": "medium",
+         "rationale": "Would make Trevor genuinely adaptive"},
+        {"horizon": "60-90d", "priority": "Email fallback (AgentMail) + offline degraded mode",
+         "value": 80, "effort": "medium",
+         "rationale": "Eliminates single points of failure"},
+        {"horizon": "90-180d", "priority": "Non-English collection + translation pipeline",
+         "value": 80, "effort": "hard",
+         "rationale": "Required for genuine global epistemic coverage"},
+        {"horizon": "180-365d", "priority": "Autonomous forecast calibration from historical accuracy",
+         "value": 95, "effort": "hard",
+         "rationale": "Full closure of cognition loop"},
+    ]
+
+def assess_operational_self_awareness() -> dict:
+    """Track where Trevor improved, stagnated, or regressed."""
+    return {
+        "improved": ["Collection architecture (country-tiered, epistemic-scored)",
+                     "Cognition routing (model-aware task assignment)",
+                     "Observability (dashboard + health + operational report)",
+                     "Source discovery (Brave Search + Sonar fallback)",
+                     "Memory (FTS5 populated, retrieval-conditioned)"],
+        "stagnated": ["Behavioral adaptation (flag never consumed)",
+                     "Calibration feedback (Brier logged, no action)",
+                     "Procedural memory (skills exist, unused)",
+                     "Cross-session learning (never occurred)"],
+        "scaffolded": ["Collection-cognition loop (adjustments injected, gen not fired)",
+                      "Adaptation flag (set but consumed by nothing)",
+                      "Calibration loop (drift detected, no behavioral change)"],
+        "genuinely_autonomous": ["Pipeline orchestration (15 phases on schedule)",
+                                "Source discovery (Brave/Sonar scouting)",
+                                "Auto-repair (4 issue types)",
+                                "Narrative tracking (fingerprinting, drift)"],
+    }
+
+
 def propose_improvements() -> list[dict]:
     """Propose controlled improvements with risk assessment."""
     return [
@@ -257,6 +319,9 @@ def main():
         "autonomy_quality": assess_autonomy_quality(),
         "capability_gaps": identify_capability_gaps(),
         "fake_autonomy_systems": assess_fake_autonomy(),
+    "intelligence_product_evolution": assess_intelligence_product_evolution(),
+    "long_horizon_roadmap": assess_long_horizon_roadmap(),
+    "operational_self_awareness": assess_operational_self_awareness(),
         "proposed_improvements": propose_improvements(),
         "meta_assessment": {
             "overall_architecture_score": 42,
@@ -297,6 +362,22 @@ def main():
     for f in report["fake_autonomy_systems"]:
         icon = {"scaffolded": "🟡", "partial": "🟠"}
         print(f"  {icon.get(f['status'], '❓')} {f['system']}: {f['detail'][:80]}")
+    
+    print(f"\nNew products proposed ({len(report['intelligence_product_evolution'])}):")
+    for p in sorted(report["intelligence_product_evolution"], key=lambda x: x["strategic_value"], reverse=True):
+        print(f"  📋 {p['product']} (value={p['strategic_value']}, complexity={p['complexity']})")
+    
+    print(f"\nLong-horizon roadmap:")
+    for r in report["long_horizon_roadmap"]:
+        print(f"  🗺️  [{r['horizon']}] {r['priority'][:80]}")
+    
+    print(f"\nOperational self-awareness:")
+    for category, items in report["operational_self_awareness"].items():
+        icon = {"improved": "✅", "stagnated": "⏸️", "scaffolded": "🟡", "genuinely_autonomous": "🟢"}
+        if items:
+            print(f"  {icon.get(category, '❓')} {category.replace('_',' ').title()}:")
+            for item in items[:3]:
+                print(f"    • {item}")
     
     print(f"\nProposed improvements ({len(report['proposed_improvements'])}):")
     for p in sorted(report["proposed_improvements"], key=lambda x: x["intelligence_value"], reverse=True):

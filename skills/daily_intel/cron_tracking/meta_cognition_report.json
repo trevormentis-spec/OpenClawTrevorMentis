@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T00:39:27Z",
+  "generated_at": "2026-05-12T00:40:31Z",
   "system_overview": {
     "subsystems": 19,
     "pipeline_phases": "14 + daemon + scout",
@@ -136,6 +136,101 @@
       "detail": "Collection intelligence injects confidence adjustments. Prompt varies based on collection quality. Epistemic state computed but assessment generation has not fired since."
     }
   ],
+  "intelligence_product_evolution": [
+    {
+      "product": "Escalation Ladder Monitor",
+      "rationale": "Every theatre shows escalation signals. Cross-theatre tracking provides warning single-theatre analysis cannot.",
+      "strategic_value": 90,
+      "complexity": "medium"
+    },
+    {
+      "product": "Forecast Track Record Dashboard",
+      "rationale": "Brier scores collected but never visualized. Calibration dashboard enables continuous improvement.",
+      "strategic_value": 85,
+      "complexity": "low"
+    },
+    {
+      "product": "Geopolitical Risk Heatmap",
+      "rationale": "Priority scoring + volatility + escalation signals produce executive-level risk visualization.",
+      "strategic_value": 82,
+      "complexity": "low"
+    },
+    {
+      "product": "Prediction Market Divergence Report",
+      "rationale": "Systematic comparison of TREVOR estimates vs market prices would flag blind spots.",
+      "strategic_value": 78,
+      "complexity": "medium"
+    },
+    {
+      "product": "Intelligence Gap Monitor",
+      "rationale": "3 recurring gaps detected. Persistent tracking identifies structural collection deficiencies.",
+      "strategic_value": 75,
+      "complexity": "low"
+    }
+  ],
+  "long_horizon_roadmap": [
+    {
+      "horizon": "next_30d",
+      "priority": "Activate memory-conditioned gen + Telegram alerting",
+      "value": 85,
+      "effort": "low",
+      "rationale": "Highest ROI \u2014 closes scaffolded loops"
+    },
+    {
+      "horizon": "30-60d",
+      "priority": "Cross-session learning loop (Brier\u2192nudge\u2192skill\u2192adaptation)",
+      "value": 95,
+      "effort": "medium",
+      "rationale": "Would make Trevor genuinely adaptive"
+    },
+    {
+      "horizon": "60-90d",
+      "priority": "Email fallback (AgentMail) + offline degraded mode",
+      "value": 80,
+      "effort": "medium",
+      "rationale": "Eliminates single points of failure"
+    },
+    {
+      "horizon": "90-180d",
+      "priority": "Non-English collection + translation pipeline",
+      "value": 80,
+      "effort": "hard",
+      "rationale": "Required for genuine global epistemic coverage"
+    },
+    {
+      "horizon": "180-365d",
+      "priority": "Autonomous forecast calibration from historical accuracy",
+      "value": 95,
+      "effort": "hard",
+      "rationale": "Full closure of cognition loop"
+    }
+  ],
+  "operational_self_awareness": {
+    "improved": [
+      "Collection architecture (country-tiered, epistemic-scored)",
+      "Cognition routing (model-aware task assignment)",
+      "Observability (dashboard + health + operational report)",
+      "Source discovery (Brave Search + Sonar fallback)",
+      "Memory (FTS5 populated, retrieval-conditioned)"
+    ],
+    "stagnated": [
+      "Behavioral adaptation (flag never consumed)",
+      "Calibration feedback (Brier logged, no action)",
+      "Procedural memory (skills exist, unused)",
+      "Cross-session learning (never occurred)"
+    ],
+    "scaffolded": [
+      "Collection-cognition loop (adjustments injected, gen not fired)",
+      "Adaptation flag (set but consumed by nothing)",
+      "Calibration loop (drift detected, no behavioral change)"
+    ],
+    "genuinely_autonomous": [
+      "Pipeline orchestration (15 phases on schedule)",
+      "Source discovery (Brave/Sonar scouting)",
+      "Auto-repair (4 issue types)",
+      "Narrative tracking (fingerprinting, drift)"
+    ]
+  },
   "proposed_improvements": [
     {
       "proposal": "Wire Telegram alert on pipeline failure",
