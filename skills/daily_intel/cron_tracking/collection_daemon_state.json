@@ -1,8 +1,8 @@
 {
   "first_run": "2026-05-12T00:18:04Z",
-  "last_run": "2026-05-12T00:18:05Z",
-  "run_count": 1,
-  "events_processed": 67,
+  "last_run": "2026-05-12T00:30:05Z",
+  "run_count": 2,
+  "events_processed": 75,
   "cognition_triggers_fired": 0,
   "active_alerts": [],
   "last_event_hashes": {
@@ -48,7 +48,14 @@
       "f702e451d8ef": true,
       "02984b8b491c": true,
       "a0cc5d97c330": true,
-      "eb2b2c657ebf": true
+      "eb2b2c657ebf": true,
+      "474d5924fa66": true,
+      "f72bc8982b6f": true,
+      "356d23cfcdf8": true,
+      "9b9b39803b82": true,
+      "12d8ebaf7ef9": true,
+      "2727eebc9f61": true,
+      "692feabb6e8e": true
     },
     "al_jazeera": {
       "ac5697959e6c": true,
@@ -75,7 +82,8 @@
       "eeeb0d73dc26": true,
       "f1fdc174f2b0": true,
       "fb7f70ff8ece": true,
-      "592a6cae1e4e": true
+      "592a6cae1e4e": true,
+      "1da28c828910": true
     }
   },
   "escalation_ladders": {

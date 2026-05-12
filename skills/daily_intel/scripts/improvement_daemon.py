@@ -505,8 +505,8 @@ def run_daily():
         log.info("  PDF build failed — will retry")
         success = False
 
-    # Phase 11: Quality & Measurement
-    log.info("\n── Phase 11: Quality & Measurement ──")
+    # Phase 14: Quality & Measurement
+    log.info("\n── Phase 14: Quality & Measurement ──")
     
     # Run briefometer calibration check before quality audit
     briefometer_ok, briefometer_msg = run_script('briefometer.py', ['--calibrate'], timeout=15)
@@ -530,15 +530,15 @@ def run_daily():
         except:
             pass
 
-    # Phase 11: Distribution
-    log.info("\n── Phase 11: Distribution ──")
+    # Phase 14: Distribution
+    log.info("\n── Phase 14: Distribution ──")
     if ok:
         step_distribution()
     else:
         log.info("  Skipping distribution — PDF build failed")
 
-    # Phase 11: Improvement report
-    log.info("\n── Phase 11: Improvement Report ──")
+    # Phase 14: Improvement report
+    log.info("\n── Phase 14: Improvement Report ──")
     report = generate_improvement_report()
     report["pipeline_success"] = success
     report_path = CRON_DIR / f"daily_report_{date_str}.json"

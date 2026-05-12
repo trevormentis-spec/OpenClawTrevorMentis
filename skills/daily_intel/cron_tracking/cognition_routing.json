@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-05-12T00:37:39Z",
+  "tier_definitions": {
+    "tier_1": {
+      "label": "Low-Cost / Continuous",
+      "models": [
+        "deepseek/deepseek-chat",
+        "sonar"
+      ],
+      "use_for": [
+        "rss_parsing",
+        "source_classification",
+        "metadata_extraction",
+        "translation",
+        "formatting"
+      ]
+    },
+    "tier_2": {
+      "label": "Mid-Level Analysis",
+      "models": [
+        "deepseek/deepseek-v4-flash"
+      ],
+      "use_for": [
+        "narrative_tracking",
+        "collection_analysis",
+        "regional_summaries",
+        "source_synthesis",
+        "narrative_drift"
+      ]
+    },
+    "tier_3": {
+      "label": "High-Cognition Strategic Analysis",
+      "models": [
+        "deepseek/deepseek-v4-pro",
+        "anthropic/claude-opus-4.7"
+      ],
+      "use_for": [
+        "strategic_forecasting",
+        "estimative_reasoning",
+        "leadership_analysis",
+        "escalation_ladders",
+        "scenario_trees"
+      ]
+    }
+  },
+  "task_routing": {
+    "daily_enrichment": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "story_tracking": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "collection_heartbeat": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "diagnostics": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "assessment_generation": {
+      "assigned_tier": 3,
+      "tier_label": "High-Cognition Strategic Analysis",
+      "recommended_model": "deepseek/deepseek-v4-pro"
+    },
+    "narrative_conditioning": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "collection_quality": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "source_scoring": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "source_discovery": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "country_profiling": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "epistemic_state": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "product_discovery": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "intelligence_gap_detection": {
+      "assigned_tier": 2,
+      "tier_label": "Mid-Level Analysis",
+      "recommended_model": "deepseek/deepseek-v4-flash"
+    },
+    "operational_report": {
+      "assigned_tier": 1,
+      "tier_label": "Low-Cost / Continuous",
+      "recommended_model": "deepseek/deepseek-chat"
+    },
+    "strategic_warning": {
+      "assigned_tier": 3,
+      "tier_label": "High-Cognition Strategic Analysis",
+      "recommended_model": "deepseek/deepseek-v4-pro"
+    },
+    "escalation_analysis": {
+      "assigned_tier": 3,
+      "tier_label": "High-Cognition Strategic Analysis",
+      "recommended_model": "deepseek/deepseek-v4-pro"
+    },
+    "forecasting": {
+      "assigned_tier": 3,
+      "tier_label": "High-Cognition Strategic Analysis",
+      "recommended_model": "deepseek/deepseek-v4-pro"
+    }
+  },
+  "cost_allocation_by_tier": {
+    "1": {
+      "tasks": [
+        "daily_enrichment",
+        "story_tracking",
+        "collection_heartbeat",
+        "diagnostics",
+        "source_scoring",
+        "source_discovery",
+        "operational_report"
+      ],
+      "total_cost": 0.001806,
+      "total_tokens": 4300
+    },
+    "2": {
+      "tasks": [
+        "narrative_conditioning",
+        "collection_quality",
+        "country_profiling",
+        "epistemic_state",
+        "product_discovery",
+        "intelligence_gap_detection"
+      ],
+      "total_cost": 0.00189,
+      "total_tokens": 4500
+    },
+    "3": {
+      "tasks": [
+        "assessment_generation",
+        "strategic_warning",
+        "escalation_analysis",
+        "forecasting"
+      ],
+      "total_cost": 0.056115,
+      "total_tokens": 43000
+    }
+  },
+  "total_daily_estimated_cost": 0.0598,
+  "total_daily_estimated_tokens": 51800
+}
