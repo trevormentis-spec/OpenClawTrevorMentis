@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-05-12T00:25:38Z",
+  "scout_executed": true,
+  "regions_scouted": [
+    "middle_east",
+    "asia",
+    "europe"
+  ],
+  "sonar_queries_used": 3,
+  "potential_sources_found": 17,
+  "new_unique_sources": 17,
+  "total_inventory": 17,
+  "new_sources": [
+    {
+      "name": "Parseek",
+      "url": "https://parseek.com/",
+      "type": "search_engine",
+      "country": "Iran"
+    },
+    {
+      "name": "Iran Monitor",
+      "url": "https://iranmonitor.com/",
+      "type": "osint_aggregation",
+      "country": "Iran"
+    },
+    {
+      "name": "CENTCOM US-vs-Iran",
+      "url": "https://centcom.gov/us-vs-iran/",
+      "type": "geopolitical_platform",
+      "country": "United States"
+    },
+    {
+      "name": "Al Zaytouna Centre",
+      "url": "https://eng.alzaytouna.net/",
+      "type": "think_tank",
+      "country": "Palestine"
+    },
+    {
+      "name": "Digital Digging Middle East OSINT",
+      "url": "https://digitaldigging.org/osint/#middle-east",
+      "type": "resource_directory",
+      "country": "Global"
+    },
+    {
+      "name": "PLATracker",
+      "url": "https://www.platracker.com/",
+      "type": "Independent Research/Analysis",
+      "country": "Taiwan"
+    },
+    {
+      "name": "Research Project on China's Defense Affairs (RCDA)",
+      "url": "https://rcdatw.org",
+      "type": "Think Tank/Research",
+      "country": "Taiwan"
+    },
+    {
+      "name": "Taiwan Defense News Tracker",
+      "url": "https://twitter.com/TaiwansDefense",
+      "type": "News Aggregator",
+      "country": "Taiwan"
+    },
+    {
+      "name": "Recorded Future - China OSINT Research",
+      "url": "https://www.recordedfuture.com/research/private-eyes-chinas-embrace-open-source-",
+      "type": "Intelligence Analysis",
+      "country": "USA"
+    },
+    {
+      "name": "Geopolitics Monitor",
+      "url": "https://geopoliticsmonitor.com",
+      "type": "Intelligence Dashboard",
+      "country": "International"
+    }
+  ]
+}
