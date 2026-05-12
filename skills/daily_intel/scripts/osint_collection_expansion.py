@@ -400,6 +400,35 @@ def main():
         ],
     }
 
+    # Add social media intelligence from ScrapeCreators
+    try:
+        sys.path.insert(0, str(SKILL_ROOT / "scripts"))
+        from scrape_creators import ScrapeCreators
+        sc = ScrapeCreators()
+        creds = sc.credits()
+        report["scrape_creators"] = {
+            "credits_remaining": creds,
+            "platforms_available": ["telegram","tiktok","x","reddit","instagram","youtube","facebook","threads","bluesky","linkedin"],
+        }
+        if creds > 10:
+            # Quick scan of key geopolitical keywords on TikTok
+            for keyword in ["ukraine war", "iran", "china taiwan", "hormuz", "cuba", "venezuela"]:
+                try:
+                    posts = sc.search(keyword, "tiktok", count=2)
+                    if posts:
+                        report.setdefault("social_signals", []).append({
+                            "keyword": keyword,
+                            "platform": "tiktok",
+                            "post_count": len(posts),
+                            "sample": posts[0].get("text", posts[0].get("description",""))[:150] if posts else "",
+                        })
+                except:
+                    pass
+                import time as _t
+                _t.sleep(0.2)  # rate limit courtesy
+    except Exception as e:
+        log.warning(f"ScrapeCreators monitoring failed: {e}")
+    
     # Save report
     CRON_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(json.dumps(report, indent=2))
