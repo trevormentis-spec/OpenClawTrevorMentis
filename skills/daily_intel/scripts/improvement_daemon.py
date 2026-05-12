@@ -460,7 +460,7 @@ def run_daily():
     step_kalshi_scan()
 
     # Phase 2: Generation
-    log.info("\n── Phase 2: Content Generation ──")
+    log.info("\n── Phase 2: Assessment Generation ──")
     
     # Check if any narratives are stale — inject adaptation flag
     adaptation_flag = ""
@@ -505,8 +505,8 @@ def run_daily():
         log.info("  PDF build failed — will retry")
         success = False
 
-    # Phase 6: Quality & Measurement
-    log.info("\n── Phase 6: Quality & Measurement ──")
+    # Phase 11: Quality & Measurement
+    log.info("\n── Phase 11: Quality & Measurement ──")
     
     # Run briefometer calibration check before quality audit
     briefometer_ok, briefometer_msg = run_script('briefometer.py', ['--calibrate'], timeout=15)
@@ -530,15 +530,15 @@ def run_daily():
         except:
             pass
 
-    # Phase 5: Distribution
-    log.info("\n── Phase 5: Distribution ──")
+    # Phase 11: Distribution
+    log.info("\n── Phase 11: Distribution ──")
     if ok:
         step_distribution()
     else:
         log.info("  Skipping distribution — PDF build failed")
 
-    # Phase 5: Improvement report
-    log.info("\n── Phase 7: Improvement Report ──")
+    # Phase 11: Improvement report
+    log.info("\n── Phase 11: Improvement Report ──")
     report = generate_improvement_report()
     report["pipeline_success"] = success
     report_path = CRON_DIR / f"daily_report_{date_str}.json"

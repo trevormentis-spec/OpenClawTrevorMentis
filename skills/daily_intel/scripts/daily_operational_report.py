@@ -502,6 +502,7 @@ def generate_report() -> dict:
         "section_3_autonomy_progress": section3_autonomy_progress(),
         "section_4_collection_health": section4b_collection_health(),
         "section_collection_daemon": section_collection_daemon(),
+        "section_epistemic_state": load_json(CRON_DIR / "epistemic_state.json").get("epistemic_summary", {}),
         "section_4_osint_expansion": section4_osint_expansion(),
         "section_5_memory_retrieval": section5_memory_retrieval(),
         "section_6_analytical_opportunities": section6_analytical_opportunities(),
