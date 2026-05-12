@@ -115,60 +115,85 @@ SOURCE_TYPE_VALUE = {
 
 
 def search_source_candidates(country: str, source_type: str, max_results: int = 5) -> list[dict]:
-    """Search for potential new OSINT sources for a country and type."""
+    """Search for potential new OSINT sources using SerpAPI."""
+    import urllib.parse, urllib.request, urllib.error, json as _json
+    
     candidates = []
-    # Build search query targeting the specific source type in the country
     queries = {
-        "local_media": f"{country} local news website english OR native language",
-        "government_portal": f"{country} .gov OR .mil official website intelligence analysis",
-        "legal_gazette": f"{country} official gazette OR legal register published",
-        "parliamentary_transcript": f"{country} parliament OR congress debate transcript",
-        "defense_procurement": f"{country} defense OR military procurement contract tender",
-        "telegram_channel": f"{country} telegram channel geopolitical analysis English",
-        "shipping_data": f"{country} port shipping maritime traffic live tracking",
-        "aviation_tracking": f"{country} flight radar aviation movement realtime",
-        "energy_infrastructure": f"{country} oil gas energy pipeline infrastructure map",
-        "sanctions_registry": f"{country} sanctions export control restricted entities list",
-        "customs_database": f"{country} customs trade import export statistics portal",
-        "satellite_derived": f"{country} satellite imagery analysis infrastructure monitoring",
-        "academic_source": f"{country} university research center geopolitical security studies",
-        "trade_journal": f"{country} business trade industry journal economic intelligence",
-        "think_tank": f"{country} think tank policy analysis strategy report",
+        "local_media": f"{country} local news website",
+        "government_portal": f"{country} official government portal .gov",
+        "legal_gazette": f"{country} official gazette legal register",
+        "parliamentary_transcript": f"{country} parliament debate transcript",
+        "defense_procurement": f"{country} defense procurement contract",
+        "telegram_channel": f"{country} telegram channel news",
+        "shipping_data": f"{country} port shipping maritime data",
+        "aviation_tracking": f"{country} flight radar aviation",
+        "energy_infrastructure": f"{country} oil gas pipeline infrastructure",
+        "sanctions_registry": f"{country} sanctions export control list",
+        "customs_database": f"{country} customs trade statistics",
+        "satellite_derived": f"{country} satellite imagery analysis",
+        "academic_source": f"{country} university security studies research center",
+        "trade_journal": f"{country} business trade industry journal",
+        "think_tank": f"{country} think tank policy analysis",
     }
-    query = queries.get(source_type, f"{country} {source_type} intelligence analysis english")
+    query = queries.get(source_type, f"{country} {source_type} intelligence")
     query += " 2026"
 
-    try:
-        search_url = (
-            f"https://html.duckduckgo.com/html/?q="
-            f"{urllib.parse.quote(query)}"
-        )
-        req = urllib.request.Request(
-            search_url,
-            headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
-        )
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            html = resp.read().decode(errors="replace")
+    # SerpAPI endpoint with the key provided by Roderick
+    api_key = "c7799d636d004982ba8e9b378de15b11253e5b23d9fc73f3f1e0b18e443abb1d"
+    params = urllib.parse.urlencode({
+        "engine": "google",
+        "q": query,
+        "api_key": api_key,
+        "num": max_results,
+        "gl": country.upper()[:2] if len(country) >= 2 else "",
+    })
+    url = f"https://serpapi.com/search.json?{params}"
 
-        # Extract result links and titles
-        for match in re.finditer(
-            r'<a rel="nofollow" class="result__a" href="([^"]+)">(.*?)</a>',
-            html, re.DOTALL
-        ):
-            url = match.group(1)
-            title = re.sub(r'<[^>]+>', '', match.group(2)).strip()
-            if url and title and len(title) > 10:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "TrevorIntelBot/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = _json.loads(resp.read())
+
+        for result in data.get("organic_results", [])[:max_results]:
+            link = result.get("link", "")
+            title = result.get("title", "")
+            snippet = result.get("snippet", "")
+            if link and title:
                 candidates.append({
-                    "url": url,
+                    "url": link,
                     "title": title[:200],
+                    "snippet": snippet[:200],
                     "source_type": source_type,
                     "country": country,
                     "discovered_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
                 })
-                if len(candidates) >= max_results:
-                    break
     except Exception as e:
-        log.warning(f"Search failed for {country}/{source_type}: {e}")
+        log.warning(f"SerpAPI search failed for {country}/{source_type}: {e}")
+        # Fallback: Brave Search via workspace env
+        try:
+            brave_key = os.environ.get("BRAVE_API_KEY", "")
+            if brave_key:
+                brave_params = urllib.parse.urlencode({"q": query, "count": max_results})
+                brave_url = f"https://api.search.brave.com/res/v1/web/search?{brave_params}"
+                brave_req = urllib.request.Request(
+                    brave_url,
+                    headers={"Accept": "application/json", "Accept-Encoding": "gzip",
+                             "X-Subscription-Token": brave_key}
+                )
+                with urllib.request.urlopen(brave_req, timeout=15) as resp:
+                    brave_data = _json.loads(resp.read())
+                for result in brave_data.get("web", {}).get("results", [])[:max_results]:
+                    link = result.get("url", "")
+                    title = result.get("title", "")
+                    if link and title:
+                        candidates.append({
+                            "url": link, "title": title[:200],
+                            "source_type": source_type, "country": country,
+                            "discovered_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        })
+        except Exception as e2:
+            log.warning(f"Brave fallback also failed: {e2}")
 
     return candidates
 
