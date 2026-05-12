@@ -1,0 +1,94 @@
+{
+  "generated": "2026-05-11T23:33:06.018687",
+  "theatre_count": 7,
+  "drift_count": 7,
+  "regime_shifts": 0,
+  "drifts": [
+    {
+      "region": "europe",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "africa",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "asia",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "middle_east",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "north_america",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "south_america",
+      "status": "baseline",
+      "note": "First recording"
+    },
+    {
+      "region": "global_finance",
+      "status": "baseline",
+      "note": "First recording"
+    }
+  ],
+  "landscape": {
+    "europe": {
+      "fingerprint": "## Russia's Ceasefire Deception: Operational Reconstitution Disguised as Diplomacy",
+      "hash": "389c7db06ec675b9b4ca8894505b770a",
+      "date": "2026-05-11",
+      "char_count": 19666,
+      "line_count": 79
+    },
+    "africa": {
+      "fingerprint": "# [Headline \u2014 TREVOR's Lead Assessment: Sahel Theatre Remains Peripheral as Great-Power Dynamics Shift Toward Iran-China Axis]",
+      "hash": "ecd3d89f81433b6e7a39ec5059cc42b1",
+      "date": "2026-05-11",
+      "char_count": 10184,
+      "line_count": 33
+    },
+    "asia": {
+      "fingerprint": "# [TREVOR Assessment: South Asia / Indo-Pacific \u2014 Strategic Vacuum and Iran Nuclear Uncertainty Dominates Regional Calculus]",
+      "hash": "71137ae1efa47e58c7ea69fcf5e730f3",
+      "date": "2026-05-11",
+      "char_count": 12045,
+      "line_count": 51
+    },
+    "middle_east": {
+      "fingerprint": "# TREVOR STRATEGIC ASSESSMENT: Iran Theatre \u2014 Escalation and Diplomatic Impasse",
+      "hash": "d866460e8b90a416a711754391405b39",
+      "date": "2026-05-11",
+      "char_count": 17254,
+      "line_count": 75
+    },
+    "north_america": {
+      "fingerprint": "# [TREVOR ASSESSMENT: No Direct Cartel Threat Indicators Detected \u2014 Routine CISA Cybersecurity Advisories Dominate Source Intake]",
+      "hash": "d5c3db72ea2a5a43eb9c7bc0726f6018",
+      "date": "2026-05-11",
+      "char_count": 13634,
+      "line_count": 63
+    },
+    "south_america": {
+      "fingerprint": "# TREVOR \u2014 THREAT RESEARCH AND EVALUATION VIRTUAL OPERATIONS RESOURCE",
+      "hash": "884d71ab0f0651cb667f34f2dc268594",
+      "date": "2026-05-11",
+      "char_count": 11588,
+      "line_count": 55
+    },
+    "global_finance": {
+      "fingerprint": "# TREVOR STRATEGIC ASSESSMENT: PREDICTION MARKETS SIGNAL CONVERGENCE ON IRAN NEGOTIATION WINDOW",
+      "hash": "63376e92d94942f815d20b8f5eb176c1",
+      "date": "2026-05-11",
+      "char_count": 15089,
+      "line_count": 51
+    }
+  }
+}

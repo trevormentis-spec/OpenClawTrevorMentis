@@ -1,0 +1,44 @@
+{
+  "europe": {
+    "fingerprint": "The May 9-11 Victory Day ceasefire represents a calculated Russian operational maneuver, not a genuine diplomatic opening. TREVOR assesses that the Kremlin leveraged the three-day pause primarily to c",
+    "hash": "3e58f64d5b3a99fa9d019bc25265f501",
+    "date": "2026-05-11",
+    "lead": "The May 9-11 Victory Day ceasefire represents a calculated Russian operational maneuver, not a genui"
+  },
+  "africa": {
+    "fingerprint": "TREVOR assesses that the Sahel/Africa theatre remains strategically secondary in the current intelligence cycle, with no direct sourcing addressing kinetic or political developments in the region. The",
+    "hash": "24f48accfe755c0db9e5bddd1a2eb6d4",
+    "date": "2026-05-11",
+    "lead": "TREVOR assesses that the Sahel/Africa theatre remains strategically secondary in the current intelli"
+  },
+  "asia": {
+    "fingerprint": "The current intelligence cycle for the South Asia / Indo-Pacific theatre produced **zero new raw intelligence reports**. This absence is itself a significant signal: either collection gaps have widene",
+    "hash": "50f5772f042e2674384bb98ac48180c9",
+    "date": "2026-05-11",
+    "lead": "The current intelligence cycle for the South Asia / Indo-Pacific theatre produced **zero new raw int"
+  },
+  "middle_east": {
+    "fingerprint": "The US-Iran crisis has entered a new phase characterized by direct military engagement in the Strait of Hormuz, a hardening of negotiating positions on both sides, and Iran's systematic attempt to wea",
+    "hash": "73749bdb559b38540e86a4072431ba67",
+    "date": "2026-05-11",
+    "lead": "The US-Iran crisis has entered a new phase characterized by direct military engagement in the Strait"
+  },
+  "north_america": {
+    "fingerprint": "The raw intelligence intake for this reporting cycle contains **zero source material directly related to Mexico-based cartel operations, drug trafficking, human smuggling, or cartel-linked violence** ",
+    "hash": "0b196b72b5bd2c27b48af699485d7b40",
+    "date": "2026-05-11",
+    "lead": "The raw intelligence intake for this reporting cycle contains **zero source material directly relate"
+  },
+  "south_america": {
+    "fingerprint": "TREVOR assesses that the Venezuela theatre is currently in a **low-signal, high-stakes holding pattern** with no new raw intelligence reporting in this cycle. The absence of fresh source material is i",
+    "hash": "2f3e8a072063906bbcbf00cf59654e7b",
+    "date": "2026-05-11",
+    "lead": "TREVOR assesses that the Venezuela theatre is currently in a **low-signal, high-stakes holding patte"
+  },
+  "global_finance": {
+    "fingerprint": "Prediction market data from Kalshi as of 11 May 2026 reveals a striking divergence in probability assessments for US-Iran agreement timelines. The near-term June 2026 contract trades at approximately ",
+    "hash": "3e7a41bc1bfeae48a48d110ed530d72e",
+    "date": "2026-05-11",
+    "lead": "Prediction market data from Kalshi as of 11 May 2026 reveals a striking divergence in probability as"
+  }
+}

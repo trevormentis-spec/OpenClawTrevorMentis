@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-05-11T23:48:19Z",
+  "pipeline_date": "2026-05-11",
+  "summary": {
+    "cross_theatre_relationships": 4,
+    "narrative_regime_shifts": 0,
+    "prediction_market_repricing_signals": 0,
+    "intelligence_gaps_detected": 3,
+    "analytical_opportunities": 7,
+    "new_product_concepts": 12
+  },
+  "analytical_opportunities": [
+    {
+      "region": "europe",
+      "key_judgment_count": 5,
+      "escalation_signals": 4,
+      "intel_gaps": true,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    },
+    {
+      "region": "africa",
+      "key_judgment_count": 5,
+      "escalation_signals": 2,
+      "intel_gaps": true,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    },
+    {
+      "region": "asia",
+      "key_judgment_count": 5,
+      "escalation_signals": 3,
+      "intel_gaps": false,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    },
+    {
+      "region": "middle_east",
+      "key_judgment_count": 5,
+      "escalation_signals": 5,
+      "intel_gaps": false,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    },
+    {
+      "region": "north_america",
+      "key_judgment_count": 5,
+      "escalation_signals": 1,
+      "intel_gaps": false,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    },
+    {
+      "region": "south_america",
+      "key_judgment_count": 4,
+      "escalation_signals": 3,
+      "intel_gaps": true,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 80
+    },
+    {
+      "region": "global_finance",
+      "key_judgment_count": 5,
+      "escalation_signals": 3,
+      "intel_gaps": false,
+      "estimated_value": 95,
+      "estimated_urgency": 90,
+      "confidence": 85
+    }
+  ],
+  "new_product_concepts": [
+    {
+      "name": "Cross-theatre monitor: iran_oil",
+      "type": "monitoring_dashboard",
+      "rationale": "Affects 7 theatres (europe, africa, asia, middle_east, north_america, south_america, global_finance). Cross-theatre dynamics are analytically underserved.",
+      "emergence": "Inter-theatre dependencies increasing as crisis complexity grows.",
+      "strategic_question": "How does iran_oil connect across theatres?",
+      "methodology": "Comparative narrative tracking + cross-correlation of key indicators.",
+      "value": 85,
+      "difficulty": "medium",
+      "urgency": "medium"
+    },
+    {
+      "name": "Cross-theatre monitor: russia_china",
+      "type": "monitoring_dashboard",
+      "rationale": "Affects 6 theatres (europe, africa, asia, north_america, south_america, global_finance). Cross-theatre dynamics are analytically underserved.",
+      "emergence": "Inter-theatre dependencies increasing as crisis complexity grows.",
+      "strategic_question": "How does russia_china connect across theatres?",
+      "methodology": "Comparative narrative tracking + cross-correlation of key indicators.",
+      "value": 85,
+      "difficulty": "medium",
+      "urgency": "medium"
+    },
+    {
+      "name": "Cross-theatre monitor: us_presence",
+      "type": "monitoring_dashboard",
+      "rationale": "Affects 4 theatres (europe, africa, middle_east, north_america). Cross-theatre dynamics are analytically underserved.",
+      "emergence": "Inter-theatre dependencies increasing as crisis complexity grows.",
+      "strategic_question": "How does us_presence connect across theatres?",
+      "methodology": "Comparative narrative tracking + cross-correlation of key indicators.",
+      "value": 85,
+      "difficulty": "medium",
+      "urgency": "medium"
+    },
+    {
+      "name": "Cross-theatre monitor: energy_crisis",
+      "type": "monitoring_dashboard",
+      "rationale": "Affects 5 theatres (africa, asia, middle_east, north_america, global_finance). Cross-theatre dynamics are analytically underserved.",
+      "emergence": "Inter-theatre dependencies increasing as crisis complexity grows.",
+      "strategic_question": "How does energy_crisis connect across theatres?",
+      "methodology": "Comparative narrative tracking + cross-correlation of key indicators.",
+      "value": 85,
+      "difficulty": "medium",
+      "urgency": "medium"
+    },
+    {
+      "name": "Intelligence gap monitor: europe",
+      "type": "warning_report",
+      "rationale": "Recurring intelligence gap: europe: insufficient",
+      "emergence": "Persistent gaps indicate structural collection deficiency.",
+      "strategic_question": "Why do these gaps persist and what alternative sources exist?",
+      "methodology": "Source reliability tracking + gap persistence analysis.",
+      "value": 70,
+      "difficulty": "medium",
+      "urgency": "high"
+    },
+    {
+      "name": "Intelligence gap monitor: africa",
+      "type": "warning_report",
+      "rationale": "Recurring intelligence gap: africa: insufficient",
+      "emergence": "Persistent gaps indicate structural collection deficiency.",
+      "strategic_question": "Why do these gaps persist and what alternative sources exist?",
+      "methodology": "Source reliability tracking + gap persistence analysis.",
+      "value": 70,
+      "difficulty": "medium",
+      "urgency": "high"
+    },
+    {
+      "name": "Intelligence gap monitor: south_america",
+      "type": "warning_report",
+      "rationale": "Recurring intelligence gap: south_america: uncorroborated, insufficient, cannot assess",
+      "emergence": "Persistent gaps indicate structural collection deficiency.",
+      "strategic_question": "Why do these gaps persist and what alternative sources exist?",
+      "methodology": "Source reliability tracking + gap persistence analysis.",
+      "value": 70,
+      "difficulty": "medium",
+      "urgency": "high"
+    },
+    {
+      "name": "Escalation Ladder Monitor",
+      "type": "escalation_tracker",
+      "evidence": "Escalation language detected in 7/7 theatres",
+      "specific_signals": [
+        "europe: leadership_instability: coup, escalation_language: escalate",
+        "africa: military_readiness: posture, economic_warfare: sanction",
+        "asia: alliance_stress: divergence, strain, military_readiness: exercise, readiness, posture",
+        "middle_east: leadership_instability: coup, escalation_language: escalate, red line"
+      ],
+      "strategic_question": "Are escalation dynamics correlated across theatres?",
+      "methodology": "Structured escalation stages per theatre, updated daily with trigger events.",
+      "value_lower": 75,
+      "value_upper": 90,
+      "difficulty": "medium",
+      "urgency": "high",
+      "confidence_lower": 65,
+      "confidence_upper": 80
+    },
+    {
+      "name": "Geopolitical Risk Heatmap",
+      "type": "monitoring_dashboard",
+      "evidence": "7/7 theatres have structured assessment data",
+      "specific_signals": [
+        "europe: 5 KJs",
+        "africa: 5 KJs",
+        "asia: 5 KJs",
+        "middle_east: 5 KJs"
+      ],
+      "strategic_question": "Where is risk accumulating across the global security environment?",
+      "methodology": "Aggregate priority scores + volatility + escalation + gaps into weighted risk score.",
+      "value_lower": 65,
+      "value_upper": 82,
+      "difficulty": "low",
+      "urgency": "medium",
+      "confidence_lower": 70,
+      "confidence_upper": 90
+    },
+    {
+      "name": "Narrative Regime-Change Detector",
+      "type": "strategic_warning",
+      "evidence": "Narrative baselines established across 7 theatres with cross-edition tracking",
+      "specific_signals": [
+        "europe: baseline",
+        "africa: baseline",
+        "asia: baseline",
+        "middle_east: baseline"
+      ],
+      "strategic_question": "When does narrative evolution become a regime shift?",
+      "methodology": "Structural fingerprint comparison + header analysis across editions.",
+      "value_lower": 60,
+      "value_upper": 85,
+      "difficulty": "low",
+      "urgency": "medium",
+      "confidence_lower": 60,
+      "confidence_upper": 85
+    },
+    {
+      "name": "Intelligence Gap Monitor",
+      "type": "warning_report",
+      "evidence": "3 recurring intelligence gaps detected today",
+      "specific_signals": [
+        "europe: insufficient",
+        "africa: insufficient",
+        "south_america: uncorroborated, insufficient, cannot assess"
+      ],
+      "strategic_question": "Which intelligence gaps are structural vs situational? What alternative sources exist?",
+      "methodology": "Gap persistence tracking + source reliability scoring across editions.",
+      "value_lower": 55,
+      "value_upper": 75,
+      "difficulty": "medium",
+      "urgency": "high",
+      "confidence_lower": 60,
+      "confidence_upper": 80
+    },
+    {
+      "name": "Forecast Calibration Dashboard",
+      "type": "longitudinal_study",
+      "evidence": "Brier tracking infrastructure: not yet populated",
+      "specific_signals": [],
+      "strategic_question": "How accurate is TREVOR's estimative analysis over time? Which bands need recalibration?",
+      "methodology": "Daily Brier score logging + calibration curve analysis + over/under-confidence detection.",
+      "value_lower": 50,
+      "value_upper": 78,
+      "difficulty": "low",
+      "urgency": "low",
+      "confidence_lower": 50,
+      "confidence_upper": 75
+    }
+  ],
+  "cross_theatre_relationships": [
+    {
+      "theme": "iran_oil",
+      "theatres": [
+        "europe",
+        "africa",
+        "asia",
+        "middle_east",
+        "north_america",
+        "south_america",
+        "global_finance"
+      ],
+      "count": 7,
+      "potential": "cross_theatre_analysis"
+    },
+    {
+      "theme": "russia_china",
+      "theatres": [
+        "europe",
+        "africa",
+        "asia",
+        "north_america",
+        "south_america",
+        "global_finance"
+      ],
+      "count": 6,
+      "potential": "cross_theatre_analysis"
+    },
+    {
+      "theme": "us_presence",
+      "theatres": [
+        "europe",
+        "africa",
+        "middle_east",
+        "north_america"
+      ],
+      "count": 4,
+      "potential": "cross_theatre_analysis"
+    },
+    {
+      "theme": "energy_crisis",
+      "theatres": [
+        "africa",
+        "asia",
+        "middle_east",
+        "north_america",
+        "global_finance"
+      ],
+      "count": 5,
+      "potential": "cross_theatre_analysis"
+    }
+  ],
+  "narrative_regime_shifts": [],
+  "prediction_market_signals": [],
+  "intelligence_gaps": [
+    "europe: insufficient",
+    "africa: insufficient",
+    "south_america: uncorroborated, insufficient, cannot assess"
+  ],
+  "escalation_structures": {
+    "europe": [
+      "leadership_instability: coup",
+      "escalation_language: escalate",
+      "military_readiness: deploy, posture",
+      "economic_warfare: sanction"
+    ],
+    "africa": [
+      "military_readiness: posture",
+      "economic_warfare: sanction"
+    ],
+    "asia": [
+      "alliance_stress: divergence, strain",
+      "military_readiness: exercise, readiness, posture",
+      "economic_warfare: sanction"
+    ],
+    "middle_east": [
+      "leadership_instability: coup",
+      "escalation_language: escalate, red line",
+      "alliance_stress: divergence, strain",
+      "military_readiness: posture",
+      "economic_warfare: sanction, block"
+    ],
+    "north_america": [
+      "military_readiness: alert, posture"
+    ],
+    "south_america": [
+      "escalation_language: escalate",
+      "military_readiness: posture",
+      "economic_warfare: sanction, restrict"
+    ],
+    "global_finance": [
+      "alliance_stress: divergence, strain",
+      "military_readiness: posture",
+      "economic_warfare: sanction"
+    ]
+  }
+}

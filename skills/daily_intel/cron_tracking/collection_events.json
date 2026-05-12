@@ -1,0 +1,58 @@
+{
+  "run_time": "2026-05-12T00:30:05Z",
+  "new_events": 8,
+  "total_events": 75,
+  "triggers_fired": 0,
+  "escalation_alerts": 0,
+  "events": [
+    {
+      "feed": "bbc_world",
+      "title": "EU agrees sanctions on Israeli settlers over West Bank violence",
+      "sig": 16,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "al_jazeera",
+      "title": "Iran war live: Trump slams Iranian proposal as ceasefire hangs by a thread",
+      "sig": 15,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "Why welfare isn't winning elections in India like it used to",
+      "sig": 12,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "How the Trump-Xi summit could set superpower relations for many years to come",
+      "sig": 0,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "US in closely-guarded talks to open new bases in Greenland",
+      "sig": 0,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "'Britain at the heart of Europe': How Starmer's plans are going down in the EU",
+      "sig": 0,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "China should stop hoarding food and fertiliser, says former World Bank chief",
+      "sig": 0,
+      "time": "2026-05-12T00:30:05Z"
+    },
+    {
+      "feed": "bbc_world",
+      "title": "I led hikers up an Indonesian volcano - and then it erupted",
+      "sig": 0,
+      "time": "2026-05-12T00:30:05Z"
+    }
+  ],
+  "triggers": []
+}

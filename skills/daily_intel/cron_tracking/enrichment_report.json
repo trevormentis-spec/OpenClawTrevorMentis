@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-05-11T23:02:41Z",
+  "articles_fetched": 326,
+  "feeds_queried": 9,
+  "sources_checked": {
+    "used": 6,
+    "total": 9,
+    "gaps": [
+      {
+        "feed": "reuters_world",
+        "priority": 5,
+        "category": "NEWS"
+      },
+      {
+        "feed": "ap_news",
+        "priority": 5,
+        "category": "NEWS"
+      }
+    ]
+  },
+  "narrative_conflicts": [
+    {
+      "topic": "us and iran",
+      "sources": [
+        "bbc_middle_east",
+        "defense_news",
+        "kyiv_post"
+      ],
+      "narrative": "Sources disagree: 'ceasefire' vs 'strike'",
+      "articles": [
+        {
+          "title": "US and Iran in blockade standoff as Pakistan pushes for talks",
+          "feed": "bbc_middle_east"
+        },
+        {
+          "title": "US and Iran May Resume Peace Talks in Islamabad Next Week",
+          "feed": "kyiv_post"
+        },
+        {
+          "title": "US and Iran exchange fire as Trump says war will \u2018be over quickly\u2019",
+          "feed": "defense_news"
+        }
+      ]
+    }
+  ],
+  "kalshi_trades": [],
+  "story_freshness": {
+    "generated": "2026-05-11T23:02:40Z",
+    "stale_count": 0,
+    "diffs": [
+      {
+        "region": "europe",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "africa",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "asia",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "middle_east",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "north_america",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "south_america",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      },
+      {
+        "region": "global_finance",
+        "status": "missing",
+        "action": "generate",
+        "note": "No assessment file for today"
+      }
+    ]
+  }
+}

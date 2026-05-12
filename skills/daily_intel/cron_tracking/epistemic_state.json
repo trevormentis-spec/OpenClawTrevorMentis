@@ -1,0 +1,5850 @@
+{
+  "generated_at": "2026-05-12T00:21:50Z",
+  "countries_analyzed": 36,
+  "epistemic_summary": {
+    "comprehensive_knowledge": [],
+    "adequate_knowledge": [],
+    "partial_knowledge": [],
+    "weak_knowledge": [],
+    "minimal_knowledge": [
+      "china",
+      "russia",
+      "united_states",
+      "iran",
+      "taiwan",
+      "ukraine",
+      "turkey",
+      "saudi_arabia",
+      "india",
+      "pakistan",
+      "north_korea",
+      "israel",
+      "germany",
+      "france",
+      "united_kingdom",
+      "japan",
+      "south_korea",
+      "poland",
+      "venezuela",
+      "cuba",
+      "belarus",
+      "myanmar",
+      "ethiopia",
+      "mali",
+      "niger",
+      "norway",
+      "canada",
+      "mexico",
+      "brazil",
+      "argentina",
+      "colombia",
+      "indonesia",
+      "vietnam",
+      "nigeria",
+      "south_africa",
+      "kenya"
+    ],
+    "countries_with_comprehensive_coverage": 0,
+    "countries_with_critical_risks": 36,
+    "countries_with_no_government_visibility": 36,
+    "countries_with_no_local_language": 36,
+    "countries_with_no_defense_visibility": 36,
+    "countries_with_no_procurement_visibility": 36
+  },
+  "epistemic_states": {
+    "china": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "russia": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "united_states": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "iran": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "taiwan": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "ukraine": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "turkey": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "saudi_arabia": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "india": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "pakistan": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "north_korea": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "israel": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "germany": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "france": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "united_kingdom": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "japan": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "south_korea": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "poland": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "venezuela": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "cuba": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "belarus": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "myanmar": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "ethiopia": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "mali": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "niger": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "norway": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "canada": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "mexico": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "brazil": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "argentina": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "colombia": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "indonesia": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "vietnam": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "nigeria": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "south_africa": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    },
+    "kenya": {
+      "epistemic_tier": 5,
+      "epistemic_label": "Minimal",
+      "collection_confidence": 0.0,
+      "coverage_score": 0.0,
+      "surfaces_covered": 0,
+      "surfaces_total": 19,
+      "surfaces": {
+        "government_portal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.15
+        },
+        "local_media": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "procurement_system": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "legal_gazette": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "parliamentary_transcript": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "customs_database": {
+          "has": false,
+          "count": 0,
+          "weight": 0.08
+        },
+        "shipping_data": {
+          "has": false,
+          "count": 0,
+          "weight": 0.04
+        },
+        "aviation_tracking": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "energy_infrastructure": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "telecom_monitor": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "sanctions_registry": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "defense_procurement": {
+          "has": false,
+          "count": 0,
+          "weight": 0.12
+        },
+        "trade_journal": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "telegram_channel": {
+          "has": false,
+          "count": 0,
+          "weight": 0.06
+        },
+        "satellite_derived": {
+          "has": false,
+          "count": 0,
+          "weight": 0.1
+        },
+        "academic_source": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "prediction_market": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        },
+        "think_tank": {
+          "has": false,
+          "count": 0,
+          "weight": 0.03
+        },
+        "official_document": {
+          "has": false,
+          "count": 0,
+          "weight": 0.05
+        }
+      },
+      "total_sources": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "government_portals": 0,
+      "procurement_systems": 0,
+      "customs_databases": 0,
+      "defense_procurement": 0,
+      "shipping_sources": 0,
+      "satellite_sources": 0,
+      "epistemic_risks": [
+        {
+          "risk": "critically_underinformed",
+          "detail": "Collection confidence below 20%"
+        },
+        {
+          "risk": "no_government_visibility",
+          "detail": "No government portal sources"
+        },
+        {
+          "risk": "no_procurement_visibility",
+          "detail": "No procurement system sources"
+        },
+        {
+          "risk": "no_trade_visibility",
+          "detail": "No customs database sources"
+        },
+        {
+          "risk": "no_defense_visibility",
+          "detail": "No defense procurement sources"
+        },
+        {
+          "risk": "no_shipping_visibility",
+          "detail": "No shipping data sources"
+        },
+        {
+          "risk": "no_satellite_visibility",
+          "detail": "No satellite-derived sources"
+        },
+        {
+          "risk": "no_local_language",
+          "detail": "No local-language sources"
+        }
+      ],
+      "risk_count": 8
+    }
+  },
+  "epistemic_risk_assessment": [
+    {
+      "country": "china",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: china has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "russia",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: russia has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "united_states",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: united_states has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "iran",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: iran has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "taiwan",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: taiwan has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "ukraine",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: ukraine has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "turkey",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: turkey has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "saudi_arabia",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: saudi_arabia has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "india",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: india has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "pakistan",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: pakistan has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "north_korea",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: north_korea has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "israel",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: israel has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "germany",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: germany has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "france",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: france has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    },
+    {
+      "country": "united_kingdom",
+      "epistemic_tier": 5,
+      "confidence": 0.0,
+      "risks": 8,
+      "top_risks": [
+        "Collection confidence below 20%",
+        "No government portal sources",
+        "No procurement system sources",
+        "No customs database sources"
+      ],
+      "warning": "Epistemic state critically weak: united_kingdom has 8 epistemic risks",
+      "surfaces_covered": "0/19"
+    }
+  ],
+  "confidence_adjustments": {
+    "china": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "russia": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "united_states": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "iran": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "taiwan": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "ukraine": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "turkey": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "saudi_arabia": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "india": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "pakistan": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "north_korea": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "israel": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "germany": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "france": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "united_kingdom": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "japan": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "south_korea": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "poland": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "venezuela": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "cuba": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "belarus": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "myanmar": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "ethiopia": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "mali": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "niger": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "norway": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "canada": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "mexico": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "brazil": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "argentina": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "colombia": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "indonesia": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "vietnam": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "nigeria": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "south_africa": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    },
+    "kenya": {
+      "band_adj": -20,
+      "uncertainty": 40,
+      "style": "highly_conservative",
+      "note": "Minimal epistemic coverage \u2014 highly speculative. Avoid strong predictions."
+    }
+  }
+}

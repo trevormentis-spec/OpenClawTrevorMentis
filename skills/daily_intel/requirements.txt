@@ -1,0 +1,14 @@
+reportlab
+pypdfium2
+pillow
+requests
+numpy
+scikit-learn
+chromadb
+sentence-transformers
+python-dotenv
+markdown
+beautifulsoup4
+feedparser
+pydantic
+rich

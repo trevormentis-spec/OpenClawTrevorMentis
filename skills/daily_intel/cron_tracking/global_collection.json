@@ -1,0 +1,1204 @@
+{
+  "generated_at": "2026-05-12T00:15:08Z",
+  "country_count": 36,
+  "tier_distribution": {
+    "tier_1": 6,
+    "tier_2": 6,
+    "tier_3": 13,
+    "tier_4": 11
+  },
+  "global_confidence_map": {
+    "tier1_avg_confidence": 0.0,
+    "tier2_avg_confidence": 0.0,
+    "tier3_avg_confidence": 0.0,
+    "tier4_avg_confidence": 10.0,
+    "countries_with_confidence_below_30": [
+      "china",
+      "russia",
+      "united_states",
+      "iran",
+      "taiwan",
+      "ukraine",
+      "turkey",
+      "saudi_arabia",
+      "india",
+      "pakistan",
+      "north_korea",
+      "israel",
+      "germany",
+      "france",
+      "united_kingdom",
+      "japan",
+      "south_korea",
+      "poland",
+      "venezuela",
+      "cuba",
+      "belarus",
+      "myanmar",
+      "ethiopia",
+      "mali",
+      "niger",
+      "norway",
+      "canada",
+      "mexico",
+      "brazil",
+      "argentina",
+      "colombia",
+      "indonesia",
+      "vietnam",
+      "nigeria",
+      "south_africa",
+      "kenya"
+    ],
+    "collection_deserts": [
+      "china",
+      "russia",
+      "united_states",
+      "iran",
+      "taiwan",
+      "ukraine",
+      "turkey",
+      "saudi_arabia",
+      "india",
+      "pakistan",
+      "north_korea",
+      "israel",
+      "germany",
+      "france",
+      "united_kingdom",
+      "japan",
+      "south_korea",
+      "poland",
+      "venezuela",
+      "cuba",
+      "belarus",
+      "myanmar",
+      "ethiopia",
+      "mali",
+      "niger",
+      "norway",
+      "canada",
+      "mexico",
+      "brazil",
+      "argentina",
+      "colombia",
+      "indonesia",
+      "vietnam",
+      "nigeria",
+      "south_africa",
+      "kenya"
+    ],
+    "tier1_countries_needing_attention": [
+      "china",
+      "russia",
+      "united_states",
+      "iran",
+      "taiwan",
+      "ukraine",
+      "turkey",
+      "saudi_arabia",
+      "india",
+      "pakistan",
+      "north_korea",
+      "israel"
+    ]
+  },
+  "country_profiles": {
+    "china": {
+      "tier": 1,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "russia": {
+      "tier": 1,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "united_states": {
+      "tier": 1,
+      "region": "north_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "iran": {
+      "tier": 1,
+      "region": "middle_east",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "taiwan": {
+      "tier": 1,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "ukraine": {
+      "tier": 1,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 15,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "turkey": {
+      "tier": 2,
+      "region": "middle_east",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "saudi_arabia": {
+      "tier": 2,
+      "region": "middle_east",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "india": {
+      "tier": 2,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "pakistan": {
+      "tier": 2,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "north_korea": {
+      "tier": 2,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "israel": {
+      "tier": 2,
+      "region": "middle_east",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 10,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "daily",
+      "needs_urgent_improvement": true,
+      "is_collection_desert": true
+    },
+    "germany": {
+      "tier": 3,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "france": {
+      "tier": 3,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "united_kingdom": {
+      "tier": 3,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "japan": {
+      "tier": 3,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "south_korea": {
+      "tier": 3,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "poland": {
+      "tier": 3,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "venezuela": {
+      "tier": 3,
+      "region": "south_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "cuba": {
+      "tier": 3,
+      "region": "south_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "belarus": {
+      "tier": 3,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "myanmar": {
+      "tier": 3,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "ethiopia": {
+      "tier": 3,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "mali": {
+      "tier": 3,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "niger": {
+      "tier": 3,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 6,
+      "collection_confidence": 0.0,
+      "collection_gap": 100.0,
+      "update_frequency": "weekly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "norway": {
+      "tier": 4,
+      "region": "europe",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "canada": {
+      "tier": 4,
+      "region": "north_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "mexico": {
+      "tier": 4,
+      "region": "north_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "brazil": {
+      "tier": 4,
+      "region": "south_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "argentina": {
+      "tier": 4,
+      "region": "south_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "colombia": {
+      "tier": 4,
+      "region": "south_america",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "indonesia": {
+      "tier": 4,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "vietnam": {
+      "tier": 4,
+      "region": "asia",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "nigeria": {
+      "tier": 4,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "south_africa": {
+      "tier": 4,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    },
+    "kenya": {
+      "tier": 4,
+      "region": "africa",
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "target_sources": 3,
+      "collection_confidence": 10.0,
+      "collection_gap": 90.0,
+      "update_frequency": "monthly",
+      "needs_urgent_improvement": false,
+      "is_collection_desert": true
+    }
+  },
+  "strategic_blind_spots": [
+    {
+      "country": "china",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "russia",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "united_states",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "iran",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "taiwan",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "ukraine",
+      "tier": 1,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "turkey",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "saudi_arabia",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "india",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "pakistan",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "north_korea",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    },
+    {
+      "country": "israel",
+      "tier": 2,
+      "confidence": 0.0,
+      "gap": 100.0,
+      "missing": [
+        "high_value_sources",
+        "local_language",
+        "source_diversity"
+      ]
+    }
+  ],
+  "adaptive_depth_plan": {
+    "china": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "russia": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "united_states": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "iran": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "taiwan": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "ukraine": {
+      "collection_depth": "critical_intensification",
+      "frequency": "daily",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "turkey": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "saudi_arabia": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "india": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "pakistan": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "north_korea": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "israel": {
+      "collection_depth": "intensified_acquisition",
+      "frequency": "every_other_day",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "germany": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "france": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "united_kingdom": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "japan": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "south_korea": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "poland": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "venezuela": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "cuba": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "belarus": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "myanmar": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "ethiopia": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "mali": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "niger": {
+      "collection_depth": "maintain_improve",
+      "frequency": "weekly",
+      "confidence_score": 0.0,
+      "gap_percentage": 100.0
+    },
+    "norway": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "canada": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "mexico": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "brazil": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "argentina": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "colombia": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "indonesia": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "vietnam": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "nigeria": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "south_africa": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    },
+    "kenya": {
+      "collection_depth": "maintain",
+      "frequency": "weekly",
+      "confidence_score": 10.0,
+      "gap_percentage": 90.0
+    }
+  },
+  "strategic_warnings": [
+    {
+      "type": "critical_blind_spot",
+      "country": "china",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "russia",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "united_states",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "iran",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "taiwan",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "ukraine",
+      "tier": 1,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "turkey",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "saudi_arabia",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "india",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "pakistan",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "north_korea",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "critical_blind_spot",
+      "country": "israel",
+      "tier": 2,
+      "confidence": 0.0,
+      "warning": "Strategically critical country with dangerous collection weakness (0.0% confidence)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "china",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: china (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "russia",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: russia (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "iran",
+      "region": "middle_east",
+      "volatility": "very_high",
+      "warning": "Collection desert in high-volatility region: iran (middle_east)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "taiwan",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: taiwan (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "ukraine",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: ukraine (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "turkey",
+      "region": "middle_east",
+      "volatility": "very_high",
+      "warning": "Collection desert in high-volatility region: turkey (middle_east)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "saudi_arabia",
+      "region": "middle_east",
+      "volatility": "very_high",
+      "warning": "Collection desert in high-volatility region: saudi_arabia (middle_east)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "india",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: india (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "pakistan",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: pakistan (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "north_korea",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: north_korea (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "israel",
+      "region": "middle_east",
+      "volatility": "very_high",
+      "warning": "Collection desert in high-volatility region: israel (middle_east)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "germany",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: germany (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "france",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: france (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "united_kingdom",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: united_kingdom (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "japan",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: japan (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "south_korea",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: south_korea (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "poland",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: poland (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "belarus",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: belarus (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "myanmar",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: myanmar (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "norway",
+      "region": "europe",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: norway (europe)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "indonesia",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: indonesia (asia)"
+    },
+    {
+      "type": "collection_desert_in_volatile_region",
+      "country": "vietnam",
+      "region": "asia",
+      "volatility": "high",
+      "warning": "Collection desert in high-volatility region: vietnam (asia)"
+    }
+  ]
+}

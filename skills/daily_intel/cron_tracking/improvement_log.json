@@ -1,0 +1,79 @@
+{
+  "first_run": "2026-05-07T17:12:21.996105",
+  "runs": [
+    {
+      "date": "2026-05-07",
+      "score": 47,
+      "issues": 22,
+      "pdf_score": 4
+    },
+    {
+      "date": "2026-05-07",
+      "score": 81,
+      "issues": 33,
+      "pdf_score": 4
+    },
+    {
+      "date": "2026-05-07",
+      "score": 81,
+      "issues": 33,
+      "pdf_score": 4
+    },
+    {
+      "date": "2026-05-07",
+      "score": 85,
+      "issues": 33,
+      "pdf_score": 4
+    },
+    {
+      "date": "2026-05-08",
+      "score": 81,
+      "issues": 33,
+      "pdf_score": 0
+    },
+    {
+      "date": "2026-05-09",
+      "score": 81,
+      "issues": 33,
+      "pdf_score": 0
+    },
+    {
+      "date": "2026-05-10",
+      "score": 81,
+      "issues": 33,
+      "pdf_score": 0
+    }
+  ],
+  "fix_history": {},
+  "known_failures": {},
+  "score_trend": [
+    {
+      "date": "2026-05-07",
+      "score": 47
+    },
+    {
+      "date": "2026-05-07",
+      "score": 81
+    },
+    {
+      "date": "2026-05-07",
+      "score": 81
+    },
+    {
+      "date": "2026-05-07",
+      "score": 85
+    },
+    {
+      "date": "2026-05-08",
+      "score": 81
+    },
+    {
+      "date": "2026-05-09",
+      "score": 81
+    },
+    {
+      "date": "2026-05-10",
+      "score": 81
+    }
+  ]
+}

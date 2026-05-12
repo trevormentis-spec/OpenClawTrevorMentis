@@ -1,0 +1,352 @@
+{
+  "generated_at": "2026-05-12T00:13:06Z",
+  "collection_quality": {
+    "europe": {
+      "region": "europe",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 8
+    },
+    "africa": {
+      "region": "africa",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 6
+    },
+    "asia": {
+      "region": "asia",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 8
+    },
+    "middle_east": {
+      "region": "middle_east",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 8
+    },
+    "north_america": {
+      "region": "north_america",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 6
+    },
+    "south_america": {
+      "region": "south_america",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 5
+    },
+    "global_finance": {
+      "region": "global_finance",
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "source_count": 0,
+      "source_diversity": 0,
+      "high_value_sources": 0,
+      "local_language_sources": 0,
+      "band_adjustment": -20,
+      "uncertainty_width": 40,
+      "estimation_aggressiveness": "speculative_only",
+      "collection_gap": 1.0,
+      "target_sources": 6
+    }
+  },
+  "collection_priorities": [
+    {
+      "region": "middle_east",
+      "strategic_weight": 0.95,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 95.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "europe",
+      "strategic_weight": 0.85,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 85.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "asia",
+      "strategic_weight": 0.8,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 80.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "north_america",
+      "strategic_weight": 0.6,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 60.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "global_finance",
+      "strategic_weight": 0.55,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 55.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "africa",
+      "strategic_weight": 0.45,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 45.0,
+      "recommended_action": "urgent_collection_push"
+    },
+    {
+      "region": "south_america",
+      "strategic_weight": 0.35,
+      "quality_level": "minimal",
+      "quality_score": 0.0,
+      "gap": 1.0,
+      "priority_score": 35.0,
+      "recommended_action": "urgent_collection_push"
+    }
+  ],
+  "collection_campaigns": [
+    {
+      "region": "middle_east",
+      "priority_score": 95.0,
+      "rationale": "Collection gap of 100% with strategic weight 0.95",
+      "target_source_types": [
+        "government_portal",
+        "procurement_system",
+        "sanctions_registry",
+        "defense_procurement",
+        "customs_database"
+      ],
+      "estimated_sources_needed": 8,
+      "urgency": "high"
+    },
+    {
+      "region": "europe",
+      "priority_score": 85.0,
+      "rationale": "Collection gap of 100% with strategic weight 0.85",
+      "target_source_types": [
+        "government_portal",
+        "procurement_system",
+        "sanctions_registry",
+        "defense_procurement",
+        "customs_database"
+      ],
+      "estimated_sources_needed": 8,
+      "urgency": "high"
+    },
+    {
+      "region": "asia",
+      "priority_score": 80.0,
+      "rationale": "Collection gap of 100% with strategic weight 0.80",
+      "target_source_types": [
+        "government_portal",
+        "procurement_system",
+        "sanctions_registry",
+        "defense_procurement",
+        "customs_database"
+      ],
+      "estimated_sources_needed": 8,
+      "urgency": "high"
+    },
+    {
+      "region": "north_america",
+      "priority_score": 60.0,
+      "rationale": "Collection gap of 100% with strategic weight 0.60",
+      "target_source_types": [
+        "government_portal",
+        "procurement_system",
+        "sanctions_registry",
+        "defense_procurement",
+        "customs_database"
+      ],
+      "estimated_sources_needed": 6,
+      "urgency": "high"
+    }
+  ],
+  "source_trust_evolutions": [],
+  "confidence_instructions": {
+    "europe": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "africa": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "asia": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "middle_east": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "north_america": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "south_america": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions.",
+    "global_finance": "Collection quality is minimal. Assessments are highly uncertain. Use the widest probability ranges available. Note that collection gaps may affect analytical accuracy. Government, procurement, and official sources are scarce. Increase uncertainty. Collection gap is 100% \u2014 significant information surfaces underexplored. Note this in assessment. Only speculative assessment possible. Do not offer confident predictions."
+  },
+  "adaptive_heartbeat": {
+    "middle_east": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 95.0,
+      "strategic_weight": 0.95,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "europe": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 85.0,
+      "strategic_weight": 0.85,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "asia": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 80.0,
+      "strategic_weight": 0.8,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "north_america": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 60.0,
+      "strategic_weight": 0.6,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "global_finance": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 55.0,
+      "strategic_weight": 0.55,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "africa": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 45.0,
+      "strategic_weight": 0.45,
+      "quality_level": "minimal",
+      "gap": 1.0
+    },
+    "south_america": {
+      "collection_interval": "every_daily_run",
+      "intensity": "high",
+      "priority_score": 35.0,
+      "strategic_weight": 0.35,
+      "quality_level": "minimal",
+      "gap": 1.0
+    }
+  },
+  "collection_aware_products": [
+    {
+      "product": "Collection gap warning: europe",
+      "rationale": "Collection is minimal. Only 0 high-value sources, 0 local-language sources. Assessments may be unreliable.",
+      "strategic_question": "What intelligence products are impossible because collection in europe is weak?",
+      "value": 75,
+      "urgency": "high"
+    },
+    {
+      "product": "Government source deficit: europe",
+      "rationale": "Only 0 high-value government/procurement sources for strategically important region.",
+      "strategic_question": "Is TREVOR missing structural intelligence because no government/procurement sources exist for europe?",
+      "value": 70,
+      "urgency": "medium"
+    },
+    {
+      "product": "Local-language gap: europe",
+      "rationale": "Zero local-language sources for europe. All collection is in English.",
+      "strategic_question": "What narratives is TREVOR missing because it cannot access local-language media in europe?",
+      "value": 65,
+      "urgency": "medium"
+    },
+    {
+      "product": "Collection gap warning: africa",
+      "rationale": "Collection is minimal. Only 0 high-value sources, 0 local-language sources. Assessments may be unreliable.",
+      "strategic_question": "What intelligence products are impossible because collection in africa is weak?",
+      "value": 75,
+      "urgency": "high"
+    },
+    {
+      "product": "Government source deficit: africa",
+      "rationale": "Only 0 high-value government/procurement sources for strategically important region.",
+      "strategic_question": "Is TREVOR missing structural intelligence because no government/procurement sources exist for africa?",
+      "value": 70,
+      "urgency": "medium"
+    },
+    {
+      "product": "Local-language gap: africa",
+      "rationale": "Zero local-language sources for africa. All collection is in English.",
+      "strategic_question": "What narratives is TREVOR missing because it cannot access local-language media in africa?",
+      "value": 65,
+      "urgency": "medium"
+    },
+    {
+      "product": "Collection gap warning: asia",
+      "rationale": "Collection is minimal. Only 0 high-value sources, 0 local-language sources. Assessments may be unreliable.",
+      "strategic_question": "What intelligence products are impossible because collection in asia is weak?",
+      "value": 75,
+      "urgency": "high"
+    },
+    {
+      "product": "Government source deficit: asia",
+      "rationale": "Only 0 high-value government/procurement sources for strategically important region.",
+      "strategic_question": "Is TREVOR missing structural intelligence because no government/procurement sources exist for asia?",
+      "value": 70,
+      "urgency": "medium"
+    }
+  ]
+}

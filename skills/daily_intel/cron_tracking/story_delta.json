@@ -1,0 +1,48 @@
+{
+  "generated": "2026-05-11T23:02:40Z",
+  "stale_count": 0,
+  "diffs": [
+    {
+      "region": "europe",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "africa",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "asia",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "middle_east",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "north_america",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "south_america",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    },
+    {
+      "region": "global_finance",
+      "status": "missing",
+      "action": "generate",
+      "note": "No assessment file for today"
+    }
+  ]
+}

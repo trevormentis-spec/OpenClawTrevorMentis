@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-05-11T23:58:08Z",
+  "pipeline_date": "2026-05-11",
+  "summary": {
+    "existing_sources": 0,
+    "candidates_found": 0,
+    "new_sources_added": 0,
+    "total_inventory": 0,
+    "regions_checked": 5
+  },
+  "new_source_discoveries": [],
+  "collection_gaps": [
+    {
+      "region": "europe",
+      "country": "ukraine",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "russia",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "germany",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "poland",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "norway",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "france",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "uk",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "belarus",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "baltic_states",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    },
+    {
+      "region": "europe",
+      "country": "balkans",
+      "current_sources": 0,
+      "target": 8,
+      "missing_types": [
+        "local_media",
+        "regional_publication",
+        "government_portal"
+      ],
+      "priority": "high"
+    }
+  ],
+  "collection_expansion_opportunities": [
+    {
+      "country": "ukraine",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "russia",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "germany",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "poland",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "norway",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "france",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "uk",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    },
+    {
+      "country": "belarus",
+      "region": "europe",
+      "opportunity": "Add 8 sources to reach target of 8",
+      "strategic_value": "medium",
+      "priority": "high",
+      "collect_effort": "medium"
+    }
+  ]
+}

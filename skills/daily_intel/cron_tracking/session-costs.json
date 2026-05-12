@@ -1,0 +1,17 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-05-11T22:45:48Z",
+      "model": "deepseek/deepseek-v4-flash",
+      "input_tokens": 50000,
+      "output_tokens": 15000,
+      "input_cost": 0.007,
+      "output_cost": 0.0042,
+      "total_cost": 0.0112,
+      "tool_calls": 30,
+      "messages": 100
+    }
+  ],
+  "total_cost": 0.0112,
+  "updated_at": "2026-05-11T22:45:48Z"
+}
