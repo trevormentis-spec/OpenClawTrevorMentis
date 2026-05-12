@@ -269,11 +269,8 @@ def main():
     for region in THEATRES:
         quality = evaluate_collection_quality(region, sources)
         quality_reports[region] = quality
-        log.info(f"Collection quality for {region}",
-                 level=quality["quality_level"],
-                 score=quality["quality_score"],
-                 sources=quality["source_count"])
     
+        log.info(f"Collection quality for " + region + ": " + str(quality.get("quality_level","?")) + " score=" + str(quality.get("quality_score",0)))
     # Compute collection priorities
     priorities = compute_collection_priorities(sources)
     log.info("Collection priorities computed", top=priorities[0]["region"] if priorities else "none")
@@ -307,6 +304,70 @@ def main():
              theatres=len(quality_reports),
              campaigns=len(campaigns))
     
+    # Phase 6: Adaptive heartbeat — dynamic collection intensity per region
+    heartbeat_plan = {}
+    for p in priorities:
+        score = p["priority_score"]
+        if score > 30:
+            interval = "every_daily_run"  # intensify: search every cycle
+            intensity = "high"
+        elif score > 15:
+            interval = "every_other_run"  # moderate: search every other cycle
+            intensity = "medium"
+        elif score > 5:
+            interval = "weekly"  # maintain: search weekly
+            intensity = "low"
+        else:
+            interval = "monitor_only"  # deprioritize
+            intensity = "minimal"
+        
+        heartbeat_plan[p["region"]] = {
+            "collection_interval": interval,
+            "intensity": intensity,
+            "priority_score": score,
+            "strategic_weight": p["strategic_weight"],
+            "quality_level": p["quality_level"],
+            "gap": p["gap"],
+        }
+    
+    # Phase 7: Collection-aware product proposals
+    collection_aware_products = []
+    for region in THEATRES:
+        q = quality_reports.get(region, {})
+        if q.get("quality_level") in ("minimal", "poor"):
+            collection_aware_products.append({
+                "product": f"Collection gap warning: {region}",
+                "rationale": f"Collection is {q['quality_level']}. Only {q['high_value_sources']} high-value sources, "
+                           f"{q['local_language_sources']} local-language sources. Assessments may be unreliable.",
+                "strategic_question": f"What intelligence products are impossible because collection in {region} is weak?",
+                "value": 75,
+                "urgency": "high",
+            })
+        if q.get("high_value_sources", 0) < 2:
+            collection_aware_products.append({
+                "product": f"Government source deficit: {region}",
+                "rationale": f"Only {q['high_value_sources']} high-value government/procurement sources for strategically important region.",
+                "strategic_question": f"Is TREVOR missing structural intelligence because no government/procurement sources exist for {region}?",
+                "value": 70,
+                "urgency": "medium",
+            })
+        if q.get("local_language_sources", 0) < 1:
+            collection_aware_products.append({
+                "product": f"Local-language gap: {region}",
+                "rationale": f"Zero local-language sources for {region}. All collection is in English.",
+                "strategic_question": f"What narratives is TREVOR missing because it cannot access local-language media in {region}?",
+                "value": 65,
+                "urgency": "medium",
+            })
+    
+    # Add heartbeat plan to report
+    report["adaptive_heartbeat"] = heartbeat_plan
+    report["collection_aware_products"] = collection_aware_products[:8]
+    
+    # Update saved report
+    CRON_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_FILE.write_text(json.dumps(report, indent=2))
+    
     # Print summary
     print(f"\n{'='*60}")
     print(f"COLLECTION INTELLIGENCE & CONFIDENCE ADAPTATION")
@@ -315,9 +376,10 @@ def main():
     for p in priorities:
         icon = {"urgent_collection_push": "🔴", "intensify_discovery": "🟡",
                 "maintain_coverage": "🟢", "monitor_only": "⚪"}
+        hb = heartbeat_plan.get(p['region'], {})
         print(f"  {icon.get(p['recommended_action'], '❓')} {p['region']:<25s} "
               f"quality={p['quality_level']:<10s} gap={p['gap']:.0%} "
-              f"priority={p['priority_score']:.1f} [{p['recommended_action']}]")
+              f"priority={p['priority_score']:.1f} | {hb.get('collection_interval','?')}")
     
     if campaigns:
         print(f"\nCollection campaigns:")
@@ -328,7 +390,17 @@ def main():
     for region in THEATRES:
         q = quality_reports.get(region, {})
         ci = confidence_instructions.get(region, "")
-        print(f"  {region:<25s} band_adj={q.get('band_adjustment',0):>3d}  uncertainty={q.get('uncertainty_width',0)}%  {ci[:60]}...")
+        print(f"  {region:<25s} band_adj={q.get('band_adjustment',0):>3d}  "
+              f"uncertainty={q.get('uncertainty_width',0)}%  {ci[:50]}...")
+    
+    if collection_aware_products:
+        print(f"\nCollection-aware product proposals: {len(collection_aware_products)}")
+        for cp in collection_aware_products[:4]:
+            print(f"  📋 {cp['product']}")
+    
+    print(f"\nAdaptive heartbeat by region:")
+    for region, hb in sorted(heartbeat_plan.items(), key=lambda x: x[1]['priority_score'], reverse=True):
+        print(f"  {region:<25s} {hb['collection_interval']:<20s} intensity={hb['intensity']}")
     
     return 0
 

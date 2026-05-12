@@ -276,6 +276,27 @@ def section6_analytical_opportunities() -> dict:
     }
 
 
+def section4b_collection_health() -> dict:
+    """Collection health report from collection_intelligence."""
+    ci = load_json(CRON_DIR / "collection_intelligence.json")
+    quality = ci.get("collection_quality", {})
+    heartbeat = ci.get("adaptive_heartbeat", {})
+    campaigns = ci.get("collection_campaigns", [])
+    products = ci.get("collection_aware_products", [])
+    
+    return {
+        "quality_by_theatre": quality,
+        "adaptive_heartbeat": heartbeat,
+        "campaigns": len(campaigns),
+        "collection_aware_products": len(products),
+        "theatres_with_minimal_collection": sum(1 for q in quality.values() if q.get("quality_level") == "minimal"),
+        "theatres_with_poor_collection": sum(1 for q in quality.values() if q.get("quality_level") == "poor"),
+        "high_priority_collection_regions": [
+            r for r, h in heartbeat.items() if h.get("collection_interval") == "every_daily_run"
+        ],
+    }
+
+
 def section7_runtime_health() -> dict:
     """Runtime health, dependencies, costs, repairs."""
     state = load_json(CRON_DIR / "state.json")
@@ -458,6 +479,7 @@ def generate_report() -> dict:
         },
         "section_1_daily_activity": section1_daily_activity(),
         "section_3_autonomy_progress": section3_autonomy_progress(),
+        "section_4_collection_health": section4b_collection_health(),
         "section_4_osint_expansion": section4_osint_expansion(),
         "section_5_memory_retrieval": section5_memory_retrieval(),
         "section_6_analytical_opportunities": section6_analytical_opportunities(),
