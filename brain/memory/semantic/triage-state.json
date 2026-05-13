@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "last_check": "2026-05-13T20:25:44Z",
+  "signals_processed": 16,
+  "analyses_fired": 0,
+  "last_signals": [
+    {
+      "id": "esc-middle_east",
+      "source": "behavioral_state",
+      "type": "escalation",
+      "score": 95
+    },
+    {
+      "id": "prio-middle_east",
+      "source": "behavioral_state",
+      "type": "high_priority_region",
+      "score": 90
+    },
+    {
+      "id": "gmail-19e22ef2",
+      "source": "gmail",
+      "type": "intel_email",
+      "score": 80
+    },
+    {
+      "id": "web-9464",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 75
+    },
+    {
+      "id": "gmail-19e2284a",
+      "source": "gmail",
+      "type": "intel_email",
+      "score": 70
+    },
+    {
+      "id": "gmail-19e222af",
+      "source": "gmail",
+      "type": "intel_email",
+      "score": 65
+    },
+    {
+      "id": "tg-judean_osint-311",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 65
+    },
+    {
+      "id": "web-8973",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 63
+    },
+    {
+      "id": "web-5952",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 55
+    },
+    {
+      "id": "web-5796",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 55
+    },
+    {
+      "id": "gap-asia",
+      "source": "behavioral_state",
+      "type": "collection_gap",
+      "score": 55
+    },
+    {
+      "id": "gap-middle_east",
+      "source": "behavioral_state",
+      "type": "collection_gap",
+      "score": 55
+    },
+    {
+      "id": "web-0043",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 50
+    },
+    {
+      "id": "web-6964",
+      "source": "web",
+      "type": "breaking_news",
+      "score": 50
+    },
+    {
+      "id": "tg-judean_osint-529",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "tg-judean_osint-468",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    }
+  ],
+  "cooldowns": {}
+}
