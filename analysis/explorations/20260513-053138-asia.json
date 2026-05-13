@@ -1,0 +1,35 @@
+{
+  "exploration_id": "20260513-053138",
+  "region": "asia",
+  "reason": "only 3 sources (need 5)",
+  "timestamp": "2026-05-13T05:31:40Z",
+  "discoveries": [
+    {
+      "name": "The Diplomat",
+      "url": "https://thediplomat.com",
+      "rss_url": "https://thediplomat.com/feed/",
+      "description": "Known asia source from directory",
+      "items_count": 96,
+      "last_item": "The Geopolitics of the Trump-Xi Meeting",
+      "score": 57,
+      "region": "asia",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T05:31:38Z"
+    },
+    {
+      "name": "China Briefing",
+      "url": "https://www.china-briefing.com",
+      "rss_url": "https://www.china-briefing.com/feed/",
+      "description": "Known asia source from directory",
+      "items_count": 10,
+      "last_item": "The Greater Bay Area IIT Subsidy for 2026 Kickstarts in Shenzhen",
+      "score": 50,
+      "region": "asia",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T05:31:40Z"
+    }
+  ],
+  "sources_found": 2
+}

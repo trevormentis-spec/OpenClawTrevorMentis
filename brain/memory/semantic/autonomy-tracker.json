@@ -32,5 +32,49 @@
       "items_collected": 0,
       "report_path": "/home/ubuntu/.openclaw/workspace/analysis/campaigns/20260513-051444-middle_east.json"
     }
+  ],
+  "explorations": [
+    {
+      "exploration_id": "20260513-053136",
+      "region": "north_america",
+      "reason": "only 0 sources (need 5)",
+      "timestamp": "2026-05-13T05:31:36Z",
+      "sources_found": 0
+    },
+    {
+      "exploration_id": "20260513-053136",
+      "region": "south_central_america",
+      "reason": "only 0 sources (need 5)",
+      "timestamp": "2026-05-13T05:31:37Z",
+      "sources_found": 1
+    },
+    {
+      "exploration_id": "20260513-053137",
+      "region": "global_finance",
+      "reason": "only 0 sources (need 5)",
+      "timestamp": "2026-05-13T05:31:37Z",
+      "sources_found": 0
+    },
+    {
+      "exploration_id": "20260513-053137",
+      "region": "africa",
+      "reason": "only 0 sources (need 5)",
+      "timestamp": "2026-05-13T05:31:38Z",
+      "sources_found": 2
+    },
+    {
+      "exploration_id": "20260513-053138",
+      "region": "asia",
+      "reason": "only 3 sources (need 5)",
+      "timestamp": "2026-05-13T05:31:40Z",
+      "sources_found": 2
+    },
+    {
+      "exploration_id": "20260513-053140",
+      "region": "middle_east",
+      "reason": "linguistic gap: No Arabic or Persian source citations detected",
+      "timestamp": "2026-05-13T05:31:41Z",
+      "sources_found": 0
+    }
   ]
 }

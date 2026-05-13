@@ -1,0 +1,20 @@
+{
+  "search_query": "south_central_america  ",
+  "discovered": 1,
+  "discoveries": [
+    {
+      "name": "Buenos Aires Times",
+      "url": "https://www.batimes.com.ar",
+      "rss_url": "https://www.batimes.com.ar/feed",
+      "description": "Known south_central_america source from directory",
+      "items_count": 100,
+      "last_item": "Tens of thousands demonstrate against Milei cuts to university budgets",
+      "score": 75,
+      "region": "south_central_america",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T05:31:37Z"
+    }
+  ],
+  "generated_at": "2026-05-13T05:31:37Z"
+}
