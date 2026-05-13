@@ -211,70 +211,108 @@ def scan_gmail() -> list[dict]:
 
 
 def scan_web() -> list[dict]:
-    """Search the web for breaking geopolitical developments."""
+    """Search the web for breaking geopolitical developments using Perplexity Sonar via OpenRouter.
+
+    Sonar gives synthesized answers with citations instead of raw links —
+    much better for triage because it distills overnight developments into
+    a coherent narrative we can score.
+    """
     signals = []
-    api_key = os.environ.get("BRAVE_API_KEY", "")
+
+    api_key = os.environ.get("OPENROUTER_API_KEY", "")
     if not api_key:
+        log("OPENROUTER_API_KEY not set — web scan disabled")
         return signals
 
-    # Search critical topics
-    topics = [
-        "Iran Hormuz Strait escalation",
-        "CIA Mexico cartel operations",
-        "Russia Ukraine offensive",
-        "Trump Xi summit Beijing",
-        "China Taiwan military",
-        "Venezuela US annexation",
+    # Strategic questions — Sonar handles complex queries better than keyword search
+    questions = [
+        "What are the major overnight developments in the Iran Strait of Hormuz situation as of the last 24 hours?",
+        "What are the latest developments in CIA operations against Mexican cartels?",
+        "What are the latest military developments in the Russia-Ukraine war in the last 24 hours?",
+        "What are the latest developments in US-China relations and the Trump-Xi summit?",
+        "What are the latest military developments regarding China and Taiwan?",
+        "What are the latest US-Venezuela developments including annexation rhetoric?",
     ]
 
-    last_state = load_triage_state()
-    last_check = last_state.get("last_check", "")
+    # Map questions to signal topics
+    topic_map = {
+        "Iran": "Iran Hormuz Strait",
+        "Mexico": "CIA Mexico cartels",
+        "Russia-Ukraine": "Russia Ukraine war",
+        "Trump-Xi": "US-China summit",
+        "Taiwan": "China Taiwan",
+        "Venezuela": "Venezuela US annexation",
+    }
 
-    for topic in topics:
+    severity_keywords = {
+        "strike": 10, "attack": 10, "killed": 15, "assassination": 20,
+        "nuclear": 20, "sanctions": 8, "ceasefire": 10, "collapse": 15,
+        "escalation": 12, "war": 15, "invasion": 20, "missile": 10,
+        "drone": 8, "explosion": 12, "mobilization": 15, "exclusive": 15,
+    }
+
+    for question in questions:
         try:
-            encoded = urllib.parse.quote(topic)
-            url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count=3&freshness=day"
-            req = urllib.request.Request(url, headers={
-                "Accept": "application/json",
-                "X-Subscription-Token": api_key,
+            payload = {
+                "model": "perplexity/sonar-pro",
+                "messages": [{"role": "user", "content": question}],
+                "temperature": 0.1,
+                "max_tokens": 1024,
+            }
+            req = urllib.request.Request(
+                "https://openrouter.ai/api/v1/chat/completions",
+                data=json.dumps(payload).encode(),
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/trevormentis-spec",
+                    "X-Title": "TREVOR Triage",
+                },
+                method="POST",
+            )
+            resp = json.loads(urllib.request.urlopen(req, timeout=30).read())
+            answer = resp["choices"][0]["message"]["content"]
+
+            if not answer or len(answer) < 50:
+                continue
+
+            # Identify topic from question
+            topic = "Geopolitics"
+            for key, val in topic_map.items():
+                if key in question:
+                    topic = val
+                    break
+
+            text_l = answer.lower()
+
+            # Score by keyword severity — Sonar's answer is richer than snippets
+            score = 25
+            for kw, boost in severity_keywords.items():
+                count = text_l.count(kw)
+                score += min(count * boost * 0.5, boost)
+
+            # Bonus for length/depth of answer
+            if len(answer) > 500:
+                score += 10
+            if len(answer) > 1000:
+                score += 5
+
+            score = min(score, 100)
+
+            signals.append({
+                "source": "sonar",
+                "type": "breaking_news",
+                "topic": topic,
+                "answer_preview": answer[:400],
+                "score": score,
+                "tier": "tier1" if score >= 80 else "tier2",
+                "id": f"sonar-{abs(hash(question)) % 1000:03d}",
             })
-            resp = json.loads(urllib.request.urlopen(req, timeout=15).read())
-            results = resp.get("web", {}).get("results", [])
 
-            for r in results:
-                title = r.get("title", "")
-                desc = r.get("description", "")
-                url_str = r.get("url", "")
-                text = (title + " " + desc).lower()
+            log(f"  Sonar [{topic}]: score={score}, {len(answer)} chars")
 
-                # Check if truly recent — Brave freshness filter handles this
-                # Score by keyword severity
-                severity_keywords = {
-                    "strike": 10, "attack": 10, "killed": 15, "assassination": 20,
-                    "nuclear": 20, "sanctions": 8, "ceasefire": 10, "collapse": 15,
-                    "escalation": 12, "war": 15, "invasion": 20, "missile": 10,
-                    "drone": 8, "explosion": 12, "mobilization": 15,
-                }
-                score = 30  # Base for any breaking news
-                for kw, boost in severity_keywords.items():
-                    if kw in text:
-                        score += boost
-
-                score = min(score, 100)
-
-                if score >= 50:
-                    signals.append({
-                        "source": "web",
-                        "type": "breaking_news",
-                        "topic": topic,
-                        "title": title[:150],
-                        "url": url_str[:200],
-                        "score": score,
-                        "tier": "tier1" if score >= 80 else "tier2",
-                        "id": f"web-{abs(hash(title)) % 10000:04d}",
-                    })
         except Exception as exc:
-            log(f"Web search for '{topic}' failed: {exc}")
+            log(f"Sonar query failed: {question[:50]}... \u2192 {exc}")
 
     return signals
 
@@ -583,7 +621,7 @@ def run_triage(dispatch: bool = True) -> dict:
     # Log ranked signals
     log("Signals ranked:")
     for s in ranked[:10]:
-        log(f"  [{s['score']:2d}] {s['source']}:{s['type']} — {s.get('title', s.get('subject', s.get('description', s.get('text', ''))))[:80]}")
+        log(f"  [{int(s['score']):2d}] {s['source']}:{s['type']} — {s.get('title', s.get('subject', s.get('description', s.get('text', ''))))[:80]}")
 
     # Dispatch if threshold exceeded
     if dispatch:
