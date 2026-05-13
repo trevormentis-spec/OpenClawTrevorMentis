@@ -144,12 +144,14 @@ def call_deepseek(model: str, system: str, user: str,
 
 
 def build_collection_quality(region_snake: str, incidents: list[dict],
-                               collection_state: dict | None = None) -> str:
-    """Build a collection quality assessment for a region.
+                               collection_state: dict | None = None,
+                               behavioral_state: dict | None = None) -> str:
+    """Build collection quality + behavioral constraints for a region.
     
-    Uses incident counts, source diversity, and collection state metadata
-    to produce a confidence-conditioning statement that the model uses
-    to calibrate its estimative confidence.
+    If behavioral_state is provided, it emits HARD constraints on what
+    confidence bands the model may use, maximum percentages, and mandatory
+    caveats. This is the behavioral adaptation bridge — it changes what
+    the model can output, not just what it's told.
     """
     region_incidents = [i for i in incidents if i.get("region") == region_snake]
     inc_count = len(region_incidents)
@@ -163,7 +165,7 @@ def build_collection_quality(region_snake: str, incidents: list[dict],
     source_count = len(all_sources)
     
     # Get region cap from collection state
-    region_cap = 8  # default
+    region_cap = 8
     collection_gaps = []
     if collection_state:
         caps = collection_state.get("per_region_cap", {})
@@ -173,27 +175,33 @@ def build_collection_quality(region_snake: str, incidents: list[dict],
             if region_snake in g:
                 collection_gaps.append(g)
     
-    # Assess collection quality
+    # --- BEHAVIORAL ADAPTATION: Hard constraints from behavioral state ---
+    # These override the descriptive guidance below
+    constraints = {}
+    if behavioral_state:
+        constraints = behavioral_state.get("per_region_constraints", {}).get(region_snake, {})
+    
+    # Assess collection quality (descriptive)
     if inc_count == 0:
         coverage = "NONE"
         diversity = "N/A (no incidents)"
         quality = "CRITICAL GAP"
-        guidance = "No incidents collected for this region. You CANNOT produce a meaningful assessment. State the gap explicitly. If you must produce a judgment, use the WIDEST confidence band (even chance or wider)."
+        descriptive_guidance = "No incidents collected for this region. You CANNOT produce a meaningful assessment. State the gap explicitly."
     elif inc_count <= 2 or source_count <= 1:
         coverage = "THIN"
         diversity = "LOW" if source_count <= 1 else "MODERATE"
         quality = "LOW"
-        guidance = "Thin collection coverage. Widen your confidence bands by one level (e.g., 'likely' → 'even chance', 'highly likely' → 'likely'). Every key judgment should note the collection limitation. Single-source judgments capped at 55%."
+        descriptive_guidance = "Thin collection coverage. Collection limitation noted."
     elif inc_count <= 5 or source_count <= 2:
         coverage = "MODERATE"
         diversity = "MODERATE"
         quality = "MODERATE"
-        guidance = "Moderate collection coverage. Standard confidence bands apply but be cautious with 'highly likely' or 'almost certain' — those require diverse multi-source confirmation."
+        descriptive_guidance = "Moderate collection coverage."
     else:
         coverage = "FULL"
         diversity = "HIGH" if source_count >= 4 else "MODERATE"
         quality = "HIGH"
-        guidance = "Good collection coverage with diverse sources. Standard confidence bands apply. 'Highly likely' and 'almost certain' are available if the evidence supports it."
+        descriptive_guidance = "Good collection coverage with diverse sources."
     
     lines = [
         f"Region: {REGION_LABEL.get(region_snake, region_snake)}",
@@ -204,8 +212,30 @@ def build_collection_quality(region_snake: str, incidents: list[dict],
         f"Source diversity: {diversity}",
         f"Collection quality: {quality}",
         f"",
-        f"Guidance for this assessment: {guidance}",
+        f"Descriptive guidance: {descriptive_guidance}",
     ]
+    
+    # Behavioral adaptation: emit HARD CONSTRAINTS if available
+    # These change what the model is ALLOWED to output
+    if constraints:
+        available = constraints.get("available_bands", [])
+        max_pct = constraints.get("max_confidence_pct", 95)
+        max_ss = constraints.get("max_single_source_pct", 70)
+        aggression = constraints.get("forecasting_aggression", "standard")
+        caveats = constraints.get("mandatory_caveats", [])
+        
+        lines.append(f"")
+        lines.append(f"<<< HARD CONSTRAINTS — MUST FOLLOW >>>")
+        lines.append(f"Available confidence bands (ONLY these): {', '.join(available)}")
+        lines.append(f"Max confidence percentage: {max_pct}%")
+        lines.append(f"Max single-source percentage: {max_ss}%")
+        lines.append(f"Forecasting aggression: {aggression}")
+        if caveats:
+            lines.append(f"Mandatory caveats (must include):")
+            for c in caveats:
+                lines.append(f"  - {c}")
+        lines.append("<<< END HARD CONSTRAINTS >>>")
+    
     if collection_gaps:
         lines.append(f"Collection gaps: {'; '.join(collection_gaps)}")
     
@@ -214,11 +244,12 @@ def build_collection_quality(region_snake: str, incidents: list[dict],
 
 def regional_prompt(template: str, region_snake: str, incidents: list[dict],
                     iw_board_md: str, date_utc: str,
-                    collection_state: dict | None = None) -> tuple[str, str]:
+                    collection_state: dict | None = None,
+                    behavioral_state: dict | None = None) -> tuple[str, str]:
     region_label = REGION_LABEL[region_snake]
     short = REGION_SHORT[region_snake]
     incidents_for_region = [i for i in incidents if i.get("region") == region_snake]
-    coll_quality = build_collection_quality(region_snake, incidents, collection_state)
+    coll_quality = build_collection_quality(region_snake, incidents, collection_state, behavioral_state)
     user = (template
             .replace("{region_label}", region_label)
             .replace("{region_snake}", region_snake)
@@ -234,11 +265,25 @@ def regional_prompt(template: str, region_snake: str, incidents: list[dict],
 
 
 def exec_prompt(template: str, regional_payloads: dict[str, dict],
-                date_utc: str, collection_state: dict | None = None) -> str:
+                date_utc: str, collection_state: dict | None = None,
+                behavioral_state: dict | None = None) -> str:
     user = template.replace("{date_utc}", date_utc)
     
-    # If collection state available, inject collection quality summary
-    if collection_state:
+    # Build collection quality summary from either behavioral state or raw collection state
+    if behavioral_state:
+        constraints = behavioral_state.get("per_region_constraints", {})
+        quality_lines = ["PER-REGION CONFIDENCE CONSTRAINTS (hard limits):"]
+        for r, c in sorted(constraints.items()):
+            label = REGION_LABEL.get(r, r)
+            bands = ", ".join(c.get("available_bands", []))
+            max_pct = c.get("max_confidence_pct", 95)
+            aggression = c.get("forecasting_aggression", "standard")
+            quality_lines.append(f"  {label}: bands=[{bands}], max={max_pct}%, aggression={aggression}")
+            for caveat in c.get("mandatory_caveats", []):
+                quality_lines.append(f"    CAVEAT: {caveat}")
+        coll_summary = "\n".join(quality_lines)
+        user = template.replace("{collection_quality_summary}", coll_summary)
+    elif collection_state:
         caps = collection_state.get("per_region_cap", {})
         quality_lines = ["COLLECTION QUALITY BY REGION:"]
         for r, cap in sorted(caps.items()):
@@ -399,6 +444,8 @@ def main() -> int:
                         help="path to collection-state.json for confidence conditioning")
     parser.add_argument("--calibration", default="",
                         help="path to calibration-tracking.json for calibration feedback")
+    parser.add_argument("--behavioral-state", default="",
+                        help="path to behavioral-state.json for hard behavioral constraints (overrides individual --collection-state and --calibration)")
     parser.add_argument("--self-assessment", default="",
                         help="path to self-assessment-injection.md for system health feedback")
     parser.add_argument("--mock", action="store_true",
@@ -442,8 +489,62 @@ def main() -> int:
             system = system + recall_block
             log(f"injected brain recall ({len(recall_text)} chars) into system prompt")
 
-    # Step 0d — inject calibration feedback into system prompt
-    if args.calibration and os.path.exists(args.calibration):
+    # Step 0d — initialize behavioral state container (must be before any usage)
+    behavioral_state = None
+    collection_state = None
+    if args.behavioral_state and os.path.exists(args.behavioral_state):
+        try:
+            behavioral_state = json.loads(pathlib.Path(args.behavioral_state).read_text())
+            log(f"loaded behavioral state — {len(behavioral_state.get('per_region_constraints', {}))} regions constrained")
+        except Exception as exc:
+            log(f"behavioral state load failed ({exc}) — falling back to individual state")
+
+    if behavioral_state is None:
+        if args.collection_state and os.path.exists(args.collection_state):
+            try:
+                collection_state = json.loads(pathlib.Path(args.collection_state).read_text())
+                log(f"loaded collection state ({len(collection_state)} keys) for confidence conditioning")
+            except Exception as exc:
+                log(f"collection state load failed ({exc}) — confidence conditioning disabled")
+
+    # Step 0e — inject calibration feedback into system prompt
+    # If behavioral state is loaded, use its calibration directives (they are the compiled version)
+    if behavioral_state:
+        # Behavioral state already contains compiled calibration + collection + event directives
+        cal_dirs = behavioral_state.get("calibration_directives", {})
+        cal_parts = ["\n\n### === CALIBRATION FEEDBACK (from behavioral state) ==="]
+        
+        overall = cal_dirs.get("overall", {})
+        total = overall.get("total_judgments", 0)
+        if total > 0:
+            cal_parts.append(
+                f"\nOverall: {overall.get('correct', 0)}/{total} correct "
+                f"({overall.get('accuracy_pct', 0)}%)."
+            )
+        
+        if overall.get("unresolved", 0) > 10:
+            cal_parts.append(
+                f"\n⚠ {overall['unresolved']}/{total} judgments unresolved. "
+                "High uncertainty environment — restrict top confidence bands."
+            )
+        
+        if overall.get("overconfidence_regions"):
+            cal_parts.append(
+                f"\n⚠ Overconfidence detected in: "
+                f"{', '.join(overall['overconfidence_regions'])}."
+            )
+        
+        cal_parts.append("\n\n=== END CALIBRATION FEEDBACK ===")
+        cal_block = "\n".join(cal_parts)
+        
+        insert_point = system.find("Discipline:")
+        if insert_point >= 0:
+            system = system[:insert_point] + cal_block + "\n\n" + system[insert_point:]
+            log(f"injected behavioral calibration feedback ({len(cal_block)} chars)")
+        else:
+            system = system + cal_block
+            log(f"injected behavioral calibration feedback at end")
+    elif args.calibration and os.path.exists(args.calibration):
         try:
             cal_data = json.loads(pathlib.Path(args.calibration).read_text())
             cal_parts = ["\n\n### === CALIBRATION FEEDBACK ==="]
@@ -473,11 +574,6 @@ def main() -> int:
                         f"Avoid this band until calibration improves."
                     )
             
-            # Check region-specific warnings
-            warnings = cal_data.get("calibration_warnings", [])
-            for w in warnings:
-                cal_parts.append(f"\n  ⚠ {w}")
-            
             # Running accuracy summary
             total = cal_data.get("total_judgments", 0)
             if total > 0:
@@ -492,8 +588,6 @@ def main() -> int:
             cal_parts.append("\n\n=== END CALIBRATION FEEDBACK ===")
             cal_block = "\n".join(cal_parts)
             
-            # Inject into system prompt (after existing discipline rules, before memory context)
-            # Insert after the Sherman Kent band definitions
             insert_point = system.find("Discipline:")
             if insert_point >= 0:
                 system = system[:insert_point] + cal_block + "\n\n" + system[insert_point:]
@@ -504,7 +598,7 @@ def main() -> int:
         except Exception as exc:
             log(f"calibration feedback failed to load ({exc}) — continuing without")
 
-    # Step 0b — inject self-assessment feedback (if critical issues found)
+    # Step 0e — inject self-assessment feedback (if critical issues found)
     if args.self_assessment and os.path.exists(args.self_assessment):
         sa_text = pathlib.Path(args.self_assessment).read_text().strip()
         if sa_text and "CRITICAL" in args.self_assessment.upper():
@@ -521,14 +615,7 @@ def main() -> int:
             system = system + "\n\n" + proc_text
             log(f"injected procedural memory ({len(proc_text)} chars) into system prompt")
 
-    # Step 0d — load collection state for confidence conditioning
-    collection_state = None
-    if args.collection_state and os.path.exists(args.collection_state):
-        try:
-            collection_state = json.loads(pathlib.Path(args.collection_state).read_text())
-            log(f"loaded collection state ({len(collection_state)} keys) for confidence conditioning")
-        except Exception as exc:
-            log(f"collection state load failed ({exc}) — confidence conditioning disabled")
+
 
     regional_template = prompts.get("Regional Analyst Prompt", "")
     exec_template = prompts.get("Executive Summary Prompt", "")
@@ -557,7 +644,8 @@ def main() -> int:
             iw_md = find_iw_board(repo_root, region)
             user, _short = regional_prompt(regional_template, region,
                                            incidents, iw_md, date_utc,
-                                           collection_state=collection_state)
+                                           collection_state=collection_state,
+                                           behavioral_state=behavioral_state)
             try:
                 content = call_deepseek(tier2_model, system, user, provider=tier2_provider)
                 payload = parse_json_strict(content)
@@ -577,7 +665,8 @@ def main() -> int:
         exec_payload = mock_exec(regional_payloads, date_utc)
     else:
         user = exec_prompt(exec_template, regional_payloads, date_utc,
-                               collection_state=collection_state)
+                               collection_state=collection_state,
+                               behavioral_state=behavioral_state)
         content = call_deepseek(tier1_model, system, user, provider=args.provider)
         exec_payload = parse_json_strict(content)
     (analysis_dir / "exec_summary.json").write_text(

@@ -1,0 +1,1 @@
+{"timestamp": "2026-05-13T04:52:29.064476+00:00Z", "source": "behavioral_adaptation", "type": "kalshi_swing", "region": "middle_east", "severity": "critical", "reason": "Kalshi Middle East conflict probability swung 25pts", "trigger": "kalshi_swing_25pts"}

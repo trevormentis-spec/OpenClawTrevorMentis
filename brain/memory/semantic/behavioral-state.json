@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-13T04:54:33Z",
+  "calibration_directives": {
+    "overall": {
+      "total_judgments": 25,
+      "correct": 1,
+      "incorrect": 0,
+      "accuracy_pct": 4.0,
+      "overconfidence_regions": [],
+      "underconfidence_regions": [],
+      "unresolved": 24,
+      "global_caution_reason": "24/25 judgments unresolved \u2014 restricting top band"
+    },
+    "by_region": {
+      "europe": {
+        "total": 5,
+        "correct": 0,
+        "incorrect": 0,
+        "unresolved": 5,
+        "restrict_bands": [],
+        "forecasting_aggression": "standard",
+        "note": ""
+      },
+      "asia": {
+        "total": 5,
+        "correct": 1,
+        "incorrect": 0,
+        "unresolved": 4,
+        "restrict_bands": [],
+        "forecasting_aggression": "standard",
+        "note": "No errors yet \u2014 standard bands available"
+      },
+      "middle_east": {
+        "total": 5,
+        "correct": 0,
+        "incorrect": 0,
+        "unresolved": 5,
+        "restrict_bands": [
+          "highly likely"
+        ],
+        "forecasting_aggression": "cautious",
+        "note": " | Overconfidence flag: overconfident given source diversity"
+      },
+      "north_america": {
+        "total": 5,
+        "correct": 0,
+        "incorrect": 0,
+        "unresolved": 5,
+        "restrict_bands": [],
+        "forecasting_aggression": "standard",
+        "note": ""
+      },
+      "south_central_america": {
+        "total": 3,
+        "correct": 0,
+        "incorrect": 0,
+        "unresolved": 3,
+        "restrict_bands": [],
+        "forecasting_aggression": "standard",
+        "note": ""
+      },
+      "global_finance": {
+        "total": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "unresolved": 2,
+        "restrict_bands": [],
+        "forecasting_aggression": "standard",
+        "note": "Insufficient calibration data \u2014 be cautious with high bands"
+      }
+    },
+    "restricted_bands_globally": [
+      "almost certain"
+    ]
+  },
+  "collection_directives": {
+    "by_region": {
+      "europe": {
+        "collection_quality_tier": "HIGH",
+        "recent_incidents": 18,
+        "confidence_bands_available": [
+          "even chance",
+          "likely",
+          "highly likely",
+          "almost certain"
+        ],
+        "max_confidence_pct": 95,
+        "max_single_source_pct": 70,
+        "mandatory_caveats": [],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [],
+        "cap": 12
+      },
+      "asia": {
+        "collection_quality_tier": "HIGH",
+        "recent_incidents": 21,
+        "confidence_bands_available": [
+          "even chance",
+          "likely",
+          "highly likely",
+          "almost certain"
+        ],
+        "max_confidence_pct": 95,
+        "max_single_source_pct": 70,
+        "mandatory_caveats": [
+          "No Chinese or Japanese source citations detected"
+        ],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [
+          "No Chinese or Japanese source citations detected"
+        ],
+        "cap": 14
+      },
+      "middle_east": {
+        "collection_quality_tier": "HIGH",
+        "recent_incidents": 30,
+        "confidence_bands_available": [
+          "even chance",
+          "likely",
+          "highly likely",
+          "almost certain"
+        ],
+        "max_confidence_pct": 95,
+        "max_single_source_pct": 70,
+        "mandatory_caveats": [
+          "No Arabic or Persian source citations detected"
+        ],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [
+          "No Arabic or Persian source citations detected"
+        ],
+        "cap": 20
+      },
+      "north_america": {
+        "collection_quality_tier": "HIGH",
+        "recent_incidents": 10,
+        "confidence_bands_available": [
+          "even chance",
+          "likely",
+          "highly likely",
+          "almost certain"
+        ],
+        "max_confidence_pct": 95,
+        "max_single_source_pct": 70,
+        "mandatory_caveats": [],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [],
+        "cap": 7
+      },
+      "south_central_america": {
+        "collection_quality_tier": "MODERATE",
+        "recent_incidents": 4,
+        "confidence_bands_available": [
+          "even chance",
+          "likely"
+        ],
+        "max_confidence_pct": 85,
+        "max_single_source_pct": 65,
+        "mandatory_caveats": [
+          "Low collection intensity cap limits coverage confidence"
+        ],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [],
+        "cap": 4
+      },
+      "global_finance": {
+        "collection_quality_tier": "HIGH",
+        "recent_incidents": 18,
+        "confidence_bands_available": [
+          "even chance",
+          "likely",
+          "highly likely",
+          "almost certain"
+        ],
+        "max_confidence_pct": 95,
+        "max_single_source_pct": 70,
+        "mandatory_caveats": [],
+        "forecasting_aggression": "standard",
+        "linguistic_gaps": [],
+        "cap": 12
+      }
+    },
+    "monoculture_warnings": [],
+    "linguistic_gaps": [
+      {
+        "region": "asia",
+        "gaps": [
+          "No Chinese or Japanese source citations detected"
+        ]
+      },
+      {
+        "region": "middle_east",
+        "gaps": [
+          "No Arabic or Persian source citations detected"
+        ]
+      }
+    ],
+    "expansion_needed": []
+  },
+  "event_directives": {
+    "active_escalations": [
+      {
+        "region": "middle_east",
+        "severity": "critical",
+        "trigger": "Kalshi swing 25pts"
+      }
+    ],
+    "collection_changes": [
+      "INCREASE COLLECTION: middle_east \u2014 critical Kalshi swing (25pts)"
+    ],
+    "cognition_changes": [
+      "ADDITIONAL ANALYSIS: middle_east \u2014 unscheduled assessment triggered by market swing"
+    ],
+    "memo_needed": false,
+    "last_event_time": "2026-05-13T04:54:33.153919+00:00"
+  },
+  "per_region_constraints": {
+    "europe": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 95,
+      "max_single_source_pct": 70,
+      "mandatory_caveats": [],
+      "forecasting_aggression": "standard"
+    },
+    "asia": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 95,
+      "max_single_source_pct": 70,
+      "mandatory_caveats": [
+        "No Chinese or Japanese source citations detected",
+        "No errors yet \u2014 standard bands available"
+      ],
+      "forecasting_aggression": "standard"
+    },
+    "middle_east": {
+      "available_bands": [
+        "even chance",
+        "likely"
+      ],
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 70,
+      "mandatory_caveats": [
+        "No Arabic or Persian source citations detected",
+        " | Overconfidence flag: overconfident given source diversity"
+      ],
+      "forecasting_aggression": "cautious"
+    },
+    "north_america": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 95,
+      "max_single_source_pct": 70,
+      "mandatory_caveats": [],
+      "forecasting_aggression": "standard"
+    },
+    "south_central_america": {
+      "available_bands": [
+        "even chance",
+        "likely"
+      ],
+      "max_confidence_pct": 85,
+      "max_single_source_pct": 65,
+      "mandatory_caveats": [
+        "Low collection intensity cap limits coverage confidence"
+      ],
+      "forecasting_aggression": "standard"
+    },
+    "global_finance": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 95,
+      "max_single_source_pct": 70,
+      "mandatory_caveats": [
+        "Insufficient calibration data \u2014 be cautious with high bands"
+      ],
+      "forecasting_aggression": "standard"
+    }
+  }
+}
