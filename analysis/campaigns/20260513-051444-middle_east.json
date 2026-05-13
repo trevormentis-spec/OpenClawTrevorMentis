@@ -1,0 +1,11 @@
+{
+  "campaign_id": "20260513-051444",
+  "region": "middle_east",
+  "launched_at": "2026-05-13T05:14:53Z",
+  "priority": 90,
+  "reason": "Manual campaign for middle_east",
+  "feeds_fetched": 15,
+  "total_items": 0,
+  "items": [],
+  "source_discovery_run": true
+}

@@ -20,5 +20,17 @@
     }
   ],
   "autonomous_prioritizations": [],
-  "last_updated": "2026-05-13T05:09:02.044467+00:00Z"
+  "last_updated": "2026-05-13T05:09:02.044467+00:00Z",
+  "collection_campaigns": [
+    {
+      "campaign_id": "20260513-051444",
+      "timestamp": "2026-05-13T05:14:53Z",
+      "region": "middle_east",
+      "priority": 90,
+      "reason": "Manual campaign for middle_east",
+      "feeds_fetched": 15,
+      "items_collected": 0,
+      "report_path": "/home/ubuntu/.openclaw/workspace/analysis/campaigns/20260513-051444-middle_east.json"
+    }
+  ]
 }

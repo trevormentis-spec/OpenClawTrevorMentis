@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-05-13T05:08:56Z",
+  "generated_at": "2026-05-13T05:28:11Z",
   "calibration_directives": {
     "overall": {
       "total_judgments": 25,
@@ -196,7 +196,12 @@
         ]
       }
     ],
-    "expansion_needed": []
+    "expansion_needed": [],
+    "source_discovery_needed": [
+      "asia",
+      "middle_east"
+    ],
+    "campaign_needed": []
   },
   "event_directives": {
     "active_escalations": [
@@ -213,7 +218,7 @@
       "ADDITIONAL ANALYSIS: middle_east \u2014 unscheduled assessment triggered by market swing"
     ],
     "memo_needed": false,
-    "last_event_time": "2026-05-13T05:08:56.001709+00:00"
+    "last_event_time": "2026-05-13T05:28:11.545315+00:00"
   },
   "per_region_constraints": {
     "europe": {
