@@ -584,6 +584,30 @@
       "discovered": "2026-05-13",
       "discovery_method": "autonomous_source_discovery",
       "source": "discovered"
+    },
+    {
+      "name": "judean_osint",
+      "type": "Telegram/OSINT",
+      "focus": "Telegram channel: Dedicated Iran-Israel real-time OSINT",
+      "url": "https://t.me/s/judean_osint",
+      "rss": "https://t.me/s/judean_osint",
+      "modality": "telegram",
+      "channel": "judean_osint",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "modality_discovery"
+    },
+    {
+      "name": "HormuzMonitor",
+      "type": "Telegram/OSINT",
+      "focus": "Telegram channel: Real-time Strait of Hormuz tanker traffic bot",
+      "url": "https://t.me/s/HormuzMonitor",
+      "rss": "https://t.me/s/HormuzMonitor",
+      "modality": "telegram",
+      "channel": "HormuzMonitor",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "modality_discovery"
     }
   ],
   "moltbook_sources": [

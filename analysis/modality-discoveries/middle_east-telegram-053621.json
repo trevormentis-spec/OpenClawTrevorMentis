@@ -1,0 +1,34 @@
+{
+  "region": "middle_east",
+  "modality": "telegram",
+  "timestamp": "2026-05-13T05:36:21Z",
+  "sources_found": 2,
+  "sources": [
+    {
+      "name": "Judean OSINT",
+      "channel": "judean_osint",
+      "url": "https://t.me/judean_osint",
+      "description": "Dedicated Iran-Israel real-time OSINT",
+      "region": "middle_east",
+      "signal_level": "High",
+      "discovered": "2026-05-12",
+      "verified": true,
+      "channel_name": "judean_osint",
+      "recent_messages": 15,
+      "fetch_url": "https://t.me/s/judean_osint"
+    },
+    {
+      "name": "Straits of Hormuz Monitor",
+      "channel": "HormuzMonitor",
+      "url": "https://t.me/HormuzMonitor",
+      "description": "Real-time Strait of Hormuz tanker traffic bot",
+      "region": "middle_east",
+      "signal_level": "High",
+      "discovered": "2026-05-12",
+      "verified": true,
+      "channel_name": "HormuzMonitor",
+      "recent_messages": 0,
+      "fetch_url": "https://t.me/s/HormuzMonitor"
+    }
+  ]
+}
