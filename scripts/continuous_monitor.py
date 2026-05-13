@@ -49,6 +49,7 @@ BEHAVIORAL_STATE_SCRIPT = REPO_ROOT / "scripts" / "behavioral_state.py"
 UNSCHEDULED_COGNITION_SCRIPT = REPO_ROOT / "scripts" / "unscheduled_cognition.py"
 COLLECTION_CAMPAIGN_SCRIPT = REPO_ROOT / "scripts" / "collection_campaign.py"
 SOURCE_DISCOVERY_SCRIPT = REPO_ROOT / "scripts" / "source_discovery.py"
+GMAIL_READER_SCRIPT = REPO_ROOT / "scripts" / "gmail_reader.py"
 
 
 def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None:
@@ -344,6 +345,19 @@ def run_cycle(quick: bool = False, kalshi_only: bool = False) -> dict:
     if not kalshi_only:
         # Fast check
         findings["new_mail"] = check_agentmail_inbox()
+
+    # Gmail check — OSINT intel + news
+    if not quick and not kalshi_only:
+        try:
+            log("Checking Gmail for intel/news...")
+            subprocess.check_call([
+                "python3", str(GMAIL_READER_SCRIPT),
+                "--max", "5", "--save",
+            ], cwd=str(REPO_ROOT), timeout=30)
+            findings["gmail_checked"] = True
+        except Exception as exc:
+            log(f"Gmail check failed: {exc}")
+            findings["gmail_checked"] = False
 
     return findings
 
