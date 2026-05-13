@@ -173,6 +173,16 @@ echo "--- Running self-assessment daemon ---" | tee -a "$LOG"
 if python3 "$REPO/scripts/self_assessment.py" 2>&1 | tee -a "$LOG"; then
     echo "Self-assessment complete" | tee -a "$LOG"
 else
+# Step 9: Daily Products — product suggestions, Starmer analysis, geo trading
+echo "--- Running daily products (suggestions, Starmer, trading) ---" | tee -a "$LOG"
+bash "$REPO/scripts/daily-products.sh" 2>&1 | tee -a "$LOG"
+PRODUCTS_RC=${PIPESTATUS[0]}
+if [ $PRODUCTS_RC -eq 0 ]; then
+    echo "Daily products generated successfully" | tee -a "$LOG"
+else
+    echo "WARNING: Daily products pipeline had issues (rc=$PRODUCTS_RC)" | tee -a "$LOG"
+fi
+
     echo "WARNING: Self-assessment flagged issues (non-fatal, check report)" | tee -a "$LOG"
 fi
 
