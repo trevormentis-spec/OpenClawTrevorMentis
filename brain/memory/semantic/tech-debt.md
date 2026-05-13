@@ -34,13 +34,13 @@
 
 | # | Debt | Discovered | Impact | Status |
 |---|---|---|---|---|
-| MD-01 | **Zero local-language sources** — all 70+ sources are English | 2026-05-12 | Systematic blind spot on non-English intelligence | **OPEN** |
+| MD-01 | **Zero local-language sources** — all 70+ sources are English | 2026-05-12 | Systematic blind spot on non-English intelligence | **RESOLVED** 2026-05-13 via 21 local-language sources added to `analyst/meta/sources.json` + `collect.py` `LOCAL_LANGUAGE_FEEDS` (11 languages: ar, fa, ru, zh, he, es, fr, ja, en). RSS feeds integrated into collection pipeline. |
 | MD-02 | **Stripe is test mode** — can't process real subscriptions | 2026-05-12 | Product can't generate revenue | **OPEN** — needs live `sk_live_...` key |
 | MD-03 | **Buttondown has 0 subscribers** | 2026-05-12 | Newsletter produced but nobody gets it | **OPEN** |
 | MD-04 | **No technical debt tracking existed** — this is the first ledger | 2026-05-12 | Problems were discovered ad hoc | **RESOLVED** 2026-05-12 |
 | MD-07 | **Collection quality never reached the analyst model** — collection_state.py tracked utilization but analyze.py never saw it | 2026-05-12 | Confidence bands were set without knowing collection quality | **RESOLVED** 2026-05-12 via `analyze.py --collection-state` + `build_collection_quality()` prompt injection |
-| MD-05 | **Social log has 2 entries, both posted=False** — social_poster was broken/superseded | 2026-05-12 | Old social log is misleading | **OPEN** |
-| MD-06 | **GenViral performance log has 46 entries but no aggregate stats** | 2026-05-12 | Can't see which platform performs best | **OPEN** |
+| MD-05 | **Social log has 2 entries, both posted=False** — social_poster was broken/superseded | 2026-05-12 | Old social log is misleading | **MITIGATED** 2026-05-13 — replaced by `engagement-log.json` (32 history entries, 4 platforms tracked). Old `log.json` (2 entries) superseded by GenViral `log.json` (52 posts). Dashboard at `exports/social/dashboard.json`. |
+| MD-06 | **GenViral performance log has 46 entries but no aggregate stats** | 2026-05-12 | Can't see which platform performs best | **RESOLVED** 2026-05-13 via `scripts/genviral_stats.py` — aggregates 52 posts by platform, date, hook type. Report saved to `exports/social/genviral-stats-2026-05-13.md`. Note: all 3 platforms (LinkedIn 18, Twitter 18, TikTok 16) show 0 views — GenViral doesn't push engagement metrics back into log. |
 
 ---
 

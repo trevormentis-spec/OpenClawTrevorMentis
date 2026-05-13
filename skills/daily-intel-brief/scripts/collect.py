@@ -48,6 +48,41 @@ WIRE_FEEDS = [
     ("FT World", "https://www.ft.com/world?format=rss"),
 ]
 
+# Local-language / non-English feeds — added 2026-05-13 for multi-language collection.
+# Tuple: (name, url, language_code, admiralty_rank)
+# These provide region-specific narratives, local reporting, and alternative baselines.
+# The collection model (DeepSeek V4 Flash) can handle multi-lingual content.
+LOCAL_LANGUAGE_FEEDS = [
+    # Persian / Farsi (Iran)
+    ("Mehr News (English)", "https://en.mehrnews.com/rss", "en", ("C", 3)),
+    ("Tasnim News (English)", "https://www.tasnimnews.com/en/rss", "en", ("C", 3)),
+    # Arabic (Gulf / Middle East)
+    ("Al Arabiya (English)", "https://english.alarabiya.net/feed/rss2/en.xml", "en", ("B", 2)),
+    ("Al Arabiya (Arabic)", "https://www.alarabiya.net/tools/mrss", "ar", ("B", 2)),
+    ("Asharq Al-Awsat (English)", "https://english.aawsat.com/rss.xml", "en", ("B", 2)),
+    ("Asharq Al-Awsat (Arabic)", "https://aawsat.com/feeds/rss", "ar", ("B", 2)),
+    # Russian
+    ("TASS (English)", "https://tass.com/rss/v2.xml", "en", ("C", 3)),
+    ("Meduza (English)", "https://meduza.io/rss/en/all", "en", ("B", 2)),
+    ("Meduza (Russian)", "https://meduza.io/rss/all", "ru", ("B", 2)),
+    ("Moscow Times", "https://www.themoscowtimes.com/rss/news", "en", ("B", 2)),
+    ("Kommersant (Russian)", "https://www.kommersant.ru/RSS/main.xml", "ru", ("C", 3)),
+    # Chinese
+    ("Xinhua (English)", "http://www.xinhuanet.com/english/rss/worldrss.xml", "en", ("C", 3)),
+    ("Global Times (English)", "https://www.globaltimes.cn/rss", "en", ("C", 3)),
+    ("CGTN (English)", "https://www.cgtn.com/subscribe/rss.html", "en", ("C", 3)),
+    # Israeli / Hebrew
+    ("Haaretz (English)", "https://www.haaretz.com/srv/haaretz-latest-news-xml", "en", ("B", 2)),
+    ("Ynet (Hebrew)", "https://www.ynet.co.il/Integration/StoryRss2.xml", "he", ("B", 2)),
+    ("Times of Israel", "https://www.timesofisrael.com/feed/", "en", ("B", 2)),
+    ("Israel Hayom (Hebrew)", "https://www.israelhayom.co.il/rss", "he", ("C", 3)),
+    # European
+    ("Le Monde (English)", "https://www.lemonde.fr/en/rss/une.xml", "en", ("B", 2)),
+    ("El País (English)", "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada", "en", ("B", 2)),
+    # Asian
+    ("Nikkei Asia", "https://asia.nikkei.com/rss/feed", "en", ("B", 2)),
+]
+
 # Gmail intel digest — newsletters from Cipher Brief, Foreign Policy, etc.
 NEWS_RAW_PATH = pathlib.Path("/home/ubuntu/.openclaw/workspace/tasks/news_raw.md")
 
@@ -479,6 +514,7 @@ def main() -> int:
             log(f"adaptive caps failed to load ({exc}), using uniform cap={args.cap_per_region}")
 
     # Feed priority filtering — skip TIER-3, alternate TIER-2
+    feeds_to_try = WIRE_FEEDS[:]
     skipped_feeds = []
     if args.feed_priorities and os.path.exists(args.feed_priorities):
         try:
@@ -509,6 +545,12 @@ def main() -> int:
                 log(f"skipped: {', '.join(skipped_feeds)}")
         except Exception as exc:
             log(f"feed priorities failed to load ({exc}), fetching all feeds")
+
+    # Add local-language feeds (non-English) — always fetch to fill linguistic gap
+    # These use tuple format (name, url, language, admiralty) — extra fields ignored by collect_live
+    local_feeds = [(f[0], f[1]) for f in LOCAL_LANGUAGE_FEEDS]
+    feeds_to_try = feeds_to_try + local_feeds
+    log(f"+{len(local_feeds)} local-language feeds — {len(feeds_to_try)} total feeds to fetch")
 
     if args.mock:
         log("running in mock mode")

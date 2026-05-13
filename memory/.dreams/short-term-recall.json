@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T09:00:06.507Z",
+  "updatedAt": "2026-05-13T04:34:02.408Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -93,13 +93,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.50553129149435,
+      "totalScore": 17.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -117,7 +117,8 @@
         "4a9b0e317e8f",
         "ebd4298379f6",
         "3c68673febfe",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "d76260b5998d"
       ],
       "recallDays": [
         "2026-04-28",
@@ -129,7 +130,8 @@
         "2026-05-07",
         "2026-05-08",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -383,13 +385,13 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 7,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-05-05T06:07:17.916Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
@@ -397,13 +399,16 @@
         "69ecdd2685e7",
         "fa003329a1a4",
         "d2222a517dea",
-        "29314a1ed0f7"
+        "29314a1ed0f7",
+        "196f8419e846",
+        "d76260b5998d"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-13"
       ],
       "conceptTags": [
         "saturday",
@@ -423,25 +428,27 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-05-03 — Sunday ## Overnight (01:08 UTC / 18:08 PT May 2) - AgentMail: checked, 5 most recent are outbound only (briefing/audit emails), no incoming external messages. Inbox clean. - DeepSeek balance: **$98.30** (down $0.27 from last check, burn ~$0.95/day, ~103 days runway) - Polymarket monitor ran with 129 errors / 0 successful queries — price-state.json empty (0 markets). Needs investigation. - Brain runtime: normal. Daily file started for May 3.",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:05:31.168Z",
-      "lastRecalledAt": "2026-05-10T04:27:44.395Z",
+      "lastRecalledAt": "2026-05-13T00:03:48.461Z",
       "queryHashes": [
         "69ecdd2685e7",
         "29314a1ed0f7",
         "92a6782d6fa7",
         "31f2802656ee",
-        "577729f1e069"
+        "577729f1e069",
+        "196f8419e846"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-05",
         "2026-05-07",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-13"
       ],
       "conceptTags": [
         "briefing/audit",
@@ -837,13 +844,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-13T00:03:48.461Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -852,14 +859,16 @@
         "088d05594874",
         "4fdd6eb8041e",
         "b5deefa4bb81",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "196f8419e846"
       ],
       "recallDays": [
         "2026-05-07",
         "2026-05-08",
         "2026-05-09",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -947,18 +956,22 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "## Daily Skill Security Audit (cron) - **Time:** 00:00 UTC - **Scope:** Scanned 79 skills across ~/.openclaw/skills, /usr/lib/node_modules/openclaw/skills, ~/.openclaw/workspace/skills - **Tool:** skill-scanner v1.0 - **Results:** 59 ✅ approved | 2 ⚠️ caution | 10 ❌ reject (all false positives) - **Notable:** All 116+ critical/high findings are false positives (env/config patterns in standard tooling). No actual threats detected. - **Low-priority item:** `social-post` skill has hardcoded `/home/phan_harry/.openclaw/.env` paths from its author — worth replacing with generic paths if deployed. - **Report emailed** to roderick.jones@gmail.com via AgentMail (trevor_mentis@agentmail.to) - **Fil",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:42:44.149Z",
-      "lastRecalledAt": "2026-05-11T04:42:44.149Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
       "queryHashes": [
-        "3c68673febfe"
+        "3c68673febfe",
+        "196f8419e846",
+        "d76260b5998d",
+        "3c76eeaf7cbf"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "conceptTags": [
         "openclaw/skills",
@@ -1066,6 +1079,132 @@
         "auto-loader",
         "scripts/social-tracker.py",
         "4-11"
+      ]
+    },
+    "memory:memory/2026-05-12.md:14:32": {
+      "key": "memory:memory/2026-05-12.md:14:32",
+      "path": "memory/2026-05-12.md",
+      "startLine": 14,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "BLUF: The Victory Day truce has collapsed into renewed Russian strikes while Iran's Hormuz coercion campaign and Trump's Beijing summit converge into a single 72-hour window where energy markets, nuclear diplomacy, and great-power signalling will be repriced together. - [europe] Russia will conduct at least one additional large-scale strike package (>50 munitions) against Ukraine within the next 7 days. (even chance; 55% / 7d) - [asia] The Trump-Xi Beijing summit will produce a public bilateral agreement or substantive joint statement on trade or technology within 7 days. (even chance; 45% / 7d) - [middle_east] Iran will conduct at least one additional disruptive maritime action against a c",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
+      "queryHashes": [
+        "d76260b5998d",
+        "3c76eeaf7cbf"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "72-hour",
+        "great-power",
+        "large-scale",
+        "trump-xi",
+        "middle-east",
+        "bluf",
+        "victory",
+        "day"
+      ]
+    },
+    "memory:memory/2026-05-12.md:48:76": {
+      "key": "memory:memory/2026-05-12.md:48:76",
+      "path": "memory/2026-05-12.md",
+      "startLine": 48,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- Writes calibration report to trevor-briefings/{yesterday}/calibration.json - Updates brain/memory/semantic/calibration-tracking.json — running accuracy by band and region - Wired as Step 8 in daily-brief-cron.sh between PDF delivery and Moltbook posts ### Fix 3: Stale analysis file (CLOSED) - orchestrate.py Step 4b syncs exec summary to tasks/news_analysis.md after each run - Written as formatted markdown with BLUF, context, and key judgments ### Fix 4: Tiered cognition routing (CLOSED) - analyze.py accepts --tier2-model flag (default: deepseek/deepseek-v4-flash) - 6 regional analyses use tier-2 (cheap/fast model via DeepSeek Direct) - Executive summary + red-team use tier-1 (Opus 4.7 vi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
+      "queryHashes": [
+        "d76260b5998d"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "trevor-briefings",
+        "calibration.json",
+        "daily-brief-cron.sh",
+        "orchestrate.py",
+        "tasks/news-analysis.md",
+        "analyze.py",
+        "tier2-model",
+        "deepseek/deepseek-v4-flash"
+      ]
+    },
+    "memory:memory/2026-05-12.md:27:53": {
+      "key": "memory:memory/2026-05-12.md:27:53",
+      "path": "memory/2026-05-12.md",
+      "startLine": 27,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "- Overall system score: 24.5/100 - Brain recall output was being discarded — ran but never fed into model prompts - No calibration feedback loop — confidence bands were decorative - No continuous collection — batch-only operation - Single-model pipeline — Opus 4.7 for everything - No procedural memory at runtime — skills existed but never read - Config fragility — I broke the config adding invalid cron.jobs - No technical debt tracking — problems discovered ad hoc - Routing contradiction — ORCHESTRATION.md said DeepSeek, cron used OpenRouter/Opus 4.7 - 12 of 15 weaknesses identified ## Critical Fixes — Phase 10 ### Fix 1: Brain recall → model prompt (CLOSED) - orchestrate.py now captures b",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
+      "queryHashes": [
+        "d76260b5998d",
+        "3c76eeaf7cbf"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "router",
+        "24.5/100",
+        "batch-only",
+        "single-model",
+        "4.7",
+        "cron.jobs",
+        "orchestration.md",
+        "openrouter/opus"
+      ]
+    },
+    "memory:memory/2026-05-12.md:70:95": {
+      "key": "memory:memory/2026-05-12.md:70:95",
+      "path": "memory/2026-05-12.md",
+      "startLine": 70,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "- Created scripts/procedural_memory_loader.py — reads brain/memory/procedural/*.md - Outputs compiled.md or prompt-block format - orchestrator calls at step 0a, passes --procedural to analyze.py - Injected as === PROCEDURAL MEMORY === block alongside brain recall ### Fix 7: Config safeguard (CLOSED) - Created scripts/validate_config.py — validates openclaw.json structure before edits - Checks top-level keys, skill entry fields, env var naming - Prevents invalid field bugs (like the cron.jobs I broke earlier) ### Fix 8: Technical debt ledger (CLOSED) - Created brain/memory/semantic/tech-debt.md — 21 entries (8 resolved, 13 open) - Severity-graded (Critical/High/Medium), discovery date, reso",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:34:02.408Z",
+      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
+      "queryHashes": [
+        "3c76eeaf7cbf"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "brain/memory/procedural",
+        "compiled.md",
+        "prompt-block",
+        "analyze.py",
+        "scripts/validate-config.py",
+        "openclaw.json",
+        "top-level",
+        "cron.jobs"
       ]
     }
   }
