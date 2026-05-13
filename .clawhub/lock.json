@@ -104,6 +104,10 @@
     "universal-translate": {
       "version": "1.0.0",
       "installedAt": 1778576600283
+    },
+    "data-charts-visualization": {
+      "version": "1.0.13",
+      "installedAt": 1778662874903
     }
   }
 }

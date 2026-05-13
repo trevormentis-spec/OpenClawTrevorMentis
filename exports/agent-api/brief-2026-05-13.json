@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "brief_id": "gsib-2026-05-13",
+  "generated_at": "2026-05-13T12:09:13.307632+00:00",
+  "generated_by": "TREVOR Intelligence Engine",
+  "classification": "OPEN SOURCE \u2014 PUBLIC DISTRIBUTION",
+  "metadata": {
+    "theater_count": 6,
+    "source_count": 50,
+    "formats": [
+      "json",
+      "pdf",
+      "email"
+    ],
+    "methodology": "Structured Analytic Tradecraft (ACH, Indicators, Driver Analysis)"
+  },
+  "executive_summary": {
+    "bluf": "Operation Epic Fury shifts from kinetic ops to maritime blockade and coercive pressure; ceasefire holding but fragile",
+    "key_judgments": [
+      {
+        "id": "EXEC-1",
+        "statement": "Russia will conduct at least one large-scale missile strike (>50 munitions) against Ukrainian infrastructure within 7 days.",
+        "sherman_kent_band": "likely",
+        "prediction_pct": 62,
+        "horizon_days": 7,
+        "drawn_from_region": "europe",
+        "drawn_from_kj_id": "KJ-EU-1"
+      },
+      {
+        "id": "EXEC-2",
+        "statement": "Israel will maintain a near-daily airstrike tempo in Lebanon over the next 7 days, with at least one major strike package per day.",
+        "sherman_kent_band": "likely",
+        "prediction_pct": 60,
+        "horizon_days": 7,
+        "drawn_from_region": "middle_east",
+        "drawn_from_kj_id": "KJ-ME-1"
+      },
+      {
+        "id": "EXEC-3",
+        "statement": "Xi will publicly reiterate the One China principle and demand a halt to US arms sales to Taiwan during the summit, but stop short of setting an explicit retaliation deadline.",
+        "sherman_kent_band": "likely",
+        "prediction_pct": 60,
+        "horizon_days": 7,
+        "drawn_from_region": "asia",
+        "drawn_from_kj_id": "KJ-AS-1"
+      },
+      {
+        "id": "EXEC-4",
+        "statement": "No US official at National Security Advisor level or above will publicly confirm direct CIA operational involvement in cartel killings within 7 days.",
+        "sherman_kent_band": "likely",
+        "prediction_pct": 65,
+        "horizon_days": 7,
+        "drawn_from_region": "north_america",
+        "drawn_from_kj_id": "KJ-NA-1"
+      },
+      {
+        "id": "EXEC-5",
+        "statement": "Gang violence in Port-au-Prince will continue to drive displacement and disrupt hospital services over the next 7 days.",
+        "sherman_kent_band": "likely",
+        "prediction_pct": 60,
+        "horizon_days": 7,
+        "drawn_from_region": "south_central_america",
+        "drawn_from_kj_id": "KJ-SC-1"
+      }
+    ]
+  },
+  "theaters": [
+    {
+      "name": "Operation Epic Fury",
+      "lead": "The US-Israeli campaign has transitioned from high-intensity strikes to a maritime blockade strategy, with 42 vessels turned back from the Strait of Hormuz. 200 aircraft and 25 ships are now involved in blockade enforcement.",
+      "developments": [
+        "Ceasefire holding on an open-ended basis but no diplomatic off-ramp defined",
+        "Admiral Cooper and CJCS Caine briefed President Trump on options including limited ground interventions and energy infrastructure strikes",
+        "Iran-aligned Iraqi militias (Islamic Resistance in Iraq coalition) have launched 400+ strikes across Iraq, Saudi Arabia, Kuwait, UAE, Qatar, Bahrain, and Jordan",
+        "Israel delivered advanced defensive weaponry to UAE for missile/drone protection",
+        "Israel on heightened alert; media reports suggest Trump nearing decision on renewed military action",
+        "Iran's decentralized power structure increasingly dominated by IRGC elements, complicating diplomatic pathways"
+      ],
+      "assessment": "Moderate-to-high probability of protracted standoff (65-75%). Risk of escalation to limited ground operations or energy infrastructure strikes. Absent diplomatic breakthrough, the current posture risks prolonged regional instability.",
+      "indicators": [],
+      "indicator_table": {
+        "headers": [
+          "Indicator",
+          "Status",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Ceasefire stability",
+            "Fragile",
+            "\u2198 Deteriorating"
+          ],
+          [
+            "Blockade enforcement",
+            "Active (42 vessels turned back)",
+            "\u2192 Stable"
+          ],
+          [
+            "Oil price (Brent)",
+            "$124.67/bbl",
+            "\u2197 Rising"
+          ],
+          [
+            "Iran militia activity",
+            "400+ strikes total",
+            "\u2197 Increasing"
+          ],
+          [
+            "Diplomatic backchannel",
+            "None visible",
+            "\u2192 Stalled"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "2. Energy & Economic Disruption",
+      "lead": "The Strait of Hormuz closure continues to impact global energy markets with no timeline for reopening under the US-proposed Maritime Freedom Construct.",
+      "developments": [
+        "Brent crude at $124.67/bbl \u2014 highest since 2022 energy crisis",
+        "US proposes 'Maritime Freedom Construct' coalition for safe passage; diplomatic buy-in uncertain",
+        "Iran restates claim to Strait of Hormuz as sovereign waterway",
+        "Global shipping disruptions continue; insurance premiums for Gulf transits remain elevated"
+      ],
+      "assessment": "Oil prices likely to remain elevated ($110-130/bbl range) for at least 2-3 weeks. Risk of sustained $100+ pricing if blockade continues beyond May.",
+      "indicators": [],
+      "indicator_table": {
+        "headers": [
+          "Commodity",
+          "Current Price",
+          "7-day Change"
+        ],
+        "rows": [
+          [
+            "Brent Crude",
+            "$124.67/bbl",
+            "+7.2%"
+          ],
+          [
+            "WTI Crude",
+            "$119.80/bbl",
+            "+6.8%"
+          ],
+          [
+            "European Natural Gas",
+            "\u20ac48.50/MWh",
+            "+12%"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Strategic Adaptation",
+      "lead": "Ukraine has used the Middle East crisis as a strategic window to deepen Gulf security partnerships.",
+      "developments": [
+        "Kyiv sent anti-drone specialists to 5 Gulf states",
+        "Long-term security partnership signed with Saudi Arabia, Qatar, and UAE",
+        "Zelenskyy cites Iran conflict distraction as obstacle to Russia peace talks",
+        "Ukraine formally asked Israel to seize ship carrying grain stolen by Russia"
+      ],
+      "assessment": "Ukraine is effectively diversifying security relationships. The Iran crisis provides diplomatic cover for deeper Ukraine-Gulf ties that would have been politically difficult before.",
+      "indicators": [],
+      "indicator_table": {
+        "headers": [
+          "Partner",
+          "Deal Type",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Saudi Arabia",
+            "Security partnership",
+            "Signed"
+          ],
+          [
+            "Qatar",
+            "Security partnership",
+            "Signed"
+          ],
+          [
+            "UAE",
+            "Anti-drone deployment",
+            "Active"
+          ],
+          [
+            "Israel",
+            "Stolen grain seizure request",
+            "Pending"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "4. Indo-Pacific & China",
+      "lead": "China conducted combat readiness patrols near Scarborough Shoal as US attention remains fixed on the Middle East.",
+      "developments": [
+        "PLA patrols near Scarborough Shoal in disputed South China Sea",
+        "Foreign Minister Wang Yi warns Taiwan issue is 'biggest point of risk' for US-China relations",
+        "Trump scheduled to visit Beijing in 2 weeks with Strait of Hormuz still closed",
+        "Australia publishes 2026 National Defence Strategy emphasizing regional deterrence"
+      ],
+      "assessment": "China is testing US capacity for two-theater engagement. The Trump-Beijing visit will be a critical indicator of US-China tension management under current crisis conditions.",
+      "indicators": []
+    }
+  ],
+  "prediction_markets": [],
+  "global_finance": {},
+  "sources": [
+    {
+      "category": "State Media",
+      "count": 12
+    },
+    {
+      "category": "Independent Journalism",
+      "count": 18
+    },
+    {
+      "category": "Satellite Data",
+      "count": 5
+    },
+    {
+      "category": "Social Media / SIGINT",
+      "count": 10
+    },
+    {
+      "category": "Official Statements",
+      "count": 8
+    },
+    {
+      "category": "Prediction Markets",
+      "count": 3
+    }
+  ],
+  "intelligence_gaps": [],
+  "alternative_hypotheses": [],
+  "agent_delivery": {
+    "pull_url": "https://quiet-kangaroo-c0b94c.netlify.app/api/briefs/2026-05-13.json",
+    "webhook_supported": true,
+    "webhook_payload_type": "application/json",
+    "auth_method": "api-key (header: X-API-Key)"
+  }
+}

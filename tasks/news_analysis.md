@@ -1,31 +1,31 @@
-# Daily Intelligence Briefing — 2026-05-12
+# Daily Intelligence Briefing — 2026-05-13
 
 
 ## BLUF (Bottom Line Up Front)
 
-The Victory Day truce has collapsed into renewed Russian strikes while Iran's Hormuz coercion campaign and Trump's Beijing summit converge into a single 72-hour window where energy markets, nuclear diplomacy, and great-power signalling will be repriced together.
+Three converging pressure points — sustained Israeli strikes in Lebanon, Russia's Sarmat signalling paired with renewed strikes on Ukraine, and the Trump-Xi summit's Taiwan friction — make the next seven days a period where likely escalation in two theatres meets a constrained diplomatic window in a third.
 
 
-What's new: a >200-drone Russian package overnight ended the truce, the Pakistan-Afghanistan kinetic cycle continues with a fresh market bombing in Lakki Marwat, and Iran's emailed sovereignty demands plus the unclaimed Doha-area vessel strike confirm a deliberate maritime coercion posture ahead of Trump's May 13 Beijing visit. Why it matters today: three negotiating tracks (Russia-Ukraine prisoner exchange, US-Iran one-page memorandum, US-China summit) are running in parallel with the same principals choosing escalation signals over de-escalation signals. What to watch: the Trump-Xi joint statement language, any follow-on Hormuz incident, and whether Israel's Lebanon strike forecloses the Washington Hezbollah track.
+What's new: Russia paired a Sarmat ICBM test with a fatal strike on Dnipropetrovsk while Ukrainian drones hit the port of Taman; Israel's Lebanon campaign produced 34+ deaths in 24 hours; the Trump-Xi summit opened with Taiwan arms sales as the central friction. Why it matters today: nuclear-coded Russian rhetoric, a hardening Israeli tempo, and a great-power summit with no agreed off-ramp are all repricing risk simultaneously. What to watch: Sarmat follow-on rhetoric or exercises, the summit communiqué's Taiwan language, and whether Lebanon's casualty curve forces a UNSC session.
 
 
 ## Key Judgments
 
-- **[·europe]** Russia will conduct at least one additional large-scale strike package (>50 munitions) against Ukraine within the next 7 days.
-  - *Confidence: even chance (55% / 7d)*
+- **[·europe]** Russia will conduct at least one large-scale missile strike (>50 munitions) against Ukrainian infrastructure within 7 days.
+  - *Confidence: likely (62% / 7d)*
 
-- **[·asia]** The Trump-Xi Beijing summit will produce a public bilateral agreement or substantive joint statement on trade or technology within 7 days.
-  - *Confidence: even chance (45% / 7d)*
+- **[·middle_east]** Israel will maintain a near-daily airstrike tempo in Lebanon over the next 7 days, with at least one major strike package per day.
+  - *Confidence: likely (60% / 7d)*
 
-- **[·middle_east]** Iran will conduct at least one additional disruptive maritime action against a commercial vessel in the Persian Gulf or Strait of Hormuz within the next 7 days.
-  - *Confidence: even chance (50% / 7d)*
+- **[·asia]** Xi will publicly reiterate the One China principle and demand a halt to US arms sales to Taiwan during the summit, but stop short of setting an explicit retaliation deadline.
+  - *Confidence: likely (60% / 7d)*
 
-- **[·global_finance]** Brent crude will trade above $105/bbl at some point within the next 7 days.
-  - *Confidence: even chance (55% / 7d)*
+- **[·north_america]** No US official at National Security Advisor level or above will publicly confirm direct CIA operational involvement in cartel killings within 7 days.
+  - *Confidence: likely (65% / 7d)*
 
-- **[·north_america]** The US federal government will avoid a shutdown over the next 7 days.
-  - *Confidence: highly likely (78% / 7d)*
+- **[·south_central_america]** Gang violence in Port-au-Prince will continue to drive displacement and disrupt hospital services over the next 7 days.
+  - *Confidence: likely (60% / 7d)*
 
 
 ---
-*Analysis prepared by TREVOR — 2026-05-12*
+*Analysis prepared by TREVOR — 2026-05-13*

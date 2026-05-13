@@ -3,21 +3,21 @@
   "overall": 89,
   "dimensions": {
     "collection": {
-      "score": 62,
+      "score": 67,
       "citation_rate": 0.17,
-      "gaps": 1,
+      "gaps": 0,
       "dead_regions": 0,
       "problems": [
         "Low source citation rate"
       ]
     },
     "calibration": {
-      "score": 85,
+      "score": 78,
       "accuracy": 1.0,
-      "total": 25,
+      "total": 35,
       "correct": 1,
       "incorrect": 0,
-      "unresolved": 4,
+      "unresolved": 14,
       "flags": 1,
       "problems": [
         "Overconfidence: middle_east highly likely at 82%"
@@ -29,7 +29,7 @@
     },
     "observation": {
       "score": 100,
-      "log_count": 43,
+      "log_count": 48,
       "episodic_count": 4,
       "problems": [
         "No continuous monitor logs"
@@ -58,7 +58,7 @@
     "epistemic": {
       "score": 100,
       "band_count": 3,
-      "judgment_count": 25,
+      "judgment_count": 35,
       "problems": []
     },
     "routing": {
@@ -66,5 +66,5 @@
       "problems": []
     }
   },
-  "generated_at": "2026-05-13T05:09:08.738347+00:00Z"
+  "generated_at": "2026-05-13T12:09:15.528761+00:00Z"
 }

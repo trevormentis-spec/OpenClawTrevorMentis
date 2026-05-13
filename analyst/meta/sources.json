@@ -608,6 +608,358 @@
       "signal_level": "High",
       "discovered": "2026-05-13",
       "discovery_method": "modality_discovery"
+    },
+    {
+      "name": "Joe Cirincione - Strategy & History",
+      "type": "Substack/National Security",
+      "focus": "\"America's Strategic Defeat in the Persian Gulf\" \u2014 critiques US policy failures in Gulf. Also \"A Humiliating Defeat.\" Former nuclear policy expert.",
+      "url": "https://joecirincione.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Thotharis - Briefing Notes",
+      "type": "Substack/Strategic Assessment",
+      "focus": "Detailed US-Iran war briefs: force postures (USS Boxer, USS Tripoli, Dark Eagle), Iran counterproposal analysis (May 10), China signaling, UNSC dynamics, Israel red lines. Deep sourcing ISW/CTP/USNI.",
+      "url": "https://thotharis.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "The Firebrand Project",
+      "type": "Substack/War Analysis",
+      "focus": "Iran War series: 'The War Is Not Over' (Day 68 analysis), 'Operation FUBAR' \u2014 Iran uranium 'heist' speculation, Netanyahu red lines on enriched uranium.",
+      "url": "https://thefirebrandproject.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Kian - Iran Crisis Notebook",
+      "type": "Substack/Iran Analysis",
+      "focus": "Real-time Iran crisis timeline, 'confused about Iran's oil clock' \u2014 Iranian oil export endurance under blockade questioning.",
+      "url": "https://kian.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "James M. Dorsey - Geopolitics",
+      "type": "Substack/Middle East",
+      "focus": "US-Iran diplomacy analysis: 'motion without movement' \u2014 diplomatic stagnation despite negotiations. Veteran journalist covering Middle East/sports/geopolitics nexus.",
+      "url": "https://jamesmdorsey.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Hutchinson G. - Fault Lines Daily",
+      "type": "Substack/Geopolitical Daily",
+      "focus": "Daily geopolitical summary covering Iran, Hormuz, energy markets. Concise daily brief format.",
+      "url": "https://hutchinsong.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Global Community Weekly",
+      "type": "Substack/Intel Analysis",
+      "focus": "WaPo US intelligence leak: CIA assessment Iran can withstand Hormuz blockade 3-4 months, substantial missile/drone arsenal remaining.",
+      "url": "https://globalcommunityweekly.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Black Trust Fund Kids",
+      "type": "Substack/Daily Briefing",
+      "focus": "BTFK Morning Briefing (May 8, 2026) \u2014 Iran war daily situational recap.",
+      "url": "https://blacktrustfundkids.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Andrew Siegler",
+      "type": "Substack/Energy Analysis",
+      "focus": "\"Destroying Demand\" \u2014 analysis of how war-induced shortages reshape global energy demand patterns.",
+      "url": "https://andrewsiegler.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "PR Insights",
+      "type": "Substack/Investment Analysis",
+      "focus": "\"Hormuz Impasse: 3 Sectors Profiting\" \u2014 shipping & logistics, non-ME oil producers, Wall Street banks. Energy realignment trade analysis.",
+      "url": "https://prinsights.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Pecos Crude Truth",
+      "type": "Substack/Energy Markets",
+      "focus": "\"The Crude Truth\" \u2014 global oil market conditions, China import analysis (-2.6 mb/d fall), inventory draws, demand resilience.",
+      "url": "https://pecoscrudetruth.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "David Lin Report",
+      "type": "Substack/Macro Markets",
+      "focus": "Late-stage bull market analysis with Iran war overlay, commodity supercycle implications.",
+      "url": "https://davidlinreport.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Daniel Hynes - Commodities Wrap",
+      "type": "Substack/Commodities",
+      "focus": "Daily commodities wrap: oil extends gains on Hormuz disruption, cross-commodity impact.",
+      "url": "https://danielhynes.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Ecomodities - Asia Morning Brief",
+      "type": "Substack/Energy Markets",
+      "focus": "Asia-focused energy morning brief: global oil flows, Asian demand exposure, Pacific trade routes.",
+      "url": "https://ecomodities.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Ares Investing",
+      "type": "Substack/Macro Analysis",
+      "focus": "CPI print analysis, 'bear cluster live phase' \u2014 Hormuz volatility effects on inflation data.",
+      "url": "https://aresinvesting.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Pantheon Insights",
+      "type": "Substack/Maritime Insurance",
+      "focus": "\"How Tanker Insurance Became the Real Blockade\" \u2014 underwriters withdrew war-risk coverage, creating financial blockade. Insurance 'quiet veto' keeping 20-30% global oil flows sidelined.",
+      "url": "https://pantheoninsights.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Chet Nagle",
+      "type": "Substack/Maritime Insurance",
+      "focus": "\"Maritime Insurance Closed the Strait\" \u2014 even with political de-escalation, insurers demand 30-60 days stable conditions before restoring war-risk cover.",
+      "url": "https://chetnagle.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Princeton Chen",
+      "type": "Substack/Geopolitical Risk",
+      "focus": "\"Western Illusions Meet the Swan Song\" \u2014 commodity encumbrance analysis, physical vs paper market decoupling, credit lines evaporating.",
+      "url": "https://princetonchen.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Gerry Pallor",
+      "type": "Substack/Energy Supply",
+      "focus": "\"Supply, Shock and the Strait\" \u2014 Q2 2026 Asia shortages predicted, VLCC charter rates up 300%, physical supply chain freeze.",
+      "url": "https://geraldpallor.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Pleroma Capital",
+      "type": "Substack/Macro Analysis",
+      "focus": "\"Strait of Bad Assumptions\" \u2014 Western models underestimated insurer conservatism, tail risk now priced into oil markets.",
+      "url": "https://pleromacapital.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Lucas Kandia",
+      "type": "Substack/Shipping Analysis",
+      "focus": "\"The Invisible Scorched Earth\" series \u2014 hidden shipping reroutes burning bunker fuel, CO2 emissions masking oil supply deficits.",
+      "url": "https://lucaskandia.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Vi\u1ec7t Hustler",
+      "type": "Substack/Geopolitics",
+      "focus": "Hormuz blockade 'two shocks' analysis: economic and logistics impacts on Vietnam and Southeast Asian supply chains.",
+      "url": "https://viethustler.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "And Magazine",
+      "type": "Substack/Geopolitics",
+      "focus": "Pakistan/China breakthrough: overland Iran bypass routes via Gwadar, Karachi, Taftan. Rail crude exports to China (15-day transit vs 40 by sea). Cross-stuffing operations.",
+      "url": "https://andmagazine.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Seemorerocks",
+      "type": "Substack/Headline Aggregator",
+      "focus": "WW3 headlines and aggregated updates \u2014 useful for rapid news monitoring across Iran, Hormuz, energy, Lebanon.",
+      "url": "https://seemorerocks.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "The Omission",
+      "type": "Substack/Network Assessment",
+      "focus": "Assessment 017: Iran network analysis, China-Iran oil pipeline infrastructure via Pakistan.",
+      "url": "https://theomission26.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "No1s Daily Digest",
+      "type": "Substack/Daily Intel",
+      "focus": "Daily digest of Iran war developments, energy market effects (April 17, 2026 edition referenced).",
+      "url": "https://no1sdailydigest.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Caffeinated Capital",
+      "type": "Substack/Market Analysis",
+      "focus": "\"Everyone Was Short Jet Fuel\" \u2014 jet fuel derivatives spike 50%+ amid Hormuz fears, positioning unwind analysis.",
+      "url": "https://caffeinatedcaptial.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Felipe Germini",
+      "type": "Substack/Energy Analysis",
+      "focus": "\"The UK Two-Front Squeeze\" \u2014 Europe faces 10-15% energy import shortfall, LNG pivots fail to offset.",
+      "url": "https://fgermini.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "CyberWarrior76",
+      "type": "Substack/Cyber Threat Intel",
+      "focus": "Strategic Cyber Threat Intelligence: Iran cyber operations, cyber-physical convergence tracking amid war.",
+      "url": "https://cyberwarrior76.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Savageminds - Epic Interruptus",
+      "type": "Substack/Geopolitics",
+      "focus": "\"Epic Interruptus\" \u2014 analysis of Iran war as historic disruption to global order, supply chains.",
+      "url": "https://savageminds.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Rachel Blevins (Independent Journalism)",
+      "type": "Substack/Independent Journalism",
+      "focus": "Lebanon/Israel/Palestine/Iran ground reporting: Hezbollah guerrilla tactics, IDF lured into southern Lebanon traps, Nasrallah legacy warnings.",
+      "url": "https://rachelblevins.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "OsintRep - Daily OSINT",
+      "type": "Independent OSINT Blog",
+      "focus": "Daily OSINT summaries (Apr 19, May 3, May 6, May 10, May 12): Hormuz live monitoring, AIS spoofing tracking, CENTCOM operation statistics, vessel interdiction logs, IRGC submarine deployments. High-frequency OSINT aggregation.",
+      "url": "https://www.osintrep.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "SpecialEurasia OSINT",
+      "type": "Geopolitical Analysis Blog",
+      "focus": "Gulf of Aden-Hormuz nexus, Houthi Iran connections, hybrid warfare tracking across Eurasian theaters.",
+      "url": "https://www.specialeurasia.com/tag/osint/",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "GeopoliticalMatters",
+      "type": "Independent Analysis Blog",
+      "focus": "UK readiness exposed under Hormuz crisis conditions, NATO logistics strain, UK-Iran tensions analysis.",
+      "url": "https://geopoliticalmatters.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "HISutton Covert Shores",
+      "type": "Niche Military/Naval Blog",
+      "focus": "Submarine and vessel imagery analysis: IRGC light submarine deployment in Strait of Hormuz, naval asset visual intelligence. Authoritative on sub visual ID.",
+      "url": "https://www.hisutton.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "The DeepDraft",
+      "type": "Maritime Analysis Blog",
+      "focus": "\"Live Wire\" real-time maritime briefs: US blockade of Iranian ports begins (Apr 13), Brent hits $100, vessel interdiction analysis, insurance market data.",
+      "url": "https://thedeepdraft.com",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "helenarbrt (Sayranith Blog)",
+      "type": "WordPress/Niche Geopolitics Blog",
+      "focus": "\"The War of the Clock\" \u2014 provocative analysis of Hormuz as 'four simultaneous chess games': oil, inflation, succession, bypasses. Non-mainstream analytic lens.",
+      "url": "https://helenarbrt.wordpress.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "Maritime OSINT Hub (YouTube)",
+      "type": "YouTube/Maritime OSINT",
+      "focus": "Hormuz blockade OSINT analysis series: AIS tracking, Windward data, vessel density mapping, US enforcement zone analysis. 85K subscribers.",
+      "url": "https://www.youtube.com/@MaritimeOSINTHub",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Hormuz Blockade Maritime OSINT Analysis | US-Iran Tensions, Vessel Tracking & Economic Fallout\" (May 12, 2026) \u2014 12:45 duration, 247K views."
+    },
+    {
+      "name": "Energy News Beat (Podcast/YouTube)",
+      "type": "YouTube/Podcast/Energy",
+      "focus": "Long-form podcast episode: 'Iran War Has Brought the Energy Crisis to Center Stage' \u2014 covers Exxon/Chevron earnings, energy transition critique, California refinery crisis, Hoover Dam drought.",
+      "url": "https://podcasts.apple.com/ca/podcast/iran-war-has-brought-the-energy-crisis-to-the/id1564334366?i=1000765649628",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "deep_horizon_scan"
     }
   ],
   "moltbook_sources": [
@@ -1469,5 +1821,6 @@
       "signal_level": "High",
       "discovered": "2026-05-13"
     }
-  ]
+  ],
+  "last_updated": "2026-05-13 08:02 UTC"
 }
