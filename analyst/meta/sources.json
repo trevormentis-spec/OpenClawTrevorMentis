@@ -1131,5 +1131,249 @@
         }
       ]
     }
+  ],
+  "local_language_sources": [
+    {
+      "name": "Mehr News Agency (English)",
+      "type": "News Agency/Iran",
+      "focus": "Iran domestic politics, IRGC statements, regional diplomacy, Hormuz crisis coverage. Semi-official Iranian news agency.",
+      "url": "https://en.mehrnews.com",
+      "rss": "https://en.mehrnews.com/rss",
+      "languages": ["en", "fa"],
+      "primary_language": "en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "Semi-official. Content bias toward IRGC/national security framing. Valuable for Iranian official narrative baseline."
+    },
+    {
+      "name": "Tasnim News Agency (English)",
+      "type": "News Agency/Iran",
+      "focus": "IRGC-affiliated news. Iran military operations, nuclear negotiations, proxy force activity. Official IRGC-aligned perspective.",
+      "url": "https://www.tasnimnews.com/en",
+      "rss": "https://www.tasnimnews.com/en/rss",
+      "languages": ["en", "fa"],
+      "primary_language": "en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "IRGC-aligned. Critical for understanding Iranian military narrative. Counterbalance to Western sources."
+    },
+    {
+      "name": "Al Arabiya English",
+      "type": "News/Saudi Arabia",
+      "focus": "Middle East news from Saudi/GCC perspective. Hormuz crisis, Gulf security, energy markets.",
+      "url": "https://english.alarabiya.net",
+      "rss": "https://english.alarabiya.net/feed/rss2/en.xml",
+      "languages": ["en", "ar"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "Al Arabiya Arabic",
+      "type": "News/Saudi Arabia",
+      "focus": "Arabic-language coverage of Middle East, GCC policy, Hormuz crisis, Iran regional activity.",
+      "url": "https://www.alarabiya.net",
+      "rss": "https://www.alarabiya.net/tools/mrss",
+      "languages": ["ar"],
+      "primary_language": "ar",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Arabic original. Useful for detecting narrative differences between Arabic and English editions."
+    },
+    {
+      "name": "Asharq Al-Awsat English",
+      "type": "Newspaper/Pan-Arab",
+      "focus": "Pan-Arab daily covering Middle East politics, energy, Gulf security. Saudi-owned London-based.",
+      "url": "https://english.aawsat.com",
+      "rss": "https://english.aawsat.com/rss.xml",
+      "languages": ["en", "ar"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "Asharq Al-Awsat Arabic",
+      "type": "Newspaper/Pan-Arab",
+      "focus": "Arabic edition of leading pan-Arab daily. Deeper regional analysis and opinion.",
+      "url": "https://aawsat.com",
+      "rss": "https://aawsat.com/feeds/rss",
+      "languages": ["ar"],
+      "primary_language": "ar",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Arabic original edition. Often contains analysis not syndicated to English edition."
+    },
+    {
+      "name": "TASS Russian News Agency (English)",
+      "type": "News Agency/Russia",
+      "focus": "Official Russian state news agency. Ukraine war, Russia-Iran relations, energy geopolitics, BRICS narratives.",
+      "url": "https://tass.com",
+      "rss": "https://tass.com/rss/v2.xml",
+      "languages": ["en", "ru"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Official Russian state media. Essential for Kremlin narrative tracking."
+    },
+    {
+      "name": "Meduza (English)",
+      "type": "Independent News/Russia",
+      "focus": "Independent Russian news from exile. Ukraine war, Kremlin politics, Russian society, repression tracking.",
+      "url": "https://meduza.io/en",
+      "rss": "https://meduza.io/rss/en/all",
+      "languages": ["en", "ru"],
+      "primary_language": "en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "Blocked in Russia. Valuable for independent/opposition Russian perspective."
+    },
+    {
+      "name": "Meduza (Russian)",
+      "type": "Independent News/Russia",
+      "focus": "Russian-language independent news coverage not syndicated to English edition.",
+      "url": "https://meduza.io",
+      "rss": "https://meduza.io/rss/all",
+      "languages": ["ru"],
+      "primary_language": "ru",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "Russian-language feed. Contains original reporting not available in English edition."
+    },
+    {
+      "name": "The Moscow Times",
+      "type": "Independent News/Russia",
+      "focus": "English-language independent Russian news. Business, politics, sanctions, Kremlin insider reporting.",
+      "url": "https://www.themoscowtimes.com",
+      "rss": "https://www.themoscowtimes.com/rss/news",
+      "languages": ["en"],
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "Dutch-registered independent outlet. Post-crackdown diaspora journalism."
+    },
+    {
+      "name": "Xinhua News Agency (English)",
+      "type": "State News Agency/China",
+      "focus": "Official Chinese state news agency. China foreign policy, BRI, global diplomacy, Iran-China relations, energy security.",
+      "url": "http://www.xinhuanet.com/english/",
+      "rss": "http://www.xinhuanet.com/english/rss/worldrss.xml",
+      "languages": ["en", "zh"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Official PRC state media. Essential for Chinese government narrative tracking."
+    },
+    {
+      "name": "Global Times",
+      "type": "State-Affiliated Tabloid/China",
+      "focus": "Nationalistic Chinese perspective on foreign affairs, US-China tensions, Taiwan, Iran crisis, global order.",
+      "url": "https://www.globaltimes.cn",
+      "rss": "https://www.globaltimes.cn/rss",
+      "languages": ["en", "zh"],
+      "primary_language": "en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "English edition of party-nationalist tabloid. Combative foreign policy narrative. Valuable for hawkish PRC signaling."
+    },
+    {
+      "name": "Haaretz (English)",
+      "type": "Newspaper/Israel",
+      "focus": "Left-leaning Israeli newspaper. Israel-Iran war coverage, military assessment, regional diplomacy, intelligence community leaks.",
+      "url": "https://www.haaretz.com",
+      "rss": "https://www.haaretz.com/srv/haaretz-latest-news-xml",
+      "languages": ["en", "he"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Israel's newspaper of record. Left-leaning editorial stance, but strong defense/intelligence reporting."
+    },
+    {
+      "name": "Ynet News (Hebrew)",
+      "type": "News/Israel",
+      "focus": "Major Hebrew-language Israeli news site. Military operations, security incidents, breaking news.",
+      "url": "https://www.ynet.co.il",
+      "rss": "https://www.ynet.co.il/Integration/StoryRss2.xml",
+      "languages": ["he"],
+      "primary_language": "he",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "note": "Hebrew original. Breaking news often appears here before English-language outlets."
+    },
+    {
+      "name": "Times of Israel",
+      "type": "News/Israel",
+      "focus": "English-language Israeli news covering Iran conflict, military operations, diplomacy, casualty reporting.",
+      "url": "https://www.timesofisrael.com",
+      "rss": "https://www.timesofisrael.com/feed/",
+      "languages": ["en"],
+      "signal_level": "High",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "CGTN (China Global TV Network)",
+      "type": "State Broadcaster/China",
+      "focus": "Chinese state broadcaster English edition. Global news from PRC perspective.",
+      "url": "https://www.cgtn.com",
+      "rss": "https://www.cgtn.com/subscribe/rss.html",
+      "languages": ["en", "zh"],
+      "signal_level": "Medium",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "Israel Hayom",
+      "type": "Newspaper/Israel",
+      "focus": "Right-leaning free Hebrew daily. Netanyahu-friendly, security-focused reporting.",
+      "url": "https://www.israelhayom.co.il",
+      "rss": "https://www.israelhayom.co.il/rss",
+      "languages": ["he"],
+      "primary_language": "he",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "note": "Right-leaning Hebrew source. Useful for tracking Netanyahu government narrative."
+    },
+    {
+      "name": "El País English",
+      "type": "Newspaper/Spain",
+      "focus": "Leading Spanish newspaper English edition. EU foreign policy, Latin America, European energy crisis.",
+      "url": "https://english.elpais.com",
+      "rss": "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada",
+      "languages": ["en", "es"],
+      "primary_language": "en",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "Le Monde (English)",
+      "type": "Newspaper/France",
+      "focus": "Leading French newspaper English edition. EU defense, NATO, Middle East policy.",
+      "url": "https://www.lemonde.fr/en/",
+      "rss": "https://www.lemonde.fr/en/rss/une.xml",
+      "languages": ["en", "fr"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13"
+    },
+    {
+      "name": "Kommersant (English)",
+      "type": "Newspaper/Russia",
+      "focus": "Business-oriented Russian independent newspaper. Russian economic outlook, sanctions impact, business climate.",
+      "url": "https://www.kommersant.ru/english",
+      "rss": "https://www.kommersant.ru/RSS/main.xml",
+      "languages": ["en", "ru"],
+      "primary_language": "ru",
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "note": "Relatively independent Russian business daily. Useful for economic sentiment tracking."
+    },
+    {
+      "name": "Nikkei Asia",
+      "type": "Newspaper/Japan",
+      "focus": "Japan's leading financial newspaper Asia edition. Asian energy security, China tensions, supply chains.",
+      "url": "https://asia.nikkei.com",
+      "rss": "https://asia.nikkei.com/rss/feed",
+      "languages": ["en", "ja"],
+      "primary_language": "en",
+      "signal_level": "High",
+      "discovered": "2026-05-13"
+    }
   ]
 }
