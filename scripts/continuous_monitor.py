@@ -46,6 +46,7 @@ HOUR_CUTOFF = 14  # 14:00 UTC = 07:00 PT — brief should be done by now
 # Escalation and behavioral adaptation scripts
 COLLECTION_STATE_SCRIPT = REPO_ROOT / "scripts" / "collection_state.py"
 BEHAVIORAL_STATE_SCRIPT = REPO_ROOT / "scripts" / "behavioral_state.py"
+UNSCHEDULED_COGNITION_SCRIPT = REPO_ROOT / "scripts" / "unscheduled_cognition.py"
 
 
 def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None:
@@ -108,12 +109,24 @@ def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None
             f"**Reason:** {reason}\n\n"
             f"**Expected behavioral change:**\n"
             f"1. Behavioral state rebuilt with event-derived constraints\n"
-            f"2. Next analysis run will have restricted confidence bands for this region\n"
-            f"3. Collection caps increased\n"
-            f"4. Alert generated for principal review\n"
+            f"2. Unscheduled cognition dispatched (if not in cooldown)\n"
+            f"3. Next analysis run will have restricted confidence bands\n"
+            f"4. Collection caps increased\n"
+            f"5. Alert generated for principal review\n"
         )
         (alert_dir / f"behavioral-alert-{dt.datetime.now(dt.timezone.utc).strftime('%H%M%S')}.md").write_text(alert)
         log(f"Behavioral alert written for critical event")
+        
+        # Step 4: Trigger unscheduled cognition for critical events (Phase 14 primary unlock)
+        if UNSCHEDULED_COGNITION_SCRIPT.exists():
+            try:
+                result = subprocess.check_call([
+                    "python3", str(UNSCHEDULED_COGNITION_SCRIPT),
+                    "--check",
+                ], cwd=str(REPO_ROOT), timeout=30)
+                log(f"Unscheduled cognition check completed (exit={result})")
+            except Exception as exc:
+                log(f"unscheduled cognition check failed: {exc}")
     
     append_episode("escalation_set", {
         "region": region, "severity": severity,

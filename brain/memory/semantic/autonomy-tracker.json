@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "created": "2026-05-13T05:09:02.044102+00:00Z",
+  "unscheduled_cognition_events": [
+    {
+      "timestamp": "2026-05-13T05:09:02.044451+00:00Z",
+      "region": "middle_east",
+      "trigger": "Kalshi swing 25pts",
+      "severity": "critical",
+      "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/2026-05-13/escalation-memo-middle_east-050902.md",
+      "incidents_available": 0
+    }
+  ],
+  "source_trust_changes": [],
+  "procedural_learnings": [
+    {
+      "timestamp": "2026-05-13T05:09:02.118499+00:00Z",
+      "title": "Collection Gap Response",
+      "path": "/home/ubuntu/.openclaw/workspace/brain/memory/procedural/collection-gap-response.md"
+    }
+  ],
+  "autonomous_prioritizations": [],
+  "last_updated": "2026-05-13T05:09:02.044467+00:00Z"
+}

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "generated_at": "2026-05-13T04:54:33Z",
+  "version": 2,
+  "generated_at": "2026-05-13T05:08:56Z",
   "calibration_directives": {
     "overall": {
       "total_judgments": 25,
@@ -213,7 +213,7 @@
       "ADDITIONAL ANALYSIS: middle_east \u2014 unscheduled assessment triggered by market swing"
     ],
     "memo_needed": false,
-    "last_event_time": "2026-05-13T04:54:33.153919+00:00"
+    "last_event_time": "2026-05-13T05:08:56.001709+00:00"
   },
   "per_region_constraints": {
     "europe": {
@@ -289,6 +289,46 @@
         "Insufficient calibration data \u2014 be cautious with high bands"
       ],
       "forecasting_aggression": "standard"
+    }
+  },
+  "autonomous_prioritization": {
+    "europe": {
+      "priority_score": 50,
+      "priority_tier": "medium",
+      "reasons": []
+    },
+    "asia": {
+      "priority_score": 65,
+      "priority_tier": "medium",
+      "reasons": [
+        "linguistic gap"
+      ]
+    },
+    "middle_east": {
+      "priority_score": 100,
+      "priority_tier": "high",
+      "reasons": [
+        "critical escalation",
+        "linguistic gap",
+        "tightly constrained bands"
+      ]
+    },
+    "north_america": {
+      "priority_score": 50,
+      "priority_tier": "medium",
+      "reasons": []
+    },
+    "south_central_america": {
+      "priority_score": 60,
+      "priority_tier": "medium",
+      "reasons": [
+        "tightly constrained bands"
+      ]
+    },
+    "global_finance": {
+      "priority_score": 50,
+      "priority_tier": "medium",
+      "reasons": []
     }
   }
 }
