@@ -1,9 +1,21 @@
 {
   "version": 1,
-  "last_check": "2026-05-13T20:25:44Z",
+  "last_check": "2026-05-13T20:39:40Z",
   "signals_processed": 16,
   "analyses_fired": 0,
   "last_signals": [
+    {
+      "id": "sonar-486",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-764",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
     {
       "id": "esc-middle_east",
       "source": "behavioral_state",
@@ -23,10 +35,22 @@
       "score": 80
     },
     {
-      "id": "web-9464",
-      "source": "web",
+      "id": "sonar-888",
+      "source": "sonar",
       "type": "breaking_news",
-      "score": 75
+      "score": 80.0
+    },
+    {
+      "id": "sonar-109",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 79.5
+    },
+    {
+      "id": "sonar-590",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 79.5
     },
     {
       "id": "gmail-19e2284a",
@@ -41,28 +65,10 @@
       "score": 65
     },
     {
-      "id": "tg-judean_osint-311",
+      "id": "tg-judean_osint-149",
       "source": "telegram",
       "type": "osint_alert",
       "score": 65
-    },
-    {
-      "id": "web-8973",
-      "source": "web",
-      "type": "breaking_news",
-      "score": 63
-    },
-    {
-      "id": "web-5952",
-      "source": "web",
-      "type": "breaking_news",
-      "score": 55
-    },
-    {
-      "id": "web-5796",
-      "source": "web",
-      "type": "breaking_news",
-      "score": 55
     },
     {
       "id": "gap-asia",
@@ -77,28 +83,22 @@
       "score": 55
     },
     {
-      "id": "web-0043",
-      "source": "web",
-      "type": "breaking_news",
-      "score": 50
-    },
-    {
-      "id": "web-6964",
-      "source": "web",
-      "type": "breaking_news",
-      "score": 50
-    },
-    {
-      "id": "tg-judean_osint-529",
+      "id": "tg-judean_osint-052",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
     },
     {
-      "id": "tg-judean_osint-468",
+      "id": "tg-judean_osint-927",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
+    },
+    {
+      "id": "sonar-271",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 47.5
     }
   ],
   "cooldowns": {}

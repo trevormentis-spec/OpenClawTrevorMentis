@@ -134,6 +134,62 @@
       },
       "tier": "tier2",
       "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-web-breaking_news-20260513-202544.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:38:45Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "### Latest Developments in CIA Operations Against Mexican Cartels\n\nAs of May 13, 2026, recent reporting\u2014primarily a May 12 CNN exclusive\u2014has exposed an alleged escalation in CIA activities targeting Mexican drug cartels, sparking denials from Mexican officials and debates over U.S. involvement. These claims build on years of known U.S.-Mexico intelligence cooperation but suggest a shift toward mor",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-486"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260513-203845.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:39:04Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260513-203904.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:39:20Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260513-203920.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:39:40Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "the cipher brief <dailybrief@thecipherbrief.com>",
+        "subject": "National Security Nightcap for Wednesday, May 13",
+        "snippet": "POTUS in China - What should we expect next? View this email in your browser X | LINKEDIN | INSTAGRAM | FACEBOOK I YOU TUBE I BLUE SKY thecipherbrief.com Wednesday / May 13 / 2026 What you need to know",
+        "score": 80,
+        "tier": "tier1",
+        "id": "gmail-19e22ef2"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260513-203940.md"
     }
   ]
 }
