@@ -446,6 +446,87 @@ def load_recent_episodic(hours: int = 24) -> list[dict]:
     return events
 
 
+def compute_prioritization(state: dict) -> dict:
+    """Compute autonomous prioritization scores per region.
+
+    Determines which regions deserve MORE analytical attention and which
+    deserve LESS, based on:
+    - Recent incident volume (higher = more priority)
+    - Active escalations (critical = max priority)
+    - Collection quality (LOW = need more attention, or less?)
+    - Linguistic gaps (gaps = need more attention)
+    - Band restrictiveness (restricted = more scrutiny needed)
+
+    Returns prioritization directives that alter cognition allocation.
+    """
+    coll = state.get("collection_directives", {})
+    events = state.get("event_directives", {})
+    constraints = state.get("per_region_constraints", {})
+
+    # Active escalation regions get automatic priority
+    escalation_regions = {
+        e["region"]: e.get("severity", "notable")
+        for e in events.get("active_escalations", [])
+    }
+
+    priorities = {}
+    for region in ["europe", "asia", "middle_east", "north_america",
+                    "south_central_america", "global_finance"]:
+        score = 50  # Baseline
+        reasons = []
+
+        # Escalation boost
+        if region in escalation_regions:
+            sev = escalation_regions[region]
+            if sev == "critical":
+                score += 35
+                reasons.append("critical escalation")
+            elif sev == "significant":
+                score += 20
+                reasons.append("significant escalation")
+            else:
+                score += 10
+                reasons.append("escalation active")
+
+        # Collection quality (LOW needs more attention)
+        coll_region = coll.get("by_region", {}).get(region, {})
+        quality = coll_region.get("collection_quality_tier", "MODERATE")
+        if quality == "CRITICAL GAP":
+            score += 20
+            reasons.append("critical collection gap")
+        elif quality == "LOW":
+            score += 10
+            reasons.append("low collection quality")
+
+        # Linguistic gaps need more attention
+        if coll_region.get("linguistic_gaps"):
+            score += 10
+            reasons.append("linguistic gap")
+
+        # Band restrictiveness = needs more analytical scrutiny
+        region_constraints = constraints.get(region, {})
+        available = region_constraints.get("available_bands", [])
+        if len(available) <= 2:
+            score += 10
+            reasons.append("tightly constrained bands")
+
+        # High incident volume (more to analyze)
+        recent = coll_region.get("recent_incidents", 0)
+        if recent > 20:
+            score += 5
+        elif recent < 3:
+            score -= 5  # Less data = harder to analyze meaningfully
+            reasons.append("very few incidents")
+
+        priorities[region] = {
+            "priority_score": min(score, 100),
+            "priority_tier": "high" if score >= 70 else ("medium" if score >= 50 else "low"),
+            "reasons": reasons,
+        }
+
+    return priorities
+
+
 def build_behavioral_state() -> dict:
     """Build the complete behavioral state from all inputs."""
     cal = load_json(CALIBRATION_FILE)
@@ -457,7 +538,7 @@ def build_behavioral_state() -> dict:
     event_dirs = compute_event_adaptation(episodic)
 
     state = {
-        "version": 1,
+        "version": 2,
         "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "calibration_directives": calibration_dirs,
         "collection_directives": collection_dirs,
@@ -510,6 +591,9 @@ def build_behavioral_state() -> dict:
                 else coll_region.get("forecasting_aggression", "standard")
             ),
         }
+
+    # Compute autonomous prioritization
+    state["autonomous_prioritization"] = compute_prioritization(state)
 
     return state
 

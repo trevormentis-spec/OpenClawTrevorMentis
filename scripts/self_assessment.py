@@ -268,30 +268,123 @@ def assess_observation() -> dict:
 
 
 def assess_autonomy() -> dict:
-    """Score autonomy health: are adaptive loops actually closed?"""
-    loops = ["memory → cognition", "collection confidence → analytical confidence",
-             "source quality → priority", "calibration → prompt", "event → escalation"]
+    """Score autonomy health: are adaptive loops actually closed?
+
+    Phase 14 upgrade: checks not just file existence but whether each loop
+    has FIRED at least once (produced behavioral output).
+    """
+    loops = [
+        "calibration → confidence restriction",
+        "collection quality → band constraint",
+        "event → behavioral adaptation",
+        "unscheduled cognition",
+        "source trust evolution",
+        "procedural learning",
+        "autonomous prioritization",
+    ]
     closed = 0
     problems = []
 
-    # Check each loop's scaffolding
-    if (REPO_ROOT / "scripts" / "collection_state.py").exists():
-        closed += 1
-    if (STATE_DIR / "calibration-tracking.json").exists():
-        closed += 1
-    if (REPO_ROOT / "scripts" / "procedural_memory_loader.py").exists():
-        closed += 1
-    if (REPO_ROOT / "scripts" / "continuous_monitor.py").exists():
-        closed += 1
-    if (REPO_ROOT / "skills" / "daily-intel-brief" / "scripts" / "collect.py").exists():
-        closed += 1
+    # 1. Calibration → confidence restriction: check behavioral state
+    bs = load_json(STATE_DIR / "behavioral-state.json")
+    if bs:
+        constraints = bs.get("per_region_constraints", {})
+        restricted_regions = sum(1 for r, c in constraints.items() 
+                                 if len(c.get("available_bands", [])) < 4)
+        if restricted_regions > 0:
+            closed += 1
+            _bands_detail = f"{restricted_regions}/6 regions have restricted bands"
+        else:
+            problems.append("Behavioral state exists but no regions are constrained")
+    else:
+        problems.append("No behavioral state — calibration cannot restrict bands")
+
+    # 2. Collection quality → band constraint: check collection state + behavioral
+    coll_state = load_json(STATE_DIR / "collection-state.json")
+    if coll_state and bs:
+        # Check if any region's quality tier maps to restricted bands
+        coll_confidence = bs.get("collection_directives", {}).get("by_region", {})
+        restricted_by_collection = sum(
+            1 for r, c in coll_confidence.items()
+            if len(c.get("confidence_bands_available", [])) < 4
+        )
+        if restricted_by_collection > 0:
+            closed += 1
+        else:
+            problems.append("Collection quality is not restricting any bands")
+    else:
+        problems.append("No collection state or behavioral state for quality→band")
+
+    # 3. Event → behavioral adaptation: check event directives
+    if bs:
+        events = bs.get("event_directives", {})
+        if events.get("active_escalations") or events.get("collection_changes"):
+            closed += 1
+        else:
+            problems.append("No event-driven adaptations have triggered")
+    else:
+        problems.append("No behavioral state for event adaptation check")
+
+    # 4. Unscheduled cognition: check autonomy tracker
+    tracker = load_json(STATE_DIR / "autonomy-tracker.json")
+    if tracker:
+        uc_count = len(tracker.get("unscheduled_cognition_events", []))
+        if uc_count > 0:
+            closed += 1
+        else:
+            problems.append("Unscheduled cognition exists but has never fired")
+    else:
+        problems.append("No autonomy tracker — unscheduled cognition not measurable")
+
+    # 5. Source trust evolution
+    if coll_state:
+        utilization = coll_state.get("source_utilization", {})
+        trust_scores = [u.get("trust_score", 0) for u in utilization.values()]
+        if any(t != 0.5 for t in trust_scores):  # 0.5 is default
+            closed += 1
+        else:
+            problems.append("Source trust scores are all default — no evolution")
+    else:
+        problems.append("No collection state for source trust check")
+
+    # 6. Procedural learning
+    proc_dir = pathlib.Path(REPO_ROOT / "brain" / "memory" / "procedural")
+    if proc_dir.exists():
+        proc_files = list(proc_dir.glob("*.md"))
+        if len(proc_files) > 0:
+            closed += 1
+        else:
+            problems.append("Procedural directory exists but no memories stored")
+    else:
+        problems.append("No procedural memory directory")
+
+    # 7. Autonomous prioritization
+    if bs and bs.get("version", 0) >= 2:
+        prio = bs.get("autonomous_prioritization", {})
+        varied_scores = len(set(p.get("priority_tier") for p in prio.values())) > 1
+        if prio and varied_scores:
+            closed += 1
+        else:
+            problems.append("Prioritization exists but all regions have the same tier")
+    else:
+        problems.append("No autonomous prioritization in behavioral state")
 
     score = round((closed / len(loops)) * 100)
-    if closed < len(loops):
-        problems.append(f"{closed}/{len(loops)} adaptive loops instrumented")
+    problems = problems[:5]  # Cap at 5 problems in output
 
-    return {"score": score, "closed_loops": closed, "total_loops": len(loops),
-            "loops": loops, "problems": problems}
+    return {
+        "score": score, 
+        "closed_loops": closed, 
+        "total_loops": len(loops),
+        "loops": loops,
+        "problems": problems,
+        "detail": {
+            "restricted_regions": len([r for r, c in bs.get("per_region_constraints", {}).items() 
+                                       if len(c.get("available_bands", [])) < 4]) if bs else 0,
+            "unscheduled_events": len(tracker.get("unscheduled_cognition_events", [])) if tracker else 0,
+            "procedural_memories": len(list(proc_dir.glob("*.md"))) if proc_dir.exists() else 0,
+        }
+    }
 
 
 def assess_epistemic() -> dict:
