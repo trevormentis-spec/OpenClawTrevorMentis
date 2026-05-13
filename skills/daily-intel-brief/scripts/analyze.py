@@ -433,7 +433,7 @@ def main() -> int:
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
     parser.add_argument("--model", default="deepseek/deepseek-v4-pro")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash", help="Tier-2 fast/cheap model for regional analysis (default: DeepSeek V4 Flash)")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 fast/cheap model for regional analysis (default: DeepSeek V4 Pro)")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
                         help="API provider to route through (default: deepseek)")
     parser.add_argument("--recall", default="",
@@ -629,7 +629,7 @@ def main() -> int:
 
     # Tiered model routing: cheap model for regional data synthesis, frontier for strategy
     tier1_model = args.model       # e.g., anthropic/claude-opus-4.7 — exec summary + red team
-    tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-flash — regional analysis
+    tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-pro — regional analysis
     # Tier-2 ALWAYS uses DeepSeek Direct API (never route DeepSeek through OpenRouter)
     tier2_provider = "deepseek"
     log(f"Tiered routing: 6 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "

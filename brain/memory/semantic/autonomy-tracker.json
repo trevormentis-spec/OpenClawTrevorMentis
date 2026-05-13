@@ -76,5 +76,64 @@
       "timestamp": "2026-05-13T05:31:41Z",
       "sources_found": 0
     }
+  ],
+  "autonomous_analyses": [
+    {
+      "timestamp": "2026-05-13T20:24:47Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260513-202447.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:25:06Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260513-202506.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:25:25Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "the cipher brief <dailybrief@thecipherbrief.com>",
+        "subject": "National Security Nightcap for Wednesday, May 13",
+        "snippet": "POTUS in China - What should we expect next? View this email in your browser X | LINKEDIN | INSTAGRAM | FACEBOOK I YOU TUBE I BLUE SKY thecipherbrief.com Wednesday / May 13 / 2026 What you need to know",
+        "score": 80,
+        "tier": "tier1",
+        "id": "gmail-19e22ef2"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260513-202525.md"
+    },
+    {
+      "timestamp": "2026-05-13T20:25:44Z",
+      "signal": {
+        "source": "web",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine offensive",
+        "title": "Russo-Ukrainian war - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
+        "score": 75,
+        "tier": "tier2",
+        "id": "web-9464"
+      },
+      "tier": "tier2",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-web-breaking_news-20260513-202544.md"
+    }
   ]
 }
