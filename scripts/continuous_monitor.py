@@ -43,30 +43,78 @@ KALSHI_CRITICAL_THRESHOLD = 20  # Points for critical escalation (doubles collec
 # Brief check: if no brief produced by HOUR_CUTOFF (UTC), flag it
 HOUR_CUTOFF = 14  # 14:00 UTC = 07:00 PT — brief should be done by now
 
-# Escalation script
+# Escalation and behavioral adaptation scripts
 COLLECTION_STATE_SCRIPT = REPO_ROOT / "scripts" / "collection_state.py"
+BEHAVIORAL_STATE_SCRIPT = REPO_ROOT / "scripts" / "behavioral_state.py"
 
 
 def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None:
-    """Set an escalation flag in collection state. Changes future collection behavior.
+    """Set an escalation flag in collection state AND trigger behavioral adaptation.
     
-    Severity -> cap multiplier: critical -> +100%, significant -> +50%, notable -> +25%
+    Behavioral adaptation: critical events trigger prompt injection recalculation,
+    collection cadence changes, and cognition reprioritization — not just caps.
+    
+    Severity -> behavioral impact:
+      critical -> full state rebuild, prompt injection, alert generation
+      significant -> state rebuild
+      notable -> state rebuild
     """
-    if not COLLECTION_STATE_SCRIPT.exists():
-        log(f"cannot escalate: collection_state.py not found")
-        return
-    try:
-        subprocess.check_call([
-            "python3", str(COLLECTION_STATE_SCRIPT),
-            "--set-escalation",
-            "--region", region,
-            "--severity", severity,
-            "--reason", reason,
-            "--trigger", trigger,
-        ], cwd=str(REPO_ROOT), timeout=15)
-        log(f"ESCALATION [{severity.upper()}] {region}: {reason}")
-    except Exception as exc:
-        log(f"escalation failed: {exc}")
+    # Step 1: Set escalation in collection state (existing behavior)
+    if COLLECTION_STATE_SCRIPT.exists():
+        try:
+            subprocess.check_call([
+                "python3", str(COLLECTION_STATE_SCRIPT),
+                "--set-escalation",
+                "--region", region,
+                "--severity", severity,
+                "--reason", reason,
+                "--trigger", trigger,
+            ], cwd=str(REPO_ROOT), timeout=15)
+            log(f"ESCALATION [{severity.upper()}] {region}: {reason}")
+        except Exception as exc:
+            log(f"escalation to collection_state failed: {exc}")
+    
+    # Step 2: Trigger behavioral state engine (NEW — closes the behavioral loop)
+    if BEHAVIORAL_STATE_SCRIPT.exists():
+        event_type_map = {
+            "critical": "kalshi_swing" if "Kalshi" in reason else "escalation_set",
+            "significant": "brief_missing" if "brief" in reason.lower() else "escalation_set",
+            "notable": "escalation_set",
+        }
+        event_type = event_type_map.get(severity, "escalation_set")
+        try:
+            subprocess.check_call([
+                "python3", str(BEHAVIORAL_STATE_SCRIPT),
+                "--on-event",
+                "--event-type", event_type,
+                "--region", region,
+                "--severity", severity,
+                "--reason", reason,
+                "--trigger", trigger,
+            ], cwd=str(REPO_ROOT), timeout=15)
+            log(f"BEHAVIORAL ADAPTATION triggered [{severity.upper()}] {region}: {reason}")
+        except Exception as exc:
+            log(f"behavioral state update failed: {exc}")
+    
+    # Step 3: For critical events, also write a behavioral alert
+    if severity == "critical":
+        alert_dir = REPO_ROOT / "analysis" / "alerts"
+        alert_dir.mkdir(parents=True, exist_ok=True)
+        alert = (
+            f"# Behavioral Alert — {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M')} UTC\n\n"
+            f"**Event trigger:** {trigger}\n"
+            f"**Region:** {region}\n"
+            f"**Severity:** {severity.upper()}\n"
+            f"**Reason:** {reason}\n\n"
+            f"**Expected behavioral change:**\n"
+            f"1. Behavioral state rebuilt with event-derived constraints\n"
+            f"2. Next analysis run will have restricted confidence bands for this region\n"
+            f"3. Collection caps increased\n"
+            f"4. Alert generated for principal review\n"
+        )
+        (alert_dir / f"behavioral-alert-{dt.datetime.now(dt.timezone.utc).strftime('%H%M%S')}.md").write_text(alert)
+        log(f"Behavioral alert written for critical event")
+    
     append_episode("escalation_set", {
         "region": region, "severity": severity,
         "reason": reason, "trigger": trigger,
