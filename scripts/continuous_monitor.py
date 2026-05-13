@@ -47,6 +47,8 @@ HOUR_CUTOFF = 14  # 14:00 UTC = 07:00 PT — brief should be done by now
 COLLECTION_STATE_SCRIPT = REPO_ROOT / "scripts" / "collection_state.py"
 BEHAVIORAL_STATE_SCRIPT = REPO_ROOT / "scripts" / "behavioral_state.py"
 UNSCHEDULED_COGNITION_SCRIPT = REPO_ROOT / "scripts" / "unscheduled_cognition.py"
+COLLECTION_CAMPAIGN_SCRIPT = REPO_ROOT / "scripts" / "collection_campaign.py"
+SOURCE_DISCOVERY_SCRIPT = REPO_ROOT / "scripts" / "source_discovery.py"
 
 
 def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None:
@@ -127,6 +129,29 @@ def escalate(region: str, severity: str, reason: str, trigger: str = "") -> None
                 log(f"Unscheduled cognition check completed (exit={result})")
             except Exception as exc:
                 log(f"unscheduled cognition check failed: {exc}")
+        
+        # Step 5: Launch collection campaign for escalated region
+        if COLLECTION_CAMPAIGN_SCRIPT.exists():
+            try:
+                result = subprocess.check_call([
+                    "python3", str(COLLECTION_CAMPAIGN_SCRIPT),
+                    "--region", region,
+                ], cwd=str(REPO_ROOT), timeout=60)
+                log(f"Collection campaign completed for {region} (exit={result})")
+            except Exception as exc:
+                log(f"collection campaign failed: {exc}")
+        
+        # Step 6: Run source discovery for critical escalations
+        if SOURCE_DISCOVERY_SCRIPT.exists():
+            try:
+                result = subprocess.check_call([
+                    "python3", str(SOURCE_DISCOVERY_SCRIPT),
+                    "--region", region,
+                    "--save",
+                ], cwd=str(REPO_ROOT), timeout=90)
+                log(f"Source discovery completed for {region} (exit={result})")
+            except Exception as exc:
+                log(f"source discovery failed: {exc}")
     
     append_episode("escalation_set", {
         "region": region, "severity": severity,

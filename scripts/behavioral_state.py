@@ -209,7 +209,9 @@ def compute_collection_confidence(collection_state: dict) -> dict:
     - Sources <= 1 → no "highly likely", max 70%
     - Source monoculture (all same type) → narrative contamination warning
     - High source diversity → full bands available
-    - Local-language gap detected → band cap
+    - Local-language gap detected → band cap, flag for source discovery
+
+    Regions with persistent gaps auto-flag for source discovery campaigns.
     """
     state = collection_state or {}
     directives = {
@@ -217,6 +219,8 @@ def compute_collection_confidence(collection_state: dict) -> dict:
         "monoculture_warnings": [],
         "linguistic_gaps": [],
         "expansion_needed": [],
+        "source_discovery_needed": [],  # Regions that need new sources
+        "campaign_needed": [],           # Regions needing collection campaigns
     }
 
     regions = state.get("region_activity", {})
@@ -282,6 +286,16 @@ def compute_collection_confidence(collection_state: dict) -> dict:
         # Flag for expansion if consistently low
         if recent_inc <= 1 and region not in ("global_finance",):
             directives["expansion_needed"].append(region)
+
+        # Flag for source discovery if low coverage or linguistic gap
+        if quality_tier in ("CRITICAL GAP", "LOW") or linguistic_gaps:
+            if region not in directives["source_discovery_needed"]:
+                directives["source_discovery_needed"].append(region)
+
+        # Flag for collection campaign if critical gap or high escalation
+        if quality_tier == "CRITICAL GAP":
+            if region not in directives["campaign_needed"]:
+                directives["campaign_needed"].append(region)
 
         if linguistic_gaps:
             directives["linguistic_gaps"].append({
@@ -662,6 +676,20 @@ def generate_prompt_injection() -> str:
         lines.append("SOURCE DIVERSITY WARNINGS:")
         for w in coll["monoculture_warnings"]:
             lines.append(f"  • {w}")
+        lines.append("")
+
+    # Source discovery needed
+    if coll.get("source_discovery_needed"):
+        lines.append("SOURCE DISCOVERY NEEDED:")
+        for region in coll["source_discovery_needed"]:
+            lines.append(f"  • {region}")
+        lines.append("")
+
+    # Campaigns needed
+    if coll.get("campaign_needed"):
+        lines.append("COLLECTION CAMPAIGNS NEEDED:")
+        for region in coll["campaign_needed"]:
+            lines.append(f"  • {region}")
         lines.append("")
 
     lines.append("RULE: If you cannot produce a meaningful assessment within these constraints,")
