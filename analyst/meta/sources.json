@@ -960,6 +960,44 @@
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
       "discovery_method": "deep_horizon_scan"
+    },
+    {
+      "name": "African Arguments",
+      "type": "News/Analysis",
+      "focus": "African politics, security, conflict analysis. Covers Sahel, Horn of Africa, Great Lakes region.",
+      "url": "https://africanarguments.org",
+      "rss": "https://africanarguments.org/feed/",
+      "signal_level": "High",
+      "discovered": "2026-05-13",
+      "discovery_method": "autonomous_source_discovery",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "name": "The Africa Report",
+      "type": "News/Analysis",
+      "focus": "African business, politics, and security coverage across the continent.",
+      "url": "https://www.theafricareport.com",
+      "rss": "https://www.theafricareport.com/feed/",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "autonomous_source_discovery",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "name": "GZERO Daily",
+      "type": "Newsletter/Analysis",
+      "focus": "Global politics and geopolitical analysis. Strong Latin America coverage.",
+      "url": "https://www.gzeromedia.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-13",
+      "discovery_method": "gmail_discovery",
+      "languages": [
+        "en"
+      ]
     }
   ],
   "moltbook_sources": [

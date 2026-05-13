@@ -2,10 +2,27 @@
   "version": 2,
   "created": "2026-05-13",
   "initial_capital": 1000.0,
-  "cash": 1000.0,
-  "positions": [],
+  "cash": 800.0,
+  "positions": [
+    {
+      "trade_id": "GT-20260513-194523",
+      "instrument": "UUP",
+      "direction": "long",
+      "size": 7.0175,
+      "entry_price": 28.5,
+      "entry_value": 200.0,
+      "entry_date": "2026-05-13",
+      "current_price": 28.5,
+      "reason": "USD strength from flight-to-safety",
+      "stop_loss": 25.650000000000002,
+      "target": 32.775,
+      "unrealized_pl": 0.0,
+      "unrealized_pl_pct": 0.0,
+      "status": "open"
+    }
+  ],
   "trade_history": [],
   "total_pl": 0.0,
   "total_pl_pct": 0.0,
-  "last_updated": "2026-05-13T05:51:24Z"
+  "last_updated": "2026-05-13T19:45:23Z"
 }

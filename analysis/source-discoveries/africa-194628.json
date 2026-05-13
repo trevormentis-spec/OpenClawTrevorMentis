@@ -1,0 +1,33 @@
+{
+  "search_query": "africa  ",
+  "discovered": 2,
+  "discoveries": [
+    {
+      "name": "African Arguments",
+      "url": "https://africanarguments.org",
+      "rss_url": "https://africanarguments.org/feed/",
+      "description": "Known africa source from directory",
+      "items_count": 10,
+      "last_item": "Azawad Never Left: Reading Mali\u2019s 2026 Crisis Through 2012",
+      "score": 50,
+      "region": "africa",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T19:46:28Z"
+    },
+    {
+      "name": "The Africa Report",
+      "url": "https://www.theafricareport.com",
+      "rss_url": "https://www.theafricareport.com/feed/",
+      "description": "Known africa source from directory",
+      "items_count": 10,
+      "last_item": "Bpifrance\u2019s Arnaud Floris: \u2018Our scope is high-impact commerce\u2019",
+      "score": 52,
+      "region": "africa",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T19:46:28Z"
+    }
+  ],
+  "generated_at": "2026-05-13T19:46:28Z"
+}
