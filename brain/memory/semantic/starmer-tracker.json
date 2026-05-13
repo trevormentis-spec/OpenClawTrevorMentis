@@ -65,6 +65,22 @@
         "D7_loyalty": 4
       },
       "risk_count": 1
+    },
+    {
+      "date": "2026-05-13",
+      "survival_probability": 82.0,
+      "band": "highly likely",
+      "confidence": "low",
+      "dimensions": {
+        "D1_optionality": 4,
+        "D2_coercion": 3,
+        "D3_popularity": 6,
+        "D4_constraint_rejection": 2,
+        "D5_zero_sum": 2,
+        "D6_escalate_retreat": 2,
+        "D7_loyalty": 4
+      },
+      "risk_count": 1
     }
   ],
   "trajectory": "stable"

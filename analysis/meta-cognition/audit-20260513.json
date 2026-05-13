@@ -1,14 +1,14 @@
 {
-  "days_analyzed": 6,
+  "days_analyzed": 7,
   "region_repetition": {
-    "europe": 6,
-    "middle_east": 7,
-    "south_central_america": 4,
-    "asia": 6,
-    "north_america": 5
+    "europe": 7,
+    "middle_east": 8,
+    "south_central_america": 5,
+    "asia": 7,
+    "north_america": 6
   },
   "band_repetition": {
-    "likely": 16,
+    "likely": 21,
     "highly likely": 9,
     "even chance": 5
   },
@@ -37,16 +37,21 @@
       "day1": "2026-05-12",
       "day2": "2026-05-11",
       "similarity": 0.153
+    },
+    {
+      "day1": "2026-05-13",
+      "day2": "2026-05-12",
+      "similarity": 0.162
     }
   ],
   "pattern_alerts": [
-    "europe has been in the top judgment set for 6 consecutive days. Is this genuine sustained priority, or analytical inertia?",
-    "middle_east has been in the top judgment set for 7 consecutive days. Is this genuine sustained priority, or analytical inertia?",
-    "south_central_america has been in the top judgment set for 4 consecutive days. Is this genuine sustained priority, or analytical inertia?",
-    "asia has been in the top judgment set for 6 consecutive days. Is this genuine sustained priority, or analytical inertia?",
-    "north_america has been in the top judgment set for 5 consecutive days. Is this genuine sustained priority, or analytical inertia?",
-    "'likely' used in 16/6 days (267%). Confidence band distribution may be habitual rather than evidence-driven."
+    "europe has been in the top judgment set for 7 consecutive days. Is this genuine sustained priority, or analytical inertia?",
+    "middle_east has been in the top judgment set for 8 consecutive days. Is this genuine sustained priority, or analytical inertia?",
+    "south_central_america has been in the top judgment set for 5 consecutive days. Is this genuine sustained priority, or analytical inertia?",
+    "asia has been in the top judgment set for 7 consecutive days. Is this genuine sustained priority, or analytical inertia?",
+    "north_america has been in the top judgment set for 6 consecutive days. Is this genuine sustained priority, or analytical inertia?",
+    "'likely' used in 21/7 days (300%). Confidence band distribution may be habitual rather than evidence-driven."
   ],
   "inertia_detected": true,
-  "date_range": "2026-05-07 to 2026-05-12"
+  "date_range": "2026-05-07 to 2026-05-13"
 }
