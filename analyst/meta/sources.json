@@ -570,6 +570,20 @@
       "signal_level": "Medium",
       "discovered": "2026-05-11",
       "source": "NewsAPI"
+    },
+    {
+      "name": "Buenos Aires Times",
+      "type": "Discovered/News",
+      "focus": "South Central America news coverage. Known south_central_america source from directory",
+      "url": "https://www.batimes.com.ar",
+      "rss": "https://www.batimes.com.ar/feed",
+      "languages": [
+        "en"
+      ],
+      "signal_level": "Medium",
+      "discovered": "2026-05-13",
+      "discovery_method": "autonomous_source_discovery",
+      "source": "discovered"
     }
   ],
   "moltbook_sources": [
@@ -935,12 +949,12 @@
       ]
     },
     {
-      "note": "Deep Horizon Scan — 2026-05-12 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
+      "note": "Deep Horizon Scan \u2014 2026-05-12 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
       "sources": [
         {
           "name": "Escalation Trap",
           "type": "Substack/Strategic Analysis",
-          "focus": "Iran war stalling analysis: asymmetric warfare trap, 5 warning signs, 100+ daily escorts needed but unfeasible, insurance premiums $1K→$120K.",
+          "focus": "Iran war stalling analysis: asymmetric warfare trap, 5 warning signs, 100+ daily escorts needed but unfeasible, insurance premiums $1K\u2192$120K.",
           "url": "https://escalationtrap.substack.com",
           "signal_level": "High",
           "discovered": "2026-05-12"
@@ -970,7 +984,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "Tatsu Ikeda — Geopolitical Risk Assessment",
+          "name": "Tatsu Ikeda \u2014 Geopolitical Risk Assessment",
           "type": "Substack/Risk Analysis",
           "focus": "Lebanon/Hezbollah fiber-optic drone warfare, Level 4/5 risk posture. IDF admits no technical solution to jam-proof drones.",
           "url": "https://tatsuikeda.substack.com",
@@ -1042,7 +1056,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "ACOUP — Bret Devereaux (acoup.blog)",
+          "name": "ACOUP \u2014 Bret Devereaux (acoup.blog)",
           "type": "Independent Academic/Military History Blog",
           "focus": "US strategic miscalculation regime-change gamble failed. Iran's Hormuz as 'weapon of mass disruption'. Predictable and ignored.",
           "url": "https://acoup.blog/2026/03/25/miscellanea-the-war-in-iran/",
@@ -1066,7 +1080,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "Michael Liebreich — Cleaning Up / Energy",
+          "name": "Michael Liebreich \u2014 Cleaning Up / Energy",
           "type": "Substack/Energy Transition",
           "focus": "Oil existential supply shock vs gas 3% total supply: clean energy acceleration as strategic response to Hormuz crisis.",
           "url": "https://mliebreich.substack.com",
@@ -1139,7 +1153,10 @@
       "focus": "Iran domestic politics, IRGC statements, regional diplomacy, Hormuz crisis coverage. Semi-official Iranian news agency.",
       "url": "https://en.mehrnews.com",
       "rss": "https://en.mehrnews.com/rss",
-      "languages": ["en", "fa"],
+      "languages": [
+        "en",
+        "fa"
+      ],
       "primary_language": "en",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1151,7 +1168,10 @@
       "focus": "IRGC-affiliated news. Iran military operations, nuclear negotiations, proxy force activity. Official IRGC-aligned perspective.",
       "url": "https://www.tasnimnews.com/en",
       "rss": "https://www.tasnimnews.com/en/rss",
-      "languages": ["en", "fa"],
+      "languages": [
+        "en",
+        "fa"
+      ],
       "primary_language": "en",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1163,7 +1183,10 @@
       "focus": "Middle East news from Saudi/GCC perspective. Hormuz crisis, Gulf security, energy markets.",
       "url": "https://english.alarabiya.net",
       "rss": "https://english.alarabiya.net/feed/rss2/en.xml",
-      "languages": ["en", "ar"],
+      "languages": [
+        "en",
+        "ar"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13"
@@ -1174,7 +1197,9 @@
       "focus": "Arabic-language coverage of Middle East, GCC policy, Hormuz crisis, Iran regional activity.",
       "url": "https://www.alarabiya.net",
       "rss": "https://www.alarabiya.net/tools/mrss",
-      "languages": ["ar"],
+      "languages": [
+        "ar"
+      ],
       "primary_language": "ar",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1186,7 +1211,10 @@
       "focus": "Pan-Arab daily covering Middle East politics, energy, Gulf security. Saudi-owned London-based.",
       "url": "https://english.aawsat.com",
       "rss": "https://english.aawsat.com/rss.xml",
-      "languages": ["en", "ar"],
+      "languages": [
+        "en",
+        "ar"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13"
@@ -1197,7 +1225,9 @@
       "focus": "Arabic edition of leading pan-Arab daily. Deeper regional analysis and opinion.",
       "url": "https://aawsat.com",
       "rss": "https://aawsat.com/feeds/rss",
-      "languages": ["ar"],
+      "languages": [
+        "ar"
+      ],
       "primary_language": "ar",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1209,7 +1239,10 @@
       "focus": "Official Russian state news agency. Ukraine war, Russia-Iran relations, energy geopolitics, BRICS narratives.",
       "url": "https://tass.com",
       "rss": "https://tass.com/rss/v2.xml",
-      "languages": ["en", "ru"],
+      "languages": [
+        "en",
+        "ru"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1221,7 +1254,10 @@
       "focus": "Independent Russian news from exile. Ukraine war, Kremlin politics, Russian society, repression tracking.",
       "url": "https://meduza.io/en",
       "rss": "https://meduza.io/rss/en/all",
-      "languages": ["en", "ru"],
+      "languages": [
+        "en",
+        "ru"
+      ],
       "primary_language": "en",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1233,7 +1269,9 @@
       "focus": "Russian-language independent news coverage not syndicated to English edition.",
       "url": "https://meduza.io",
       "rss": "https://meduza.io/rss/all",
-      "languages": ["ru"],
+      "languages": [
+        "ru"
+      ],
       "primary_language": "ru",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1245,7 +1283,9 @@
       "focus": "English-language independent Russian news. Business, politics, sanctions, Kremlin insider reporting.",
       "url": "https://www.themoscowtimes.com",
       "rss": "https://www.themoscowtimes.com/rss/news",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
       "note": "Dutch-registered independent outlet. Post-crackdown diaspora journalism."
@@ -1256,7 +1296,10 @@
       "focus": "Official Chinese state news agency. China foreign policy, BRI, global diplomacy, Iran-China relations, energy security.",
       "url": "http://www.xinhuanet.com/english/",
       "rss": "http://www.xinhuanet.com/english/rss/worldrss.xml",
-      "languages": ["en", "zh"],
+      "languages": [
+        "en",
+        "zh"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1268,7 +1311,10 @@
       "focus": "Nationalistic Chinese perspective on foreign affairs, US-China tensions, Taiwan, Iran crisis, global order.",
       "url": "https://www.globaltimes.cn",
       "rss": "https://www.globaltimes.cn/rss",
-      "languages": ["en", "zh"],
+      "languages": [
+        "en",
+        "zh"
+      ],
       "primary_language": "en",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1280,7 +1326,10 @@
       "focus": "Left-leaning Israeli newspaper. Israel-Iran war coverage, military assessment, regional diplomacy, intelligence community leaks.",
       "url": "https://www.haaretz.com",
       "rss": "https://www.haaretz.com/srv/haaretz-latest-news-xml",
-      "languages": ["en", "he"],
+      "languages": [
+        "en",
+        "he"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1292,7 +1341,9 @@
       "focus": "Major Hebrew-language Israeli news site. Military operations, security incidents, breaking news.",
       "url": "https://www.ynet.co.il",
       "rss": "https://www.ynet.co.il/Integration/StoryRss2.xml",
-      "languages": ["he"],
+      "languages": [
+        "he"
+      ],
       "primary_language": "he",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -1304,7 +1355,9 @@
       "focus": "English-language Israeli news covering Iran conflict, military operations, diplomacy, casualty reporting.",
       "url": "https://www.timesofisrael.com",
       "rss": "https://www.timesofisrael.com/feed/",
-      "languages": ["en"],
+      "languages": [
+        "en"
+      ],
       "signal_level": "High",
       "discovered": "2026-05-13"
     },
@@ -1314,7 +1367,10 @@
       "focus": "Chinese state broadcaster English edition. Global news from PRC perspective.",
       "url": "https://www.cgtn.com",
       "rss": "https://www.cgtn.com/subscribe/rss.html",
-      "languages": ["en", "zh"],
+      "languages": [
+        "en",
+        "zh"
+      ],
       "signal_level": "Medium",
       "discovered": "2026-05-13"
     },
@@ -1324,19 +1380,24 @@
       "focus": "Right-leaning free Hebrew daily. Netanyahu-friendly, security-focused reporting.",
       "url": "https://www.israelhayom.co.il",
       "rss": "https://www.israelhayom.co.il/rss",
-      "languages": ["he"],
+      "languages": [
+        "he"
+      ],
       "primary_language": "he",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
       "note": "Right-leaning Hebrew source. Useful for tracking Netanyahu government narrative."
     },
     {
-      "name": "El País English",
+      "name": "El Pa\u00eds English",
       "type": "Newspaper/Spain",
       "focus": "Leading Spanish newspaper English edition. EU foreign policy, Latin America, European energy crisis.",
       "url": "https://english.elpais.com",
       "rss": "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada",
-      "languages": ["en", "es"],
+      "languages": [
+        "en",
+        "es"
+      ],
       "primary_language": "en",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13"
@@ -1347,7 +1408,10 @@
       "focus": "Leading French newspaper English edition. EU defense, NATO, Middle East policy.",
       "url": "https://www.lemonde.fr/en/",
       "rss": "https://www.lemonde.fr/en/rss/une.xml",
-      "languages": ["en", "fr"],
+      "languages": [
+        "en",
+        "fr"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13"
@@ -1358,7 +1422,10 @@
       "focus": "Business-oriented Russian independent newspaper. Russian economic outlook, sanctions impact, business climate.",
       "url": "https://www.kommersant.ru/english",
       "rss": "https://www.kommersant.ru/RSS/main.xml",
-      "languages": ["en", "ru"],
+      "languages": [
+        "en",
+        "ru"
+      ],
       "primary_language": "ru",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -1370,7 +1437,10 @@
       "focus": "Japan's leading financial newspaper Asia edition. Asian energy security, China tensions, supply chains.",
       "url": "https://asia.nikkei.com",
       "rss": "https://asia.nikkei.com/rss/feed",
-      "languages": ["en", "ja"],
+      "languages": [
+        "en",
+        "ja"
+      ],
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13"

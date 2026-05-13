@@ -1,0 +1,33 @@
+{
+  "search_query": "africa  ",
+  "discovered": 2,
+  "discoveries": [
+    {
+      "name": "African Arguments",
+      "url": "https://africanarguments.org",
+      "rss_url": "https://africanarguments.org/feed/",
+      "description": "Known africa source from directory",
+      "items_count": 10,
+      "last_item": "In a world of blocs, France and Kenya chose the Middle",
+      "score": 50,
+      "region": "africa",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T05:31:37Z"
+    },
+    {
+      "name": "The Africa Report",
+      "url": "https://www.theafricareport.com",
+      "rss_url": "https://www.theafricareport.com/feed/",
+      "description": "Known africa source from directory",
+      "items_count": 10,
+      "last_item": "DRC army in crisis: Leaked report reveals deep dysfunction",
+      "score": 52,
+      "region": "africa",
+      "topic": "",
+      "language": "",
+      "discovered_at": "2026-05-13T05:31:38Z"
+    }
+  ],
+  "generated_at": "2026-05-13T05:31:38Z"
+}
