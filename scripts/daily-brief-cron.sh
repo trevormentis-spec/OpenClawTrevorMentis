@@ -114,7 +114,7 @@ set +e
 bash "$REPO/scripts/agent-brief-api.sh" --publish 2>&1 | tee -a "$LOG"
 set -e 2>/dev/null || true
 python3 "$REPO/scripts/build_agent_brief.py" \
-    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
+    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" --moltbook 2>&1 | tee -a "$LOG"
 
 # Step 6: Publish to Buttondown newsletter
 # Sends the daily brief as a newsletter email to all subscribers

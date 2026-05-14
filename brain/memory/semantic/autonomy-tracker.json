@@ -539,6 +539,49 @@
       },
       "tier": "tier1",
       "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-193208.md"
+    },
+    {
+      "timestamp": "2026-05-14T20:02:53Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine war",
+        "answer_preview": "Here are the main military developments in the Russia\u2011Ukraine war over roughly the last 24 hours, based on the sources you provided and major wire services:\n\n1. **Large Russian air and drone strikes on Ukraine (especially Kyiv)**  \n   - Russia launched one of its biggest recent combined drone\u2011and\u2011missile barrages against Ukraine, heavily targeting **Kyiv** and other cities.  \n   - Ukrainian offici",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-993"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-200253.md"
+    },
+    {
+      "timestamp": "2026-05-14T20:03:17Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "the cipher brief <dailybrief@thecipherbrief.com>",
+        "subject": "National Security Nightcap for Thursday, May 14",
+        "snippet": "With all eyes on China, who&#39;s watching Russia? View this email in your browser X | LINKEDIN | INSTAGRAM | FACEBOOK I YOU TUBE I BLUE SKY thecipherbrief.com Thursday / May 14 / 2026 What you need to",
+        "score": 80,
+        "tier": "tier1",
+        "id": "gmail-19e2801a"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-200317.md"
+    },
+    {
+      "timestamp": "2026-05-14T20:32:57Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine war",
+        "answer_preview": "Here\u2019s a concise, source\u2011based snapshot of the key military developments in the Russia\u2011Ukraine war over roughly the last 24 hours:\n\n**1. Large\u2011scale Russian air attacks on Ukraine (especially Kyiv)**\n- Russian forces launched one of the largest sustained drone and missile barrages in months, heavily targeting **Kyiv** and other cities.\n- Casualties reported vary by outlet:\n  - CNN and other outlet",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-629"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-203257.md"
     }
   ]
 }
