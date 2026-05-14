@@ -90,32 +90,29 @@ def call_deepseek(model: str, system: str, user: str,
                   temperature: float = 0.3, max_tokens: int = 8192,
                   json_mode: bool = True,
                   provider: str = "deepseek") -> str:
+    """Call DeepSeek/OpenRouter via curl subprocess (avoids Python SSL hangs)."""
+    import subprocess, tempfile, json as _json, os as _os
+    
+    # Get API key
     if provider == "openrouter":
-        api_key = os.environ.get("OPENROUTER_API_KEY")
+        api_key = _os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
             raise RuntimeError("OPENROUTER_API_KEY not set")
-        base_url = OPENROUTER_BASE
-        path = OPENROUTER_PATH
-        # OpenRouter expects full model name (provider/model)
+        base_url = "https://openrouter.ai/api"
         api_model = model
-        headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/trevormentis-spec",
-            "X-Title": "TREVOR Intel Brief",
-        }
+        extra_headers = [
+            "-H", "HTTP-Referer: https://github.com/trevormentis-spec",
+            "-H", "X-Title: TREVOR Intel Brief",
+        ]
     else:
-        api_key = os.environ.get("DEEPSEEK_API_KEY")
+        api_key = _os.environ.get("DEEPSEEK_API_KEY")
         if not api_key:
             raise RuntimeError("DEEPSEEK_API_KEY not set")
-        base_url = DEEPSEEK_BASE
-        path = DEEPSEEK_PATH
-        # DeepSeek uses short model name (strip provider prefix)
+        base_url = "https://api.deepseek.com"
         api_model = model.split("/", 1)[-1] if "/" in model else model
-        headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        }
+        extra_headers = []
+    
+    # Build payload dict
     payload = {
         "model": api_model,
         "messages": [
@@ -127,22 +124,54 @@ def call_deepseek(model: str, system: str, user: str,
     }
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
-    body = json.dumps(payload).encode()
-    req = urllib.request.Request(
-        base_url + path,
-        data=body, method="POST",
-        headers=headers,
-    )
+    
+    # Write payload to temp file (avoids shell escaping issues)
+    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
+    tmp.write(_json.dumps(payload))
+    tmp.close()
+    
     try:
-        with urllib.request.urlopen(req, timeout=180) as resp:
-            payload = json.loads(resp.read())
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError(
-            f"{provider.upper()} HTTPError {exc.code}: {exc.read().decode(errors='replace')[:500]}"
-        )
-    return payload["choices"][0]["message"]["content"]
-
-
+        # Build curl command
+        cmd = [
+            "curl", "-s", "-w", "\n%{http_code}",
+            "-X", "POST", f"{base_url}/v1/chat/completions",
+            "-H", "Content-Type: application/json",
+            "-H", "Authorization: Bearer " + api_key,
+        ] + extra_headers + [
+            "--data-binary", "@" + tmp.name,
+            "--connect-timeout", "60",
+            "--max-time", "300",
+        ]
+        
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=310)
+        
+        stdout = result.stdout
+        # Split on newline - last line is HTTP status code
+        idx = stdout.rfind("\n")
+        if idx >= 0:
+            http_code = stdout[idx+1:].strip()
+            body = stdout[:idx]
+        else:
+            http_code = "000"
+            body = stdout
+        
+        if not http_code.startswith("2"):
+            err = result.stderr[:300] if result.stderr else body[:300]
+            raise RuntimeError(f"HTTP {http_code}: {err}")
+        
+        response_data = _json.loads(body)
+        return response_data["choices"][0]["message"]["content"]
+    except subprocess.TimeoutExpired:
+        raise RuntimeError("curl timed out after 310s")
+    except Exception as e:
+        if "HTTP" in str(e):
+            raise
+        raise RuntimeError(f"API call failed: {e}")
+    finally:
+        try:
+            _os.unlink(tmp.name)
+        except:
+            pass
 def build_collection_quality(region_snake: str, incidents: list[dict],
                                collection_state: dict | None = None,
                                behavioral_state: dict | None = None) -> str:
@@ -245,7 +274,9 @@ def build_collection_quality(region_snake: str, incidents: list[dict],
 def regional_prompt(template: str, region_snake: str, incidents: list[dict],
                     iw_board_md: str, date_utc: str,
                     collection_state: dict | None = None,
-                    behavioral_state: dict | None = None) -> tuple[str, str]:
+                    behavioral_state: dict | None = None,
+                    prediction_market_data: str = "No prediction market data available.",
+                    standing_assessment: str = "No previous standing assessment available.") -> tuple[str, str]:
     region_label = REGION_LABEL[region_snake]
     short = REGION_SHORT[region_snake]
     incidents_for_region = [i for i in incidents if i.get("region") == region_snake]
@@ -259,6 +290,8 @@ def regional_prompt(template: str, region_snake: str, incidents: list[dict],
                      json.dumps(incidents_for_region, indent=2))
             .replace("{iw_board_markdown_or_none}",
                      iw_board_md or "No standing I&W board for this region.")
+            .replace("{prediction_market_data}", prediction_market_data)
+            .replace("{standing_assessment}", standing_assessment)
             .replace("{collection_quality_markdown}", coll_quality))
     # the system prompt is shared (defined in references/deepseek-prompts.md)
     return user, short
@@ -432,8 +465,8 @@ def main() -> int:
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
-    parser.add_argument("--model", default="deepseek/deepseek-v4-pro")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 fast/cheap model for regional analysis (default: DeepSeek V4 Pro)")
+    parser.add_argument("--model", default="deepseek/deepseek-v4-flash")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash", help="Tier-2 fast model for regional analysis (default: DeepSeek V4 Flash)")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
                         help="API provider to route through (default: deepseek)")
     parser.add_argument("--recall", default="",

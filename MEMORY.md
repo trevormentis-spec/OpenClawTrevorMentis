@@ -132,3 +132,37 @@
   published to Moltbook (agents submolt) + API endpoint. The agent brief at
    and 
   is the primary agent-facing format. Maps disabled per Roderick's decision.
+
+## Durable Decisions — Autonomy Framework
+- [2026-05-13] **Autonomy confirmed by Roderick.** Full operational autonomy for:
+  - **AgentMail inbox** — respond, forward, acknowledge without pre-surfacing. Surface only
+    when it genuinely needs human judgment.
+  - **Social posting** — post daily brief content directly via GenViral without pre-approval.
+    Log what was posted and where.
+  - **Pipeline repairs** — diagnose, fix, test minor script errors without asking. Surface
+    only structural problems (missing API key, service down, breaking change).
+  - **Git operations** — commit and push autonomously. Stop announcing routine backups.
+  - **Memory maintenance** — promote, archive, prune without announcing routine updates.
+- **Remaining guardrails:** Destructive operations, real-money actions (live Stripe,
+  paid API upgrades), core identity file changes (SOUL.md, IDENTITY.md), anything that
+  could misrepresent Roderick legally or professionally.
+- **Posture change:** Roderick will hear from Trevor less. Routine ops happen silently.
+  Trevor only pings for genuine anomalies, interesting intel finds, or things that need
+  human judgment.
+
+## Durable Decisions — Perplexity Benchmark
+- [2026-05-14] **Perplexity GSIB is the quality benchmark.** A Perplexity-produced Global
+  Security & Intelligence Brief arrives in `trevor.mentis@gmail.com` daily with Gmail label
+  "Important MyClaw Use this" (ID: Label_1645217335260921418). It sets the standard for:
+  - **Persona**: Direct address ("Trevor," opener), analyst-to-analyst voice, consistent sign-off
+  - **Trade integration**: Polymarket/Kalshi repricing embedded inline in narrative
+  - **Framework reframes**: Every major development converts standing assessment ("This converts
+    our read from X to Y")
+  - **Signal density**: Every paragraph moves — development, consequence, repricing
+- **Pipeline:** `scripts/benchmark_compare.py` runs as Step 10 in daily-brief-cron.sh, scoring
+  Trevor's GSIB against the Perplexity benchmark across 5 dimensions (persona, signal density,
+  trade integration, framework reframes, prioritization). Reports saved to
+  `analysis/benchmark-comparisons/YYYY-MM-DD.md`.
+- **Prompt updates:** System prompt in `deepseek-prompts.md` updated to use analyst-to-analyst
+  voice, direct address, and trade-inline style. Regional prompt template updated with
+  `{prediction_market_data}` and `{standing_assessment}` fields.

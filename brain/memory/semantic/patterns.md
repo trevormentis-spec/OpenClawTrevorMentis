@@ -1,0 +1,1 @@
+- [2026-05-13] - Cooldown: 4h per region before firing again (source: 2026-05-13.md, confidence: medium)

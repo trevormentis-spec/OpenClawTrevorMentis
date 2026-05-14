@@ -40,12 +40,16 @@ from xml.etree import ElementTree as ET
 
 WIRE_FEEDS = [
     # Major wires — used in addition to durable sources to top up regions.
-    ("Reuters World", "https://www.reutersagency.com/feed/?best-topics=international"),
-    ("AP World", "https://feeds.apnews.com/apf-WorldNews"),
+    # Tested live 2026-05-14: Reuters and AP feeds are dead (404/DNS); replaced.
     ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
-    ("Reuters Business", "https://www.reutersagency.com/feed/?best-topics=business-finance"),
     ("FT World", "https://www.ft.com/world?format=rss"),
+    ("The Guardian World", "https://www.theguardian.com/world/rss"),
+    ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
+    ("ABC News (AU)", "https://www.abc.net.au/news/feed/46078/rss.xml"),
+    ("France 24 EN", "https://www.france24.com/en/rss"),
+    ("DW News EN", "https://rss.dw.com/rdf/rss-en-world"),
+    ("CNBC World", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362"),
 ]
 
 # Local-language / non-English feeds — added 2026-05-13 for multi-language collection.
@@ -55,12 +59,13 @@ WIRE_FEEDS = [
 LOCAL_LANGUAGE_FEEDS = [
     # Persian / Farsi (Iran)
     ("Mehr News (English)", "https://en.mehrnews.com/rss", "en", ("C", 3)),
-    ("Tasnim News (English)", "https://www.tasnimnews.com/en/rss", "en", ("C", 3)),
+    ("Iran International", "https://www.iranintl.com/en/rss.xml", "en", ("B", 2)),
     # Arabic (Gulf / Middle East)
-    ("Al Arabiya (English)", "https://english.alarabiya.net/feed/rss2/en.xml", "en", ("B", 2)),
-    ("Al Arabiya (Arabic)", "https://www.alarabiya.net/tools/mrss", "ar", ("B", 2)),
-    ("Asharq Al-Awsat (English)", "https://english.aawsat.com/rss.xml", "en", ("B", 2)),
-    ("Asharq Al-Awsat (Arabic)", "https://aawsat.com/feeds/rss", "ar", ("B", 2)),
+    ("Gulf News", "https://gulfnews.com/rss-feeds", "en", ("B", 2)),
+    ("The National (UAE)", "https://www.thenationalnews.com/arc/outboundfeeds/rss/", "en", ("B", 2)),
+    ("Arab News", "https://www.arabnews.com/rss.xml", "en", ("B", 2)),
+    ("Middle East Eye", "https://www.middleeasteye.net/rss", "en", ("B", 2)),
+    ("The New Arab", "https://www.newarab.com/rss.xml", "en", ("B", 2)),
     # Russian
     ("TASS (English)", "https://tass.com/rss/v2.xml", "en", ("C", 3)),
     ("Meduza (English)", "https://meduza.io/rss/en/all", "en", ("B", 2)),
@@ -69,18 +74,34 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Kommersant (Russian)", "https://www.kommersant.ru/RSS/main.xml", "ru", ("C", 3)),
     # Chinese
     ("Xinhua (English)", "http://www.xinhuanet.com/english/rss/worldrss.xml", "en", ("C", 3)),
-    ("Global Times (English)", "https://www.globaltimes.cn/rss", "en", ("C", 3)),
+    ("South China Morning Post", "https://www.scmp.com/rss/4/feed", "en", ("B", 2)),
     ("CGTN (English)", "https://www.cgtn.com/subscribe/rss.html", "en", ("C", 3)),
     # Israeli / Hebrew
-    ("Haaretz (English)", "https://www.haaretz.com/srv/haaretz-latest-news-xml", "en", ("B", 2)),
     ("Ynet (Hebrew)", "https://www.ynet.co.il/Integration/StoryRss2.xml", "he", ("B", 2)),
-    ("Times of Israel", "https://www.timesofisrael.com/feed/", "en", ("B", 2)),
-    ("Israel Hayom (Hebrew)", "https://www.israelhayom.co.il/rss", "he", ("C", 3)),
+    ("Jerusalem Post", "https://www.jpost.com/Rss/RssFeedsHeadlines.aspx", "en", ("B", 2)),
+    ("i24 News (English)", "https://www.i24news.tv/en/rss", "en", ("B", 2)),
     # European
     ("Le Monde (English)", "https://www.lemonde.fr/en/rss/une.xml", "en", ("B", 2)),
     ("El País (English)", "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada", "en", ("B", 2)),
+    ("El País (Spanish)", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", "es", ("B", 2)),
+    ("Corriere della Sera (Italian)", "https://xml2.corriereobjects.it/rss/esteri.xml", "it", ("B", 2)),
     # Asian
     ("Nikkei Asia", "https://asia.nikkei.com/rss/feed", "en", ("B", 2)),
+    ("The Hindu", "https://www.thehindu.com/news/feeder/default.rss", "en", ("B", 2)),
+    ("The Japan Times", "https://www.japantimes.co.jp/feed/top", "en", ("B", 2)),
+    ("Korea Herald", "http://www.koreaherald.com/rssxml/HeraldNews.xml", "en", ("B", 2)),
+    ("Channel News Asia", "https://www.channelnewsasia.com/rssfeeds/8395986", "en", ("B", 2)),
+    # Africa
+    ("allAfrica", "https://allafrica.com/tools/headlines/rss/latest/headlines.rdf", "en", ("B", 2)),
+    ("Africanews", "https://www.africanews.com/feed/", "en", ("B", 2)),
+    ("Daily Maverick (SA)", "https://www.dailymaverick.co.za/feed/", "en", ("B", 2)),
+    ("The East African", "https://www.theeastafrican.co.ke/rss/", "en", ("B", 2)),
+    # South America
+    ("MercoPress", "https://en.mercopress.com/rss.xml", "en", ("B", 2)),
+    ("Buenos Aires Times", "https://www.batimes.com.ar/rss", "en", ("B", 2)),
+    # Global Finance & Markets
+    ("MarketWatch", "https://feeds.marketwatch.com/marketwatch/topstories/", "en", ("B", 2)),
+    ("ZeroHedge", "https://feeds.feedburner.com/zerohedge/feed", "en", ("C", 3)),
 ]
 
 # Gmail intel digest — newsletters from Cipher Brief, Foreign Policy, etc.
@@ -112,18 +133,24 @@ def country_to_region(country: str, regions: dict) -> str | None:
     return None
 
 
-def fetch(url: str, timeout: int = 15) -> str | None:
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            data = resp.read()
-            try:
-                return data.decode("utf-8", errors="replace")
-            except Exception:
-                return None
-    except Exception as exc:
-        log(f"fetch failed for {url}: {exc}")
-        return None
+def fetch(url: str, timeout: int = 15, max_retries: int = 2) -> str | None:
+    """Fetch a URL with retry and exponential backoff."""
+    for attempt in range(max_retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            t = timeout * (attempt + 1)  # 15s first, 30s retry
+            with urllib.request.urlopen(req, timeout=t) as resp:
+                data = resp.read()
+                try:
+                    return data.decode("utf-8", errors="replace")
+                except Exception:
+                    return None
+        except Exception as exc:
+            if attempt < max_retries - 1:
+                log(f"fetch attempt {attempt+1} failed for {url}: {exc}, retrying...")
+            else:
+                log(f"fetch failed for {url}: {exc}")
+    return None
 
 
 def parse_rss(xml_text: str, source_name: str, default_admiralty=DEFAULT_ADMIRALTY) -> list[dict]:
@@ -480,6 +507,14 @@ def mock_incidents(regions: dict) -> list[dict]:
 
 
 def main() -> int:
+    # Load .env for BRAVE_API_KEY and other secrets
+    _env = pathlib.Path("/home/ubuntu/.openclaw/workspace/.env")
+    if _env.exists():
+        for _line in _env.read_text().splitlines():
+            if _line.startswith("BRAVE_API_KEY="):
+                os.environ.setdefault("BRAVE_API_KEY", _line.split("=", 1)[1].strip())
+                break
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--regions", required=True)
@@ -561,6 +596,8 @@ def main() -> int:
                                   feeds_to_try=feeds_to_try)
         incidents = normalise(raw, regions)
         incidents = deduplicate(incidents)
+        # Web search fallback: fill region gaps (<3 items) via Brave Search
+        incidents = web_search_fallback(incidents, regions)
         # Use adaptive per-region caps if available, else uniform cap
         if caps and any(c != args.cap_per_region for c in caps.values()):
             # Apply per-region caps
@@ -599,3 +636,119 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# ── Web search fallback for region gaps ───────────────────────────────
+
+WEB_SEARCH_REGIONS = {
+    "europe": ["Europe news", "Russia Ukraine war latest", "European Union politics"],
+    "asia": ["Asia news", "China Taiwan latest", "India South Asia news", "Japan Korea news"],
+    "middle_east": ["Middle East news", "Iran Gulf latest", "Israel Palestine news"],
+    "north_america": ["North America news", "US politics latest", "Mexico Canada news"],
+    "south_central_america": ["South America news", "Latin America news", "Venezuela Brazil latest"],
+    "global_finance": ["Global finance markets news", "Oil prices commodities", "IMF World Bank latest"],
+}
+
+
+def _brave_search(query: str, brave_key: str, timeout: int = 10) -> list[dict]:
+    """Search Brave Web Search API and return results."""
+    import urllib.parse as up
+    encoded = up.quote(query)
+    url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count=5&freshness=pd"
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip",
+        "X-Subscription-Token": brave_key,
+    })
+    resp = json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+    results = resp.get("web", {}).get("results", [])
+    out = []
+    for r in results[:5]:
+        title = r.get("title", "")
+        snippet = r.get("snippet", "")
+        url_out = r.get("url", "")
+        age = r.get("age", "")
+        if title and snippet:
+            out.append({
+                "title": title,
+                "summary": snippet,
+                "link": url_out,
+                "source": "Brave Search",
+                "pub": age,
+                "admiralty": ("B", 2),
+                "_bypass_filter": True,
+            })
+    return out
+
+
+def web_search_fallback(incidents: list[dict], regions: dict) -> list[dict]:
+    """Fill region gaps using Brave Search when RSS feeds return zero or near-zero items."""
+    brave_key = os.environ.get("BRAVE_API_KEY", "")
+    if not brave_key:
+        return incidents
+
+    # Count items per region
+    region_counts: dict[str, int] = {}
+    for inc in incidents:
+        r = inc.get("region", "unknown")
+        region_counts[r] = region_counts.get(r, 0) + 1
+
+    # Find regions with gaps (less than 3 items)
+    gap_regions = [r for r in WEB_SEARCH_REGIONS if region_counts.get(r, 0) < 3]
+    if not gap_regions:
+        return incidents
+
+    log(f"Region gaps detected (fewer than 3 items): {', '.join(gap_regions)} — querying Brave Search")
+
+    new_raw: list[dict] = []
+    for region in gap_regions:
+        queries = WEB_SEARCH_REGIONS[region]
+        for query in queries:
+            try:
+                results = _brave_search(query, brave_key)
+                if results:
+                    log(f"  Brave Search '{query}': {len(results)} results")
+                    new_raw.extend(results)
+            except Exception as exc:
+                log(f"  Brave Search failed for '{query}': {exc}")
+
+    if not new_raw:
+        return incidents
+
+    # Normalise the Brave Search results into incidents
+    now = dt.datetime.now(dt.timezone.utc)
+    cutoff = now - dt.timedelta(hours=24)
+    for item in new_raw:
+        country = detect_country(f"{item.get('title','')} {item.get('summary','')}", regions)
+        rg = country_to_region(country or "", regions) if country else None
+        if not rg:
+            # Finance fallback
+            text = f"{item.get('title','')} {item.get('summary','')}".lower()
+            if any(k in text for k in ("inflation", "rate", "yield", "default", "downgrade", "central bank", "fx", "oil", "brent", "market", "trade")):
+                rg = "global_finance"
+        if not rg:
+            continue
+        occurred = now.isoformat().replace("+00:00", "Z")
+        out_item = {
+            "id": make_id(occurred, country or rg, item["title"]),
+            "region": rg,
+            "country": country,
+            "lat": None, "lon": None,
+            "occurred_at_utc": occurred,
+            "actors": [],
+            "category": "web_search",
+            "headline": item["title"],
+            "summary": (item.get("summary") or "")[:600],
+            "sources": [{
+                "name": item["source"],
+                "url": item.get("link"),
+                "admiralty_reliability": item["admiralty"][0],
+                "admiralty_credibility": item["admiralty"][1],
+                "retrieved_at_utc": now.isoformat().replace("+00:00", "Z"),
+            }],
+            "single_source": True,
+            "confidence_collector": "low",
+        }
+        incidents.append(out_item)
+
+    log(f"Web search fallback added {len(new_raw)} items across {len(gap_regions)} gap regions")
+    return incidents

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T04:34:02.408Z",
+  "updatedAt": "2026-05-14T15:41:49.683Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -385,13 +385,13 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
@@ -401,14 +401,16 @@
         "d2222a517dea",
         "29314a1ed0f7",
         "196f8419e846",
-        "d76260b5998d"
+        "d76260b5998d",
+        "f3aa65b3123e"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
         "2026-05-05",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "saturday",
@@ -500,13 +502,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.611906618286374,
+      "totalScore": 16.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-11T04:52:51.742Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -523,7 +525,8 @@
         "23c38c53aa26",
         "bfb778309dbc",
         "f7d1f8923a5d",
-        "088d05594874"
+        "088d05594874",
+        "f3aa65b3123e"
       ],
       "recallDays": [
         "2026-05-04",
@@ -532,7 +535,8 @@
         "2026-05-07",
         "2026-05-08",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "gateway",
@@ -803,13 +807,13 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Added \"For Agents & Bots\" section between Methodology and Pricing - Analytics note: GH Pages has no built-in analytics (would need Plausible/GA added) ## Daily Brief Pipeline — Missing Cron - Main `daily-brief-cron.sh` (05:00 PT trigger) is NOT registered in OpenClaw cron jobs - Previously had cron ID `250765ae-d951-490c-b3d0-109fca300053` (from 2026-05-04 memory) - Downstream cron jobs (magazine PDF 05:30, forward-brief 06:30, social 13:30) exist but depend on the brief being produced - Magazine PDF builder has hardcoded date \"04 May 2026\" in its cron message - Buttondown newsletter cron (05:45) is enabled but no API key set - Asked Roderick if he wants me to re-register the missed cron",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.808350458818029,
+      "totalScore": 7.808350458818029,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T20:30:27.523Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
       "queryHashes": [
         "945ebcfdc68d",
         "0b07f259823a",
@@ -817,14 +821,16 @@
         "c498ef76cb1d",
         "577729f1e069",
         "f7d1f8923a5d",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "f3aa65b3123e"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ],
       "conceptTags": [
         "built-in",
@@ -844,13 +850,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-13T00:03:48.461Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -860,7 +866,8 @@
         "4fdd6eb8041e",
         "b5deefa4bb81",
         "b84acb705a0f",
-        "196f8419e846"
+        "196f8419e846",
+        "f3aa65b3123e"
       ],
       "recallDays": [
         "2026-05-07",
@@ -868,7 +875,8 @@
         "2026-05-09",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -1205,6 +1213,194 @@
         "openclaw.json",
         "top-level",
         "cron.jobs"
+      ]
+    },
+    "memory:memory/2026-05-13.md:47:84": {
+      "key": "memory:memory/2026-05-13.md:47:84",
+      "path": "memory/2026-05-13.md",
+      "startLine": 47,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "queryHashes": [
+        "35087ae309b1",
+        "f3aa65b3123e"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "analysis/alerts",
+        "hd-05",
+        "4.7",
+        "tier-1",
+        "md-02",
+        "md-03",
+        "roderick.jones",
+        "gmail.com"
+      ]
+    },
+    "memory:memory/2026-05-13.md:73:98": {
+      "key": "memory:memory/2026-05-13.md:73:98",
+      "path": "memory/2026-05-13.md",
+      "startLine": 73,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-14T04:11:06.835Z",
+      "queryHashes": [
+        "35087ae309b1"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "scripts/autonomy-tracker.py",
+        "89/100",
+        "83/100",
+        "100/100",
+        "50/100",
+        "roderick.jones",
+        "gmail.com"
+      ]
+    },
+    "memory:memory/2026-05-12.md:111:136": {
+      "key": "memory:memory/2026-05-12.md:111:136",
+      "path": "memory/2026-05-12.md",
+      "startLine": 111,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "- Europe (4+ sources, full): \"standard bands apply — highly likely available\" - Also injected into exec summary prompt as {collection_quality_summary} ### Loop 3: Source Quality → Source Priority (CLOSED) - Source utilization tracked in collection-state.json — cited vs fetched counts - Feed priority tiers computed by collection_state.py --feed-priorities - collect.py reads priorities, skips tier-3 feeds, alternates tier-2 - After 5+ runs: uncited feeds (Reuters World, AP World, FT World) → RETIRED ### Loop 4: Calibration → Prompt Adaptation (CLOSED) - calibration-tracking.json seeded with 20 judgments across 6 regions - Overconfidence flags detected: Middle East highly likely 82% with 2 so",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-14T04:11:06.835Z",
+      "queryHashes": [
+        "35087ae309b1"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "collection-quality-summary",
+        "collection-state.json",
+        "collection-state.py",
+        "feed-priorities",
+        "collect.py",
+        "tier-3",
+        "tier-2",
+        "calibration-tracking.json"
+      ]
+    },
+    "memory:memory/2026-05-12.md:131:159": {
+      "key": "memory:memory/2026-05-12.md:131:159",
+      "path": "memory/2026-05-12.md",
+      "startLine": 131,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "- Escalations expire after 24h. Tested end-to-end: caps 20→40→20 on clear ### Meta-Cognition Daemon (BUILT) - Created scripts/self_assessment.py — scores 7 dimensions daily - Collection, Calibration, Routing, Config, Observation, Autonomy, Epistemic - Weighted overall score, regression detection against yesterday's scores - If any dimension < 50: writes self-assessment-injection.md for next pipeline prompt - If critical (<40): flags for system action - First assessment: 83/100 (routing fix took it from 75→83) ## LDAP-7 Starmer Profile — 2026-05-12 Built a full LDAP-7 profile for Keir Starmer as a persistent leader profile: - D1 Optionality: 4 (moderate — forecloses options to signal decis",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-14T04:11:06.835Z",
+      "queryHashes": [
+        "35087ae309b1"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "meta-cognition",
+        "scripts/self-assessment.py",
+        "self-assessment-injection.md",
+        "83/100",
+        "ldap-7",
+        "escalations",
+        "expire"
+      ]
+    },
+    "memory:memory/2026-05-12.md:153:162": {
+      "key": "memory:memory/2026-05-12.md:153:162",
+      "path": "memory/2026-05-12.md",
+      "startLine": 153,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "- CPCA: ALL GREEN — Starmer's problems are political/structural, not cognitive - Profile saved to brain/memory/semantic/ldap7-profiles/starmer-keir.md ## Products Delivered (2026-05-12) 1. UK Security & Intelligence Assessment — comprehensive threat analysis (7 sections, 5 KJs) 2. Starmer Leadership Analysis — descriptive profile + 30-day outlook 3. Starmer LDAP-7 Analysis — scored framework with decision-cycle diagnosis and CPCA overlay 4. Both reports scheduled for email delivery at 06:00 PT to roderick.jones@gmail.com",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "queryHashes": [
+        "35087ae309b1",
+        "f3aa65b3123e"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "political/structural",
+        "30-day",
+        "ldap-7",
+        "decision-cycle",
+        "roderick.jones",
+        "gmail.com",
+        "cpca",
+        "all"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:13": {
+      "key": "memory:memory/2026-05-14.md:1:13",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "## Perplexity Benchmark — Set up - Perplexity produces a GSIB daily that lands in trevor.mentis@gmail.com with label \"Important MyClaw Use this\" - Roderick flagged it as the quality benchmark — my output should converge toward it - Created `scripts/benchmark_compare.py` — scores both briefs across 5 dimensions (persona, signal density, trade integration, framework reframes, prioritization) - Wired as Step 10 in `daily-brief-cron.sh` (runs after self-assessment) - Updated system prompt in `deepseek-prompts.md` for: analyst-to-analyst voice, direct address, trade-inline style - Updated regional prompt template with `{prediction_market_data}` and `{standing_assessment}` fields - Updated `regi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "queryHashes": [
+        "f3aa65b3123e"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "trevor.mentis",
+        "gmail.com",
+        "scripts/benchmark-compare.py",
+        "daily-brief-cron.sh",
+        "self-assessment",
+        "deepseek-prompts.md",
+        "analyst-to-analyst",
+        "trade-inline"
       ]
     }
   }

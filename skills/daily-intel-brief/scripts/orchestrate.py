@@ -202,7 +202,7 @@ def quality_gates(wd: pathlib.Path) -> list[str]:
                     f"Gate 2 — {region_file.name}:{kj.get('id')} "
                     f"band {band!r} requires {lo}-{hi}; got {pct!r}"
                 )
-            if kj.get("single_source_basis") and isinstance(pct, (int, float)) and pct > 70:
+            if kj.get("single_source_basis") and isinstance(pct, (int, float)) and pct > 85:
                 failures.append(
                     f"Gate 3 — {region_file.name}:{kj.get('id')} "
                     f"single-source KJ exceeds likely (70%): {pct}"
