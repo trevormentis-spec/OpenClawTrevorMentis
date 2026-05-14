@@ -1,0 +1,5 @@
+- [2026-05-11] ### What went wrong (source: 2026-05-11.md, confidence: medium)
+- [2026-05-11] - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. (source: 2026-05-11.md, confidence: medium)
+- [2026-05-11] - **Projection math was wrong** for at least 3 versions. `cfg["center"]` stored as `(lat, lon)` but projection code treated it as `(lon, lat)`, putting all markers off-screen (source: 2026-05-11.md, confidence: medium)
+- [2026-05-12] - Uses Opus 4.7 as oracle model to determine correct/incorrect/unresolved (source: 2026-05-12.md, confidence: medium)
+- [2026-05-12] - Running accuracy tracked: 0/20 correct, 0 incorrect, 20 unresolved (all ≤24h old) (source: 2026-05-12.md, confidence: medium)

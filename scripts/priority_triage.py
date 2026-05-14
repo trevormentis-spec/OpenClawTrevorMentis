@@ -210,21 +210,74 @@ def scan_gmail() -> list[dict]:
     return signals
 
 
-def scan_web() -> list[dict]:
-    """Search the web for breaking geopolitical developments using Perplexity Sonar via OpenRouter.
+def _sonar_query(question: str, api_key: str, timeout: int = 30) -> str | None:
+    """Query Perplexity Sonar via OpenRouter with configurable timeout."""
+    payload = {
+        "model": "perplexity/sonar-pro",
+        "messages": [{"role": "user", "content": question}],
+        "temperature": 0.1,
+        "max_tokens": 1024,
+    }
+    req = urllib.request.Request(
+        "https://openrouter.ai/api/v1/chat/completions",
+        data=json.dumps(payload).encode(),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://github.com/trevormentis-spec",
+            "X-Title": "TREVOR Triage",
+        },
+        method="POST",
+    )
+    resp = json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+    return resp["choices"][0]["message"]["content"]
 
-    Sonar gives synthesized answers with citations instead of raw links —
-    much better for triage because it distills overnight developments into
-    a coherent narrative we can score.
+
+def _brave_search(query: str, brave_key: str, timeout: int = 15) -> str | None:
+    """Fallback Brave Search via API when Sonar fails.
+    Returns concatenated title+snippet+url from the top results.
+    """
+    import urllib.parse
+
+    encoded = urllib.parse.quote(query)
+    url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count=5"
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip",
+        "X-Subscription-Token": brave_key,
+    })
+    resp = json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+    results = resp.get("web", {}).get("results", [])
+    if not results:
+        return None
+    lines = []
+    for r in results[:5]:
+        t = r.get("title", "")
+        s = r.get("snippet", "")
+        u = r.get("url", "")
+        if t and s:
+            lines.append(f"{t}: {s} ({u})")
+    return "\n".join(lines) if lines else None
+
+
+def scan_web() -> list[dict]:
+    """Search the web for breaking geopolitical developments.
+
+    Primary: Perplexity Sonar via OpenRouter (synthesized answers, 1 retry).
+    Fallback: Brave Search API (raw snippets) when Sonar times out or fails.
     """
     signals = []
 
-    api_key = os.environ.get("OPENROUTER_API_KEY", "")
-    if not api_key:
-        log("OPENROUTER_API_KEY not set — web scan disabled")
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY", "")
+    brave_key = os.environ.get("BRAVE_API_KEY", "")
+
+    if not openrouter_key and not brave_key:
+        log("No API keys configured for web scan — needs OPENROUTER_API_KEY or BRAVE_API_KEY")
         return signals
 
-    # Strategic questions — Sonar handles complex queries better than keyword search
+    if not openrouter_key:
+        log("OPENROUTER_API_KEY not set — Brave Search only")
+
     questions = [
         "What are the major overnight developments in the Iran Strait of Hormuz situation as of the last 24 hours?",
         "What are the latest developments in CIA operations against Mexican cartels?",
@@ -234,7 +287,6 @@ def scan_web() -> list[dict]:
         "What are the latest US-Venezuela developments including annexation rhetoric?",
     ]
 
-    # Map questions to signal topics
     topic_map = {
         "Iran": "Iran Hormuz Strait",
         "Mexico": "CIA Mexico cartels",
@@ -251,68 +303,72 @@ def scan_web() -> list[dict]:
         "drone": 8, "explosion": 12, "mobilization": 15, "exclusive": 15,
     }
 
+    def _score_answer(answer: str, question: str) -> dict:
+        topic = "Geopolitics"
+        for key, val in topic_map.items():
+            if key in question:
+                topic = val
+                break
+        text_l = answer.lower()
+        score = 25
+        for kw, boost in severity_keywords.items():
+            count = text_l.count(kw)
+            score += min(count * boost * 0.5, boost)
+        if len(answer) > 500:
+            score += 10
+        if len(answer) > 1000:
+            score += 5
+        score = min(score, 100)
+        return {"topic": topic, "score": score, "tier": "tier1" if score >= 80 else "tier2"}
+
     for question in questions:
-        try:
-            payload = {
-                "model": "perplexity/sonar-pro",
-                "messages": [{"role": "user", "content": question}],
-                "temperature": 0.1,
-                "max_tokens": 1024,
-            }
-            req = urllib.request.Request(
-                "https://openrouter.ai/api/v1/chat/completions",
-                data=json.dumps(payload).encode(),
-                headers={
-                    "Authorization": f"Bearer {api_key}",
-                    "Content-Type": "application/json",
-                    "HTTP-Referer": "https://github.com/trevormentis-spec",
-                    "X-Title": "TREVOR Triage",
-                },
-                method="POST",
-            )
-            resp = json.loads(urllib.request.urlopen(req, timeout=30).read())
-            answer = resp["choices"][0]["message"]["content"]
+        answer = None
+        source = None
 
-            if not answer or len(answer) < 50:
-                continue
+        # Primary: Sonar (with 1 retry on failure, longer timeout on retry)
+        if openrouter_key:
+            for attempt in range(2):
+                try:
+                    t = 45 if attempt == 0 else 60
+                    answer = _sonar_query(question, openrouter_key, timeout=t)
+                    source = "sonar"
+                    if answer and len(answer) >= 50:
+                        break
+                    log(f"Sonar short answer ({len(answer or '')} chars), retrying...")
+                    answer = None
+                except Exception as exc:
+                    log(f"Sonar attempt {attempt+1} failed: {exc}")
+                    answer = None
 
-            # Identify topic from question
-            topic = "Geopolitics"
-            for key, val in topic_map.items():
-                if key in question:
-                    topic = val
-                    break
+        # Fallback: Brave Search (if Sonar failed and Brave key exists)
+        if (not answer or len(answer or "") < 50) and brave_key:
+            try:
+                terms = question.replace("What are the ", "").replace("latest ", "").replace("major ", "")
+                terms = terms.replace("overnight ", "").replace("in the last 24 hours", "").replace("?", "")
+                log(f"Falling back to Brave for: {terms[:80]}...")
+                brave_result = _brave_search(terms, brave_key)
+                if brave_result:
+                    answer = brave_result
+                    source = "brave"
+                    log(f"Brave fallback succeeded")
+            except Exception as exc:
+                log(f"Brave fallback failed: {exc}")
 
-            text_l = answer.lower()
+        if not answer or len(answer) < 50:
+            log(f"All sources failed for: {question[:60]}...")
+            continue
 
-            # Score by keyword severity — Sonar's answer is richer than snippets
-            score = 25
-            for kw, boost in severity_keywords.items():
-                count = text_l.count(kw)
-                score += min(count * boost * 0.5, boost)
-
-            # Bonus for length/depth of answer
-            if len(answer) > 500:
-                score += 10
-            if len(answer) > 1000:
-                score += 5
-
-            score = min(score, 100)
-
-            signals.append({
-                "source": "sonar",
-                "type": "breaking_news",
-                "topic": topic,
-                "answer_preview": answer[:400],
-                "score": score,
-                "tier": "tier1" if score >= 80 else "tier2",
-                "id": f"sonar-{abs(hash(question)) % 1000:03d}",
-            })
-
-            log(f"  Sonar [{topic}]: score={score}, {len(answer)} chars")
-
-        except Exception as exc:
-            log(f"Sonar query failed: {question[:50]}... \u2192 {exc}")
+        scored = _score_answer(answer, question)
+        signals.append({
+            "source": source,
+            "type": "breaking_news",
+            "topic": scored["topic"],
+            "answer_preview": answer[:400],
+            "score": scored["score"],
+            "tier": scored["tier"],
+            "id": f"{source}-{abs(hash(question)) % 1000:03d}",
+        })
+        log(f"  {source.capitalize()} [{scored['topic']}]: score={scored['score']}, {len(answer)} chars")
 
     return signals
 

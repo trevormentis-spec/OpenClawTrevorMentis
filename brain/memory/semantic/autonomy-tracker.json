@@ -190,6 +190,355 @@
       },
       "tier": "tier1",
       "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260513-203940.md"
+    },
+    {
+      "timestamp": "2026-05-13T21:34:18Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here are the main developments in the Strait of Hormuz over roughly the last 24 hours, based on the sources you provided:\n\n**1. Ceasefire effectively collapsed; active U.S.\u2013Iran clashes**  \n- The brief de\u2011escalation has broken down and both sides have fired on each other again.  \n- Iran launched cruise missiles, drones, and fast boats at U.S. forces and/or escorted shipping.  \n- U.S. forces (inclu",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-249"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260513-213418.md"
+    },
+    {
+      "timestamp": "2026-05-13T22:33:34Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine war",
+        "answer_preview": "Here are the main reported military developments over roughly the last 24 hours, based on the sources you provided and major wire services:\n\n1. **Mass Russian drone and missile strikes on Ukraine**  \n   - Russia launched one of its larger recent air operations, using **around 200 Shahed-type \u201csuicide\u201d drones** in a **daytime swarm attack** across multiple regions, including western Ukraine and the",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-165"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260513-223334.md"
+    },
+    {
+      "timestamp": "2026-05-13T22:33:34Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "foreign policy <newsletters@foreignpolicy.com>",
+        "subject": "Editors\u2019 Picks: There\u2019s no need to fear China\u2019s economy",
+        "snippet": "Plus: Beijing&#39;s quest for uniformity may be its Achilles&#39; heel. MAY 13, 2026 | VIEW IN BROWSER | SUBSCRIBE With support from World Smart Sustainable Cities Organization (WeGO) A woman waves a",
+        "score": 70,
+        "tier": "tier2",
+        "id": "gmail-19e235af"
+      },
+      "tier": "tier2",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260513-223334.md"
+    },
+    {
+      "timestamp": "2026-05-13T23:34:33Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here are the main developments over roughly the last 24 hours in the Strait of Hormuz crisis and the wider Iran\u2013US/Israel confrontation, based on the material you surfaced and related context:\n\n1. **Iran signals it will harden its control over the Strait**\n   - Iran says its **\u201cStrait of Hormuz management plan\u201d has been finalized and sent to parliament** for approval (YouTube [1]).  \n   - Official",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-380"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260513-233433.md"
+    },
+    {
+      "timestamp": "2026-05-13T23:34:56Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Iran Update Special Report, May 13, 2026",
+        "snippet": "Iran&#39;s efforts to reconstitute its military capabilities during the ceasefire period are consistent with the behavior of any military organization when given time and space to reconstitute itself",
+        "score": 90,
+        "tier": "tier1",
+        "id": "gmail-19e239b9"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260513-233456.md"
+    },
+    {
+      "timestamp": "2026-05-14T00:32:42Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine war",
+        "answer_preview": "Here are the main military developments in the Russia\u2011Ukraine war over roughly the last 24 hours, based on the sources you provided and major wire services:\n\n1. **Renewed large\u2011scale Russian air attack on Kyiv and other cities**  \n   - Russian forces launched another major overnight strike on Kyiv using a mix of drones and ballistic missiles.  \n   - Ukrainian air defenses intercepted most incoming",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-676"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-003242.md"
+    },
+    {
+      "timestamp": "2026-05-14T01:32:53Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260514-013253.md"
+    },
+    {
+      "timestamp": "2026-05-14T02:02:53Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Russian Offensive Campaign Assessment, May 13, 2026",
+        "snippet": "The Kremlin is doubling down on its demand that Ukraine withdraw from all of Donbas as a precondition for the resumption of negotiations. May 13, 2026 Data Cutoff: 12:00 PM ET Samuel Shafiro, Jakub",
+        "score": 90,
+        "tier": "tier1",
+        "id": "gmail-19e242f8"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-020253.md"
+    },
+    {
+      "timestamp": "2026-05-14T02:03:13Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260514-020313.md"
+    },
+    {
+      "timestamp": "2026-05-14T08:05:41Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "### Major Overnight Developments in Strait of Hormuz (Last 24 Hours as of May 14, 2026, 8 AM UTC)\n\nThe situation has escalated dramatically overnight, with the fragile ceasefire collapsing amid direct US-Iran naval clashes, ship seizures, and renewed restrictions. Here's a breakdown of key events from search results (primarily May 13-14 reporting), focused on the past day:\n\n#### 1. **Ceasefire Bre",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-517"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-080541.md"
+    },
+    {
+      "timestamp": "2026-05-14T10:02:10Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "### Major Overnight Developments in Strait of Hormuz Situation (Last 24 Hours as of May 14, 2026, 10 AM UTC)\n\nBased on the provided search results, here are the key events reported from approximately the past day, centered on Thursday's escalations. These focus on U.S. military actions, Iranian responses, and shipping disruptions:\n\n#### 1. **U.S. \"Self-Defense Strikes\" on Iranian Ports**\n   - U.S.",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-998"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-100210.md"
+    },
+    {
+      "timestamp": "2026-05-14T12:35:53Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260514-123553.md"
+    },
+    {
+      "timestamp": "2026-05-14T12:36:11Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260514-123611.md"
+    },
+    {
+      "timestamp": "2026-05-14T16:02:49Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "### Overview of CIA Operations Against Mexican Cartels\nRecent reports from May 2026 highlight an alleged escalation in CIA activities targeting Mexican drug cartels, particularly under the Trump administration's second term. These operations focus on dismantling cartel networks through intelligence, surveillance, and reportedly lethal actions. Key developments stem from a CNN exclusive on May 12, ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-390"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-160249.md"
+    },
+    {
+      "timestamp": "2026-05-14T16:03:10Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260514-160310.md"
+    },
+    {
+      "timestamp": "2026-05-14T16:03:32Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260514-160332.md"
+    },
+    {
+      "timestamp": "2026-05-14T16:32:15Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "### Overview of CIA Operations Against Mexican Cartels\nRecent reports from May 2026 reveal an escalation in CIA involvement in Mexico, shifting from intelligence support to direct lethal actions against cartel networks. This campaign, intensified under President Trump's second term, targets mid-level operators and aims to dismantle organizations like the Sinaloa and Jalisco New Generation Cartels.",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-283"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-163215.md"
+    },
+    {
+      "timestamp": "2026-05-14T17:01:45Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Russia Ukraine war",
+        "answer_preview": "### Key Military Developments in the Russia-Ukraine War (Last 24 Hours, as of May 14, 2026)\n\nRussian forces launched one of the largest drone and missile barrages on Ukraine in recent months, targeting Kyiv and multiple other cities. Here's a breakdown based on confirmed reports:\n\n#### Major Russian Attacks on Ukraine\n- **Kyiv Strikes**: Overnight into May 14, massive drone and missile assaults hi",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-999"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-170145.md"
+    },
+    {
+      "timestamp": "2026-05-14T17:31:56Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "### Overview of CIA Operations Against Mexican Cartels\n\nRecent reporting, primarily from May 2026, reveals an escalation in the CIA's covert activities targeting Mexican drug cartels, shifting from intelligence support to direct involvement in lethal operations. These efforts are framed as part of the Trump administration's counterterrorism strategy, following the designation of major cartels (e.g",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-980"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-173156.md"
+    },
+    {
+      "timestamp": "2026-05-14T18:02:13Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "### Overview of CIA Operations Against Mexican Cartels\nRecent reports, primarily from May 2026, indicate a significant escalation in CIA involvement in Mexico, shifting from intelligence support to direct participation in lethal operations against cartel members. This aligns with the Trump administration's designation of cartels as foreign terrorist organizations and CIA Director John Ratcliffe's ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-921"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-180213.md"
+    },
+    {
+      "timestamp": "2026-05-14T18:31:58Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "### Major Overnight Developments in Strait of Hormuz (Last 24 Hours as of May 14, 2026)\n\nBased on the latest reports from Hormuz Monitor, Reuters, NBC News, and aggregated feeds (e.g., NewsNow), the situation has escalated sharply from a brief de-escalation window into renewed active conflict. Here's a breakdown of the key events since approximately May 13 evening UTC:\n\n#### 1. **Ceasefire Collaps",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-587"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-183158.md"
+    },
+    {
+      "timestamp": "2026-05-14T19:04:18Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "Here are the main, latest developments regarding alleged CIA operations against Mexican drug cartels, based on the reporting and commentary you surfaced:\n\n1. **Shift from intelligence support to lethal operations**  \n   - CNN reports that CIA Ground Branch teams have moved beyond providing intelligence to Mexican forces and are now directly involved in **lethal targeting operations** against carte",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-015"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-190418.md"
+    },
+    {
+      "timestamp": "2026-05-14T19:04:39Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260514-190439.md"
+    },
+    {
+      "timestamp": "2026-05-14T19:05:00Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260514-190500.md"
+    },
+    {
+      "timestamp": "2026-05-14T19:32:08Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here are the main developments over roughly the last 24 hours in the Strait of Hormuz crisis, based on the sources you provided:\n\n**1. Ceasefire effectively broken; active exchanges of fire**  \n- Iran and the US have traded fire in and around the Strait despite the formal ceasefire framework.  \n- CENTCOM describes US actions as \u201cdefensive strikes\u201d against \u201cunprovoked Iranian assaults,\u201d while Iran ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-816"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-193208.md"
     }
   ]
 }

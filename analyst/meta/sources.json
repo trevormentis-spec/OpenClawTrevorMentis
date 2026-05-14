@@ -998,6 +998,216 @@
       "languages": [
         "en"
       ]
+    },
+    {
+      "name": "Conflicts Forum (Alastair Crooke)",
+      "type": "Substack/Think Tank",
+      "focus": "Iranian strategic perspective on war: Khamenei 5 conditions, two-stage peace proposal, asymmetric naval warfare analysis, how Iran defeated Operation Project Freedom. Former MI6 officer founded Conflicts Forum 2004.",
+      "url": "https://conflictsforum.substack.com",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Strategic Perspectives from Iran: War & the New Geopolitical Order in West Asia\" (May 13, 2026). Also \"Iran Defiant, Hardens its Stance\" interview with Lt. Col. Daniel Davis (May 11). Essential Iranian narrative baseline source."
+    },
+    {
+      "name": "Palaemon Maritime",
+      "type": "Maritime Security Blog",
+      "focus": "Weekly Maritime Security Reports covering Middle East Gulf/Hormuz. Three US destroyers attacked in Hormuz (USS Truxton, USS Mason, USS Rafael Peralta).",
+      "url": "https://www.palaemonmaritime.com",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "Maritime Security Report: 4-10 May 2026 (May 11). Weekly frequency. Good maritime incident forensics."
+    },
+    {
+      "name": "Dryad Global / Channel 16",
+      "type": "Maritime Intelligence Blog",
+      "focus": "Weekly Maritime Intelligence Brief: GPS interference, Iranian military activity, commercial shipping risk assessment in Hormuz.",
+      "url": "https://channel16.dryadglobal.com",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "Weekly Maritime Intelligence Brief updated May 11, 2026. Commercial maritime security intelligence provider."
+    },
+    {
+      "name": "OAF Nation",
+      "type": "Independent News/Analysis Blog",
+      "focus": "Lebanon/Hezbollah FPV drone warfare analysis, Iran ceasefire developments, Hegseth Iran statement coverage.",
+      "url": "https://oafnation.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Analysis: Evolving drone war in southern Lebanon clouds Iran peace prospects\" (May 12) \u2014 Hezbollah fiber-optic FPV drones evading Israeli jamming. Also Hegseth ceasefire statement (May 7)."
+    },
+    {
+      "name": "HSToday (Homeland Security Today)",
+      "type": "Security/Homeland Security Magazine",
+      "focus": "Post-Iran war West Asian security reordering analysis: China orchestrated through Pakistan and Saudi-Pakistan-Turkey security lattice. Established 12+ year publication.",
+      "url": "https://www.hstoday.us",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"PERSPECTIVE: Reordering of West Asian Security After the Iran War: Part 2\" (May 12, 2026). Authoritative homeland security publication."
+    },
+    {
+      "name": "Markham Hislop Substack",
+      "type": "Substack/Energy Journalism",
+      "focus": "Iran Hormuz negotiating leverage analysis: insurance-driven blockade economics, Iran's strategy of disruption-without-closure. Veteran energy journalist.",
+      "url": "https://markhamhislop.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Iran in Driver's Seat as Trump Fumbles Strait of Hormuz Negotiations\" (May 11, 2026). Energy journalist covering Canada/US energy transition."
+    },
+    {
+      "name": "Defence Security Asia",
+      "type": "Defense Blog/Asian Security",
+      "focus": "Asian defense perspective on Hormuz: Iran Ghadir submarine deployment, Pakistan Gwadar corridor impact, US naval blockade challenges.",
+      "url": "https://defencesecurityasia.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Iran Deploys Trigger-Ready Ghadir Submarines to Strait of Hormuz\" (May 11). \"Pakistan Opens Gwadar Corridor to Iran\" (Apr 30). Niche Asian defense blog."
+    },
+    {
+      "name": "Discovery Alert Australia",
+      "type": "Energy Analysis Blog",
+      "focus": "Data-driven Hormuz oil supply shock analysis: AIS dark tanker tracking (VLCCs, 6M barrels), Brent price modeling ($154/bbl at 12 weeks), war-risk insurance quantification.",
+      "url": "https://discoveryalert.com.au",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "Multiple pieces: \"Hormuz Tankers Going Dark\" (May 11), \"Strait of Hormuz Oil Supply Shock\" (May 12), \"Strait of Hormuz Shipping Disruption\" (May 10). High-quality data journalism on oil crisis."
+    },
+    {
+      "name": "The Energy Newsbeat (Stu Turley)",
+      "type": "Substack/Energy News",
+      "focus": "Hormuz energy crisis reporting from Strait: US Navy escort operations, ceasefire fragility, oil market impact.",
+      "url": "https://theenergynewsbeat.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Reporting from the Strait of Hormuz Energy\" (May 9, 2026). Ground-level energy reporting."
+    },
+    {
+      "name": "Samuel E. Roberson Jr.",
+      "type": "Substack/Intel Analysis",
+      "focus": "Weekly fact-based report on Israel-Iran conflict with detailed data: oil storage timelines (40-45 day runoff), Lebanon casualty figures (2,600+ deaths), ceasefire condition tracking.",
+      "url": "https://samuelerobersonjr.substack.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Weekly Fact-Based Report: Israel-Iran Conflict and Regional Escalations Period: May 2-8, 2026\" (May 9). Data-heavy format useful for brief quant sections."
+    },
+    {
+      "name": "Carra Globe",
+      "type": "Supply Chain Analysis Blog",
+      "focus": "Hormuz closure supply chain impact: P&I insurance cancelled March 5, major carriers (Maersk, CMA CGM, MSC, Hapag-Lloyd) suspended transits, 150 tankers anchored outside strait.",
+      "url": "https://carraglobe.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Strait of Hormuz Closure 2026: What It Means for Your Supply Chain and Shipping Routes\" (May 9). Practical logistics analysis."
+    },
+    {
+      "name": "MEPEI (Middle East Political & Economic Institute)",
+      "type": "Think Tank/Analysis",
+      "focus": "China energy market impact from Hormuz blockade: 33% China crude imports via Hormuz, daily affected volume 4.6-5.8M bbl, alternative route capacity analysis.",
+      "url": "https://mepei.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Analysis of the Impact of the Strait of Hormuz Blockade on China's Energy Market\" (Apr 2026). Specialized China energy analysis."
+    },
+    {
+      "name": "Al-Monitor",
+      "type": "News/Independent Journalism",
+      "focus": "Factbox coverage of Iran war effects on Middle East states: Lebanon buffer zone analysis, Israel-Hezbollah dynamics, regional economic disruption. Established ME independent news since 2012.",
+      "url": "https://www.al-monitor.com",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Factbox: How has the Iran war affected Middle East states?\" (May 13, 2026). Established since 2012."
+    },
+    {
+      "name": "AGBI (Arabian Gulf Business Insight)",
+      "type": "Business News/Gulf",
+      "focus": "Hormuz insurance market analysis: safety concerns outweighing insurance availability, shipowners declining coverage, risk assessment.",
+      "url": "https://www.agbi.com",
+      "signal_level": "Medium-High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Safety a bigger concern than insurance for Hormuz shipowners\" (May 13, 2026). Gulf business insight publication."
+    },
+    {
+      "name": "Wichita Liberty",
+      "type": "Independent Analysis Blog",
+      "focus": "Psychological analysis of Trump Iran war rhetoric: perseveration patterns, 'idea fixe' analysis (8+ nuclear weapon references in 17 min), cognitive assessment framing.",
+      "url": "https://www.wichitaliberty.org",
+      "signal_level": "Medium",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Trump Iran War Rhetoric: Psychological Analysis \u2014 May 2026\" (May 13). Niche analytic frame useful for behavioral profiling."
+    },
+    {
+      "name": "Ru4People (Mike Simpson)",
+      "type": "Substack/Daily News Aggregator",
+      "focus": "Daily Iran war news update: ceasefire expiry May 17 tracking, diplomatic schedule monitoring, Hormuz blockade status.",
+      "url": "https://ru4people.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Morning News Update: May 11, 2026\" and \"Morning News Update: May 8, 2026\". Useful for timeline tracking."
+    },
+    {
+      "name": "The Prekend",
+      "type": "Substack/Weekly Briefing",
+      "focus": "Weekly summary of US-Iran conflict: Trump rejects Iran counterproposal, ceasefire status, Hormuz situation.",
+      "url": "https://theprekend.substack.com",
+      "signal_level": "Medium",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "\"Sunday May 10th, 2026\" edition. Concise weekly wrap."
+    },
+    {
+      "name": "IEA Oil Market Report - May 2026",
+      "type": "Authoritative Energy Data",
+      "focus": "NEW May 2026 edition: Dated Brent premium normalized from record $35/bbl to $3/bbl, mounting supply losses depleting global inventories, demand destruction forecast (-420k bpd by end 2026).",
+      "url": "https://www.iea.org/reports/oil-market-report-may-2026",
+      "signal_level": "High - updated",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "May 2026 edition published May 13. New data on supply loss depletion rates."
+    },
+    {
+      "name": "EIA Short-Term Energy Outlook - May 2026",
+      "type": "Authoritative Energy Data",
+      "focus": "NEW May 2026 edition: Global oil inventories to fall avg 8.5M b/d in 2Q26, Brent avg ~$106/bbl May-June, Hormuz traffic collapse quantified.",
+      "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+      "signal_level": "High - updated",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "STEO May 2026 published May 11. Official US government oil forecasting data."
+    },
+    {
+      "name": "OSINTdefender (Telegram)",
+      "type": "Telegram/OSINT Channel",
+      "focus": "Real-time Iran war OSINT: Trump-Xi pressure on Iran, CENTCOM updates, vessel interdiction reports. High-frequency updates.",
+      "url": "https://t.me/s/OSINTdefender",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "Active Telegram channel. Trump urging Xi to pressure Iran on Hormuz (May 13). Complements @judean_osint and @HormuzMonitor."
+    },
+    {
+      "name": "Liveuamap Iran (iran.liveuamap.com)",
+      "type": "Live OSINT Map/News Feed",
+      "focus": "Interactive live map of Iran war with real-time incident feed: Mossad-UAE coordination, Qatar LNG policy, Iran 5 conditions, Kuwaiti diplomacy.",
+      "url": "https://iran.liveuamap.com",
+      "signal_level": "High",
+      "discovered": "2026-05-14",
+      "discovery_method": "deep_horizon_scan",
+      "note": "Established Liveuamap platform. Updated continuously with verified OSINT. Good for rapid geolocated event tracking."
     }
   ],
   "moltbook_sources": [
@@ -1860,5 +2070,5 @@
       "discovered": "2026-05-13"
     }
   ],
-  "last_updated": "2026-05-13 08:02 UTC"
+  "last_updated": "2026-05-14 08:05 UTC"
 }

@@ -58,7 +58,7 @@ cd "$REPO"
 echo "--- Running orchestrator (tiered: Flash for regions, Opus 4.7 for exec) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
     --model "anthropic/claude-opus-4.7" \
-    --tier2-model "deepseek/deepseek-v4-pro" \
+    --tier2-model "deepseek/deepseek-chat" \
     --provider openrouter \
     --no-deliver \
     --strict-env 2>&1 | tee -a "$LOG"
@@ -67,38 +67,9 @@ ORCHESTRATE_RC=${PIPESTATUS[0]}
 if [ $ORCHESTRATE_RC -ne 0 ]; then
     echo "ERROR: Orchestrator failed with rc=$ORCHESTRATE_RC" | tee -a "$LOG"
     # Send failure notification
-    python3 -c "
-import urllib.request, json, base64
-api_key = '$MATON_API_KEY'
-subject = 'TREVOR Daily Brief — FAILED — ${DATE_UTC}'
-body = f'''The daily brief pipeline failed on ${DATE_UTC} (rc=$ORCHESTRATE_RC).
-
-Check the log at: $LOG
-
-TREVOR Automation
-'''
-boundary = '==TREVOR_BOUNDARY=='
-email = f'''From: trevor.mentis@gmail.com
-To: roderick.jones@gmail.com
-Subject: $subject
-MIME-Version: 1.0
-Content-Type: text/plain; charset=\"UTF-8\"
-
-$body'''
-raw = base64.urlsafe_b64encode(email.encode()).decode()
-req = urllib.request.Request(
-    'https://gateway.maton.ai/google-mail/gmail/v1/users/me/messages/send',
-    data=json.dumps({'raw': raw}).encode(),
-    method='POST'
-)
-req.add_header('Authorization', f'Bearer {api_key}')
-req.add_header('Content-Type', 'application/json')
-try:
-    urllib.request.urlopen(req, timeout=30)
-    print('Failure notification sent to Roderick')
-except Exception as e:
-    print(f'Could not send failure notification: {e}')
-"
+    set +e  # disable exit on error for failure notification
+    python3 scripts/failure_notify.py "$MATON_API_KEY" "$DATE_UTC" "$ORCHESTRATE_RC" "$LOG" 2>/dev/null || true
+    set -e 2>/dev/null || true
     exit $ORCHESTRATE_RC
 fi
 
@@ -167,12 +138,15 @@ else
     echo "WARNING: Landing page deploy failed (non-fatal)" | tee -a "$LOG"
 fi
 
-# Step 8: Self-assessment — run after everything else
+# Step 8: Self-assessment — run after pipeline steps
 # Produces a system health report + prompt injection if critical issues found
 echo "--- Running self-assessment daemon ---" | tee -a "$LOG"
 if python3 "$REPO/scripts/self_assessment.py" 2>&1 | tee -a "$LOG"; then
     echo "Self-assessment complete" | tee -a "$LOG"
 else
+    echo "WARNING: Self-assessment flagged issues (non-fatal, check report)" | tee -a "$LOG"
+fi
+
 # Step 9: Daily Products — product suggestions, Starmer analysis, geo trading
 echo "--- Running daily products (suggestions, Starmer, trading) ---" | tee -a "$LOG"
 bash "$REPO/scripts/daily-products.sh" 2>&1 | tee -a "$LOG"
@@ -183,7 +157,12 @@ else
     echo "WARNING: Daily products pipeline had issues (rc=$PRODUCTS_RC)" | tee -a "$LOG"
 fi
 
-    echo "WARNING: Self-assessment flagged issues (non-fatal, check report)" | tee -a "$LOG"
+# Step 10: Benchmark comparison — Perplexity GSIB vs Trevor GSIB
+echo "--- Running Perplexity benchmark comparison ---" | tee -a "$LOG"
+if python3 "$REPO/scripts/benchmark_compare.py" --save 2>&1 | tee -a "$LOG"; then
+    echo "Benchmark comparison complete" | tee -a "$LOG"
+else
+    echo "WARNING: Benchmark comparison failed (non-fatal, may need manual run)" | tee -a "$LOG"
 fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"

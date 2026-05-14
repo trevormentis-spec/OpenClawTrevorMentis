@@ -71,7 +71,7 @@ COMBINED="$REPO/analysis/daily-products-${DATE_UTC}.md"
 
   # Geo trader summary
   if [ -f "$REPO/analysis/geotrade/${DATE_UTC}.md" ]; then
-    echo "## 💰 Geopolitical Trading — $1000 Portfolio"
+    echo "## 💰 Geopolitical Trading — \$1000 Portfolio"
     echo ""
     grep -E "Total P&L|Open Positions|Total Value|Total trades|Win rate|Portfolio Summary" "$REPO/analysis/geotrade/${DATE_UTC}.md" | head -10
     echo ""
