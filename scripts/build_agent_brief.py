@@ -334,6 +334,14 @@ def post_to_moltbook(brief, wd):
 
 
 def main():
+    # Load .env for MOLTBOOK_API_KEY
+    _env = REPO / ".env"
+    if _env.exists():
+        for _line in _env.read_text().splitlines():
+            if _line.startswith("MOLTBOOK_API_KEY="):
+                os.environ.setdefault("MOLTBOOK_API_KEY", _line.split("=", 1)[1].strip())
+                break
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--moltbook", action="store_true", help="Post to Moltbook")
