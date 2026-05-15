@@ -1,30 +1,41 @@
-# Gmail Intel Digest — 2026-05-14 19:06 UTC
+# Gmail Intel Digest — 2026-05-15 19:01 UTC
 
-## Fwd: [fpcollab-physical] Physical Security Daily Intelligence Summary (DISUM) - 05.14.2026
-**From:** Roderick Jones <rjones@concentric.io>
-**Date:** Thu, 14 May 2026 13:22:59 -0400
+## Global Security & Intelligence Brief — 15 May 2026
+**From:** Trevor <trevor.mentis@gmail.com>
+**Date:** Fri, 15 May 2026 05:31:03 -0700
 **Type:** alert | **Importance:** high
 
-read this and the attachment and add to OSINT.  also do your own research
-on the items mentioned in the attachment.
+Trevor,
 
----------- Forwarded message ---------
-From: FP Intel Watch Desk <fp-intel-watch-desk@flashpoint-intel.com>
-Date: Thu, May 14, 2026 at 8:34 AM
-Subject: [fpcollab-physical] Physical Security Daily Intelligence Summary
-(DISUM) - 05.14.2026
-To: FP Intel Watch Desk <fp-intel-watch-desk@flashpoint-intel.com>
-Cc: Flashpoint | Collaboration | Physical <
-fpcollab-physical@flashp
+Issue 15 attached. Europe moved most: Russia ran 1,623 munitions across 12-14 May — the largest two-day combined aerial assault of the entire war — killing 24+ in Kyiv including three children, and Ukraine answered overnight 14-15 May with a major drone strike on the Ryazan oil refinery. The Trump-Xi Beijing summit closed 15 May with no Ukraine breakthrough and a Chinese readout that omitted Iran entirely; Putin is now expected in Beijing on or around 20 May, and the B9+Nordics communiq
 
 ---
 
-## Global Security & Intelligence Brief — 14 May 2026
-**From:** Trevor <trevor.mentis@gmail.com>
-**Date:** Thu, 14 May 2026 05:26:02 -0700
-**Type:** alert | **Importance:** high
+## Mapbox Onboarding: Get creative with map design.
+**From:** Team Mapbox <hello@mail.mapbox.com>
+**Date:** Thu, 14 May 2026 20:45:56 -0400
+**Type:** unknown | **Importance:** low
 
-The single most consequential development overnight is in EUROPE: Russia ran its largest combined drone assault of 2026 over 13-14 May (892 drones in two waves), partially collapsed a Kyiv residential building on the morning of 14 May, claimed an operational Sarmat ICBM test on 13 May (second nuclear-signalling event in 48 hours after Burevestnik on 12 May), and passed a State Duma law giving Putin unilateral authority to deploy armed forces abroad. The Kremlin simultaneously hardened its negoti
+Complete your Mapbox milestones by customizing a style.
+
+Your fourth and final Mapbox milestone is to customize a map style and explore Mapbox Studio.
+
+Styling a map
+
+There are two ways to modify the visual design of a Mapbox map:
+
+Update features at runtime: Use code to modify the renderer. Lighten/darken based on time of day or personalize based on user activity.
+
+Adjust the map style: In Mapbox Studio, customize a basemap by editing an existing style template without requiring code 
+
+---
+
+## Russian Offensive Campaign Assessment, May 14, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Thu, 14 May 2026 20:11:08 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Russian forces have conducted two days of nearly continuous strikes against Ukraine with over 1,600 total long-range drones and missiles that heavily targeted Kyiv City. May 14, 2026 Data Cutoff: 12:15 PM ET Grace Mappes, Jennie Olmsted, Samuel Shafiro, Diana Nasreddine, Jakub Kostka, Nikolai Sundtrom, Christina Harward, Anjou Kang-Stryker, and Karolina Hird TOPLINES Russian forces have conducted two days of nearly continuous strikes against Ukraine with
 
 ---
 

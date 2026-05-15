@@ -1,0 +1,1315 @@
+{
+  "last_updated": "2026-05-15 16:30 UTC",
+  "pivot_date": "2026-05-15",
+  "themes": [
+    "cartel_security",
+    "political_risk",
+    "us_mexico",
+    "energy_infra",
+    "economy_markets",
+    "worldcup_travel"
+  ],
+  "target_count": 60,
+  "current_count": 80,
+  "sources": [
+    {
+      "name": "Animal Politico",
+      "type": "News/Independent Journalism",
+      "focus": "Investigative reporting on security, corruption, politics. Cartel violence, forced disappearances, government accountability. Paraphernalia series on drug policy.",
+      "url": "https://www.animalpolitico.com",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Established independent outlet with investigative track record",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "originality": "High — original investigative reporting, not aggregation",
+      "methodology": "Transparent methodology in major investigations",
+      "track_record": "Strong — broke AMLO-era corruption stories, Ayotzinapa coverage",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Reforma",
+      "type": "Newspaper",
+      "focus": "Leading national newspaper. Security, politics, economy, energy. Strong Mexico City and national coverage.",
+      "url": "https://www.reforma.com",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "economy_markets",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Established major national newspaper",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "originality": "High — original reporting, investigative teams",
+      "methodology": "Professional journalism standards",
+      "paywall": "Yes — subscription required",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "El Universal",
+      "type": "Newspaper",
+      "focus": "Mexico's oldest newspaper. National security, politics, US-Mexico relations, energy policy.",
+      "url": "https://www.eluniversal.com.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "us_mexico",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Oldest continuously publishing newspaper in Mexico",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "Partial — some articles behind paywall",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Milenio",
+      "type": "Newspaper/News",
+      "focus": "National daily with strong security and cartel coverage. Grupo Milenio network across states. Good regional bureaus.",
+      "url": "https://www.milenio.com",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Major national newspaper with regional network",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "El Financiero",
+      "type": "Newspaper/Financial",
+      "focus": "Mexico's leading financial newspaper. Peso, Banxico, sovereign debt, FDI, nearshoring, economic policy, markets.",
+      "url": "https://www.elfinanciero.com.mx",
+      "themes": [
+        "economy_markets",
+        "energy_infra",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Mexico's premier financial daily",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "Partial",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "El Economista",
+      "type": "Newspaper/Financial",
+      "focus": "Financial and economic news. Sector analysis, trade, nearshoring, FDI flows, industrial policy.",
+      "url": "https://www.eleconomista.com.mx",
+      "themes": [
+        "economy_markets",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Established financial daily, less investigative depth than El Financiero",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Aristegui Noticias",
+      "type": "News/Independent Journalism",
+      "focus": "Investigative journalism platform led by Carmen Aristegui. Corruption investigations, security, human rights, political scandals.",
+      "url": "https://aristeguinoticias.com",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — High-integrity investigative outlet",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Proceso",
+      "type": "Magazine/Investigative",
+      "focus": "Leading investigative weekly. Deep-dive political analysis, cartel investigations, government corruption. Weekly magazine format.",
+      "url": "https://www.proceso.com.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Storied investigative weekly, 50+ year track record",
+      "signal_level": "High",
+      "frequency": "Weekly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "La Jornada",
+      "type": "Newspaper/Left-Leaning",
+      "focus": "Left-leaning national daily. Strong cultural and human rights coverage. Sheinbaum-friendly editorial line but useful for government narrative tracking.",
+      "url": "https://www.jornada.com.mx",
+      "themes": [
+        "political_risk",
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "B3 — Strong editorial bias toward Morena/government. Use for government narrative, cross-reference security claims.",
+      "signal_level": "Medium",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "El País México",
+      "type": "Newspaper/International",
+      "focus": "El País Mexico edition. Strong coverage of Mexican politics, security, US-Mexico relations from international perspective.",
+      "url": "https://elpais.com/mexico/",
+      "themes": [
+        "political_risk",
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Spanish global newspaper, strong Mexico bureau",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "Partial",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Riodoce (Sinaloa)",
+      "type": "Newspaper/Regional",
+      "focus": "Sinaloa-focused independent newspaper. Chapitos/Menos faction warfare, Sinaloa cartel dynamics, Culiacán security. Critical local coverage.",
+      "url": "https://riodoce.mx",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Independent regional paper with deep Sinaloa institutional knowledge",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "note": "Essential for Sinaloa cartel ground truth. Local reporters embedded in cartel territory.",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Pie de Página",
+      "type": "News/Investigative Journalism",
+      "focus": "Independent investigative journalism collective. Forced disappearances, cartel violence, human rights, environmental crime.",
+      "url": "https://piedepagina.mx",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Rigorous independent collective, MacArthur-supported",
+      "signal_level": "High",
+      "frequency": "Weekly features, daily updates",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "A dónde van los desaparecidos",
+      "type": "Specialist/Citizen Journalism",
+      "focus": "Family-led tracking of Mexico's 100k+ disappeared. Mapping forced disappearances, mass graves, search brigades. Essential ground-truth source on disappearance crisis.",
+      "url": "https://adondevanlosdesaparecidos.org",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "B3 — Citizen-led initiative, emotionally invested but valuable ground data",
+      "signal_level": "Medium-High",
+      "frequency": "Ongoing project — irregular updates",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Quinto Elemento Lab",
+      "type": "News/Data Journalism",
+      "focus": "Data-driven investigative journalism. Security, violence mapping, cartel finances, corruption quantified. MacArthur Foundation-supported.",
+      "url": "https://quintoelemento.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Professional data journalism lab with strong methodology",
+      "signal_level": "High",
+      "frequency": "Irregular — project-based investigations",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Borderland Beat",
+      "type": "OSINT/User-Edited",
+      "focus": "Cartel news aggregator with English translations of Mexican media. User-edited but well-sourced. Factional dynamics, cartel messages (narcomantas), incidents.",
+      "url": "https://www.borderlandbeat.com",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "C3 — User-edited site, source links to Mexican media. Cross-reference original reporting.",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "InSight Crime Mexico",
+      "type": "Think Tank/Investigative",
+      "focus": "Deep-dive analysis of organized crime in Mexico. Cartel profiles, criminal economies, factional mapping, government response. Gold standard for OC analysis in Americas.",
+      "url": "https://insightcrime.org/mexico/",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Authoritative, methodologically transparent think tank",
+      "signal_level": "High",
+      "frequency": "Weekly features, daily news",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "DOF (Diario Oficial de la Federación)",
+      "type": "Government/Official Gazette",
+      "focus": "Mexico's official government gazette. Decrees, laws, regulations, judicial reforms, Pemex/CFE official acts. Essential for legal/regulatory monitoring.",
+      "url": "https://www.dof.gob.mx",
+      "themes": [
+        "political_risk",
+        "energy_infra",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "A1 — Official primary source, government regulation",
+      "signal_level": "High",
+      "frequency": "Every business day",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "SEDENA (Secretaría de la Defensa Nacional)",
+      "type": "Government/Military",
+      "focus": "Mexican army press briefings, operational reports. Security operations, cartel engagements, military deployments. Official military narrative.",
+      "url": "https://www.gob.mx/sedena",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government source with institutional bias. Cross-reference with regional reporting.",
+      "signal_level": "High",
+      "frequency": "Daily press conferences (conferencias mañaneras)",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "SEMAR (Secretaría de Marina)",
+      "type": "Government/Navy",
+      "focus": "Mexican navy press releases. Maritime security, port interdictions, drug seizures at sea, Gulf/ Pacific naval operations.",
+      "url": "https://www.gob.mx/semar",
+      "themes": [
+        "cartel_security",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government source",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "FGR (Fiscalía General de la República)",
+      "type": "Government/Legal",
+      "focus": "Federal Attorney General's office. High-profile arrests, extraditions, cartel prosecutions, asset seizures, organized crime indictments.",
+      "url": "https://www.gob.mx/fgr",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government source with political sensitivity",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "SAT / Aduanas (Servicio de Administración Tributaria)",
+      "type": "Government/Tax & Customs",
+      "focus": "Mexican tax and customs authority. Fentanyl precursor seizures, trade data, customs enforcement, huachicoleo (fuel theft) interdiction statistics.",
+      "url": "https://www.gob.mx/sat",
+      "themes": [
+        "cartel_security",
+        "energy_infra",
+        "economy_markets"
+      ],
+      "language": "es",
+      "admiralty": "A1 — Official government statistical source",
+      "signal_level": "Medium-High",
+      "frequency": "Monthly statistical releases",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Banxico (Banco de México)",
+      "type": "Government/Central Bank",
+      "focus": "Mexico's central bank. Monetary policy, interest rate decisions, inflation data, FX reserves, financial stability reports, GDP forecasts. Official economic data.",
+      "url": "https://www.banxico.org.mx",
+      "themes": [
+        "economy_markets"
+      ],
+      "language": "es/en",
+      "admiralty": "A1 — Autonomous central bank, authoritative",
+      "signal_level": "High",
+      "frequency": "Monetary policy every 6 weeks. Inflation 2x/month. Quarterly reports.",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Pemex Investor Relations",
+      "type": "Corporate/Government",
+      "focus": "Pemex official IR. Production data, refinery utilization (Dos Bocas, Deer Park), debt profile, bond markets, fuel theft data, operational metrics.",
+      "url": "https://www.pemex.com/en/investors/",
+      "themes": [
+        "energy_infra",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official corporate disclosure with SEC-equivalent reporting",
+      "signal_level": "High",
+      "frequency": "Quarterly reports, monthly ops data",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CFE (Comisión Federal de Electricidad)",
+      "type": "Government/Utility",
+      "focus": "Federal Electricity Commission. Energy generation, transmission, renewables integration, data center power, natural gas supply.",
+      "url": "https://www.cfe.mx",
+      "themes": [
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official state utility, some data transparency",
+      "signal_level": "Medium-High",
+      "frequency": "Quarterly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CRE (Comisión Reguladora de Energía)",
+      "type": "Government/Regulator",
+      "focus": "Energy Regulatory Commission. Hydrocarbon permits, fuel pricing, pipeline regulation, retail fuel market. Energy sector reform monitoring.",
+      "url": "https://www.gob.mx/cre",
+      "themes": [
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official regulator, permit-level data",
+      "signal_level": "Medium-High",
+      "frequency": "Daily permit decisions, quarterly reports",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CNH (Comisión Nacional de Hidrocarburos)",
+      "type": "Government/Regulator",
+      "focus": "National Hydrocarbons Commission. Oil/gas exploration and production regulation, Pemex farmouts, upstream oversight.",
+      "url": "https://www.gob.mx/cnh",
+      "themes": [
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official regulator",
+      "signal_level": "Medium",
+      "frequency": "Monthly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "INEGI (Instituto Nacional de Estadística y Geografía)",
+      "type": "Government/Statistics",
+      "focus": "National statistics and geography institute. Economic indicators, GDP, employment, violence statistics, homicide data, geographic/cartographic data. Authoritative data source.",
+      "url": "https://www.inegi.org.mx",
+      "themes": [
+        "cartel_security",
+        "economy_markets",
+        "energy_infra"
+      ],
+      "language": "es/en",
+      "admiralty": "A1 — Independent autonomous statistical agency, professional standards",
+      "signal_level": "High",
+      "frequency": "Monthly/Quarterly economic + annual security stats",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CBP (US Customs and Border Protection)",
+      "type": "US Government/Border",
+      "focus": "Southwest border encounter data, fentanyl seizures, migration statistics, operational updates. Official US border security metrics.",
+      "url": "https://www.cbp.gov/newsroom/stats/southwest-border",
+      "themes": [
+        "us_mexico",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US government statistical source",
+      "signal_level": "High",
+      "frequency": "Monthly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "DEA (Drug Enforcement Administration)",
+      "type": "US Government/Law Enforcement",
+      "focus": "DEA public releases, drug threat assessments, fentanyl enforcement operations. Annual National Drug Threat Assessment, Mexico-specific cartel reporting.",
+      "url": "https://www.dea.gov",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "A2 — US law enforcement, politically shaped, but operationally authoritative",
+      "signal_level": "High",
+      "frequency": "Annual reports, press releases during operations",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "OFAC (Office of Foreign Assets Control)",
+      "type": "US Government/Sanctions",
+      "focus": "US Treasury sanctions designations. Cartel FTO/SDTO designations, kingpin act sanctions, entity/individual blacklisting. Essential for tracking US financial pressure on cartels.",
+      "url": "https://ofac.treasury.gov",
+      "themes": [
+        "cartel_security",
+        "us_mexico",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US government sanctions list, primary source",
+      "signal_level": "High",
+      "frequency": "Irregular — designation announcements as they occur",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "USTR (Office of the US Trade Representative)",
+      "type": "US Government/Trade",
+      "focus": "USMCA 2026 review official documents, tariff announcements, trade negotiations. Essential source for USMCA timeline and US-Mexico trade policy.",
+      "url": "https://ustr.gov",
+      "themes": [
+        "us_mexico",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US government trade policy source",
+      "signal_level": "High",
+      "frequency": "Press releases tied to USMCA review schedule",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "State Department Mexico Desk",
+      "type": "US Government/Diplomacy",
+      "focus": "State Department press briefings, travel advisories, human rights reports, international narcotics control strategy, Mexico country reports.",
+      "url": "https://www.state.gov/countries-areas/mexico/",
+      "themes": [
+        "us_mexico",
+        "cartel_security",
+        "worldcup_travel"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US diplomatic source",
+      "signal_level": "High",
+      "frequency": "Travel advisories updated regularly, annual INCSR report",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "FBI Houston / El Paso Field Offices",
+      "type": "US Government/Law Enforcement",
+      "focus": "FBI press releases on Mexico-related operations. Transnational organized crime task forces, cartel prosecutions, extortion investigations.",
+      "url": "https://www.fbi.gov/contact-us/field-offices",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "A2 — US law enforcement, operation-specific releases",
+      "signal_level": "Medium-High",
+      "frequency": "Irregular — tied to indictments/arrests",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "DHS (Department of Homeland Security)",
+      "type": "US Government/Security",
+      "focus": "Border security, immigration enforcement, CISA advisories, counter-fentanyl operations, DHS IA strategic assessments.",
+      "url": "https://www.dhs.gov",
+      "themes": [
+        "us_mexico",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Official US security agency",
+      "signal_level": "High",
+      "frequency": "Daily/Weekly press releases",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Treasury FinCEN Advisories",
+      "type": "US Government/Financial Intelligence",
+      "focus": "Financial Crime Enforcement Network advisories on Mexico. Fentanyl trafficking financial flows, trade-based money laundering, virtual currency risks, real estate ML typologies.",
+      "url": "https://www.fincen.gov/resources/advisories",
+      "themes": [
+        "cartel_security",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US financial intelligence source",
+      "signal_level": "High",
+      "frequency": "As issued — tied to typology/methodology releases",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Wilson Center Mexico Institute",
+      "type": "Think Tank",
+      "focus": "Leading US think tank on Mexico. US-Mexico relations, migration, border policy, energy, trade. Publications, event transcripts, policy briefs.",
+      "url": "https://www.wilsoncenter.org/program/mexico-institute",
+      "themes": [
+        "us_mexico",
+        "political_risk",
+        "energy_infra",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Well-respected bipartisan think tank, strong Mexico network",
+      "signal_level": "High",
+      "frequency": "Weekly events, quarterly papers",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Brookings Latin America Initiative",
+      "type": "Think Tank",
+      "focus": "Brookings research on Latin America. Vanda Felbab-Brown's Mexico security work, drug policy, organized crime. High-quality academic-policy analysis.",
+      "url": "https://www.brookings.edu/programs/latin-america-initiative/",
+      "themes": [
+        "cartel_security",
+        "us_mexico",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Top-tier think tank, rigorous peer review",
+      "signal_level": "High",
+      "frequency": "Regular publications",
+      "paywall": "No",
+      "note": "Follow Vanda Felbab-Brown specifically — leading scholar on Mexico drug policy and organized crime",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "RAND Corporation — Mexico/Latin America",
+      "type": "Think Tank",
+      "focus": "RAND research on Mexico security, cartel dynamics, US-Mexico cooperation, security sector reform. Quantitative security analysis, scenario modeling.",
+      "url": "https://www.rand.org/topics/mexico.html",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Tier 1 think tank, rigorous methodology",
+      "signal_level": "High",
+      "frequency": "Report-based",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "International Crisis Group — Mexico/Latin America",
+      "type": "Think Tank/Conflict",
+      "focus": "Crisis Group reporting on Mexico's conflict dynamics, cartel violence, mass disappearances, peacebuilding. Falko Ernst's Mexico work is essential reading.",
+      "url": "https://www.crisisgroup.org/latin-america-caribbean/mexico",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Premier conflict resolution think tank, field-based research",
+      "signal_level": "High",
+      "frequency": "Reports, briefings, crisis alerts",
+      "paywall": "No",
+      "note": "Follow Falko Ernst — Crisis Group's senior Mexico analyst, best-in-class ground reporting",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Atlantic Council — Latin America Center",
+      "type": "Think Tank",
+      "focus": "US-Mexico security cooperation, energy integration, digital transformation in Mexico, nearshoring policy. Policy-focused analysis.",
+      "url": "https://www.atlanticcouncil.org/programs/latin-america-center/",
+      "themes": [
+        "us_mexico",
+        "energy_infra",
+        "economy_markets",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Policy-oriented think tank, strong network",
+      "signal_level": "Medium-High",
+      "frequency": "Weekly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CSIS Americas Program",
+      "type": "Think Tank",
+      "focus": "CSIS research on Western Hemisphere security, Mexico energy reform, USMCA, migration, defense cooperation. Strong quantitative output.",
+      "url": "https://www.csis.org/programs/americas-program",
+      "themes": [
+        "us_mexico",
+        "energy_infra",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Top-tier policy think tank",
+      "signal_level": "High",
+      "frequency": "Weekly/Quarterly reports",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Colegio de México (Colmex)",
+      "type": "Academic/Research",
+      "focus": "Mexico's premier academic institution for social sciences. Security studies, political science, economics. Academic journals, working papers, conference proceedings.",
+      "url": "https://www.colmex.mx",
+      "themes": [
+        "political_risk",
+        "cartel_security",
+        "economy_markets"
+      ],
+      "language": "es/en",
+      "admiralty": "A2 — Top-tier academic institution, peer-reviewed research",
+      "signal_level": "Medium-High",
+      "frequency": "Quarterly journals, working papers",
+      "paywall": "Partial — open access varies",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CIDE (Centro de Investigación y Docencia Económicas)",
+      "type": "Academic/Research",
+      "focus": "Leading Mexican research center. Security economics, political science, regulatory policy, energy economics. High-quality quantitative social science.",
+      "url": "https://www.cide.edu",
+      "themes": [
+        "political_risk",
+        "economy_markets",
+        "energy_infra"
+      ],
+      "language": "es/en",
+      "admiralty": "A2 — Prestigious Mexican research institution",
+      "signal_level": "Medium-High",
+      "frequency": "Quarterly, working paper series",
+      "paywall": "Open access generally",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Justice in Mexico (USD-JSD)",
+      "type": "Academic/Research",
+      "focus": "University of San Diego program tracking Mexican rule of law. Homicide tracking, judicial reform, human rights, cartel violence statistics. Systematic datasets.",
+      "url": "https://justiceinmexico.org",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "en/es",
+      "admiralty": "A2 — Academic program with methodical data collection",
+      "signal_level": "High",
+      "frequency": "Monthly reports, annual assessments",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Lantia Intelligence (Eduardo Guerrero)",
+      "type": "Consultancy/OSINT",
+      "focus": "Mexico security risk consultancy run by Eduardo Guerrero. Cartel territorial mapping, violence forecasting, criminal governance analysis. Best-in-class Mexico security analysis.",
+      "url": "https://lantiaintelligence.com",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es/en",
+      "admiralty": "A2 — Leading Mexico security consultancy, data-driven methodology",
+      "signal_level": "High",
+      "frequency": "Quarterly reports, special briefs",
+      "paywall": "Yes — paid consultancy, but public outputs available",
+      "note": "Eduardo Guerrero is Mexico's most cited security analyst. Essential methodological grounding.",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Kalshi — Mexico Prediction Contracts",
+      "type": "Prediction Market",
+      "focus": "US-regulated prediction market for Mexico-specific contracts: peso FX, Banxico rate path, Sheinbaum approval, USMCA outcomes",
+      "url": "https://kalshi.com",
+      "themes": [
+        "economy_markets",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A1 — CFTC-regulated, real money, market-derived probabilities",
+      "signal_level": "High",
+      "frequency": "Real-time",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Polymarket — Mexico Prediction Contracts",
+      "type": "Prediction Market",
+      "focus": "Crypto prediction market for Mexico contracts: peso path, Sheinbaum policies, cartel violence metrics, election outcomes",
+      "url": "https://polymarket.com",
+      "themes": [
+        "economy_markets",
+        "political_risk",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "B2 — Less regulated than Kalshi, but volume signals market attention",
+      "signal_level": "Medium-High",
+      "frequency": "Real-time",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Falko Ernst (ICG / X)",
+      "type": "Individual Analyst/Beat Reporter",
+      "focus": "International Crisis Group Senior Analyst Mexico. Cartel dynamics, criminal governance, disappearance crisis. Best-in-class field reporting.",
+      "url": "https://x.com/falkoernst",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "en/es",
+      "admiralty": "A1 — Top Mexico analyst, field-based research, ICG institutional backing",
+      "signal_level": "High",
+      "frequency": "Multiple posts/week",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Mike Vigil (ex-DEA / X/Substack)",
+      "type": "Individual Analyst/Former DEA",
+      "focus": "Former DEA Chief of International Operations. Cartel operations, US-Mexico law enforcement, fentanyl trafficking. Insider perspective on US drug enforcement.",
+      "url": "https://x.com/mike_vigil",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "B3 — Former official with insider knowledge but retired perspective. Cross-reference with current sources.",
+      "signal_level": "Medium-High",
+      "frequency": "Multiple posts/week, occasional media appearances",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Vanda Felbab-Brown (Brookings / X)",
+      "type": "Individual Analyst",
+      "focus": "Brookings Senior Fellow. Drug policy, organized crime, illicit economies, Mexico security policy. Leading academic voice on counternarcotics.",
+      "url": "https://x.com/vfelbabbrown",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Rigorous Brookings-affiliated scholar with deep Mexico expertise",
+      "signal_level": "High",
+      "frequency": "Regular publications, media quotes",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Cecilia Farfán-Méndez (UCSD / Justice in Mexico)",
+      "type": "Individual Analyst",
+      "focus": "UC San Diego researcher, Executive Director of Justice in Mexico. Judicial reform, drug policy, security sector reform. Methodical quantitative work.",
+      "url": "https://justiceinmexico.org/author/cecilia-farfan-mendez/",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "en/es",
+      "admiralty": "A2 — Academic researcher with systematic data collection",
+      "signal_level": "High",
+      "frequency": "Monthly reports",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Eduardo Guerrero (Lantia / X)",
+      "type": "Individual Analyst",
+      "focus": "Founder of Lantia Intelligence. Mexico's premier security risk analyst. Cartel territorial evolution, criminal governance metrics, violence forecasting.",
+      "url": "https://x.com/edguerrero76",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es/en",
+      "admiralty": "A2 — Preeminent Mexico security analyst, data-driven methodology",
+      "signal_level": "High",
+      "frequency": "Quarterly reports, periodic public analysis",
+      "paywall": "Some Lantia content behind paywall",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "GZERO Media — Latin America",
+      "type": "Newsletter/Analysis",
+      "focus": "Eurasia Group's daily geopolitical newsletter. Good Latin America/Mexico coverage, USMCA analysis, Sheinbaum administration tracking.",
+      "url": "https://www.gzeromedia.com/latin-america",
+      "themes": [
+        "political_risk",
+        "us_mexico",
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Eurasia Group-linked, professional geopolitical analysis",
+      "signal_level": "Medium-High",
+      "frequency": "Daily newsletter",
+      "paywall": "Free newsletter, some premium content",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Border Report",
+      "type": "News/Regional",
+      "focus": "US-Mexico border news and analysis. Border crossing data, cartel activity in border cities, customs enforcement, fentanyl seizures. Border-based reporting team.",
+      "url": "https://www.borderreport.com",
+      "themes": [
+        "us_mexico",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "B2 — Regional news outlet focused on border, less national depth",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Sistema Nacional de Seguridad Pública (SESNSP)",
+      "type": "Government/Statistics",
+      "focus": "Official crime statistics database. Homicides, kidnappings, extortion, vehicle theft, femicides — monthly by state and municipality. Gold standard for Mexico crime data.",
+      "url": "https://www.gob.mx/sesnsp",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government statistical series, methodology concerns",
+      "signal_level": "High",
+      "frequency": "Monthly",
+      "paywall": "No",
+      "note": "Methodology changes and political pressure on data are known issues. Cross-reference with INEGI and Justice in Mexico.",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "El Blog del Narco",
+      "type": "User-Generated/Cartel Watch",
+      "focus": "Cartel violence compilation and news aggregator. Graphic incident reporting, cartel messages, factional violence documentation. English-language accessibility.",
+      "url": "https://elblogdelnarco.com",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "en/es",
+      "admiralty": "C3 — User-sourced content, verify all claims against primary sources",
+      "signal_level": "Medium",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "USMCA Monitoring — CBP Trade Data",
+      "type": "US Government/Trade Data",
+      "focus": "US-Mexico trade data, USMCA utilization rates, rules of origin tracking. Essential for nearshoring and trade flow analysis.",
+      "url": "https://www.cbp.gov/trade",
+      "themes": [
+        "economy_markets",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Official US government trade statistics",
+      "signal_level": "High",
+      "frequency": "Monthly/Quarterly",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "SECODAM (Secretaría de la Función Pública)",
+      "type": "Government/Anti-Corruption",
+      "focus": "Mexico's public administration ministry. Corruption investigations, procurement oversight, conflict-of-interest declarations. Government accountability signals.",
+      "url": "https://www.gob.mx/sfp",
+      "themes": [
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government anti-corruption body",
+      "signal_level": "Medium",
+      "frequency": "Irregular",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "IEPRI (Universidad Iberoamericana) — Security Observatory",
+      "type": "Academic",
+      "focus": "Iberoamericana University's security research institute. Peer-reviewed analysis of organized crime, violence, security policy. Academic rigor.",
+      "url": "https://iepri.ibero.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Respected academic institution",
+      "signal_level": "Medium-High",
+      "frequency": "Quarterly reports, research papers",
+      "paywall": "Open access",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Pemex.com.mx — Corporate Press",
+      "type": "Corporate/Government",
+      "focus": "Pemex official press releases: production levels, refinery startups, fuel theft data (huachicoleo), partnerships, corruption scandals. Operational primary source.",
+      "url": "https://www.pemex.com/servicios/saladeprensa/Paginas/default.aspx",
+      "themes": [
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A1 — Official corporate/government press office",
+      "signal_level": "High",
+      "frequency": "Daily press releases",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "INVEST IN MEXICO / SE (Secretaría de Economía)",
+      "type": "Government/Economic",
+      "focus": "Mexico's Ministry of Economy. FDI data, nearshoring statistics, trade policy, USMCA implementation, investment promotion, special economic zones.",
+      "url": "https://www.gob.mx/se",
+      "themes": [
+        "economy_markets",
+        "us_mexico"
+      ],
+      "language": "es/en",
+      "admiralty": "A1 — Official government ministry",
+      "signal_level": "High",
+      "frequency": "Quarterly FDI reports, monthly trade data",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Controlaría General / ASF (Auditoría Superior de la Federación)",
+      "type": "Government/Audit",
+      "focus": "Mexico's federal auditor. Public spending audits, corruption findings, government contract reviews. Essential for detecting misuse of funds and political risk signals.",
+      "url": "https://www.asf.gob.mx",
+      "themes": [
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Autonomous audit body, variable political independence",
+      "signal_level": "Medium-High",
+      "frequency": "Annual audit reports, irregular special reports",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Fitch/Moody's/S&P — Mexico Sovereign Credit Reports",
+      "type": "Financial/Credit Ratings",
+      "focus": "Mexico sovereign credit ratings, outlook changes, Pemex credit assessments. Essential for sovereign debt risk, investor sentiment.",
+      "url": "https://www.fitchratings.com/region/latin-america/mexico",
+      "themes": [
+        "economy_markets"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Major credit rating agencies, methodology-driven",
+      "signal_level": "High",
+      "frequency": "Quarterly/annual rating reviews",
+      "paywall": "Some content behind paywall",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Houston Chronicle — Border/Mexico",
+      "type": "Newspaper/Regional US",
+      "focus": "Texas-based coverage of Mexico border issues: cartels, energy (Pemex/Deer Park), trade, migration. Strong on Texas energy-Mexico nexus.",
+      "url": "https://www.houstonchronicle.com/border-mexico/",
+      "themes": [
+        "energy_infra",
+        "us_mexico",
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "B2 — Regional newspaper with specialized coverage",
+      "signal_level": "Medium-High",
+      "frequency": "Daily — Mexico/border section",
+      "paywall": "Yes — subscription required",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "AP News — Mexico",
+      "type": "Wire Service",
+      "focus": "Associated Press Mexico bureau. Breaking news coverage of major cartel incidents, political developments, natural disasters. Wire service baseline.",
+      "url": "https://apnews.com/hub/mexico",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "worldcup_travel"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Major wire service, professional standards",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Reuters — Mexico",
+      "type": "Wire Service",
+      "focus": "Reuters Mexico bureau. Financial markets, cartel violence, political developments, energy sector, trade. Strong economic/financial coverage.",
+      "url": "https://www.reuters.com/world/americas/mexico/",
+      "themes": [
+        "economy_markets",
+        "cartel_security",
+        "political_risk",
+        "energy_infra"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Major wire service, professional standards",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Mexican Pacific League/Liga MX — Security Advisories",
+      "type": "Sports/Security",
+      "focus": "Sports security for World Cup 2026 venue cities. Liga MX security incidents, stadium safety records, cartel-extortion of clubs. Relevant to worldcup_travel theme.",
+      "url": "https://www.ligamx.net",
+      "themes": [
+        "worldcup_travel"
+      ],
+      "language": "es",
+      "admiralty": "C3 — Sports league, not a security source. Useful for venue-specific incident tracking.",
+      "signal_level": "Medium",
+      "frequency": "Matchday-based",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "CENAPI (Centro Nacional de Planeación de Protección Civil)",
+      "type": "Government/Civil Protection",
+      "focus": "National civil protection planning. Natural disaster response capacity, emergency management infrastructure. Relevant to worldcup_travel for venue safety assessment.",
+      "url": "https://www.gob.mx/cenapi",
+      "themes": [
+        "worldcup_travel"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Official government civil protection",
+      "signal_level": "Medium",
+      "frequency": "Event-based",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "WOLA (Washington Office on Latin America)",
+      "type": "Think Tank/Human Rights",
+      "focus": "Human rights-focused Latin America policy. Mexico migration, drug policy reform, security sector accountability, US-Mexico border rights.",
+      "url": "https://www.wola.org/mexico/",
+      "themes": [
+        "us_mexico",
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "en/es",
+      "admiralty": "A2 — Established human rights think tank, rigorous advocacy research",
+      "signal_level": "Medium-High",
+      "frequency": "Weekly briefings, quarterly reports",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Mexicanos Contra la Corrupción y la Impunidad (MCCI)",
+      "type": "NGO/Investigative",
+      "focus": "Anti-corruption investigative organization. Documented government corruption, conflict of interest, Pemex scandals, campaign finance violations. Forensic investigative work.",
+      "url": "https://contralacorrupcion.mx",
+      "themes": [
+        "political_risk",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Rigorous investigative NGO, multiple award-winning projects",
+      "signal_level": "High",
+      "frequency": "Project-based investigations",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Tlachinollan Human Rights Center (Guerrero)",
+      "type": "NGO/Human Rights",
+      "focus": "Guerrero-based human rights organization. Forced disappearances, mass graves, cartel violence documentation, community defense. Essential for Guerrero ground truth.",
+      "url": "https://www.tlachinollan.org",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Advocacy NGO, methodical documentation, but advocacy-driven",
+      "signal_level": "Medium-High",
+      "frequency": "Ongoing project updates",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "LinkedIn — Mexico Security Community",
+      "type": "Social/Professional Network",
+      "focus": "Follow Mexico security analysts, retired officials, academics on LinkedIn for commentary and signal. Lower-barrier monitoring of professional discourse.",
+      "url": "https://linkedin.com",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "economy_markets"
+      ],
+      "language": "en/es",
+      "admiralty": "C3 — Unstructured professional social media, high noise-to-signal",
+      "signal_level": "Low-Medium",
+      "frequency": "Continuous",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Anabel Hernández (DW/Investigative)",
+      "type": "Individual Analyst/Investigative Journalist",
+      "focus": "Sinaloa Cartel, Chapitos, El Chapo, government-cartel collusion. Author of multiple books on Mexico drug war. DW investigative journalist.",
+      "url": "https://x.com/Anabel___Hernandez",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es/en",
+      "admiralty": "A1 — Leading investigative journalist on Mexican cartels, multi-award-winning, book-length treatment of CDS",
+      "signal_level": "High",
+      "frequency": "Regular investigative reports, weekly columns",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Jorge Alejandro Medellín (El Universal/Milenio)",
+      "type": "Individual Analyst/Columnist",
+      "focus": "Mexican security, SEDENA operations, cartel-military confrontation, defense policy. Longtime security columnist.",
+      "url": "https://x.com/jorgeamedellin",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Veteran security journalist, knowledgeable about military/cartel operations",
+      "signal_level": "High",
+      "frequency": "Weekly columns",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Small Wars Journal — Mexico",
+      "type": "Academic/Military Journal",
+      "focus": "Security analysis of Mexican cartel conflicts, military operations, IED/insurgency patterns. Deep analytical articles.",
+      "url": "https://smallwarsjournal.com/tags/mexico",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Professional military studies journal, peer-reviewed analytical articles",
+      "signal_level": "Medium-High",
+      "frequency": "Periodic articles",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "María Idalia Gómez",
+      "type": "Individual Analyst/Investigative Journalist",
+      "focus": "Organized crime, cartel atomization, security analysis. Co-author of studies on criminal restructuring.",
+      "url": "https://x.com/mariaidalia",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Established journalist covering organized crime, cited in Infobae and other outlets",
+      "signal_level": "Medium-High",
+      "frequency": "Regular",
+      "paywall": "No",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "WSJ Mexico Bureau",
+      "type": "Newspaper/International",
+      "focus": "Wall Street Journal Mexico coverage: cartels, trade, USMCA, energy, politics. Strong CJNG post-Mencho reporting.",
+      "url": "https://www.wsj.com/world/americas/mexico",
+      "themes": [
+        "cartel_security",
+        "economy_markets",
+        "us_mexico",
+        "energy_infra",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Top-tier financial newspaper, strong editorial standards",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "Yes",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "FT Mexico",
+      "type": "Newspaper/International",
+      "focus": "Financial Times Mexico coverage: trade, finance, politics, nearshoring, energy policy.",
+      "url": "https://www.ft.com/mexico",
+      "themes": [
+        "economy_markets",
+        "us_mexico",
+        "energy_infra",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A1 — Top-tier financial newspaper, strong Mexico bureau",
+      "signal_level": "High",
+      "frequency": "Daily",
+      "paywall": "Yes",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "Emeequis Magazine",
+      "type": "Magazine/Investigative",
+      "focus": "Mexican investigative magazine. In-depth reporting on cartels, political corruption, security. Spanish-language.",
+      "url": "https://emeequis.com",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Investigative magazine with variable editorial standards but good ground reporting",
+      "signal_level": "Medium-High",
+      "frequency": "Weekly",
+      "paywall": "Partial",
+      "added": "2026-05-15"
+    },
+    {
+      "name": "La Silla Rota",
+      "type": "News/Independent",
+      "focus": "Independent Mexican news website. Security, politics, cartels, US-Mexico relations.",
+      "url": "https://lasillarota.com",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Independent digital outlet, some strong investigative work, variable quality",
+      "signal_level": "Medium-High",
+      "frequency": "Daily",
+      "paywall": "No",
+      "added": "2026-05-15"
+    }
+  ]
+}

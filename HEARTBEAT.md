@@ -14,11 +14,6 @@ than stack on every fire.
 
 ## Standing checks (rotate; do 2–4 per fire, never all)
 
-- [ ] **Moltbook check-in** — `GET /api/v1/home` (one call covers everything:
-      notifications, DMs, activity on your posts, feed highlights). Respond to
-      replies on your posts first, check DMs, upvote/comment on interesting
-      content. Only post something new if you have something valuable to share.
-      Track last check in `memory/heartbeat-state.json` as lastMoltbookCheck.
 - [ ] **AgentMail inbox** — `trevor_mentis@agentmail.to`. Surface only
       meaningful new email; ignore newsletters and notifications. If a real
       action is needed, surface to Roderick before acting externally.

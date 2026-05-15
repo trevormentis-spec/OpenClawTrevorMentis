@@ -582,6 +582,359 @@
       },
       "tier": "tier1",
       "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-203257.md"
+    },
+    {
+      "timestamp": "2026-05-14T20:33:21Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Russian Occupation Update, May 14, 2026",
+        "snippet": "The Kremlin-appointed Commissioner for Children&#39;s Rights published a report on Russia&#39;s policy toward Ukrainian children. May 14, 2026 Data Cutoff: May 13, 12:45 PM ET Karolina Hird and Lauren",
+        "score": 90,
+        "tier": "tier1",
+        "id": "gmail-19e27f50"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-203321.md"
+    },
+    {
+      "timestamp": "2026-05-14T21:02:10Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here\u2019s a concise rundown of the main developments over roughly the last 24 hours in the Strait of Hormuz crisis, drawn from your results and current reporting:\n\n1. **Iran seizes two cargo ships / \u201cinspections\u201d in Iranian waters**  \n   - The IRGC Navy says it has directed at least two merchant vessels (including the *MSC Francesca* / *Francesca Epaminas*) into Iranian territorial waters for \u201cinspec",
+        "score": 100.0,
+        "tier": "tier1",
+        "id": "sonar-773"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-210210.md"
+    },
+    {
+      "timestamp": "2026-05-14T21:32:24Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here are the main developments over roughly the last 24 hours in the Iran\u2013Strait of Hormuz crisis, based on the sources you provided:\n\n1. **First major Iran\u2013UAE strike since ceasefire; attacks on ships**\n   - Iran launched its first missile and drone attack on the United Arab Emirates since the April 8 U.S.\u2013Iran ceasefire.\n   - UAE authorities say Iran also fired two drones at a ship in the Strait",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-807"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-213224.md"
+    },
+    {
+      "timestamp": "2026-05-14T22:02:29Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Based on the last 24 hours of reporting from your links and current live coverage, here are the main overnight developments in the Strait of Hormuz crisis:\n\n1. **Ceasefire Effectively Collapsed; Open Hostilities Resumed**  \n   - Iran and the United States exchanged fire in and around the Strait, with both sides accusing the other of breaching the ceasefire.  \n   - CENTCOM described U.S. actions as",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-001"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-220229.md"
+    },
+    {
+      "timestamp": "2026-05-14T22:02:51Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260514-220251.md"
+    },
+    {
+      "timestamp": "2026-05-14T22:03:12Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260514-220312.md"
+    },
+    {
+      "timestamp": "2026-05-14T22:31:55Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here\u2019s a concise roundup of the main developments over roughly the last 24 hours in the Iran\u2013Strait of Hormuz crisis, based on the sources you provided and consistent reporting:\n\n1. **Second U.S. F\u201135 emergency over the Gulf in 24 hours**  \n   - A second U.S. Air Force F\u201135A Lightning II reportedly declared a mid\u2011air emergency and squawked code 7700 while operating over/near the Gulf region, then ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-387"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-223155.md"
+    },
+    {
+      "timestamp": "2026-05-14T22:31:56Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Iran Update Special Report, May 14, 2026",
+        "snippet": "Iran may be prioritizing upholding the \u201clegitimacy\u201d of its claims to the Strait of Hormuz over toll collection at this time. May 14, 2026 Data Cutoff: 2:00 PM ET Adham Fattah, Katherine Wells, Avery",
+        "score": 90,
+        "tier": "tier1",
+        "id": "gmail-19e2890c"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-223156.md"
+    },
+    {
+      "timestamp": "2026-05-14T23:00:40Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "Recent reporting and official statements point to an escalating, and increasingly contentious, U.S. intelligence role in Mexico\u2019s fight against drug cartels. Here are the key recent developments and points of disagreement, based on the sources you provided:\n\n---\n\n### 1. Long\u2011running CIA support and \u201cvetted units\u201d\n\nInvestigative work over the past year (notably Reuters and others) has documented a ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-038"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260514-230040.md"
+    },
+    {
+      "timestamp": "2026-05-14T23:00:41Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "the cipher brief <dailybrief@thecipherbrief.com>",
+        "subject": "National Security Nightcap for Thursday, May 14",
+        "snippet": "With all eyes on China, who&#39;s watching Russia? View this email in your browser X | LINKEDIN | INSTAGRAM | FACEBOOK I YOU TUBE I BLUE SKY thecipherbrief.com Thursday / May 14 / 2026 What you need to",
+        "score": 80,
+        "tier": "tier1",
+        "id": "gmail-19e2801a"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-230041.md"
+    },
+    {
+      "timestamp": "2026-05-14T23:30:26Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Russian Occupation Update, May 14, 2026",
+        "snippet": "The Kremlin-appointed Commissioner for Children&#39;s Rights published a report on Russia&#39;s policy toward Ukrainian children. May 14, 2026 Data Cutoff: May 13, 12:45 PM ET Karolina Hird and Lauren",
+        "score": 90,
+        "tier": "tier1",
+        "id": "gmail-19e27f50"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260514-233026.md"
+    },
+    {
+      "timestamp": "2026-05-15T00:04:58Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "ctp publications <criticalthreats@aei.org>",
+        "subject": "Iran Update Evening Special Report: May 14, 2026, 02:00 PM ET",
+        "snippet": "A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available. \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f",
+        "score": 95,
+        "tier": "tier1",
+        "id": "gmail-19e28e63"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260515-000458.md"
+    },
+    {
+      "timestamp": "2026-05-15T00:30:20Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Russian Offensive Campaign Assessment, May 14, 2026",
+        "snippet": "Russian forces have conducted two days of nearly continuous strikes against Ukraine with over 1600 total long-range drones and missiles that heavily targeted Kyiv City. May 14, 2026 Data Cutoff: 12:15",
+        "score": 100,
+        "tier": "tier1",
+        "id": "gmail-19e28f91"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260515-003020.md"
+    },
+    {
+      "timestamp": "2026-05-15T04:00:25Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260515-040025.md"
+    },
+    {
+      "timestamp": "2026-05-15T04:00:25Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260515-040025.md"
+    },
+    {
+      "timestamp": "2026-05-15T09:03:26Z",
+      "signal": {
+        "source": "gmail",
+        "type": "intel_email",
+        "sender": "isw publications <publications@understandingwar.org>",
+        "subject": "Russian Offensive Campaign Assessment, May 14, 2026",
+        "snippet": "Russian forces have conducted two days of nearly continuous strikes against Ukraine with over 1600 total long-range drones and missiles that heavily targeted Kyiv City. May 14, 2026 Data Cutoff: 12:15",
+        "score": 100,
+        "tier": "tier1",
+        "id": "gmail-19e28f91"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-gmail-intel_email-20260515-090326.md"
+    },
+    {
+      "timestamp": "2026-05-15T12:12:01Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260515-121201.md"
+    },
+    {
+      "timestamp": "2026-05-15T12:30:38Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260515-123038.md"
+    },
+    {
+      "timestamp": "2026-05-15T14:32:32Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "Recent reporting suggests a major expansion and escalation of U.S. intelligence activity against Mexican drug cartels, with a particular focus on the CIA. Here are the key developments, based on the sources you provided:\n\n---\n\n## 1. Escalation to Lethal, \u201cCounterterrorism-Style\u201d Operations\n\nCNN\u2019s May 12 report ([2], echoed in [3], [4], [5]) says that:\n\n- The CIA has moved beyond traditional intell",
+        "score": 96.0,
+        "tier": "tier1",
+        "id": "sonar-339"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260515-143232.md"
+    },
+    {
+      "timestamp": "2026-05-15T15:02:54Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Based on the sources you provided (plus their linked headlines/feeds), here are the major developments in roughly the last 24 hours of the Strait of Hormuz crisis:\n\n1. **Ceasefire has effectively collapsed; direct U.S.\u2013Iran clashes resumed**  \n   - The brief de\u2011escalation around Hormuz is over.  \n   - Iran launched **cruise missiles, drones, and fast boats** against U.S. and/or escorted shipping. ",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-831"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260515-150254.md"
+    },
+    {
+      "timestamp": "2026-05-15T15:32:13Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Iran Hormuz Strait",
+        "answer_preview": "Here are the main developments over roughly the last 24 hours in the Strait of Hormuz crisis, based on the sources you provided:\n\n1. **Iran seizes and strikes multiple commercial vessels**  \n   - Iranian state\u2011linked media report that IRGC naval forces have:\n     - **Hit three ships** and\n     - **Seized at least two**:\n       - The *Euphoria* was reportedly struck and left stranded near Iran\u2019s co",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-622"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260515-153213.md"
+    },
+    {
+      "timestamp": "2026-05-15T16:02:07Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "Recent reporting from major outlets (CNN, Reuters, AP, NYT, El Pa\u00eds, Small Wars Journal, and others) points to a significant and controversial escalation of U.S. intelligence involvement in Mexico\u2019s fight against drug cartels. Here are the key developments and points of contention:\n\n---\n\n## 1. Reported shift from intelligence support to lethal operations\n\n**CNN\u2019s investigation** (May 12, 2026) and",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-029"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260515-160207.md"
+    },
+    {
+      "timestamp": "2026-05-15T16:32:16Z",
+      "signal": {
+        "source": "sonar",
+        "type": "breaking_news",
+        "topic": "Geopolitics",
+        "answer_preview": "Here\u2019s a concise rundown of the most important, recent developments in CIA operations against Mexican drug cartels, based on the sources you provided and other public reporting up to mid\u2011May 2026.\n\n---\n\n## 1. Shift from Intelligence Support to Direct Lethal Operations\n\n**Key development:** Multiple reports (especially CNN [3][4][6][7]) describe an expanded CIA campaign inside Mexico in which CIA o",
+        "score": 100,
+        "tier": "tier1",
+        "id": "sonar-626"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-sonar-breaking_news-20260515-163216.md"
+    },
+    {
+      "timestamp": "2026-05-15T16:32:40Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "escalation",
+        "region": "middle_east",
+        "trigger": "Kalshi swing 25pts",
+        "score": 95,
+        "tier": "tier1",
+        "id": "esc-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-escalation-20260515-163240.md"
+    },
+    {
+      "timestamp": "2026-05-15T16:33:04Z",
+      "signal": {
+        "source": "behavioral_state",
+        "type": "high_priority_region",
+        "region": "middle_east",
+        "score": 90,
+        "tier": "tier1",
+        "id": "prio-middle_east"
+      },
+      "tier": "tier1",
+      "analysis_path": "/home/ubuntu/.openclaw/workspace/analysis/triage/auto-behavioral_state-high_priority_region-20260515-163304.md"
     }
   ]
 }

@@ -1,37 +1,13 @@
 [
   {
-    "brief_id": "gsib-2026-05-14",
-    "timestamp": "2026-05-14T12:33:11.177936",
+    "brief_id": "gsib-2026-05-15",
+    "timestamp": "2026-05-15T12:11:20.948717",
     "notified": 0,
     "total_active": 0
   },
   {
-    "brief_id": "gsib-2026-05-11",
-    "timestamp": "2026-05-11T12:14:47.843442",
-    "notified": 0,
-    "total_active": 0
-  },
-  {
-    "brief_id": "gsib-2026-05-08",
-    "timestamp": "2026-05-08T12:18:55.357945",
-    "notified": 0,
-    "total_active": 0
-  },
-  {
-    "brief_id": "gsib-2026-05-06",
-    "timestamp": "2026-05-06T16:56:03.681043",
-    "notified": 0,
-    "total_active": 0
-  },
-  {
-    "brief_id": "gsib-2026-05-05",
-    "timestamp": "2026-05-05T08:34:49.120561",
-    "notified": 1,
-    "total_active": 1
-  },
-  {
-    "brief_id": "gsib-2026-05-07",
-    "timestamp": "2026-05-07T12:21:26.595830",
+    "brief_id": "gsib-2026-05-13",
+    "timestamp": "2026-05-13T12:09:13.361208",
     "notified": 0,
     "total_active": 0
   },
@@ -42,8 +18,38 @@
     "total_active": 0
   },
   {
-    "brief_id": "gsib-2026-05-13",
-    "timestamp": "2026-05-13T12:09:13.361208",
+    "brief_id": "gsib-2026-05-07",
+    "timestamp": "2026-05-07T12:21:26.595830",
+    "notified": 0,
+    "total_active": 0
+  },
+  {
+    "brief_id": "gsib-2026-05-05",
+    "timestamp": "2026-05-05T08:34:49.120561",
+    "notified": 1,
+    "total_active": 1
+  },
+  {
+    "brief_id": "gsib-2026-05-06",
+    "timestamp": "2026-05-06T16:56:03.681043",
+    "notified": 0,
+    "total_active": 0
+  },
+  {
+    "brief_id": "gsib-2026-05-08",
+    "timestamp": "2026-05-08T12:18:55.357945",
+    "notified": 0,
+    "total_active": 0
+  },
+  {
+    "brief_id": "gsib-2026-05-11",
+    "timestamp": "2026-05-11T12:14:47.843442",
+    "notified": 0,
+    "total_active": 0
+  },
+  {
+    "brief_id": "gsib-2026-05-14",
+    "timestamp": "2026-05-14T12:33:11.177936",
     "notified": 0,
     "total_active": 0
   }
