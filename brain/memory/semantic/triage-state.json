@@ -1,62 +1,230 @@
 {
   "version": 1,
-  "last_check": "2026-05-14T20:32:57Z",
-  "signals_processed": 311,
-  "analyses_fired": 4,
+  "last_check": "2026-05-15T16:33:04Z",
+  "signals_processed": 513,
+  "analyses_fired": 3,
   "last_signals": [
     {
-      "id": "tg-judean_osint-080",
+      "id": "tg-judean_osint-211",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
     },
     {
-      "id": "tg-judean_osint-255",
+      "id": "tg-judean_osint-759",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
     },
     {
-      "id": "sonar-921",
+      "id": "sonar-339",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 100
+      "score": 96.0
     },
     {
-      "id": "sonar-988",
+      "id": "sonar-984",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 100
+      "score": 93.0
     },
     {
-      "id": "sonar-559",
+      "id": "sonar-950",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 100
+      "score": 88.0
     },
     {
-      "id": "sonar-295",
+      "id": "sonar-953",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 87.0
+      "score": 85.0
     },
     {
-      "id": "sonar-222",
+      "id": "sonar-248",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 69.0
+      "score": 81.0
     },
     {
-      "id": "tg-judean_osint-112",
+      "id": "tg-judean_osint-675",
       "source": "telegram",
       "type": "osint_alert",
       "score": 65
     },
     {
-      "id": "sonar-657",
+      "id": "sonar-756",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 60.0
+      "score": 58.0
+    },
+    {
+      "id": "tg-judean_osint-583",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "tg-judean_osint-899",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "sonar-831",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-906",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-013",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 92.0
+    },
+    {
+      "id": "sonar-843",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 82.5
+    },
+    {
+      "id": "sonar-006",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 80.5
+    },
+    {
+      "id": "sonar-380",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 75.0
+    },
+    {
+      "id": "tg-judean_osint-154",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 65
+    },
+    {
+      "id": "tg-judean_osint-946",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "tg-judean_osint-338",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "sonar-622",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-251",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-715",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 88.0
+    },
+    {
+      "id": "sonar-543",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 79.0
+    },
+    {
+      "id": "sonar-173",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 78.0
+    },
+    {
+      "id": "tg-judean_osint-963",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 65
+    },
+    {
+      "id": "gap-asia",
+      "source": "behavioral_state",
+      "type": "collection_gap",
+      "score": 55
+    },
+    {
+      "id": "sonar-910",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 53.5
+    },
+    {
+      "id": "tg-judean_osint-177",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "tg-judean_osint-273",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 50
+    },
+    {
+      "id": "sonar-029",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-466",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 100
+    },
+    {
+      "id": "sonar-603",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 91.0
+    },
+    {
+      "id": "sonar-837",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 69.0
+    },
+    {
+      "id": "tg-judean_osint-214",
+      "source": "telegram",
+      "type": "osint_alert",
+      "score": 65
+    },
+    {
+      "id": "sonar-059",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 55.5
+    },
+    {
+      "id": "sonar-505",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 55.0
     },
     {
       "id": "gap-middle_east",
@@ -65,88 +233,28 @@
       "score": 55
     },
     {
-      "id": "tg-judean_osint-985",
+      "id": "tg-judean_osint-251",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
     },
     {
-      "id": "tg-judean_osint-076",
+      "id": "tg-judean_osint-975",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
     },
     {
-      "id": "sonar-587",
+      "id": "sonar-626",
       "source": "sonar",
       "type": "breaking_news",
       "score": 100
     },
     {
-      "id": "sonar-137",
+      "id": "sonar-623",
       "source": "sonar",
       "type": "breaking_news",
       "score": 100
-    },
-    {
-      "id": "sonar-537",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 100
-    },
-    {
-      "id": "sonar-449",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 86.5
-    },
-    {
-      "id": "sonar-456",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 67.5
-    },
-    {
-      "id": "tg-judean_osint-301",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 65
-    },
-    {
-      "id": "tg-judean_osint-647",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "tg-judean_osint-068",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "sonar-243",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 47.5
-    },
-    {
-      "id": "sonar-015",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 100
-    },
-    {
-      "id": "sonar-924",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 100
-    },
-    {
-      "id": "sonar-771",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 95.5
     },
     {
       "id": "esc-middle_east",
@@ -161,152 +269,44 @@
       "score": 90
     },
     {
-      "id": "sonar-100",
+      "id": "sonar-075",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 89.0
+      "score": 88.0
     },
     {
-      "id": "sonar-327",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 75.0
-    },
-    {
-      "id": "tg-judean_osint-443",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 65
-    },
-    {
-      "id": "tg-judean_osint-646",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "tg-judean_osint-650",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "sonar-712",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 45.0
-    },
-    {
-      "id": "sonar-816",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 100
-    },
-    {
-      "id": "sonar-264",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 93.0
-    },
-    {
-      "id": "sonar-731",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 89.0
-    },
-    {
-      "id": "sonar-359",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 88.5
-    },
-    {
-      "id": "sonar-187",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 65.0
-    },
-    {
-      "id": "tg-judean_osint-644",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 65
-    },
-    {
-      "id": "sonar-960",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 60.5
-    },
-    {
-      "id": "tg-judean_osint-469",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "tg-judean_osint-294",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "sonar-993",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 100
-    },
-    {
-      "id": "sonar-637",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 89.0
-    },
-    {
-      "id": "sonar-890",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 81.0
-    },
-    {
-      "id": "gmail-19e2801a",
+      "id": "gmail-19e2c71e",
       "source": "gmail",
       "type": "intel_email",
-      "score": 80
+      "score": 65
     },
     {
-      "id": "tg-judean_osint-823",
+      "id": "tg-judean_osint-719",
       "source": "telegram",
       "type": "osint_alert",
       "score": 65
     },
     {
-      "id": "sonar-760",
+      "id": "sonar-917",
       "source": "sonar",
       "type": "breaking_news",
-      "score": 57.5
+      "score": 64.0
     },
     {
-      "id": "tg-judean_osint-453",
+      "id": "sonar-536",
+      "source": "sonar",
+      "type": "breaking_news",
+      "score": 63.0
+    },
+    {
+      "id": "tg-judean_osint-244",
       "source": "telegram",
       "type": "osint_alert",
       "score": 50
-    },
-    {
-      "id": "tg-judean_osint-576",
-      "source": "telegram",
-      "type": "osint_alert",
-      "score": 50
-    },
-    {
-      "id": "sonar-999",
-      "source": "sonar",
-      "type": "breaking_news",
-      "score": 48.0
     }
   ],
   "cooldowns": {
-    "sonar:breaking_news": "2026-05-14T20:32:57Z",
+    "sonar:breaking_news": "2026-05-14T10:02:10Z",
     "behavioral_state:escalation": "2026-05-14T01:32:53Z"
   }
 }

@@ -634,9 +634,6 @@ def main() -> int:
     return 0
 
 
-if __name__ == "__main__":
-    sys.exit(main())
-
 # ── Web search fallback for region gaps ───────────────────────────────
 
 WEB_SEARCH_REGIONS = {
@@ -752,3 +749,6 @@ def web_search_fallback(incidents: list[dict], regions: dict) -> list[dict]:
 
     log(f"Web search fallback added {len(new_raw)} items across {len(gap_regions)} gap regions")
     return incidents
+
+if __name__ == "__main__":
+    sys.exit(main())

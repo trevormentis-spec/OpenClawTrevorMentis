@@ -57,9 +57,9 @@ cd "$REPO"
 # (Switch --model deepseek/deepseek-v4-pro --provider deepseek to fall back)
 echo "--- Running orchestrator (tiered: Flash for regions, Opus 4.7 for exec) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
-    --model "anthropic/claude-opus-4.7" \
+    --model "deepseek/deepseek-v4-pro" \
     --tier2-model "deepseek/deepseek-chat" \
-    --provider openrouter \
+    --provider deepseek \
     --no-deliver \
     --strict-env 2>&1 | tee -a "$LOG"
 

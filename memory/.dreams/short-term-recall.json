@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-14T15:41:49.683Z",
+  "updatedAt": "2026-05-15T19:00:09.417Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -93,13 +93,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 18,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 17.50553129149435,
+      "totalScore": 18.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -118,7 +118,8 @@
         "ebd4298379f6",
         "3c68673febfe",
         "b84acb705a0f",
-        "d76260b5998d"
+        "d76260b5998d",
+        "b2960036661c"
       ],
       "recallDays": [
         "2026-04-28",
@@ -131,7 +132,8 @@
         "2026-05-08",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -342,13 +344,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.690475928211749,
+      "totalScore": 10.690475928211749,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
@@ -358,14 +360,17 @@
         "876b2ff03274",
         "46ce8791f426",
         "754a5e2df3c2",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "b62b199ec189",
+        "b2960036661c"
       ],
       "recallDays": [
         "2026-04-29",
         "2026-05-02",
         "2026-05-04",
         "2026-05-05",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -502,13 +507,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 17,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.611906618286376,
+      "totalScore": 18.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -526,7 +531,9 @@
         "bfb778309dbc",
         "f7d1f8923a5d",
         "088d05594874",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "1b9064ffbf19",
+        "b2960036661c"
       ],
       "recallDays": [
         "2026-05-04",
@@ -536,7 +543,8 @@
         "2026-05-08",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -556,13 +564,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.751788668739627,
+      "totalScore": 10.751788668739627,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-11T04:52:51.742Z",
+      "lastRecalledAt": "2026-05-15T13:36:29.865Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -573,7 +581,8 @@
         "23c38c53aa26",
         "29111942a45c",
         "f7d1f8923a5d",
-        "088d05594874"
+        "088d05594874",
+        "b62b199ec189"
       ],
       "recallDays": [
         "2026-05-04",
@@ -582,7 +591,8 @@
         "2026-05-07",
         "2026-05-08",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -737,26 +747,29 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-05 — Tuesday ## GenViral Integration — OSINT Launch Plan - GenViral API key configured and verified: `gva_live_...` (Small tier, yearly, 2400 credits/mo) - Skill already installed at `workspace/skills/genviral/` — fully functional - Verified: 0 accounts connected (needs manual setup in GenViral dashboard) - Subscription: active, no credits used yet, reset May 5 2027 - defaults.yaml updated: timezone → America/Los_Angeles, posting times → 07:00/12:00/17:00 PT - GENVIRAL_API_KEY saved to .env + TOOLS.md - Updated `plans/osint-product-launch.md`: - Replaced fragmented posting tools (VibePost, Twitter API, browser automation) with GenViral - Added TikTok, Instagram, YouTube, Pint",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T08:13:34.521Z",
-      "lastRecalledAt": "2026-05-09T09:00:08.751Z",
+      "lastRecalledAt": "2026-05-15T13:37:10.183Z",
       "queryHashes": [
         "50bca59fec26",
         "945ebcfdc68d",
         "b923ea0460ce",
         "31f2802656ee",
         "ebd4298379f6",
-        "29111942a45c"
+        "29111942a45c",
+        "0052d7c183bd",
+        "1b9064ffbf19"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gva-live",
@@ -964,22 +977,25 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "## Daily Skill Security Audit (cron) - **Time:** 00:00 UTC - **Scope:** Scanned 79 skills across ~/.openclaw/skills, /usr/lib/node_modules/openclaw/skills, ~/.openclaw/workspace/skills - **Tool:** skill-scanner v1.0 - **Results:** 59 ✅ approved | 2 ⚠️ caution | 10 ❌ reject (all false positives) - **Notable:** All 116+ critical/high findings are false positives (env/config patterns in standard tooling). No actual threats detected. - **Low-priority item:** `social-post` skill has hardcoded `/home/phan_harry/.openclaw/.env` paths from its author — worth replacing with generic paths if deployed. - **Report emailed** to roderick.jones@gmail.com via AgentMail (trevor_mentis@agentmail.to) - **Fil",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:42:44.149Z",
-      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
+      "lastRecalledAt": "2026-05-15T13:37:10.183Z",
       "queryHashes": [
         "3c68673febfe",
         "196f8419e846",
         "d76260b5998d",
-        "3c76eeaf7cbf"
+        "3c76eeaf7cbf",
+        "b62b199ec189",
+        "1b9064ffbf19"
       ],
       "recallDays": [
         "2026-05-11",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "openclaw/skills",
@@ -1191,18 +1207,20 @@
       "endLine": 95,
       "source": "memory",
       "snippet": "- Created scripts/procedural_memory_loader.py — reads brain/memory/procedural/*.md - Outputs compiled.md or prompt-block format - orchestrator calls at step 0a, passes --procedural to analyze.py - Injected as === PROCEDURAL MEMORY === block alongside brain recall ### Fix 7: Config safeguard (CLOSED) - Created scripts/validate_config.py — validates openclaw.json structure before edits - Checks top-level keys, skill entry fields, env var naming - Prevents invalid field bugs (like the cron.jobs I broke earlier) ### Fix 8: Technical debt ledger (CLOSED) - Created brain/memory/semantic/tech-debt.md — 21 entries (8 resolved, 13 open) - Severity-graded (Critical/High/Medium), discovery date, reso",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-13T04:34:02.408Z",
-      "lastRecalledAt": "2026-05-13T04:34:02.408Z",
+      "lastRecalledAt": "2026-05-15T13:36:26.577Z",
       "queryHashes": [
-        "3c76eeaf7cbf"
+        "3c76eeaf7cbf",
+        "0052d7c183bd"
       ],
       "recallDays": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "brain/memory/procedural",
@@ -1222,19 +1240,21 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
       "queryHashes": [
         "35087ae309b1",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "b2960036661c"
       ],
       "recallDays": [
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -1254,18 +1274,20 @@
       "endLine": 98,
       "source": "memory",
       "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
       "queryHashes": [
-        "35087ae309b1"
+        "35087ae309b1",
+        "b2960036661c"
       ],
       "recallDays": [
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -1316,18 +1338,20 @@
       "endLine": 159,
       "source": "memory",
       "snippet": "- Escalations expire after 24h. Tested end-to-end: caps 20→40→20 on clear ### Meta-Cognition Daemon (BUILT) - Created scripts/self_assessment.py — scores 7 dimensions daily - Collection, Calibration, Routing, Config, Observation, Autonomy, Epistemic - Weighted overall score, regression detection against yesterday's scores - If any dimension < 50: writes self-assessment-injection.md for next pipeline prompt - If critical (<40): flags for system action - First assessment: 83/100 (routing fix took it from 75→83) ## LDAP-7 Starmer Profile — 2026-05-12 Built a full LDAP-7 profile for Keir Starmer as a persistent leader profile: - D1 Optionality: 4 (moderate — forecloses options to signal decis",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-14T04:11:06.835Z",
+      "lastRecalledAt": "2026-05-15T14:49:01.999Z",
       "queryHashes": [
-        "35087ae309b1"
+        "35087ae309b1",
+        "37203b1dd7cb"
       ],
       "recallDays": [
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "end-to-end",
@@ -1347,19 +1371,21 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- CPCA: ALL GREEN — Starmer's problems are political/structural, not cognitive - Profile saved to brain/memory/semantic/ldap7-profiles/starmer-keir.md ## Products Delivered (2026-05-12) 1. UK Security & Intelligence Assessment — comprehensive threat analysis (7 sections, 5 KJs) 2. Starmer Leadership Analysis — descriptive profile + 30-day outlook 3. Starmer LDAP-7 Analysis — scored framework with decision-cycle diagnosis and CPCA overlay 4. Both reports scheduled for email delivery at 06:00 PT to roderick.jones@gmail.com",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-15T14:49:01.999Z",
       "queryHashes": [
         "35087ae309b1",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "37203b1dd7cb"
       ],
       "recallDays": [
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "political/structural",
@@ -1401,6 +1427,73 @@
         "deepseek-prompts.md",
         "analyst-to-analyst",
         "trade-inline"
+      ]
+    },
+    "memory:memory/2026-05-14.md:26:43": {
+      "key": "memory:memory/2026-05-14.md:26:43",
+      "path": "memory/2026-05-14.md",
+      "startLine": 26,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- `scripts/priority_triage.py` Sonar queries had: no retry, 30s timeout, no fallback - Fixed: added 1 retry with 45s → 60s timeout escalation - Added `_brave_search()` fallback using BRAVE_API_KEY when Sonar fails - Both keys checked independently — if Sonar down, Brave-only mode works - Also fixed `collect.py fetch()`: added 2 retries with exponential backoff (15s → 30s) - Roderick rightly flagged I should have done this myself under the autonomy framework ## Dream — Memory consolidation added - Installed from https://github.com/grandamenium/dream-skill adapted for OpenClaw - Script: `scripts/dream.py` — 4-phase consolidation (orient → gather → consolidate → prune) - Cron: `9124f2df` — ru",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T13:36:26.577Z",
+      "lastRecalledAt": "2026-05-15T14:49:01.999Z",
+      "queryHashes": [
+        "0052d7c183bd",
+        "b62b199ec189",
+        "1b9064ffbf19",
+        "37203b1dd7cb"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "scripts/priority-triage.py",
+        "brave-search",
+        "brave-api-key",
+        "brave-only",
+        "collect.py",
+        "scripts/dream.py",
+        "4-phase",
+        "scripts"
+      ]
+    },
+    "memory:memory/2026-05-14.md:16:30": {
+      "key": "memory:memory/2026-05-14.md:16:30",
+      "path": "memory/2026-05-14.md",
+      "startLine": 16,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "BLUF: Roderick — Russia's Zakarpattia strikes and Xi's Taiwan warning to Trump reframe the week as parallel red-line tests on NATO's eastern flank and the Taiwan Strait, while three regions (North America, South/Central America, Global Finance) are flying blind on collection gaps. - [europe] Russia will conduct at least one additional combined drone-missile strike on a Ukrainian city west of the Dnipro within the next 7 days. (likely; 62% / 7d) - [asia] The Trump-Xi summit will produce no substantive Taiwan agreement, and Chinese military activity in the Taiwan Strait will visibly increase within 7 days. (even chance; 52% / 7d) - [middle_east] Israel will conduct at least one additional sig",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T13:36:26.577Z",
+      "lastRecalledAt": "2026-05-15T13:37:10.183Z",
+      "queryHashes": [
+        "0052d7c183bd",
+        "b62b199ec189",
+        "1b9064ffbf19"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "red-line",
+        "south/central",
+        "drone-missile",
+        "trump-xi",
+        "middle-east",
+        "bluf",
+        "roderick",
+        "russia's"
       ]
     }
   }

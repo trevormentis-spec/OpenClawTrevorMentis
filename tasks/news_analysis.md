@@ -1,31 +1,31 @@
-# Daily Intelligence Briefing — 2026-05-14
+# Daily Intelligence Briefing — 2026-05-15
 
 
 ## BLUF (Bottom Line Up Front)
 
-Roderick — Russia's Zakarpattia strikes and Xi's Taiwan warning to Trump reframe the week as parallel red-line tests on NATO's eastern flank and the Taiwan Strait, while three regions (North America, South/Central America, Global Finance) are flying blind on collection gaps.
+The US-China summit failed to produce guardrails on Taiwan or Iran, while Russia's war in Ukraine triggered a government collapse in Latvia and Iran's missile rebuild challenges the US victory narrative, making the next week a period of elevated instability across three theatres.
 
 
-What's new: Russia struck western Ukraine within kilometres of NATO borders, prompting Hungary's first ambassadorial summons since 2022; Xi publicly told Trump that Taiwan could 'lead to conflict' — the sharpest summit language since 2023; Israel killed two in southern Lebanon hours before Washington ceasefire talks. Why it matters today: two great-power principals are testing red lines simultaneously, and the third (Israel) is using kinetic pressure as a bargaining posture. What to watch: a second Zakarpattia strike, the summit joint statement language on Taiwan, and whether Hezbollah retaliates before the Washington talks conclude. Caveat: three of six regions returned zero incidents — calibration on those judgments is low and the principal should treat absence as collection failure, not quiet.
+Diverging summit readouts confirm no progress on core flashpoints, as Xi's Taiwan warning raised the risk of Chinese military exercises. Drone incursions into Latvia brought down the government, signaling NATO spillover. Iran's preserved missile capability, coupled with Israeli readiness for a second round, reprices the Middle East toward escalation. Watch for Chinese military movements near Taiwan, an Iranian missile test, and NATO's response to Baltic airspace breaches.
 
 
 ## Key Judgments
 
-- **[·europe]** Russia will conduct at least one additional combined drone-missile strike on a Ukrainian city west of the Dnipro within the next 7 days.
-  - *Confidence: likely (62% / 7d)*
-
-- **[·asia]** The Trump-Xi summit will produce no substantive Taiwan agreement, and Chinese military activity in the Taiwan Strait will visibly increase within 7 days.
-  - *Confidence: even chance (52% / 7d)*
-
-- **[·middle_east]** Israel will conduct at least one additional significant strike in southern Lebanon within 7 days absent a Washington-brokered ceasefire extension.
+- **[·europe]** At least one additional NATO member state (likely Poland or Estonia) will report a drone incursion or crash on its territory within the next 7 days.
   - *Confidence: likely (60% / 7d)*
 
-- **[·north_america]** North America collection coverage will remain below 50% of intensity cap for at least the next 48 hours absent explicit tasking.
-  - *Confidence: likely (58% / 7d)*
+- **[·asia]** China will conduct at least one military exercise or patrol near Taiwan within the next 7 days as a follow-up to Xi's warning.
+  - *Confidence: likely (65% / 7d)*
 
-- **[·south_central_america]** The South & Central America collection gap will persist for at least another 48 hours absent explicit revision of collection priorities.
-  - *Confidence: likely (62% / 7d)*
+- **[·middle_east]** Iran will conduct at least one ballistic missile test or visible deployment movement within the next 7 days to signal reconstitution of its strike capability.
+  - *Confidence: likely (60% / 7d)*
+
+- **[·north_america]** The Digital Asset Market Clarity Act will pass the full Senate within 7 days, given bipartisan committee support and administration backing.
+  - *Confidence: likely (60% / 7d)*
+
+- **[·south_central_america]** Flávio Bolsonaro will lose at least 5 percentage points in polling within 7 days due to the leaked tape scandal.
+  - *Confidence: likely (65% / 7d)*
 
 
 ---
-*Analysis prepared by TREVOR — 2026-05-14*
+*Analysis prepared by TREVOR — 2026-05-15*
