@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-16 17:01 UTC
+# Gmail Intel Digest — 2026-05-16 19:03 UTC
 
 ## Global Security & Intelligence Brief — 16 May 2026 (v2, refreshed format)
 **From:** Trevor <trevor.mentis@gmail.com>

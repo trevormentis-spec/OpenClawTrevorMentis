@@ -166,3 +166,33 @@
 - **Prompt updates:** System prompt in `deepseek-prompts.md` updated to use analyst-to-analyst
   voice, direct address, and trade-inline style. Regional prompt template updated with
   `{prediction_market_data}` and `{standing_assessment}` fields.
+
+## Durable Decisions — Mexico Analysis Framework (2026-05-15)
+
+### 4-Layer Huachicoleo Model
+Generalizable model for resource-theft system crime, transferable beyond Mexico:
+1. **State Capture** — how political/police networks enable theft at scale
+2. **Cartel Revenue** — the economic engine (oil bunkering, illegal mining, water theft)
+3. **Infrastructure Vulnerability** — physical/operational weak points in the resource system
+4. **Political Risk** — how the resource theft destabilizes governance
+
+### 6-Axis Cartel Framework
+Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
+- Territory / Revenue / Succession / Alliances / Tempo / State Penetration
+
+### Key Structural Findings
+- **Sheinbaum** is a technocratic institutionalist, not a populist — reshapes institutions through
+  Congress rather than executive fiat. The Morena internal split (AMLO faction vs younger
+  reformers) over the Rocha case is the defining stress test of her control.
+- **Chapitos succession crisis** is the most consequential variable in the Sinaloa intra-CDS war.
+  Ivan Guzman's removal created leadership vacuum Mayos exploit by waiting.
+- **CJNG vulnerability** is biological — El Mencho's health is the single point of failure.
+- **CDN in Tamaulipas** is a mature criminal franchise operating a border monopoly — not
+  strategically dynamic but structurally resilient.
+
+### Collection Gaps (Tracked)
+- No Spanish-language primary sources integrated (Reforma, El Universal, Milenio, Animal Politico)
+- No local-language analysis of Sheinbaum's May 7 Trump rebuttal from Mexican media
+- CBP/DEA seizure data needs systematic monthly ingest
+- Prediction market contracts on Mexico (Kalshi, Polymarket) not yet reviewed
+- Pemex operational data not yet ingested for pipeline tap counts
