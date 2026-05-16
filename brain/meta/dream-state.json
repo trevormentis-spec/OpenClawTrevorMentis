@@ -1,11 +1,11 @@
 {
-  "last_dream": "2026-05-14T16:34:33.767545+00:00",
+  "last_dream": "2026-05-16T10:00:09.372401+00:00",
   "last_memory_md_lines": 168,
   "last_results": {
     "files_scanned": 10,
-    "total_signals": 14,
-    "entries_promoted": 11,
-    "contradictions_resolved": 7,
+    "total_signals": 15,
+    "entries_promoted": 1,
+    "contradictions_resolved": 1,
     "relative_dates_normalized": 0,
     "duplicates_removed": 0,
     "memory_md_before": 168,

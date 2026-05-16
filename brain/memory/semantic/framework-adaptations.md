@@ -67,6 +67,46 @@ Each infrastructure or workflow change is a framework experiment. Log: what chan
 **Does it generalize?**
 - ✅ Yes — any topic will have the same problem. Entity file "stale date" is a framework feature, not Mexico-specific.
 
+## Adaptation #5 — Postdiction Forced-Resolution Mechanism (2026-05-16)
+
+**What changed:**
+- `scripts/postdict.py` recheck logic now force-resolves expired "unresolved" judgments to "incorrect"
+- Legacy entries (no horizon_expiry field) auto-calculated as 7 days from entry date
+- Top-level aggregation now sums from all daily_score entries regardless of recheck status
+- Both `--recheck` and the daily postdiction path now produce honest calibration data
+
+**Result:** Calibration changed from a fake 5/0/50 (correct/incorrect/unresolved) to a real 5/10/40.
+
+**Why:**
+- The original design excluded unresolved from accuracy calculations and never forced resolution at horizon expiry
+- This systematically biased calibration toward overconfidence — no prediction was ever "wrong"
+- Without honest calibration, the entire confidence-banding framework is performative
+
+**Was it worth it?**
+- ✅ Yes. This is the single highest-leverage framework fix available.
+
+**Does it generalize?**
+- ✅ Pure framework fix. Applies to any topic domain.
+
+## Adaptation #6 — Mexico Daily News Scanner (2026-05-16)
+
+**What changed:**
+- Created `scripts/mexico-daily-scan.py` — fetches Spanish-language Mexican news from 8 free sources
+- 76 articles from 8 sources on first run, covering Rocha case escalation, Sheinbaum positioning, security operations
+- Only blocked source: Reforma (paywall — principal to resolve)
+
+**Why:**
+- Spanish-language news was identified as the biggest collection gap in the framework reflection
+- English-language wire services filter and delay Mexican local reporting
+
+**Was it worth it?**
+- ✅ Yes — covered gaps immediately (detected Rocha co-defendant arrests within first run)
+- ⚠️ Animal Politico was not parsed (JS-rendered site) — needs newspaper3k or similar
+
+**Does it generalize?**
+- ✅ Source URL list + language = any country/language. Replace URL list with Argentine sources and you have an Argentina daily scan.
+- ⚠️ The keyword-based theme matching is Mexico-specific. For generalization, the theme keywords would need to be parameterized.
+
 ## Adaptation #4 — Knowledge Architecture Passes Redirect Test (Validated, 2026-05-15)
 
 **What changed:**

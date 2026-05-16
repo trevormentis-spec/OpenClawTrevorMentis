@@ -116,6 +116,10 @@
     "recursive-knowledge-miner": {
       "version": "1.0.0",
       "installedAt": 1778835759154
+    },
+    "mapbox-geospatial-operations": {
+      "version": "1.0.0",
+      "installedAt": 1778922144512
     }
   }
 }
