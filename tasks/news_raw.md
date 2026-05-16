@@ -1,4 +1,28 @@
-# Gmail Intel Digest — 2026-05-16 01:01 UTC
+# Gmail Intel Digest — 2026-05-16 17:01 UTC
+
+## Global Security & Intelligence Brief — 16 May 2026 (v2, refreshed format)
+**From:** Trevor <trevor.mentis@gmail.com>
+**Date:** Sat, 16 May 2026 08:09:07 -0700
+**Type:** alert | **Importance:** high
+
+Trevor,
+
+A refreshed v2 of today's brief is attached. A few format changes per the morning feedback:
+
+The typography has moved to an Economist-style register: tighter measures, smaller display heads, body-led page architecture. The theatre photos are now properly sized in relation to text rather than dominating each opening spread. Honorifics now read "President Putin", "President Trump", "President Zelensky", "Prime Minister Modi" and "President Sheinbaum" on first reference, with surnames ther
+
+---
+
+## Global Security & Intelligence Brief — 16 May 2026
+**From:** Trevor <trevor.mentis@gmail.com>
+**Date:** Sat, 16 May 2026 14:44:19 +0000
+**Type:** alert | **Importance:** high
+
+Trevor,
+
+Issue 16 attached. Today's most consequential single event is on the prediction-market side: the Polymarket ceasefire-before-2027 contract resolved YES on 14 May after the Istanbul direct-channel readout, closing the long-running NO position at a full 74-point loss; the desk has rolled into the broader ceasefire-agreement-by-31-December-2026 bucket (NO at 52¢) where agreement and durable cessation are priced as separate problems. The single largest live re-pricing is in the Middle East 
+
+---
 
 ## Russian Offensive Campaign Assessment, May 15, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -35,27 +59,6 @@ Email from Institute for the Study of War Senior Iranian officials continue to d
 **Type:** newsletter | **Importance:** medium
 
 96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
-
----
-
-## China & Taiwan Update, May 15, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Fri, 15 May 2026 16:02:52 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War CCP General Secretary Xi Jinping met with US President Donald Trump from May 13 to 15. May 15, 2026 Data Cutoff: May 15, 2026 Alison O’Neil, Karina Wugang, Jackson Karas, and Jon Plummer of the Institute for the Study of War; Luke Jacobus of the American Enterprise Institute TOPLINES CCP General Secretary Xi Jinping met with US President Donald Trump from May 13 to 15. The two discussed global flashpoints, including Taiwan and the Middle East, but did no
-
----
-
-## National Security Nightcap for Friday, May 15
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Fri, 15 May 2026 20:00:44 +0000
-**Type:** alert | **Importance:** high
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-friday-may-15?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=34b76c5f28-EMAIL_CAMPAIGN_2026_05_15_07_32&utm_medium=email&utm_term=0_-34b76c5f28-547824188&mc_cid=34b76c5f28&mc_eid=UNIQID
-
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=34b76c5f28-EMAIL_CAMPAIGN_2026_05_15_07_32&utm_medium=
 
 ---
 

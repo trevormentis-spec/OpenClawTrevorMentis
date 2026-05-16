@@ -1,0 +1,69 @@
+[
+  {
+    "ticker": "KXPESO",
+    "description": "USD/MXN exchange rate",
+    "series_count": 10211,
+    "market_count": 1,
+    "markets": [
+      {
+        "title": "USD/Peso exchange rate on Feb 4, 2022?",
+        "event_ticker": "PESO-22FEB04"
+      }
+    ]
+  },
+  {
+    "ticker": "KXFXPESO",
+    "description": "USD/MXN rate (alt)",
+    "series_count": 10211,
+    "market_count": 1,
+    "markets": [
+      {
+        "title": "USD/Mexican peso exchange rate on April 22, 2022?",
+        "event_ticker": "PESO-22APR22"
+      }
+    ]
+  },
+  {
+    "ticker": "KXMEXICODEPUTIES",
+    "description": "Mexico Chamber of Deputies",
+    "series_count": 10211,
+    "market_count": 1,
+    "markets": [
+      {
+        "title": "Who will win the next Mexican Chamber of deputies election?",
+        "event_ticker": "KXMEXICODEPUTIES-27"
+      }
+    ]
+  },
+  {
+    "ticker": "KXUSMCA",
+    "description": "USMCA withdrawal",
+    "series_count": 10211,
+    "market_count": 1,
+    "markets": [
+      {
+        "title": "Will Trump try to leave the USMCA?",
+        "event_ticker": "KXUSMCA-26"
+      }
+    ]
+  },
+  {
+    "ticker": "KXGULF",
+    "description": "Gulf of Mexico rename",
+    "series_count": 10211,
+    "market_count": 1,
+    "markets": [
+      {
+        "title": "Will Trump rename the Gulf of Mexico to \"Gulf of America\" in 2025?",
+        "event_ticker": "KXGULF-26"
+      }
+    ]
+  },
+  {
+    "ticker": "KXFENTANYL",
+    "description": "Fentanyl policy",
+    "series_count": 10211,
+    "market_count": 0,
+    "markets": []
+  }
+]

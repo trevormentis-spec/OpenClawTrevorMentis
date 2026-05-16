@@ -1,0 +1,620 @@
+{
+  "date": "2026-05-16",
+  "sources_scanned": 9,
+  "sources_ok": 8,
+  "sources_blocked": 1,
+  "sources_failed": 0,
+  "total_articles": 76,
+  "results": [
+    {
+      "name": "Animal Politico",
+      "url": "https://www.animalpolitico.com",
+      "status": "ok",
+      "page_title": "Noticias | Grupo Animal",
+      "article_count": 0,
+      "articles": []
+    },
+    {
+      "name": "Milenio",
+      "url": "https://www.milenio.com",
+      "status": "ok",
+      "page_title": "MILENIO | Noticias de hoy en México y el mundo al momento- Grupo Milenio",
+      "article_count": 15,
+      "articles": [
+        {
+          "title": "Enrique Díaz Vega, exsecretario de Finanzas de Rocha, se entrega a EU",
+          "url": "https://www.milenio.com/policia/enrique-diaz-vega-exsecretario-de-finanzas-de-sinaloa-se-entrega-a-eu",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gerardo Mérida, exsecretario de Seguridad de Sinaloa, es detenido",
+          "url": "https://www.milenio.com/policia/detienen-en-eu-a-gerardo-merida-ex-secretario-de-seguridad-de-sinaloa",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Mérida, negociando dar información a fiscales de EU y evitar juicio",
+          "url": "https://www.milenio.com/policia/gerardo-merida-en-negociacion-para-entregar-informacion-a-fiscales-eu",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Tres golpes y se acaba el tiempo para Rocha Moya",
+          "url": "https://www.milenio.com/opinion/oscar-balderas/columna-invitada/acaba-rocha-moya-analisis-caso-vs-gobernador",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Los secuestros que fueron el preludio de la narcoguerra",
+          "url": "https://www.milenio.com/policia/secuestros-en-culiacan-fracturaron-sinaloa-y-la-gestion-gerardo-merida",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Citan a comparecer a Leonel Godoy por el asesinato del alcalde Carlos Manzo",
+          "url": "https://www.milenio.com/policia/citan-al-exgobernador-leonel-godoy-por-crimen-de-carlos-manzo",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La traición de Rocha Moya costó la vida de policías sinaloenses",
+          "url": "https://www.milenio.com/estados/sinaloa-asesinatos-policias-aumentan-traicion-rocha-moya-mayo-zambada",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Sheinbaum se reúne con Michelle Bachelet en Palacio Nacional",
+          "url": "https://www.milenio.com/politica/sheinbaum-se-reune-con-michelle-bachelet-en-palacio-nacional",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Powell deja presidencia de la Reserva Federal de EU tras ocho años",
+          "url": "https://www.milenio.com/negocios/powell-deja-presidencia-de-la-fed-tras-ocho-anos",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La procuración selectiva de justicia",
+          "url": "https://www.milenio.com/opinion/carlos-marin/el-asalto-la-razon/la-procuracion-selectiva-de-justicia",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Sorpresas de Pekín",
+          "url": "https://www.milenio.com/opinion/hector-aguilar-camin/dia-con-dia/sorpresas-de-pekin",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Chilapa… ¿Y después de la intervención?",
+          "url": "https://www.milenio.com/opinion/carlos-puig/duda-razonable/chilapa-y-despues-de-la-intervencion",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Una oposición inexistente",
+          "url": "https://www.milenio.com/opinion/joaquin-lopez-doriga/en-privado/una-oposicion-inexistente",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gobierno federal investiga a Rocha Moya y a sus hijos",
+          "url": "https://www.milenio.com/policia/gobierno-federal-investiga-a-rocha-moya-y-a-sus-hijos",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Buscó a su hijo 10 años en fosas clandestinas... pero él estaba en la morgue desde 2016",
+          "url": "https://www.milenio.com/comunidad/maria-busco-a-su-hijo-por-10-anos-en-fosas-el-estaba-en-el-ijcf",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aristegui Noticias",
+      "url": "https://aristeguinoticias.com",
+      "status": "ok",
+      "page_title": "Aristegui Noticias | Desde cualquier medio, periodismo en libertad",
+      "article_count": 7,
+      "articles": [
+        {
+          "title": "La acusada presuntamente intentó quemar el cuerpo con gasolina. Una explosión alertó a vecinos y movilizó a servicios de emergencia.",
+          "url": "https://aristeguinoticias.com/1505/mexico/cdmx-vinculan-a-mujer-acusada-de-asfixiar-y-prender-fuego-a-un-hombre/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "El funcionario indicó que la revisión podría derivar en evaluaciones periódicas no concluyentes durante los próximos 10 años.",
+          "url": "https://aristeguinoticias.com/1405/dinero-y-economia/ebrard-anticipa-revisiones-periodicas-del-t-mec-durante-la-proxima-decada/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "En el Reto Naturalista de primavera 2026 participaron cerca de 6 mil personas de 62 ciudades, donde se logró registrar e identificar 9,998 especies.",
+          "url": "https://aristeguinoticias.com/1405/naturaleza/naturaleza-y-ciencia-ciudadana-resultados-del-reto-naturalista-de-primavera-2026/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "En tanto, las autoridades de Estados Unidos presentarán el miércoles 20 de mayo una acusación formal contra el expresidente cubano Raúl Castro, según el diario Miami Herald.",
+          "url": "https://aristeguinoticias.com/1505/mundo/trump-dice-que-puede-dar-un-vuelco-a-cuba-espera-que-la-isla-este-de-su-lado-y-no-de-china/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "El COM explicó que se perdió &#x27;la confianza&#x27; entre las atletas y la entrenadora, y que con la separación del cargo avanzan las investigaciones correspondientes.",
+          "url": "https://aristeguinoticias.com/1505/deportes/destituyen-por-presunto-maltrato-psicologico-a-entrenadora-nacional-de-gimnasia-ritmica/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "De acuerdo con el programa de Univision, El Gordo y la Flaca, el cantante ingresó a un hospital de NY desde el 11 de mayo.",
+          "url": "https://aristeguinoticias.com/1505/kiosko/luis-miguel-fue-hospitalizado-en-nueva-york-esto-se-sabe/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Entre la crisis en Sinaloa y el desafío al orden internacional | Por Alberto Islas",
+          "url": "https://aristeguinoticias.com/1305/opinion/entre-la-crisis-en-sinaloa-y-el-desafio-al-orden-internacional-por-alberto-islas/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proceso",
+      "url": "https://www.proceso.com.mx",
+      "status": "ok",
+      "page_title": "Proceso - Portal de Noticias",
+      "article_count": 14,
+      "articles": [
+        {
+          "title": "FGR sí investiga a Rocha Moya; pidió bloquear cuentas bancarias",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/fgr-si-investiga-rocha-moya-pidio-bloquear-cuentas-bancarias-374120.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Hace agua el Plan Michoacán: retiran base militar y el narco destierra a 668 personas",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/hace-agua-el-plan-michoacan-retiran-base-militar-el-narco-destierra-668-personas-374062.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Cae el primero de la acusación contra Rocha Moya: Detienen en EU a exsecretario de Seguridad",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/cae-el-primero-de-la-acusacion-contra-rocha-moya-detienen-en-eu-exsecretario-de-seguridad-374101.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "De comandante de tres zonas militares a detenido en EU: la caída del general Mérida Sánchez",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/de-comandante-de-tres-zonas-militares-detenido-en-eu-la-caida-del-general-merida-sanchez-374109.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La CIA en México: Operaciones clandestinas y el rastro letal que desafía a Sheinbaum",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/14/la-cia-en-mexico-operaciones-clandestinas-el-rastro-letal-que-desafia-sheinbaum-374063.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Hallan a cinco hombres asesinados en una vivienda de León",
+          "url": "https://www.proceso.com.mx/nacional/estados/2026/5/15/hallan-cinco-hombres-asesinados-en-una-vivienda-de-leon-374137.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Alcaldes de Sonora se reúnen con CBP de EU; discuten agenda binacional por carretera Altar-Sásabe",
+          "url": "https://www.proceso.com.mx/nacional/estados/2026/5/15/alcaldes-de-sonora-se-reunen-con-oficina-de-aduanas-de-eu-en-torno-la-carretera-altar-sasabe-374132.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "El Mundial que ves... no es todo lo que es (Video)",
+          "url": "https://www.proceso.com.mx/deportes/2026/5/13/el-mundial-que-ves-no-es-todo-lo-que-es-video-373945.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Solos se metieron en la trampa, que solos salgan de ella",
+          "url": "https://www.proceso.com.mx/opinion/2026/5/15/solos-se-metieron-en-la-trampa-que-solos-salgan-de-ella-374070.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Reprochan a Sheinbaum por reunirse con BTS y U2, pero no con maestros",
+          "url": "https://www.proceso.com.mx/nacional/estados/2026/5/15/reprochan-sheinbaum-por-reunirse-con-bts-u2-pero-no-con-maestros-374136.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Sheinbaum recibe a Michelle Bachelet en Palacio Nacional",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/sheinbaum-recibe-michelle-bachelet-en-palacio-nacional-374134.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "“Detector de Mentiras Extendido” es para desviar la atención de los “narcos del bienestar”: PAN",
+          "url": "https://www.proceso.com.mx/nacional/politica/2026/5/15/detector-de-mentiras-extendido-es-para-desviar-la-atencion-de-los-narcos-del-bienestar-pan-374133.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gobierno de EU ordena a fiscales usar leyes antiterroristas para imputar funcionarios mexicanos: NYT",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/gobierno-de-eu-ordena-fiscales-usar-leyes-antiterroristas-para-imputar-funcionarios-mexicanos-nyt-374128.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La CNTE ve “insuficiente” el aumento de 9% al salario de los maestros",
+          "url": "https://www.proceso.com.mx/nacional/2026/5/15/la-cnte-ve-insuficiente-el-aumento-de-9-al-salario-de-los-maestros-374130.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "La Jornada",
+      "url": "https://www.jornada.com.mx",
+      "status": "ok",
+      "page_title": "La Jornada",
+      "article_count": 14,
+      "articles": [
+        {
+          "title": "Gerardo Mérida, secretario de Seguridad de Rocha se entregó en EU; es llevado a prisión donde están Maduro y &#39;El Mayo&#39;",
+          "url": "https://www.jornada.com.mx/noticia/2026/05/15/politica/detienen-en-arizona-a-gerardo-merida-sanchez-ex-secretario-de-seguridad-de-rocha-moya",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gerardo Mérida se presentó ante tribunal en NY; se declara no culpable, reporta Bloomberg",
+          "url": "https://www.jornada.com.mx/noticia/2026/05/15/politica/gerardo-merida-se-presento-ante-tribunal-en-ny-se-declara-no-culpable-reporta-bloomberg",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Si hay pruebas no vamos a defender a nadie, aunque sea de Morena: Sheinbaum sobre Rocha",
+          "url": "https://www.jornada.com.mx/noticia/2026/05/15/politica/si-hay-pruebas-no-vamos-a-defender-a-nadie-aunque-sea-de-morena-sheinbaum-sobre-rocha",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Cuba-EU: coherencia frente a cinismo",
+          "url": "https://www.jornada.com.mx/noticia/2026/05/15/editorial/cubaeu-coherencia-frente-a-cinismo",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Con misa y alimentos, celebraron el Día de la Santa Cruz en Xochimilco",
+          "url": "https://www.jornada.com.mx/galeria/2026/05/04/capital/con-misa-y-alimentos-celebraron-el-dia-de-la-santa-cruz-en-xochimilco",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Trump es evacuado de emergencia durante cena de corresponsales",
+          "url": "https://www.jornada.com.mx/galeria/2026/04/25/mundo/trump-evacuado-imagenes-del-incidente-de-seguridad-en-la-cena-de-corresponsales",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data0._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota0}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data1._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota1}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data2._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota2}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "${data3._source.headline}",
+          "url": "https://www.jornada.com.mx/${urlNota3}",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "El Financiero",
+      "url": "https://www.elfinanciero.com.mx",
+      "status": "ok",
+      "page_title": "El Financiero | Las noticias de finanzas, economía y política más importantes del país.",
+      "article_count": 6,
+      "articles": [
+        {
+          "title": "‘Cerrarán la llave’ del Cutzamala a CDMX y Edomex: ¿A partir de cuándo reducirá el suministro de agua?",
+          "url": "https://www.elfinanciero.com.mx/cdmx/2026/05/15/cerraran-la-llave-del-cutzamala-a-cdmx-y-edomex-a-partir-de-cuando-reducira-el-suministro-de-agua/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gerardo Mérida se declara no culpable de cargos en NY",
+          "url": "https://www.elfinanciero.com.mx/estados/2026/05/15/gerardo-merida-comparece-ante-corte-de-nueva-york-se-declara-no-culpable-de-cargos/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gerardo Mérida se entregó en EU, informa Gabinete de Seguridad",
+          "url": "https://www.elfinanciero.com.mx/nacional/2026/05/15/reportan-la-detencion-en-arizona-de-gerardo-merida-exsecretario-de-seguridad-de-sinaloa/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Megafuga en Xochimilco afecta decenas de casas",
+          "url": "https://www.elfinanciero.com.mx/cdmx/2026/05/15/megafuga-en-xochimilco-afecta-decenas-de-casas-cdmx-promete-reparar-danos/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "AICM ‘cancela’ estacionamiento para Uber y Didi",
+          "url": "https://www.elfinanciero.com.mx/cdmx/2026/05/15/aicm-cancela-estacionamiento-para-recoger-a-pasajeros-de-uber-y-didi-taxistas-no-estaban-de-acuerdo/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Calles cerradas por megamarcha de la CNTE EN VIVO",
+          "url": "https://www.elfinanciero.com.mx/cdmx/2026/05/15/marcha-cnte-cdmx-calles-cerradas-en-vivo-por-los-maestros-hoy-viernes-15-de-mayo-alternativas-viales/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "El Economista",
+      "url": "https://www.eleconomista.com.mx",
+      "status": "ok",
+      "page_title": "El Economista | Periódico especializado en economía, finanzas y negocios",
+      "article_count": 7,
+      "articles": [
+        {
+          "title": "Últimas Noticias",
+          "url": "https://www.eleconomista.com.mx/ultimas-noticias",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Jornada 40 horas",
+          "url": "https://www.eleconomista.com.mx/tags/jornada-laboral-26163",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "alianza educativa",
+          "url": "https://alianzaeducativa.mx/",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Cuando el petróleo sube, pero las monedas caen: el papel oculto del riesgo político",
+          "url": "https://www.eleconomista.com.mx/mercados/petroleo-sube-monedas-caen-papel-oculto-riesgo-politico-20260515-813841.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Consejo de Administración de Pemex toma conocimiento del nombramiento de Carpio Fragoso como director general",
+          "url": "https://www.eleconomista.com.mx/empresas/consejo-administracion-pemex-toma-conocimiento-nombramiento-carpio-fragoso-director-general-20260515-813831.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Exsecretario de Finanzas de Sinaloa, Enrique Díaz Vega, se entrega a las autoridades de EU",
+          "url": "https://www.eleconomista.com.mx/politica/exsecretario-finanzas-sinaloa-enrique-diaz-vega-entrega-autoridades-eu-20260515-813810.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Gerardo Mérida, exsecretario de Seguridad de Rocha Moya, comparecerá ante tribunal de EU",
+          "url": "https://www.eleconomista.com.mx/politica/gerardo-merida-exsecretario-seguridad-rocha-moya-comparecera-viernes-tribunal-eu-20260515-813784.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "El País México",
+      "url": "https://elpais.com/mexico/",
+      "status": "ok",
+      "page_title": "EL PAÍS Edición México: el periódico global",
+      "article_count": 13,
+      "articles": [
+        {
+          "title": "Las autoridades mexicanas investigan las cuentas bancarias de Rocha Moya",
+          "url": "https://elpais.com/mexico/2026-05-15/autoridades-mexicanas-investigan-cuentas-bancarias-de-rocha-moya-ante-acusaciones-de-narcotrafico.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Detenido en Arizona Gerardo Mérida, uno de los 10 funcionarios de Sinaloa reclamados por Washington",
+          "url": "https://elpais.com/mexico/2026-05-15/detenido-en-estados-unidos-el-exsecretario-de-seguridad-de-sinaloa-gerardo-merida.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "De garante de la seguridad en Sinaloa a presunto centinela de Los Chapitos",
+          "url": "https://elpais.com/mexico/2026-05-15/gerardo-merida-de-garante-de-la-seguridad-en-sinaloa-a-presunto-centinela-de-los-chapitos.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Sheinbaum se reúne con Michelle Bachelet en respaldo a su candidatura para liderar la ONU",
+          "url": "https://elpais.com/mexico/2026-05-15/el-canciller-velasco-se-reune-con-michelle-bachelet-en-respaldo-a-su-candidatura-para-liderar-la-onu.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La presidenta sube un 9% el sueldo de los maestros bajo la sombra de nuevas protestas en el Mundial",
+          "url": "https://elpais.com/mexico/2026-05-15/sheinbaum-sube-un-9-el-sueldo-de-los-maestros-bajo-la-sombra-de-nuevas-protestas-durante-el-mundial.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "El álbum que nadie quiere completar: los desaparecidos de Jalisco se convierten en cromos del mundial",
+          "url": "https://elpais.com/mexico/2026-05-15/el-album-que-nadie-quiere-completar-los-desaparecidos-de-jalisco-se-convierten-en-cromos-del-mundial.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Guillermo Ochoa, sobre ser titular en el Mundial: “Me lo tengo que ganar”",
+          "url": "https://elpais.com/mexico/2026-05-15/guillermo-ochoa-sobre-ser-titular-en-el-mundial-me-lo-tengo-que-ganar.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Shakira presenta ‘Dai Dai’, la canción oficial del Mundial: “Este va a ser mi cuarto, el más especial”",
+          "url": "https://elpais.com/cultura/2026-05-15/shakira-presenta-dai-dai-la-cancion-oficial-del-mundial-con-mencion-a-espana-y-a-iniesta-este-va-a-ser-mi-cuarto-el-mas-especial.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "El Estadio Tamaulipas, una cancha de fútbol partida entre dos ciudades",
+          "url": "https://elpais.com/mexico/2026-05-15/el-estadio-tamaulipas-una-cancha-de-futbol-partida-entre-dos-ciudades.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Cerca del estadio, lejos del Mundial: la desigualdad y la persecución migratoria juegan en Los Ángeles",
+          "url": "https://elpais.com/us/2026-05-15/cerca-del-estadio-pero-lejos-del-mundial-la-desigualdad-social-y-la-persecucion-migratoria-tambien-juegan-en-los-angeles.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Sheinbaum y Trump sostienen una “excelente” llamada en medio de las acusaciones sobre narcopolítica",
+          "url": "https://elpais.com/mexico/2026-05-15/sheinbaum-y-trump-sostienen-una-excelente-conversacion-telefonica-en-medio-de-las-acusaciones-de-ee-uu-sobre-narcopolitica-en-mexico.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "La presidenta retoma las críticas al viaje de Ayuso: “Fue un fracaso”",
+          "url": "https://elpais.com/mexico/2026-05-15/sheinbaum-retoma-las-criticas-al-viaje-de-ayuso-a-mexico-fue-un-fracaso.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        },
+        {
+          "title": "Ariadna Montiel: “La narrativa de corrupción vulnera nuestra soberanía; viene de la ultraderecha”",
+          "url": "https://elpais.com/mexico/2026-05-15/ariadna-montiel-la-narrativa-de-corrupcion-vulnera-nuestra-soberania-porque-viene-de-la-ultraderecha-global.html",
+          "matched_themes": [
+            "unclassified"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reforma",
+      "url": "https://www.reforma.com",
+      "status": "blocked",
+      "reason": "Paywall — principal to resolve access",
+      "articles": []
+    }
+  ]
+}

@@ -178,59 +178,155 @@ def evaluate_single_judgment(kj: dict, today_incidents: list[dict],
 
 
 def recheck_expired(cal: dict) -> dict:
-    """Re-check predictions whose 7-day horizon has expired.
+    """Re-check predictions whose horizon has expired.
     
-    Scans all daily scores for predictions that were marked 'unresolved'
-    but whose 7-day horizon has now passed. Re-evaluates them against
-    current reality.
+    For each expired prediction set, re-evaluates 'unresolved' judgments
+    that have now had enough time to resolve. A judgment that was
+    'unresolved' at 24h but whose horizon is now expired is scored
+    as 'incorrect' — the predicted event did not materialize within
+    the specified window.
+    
+    This is the critical calibration step: without forced resolution,
+    the calibration data is systematically biased toward overconfidence.
     """
     now = dt.datetime.now(dt.timezone.utc)
     rechecked = 0
+    forced_incorrect = 0
 
     for score_entry in cal.get("daily_scores", []):
-        horizion_expiry = score_entry.get("horizon_expiry", "")
-        if not horizion_expiry:
+        horizon_expiry = score_entry.get("horizon_expiry", "")
+        rechecked = score_entry.get("rechecked", False)
+        
+        # Skip already resolved
+        if rechecked:
             continue
-        try:
-            expiry = dt.datetime.fromisoformat(horizion_expiry)
-        except (ValueError, TypeError):
-            continue
+        
+        # If no horizon expiry exists (legacy data), default to 7 days from the entry date
+        if not horizon_expiry:
+            entry_date_str = score_entry.get("date", "")
+            try:
+                entry_date = dt.datetime.strptime(entry_date_str[:10], "%Y-%m-%d")
+                expiry = entry_date + dt.timedelta(days=RECHECK_DAYS)
+                expiry = expiry.replace(tzinfo=dt.timezone.utc)
+            except (ValueError, TypeError):
+                continue
+        else:
+            try:
+                expiry = dt.datetime.fromisoformat(horizon_expiry)
+                if expiry.tzinfo is None:
+                    expiry = expiry.replace(tzinfo=dt.timezone.utc)
+            except (ValueError, TypeError):
+                continue
         
         if now < expiry:
             continue  # Not expired yet
         
         if score_entry.get("rechecked", False):
-            continue  # Already re-checked
+            continue  # Already resolved
+
+        # Horizon expired. Force-resolve unresolved judgments from this day.
+        # A prediction that didn't come true within its horizon is incorrect.
+        evaluations = score_entry.get("evaluations", score_entry.get("predictions", []))
+        current_unresolved = score_entry.get("unresolved", 0)
+        current_correct = score_entry.get("correct", 0)
+        total_entries = score_entry.get("total", current_unresolved + current_correct)
         
-        # This prediction set can now be evaluated definitively
-        # For now, mark it as rechecked — full re-evaluation requires
-        # the original prediction data and current incidents
+        if evaluations:
+            # Rich data path — resolve individual judgments
+            for ev in evaluations:
+                verdict = None
+                if "postdict" in ev:
+                    verdict = ev["postdict"].get("verdict", "unresolved")
+                else:
+                    verdict = ev.get("verdict", "unresolved")
+                
+                if verdict == "unresolved":
+                    if "postdict" in ev:
+                        ev["postdict"]["verdict"] = "incorrect"
+                        ev["postdict"]["forced"] = True
+                        ev["postdict"]["explanation"] = (
+                            "Horizon expired without confirming evidence. "
+                            "Forced to 'incorrect' per calibration honesty protocol."
+                        )
+                        ev["postdict"]["forced_at"] = now.isoformat()
+                    forced_incorrect += 1
+        else:
+            # Legacy path — no individual evaluations, resolve counts directly
+            forced_incorrect = current_unresolved
+        
+        # Recalculate: everything unresolved becomes incorrect
+        new_correct = current_correct
+        new_incorrect = score_entry.get("incorrect", 0) + current_unresolved
+        new_unresolved = 0
+        new_total = new_correct + new_incorrect or total_entries
+        
+        score_entry["correct"] = new_correct
+        score_entry["incorrect"] = new_incorrect
+        score_entry["unresolved"] = new_unresolved
+        score_entry["total"] = new_correct + new_incorrect
+        score_entry["accuracy_pct"] = round(new_correct / max(new_correct + new_incorrect, 1) * 100, 1)
         score_entry["rechecked"] = True
         score_entry["rechecked_at"] = now.isoformat()
+        score_entry["forced_resolved"] = True
         rechecked += 1
-    
+
     if rechecked:
-        log(f"Marked {rechecked} expired prediction set(s) for re-evaluation")
+        log(f"Rechecked {rechecked} expired set(s), forced {forced_incorrect} unresolved to 'incorrect'")
+    else:
+        log(f"No new expired sets to resolve (found {sum(1 for s in cal.get('daily_scores',[]) if s.get('rechecked'))} already resolved)")
+    
+    # Recompute running totals from ALL daily scores — always run, even if no new
+    # entries were rechecked this cycle, so stale top-level totals get fixed
+    total_correct = 0
+    total_incorrect = 0
+    total_unresolved = 0
+    for se in cal.get("daily_scores", []):
+        total_correct += se.get("correct", 0)
+        total_incorrect += se.get("incorrect", 0)
+        total_unresolved += se.get("unresolved", 0)
+    cal["correct"] = total_correct
+    cal["incorrect"] = total_incorrect
+    cal["unresolved"] = total_unresolved
+    cal["total_judgments"] = total_correct + total_incorrect + total_unresolved
+
     return cal
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--today", required=True, help="today's working directory")
-    parser.add_argument("--yesterday", required=True, help="yesterday's working directory")
+    parser.add_argument("--today", help="today's working directory")
+    parser.add_argument("--yesterday", help="yesterday's working directory")
     parser.add_argument("--recheck", action="store_true",
-                        help="Re-check expired predictions (>7 days old)")
+                        help="Re-check expired predictions (horizon passed, forced resolution)")
     args = parser.parse_args()
 
-    # Handle recheck mode separately — doesn't need today/yesterday dirs
+    # Handle recheck mode — standalone, requires no dir args
     if args.recheck:
-        log("Running recheck of expired predictions")
+        log("Running recheck of expired predictions — forced resolution mode")
         cal = load_calibration_history()
         cal = recheck_expired(cal)
         CALIBRATION_FILE.parent.mkdir(parents=True, exist_ok=True)
         CALIBRATION_FILE.write_text(json.dumps(cal, indent=2))
         log(f"Recheck complete. Saved to {CALIBRATION_FILE}")
+        
+        # Print summary
+        total = cal.get("total_judgments", 0)
+        correct = cal.get("correct", 0)
+        incorrect = cal.get("incorrect", 0)
+        unresolved = cal.get("unresolved", 0)
+        print(f"\n{'='*50}")
+        print(f"POSTDICTION RECHECK SUMMARY")
+        print(f"{'='*50}")
+        print(f"Total judgments tracked: {total}")
+        print(f"  Correct:   {correct}  ({round(correct/max(total,1)*100)}%)")
+        print(f"  Incorrect: {incorrect}  ({round(incorrect/max(total,1)*100)}%)")
+        print(f"  Unresolved:{unresolved}  ({round(unresolved/max(total,1)*100)}%)")
+        print(f"{'='*50}")
         return 0
+
+    if not args.today or not args.yesterday:
+        parser.print_help()
+        return 1
 
     today_dir = pathlib.Path(args.today).expanduser().resolve()
     yesterday_dir = pathlib.Path(args.yesterday).expanduser().resolve()

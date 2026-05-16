@@ -12,3 +12,9 @@ Next: Phase 5 frameworks, Phase 6 brief+angles, Phase 7 memos
 ## T+135min — Phase 6: Internal Mexico brief produced. 15 creative angles scored. Top 2 sustained inquiries identified.
 ## T+135min — Phase 7: Producing 3 handback documents
 ## T+150min — Phase 7: All 3 handback documents produced. 24-hour burst active. Continuing internal work.
+## T+12h — Principal confirmed: continue. Priority queue: (1) Postdiction fix, (2) Spanish news ingest, (3) Kalshi Mexico scanner
+## T+13h — Postdiction script fixed. Calibration now honest (5/10/40).
+## T+13h — Building Spanish-language news scanner
+## T+14h — Mexico daily news scanner built and tested. 8/9 sources accessible, 76 articles.
+## T+14h — Mexico markets scanner built. Kalshi coverage thin (4 real Mexico markets). Polymarket slug discovery deferred.
+## T+14h — Postdiction: 5 correct, 10 incorrect, 40 unresolved (honest data now).
