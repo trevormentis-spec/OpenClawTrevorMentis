@@ -246,14 +246,17 @@ def main() -> int:
     # ── Scope gate — first check ──
     try:
         sys.path.insert(0, str(REPO_ROOT))
-        from analyst.scope_check import check_scope, build_decline
+        from analyst.scope_check import check_scope, build_decline, build_adjacency_preamble
         scope_result = check_scope(args.scope_topic)
         if scope_result["scope_status"] == "out_of_scope":
             log(f"SCOPE GATE: topic '{args.scope_topic}' is out_of_scope. Aborting pipeline.")
             log(f"Decline: {build_decline(args.scope_topic, scope_result)}")
             return 0  # non-fatal
         elif scope_result["scope_status"] == "adjacent":
-            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent. Proceeding with Mexico framing.")
+            preamble = build_adjacency_preamble(args.scope_topic, scope_result)
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent.")
+            log(f"Adjacency framing: {preamble[:200]}...")
+            log("Proceeding with Mexico-scoped pipeline using adjacent_brief.md template.")
         else:
             log(f"SCOPE GATE: topic '{args.scope_topic}' confirmed in_scope.")
     except ImportError:
