@@ -51,6 +51,20 @@ fi
 
 cd "$REPO"
 
+# Step 0a: Mexico-desk pre-collection — Spanish-language + institutional sources
+# Output is merged into raw/incidents.json after orchestrator collect.py runs.
+echo "--- Running Mexico daily scan (Spanish-language + institutional sources) ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/mexico-daily-scan.py" --save 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+
+# Step 0b: Compile calibration directives from postdiction history into behavioral state
+# Closes the postdiction → next-day-prompt feedback loop.
+echo "--- Compiling calibration directives ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/compile_calibration_directives.py" 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+
 # Step 1: Run orchestrator — tiered model routing
 # Tier-1: Opus 4.7 (via OpenRouter) for exec summary + red-team
 # Tier-2: DeepSeek V4 Flash (via DeepSeek Direct) for 6 regional analyses
@@ -72,6 +86,14 @@ if [ $ORCHESTRATE_RC -ne 0 ]; then
     set -e 2>/dev/null || true
     exit $ORCHESTRATE_RC
 fi
+
+# Step 1b: Merge Mexico scan results into the orchestrator's incidents.json
+# so they flow through analyze.py with the rest of the corpus.
+echo "--- Merging Mexico scan into incidents.json ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/merge_mexico_into_incidents.py" \
+    --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
 
 # Step 2: Deliver the brief as a clean email with prediction markets and suggested trades
 # No PDF. No graphics. No images. Email-only.
@@ -163,6 +185,16 @@ if python3 "$REPO/scripts/benchmark_compare.py" --save 2>&1 | tee -a "$LOG"; the
     echo "Benchmark comparison complete" | tee -a "$LOG"
 else
     echo "WARNING: Benchmark comparison failed (non-fatal, may need manual run)" | tee -a "$LOG"
+fi
+
+# Step 11: Weekly meta-review (Friday only) — Loop 7/8 of the Mexico pivot directive.
+# Compiles autonomy, calibration, ingest, framework state into
+# analyst/reflections/weekly/YYYY-WW.md and picks next week's focus.
+if [ "$(date -u +%u)" = "5" ]; then
+    echo "--- Running weekly meta-review (Friday) ---" | tee -a "$LOG"
+    set +e
+    python3 "$REPO/scripts/weekly_meta_review.py" 2>&1 | tee -a "$LOG"
+    set -e 2>/dev/null || true
 fi
 
 echo "=== Daily Brief Cron — ${DATE_UTC} — Complete ===" | tee -a "$LOG"
