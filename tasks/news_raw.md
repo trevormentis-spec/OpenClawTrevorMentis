@@ -1,4 +1,24 @@
-# Gmail Intel Digest — 2026-05-17 01:01 UTC
+# Gmail Intel Digest — 2026-05-17 03:01 UTC
+
+## Security alert
+**From:** Google <no-reply@accounts.google.com>
+**Date:** Sun, 17 May 2026 02:05:11 GMT
+**Type:** alert | **Importance:** high
+
+[image: Google]
+A new sign-in on Mac
+
+
+trevor.mentis@gmail.com
+We noticed a new sign-in to your Google Account on a Mac device. If this
+was you, you don’t need to do anything. If not, we’ll help you secure your
+account.
+Check activity
+<https://accounts.google.com/AccountChooser?Email=trevor.mentis@gmail.com&continue=https://myaccount.google.com/alert/nt/1778983511000?rfn%3D325%26rfnc%3D1%26eid%3D-5314107663826593828%26et%3D0>
+You can also see security activity at
+https://myaccount.goo
+
+---
 
 ## Russian Offensive Campaign Assessment, May 16, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -50,15 +70,6 @@ The typography has moved to an Economist-style register: tighter measures, small
 Trevor,
 
 Issue 16 attached. Today's most consequential single event is on the prediction-market side: the Polymarket ceasefire-before-2027 contract resolved YES on 14 May after the Istanbul direct-channel readout, closing the long-running NO position at a full 74-point loss; the desk has rolled into the broader ceasefire-agreement-by-31-December-2026 bucket (NO at 52¢) where agreement and durable cessation are priced as separate problems. The single largest live re-pricing is in the Middle East 
-
----
-
-## Russian Offensive Campaign Assessment, May 15, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Fri, 15 May 2026 20:17:22 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Russian President Vladimir Putin is positively portraying data about Russia’s economic performance that actually shows a strained economy. May 15, 2026 Data Cutoff: 1:15 PM ET Samuel Shafiro, Christina Harward, Jakub Kostka, Grace Mappes, Nikolai Sundstrom, Diana Nasreddine, Anjou Kang-Stryker, and Frederick W. Kagan   TOPLINES Russian President Vladimir Putin is positively portraying data about Russia’s economic performance that actually shows a straine
 
 ---
 
