@@ -1,4 +1,33 @@
-# Gmail Intel Digest — 2026-05-16 19:03 UTC
+# Gmail Intel Digest — 2026-05-17 01:01 UTC
+
+## Russian Offensive Campaign Assessment, May 16, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Sat, 16 May 2026 21:00:46 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War The seniormost Russian military command presented a highly inaccurate assessment of the battlefield situation for the fifth consecutive month May 16, 2026 Assessment as of: 7:00 PM ET ﻿ ﻿Data Cutoff: 1:45 PM ET  Grace Mappes, Anna Thacker, Justin Young, Diana Nasreddine, and Frederick W. Kagan TOPLINES The seniormost Russian military command presented a highly inaccurate assessment of the battlefield situation for the fifth consecutive month, absurdly cl
+
+---
+
+## Iran Update Special Report, May 16, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Sat, 16 May 2026 17:15:51 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War The Iranian regime is introducing a formalized toll system under the guise of maritime insurance policies and continuing to deploy incentives and threats to vessels in the Persian Gulf May 16, 2026 Data Cutoff: 2:00 PM ET Katherine Wells, Ben Rezaei, Avery Borens, Ria Reddy, Kelly Campa, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES The Iranian regime is introd
+
+---
+
+## Iran Update Evening Special Report, May 16, 2026
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Sat, 16 May 2026 16:13:30 -0400
+**Type:** unknown | **Importance:** low
+
+Your regular update about political, security, and social developments in Iran and the region.
+
+Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VW674D2QvmC-N7rzc9B2-JQnVGwS3m5P7jL_N2QYvBx3pyd0W8wLKSR6lZ3mhW2yHZZ-4HH-PXVBFLNW4-9B2_W6fgYz028ZxYYW6Y9cQW59JjVxN42BS5fJmNl6W5XcRM53-nvV9N48KtWn697hmW1by6y53r4RblVpgdGg3YwwPsW4dzRgc3Dxs8YW8lTf1q8QCwWdW5xPSkr2CpnQnW7dPKZL4flTDxVf_CWn8fh0pdW8328tW642PSwVfsxYz4pH1zsW419D6h5q1TfNW5Qdfwl8bZ-FDW1RZKvM8vc_bMN1xy1MFhwtvrW1mFlBj5Y
+
+---
 
 ## Global Security & Intelligence Brief — 16 May 2026 (v2, refreshed format)
 **From:** Trevor <trevor.mentis@gmail.com>
@@ -30,35 +59,6 @@ Issue 16 attached. Today's most consequential single event is on the prediction-
 **Type:** unknown | **Importance:** low
 
 Email from Institute for the Study of War Russian President Vladimir Putin is positively portraying data about Russia’s economic performance that actually shows a strained economy. May 15, 2026 Data Cutoff: 1:15 PM ET Samuel Shafiro, Christina Harward, Jakub Kostka, Grace Mappes, Nikolai Sundstrom, Diana Nasreddine, Anjou Kang-Stryker, and Frederick W. Kagan   TOPLINES Russian President Vladimir Putin is positively portraying data about Russia’s economic performance that actually shows a straine
-
----
-
-## Iran Update Evening Special Report: May 15, 2026, 02:00 PM ET
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Fri, 15 May 2026 19:43:20 -0400
-**Type:** unknown | **Importance:** low
-
-A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
-
-Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/MXdMt-s-YzdW81mZ3B19Tlg0W2NZxg55P5tVhN24tzwR3pyd0W8wLKSR6lZ3kCW3hClVl7KF1-LW50xl1Y5_8P5QW6mVwzm6JqQZ3W2-vKvV4SmRMxN7CGmrtGRlN-VZzK50130zPnW3w3pcQ9kmK1zW7rbRBC7hz4MSW7P4Xz93p05PKW6cDPlC2XMs1-W4y9npM42hk17W265rZS8T8K3NW13L2R874_0Z6W4vnWYD926xKWW3QqRhc4h7WyXW2wq1-x54mJHBW1ZKB216R8CpxW9b9F0Z
-
----
-
-## Iran Update Special Report, May 15, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Fri, 15 May 2026 18:39:56 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Senior Iranian officials continue to demand guarantees against future US-Israeli attacks as a precondition for negotiations, and the Iranian regime likely views recognized control over the Strait of May 15, 2026 Data Cutoff: 2:00 PM ET Ria Reddy, Will Doran, Avery Borens, Kelly Campa, Katherine Wells, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES Senior Iranian
-
----
-
-## Editors’ Picks: The Trump-Xi summit was remarkably banal
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Fri, 15 May 2026 18:00:35 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
 
 ---
 

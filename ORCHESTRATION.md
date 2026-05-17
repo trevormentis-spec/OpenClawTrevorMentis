@@ -178,6 +178,48 @@ cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ---
 
+## Scope Gate (since 2026-05-17)
+
+`analyst/scope_check.py` is the FIRST call in every analyst entry
+point (chat handler, analyze.py, orchestrate.py, any ad-hoc brief
+script). It classifies the incoming request into three branches:
+
+```
+request → scope_check.py
+           │
+           ├── in_scope → proceed with normal pipeline
+           │
+           ├── adjacent → call analyst with reframe-offer prompt
+           │               instead of standard analyst prompt.
+           │               Mexico vectors must be current-specific,
+           │               not generic.
+           │
+           └── out_of_scope → return structured decline. No analyst
+                               model is called. The decline includes
+                               the scope-descriptor and a prompt to
+                               ask a Mexico question instead.
+```
+
+Fast path: keyword matching against `scope.yaml` (zero API cost).
+Slow path: cheap LLM call (deepseek-chat) for ambiguous requests.
+
+Decline template verbatim shape:
+
+> Open Claw Mexico is scoped to {scope_descriptor}. {Topic}
+> reaches Mexico through {N} vectors moving today:
+> 
+> - {vector 1: one-line specific to current developments}
+> - {vector 2: one-line specific to current developments}
+> - {vector 3: one-line specific to current developments}
+> 
+> Want any of those framings? If you have a specific Mexico question
+> I should be answering, ask that instead.
+
+Scope spec lives in `analyst/config/scope.yaml`. When redirecting
+this framework to a new topic, edit that file's primary_scope,
+themes, adjacency_vectors, and keyword lists. The scope_check.py
+module itself is framework-general and requires no changes.
+
 ## Mexico Desk Routing (since 2026-05-17)
 
 Per `analyst/directives/2026-05-mexico-pivot.md`, the six legacy regions
@@ -206,6 +248,11 @@ per-theme directives into `behavioral-state.json` for next day's
 
 ## Change Log
 
+- **3.4 (2026-05-17):** Scope gate added — `analyst/scope_check.py` is the
+  first call in every analyst entry point. Three-branch flow (in_scope /
+  adjacent / out_of_scope). Scope config at `analyst/config/scope.yaml`.
+  Deepseek-prompts.md system prompt updated with scope discipline.
+  IDENTITY.md and SOUL.md updated to reflect Mexico-only scope.
 - **3.3 (2026-05-17):** Mexico-primary desk routing. Themes replace regions.
   Spanish-language ingest wired into the daily pipeline. Calibration
   compiler closes the postdiction → behavioral-state feedback loop.

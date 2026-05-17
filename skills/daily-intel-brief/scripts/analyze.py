@@ -481,9 +481,29 @@ def main() -> int:
                         help="path to behavioral-state.json for hard behavioral constraints (overrides individual --collection-state and --calibration)")
     parser.add_argument("--self-assessment", default="",
                         help="path to self-assessment-injection.md for system health feedback")
+    parser.add_argument("--scope-topic", default="Mexico daily intelligence brief",
+                        help="topic to validate against scope gate; default treats pipeline as Mexico-scoped")
     parser.add_argument("--mock", action="store_true",
                         help="return canned analysis without calling the API")
     args = parser.parse_args()
+
+    # ── Scope gate — first check ──
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]))
+        from analyst.scope_check import check_scope, build_decline
+        scope_result = check_scope(args.scope_topic)
+        if scope_result["scope_status"] == "out_of_scope":
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is out_of_scope. Aborting.")
+            log(f"Decline: {build_decline(args.scope_topic, scope_result)}")
+            return 0  # non-fatal — just nothing to do
+        elif scope_result["scope_status"] == "adjacent":
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent (not direct). Proceeding with Mexico scope.")
+        else:
+            log(f"SCOPE GATE: topic '{args.scope_topic}' confirmed in_scope.")
+    except ImportError:
+        log("SCOPE GATE: analyst.scope_check not available — skipping scope validation.")
+    except Exception as exc:
+        log(f"SCOPE GATE: check failed ({exc}) — proceeding permissively.")
 
     wd = pathlib.Path(args.working_dir).expanduser().resolve()
     repo_root = wd  # used for IW boards; if running in repo, override below

@@ -237,9 +237,30 @@ def main() -> int:
                         help="API provider for tier-1 (default: openrouter). Tier-2 always uses deepseek.")
     parser.add_argument("--strict-env", action="store_true", default=True,
                         help="fail at start if required env vars are missing")
+    parser.add_argument("--scope-topic", default="Mexico daily intelligence brief",
+                        help="topic to validate against scope gate; default treats pipeline as Mexico-scoped")
     args = parser.parse_args()
 
     log(f"orchestrator starting (dry_run={args.dry_run}, model={args.model})")
+
+    # ── Scope gate — first check ──
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from analyst.scope_check import check_scope, build_decline
+        scope_result = check_scope(args.scope_topic)
+        if scope_result["scope_status"] == "out_of_scope":
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is out_of_scope. Aborting pipeline.")
+            log(f"Decline: {build_decline(args.scope_topic, scope_result)}")
+            return 0  # non-fatal
+        elif scope_result["scope_status"] == "adjacent":
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent. Proceeding with Mexico framing.")
+        else:
+            log(f"SCOPE GATE: topic '{args.scope_topic}' confirmed in_scope.")
+    except ImportError:
+        log("SCOPE GATE: analyst.scope_check not available — skipping.")
+    except Exception as exc:
+        log(f"SCOPE GATE: check failed ({exc}) — proceeding permissively.")
+
     env_check(strict=args.strict_env and not args.dry_run)
 
     date_utc = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")

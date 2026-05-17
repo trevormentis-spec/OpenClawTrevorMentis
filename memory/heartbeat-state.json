@@ -3,14 +3,14 @@
   "lastChecks": {
     "agentmail_inbox": 1778786843,
     "moltbook_check": 1778690820,
-    "memory_hygiene": 1778690820,
-    "repo_state": 1778873261,
+    "memory_hygiene": 1779031657,
+    "repo_state": 1779031657,
     "deepseek_balance": 1778786843,
-    "gmail_system_check": 1778786843,
-    "brain_index_freshness": 1778690820,
-    "osint_scan": 1778441241,
+    "gmail_system_check": 1779031657,
+    "brain_index_freshness": 1779031657,
+    "osint_scan": 1779031657,
     "nudge_check": 1778873261
   },
-  "lastHeartbeat": 1778873261,
-  "rotationCursor": 9
+  "lastHeartbeat": 1779031657,
+  "rotationCursor": 2
 }

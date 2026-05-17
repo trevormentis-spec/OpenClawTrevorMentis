@@ -1,0 +1,136 @@
+# Scope specification — Open Claw Mexico desk
+# This file defines the topic boundary for the agent.
+# Used by analyst/scope_check.py via LLM or keyword matching.
+# When redirecting this framework to a new topic: edit this file,
+# update adjacency vectors, and leave the rest of the gate unchanged.
+
+primary_scope: Mexico
+
+# Descriptor: used in decline templates and system prompts
+scope_descriptor: Mexico-only intelligence
+
+# In-scope themes (the six Mexico desk themes)
+# If a request maps to one of these, it's in_scope.
+themes:
+  - cartel_security
+  - political_risk
+  - us_mexico
+  - energy_infra
+  - economy_markets
+  - worldcup_travel
+
+# Adjacency vectors: out-of-scope topics that reach Mexico through a
+# contemporary, specific connector. Each entry:
+#   key: short machine name
+#   label: human-readable label for decline template
+#   connector: the specific current link to Mexico
+adjacency_vectors:
+  - key: fertilizer-corridor
+    label: Russia/Belarus fertilizer corridor
+    connector: Russia-Belarus fertilizer exports → Bajío agricultural input costs → Mexican basic-basket inflation
+  - key: wheat-imports
+    label: Ukraine wheat supply
+    connector: Ukraine war disruption → global wheat prices → Mexican tortilla/basic-basket cost
+  - key: brent-pemex
+    label: Oil prices / Pemex spread
+    connector: Brent/WTI moves → Pemex crude-export and import-fuel spreads → MXN, fiscal revenue
+  - key: china-precursors
+    label: China chemical precursor exports
+    connector: PRC fentanyl-precursor exports → CDS/CJNG synthetic drug labs → overdoes, enforcement
+  - key: us-bilateral
+    label: US bilateral policy
+    connector: Any US executive, legislative, or judicial action with direct Mexico impact
+  - key: usmca-trade
+    label: USMCA trade framework
+    connector: Any trade action, tariff, or review touching USMCA or nearshoring
+  - key: migrant-flows
+    label: Migration flows
+    connector: Central America, Cuba, Venezuela migration patterns → Mexican border/transit security, US policy
+  - key: data-center-capex
+    label: Hyperscaler data-center capex
+    connector: Global cloud provider capacity builds → Mexican energy/infrastructure/Pemex demand
+  - key: us-fentanyl
+    label: US fentanyl policy / enforcement
+    connector: DEA/US seizures, fentanyl scheduling, trafficking indictments → CDS/CJNG operations in MX
+
+# Blocklist — topic keywords/phrases that unequivocally trigger out_of_scope.
+# These bypass the LLM call for speed and zero cost.
+out_of_scope_keywords:
+  # These are normalized (stripped punctuation, lowercase) for fast-path matching
+  - "russia ukraine"
+  - "russia ukraine front"
+  - "ukraine war"
+  - "ukraine russia"
+  - "ukraine front"
+  - "china taiwan"
+  - "south china sea"
+  - "north korea missile"
+  - "israel gaza"
+  - "iran nuclear"
+  - "european union"
+  - "europe region"
+  - "africa"
+  - "sahel"
+  - "middle east"
+  - "afghanistan"
+  - "pakistan"
+  - "india china"
+  - "global finance"
+  - "asia pacific"
+  - "southeast asia"
+  - "nato europe"
+
+# In-scope keywords — if these appear, skip LLM and go straight to in_scope.
+# Broad enough to catch most Mexico questions without an API call.
+in_scope_keywords:
+  - "mexico"
+  - "sinaloa"
+  - "cds"
+  - "cjng"
+  - "cartel"
+  - "chapitos"
+  - "mayiza"
+  - "mayito"
+  - "zambada"
+  - "el mayo"
+  - "el chapo"
+  - "guzman"
+  - "rocha moya"
+  - "sheinbaum"
+  - "amlo"
+  - "morena"
+  - "pemex"
+  - "huachicoleo"
+  - "usmca"
+  - "nearshoring"
+  - "mexican peso"
+  - "mxn"
+  - "fentanyl"
+  - "cfe"
+  - "world cup"
+  - "2026 world cup"
+  - "culiacán"
+  - "tijuana"
+  - "juárez"
+  - "monterrey"
+  - "guadalajara"
+  - "cdmx"
+  - "mexico city"
+  - "baja california"
+  - "chihuahua"
+  - "tamaulipas"
+  - "veracruz"
+  - "michoacán"
+  - "guanajuato"
+  - "jalisco"
+  - "zacatecas"
+  - "sonora"
+  - "trump tariff"
+  - "us mexico"
+  - "mexico border"
+  - "remittances"
+  - "fdi"
+  - "mexico energy"
+  - "mexico security"
+  - "mexico politics"
+  - "mexico economy"
