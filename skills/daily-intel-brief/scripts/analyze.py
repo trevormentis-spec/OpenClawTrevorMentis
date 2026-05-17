@@ -488,6 +488,8 @@ def main() -> int:
     args = parser.parse_args()
 
     # ── Scope gate — first check ──
+    scope_is_adjacent = False
+    scope_adjacency_preamble = ""
     try:
         sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]))
         from analyst.scope_check import check_scope, build_decline, build_adjacency_preamble
@@ -497,10 +499,11 @@ def main() -> int:
             log(f"Decline: {build_decline(args.scope_topic, scope_result)}")
             return 0  # non-fatal
         elif scope_result["scope_status"] == "adjacent":
-            preamble = build_adjacency_preamble(args.scope_topic, scope_result)
-            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent (not direct).")
-            log(f"Adjacency framing: {preamble[:200]}...")
-            log("Proceeding with Mexico-scoped analysis using adjacent_brief.md template.")
+            scope_is_adjacent = True
+            scope_adjacency_preamble = build_adjacency_preamble(args.scope_topic, scope_result)
+            log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent.")
+            log(f"Adjacency preamble: {scope_adjacency_preamble[:200]}...")
+            log("Will inject adjacent_brief.md template into system prompt.")
         else:
             log(f"SCOPE GATE: topic '{args.scope_topic}' confirmed in_scope.")
     except ImportError:
@@ -544,6 +547,23 @@ def main() -> int:
             )
             system = system + recall_block
             log(f"injected brain recall ({len(recall_text)} chars) into system prompt")
+
+    # Step 0c — inject adjacency-brief framing into system prompt (if adjacent)
+    if scope_is_adjacent and scope_adjacency_preamble:
+        adj_path = pathlib.Path(__file__).resolve().parents[3] / "analyst" / "templates" / "adjacent_brief.md"
+        if adj_path.exists():
+            adj_block = (
+                "\n\n### === ADJACENCY BRIEF MODE ===\n"
+                "The requested topic is not directly about Mexico but reaches "
+                "it through transmission vectors. Frame the entire analysis "
+                "through the Mexico lens.\n\n"
+                f"{scope_adjacency_preamble}\n"
+                "\n=== END ADJACENCY BRIEF MODE ==="
+            )
+            system = system + adj_block
+            log(f"injected adjacency-brief framing ({len(adj_block)} chars) into system prompt")
+        else:
+            log(f"adjacent_brief.md template not found — continuing with standard prompt")
 
     # Step 0d — initialize behavioral state container (must be before any usage)
     behavioral_state = None
