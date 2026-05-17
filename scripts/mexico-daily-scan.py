@@ -104,6 +104,85 @@ SOURCES = [
         "type": "paywall",
         "note": "PAYWALL — log as blocked, principal to resolve access",
     },
+    # Government / institutional sources (added 2026-05-17)
+    {
+        "name": "Pemex Sala de Prensa",
+        "url": "https://www.pemex.com/saladeprensa/Paginas/default.aspx",
+        "themes": ["energy_infra", "economy_markets"],
+        "type": "news",
+        "note": "Pemex official press releases — refinery output, incidents, contracts",
+    },
+    {
+        "name": "CFE Sala de Prensa",
+        "url": "https://www.cfe.mx/saladeprensa/paginas/default.aspx",
+        "themes": ["energy_infra"],
+        "type": "news",
+        "note": "CFE official press — grid, generation, blackouts",
+    },
+    {
+        "name": "SEDENA Comunicados",
+        "url": "https://www.gob.mx/sedena/prensa",
+        "themes": ["cartel_security"],
+        "type": "news",
+        "note": "Military comms — operations, seizures, casualties (often delayed)",
+    },
+    {
+        "name": "SSPC Comunicados",
+        "url": "https://www.gob.mx/sspc/prensa",
+        "themes": ["cartel_security", "political_risk"],
+        "type": "news",
+        "note": "Federal public security — homicide stats, strategy announcements",
+    },
+    {
+        "name": "INEGI Comunicados",
+        "url": "https://www.inegi.org.mx/app/saladeprensa/",
+        "themes": ["economy_markets", "cartel_security"],
+        "type": "news",
+        "note": "Official statistics — homicides, GDP, inflation, employment",
+    },
+    {
+        "name": "FGR Comunicados",
+        "url": "https://www.gob.mx/fgr/prensa",
+        "themes": ["cartel_security", "political_risk"],
+        "type": "news",
+        "note": "Attorney General — indictments, extraditions, asset seizures",
+    },
+    {
+        "name": "DOF (Diario Oficial)",
+        "url": "https://dof.gob.mx",
+        "themes": ["political_risk", "energy_infra"],
+        "type": "news",
+        "note": "Official federal gazette — decrees, regulations, appointments",
+    },
+    # US-side sources tracking Mexico (added 2026-05-17)
+    {
+        "name": "CBP Newsroom",
+        "url": "https://www.cbp.gov/newsroom/news-releases",
+        "themes": ["us_mexico", "cartel_security"],
+        "type": "news",
+        "note": "US Customs & Border Protection — seizures, encounters, port stats",
+    },
+    {
+        "name": "DEA Press Releases",
+        "url": "https://www.dea.gov/press-releases",
+        "themes": ["us_mexico", "cartel_security"],
+        "type": "news",
+        "note": "DEA — fentanyl, precursor flows, cartel indictments",
+    },
+    {
+        "name": "OFAC Recent Actions",
+        "url": "https://ofac.treasury.gov/recent-actions",
+        "themes": ["us_mexico", "cartel_security"],
+        "type": "news",
+        "note": "Treasury sanctions — SDN designations, cartel-adjacent entities",
+    },
+    {
+        "name": "State Dept Mexico",
+        "url": "https://www.state.gov/countries-areas/mexico/",
+        "themes": ["us_mexico", "political_risk"],
+        "type": "news",
+        "note": "State Department statements on US-Mexico relations",
+    },
 ]
 
 # Blocked sources (paywall or known inaccessibility)
