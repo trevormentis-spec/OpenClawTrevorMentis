@@ -178,8 +178,40 @@ cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ---
 
+## Mexico Desk Routing (since 2026-05-17)
+
+Per `analyst/directives/2026-05-mexico-pivot.md`, the six legacy regions
+are replaced by six Mexico themes. Tier-2 regional synthesis maps
+one-to-one onto themes:
+
+| Tier-2 lane         | Theme                                                          |
+|---------------------|----------------------------------------------------------------|
+| cartel_security     | cartels, OC factional dynamics, KFR, extortion, fentanyl flows |
+| political_risk      | Sheinbaum admin, judicial reform, Morena internals, governors  |
+| us_mexico           | tariffs, USMCA review, border, FTO/SDN, migration              |
+| energy_infra        | Pemex, CFE, refineries, huachicoleo, data centers, water       |
+| economy_markets     | peso, FDI, nearshoring, remittances, Kalshi/Polymarket MX      |
+| worldcup_travel     | 2026 venue security, tourist exposure, transit, civil unrest   |
+
+Spanish-language ingest is mandatory, not optional. `scripts/mexico-daily-scan.py`
+runs in the cron pre-collection step; results merge into `raw/incidents.json`
+via `scripts/merge_mexico_into_incidents.py`. Tier-3 handles translation
+prompts to keep cost low.
+
+**Calibration feedback loop (closed 2026-05-17):**
+`scripts/compile_calibration_directives.py` runs daily from
+`brain/memory/semantic/calibration-tracking.json` and writes per-band /
+per-theme directives into `behavioral-state.json` for next day's
+`analyze.py` system-prompt injection.
+
 ## Change Log
 
+- **3.3 (2026-05-17):** Mexico-primary desk routing. Themes replace regions.
+  Spanish-language ingest wired into the daily pipeline. Calibration
+  compiler closes the postdiction → behavioral-state feedback loop.
+  Skill-generator skill added (`skills/skill-generator/`) for autonomous
+  capability-gap remediation. Weekly meta-review job (`scripts/weekly_meta_review.py`)
+  picks next week's learning focus from gap logs.
 - **3.2 (2026-05-12):** Adopted tiered architecture (Tier-1 Opus 4.7 /
   Tier-2/3 DeepSeek V4 Flash). Replaced "Primary/Escalation" model with
   explicit tier names and use-case descriptions. OpenRouter policy
