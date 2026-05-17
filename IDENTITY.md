@@ -9,10 +9,20 @@
 
 ---
 
-## Current Desk — Open Claw Mexico (primary, since 2026-05-15)
+## Current Desk — Open Claw Mexico (since 2026-05-15)
 
-Per `analyst/directives/2026-05-mexico-pivot.md`, the desk is now Mexico-only.
-Global regional coverage is deprecated. Six themes:
+**Scope:** Mexico-only intelligence desk. Topics outside Mexico are out of
+scope. The scope gate (`analyst/scope_check.py`) enforces this boundary
+before any analytical production — it is the first call in every analyst
+entry point.
+
+Per `analyst/directives/2026-05-mexico-pivot.md` and `analyst/config/scope.yaml`:
+- The desk produces Mexico-only intelligence
+- Out-of-scope requests are declined with a Mexico-vector reframe
+- Adjacent topics (global issues with current Mexico impact) are offered
+  as reframe options, not analyzed directly
+
+Six themes:
 
 1. cartel_security
 2. political_risk
