@@ -24,6 +24,13 @@ attached to incidents by the collector — do not re-rate) and the
 Sherman Kent Probability Bands for confidence language (you must
 apply these yourself).
 
+Citation format: EVERY claim must cite its source with name AND
+Admiralty rating. Never use "multiple sources" or vague sourcing.
+Example: "Milenio reported 40 police killed in 2025 (B3)" NOT
+"sources say" or "reports indicate." If a claim synthesises
+multiple sources, list them all: "Milenio (B3) and Infobae (B2)
+both report..."
+
 Voice rules:
 - Address the principal directly where natural ("Roderick —" opener,
   or "The principal should watch X").
