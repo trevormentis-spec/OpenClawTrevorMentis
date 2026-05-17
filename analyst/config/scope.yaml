@@ -53,6 +53,22 @@ adjacency_vectors:
     label: US fentanyl policy / enforcement
     connector: DEA/US seizures, fentanyl scheduling, trafficking indictments → CDS/CJNG operations in MX
 
+# Search terms for adjacency vectors: these are global-topic-side keywords that
+# help identify topics as adjacent even when the Mexico-end label doesn't match.
+# Each term maps to a vector key. Used by _find_mexico_vectors for cross-matching.
+adjacency_search_terms:
+  fertilizer-corridor: ["fertilizer", "potash", "ammonia", "russia agriculture", "belarus"]
+  wheat-imports: ["wheat", "grain", "ukraine export", "black sea", "food price", "commodity price"]
+  brent-pemex: ["oil price", "crude oil", "brent", "wti", "opec", "opec plus", "energy market", "gasoline price",
+               "federal reserve", "interest rate", "central bank", "monetary policy", "ecb", "fed rate",
+               "inflation", "bond yield", "treasury"]
+  china-precursors: ["china export", "fentanyl", "precursor", "chemical", "china tariff", "xi jinping"]
+  us-bilateral: ["trump", "white house", "congress", "us policy", "state department"]
+  usmca-trade: ["tariff", "trade", "usmca", "reciprocal", "import tax"]
+  migrant-flows: ["migration", "migrant", "border", "asylum", "deportation", "central america", "cuba", "venezuela"]
+  data-center-capex: ["semiconductor", "chip", "data center", "cloud", "capex", "ai infrastructure"]
+  us-fentanyl: ["fentanyl", "dea", "overdose", "drug seizure", "trafficking"]
+
 # Blocklist — topic keywords/phrases that unequivocally trigger out_of_scope.
 # These bypass the LLM call for speed and zero cost.
 out_of_scope_keywords:
