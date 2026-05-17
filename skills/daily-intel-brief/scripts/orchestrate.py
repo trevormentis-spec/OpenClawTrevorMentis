@@ -253,15 +253,22 @@ def main() -> int:
             log(f"Decline: {build_decline(args.scope_topic, scope_result)}")
             return 0  # non-fatal
         elif scope_result["scope_status"] == "adjacent":
-            preamble = build_adjacency_preamble(args.scope_topic, scope_result)
+            scope_is_adjacent = True
+            scope_adjacency_preamble = build_adjacency_preamble(args.scope_topic, scope_result)
             log(f"SCOPE GATE: topic '{args.scope_topic}' is adjacent.")
-            log(f"Adjacency framing: {preamble[:200]}...")
-            log("Proceeding with Mexico-scoped pipeline using adjacent_brief.md template.")
+            log(f"Adjacency framing: {scope_adjacency_preamble[:200]}...")
+            log("Will pass adjacency state to pipeline workers.")
         else:
+            scope_is_adjacent = False
+            scope_adjacency_preamble = ""
             log(f"SCOPE GATE: topic '{args.scope_topic}' confirmed in_scope.")
     except ImportError:
+        scope_is_adjacent = False
+        scope_adjacency_preamble = ""
         log("SCOPE GATE: analyst.scope_check not available — skipping.")
     except Exception as exc:
+        scope_is_adjacent = False
+        scope_adjacency_preamble = ""
         log(f"SCOPE GATE: check failed ({exc}) — proceeding permissively.")
 
     env_check(strict=args.strict_env and not args.dry_run)
@@ -395,6 +402,7 @@ def main() -> int:
         "--regions", str(SKILL_DIR / "references" / "regions.json"),
         "--model", args.model,
         "--provider", args.provider,
+        "--scope-topic", args.scope_topic,
     ]
     if recall_md_path.exists():
         analyst_cmd.extend(["--recall", str(recall_md_path)])

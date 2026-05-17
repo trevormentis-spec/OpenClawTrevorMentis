@@ -178,47 +178,96 @@ cutting-edge, game-changing, best-in-class, synergy, leverage.
 
 ---
 
-## Scope Gate (since 2026-05-17)
+## Scope Gate — Three-Branch Flow (since 2026-05-17)
 
 `analyst/scope_check.py` is the FIRST call in every analyst entry
 point (chat handler, analyze.py, orchestrate.py, any ad-hoc brief
-script). It classifies the incoming request into three branches:
+script). It classifies the incoming request into three branches,
+each with a distinct output path:
 
 ```
 request → scope_check.py
            │
-           ├── in_scope → proceed with normal pipeline
+           ├── in_scope
+           │   → Full thematic analyst prompt. No reframe needed.
+           │   → Standard pipeline (analyze.py with deepseek-prompts.md)
+           │   → Produces thematic Mexico brief.
            │
-           ├── adjacent → call analyst with reframe-offer prompt
-           │               instead of standard analyst prompt.
-           │               Mexico vectors must be current-specific,
-           │               not generic.
+           ├── adjacent
+           │   → Adjacency-brief prompt loaded from
+           │     analyst/templates/adjacent_brief.md.
+           │   → System prompt injected with adjacency preamble
+           │     (build_adjacency_preamble from scope_check.py).
+           │   → Frame ENTIRE brief through Mexico transmission
+           │     vectors. NOT a generic global brief with MX appended.
+           │   → Output: BLUF + 3-5 vector sections (development →
+           │     mechanism → magnitude/timing → subscriber action) +
+           │     calibration band + watch items.
            │
-           └── out_of_scope → return structured decline. No analyst
-                               model is called. The decline includes
-                               the scope-descriptor and a prompt to
-                               ask a Mexico question instead.
+           └── out_of_scope
+               → Decline template. No analyst model is called.
+               → Verbatim shape:
+                 "Open Claw Mexico is scoped to {scope_descriptor}.
+                  '{topic}' is out of scope and has no substantive
+                  transmission mechanism to Mexico.
+                  If you have a specific Mexico question I should be
+                  answering, ask that instead."
 ```
 
-Fast path: keyword matching against `scope.yaml` (zero API cost).
-Slow path: cheap LLM call (deepseek-chat) for ambiguous requests.
+### Classification logic
 
-Decline template verbatim shape:
+- **Fast path:** keyword matching against `scope.yaml` blocklist and
+  allowlist. Zero API cost. Catches unambiguous in_scope (Mexico
+  keywords) and out_of_scope (Russia-Ukraine, K-pop, etc.)
+- **Slow path:** cheap LLM call (deepseek-chat, ~$0.00015/query) for
+  ambiguous requests. The classifier prompt includes explicit examples
+  of all three statuses and a hard adjacency-default rule.
+- **Permissive default:** on LLM API failure, defaults to `in_scope`.
+  Better to produce than to miss.
 
-> Open Claw Mexico is scoped to {scope_descriptor}. {Topic}
-> reaches Mexico through {N} vectors moving today:
-> 
-> - {vector 1: one-line specific to current developments}
-> - {vector 2: one-line specific to current developments}
-> - {vector 3: one-line specific to current developments}
-> 
-> Want any of those framings? If you have a specific Mexico question
-> I should be answering, ask that instead.
+### Adjacency default rule (in classifier)
+
+> Adjacency is the DEFAULT for any topic with a credible transmission
+> mechanism to Mexico (energy, currency, trade, capital flows, migration,
+> supply chains). Out-of-scope is reserved for topics where no credible
+> mechanism exists. When in doubt, prefer adjacent over out_of_scope —
+> the adjacency branch produces value; refusal trains subscribers to stop
+> asking.
+
+### Adjacent brief template (`analyst/templates/adjacent_brief.md`)
+
+Every adjacent brief follows this structure in order:
+
+1. **BLUF** — one sentence on what the topic means for Mexico-exposed
+   subscribers.
+2. **Vector sections (3-5)** — each section is one transmission vector:
+   - **Development:** what happened globally (1-2 sentences)
+   - **Mechanism to Mexico:** how this reaches Mexican assets/institutions
+   - **Magnitude / Timing:** how big, how fast. Quantify where possible.
+   - **Subscriber action line:** what to do with the information.
+3. **Calibration** — Sherman Kent band on the directional thesis.
+4. **Watch items** — 3-5 forward-looking indicators with triggers and
+   signals.
+
+### Scope discipline — no keyword-extension on edge cases
+
+When a probe surfaces an unexpected classification, the right question
+is "why did check_scope get this wrong, and what does the classifier
+prompt or example set need?" — NOT "what keyword can I add to make
+this go away?" Auto-extending the keyword list is rule-fitting; it
+makes the gate more brittle as edge cases accumulate. The classifier-
+improvement path compounds learning; the keyword-extension path
+compounds tech debt. This applies to all future scope edge cases.
+If tempted to add a keyword, audit the classifier examples first.
+
+### Framework generalization
 
 Scope spec lives in `analyst/config/scope.yaml`. When redirecting
-this framework to a new topic, edit that file's primary_scope,
-themes, adjacency_vectors, and keyword lists. The scope_check.py
-module itself is framework-general and requires no changes.
+this framework to a new topic, edit that file: primary_scope,
+themes, adjacency_vectors, keyword lists. The scope_check.py module
+and the three-branch flow are framework-general and require no changes.
+To generalize the adjacency template, replace its Mexico references
+with the new scope's transmission vectors.
 
 ## Mexico Desk Routing (since 2026-05-17)
 
