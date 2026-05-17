@@ -1,4 +1,35 @@
-# Gmail Intel Digest — 2026-05-17 03:01 UTC
+# Gmail Intel Digest — 2026-05-17 21:01 UTC
+
+## Iran Update Special Report, May 17, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Sun, 17 May 2026 15:34:58 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War The United States and Iran continue to pursue fundamentally incompatible negotiating positions. May 17, 2026 Data Cutoff: 2:00 PM ET Ben Rezaei, Adham Fattah, Nidal Morrison, Carolyn Moorman, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES The United States and Iran continue to pursue fundamentally incompatible negotiating positions. Unspecified sources familiar 
+
+---
+
+## Iran Update Evening Special Report: May 17, 2026, 02:00 PM ET
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Sun, 17 May 2026 15:15:09 -0400
+**Type:** unknown | **Importance:** low
+
+A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+
+Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVBX-W8g-hv-N3KgKn2gQXlFW39GxQ75P9mPPN8LB07x3pyd0W8wLKSR6lZ3pZW8t0mqw1m0hsRW8P0FJd6V7BQMW1ky2DR2Jdb5RW55DYsG97nmjlW87ZdBB4tRMGxN89NHbLJbhvqW7V5TSl1VqTK9W38wpGs7LwT8tW2cLhzX4g-n_BN79r1jx1s-bvW3g7Fjx1d1rj-W2pnyS47tq984VpZr1m4z4_PzW26jQHl81L5_sW2J0vtZ2kvmR_W1prjtY6pvhdvW937q6N6-pmnKVHXLty1g
+
+---
+
+## Global Security & Intelligence Brief — 17 May 2026
+**From:** Trevor <trevor.mentis@gmail.com>
+**Date:** Sun, 17 May 2026 12:33:34 +0000
+**Type:** alert | **Importance:** high
+
+Trevor,
+
+Issue 17 attached. Europe moved most: Ukraine ran the largest single-night drone strike of the war overnight 16-17 May — 556 UAVs, of which the Russian MoD says 81 reached the Moscow defensive ring, killing four. The most analytically consequential impact was on the Elma technopark in Zelenograd, a 60,000 m² microelectronics campus repeatedly flagged by ASTRA OSINT and KSE as a sanctions-leakage node for chip and dual-use re-export — the deep-strike campaign has visibly pivoted from per
+
+---
 
 ## Security alert
 **From:** Google <no-reply@accounts.google.com>
@@ -17,59 +48,6 @@ Check activity
 <https://accounts.google.com/AccountChooser?Email=trevor.mentis@gmail.com&continue=https://myaccount.google.com/alert/nt/1778983511000?rfn%3D325%26rfnc%3D1%26eid%3D-5314107663826593828%26et%3D0>
 You can also see security activity at
 https://myaccount.goo
-
----
-
-## Russian Offensive Campaign Assessment, May 16, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sat, 16 May 2026 21:00:46 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War The seniormost Russian military command presented a highly inaccurate assessment of the battlefield situation for the fifth consecutive month May 16, 2026 Assessment as of: 7:00 PM ET ﻿ ﻿Data Cutoff: 1:45 PM ET  Grace Mappes, Anna Thacker, Justin Young, Diana Nasreddine, and Frederick W. Kagan TOPLINES The seniormost Russian military command presented a highly inaccurate assessment of the battlefield situation for the fifth consecutive month, absurdly cl
-
----
-
-## Iran Update Special Report, May 16, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sat, 16 May 2026 17:15:51 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War The Iranian regime is introducing a formalized toll system under the guise of maritime insurance policies and continuing to deploy incentives and threats to vessels in the Persian Gulf May 16, 2026 Data Cutoff: 2:00 PM ET Katherine Wells, Ben Rezaei, Avery Borens, Ria Reddy, Kelly Campa, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES The Iranian regime is introd
-
----
-
-## Iran Update Evening Special Report, May 16, 2026
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Sat, 16 May 2026 16:13:30 -0400
-**Type:** unknown | **Importance:** low
-
-Your regular update about political, security, and social developments in Iran and the region.
-
-Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VW674D2QvmC-N7rzc9B2-JQnVGwS3m5P7jL_N2QYvBx3pyd0W8wLKSR6lZ3mhW2yHZZ-4HH-PXVBFLNW4-9B2_W6fgYz028ZxYYW6Y9cQW59JjVxN42BS5fJmNl6W5XcRM53-nvV9N48KtWn697hmW1by6y53r4RblVpgdGg3YwwPsW4dzRgc3Dxs8YW8lTf1q8QCwWdW5xPSkr2CpnQnW7dPKZL4flTDxVf_CWn8fh0pdW8328tW642PSwVfsxYz4pH1zsW419D6h5q1TfNW5Qdfwl8bZ-FDW1RZKvM8vc_bMN1xy1MFhwtvrW1mFlBj5Y
-
----
-
-## Global Security & Intelligence Brief — 16 May 2026 (v2, refreshed format)
-**From:** Trevor <trevor.mentis@gmail.com>
-**Date:** Sat, 16 May 2026 08:09:07 -0700
-**Type:** alert | **Importance:** high
-
-Trevor,
-
-A refreshed v2 of today's brief is attached. A few format changes per the morning feedback:
-
-The typography has moved to an Economist-style register: tighter measures, smaller display heads, body-led page architecture. The theatre photos are now properly sized in relation to text rather than dominating each opening spread. Honorifics now read "President Putin", "President Trump", "President Zelensky", "Prime Minister Modi" and "President Sheinbaum" on first reference, with surnames ther
-
----
-
-## Global Security & Intelligence Brief — 16 May 2026
-**From:** Trevor <trevor.mentis@gmail.com>
-**Date:** Sat, 16 May 2026 14:44:19 +0000
-**Type:** alert | **Importance:** high
-
-Trevor,
-
-Issue 16 attached. Today's most consequential single event is on the prediction-market side: the Polymarket ceasefire-before-2027 contract resolved YES on 14 May after the Istanbul direct-channel readout, closing the long-running NO position at a full 74-point loss; the desk has rolled into the broader ceasefire-agreement-by-31-December-2026 bucket (NO at 52¢) where agreement and durable cessation are priced as separate problems. The single largest live re-pricing is in the Middle East 
 
 ---
 

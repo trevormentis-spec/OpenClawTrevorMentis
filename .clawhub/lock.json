@@ -120,6 +120,10 @@
     "mapbox-geospatial-operations": {
       "version": "1.0.0",
       "installedAt": 1778922144512
+    },
+    "mapbox-data-visualization-patterns": {
+      "version": "1.0.0",
+      "installedAt": 1779008466067
     }
   }
 }
