@@ -518,7 +518,8 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--regions", required=True)
-    parser.add_argument("--sources", required=True)
+    parser.add_argument("--sources", required=True, action="append",
+                        help="path to sources JSON (may be specified multiple times to merge)")
     parser.add_argument("--mock", action="store_true")
     parser.add_argument("--cap-per-region", type=int, default=8,
                         help="uniform cap override (if no adaptive state provided)")
@@ -531,7 +532,20 @@ def main() -> int:
     wd = pathlib.Path(args.working_dir).expanduser().resolve()
     raw_dir = wd / "raw"; raw_dir.mkdir(parents=True, exist_ok=True)
     regions = load_json(pathlib.Path(args.regions))
-    sources = load_json(pathlib.Path(args.sources))
+
+    # Merge multiple --sources files (global + Mexico-specific sources)
+    source_paths = args.sources if isinstance(args.sources, list) else [args.sources]
+    merged = {"durable_sources": [], "wire_sources": []}
+    for sp in source_paths:
+        try:
+            data = json.loads(pathlib.Path(sp).read_text())
+            for key in ("durable_sources", "wire_sources"):
+                merged.setdefault(key, []).extend(data.get(key, []))
+            log(f"loaded sources from {sp}: {len(data.get('durable_sources',[]))} durable, {len(data.get('wire_sources',[]))} wire")
+        except Exception as exc:
+            log(f"failed to load sources from {sp}: {exc}")
+    sources = merged
+    log(f"merged sources: {len(sources['durable_sources'])} durable total")
 
     # Adaptive caps: load per-region caps from collection state if available
     caps = {r: args.cap_per_region for r in ["europe", "asia", "middle_east",

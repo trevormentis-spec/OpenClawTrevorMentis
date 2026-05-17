@@ -372,6 +372,11 @@ def main() -> int:
         "--regions", str(SKILL_DIR / "references" / "regions.json"),
         "--sources", str(REPO_ROOT / "analyst" / "meta" / "sources.json"),
     ]
+    # Add Mexico-specific sources if available
+    mx_sources = REPO_ROOT / "analyst" / "meta" / "sources-mexico.json"
+    if mx_sources.exists():
+        collector_cmd.extend(["--sources", str(mx_sources)])
+        log(f"added Mexico-specific sources from {mx_sources}")
     if adaptive_caps_file.exists():
         collector_cmd.extend(["--adaptive-caps", str(adaptive_caps_file)])
     # Load feed priorities for source quality → source priority loop

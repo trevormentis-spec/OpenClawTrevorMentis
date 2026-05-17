@@ -1,6 +1,8 @@
 # Entity: Sinaloa Cartel (CDS) — Organizational Overview
 
 **Last updated:** 2026-05-17
+**Last source date:** 2026-05-14 (Infobae/WSJ)
+**Stale warning days:** 14
 **Type:** actor (criminal organization)
 **Status:** Active, in internal civil war
 **Primary themes:** cartel_security, us_mexico

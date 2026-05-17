@@ -166,13 +166,19 @@ def evaluate_single_judgment(kj: dict, today_incidents: list[dict],
     
     system = (
         "You are a calibration auditor. Given a prediction made yesterday "
-        "and today's evidence, determine whether the prediction is correct, "
-        "incorrect, or unresolved (too early to tell, or insufficient evidence).\n\n"
-        "Use these criteria:\n"
-        "- CORRECT: The predicted event occurred or the trend direction was right\n"
-        "- INCORRECT: The predicted event did NOT occur or direction was wrong\n"
-        "- UNRESOLVED: 24h is too short to judge, or evidence is contradictory\n\n"
-        "Respond ONLY with a JSON object: {\"verdict\": \"correct|incorrect|unresolved\", "
+        "and today's evidence, classify the verdict into one of five categories.\n\n"
+        "Categories:\n"
+        "- CONFIRMED: The predicted event occurred as predicted, direction/magnitude correct\n"
+        "- PARTIALLY_CONFIRMED: Directionally right but magnitude or timing off. "
+        "E.g., 'Brent will rise' and it did rise but only 2% instead of predicted 5%.\n"
+        "- NOT_YET_TESTABLE: The event hasn't occurred yet or can't be measured "
+        "within the evidence available. Keep on books with a flag.\n"
+        "- DISCONFIRMED: Event happened opposite to prediction. "
+        "E.g., predicted 'MXN strengthens' but MXN weakened.\n"
+        "- EXPIRED_NO_RESOLUTION: Horizon expired and there's no clear verdict. "
+        "Default for past-horizon judgments without sufficient evidence.\n\n"
+        "Respond ONLY with a JSON object: {\"verdict\": "
+        "\"confirmed|partially_confirmed|not_yet_testable|disconfirmed|expired_no_resolution\", "
         "\"confidence\": \"high|medium|low\", \"explanation\": \"...\"}"
     )
 
@@ -273,13 +279,13 @@ def recheck_expired(cal: dict) -> dict:
                 else:
                     verdict = ev.get("verdict", "unresolved")
                 
-                if verdict == "unresolved":
+                if verdict in ("unresolved", "not_yet_testable", "expired_no_resolution"):
                     if "postdict" in ev:
-                        ev["postdict"]["verdict"] = "incorrect"
+                        ev["postdict"]["verdict"] = "expired_no_resolution"
                         ev["postdict"]["forced"] = True
                         ev["postdict"]["explanation"] = (
                             "Horizon expired without confirming evidence. "
-                            "Forced to 'incorrect' per calibration honesty protocol."
+                            "Scored as expired_no_resolution per five-category system."
                         )
                         ev["postdict"]["forced_at"] = now.isoformat()
                     forced_incorrect += 1
@@ -399,20 +405,32 @@ def main() -> int:
     # produces misleading calibration feedback
     verdicts = [e["postdict"]["verdict"] for e in evaluations]
     correct = verdicts.count("correct")
-    incorrect = verdicts.count("incorrect")
-    unresolved = verdicts.count("unresolved")
+    partially_confirmed = verdicts.count("partially_confirmed")
+    disconfirmed = verdicts.count("disconfirmed")
+    not_yet_testable = verdicts.count("not_yet_testable")
+    expired = verdicts.count("expired_no_resolution")
+    # For calibration scoring: confirmed corrects, partially_confirmed counts as 0.5 correct,
+    # disconfirmed and expired_no_resolution count as incorrect
+    effective_correct = correct + (partially_confirmed * 0.5)
+    effective_incorrect = disconfirmed + expired
     total = len(evaluations)
     resolved = correct + incorrect
     accuracy_pct = round((correct / resolved * 100) if resolved > 0 else None, 1) if resolved > 0 else None
 
-    # Build calibration report
+    # Build calibration report (5-category verdict system)
+    effective_resolved = effective_correct + effective_incorrect
+    accuracy_pct = round((effective_correct / effective_resolved * 100), 1) if effective_resolved > 0 else None
     calibration = {
         "date": today_dir.name,
         "yesterday": yesterday_dir.name,
         "predictions_evaluated": total,
         "correct": correct,
-        "incorrect": incorrect,
-        "unresolved": unresolved,
+        "partially_confirmed": partially_confirmed,
+        "disconfirmed": disconfirmed,
+        "not_yet_testable": not_yet_testable,
+        "expired_no_resolution": expired,
+        "effective_correct": effective_correct,
+        "effective_incorrect": effective_incorrect,
         "accuracy_pct": accuracy_pct if accuracy_pct is not None else 0.0,
         "evaluations": evaluations,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat() + "Z",
