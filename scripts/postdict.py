@@ -46,8 +46,11 @@ def log(msg: str) -> None:
     print(f"[postdict {ts}] {msg}", file=sys.stderr, flush=True)
 
 
-def call_oracle(system: str, user: str, provider: str = "openrouter") -> str:
-    """Call the oracle model to evaluate a prediction against evidence."""
+def call_oracle_provider(system: str, user: str,
+                        provider: str, model_id: str,
+                        timeout: int = 120) -> str:
+    """Call a specific model provider. Returns the response content string.
+    Raises RuntimeError on any failure."""
     if provider == "openrouter":
         api_key = os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
@@ -59,6 +62,7 @@ def call_oracle(system: str, user: str, provider: str = "openrouter") -> str:
             "HTTP-Referer": "https://github.com/trevormentis-spec",
             "X-Title": "TREVOR Calibration",
         }
+        api_model = model_id
     else:
         api_key = os.environ.get("DEEPSEEK_API_KEY")
         if not api_key:
@@ -68,9 +72,7 @@ def call_oracle(system: str, user: str, provider: str = "openrouter") -> str:
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
         }
-
-    model = ORACLE_MODEL if provider == "openrouter" else "deepseek/deepseek-v4-pro"
-    api_model = model.split("/", 1)[-1] if "/" in model and provider != "openrouter" else model
+        api_model = model_id.split("/", 1)[-1] if "/" in model_id else model_id
 
     payload = {
         "model": api_model,
@@ -78,7 +80,7 @@ def call_oracle(system: str, user: str, provider: str = "openrouter") -> str:
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
-        "temperature": 0.1,  # Low temp for objective evaluation
+        "temperature": 0.1,
         "max_tokens": 4096,
     }
     body = json.dumps(payload).encode()
@@ -87,12 +89,43 @@ def call_oracle(system: str, user: str, provider: str = "openrouter") -> str:
         data=body, method="POST",
         headers=headers,
     )
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        result = json.loads(resp.read())
+    return result["choices"][0]["message"]["content"]
+
+
+def call_oracle(system: str, user: str) -> str:
+    """Call the oracle model with automatic retry + fallback.
+
+    Tries:
+    1. Opus 4.7 via OpenRouter (best quality)
+    2. DeepSeek V4 Flash via DeepSeek Direct (fallback, cheaper)
+
+    Each attempt has retry with exponential backoff (2s, 4s, 8s).
+    """
+    import time
+
+    # Tier 1: Opus 4.7 via OpenRouter
+    for attempt in range(3):
+        try:
+            return call_oracle_provider(system, user, "openrouter",
+                                        "anthropic/claude-opus-4.7",
+                                        timeout=90)
+        except Exception as exc:
+            wait = 2 ** attempt
+            log(f"Opus 4.7 attempt {attempt+1}/3 failed ({exc}). Retrying in {wait}s...")
+            if attempt < 2:
+                time.sleep(wait)
+
+    # Tier 2: DeepSeek Flash via DeepSeek Direct
+    log("Opus 4.7 exhausted. Falling back to DeepSeek V4 Flash.")
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            result = json.loads(resp.read())
-        return result["choices"][0]["message"]["content"]
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError(f"HTTP {exc.code}: {exc.read().decode(errors='replace')[:300]}")
+        return call_oracle_provider(system, user, "deepseek",
+                                    "deepseek/deepseek-v4-flash",
+                                    timeout=60)
+    except Exception as exc:
+        log(f"DeepSeek Flash fallback also failed ({exc}).")
+        raise RuntimeError("All oracle providers exhausted.")
 
 
 def load_json(path: str | pathlib.Path) -> dict:
