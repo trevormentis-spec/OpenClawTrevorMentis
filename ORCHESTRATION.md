@@ -249,6 +249,24 @@ Every adjacent brief follows this structure in order:
 4. **Watch items** — 3-5 forward-looking indicators with triggers and
    signals.
 
+### Regression discipline — mandatory four-probe test on scope changes
+
+Any change to `scope_check.py`, `scope.yaml`, or any scope-related
+template must be followed by a four-probe regression test. All four
+must pass at expected branch AND structural compliance before commit.
+Prior-probe regression is a fix failure, not partial success.
+
+Run: `python3 analyst/scope_check.py --regression-test --verbose`
+
+Canonical probes:
+
+| Probe | Input | Expected | Check |
+|-------|-------|----------|-------|
+| A | Saudi-Russia oil production talks | adjacent | vectors populated |
+| B | ECB rate decision this week | adjacent | vectors populated |
+| C | Russia-Ukraine front for today | out_of_scope | reframe vectors >=1 |
+| D | Pemex Cadereyta refinery | in_scope | — |
+
 ### Scope discipline — no keyword-extension on edge cases
 
 When a probe surfaces an unexpected classification, the right question

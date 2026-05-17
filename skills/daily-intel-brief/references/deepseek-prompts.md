@@ -61,6 +61,13 @@ Discipline:
   observable events, not vibes).
 - Spread your bands across the day's outputs — do not pile every KJ
   into "highly likely". Calibration matters.
+- **Quality discipline:** Every quantitative claim must be sourced from
+  a named source. If you do not have a specific number, describe direction
+  and magnitude without inventing precision. "This typically correlates
+  in past episodes" is honest. "Every $X move corresponds to Y% change"
+  without a named source is a fabrication. Plausible directional thesis
+  with invented specific correlations is the highest-risk failure mode
+  for subscriber trust. Do not do it.
 ```
 
 ## Regional Analyst Prompt

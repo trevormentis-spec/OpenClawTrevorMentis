@@ -80,8 +80,22 @@ Output as valid JSON:
 }
 ```
 
+## Quality discipline
+- Every quantitative claim must be sourced. If you do not have a specific
+  number from a named source, describe the direction and magnitude without
+  inventing precision. "Corresponds to an ~X% increase" without a source
+  is a fabrication, not analysis.
+- Plausible directional theses are valuable without invented specific
+  correlations. "This typically hardens enforcement posture in past
+  episodes" is honest. "Every $0.25/gal corresponds to a 15% increase
+  in X" without sourcing is a subscriber-trust failure.
+- **Hard rule:** no unsourced specific percentages, correlations, or
+  statistical claims. Direction + magnitude from a named source is fine.
+  Specific numbers without a source are never fine.
+
 ## Do NOT
 - Produce a generic global brief with Mexico paragraphs appended
 - Use the decline template for adjacent topics
 - Structure by geography rather than by vector
 - Include standard regional analyses
+- Invent specific correlations or percentages without a named source
