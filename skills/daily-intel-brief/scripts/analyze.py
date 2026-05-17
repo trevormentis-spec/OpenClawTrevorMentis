@@ -11,9 +11,9 @@ Implements agents/analyst.md.
 
 Usage:
 
-    python3 scripts/analyze.py --working-dir <wd> \
-        --prompts skills/daily-intel-brief/references/deepseek-prompts.md \
-        --regions skills/daily-intel-brief/references/regions.json \
+    python3 scripts/analyze.py --working-dir <wd> \\
+        --prompts skills/daily-intel-brief/references/deepseek-prompts.md \\
+        --regions skills/daily-intel-brief/references/regions.json \\
         [--model deepseek/deepseek-v4-pro] [--mock]
 
 `--mock` returns canned analytical JSON without calling the API, so the
@@ -546,27 +546,38 @@ def main() -> int:
         # Behavioral state already contains compiled calibration + collection + event directives
         cal_dirs = behavioral_state.get("calibration_directives", {})
         cal_parts = ["\n\n### === CALIBRATION FEEDBACK (from behavioral state) ==="]
-        
+
         overall = cal_dirs.get("overall", {})
         total = overall.get("total_judgments", 0)
         if total > 0:
             cal_parts.append(
                 f"\nOverall: {overall.get('correct', 0)}/{total} correct "
-                f"({overall.get('accuracy_pct', 0)}%)."
+                f"({overall.get('accuracy_pct', 0)}%). Posture: {overall.get('posture', 'hold_bands')}."
             )
-        
+
+        # Concrete per-band downshift directives (from compile_calibration_directives.py)
+        band_directives = cal_dirs.get("band_directives", [])
+        if band_directives:
+            cal_parts.append("\nBand-level adjustments (mandatory):")
+            for bd in band_directives:
+                cal_parts.append(
+                    f"  • '{bd['band']}' is {int(bd['accuracy']*100)}% accurate over "
+                    f"{bd['samples']} judgments → use '{bd['use_instead']}' instead."
+                )
+
         if overall.get("unresolved", 0) > 10:
             cal_parts.append(
                 f"\n⚠ {overall['unresolved']}/{total} judgments unresolved. "
                 "High uncertainty environment — restrict top confidence bands."
             )
-        
+
         if overall.get("overconfidence_regions"):
             cal_parts.append(
                 f"\n⚠ Overconfidence detected in: "
-                f"{', '.join(overall['overconfidence_regions'])}."
+                f"{', '.join(overall['overconfidence_regions'])}. "
+                "Widen bands by one notch for these regions/themes."
             )
-        
+
         cal_parts.append("\n\n=== END CALIBRATION FEEDBACK ===")
         cal_block = "\n".join(cal_parts)
         
