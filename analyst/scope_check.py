@@ -122,24 +122,52 @@ def _llm_classify(topic: str, config: dict) -> dict:
 
 Classify this user request: "{topic}"
 
-Return exactly one JSON object with two fields:
+Return exactly one JSON object:
 {{"scope_status": "in_scope"|"adjacent"|"out_of_scope", "rationale": "one-sentence why"}}
 
 Rules:
-- "in_scope" = directly about Mexico, Mexican institutions, cartels, Mexican states, 
-  US-Mexico relations, Pemex, Mexican politics, Mexican economy, Mexican security.
-  ANY mention of Mexico, a Mexican state/city, a Mexican institution, a cartel,
-  a Mexican politician, or a Mexico-specific issue = in_scope.
-- "adjacent" = the topic is not about Mexico but has a current, specific connection
-  to Mexico. Examples: global oil prices (Pemex), fentanyl precursor chemicals from 
-  China (Mexican cartel labs), US tariffs (Mexico trade), migration through Mexico,
-  Ukraine wheat prices (Mexican tortilla prices), Russian fertilizer (Mexican ag).
-- "out_of_scope" = no substantive Mexico connection. Pure Russia-Ukraine front
-  reporting, China-Taiwan military balance, Israel-Gaza, African security, European
-  politics, Asian regional security, global finance etc = out_of_scope.
+- "in_scope" = directly about Mexico, a Mexican institution, cartel, state/city,
+  politician, US-Mexico relations, Pemex/CFE/energy, Mexican economy/peso,
+  Mexican security/politics. ANY mention of a Mexico-specific entity = in_scope.
 
-When in doubt, err toward "adjacent" — the scope gate is permissive, not strict.
-It's better to offer a reframe than to dismiss a request that could reach Mexico."""
+- "adjacent" = topic is NOT about Mexico but HAS a credible transmission mechanism
+  that touches Mexico. **Adjacency is the DEFAULT for any topic with a credible
+  transmission mechanism (energy, currency, trade, capital flows, migration,
+  supply chains, enforcement policy, UHNW flight, commodities, inflation).**
+  Out-of-scope is reserved for topics where no credible mechanism exists.
+  When in doubt, prefer adjacent over out_of_scope.
+
+  Adjacency examples:
+  - "Saudi-Russia oil production talks" → adjacent (brent-pemex, MXN, hedge)
+  - "ECB rate decision" → adjacent (capital flows, USD/MXN carry)
+  - "Korean semiconductor capacity" → adjacent (data-center-capex, nearshoring)
+  - "Brazilian presidential election" → adjacent (LatAm peer flows, FDI competition)
+  - "OPEC+ production meeting" → adjacent (brent-pemex, sovereign hedge)
+  - "Argentina IMF program" → adjacent (LatAm peer flows, EM sentiment)
+  - "China rare earth export controls" → adjacent (data-center-capex, usmca-trade)
+  - "Canadian dairy USMCA dispute" → adjacent (usmca-trade, precedent)
+  - "Iran nuclear escalation" → adjacent (brent-pemex, fertilizer corridor)
+  - "Vietnam tariff dispute" → adjacent (nearshoring competitor, usmca backdoor)
+  - "Ukraine wheat supply" → adjacent (global food prices → Mexican basic basket)
+  - "Federal Reserve rate decision" → adjacent (MXN, capital flows, remittances)
+
+- "out_of_scope" = no substantive Mexico connection. Only for topics with NO
+  credible transmission mechanism.
+
+  True out-of-scope examples:
+  - "Russia-Ukraine front-line tactics today"
+  - "K-pop label dynamics"
+  - "NFL playoff predictions"
+  - "Premier League transfer window"
+  - "Japanese election prediction"
+  - "EU AI Act enforcement"
+  - "California drought policy"  # US domestic, no MX-specific mechanism
+
+HARD RULE: Adjacency is the DEFAULT for any topic with a credible transmission
+mechanism to Mexico (energy, currency, trade, capital flows, migration, supply
+chains). Out-of-scope is reserved for topics where no credible mechanism exists.
+When in doubt, prefer adjacent over out_of_scope — the adjacency branch produces
+value; refusal trains subscribers to stop asking."""
     
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     if not api_key:
@@ -275,45 +303,93 @@ def check_scope(topic_or_request: str) -> dict:
     }
 
 
-# ── Decline message builder ────────────────────────────────────────────────
+# ── Decline message builder (out-of-scope only) ────────────────────────────
 
 def build_decline(topic: str, scope_result: dict) -> str:
-    """Build the decline-and-reframe message.
+    """Build the decline message for OUT_OF_SCOPE topics only.
 
-    Uses the DECLINE_TEMPLATE with scope config and dynamic vectors.
+    Raises ValueError if called on in_scope or adjacent topics — those
+    should be handled through their own output paths (normal brief or
+    adjacent brief respectively).
     """
     config = load_scope()
     scope_descriptor = config.get("scope_descriptor", "Mexico-only intelligence")
 
-    if scope_result["scope_status"] == "in_scope":
-        raise ValueError("build_decline called on in_scope topic — use normal handler")
-
-    if scope_result["scope_status"] == "adjacent":
-        vectors = scope_result.get("mexico_vectors", [])
-        if not vectors:
-            # Fallback: offer generic adjacency prompt
-            return (
-                f"Open Claw Mexico is scoped to {scope_descriptor}. "
-                f"'{topic}' is adjacent but I don't see a live Mexico vector today.\n\n"
-                "If you have a specific Mexico question I should be answering, ask that instead."
-            )
-
-        n = len(vectors)
-        vector_lines = "\n".join(f"- {v}" for v in vectors)
-
-        return DECLINE_TEMPLATE.format(
-            scope_descriptor=scope_descriptor,
-            topic_label=topic[:80],
-            n=n,
-            vectors=vector_lines,
+    if scope_result["scope_status"] != "out_of_scope":
+        raise ValueError(
+            f"build_decline called on {scope_result['scope_status']} topic — "
+            "use build_adjacency_brief() for adjacent, normal handler for in_scope."
         )
 
-    # out_of_scope
     return (
         f"Open Claw Mexico is scoped to {scope_descriptor}. "
-        f"'{topic[:80]}' is out of scope.\n\n"
+        f"'{topic[:80]}' is out of scope and has no substantive transmission "
+        f"mechanism to Mexico.\n\n"
         "If you have a specific Mexico question I should be answering, ask that instead."
     )
+
+
+# ── Adjacency brief preamble (for adjacent topics) ─────────────────────────
+
+def build_adjacency_preamble(topic: str, scope_result: dict) -> str:
+    """Build the framing preamble for an ADJACENT-topic brief.
+
+    The preamble states the scope context, lists the Mexico vectors, and
+    signals the Mexico-first framing. The calling code uses this preamble
+    to prepend to the adjacent brief template.
+
+    Returns a string suitable for prepending to the analyst prompt.
+    """
+    config = load_scope()
+    vectors = scope_result.get("mexico_vectors", [])
+
+    if not vectors:
+        return (
+            f"ADJACENCY NOTE: The topic '{topic[:80]}' is not directly about Mexico "
+            f"but is adjacent through Mexico-relevant channels. Produce a Mexico-framed "
+            f"brief using the adjacent_brief template."
+        )
+
+    vector_lines = "\n".join(f"- Vector {i+1}: {v}" for i, v in enumerate(vectors))
+
+    return (
+        f"ADJACENCY FRAMING — The user asked about '{topic[:80]}', which is not "
+        f"directly about Mexico but touches it through transmission vectors."
+        f"\n\n{vector_lines}"
+        f"\n\nFrame the entire brief through the Mexico lens. Each section covers "
+        f"one transmission vector. This is NOT a generic global-markets brief "
+        f"with Mexico paragraphs appended — it is Mexico-first throughout."
+    )
+
+
+# ── CLI entry point ────────────────────────────────────────────────────────
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Scope gate for Open Claw Mexico desk")
+    parser.add_argument("--topic", required=True, help="The request or topic to classify")
+    parser.add_argument("--json", action="store_true", help="Output raw JSON")
+    parser.add_argument("--format", choices=["json", "decline", "adjacency"],
+                        default=None, help="Output format (default: auto-detect from scope_status)")
+    args = parser.parse_args()
+
+    result = check_scope(args.topic)
+
+    fmt = args.format
+    if fmt == "json" or args.json:
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+        return
+
+    if result["scope_status"] == "in_scope":
+        print(f"IN SCOPE: {result['rationale']}")
+        sys.exit(0)
+    elif result["scope_status"] == "adjacent":
+        print(f"ADJACENT: {result['rationale']}")
+        print()
+        print(build_adjacency_preamble(args.topic, result))
+        sys.exit(0)
+    else:
+        print(build_decline(args.topic, result))
+        sys.exit(1)
 
 
 # ── CLI entry point ────────────────────────────────────────────────────────
