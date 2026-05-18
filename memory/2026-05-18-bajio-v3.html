@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* Open Claw Mexico — PDF Brand Template v1 */
+  /* Typography */
+  @page {
+    size: letter;
+    margin: 1.5in 1in 1in 1in;
+    @top-left { content: "OPEN CLAW MEXICO"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
+    @top-right { content: "Confidential"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #999; }
+    @bottom-left { content: counter(page); font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
+    @bottom-right { content: string(brief_id); font-family: 'Inter', sans-serif; font-size: 7pt; color: #999; }
+  }
+  
+  @page cover {
+    margin: 0;
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1a1a2e;
+  }
+
+  /* Cover page */
+  .cover {
+    page: cover;
+    page-break-after: always;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    color: white;
+    padding: 2in 1in 1.5in 1in;
+    margin: -1.5in -1in -1in -1in;
+    min-height: 11in;
+    position: relative;
+  }
+  .cover .brand { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #e94560; margin-bottom: 2in; }
+  .cover .title { font-size: 22pt; font-weight: 700; line-height: 1.2; margin-bottom: 0.3in; }
+  .cover .subtitle { font-size: 13pt; color: #ccc; margin-bottom: 1in; }
+  .cover .meta { font-size: 9pt; color: #999; }
+  .cover .meta table { width: 100%; }
+  .cover .meta td { padding: 4px 8px; }
+  .cover .meta .label { color: #999; width: 120px; }
+  .cover .meta .value { color: #ddd; }
+
+  /* Section headers */
+  h1 { font-size: 16pt; font-weight: 700; color: #0f3460; border-bottom: 2px solid #e94560; padding-bottom: 6px; margin-top: 0.5in; }
+  h2 { font-size: 13pt; font-weight: 600; color: #1a1a2e; margin-top: 0.3in; }
+  h3 { font-size: 11pt; font-weight: 600; color: #333; margin-top: 0.2in; }
+
+  /* Judgment callouts */
+  .judgment {
+    background: #f5f5f5;
+    border-left: 4px solid #0f3460;
+    padding: 10px 14px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .judgment .claim { font-weight: 600; margin-bottom: 4px; }
+  .judgment .meta { font-size: 9pt; color: #666; }
+  .judgment .source { font-size: 8pt; color: #999; }
+
+  /* Kent band coloring */
+  .band-almost_certain { border-left-color: #00b300; }
+  .band-highly_likely { border-left-color: #33cc33; }
+  .band-likely { border-left-color: #99cc33; }
+  .band-probable { border-left-color: #cccc33; }
+  .band-even_chance { border-left-color: #cc9933; }
+  .band-unlikely { border-left-color: #cc6633; }
+  .band-highly_unlikely { border-left-color: #cc3333; }
+  .band-remote { border-left-color: #990000; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9pt; }
+  th { background: #0f3460; color: white; padding: 8px; text-align: left; font-weight: 600; }
+  td { padding: 6px 8px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) { background: #fafafa; }
+
+  /* Gap boxes */
+  .gap {
+    background: #fff8e1;
+    border: 1px solid #f0c040;
+    padding: 10px 14px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .gap .title { font-weight: 600; color: #b8860b; }
+  .gap .meta { font-size: 9pt; color: #666; }
+
+  /* Action lines */
+  .action-line {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    margin: 4px 0;
+  }
+  .action-line .priority-1 { color: #e94560; font-weight: 700; }
+  .action-line .priority-2 { color: #cc6633; font-weight: 600; }
+  .action-line .priority-3 { color: #666; }
+
+  /* Source list */
+  .source-list { font-size: 8pt; color: #666; }
+  .source-list li { margin-bottom: 4px; }
+
+  /* Watch items grid */
+  .watch-table td:first-child { font-weight: 600; width: 30%; }
+
+  /* Charts */
+  .chart-container { text-align: center; margin: 20px 0; }
+  .chart-container img { max-width: 100%; max-height: 3in; }
+
+  /* Footer */
+  .footer { margin-top: 0.5in; padding-top: 0.2in; border-top: 1px solid #ccc; font-size: 8pt; color: #999; }
+</style>
+</head>
+<body>
+
+  <!-- COVER PAGE -->
+  <div class="cover">
+    <div class="brand">Open Claw Mexico</div>
+    <div class="title">Bajío Corridor — $200M Industrial Real Estate Assessment</div>
+    <div class="subtitle">The Bajío corridor remains the premier nearshoring destination for mid-to-high-value manufacturing, but faces acute energy-infrastructure constraints that will define tenant viability over your 36-mon</div>
+    <div class="meta">
+      <table>
+        <tr><td class="label">Classification</td><td class="value">Confidential</td></tr>
+        <tr><td class="label">Calibration</td><td class="value">probable (50-60%)</td></tr>
+        <tr><td class="label">Produced</td><td class="value">2026-05-18T16:00:00Z</td></tr>
+        <tr><td class="label">Sources</td><td class="value">7</td></tr>
+        <tr><td class="label">Brief ID</td><td class="value">bajio-v3-20260518</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- HEADLINE JUDGMENTS -->
+  <h1>Headline Judgments</h1>
+  
+  <div class="judgment band-probable">
+    <div class="claim">At least one sub-corridor will experience a material power disruption event (>4 hours unplanned CFE outage) within 12 months</div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <div class="judgment band-highly_likely">
+    <div class="claim">Aguascalientes has the lowest per-capita water availability in the Bajío (1,200 m³/year vs 3,500 national average)</div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <div class="judgment band-likely">
+    <div class="claim">Guanajuato is too risky for new industrial capital until Q4 2026 at earliest</div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <div class="judgment band-almost_certain">
+    <div class="claim">USMCA review (July 1, 2026) is the single largest macro risk to the Bajío thesis</div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <!-- SECTIONS -->
+  
+  <h1>12-Month Security & Political Risk by Sub-Corridor</h1>
+  
+  <h2></h2>
+  <p></p>
+
+  
+  
+  <div class="judgment band-">
+    <div class="claim"></div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <h1>3-5 Watch Developments</h1>
+  
+  <h2></h2>
+  <p></p>
+
+  
+  
+  <div class="judgment band-">
+    <div class="claim"></div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <h1>Prediction Market Hedge Positions</h1>
+  
+  <h2></h2>
+  <p></p>
+
+  
+  
+  <div class="judgment band-">
+    <div class="claim"></div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+
+  <h1>Framework Thinness & Data Gaps</h1>
+  
+  <h2></h2>
+  <p></p>
+
+  
+  
+  <div class="judgment band-">
+    <div class="claim"></div>
+    <div class="meta"> (-%)</div>
+    <div class="source">Source:  &middot; Admiralty </div>
+  </div>
+  
+  
+
+  
+  <div class="action-line"><strong>Action:</strong> </div>
+  
+  
+
+  
+  <div class="chart-container">
+    <img src="" alt="Risk map">
+  </div>
+  
+  
+
+  <!-- WATCH ITEMS -->
+  
+  <h1>Watch Items</h1>
+  <table class="watch-table">
+    <tr><th>Indicator</th><th>Trigger</th><th>Signal</th></tr>
+    
+    <tr>
+      <td>Guanajuato monthly attack count</td>
+      <td>>100 attacks/month for 2 consecutive months</td>
+      <td>Immediate capital flight — pause all Bajío commitments</td>
+    </tr>
+    
+
+    <tr>
+      <td>Kalshi KXTARIFFRATEPRC >9% strike price</td>
+      <td>Price rises above $0.20</td>
+      <td>Market pricing in higher tariff risk — hedge more aggressively</td>
+    </tr>
+    
+
+    <tr>
+      <td>CFE 400kV line construction progress</td>
+      <td>Q4 2027 target slips or advances</td>
+      <td>Power reliability timeline shifts</td>
+    </tr>
+    
+
+    <tr>
+      <td>CONAGUA water availability update</td>
+      <td>Q3 2026 release</td>
+      <td>Definitive water risk assessment for Aguascalientes</td>
+    </tr>
+    
+
+    <tr>
+      <td>Cenagas pipeline auction results</td>
+      <td>June 2026 release</td>
+      <td>Natural gas access for Querétaro manufacturing</td>
+    </tr>
+    
+  </table>
+  
+
+  <!-- TRADE POSITIONS -->
+  
+  <h1>Trade Positions</h1>
+  <table>
+    <tr><th>Instrument</th><th>Strike</th><th>Price</th><th>Rec.</th><th>Sizing</th><th>Rationale</th></tr>
+    
+    <tr>
+      <td><strong>KXTARIFFRATEPRC</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>$—</td>
+      <td>...</td>
+    </tr>
+    
+
+    <tr>
+      <td><strong>KXTARIFFRATEPRC</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>$—</td>
+      <td>...</td>
+    </tr>
+    
+
+    <tr>
+      <td><strong>EWW</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>$—</td>
+      <td>...</td>
+    </tr>
+    
+  </table>
+  
+
+  <!-- GAPS -->
+  
+  <h1>Framework Gaps</h1>
+  
+  <div class="gap">
+    <div class="title">GAP: No verified CFE outage frequency data for Aguascalientes industrial parks</div>
+    <div class="meta">Cannot quantify power disruption probability with confidence</div>
+    <div class="meta"><strong>Next step:</strong> Commission CFE substation reliability report (~$15K, 4-week lead)</div>
+  </div>
+  
+
+  <div class="gap">
+    <div class="title">GAP: No verified natural gas pipeline capacity utilization for Querétaro</div>
+    <div class="meta">Cannot assess tenant production risk from gas curtailment</div>
+    <div class="meta"><strong>Next step:</strong> Request Cenagas auction results (June 2026 — publicly available)</div>
+  </div>
+  
+
+  <div class="gap">
+    <div class="title">GAP: No Mexico-specific prediction market contracts for Bajío industrial real estate risk</div>
+    <div class="meta">All hedges are proxy instruments — imperfect match</div>
+    <div class="meta"><strong>Next step:</strong> Monitor Polymarket for user-created contracts; propose synthetic construction</div>
+  </div>
+  
+  
+
+  <!-- ACTION LINES -->
+  
+  <h1>Prioritized Actions</h1>
+  
+  <div class="action-line">
+    <span class="priority-1">Priority 1:</span>
+    <strong>Execute Kalshi KXTARIFFRATEPRC hedge — $125K notional across >9% and >51% strikes (~$17K cost)</strong>
+    <span style="color:#999;font-size:9pt"> &middot; 7 days</span>
+  </div>
+  
+
+  <div class="action-line">
+    <span class="priority-1">Priority 1:</span>
+    <strong>Commission CFE substation reliability report for Aguascalientes</strong>
+    <span style="color:#999;font-size:9pt"> &middot; 30 days</span>
+  </div>
+  
+
+  <div class="action-line">
+    <span class="priority-2">Priority 2:</span>
+    <strong>Commit first $50-75M to Querétaro (El Marqués with private water treatment)</strong>
+    <span style="color:#999;font-size:9pt"> &middot; 90 days</span>
+  </div>
+  
+
+  <div class="action-line">
+    <span class="priority-2">Priority 2:</span>
+    <strong>Request Cenagas pipeline auction results and CONAGUA water availability update</strong>
+    <span style="color:#999;font-size:9pt"> &middot; 60 days</span>
+  </div>
+  
+
+  <div class="action-line">
+    <span class="priority-3">Priority 3:</span>
+    <strong>Do not commit to Guanajuato or Aguascalientes until CFE report and water-rights audit return</strong>
+    <span style="color:#999;font-size:9pt"> &middot; 90+ days</span>
+  </div>
+  
+  
+
+  <!-- SOURCES -->
+  
+  <h1>Sources</h1>
+  <ol class="source-list">
+  
+    <li><strong>El Financiero</strong> &middot; Admiralty B-2 &middot;  &middot; </li>
+  
+
+    <li><strong>CONAGUA</strong> &middot; Admiralty B-2 &middot;  &middot; </li>
+  
+
+    <li><strong>CFE</strong> &middot; Admiralty C-3 &middot;  &middot; </li>
+  
+
+    <li><strong>Kalshi KXTARIFFRATEPRC</strong> &middot; Admiralty A-3 &middot;  &middot; </li>
+  
+
+    <li><strong>Cenagas</strong> &middot; Admiralty B-3 &middot;  &middot; </li>
+  
+
+    <li><strong>Wilson Center</strong> &middot; Admiralty B-2 &middot;  &middot; </li>
+  
+
+    <li><strong>Lieber Institute</strong> &middot; Admiralty B-2 &middot;  &middot; </li>
+  
+  </ol>
+  
+
+  <div class="footer">
+    Open Claw Mexico &middot; Brief bajio-v3-20260518 &middot; Produced 2026-05-18T16:00:00Z &middot; v1.0.0
+  </div>
+
+</body>
+</html>

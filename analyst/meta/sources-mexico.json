@@ -1360,6 +1360,193 @@
       "admiralty": "B3 — Regional daily (OEM network), less blocking risk",
       "status": "active",
       "workaround_for": "Riodoce (Sinaloa) — less blocking risk via OEM network"
+    },
+    {
+      "name": "Sin Embargo",
+      "type": "News/National",
+      "url": "https://www.sinembargo.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Independent digital outlet, strong security coverage",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "Eje Central",
+      "type": "News/National",
+      "url": "https://www.ejecentral.com.mx",
+      "themes": [
+        "political_risk",
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Digital outlet, security and politics",
+      "signal_level": "Medium",
+      "status": "listed"
+    },
+    {
+      "name": "Reporte Índigo",
+      "type": "News/National",
+      "url": "https://www.reporteindigo.com",
+      "themes": [
+        "political_risk",
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "B2 — National digital, investigative reporting",
+      "signal_level": "Medium",
+      "status": "listed"
+    },
+    {
+      "name": "Expansión",
+      "type": "Business/National",
+      "url": "https://expansion.mx",
+      "themes": [
+        "economy_markets",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Business weekly, nearshoring, economy, politics",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "Bloomberg Línea Mexico",
+      "type": "Business/National",
+      "url": "https://www.bloomberglinea.com/mexico",
+      "themes": [
+        "economy_markets",
+        "political_risk",
+        "energy_infra"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Financial wire service Mexico bureau",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "AM (Bajío)",
+      "type": "Newspaper/Regional",
+      "url": "https://www.am.com.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "economy_markets"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Bajío regional daily, Guanajuato/Querétaro coverage",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "El Norte",
+      "type": "Newspaper/Regional",
+      "url": "https://www.elnorte.com",
+      "themes": [
+        "cartel_security",
+        "economy_markets",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Monterrey/Nuevo León flagship, nearshoring, security",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "El Mañana (Tamaulipas)",
+      "type": "Newspaper/Regional",
+      "url": "https://www.elmanana.com.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Tamaulipas regional, CDN/cartel coverage",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "ZETA Tijuana",
+      "type": "Newspaper/Regional",
+      "url": "https://zetatijuana.com",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "A2 — Legendary Baja investigative weekly, cartel/ border reporting",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "El Imparcial (Sonora)",
+      "type": "Newspaper/Regional",
+      "url": "https://www.elimparcial.com",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Sonora regional, border security coverage",
+      "signal_level": "Medium",
+      "status": "listed"
+    },
+    {
+      "name": "El Diario de Chihuahua",
+      "type": "Newspaper/Regional",
+      "url": "https://www.eldiariodechihuahua.mx",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Chihuahua/ Juárez regional, cartel violence coverage",
+      "signal_level": "Medium",
+      "status": "listed"
+    },
+    {
+      "name": "La Voz de Michoacán",
+      "type": "Newspaper/Regional",
+      "url": "https://www.lavozdemichoacan.com.mx",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B3 — Michoacán daily, CJNG/Tierra Caliente coverage",
+      "signal_level": "Medium",
+      "status": "listed"
+    },
+    {
+      "name": "InSight Crime",
+      "type": "Investigative/International",
+      "url": "https://insightcrime.org/mexico",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "en",
+      "admiralty": "A2 — Dedicated organized crime investigation, Mexico desk",
+      "signal_level": "High",
+      "status": "listed"
+    },
+    {
+      "name": "Justice in Mexico",
+      "type": "Academic/Policy",
+      "url": "https://justiceinmexico.org",
+      "themes": [
+        "cartel_security",
+        "political_risk",
+        "us_mexico"
+      ],
+      "language": "en",
+      "admiralty": "B2 — USD/UC San Diego research project, data-driven",
+      "signal_level": "Medium",
+      "status": "listed"
     }
   ]
 }
