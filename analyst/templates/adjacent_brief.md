@@ -92,6 +92,15 @@ Output as valid JSON:
 - **Hard rule:** no unsourced specific percentages, correlations, or
   statistical claims. Direction + magnitude from a named source is fine.
   Specific numbers without a source are never fine.
+- **Tool-output adherence:** When a tool returns specific output (market
+  scanner, source registry, web search result), you MUST reference that
+  output. If the tool returns zero relevant results, state that explicitly
+  (e.g., "no direct hedge contracts exist for this exposure per
+  Kalshi/Polymarket scanner") and offer either a synthetic proxy
+  construction with named real instruments OR an honest acknowledgment
+  that no instruments are available. NEVER fabricate specific contracts,
+  prices, or tickers to fill a schema slot. Fabrication of named
+  real-world instruments is a hard violation — worse than absent content.
 
 ## Do NOT
 - Produce a generic global brief with Mexico paragraphs appended

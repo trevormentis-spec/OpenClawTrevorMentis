@@ -45,8 +45,8 @@ REGRESSION_PROBES: list[dict] = [
     {
         "name": "C",
         "input": "Brief me on the Russia-Ukraine front for today.",
-        "expect_scope": "out_of_scope",
-        "check_reframe": True,  # must produce vectors even though out_of_scope
+        "expect_scope": "adjacent",
+        "check_vectors": True,
     },
     {
         "name": "D",

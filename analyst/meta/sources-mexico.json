@@ -197,7 +197,16 @@
       "frequency": "Daily",
       "paywall": "No",
       "note": "Essential for Sinaloa cartel ground truth. Local reporters embedded in cartel territory.",
-      "added": "2026-05-15"
+      "added": "2026-05-15",
+      "access_status": "blocked_cloudflare",
+      "access_blocked_at": "2026-05-17",
+      "workaround_paths": [
+        "Debate Sinaloa (B2) — broader Sinaloa coverage, less blocking risk",
+        "El Sol de Sinaloa (B3) — OEM network, low blocking risk",
+        "Luz Noticias Sinaloa (C2) — incident tracking",
+        "Infobae Mexico — relay coverage of major CDS events"
+      ],
+      "riodoce_workaround_type": "relay"
     },
     {
       "name": "Pie de Página",
@@ -1310,6 +1319,47 @@
       "frequency": "Daily",
       "paywall": "No",
       "added": "2026-05-15"
+    },
+    {
+      "name": "Debate Sinaloa",
+      "type": "Newspaper/Regional",
+      "focus": "Sinaloa regional coverage — Los Mochis, Guasave, Guamúchil, Culiacán, Mazatlán. Cartel violence, local politics, agriculture.",
+      "url": "https://www.debate.com.mx/sinaloa/",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B2 — Established regional paper",
+      "status": "active",
+      "workaround_for": "Riodoce (Sinaloa) — broader geographic scope, less investigative depth"
+    },
+    {
+      "name": "Luz Noticias Sinaloa",
+      "type": "News/Regional",
+      "focus": "Sinaloa and northwestern Mexico news. Police blotter, cartel incidents.",
+      "url": "https://www.luznoticias.mx/sinaloa/",
+      "themes": [
+        "cartel_security"
+      ],
+      "language": "es",
+      "admiralty": "C2 — General regional coverage, incident tracking",
+      "status": "active",
+      "workaround_for": "Riodoce (Sinaloa) — good for incident tracking"
+    },
+    {
+      "name": "El Sol de Sinaloa",
+      "type": "Newspaper/Regional",
+      "focus": "Sinaloa local news (OEM network). Culiacán, Mazatlán, Los Mochis.",
+      "url": "https://oem.com.mx/elsoldesinaloa/",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "language": "es",
+      "admiralty": "B3 — Regional daily (OEM network), less blocking risk",
+      "status": "active",
+      "workaround_for": "Riodoce (Sinaloa) — less blocking risk via OEM network"
     }
   ]
 }

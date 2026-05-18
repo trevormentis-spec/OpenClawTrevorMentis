@@ -218,12 +218,32 @@ request → scope_check.py
 
 - **Fast path:** keyword matching against `scope.yaml` blocklist and
   allowlist. Zero API cost. Catches unambiguous in_scope (Mexico
-  keywords) and out_of_scope (Russia-Ukraine, K-pop, etc.)
+  keywords) and out_of_scope (North Korea missiles, K-pop, etc.)
 - **Slow path:** cheap LLM call (deepseek-chat, ~$0.00015/query) for
   ambiguous requests. The classifier prompt includes explicit examples
   of all three statuses and a hard adjacency-default rule.
 - **Permissive default:** on LLM API failure, defaults to `in_scope`.
   Better to produce than to miss.
+
+### Blocklist discipline
+
+Blocklist entries are exceptional. The default for any ambiguous topic
+is to let the LLM slow-path classify it as adjacent, in_scope, or
+out_of_scope. A keyword belongs on the blocklist only when (a) it has
+no credible Mexico transmission mechanism, OR (b) the slow-path
+consistently misclassifies it. The blocklist is a precision tool, not
+a filter.
+
+The blocklist was reduced from 23 to 11 entries on 2026-05-18 via
+Phase 1 cleanup audit (`memory/blocklist-audit-2026-05-18.md`).
+Removed entries (12 total): russia ukraine (5 variants), china taiwan,
+south china sea, european union, global finance, asia pacific,
+southeast asia. All have adjacency vectors through existing scope.yaml
+entries and are correctly handled by the LLM slow path.
+
+If scope changes produce a blocklist-eligible topic, add it with
+inline justification per the rule above. Do not widen the blocklist
+without principal review.
 
 ### Adjacency default rule (in classifier)
 
@@ -312,6 +332,104 @@ prompts to keep cost low.
 `brain/memory/semantic/calibration-tracking.json` and writes per-band /
 per-theme directives into `behavioral-state.json` for next day's
 `analyze.py` system-prompt injection.
+
+## Cost & Routing Model (2026-05-18)
+
+### Pipeline routing
+
+When the system processes a user query at runtime, the model selection
+is governed by the active routing spec:
+- **Tier 1 (Opus 4.7):** strategic analysis — adjacent and in-scope
+  analyst briefs, BLUF composition, subscriber-facing prose
+- **Tier 2/3 (DeepSeek V4 Flash):** high-volume mechanical work —
+  regional analysis, incident classification, watch-item generation
+- **Scope classification slow-path:** DeepSeek via scope_check.py
+  (~$0.00015/query)
+- **Entity deepening / template fill:** DeepSeek Flash
+
+Pipeline costs are metered via API billing and tracked in
+`brain/memory/semantic/deepseek-usage.json`.
+
+### Agent development reasoning
+
+When the agent is itself constructing or modifying the system (writing
+entity files, designing frameworks, drafting skills, producing handback
+memos, running diagnostics), it uses its native runtime LLM
+(`deepseek/deepseek-v4-flash`). This work is not metered through the
+pipeline API billing — it uses the session model's internal inference,
+which incurs no separate API cost.
+
+### Cost report discipline
+
+Cost reports MUST distinguish pipeline spend (metered API calls against
+DeepSeek, OpenRouter, or other provider billing) from agent-development
+work (native runtime LLM — unmetered). The two categories have different
+cost structures and different routing justification frameworks. Mixing
+them produces misleading efficiency metrics.
+
+### Interactive session note
+
+The tiered routing spec (Opus/Flash/Haiku) applies to the daily
+pipeline's explicit API orchestration calls in `orchestrate.py`.
+Interactive session work — diagnostics, entity maintenance, ad-hoc
+briefs — uses the session's default model (`deepseek/deepseek-v4-flash`)
+for all reasoning and generation. No separate per-task routing
+decisions are triggered. The routing spec is a pipeline-control
+document, not an interactive-mode routing matrix.
+
+## Data Preflight Rule (2026-05-18)
+
+Any change that modifies tracking data (postdiction, calibration, source
+registry, knowledge architecture) MUST run a pre-commit check:
+
+> Does the prior data state still exist in a recoverable form (git history
+> or an explicit backup copy)?
+
+If not, abort the change, log the diagnosis, and surface for principal
+review. Acceptable recoverable forms: a committed previous version in the
+same file's git history, or a dated backup copy at
+`memory/<data>-recovery-<YYYY-MM-DD>.json`.
+
+This rule exists because calibration data was nearly lost during the
+v2→v3 schema migration on 2026-05-18. The data survived in this case
+(the `total_judgments` aggregate counters were intact across all backup
+commits), but the `judgments` field that postdict.py's old `load_json()`
+searched for appeared empty — a reading error that triggered a false
+emergency. Preflight makes the recovery path explicit.
+
+## Autonomy Boundaries (2026-05-18)
+
+The agent has authority to autonomously fix small bugs with these four
+properties:
+
+1. **Self-detected** — the agent discovered the issue, not the principal
+2. **Clean diagnosis** — root cause is understood and documented
+3. **Contained fix** — no architectural implication, no cascading changes
+4. **Regression-testable** — passing regression test before commit
+
+These do not require principal review. They require a passing regression
+test before commit.
+
+**Principal review is required for:**
+- Architectural decisions and ambiguous tradeoffs
+- Changes to the three guards: `scope_check.py`, `fabrication_check.py`,
+  `themes_preflight.py`
+- Identity files: `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, `ORCHESTRATION.md`
+- New skill installations from any source
+- Any change that modifies tracking data (postdiction, calibration, source
+  registry, knowledge architecture)
+- Any change that would publish externally (email, social, newsletter)
+- Any change to `scope.yaml`
+
+**When uncertain, default to proposing-and-parking.** The cost of
+unnecessary asking is small; the cost of unauthorized change is larger.
+
+### Default-non-executing rule (2026-05-18)
+
+Any new automated executor (planner, worker, future loops) defaults to
+non-executing mode. An explicit `--live` flag is required for state-
+modifying or budget-consuming runs. This applies to all future
+automated systems the agent builds.
 
 ## Change Log
 

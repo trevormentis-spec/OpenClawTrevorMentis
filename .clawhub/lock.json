@@ -124,6 +124,10 @@
     "mapbox-data-visualization-patterns": {
       "version": "1.0.0",
       "installedAt": 1779008466067
+    },
+    "scraper": {
+      "version": "1.0.0",
+      "installedAt": 1779094875184
     }
   }
 }

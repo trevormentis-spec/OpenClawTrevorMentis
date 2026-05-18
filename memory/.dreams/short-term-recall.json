@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T19:00:09.417Z",
+  "updatedAt": "2026-05-18T12:32:18.555Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -93,13 +93,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 19,
+      "recallCount": 20,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 18.50553129149435,
+      "totalScore": 19.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
+      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -119,7 +119,8 @@
         "3c68673febfe",
         "b84acb705a0f",
         "d76260b5998d",
-        "b2960036661c"
+        "b2960036661c",
+        "cb0e9de10fbc"
       ],
       "recallDays": [
         "2026-04-28",
@@ -133,7 +134,8 @@
         "2026-05-11",
         "2026-05-12",
         "2026-05-13",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -344,13 +346,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.690475928211749,
+      "totalScore": 11.690475928211749,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
+      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
@@ -362,7 +364,8 @@
         "754a5e2df3c2",
         "b84acb705a0f",
         "b62b199ec189",
-        "b2960036661c"
+        "b2960036661c",
+        "cb0e9de10fbc"
       ],
       "recallDays": [
         "2026-04-29",
@@ -370,7 +373,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-12",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -390,13 +394,13 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-18T00:00:43.319Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
@@ -407,7 +411,8 @@
         "29314a1ed0f7",
         "196f8419e846",
         "d76260b5998d",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "1c8dc30ba712"
       ],
       "recallDays": [
         "2026-05-02",
@@ -415,7 +420,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-13",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-18"
       ],
       "conceptTags": [
         "saturday",
@@ -435,27 +441,30 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-05-03 — Sunday ## Overnight (01:08 UTC / 18:08 PT May 2) - AgentMail: checked, 5 most recent are outbound only (briefing/audit emails), no incoming external messages. Inbox clean. - DeepSeek balance: **$98.30** (down $0.27 from last check, burn ~$0.95/day, ~103 days runway) - Polymarket monitor ran with 129 errors / 0 successful queries — price-state.json empty (0 markets). Needs investigation. - Brain runtime: normal. Daily file started for May 3.",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:05:31.168Z",
-      "lastRecalledAt": "2026-05-13T00:03:48.461Z",
+      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
       "queryHashes": [
         "69ecdd2685e7",
         "29314a1ed0f7",
         "92a6782d6fa7",
         "31f2802656ee",
         "577729f1e069",
-        "196f8419e846"
+        "196f8419e846",
+        "1c8dc30ba712",
+        "2de51dfe8bc5"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-05",
         "2026-05-07",
         "2026-05-10",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-18"
       ],
       "conceptTags": [
         "briefing/audit",
@@ -507,13 +516,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 19,
+      "recallCount": 20,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 18.611906618286376,
+      "totalScore": 19.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
+      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -533,7 +542,8 @@
         "088d05594874",
         "f3aa65b3123e",
         "1b9064ffbf19",
-        "b2960036661c"
+        "b2960036661c",
+        "2de51dfe8bc5"
       ],
       "recallDays": [
         "2026-05-04",
@@ -544,7 +554,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -659,13 +670,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T16:01:51.278Z",
-      "lastRecalledAt": "2026-05-11T04:42:22.263Z",
+      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
       "queryHashes": [
         "92a6782d6fa7",
         "50bca59fec26",
@@ -676,14 +687,16 @@
         "af2a9e946d94",
         "b8dd5e880386",
         "577729f1e069",
-        "f7d1f8923a5d"
+        "f7d1f8923a5d",
+        "2de51dfe8bc5"
       ],
       "recallDays": [
         "2026-05-05",
         "2026-05-06",
         "2026-05-07",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-18"
       ],
       "conceptTags": [
         "end-to-end",
@@ -703,13 +716,13 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Script can take local PDF (--pdf) or fetch from Gmail by label (--gmail) - Added Step 4 to daily-brief-cron.sh — runs after email delivery - Tested successfully with magazine-briefing-2026-05-04.pdf (3 pages, all 3 platforms) ## Landing Page — Built & Deployed - Created osint-brief-landing.html — dark theme, 6-theater coverage grid, method section, pricing tiers - Deployed to production at https://quiet-kangaroo-c0b94c.netlify.app/ - Roast completed — score 7/10, top 5 blockers identified - Quick fixes applied: email capture (Netlify Forms), Stripe checkout links, subscriber counter - Created thank-you.html post-submission page ## Agent Intelligence API — Built & Deployed - Created",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.888387271860296,
+      "totalScore": 10.888387271860296,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T08:13:34.521Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
       "queryHashes": [
         "50bca59fec26",
         "cceef388ed2a",
@@ -720,14 +733,16 @@
         "577729f1e069",
         "f7d1f8923a5d",
         "088d05594874",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "cb0e9de10fbc"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-18"
       ],
       "conceptTags": [
         "daily-brief-cron.sh",
@@ -863,13 +878,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -880,7 +895,9 @@
         "b5deefa4bb81",
         "b84acb705a0f",
         "196f8419e846",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "1c8dc30ba712",
+        "2de51dfe8bc5"
       ],
       "recallDays": [
         "2026-05-07",
@@ -889,7 +906,8 @@
         "2026-05-11",
         "2026-05-12",
         "2026-05-13",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-18"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -977,25 +995,27 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "## Daily Skill Security Audit (cron) - **Time:** 00:00 UTC - **Scope:** Scanned 79 skills across ~/.openclaw/skills, /usr/lib/node_modules/openclaw/skills, ~/.openclaw/workspace/skills - **Tool:** skill-scanner v1.0 - **Results:** 59 ✅ approved | 2 ⚠️ caution | 10 ❌ reject (all false positives) - **Notable:** All 116+ critical/high findings are false positives (env/config patterns in standard tooling). No actual threats detected. - **Low-priority item:** `social-post` skill has hardcoded `/home/phan_harry/.openclaw/.env` paths from its author — worth replacing with generic paths if deployed. - **Report emailed** to roderick.jones@gmail.com via AgentMail (trevor_mentis@agentmail.to) - **Fil",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:42:44.149Z",
-      "lastRecalledAt": "2026-05-15T13:37:10.183Z",
+      "lastRecalledAt": "2026-05-18T00:00:43.319Z",
       "queryHashes": [
         "3c68673febfe",
         "196f8419e846",
         "d76260b5998d",
         "3c76eeaf7cbf",
         "b62b199ec189",
-        "1b9064ffbf19"
+        "1b9064ffbf19",
+        "1c8dc30ba712"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-13",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-18"
       ],
       "conceptTags": [
         "openclaw/skills",
@@ -1494,6 +1514,69 @@
         "bluf",
         "roderick",
         "russia's"
+      ]
+    },
+    "memory:memory/2026-05-11.md:50:79": {
+      "key": "memory:memory/2026-05-11.md:50:79",
+      "path": "memory/2026-05-11.md",
+      "startLine": 50,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "- **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalsi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am PT daily (ID: 9ee44803-223c-45cc-ad59-f404919bd5fq) ### Schedule going forward | Time PT | What | |---------|--",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-18T01:00:41.861Z",
+      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "queryHashes": [
+        "2de51dfe8bc5",
+        "cb0e9de10fbc"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "venv-pdf/bin/python",
+        "python/system",
+        "daily-brief-cron.sh",
+        "generate-brief-maps-v3.py",
+        "generate-brief-maps.py",
+        "generate-brief-charts.py",
+        "kalsi-json",
+        "charts-dir"
+      ]
+    },
+    "memory:memory/2026-05-11.md:75:96": {
+      "key": "memory:memory/2026-05-11.md:75:96",
+      "path": "memory/2026-05-11.md",
+      "startLine": 75,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "- v5-v6: Mapbox dark-v11/light-v11 with GeoJSON (user: \"no change in this version!\") - v7-v8: Mapbox hybrid + PIL overlays with Economist style (user: \"no change!\") - v9: Pure PIL with cream bg, no Mapbox dependency — lat/lon swap bug found, markers rendered off-screen at negative coords ### Root cause of map failures - **Projection math was wrong** for at least 3 versions. `cfg[\"center\"]` stored as `(lat, lon)` but projection code treated it as `(lon, lat)`, putting all markers off-screen - Static GeoJSON data (same cities/routes every day) didn't adapt to daily content - Mapbox Static API had no typography control (GeoJSON labels rendered at fixed small sizes) - User wanted Economis",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-18T12:32:18.555Z",
+      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "queryHashes": [
+        "cb0e9de10fbc"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "v5-v6",
+        "dark-v11/light-v11",
+        "v7-v8",
+        "lat/lon",
+        "off-screen",
+        "cities/routes",
+        "mapbox",
+        "dark"
       ]
     }
   }
