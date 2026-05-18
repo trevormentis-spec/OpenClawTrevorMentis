@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  /* Open Claw Mexico — PDF Brand Template v1 */
+  /* Typography */
+  @page {
+    size: letter;
+    margin: 1.5in 1in 1in 1in;
+    @top-left { content: "OPEN CLAW MEXICO"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
+    @top-right { content: "Confidential"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #999; }
+    @bottom-left { content: counter(page); font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
+    @bottom-right { content: string(brief_id); font-family: 'Inter', sans-serif; font-size: 7pt; color: #999; }
+  }
+  
+  @page cover {
+    margin: 0;
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1a1a2e;
+  }
+
+  /* Cover page */
+  .cover {
+    page: cover;
+    page-break-after: always;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    color: white;
+    padding: 2in 1in 1.5in 1in;
+    margin: -1.5in -1in -1in -1in;
+    min-height: 11in;
+    position: relative;
+  }
+  .cover .brand { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #e94560; margin-bottom: 2in; }
+  .cover .title { font-size: 22pt; font-weight: 700; line-height: 1.2; margin-bottom: 0.3in; }
+  .cover .subtitle { font-size: 13pt; color: #ccc; margin-bottom: 1in; }
+  .cover .meta { font-size: 9pt; color: #999; }
+  .cover .meta table { width: 100%; }
+  .cover .meta td { padding: 4px 8px; }
+  .cover .meta .label { color: #999; width: 120px; }
+  .cover .meta .value { color: #ddd; }
+
+  /* Section headers */
+  h1 { font-size: 16pt; font-weight: 700; color: #0f3460; border-bottom: 2px solid #e94560; padding-bottom: 6px; margin-top: 0.5in; }
+  h2 { font-size: 13pt; font-weight: 600; color: #1a1a2e; margin-top: 0.3in; }
+  h3 { font-size: 11pt; font-weight: 600; color: #333; margin-top: 0.2in; }
+
+  /* Judgment callouts */
+  .judgment {
+    background: #f5f5f5;
+    border-left: 4px solid #0f3460;
+    padding: 10px 14px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .judgment .claim { font-weight: 600; margin-bottom: 4px; }
+  .judgment .meta { font-size: 9pt; color: #666; }
+  .judgment .source { font-size: 8pt; color: #999; }
+
+  /* Kent band coloring */
+  .band-almost_certain { border-left-color: #00b300; }
+  .band-highly_likely { border-left-color: #33cc33; }
+  .band-likely { border-left-color: #99cc33; }
+  .band-probable { border-left-color: #cccc33; }
+  .band-even_chance { border-left-color: #cc9933; }
+  .band-unlikely { border-left-color: #cc6633; }
+  .band-highly_unlikely { border-left-color: #cc3333; }
+  .band-remote { border-left-color: #990000; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9pt; }
+  th { background: #0f3460; color: white; padding: 8px; text-align: left; font-weight: 600; }
+  td { padding: 6px 8px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) { background: #fafafa; }
+
+  /* Gap boxes */
+  .gap {
+    background: #fff8e1;
+    border: 1px solid #f0c040;
+    padding: 10px 14px;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+  .gap .title { font-weight: 600; color: #b8860b; }
+  .gap .meta { font-size: 9pt; color: #666; }
+
+  /* Action lines */
+  .action-line {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    margin: 4px 0;
+  }
+  .action-line .priority-1 { color: #e94560; font-weight: 700; }
+  .action-line .priority-2 { color: #cc6633; font-weight: 600; }
+  .action-line .priority-3 { color: #666; }
+
+  /* Source list */
+  .source-list { font-size: 8pt; color: #666; }
+  .source-list li { margin-bottom: 4px; }
+
+  /* Watch items grid */
+  .watch-table td:first-child { font-weight: 600; width: 30%; }
+
+  /* Charts */
+  .chart-container { text-align: center; margin: 20px 0; }
+  .chart-container img { max-width: 100%; max-height: 3in; }
+
+  /* Footer */
+  .footer { margin-top: 0.5in; padding-top: 0.2in; border-top: 1px solid #ccc; font-size: 8pt; color: #999; }
+</style>
+</head>
+<body>
+
+  <!-- COVER PAGE -->
+  <div class="cover">
+    <div class="brand">Open Claw Mexico</div>
+    <div class="title">{{ brief_title }}</div>
+    <div class="subtitle">{{ bluf }}</div>
+    <div class="meta">
+      <table>
+        <tr><td class="label">Classification</td><td class="value">Confidential</td></tr>
+        <tr><td class="label">Calibration</td><td class="value">{{ calibration_band }} ({{ calibration_pct }})</td></tr>
+        <tr><td class="label">Produced</td><td class="value">{{ produced_at }}</td></tr>
+        <tr><td class="label">Sources</td><td class="value">{{ sources_count }}</td></tr>
+        <tr><td class="label">Brief ID</td><td class="value">{{ brief_id }}</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- HEADLINE JUDGMENTS -->
+  <h1>Headline Judgments</h1>
+  {% for judgment in headline_judgments %}
+  <div class="judgment band-{{ judgment.kent_band }}">
+    <div class="claim">{{ judgment.claim }}</div>
+    <div class="meta">{{ judgment.kent_band | replace("_", " ") | title }} ({{ judgment.pct_range[0] }}-{{ judgment.pct_range[1] }}%)</div>
+    <div class="source">Source: {{ judgment.sources[0].name }} &middot; Admiralty {{ judgment.sources[0].admiralty }}</div>
+  </div>
+  {% endfor %}
+
+  <!-- SECTIONS -->
+  {% for section in sections %}
+  <h1>{{ section.title }}</h1>
+  {% for sub in section.subsections %}
+  <h2>{{ sub.title }}</h2>
+  <p>{{ sub.narrative }}</p>
+
+  {% if sub.judgments %}
+  {% for j in sub.judgments %}
+  <div class="judgment band-{{ j.kent_band }}">
+    <div class="claim">{{ j.claim }}</div>
+    <div class="meta">{{ j.kent_band | replace("_", " ") | title }} ({{ j.pct_range[0] }}-{{ j.pct_range[1] }}%)</div>
+    <div class="source">Source: {{ j.sources[0].name }} &middot; Admiralty {{ j.sources[0].admiralty }}</div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if sub.subscriber_action %}
+  <div class="action-line"><strong>Action:</strong> {{ sub.subscriber_action }}</div>
+  {% endif %}
+  {% endfor %}
+
+  {% if section.geographic %}
+  <div class="chart-container">
+    <img src="{{ section.geographic.map_image }}" alt="Risk map">
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  <!-- WATCH ITEMS -->
+  {% if watch_items %}
+  <h1>Watch Items</h1>
+  <table class="watch-table">
+    <tr><th>Indicator</th><th>Trigger</th><th>Signal</th></tr>
+    {% for w in watch_items %}
+    <tr>
+      <td>{{ w.indicator }}</td>
+      <td>{{ w.trigger }}</td>
+      <td>{{ w.signal }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  <!-- TRADE POSITIONS -->
+  {% if trade_positions %}
+  <h1>Trade Positions</h1>
+  <table>
+    <tr><th>Instrument</th><th>Strike</th><th>Price</th><th>Rec.</th><th>Sizing</th><th>Rationale</th></tr>
+    {% for t in trade_positions %}
+    <tr>
+      <td><strong>{{ t.instrument }}</strong></td>
+      <td>{{ t.strike or "—" }}</td>
+      <td>{{ t.price or "unverified" }}</td>
+      <td>{{ t.recommendation | upper }}</td>
+      <td>{% if t.sizing_usd %}${{ "{:,.0f}".format(t.sizing_usd) }}{% else %}—{% endif %}</td>
+      <td>{{ t.rationale[:60] }}{% if t.rationale|length > 60 %}...{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  <!-- GAPS -->
+  {% if gaps %}
+  <h1>Framework Gaps</h1>
+  {% for g in gaps %}
+  <div class="gap">
+    <div class="title">GAP: {{ g.description }}</div>
+    <div class="meta">{{ g.impact }}</div>
+    <div class="meta"><strong>Next step:</strong> {{ g.next_step }}</div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <!-- ACTION LINES -->
+  {% if action_lines %}
+  <h1>Prioritized Actions</h1>
+  {% for a in action_lines %}
+  <div class="action-line">
+    <span class="priority-{{ a.priority }}">Priority {{ a.priority }}:</span>
+    <strong>{{ a.action }}</strong>
+    <span style="color:#999;font-size:9pt"> &middot; {{ a.timeframe }}</span>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <!-- SOURCES -->
+  {% if sources %}
+  <h1>Sources</h1>
+  <ol class="source-list">
+  {% for s in sources %}
+    <li><strong>{{ s.name }}</strong> &middot; Admiralty {{ s.admiralty }} &middot; {{ s.type or "—" }} &middot; {{ s.language | upper }}</li>
+  {% endfor %}
+  </ol>
+  {% endif %}
+
+  <div class="footer">
+    Open Claw Mexico &middot; Brief {{ brief_id }} &middot; Produced {{ produced_at }} &middot; v{{ schema_version }}
+  </div>
+
+</body>
+</html>
