@@ -1308,6 +1308,60 @@
       "discovered": "2026-05-15",
       "discovery_method": "deep_horizon_scan",
       "note": "\"Third Oil Crisis or renewable renaissance?\" (May 2026). Canada-specific energy impact analysis."
+    },
+    {
+      "name": "Theregister.com",
+      "type": "News/Journalism",
+      "focus": "Intel ME and AMD PSP: The silicon layer nobody certifies",
+      "url": "https://www.theregister.com/systems/2026/05/16/europe-built-sovereign-clouds-to-escape-us-control-then-forgot-about-the-processors/5237735",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Al Jazeera English",
+      "type": "News/Journalism",
+      "focus": "Sheikh Hamad bin Jassim warns Strait of Hormuz crisis is most dangerous fallout of war on Iran, calls for 'Gulf NATO'.",
+      "url": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Al Jazeera English",
+      "type": "News/Journalism",
+      "focus": "As the Iran war reshapes global power dynamics, Beijing enters the Trump-Xi summit with more leverage over Washington.",
+      "url": "https://www.aljazeera.com/opinions/2026/5/13/trump-needs-xi-much-more-than-xi-needs-trump",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Naturalnews.com",
+      "type": "News/Journalism",
+      "focus": "The U.S. and Iran face a stalemate as Iran\u2019s resilience undermines Washington\u2019s \u201cmaximum pressure\u201d strategy. Global oil markets and economic instability now bear the unintended costs of U.S. sanctions",
+      "url": "https://www.naturalnews.com/2026-05-15-iran-resilience-costing-america-war.html",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "Forbes",
+      "type": "News/Journalism",
+      "focus": "Cheap drones changed modern warfare in Ukraine. Now the Pentagon wants to learn battlefield drone tactics firsthand.",
+      "url": "https://www.forbes.com/sites/davidkirichenko/2026/05/15/the-pentagon-is-learning-drone-warfare-from-ukraine/",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
+    },
+    {
+      "name": "CBC News",
+      "type": "News/Journalism",
+      "focus": "Ontario's plans to fast-track a major new transmission line between Barrie and Sudbury is raising eyebrows about the possible impact on the environment. Advocates are questioning how the project \u2014 a 5",
+      "url": "https://www.cbc.ca/news/canada/sudbury/northern-ontario-transmission-lines-environment-9.7183141",
+      "signal_level": "Medium",
+      "discovered": "2026-05-18",
+      "source": "NewsAPI"
     }
   ],
   "moltbook_sources": [

@@ -148,5 +148,41 @@
     "url": "https://www.naturalnews.com/2026-04-22-inspectors-iran-uranium-stockpile-fuel-multiple-weapons.html",
     "signal_level": "Medium",
     "discovered": "2026-05-11"
+  },
+  {
+    "name": "Theregister.com",
+    "url": "https://www.theregister.com/systems/2026/05/16/europe-built-sovereign-clouds-to-escape-us-control-then-forgot-about-the-processors/5237735",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
+  },
+  {
+    "name": "Al Jazeera English",
+    "url": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
+  },
+  {
+    "name": "Al Jazeera English",
+    "url": "https://www.aljazeera.com/opinions/2026/5/13/trump-needs-xi-much-more-than-xi-needs-trump",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
+  },
+  {
+    "name": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-05-15-iran-resilience-costing-america-war.html",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
+  },
+  {
+    "name": "Forbes",
+    "url": "https://www.forbes.com/sites/davidkirichenko/2026/05/15/the-pentagon-is-learning-drone-warfare-from-ukraine/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
+  },
+  {
+    "name": "CBC News",
+    "url": "https://www.cbc.ca/news/canada/sudbury/northern-ontario-transmission-lines-environment-9.7183141",
+    "signal_level": "Medium",
+    "discovered": "2026-05-18"
   }
 ]

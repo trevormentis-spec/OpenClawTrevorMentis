@@ -1,0 +1,125 @@
+# Theme Requirements Map — Open Claw Mexico
+
+# Maps query categories to required and recommended theme coverage.
+# Used by analyst/themes_preflight.py before brief generation.
+# Required themes MUST have substantive coverage in the output.
+# Recommended themes SHOULD have coverage if the query touches them.
+
+query_categories:
+  # --- Geopolitical / Security ---
+  cartel_security_assessment:
+    required: [cartel_security, political_risk, us_mexico]
+    recommended: [economy_markets]
+    rationale_cartel_security: "Core subject of the query."
+
+  violence_outbreak:
+    required: [cartel_security, political_risk]
+    recommended: [us_mexico, economy_markets]
+    rationale_cartel_security: "Violence tracking is the primary analytical output."
+
+  cartel_succession:
+    required: [cartel_security]
+    recommended: [political_risk, us_mexico]
+    rationale_cartel_security: "Leadership dynamics determine violence trajectory."
+
+  fentanyl_trafficking:
+    required: [cartel_security, us_mexico]
+    recommended: [political_risk]
+    rationale_us_mexico: "Bilateral enforcement and diplomatic response."
+
+  # --- Political / Governance ---
+  political_risk_assessment:
+    required: [political_risk]
+    recommended: [cartel_security, us_mexico, economy_markets]
+    rationale_political_risk: "Core subject of the query."
+
+  election_monitoring:
+    required: [political_risk]
+    recommended: [cartel_security, economy_markets]
+    rationale_political_risk: "Electoral dynamics affect all themes."
+
+  legislative_reform:
+    required: [political_risk, economy_markets]
+    recommended: [us_mexico, cartel_security]
+    rationale_economy_markets: "Reforms affect FDI, investment climate."
+
+  # --- Economy / Investment ---
+  industrial_real_estate:
+    required: [cartel_security, political_risk, economy_markets, energy_infra, us_mexico]
+    recommended: [worldcup_travel]
+    rationale_energy_infra: "Utility access (CFE grid reliability, water security, natural gas) is first-order diligence for industrial tenants. Manufacturing tenants cannot operate without guaranteed power, water, and gas."
+    rationale_cartel_security: "Site security, extortion risk, supply chain disruption affect asset value and tenant retention."
+    rationale_economy_markets: "Nearshoring demand, FDI flows, construction starts, lease rates drive investment thesis."
+    rationale_us_mexico: "USMCA review, tariff risk, bilateral trade policy directly impact demand for Mexican industrial space."
+    rationale_political_risk: "Subnational governance, security strategy, reform trajectory affect investment climate."
+
+  financial_markets:
+    required: [economy_markets, us_mexico, political_risk]
+    recommended: [cartel_security]
+    rationale_us_mexico: "Bilateral trade policy moves peso and cross-border capital flows."
+    rationale_economy_markets: "Core subject — FX, rates, equities, capital flows."
+
+  peso_currency_risk:
+    required: [economy_markets, us_mexico, political_risk]
+    recommended: [cartel_security, energy_infra]
+    rationale_economy_markets: "Peso is the primary instrument."
+
+  nearshoring_analysis:
+    required: [economy_markets, us_mexico, energy_infra, cartel_security]
+    recommended: [political_risk, worldcup_travel]
+    rationale_energy_infra: "Nearshoring requires reliable power, water, gas. Querétaro and Aguascalientes face water stress; CFE grid reliability varies by sub-corridor."
+    rationale_cartel_security: "Security is a top-3 concern for foreign investors selecting MX sites."
+
+  # --- Trade / Bilateral ---
+  usmca_review:
+    required: [us_mexico, economy_markets, political_risk]
+    recommended: [cartel_security]
+    rationale_us_mexico: "Core subject of the query."
+
+  tariff_risk:
+    required: [us_mexico, economy_markets]
+    recommended: [political_risk]
+    rationale_us_mexico: "Tariffs are a US-MX bilateral instrument."
+
+  # --- Infrastructure / Energy ---
+  energy_infrastructure_investment:
+    required: [energy_infra, political_risk, economy_markets]
+    recommended: [cartel_security, us_mexico]
+    rationale_energy_infra: "Core subject of the query."
+
+  water_security:
+    required: [energy_infra, political_risk, cartel_security]
+    recommended: [economy_markets]
+    rationale_energy_infra: "Water infrastructure is the primary analytical focus."
+
+  # --- Travel / Events ---
+  worldcup_travel_risk:
+    required: [worldcup_travel, cartel_security, political_risk]
+    recommended: [us_mexico, economy_markets]
+    rationale_worldcup_travel: "Core subject of the query."
+    rationale_cartel_security: "Cartel violence in venue cities directly affects tourist safety and event integrity."
+
+  executive_travel_security:
+    required: [cartel_security, political_risk, worldcup_travel]
+    recommended: [us_mexico]
+    rationale_cartel_security: "Security is the primary deliverable."
+
+  # --- Supply Chain / Logistics ---
+  supply_chain_risk:
+    required: [cartel_security, us_mexico, economy_markets]
+    recommended: [energy_infra, political_risk]
+    rationale_cartel_security: "Extortion, cargo theft, route security are top risks."
+    rationale_us_mexico: "Cross-border supply chains are the primary channel."
+
+  # --- Cross-cutting / Regional ---
+  regional_diversification:
+    required: [cartel_security, economy_markets, political_risk]
+    recommended: [us_mexico, energy_infra]
+    rationale_cartel_security: "Security varies dramatically by region."
+    rationale_economy_markets: "Investment climate varies by region."
+
+# Default (when query category cannot be determined)
+default:
+  required: [cartel_security, political_risk, economy_markets]
+  recommended: [us_mexico, energy_infra, worldcup_travel]
+  rationale_default: "Query category could not be resolved. Defaulting to broad coverage."

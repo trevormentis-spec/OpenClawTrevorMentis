@@ -71,30 +71,32 @@ adjacency_search_terms:
 
 # Blocklist — topic keywords/phrases that unequivocally trigger out_of_scope.
 # These bypass the LLM call for speed and zero cost.
+# The default for any ambiguous topic is to let the LLM slow-path classify it.
+# A keyword belongs here only when (a) it has no credible Mexico transmission
+# mechanism, OR (b) the slow-path consistently misclassifies it.
+# The blocklist is a precision tool, not a filter.
 out_of_scope_keywords:
   # These are normalized (stripped punctuation, lowercase) for fast-path matching
-  - "russia ukraine"
-  - "russia ukraine front"
-  - "ukraine war"
-  - "ukraine russia"
-  - "ukraine front"
-  - "china taiwan"
-  - "south china sea"
-  - "north korea missile"
-  - "israel gaza"
-  - "iran nuclear"
-  - "european union"
-  - "europe region"
-  - "africa"
-  - "sahel"
-  - "middle east"
-  - "afghanistan"
-  - "pakistan"
-  - "india china"
-  - "global finance"
-  - "asia pacific"
-  - "southeast asia"
-  - "nato europe"
+  # --- KEPT: no credible Mexico transmission mechanism ---
+  - "north korea missile"   # No MX vector. Kept.
+  - "israel gaza"           # Oil adjacency brent-pemex, but LLM can find it. Kept.
+  - "iran nuclear"          # Oil adjacency brent-pemex, but LLM can find it. Kept.
+  - "europe region"         # Geographic descriptor, unlikely MX-adjacent query root. Kept.
+  - "africa"                # No MX transmission mechanism. Kept.
+  - "sahel"                 # No MX transmission mechanism. Kept.
+  - "middle east"           # Oil adjacency but narrow; LLM handles brent-pemex. Kept.
+  - "afghanistan"           # No MX transmission mechanism. Kept.
+  - "pakistan"              # No MX transmission mechanism. Kept.
+  - "india china"           # Narrow geopolitical keyword. Kept.
+  - "nato europe"           # No MX transmission mechanism. Kept.
+  # --- REMOVED (Phase 1 cleanup, 2026-05-18): overreach confirmed by blocklist audit ---
+  # russia ukraine variants — have adjacency vectors (wheat, fertilizer). Handled by LLM.
+  # china taiwan — has china-precursors adjacency vector. Handled by LLM.
+  # south china sea — has china-precursors + supply-chain vectors. Handled by LLM.
+  # european union — ECB rates, trade policy adjacent. Handled by LLM.
+  # global finance — capital flows, FX, EM debt adjacent. Handled by LLM.
+  # asia pacific — nickel, EV supply chains adjacent. Handled by LLM.
+  # southeast asia — nickel, EV, palm oil? Handled by LLM.
 
 # In-scope keywords — if these appear, skip LLM and go straight to in_scope.
 # Broad enough to catch most Mexico questions without an API call.
