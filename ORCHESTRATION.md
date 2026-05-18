@@ -338,14 +338,46 @@ per-theme directives into `behavioral-state.json` for next day's
 ### Pipeline routing
 
 When the system processes a user query at runtime, the model selection
-is governed by the active routing spec:
-- **Tier 1 (Opus 4.7):** strategic analysis — adjacent and in-scope
-  analyst briefs, BLUF composition, subscriber-facing prose
-- **Tier 2/3 (DeepSeek V4 Flash):** high-volume mechanical work —
-  regional analysis, incident classification, watch-item generation
-- **Scope classification slow-path:** DeepSeek via scope_check.py
-  (~$0.00015/query)
-- **Entity deepening / template fill:** DeepSeek Flash
+is governed by task COMPLEXITY, not task type label. The routing
+decision is the agent's responsibility — principal directives need
+not specify model tier.
+
+**Route to Opus 4.7 — highest-stakes only:**
+- Flagship subscriber-facing documents (PDF briefs for family office, Lloyd's, SPV, sovereign wealth)
+- Principal handback memos
+- Multi-scenario analysis with explicit probability calibration
+- Framework refinement proposals
+- Anything tagged "flagship" or "subscriber-facing"
+
+**Route to DeepSeek V4 Pro — mid-tier, default for complex-but-not-flagship:**
+- Complex analytical work without frontier-quality requirement
+- Entity deepening on critical entities
+- Cross-source correlation synthesis
+- Framework stress-testing
+- Briefs in 2000-4000 word range
+- Self-question generation (weekly)
+- Postdiction analysis with calibration feedback
+
+**Route to Haiku — routine work:**
+- Brief generation 600-1500 words
+- Standard daily intel brief format
+- Routine entity deepening (non-critical entities)
+- Source classification
+- Postdiction resolution per-judgment
+- Scope classifier slow-path
+
+**Route to DeepSeek Flash — bulk mechanical:**
+- Source freshness scans
+- Schema validation
+- Daily ingestion pipeline
+- Mechanical formatting
+- Medium briefs 1500-3000 words without complexity triggers
+
+**Escalation ladder:**
+- Haiku capacity exceeded → escalate to DeepSeek V4 Pro (default)
+- Override to Opus 4.7 if: flagship/subscriber-facing tag, multi-scenario calibration, top-tier audience, principal handback memo
+- V4 Pro capacity exceeded → escalate to Opus 4.7 (mid-tier exhausted, next is frontier)
+- Cost-optimization: V4 Pro covers most complex analytical work at fraction of Opus cost; Opus reserved where marginal quality is commercially justified
 
 Pipeline costs are metered via API billing and tracked in
 `brain/memory/semantic/deepseek-usage.json`.
