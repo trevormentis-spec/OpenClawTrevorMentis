@@ -1547,6 +1547,225 @@
       "admiralty": "B2 — USD/UC San Diego research project, data-driven",
       "signal_level": "Medium",
       "status": "listed"
+    },
+    {
+      "name": "Carlos Loret de Mola (X/Twitter)",
+      "type": "social_media/twitter",
+      "focus": "Leading Mexican investigative journalist. Security, narcopolitics, Sheinbaum admin coverage.",
+      "language": "es",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2 — Established journalist, but single-person source",
+      "status": "listed",
+      "url": "https://x.com/CarlosLoret"
+    },
+    {
+      "name": "Denise Maerker (X/Twitter)",
+      "type": "social_media/twitter",
+      "focus": "Political analyst, columnist at Reforma. Sheinbaum admin, Morena internal dynamics.",
+      "language": "es",
+      "themes": [
+        "political_risk"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2",
+      "status": "listed",
+      "url": "https://x.com/DeniseMaerker"
+    },
+    {
+      "name": "Joaquín López-Dóriga (X/Twitter)",
+      "type": "social_media/twitter",
+      "focus": "Senior Mexican journalist, radio/TV. Breaking news, security, politics.",
+      "language": "es",
+      "themes": [
+        "cartel_security",
+        "political_risk"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2",
+      "status": "listed",
+      "url": "https://x.com/lopezdoriga"
+    },
+    {
+      "name": "Borderland Beat (X/Twitter)",
+      "type": "social_media/twitter",
+      "focus": "Cartel violence updates, narco news aggregation.",
+      "language": "en",
+      "themes": [
+        "cartel_security"
+      ],
+      "signal_level": "Medium",
+      "admiralty": "C1 — Aggregation account, lower editorial rigor",
+      "status": "listed",
+      "url": "https://x.com/borderlandbeat"
+    },
+    {
+      "name": "Milenio Seguridad (X/Twitter)",
+      "type": "social_media/twitter",
+      "focus": "Milenio newspaper security desk. Breaking cartel violence events.",
+      "language": "es",
+      "themes": [
+        "cartel_security"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2 — Institutional news organization",
+      "status": "listed",
+      "url": "https://x.com/milenio"
+    },
+    {
+      "name": "Port Manzanillo Shipping Data",
+      "type": "maritime/ais",
+      "focus": "Mexico's largest Pacific port. Fentanyl precursor imports, container traffic.",
+      "language": "en",
+      "themes": [
+        "cartel_security",
+        "economy_markets"
+      ],
+      "signal_level": "High",
+      "admiralty": "B3 — Machine-collected AIS, needs human interpretation",
+      "status": "listed",
+      "url": "https://www.marinetraffic.com/en/ais/details/ports/4404"
+    },
+    {
+      "name": "Port Lázaro Cárdenas Data",
+      "type": "maritime/ais",
+      "focus": "Major Pacific container port. Chinese vessel traffic, container volumes.",
+      "language": "en",
+      "themes": [
+        "cartel_security",
+        "economy_markets",
+        "us_mexico"
+      ],
+      "signal_level": "High",
+      "admiralty": "B3",
+      "status": "listed",
+      "url": "https://www.marinetraffic.com/en/ais/details/ports/4482"
+    },
+    {
+      "name": "Port Veracruz Shipping",
+      "type": "maritime/ais",
+      "focus": "Mexico's largest Gulf port. Oil exports, container imports.",
+      "language": "en",
+      "themes": [
+        "energy_infra",
+        "economy_markets"
+      ],
+      "signal_level": "Medium",
+      "admiralty": "B3",
+      "status": "listed",
+      "url": "https://www.marinetraffic.com/en/ais/details/ports/3770"
+    },
+    {
+      "name": "SESNSP Security Statistics",
+      "type": "government/statistics",
+      "focus": "National Public Security System. Monthly municipal crime stats.",
+      "language": "es",
+      "themes": [
+        "cartel_security"
+      ],
+      "signal_level": "High",
+      "admiralty": "A1 — Official government statistics (with 15-30% underreporting caveat)",
+      "status": "listed",
+      "url": "https://www.gob.mx/sesnsp"
+    },
+    {
+      "name": "CBP Southwest Border Data",
+      "type": "government/border",
+      "focus": "US Customs and Border Protection. Cross-border trade, seizures, migration encounters.",
+      "language": "en",
+      "themes": [
+        "us_mexico",
+        "cartel_security"
+      ],
+      "signal_level": "High",
+      "admiralty": "A2 — Official US government figures",
+      "status": "listed",
+      "url": "https://www.cbp.gov/newsroom/stats"
+    },
+    {
+      "name": "PACER Federal Court Filings",
+      "type": "court/legal",
+      "focus": "US federal court cases involving Mexican defendants, cartel indictments, extraditions.",
+      "language": "en",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "signal_level": "High",
+      "admiralty": "A1 — Official court records",
+      "status": "listed",
+      "url": "https://pacer.uscourts.gov/"
+    },
+    {
+      "name": "DEA Case Filings",
+      "type": "court/legal",
+      "focus": "Drug Enforcement Administration case files, indictments against CDS/CJNG.",
+      "language": "en",
+      "themes": [
+        "cartel_security"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2 — Official but often incomplete at filing stage",
+      "status": "listed",
+      "url": "https://www.dea.gov/"
+    },
+    {
+      "name": "Sentinel-2 Imagery (Mexico)",
+      "type": "satellite/optical",
+      "focus": "ESA Sentinel-2 satellite. 10m resolution, 5-day revisit. Land use change, deforestation, infrastructure monitoring.",
+      "language": "en",
+      "themes": [
+        "cartel_security",
+        "energy_infra"
+      ],
+      "signal_level": "Medium",
+      "admiralty": "B3 — Machine-analyzed satellite data, requires expertise to interpret",
+      "status": "listed",
+      "url": "https://dataspace.copernicus.eu/"
+    },
+    {
+      "name": "ADS-B Mexico Private Aviation",
+      "type": "aviation/adsb",
+      "focus": "Private aircraft movements to/from Mexican airports. Track cartel logistics, unusual flight patterns.",
+      "language": "en",
+      "themes": [
+        "cartel_security"
+      ],
+      "signal_level": "High",
+      "admiralty": "B2 — Machine-collected, high confidence on flight path, uncertain on purpose",
+      "status": "listed",
+      "url": "https://adsbexchange.com/"
+    },
+    {
+      "name": "OFAC SDN List (Mexico)",
+      "type": "financial/sanctions",
+      "focus": "US Treasury sanctions designations of Mexican entities and individuals. Narcotics trafficking kingpin Act.",
+      "language": "en",
+      "themes": [
+        "cartel_security",
+        "us_mexico"
+      ],
+      "signal_level": "High",
+      "admiralty": "A1 — Official US government list",
+      "status": "listed",
+      "url": "https://sanctionssearch.ofac.treas.gov/"
+    },
+    {
+      "name": "BMV Corporate Filings",
+      "type": "financial/regulatory",
+      "focus": "Mexican Stock Exchange filings. Corporate actions, insider trading, ownership changes.",
+      "language": "es",
+      "themes": [
+        "economy_markets",
+        "political_risk"
+      ],
+      "signal_level": "Medium",
+      "admiralty": "B2 — Official filings, but limited enforcement",
+      "status": "listed",
+      "url": "https://www.bmv.com.mx/"
     }
   ]
 }

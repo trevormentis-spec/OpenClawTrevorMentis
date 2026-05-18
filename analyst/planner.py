@@ -39,6 +39,9 @@ TASK_TYPES = [
     "postdiction_sweep",
     "source_freshness_scan",
     "self_question_generation",
+    "weekly_source_brainstorm",
+    "targeted_source_discovery",
+    "source_quality_audit",
 ]
 
 MAX_TASKS_PER_CYCLE = 15
