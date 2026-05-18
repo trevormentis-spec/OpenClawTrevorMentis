@@ -71,7 +71,7 @@ def send_email(to: str, subject: str, body: str) -> dict[str, Any]:
     }
 
     req = urllib.request.Request(
-        "https://api.agentmail.to/v1/messages",
+        "https://api.agentmail.to/v0/inboxes/trevor_mentis@agentmail.to/messages",
         data=json.dumps(payload).encode(),
         headers={
             "Authorization": f"Bearer {key}",
@@ -94,7 +94,7 @@ def check_inbox(max_messages: int = 10) -> list[dict[str, Any]]:
         return [{"status": "error", "error": "No AgentMail API key"}]
 
     req = urllib.request.Request(
-        f"https://api.agentmail.to/v1/messages?limit={max_messages}",
+        f"https://api.agentmail.to/v0/inboxes/trevor_mentis@agentmail.to/messages?limit={max_messages}",
         headers={"Authorization": f"Bearer {key}"},
     )
 
