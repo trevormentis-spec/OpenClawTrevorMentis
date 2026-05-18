@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-05-18 17:01 UTC
+# Gmail Intel Digest — 2026-05-18 19:02 UTC
+
+## This Week: Putin’s wish list in Beijing
+**From:** "FP’s Amelia Lester" <newsletters@foreignpolicy.com>
+**Date:** Mon, 18 May 2026 14:33:15 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Global Security & Intelligence Brief — 18 May 2026
 **From:** Trevor <trevor.mentis@gmail.com>
@@ -32,15 +41,6 @@ Rotate and protect your access tokens (https://d60YtG04.na1.hubspotlinks.com/Ctc
 **Type:** unknown | **Importance:** low
 
 Email from Institute for the Study of War Ukrainian forces struck several Russian defense industrial plants and oil infrastructure objects in Moscow City and Oblast overnight on May 16 to 17. May 17, 2026﻿ ﻿Data Cutoff: 12:50 PM ET  Samuel Shafiro, Anna Thacker, Justin Young, Grace Mappes, and Karolina Hird TOPLINES Ukrainian forces struck several Russian defense industrial plants and oil infrastructure objects in Moscow City and Oblast overnight on May 16 to 17 following Russia's intensified st
-
----
-
-## Iran Update Special Report, May 17, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sun, 17 May 2026 15:34:58 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War The United States and Iran continue to pursue fundamentally incompatible negotiating positions. May 17, 2026 Data Cutoff: 2:00 PM ET Ben Rezaei, Adham Fattah, Nidal Morrison, Carolyn Moorman, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES The United States and Iran continue to pursue fundamentally incompatible negotiating positions. Unspecified sources familiar 
 
 ---
 

@@ -1,0 +1,76 @@
+{
+  "cycle": 4,
+  "generated_at": "2026-05-18T18:11:09.879279Z",
+  "task_count": 5,
+  "tasks": [
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/brain/memory/semantic/calibration-tracking.json",
+      "unresolved_count": 30,
+      "priority": "high",
+      "estimated_cost": 0.003,
+      "estimated_duration_mins": 5,
+      "task_type": "postdiction_sweep",
+      "generated_at": "2026-05-18T18:11:09.879279Z",
+      "status": "completed",
+      "completed_at": "2026-05-18T18:21:58.599223Z",
+      "cost": 0.001,
+      "outcome": ""
+    },
+    {
+      "target": "all_entity_files",
+      "priority": "high",
+      "estimated_cost": 0.0,
+      "estimated_duration_mins": 1,
+      "task_type": "source_freshness_scan",
+      "generated_at": "2026-05-18T18:11:09.879279Z",
+      "status": "completed",
+      "completed_at": "2026-05-18T18:21:58.636204Z",
+      "cost": 0.0,
+      "outcome": ""
+    },
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/analyst/meta/capability_gaps.json",
+      "priority": "medium",
+      "estimated_cost": 0.002,
+      "estimated_duration_mins": 3,
+      "task_type": "self_question_generation",
+      "generated_at": "2026-05-18T18:11:09.879279Z",
+      "status": "completed",
+      "completed_at": "2026-05-18T18:21:58.637503Z",
+      "cost": 0.0,
+      "outcome": ""
+    },
+    {
+      "file": "/home/ubuntu/.openclaw/workspace/brain/memory/semantic/mexico/actors/cjng.md",
+      "name": "cjng",
+      "words": 1528,
+      "last_source_date": "2026-05-16",
+      "days_since_update": 2,
+      "priority": "low",
+      "estimated_cost": 0.005,
+      "estimated_duration_mins": 5,
+      "task_type": "entity_deepening",
+      "generated_at": "2026-05-18T18:11:09.879279Z",
+      "status": "queued",
+      "completed_at": "2026-05-18T18:21:58.638470Z",
+      "cost": 0.0,
+      "outcome": "needs_deepening"
+    },
+    {
+      "target": {
+        "id": "i-2026-05-14-37c3",
+        "headline": "How did the US and China tell 2 different stories about the summit?",
+        "category": "political"
+      },
+      "priority": "low",
+      "estimated_cost": 0.001,
+      "estimated_duration_mins": 2,
+      "task_type": "framework_stress_test",
+      "generated_at": "2026-05-18T18:11:09.879279Z",
+      "status": "queued",
+      "completed_at": "2026-05-18T18:21:58.639480Z",
+      "cost": 0.0,
+      "outcome": "test_pending"
+    }
+  ]
+}
