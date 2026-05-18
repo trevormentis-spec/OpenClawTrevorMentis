@@ -1,8 +1,8 @@
 # Brief Schema v1.0.0 — Open Claw Mexico
 
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Status:** Stable contract
-**Updated:** 2026-05-18
+**Updated:** 2026-05-18 23:00 UTC
 **Consumed by:** PDF renderer, audio renderer, Folium mapping, external API consumers
 
 ---
@@ -11,7 +11,7 @@
 
 ```json
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "brief_id": "uuid-v4",
   "query_type": "enum",
   "produced_at": "ISO-8601",
@@ -26,6 +26,7 @@
   "action_lines": [ActionLine],
   "sources": [Source],
   "meta": { Metadata },
+  "generation_metadata": { GenerationMetadata },
   "custom": {}  // reserved for industry-vertical extensions
 }
 ```
@@ -216,6 +217,24 @@ Same as Section without the `subsections` recursive field.
 | themes_covered | [enum theme] | yes | Which themes have substantive content |
 | engine_version | string | yes | Schema version + pipeline version |
 | word_count | int | no | Total word count |
+
+### GenerationMetadata
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| model_used | string | yes | Model name (e.g., "claude-opus-4-7", "deepseek-v4-pro", "deepseek-chat") |
+| target_word_count | [int, int] | yes | Target word range [min, max] |
+| actual_word_count | int | yes | Actual output word count |
+| complexity_triggers | [string] | yes | List of fired routing triggers |
+| escalation_events | [string] | no | Escalation events during generation |
+| routing_rationale | string | yes | Why this model was selected |
+| escalation_ladder | string | no | Escalation path: haiku→v4pro→opus |
+| generation_cost | float | no | Approximate API cost |
+| truncated | bool | no | Whether output was truncated |
+
+### Public API vs Internal Fields
+
+(Unchanged — same stability contract as v1.0.0)|
 
 ---
 
