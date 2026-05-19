@@ -1,0 +1,92 @@
+{
+  "session_id": "sa-1779150536",
+  "started_at": "2026-05-19T00:29:00.823336Z",
+  "current_dimension": "dim8-communication",
+  "completed_dimensions": [
+    "dim1-routing",
+    "dim2-generation",
+    "dim3-collection",
+    "dim4-quality",
+    "dim5-cost",
+    "dim6-observability",
+    "dim7-recovery",
+    "dim8-communication"
+  ],
+  "auto_fixes_applied": [
+    {
+      "gap": "escalation_guard not wired as post-gen hook"
+    },
+    {
+      "gap": "Add auto-multi-turn-escalation for >3000w targets"
+    },
+    {
+      "gap": "Add collector health tracking"
+    },
+    {
+      "gap": "fabrication_check regex fixed"
+    },
+    {
+      "gap": "Add pre-gen balance check to routing"
+    },
+    {
+      "gap": "Reindex brain memory"
+    },
+    {
+      "gap": "Save sections incrementally in multi-turn"
+    },
+    {
+      "gap": "Add git hook for STATUS.md auto-refresh"
+    }
+  ],
+  "principal_review_parked": [
+    {
+      "gap": "Multi-turn generator bypasses routing.py",
+      "priority": "P2",
+      "recommendation": "Add routing call to multi_turn_generator.py section generation"
+    },
+    {
+      "gap": "No automatic pre-generation routing check on single-call briefs",
+      "priority": "P2"
+    },
+    {
+      "gap": "Multi-turn cross-section consistency not validated",
+      "priority": "P2"
+    },
+    {
+      "gap": "Maritime AIS needs paid API",
+      "priority": "P1"
+    },
+    {
+      "gap": "Cartel Telegram channels pending",
+      "priority": "P1"
+    },
+    {
+      "gap": "Unified guard pipeline",
+      "priority": "P2"
+    },
+    {
+      "gap": "Guard audit log",
+      "priority": "P3"
+    },
+    {
+      "gap": "Opus monthly budget cap definition",
+      "priority": "P1"
+    },
+    {
+      "gap": "Centralized observability dashboard",
+      "priority": "P2"
+    },
+    {
+      "gap": "Collector failure alerting",
+      "priority": "P2"
+    },
+    {
+      "gap": "Auto-age awaiting-approval items",
+      "priority": "P3"
+    }
+  ],
+  "architectural_proposals": [],
+  "budget_used": 0.0,
+  "last_checkpoint": "2026-05-19T00:30:43.968261Z",
+  "total_calls": 0
+}
