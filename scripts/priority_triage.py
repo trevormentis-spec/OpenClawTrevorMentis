@@ -518,7 +518,21 @@ def rank_signals(signals: list[dict]) -> list[dict]:
 # ── Analysis Dispatch ─────────────────────────────────────────────
 
 def call_tier1_analysis(signal: dict) -> str:
-    """Fire Tier-1 (Opus 4.7) analysis for high-scoring signals."""
+    """Fire Tier-1 analysis for high-scoring signals, routed through gate."""
+    model_used = TIER1_MODEL
+    try:
+        from analyst.llm_gate import route as _gr
+        _g = _gr("flagship_document", {"target_words": 500, "critical": True})
+        model_used = _g.model
+        _log = pathlib.Path(__file__).resolve().parent.parent / "memory" / "llm-routing-log.jsonl"
+        _log.parent.mkdir(exist_ok=True)
+        with open(_log, "a") as _f:
+            _f.write(__import__("json").dumps({"model": _g.model, "provider": _g.provider,
+                "estimated_cost_usd": _g.estimated_cost_usd,
+                "justification": _g.justification, "task_type": "flagship_document",
+                "timestamp": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}) + "\n")
+    except Exception:
+        pass
     log(f"TIER-1 ANALYSIS: {signal.get('type', '?')} (score={signal['score']})")
 
     system = "You are Trevor, a senior intelligence analyst. Produce a concise analytical note for a principal-level audience. One BLUF, 2-3 key judgments with confidence bands, strategic implications, and watch points. No more than 500 words."
@@ -527,7 +541,7 @@ def call_tier1_analysis(signal: dict) -> str:
     try:
         api_key = os.environ.get("OPENROUTER_API_KEY")
         payload = {
-            "model": TIER1_MODEL,
+            "model": model_used,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "max_tokens": 2048,
             "temperature": 0.2,
@@ -551,7 +565,21 @@ def call_tier1_analysis(signal: dict) -> str:
 
 
 def call_tier2_analysis(signal: dict) -> str:
-    """Fire Tier-2 (DeepSeek V4 Pro) analysis for moderate signals."""
+    """Fire Tier-2 analysis for moderate signals, routed through gate."""
+    model_used = TIER2_MODEL
+    try:
+        from analyst.llm_gate import route as _gr
+        _g = _gr("subscriber_brief", {"target_words": 350, "routine": True})
+        model_used = _g.model
+        _log = pathlib.Path(__file__).resolve().parent.parent / "memory" / "llm-routing-log.jsonl"
+        _log.parent.mkdir(exist_ok=True)
+        with open(_log, "a") as _f:
+            _f.write(__import__("json").dumps({"model": _g.model, "provider": _g.provider,
+                "estimated_cost_usd": _g.estimated_cost_usd,
+                "justification": _g.justification, "task_type": "subscriber_brief",
+                "timestamp": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}) + "\n")
+    except Exception:
+        pass
     log(f"TIER-2 ANALYSIS: {signal.get('type', '?')} (score={signal['score']})")
 
     system = "You are Trevor, an intelligence analyst. Produce a concise analytical note. One BLUF, 2-3 key judgments. No more than 350 words."
@@ -560,7 +588,7 @@ def call_tier2_analysis(signal: dict) -> str:
     try:
         api_key = os.environ.get("DEEPSEEK_API_KEY")
         payload = {
-            "model": TIER2_MODEL.split("/")[-1],  # deepseek/deepseek-v4-pro → deepseek-v4-pro
+            "model": model_used.split("/")[-1] if "/" in model_used else model_used,  # deepseek/deepseek-v4-pro → deepseek-v4-pro
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "max_tokens": 2048,
             "temperature": 0.2,
