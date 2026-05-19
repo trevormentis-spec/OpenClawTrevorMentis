@@ -58,3 +58,10 @@ fallback:
   openrouter: [anthropic/claude-sonnet-4.5, deepseek/deepseek-v4-pro, deepseek/deepseek-v4-flash]
   deepseek_direct: [deepseek/deepseek-v4-flash, anthropic/claude-sonnet-4.5]
   elevenlabs: []
+
+# Changelog:
+# 2026-05-19: subscriber_brief escalate_if_any updated
+#   - Removed: audience_family_office:true
+#   - Added: has_recommendations:true
+#   Rationale: Opus 4.7 justified by synthesis-to-action layer, not audience label alone.
+#   See memory/2026-05-v2-validation/routing-cost-quality-memo.md

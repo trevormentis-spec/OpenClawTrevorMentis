@@ -146,3 +146,16 @@ Gates are specified per task type in `llm_gate.py TASK_RULES`.
 | `analyst/llm_gate.py` | Task-to-model rules (code, authoritative) |
 | `analyst/cost_ledger.py` | Budget tracking and enforcement |
 | `analyst/llm_clients/` | Provider-specific API clients |
+
+## Routing Changelog
+
+### 2026-05-19 — subscriber_brief escalation refined
+- **Change:** `audience_family_office:true` replaced with `has_recommendations:true`
+- **Rationale:** Cost-quality memo (brazil-fiscal-watch-v2 vs v1) showed Opus 4.7 is
+  justified by recommendation quality specifically, not by audience label alone.
+  V4 Pro is sufficient for briefs without a recommendations section.
+- **Trigger logic:** Escalate to Opus 4.7 when any of:
+  - `has_recommendations:true` AND audience in [family_office, sovereign_wealth, lloyds]
+  - `target_words_gte:3000` (any audience)
+  - `scenarios_gte:3` (multi-scenario calibration)
+- **Default:** `has_recommendations:false` — most briefs are situational analysis
