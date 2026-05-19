@@ -1,3 +1,4 @@
+# MIGRATION_RESIDUE: Mexico-specific brief. Being generalized to topic_morning_brief.py in #6.
 #!/usr/bin/env python3
 """
 Mexico Morning Brief — daily HTML dashboard exercising all new collection skills.

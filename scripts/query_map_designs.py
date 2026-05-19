@@ -20,6 +20,8 @@ with open(env_path) as f:
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
+# GATE_EXEMPT: Map design query utility — not a production analysis path.
+# Uses hardcoded Opus for design generation. Gate bypass is by design.
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "anthropic/claude-opus-4.7"
 

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# GATE_EXEMPT: HAR analysis utility — directly calls DeepSeek for spec generation.
+# This is a developer tool, not a production collection path. Gate bypass is by design.
+
 """
 DeepSeek HAR Analyzer — replaces reverse-api-engineer's Claude agent.
 
