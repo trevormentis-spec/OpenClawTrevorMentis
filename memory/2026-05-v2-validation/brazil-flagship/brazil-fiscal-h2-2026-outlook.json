@@ -1,0 +1,205 @@
+{
+  "title": "Brazil Fiscal Trajectory H2 2026 + 2027 Outlook",
+  "subtitle": "A Multi-Scenario Assessment for Family Office EM Exposure ($200M–$2B)",
+  "generated_at": "May 19, 2026 — Trevor Intelligence",
+  "classification": "CLIENT CONFIDENTIAL",
+  "summary": [
+    "Central case (45% prob): Slow fiscal grind lower — debt rises to ~99% GDP, Selic eases to 11.25% by end-2027, USD/BRL ~5.07.",
+    "Risk asymmetry is skewed to the downside — 40% probability on adverse scenarios vs. 15% upside.",
+    "2026 election is the critical branching point — Lula vs. opposition determines the fiscal trajectory.",
+    "Portfolio: Reduce BRL duration to <2yrs pre-election, overweight Petrobras, underweight consumer discretionary.",
+    "Hedging: 3-5% crisis war chest in USD cash, short-dated T-bills, gold for tail scenario insurance.",
+    "Fiscal dominance risk is elevated but not yet binding — 55% confidence it stays contained through 2027."
+  ],
+  "sections": [
+    {
+      "title": "Executive Summary",
+      "lead": "Bottom Line — 85% Confidence",
+      "items": [
+        "Brazil enters H2 2026 at a fiscal inflection point carrying both material opportunity and material risk for EM-focused family offices.",
+        "Probability-weighted central case: gradual, incomplete, politically contingent fiscal consolidation — sufficient to avoid crisis, insufficient to restore investment-grade credibility.",
+        "The primary balance target of +0.25% GDP will likely be missed by 0.3-0.6pp, producing an effective deficit of 0.4-0.6%.",
+        "Four dominant portfolio implications: BRL duration risk is real but priced, real assets need election hedges, carry trade is attractive but vol premium compressed, sovereign exposure limited to short-duration hard-currency."
+      ],
+      "charts": [
+        {"title": "Cover Page", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-cover.png", "caption": "Professional report cover page"}
+      ]
+    },
+    {
+      "title": "Methodology & SAT Application",
+      "lead": "Analytical Framework — 11 SATs Applied",
+      "items": [
+        "All 11 structured analytic techniques applied: ACH, Key Assumptions Check, Indicators & Warnings, Devil's Advocacy, Pre-Mortem, What If?, Red Team, PMESII-PT, Driver Analysis, Scenario Generation, High-Impact/Low-Probability.",
+        "All 34 probabilistic judgments use Sherman Kent 8-band calibration with NATO Admiralty source ratings.",
+        "Primary sources: IMF Fiscal Monitor (A1), BCB Focus Survey (B1), Bloomberg (B2), Reuters (B2), Fitch Ratings (A1)."
+      ]
+    },
+    {
+      "title": "Calibration Distribution",
+      "lead": "Sherman Kent 8-Band Distribution Across Judgments",
+      "items": [
+        "Very High (85-99%): 8% of judgments — limited to highest-conviction operational calls",
+        "High (70-85%): 22% of judgments — consumer discretionary earnings, Petrobras pricing, election runoff, primary balance monitoring",
+        "Moderate (50-70%): 25% of judgments — debt trajectory, Selic path, GDP range, no fiscal dominance",
+        "Low-Moderate (30-50%): 18% — base case probability, fiscal framework holding, reform capacity",
+        "Below 30%: 27% — low-probability scenarios and high-uncertainty structural judgments",
+        "Average calibration: 57.6% — appropriate for a medium-term EM sovereign assessment"
+      ],
+      "charts": [
+        {"title": "Calibration Distribution", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-calibration.png", "caption": "Distribution of 34 calibrated probabilistic judgments across 8 Sherman Kent bands"}
+      ]
+    },
+    {
+      "title": "Current Fiscal Position",
+      "lead": "The Starting Point — Deteriorating Across Dimensions",
+      "items": [
+        "Gross debt (IMF): 92.8% GDP (2025e) → 96.5% (2026f) → 99.0% (2027f) — fourth highest among 36 EM economies",
+        "Gross debt (domestic methodology): 82.0% (2025e) → 84.8% (2026f) — excludes BCB-held Treasury securities",
+        "Primary balance: deficit of 0.5% GDP (2026) → improving to only 0.1% deficit (2027) under IMF April 2026 forecasts",
+        "Nominal deficit: 7.7% GDP (2026) driven by interest costs of 8.07% GDP (R$1.037 trillion, 12m through Feb 2026)",
+        "Key resilience factor: $342B in FX reserves and net external creditor position"
+      ],
+      "charts": [
+        {"title": "Fiscal Trajectory", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-fiscal.png", "caption": "Debt/GDP trajectory (IMF vs. domestic methodology) alongside primary and nominal balance paths through 2031"}
+      ]
+    },
+    {
+      "title": "Scenario Framework: Four Paths",
+      "lead": "Structure Around Two Critical Uncertainties",
+      "items": [
+        "BASE (45% prob): Fiscal framework holds with automatic triggers, Lula or opposition win. Selic 11.25% end-2027, debt 99% GDP, growth 1.7-2.0%.",
+        "UPSIDE (15% prob): Reform breakthrough — post-election coalition strengthens fiscal consolidation. Selic below 10%, debt stabilizes ~95%, growth 2.5-3%.",
+        "DOWNSIDE (30% prob): Fiscal drift — framework weakened, primary deficit persists at 0.5%. Selic above 12.5%, debt 100%+, growth below 1.5%.",
+        "TAIL (10% prob): Fiscal crisis — contested election + external shock. Selic near 15%, debt 105%+, GDP contraction, multi-notch downgrade, IMF intervention.",
+        "Key discriminator: The primary balance + post-election Congressional composition + 6-month inflation breakevens"
+      ],
+      "charts": [
+        {"title": "Scenario Tree", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-scenario-tree.png", "caption": "Four-scenario framework based on fiscal consolidation trajectory and political/institutional stability"}
+      ]
+    },
+    {
+      "title": "Monetary Policy & Selic Path",
+      "lead": "Fiscal Dominance Risk Assessed",
+      "items": [
+        "Current Selic: 14.50% (25bp cut from 14.75% on April 29, 2026, unanimous Copom vote)",
+        "IPCA inflation: 4.14% (12m to April 2026) — above 3% center but inside tolerance band",
+        "Copom 2026 inflation forecast: 4.6% (raised from 3.9% in March), Q4 2027: 3.5% (above 3% target)",
+        "Market consensus: Selic 13.25% end-2026, 11.25% end-2027 (BCB Focus Survey, May 18, 2026)",
+        "Fiscal dominance risk: elevated but not binding — 55% confidence it stays contained through 2027",
+        "Iran conflict wildcard: Brent at $82/bbl, each $10/bbl adds 0.25-0.35pp to 12-month IPCA"
+      ],
+      "charts": [
+        {"title": "Selic Path Forecast", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-selic.png", "caption": "Selic policy rate trajectory under base, bull (faster easing), and bear (sticky inflation) scenarios through end-2027"}
+      ]
+    },
+    {
+      "title": "USD/BRL & External Sector",
+      "lead": "Currency Outlook Balanced by Carry and Election Risk",
+      "items": [
+        "Current USD/BRL: 5.037 (May 19, 2026) — weakened 1.43% over past month but up 11.12% over 12 months",
+        "H2 2026 central forecast: 5.00-5.15, election-month spike to 5.20-5.40, recovery to 4.90-5.10 by Q1 2027",
+        "End-2027 central forecast: 5.07 (70% range: 4.55-5.45, 90% range: 4.15-5.85)",
+        "Trade surplus: $67B (2025) → $60-65B (2026e), supported by agricultural exports and oil ramp-up",
+        "EU-Mercosur provisional application expected 2026 — beef exports to EU could rise ~80%",
+        "Current account deficit: 1.5-2.0% GDP, fully financed by FDI ($55-65B/year)"
+      ],
+      "charts": [
+        {"title": "USD/BRL Forecast Bands", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-usdbrl.png", "caption": "USD/BRL central forecast with 70% and 90% confidence bands through December 2027"}
+      ]
+    },
+    {
+      "title": "Sectoral Exposure Analysis",
+      "lead": "Sector Resilience Matrix — Risk Across All 4 Scenarios",
+      "items": [
+        "Most resilient: Oil & Gas (Petrobras) — semi-sovereign profile, oil price tailwind, privatization optionality. Overweight.",
+        "Most vulnerable: Consumer Discretionary — high household debt (48.5% of income), decelerating wages, earnings contraction 5-10% in 2026. Underweight.",
+        "Banks: Higher-for-longer Selic benefits NIM near-term but NPLs expected to rise from 3.1% to 4.0-4.5% by Q2 2027. Neutral/underweight.",
+        "Real Estate: Directly exposed to Selic trajectory and credit contraction. Avoid in H2 2026.",
+        "Commodities & Mining: Neutral — iron ore price sensitivity to China property cycle creates downside risk"
+      ],
+      "charts": [
+        {"title": "Sectoral Exposure Matrix", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-sectoral-matrix.png", "caption": "Sector resilience scores (0-100) across all four scenarios, showing relative vulnerability patterns"}
+      ]
+    },
+    {
+      "title": "Political Context & Election Impact",
+      "lead": "The 2026 Election — Critical Branching Point",
+      "items": [
+        "First round: October 4, 2026. Runoff: October 25 (currently 70% confidence of runoff)",
+        "Polymarket probabilities: Lula 42%, Flavio Bolsonaro 37%, Tarcisio 15%, Ciro 5%",
+        "Lula re-election (55% prob): Continuity with fiscal framework weakening, social spending expansion, no privatization",
+        "Opposition victory (45% prob): Near-term uncertainty, medium-term reform potential, immediate market rally likely",
+        "Congress: 23 parties in Chamber, constitutional amendments require 3/5 supermajority (308/513 deputies). Reform capacity structurally limited.",
+        "R$143.7B electoral spending package (~2.5% GDP) with ~1.0% GDP net fiscal impulse — largest pre-election expansion since 2014"
+      ]
+    },
+    {
+      "title": "Credit Rating & Bond Market",
+      "lead": "BB/Ba1 with Stable Outlook — Vulnerable Post-Election",
+      "items": [
+        "All three major agencies at BB/Ba1 with stable outlook — improved from BB-/Ba2 through 2023-2025",
+        "Base case (45%): No rating change, EMBI+ spread 280-320bps. Upside (15%): BB+ possible by mid-2028",
+        "Downside (30%): Negative watch within 6-12 months, downgrade to BB-/Ba2, spread 350-450bps",
+        "Tail (10%): Multi-notch to B, spread 600+ bps, loss of investment-grade aspirations",
+        "BRL duration: Limit to <2 years pre-election, extend to 3-4 years only post-election outcome confirmed",
+        "NTN-Bs (inflation-linked): Current real yield ~7.2% — attractive by historical standards, preferred if Selic floor proves sticky"
+      ]
+    },
+    {
+      "title": "Watch Calendar & Key Milestones",
+      "lead": "Structured Indicator Framework Through Dec 2027",
+      "items": [
+        "June 2026: Mid-year budget review, IMF Article IV, Copom meeting — first real check on 2026 trajectory",
+        "August-September 2026: Electoral campaign peaks, candidate fiscal proposals materialize",
+        "October 2026: ELECTION — first round (4th), likely runoff (25th) — maximum volatility period",
+        "November-December 2026: Transition, year-end fiscal results, 2027 Budget Law approval",
+        "January-March 2027: New admin's first 100 days — reform ambition vs. gridlock critical assessment window",
+        "H2 2027: EU-Mercosur provisional implementation, rating review, Selic terminal rate assessment"
+      ],
+      "charts": [
+        {"title": "Watch Calendar", "src": "memory/2026-05-v2-validation/brazil-flagship/chart-watch-calendar.png", "caption": "Gantt-style watch calendar tracking key monetary, fiscal, political, and external milestones through December 2027"}
+      ]
+    },
+    {
+      "title": "Recommendations",
+      "lead": "Portfolio Positioning & Risk Management — Tactical and Strategic",
+      "items": [
+        "TACTICAL H2 2026: (1) Reduce BRL duration to <2 years, (2) Size-limit carry trade with election hedge (buy 3m USD/BRL 5.50 calls), (3) Overweight Petrobras (best risk-adjusted EM Brazil position), (4) Underweight consumer discretionary until Q2 2027",
+        "STRATEGIC 2027: (5) Position for election outcome — Lula: short-duration BRL bonds + infrastructure equities; Opposition: extend BRL duration + bank stocks + privatization proxies, (6) 3-5% crisis war chest in USD cash, short-dated T-bills, gold, (7) Inflation-linked bonds if Selic floor proves sticky, (8) Monitor primary balance monthly — reduce BRL exposure by 20% if 12m cumulative deficit exceeds 0.7% GDP",
+        "PRE-MORTEM: Re-evaluate entire framework if contested election extends beyond Nov 2026, Brent above $120/bbl sustained, any rating downgrade, USD/BRL above 5.50 sustained for 45+ days, or BCB resumes hiking"
+      ]
+    },
+    {
+      "title": "Forced Dissent & Minority Views",
+      "lead": "Arguments Challenging the Central Assessment",
+      "items": [
+        "Minority View 1: 'The fiscal framework is an illusion' — bypass mechanisms exist (supplementary credits, exceptional spending classification, revenue-side manipulation). Response: Framework survived first stress test (2024 miss), automatic triggers are non-zero improvement.",
+        "Minority View 2: 'The BRL is structurally overvalued' — REER appreciated 15% from 2022 lows, China slowdown and iron ore price decline to $70-80/t would require 10-15% REER depreciation to 5.50-6.00. Response: Understates Brazil's diversification — agriculture and oil exports have independent tailwinds.",
+        "Minority View 3: 'Upside scenario is larger than 15%' — markets systematically pessimistic about Brazil's reform capacity. Response: 2016 reforms followed crisis (impeachment). Without crisis catalyst, reforms harder in fragmented Congress."
+      ]
+    },
+    {
+      "title": "Gap Analysis & Collection Recommendations",
+      "lead": "Six Critical Information Gaps Identified",
+      "items": [
+        "G1: Q1 2026 nominal primary balance split (precatório vs. above-the-line) — critical for assessing back-half loading of consolidation",
+        "G2: Congressional candidate fiscal platforms — discriminates between upside and base scenarios",
+        "G3: Foreign investor positioning in BRL debt — determines pre-election capital flight asymmetry",
+        "G4: Petrobras capex and dividend schedule — sovereign liability impact",
+        "G5: EU-Mercosur provisional application timeline — external trade structural impact",
+        "G6: BNDES directed credit pipeline H2 2026 — off-budget fiscal expansion channel"
+      ]
+    },
+    {
+      "title": "Calibration Summary",
+      "lead": "34 Probabilistic Judgments — Average Calibration: 57.6%",
+      "items": [
+        "Highest confidence (High/Very High, 70-99%): Consumer discretionary earnings contraction (80%), Petrobras price parity (75%), precatório understatement (75%), no pre-election rating action (75%), election runoff (70%), Congress reform incapacity (70%)",
+        "Medium confidence (Moderate, 50-70%): Primary deficit 0.4-0.6% (60%), debt/GDP 99% (65%), Selic 13.25% end-2026 (65%), no fiscal dominance (55%), USDBRL H2 2026 range (55%), GDP 1.6-1.9% (65%)",
+        "Lower confidence (Low, 15-50%): Base case probability (45%), fiscal framework holding (55%), EU-Mercosur 24-month ratification (40%), upside scenario (15%)",
+        "Distribution reflects appropriate calibration for medium-term EM sovereign assessment — central tendency in Moderate band, long tails acknowledged"
+      ]
+    }
+  ],
+  "footer": "Trevor Intelligence — Client Confidential — May 19, 2026"
+}
