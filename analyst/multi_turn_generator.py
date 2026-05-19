@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Routes through llm_gate.route() for model selection. Endpoint URL is for the gate-selected model call.
 #!/usr/bin/env python3
 """Multi-turn section-by-section generator for flagship briefs.
 

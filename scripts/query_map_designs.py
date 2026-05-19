@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Map design UI utility — uses hardcoded Opus for design generation. Not a production analysis path.
 #!/usr/bin/env python3
 """
 Query Claude Opus 4.7 via OpenRouter for map design recommendations

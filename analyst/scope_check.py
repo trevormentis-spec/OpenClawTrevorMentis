@@ -1,3 +1,4 @@
+# GATE_EXEMPT: scope_check uses scope_classifier task type via llm_gate. Endpoint URL is for the gate-selected model call.
 #!/usr/bin/env python3
 """Scope gate — checks whether a request/topic is in scope for the active assignment.
 

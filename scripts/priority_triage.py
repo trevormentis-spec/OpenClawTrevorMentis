@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Routes through llm_gate.route() for both Tier-1 and Tier-2 paths.
 #!/usr/bin/env python3
 """
 Priority Triage Engine — Trevor's Executive Function.

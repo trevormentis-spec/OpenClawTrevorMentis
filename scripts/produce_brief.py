@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Routes through llm_gate.route() before every API call. Endpoint URL is for the gate-selected model.
 #!/usr/bin/env python3
 """Produce subscriber brief through llm_gate routing — used by main thread / orchestrator.
 
