@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Scope gate — checks whether a request/topic is in scope for the desk.
+"""Scope gate — checks whether a request/topic is in scope for the active assignment.
 
-Used as the FIRST call in every analyst entry point (analyze.py,
-orchestrate.py, chat handler). Produces three-branch classification.
+Used as the FIRST call in every analyst entry point. Produces three-branch classification:
+in_scope / adjacent / out_of_scope.
 
 Architecture:
-  - Fast path: keyword match against scope.yaml (zero API cost).
+  - Fast path: keyword match against topic config (zero API cost).
   - Slow path: LLM classification for ambiguous requests.
   - Two-tier decline: reframe-offer when vectors exist, terse when none.
-  - Regression test suite: --regression-test runs all four canonical probes.
 
-Framework-general: redirect by editing analyst/config/scope.yaml.
+Domain-general: reads scope from config/topics/<active-topic>/topic.yaml.
+Falls back to analyst/config/scope.yaml for backward compatibility.
 """
 
 from __future__ import annotations
@@ -21,67 +21,122 @@ import os
 import pathlib
 import re
 import sys
-from typing import Any
+from typing import Any, Optional
 
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
-SCOPE_YAML = REPO_ROOT / "analyst" / "config" / "scope.yaml"
-
-# ── Canonical probes for regression testing ─────────────────────────────────
-
-REGRESSION_PROBES: list[dict] = [
-    {
-        "name": "A",
-        "input": "Brief me on the Saudi-Russia oil production talks this week.",
-        "expect_scope": "adjacent",
-        "check_vectors": True,
-    },
-    {
-        "name": "B",
-        "input": "Brief me on the ECB's rate decision this week.",
-        "expect_scope": "adjacent",
-        "check_vectors": True,
-    },
-    {
-        "name": "C",
-        "input": "Brief me on the Russia-Ukraine front for today.",
-        "expect_scope": "adjacent",
-        "check_vectors": True,
-    },
-    {
-        "name": "D",
-        "input": "What's happening with Pemex's Cadereyta refinery this week?",
-        "expect_scope": "in_scope",
-        "check_vectors": False,
-    },
-]
+TOPICS_DIR = REPO_ROOT / "config" / "topics"
+LEGACY_SCOPE_YAML = REPO_ROOT / "analyst" / "config" / "scope.yaml"
+ACTIVE_ASSIGNMENTS = REPO_ROOT / "config" / "active-assignments.yaml"
 
 
 # ── Config loader ──────────────────────────────────────────────────────────
 
-def load_scope() -> dict:
-    """Load scope.yaml. Falls back to defaults if file missing or unparseable."""
+def _get_active_topic_slug() -> Optional[str]:
+    """Get the primary active topic slug from active-assignments.yaml."""
+    if not ACTIVE_ASSIGNMENTS.exists():
+        return None
+    try:
+        text = ACTIVE_ASSIGNMENTS.read_text()
+        # Simple YAML extraction for assignments list
+        for line in text.split("\n"):
+            line = line.strip()
+            if line.startswith("- topic:"):
+                return line.split(":", 1)[1].strip()
+        return None
+    except Exception:
+        return None
+
+
+def _parse_simple_yaml(text: str) -> dict:
+    """Minimal YAML parser for flat configs (no nested structures beyond lists)."""
+    result = {}
+    current_key = None
+    current_list = None
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        if stripped.startswith("- ") and current_list is not None:
+            current_list.append(stripped[2:].strip().strip('"').strip("'"))
+            continue
+        if ":" in stripped and not stripped.startswith("-"):
+            key, val = stripped.split(":", 1)
+            key = key.strip()
+            val = val.strip().strip('"').strip("'")
+            if current_list is not None:
+                result[current_key] = current_list
+                current_list = None
+            if val:
+                result[key] = val
+                current_key = key
+            else:
+                current_key = key
+                current_list = []
+    if current_list is not None:
+        result[current_key] = current_list
+    return result
+
+
+def load_scope(topic_slug: Optional[str] = None) -> dict:
+    """Load scope configuration for the active topic.
+
+    Priority:
+    1. config/topics/<topic_slug>/topic.yaml (if topic specified or active)
+    2. analyst/config/scope.yaml (legacy fallback)
+    3. Permissive defaults (no scope restriction)
+    """
     defaults = {
-        "primary_scope": "Mexico",
-        "scope_descriptor": "Mexico-only intelligence",
-        "themes": ["cartel_security", "political_risk", "us_mexico",
-                    "energy_infra", "economy_markets", "worldcup_travel"],
+        "primary_scope": "general",
+        "scope_description": "general intelligence analysis",
+        "themes": [],
         "adjacency_vectors": [],
         "out_of_scope_keywords": [],
-        "in_scope_keywords": ["mexico", "sinaloa", "cartel"],
+        "in_scope_keywords": [],
+        "blocklist": [],
     }
-    if not SCOPE_YAML.exists():
-        return defaults
-    try:
-        import yaml as _yaml
-        raw = _yaml.safe_load(SCOPE_YAML.read_text())
-        if not isinstance(raw, dict):
-            return defaults
-        return {
-            k: raw.get(k, defaults[k]) for k in defaults
-        }
-    except Exception:
-        return defaults
+
+    # Determine which topic to load
+    if topic_slug is None:
+        topic_slug = _get_active_topic_slug()
+
+    # Try topic-specific config
+    if topic_slug:
+        topic_yaml = TOPICS_DIR / topic_slug / "topic.yaml"
+        if topic_yaml.exists():
+            try:
+                raw = _parse_simple_yaml(topic_yaml.read_text())
+                return {
+                    "primary_scope": raw.get("primary_scope", raw.get("name", topic_slug)),
+                    "scope_description": raw.get("scope_description", raw.get("description", "")),
+                    "themes": raw.get("themes", []),
+                    "adjacency_vectors": raw.get("adjacency_vectors", []),
+                    "out_of_scope_keywords": raw.get("blocklist", []),
+                    "in_scope_keywords": raw.get("in_scope_keywords", []),
+                    "blocklist": raw.get("blocklist", []),
+                    "topic_slug": topic_slug,
+                }
+            except Exception:
+                pass
+
+    # Try legacy scope.yaml
+    if LEGACY_SCOPE_YAML.exists():
+        try:
+            import yaml as _yaml
+            raw = _yaml.safe_load(LEGACY_SCOPE_YAML.read_text())
+            if isinstance(raw, dict):
+                return {k: raw.get(k, defaults[k]) for k in defaults}
+        except ImportError:
+            # No yaml module — try simple parsing
+            try:
+                raw = _parse_simple_yaml(LEGACY_SCOPE_YAML.read_text())
+                return {k: raw.get(k, defaults[k]) for k in defaults}
+            except Exception:
+                pass
+        except Exception:
+            pass
+
+    return defaults
 
 
 # ── Normalization ──────────────────────────────────────────────────────────
@@ -96,44 +151,36 @@ def _normalize(text: str) -> str:
 
 def _keyword_scan(normalized: str, config: dict) -> str | None:
     """Fast-path keyword scan. Returns scope_status or None if ambiguous."""
-    for kw in config.get("out_of_scope_keywords", []):
-        if kw.lower() in normalized:
+    for kw in config.get("out_of_scope_keywords", []) + config.get("blocklist", []):
+        if isinstance(kw, str) and kw.lower() in normalized:
             return "out_of_scope"
     for kw in config.get("in_scope_keywords", []):
-        if kw.lower() in normalized:
+        if isinstance(kw, str) and kw.lower() in normalized:
             return "in_scope"
     return None
 
 
-# ── Mexico vector matching (for reframe-offer and adjacency) ───────────────
+# ── Vector matching ───────────────────────────────────────────────────────
 
-def _find_mexico_vectors(topic: str, config: dict) -> list[str]:
-    """Scan topic against adjacency_vectors from config. Returns up to 4.
-
-    Matches against both the vector label and the search_terms config section.
-    No fallback to all vectors — avoids false positives for unrelated topics.
-    Returns empty list when no vector or search term matches.
-    """
+def _find_topic_vectors(topic: str, config: dict) -> list[str]:
+    """Scan topic against adjacency_vectors from config. Returns up to 4."""
     normalized = _normalize(topic)
-    search_terms = config.get("adjacency_search_terms", {})
     vectors: list[str] = []
 
     for av in config.get("adjacency_vectors", []):
-        key = av.get("key", "")
-        connector = av.get("connector", "")
+        if isinstance(av, str):
+            # Simple string vector
+            if any(w in normalized for w in av.lower().split() if len(w) > 3):
+                vectors.append(av)
+        elif isinstance(av, dict):
+            key = av.get("key", "")
+            connector = av.get("connector", "")
+            label = av.get("label", key)
 
-        # Check label keywords
-        label_keywords = [w for w in re.sub(r"[^\w\s]", " ", av.get("label", "").lower()).split()
-                         if len(w) > 3]
-        if any(kw in normalized for kw in label_keywords):
-            vectors.append(f"{av['label']}: {connector}")
-            continue
-
-        # Check search terms
-        terms = search_terms.get(key, [])
-        if any(t in normalized for t in terms):
-            vectors.append(f"{av['label']}: {connector}")
-            continue
+            label_keywords = [w for w in re.sub(r"[^\w\s]", " ", label.lower()).split()
+                             if len(w) > 3]
+            if any(kw in normalized for kw in label_keywords):
+                vectors.append(f"{label}: {connector}")
 
     return vectors[:4]
 
@@ -141,8 +188,12 @@ def _find_mexico_vectors(topic: str, config: dict) -> list[str]:
 # ── Slow path: LLM classification ──────────────────────────────────────────
 
 def _llm_classify(topic: str, config: dict) -> dict:
-    """Classify topic via cheap LLM call (deepseek-chat)."""
-    prompt = f"""You are a scope gate for a Mexico-only intelligence analyst desk.
+    """Classify topic via cheap LLM call (deepseek-chat). Topic-general."""
+    scope_name = config.get("primary_scope", "the assigned topic")
+    scope_desc = config.get("scope_description", "the current analytical assignment")
+
+    prompt = f"""You are a scope gate for an intelligence analyst desk.
+The current assignment is: {scope_name} — {scope_desc}
 
 Classify this user request: "{topic}"
 
@@ -150,46 +201,19 @@ Return exactly:
 {{"scope_status": "in_scope"|"adjacent"|"out_of_scope", "rationale": "one-sentence why"}}
 
 Rules:
-- in_scope = directly about Mexico, Mexican institution, cartel, state/city,
-  politician, Pemex/CFE, Mexican economy/peso, Mexican security/politics.
-
-- adjacent = NOT about Mexico but HAS a credible transmission mechanism.
-  **Adjacency is the DEFAULT for any topic with a credible mechanism
-  (energy, currency, trade, capital flows, migration, supply chains).**
-
-  Adjacency examples:
-  - "Saudi-Russia oil production talks" → adjacent
-  - "ECB rate decision" → adjacent
-  - "Korean semiconductor capacity" → adjacent
-  - "Brazilian presidential election" → adjacent
-  - "OPEC+ production meeting" → adjacent
-  - "Argentina IMF program" → adjacent
-  - "China rare earth export controls" → adjacent
-  - "Canadian dairy USMCA dispute" → adjacent
-  - "Iran nuclear escalation" → adjacent
-  - "Vietnam tariff dispute" → adjacent
-  - "Ukraine wheat supply" → adjacent
-  - "Russia-Ukraine war" → adjacent (Brent, wheat, fertilizer reach Mexico)
-
-- out_of_scope = NO credible transmission mechanism to Mexico.
-
-  True out-of-scope examples:
-  - "K-pop label dynamics"
-  - "NFL playoff predictions"
-  - "Premier League transfer window"
-  - "Japanese election prediction"
-  - "EU AI Act enforcement"
-  - "California drought policy"
+- in_scope = directly about {scope_name} or its core entities/institutions.
+- adjacent = NOT directly about {scope_name} but HAS a credible transmission
+  mechanism (energy, currency, trade, capital flows, migration, supply chains,
+  political contagion, regulatory precedent, etc.).
+  Adjacency is the DEFAULT for any topic with a credible mechanism.
+- out_of_scope = NO credible transmission mechanism to {scope_name}.
 
 HARD RULE: When in doubt, prefer adjacent over out_of_scope."""
 
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     if not api_key:
-        # Permissive default when LLM unavailable: check for Mexico vectors
-        # to distinguish adjacent (has vectors) from truly in_scope (no vectors
-        # but the topic may still reference Mexico).
-        return {"scope_status": "permissive_default",
-                "rationale": "LLM unavailable. Returning permissive default for vector check."}
+        return {"scope_status": "in_scope",
+                "rationale": "LLM unavailable. Defaulting to in_scope."}
 
     payload = {
         "model": "deepseek-chat",
@@ -237,216 +261,114 @@ HARD RULE: When in doubt, prefer adjacent over out_of_scope."""
 
 # ── Main check function ────────────────────────────────────────────────────
 
-def check_scope(topic_or_request: str) -> dict:
-    """Classify a request. Returns dict with scope_status, rationale, mexico_vectors.
+def check_scope(topic_or_request: str, topic_slug: Optional[str] = None) -> dict:
+    """Classify a request against the active topic scope.
 
-    mexico_vectors is populated for both adjacent and out_of_scope results
-    (the latter enables reframe-offer in the decline template).
+    Returns dict with scope_status, rationale, topic_vectors.
     """
-    config = load_scope()
+    config = load_scope(topic_slug)
     normalized = _normalize(topic_or_request)
 
+    # Fast path
     fast = _keyword_scan(normalized, config)
     if fast == "in_scope":
         return {"scope_status": "in_scope",
-                "rationale": "Keyword match — Mexico-specific entities found.",
-                "mexico_vectors": []}
+                "rationale": "Keyword match — in-scope entities found.",
+                "topic_vectors": []}
     if fast == "out_of_scope":
-        vectors = _find_mexico_vectors(topic_or_request, config)
+        vectors = _find_topic_vectors(topic_or_request, config)
         return {"scope_status": "out_of_scope",
-                "rationale": "Keyword match — out-of-scope blocklist.",
-                "mexico_vectors": vectors}
+                "rationale": "Keyword match — blocklist hit.",
+                "topic_vectors": vectors}
 
+    # Slow path
     llm = _llm_classify(topic_or_request, config)
     status = llm.get("scope_status", "in_scope")
     rationale = llm.get("rationale", "")
 
-    # If LLM returned permissive_default (LLM unavailable), check vectors to decide
-    if status == "permissive_default":
-        vectors = _find_mexico_vectors(topic_or_request, config)
-        if len(vectors) >= 1:
-            # Has Mexico-relevant vectors → treat as adjacent
-            status = "adjacent"
-            rationale += " Defaulted to adjacent (Mexico vectors found)."
-        else:
-            # No vectors → treat as in_scope (safe default)
-            status = "in_scope"
-            rationale += " Defaulted to in_scope (no Mexico vectors, playing safe)."
-    else:
-        vectors = _find_mexico_vectors(topic_or_request, config) if status in ("adjacent", "out_of_scope") else []
+    vectors = _find_topic_vectors(topic_or_request, config) if status in ("adjacent", "out_of_scope") else []
 
     return {"scope_status": status, "rationale": rationale,
-            "mexico_vectors": vectors}
+            "topic_vectors": vectors}
 
 
-# ── Decline builder (two-tier: reframe-offer vs terse) ─────────────────────
+# ── Decline builder ───────────────────────────────────────────────────────
 
-def build_decline(topic: str, scope_result: dict) -> str:
-    """Build decline message for OUT_OF_SCOPE topics.
+def build_decline(topic: str, scope_result: dict, config: Optional[dict] = None) -> str:
+    """Build decline message for OUT_OF_SCOPE topics. Topic-general."""
+    if config is None:
+        config = load_scope()
 
-    Two-tier output:
-    - If 2+ credible Mexico vectors exist: decline WITH reframe-offer.
-    - If <2 vectors: terse decline.
-    """
-    if scope_result["scope_status"] != "out_of_scope":
-        raise ValueError(f"build_decline called on {scope_result['scope_status']} topic")
-
-    config = load_scope()
-    descriptor = config.get("scope_descriptor", "Mexico-only intelligence")
-    vectors = scope_result.get("mexico_vectors", [])
+    scope_name = config.get("primary_scope", "the assigned topic")
+    scope_desc = config.get("scope_description", "current analytical assignment")
+    vectors = scope_result.get("topic_vectors", [])
 
     if len(vectors) >= 2:
-        n = len(vectors)
         vlines = "\n".join(f"- {v}" for v in vectors)
         return (
-            f"Open Claw Mexico is scoped to {descriptor}. "
-            f"'{topic[:80]}' reaches Mexico through {n} vectors moving today:\n\n"
+            f"Trevor is currently scoped to {scope_name} ({scope_desc}). "
+            f"'{topic[:80]}' reaches {scope_name} through {len(vectors)} vectors:\n\n"
             f"{vlines}\n\n"
-            "Want any of those framings? If you have a specific Mexico question "
-            "I should be answering, ask that instead."
+            "Want any of those framings? If you have a specific question within "
+            f"{scope_name} scope, ask that instead."
         )
     else:
         return (
-            f"Open Claw Mexico is scoped to {descriptor}. "
+            f"Trevor is currently scoped to {scope_name} ({scope_desc}). "
             f"'{topic[:80]}' has no credible transmission mechanism to "
-            "Mexico-exposed decisions.\n\n"
-            "If you have a specific Mexico question I should be answering, "
-            "ask that instead."
+            f"{scope_name}-exposed decisions.\n\n"
+            f"If you have a specific {scope_name} question, ask that instead."
         )
 
 
-# ── Adjacency preamble builder ─────────────────────────────────────────────
+def build_adjacency_preamble(topic: str, scope_result: dict, config: Optional[dict] = None) -> str:
+    """Build framing preamble for ADJACENT-topic brief. Topic-general."""
+    if config is None:
+        config = load_scope()
 
-def build_adjacency_preamble(topic: str, scope_result: dict) -> str:
-    """Build framing preamble for ADJACENT-topic brief."""
-    vectors = scope_result.get("mexico_vectors", [])
+    scope_name = config.get("primary_scope", "the assigned topic")
+    vectors = scope_result.get("topic_vectors", [])
+
     if not vectors:
         return (
-            f"ADJACENCY NOTE: '{topic[:80]}' is not directly about Mexico "
-            "but is adjacent through Mexico-relevant channels. Produce a "
-            "Mexico-framed brief using the adjacent_brief template."
+            f"ADJACENCY NOTE: '{topic[:80]}' is not directly about {scope_name} "
+            f"but is adjacent through {scope_name}-relevant channels. Produce a "
+            f"{scope_name}-framed brief using the adjacent_brief template."
         )
     vlines = "\n".join(f"- Vector {i+1}: {v}" for i, v in enumerate(vectors))
     return (
-        f"ADJACENCY FRAMING — '{topic[:80]}' touches Mexico through these vectors:\n\n"
+        f"ADJACENCY FRAMING — '{topic[:80]}' touches {scope_name} through these vectors:\n\n"
         f"{vlines}\n\n"
-        "Frame the ENTIRE brief through the Mexico lens. Each section covers "
-        "one vector. NOT a generic global brief with Mexico appended."
+        f"Frame the ENTIRE brief through the {scope_name} lens. Each section covers "
+        f"one vector. NOT a generic global brief with {scope_name} appended."
     )
-
-
-# ── Regression test runner ─────────────────────────────────────────────────
-
-def _llm_available() -> bool:
-    """Check if the LLM classifier is likely available in this environment."""
-    return bool(os.environ.get("DEEPSEEK_API_KEY", ""))
-
-
-def run_regression_test(verbose: bool = False) -> list[dict]:
-    """Run all four canonical probes. Returns list of result dicts.
-
-    Each result has: name, input, expected_scope, got_scope, pass (bool),
-    details (str). Adjacent-classification probes (A, B) are tolerant in
-    LLM-unavailable environments: they accept either adjacent or in_scope
-    (permissive default). Other checks (reframe vectors, terse decline)
-    are strict regardless of LLM availability.
-    """
-    llm_avail = _llm_available()
-    results: list[dict] = []
-    for p in REGRESSION_PROBES:
-        r = check_scope(p["input"])
-        expected = p["expect_scope"]
-        got = r["scope_status"]
-
-        # Tolerance for LLM-unavailable environments on adjacent probes
-        if expected == "adjacent" and not llm_avail and got == "in_scope":
-            scope_ok = True
-            details = f"scope={got} (expected {expected}, LLM unavailable — permissive default tolerated)"
-        else:
-            scope_ok = got == expected
-            details = f"scope={got} (expected {expected})"
-
-        if p.get("check_reframe") and got == "out_of_scope":
-            vcount = len(r.get("mexico_vectors", []))
-            if vcount < 1:
-                scope_ok = False
-                details += " | FAIL: no reframe vectors"
-            else:
-                details += f" | reframe vectors: {vcount}"
-
-        if p.get("check_vectors") and got == "adjacent":
-            vcount = len(r.get("mexico_vectors", []))
-            if vcount >= 1:
-                details += f" | vectors: {vcount}"
-            else:
-                # No keyword match on vector labels — soft note, not a hard failure.
-                # This is expected for some adjacent topics where LLM classifies
-                # correctly but vector label keywords don't overlap (e.g. "ECB").
-                details += " | vectors: 0 (no label keyword match — LLM classification only)"
-
-        results.append({
-            "name": p["name"],
-            "input": p["input"],
-            "expected_scope": expected,
-            "got_scope": got,
-            "pass": scope_ok,
-            "details": details,
-            "llm_available": llm_avail,
-        })
-
-    if verbose:
-        for res in results:
-            status = "PASS" if res["pass"] else "FAIL"
-            print(f"  [{status}] Probe {res['name']}: {res['details']}")
-        total = sum(1 for r in results if r["pass"])
-        print(f"  -> {total}/{len(results)} passing")
-        if not llm_avail:
-            print("  (LLM unavailable — adjacent probes use tolerant comparison)")
-
-    return results
 
 
 # ── CLI entry point ────────────────────────────────────────────────────────
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Scope gate for Open Claw Mexico desk")
+    parser = argparse.ArgumentParser(description="Scope gate for Trevor intelligence analyst")
     parser.add_argument("--topic", help="Request or topic to classify")
+    parser.add_argument("--topic-slug", help="Override active topic slug")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
-    parser.add_argument("--format", choices=["json", "decline", "adjacency"],
-                        default=None, help="Output format (auto-detect by default)")
-    parser.add_argument("--regression-test", action="store_true",
-                        help="Run all four canonical probes and report pass/fail")
-    parser.add_argument("--verbose", action="store_true",
-                        help="Verbose regression test output")
     args = parser.parse_args()
 
-    # Regression test mode
-    if args.regression_test:
-        results = run_regression_test(verbose=True)
-        if args.json:
-            print(json.dumps(results, indent=2))
-        all_pass = all(r["pass"] for r in results)
-        sys.exit(0 if all_pass else 1)
-
-    # Single-topic mode
     if not args.topic:
         parser.print_help()
         sys.exit(1)
 
-    result = check_scope(args.topic)
+    result = check_scope(args.topic, topic_slug=args.topic_slug)
 
-    if args.format == "json" or args.json:
+    if args.json:
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return
 
     if result["scope_status"] == "in_scope":
         print(f"IN SCOPE: {result['rationale']}")
-        sys.exit(0)
     elif result["scope_status"] == "adjacent":
         print(f"ADJACENT: {result['rationale']}")
         print()
         print(build_adjacency_preamble(args.topic, result))
-        sys.exit(0)
     else:
         print(build_decline(args.topic, result))
         sys.exit(1)

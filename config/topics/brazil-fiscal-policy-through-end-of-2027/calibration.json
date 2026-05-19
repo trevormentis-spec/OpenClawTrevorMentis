@@ -1,0 +1,73 @@
+{
+  "topic": "Brazil fiscal policy through end of 2027",
+  "created": "2026-05-19T20:49:53Z",
+  "judgments": [],
+  "calibration_bands": {
+    "almost_certain": {
+      "range": [
+        93,
+        99
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "highly_likely": {
+      "range": [
+        80,
+        92
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "likely": {
+      "range": [
+        63,
+        79
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "chances_about_even": {
+      "range": [
+        40,
+        62
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "unlikely": {
+      "range": [
+        21,
+        39
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "highly_unlikely": {
+      "range": [
+        8,
+        20
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "remote": {
+      "range": [
+        2,
+        7
+      ],
+      "count": 0,
+      "correct": 0
+    },
+    "negligible": {
+      "range": [
+        0,
+        1
+      ],
+      "count": 0,
+      "correct": 0
+    }
+  },
+  "brier_scores": [],
+  "postdiction_queue": []
+}
