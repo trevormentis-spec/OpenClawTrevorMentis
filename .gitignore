@@ -32,3 +32,6 @@ skills/genviral/workspace/
 tmp/
 venv/
 tmp_review/
+# SQLite databases (regenerated from JSONL on import)
+data/collection_records.db
+data/collection_records.db-*
