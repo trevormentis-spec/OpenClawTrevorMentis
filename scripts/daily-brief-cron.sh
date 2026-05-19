@@ -58,6 +58,13 @@ set +e
 python3 "$REPO/scripts/mexico-daily-scan.py" --save 2>&1 | tee -a "$LOG"
 set -e 2>/dev/null || true
 
+# Step 0a5: OpenWeb API collection — Mexico specs, Wikipedia monitor, news sites
+# Structured JSON collection preferred over RSS/DOM.
+echo "--- OpenWeb pipeline collection ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/pipeline_openweb_collect.py" 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+
 # Step 0b: Compile calibration directives from postdiction history into behavioral state
 # Closes the postdiction → next-day-prompt feedback loop.
 echo "--- Compiling calibration directives ---" | tee -a "$LOG"
@@ -115,6 +122,18 @@ if [ -n "${GENVIRAL_API_KEY:-}" ]; then
 else
     echo "GENVIRAL_API_KEY not set — skipping social posts" | tee -a "$LOG"
 fi
+
+# Step 3a: Social monitor — scan Reddit/Bluesky for Mexico keyword matches
+echo "--- Social monitor (Reddit/Bluesky Mexico scan) ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/social_monitor.py" --keywords "CJNG,Sinaloa,Sheinbaum,USMCA,cartel,fentanyl,Mexico" --platform all 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+
+# Step 3b: Source cross-check — API vs RSS discrepancy detection
+echo "--- Source cross-check (API vs RSS) ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/source_crosscheck.py" --all 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
 
 # Step 4: Postdiction — check yesterday's predictions against today's evidence
 echo "--- Running postdiction (calibration check) ---" | tee -a "$LOG"
