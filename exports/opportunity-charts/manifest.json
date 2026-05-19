@@ -1,0 +1,24 @@
+{
+  "charts": [
+    {
+      "id": "01-investment-map",
+      "title": "Investment Opportunity Map",
+      "file": "01-investment-map.png"
+    },
+    {
+      "id": "02-security-opportunity",
+      "title": "Security Company Opportunity",
+      "file": "02-security-opportunity.png"
+    },
+    {
+      "id": "03-cybersecurity-breakdown",
+      "title": "Cybersecurity Sub-Segments",
+      "file": "03-cybersecurity-breakdown.png"
+    },
+    {
+      "id": "04-timeline-actions",
+      "title": "Portfolio Action Timeline",
+      "file": "04-timeline-actions.png"
+    }
+  ]
+}
