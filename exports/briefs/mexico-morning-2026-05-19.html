@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mexico Morning Brief — 2026-05-19</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; color: #1a1a2e; font-size: 14px; line-height: 1.5; }
+  .container { max-width: 800px; margin: 20px auto; padding: 0 16px; }
+  .header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header .sub { font-size: 13px; opacity: 0.7; margin-top: 4px; }
+  .header .badge { display: inline-block; background: #27ae60; color: white; padding: 3px 10px; border-radius: 4px; font-size: 11px; margin-top: 8px; }
+  .section { background: white; border-radius: 10px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .section h2 { font-size: 16px; font-weight: 700; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #eee; display: flex; align-items: center; gap: 8px; }
+  .section h2 .count { font-size: 12px; color: #7f8c8d; font-weight: 400; }
+  .item { padding: 8px 0; border-bottom: 1px solid #f5f5f5; }
+  .item:last-child { border-bottom: none; }
+  .item .title { font-size: 14px; font-weight: 600; }
+  .item .meta { font-size: 11px; color: #7f8c8d; margin-top: 2px; }
+  .tag { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-right: 3px; }
+  .tag-red { background: #fde8e8; color: #c0392b; }
+  .tag-green { background: #e8f5e9; color: #27ae60; }
+  .tag-blue { background: #e3f2fd; color: #2980b9; }
+  .tag-amber { background: #fef3e0; color: #f39c12; }
+  .tag-gray { background: #f0f0f0; color: #7f8c8d; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .stat-card { background: #f8f9fa; border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-card .num { font-size: 28px; font-weight: 800; color: #2980b9; }
+  .stat-card .label { font-size: 11px; color: #7f8c8d; margin-top: 2px; }
+  .alert { background: #fef3e0; border-left: 4px solid #f39c12; padding: 8px 12px; border-radius: 4px; font-size: 13px; margin: 8px 0; }
+  .alert-green { border-left-color: #27ae60; background: #f0faf0; }
+  .qc-badge { background: #1a1a2e; color: white; padding: 2px 8px; border-radius: 3px; font-size: 10px; display: inline-block; margin-top: 8px; }
+  .xcheck-ok { color: #27ae60; }
+  .xcheck-warn { color: #c0392b; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  th { text-align: left; padding: 6px 8px; background: #f8f9fa; font-size: 10px; text-transform: uppercase; color: #7f8c8d; }
+  td { padding: 5px 8px; border-bottom: 1px solid #f0f0f0; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1117; color: #e0e0e0; }
+    .section { background: #1a1d28; }
+    .header { background: linear-gradient(135deg, #0f1117, #1a1d28); }
+    .stat-card { background: #0f1117; }
+    .item { border-bottom-color: #2a2d38; }
+    th { background: #0f1117; }
+    td { border-bottom-color: #2a2d38; }
+    .tag-gray { background: #2a2d38; color: #aaa; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>☀️ Mexico Morning Brief</h1>
+  <div class="sub">2026-05-19 · Open Claw Mexico</div>
+  <span class="badge">PENDING HUMAN ANALYST QC REVIEW</span>
+</div>
+
+<!-- SECTION 1: Mexico News Feed -->
+<div class="section">
+  <h2>📰 Mexico News Feed <span class="count">— 3 API sources</span></h2>
+
+  <h3 style="font-size:13px; color:#27ae60; margin-bottom:6px;">El Financiero <span style="font-size:11px;color:#7f8c8d;font-weight:400;">(Arc XP API)</span></h3>
+  <div class="item" style="color:#7f8c8d;">No articles fetched</div>
+
+  <h3 style="font-size:13px; color:#2980b9; margin:12px 0 6px;">Animal Politico <span style="font-size:11px;color:#7f8c8d;font-weight:400;">(GraphQL API)</span></h3>
+  <div class="item" style="color:#7f8c8d;">No articles fetched</div>
+
+  <h3 style="font-size:13px; color:#f39c12; margin:12px 0 6px;">La Jornada <span style="font-size:11px;color:#7f8c8d;font-weight:400;">(Elasticsearch API)</span></h3>
+  <div class="item"><div class="title">Memoria, olvido y soledad</div><div class="meta"><span class="tag tag-amber">semanal</span> 2026-05-17</div></div>
+<div class="item"><div class="title">CUANDO LAS LUCHAS TRIUNFAN Y LOS AÑOS PASAN</div><div class="meta"><span class="tag tag-amber">ojarasca</span> 2026-05-09</div></div>
+<div class="item"><div class="title">Contra la crisis ecológica Seis proyectos exitosos</div><div class="meta"><span class="tag tag-amber">ecologica</span> 2026-05-18</div></div>
+<div class="item"><div class="title">AGRICULTURA EN VILO</div><div class="meta"><span class="tag tag-amber">campo</span> 2026-04-18</div></div>
+</div>
+
+<!-- SECTION 2: Social Signal Radar -->
+<div class="section">
+  <h2>📡 Social Signal Radar <span class="count">— 0R · 0B</span></h2>
+  <div class="stat-grid" style="margin-bottom:10px;">
+    <div class="stat-card"><div class="num">0</div><div class="label">Reddit matches</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="label">Bluesky matches</div></div>
+    <div class="stat-card"><div class="num">8</div><div class="label">Wikipedia pages tracked</div></div>
+  </div>
+  <div class="alert">⚠️ No social matches found. Keywords may need broadening or platforms may need auth.</div>
+</div>
+
+<!-- SECTION 3: Wikipedia Monitor -->
+<div class="section">
+  <h2>📖 Wikipedia Change Monitor <span class="count">— 8 pages</span></h2>
+  <table>
+    <tr><th>Page</th><th>Revision</th><th>Last Checked</th></tr>
+    <tr><td><strong>CJNG</strong></td><td style="font-size:11px;color:#7f8c8d;">1354554793</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:28</td></tr>
+<tr><td><strong>Sinaloa Cartel</strong></td><td style="font-size:11px;color:#7f8c8d;">1354427503</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>Gulf Cartel</strong></td><td style="font-size:11px;color:#7f8c8d;">1342906639</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>Claudia Sheinbaum</strong></td><td style="font-size:11px;color:#7f8c8d;">1354261175</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>United States–Mexico–Canada Agreement</strong></td><td style="font-size:11px;color:#7f8c8d;">1353737316</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>2026 FIFA World Cup</strong></td><td style="font-size:11px;color:#7f8c8d;">1353911864</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>List of drug cartels in Mexico</strong></td><td style="font-size:11px;color:#7f8c8d;">1346294814</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+<tr><td><strong>Mexican drug war</strong></td><td style="font-size:11px;color:#7f8c8d;">1352549860</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29</td></tr>
+  </table>
+  <div class="alert alert-green" style="margin-top:8px;">✓ All 8 pages stable since baseline capture.</div>
+</div>
+
+<!-- SECTION 4: Source Health -->
+<div class="section">
+  <h2>🔬 Source Health <span class="count">— API vs RSS cross-check</span></h2>
+  <table>
+    <tr><th>Source</th><th>Status</th><th>Overlap</th><th>API/RSS</th></tr>
+    <tr><td><strong>bbc-news</strong></td><td><span class=xcheck-warn>⚠ API_EMPTY</span></td><td>0%</td><td>0/31</td></tr>
+<tr><td><strong>reuters</strong></td><td><span class=xcheck-warn>⚠ N/A</span></td><td>0%</td><td>0/0</td></tr>
+<tr><td><strong>bloomberg</strong></td><td><span class=xcheck-warn>⚠ N/A</span></td><td>0%</td><td>0/0</td></tr>
+  </table>
+  <div class="alert">⚠️ BBC News: API returned 0 headlines while RSS returned RSS count. Check if BBC search endpoint has different parameters.</div>
+</div>
+
+<!-- SECTION 5: Pipeline Stats -->
+<div class="section">
+  <h2>📊 Collection Pipeline <span class="count">— 29 records</span></h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">17</div><div class="label">reverse_engineered</div></div>
+<div class="stat-card"><div class="num">11</div><div class="label">openweb</div></div>
+<div class="stat-card"><div class="num">1</div><div class="label">crosscheck</div></div>
+  </div>
+  <table style="margin-top:12px;">
+    <tr><th>Source</th><th>Method</th><th>Rating</th><th>Timestamp</th></tr>
+    <tr><td>bluesky</td><td><span class="tag Ҏopenweb</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T19:14:13</td></tr>
+<tr><td>reddit</td><td><span class="tag Ҏopenweb</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T19:14:11</td></tr>
+<tr><td>bluesky</td><td><span class="tag Ҏopenweb</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T19:13:56</td></tr>
+<tr><td>reddit</td><td><span class="tag Ҏopenweb</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T19:13:54</td></tr>
+<tr><td>jornada</td><td><span class="tag Ҏreverse_engineered</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:32:49</td></tr>
+<tr><td>animalpolitico</td><td><span class="tag Ҏreverse_engineered</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:32:48</td></tr>
+<tr><td>elfinanciero</td><td><span class="tag Ҏreverse_engineered</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:32:44</td></tr>
+<tr><td>bluesky</td><td><span class="tag Ҏopenweb</span></td><td>C-3</td><td style="font-size:11px;color:#7f8c8d;">2026-05-19T18:29:09</td></tr>
+  </table>
+  <span class="qc-badge">PENDING HUMAN ANALYST QC REVIEW</span>
+</div>
+
+<div style="text-align:center; padding:20px; font-size:11px; color:#7f8c8d;">
+  Mexico Morning Brief · Generated 2026-05-19 19:14 UTC<br>
+  Open Claw Mexico — Trevor
+</div>
+
+</div>
+</body>
+</html>
