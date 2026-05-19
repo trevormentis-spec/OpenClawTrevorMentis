@@ -1,0 +1,16 @@
+# Trevor v2 Budget Configuration
+# All values in USD
+
+# Daily spending cap — hard halt when exceeded
+daily_cap: 20.00
+
+# Monthly spending cap — hard halt when exceeded
+monthly_cap: 200.00
+
+# Alert threshold — warn principal when this fraction of cap is reached
+alert_threshold: 0.80
+
+# Per-task-type daily caps (optional overrides)
+# flagship_document: 15.00
+# subscriber_brief: 5.00
+# daily_ingestion: 2.00

@@ -1,0 +1,84 @@
+# Newsletter Targets — Open Claw Mexico
+# Priority: critical > high > medium
+# Status: brainstormed > subscribed > active > flagged-for-review
+
+newsletters:
+  - name: Insight Crime Mexico
+    email: subscribe@insightcrime.org
+    category: security
+    priority: critical
+    status: brainstormed
+    signal_score: null
+    est_value: very_high
+
+  - name: Wilson Center Mexico Institute
+    email: mexico@wilsoncenter.org
+    category: policy
+    priority: critical
+    status: brainstormed
+    signal_score: null
+    est_value: very_high
+
+  - name: Mexico Business News
+    email: subscribe@mexicobusiness.news
+    category: business
+    priority: critical
+    status: brainstormed
+    signal_score: null
+    est_value: very_high
+
+  - name: Borderland Beat
+    email: borderlandbeat@gmail.com
+    category: security
+    priority: critical
+    status: brainstormed
+    signal_score: null
+    est_value: very_high
+
+  - name: AS/COA Americas Quarterly
+    email: subscribe@americasquarterly.org
+    category: policy
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high
+
+  - name: CSIS Americas Program
+    email: americas@csis.org
+    category: policy
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high
+
+  - name: El Financiero Newsletter
+    email: newsletter@elfinanciero.com.mx
+    category: business
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high
+
+  - name: Justice in Mexico
+    email: jimexico@dornsife.ucsd.edu
+    category: policy
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high
+
+  - name: Mexico Risk Monitor
+    email: mexicoriskmonitor@substack.com
+    category: security
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high
+
+  - name: RANE/Stratfor Mexico
+    email: customer_service@rane.com
+    category: security
+    priority: high
+    status: brainstormed
+    signal_score: null
+    est_value: high

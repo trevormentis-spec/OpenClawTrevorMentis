@@ -1,0 +1,154 @@
+# Scope specification — Open Claw Mexico desk
+# This file defines the topic boundary for the agent.
+# Used by analyst/scope_check.py via LLM or keyword matching.
+# When redirecting this framework to a new topic: edit this file,
+# update adjacency vectors, and leave the rest of the gate unchanged.
+
+primary_scope: Mexico
+
+# Descriptor: used in decline templates and system prompts
+scope_descriptor: Mexico-only intelligence
+
+# In-scope themes (the six Mexico desk themes)
+# If a request maps to one of these, it's in_scope.
+themes:
+  - cartel_security
+  - political_risk
+  - us_mexico
+  - energy_infra
+  - economy_markets
+  - worldcup_travel
+
+# Adjacency vectors: out-of-scope topics that reach Mexico through a
+# contemporary, specific connector. Each entry:
+#   key: short machine name
+#   label: human-readable label for decline template
+#   connector: the specific current link to Mexico
+adjacency_vectors:
+  - key: fertilizer-corridor
+    label: Russia/Belarus fertilizer corridor
+    connector: Russia-Belarus fertilizer exports → Bajío agricultural input costs → Mexican basic-basket inflation
+  - key: wheat-imports
+    label: Ukraine wheat supply
+    connector: Ukraine war disruption → global wheat prices → Mexican tortilla/basic-basket cost
+  - key: brent-pemex
+    label: Oil prices / Pemex spread
+    connector: Brent/WTI moves → Pemex crude-export and import-fuel spreads → MXN, fiscal revenue
+  - key: china-precursors
+    label: China chemical precursor exports
+    connector: PRC fentanyl-precursor exports → CDS/CJNG synthetic drug labs → overdoes, enforcement
+  - key: us-bilateral
+    label: US bilateral policy
+    connector: Any US executive, legislative, or judicial action with direct Mexico impact
+  - key: usmca-trade
+    label: USMCA trade framework
+    connector: Any trade action, tariff, or review touching USMCA or nearshoring
+  - key: migrant-flows
+    label: Migration flows
+    connector: Central America, Cuba, Venezuela migration patterns → Mexican border/transit security, US policy
+  - key: data-center-capex
+    label: Hyperscaler data-center capex
+    connector: Global cloud provider capacity builds → Mexican energy/infrastructure/Pemex demand
+  - key: us-fentanyl
+    label: US fentanyl policy / enforcement
+    connector: DEA/US seizures, fentanyl scheduling, trafficking indictments → CDS/CJNG operations in MX
+
+# Search terms for adjacency vectors: these are global-topic-side keywords that
+# help identify topics as adjacent even when the Mexico-end label doesn't match.
+# Each term maps to a vector key. Used by _find_mexico_vectors for cross-matching.
+adjacency_search_terms:
+  fertilizer-corridor: ["fertilizer", "potash", "ammonia", "russia agriculture", "belarus"]
+  wheat-imports: ["wheat", "grain", "ukraine export", "black sea", "food price", "commodity price"]
+  brent-pemex: ["oil price", "crude oil", "brent", "wti", "opec", "opec plus", "energy market", "gasoline price",
+               "federal reserve", "interest rate", "central bank", "monetary policy", "ecb", "fed rate",
+               "inflation", "bond yield", "treasury"]
+  china-precursors: ["china export", "fentanyl", "precursor", "chemical", "china tariff", "xi jinping"]
+  us-bilateral: ["trump", "white house", "congress", "us policy", "state department"]
+  usmca-trade: ["tariff", "trade", "usmca", "reciprocal", "import tax"]
+  migrant-flows: ["migration", "migrant", "border", "asylum", "deportation", "central america", "cuba", "venezuela"]
+  data-center-capex: ["semiconductor", "chip", "data center", "cloud", "capex", "ai infrastructure"]
+  us-fentanyl: ["fentanyl", "dea", "overdose", "drug seizure", "trafficking"]
+
+# Blocklist — topic keywords/phrases that unequivocally trigger out_of_scope.
+# These bypass the LLM call for speed and zero cost.
+# The default for any ambiguous topic is to let the LLM slow-path classify it.
+# A keyword belongs here only when (a) it has no credible Mexico transmission
+# mechanism, OR (b) the slow-path consistently misclassifies it.
+# The blocklist is a precision tool, not a filter.
+out_of_scope_keywords:
+  # These are normalized (stripped punctuation, lowercase) for fast-path matching
+  # --- KEPT: no credible Mexico transmission mechanism ---
+  - "north korea missile"   # No MX vector. Kept.
+  - "israel gaza"           # Oil adjacency brent-pemex, but LLM can find it. Kept.
+  - "iran nuclear"          # Oil adjacency brent-pemex, but LLM can find it. Kept.
+  - "europe region"         # Geographic descriptor, unlikely MX-adjacent query root. Kept.
+  - "africa"                # No MX transmission mechanism. Kept.
+  - "sahel"                 # No MX transmission mechanism. Kept.
+  - "middle east"           # Oil adjacency but narrow; LLM handles brent-pemex. Kept.
+  - "afghanistan"           # No MX transmission mechanism. Kept.
+  - "pakistan"              # No MX transmission mechanism. Kept.
+  - "india china"           # Narrow geopolitical keyword. Kept.
+  - "nato europe"           # No MX transmission mechanism. Kept.
+  # --- REMOVED (Phase 1 cleanup, 2026-05-18): overreach confirmed by blocklist audit ---
+  # russia ukraine variants — have adjacency vectors (wheat, fertilizer). Handled by LLM.
+  # china taiwan — has china-precursors adjacency vector. Handled by LLM.
+  # south china sea — has china-precursors + supply-chain vectors. Handled by LLM.
+  # european union — ECB rates, trade policy adjacent. Handled by LLM.
+  # global finance — capital flows, FX, EM debt adjacent. Handled by LLM.
+  # asia pacific — nickel, EV supply chains adjacent. Handled by LLM.
+  # southeast asia — nickel, EV, palm oil? Handled by LLM.
+
+# In-scope keywords — if these appear, skip LLM and go straight to in_scope.
+# Broad enough to catch most Mexico questions without an API call.
+in_scope_keywords:
+  - "mexico"
+  - "sinaloa"
+  - "cds"
+  - "cjng"
+  - "cartel"
+  - "chapitos"
+  - "mayiza"
+  - "mayito"
+  - "zambada"
+  - "el mayo"
+  - "el chapo"
+  - "guzman"
+  - "rocha moya"
+  - "sheinbaum"
+  - "amlo"
+  - "morena"
+  - "pemex"
+  - "huachicoleo"
+  - "usmca"
+  - "nearshoring"
+  - "mexican peso"
+  - "mxn"
+  - "fentanyl"
+  - "cfe"
+  - "world cup"
+  - "2026 world cup"
+  - "culiacán"
+  - "tijuana"
+  - "juárez"
+  - "monterrey"
+  - "guadalajara"
+  - "cdmx"
+  - "mexico city"
+  - "baja california"
+  - "chihuahua"
+  - "tamaulipas"
+  - "veracruz"
+  - "michoacán"
+  - "guanajuato"
+  - "jalisco"
+  - "zacatecas"
+  - "sonora"
+  - "trump tariff"
+  - "us mexico"
+  - "mexico border"
+  - "remittances"
+  - "fdi"
+  - "mexico energy"
+  - "mexico security"
+  - "mexico politics"
+  - "mexico economy"

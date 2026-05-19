@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any
 
 GAMMA = os.environ.get("POLYMARKET_GAMMA_HOST", "https://gamma-api.polymarket.com").rstrip("/")
-NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "560850e45ebe4f79987a7a0961d3e275")
+NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 NEWSAPI_URL = "https://newsapi.org/v2"
 WORKSPACE = Path("/home/ubuntu/.openclaw/workspace")
 STATE_FILE = WORKSPACE / "analyst" / "polymarket-price-state.json"

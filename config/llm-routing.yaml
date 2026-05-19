@@ -1,0 +1,60 @@
+# Trevor v2 LLM Routing Configuration
+# Edit this file to tune task-to-model mappings without code changes.
+# Canonical source: analyst/llm_gate.py TASK_RULES (code) + this file (overrides).
+
+# Provider configuration
+providers:
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    env_key: OPENROUTER_API_KEY
+    models:
+      - anthropic/claude-opus-4.7
+      - anthropic/claude-sonnet-4.5
+      - anthropic/claude-vision
+      - nanobanana/image-gen
+      - openai/whisper-large-v3
+
+  deepseek_direct:
+    base_url: https://api.deepseek.com/v1
+    env_key: DEEPSEEK_API_KEY
+    models:
+      - deepseek/deepseek-v4-pro
+      - deepseek/deepseek-v4-flash
+
+  elevenlabs:
+    base_url: https://api.elevenlabs.io/v1
+    env_key: ELEVENLABS_API_KEY
+    models:
+      - elevenlabs/tts
+
+# Tier descriptions (for human reference)
+tiers:
+  tier1_frontier:
+    description: Flagship subscriber-facing documents, adversarial red-team, framework refinement
+    models: [anthropic/claude-opus-4.7]
+    cost_range: "$5-25/M tokens"
+
+  tier1_5_cost_effective:
+    description: Complex briefs, multi-turn section generation, postdiction analysis
+    models: [anthropic/claude-sonnet-4.5]
+    cost_range: "$3-15/M tokens"
+
+  tier2_midtier:
+    description: Standard briefs, entity deepening, cross-source correlation, framework stress-test
+    models: [deepseek/deepseek-v4-pro]
+    cost_range: "$0.40-1.60/M tokens"
+
+  tier3_highvolume:
+    description: Daily ingestion, source classification, translation, status reports
+    models: [deepseek/deepseek-v4-flash]
+    cost_range: "$0.14-0.28/M tokens"
+
+  specialist:
+    description: Image analysis, image generation, audio transcription, TTS
+    models: [anthropic/claude-vision, nanobanana/image-gen, openai/whisper-large-v3, elevenlabs/tts]
+
+# Fallback chains
+fallback:
+  openrouter: [anthropic/claude-sonnet-4.5, deepseek/deepseek-v4-pro, deepseek/deepseek-v4-flash]
+  deepseek_direct: [deepseek/deepseek-v4-flash, anthropic/claude-sonnet-4.5]
+  elevenlabs: []

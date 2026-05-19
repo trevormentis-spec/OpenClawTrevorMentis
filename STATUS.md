@@ -140,4 +140,33 @@ will log receipt in next STATUS.md refresh. No web inbox available.
 | Remaining | $138.96 |
 
 ---
-*Generated 2026-05-19T00:31:09Z by status_generator.py*
+
+## Trevor v2 Rebuild
+
+**Branch:** `trevor-v2`
+**Archive tag:** `trevor-v1-mexico`
+**Session started:** 2026-05-19T20:00:00Z
+
+### Phase 0 — Branch, Secrets Audit, File Audit: COMPLETE
+### Phase 1 — Identity Rewrite: COMPLETE
+### Phase 2 — LLM Gating Infrastructure: COMPLETE (17/17 tests pass)
+### Phase 3 — Domain-General Framework: COMPLETE (9/9 tests pass)
+### Phase 4 — Self-Improvement Mechanisms: COMPLETE (11/11 tests pass)
+### Phase 5 — Communication Stack: COMPLETE
+### Phase 6 — Portability and Secrets Scrub: COMPLETE
+### Phase 7 — Migration and Testing: COMPLETE (37/37 total tests pass)
+### Phase 8 — PR Open: COMPLETE
+
+### ROTATE (Principal Action Required Before Merge)
+| Provider | Status | Action |
+|----------|--------|--------|
+| NewsAPI | Key exposed in git history | Rotate key at newsapi.org |
+| GenViral | Key exposed in git history | Rotate key in GenViral dashboard |
+| Kalshi | Key exposed in git history | Rotate key at kalshi.com |
+
+After rotation, run git-filter-repo to scrub history.
+
+### PR: awaiting principal merge
+
+---
+*Updated 2026-05-19 by trevor-v2 rebuild — all 8 phases complete*
