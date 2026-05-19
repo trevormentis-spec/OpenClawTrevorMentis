@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Routes through llm_gate.route() before every API call.
 #!/usr/bin/env python3
 """
 Trade suggestion engine — called by deliver_brief_email.py

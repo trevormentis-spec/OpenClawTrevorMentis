@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Legacy routing module being phased out. Always routes through select_model() which consults config.
 #!/usr/bin/env python3
 """Task Complexity Router — determines model tier based on task complexity.
 

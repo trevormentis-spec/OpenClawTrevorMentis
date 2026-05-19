@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Creative pipeline — OpenRouter calls for image prompt generation. Not analytical model calls.
 """Pipeline — core markdown → HTML → PDF orchestration + OpenRouter image generation.
 
 This module handles:

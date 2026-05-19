@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Pre-commit hook — runs gate bypass regression test on staged files.
+# Installed to .git/hooks/pre-commit
+
+echo "[guard] Checking for gate bypass patterns..."
+python3 tests/test_no_gate_bypass.py --staged
+if [ $? -ne 0 ]; then
+    echo "[guard] BLOCKED: Gate bypass detected. Add '# GATE_EXEMPT: <reason>' header if intentional."
+    exit 1
+fi
+echo "[guard] Clean."
+exit 0

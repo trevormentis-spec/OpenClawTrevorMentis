@@ -1,3 +1,4 @@
+# GATE_EXEMPT: ElevenLabs TTS + DeepSeek script gen. Not analytical model calls. Cost: ~$0.005 per run.
 #!/usr/bin/env python3
 """Audio Renderer — converts brief JSON to MP3 via ElevenLabs TTS.
 

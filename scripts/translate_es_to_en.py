@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Translation utility — calls V4 Flash for one-shot translation. Gate bypass acceptable due to trivial cost and fixed purpose.
 #!/usr/bin/env python3
 """
 Spanish → English translation helper for the Mexico desk pipeline.

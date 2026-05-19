@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Intel analysis generation utility — calls V4 Pro directly for one-shot batch processing. Cost: ~$0.01 per run.
 #!/usr/bin/env python3
 """
 Generate a structured intelligence analysis from this week's intel emails
