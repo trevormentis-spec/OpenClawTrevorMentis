@@ -1,0 +1,55 @@
+{
+  "site": "jornada",
+  "version": "1.0.0",
+  "transport": "http",
+  "base_url": "https://www.jornada.com.mx",
+  "auth_type": "none",
+  "operations": [
+    {
+      "name": "get_article_by_slug",
+      "description": "Retrieve full article data by slug from Elasticsearch backend",
+      "method": "GET",
+      "endpoint": "/articledata/{slug}",
+      "params": [
+        {
+          "name": "slug",
+          "type": "string",
+          "required": true,
+          "description": "Article URL slug (e.g., 'xitrump')"
+        }
+      ],
+      "response_selector": "$",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_suplementos",
+      "description": "Retrieve list of current supplements/sections",
+      "method": "GET",
+      "endpoint": "/serviciosjornada/microservicios/jornada/suplementos.json",
+      "params": [],
+      "response_selector": "$",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_especiales",
+      "description": "Retrieve list of special editions/PDFs",
+      "method": "GET",
+      "endpoint": "/serviciosjornada/microservicios/pdf/especiales.json",
+      "params": [],
+      "response_selector": "$",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    }
+  ]
+}
