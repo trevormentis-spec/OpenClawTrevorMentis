@@ -1,0 +1,49 @@
+{
+  "charts": [
+    {
+      "id": "01-approval",
+      "title": "Sheinbaum Approval Rating Trajectory",
+      "file": "01-approval.png"
+    },
+    {
+      "id": "02-judgments",
+      "title": "Top 10 Judgments \u2014 Kent Confidence Bands",
+      "file": "02-judgments.png"
+    },
+    {
+      "id": "03-macro",
+      "title": "Mexico Macro Dashboard",
+      "file": "03-macro.png"
+    },
+    {
+      "id": "04-sector-exposure",
+      "title": "Sector Exposure Bubble Chart",
+      "file": "04-sector-exposure.png"
+    },
+    {
+      "id": "05-usmca-tree",
+      "title": "USMCA Review \u2014 Decision Tree",
+      "file": "05-usmca-tree.png"
+    },
+    {
+      "id": "06-cartel-risk",
+      "title": "State-Level Cartel Commercial Risk",
+      "file": "06-cartel-risk.png"
+    },
+    {
+      "id": "07-timeline",
+      "title": "H2 2026 Critical Path Calendar",
+      "file": "07-timeline.png"
+    },
+    {
+      "id": "08-recommendations",
+      "title": "Strategic Recommendations Summary",
+      "file": "08-recommendations.png"
+    },
+    {
+      "id": "09-calibration",
+      "title": "Calibration Distribution",
+      "file": "09-calibration.png"
+    }
+  ]
+}
