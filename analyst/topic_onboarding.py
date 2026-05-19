@@ -308,3 +308,7 @@ if __name__ == "__main__":
     print("1. Run strategic phase (Opus 4.7) to populate themes")
     print("2. Run tactical phase (V4 Pro) to populate sources and entities")
     print("3. Run operational phase (V4 Flash) to wire collectors")
+
+
+# Backward-compatible alias
+TopicOnboarding = onboard_topic

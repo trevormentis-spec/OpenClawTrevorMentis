@@ -1,0 +1,17 @@
+# Brazil Fiscal Policy — Scope Probes for Regression Testing
+probes:
+  - query: "Brazilian Treasury debt issuance schedule"
+    expected: in_scope
+    rationale: "Directly about Brazilian fiscal policy — core topic"
+
+  - query: "Argentina central bank rate decision"
+    expected: adjacent
+    rationale: "Regional contagion risk transmits through EM capital flows — adjacent but not core"
+
+  - query: "US Fed rate path through 2027"
+    expected: adjacent
+    rationale: "Fed path drives EM capital flows and BRL carry trade — adjacent transmission mechanism"
+
+  - query: "K-pop industry consolidation"
+    expected: out_of_scope
+    rationale: "South Korean entertainment industry — no plausible transmission to Brazilian fiscal policy"

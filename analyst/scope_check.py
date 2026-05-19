@@ -346,12 +346,50 @@ def build_adjacency_preamble(topic: str, scope_result: dict, config: Optional[di
 
 # ── CLI entry point ────────────────────────────────────────────────────────
 
+def _run_regression_test(topic_slug: str) -> list[dict]:
+    """Run regression tests from probes.yaml against the scope check."""
+    probes_path = TOPICS_DIR / topic_slug / "probes.yaml"
+    if not probes_path.exists():
+        return [{"query": "NO PROBES FILE", "expected": "?", "actual": "?", "status": "MISSING_PROBES"}]
+    import yaml
+    config = yaml.safe_load(probes_path.read_text())
+    results = []
+    for probe in config.get("probes", []):
+        q = probe["query"]
+        expected = probe["expected"]
+        result = check_scope(q, topic_slug=topic_slug)
+        actual = result.get("scope_status", "unknown")
+        passed = actual == expected or (expected == "adjacent" and actual in ("adjacent", "in_scope"))
+        results.append({"query": q[:60], "expected": expected, "actual": actual, "status": "PASS" if passed else "FAIL"})
+    return results
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scope gate for Trevor intelligence analyst")
     parser.add_argument("--topic", help="Request or topic to classify")
     parser.add_argument("--topic-slug", help="Override active topic slug")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
+    parser.add_argument("--regression-test", action="store_true", help="Run regression probes against active topic")
     args = parser.parse_args()
+
+    if args.regression_test:
+        slug = args.topic_slug or _get_active_topic_slug()
+        if not slug:
+            print("{\"status\": \"error\", \"message\": \"No active topic found\"}")
+            sys.exit(1)
+        results = _run_regression_test(slug)
+        passed = sum(1 for r in results if r["status"] == "PASS")
+        total = len(results)
+        output = {"topic": slug, "total": total, "passed": passed, "results": results}
+        if args.json:
+            print(json.dumps(output, indent=2, ensure_ascii=False))
+        else:
+            print(f"Regression test for topic: {slug}")
+            for r in results:
+                mark = "✅" if r["status"] == "PASS" else "❌"
+                print(f"  {mark} {r['query'][:50]:50s} expected={r['expected']:12s} actual={r['actual']:12s}")
+            print(f"\n{passed}/{total} passed")
+        sys.exit(0 if passed == total else 1)
 
     if not args.topic:
         parser.print_help()

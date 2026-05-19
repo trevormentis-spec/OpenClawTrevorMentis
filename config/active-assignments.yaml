@@ -1,15 +1,5 @@
-# Active Assignments — Topics currently in flight
-# Trevor works on these topics during scheduled cycles.
-# When empty, Trevor operates in general autonomy maturation mode.
-
-assignments: []
-
-# Example:
-# assignments:
-#   - topic: brazil-fiscal-policy
-#     priority: primary
-#     assigned: 2026-05-19
-#     principal_notes: "Focus on fiscal consolidation scenarios"
-#   - topic: semiconductor-supply-chain
-#     priority: secondary
-#     assigned: 2026-05-20
+assignments:
+  - topic: brazil-fiscal-policy-through-end-of-2027
+    priority: primary
+    assigned: 2026-05-19
+    principal_notes: "Focus on fiscal consolidation scenarios"
