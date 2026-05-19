@@ -1,0 +1,62 @@
+{
+  "cenace": {
+    "last_fetch": "2026-05-19T00:30:09.994804Z",
+    "records": 19440,
+    "mode": "backfill",
+    "status": "PRODUCING"
+  },
+  "dof": {
+    "last_fetch": "2026-05-19T00:30:09.994828Z",
+    "records": 34,
+    "mode": "live",
+    "status": "PRODUCING"
+  },
+  "dof_monitor": {
+    "last_fetch": "2026-05-19T00:30:09.994838Z",
+    "records": 35,
+    "mode": "live",
+    "status": "PRODUCING"
+  },
+  "telegram": {
+    "last_fetch": "2026-05-19T00:30:09.994845Z",
+    "records": 2,
+    "mode": "live",
+    "status": "PRODUCING"
+  },
+  "compranet": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  },
+  "maritime_ais": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  },
+  "property_records": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  },
+  "real_estate": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  },
+  "military_procurement": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  },
+  "amis": {
+    "last_fetch": null,
+    "records": 0,
+    "mode": "scaffold",
+    "status": "SCAFFOLD"
+  }
+}

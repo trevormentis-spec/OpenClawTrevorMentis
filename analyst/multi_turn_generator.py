@@ -242,6 +242,13 @@ def generate_brief(
     for i, section in enumerate(sections_plan, 1):
         result = generate_section(section, directive, generated, kalshi_data, i, len(sections_plan))
         generated.append(result)
+        
+        # Incremental save — write partial results to temp file
+        if output_md:
+            partial_path = pathlib.Path(output_md).with_suffix(f".partial.{i}.md")
+            partial_text = f"# {directive}\n\n**Partial -- Section {i}/{len(sections_plan)} complete**\n\n"
+            partial_text += "\n\n".join(f"## {s['title']}\n\n{s['content'][:500]}" for s in generated)
+            partial_path.write_text(partial_text)
 
     # Assemble
     total_words = sum(s["words"] for s in generated)
