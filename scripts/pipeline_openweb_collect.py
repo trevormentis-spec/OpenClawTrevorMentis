@@ -127,23 +127,31 @@ def call_custom_spec(site: str, label: str) -> list[dict]:
     base = spec.get("base_url", "")
     items = []
 
-    for op in spec.get("operations", [])[:2]:  # Try first 2 ops
+    for op in spec.get("operations", [])[:3]:  # Try first 3 ops
         endpoint = op.get("endpoint", "")
         method = op.get("method", "GET")
-        params = {p["name"]: p.get("description", "") for p in op.get("params", []) if p.get("required")}
+        body_template = op.get("body_template", "")
+        content_type = op.get("content_type", "")
 
-        # Handle path params
         url_path = endpoint
         if "{" in endpoint:
-            # Skip operations with unresolved path params
             log(f"  SKIP {op['name']}: requires path params")
             continue
 
         url = base.rstrip("/") + url_path
-        log(f"  GET {url}")
 
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            headers = {"User-Agent": "Mozilla/5.0"}
+            if body_template:
+                # POST with JSON body
+                headers["Content-Type"] = content_type or "application/json"
+                body_bytes = body_template.encode("utf-8")
+                req = urllib.request.Request(url, data=body_bytes, headers=headers, method="POST")
+                log(f"  POST {url} ({len(body_bytes)}b body)")
+            else:
+                req = urllib.request.Request(url, headers=headers)
+                log(f"  GET {url}")
+
             with urllib.request.urlopen(req, timeout=15) as resp:
                 data = json.loads(resp.read())
                 items.append({
