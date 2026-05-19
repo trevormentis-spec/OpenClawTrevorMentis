@@ -57,7 +57,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ### Kalshi Market Scanner
 
-- **API key:** `KALSHI_API_KEY=8733a0f8-22a6-4478-87b1-3a4b32dfb583` in `.env`
+- **API key:** `KALSHI_API_KEY` in `.env`
 - **Script:** `scripts/kalshi_scanner.py`
 - **Usage:** `python3 scripts/kalshi_scanner.py` (table), `--save` (to exports/), `--json` (JSON), `--compare-polymarket` (includes Polymarket ceasefire data)
 - **Scans:** 60+ geopolitics/war/oil/conflict series across Kalshi
@@ -65,7 +65,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **Status:** Working ✅ — 88 active markets across 18 geopolitics series found
 
 ### NewsAPI
-- **API key:** `560850e45ebe4f79987a7a0961d3e275` (env var: `NEWSAPI_KEY`)
+- **API key:** Set via env var `NEWSAPI_KEY` (see .env)
 - **Provider:** newsapi.org
 - **Usage:** Shock-news detection in polymarket geopolitics monitor
 - **Endpoint:** `https://newsapi.org/v2/everything`
@@ -143,7 +143,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ### GenViral API
 
-- **API key:** `gva_live_85f455afed.f31634f6c58668fb8414deb55eb526cbbabbbc7506feffc2`
+- **API key:** Set via env var `GENVIRAL_API_KEY` (see .env)
 - **Usage:** Viral content generation / social media amplification
 - **Status:** Saved ✅
 
