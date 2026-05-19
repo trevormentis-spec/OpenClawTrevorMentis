@@ -67,6 +67,7 @@ TASK_RULES: dict[str, dict] = {
             "target_words_gte:3000",
             "scenarios_gte:3",
             "flagship_tag:true",
+            "audience_family_office:true",
             "principal_handback:true",
         ],
         "downgrade_to": "deepseek/deepseek-v4-flash",

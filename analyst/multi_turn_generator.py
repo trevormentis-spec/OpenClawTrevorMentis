@@ -57,6 +57,28 @@ def log(msg: str) -> None:
     print(f"[multi-turn] {msg}", file=sys.stderr, flush=True)
 
 
+ROUTING_LOG = REPO_ROOT / "memory" / "llm-routing-log.jsonl"
+
+
+def _log_routing(decision, task_type: str) -> None:
+    """Log a gating decision to the routing log."""
+    import datetime
+    record = {
+        "model": decision.model,
+        "provider": decision.provider,
+        "estimated_cost_usd": decision.estimated_cost_usd,
+        "fallback_chain": decision.fallback_chain,
+        "justification": decision.justification,
+        "task_type": task_type,
+        "metadata": {},
+        "quality_gates": decision.quality_gates,
+        "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    }
+    ROUTING_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(ROUTING_LOG, "a") as f:
+        f.write(json.dumps(record) + "\n")
+
+
 def load_kalshi_data() -> str:
     """Load latest Kalshi scanner output."""
     exports = REPO_ROOT / "exports"
@@ -161,18 +183,23 @@ def generate_section(
     target = section["target_words"]
     # Route through analyst/routing.py to determine model
     try:
-        sys.path.insert(0, str(REPO_ROOT))
-        from analyst.routing import select_model
-        routing_result = select_model({
-            "target_words": target,
-            "description": f"section {section_index}: {sec_title}",
-            "task_type": "brief_generation",
-        })
-        model_name = routing_result["model_name"]
-    except Exception:
-        # Fallback: flagship sections use Opus, structural sections use V4 Pro
+        from analyst.llm_gate import route
+        gating = route(
+            "subscriber_brief" if not is_flagship else "flagship_document",
+            {
+                "target_words": target,
+                "scenarios": 0,
+                "audience": "family_office",
+                "audience_family_office": True,
+                "flagship_tag": is_flagship,
+                "description": f"section {section_index}: {sec_title}",
+            }
+        )
+        model_name = gating.model
+        _log_routing(gating, "subscriber_brief" if not is_flagship else "flagship_document")
+    except Exception as e:
+        log(f"llm_gate unavailable, using fallback: {e}")
         model_name = "anthropic/claude-opus-4.7" if is_flagship else "deepseek-v4-pro"
-        log(f"Routing unavailable, using fallback: {model_name}")
 
     # Build context from prior sections
     prior_text = ""
