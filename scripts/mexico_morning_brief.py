@@ -106,40 +106,35 @@ def collect_data(dev: bool = False) -> dict:
     log("Section 1: Mexico News Feed")
     news = {"elfinanciero": [], "animalpolitico": [], "jornada": []}
 
-    # El Financiero — Arc XP content API
-    elfi_collections = [
-        ("economia", "/pf/api/v3/content/fetch/content-api-collections?query=%7B%22_id%22%3A%22%22%2C%22content_alias%22%3A%22economia%22%2C%22size%22%3A5%2C%22site%22%3A%22elfinanciero%22%7D&d=350"),
-        ("politica", "/pf/api/v3/content/fetch/content-api-collections?query=%7B%22_id%22%3A%22%22%2C%22content_alias%22%3A%22politica%22%2C%22size%22%3A5%2C%22site%22%3A%22elfinanciero%22%7D&d=350"),
-    ]
-    for section, path in elfi_collections:
-        resp = fetch_api_endpoint(f"https://www.elfinanciero.com.mx{path}")
-        if resp:
-            try:
-                d = json.loads(resp)
-                articles = d.get("content_elements", [])
-                news["elfinanciero"].extend(
-                    {"section": section, "title": a.get("headlines", {}).get("basic", "?"),
-                     "date": a.get("last_updated_date", "")[:10]}
-                    for a in articles[:5]
-                )
-            except json.JSONDecodeError:
-                pass
-        if dev:
-            break
+    # El Financiero — Arc XP query-feed (works without specific collection IDs)
+    resp = fetch_api_endpoint(
+        "https://www.elfinanciero.com.mx/pf/api/v3/content/fetch/query-feed"
+        "?query=%7B%22q%22%3A%22%22%2C%22size%22%3A5%2C%22sort%22%3A%22last_updated_date%3Adesc%22%7D&d=350"
+    )
+    if resp:
+        try:
+            d = json.loads(resp)
+            for a in d.get("content_elements", [])[:5]:
+                news["elfinanciero"].append({
+                    "title": a.get("headlines", {}).get("basic", "?"),
+                    "date": a.get("last_updated_date", "")[:10] if a.get("last_updated_date") else "",
+                })
+        except json.JSONDecodeError:
+            pass
 
-    # Animal Politico — GraphQL
-    gql_query = json.dumps({
+    # Animal Politico — GraphQL (correct fragments)
+    gql_payload = json.dumps({
         "operationName": "GetAPHomepage",
-        "query": "query GetAPHomepage { apHomepage { animalPolTicoHome { notasDelHomepageAP(first: 5) { nodes { __typename ... on ContentNode { databaseId title date } } } } } }",
+        "query": "query GetAPHomepage { apHomepage { animalPolTicoHome { notasDelHomepageAP(first: 5) { nodes { __typename ... on NodeWithTitle { title } ... on ContentNode { databaseId slug date uri } } } } } }",
         "variables": {}
     })
-    resp = fetch_graphql("https://grupoanimal.mx/api/graphql", gql_query)
+    resp = fetch_graphql("https://grupoanimal.mx/api/graphql", gql_payload)
     if resp:
         try:
             d = json.loads(resp)
             nodes = d.get("data", {}).get("apHomepage", {}).get("animalPolTicoHome", {}).get("notasDelHomepageAP", {}).get("nodes", [])
             news["animalpolitico"] = [
-                {"title": n.get("title", "?"), "date": n.get("date", "")[:10]}
+                {"title": n.get("title", "?"), "date": n.get("date", "")[:10] if n.get("date") else ""}
                 for n in nodes[:5]
             ]
         except (json.JSONDecodeError, AttributeError):
@@ -151,12 +146,12 @@ def collect_data(dev: bool = False) -> dict:
         try:
             d = json.loads(resp)
             news["jornada"] = [
-                {"supplement": k, "title": v.get("su_titulo", "?"), "date": v.get("su_fecha", "")}
+                {"supplement": k.capitalize(), "title": v.get("su_titulo", "?"), "date": v.get("su_fecha", "")}
                 for k, v in d.items() if isinstance(v, dict)
             ]
         except json.JSONDecodeError:
             pass
-    
+
     data["news"] = news
 
     # Section 2: Social signals
@@ -311,13 +306,13 @@ def build_html(data: dict) -> str:
   <h2>📰 Mexico News Feed <span class="count">— 3 API sources</span></h2>
 
   <h3 style="font-size:13px; color:{GREEN}; margin-bottom:6px;">El Financiero <span style="font-size:11px;color:{GRAY};font-weight:400;">(Arc XP API)</span></h3>
-  {chr(10).join(f'<div class="item"><div class="title">{a["title"][:80]}</div><div class="meta"><span class="tag tag-blue">{a["section"]}</span> {a["date"]}</div></div>' for a in elfi_items[:3]) if elfi_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
+  {chr(10).join(f'<div class="item"><div class="title">{a.get("title","?")[:80]}</div><div class="meta"><span class="tag tag-blue">latest</span> {a.get("date","")}</div></div>' for a in elfi_items[:3]) if elfi_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
 
   <h3 style="font-size:13px; color:{BLUE}; margin:12px 0 6px;">Animal Politico <span style="font-size:11px;color:{GRAY};font-weight:400;">(GraphQL API)</span></h3>
-  {chr(10).join(f'<div class="item"><div class="title">{a["title"][:80]}</div><div class="meta">{a["date"]}</div></div>' for a in ap_items[:3]) if ap_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
+  {chr(10).join(f'<div class="item"><div class="title">{a.get("title","?")[:80]}</div><div class="meta">{a.get("date","")}</div></div>' for a in ap_items[:3]) if ap_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
 
   <h3 style="font-size:13px; color:{AMBER}; margin:12px 0 6px;">La Jornada <span style="font-size:11px;color:{GRAY};font-weight:400;">(Elasticsearch API)</span></h3>
-  {chr(10).join(f'<div class="item"><div class="title">{j["title"][:60]}</div><div class="meta"><span class="tag tag-amber">{j["supplement"]}</span> {j["date"]}</div></div>' for j in jornada_items[:4]) if jornada_items else '<div class="item" style="color:' + GRAY + ';">No supplements fetched</div>'}
+  {chr(10).join(f'<div class="item"><div class="title">{j.get("title","?")[:60]}</div><div class="meta"><span class="tag tag-amber">{j.get("supplement","")}</span> {j.get("date","")}</div></div>' for j in jornada_items[:4]) if jornada_items else '<div class="item" style="color:' + GRAY + ';">No supplements fetched</div>'}
 </div>
 
 <!-- SECTION 2: Social Signal Radar -->
