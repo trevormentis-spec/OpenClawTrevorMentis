@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0.0",
+  "brief_id": "bajio-v3-parsed-20260518",
+  "title": "Bajío Corridor — $200M Industrial Real Estate Assessment",
+  "query_type": "industrial_real_estate",
+  "produced_at": "2026-05-18T16:00:00Z",
+  "producer": "Open Claw Mexico desk",
+  "bluf": "The Bajío corridor (Guanajuato–Querétaro–Aguascalientes) remains the premier nearshoring destination for mid-to-high-value manufacturing, but faces **acute energy-infrastructure constraints** that will define tenant viability over your 36-month horizon. We assess a **60% probability (Sherman Kent: 5",
+  "calibration": {
+    "band": "probable",
+    "pct_range": [
+      50,
+      60
+    ]
+  },
+  "headline_judgments": [
+    {
+      "claim": "We assess a **60% probability (Sherman Kent: 5/6)** that at least one sub-corridor will experience a material power disruption event (>4 hours unplanned CFE outage) in the next 12 months.",
+      "kent_band": "probable",
+      "pct_range": [
+        50,
+        70
+      ],
+      "sources": [
+        {
+          "name": "Per brief sourcing",
+          "admiralty": "D"
+        }
+      ]
+    },
+    {
+      "claim": "USMCA review and tariff risk are the dominant macro variables, with Kalshi markets pricing a **13% probability of a >9% tariff rate by July 2026** (most liquid contract).",
+      "kent_band": "probable",
+      "pct_range": [
+        3,
+        23
+      ],
+      "sources": [
+        {
+          "name": "Per brief sourcing",
+          "admiralty": "D"
+        }
+      ]
+    },
+    {
+      "claim": "**Directional claim only – no verified aggregate data available.**  \n- **Supply chain disruption:** 12-month probability of a 24+ hour highway blockade (León–Silao–Irapuato corridor) is **40% (Kent: 4/6)**.",
+      "kent_band": "even_chance",
+      "pct_range": [
+        30,
+        50
+      ],
+      "sources": [
+        {
+          "name": "Per brief sourcing",
+          "admiralty": "D"
+        }
+      ]
+    },
+    {
+      "claim": "Kalshi KXTARIFFRATEPRC markets indicate:  \n- **13% probability of >9% tariff rate** (most liquid contract, $19,646 volume).",
+      "kent_band": "probable",
+      "pct_range": [
+        3,
+        23
+      ],
+      "sources": [
+        {
+          "name": "Per brief sourcing",
+          "admiralty": "D"
+        }
+      ]
+    },
+    {
+      "claim": "- **12% probability of >51% tariff rate** (thin contract, $1,724 volume).",
+      "kent_band": "probable",
+      "pct_range": [
+        2,
+        22
+      ],
+      "sources": [
+        {
+          "name": "Per brief sourcing",
+          "admiralty": "D"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-1",
+      "title": "EXECUTIVE SUMMARY",
+      "narrative": "The Bajío corridor (Guanajuato–Querétaro–Aguascalientes) remains the premier nearshoring destination for mid-to-high-value manufacturing, but faces **acute energy-infrastructure constraints** that will define tenant viability over your 36-month horizon. We assess a **60% probability (Sherman Kent: 5/6)** that at least one sub-corridor will experience a material power disruption event (>4 hours unplanned CFE outage) in the next 12 months. Water security is the second-order risk, with **Aguascalientes at highest vulnerability** (Kent: 4/6). Cartel-related extortion is a **manageable but recurring five-figure annual cost** for industrial tenants, concentrated in Guanajuato’s León-Silao sub-corridor. USMCA review and tariff risk are the dominant macro variables, with Kalshi markets pricing a *",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-2",
+      "title": "1. 12-MONTH SECURITY & POLITICAL RISK BY SUB-CORRIDOR",
+      "narrative": "### 1.1 Guanajuato (León–Silao–Irapuato–Celaya)\n\n**Security Risk: HIGH**  \n- **Cartel presence:** Santa Rosa de Lima Cartel (CSRL) and Jalisco New Generation Cartel (CJNG) contest fuel theft, extortion, and logistics routes. **Source: Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública (SESNSP), Admiralty B-2** – Guanajuato recorded 2,847 homicides in 2025 (highest nationally).  \n- **Extortion cost:** We estimate **five-figure annual cost** per mid-sized industrial tenant (50,000–100,000 sq ft) for \"protection\" payments and security contracts. **Directional claim only – no verified aggregate data available.**  \n- **Supply chain disruption:** 12-month probability of a 24+ hour highway blockade (León–Silao–Irapuato corridor) is **40% (Kent: 4/6)**. **Source: Local security consu",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-3",
+      "title": "2. 3-5 WATCH DEVELOPMENTS WITH UPGRADE/DOWNGRADE SIGNALS",
+      "narrative": "### 2.1 CFE Grid Reliability – Bajío-Wide\n\n**Watch:** CFE's 2026-2027 transmission expansion plan (announced March 2026) includes a new 400kV line from Querétaro to Aguascalientes. **Source: CFE, Admiralty C-3.**  \n- **Upgrade signal:** Completion ahead of schedule (current target: Q4 2027) → **+10% probability of stable power supply.**  \n- **Downgrade signal:** Budget cuts or permit delays → **-15% probability; expect 4+ hour outages monthly in Aguascalientes.**  \n- **GAP: No verified data on CFE's actual construction progress or contractor performance.**\n\n### 2.2 USMCA Review & Tariff Risk\n\n**Watch:** USMCA joint review deadline is **July 1, 2026**. Kalshi KXTARIFFRATEPRC markets indicate:  \n- **13% probability of >9% tariff rate** (most liquid contract, $19,646 volume).  \n- **12% probab",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-4",
+      "title": "3. PREDICTION MARKET HEDGE POSITIONS",
+      "narrative": "**Only verified instruments: Kalshi KXTARIFFRATEPRC contracts (expiry July 1, 2026).**\n\n| Contract | Strike | Last Price | Volume | Implied Probability | Recommended Position |\n|----------|--------|------------|--------|---------------------|----------------------|\n| KXTARIFFRATEPRC | >5% | $0.05 | $8,834 | 5% | **Buy $50,000 notional** – cheap tail hedge against tariff escalation |\n| KXTARIFFRATEPRC | >9% | $0.13 | $19,646 | 13% | **Buy $100,000 notional** – most liquid, core hedge |\n| KXTARIFFRATEPRC | >18% | $0.03 | $1,724 | 3% | **Skip** – too thin, unreliable pricing |\n| KXTARIFFRATEPRC | >51% | $0.12 | $19,504 | 12% | **Buy $25,000 notional** – tail risk for worst-case scenario |\n\n**Rationale:**  \n- The >9% strike is the most liquid and best reflects market-implied probability of a m",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-5",
+      "title": "4. FRAMEWORK THINNESS & HONEST GAP-FLAGGING",
+      "narrative": "### 4.1 Data Gaps\n\n| Gap | Impact | Mitigation |\n|-----|--------|------------|\n| No verified CFE outage frequency data for Aguascalientes industrial parks | Cannot quantify power disruption probability with confidence | **Commission a CFE substation-specific reliability report** (estimated $15,000 cost, 4-week lead time) |\n| No verified natural gas pipeline capacity utilization for Querétaro | Cannot assess tenant production risk from gas curtailment | **Request Cenagas capacity auction results (June 2026)** – publicly available but not yet released |\n| No verified state security budget execution for Guanajuato 2026 | Cannot assess police response improvement probability | **Monitor SESNSP quarterly reports** (next release: July 2026) |\n| No verified cargo theft rates for Querétaro industr",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-6",
+      "title": "5. SUBSCRIBER ACTION LINES (PRIORITIZED)",
+      "narrative": "1. **Immediate (0-30 days):** Execute Kalshi KXTARIFFRATEPRC hedges (>9% and >51% strikes) – $22,750 estimated cost.  \n2. **Short-term (30-60 days):** Commission CFE substation reliability report for Aguascalientes – $15,000.  \n3. **Medium-term (60-90 days):** Engage local security consultancy for Guanajuato and Querétaro – $8,000 annual subscription.  \n4. **Ongoing:** Monitor Cenagas pipeline capacity auction results (June 2026) and CONAGUA water availability update (Q3 2026).  \n5. **Deal-specific:** For any acquisition in Aguascalientes, require water-rights audit and CFE reliability letter of intent. For Guanajuato, require on-site security contract.\n\n---\n\n**END OF BRIEF**  \n**Classification: CONFIDENTIAL**  \n**Next scheduled update: 18 June 2026**  \n**Contact: Open Claw Mexico Desk – [",
+      "judgments": [],
+      "subsections": []
+    }
+  ],
+  "watch_items": [
+    {
+      "id": "wi-1",
+      "indicator": "CFE Grid Reliability – Bajío-Wide",
+      "trigger": "**Watch:** CFE's 2026-2027 transmission expansion plan (announced March 2026) includes a new 400kV line from Querétaro to Aguascalientes. **Source: CF...",
+      "signal": "See brief"
+    },
+    {
+      "id": "wi-2",
+      "indicator": "USMCA Review & Tariff Risk",
+      "trigger": "**Watch:** USMCA joint review deadline is **July 1, 2026**. Kalshi KXTARIFFRATEPRC markets indicate:  \n- **13% probability of >9% tariff rate** (most ...",
+      "signal": "See brief"
+    },
+    {
+      "id": "wi-3",
+      "indicator": "Water Security – Aguascalientes & Querétaro",
+      "trigger": "**Watch:** CONAGUA's 2026-2030 water availability update (expected Q3 2026). **Source: CONAGUA, Admiralty B-3.**  \n- **Upgrade signal:** Aguascaliente...",
+      "signal": "See brief"
+    },
+    {
+      "id": "wi-4",
+      "indicator": "Cartel Violence – Guanajuato",
+      "trigger": "**Watch:** CSRL-CJNG truce negotiations (reported May 2026 by Milenio, Admiralty C-3).  \n- **Upgrade signal:** Verified truce → **-25% probability of ...",
+      "signal": "See brief"
+    },
+    {
+      "id": "wi-5",
+      "indicator": "Natural Gas Access – Querétaro",
+      "trigger": "**Watch:** Cenagas pipeline capacity auction results (June 2026). **Source: Cenagas, Admiralty B-3.**  \n- **Upgrade signal:** Querétaro industrial par...",
+      "signal": "See brief"
+    }
+  ],
+  "trade_positions": [
+    {
+      "id": "tp-1",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">5%",
+      "price": 0.05,
+      "recommendation": "buy",
+      "sizing_usd": 100000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Kalshi tariff hedge, >5% strike",
+      "is_proxy": true
+    },
+    {
+      "id": "tp-2",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">9%",
+      "price": 0.13,
+      "recommendation": "buy",
+      "sizing_usd": 100000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Kalshi tariff hedge, >9% strike",
+      "is_proxy": true
+    },
+    {
+      "id": "tp-3",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">18%",
+      "price": 0.03,
+      "recommendation": "buy",
+      "sizing_usd": 25000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Kalshi tariff hedge, >18% strike",
+      "is_proxy": true
+    },
+    {
+      "id": "tp-4",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">51%",
+      "price": 0.12,
+      "recommendation": "buy",
+      "sizing_usd": 25000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Kalshi tariff hedge, >51% strike",
+      "is_proxy": true
+    }
+  ],
+  "gaps": [],
+  "action_lines": [
+    {
+      "id": "al-1",
+      "priority": 1,
+      "action": "Do not acquire in León-Silao without a dedicated on-site security contract (mid-six-figure annual cost). Prefer Irapuato or Celaya for lower extortion incidence.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-2",
+      "priority": 2,
+      "action": "Querétaro is the lowest-risk sub-corridor for security, but water access must be contractually guaranteed in lease agreements. Prefer El Marqués industrial parks with private water treatment plants.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-3",
+      "priority": 3,
+      "action": "Aguascalientes requires a water-rights audit before acquisition. Expect tenants to demand backup water storage (mid-six-figure capital cost per 100,000 sq ft). Do not proceed without a CFE reliability letter of intent for the specific substation.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-4",
+      "priority": 4,
+      "action": "Execute >9% and >51% positions immediately. Monitor Kalshi volume for >18% contract – if volume exceeds $5,000, add $25,000 notional.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-5",
+      "priority": 5,
+      "action": "1. **Immediate (0-30 days):** Execute Kalshi KXTARIFFRATEPRC hedges (>9% and >51% strikes) – $22,750 estimated cost.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-6",
+      "priority": 5,
+      "action": "2. **Short-term (30-60 days):** Commission CFE substation reliability report for Aguascalientes – $15,000.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-7",
+      "priority": 5,
+      "action": "3. **Medium-term (60-90 days):** Engage local security consultancy for Guanajuato and Querétaro – $8,000 annual subscription.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-8",
+      "priority": 5,
+      "action": "4. **Ongoing:** Monitor Cenagas pipeline capacity auction results (June 2026) and CONAGUA water availability update (Q3 2026).",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-9",
+      "priority": 5,
+      "action": "5. **Deal-specific:** For any acquisition in Aguascalientes, require water-rights audit and CFE reliability letter of intent. For Guanajuato, require on-site security contract.",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-10",
+      "priority": 5,
+      "action": "Classification: CONFIDENTIAL",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-11",
+      "priority": 5,
+      "action": "Next scheduled update: 18 June 2026",
+      "timeframe": "varies"
+    },
+    {
+      "id": "al-12",
+      "priority": 5,
+      "action": "Contact: Open Claw Mexico Desk – [REDACTED]",
+      "timeframe": "varies"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Source-1",
+      "admiralty": "B-3",
+      "type": "brief-cited",
+      "language": "es"
+    },
+    {
+      "name": "Source-2",
+      "admiralty": "C-3",
+      "type": "brief-cited",
+      "language": "es"
+    }
+  ],
+  "meta": {
+    "sources_cited": 2,
+    "total_judgments": 5,
+    "themes_covered": [
+      "cartel_security",
+      "energy_infra",
+      "economy_markets",
+      "us_mexico"
+    ],
+    "engine_version": "schema-v1.0.0 / parsed-from-markdown",
+    "word_count": 1705
+  }
+}

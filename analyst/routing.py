@@ -62,15 +62,7 @@ MODELS = {
         "tier": 2,
         "label": "DeepSeek V4 Pro",
     },
-    "haiku": {
-        "name": "anthropic/claude-3.5-haiku",
-        "provider": "openrouter",
-        "max_output_tokens": 8192,
-        "cost_per_m_input": 0.80,
-        "cost_per_m_output": 4.00,
-        "tier": 3,
-        "label": "Haiku",
-    },
+
     "deepseek_flash": {
         "name": "deepseek-chat",
         "provider": "deepseek",
@@ -158,14 +150,14 @@ def select_model(task: dict[str, Any], verbose: bool = False) -> dict[str, Any]:
         rationale = "Mechanical/bulk work"
         triggers_fired = []
     elif task.get("task_type") in ("entity_deepening", "source_classification", "postdiction_resolution"):
-        model = MODELS["haiku"]
+        model = MODELS["v4pro"]
         rationale = "Routine analytical work (no complexity triggers)"
         triggers_fired = []
     elif isinstance(target_words, (int, list)):
         max_w = max(target_words) if isinstance(target_words, list) else target_words
         if max_w <= 1500:
-            model = MODELS["haiku"]
-            rationale = "Standard brief length"
+            model = MODELS["v4pro"]
+            rationale = "Standard brief length — V4 Pro default"
         elif max_w <= 3000:
             model = MODELS["deepseek_flash"]
             rationale = "Medium brief — DeepSeek adequate"
@@ -181,7 +173,7 @@ def select_model(task: dict[str, Any], verbose: bool = False) -> dict[str, Any]:
     if est_tokens > model["max_output_tokens"] * 0.9:
         # Current model can't handle output — escalate
         if model["tier"] > 1:
-            for m in [MODELS["opus"], MODELS["haiku"], MODELS["deepseek_flash"]]:
+            for m in [MODELS["opus"], MODELS["v4pro"], MODELS["deepseek_flash"]]:
                 if m["max_output_tokens"] >= est_tokens:
                     model = m
                     rationale += f" (escalated due to token limit: {est_tokens} > {model['max_output_tokens']*0.9:.0f})"

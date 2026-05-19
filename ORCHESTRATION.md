@@ -358,13 +358,18 @@ not specify model tier.
 - Self-question generation (weekly)
 - Postdiction analysis with calibration feedback
 
-**Route to Haiku — routine work:**
-- Brief generation 600-1500 words
+**Route to DeepSeek V4 Pro — default for all non-flagship work:**
+- Brief generation 600-1500 words (daily briefs)
 - Standard daily intel brief format
-- Routine entity deepening (non-critical entities)
+- Entity deepening (all entities)
 - Source classification
 - Postdiction resolution per-judgment
 - Scope classifier slow-path
+- Cross-source correlation synthesis
+- Framework stress-testing
+- Briefs 1500-4000 words without complexity triggers
+- Self-question generation (weekly)
+- Postdiction analysis with calibration feedback
 
 **Route to DeepSeek Flash — bulk mechanical:**
 - Source freshness scans
@@ -374,9 +379,8 @@ not specify model tier.
 - Medium briefs 1500-3000 words without complexity triggers
 
 **Escalation ladder:**
-- Haiku capacity exceeded → escalate to DeepSeek V4 Pro (default)
+- V4 Pro capacity exceeded → escalate to DeepSeek Flash → then Opus 4.7
 - Override to Opus 4.7 if: flagship/subscriber-facing tag, multi-scenario calibration, top-tier audience, principal handback memo
-- V4 Pro capacity exceeded → escalate to Opus 4.7 (mid-tier exhausted, next is frontier)
 - Cost-optimization: V4 Pro covers most complex analytical work at fraction of Opus cost; Opus reserved where marginal quality is commercially justified
 
 Pipeline costs are metered via API billing and tracked in
@@ -391,6 +395,8 @@ memos, running diagnostics), it uses its native runtime LLM
 pipeline API billing — it uses the session model's internal inference,
 which incurs no separate API cost.
 
+**Note:** Claude Haiku was removed from the routing on 2026-05-18. DeepSeek V4 Pro covers all routine-to-complex work at /usr/bin/sh.87/M out (78% cheaper than Haiku's .00/M out). Opus 4.7 reserved for flagship subscriber-facing documents. The four-tier model compressed to three operational tiers.
+ 
 ### Cost report discipline
 
 Cost reports MUST distinguish pipeline spend (metered API calls against

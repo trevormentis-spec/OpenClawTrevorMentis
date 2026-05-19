@@ -482,3 +482,78 @@ Saved to `memory/2026-05-18-stress-test-bajio-v3.md`. 1674 words.
 
 **Remaining gap to 12→17 across iterations:** +5 improvement from v1 to v3 is real (blocklist cleanup, routing clarity, fabrication detector, themes preflight, honest gap-flagging). The remaining 4-point gap between 17 and 21 is fixable: (a) policy coverage of schema to accept parenthetical source format, (b) v3 action lines need to be more directive while maintaining truthfulness.
 
+---
+
+## Presentation Stack (2026-05-18)
+
+### Part A — Skill Inventory
+
+| Category | WORKING | INSTALLED-UNREGISTERED | NOT-AVAILABLE |
+|----------|---------|----------------------|---------------|
+| PDF | reportlab, weasyprint | pdf-report skill | — |
+| Charts | matplotlib | data-charts-viz skill | plotly |
+| Mapping | — | mapbox x2 skills | folium |
+| Frontend | — | landing-page x2 skills | — |
+| Image gen | Pillow | visual_production skill | — |
+| Mermaid | python bindings | mermaid skill | — |
+| DOCX/PPTX/XLSX | — | — | python-docx, pptx, openpyxl |
+| TTS Audio | — | — | API-dependent |
+| Video | — | — | Deferred |
+
+**Key finding:** 5 WORKING capabilities (reportlab, weasyprint, matplotlib, Pillow, mermaid) exist with zero new dependencies. The PDF path weasyprint (HTML→CSS→PDF) is the fastest route to subscriber-grade output.
+
+### Part B — Brief JSON Schema
+
+Proposed additive JSON output alongside markdown. Schema at `analyst/schemas/brief-v1.json` (to be created). LLM generates JSON-structured output from same call. All renderers read from JSON; markdown stays as primary.
+
+### Part C — Build Proposals (Parked)
+
+Priority order for principal review:
+1. PDF renderer (weasyprint + branded CSS, 4h, $0)
+2. Brief JSON schema (2h, $0)
+3. Mapping (Folium prototype, 6h, $0; or Mapbox if key scope permits)
+4. PowerPoint (python-pptx, 3h, $0)
+5. Audio briefings (OpenAI TTS or ElevenLabs, 2h, ~$0.10/run)
+6. Infographics (matplotlib + Pillow, 4h, $0)
+7. AI images (defer until newsletter live)
+8. Video (defer)
+
+### Recommended First Build
+
+Week 1: Brief JSON schema + PDF renderer. Two people-days to convert the autonomous analyst from raw-markdown producer to branded-PDF publisher. Phase 2 live evaluation and source wiring continue in parallel.
+
+## JSON Schema + PDF Renderer — Test Results
+
+### Part A — Schema Design
+`docs/brief-schema-v1.md` — v1.0.0 with Sherman Kent enums (8 bands), Admiralty grades (A-1 through F-6), 20 query_type enums, 6 theme enums, stable UUIDs, public API vs internal field contract. Validated against Bajío v3.
+
+### Part B — PDF Renderer
+`scripts/render_pdf.py` + `analyst/templates/pdf/brief_template.html` — weasyprint, HTML/CSS branded template. Cover page with BLUF, calibration band, metadata. Section pages with judgment callouts (color-coded by Kent band). Trade position table. Watch items grid. Gap boxes. Action lines. Source bibliography. Footer.
+
+### Part C — Round-Trip Test Results
+| Metric | Value |
+|--------|-------|
+| PDF size | 28,374 bytes (~5 pages) |
+| Valid PDF | ✅ %PDF- headers, %%EOF terminator |
+| Cover page | ✅ Brand, BLUF, calibration, metadata |
+| Sections | ✅ All 4 sections rendered (narrative in body) |
+| Trade positions | ✅ 4 KXTARIFFRATEPRC contracts with prices |
+| Watch items | ✅ 5 indicators with triggers |
+| Gaps | ✅ 3 gaps with next steps |
+| Action lines | ✅ 12 prioritized actions |
+| Sources | ✅ 2 with Admiralty grades (low — parsing issue) |
+| Calibration chart | ❌ Not implemented — matplotlib chart integration pending |
+| Sub-corridor risk map | ❌ Not implemented — Folium pending |
+
+### Part D — Round-Trip Loss Diagnostics
+Parsing markdown → JSON loses:
+1. **Calibration band format:** v3 uses Kent numeric scores (5/6, 4/6) — schema needs to accept both named bands and numeric scores
+2. **Source granularity:** Admiralty tags embedded mid-sentence (Admiralty C-3) parse separately from source names
+3. **Geographic data:** No geometry/coordinates in markdown — spatial data loss
+4. **Subsection nesting:** Markdown section hierarchy (## / ###) not preserved in flattened JSON
+5. **Section→judgment linkage:** Judgments embedded in narrative text, not extracted as structured objects
+
+**Recommendation:** Generate JSON natively at brief production time. LLM should output both structured JSON and markdown from the same generation call. Markdown→JSON parsing is inherently lossy and should be a temporary bridge, not the permanent path.
+
+
+

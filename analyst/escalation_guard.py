@@ -140,6 +140,20 @@ def post_generation_check(result: dict[str, Any]) -> dict[str, Any]:
     if model_used != expected_model and expected_model != "unknown":
         issues.append(f"WRONG MODEL: used {model_used}, expected {expected_model}")
 
+    # Section coverage check
+    expected_sections = result.get("expected_sections", [])
+    actual_sections = result.get("actual_sections", [])
+    missing = [s for s in expected_sections if s not in actual_sections]
+    if missing:
+        issues.append(f"MISSING SECTIONS: {', '.join(missing)}")
+
+    # Visualization check (from JSON)
+    expected_viz = result.get("expected_visualizations", [])
+    actual_viz = result.get("actual_visualizations", [])
+    missing_viz = [v for v in expected_viz if v not in actual_viz]
+    if missing_viz:
+        issues.append(f"MISSING VISUALIZATIONS: {', '.join(missing_viz)}")
+
     # Detect truncation by mid-sentence ending
     if actual > 0:
         last_100 = result.get("output_text", "")[-100:] if "output_text" in result else ""
