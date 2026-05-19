@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-18T12:32:18.555Z",
+  "updatedAt": "2026-05-19T17:18:03.263Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -48,13 +48,13 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "**Military:** 17 Iranian ships destroyed including submarine; IRIS Dena sunk in Indian Ocean; 10th wave of Israeli strikes; Turkey's NATO intercepts Iranian missile (first NATO-Iran engagement). **Economic:** US crude $78.80 (highest since Jan 2025); Brent ~$82–83; European gas +70%; 1,100 ships affected by GPS spoofing. **Social:** Minab girls' school toll: 165+ students + 14 teachers killed; photography of strike sites banned in Iran. **Infrastructure:** Bushehr nuclear plant shut down; 639 Russian specialists remain on site; confirmed strikes on Fordow, Natanz, Tehran nuclear research reactor. --- ### Analytical Notes This assessment demonstrates TREVOR v2 methodology in production:",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.959692847546517,
+      "totalScore": 9.959692847546517,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-10T04:27:44.395Z",
+      "lastRecalledAt": "2026-05-19T17:18:03.263Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -64,7 +64,8 @@
         "aa33db82b382",
         "876b2ff03274",
         "46ce8791f426",
-        "577729f1e069"
+        "577729f1e069",
+        "b64dfec040d6"
       ],
       "recallDays": [
         "2026-04-28",
@@ -73,7 +74,8 @@
         "2026-05-02",
         "2026-05-03",
         "2026-05-04",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-19"
       ],
       "conceptTags": [
         "nato-iran",
@@ -268,13 +270,13 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "This is a high-quality example of TREVOR methodology applied to a fast-moving crisis. The assessment correctly: 1. Calibrated probabilities using Sherman Kent bands 2. Maintained hypothesis discipline with explicit probability ranges 3. Integrated PMESII-PT for comprehensive environmental scan 4. Flagged critical uncertainties (Houthi Red Sea activation, Kurdish ground incursion) 5. Used BLUF-led structure for executive consumption Document archived as reference example of TREVOR v2 production output.",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.21354674556381,
+      "totalScore": 7.21354674556381,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-11T04:42:44.149Z",
+      "lastRecalledAt": "2026-05-19T17:18:03.263Z",
       "queryHashes": [
         "0b7e24068149",
         "326adb9da76c",
@@ -283,7 +285,8 @@
         "7b4024f16d8d",
         "b69bb4b76f7e",
         "aa33db82b382",
-        "3c68673febfe"
+        "3c68673febfe",
+        "b64dfec040d6"
       ],
       "recallDays": [
         "2026-04-28",
@@ -291,7 +294,8 @@
         "2026-04-30",
         "2026-05-02",
         "2026-05-03",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-19"
       ],
       "conceptTags": [
         "high-quality",
@@ -516,13 +520,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.611906618286376,
+      "totalScore": 20.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
+      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -543,7 +547,8 @@
         "f3aa65b3123e",
         "1b9064ffbf19",
         "b2960036661c",
-        "2de51dfe8bc5"
+        "2de51dfe8bc5",
+        "cc764312eb50"
       ],
       "recallDays": [
         "2026-05-04",
@@ -555,7 +560,8 @@
         "2026-05-11",
         "2026-05-14",
         "2026-05-15",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "gateway",
@@ -878,13 +884,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 13,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
+      "lastRecalledAt": "2026-05-19T17:18:03.263Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -897,7 +903,8 @@
         "196f8419e846",
         "f3aa65b3123e",
         "1c8dc30ba712",
-        "2de51dfe8bc5"
+        "2de51dfe8bc5",
+        "b64dfec040d6"
       ],
       "recallDays": [
         "2026-05-07",
@@ -907,7 +914,8 @@
         "2026-05-12",
         "2026-05-13",
         "2026-05-14",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-19"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -1260,21 +1268,23 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
+      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
-        "b2960036661c"
+        "b2960036661c",
+        "cc764312eb50"
       ],
       "recallDays": [
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-19"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -1391,21 +1401,23 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- CPCA: ALL GREEN — Starmer's problems are political/structural, not cognitive - Profile saved to brain/memory/semantic/ldap7-profiles/starmer-keir.md ## Products Delivered (2026-05-12) 1. UK Security & Intelligence Assessment — comprehensive threat analysis (7 sections, 5 KJs) 2. Starmer Leadership Analysis — descriptive profile + 30-day outlook 3. Starmer LDAP-7 Analysis — scored framework with decision-cycle diagnosis and CPCA overlay 4. Both reports scheduled for email delivery at 06:00 PT to roderick.jones@gmail.com",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-15T14:49:01.999Z",
+      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
-        "37203b1dd7cb"
+        "37203b1dd7cb",
+        "cc764312eb50"
       ],
       "recallDays": [
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-19"
       ],
       "conceptTags": [
         "political/structural",
@@ -1577,6 +1589,37 @@
         "cities/routes",
         "mapbox",
         "dark"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:18": {
+      "key": "memory:memory/2026-05-14.md:1:18",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "## Perplexity Benchmark — Set up - Perplexity produces a GSIB daily that lands in trevor.mentis@gmail.com with label \"Important MyClaw Use this\" - Roderick flagged it as the quality benchmark — my output should converge toward it - Created `scripts/benchmark_compare.py` — scores both briefs across 5 dimensions (persona, signal density, trade integration, framework reframes, prioritization) - Wired as Step 10 in `daily-brief-cron.sh` (runs after self-assessment) - Updated system prompt in `deepseek-prompts.md` for: analyst-to-analyst voice, direct address, trade-inline style - Updated regional prompt template with `{prediction_market_data}` and `{standing_assessment}` fields - Updated `regi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T05:40:21.809Z",
+      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
+      "queryHashes": [
+        "cc764312eb50"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "trevor.mentis",
+        "gmail.com",
+        "scripts/benchmark-compare.py",
+        "daily-brief-cron.sh",
+        "self-assessment",
+        "deepseek-prompts.md",
+        "analyst-to-analyst",
+        "trade-inline"
       ]
     }
   }

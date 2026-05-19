@@ -300,7 +300,7 @@ def main() -> int:
         "nato_admiralty_source_rating": "C",
         "nato_admiralty_info_rating": "3",
         "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "payload": {"har_entries": len(summary.split("\n"))}
+        "payload": {"har_entries": len(summary.split("\n")), "qc_status": "PENDING_HUMAN_ANALYST_QC_REVIEW"}
     }
     subprocess_run = __import__("subprocess").run
     try:

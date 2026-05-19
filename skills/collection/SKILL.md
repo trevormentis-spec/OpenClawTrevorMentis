@@ -3,7 +3,10 @@ name: trevor-web-collection
 description: |
   Use for any collection task that involves extracting structured data from a website.
   Always prefer programmatic API access (openweb spec → reverse-engineered API → window globals → DOM scrape, in that order).
-  Trigger on: "collect from <site>", "pull data from <url>", "scrape", "monitor <web platform>".
+  Trigger on: "collect from <site>", "pull data from <url>", "scrape", "monitor <web platform>",
+    "get the latest <articles|posts|data> from <site>", "fetch <resource> from <site>",
+    "load <site> <content>", "search <site> for <query>",
+    "pull <site>", "get <site> <section>", "extract <data> from <site>".
 metadata:
   version: "1.0.0"
   openclaw:
@@ -148,12 +151,34 @@ Every successful collection call must emit a JSON record appended to the existin
 - The wrapper script `scripts/openweb_collect.py` handles record formatting automatically
 - Records are written to `tasks/collection_records.jsonl` for pipeline pickup by `collect.py`
 
-**NATO Admiralty Code ratings:**
-- Source rating: A (reliable) through F (unreliable)
-- Info rating: 1 (confirmed) through 6 (cannot be judged)
-- Default for openweb API collection: B-2 (probably true, source usually reliable)
-- Default for reverse-engineered: C-3 (possibly true, source not previously verified)
-- Default for DOM scrape: D-4 (doubtful, unverified)
+## NATO Admiralty Rating — MUST ASSIGN BEFORE WRITE
+
+Every emitted record MUST have non-null `nato_admiralty_source_rating` and `nato_admiralty_info_rating` fields.
+If you cannot determine a rating, use the conservative default for the method used.
+
+**Rating assignment rules:**
+| Scenario | Source rating | Info rating |
+|---|---|---|
+| openweb built-in spec (known platform) | B | 2 |
+| openweb built-in spec (government/institutional) | A | 2 |
+| Reverse-engineered spec (verified API works) | C | 3 |
+| Reverse-engineered spec (GraphQL, unverified) | C | 3 |
+| DOM scrape (no API available) | D | 4 |
+| Window globals extraction | D | 4 |
+| User-supplied credentials used | B | 2 |
+
+## PENDING HUMAN ANALYST QC REVIEW
+
+Every collection record must carry this flag. Add it to the payload:
+```json
+{
+  "qc_status": "PENDING_HUMAN_ANALYST_QC_REVIEW",
+  ...
+}
+```
+This flag is per-record, not per-report. The analyst reviewing the output is responsible
+for verifying source integrity, checking the spec version against the site's current behavior,
+and promoting the status to QC_PASS or QC_FAIL.
 
 ---
 
@@ -205,3 +230,41 @@ Is there an underlying API (found in HAR)? ──Yes──→ hand-write tiny cl
         ▼
 Fall back to Playwright / Claude-for-Chrome DOM automation
 ```
+
+## Method Downgrade Protocol
+
+When the collection method downgrades (openweb → reverse_engineered → DOM → None):
+
+| Downgrade from | Downgrade to | Action required |
+|---|---|---|
+| openweb | reverse_engineered | Normal workflow — spec not yet available |
+| reverse_engineered | DOM | **⚠️ Trigger Eclipse/SPS/NOVA cross-reference** — site API hardening may be a strategic signal |
+| DOM | Failed entirely | Flag for human review — site may be down or blocking |
+
+**Rationale for downgrade→Eclipse/SPS/NOVA:** If a site that previously had a working API
+moves it behind aggressive bot detection or removes it entirely, that action may indicate:
+- The site detected scanning and hardened its perimeter
+- Third-party data access was restricted (regulatory/commercial pressure)
+- The site is migrating platforms (legacy API retired before new API is stable)
+
+Any of these is analytically relevant beyond the collection failure. Log the downgrade
+reason in the record payload and set `qc_status: DOWNGRADE_REVIEW_NEEDED`.
+
+## Spec Promotion Path
+
+Custom specs live in `skills/collection/_specs/<site>/`. They are NOT auto-registered
+in openweb's `src/sites/` directory (which requires a rebuild). The wrapper
+`scripts/openweb_collect.py` checks `_specs/` before falling to DOM:
+
+```
+openweb sites → miss → check _specs/<site>/ → hit? → use custom spec
+                                        → miss? → attempt HAR capture
+```
+
+To promote a custom spec into openweb itself would require:
+1. Editing `skills/collection/openweb/src/sites/<site>.ts`
+2. Running `npm run build`
+3. Confirm with Roderick before pushing to public repo
+
+**Do NOT push generated specs to the public openweb repo without Roderick's explicit approval.**
+Some collected sites are operationally sensitive — the spec itself can reveal interest.

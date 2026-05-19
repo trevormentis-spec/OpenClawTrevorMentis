@@ -5,7 +5,7 @@
 <style>
   @page {
     size: A4;
-    margin: 2cm 2.2cm;
+    margin: 1.8cm 2cm;
     @bottom-right {
       content: counter(page) " / " counter(pages);
       font-size: 8pt;
@@ -20,8 +20,8 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'DejaVu Sans', sans-serif;
-    font-size: 9.5pt;
-    line-height: 1.55;
+    font-size: 8.5pt;
+    line-height: 1.45;
     color: #2c3e50;
   }
 
@@ -252,11 +252,7 @@
     <h2>{{ sec.title }}</h2>
   </div>
 
-  {% if sec.bluf %}
-  <div class="bluf"><strong>BLUF:</strong> {{ sec.bluf }}</div>
-  {% endif %}
-
-  {{ sec.body }}
+  {{ sec.body|safe }}
 
   {% if sec.tables %}
   {% for table in sec.tables %}

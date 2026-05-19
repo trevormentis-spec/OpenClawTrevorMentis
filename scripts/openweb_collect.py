@@ -154,7 +154,7 @@ def main() -> int:
             "nato_admiralty_source_rating": nato_source,
             "nato_admiralty_info_rating": nato_info,
             "collected_at": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
-            "payload": {"query": args.query or args.params, "result_length": len(str(result.get("data", "")))},
+            "payload": {"query": args.query or args.params, "result_length": len(str(result.get("data", ""))), "qc_status": "PENDING_HUMAN_ANALYST_QC_REVIEW"},
         }
         # Try to write record; non-blocking
         try:

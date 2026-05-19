@@ -128,6 +128,14 @@
     "scraper": {
       "version": "1.0.0",
       "installedAt": 1779094875184
+    },
+    "corpusgraph": {
+      "version": "1.0.4",
+      "installedAt": 1779181347041
+    },
+    "news": {
+      "version": "1.0.1",
+      "installedAt": 1779181356517
     }
   }
 }
