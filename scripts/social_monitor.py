@@ -103,28 +103,29 @@ def scan_reddit(subreddits: list[str], keywords: list[str]) -> list[dict]:
 
 
 def scan_bluesky(keywords: list[str]) -> list[dict]:
-    """Search Bluesky for Mexico keywords."""
+    """Search Bluesky for Mexico keywords via direct API (no auth)."""
+    import urllib.request, urllib.parse
     found = []
-    for kw in keywords[:3]:  # Limit to first 3 to avoid rate limits
+    for kw in keywords[:3]:
         log(f"Searching Bluesky for '{kw}'...")
-        data = call_openweb("bluesky", "searchPosts", json.dumps({"q": kw, "limit": 10}))
-        if not data:
-            log(f"  → no data")
-            continue
-
-        posts = data if isinstance(data, list) else []
-        for post in posts[:5]:
-            if isinstance(post, dict):
-                text = post.get("text", post.get("record", {}).get("text", ""))
-                author = post.get("author", {}).get("displayName", post.get("author", "?"))
-                found.append({
-                    "platform": "bluesky",
-                    "author": author,
-                    "text": text[:200],
-                    "matched_keyword": kw,
-                    "detected_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-                })
-                log(f"  → @{author}: {text[:80]}")
+        try:
+            url = f"https://api.bsky.app/xrpc/app.bsky.feed.searchPosts?q={urllib.parse.quote(kw)}&limit=5"
+            req = urllib.request.Request(url, headers={"User-Agent": "TREVOR/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read())
+                for post in data.get("posts", [])[:5]:
+                    text = post.get("record", {}).get("text", "")[:200]
+                    author = post.get("author", {}).get("handle", "?")
+                    found.append({
+                        "platform": "bluesky",
+                        "author": author,
+                        "text": text[:200],
+                        "matched_keyword": kw,
+                        "detected_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+                    })
+                log(f"  → {len(data.get('posts',[]))} posts for '{kw}'")
+        except Exception as e:
+            log(f"  Bluesky '{kw}' failed: {e}")
     return found
 
 
