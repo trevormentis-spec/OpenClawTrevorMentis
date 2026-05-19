@@ -210,13 +210,34 @@ Rules:
 
 HARD RULE: When in doubt, prefer adjacent over out_of_scope."""
 
+    # Route through gate for model selection and logging
+    try:
+        from analyst.llm_gate import route as _gate_route
+        _gating = _gate_route("scope_classifier", {"slow_path": True})
+        _model = _gating.model
+        _provider = _gating.provider
+        # Log the routing
+        _log_path = REPO_ROOT / "memory" / "llm-routing-log.jsonl"
+        _rec = {"model": _model, "provider": _provider,
+                "estimated_cost_usd": _gating.estimated_cost_usd,
+                "justification": _gating.justification,
+                "task_type": "scope_classifier",
+                "quality_gates": [],
+                "timestamp": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}
+        _log_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(_log_path, "a") as _f:
+            _f.write(json.dumps(_rec) + "\n")
+    except Exception:
+        _model = "deepseek-chat"
+        _provider = "deepseek"
+
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     if not api_key:
         return {"scope_status": "in_scope",
                 "rationale": "LLM unavailable. Defaulting to in_scope."}
 
     payload = {
-        "model": "deepseek-chat",
+        "model": _model.split("/")[-1] if "/" in _model else _model,
         "messages": [
             {"role": "system", "content": "Return only valid JSON."},
             {"role": "user", "content": prompt},
