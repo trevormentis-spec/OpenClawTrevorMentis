@@ -37,6 +37,7 @@ def append_record(record: dict, output_path: pathlib.Path | None = None) -> bool
     record.setdefault("nato_admiralty_source_rating", "D")
     record.setdefault("nato_admiralty_info_rating", "4")
     record.setdefault("payload", {})
+    record["payload"]["qc_status"] = "PENDING_HUMAN_ANALYST_QC_REVIEW"
     record.setdefault("collected_at", dt.datetime.now(dt.timezone.utc).isoformat())
 
     # Write
