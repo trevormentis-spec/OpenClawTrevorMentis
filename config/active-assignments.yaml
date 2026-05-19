@@ -3,3 +3,8 @@ assignments:
     priority: primary
     assigned: 2026-05-19
     principal_notes: "Focus on fiscal consolidation scenarios"
+
+  - topic: semiconductor-supply-chain
+    priority: secondary
+    assigned: 2026-05-19
+    principal_notes: "Multi-topic routing validation"

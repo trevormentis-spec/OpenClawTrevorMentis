@@ -1,0 +1,17 @@
+# Semiconductor Supply Chain — Scope Probes for Regression Testing
+probes:
+  - query: "TSMC Arizona fab construction timeline and yield rates"
+    expected: in_scope
+    rationale: "Directly about semiconductor fabrication — core topic"
+
+  - query: "CHIPS Act subsidy disbursement to Intel Ohio facilities"
+    expected: adjacent
+    rationale: "US industrial policy drives fab location decisions — adjacent mechanism"
+
+  - query: "China export controls on gallium and germanium"
+    expected: adjacent
+    rationale: "Critical mineral supply chain restrictions impact semiconductor production — adjacent"
+
+  - query: "Argentina soy harvest forecast for 2026 season"
+    expected: out_of_scope
+    rationale: "Agricultural commodity in a different hemisphere — no plausible semiconductor supply chain transmission"
