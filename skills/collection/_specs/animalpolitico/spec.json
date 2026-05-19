@@ -23,7 +23,9 @@
         "type": "none",
         "param": "",
         "response_key": ""
-      }
+      },
+      "body_template": "{\"operationName\": \"GetAPHomepage\", \"query\": \"query GetAPHomepage {\\n  apHomepage {\\n    animalPolTicoHome {\\n      notasDelHomepageAP(first: 10) {\\n        nodes {\\n          __typename\\n          ... on ContentNode {\\n            databaseId\\n            slug\\n            date\\n            title\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\", \"variables\": {}}",
+      "content_type": "application/json"
     },
     {
       "name": "get_category_videos",
@@ -63,7 +65,9 @@
         "type": "none",
         "param": "",
         "response_key": ""
-      }
+      },
+      "body_template": "{\"operationName\": \"GetPolitica\", \"query\": \"query GetPolitica {\\n  allPolTica(first: 10) {\\n    nodes {\\n      databaseId\\n      title\\n      slug\\n      date\\n    }\\n  }\\n}\", \"variables\": {}}",
+      "content_type": "application/json"
     },
     {
       "name": "get_state_articles",
@@ -83,7 +87,9 @@
         "type": "none",
         "param": "",
         "response_key": ""
-      }
+      },
+      "body_template": "{\"operationName\": \"GetEstados\", \"query\": \"query GetEstados {\\n  allEstados(first: 10) {\\n    nodes {\\n      databaseId\\n      title\\n      slug\\n      date\\n    }\\n  }\\n}\", \"variables\": {}}",
+      "content_type": "application/json"
     },
     {
       "name": "get_society_articles",
@@ -103,7 +109,9 @@
         "type": "none",
         "param": "",
         "response_key": ""
-      }
+      },
+      "body_template": "{\"operationName\": \"GetSociedad\", \"query\": \"query GetSociedad {\\n  allSociedad(first: 10) {\\n    nodes {\\n      databaseId\\n      title\\n      slug\\n      date\\n    }\\n  }\\n}\", \"variables\": {}}",
+      "content_type": "application/json"
     }
   ]
 }
