@@ -87,7 +87,7 @@ def check_moltbook_for_new_agents():
 def check_cisa_newsapi():
     """Check NewsAPI for new intelligence-focused sources."""
     log("Checking NewsAPI for new sources...")
-    news_key = os.environ.get("NEWSAPI_KEY", "560850e45ebe4f79987a7a0961d3e275")
+    news_key = os.environ.get("NEWSAPI_KEY", "")
     new_finds = []
     
     try:
