@@ -170,3 +170,17 @@ After rotation, run git-filter-repo to scrub history.
 
 ---
 *Updated 2026-05-19 by trevor-v2 rebuild — all 8 phases complete*
+
+## Trevor v2 Code Pull: COMPLETE
+Pulled: 2026-05-19 21:38 UTC
+At commit: 344be72 (tag v2.0.0)
+
+Awaiting principal:
+1. cp deployment/.env.example .env (if .env doesn't exist)
+2. Edit .env with rotated keys
+3. bash deployment/bootstrap.sh
+4. bash deployment/health-check.sh
+5. Restart MyClaw runtime to load v2 identity/orchestration
+6. System cron (if any): crontab /tmp/crontab-backup-pre-v2.txt to re-enable cron
+
+Updated by v1 session at cutover.
