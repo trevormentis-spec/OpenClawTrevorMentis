@@ -54,8 +54,24 @@ def build_prompt(judgments: list[dict], markets: list[dict]) -> tuple[str, str]:
 
 
 def call_model(system: str, user: str) -> str:
+    model_used = MODEL
+    try:
+        from analyst.llm_gate import route as _gr
+        _g = _gr("trade_analysis", {"target_words": len(user.split()), "critical": True})
+        model_used = _g.model
+        import datetime as _dt, json as _json
+        _log = pathlib.Path(__file__).resolve().parent.parent / "memory" / "llm-routing-log.jsonl"
+        _log.parent.mkdir(exist_ok=True)
+        with open(_log, "a") as _f:
+            _f.write(_json.dumps({"model": _g.model, "provider": _g.provider,
+                "estimated_cost_usd": _g.estimated_cost_usd,
+                "justification": _g.justification, "task_type": "trade_analysis",
+                "timestamp": _dt.datetime.now(_dt.timezone.utc).isoformat()}) + "\n")
+    except Exception:
+        pass
+
     payload = json.dumps({
-        "model": MODEL,
+        "model": model_used,
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
