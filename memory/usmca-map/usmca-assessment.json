@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "brief_id": "usmca-review-20260518",
+  "title": "Mexico-USMCA Review Risk Assessment",
+  "query_type": "usmca_review",
+  "produced_at": "2026-05-18T22:30:00Z",
+  "producer": "Open Claw Mexico desk",
+  "bluf": "The USMCA joint review deadline of July 1, 2026 is the single most consequential macro event for Mexico-exposed portfolios this year. We assess a 60-75% probability of a 90-day extension, a 15-25% probability of selective tariffs on automotive and electronics, and a 5-15% probability of a full review breakdown.",
+  "calibration": {
+    "band": "probable",
+    "pct_range": [
+      60,
+      75
+    ]
+  },
+  "headline_judgments": [
+    {
+      "claim": "USMCA extension is the most likely outcome (60-75%)",
+      "kent_band": "probable",
+      "pct_range": [
+        60,
+        75
+      ],
+      "sources": [
+        {
+          "name": "Kalshi KXTARIFFRATEPRC",
+          "admiralty": "A-3"
+        }
+      ],
+      "subscriber_action": "Buy KXTARIFFRATEPRC >9% strike as core hedge"
+    },
+    {
+      "claim": "Selective tariffs on automotive and electronics are possible (15-25%)",
+      "kent_band": "unlikely",
+      "pct_range": [
+        15,
+        25
+      ],
+      "sources": [
+        {
+          "name": "Industry analysis",
+          "admiralty": "B-2"
+        }
+      ],
+      "subscriber_action": "Prepare supply chain contingency plans"
+    },
+    {
+      "claim": "Full USMCA breakdown is a tail risk (5-15%)",
+      "kent_band": "highly_unlikely",
+      "pct_range": [
+        5,
+        15
+      ],
+      "sources": [
+        {
+          "name": "Scenario analysis",
+          "admiralty": "B-2"
+        }
+      ],
+      "subscriber_action": "Buy KXTARIFFRATEPRC >51% strike as tail hedge"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-1",
+      "title": "Political Picture",
+      "narrative": "Sheinbaum administration positioning. Ebrard as lead negotiator.",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-2",
+      "title": "Sector Exposure",
+      "narrative": "State-by-state manufacturing concentration analysis.",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-3",
+      "title": "Scenarios",
+      "narrative": "Three scenarios with explicit decision tree.",
+      "judgments": [],
+      "subsections": []
+    },
+    {
+      "id": "sec-4",
+      "title": "Trade Positioning",
+      "narrative": "Kalshi and FX hedges.",
+      "judgments": [],
+      "subsections": []
+    }
+  ],
+  "sources": [
+    {
+      "name": "Kalshi KXTARIFFRATEPRC",
+      "admiralty": "A-3",
+      "language": "en",
+      "type": "prediction market"
+    },
+    {
+      "name": "El Financiero",
+      "admiralty": "B-2",
+      "language": "es",
+      "type": "newspaper"
+    },
+    {
+      "name": "Banxico",
+      "admiralty": "A-1",
+      "language": "es",
+      "type": "central bank"
+    }
+  ],
+  "meta": {
+    "sources_cited": 3,
+    "total_judgments": 3,
+    "themes_covered": [
+      "us_mexico",
+      "economy_markets",
+      "political_risk"
+    ]
+  }
+}

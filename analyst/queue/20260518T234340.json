@@ -1,0 +1,88 @@
+{
+  "cycle": 8,
+  "generated_at": "2026-05-18T23:43:40.750163Z",
+  "task_count": 8,
+  "tasks": [
+    {
+      "file": "/home/ubuntu/.openclaw/workspace/brain/memory/semantic/mexico/actors/sinaloa-cartel.md",
+      "name": "sinaloa-cartel",
+      "words": 450,
+      "last_source_date": "2026-05-14",
+      "days_since_update": 4,
+      "priority": "high",
+      "estimated_cost": 0.006,
+      "estimated_duration_mins": 5,
+      "task_type": "entity_deepening",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/brain/memory/semantic/calibration-tracking.json",
+      "unresolved_count": 30,
+      "priority": "high",
+      "estimated_cost": 0.003,
+      "estimated_duration_mins": 5,
+      "task_type": "postdiction_sweep",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "target": "all_entity_files",
+      "priority": "high",
+      "estimated_cost": 0.0,
+      "estimated_duration_mins": 1,
+      "task_type": "source_freshness_scan",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/analyst/meta/capability_gaps.json",
+      "priority": "medium",
+      "estimated_cost": 0.002,
+      "estimated_duration_mins": 3,
+      "task_type": "self_question_generation",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "priority": "medium",
+      "estimated_cost": 0.005,
+      "estimated_duration_mins": 5,
+      "target": "non_traditional_sources",
+      "task_type": "weekly_source_brainstorm",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "priority": "medium",
+      "estimated_cost": 0.005,
+      "estimated_duration_mins": 5,
+      "target": "questions_source_gaps",
+      "task_type": "targeted_source_discovery",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "target": {
+        "id": "mx-scan-1",
+        "headline": "Enrique D\u00edaz Vega, exsecretario de Finanzas de Rocha, se entrega a EU",
+        "category": "security"
+      },
+      "priority": "low",
+      "estimated_cost": 0.001,
+      "estimated_duration_mins": 2,
+      "task_type": "framework_stress_test",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    },
+    {
+      "priority": "low",
+      "estimated_cost": 0.001,
+      "estimated_duration_mins": 2,
+      "target": "source_registry_quality",
+      "task_type": "source_quality_audit",
+      "generated_at": "2026-05-18T23:43:40.750163Z",
+      "status": "pending"
+    }
+  ]
+}

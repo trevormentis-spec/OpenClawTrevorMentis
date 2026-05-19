@@ -1,10 +1,11 @@
 {
   "version": 1,
   "lastChecks": {
-    "agentmail_inbox": 1779046078,
-    "deepseek_balance": 1779046078,
-    "nudge_check": 1779046078
+    "agentmail_inbox": 1779194878,
+    "deepseek_balance": 1779194878,
+    "nudge_check": 1779194878,
+    "repo_state": 1779194878
   },
-  "lastHeartbeat": 1779046078,
-  "rotationCursor": 3
+  "lastHeartbeat": 1779194878,
+  "rotationCursor": 0
 }
