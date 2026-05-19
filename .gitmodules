@@ -1,0 +1,6 @@
+[submodule "skills/collection/openweb"]
+	path = skills/collection/openweb
+	url = https://github.com/openweb-org/openweb.git
+[submodule "skills/collection/reverse-api-engineer"]
+	path = skills/collection/reverse-api-engineer
+	url = https://github.com/kalil0321/reverse-api-engineer.git
