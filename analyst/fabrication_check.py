@@ -185,6 +185,25 @@ def check_brief(brief_path: str, scanner_output: str | None = None, verbose: boo
     # --- Check 2: "Last traded at" / "trading at" / "currently $X" with prices ---
     for match in LAST_TRADED_PATTERN.finditer(text):
         price = match.group(1)
+        
+        # --- Exclusion checks: don't flag numbers that are clearly NOT prices ---
+        after = text[match.end():match.end()+30].strip()
+        # If followed by % or "percent" / "percentage" — it's a proportion, not a price
+        if re.match(r'^[%]', after) or re.match(r'^(?:percent|percentage|basis\s+points|bps)', after, re.IGNORECASE):
+            continue
+        # If followed by "-" and another number (range like "10-12%") — not a discrete price
+        # Only skip if there's no $/€/£ sign within or immediately before the match
+        currency_window = text[max(0,match.start()-3):match.end()]
+        has_currency = bool(re.search(r'[$€£¥]', currency_window))
+        if re.match(r'^-\d', after) and not has_currency:
+            continue
+        # If followed by unit indicators (x, kg, km, bps, pts, ratio, multiple)
+        if re.match(r'^(?:x|kg|km|bps|pts|ratio|multiple)\b', after, re.IGNORECASE):
+            continue
+        # If the number itself is a year (1900-2099)
+        if re.match(r'^(19|20)\d{2}$', price) and not re.search(r'[$€£¥]', text[max(0,match.start()-10):match.start()]):
+            continue
+        
         # Check if the surrounding text has an Admiralty source citation or GAP marker
         surrounding = text[max(0, match.start()-150):min(len(text), match.end()+100)]
         has_source = bool(SOURCE_CITATION.search(surrounding))
