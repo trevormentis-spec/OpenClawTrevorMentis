@@ -4,8 +4,12 @@
     "agentmail_inbox": 1779194878,
     "deepseek_balance": 1779194878,
     "nudge_check": 1779194878,
-    "repo_state": 1779194878
+    "repo_state": 1779194878,
+    "calendar": 1779216600,
+    "memory_hygiene": 1779216600,
+    "openrouter_usage": 1779216600,
+    "brain_index": 1779216600
   },
-  "lastHeartbeat": 1779194878,
-  "rotationCursor": 0
+  "lastHeartbeat": 1779216600,
+  "rotationCursor": 1
 }

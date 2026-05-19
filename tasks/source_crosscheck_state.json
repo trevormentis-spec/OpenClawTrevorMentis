@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 31,
+      "checked_at": "2026-05-19T18:28:58.168551+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Surrey Police investigating child sex abuse allegations after Epstein files release",
+        "Channel 4 contacted by police after Married at First Sight UK rape claims",
+        "HS2 could cost up to £102.7bn and trains will be slower than first planned"
+      ]
+    }
+  ],
+  "last_updated": "2026-05-19T18:28:58.168671+00:00"
+}
