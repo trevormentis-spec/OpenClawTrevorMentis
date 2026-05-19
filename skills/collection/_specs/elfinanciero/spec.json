@@ -1,0 +1,143 @@
+{
+  "site": "elfinanciero",
+  "version": "1.0.0",
+  "transport": "http",
+  "base_url": "https://www.elfinanciero.com.mx",
+  "auth_type": "none",
+  "operations": [
+    {
+      "name": "get_alert_bar",
+      "description": "Fetch alert bar collection (breaking news ticker)",
+      "method": "GET",
+      "endpoint": "/pf/api/v3/content/fetch/alert-bar-collections",
+      "params": [
+        {
+          "name": "from",
+          "type": "int",
+          "required": false,
+          "description": "Pagination offset"
+        },
+        {
+          "name": "size",
+          "type": "int",
+          "required": false,
+          "description": "Number of items to return"
+        },
+        {
+          "name": "site",
+          "type": "string",
+          "required": true,
+          "description": "Site identifier (e.g., elfinanciero)"
+        }
+      ],
+      "response_selector": "$.content_elements",
+      "pagination": {
+        "type": "offset",
+        "param": "from",
+        "response_key": "from"
+      }
+    },
+    {
+      "name": "get_collection",
+      "description": "Fetch a content collection by ID (e.g., feed, section)",
+      "method": "GET",
+      "endpoint": "/pf/api/v3/content/fetch/content-api-collections",
+      "params": [
+        {
+          "name": "from",
+          "type": "int",
+          "required": false,
+          "description": "Pagination offset"
+        },
+        {
+          "name": "size",
+          "type": "int",
+          "required": false,
+          "description": "Number of items to return"
+        },
+        {
+          "name": "site",
+          "type": "string",
+          "required": true,
+          "description": "Site identifier (e.g., elfinanciero)"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "Collection ID (e.g., /news)"
+        }
+      ],
+      "response_selector": "$.content_elements",
+      "pagination": {
+        "type": "offset",
+        "param": "from",
+        "response_key": "from"
+      }
+    },
+    {
+      "name": "get_article",
+      "description": "Fetch a single article by its ID",
+      "method": "GET",
+      "endpoint": "/pf/api/v3/content/fetch/content-api-items",
+      "params": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "Article ID (e.g., /news/article-uuid)"
+        },
+        {
+          "name": "site",
+          "type": "string",
+          "required": true,
+          "description": "Site identifier (e.g., elfinanciero)"
+        }
+      ],
+      "response_selector": "$",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "search",
+      "description": "Search articles by keyword",
+      "method": "GET",
+      "endpoint": "/pf/api/v3/content/fetch/content-api-search",
+      "params": [
+        {
+          "name": "q",
+          "type": "string",
+          "required": true,
+          "description": "Search query"
+        },
+        {
+          "name": "from",
+          "type": "int",
+          "required": false,
+          "description": "Pagination offset"
+        },
+        {
+          "name": "size",
+          "type": "int",
+          "required": false,
+          "description": "Number of results to return"
+        },
+        {
+          "name": "site",
+          "type": "string",
+          "required": true,
+          "description": "Site identifier (e.g., elfinanciero)"
+        }
+      ],
+      "response_selector": "$.content_elements",
+      "pagination": {
+        "type": "offset",
+        "param": "from",
+        "response_key": "from"
+      }
+    }
+  ]
+}
