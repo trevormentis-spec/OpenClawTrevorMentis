@@ -1,0 +1,60 @@
+# Trevor v2 — Always-Active Analyst Skills
+# These capabilities are available regardless of the assigned topic.
+
+skills:
+  - name: sherman_kent_calibration
+    description: 8-band probability calibration for all probabilistic claims
+    bands:
+      - name: almost_certain
+        range: [93, 99]
+      - name: highly_likely
+        range: [80, 92]
+      - name: likely
+        range: [63, 79]
+      - name: chances_about_even
+        range: [40, 62]
+      - name: unlikely
+        range: [21, 39]
+      - name: highly_unlikely
+        range: [8, 20]
+      - name: remote
+        range: [2, 7]
+      - name: negligible
+        range: [0, 1]
+
+  - name: admiralty_source_rating
+    description: NATO Admiralty system for source reliability (A-F) and information credibility (1-6)
+    reliability_codes: [A, B, C, D, E, F]
+    credibility_codes: [1, 2, 3, 4, 5, 6]
+
+  - name: structured_analytic_techniques
+    description: 11 SATs for rigorous analysis
+    techniques:
+      - key_assumptions_check
+      - analysis_of_competing_hypotheses
+      - indicators_and_warnings
+      - red_team_analysis
+      - devil_advocate
+      - team_a_team_b
+      - high_impact_low_probability
+      - what_if_analysis
+      - pre_mortem
+      - structured_brainstorming
+      - quality_of_information_check
+
+  - name: forced_dissent
+    description: Mandatory counter-argument generation for high-confidence judgments
+    trigger: confidence >= 80%
+
+  - name: postdiction_tracking
+    description: Track expired judgments against actual outcomes for calibration feedback
+
+  - name: multi_scenario_analysis
+    description: Explicit probability bands across 2-5 scenarios with named assumptions
+
+  - name: gap_acknowledgment
+    description: Flag data gaps, source limitations, and analytical uncertainties explicitly
+
+  - name: multi_format_communication
+    description: Output in PDF, audio, JSON, slides as appropriate for audience
+    formats: [pdf, audio_mp3, json, slides, markdown, email]

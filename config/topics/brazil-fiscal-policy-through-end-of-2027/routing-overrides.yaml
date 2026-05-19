@@ -1,0 +1,9 @@
+# Topic-Specific Routing Overrides
+# Leave empty to use default llm_gate routing.
+# Add overrides here to customize model selection for this topic.
+
+# Example:
+# subscriber_brief:
+#   escalate_if_any:
+#     - audience:family_office
+#   budget_cap: 10.00

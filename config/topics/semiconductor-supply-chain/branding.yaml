@@ -1,0 +1,10 @@
+# Branding for Semiconductor Supply Chain
+# Used by render_pdf.py and render_audio.py
+
+brand_name: "Trevor Intelligence"
+topic_label: "Semiconductor Supply Chain"
+color_primary: "#1a1a2e"
+color_accent: "#e94560"
+logo_path: ""
+footer_text: "Trevor Intelligence | Calibrated Analysis"
+audio_voice_id: "21m00Tcm4TlvDq8ikWAM"
