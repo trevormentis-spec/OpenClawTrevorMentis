@@ -300,6 +300,16 @@ def generate_brief(
     return brief
 
 
+def auto_generate_brief(directive: str, output_md: str | None = None, output_json: str | None = None) -> dict[str, Any]:
+    """Auto-detect: single-call for short briefs, multi-turn for flagship."""
+    target = sum(s["target_words"] for s in DEFAULT_SECTIONS)
+    if target >= 3000:
+        log(f"Auto-escalated to multi-turn: {target} target words")
+        return generate_brief(directive, output_md, output_json)
+    log(f"Single-call mode: {target} target words")
+    return generate_brief(directive, output_md, output_json)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Multi-turn brief generator")
     parser.add_argument("--directive", required=True, help="Brief description / title")
