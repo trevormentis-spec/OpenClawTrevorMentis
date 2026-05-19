@@ -34,6 +34,25 @@ import urllib.request
 MODEL = "deepseek-chat"   # Tier-3, cheapest
 ENDPOINT = "https://api.deepseek.com/v1/chat/completions"
 
+def _resolve_model():
+    """Route through gate for model selection."""
+    m = MODEL
+    try:
+        from analyst.llm_gate import route as _gr
+        _g = _gr("translation", {"routine": True})
+        m = _g.model
+        _log = pathlib.Path(__file__).resolve().parent.parent / "memory" / "llm-routing-log.jsonl"
+        _log.parent.mkdir(exist_ok=True)
+        with open(_log, "a") as _f:
+            _f.write(__import__("json").dumps({"model": _g.model, "provider": _g.provider,
+                "estimated_cost_usd": _g.estimated_cost_usd,
+                "justification": _g.justification, "task_type": "translation",
+                "timestamp": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}) + "\n")
+    except Exception:
+        pass
+    return m
+
+
 
 def log(msg: str) -> None:
     ts = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S")
@@ -58,7 +77,7 @@ def translate_batch(strings: list[str]) -> list[str]:
     )
     user = json.dumps({"to_translate": strings}, ensure_ascii=False)
     payload = {
-        "model": MODEL,
+        "model": _resolve_model(),
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},

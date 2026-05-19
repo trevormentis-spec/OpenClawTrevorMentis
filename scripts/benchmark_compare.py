@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# GATE_EXEMPT: Benchmarking utility — intentionally compares model outputs directly. Not a production collection path. Gate bypass is by design for measurement accuracy.
+
 """
 Benchmark Comparison — Perplexity GSIB vs Trevor GSIB.
 

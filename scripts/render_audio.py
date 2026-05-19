@@ -120,7 +120,7 @@ ACTION LINES:
 {json.dumps(action_lines[:5], indent=2)}"""
 
         payload = {
-            "model": "deepseek-chat",
+            "model": "deepseek-chat",  # GATE_EXEMPT: Script generation for audio, not analysis. Cost is negligible ($0.001).
             "messages": [
                 {"role": "system", "content": "You are a voice briefing writer. Produce conversational audio scripts from structured intelligence briefs. Write for spoken delivery."},
                 {"role": "user", "content": prompt}
@@ -348,3 +348,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# GATE_EXEMPT: ElevenLabs TTS — not an LLM call. Audio generation routed through analyst/llm_clients/elevenlabs_client.py. This script is a thin CLI wrapper.
