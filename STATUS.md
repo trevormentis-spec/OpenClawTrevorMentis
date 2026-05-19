@@ -140,4 +140,39 @@ will log receipt in next STATUS.md refresh. No web inbox available.
 | Remaining | $138.96 |
 
 ---
-*Generated 2026-05-19T00:31:09Z by status_generator.py*
+
+## Trevor v2 Rebuild
+
+**Branch:** `trevor-v2`
+**Archive tag:** `trevor-v1-mexico`
+**Session started:** 2026-05-19T20:00:00Z
+
+### Phase 0 — Branch, Secrets Audit, File Audit
+- **Status:** IN_PROGRESS
+- [X] Secrets audit — 3 keys found (NewsAPI, GenViral, Kalshi) in working tree + git history
+- [X] Branch `trevor-v2` created from main
+- [X] Tag `trevor-v1-mexico` created
+- [X] MIGRATION.md created with full file audit
+- [X] Hardcoded secrets removed from working tree (5 files patched)
+- [ ] Commit phase 0
+
+### ROTATE (Principal Action Required)
+| Provider | Status | Action |
+|----------|--------|--------|
+| NewsAPI | Key `560850e...` exposed in git history | Rotate key at newsapi.org |
+| GenViral | Key `gva_live_85f4...` exposed in git history | Rotate key in GenViral dashboard |
+| Kalshi | Key `8733a0f8-...` exposed in git history | Rotate key at kalshi.com |
+
+All three keys are in public git history and must be rotated regardless of working tree fixes. History scrub planned for Phase 6.
+
+### Phase 1 — Identity Rewrite: PENDING
+### Phase 2 — LLM Gating Infrastructure: PENDING
+### Phase 3 — Domain-General Framework: PENDING
+### Phase 4 — Self-Improvement Mechanisms: PENDING
+### Phase 5 — Communication Stack: PENDING
+### Phase 6 — Portability and Secrets Scrub: PENDING
+### Phase 7 — Migration and Testing: PENDING
+### Phase 8 — PR Open: PENDING
+
+---
+*Generated 2026-05-19T20:00:00Z by trevor-v2 rebuild*
