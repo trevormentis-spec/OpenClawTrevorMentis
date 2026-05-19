@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-05-19T23:54:32.462364+00:00",
+  "checks": [
+    {
+      "check": "memory_consistency",
+      "status": "ok",
+      "detail": "episodic file 2026-05-12.jsonl exists"
+    },
+    {
+      "check": "memory_consistency",
+      "status": "ok",
+      "detail": "episodic file 2026-05-13.jsonl exists"
+    },
+    {
+      "check": "memory_consistency",
+      "status": "ok",
+      "detail": "episodic file 2026-05-19.jsonl exists"
+    },
+    {
+      "check": "semantic_memory",
+      "status": "ok",
+      "detail": "10 semantic files"
+    },
+    {
+      "check": "active_topics",
+      "status": "ok",
+      "detail": "all topics have required files"
+    },
+    {
+      "check": "provider_openrouter",
+      "status": "ok",
+      "detail": "limit: ?"
+    },
+    {
+      "check": "provider_deepseek",
+      "status": "ok",
+      "detail": "reachable"
+    },
+    {
+      "check": "routing_log",
+      "status": "ok",
+      "detail": "9 entries"
+    },
+    {
+      "check": "guard_scope_check",
+      "status": "ok",
+      "detail": "regression pass"
+    },
+    {
+      "check": "guard_fabrication_check",
+      "status": "ok",
+      "detail": "regression pass"
+    }
+  ],
+  "status": "ok",
+  "fail_count": 0,
+  "warn_count": 0
+}

@@ -1,16 +1,27 @@
-# Trevor v2 Budget Configuration
-# All values in USD
+# Budget Caps — Trevor v2
+# Principal-defined. Trevor does not modify.
+# See full directive: "CONTINUOUS AUTONOMOUS OPERATION"
 
-# Daily spending cap — hard halt when exceeded
-daily_cap: 20.00
+daily:
+  routine_ops: 10.00
+  routine_soft_warning: 8.00
+  on_demand: 50.00
+  total_hard_cap: 75.00
 
-# Monthly spending cap — hard halt when exceeded
-monthly_cap: 200.00
+monthly:
+  total_hard_cap: 1500.00
 
-# Alert threshold — warn principal when this fraction of cap is reached
-alert_threshold: 0.80
+per_deliverable:
+  flagship: 25.00
+  principal_directed_brief: 5.00
 
-# Per-task-type daily caps (optional overrides)
-# flagship_document: 15.00
-# subscriber_brief: 5.00
-# daily_ingestion: 2.00
+rate_limits:
+  skill_discovery_proposals_per_week: 3
+  forum_synthesis_per_week: 1
+  custom_skill_proposals_per_week: 1
+  daily_intel_scan_per_day: 1
+  daily_intel_scan_budget: 2.00
+
+cost_reconciliation:
+  drift_threshold_pct: 10
+  reconciliation_frequency: weekly
