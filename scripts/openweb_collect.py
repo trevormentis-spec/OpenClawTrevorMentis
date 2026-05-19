@@ -142,6 +142,30 @@ def main() -> int:
 
     result = collect_via_openweb(args.site, args.operation, params)
     print(json.dumps(result, indent=2, ensure_ascii=False))
+
+    # Emit BigQuery pipeline record
+    if "error" not in result:
+        nato_source = "B" if result.get("method") == "openweb" else "C"
+        nato_info = "2" if result.get("method") == "openweb" else "3"
+        record = {
+            "source": args.site,
+            "site_spec_version": "openweb-0.1.6",
+            "method": result.get("method", "unknown"),
+            "nato_admiralty_source_rating": nato_source,
+            "nato_admiralty_info_rating": nato_info,
+            "collected_at": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+            "payload": {"query": args.query or args.params, "result_length": len(str(result.get("data", "")))},
+        }
+        # Try to write record; non-blocking
+        try:
+            subprocess.run(
+                [sys.executable, str(REPO_ROOT / "scripts" / "append_collection_record.py"),
+                 "--record", json.dumps(record)],
+                capture_output=True, timeout=5
+            )
+        except Exception:
+            pass
+
     return 0
 
 

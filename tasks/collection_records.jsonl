@@ -1,0 +1,2 @@
+{"source": "wikipedia", "site_spec_version": "openweb-0.1.6", "method": "openweb", "nato_admiralty_source_rating": "B", "nato_admiralty_info_rating": "2", "collected_at": "2026-05-19T17:12:09.427654+00:00", "payload": {"query": "{\"title\":\"Mexico\"}", "result_length": 2959}}
+{"source": "test_write", "site_spec_version": "test-v1", "method": "openweb", "nato_admiralty_source_rating": "B", "nato_admiralty_info_rating": "2", "collected_at": "2026-05-19T17:15:00Z", "payload": {"test": true}}
