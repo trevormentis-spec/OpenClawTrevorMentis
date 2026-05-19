@@ -55,7 +55,7 @@ cd "$REPO"
 # Output is merged into raw/incidents.json after orchestrator collect.py runs.
 echo "--- Running Mexico daily scan (Spanish-language + institutional sources) ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/mexico-daily-scan.py" --save 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/topic_morning_brief.py" 2>&1 | tee -a "$LOG"
 set -e 2>/dev/null || true
 
 # Step 0a5: OpenWeb API collection — Mexico specs, Wikipedia monitor, news sites
@@ -98,7 +98,7 @@ fi
 # so they flow through analyze.py with the rest of the corpus.
 echo "--- Merging Mexico scan into incidents.json ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/merge_mexico_into_incidents.py" \
+python3 "$REPO/scripts/topic_morning_brief.py" --send 2>&1 | tee -a "$LOG" # was: merge_mexico_into_incidents \
     --working-dir "$HOME/trevor-briefings/${DATE_UTC}" 2>&1 | tee -a "$LOG"
 set -e 2>/dev/null || true
 

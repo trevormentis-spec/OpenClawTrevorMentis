@@ -10,9 +10,9 @@
 # Principal: edit this file, then run with --live flag.
 
 activation:
-  enabled: false  # Set to true to authorize --live mode
-  authorized_by: null  # Principal name
-  authorized_at: null  # ISO timestamp
+  enabled: true   # Authorized by Roderick 2026-05-19
+  authorized_by: "Roderick"
+  authorized_at: "2026-05-19T23:43:00Z"
   daily_budget_cap: 10.00  # Max $ per day for Phase 2
   monthly_budget_cap: 200.00  # Max $ per month for Phase 2
   notes: >
