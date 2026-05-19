@@ -1,0 +1,109 @@
+{
+  "site": "animalpolitico",
+  "version": "1.0.0",
+  "transport": "http",
+  "base_url": "https://grupoanimal.mx",
+  "auth_type": "none",
+  "operations": [
+    {
+      "name": "get_homepage_articles",
+      "description": "Fetch homepage news feed articles from Animal Politico",
+      "method": "POST",
+      "endpoint": "/api/graphql",
+      "params": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "GraphQL query for homepage articles"
+        }
+      ],
+      "response_selector": "data.apHomepage.animalPolTicoHome.notasDelHomepageAP.nodes",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_category_videos",
+      "description": "Fetch videos by category (e.g., Política)",
+      "method": "POST",
+      "endpoint": "/api/graphql",
+      "params": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "GraphQL query for category videos"
+        }
+      ],
+      "response_selector": "data.categorAsDeVideos.videos.nodes",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_political_articles",
+      "description": "Fetch all political articles",
+      "method": "POST",
+      "endpoint": "/api/graphql",
+      "params": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "GraphQL query for political articles"
+        }
+      ],
+      "response_selector": "data.allPolTica.nodes",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_state_articles",
+      "description": "Fetch all state (estados) articles",
+      "method": "POST",
+      "endpoint": "/api/graphql",
+      "params": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "GraphQL query for state articles"
+        }
+      ],
+      "response_selector": "data.allEstados.nodes",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    },
+    {
+      "name": "get_society_articles",
+      "description": "Fetch all society (sociedad) articles",
+      "method": "POST",
+      "endpoint": "/api/graphql",
+      "params": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true,
+          "description": "GraphQL query for society articles"
+        }
+      ],
+      "response_selector": "data.allSociedad.nodes",
+      "pagination": {
+        "type": "none",
+        "param": "",
+        "response_key": ""
+      }
+    }
+  ]
+}
