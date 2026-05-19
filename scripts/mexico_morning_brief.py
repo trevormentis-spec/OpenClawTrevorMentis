@@ -25,6 +25,7 @@ import sqlite3
 import subprocess
 import sys
 import urllib.request
+import urllib.parse
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUTPUT_DIR = REPO_ROOT / "exports" / "briefs"
@@ -98,6 +99,74 @@ def fetch_graphql(url: str, query_json: str) -> str | None:
         return None
 
 
+def _load_deepseek_key() -> str:
+    """Load DEEPSEEK_API_KEY from .env."""
+    env_path = REPO_ROOT / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().split("\n"):
+            if "DEEPSEEK_API_KEY" in line and "=" in line:
+                return line.split("=", 1)[1].strip()
+    return os.environ.get("DEEPSEEK_API_KEY", "")
+
+
+DEEPSEEK_API_KEY = _load_deepseek_key()
+
+
+def translate(texts: list[str], target_lang: str = "English") -> list[str]:
+    """Translate Spanish headlines to English using DeepSeek."""
+    if not texts or not DEEPSEEK_API_KEY:
+        return texts
+    try:
+        batch = "\n".join(f"{i}. {t}" for i, t in enumerate(texts) if t)
+        if not batch.strip():
+            return texts
+        payload = json.dumps({
+            "model": "deepseek-chat",
+            "messages": [
+                {"role": "system", "content": f"Translate the following Spanish news headlines to {target_lang}. Preserve names, numbers, and dates exactly. Return only the numbered translations, one per line, no explanation."},
+                {"role": "user", "content": batch}
+            ],
+            "max_tokens": 1024,
+            "temperature": 0.1,
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            "https://api.deepseek.com/v1/chat/completions",
+            data=payload,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {DEEPSEEK_API_KEY}"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read())
+        content = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+        translated = []
+        for line in content.strip().split("\n"):
+            line = line.strip()
+            if line and (line[0].isdigit() or "." in line[:3]):
+                clean = line.split(". ", 1)[-1] if ". " in line else line
+                translated.append(clean)
+            elif line:
+                translated.append(line)
+        while len(translated) < len(texts):
+            translated.append(texts[len(translated)])
+        return translated[:len(texts)]
+    except Exception as e:
+        log(f"Translation failed: {e}")
+        return texts
+
+
+def _render_social(items: list) -> str:
+    """Render social items as HTML."""
+    if not items:
+        return '<div class="alert">No social signals detected in this cycle.</div>'
+    parts = []
+    for s in items[:6]:
+        platform = s.get("platform", "?")
+        if platform == "bluesky":
+            parts.append(f'<div class="item"><div class="title">@{s.get("author","?")}</div><div class="meta">{s.get("text","")[:120]}</div></div>')
+        elif platform == "hackernews":
+            parts.append(f'<div class="item"><div class="title">{s.get("title","?")[:80]}</div><div class="meta">HN - {s.get("score",0)} points</div></div>')
+    return "\\n".join(parts)
+
+
 def collect_data(dev: bool = False) -> dict:
     """Collect all data for the brief."""
     data = {}
@@ -154,19 +223,62 @@ def collect_data(dev: bool = False) -> dict:
 
     data["news"] = news
 
-    # Section 2: Social signals
+    # Section 2: Social signals — Bluesky (public API) + HackerNews (openweb)
     log("Section 2: Social Signal Radar")
-    social_out = run_script("scripts/social_monitor.py", 
-        ["--keywords", "CJNG,Sinaloa,Sheinbaum,USMCA,cartel", "--platform", "all"],
-        timeout=30 if not dev else 15)
     social_items = []
-    for line in social_out.strip().split("\n"):
-        if line.startswith("{"):
-            try:
-                social_items.append(json.loads(line))
-            except json.JSONDecodeError:
-                pass
+
+    bsky_keywords = ["Mexico", "Sheinbaum", "CJNG", "USMCA"]
+    for kw in bsky_keywords:
+        try:
+            req = urllib.request.Request(
+                f"https://api.bsky.app/xrpc/app.bsky.feed.searchPosts?q={urllib.parse.quote(kw)}&lang=en&limit=3",
+                headers={"User-Agent": "TREVOR/1.0"}
+            )
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                d = json.loads(resp.read())
+                for post in d.get("posts", [])[:3]:
+                    text = post.get("record", {}).get("text", "")[:200]
+                    author = post.get("author", {}).get("handle", "?")
+                    social_items.append({"platform": "bluesky", "author": author, "text": text, "keyword": kw})
+        except Exception as e:
+            log(f"  Bluesky '{kw}' failed: {e}")
+        if dev:
+            break
+
+    try:
+        hn_result = subprocess.run(
+            ["openweb", "hackernews", "getTopStories", "{}"],
+            capture_output=True, text=True, timeout=15,
+        )
+        hn_data = None
+        if hn_result.returncode == 0 and hn_result.stdout.strip():
+            raw = json.loads(hn_result.stdout)
+            if isinstance(raw, dict) and raw.get("output"):
+                with open(raw["output"]) as f:
+                    hn_data = json.load(f)
+            elif isinstance(raw, list):
+                hn_data = raw
+            else:
+                hn_data = raw
+        if hn_data:
+            stories = hn_data if isinstance(hn_data, list) else []
+            for s in stories[:5]:
+                if any(kw.lower() in str(s.get("title","")).lower() for kw in ["mexico","latin","spanish","cartel","border","usmca","tariff","trade","trump"]):
+                    social_items.append({"platform": "hackernews", "title": s.get("title", "?"), "score": s.get("score", 0)})
+    except Exception as e:
+        log(f"  HackerNews failed: {e}")
+
     data["social"] = social_items
+
+    # Translate Spanish headlines to English
+    log("Translating headlines...")
+    for src in ["elfinanciero", "animalpolitico"]:
+        headlines = [a.get("title", "") for a in news.get(src, []) if a.get("title")]
+        if headlines:
+            translated = translate(headlines)
+            for i, t in enumerate(translated):
+                if i < len(news[src]):
+                    news[src][i]["title_en"] = t
 
     # Section 3: Wikipedia changes
     log("Section 3: Wikipedia Monitor")
@@ -219,8 +331,8 @@ def build_html(data: dict) -> str:
     recent = data["recent"]
 
     # Build social summary
-    reddit_count = sum(1 for s in social if s.get("platform") == "reddit")
     bluesky_count = sum(1 for s in social if s.get("platform") == "bluesky")
+    hn_count = sum(1 for s in social if s.get("platform") == "hackernews")
 
     # Cross-check status
     xcheck_statuses = {r.get("source", "").replace("xcheck-", ""): r.get("payload_json", "") for r in xcheck}
@@ -306,10 +418,10 @@ def build_html(data: dict) -> str:
   <h2>📰 Mexico News Feed <span class="count">— 3 API sources</span></h2>
 
   <h3 style="font-size:13px; color:{GREEN}; margin-bottom:6px;">El Financiero <span style="font-size:11px;color:{GRAY};font-weight:400;">(Arc XP API)</span></h3>
-  {chr(10).join(f'<div class="item"><div class="title">{a.get("title","?")[:80]}</div><div class="meta"><span class="tag tag-blue">latest</span> {a.get("date","")}</div></div>' for a in elfi_items[:3]) if elfi_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
+  {chr(10).join(f'<div class="item"><div class="title">{a.get("title_en", a.get("title","?"))[:80]}</div><div class="meta">{a.get("date","")} <span style="font-size:11px;color:{GRAY}">ES: {a.get("title","")[:60]}</span></div></div>' for a in elfi_items[:3]) if elfi_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
 
   <h3 style="font-size:13px; color:{BLUE}; margin:12px 0 6px;">Animal Politico <span style="font-size:11px;color:{GRAY};font-weight:400;">(GraphQL API)</span></h3>
-  {chr(10).join(f'<div class="item"><div class="title">{a.get("title","?")[:80]}</div><div class="meta">{a.get("date","")}</div></div>' for a in ap_items[:3]) if ap_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
+  {chr(10).join(f'<div class="item"><div class="title">{a.get("title_en", a.get("title","?"))[:80]}</div><div class="meta">{a.get("date","")} <span style="font-size:11px;color:{GRAY}">ES: {a.get("title","")[:60]}</span></div></div>' for a in ap_items[:3]) if ap_items else '<div class="item" style="color:' + GRAY + ';">No articles fetched</div>'}
 
   <h3 style="font-size:13px; color:{AMBER}; margin:12px 0 6px;">La Jornada <span style="font-size:11px;color:{GRAY};font-weight:400;">(Elasticsearch API)</span></h3>
   {chr(10).join(f'<div class="item"><div class="title">{j.get("title","?")[:60]}</div><div class="meta"><span class="tag tag-amber">{j.get("supplement","")}</span> {j.get("date","")}</div></div>' for j in jornada_items[:4]) if jornada_items else '<div class="item" style="color:' + GRAY + ';">No supplements fetched</div>'}
@@ -317,15 +429,13 @@ def build_html(data: dict) -> str:
 
 <!-- SECTION 2: Social Signal Radar -->
 <div class="section">
-  <h2>📡 Social Signal Radar <span class="count">— {reddit_count}R · {bluesky_count}B</span></h2>
+  <h2>📡 Social Signal Radar <span class="count">— {bluesky_count} Bluesky · {hn_count} HN</span></h2>
   <div class="stat-grid" style="margin-bottom:10px;">
-    <div class="stat-card"><div class="num">{reddit_count}</div><div class="label">Reddit matches</div></div>
-    <div class="stat-card"><div class="num">{bluesky_count}</div><div class="label">Bluesky matches</div></div>
+    <div class="stat-card"><div class="num">{bluesky_count}</div><div class="label">Bluesky mentions</div></div>
+    <div class="stat-card"><div class="num">{hn_count}</div><div class="label">HackerNews stories</div></div>
     <div class="stat-card"><div class="num">{len(wiki)}</div><div class="label">Wikipedia pages tracked</div></div>
   </div>
-  {'<div class="alert">⚠️ No social matches found. Keywords may need broadening or platforms may need auth.</div>' if not social else chr(10).join(
-    f'<div class="item"><div class="title">{s.get("title", s.get("text","?"))[:80]} <span class="tag tag-{chr(10350)}">{s.get("platform","?")}</span></div><div class="meta">{", ".join(s.get("matched_keywords",[]))}</div></div>' for s in social[:5]
-  )}
+  {_render_social(social)}
 </div>
 
 <!-- SECTION 3: Wikipedia Monitor -->
