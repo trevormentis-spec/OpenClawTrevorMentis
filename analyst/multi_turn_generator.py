@@ -30,6 +30,7 @@ import time
 import urllib.error
 import urllib.request
 from typing import Any
+# routing imported dynamically (path-dependent)
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -37,16 +38,16 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # Default section plan for USMCA-style flagship briefs
 DEFAULT_SECTIONS = [
-    {"id": "sec-1", "title": "Executive Summary", "target_words": 600, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-2", "title": "Political Picture", "target_words": 700, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-3", "title": "Sector Exposure", "target_words": 700, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-4", "title": "Economic Dynamics", "target_words": 600, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-5", "title": "Scenarios", "target_words": 800, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-6", "title": "Trade Positioning", "target_words": 600, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-7", "title": "Watch Indicators", "target_words": 400, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-8", "title": "Calendar", "target_words": 300, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-9", "title": "Subscriber Action Lines", "target_words": 400, "model": "anthropic/claude-opus-4.7"},
-    {"id": "sec-10", "title": "Appendix", "target_words": 500, "model": "anthropic/claude-opus-4.7"},
+    {"id": "sec-1", "title": "Executive Summary", "target_words": 600},
+    {"id": "sec-2", "title": "Political Picture", "target_words": 700},
+    {"id": "sec-3", "title": "Sector Exposure", "target_words": 700},
+    {"id": "sec-4", "title": "Economic Dynamics", "target_words": 600},
+    {"id": "sec-5", "title": "Scenarios", "target_words": 800},
+    {"id": "sec-6", "title": "Trade Positioning", "target_words": 600},
+    {"id": "sec-7", "title": "Watch Indicators", "target_words": 400},
+    {"id": "sec-8", "title": "Calendar", "target_words": 300},
+    {"id": "sec-9", "title": "Subscriber Action Lines", "target_words": 400},
+    {"id": "sec-10", "title": "Appendix", "target_words": 500},
 ]
 
 TOTAL_TARGET = sum(s["target_words"] for s in DEFAULT_SECTIONS)  # ~5,600
@@ -152,12 +153,26 @@ def generate_section(
     kalshi_data: str,
     section_index: int,
     total_sections: int,
+    is_flagship: bool = False,
 ) -> dict[str, Any]:
     """Generate a single section. Returns {id, title, content, metadata, words}."""
     sec_id = section["id"]
     sec_title = section["title"]
     target = section["target_words"]
-    model_name = section["model"]
+    # Route through analyst/routing.py to determine model
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from analyst.routing import select_model
+        routing_result = select_model({
+            "target_words": target,
+            "description": f"section {section_index}: {sec_title}",
+            "task_type": "brief_generation",
+        })
+        model_name = routing_result["model_name"]
+    except Exception:
+        # Fallback: flagship sections use Opus, structural sections use V4 Pro
+        model_name = "anthropic/claude-opus-4.7" if is_flagship else "deepseek-v4-pro"
+        log(f"Routing unavailable, using fallback: {model_name}")
 
     # Build context from prior sections
     prior_text = ""
@@ -240,7 +255,7 @@ def generate_brief(
     generated: list[dict[str, Any]] = []
 
     for i, section in enumerate(sections_plan, 1):
-        result = generate_section(section, directive, generated, kalshi_data, i, len(sections_plan))
+        result = generate_section(section, directive, generated, kalshi_data, i, len(sections_plan), is_flagship=True)
         generated.append(result)
         
         # Incremental save — write partial results to temp file
