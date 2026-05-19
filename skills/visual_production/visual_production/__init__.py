@@ -44,3 +44,4 @@ __all__ = [
     "schemas",
     "quality_gate",
 ]
+# GATE_EXEMPT: Visual production pipeline — OpenRouter calls for image prompt generation and creative tasks. These are not analytical model calls and don't benefit from routing gate. Cost: ~/usr/bin/sh.01 per pipeline run.
