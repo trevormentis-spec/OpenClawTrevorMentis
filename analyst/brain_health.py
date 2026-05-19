@@ -5,7 +5,7 @@ Runs nightly. See continuous operation cadence for full spec.
 
 Usage:
     python3 analyst/brain_health.py             # Full refresh
-    python3 analyst/brain_health.py --check     # Check-only, no writes
+    python3 analyst/brain_health.py --light  # Light check (every 4 hours)     # Check-only, no writes
 """
 from __future__ import annotations
 
@@ -166,7 +166,7 @@ def run_full_refresh() -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Brain health overnight refresh")
-    parser.add_argument("--check", action="store_true", help="Check-only, no file writes")
+    parser.add_argument("--light  # Light check (every 4 hours)", action="store_true", help="Check-only, no file writes")
     args = parser.parse_args()
 
     report = run_full_refresh()

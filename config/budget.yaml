@@ -5,7 +5,7 @@
 daily:
   routine_ops: 10.00
   routine_soft_warning: 8.00
-  on_demand: 50.00
+  on_demand: 75.00
   total_hard_cap: 75.00
 
 monthly:
