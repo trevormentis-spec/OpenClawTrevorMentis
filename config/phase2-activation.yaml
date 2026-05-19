@@ -1,0 +1,20 @@
+# Phase 2 Activation Gate
+#
+# This file is manually edited by the principal to authorize --live mode.
+# Trevor does NOT modify this file autonomously.
+#
+# Default state: DISABLED. Phase 2 runs in DRY-RUN mode only.
+# To activate: set enabled: true and optionally set daily_budget_cap.
+#
+# Activation requires a separate principal directive.
+# Principal: edit this file, then run with --live flag.
+
+activation:
+  enabled: false  # Set to true to authorize --live mode
+  authorized_by: null  # Principal name
+  authorized_at: null  # ISO timestamp
+  daily_budget_cap: 10.00  # Max $ per day for Phase 2
+  monthly_budget_cap: 200.00  # Max $ per month for Phase 2
+  notes: >
+    Phase 2 remains dormant until principal edits this file
+    and issues a separate activation directive.

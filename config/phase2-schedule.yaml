@@ -1,0 +1,89 @@
+# Phase 2 Schedule — Task Cadence Configuration
+# Trevor v2 Continuous Learning Loop
+#
+# Each task type has a cadence (daily/weekly/monthly), rate limit,
+# estimated cost, and budget allocation.
+#
+# See also: analyst/planner.py, analyst/worker.py
+
+tasks:
+
+  # ── Daily tasks ──
+  - type: source_freshness_scan
+    cadence: daily
+    rate_limit: 1
+    estimated_cost: 0.10
+    budget_allocation: 0.50
+    handler: analyst.tasks.source_freshness_scan
+
+  - type: self_question_generation
+    cadence: daily
+    rate_limit: 1
+    estimated_cost: 0.05
+    budget_allocation: 0.25
+    handler: analyst.tasks.self_question_generation
+
+  # ── Weekly tasks ──
+  - type: capability_gap_review
+    cadence: weekly
+    rate_limit: 1
+    estimated_cost: 0.15
+    budget_allocation: 0.75
+    handler: analyst.tasks.capability_gap_review
+
+  - type: forum_synthesis
+    cadence: weekly
+    rate_limit: 1
+    estimated_cost: 0.20
+    budget_allocation: 1.00
+    handler: analyst.tasks.forum_synthesis
+
+  - type: postdiction_sweep
+    cadence: weekly
+    rate_limit: 1
+    estimated_cost: 0.30
+    budget_allocation: 1.50
+    handler: analyst.tasks.postdiction_sweep
+
+  - type: cross_source_correlation
+    cadence: weekly
+    rate_limit: 2
+    estimated_cost: 0.25
+    budget_allocation: 1.00
+    handler: analyst.tasks.cross_source_correlation
+
+  - type: framework_stress_test
+    cadence: weekly
+    rate_limit: 1
+    estimated_cost: 0.40
+    budget_allocation: 2.00
+    handler: analyst.tasks.framework_stress_test
+
+  - type: weekly_source_brainstorm
+    cadence: weekly
+    rate_limit: 1
+    estimated_cost: 0.10
+    budget_allocation: 0.50
+    handler: analyst.tasks.weekly_source_brainstorm
+
+  - type: skill_discovery_scan
+    cadence: weekly
+    rate_limit: 3
+    estimated_cost: 0.05
+    budget_allocation: 0.25
+    handler: analyst.tasks.skill_discovery_scan
+
+  # ── Monthly tasks ──
+  - type: targeted_source_discovery
+    cadence: monthly
+    rate_limit: 4
+    estimated_cost: 0.15
+    budget_allocation: 0.75
+    handler: analyst.tasks.targeted_source_discovery
+
+  - type: source_quality_audit
+    cadence: monthly
+    rate_limit: 1
+    estimated_cost: 0.20
+    budget_allocation: 1.00
+    handler: analyst.tasks.source_quality_audit
