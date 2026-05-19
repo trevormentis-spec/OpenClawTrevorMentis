@@ -1,20 +1,19 @@
-# Phase 2 Activation Gate
-#
-# This file is manually edited by the principal to authorize --live mode.
-# Trevor does NOT modify this file autonomously.
-#
-# Default state: DISABLED. Phase 2 runs in DRY-RUN mode only.
-# To activate: set enabled: true and optionally set daily_budget_cap.
-#
-# Activation requires a separate principal directive.
-# Principal: edit this file, then run with --live flag.
+# Phase 2 Activation Gate — Continuous Operation
+# Principal-edited. Trevor does not modify autonomously.
+# Active:true enables continuous mode per continuous ops directive.
 
 activation:
-  enabled: true   # Authorized by Roderick 2026-05-19
+  active: true
   authorized_by: "Roderick"
-  authorized_at: "2026-05-19T23:43:00Z"
-  daily_budget_cap: 10.00  # Max $ per day for Phase 2
-  monthly_budget_cap: 200.00  # Max $ per month for Phase 2
+  authorized_date: "2026-05-19"
+  daily_routine_cap: 10
+  daily_total_cap: 75
+  monthly_cap: 1500
+  morning_start: "06:00"
+  evening_consolidate: "20:00"
+  brain_health_overnight: true
   notes: >
-    Phase 2 remains dormant until principal edits this file
-    and issues a separate activation directive.
+    Continuous autonomous operation activated per principal directive.
+    Heartbeat collection cycle running.
+    Phase 2 DRY-RUN by default, --live available.
+    Brain health overnight refresh enabled.
