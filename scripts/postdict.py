@@ -46,6 +46,30 @@ def log(msg: str) -> None:
     print(f"[postdict {ts}] {msg}", file=sys.stderr, flush=True)
 
 
+ROUTING_LOG = repo_root / "memory" / "llm-routing-log.jsonl"
+
+
+def _log_routing(decision, task_type: str, metadata: dict) -> None:
+    """Log a gating decision to the routing log."""
+    record = {
+        "model": decision.model,
+        "provider": decision.provider,
+        "estimated_cost_usd": decision.estimated_cost_usd,
+        "fallback_chain": decision.fallback_chain,
+        "justification": decision.justification,
+        "task_type": task_type,
+        "metadata": metadata,
+        "quality_gates": decision.quality_gates,
+        "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+    }
+    ROUTING_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(ROUTING_LOG, "a") as f:
+        f.write(json.dumps(record) + "\n")
+
+
+
+
+
 def call_oracle_provider(system: str, user: str,
                         provider: str, model_id: str,
                         timeout: int = 120) -> str:
@@ -96,29 +120,41 @@ def call_oracle_provider(system: str, user: str,
 
 def call_oracle(system: str, user: str) -> str:
     """Call the oracle model with automatic retry + fallback.
-
-    Tries:
-    1. Opus 4.7 via OpenRouter (best quality)
-    2. DeepSeek V4 Flash via DeepSeek Direct (fallback, cheaper)
-
-    Each attempt has retry with exponential backoff (2s, 4s, 8s).
-    """
+    Routes through llm_gate for model selection."""
     import time
 
-    # Tier 1: Opus 4.7 via OpenRouter
+    # Route through gate
+    try:
+        from analyst.llm_gate import route
+        metadata = {'target_words': len(user.split()), 'flagship_tag': True}
+        gating = route('postdiction_analysis', metadata)
+        model_id = gating.model
+        # Map llm_gate model to provider strings used by call_oracle_provider
+        if 'openrouter' in gating.provider:
+            provider = 'openrouter'
+        elif 'deepseek' in gating.provider:
+            provider = 'deepseek'
+        else:
+            provider = 'openrouter'
+        _log_routing(gating, 'postdiction_analysis', metadata)
+        log(f"Gate routed: {model_id} via {provider} (${gating.estimated_cost_usd})")
+    except Exception as e:
+        log(f"Gate unavailable, using fallback: {e}")
+        model_id = 'anthropic/claude-opus-4.7'
+        provider = 'openrouter'
+
+    # Tier 1: gate-selected model
     for attempt in range(3):
         try:
-            return call_oracle_provider(system, user, "openrouter",
-                                        "anthropic/claude-opus-4.7",
-                                        timeout=90)
+            return call_oracle_provider(system, user, provider, model_id, timeout=90)
         except Exception as exc:
             wait = 2 ** attempt
-            log(f"Opus 4.7 attempt {attempt+1}/3 failed ({exc}). Retrying in {wait}s...")
+            log(f"{model_id} attempt {attempt+1}/3 failed ({exc}). Retrying in {wait}s...")
             if attempt < 2:
                 time.sleep(wait)
 
-    # Tier 2: DeepSeek Flash via DeepSeek Direct
-    log("Opus 4.7 exhausted. Falling back to DeepSeek V4 Flash.")
+    # Fallback: DeepSeek Flash via DeepSeek Direct
+    log(f"{model_id} exhausted. Falling back to DeepSeek V4 Flash.")
     try:
         return call_oracle_provider(system, user, "deepseek",
                                     "deepseek/deepseek-v4-flash",

@@ -90,8 +90,34 @@ def call_deepseek(model: str, system: str, user: str,
                   temperature: float = 0.3, max_tokens: int = 8192,
                   json_mode: bool = True,
                   provider: str = "deepseek") -> str:
-    """Call DeepSeek/OpenRouter via curl subprocess (avoids Python SSL hangs)."""
+    """Call DeepSeek/OpenRouter via curl subprocess (avoids Python SSL hangs).
+    
+    Routes through llm_gate for model selection logging.
+    """
     import subprocess, tempfile, json as _json, os as _os
+    import datetime as _dt
+    
+    # Route through gate for logging (don't override caller's model choice)
+    try:
+        from analyst.llm_gate import route as _route
+        _meta = {"target_words": len(user.split()), "model": model, "provider": provider}
+        _gating = _route("daily_ingestion", _meta)
+        _log_path = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "memory" / "llm-routing-log.jsonl"
+        _rec = {
+            "model": model, "provider": provider,
+            "gate_model": _gating.model, "gate_provider": _gating.provider,
+            "estimated_cost_usd": 0.0,
+            "justification": f"analyze.py call: caller requested {model} via {provider}, gate would suggest {_gating.model}",
+            "task_type": "daily_ingestion",
+            "metadata": _meta,
+            "quality_gates": [],
+            "timestamp": _dt.datetime.now(_dt.timezone.utc).isoformat(),
+        }
+        _log_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(_log_path, "a") as _f:
+            _f.write(_json.dumps(_rec) + "\n")
+    except Exception:
+        pass
     
     # Get API key
     if provider == "openrouter":
