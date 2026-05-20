@@ -1,0 +1,12 @@
+pydantic>=2.0,<3.0
+httpx>=0.27.0
+sqlalchemy>=2.0,<3.0
+alembic>=1.13.0
+tenacity>=8.2.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+# Optional (installed separately if needed):
+# python-pptx>=0.6.23      # M4 deck builder
+# matplotlib>=3.8.0        # M2 charts
+# weasyprint>=60.0         # M1 PDF, M2 HTML-to-image
+# plotly>=5.18.0            # M2 interactive charts

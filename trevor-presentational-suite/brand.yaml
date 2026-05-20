@@ -1,0 +1,76 @@
+# TPS Brand Configuration
+# Single source of truth for all visual constants.
+# Extends existing TREVOR aesthetic from analyst/templates/pdf/brief_template.html.
+
+brand_name: Trevor Intelligence
+tagline: Threat Research & Evaluation Virtual Operations Resource
+
+# ── Colors ───────────────────────────────────────────────────────────────────
+
+color_primary: "#0f3460"
+color_accent: "#e94560"
+color_body: "#1a1a2e"
+color_surface: "#f5f5f5"
+color_white: "#ffffff"
+color_mid_grey: "#666666"
+color_light_grey: "#999999"
+color_border: "#eeeeee"
+
+# ── Sherman Kent Band Colors ────────────────────────────────────────────────
+
+kent_colors:
+  almost_certain: "#00b300"
+  highly_likely: "#33cc33"
+  likely: "#99cc33"
+  probable: "#cccc33"
+  even_chance: "#cc9933"
+  unlikely: "#cc6633"
+  highly_unlikely: "#cc3333"
+  remote: "#990000"
+
+# ── Typography ───────────────────────────────────────────────────────────────
+
+font_body: Inter
+font_heading: Inter
+font_mono: JetBrains Mono
+font_size_body: 10pt
+font_size_heading_1: 16pt
+font_size_heading_2: 13pt
+font_size_heading_3: 11pt
+font_size_small: 9pt
+font_size_tiny: 8pt
+line_height: 1.5
+
+# ── Chart Palette (FT-style) ────────────────────────────────────────────────
+
+chart_palette:
+  cream: "#F5F3EF"
+  red: "#C0392B"
+  blue: "#1B3A5C"
+  gold: "#B8860B"
+  green: "#2E7D32"
+  orange: "#E67E22"
+  grey: "#6B6B6B"
+
+# ── Page Layout ──────────────────────────────────────────────────────────────
+
+page_size: letter
+margin_top: 1.5in
+margin_right: 1in
+margin_bottom: 1in
+margin_left: 1in
+
+# ── Social Media Dimensions ──────────────────────────────────────────────────
+
+social_dimensions:
+  linkedin_carousel: [1080, 1350]
+  x_hero: [1200, 675]
+  instagram_square: [1080, 1080]
+  instagram_portrait: [1080, 1350]
+  exec_card: [1200, 1800]
+
+# ── Mandatory Conventions ────────────────────────────────────────────────────
+
+qc_watermark: "PENDING HUMAN ANALYST QC REVIEW"
+classification_default: "Confidential"
+provenance_footer_template: "Generated via {generator} · {timestamp} · ${cost:.2f}"

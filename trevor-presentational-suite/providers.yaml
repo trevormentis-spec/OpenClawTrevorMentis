@@ -1,0 +1,207 @@
+# TPS Provider Configuration — verified May 2026
+# Each provider: type, access, pricing, fallback chain, last_verified date.
+# If last_verified > 30 days old, cost_estimator surfaces a warning.
+
+# ── Local / Code-Based (zero marginal cost) ──────────────────────────────────
+
+mermaid:
+  type: local
+  cli_command: mmdc
+  fallback_api: https://mermaid.ink
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+matplotlib:
+  type: local
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+plotly:
+  type: local
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+vega_lite:
+  type: local
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+graphviz:
+  type: local
+  cli_command: dot
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+d2:
+  type: local
+  cli_command: d2
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+html_to_png:
+  type: local
+  engine: weasyprint
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+reportlab_table:
+  type: local
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+# ── Maps ─────────────────────────────────────────────────────────────────────
+
+mapbox:
+  type: remote
+  base_url: https://api.mapbox.com
+  env_key: MAPBOX_TOKEN
+  cost_per_render: 0.00
+  free_tier_monthly: 50000
+  last_verified: 2026-05-19
+
+leaflet:
+  type: local
+  tiles: carto_dark
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+sentinel2:
+  type: remote
+  base_url: https://sh.dataspace.copernicus.eu
+  env_key: COPERNICUS_CLIENT_ID
+  cost_per_render: 0.00
+  last_verified: 2026-05-19
+
+# ── Image Generation (via fal.ai aggregator) ─────────────────────────────────
+
+fal_ai:
+  type: remote
+  base_url: https://queue.fal.run
+  env_key: FAL_KEY
+  rate_limit_rpm: 20
+  timeout_sec: 120
+  last_verified: 2026-05-19
+
+flux2pro:
+  provider: fal_ai
+  model_id: fal-ai/flux-pro/v1.1-ultra
+  per_image_usd: 0.05
+  best_for: photorealism, scenes, briefing cover art
+  time_sec: 15
+  last_verified: 2026-05-19
+
+ideogram_v3:
+  provider: fal_ai
+  model_id: fal-ai/ideogram/v3
+  per_image_usd: 0.08
+  best_for: text-in-image, executive cards, posters, social typography
+  time_sec: 20
+  last_verified: 2026-05-19
+
+recraft_v4:
+  provider: fal_ai
+  model_id: fal-ai/recraft-v4
+  per_image_usd: 0.04
+  per_svg_usd: 0.08
+  best_for: vector/SVG, logos, scalable infographics, brand marks
+  time_sec: 12
+  last_verified: 2026-05-19
+
+imagen_4:
+  provider: fal_ai
+  model_id: fal-ai/imagen-4/preview
+  per_image_usd: 0.04
+  best_for: 4K photoreal, typography balance
+  time_sec: 10
+  last_verified: 2026-05-19
+
+gpt_image_2:
+  provider: openai
+  base_url: https://api.openai.com/v1
+  env_key: OPENAI_API_KEY
+  per_image_usd: 0.04
+  per_image_hd_usd: 0.17
+  best_for: complex instruction-following, multi-element compositions
+  time_sec: 15
+  last_verified: 2026-05-19
+
+# ── Audio ────────────────────────────────────────────────────────────────────
+
+elevenlabs:
+  type: remote
+  base_url: https://api.elevenlabs.io/v1
+  env_key: ELEVENLABS_API_KEY
+  per_char_usd: 0.00003
+  time_sec_per_1k_chars: 5
+  best_for: narration, voice cloning, multilingual TTS
+  last_verified: 2026-05-19
+
+suno:
+  type: remote
+  base_url: https://api.suno.com/v1
+  env_key: SUNO_API_KEY
+  per_song_usd: 0.10
+  best_for: background score, ambient music for briefing videos
+  last_verified: 2026-05-19
+
+openai_tts:
+  provider: openai
+  per_char_usd: 0.000015
+  best_for: backup/cost-tier narration
+  last_verified: 2026-05-19
+
+# ── Video ────────────────────────────────────────────────────────────────────
+
+veo_3_1:
+  type: remote
+  base_url: https://us-central1-aiplatform.googleapis.com
+  env_key: GOOGLE_APPLICATION_CREDENTIALS
+  per_sec_fast_usd: 0.15
+  per_sec_standard_usd: 0.75
+  best_for: premium client-facing, native 4K, native audio
+  time_sec_per_sec_video: 30
+  last_verified: 2026-05-19
+
+kling_3_0:
+  provider: fal_ai
+  model_id: fal-ai/kling-video/v3
+  per_sec_usd: 0.12
+  best_for: volume/multi-shot storyboard, cost-sensitive
+  time_sec_per_sec_video: 20
+  last_verified: 2026-05-19
+
+runway_4_5:
+  type: remote
+  base_url: https://api.runwayml.com/v1
+  env_key: RUNWAY_API_KEY
+  per_sec_usd: 0.18
+  best_for: creative control, motion brushes, character consistency
+  time_sec_per_sec_video: 25
+  last_verified: 2026-05-19
+
+heygen:
+  type: remote
+  base_url: https://api.heygen.com/v2
+  env_key: HEYGEN_API_KEY
+  per_min_usd: 1.00
+  best_for: analyst-fronted talking-head briefings
+  time_sec_per_sec_video: 15
+  last_verified: 2026-05-19
+
+# ── LLM (planner calls) ─────────────────────────────────────────────────────
+
+openrouter:
+  type: remote
+  base_url: https://openrouter.ai/api/v1
+  env_key: OPENROUTER_API_KEY
+  last_verified: 2026-05-19
+
+# ── Fallback Chains ──────────────────────────────────────────────────────────
+
+fallback_chains:
+  illustration: [flux2pro, imagen_4, gpt_image_2]
+  text_image: [ideogram_v3, gpt_image_2]
+  vector: [recraft_v4, ideogram_v3]
+  video: [veo_3_1, kling_3_0, runway_4_5]
+  narration: [elevenlabs, openai_tts]
+  map: [mapbox, leaflet]
