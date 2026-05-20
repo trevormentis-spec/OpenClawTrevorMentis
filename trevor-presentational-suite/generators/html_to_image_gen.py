@@ -1,6 +1,7 @@
 """TPS HTML-to-Image Generator — render HTML/CSS layouts to PNG via weasyprint."""
 from __future__ import annotations
 
+import io
 import os
 from generators.base import BaseGenerator, GeneratorResult
 from core.schemas import AssetSpec, AssetKind
@@ -43,10 +44,14 @@ class HTMLToImageGenerator(BaseGenerator):
         html_content = spec.prompt
         width = spec.parameters.get("width", 1200)
 
-        HTML(string=html_content).write_png(
-            output_path,
-            presentational_hints=True,
-        )
+        # weasyprint >= 60 removed write_png; render to PDF then convert via pdf2image
+        pdf_bytes = io.BytesIO()
+        HTML(string=html_content).write_pdf(pdf_bytes, presentational_hints=True)
+        pdf_bytes.seek(0)
+        from pdf2image import convert_from_bytes
+        images = convert_from_bytes(pdf_bytes.read(), dpi=width // 8 if width else 150, first_page=1, last_page=1)
+        if images:
+            images[0].save(output_path, "PNG")
 
         return GeneratorResult(
             output_path=output_path, actual_cost_usd=0.0,
