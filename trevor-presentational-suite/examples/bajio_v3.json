@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0.0",
+  "brief_id": "bajio-v3-20260518",
+  "title": "Bajío Corridor — $200M Industrial Real Estate Assessment",
+  "query_type": "industrial_real_estate",
+  "produced_at": "2026-05-18T16:00:00Z",
+  "producer": "Open Claw Mexico desk",
+  "bluf": "The Bajío corridor remains the premier nearshoring destination for mid-to-high-value manufacturing, but faces acute energy-infrastructure constraints that will define tenant viability over your 36-month horizon.",
+  "calibration": {
+    "band": "probable",
+    "pct_range": [
+      50,
+      60
+    ]
+  },
+  "headline_judgments": [
+    {
+      "id": "hj-1",
+      "claim": "At least one sub-corridor will experience a material power disruption event (>4 hours unplanned CFE outage) within 12 months",
+      "kent_band": "probable",
+      "pct_range": [
+        50,
+        60
+      ],
+      "sources": [
+        {
+          "name": "CFE C-3",
+          "admiralty": "C-3"
+        }
+      ],
+      "subscriber_action": "Commission CFE substation reliability report before committing capital"
+    },
+    {
+      "id": "hj-2",
+      "claim": "Aguascalientes has the lowest per-capita water availability in the Bajío (1,200 m³/year vs 3,500 national average)",
+      "kent_band": "highly_likely",
+      "pct_range": [
+        70,
+        85
+      ],
+      "sources": [
+        {
+          "name": "CONAGUA",
+          "admiralty": "B-2"
+        }
+      ],
+      "subscriber_action": "Water-rights audit required before acquisition"
+    },
+    {
+      "id": "hj-3",
+      "claim": "Guanajuato is too risky for new industrial capital until Q4 2026 at earliest",
+      "kent_band": "likely",
+      "pct_range": [
+        60,
+        70
+      ],
+      "sources": [
+        {
+          "name": "El Financiero",
+          "admiralty": "B-2"
+        }
+      ],
+      "subscriber_action": "Do not commit new capital to Guanajuato industrial assets until Q4 2026"
+    },
+    {
+      "id": "hj-4",
+      "claim": "USMCA review (July 1, 2026) is the single largest macro risk to the Bajío thesis",
+      "kent_band": "almost_certain",
+      "pct_range": [
+        85,
+        100
+      ],
+      "sources": [
+        {
+          "name": "Kalshi KXTARIFFRATEPRC",
+          "admiralty": "A-3"
+        }
+      ],
+      "subscriber_action": "Execute tariff hedge immediately"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-1",
+      "title": "12-Month Security & Political Risk by Sub-Corridor",
+      "subsections": [
+        {
+          "id": "sec-1-1",
+          "title": "Guanajuato (León–Silao–Irapuato–Celaya)",
+          "narrative": "CJNG dominant after El Mencho's death. February 2026 operation aftermath: 70+ attacks across 23 municipalities, 60 arson incidents, 200+ Oxxo stores damaged. CJNG succession battle being fought on industrial corridors.",
+          "judgments": [
+            {
+              "id": "gj-1",
+              "claim": "One major industrial park will experience temporary shutdown due to cartel violence within 12 months",
+              "kent_band": "probable",
+              "pct_range": [
+                50,
+                60
+              ],
+              "sources": [
+                {
+                  "name": "El Financiero",
+                  "admiralty": "B-2"
+                }
+              ],
+              "subscriber_action": "Do not commit new capital to Guanajuato until Q4 2026"
+            }
+          ],
+          "subscriber_action": "Do not commit new capital to Guanajuato until Q4 2026. If existing exposure, secure 24/7 private security.",
+          "themes": [
+            "cartel_security",
+            "us_mexico"
+          ]
+        },
+        {
+          "id": "sec-1-2",
+          "title": "Querétaro (Querétaro City–San Juan del Río–El Marqués)",
+          "narrative": "Lowest risk in the Bajío. Active security cordon at Guanajuato-Michoacán borders. However, post-Mencho violence pushes CJNG northward. Water scarcity is the primary risk — 15-20% water deficit by 2027 per CONAGUA.",
+          "judgments": [
+            {
+              "id": "qj-1",
+              "claim": "CJNG displaced elements will seek new extortion territories in Querétaro",
+              "kent_band": "likely",
+              "pct_range": [
+                60,
+                70
+              ],
+              "sources": [
+                {
+                  "name": "El Financiero",
+                  "admiralty": "C-2"
+                }
+              ],
+              "subscriber_action": "Prefer El Marqués parks with private water treatment plants"
+            }
+          ],
+          "subscriber_action": "Best entry point for first $50-75M. Require water-rights guarantees in lease agreements.",
+          "themes": [
+            "cartel_security",
+            "energy_infra",
+            "economy_markets"
+          ]
+        },
+        {
+          "id": "sec-1-3",
+          "title": "Aguascalientes (Aguascalientes City–Calvillo–Rincón de Romos)",
+          "narrative": "Historical security outlier, but February 2026 road burnings signal material downgrade. Most acute water stress in the Bajío (1,200 m³/year per capita vs 3,500 national average).",
+          "judgments": [
+            {
+              "id": "aj-1",
+              "claim": "Material security event likely within 12 months",
+              "kent_band": "even_chance",
+              "pct_range": [
+                40,
+                50
+              ],
+              "sources": [
+                {
+                  "name": "El Financiero",
+                  "admiralty": "C-2"
+                }
+              ],
+              "subscriber_action": "Proceed with caution. Favor urban perimeter assets."
+            }
+          ],
+          "subscriber_action": "Require water-rights audit and CFE substation reliability report before any acquisition.",
+          "themes": [
+            "cartel_security",
+            "energy_infra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec-2",
+      "title": "3-5 Watch Developments",
+      "subsections": [
+        {
+          "id": "sec-2-1",
+          "title": "CFE Grid Reliability",
+          "narrative": "CFE 2026-2027 transmission expansion plan: new 400kV line Querétaro→Aguascalientes. Target Q4 2027. GAP: No verified construction progress data.",
+          "judgments": [],
+          "subscriber_action": "Commission substation reliability report — ~$15,000"
+        },
+        {
+          "id": "sec-2-2",
+          "title": "USMCA Review & Tariff Risk",
+          "narrative": "July 1, 2026 deadline. Kalshi KXTARIFFRATEPRC markets imply ~13% probability of >9% tariff rate.",
+          "judgments": [],
+          "subscriber_action": "Execute tariff hedge — KXTARIFFRATEPRC >9% strike"
+        },
+        {
+          "id": "sec-2-3",
+          "title": "Water Security",
+          "narrative": "CONAGUA 2026-2030 water availability update expected Q3 2026. El Zapotillo dam expansion is key upgrade signal.",
+          "judgments": [],
+          "subscriber_action": "Monitor CONAGUA update — do not commit without water-rights guarantees"
+        },
+        {
+          "id": "sec-2-4",
+          "title": "Natural Gas Access",
+          "narrative": "Cenagas pipeline capacity auction June 2026. GAP: No current utilization data for Querétaro.",
+          "judgments": [],
+          "subscriber_action": "Request Cenagas auction results when released"
+        }
+      ]
+    },
+    {
+      "id": "sec-3",
+      "title": "Prediction Market Hedge Positions",
+      "narrative": "Only verified instruments: Kalshi KXTARIFFRATEPRC contracts (expiry July 1, 2026).",
+      "subsections": []
+    },
+    {
+      "id": "sec-4",
+      "title": "Framework Thinness & Data Gaps",
+      "subsections": []
+    }
+  ],
+  "watch_items": [
+    {
+      "id": "wi-1",
+      "indicator": "Guanajuato monthly attack count",
+      "trigger": ">100 attacks/month for 2 consecutive months",
+      "signal": "Immediate capital flight — pause all Bajío commitments"
+    },
+    {
+      "id": "wi-2",
+      "indicator": "Kalshi KXTARIFFRATEPRC >9% strike price",
+      "trigger": "Price rises above $0.20",
+      "signal": "Market pricing in higher tariff risk — hedge more aggressively"
+    },
+    {
+      "id": "wi-3",
+      "indicator": "CFE 400kV line construction progress",
+      "trigger": "Q4 2027 target slips or advances",
+      "signal": "Power reliability timeline shifts"
+    },
+    {
+      "id": "wi-4",
+      "indicator": "CONAGUA water availability update",
+      "trigger": "Q3 2026 release",
+      "signal": "Definitive water risk assessment for Aguascalientes"
+    },
+    {
+      "id": "wi-5",
+      "indicator": "Cenagas pipeline auction results",
+      "trigger": "June 2026 release",
+      "signal": "Natural gas access for Querétaro manufacturing"
+    }
+  ],
+  "trade_positions": [
+    {
+      "id": "tp-1",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">9%",
+      "price": 0.13,
+      "price_as_of": "2026-05-18T18:00:00Z",
+      "recommendation": "buy",
+      "sizing_usd": 100000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Most liquid Kalshi tariff contract. Core USMCA hedge.",
+      "is_proxy": true
+    },
+    {
+      "id": "tp-2",
+      "instrument": "KXTARIFFRATEPRC",
+      "instrument_type": "kalshi",
+      "strike": ">51%",
+      "price": 0.12,
+      "price_as_of": "2026-05-18T18:00:00Z",
+      "recommendation": "buy",
+      "sizing_usd": 25000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Tail risk — worst-case tariff scenario.",
+      "is_proxy": true
+    },
+    {
+      "id": "tp-3",
+      "instrument": "EWW",
+      "instrument_type": "etf",
+      "strike": "Jun 2026 puts",
+      "price": null,
+      "price_as_of": null,
+      "recommendation": "buy",
+      "sizing_usd": 50000,
+      "sizing_methodology": "premium-cost-sized",
+      "rationale": "Mexican equity hedge. Price not re-fetched — verify before executing.",
+      "is_proxy": true
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap-1",
+      "description": "No verified CFE outage frequency data for Aguascalientes industrial parks",
+      "impact": "Cannot quantify power disruption probability with confidence",
+      "next_step": "Commission CFE substation reliability report (~$15K, 4-week lead)",
+      "estimated_cost": "~$15,000",
+      "timeline": "4 weeks"
+    },
+    {
+      "id": "gap-2",
+      "description": "No verified natural gas pipeline capacity utilization for Querétaro",
+      "impact": "Cannot assess tenant production risk from gas curtailment",
+      "next_step": "Request Cenagas auction results (June 2026 — publicly available)",
+      "timeline": "June 2026"
+    },
+    {
+      "id": "gap-3",
+      "description": "No Mexico-specific prediction market contracts for Bajío industrial real estate risk",
+      "impact": "All hedges are proxy instruments — imperfect match",
+      "next_step": "Monitor Polymarket for user-created contracts; propose synthetic construction",
+      "timeline": "Ongoing"
+    }
+  ],
+  "action_lines": [
+    {
+      "id": "al-1",
+      "priority": 1,
+      "action": "Execute Kalshi KXTARIFFRATEPRC hedge — $125K notional across >9% and >51% strikes (~$17K cost)",
+      "timeframe": "7 days",
+      "rationale": "USMCA review deadline July 1. Current pricing undervalues tariff risk per our assessment."
+    },
+    {
+      "id": "al-2",
+      "priority": 1,
+      "action": "Commission CFE substation reliability report for Aguascalientes",
+      "timeframe": "30 days",
+      "rationale": "Cannot assess power disruption risk without substation-level data."
+    },
+    {
+      "id": "al-3",
+      "priority": 2,
+      "action": "Commit first $50-75M to Querétaro (El Marqués with private water treatment)",
+      "timeframe": "90 days",
+      "rationale": "Querétaro is the lowest-risk entry point. Water treatment requirement mitigates primary vulnerability."
+    },
+    {
+      "id": "al-4",
+      "priority": 2,
+      "action": "Request Cenagas pipeline auction results and CONAGUA water availability update",
+      "timeframe": "60 days",
+      "rationale": "Both data sets are publicly available but require active request."
+    },
+    {
+      "id": "al-5",
+      "priority": 3,
+      "action": "Do not commit to Guanajuato or Aguascalientes until CFE report and water-rights audit return",
+      "timeframe": "90+ days",
+      "rationale": "Both sub-corridors have material unresolved energy/water risks."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "El Financiero",
+      "admiralty": "B-2",
+      "type": "Newspaper",
+      "language": "es"
+    },
+    {
+      "id": "src-2",
+      "name": "CONAGUA",
+      "admiralty": "B-2",
+      "type": "Government agency",
+      "language": "es"
+    },
+    {
+      "id": "src-3",
+      "name": "CFE",
+      "admiralty": "C-3",
+      "type": "Government/Utility",
+      "language": "es"
+    },
+    {
+      "id": "src-4",
+      "name": "Kalshi KXTARIFFRATEPRC",
+      "admiralty": "A-3",
+      "type": "Prediction market",
+      "language": "en"
+    },
+    {
+      "id": "src-5",
+      "name": "Cenagas",
+      "admiralty": "B-3",
+      "type": "Government pipeline agency",
+      "language": "es"
+    },
+    {
+      "id": "src-6",
+      "name": "Wilson Center",
+      "admiralty": "B-2",
+      "type": "Think tank",
+      "language": "en"
+    },
+    {
+      "id": "src-7",
+      "name": "Lieber Institute",
+      "admiralty": "B-2",
+      "type": "Research institute",
+      "language": "en"
+    }
+  ],
+  "meta": {
+    "sources_cited": 7,
+    "total_judgments": 8,
+    "avg_confidence": 0.65,
+    "themes_covered": [
+      "cartel_security",
+      "energy_infra",
+      "economy_markets",
+      "us_mexico",
+      "political_risk"
+    ],
+    "engine_version": "schema-v1.0.0 / Phase 2 planner",
+    "word_count": 1674
+  },
+  "custom": {
+    "query_context": "family office industrial real estate"
+  }
+}
