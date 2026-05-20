@@ -713,9 +713,10 @@ def test_cache_operations():
     """Test cache key generation and storage."""
     from core.cache import cache_key, cache_get, cache_put, cache_has
     from core.schemas import AssetSpec, AssetKind
+    import time
     spec = AssetSpec(
-        kind=AssetKind.DIAGRAM, generator="test_gen", title="Cache Test",
-        prompt="test prompt",
+        kind=AssetKind.DIAGRAM, generator="test_gen_", title="Cache Test",
+        prompt=f"test prompt {time.time()}",
     )
     ck = cache_key("test_gen", spec)
     # Should be a hex string
