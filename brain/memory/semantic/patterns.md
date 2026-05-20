@@ -1,1 +1,2 @@
 - [2026-05-13] - Cooldown: 4h per region before firing again (source: 2026-05-13.md, confidence: medium)
+- [2026-05-20] - Gmail Intelligence label: 8/10 unread within 24h, consistent high-signal sources (ISW, CTP, CISA, Cipher Brief). Pipeline extracts summaries appended to tasks/news_raw.md with timestamps. (source: 2026-05-19 operational logs, confidence: high)
