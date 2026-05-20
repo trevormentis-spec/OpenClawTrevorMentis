@@ -27,8 +27,14 @@ Usage:
 
 Budget: $0.06 per run (1 GenViral credit + $0.05 ElevenLabs, when working).
 """
-from __future__ import annotations
 
+from __future__ import annotations
+import sys
+sys.path.insert(0, "/home/ubuntu/.openclaw/workspace")
+
+import sys
+if "/home/ubuntu/.openclaw/workspace" not in sys.path:
+import sys
 import argparse
 import json
 import os
@@ -38,11 +44,8 @@ import sys
 import time
 from datetime import datetime, timezone
 from typing import Optional
-
 WORKSPACE = pathlib.Path("/home/ubuntu/.openclaw/workspace")
 STAGE_SCRIPTS = WORKSPACE / "scripts" / "present"
-
-# Hard per-asset cost ceilings
 ASSET_CEILINGS = {
     "cover_image": 0.01,   # 1 GenViral credit
     "charts": 0.00,        # matplotlib + Mermaid = free
@@ -50,7 +53,6 @@ ASSET_CEILINGS = {
     "audio": 0.15,         # ElevenLabs per-character
     "video": 0.00,         # ffmpeg = free
 }
-
 STAGES = [
     {"name": "cover_image", "script": "stage1_image.py",
      "args": lambda b, o: ["--prompt", f"Intelligence briefing cover for: {b.get('title','Briefing')}",
@@ -66,8 +68,6 @@ STAGES = [
     {"name": "video", "script": "stage5_video.py",
      "args": lambda b, o: _video_args(b, o)},
 ]
-
-
 def _map_args(brief: dict, output_dir: pathlib.Path) -> list[str]:
     """Extract map args from brief geographic data."""
     args = ["--center", "0", "0", "--zoom", "4", "--output", str(output_dir / "map.png")]
@@ -80,12 +80,9 @@ def _map_args(brief: dict, output_dir: pathlib.Path) -> list[str]:
             args[4] = str(geo.get("zoom", 5))
             break
     return args
-
-
 def _video_args(brief: dict, output_dir: pathlib.Path) -> list[str]:
     """Build video args from available assets."""
     args = ["--brief", str(brief.get("_path", "")), "--duration", "30"]
-    # Collect assets from output_dir
     asset_exts = {
         "cover.png", "kent-bar.png", "trade-bar.png", "sections-diagram.png", "map.png"
     }
@@ -100,54 +97,33 @@ def _video_args(brief: dict, output_dir: pathlib.Path) -> list[str]:
         args.extend(["--script", str(script)])
     args.extend(["--output", str(output_dir / "briefing.mp4")])
     return args
-
-
 def _load_env() -> dict[str, str]:
-    """Load .env into environment."""
-    env = os.environ.copy()
-    env_path = WORKSPACE / ".env"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line and "=" in line and not line.startswith("#"):
-                k, v = line.split("=", 1)
-                env[k] = v.strip('"').strip("'")
-    return env
-
-
+    """Load environment via shared _env module (not .env directly)."""
+    from _present_env import load_env as _le
+    return _le()
 def run_stage(stage: dict, brief: dict, output_dir: pathlib.Path,
               env: dict[str, str], budget: float, skip: set) -> dict:
     """Run a single stage. Returns result dict."""
     name = stage["name"]
-
     if name in skip:
         return {"name": name, "skipped": True, "success": True}
-
     script_path = STAGE_SCRIPTS / stage["script"]
     if not script_path.exists():
         return {"name": name, "skipped": True, "success": False,
                 "error": f"Script not found: {script_path}"}
-
-    # Check if budget allows this stage
     ceiling = ASSET_CEILINGS.get(name, 0.01)
     if budget < ceiling:
         return {"name": name, "skipped": True, "success": False,
                 "error": f"Budget ${budget:.2f} < ceiling ${ceiling:.2f}"}
-
-    # Run stage CLI
     args = stage["args"](brief, output_dir)
     full_cmd = ["python3", str(script_path)] + args
-
     start = time.time()
     result = subprocess.run(full_cmd, capture_output=True, text=True, timeout=300, env=env)
     elapsed = time.time() - start
-
     success = result.returncode == 0
-    # Even exit code 0 with "DISABLED" in output counts as graceful degradation
     if "DISABLED" in result.stdout:
         success = True  # graceful degradation
         elapsed = 0.1
-
     meta = {
         "name": name,
         "success": success,
@@ -157,8 +133,6 @@ def run_stage(stage: dict, brief: dict, output_dir: pathlib.Path,
         "stderr": result.stderr[-200:] if result.stderr else "",
     }
     return meta
-
-
 def self_test_all() -> dict[str, list[str]]:
     """Run --self-test on all stages. Returns {stage: [failures]}."""
     env = _load_env()
@@ -173,8 +147,6 @@ def self_test_all() -> dict[str, list[str]]:
         disabled = [l.strip() for l in output.split("\n") if "DISABLED" in l]
         results[stage["name"]] = disabled if disabled else []
     return results
-
-
 def main():
     parser = argparse.ArgumentParser(description="Trevor Present — Stages 1-5 pipeline")
     parser.add_argument("--brief", help="Path to brief JSON")
@@ -189,7 +161,6 @@ def main():
     parser.add_argument("--skip-qc", action="store_true",
                         help="Skip Phase B vision QC verification")
     args = parser.parse_args()
-
     if args.self_test:
         print("=== Trevor Present — Self-Test ===\n")
         results = self_test_all()
@@ -203,30 +174,22 @@ def main():
                 print(f"  ✅ {stage}: ready")
         print(f"\n{'All stages ready' if all_ok else 'Some stages disabled'}")
         return
-
     if not args.brief:
         parser.error("--brief is required (unless using --self-test)")
-
-    # Load brief
     brief_path = pathlib.Path(args.brief)
     if not brief_path.exists():
         print(f"ERROR: Brief not found: {args.brief}")
         sys.exit(1)
-
     brief = json.loads(brief_path.read_text())
     brief["_path"] = str(brief_path)
-
-    # Output dir
     if not args.output_dir:
         date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         args.output_dir = str(WORKSPACE / "exports" / "present" / date_str)
     output_dir = pathlib.Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-
     skip_set = set(args.skip)
     env = _load_env()
     remaining_budget = args.budget
-
     print(f"\n{'='*60}")
     print(f"  Trevor Present")
     print(f"  Brief: {brief.get('title', brief_path.name)}")
@@ -234,36 +197,27 @@ def main():
     print(f"  Budget: ${args.budget:.2f}")
     print(f"  Skip: {skip_set or 'none'}")
     print(f"{'='*60}\n")
-
     results = []
     total_start = time.time()
-
     for stage in STAGES:
         name = stage["name"]
         ceiling = ASSET_CEILINGS.get(name, 0.01)
-
         if remaining_budget < ceiling:
             print(f"  ⏭️  {name}: budget ${remaining_budget:.2f} < ceiling ${ceiling:.2f}")
             results.append({"name": name, "skipped": True, "reason": "budget"})
             continue
-
         result = run_stage(stage, brief, output_dir, env, remaining_budget, skip_set)
         results.append(result)
-
         if not result.get("skipped") and result.get("success"):
             remaining_budget -= ceiling
-
         icon = "✅" if result.get("success") else "❌"
         if result.get("skipped"):
             icon = "⏭️"
         details = result.get("error", f"{result.get('elapsed_sec', 0):.1f}s")
         print(f"  {icon} {name}: {details}")
-
     total_elapsed = time.time() - total_start
     success_count = sum(1 for r in results if r.get("success"))
     total_stages = len(results)
-
-    # Write manifest
     manifest = {
         "brief": str(brief_path),
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -277,15 +231,12 @@ def main():
     }
     manifest_path = output_dir / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2))
-
     print(f"\n{'='*60}")
     print(f"  Pipeline: {success_count}/{total_stages} stages succeeded")
     print(f"  Duration: {total_elapsed:.1f}s")
     print(f"  Budget used: ${args.budget - remaining_budget:.2f} of ${args.budget:.2f}")
     print(f"  Manifest: {manifest_path}")
     print(f"{'='*60}")
-
-    # Run Phase B QC on deliverables
     deliv_files = [str(f) for f in output_dir.iterdir() if f.is_file() and f.suffix in ('.png', '.jpg', '.mp4', '.mp3')]
     if deliv_files and not args.skip_qc:
         print(f"\n--- Running QC on {len(deliv_files)} deliverables ---")
@@ -311,11 +262,8 @@ def main():
                 print(f'  {icon} {fname}: {"PASS" if verdict.get("pass") else f"FAIL ({len(verdict.get("issues", []))} issues)"}')
             except:
                 print(f'  ❓ {fname}: QC parse error')
-
     if success_count < total_stages:
         print(f"\n⚠️  {total_stages - success_count} stage(s) failed or skipped.")
         sys.exit(0)  # Graceful exit — degradation is by design
-
-
 if __name__ == "__main__":
     main()
