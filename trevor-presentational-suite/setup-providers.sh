@@ -1,78 +1,62 @@
 #!/usr/bin/env bash
-# TPS Provider Setup — provision API keys for the presentation suite generators.
-#
-# Usage:
-#   bash trevor-presentational-suite/setup-providers.sh
-#
-# This script checks which providers need keys and prints instructions.
-# It does NOT read or store keys itself.
+# TPS Provider Setup — simplified.
+# OpenRouter covers most needs with one key.
+# Add specialized keys only for specific generators.
 
 set -euo pipefail
-
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 ENV_FILE="$REPO/.env"
-PROVIDERS="$REPO/trevor-presentational-suite/providers.yaml"
 
 echo "=== TPS Provider Setup ==="
 echo ""
 
-# Check which providers are already configured
-echo "--- Checking .env ---"
-if [ -f "$ENV_FILE" ]; then
-    echo "✅ .env exists"
-else
-    echo "❌ .env missing — create from deployment/.env.example"
-fi
+# Minimal keys (these are what you actually need)
+MINIMAL=(
+    "OPENROUTER_API_KEY:covers all LLMs + image gen (flux, ideogram, recraft via OpenRouter)"
+    "ELEVENLABS_API_KEY:TTS audio companion (get at https://elevenlabs.io)"
+    "MAPBOX_TOKEN:interactive maps (free tier at https://account.mapbox.com)"
+)
 
-echo ""
-echo "--- Generator Key Status ---"
+SPECIALIZED=(
+    "FAL_API_KEY:unified fal.ai access for flux/ideogram/recraft/imagen (https://fal.ai)"
+    "OPENAI_API_KEY:GPT-4 image gen (https://platform.openai.com)"
+    "HEYGEN_API_KEY:AI video briefing (https://heygen.com)"
+    "SUNO_API_KEY:AI music (https://suno.ai)"
+    "RUNWAY_API_KEY:video gen (https://runwayml.com)"
+)
 
-# Check each generator's key requirements
-declare -A PROVIDER_KEYS
-PROVIDER_KEYS["OpenRouter (all LLM generators)"]="OPENROUTER_API_KEY"
-PROVIDER_KEYS["DeepSeek (V4 Flash/Pro)"]="DEEPSEEK_API_KEY"
-PROVIDER_KEYS["ElevenLabs (TTS audio)"]="ELEVENLABS_API_KEY"
-PROVIDER_KEYS["Flux2 (image gen)"]="FLUX_API_KEY"
-PROVIDER_KEYS["OpenAI (GPT-4 image / DALL-E)"]="OPENAI_API_KEY"
-PROVIDER_KEYS["Anthropic (Claude vision)"]="ANTHROPIC_API_KEY"
-PROVIDER_KEYS["Recraft (vector recolor)"]="RECRAFT_API_KEY"
-PROVIDER_KEYS["Ideogram (image gen)"]="IDEOGRAM_API_KEY"
-PROVIDER_KEYS["Google (Imagen)"]="GOOGLE_API_KEY"
-PROVIDER_KEYS["HeyGen (AI video)"]="HEYGEN_API_KEY"
-PROVIDER_KEYS["Suno (AI music)"]="SUNO_API_KEY"
-PROVIDER_KEYS["Runway (video gen)"]="RUNWAY_API_KEY"
-PROVIDER_KEYS["Kling (video gen)"]="KLING_API_KEY"
-PROVIDER_KEYS["Veo (video gen)"]="VEO_API_KEY"
-
+echo "--- Already configured ---"
+CONFIGURED=0
 MISSING=0
-HAVE=0
-for name in "${!PROVIDER_KEYS[@]}"; do
-    key="${PROVIDER_KEYS[$name]}"
+for entry in "${MINIMAL[@]}"; do
+    key="${entry%%:*}"
+    desc="${entry#*:}"
     if grep -q "$key" "$ENV_FILE" 2>/dev/null; then
-        echo "  ✅ $name"
-        HAVE=$((HAVE+1))
+        echo "  ✅ $key — $desc"
+        CONFIGURED=$((CONFIGURED+1))
     else
-        echo "  ❌ $name — needs $key in .env"
+        echo "  ⬜ $key — $desc"
         MISSING=$((MISSING+1))
     fi
 done
 
 echo ""
-echo "--- Summary ---"
-echo "  Configured: $HAVE"
-echo "  Missing: $MISSING"
+echo "--- Minimal setup (OpenRouter covers LLMs + image gen) ---"
+echo "  Just OPENROUTER_API_KEY enables:"
+echo "    - All text generators (Opus, Sonnet, DeepSeek)"
+echo "    - Image generation via OpenRouter proxy"
+echo "    - Cost tracking through OpenRouter dashboard"
+echo ""
+echo "  Add ELEVENLABS_API_KEY + MAPBOX_TOKEN for full TPS."
+echo ""
+echo "  Specialized keys (only if needed):"
+for entry in "${SPECIALIZED[@]}"; do
+    echo "    - ${entry%%:*}: ${entry#*:}"
+done
 
 echo ""
-echo "--- Quick Provisioning ---"
-echo "Add any missing key to $ENV_FILE with:"
-echo "  echo 'PROVIDER_KEY=your_key_here' >> $ENV_FILE"
+echo "--- Quick add ---"
+echo "  echo 'FAL_API_KEY=your_key_here' >> $ENV_FILE"
+echo "  (replaces separate flux/ideogram/recraft/imagen keys)"
 echo ""
-echo "Then verify with:"
-echo "  python3 trevor-presentational-suite/tests/run_all.py"
-echo ""
-echo "For new keys, sign up at:"
-echo "  OpenRouter:  https://openrouter.ai/keys"
-echo "  ElevenLabs:  https://elevenlabs.io/app/settings/api-keys"
-echo "  Flux/Recraft/Ideogram/HeyGen/Suno/Runway/Kling/Veo:"
-echo "    → check providers.yaml for endpoint URLs and signup links"
-echo "    cat $PROVIDERS | grep -A 3 'endpoint\\|signup'"
+echo "Then verify: cd trevor-presentational-suite && python3 tests/run_all.py"
