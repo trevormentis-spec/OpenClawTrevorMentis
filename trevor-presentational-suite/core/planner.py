@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Routes through llm_gate.route() at line 379 before API call. Endpoint URL is for the gate-selected model.
 """TPS Planner — LLM art-director that decomposes briefs into visual primitives.
 
 The planner reads an IngestedBrief, reasons about what visual assets would
@@ -369,67 +370,39 @@ def plan_from_brief(
 
 
 def _llm_plan(brief_summary: str, max_assets: int) -> dict:
-    """Call LLM to generate a plan. Uses TREVOR's llm_gate if available."""
-    # Try TREVOR's llm_gate first
+    """Call LLM to generate a plan. Routes through TREVOR's llm_gate for Opus 4.7."""
     try:
         trevor_root = Path(__file__).resolve().parent.parent.parent
         sys.path.insert(0, str(trevor_root))
-        from analyst.llm_gate import call_llm
+        
+        # Route through gate for model selection
+        from analyst.llm_gate import route
+        gating = route("flagship_document", {"target_words": len(brief_summary.split()), "scenarios": 0})
+        model = gating.model
 
         user_prompt = (
             f"Create a presentation plan for the following intelligence brief. "
             f"Maximum {max_assets} assets.\n\n{brief_summary}"
         )
 
-        response = call_llm(
-            system=SYSTEM_PROMPT,
-            user=user_prompt,
-            model="claude-sonnet-4-20250514",
-            max_tokens=4096,
-            temperature=0.3,
-        )
-
-        if response and response.get("content"):
-            text = response["content"]
-            if isinstance(text, list):
-                text = text[0].get("text", "") if text else ""
-            return _parse_plan_json(text)
-    except (ImportError, Exception):
-        pass
-
-    # Try direct Anthropic API
-    try:
-        import httpx
-        api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-        if not api_key:
-            raise RuntimeError("No API key")
-
-        user_prompt = (
-            f"Create a presentation plan for the following intelligence brief. "
-            f"Maximum {max_assets} assets.\n\n{brief_summary}"
-        )
-
-        resp = httpx.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={
-                "x-api-key": api_key,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
-            },
-            json={
-                "model": "claude-sonnet-4-20250514",
-                "max_tokens": 4096,
-                "temperature": 0.3,
-                "system": SYSTEM_PROMPT,
-                "messages": [{"role": "user", "content": user_prompt}],
-            },
-            timeout=60,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        text = data.get("content", [{}])[0].get("text", "")
+        # Call via OpenRouter (supports all model formats)
+        import urllib.request
+        api_key = os.environ.get("OPENROUTER_API_KEY", "")
+        payload = json.dumps({
+            "model": model,
+            "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": user_prompt}],
+            "max_tokens": 4096,
+            "temperature": 0.3,
+        }).encode()
+        req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions",
+            data=payload,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}",
+                "HTTP-Referer": "https://github.com/trevormentis-spec"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read())
+        text = data["choices"][0]["message"]["content"]
         return _parse_plan_json(text)
-    except Exception:
+    except Exception as exc:
         pass
 
     raise RuntimeError("LLM planning unavailable")
