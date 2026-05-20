@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Test file — references model strings for testing self-improvement. Does not make API calls.
 #!/usr/bin/env python3
 """Tests for self-improvement mechanisms.
 

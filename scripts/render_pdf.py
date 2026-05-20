@@ -94,12 +94,12 @@ def enrich_brief_data(brief: dict[str, Any]) -> dict[str, Any]:
     """Enrich brief data for rendering — extract simple vars, format lists."""
     
     bluf_text = brief.get("bluf", "")
-    cal = brief.get("calibration", {})
-    if isinstance(cal, dict):
-        cal_band = cal.get("band", "Not assessed")
-        cal_pct = f"{cal.get('pct_range', [0, 0])[0]}-{cal.get('pct_range', [0, 0])[1]}%"
-    elif isinstance(cal, str):
-        cal_band = cal
+    # Calibration can be at top level (calibration_band) or in a nested dict
+    cal_band = brief.get("calibration_band", brief.get("calibration", {}).get("band", "Not assessed"))
+    cal_pct_range = brief.get("calibration_pct_range", brief.get("calibration", {}).get("pct_range", [0, 0]))
+    if isinstance(cal_pct_range, list) and len(cal_pct_range) == 2:
+        cal_pct = f"{cal_pct_range[0]}-{cal_pct_range[1]}%"
+    else:
         cal_pct = ""
     
     simple_vars = {

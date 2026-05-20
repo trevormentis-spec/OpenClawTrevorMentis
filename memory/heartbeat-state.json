@@ -8,8 +8,9 @@
     "calendar": 1779216600,
     "memory_hygiene": 1779216600,
     "openrouter_usage": 1779216600,
-    "brain_index": 1779216600
+    "brain_index": 1779216600,
+    "social_monitor": 1777660000
   },
-  "lastHeartbeat": 1779216600,
-  "rotationCursor": 1
+  "lastHeartbeat": 1777660000,
+  "rotationCursor": 2
 }

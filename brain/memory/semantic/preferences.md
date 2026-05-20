@@ -1,1 +1,2 @@
 - [2026-05-11] ### Schedule going forward (source: 2026-05-11.md, confidence: medium)
+- [2026-05-18] - Default-non-executing rule: new automated executors default to dry-run; explicit --live flag required. (source: 2026-05-18.md, confidence: medium)

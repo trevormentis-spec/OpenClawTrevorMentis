@@ -1,0 +1,61 @@
+{
+  "brief": "/tmp/test-full-brief.json",
+  "date": "2026-05-20",
+  "title": "Global Security Briefing \u2014 20 May 2026",
+  "output_dir": "exports/present/stages-1-5",
+  "budget": 0.5,
+  "remaining_budget": 0.34,
+  "results": [
+    {
+      "name": "cover_image",
+      "success": true,
+      "elapsed_sec": 27.5,
+      "returncode": 0,
+      "stdout": "  \u2705 Cover: exports/present/stages-1-5/cover.png (420 KB, 1 credit(s))\n  Verification: {'exists': True, 'not_empty': True, 'valid_format': True, 'size_kb': 420.6}\n  \u2705 Stage 1 deliverable: exports/present/stages-1-5/cover.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "charts",
+      "success": true,
+      "elapsed_sec": 1.0,
+      "returncode": 0,
+      "stdout": "  \u2705 kent_bar: exports/present/stages-1-5/kent-bar.png\n  \u2705 trade_bar: exports/present/stages-1-5/trade-bar.png\n  \u2705 mermaid: exports/present/stages-1-5/sections-diagram.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "maps",
+      "success": true,
+      "elapsed_sec": 0.2,
+      "returncode": 0,
+      "stdout": "  \u2705 Map: exports/present/stages-1-5/map.png (1517 KB, zoom 5)\n  Verification: {'exists': True, 'size_kb': 1517.1, 'not_empty': True, 'valid_format': True}\n  \u2705 Stage 3 deliverable: exports/present/stages-1-5/map.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "audio",
+      "success": true,
+      "elapsed_sec": 8.9,
+      "returncode": 0,
+      "stdout": "cording at: exports/present/stages-1-5/narration.script.txt\n  \u26a0\ufe0f Audio: exports/present/stages-1-5/narration.mp3 (5s, 429 words, tts_fallback)\n  Verification: {'exists': True, 'size_kb': 78.6, 'not_empty': True, 'valid_format': True}\n  \u2705 Stage 4 deliverable: exports/present/stages-1-5/narration.mp3\n",
+      "stderr": ""
+    },
+    {
+      "name": "video",
+      "success": true,
+      "elapsed_sec": 3.1,
+      "returncode": 0,
+      "stdout": " Composing video...\n  \u2705 Video: exports/present/stages-1-5/briefing.mp4 (0.5 MB, 10s)\n  Verification: {'exists': True, 'size_mb': 0.5, 'not_empty': True, 'container': 'mov,mp4,m4a,3gp,3g2,mj2', 'duration_s': 10.0, 'valid_format': True}\n  \u2705 Stage 5 deliverable: exports/present/stages-1-5/briefing.mp4\n",
+      "stderr": ""
+    }
+  ],
+  "total_elapsed_sec": 40.6,
+  "generated_files": [
+    "exports/present/stages-1-5/cover.png",
+    "exports/present/stages-1-5/kent-bar.png",
+    "exports/present/stages-1-5/trade-bar.png",
+    "exports/present/stages-1-5/sections-diagram.png",
+    "exports/present/stages-1-5/map.png",
+    "exports/present/stages-1-5/narration.script.txt",
+    "exports/present/stages-1-5/narration.mp3",
+    "exports/present/stages-1-5/briefing.mp4"
+  ]
+}

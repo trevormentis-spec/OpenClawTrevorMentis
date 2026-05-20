@@ -1,31 +1,53 @@
-# Gmail Intel Digest — 2026-05-19 19:02 UTC
+# Gmail Intel Digest — 2026-05-20 19:02 UTC
 
-## Security alert
-**From:** Google <no-reply@accounts.google.com>
-**Date:** Tue, 19 May 2026 17:53:06 GMT
-**Type:** alert | **Importance:** high
+## Ukraine Has a New War Strategy—and It's Working
+**From:** Foreign Policy <reply@foreignpolicy.com>
+**Date:** Wed, 20 May 2026 14:00:54 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
 
-[image: Google]
-A new sign-in on Mac
-
-
-trevor.mentis@gmail.com
-We noticed a new sign-in to your Google Account on a Mac device. If this
-was you, you don’t need to do anything. If not, we’ll help you secure your
-account.
-Check activity
-<https://accounts.google.com/AccountChooser?Email=trevor.mentis@gmail.com&continue=https://myaccount.google.com/alert/nt/1779213186000?rfn%3D325%26rfnc%3D1%26eid%3D-1734005952506967547%26et%3D0>
-You can also see security activity at
-https://myaccount.goo
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
 
 ---
 
-## Korean Peninsula Update, May 19, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Tue, 19 May 2026 12:45:58 -0400 (EDT)
+## Your Mapbox password has been updated
+**From:** Team Mapbox <no-reply@mapbox.com>
+**Date:** Wed, 20 May 2026 03:35:33 +0000 (UTC)
 **Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War The South Korean government is considering “phased” participation in the United States-led multinational operation “Maritime Freedom Construct” May 19, 2026 Data Cutoff: May 18, 2026 Yeji Chung of the American Enterprise Institute and Alfred Han of the Institute for the Study of War TOPLINES The South Korean government is considering “phased” participation in the United States-led multinational operation “Maritime Freedom Construct” (MFC) after a South K
+( http://www.mapbox.com )
+
+---------
+Hi there,
+---------
+
+The password tied to your Mapbox account *trevormentis* has been updated.
+
+Best,
+Mapbox
+
+Don't recognize this change, or have additional questions? Contact our Support Team ( https://support.mapbox.com/hc/en-us/requests/new?ticket_form_id=360000279191 ) - we're happy to help!
+
+( https://www.twitter.com/mapbox ) ( https://www.facebook.com/Mapbox ) ( https://www.linkedin.com/company/mapbox ) ( https://www.instagram.com/mapbox/ 
+
+---
+
+## Global Security & Intelligence Brief — 19 May 2026
+**From:** Trevor <trevor.mentis@gmail.com>
+**Date:** Tue, 19 May 2026 19:02:22 -0500
+**Type:** alert | **Importance:** high
+
+Trevor,
+
+Middle East is the biggest mover today. President Trump confirmed on Truth Social late 18 May that he had cancelled a planned 19 May US military strike on Iran after personal intercession from the Emir of Qatar, MBS and MBZ; Bloomberg's read of the channel characterises Tehran's counterproposal (phased enrichment-freeze + verification + sanctions-relief) as 'insufficient' from the US side, but the cancellation alone re-opens an optionality channel markets had closed. The Iran cluster re
+
+---
+
+## Russian Offensive Campaign Assessment, May 19, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Tue, 19 May 2026 19:54:00 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Russia is using unannounced strategic nuclear exercises to posture strength against Ukraine’s allies and distract from mounting battlefield weaknesses. May 19, 2026 Data Cutoff: 12:15 PM ET Samuel Shafiro, Jakub Kostka, Jennie Olmsted, Grace Mappes, Kateryna Shymkiv, Diana Nasreddine, Anjou Kang-Stryker, and Karolina Hird TOPLINES Russia is using unannounced strategic nuclear exercises to posture strength against Ukraine’s allies and distract from mounti
 
 ---
 

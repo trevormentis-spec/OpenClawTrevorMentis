@@ -1,0 +1,169 @@
+{
+  "brief_id": "stage1-baseline-test",
+  "title": "Global Security Briefing \u2014 Baseline Verification",
+  "query_type": "geopolitical",
+  "produced_at": "2026-05-20T16:30:00Z",
+  "bluf": "China-Taiwan tensions escalated with military exercises near the median line, while Iran signaled readiness for renewed nuclear talks. NATO Baltic deployments continue.",
+  "calibration_band": "probable",
+  "calibration_pct_range": [
+    50,
+    60
+  ],
+  "headline_judgments": [
+    {
+      "claim": "China will conduct naval exercises near Taiwan within 7 days",
+      "kent_band": "likely",
+      "pct_range": [
+        60,
+        75
+      ],
+      "horizon_end": "2026-05-27"
+    },
+    {
+      "claim": "Iran nuclear talks resume within 14 days",
+      "kent_band": "probable",
+      "pct_range": [
+        50,
+        60
+      ],
+      "horizon_end": "2026-06-03"
+    },
+    {
+      "claim": "NATO increases Baltic forward presence by 3 battalions",
+      "kent_band": "almost_certain",
+      "pct_range": [
+        93,
+        100
+      ]
+    },
+    {
+      "claim": "Brazil fiscal consolidation passes lower house",
+      "kent_band": "even_chance",
+      "pct_range": [
+        40,
+        50
+      ]
+    },
+    {
+      "claim": "Semiconductor export controls expanded to new categories",
+      "kent_band": "unlikely",
+      "pct_range": [
+        25,
+        40
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Asia-Pacific Security",
+      "narrative": "China's People's Liberation Army conducted live-fire exercises near the Taiwan Strait median line on May 19. The exercises involved J-20 stealth fighters and Type 055 destroyers, simulating anti-access/area denial (A2/AD) operations. This represents the highest readiness posture since the 2022 Pelosi visit.",
+      "judgments": [
+        {
+          "claim": "PLA exercises will continue for at least 7 more days",
+          "kent_band": "likely"
+        }
+      ]
+    },
+    {
+      "title": "Middle East Nuclear Diplomacy",
+      "narrative": "Iran's new president signaled willingness to resume JCPOA negotiations in Vienna. IAEA inspectors report continued enrichment at 60% purity at Fordow. The window for diplomatic resolution is narrowing as Iran's nuclear latency decreases.",
+      "judgments": [
+        {
+          "claim": "Iran will agree to IAEA snap inspections within 30 days",
+          "kent_band": "even_chance"
+        }
+      ]
+    },
+    {
+      "title": "NATO Eastern Flank",
+      "narrative": "NATO announced deployment of 3 additional battlegroups to Poland, Estonia, and Latvia. Response to drone incursion incident in Latvia that brought down the coalition government.",
+      "judgments": [
+        {
+          "claim": "At least one more NATO state reports drone incursion within 7 days",
+          "kent_band": "likely"
+        }
+      ]
+    },
+    {
+      "title": "Global Finance & Markets",
+      "narrative": "Taiwan Strait tensions drove Kalshi KXTAIWAN contracts to 65\u00a2. DXY strengthened on safe-haven flows. Brent crude held above 2 on Middle East risk premium."
+    }
+  ],
+  "watch_items": [
+    {
+      "indicator": "PLA Eastern Fleet satellite imagery",
+      "trigger": "Fleet concentration > 48h",
+      "signal": "Exercise imminent"
+    },
+    {
+      "indicator": "IAEA Fordow inspection access",
+      "trigger": "Access denied > 72h",
+      "signal": "Diplomatic breakdown"
+    },
+    {
+      "indicator": "NATO Baltic air policing rotation",
+      "trigger": "Non-scheduled reinforcement",
+      "signal": "Readiness escalation"
+    }
+  ],
+  "trade_positions": [
+    {
+      "instrument": "KXTAIWAN",
+      "instrument_type": "prediction",
+      "strike": ">60",
+      "price": 0.65,
+      "recommendation": "buy",
+      "sizing_usd": 500000,
+      "rationale": "Taiwan tensions likely to persist"
+    },
+    {
+      "instrument": "USDCNH",
+      "instrument_type": "forex",
+      "strike": ">7.35",
+      "price": 7.28,
+      "recommendation": "hold",
+      "sizing_usd": 1000000,
+      "rationale": "Wait for summit clarity"
+    }
+  ],
+  "action_lines": [
+    {
+      "priority": 1,
+      "action": "Monitor PLA Eastern Fleet satellite imagery daily",
+      "timeframe": "daily",
+      "rationale": "Exercise indicators"
+    },
+    {
+      "priority": 2,
+      "action": "Review Iran enrichment timeline",
+      "timeframe": "weekly",
+      "rationale": "Diplomatic window narrowing"
+    }
+  ],
+  "sources": [
+    {
+      "name": "PLA Eastern Theater Command Statement",
+      "admiralty": "A1"
+    },
+    {
+      "name": "IAEA Quarterly Report",
+      "admiralty": "A2"
+    },
+    {
+      "name": "NATO Press Release",
+      "admiralty": "A2"
+    }
+  ],
+  "gaps": [
+    {
+      "description": "Exact PLA order of battle not confirmed",
+      "impact": "medium",
+      "next_step": "Request satellite imagery tasking"
+    }
+  ],
+  "meta": {
+    "total_judgments": 8,
+    "avg_confidence": 0.62,
+    "sources_cited": 3
+  }
+}

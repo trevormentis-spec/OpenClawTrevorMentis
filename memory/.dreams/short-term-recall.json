@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T17:18:03.263Z",
+  "updatedAt": "2026-05-20T15:46:20.456Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1620,6 +1620,70 @@
         "deepseek-prompts.md",
         "analyst-to-analyst",
         "trade-inline"
+      ]
+    },
+    "memory:memory/2026-05-18.md:1:19": {
+      "key": "memory:memory/2026-05-18.md:1:19",
+      "path": "memory/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-05-18 — Phase 1 Closure + Phase 2 Launch + Presentation Stack ## Durable Decisions ### Phase 1 Closed - Scope gate (scope_check.py + scope.yaml) verified at 4/4 regression probes. Blocklist trimmed from 23→11 entries (removed 12 overreaching keywords). Blocklist = precision tool, not filter. - Fabrication detector (analyst/fabrication_check.py) blocks briefs with unsourced contracts, prices, percentage ranges, dollar cost estimates. Hard rule: no named instruments without verification. - Themes preflight (analyst/themes_preflight.py) validates all required themes have substantive coverage pre-delivery. - Three guards (scope_check, fabrication_check, themes_preflight) are principal-r",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-20T15:45:37.520Z",
+      "lastRecalledAt": "2026-05-20T15:46:20.456Z",
+      "queryHashes": [
+        "6dd049397237",
+        "5405747e965c"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "scope-check.py",
+        "scope.yaml",
+        "4/4",
+        "analyst/fabrication-check.py",
+        "analyst/themes-preflight.py",
+        "pre-delivery",
+        "scope-check",
+        "fabrication-check"
+      ]
+    },
+    "memory:memory/2026-05-18.md:15:34": {
+      "key": "memory:memory/2026-05-18.md:15:34",
+      "path": "memory/2026-05-18.md",
+      "startLine": 15,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "- Mexico pipeline converged: planner reads from `exports/mexico-news-scan-*.json`, not global incidents.json - Worker live mode authorized. Daily budget: $20. First live cycle: $0.011 of $20. ### Presentation Stack — Authorized Builds - JSON schema v1.0.0 at `docs/brief-schema-v1.md` — Sherman Kent enums, Admiralty grades, stable UUIDs, public API contract - PDF renderer at `scripts/render_pdf.py` — weasyprint, branded HTML/CSS template, zero new dependencies. Bajío v3 round-trip tested (28KB, 5 pages). - Audio renderer at `scripts/render_audio.py` — ElevenLabs integration, pronunciation dictionary (80+ entries). Dry-run verified. Blocked: ELEVENLABS_API_KEY not in environment (all Maton co",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-20T15:45:37.520Z",
+      "lastRecalledAt": "2026-05-20T15:46:20.456Z",
+      "queryHashes": [
+        "6dd049397237",
+        "5405747e965c"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "exports/mexico-news-scan",
+        "incidents.json",
+        "0.011",
+        "v1.0.0",
+        "docs/brief-schema-v1.md",
+        "scripts/render-pdf.py",
+        "html/css",
+        "round-trip"
       ]
     }
   }

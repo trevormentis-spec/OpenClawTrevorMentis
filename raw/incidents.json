@@ -1,0 +1,789 @@
+{
+  "generated_at_utc": "2026-05-19T23:52:56.668938Z",
+  "window_hours": 24,
+  "regions_covered": [
+    "europe",
+    "asia",
+    "middle_east",
+    "north_america",
+    "south_central_america",
+    "global_finance"
+  ],
+  "incidents": [
+    {
+      "id": "i-2026-05-19-0fb0",
+      "region": "asia",
+      "country": "Japan",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T23:52:56.143496Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Typhoon Lan lashes central Japan, killing 2 and disrupting transport systems",
+      "summary": "Two people were killed and transportation systems and businesses severely disrupted as Typhoon Lan lashed central Japan's Pacific coast after making landfall early Monday.",
+      "sources": [
+        {
+          "name": "Xinhua (English)",
+          "url": "http://www.xinhuanet.com/english/2017-10/23/c_136699146.htm",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-8a46",
+      "region": "middle_east",
+      "country": "Lebanon",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T23:13:14Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "Israeli strikes on Lebanon kill at least 19 as clashes with Hezbollah continue despite ceasefire",
+      "summary": "<p>Single strike on the village of Deir Qanoun al Nahr in the coastal Tyre province killed 10, including three children and three women, health ministry says</p><p>Israeli airstrikes on southern Lebanon on Tuesday killed at least 19 people, including four women and three children, Lebanon\u2019s health ministry said, the latest in near-daily attacks from both sides that have not stopped despite a <a href=\"https://www.theguardian.com/world/2026/may/15/israel-and-lebanon-agree-ceasefire-extension-us-says\">fragile, US-brokered ceasefire</a>.</p><p>Israel\u2019s military did not immediately comment on the c",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/may/20/deadly-israeli-strikes-lebanon",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-309a",
+      "region": "middle_east",
+      "country": "Iran",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T22:24:22Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Trump leads media tour of ballroom building site as Congress balks at $1bn price tag",
+      "summary": "<p>President says $400m building costs to be funded by private donors, but has asked for taxpayers to cover security costs</p><p>Shouting over the banging and clanging sounds from heavy construction equipment, <a href=\"https://www.theguardian.com/us-news/donaldtrump\">Donald Trump</a> on Tuesday gave a group of reporters a closer look at the construction for the White House ballroom he\u2019s building on the site of the former East Wing to mount a defense of the project that has hit a speed bump in Congress.</p><p>The administration has asked for $1bn from taxpayers for security additions on the Whi",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/may/19/trump-ballroom-east-wing-media-tour",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-93fd",
+      "region": "asia",
+      "country": "Malaysia",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T22:00:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "From Anwar warning to US$250m claim - what\u2019s behind Malaysia\u2019s response to Norway\u2019s scrapped missile deal?",
+      "summary": "The strength of Malaysia\u2019s case will depend on whether export approval was explicitly tied to delivery of the missiles, and what remedies exist if a sovereign government blocks the transfer, says an analyst.",
+      "sources": [
+        {
+          "name": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/asia/malaysia-norway-cancel-missile-warship-lcs-6130376",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-7e55",
+      "region": "asia",
+      "country": "South Korea",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:35:58Z",
+      "actors": [],
+      "category": "political",
+      "headline": "FirstFT: Trump claims Xi promised not to send weapons to Tehran",
+      "summary": "Also in today\u2019s newsletter: Google unveils new version of AI model and Japan and South Korea agree to deepen energy co-operation",
+      "sources": [
+        {
+          "name": "FT World",
+          "url": "https://www.ft.com/content/e4e6c218-b951-4b84-8645-86de5ebbfa3b",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-78aa",
+      "region": "middle_east",
+      "country": "Iran",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:24:00Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "Oil dips, stocks mixed after Trump holds off on Iran attack",
+      "summary": "As investors watched possible US-Iran talks, one analyst said markets were showing \"relief that tensions haven\u2019t escalated\".",
+      "sources": [
+        {
+          "name": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/us-stocks-oil-iran-war-6130576",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-414a",
+      "region": "middle_east",
+      "country": "Lebanon",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:18:13Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "10 martyred, 3 wounded in Israeli strike on Lebanon's Tyre",
+      "summary": "TEHRAN, May 19 (MNA) \u2013At least ten people were martyred following the Israeli regime's attack on an area in southern Lebanon.",
+      "sources": [
+        {
+          "name": "Mehr News (English)",
+          "url": "https://en.mehrnews.com/news/244650/10-martyred-3-wounded-in-Israeli-strike-on-Lebanon-s-Tyre",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-4246",
+      "region": "middle_east",
+      "country": "Iran",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:04:01Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Video shows oil spill on Iranian island after refinery attack last month",
+      "summary": "The impact of an oil spill caused by an attack on Iran\u2019s Lavan refinery last month has been revealed.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/19/video-shows-oil-spill-on-iranian-island-after-refinery-attack-last-month?traffic_source=rss",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-4986",
+      "region": "europe",
+      "country": "Ukraine",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:02:24Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "\u2018Maybe Putin isn\u2019t even being told about this?\u2019 Muscovites in\u00a0two bombed districts react to\u00a0Ukraine\u2019s drone strikes.",
+      "summary": "<p>In\u00a0the early hours of\u00a0May 17, Ukraine launched a\u00a0massive drone strike on\u00a0the Moscow area, killing three people and wounding 16. Two districts of\u00a0the capital were hit: Kapotnya and Zelenograd. The first is\u00a0home to\u00a0a\u00a0large oil refinery; the second houses several strategic facilities linked to\u00a0Russia\u2019s defense industry. In\u00a0both districts, drones also struck residential buildings. According to\u00a0official figures, no\u00a0one was killed in\u00a0either Kapotnya or\u00a0Zelenograd, but the strikes left serious damage and badly frightened locals. Correspondents from the independent journalism cooperative Bereg visi",
+      "sources": [
+        {
+          "name": "Meduza (English)",
+          "url": "https://meduza.io/en/feature/2026/05/20/maybe-putin-isn-t-even-being-told-about-this-muscovites-in-two-bombed-districts-react-to-ukraine-s-drone-strikes",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-b67c",
+      "region": "global_finance",
+      "country": null,
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T21:00:00Z",
+      "actors": [],
+      "category": "maritime",
+      "headline": "Trump Announces Expansion Of TrumpRx With 600 New Generic Drugs",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Trump Announces Expansion Of TrumpRx With 600 New Generic Drugs</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><a href=\"https://amgreatness.com/2026/05/19/trump-announces-expansion-of-trumprx-with-600-new-generic-drugs/\"><em>Via American Greatness,</em></a></p>\n\n<p>President Donald Trump announced Monday that the administration is dramatically expanding the number of medicatio",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/political/trump-announces-expansion-trumprx-600-new-generic-drugs",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-f0da",
+      "region": "south_central_america",
+      "country": "Venezuela",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T20:40:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "Chaos Erupts In Bolivia As Socialists Unleash General Strikes And Riots",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Chaos Erupts In Bolivia As Socialists Unleash General Strikes And Riots </span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>Socialists in Bolivia, mobilized through the national labor union, highland farmer federations, and supporters of former left-wing President Evo Morales, have ignited social unrest over the U.S.-backed, market-oriented policy agenda of President Rodrigo Paz.<",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/political/chaos-erupts-bolivia-socialists-unleash-general-strikes-and-riots",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-9351",
+      "region": "global_finance",
+      "country": null,
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T20:20:00Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "Americans Are Getting Behind On Their Debts At A Very Frightening Pace",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Americans Are Getting Behind On Their Debts At A Very Frightening Pace</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><a href=\"https://theeconomiccollapseblog.com/americans-are-getting-behind-on-their-debts-at-a-very-frightening-pace/\"><em>Authored by Michael Snyder via The Economic Collapse blog,</em></a></p>\n\n<p><strong>U.S. households are now 18.79 trillion dollars in debt.",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/markets/americans-are-getting-behind-their-debts-very-frightening-pace",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-b003",
+      "region": "europe",
+      "country": "Ukraine",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T20:18:16Z",
+      "actors": [],
+      "category": "political",
+      "headline": "More than 15,800 people killed in Russia\u2019s all-out war on Ukraine: UN",
+      "summary": "Nearly 800 children are among those killed in Ukraine since Russia&#039;s full-scale invasion in February 2022, the UN says.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/19/more-than-15800-people-killed-in-russias-all-out-war-on-ukraine-un?traffic_source=rss",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-726c",
+      "region": "europe",
+      "country": "Ukraine",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T20:00:50Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Does Ukraine have the advantage at the moment?",
+      "summary": "Kyiv takes the war deeper into Russia with a huge attack on the Moscow region.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/5/19/does-ukraine-have-the-advantage-at-the-moment?traffic_source=rss",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-01d0",
+      "region": "europe",
+      "country": "France",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T19:11:59Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Acting US attorney general defends fund for prosecuted Trump allies",
+      "summary": "Acting US Attorney General Todd Blanche on Tuesday defended the creation of a nearly $1.8 billion fund to compensate political allies of President Donald Trump who believe they were unfairly prosecuted under the Biden administration. Blanche, testifying before a Senate committee, came under repeated attack from Democrats who criticized the scheme as a corrupt \"slush fund\". FRANCE 24's Monte Francis has more.",
+      "sources": [
+        {
+          "name": "France 24 EN",
+          "url": "https://www.france24.com/en/acting-us-attorney-general-defends-fund-for-prosecuted-trump-allies",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-f58d",
+      "region": "middle_east",
+      "country": "United Arab Emirates",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T19:04:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "Third Iran-Linked 'Shadow Fleet' Tanker Seized By US Navy Off South Asia",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Third Iran-Linked 'Shadow Fleet' Tanker Seized By US Navy Off South Asia</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><strong><u>Update(1500ET)</u>:\u00a0</strong>A WSJ report Tuesday afternoon has revealed that the US seized an \"Iran-linked ship\" in the Indian Ocean overnight, which had not previously been revealed, at a moment President Trump is threatening to resume airstrikes",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/markets/oil-plummets-nato-mulls-hormuz-deployment-if-strait-not-open-july",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-bdca",
+      "region": "europe",
+      "country": "Estonia",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T19:01:44Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Estonia says Nato jet shot down drone over its territory",
+      "summary": "Estonia suspects the drone was a Ukrainian projectile knocked off course by Russian electronic jamming.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.com/news/articles/c302jy8z4vro?at_medium=RSS&at_campaign=rss",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-be87",
+      "region": "middle_east",
+      "country": "United Arab Emirates",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T19:00:00Z",
+      "actors": [],
+      "category": "economic",
+      "headline": "Nigeria Needs New Export Markets As UAE's Exit Rattles OPEC",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Nigeria Needs New Export Markets As UAE's Exit Rattles OPEC</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><em>By Tsvetana Paraskova of <a href=\"https://oilprice.com/Latest-Energy-News/World-News/Nigeria-Needs-New-Export-Markets-as-UAEs-Exit-Rattles-OPEC.html\">Oilprice.com</a></em></p>\n\n<p>Nigeria should market its crude oil to new buyers as the UAE\u2019s decision to leave OPEC is",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/markets/nigeria-needs-new-export-markets-uaes-exit-rattles-opec",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-0577",
+      "region": "middle_east",
+      "country": "Iran",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T18:45:25Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Trump turns to Middle East allies as deal to end Iran war proves elusive",
+      "summary": "<p>President claims planned Tehran attack postponed to allow talks to continue \u2013 but no indication peace plan is imminent</p><p>As he seeks an exit from the Iran war, Donald Trump is increasingly outsourcing his policymaking to US allies in the Middle East, while the White House appears unable to find a simple way to end the fighting and reopen global shipping lanes held by Tehran.</p><p>In Trump\u2019s telling, the \u201cdealmaker-in-chief\u201d has maintained a consistent policy toward Iran aimed at preventing Tehran from obtaining a nuclear weapon, leveling threats and incentives to reach a new deal that ",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/may/19/trump-iran-analysis",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-eeeb",
+      "region": "south_central_america",
+      "country": "Venezuela",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T18:40:00Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "The Democrats Are About To Destroy John Fetterman",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">The Democrats Are About To Destroy John Fetterman</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><strong>John Fetterman has become the most interesting politician in America, and the Democratic Party\u2019s most uncomfortable mirror.</strong> His willingness to speak honestly, vote his conscience, and refuse to define himself purely in opposition to President Donald Trump has made ",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/political/democrats-are-about-destroy-john-fetterman",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-8735",
+      "region": "north_america",
+      "country": "United States",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T18:26:47Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "US, Iran trade threats as Tehran stages mass weddings for couples ready for 'sacrifice'",
+      "summary": "President Donald Trump warned Tuesday that the United States may strike Iran again, but Tehran's army threatened to open \"new fronts\" if he went ahead. In the capital, Iranian authorities held mass public weddings for couples who signed up to a state-sponsored scheme declaring their readiness to sacrifice their lives in the war against the US and Israel. FRANCE 24's James Vasina reports.",
+      "sources": [
+        {
+          "name": "France 24 EN",
+          "url": "https://www.france24.com/en/us-iran-trade-threats-as-tehran-stages-mass-weddings-for-couples-ready-for-sacrifice",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-3b87",
+      "region": "north_america",
+      "country": "United States",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T17:20:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "Iran Now Has More Incentive To Resist US Demands, Even If War Restarts: Israeli Think Tank",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Iran Now Has More Incentive To Resist US Demands, Even If War Restarts: Israeli Think Tank</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>At this point <strong>even hawkish Israeli think tank pundits are increasingly admitting that Iran currently has certain leverage and an edge</strong> when it comes to dealing with the United States, and the so far stalled and failed peace t",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/geopolitical/iran-now-has-less-incentive-capitulate-us-demands-israeli-think-tank",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-40b4",
+      "region": "europe",
+      "country": "Hungary",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T17:17:35Z",
+      "actors": [],
+      "category": "aviation",
+      "headline": "US warns Russia after Moscow threatens Latvia \u2013 as it happened",
+      "summary": "<p>This blog is now closed</p><p>The latest drone alerts come as <strong>Ukraine and Latvia were this morning forced by Russia to repeatedly refute Moscow\u2019s claims that Kyiv was preparing attacks against Russia from Latvia.</strong></p><p>Ukraine\u2019s foreign ministry spokesperson confirmed that <strong>Ukraine does not use the territory of Latvia</strong> for its operations against Russia and refuted Moscow\u2019s claims.</p><p>\u201c<strong>Russia is lying</strong> about Latvia allowing any country to use Latvian airspace and territory to launch attacks against Russia or any other country.\u201d</p> <a href=\"",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/live/2026/may/19/europe-ukraine-russia-belarus-nuclear-drills-un-security-council-eu-us-hungary-peter-magyar-poland-nato-latest-news-updates",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-a41b",
+      "region": "south_central_america",
+      "country": "Jamaica",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T16:41:20Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Woman shot dead by police in Jamaica at protest over previous police shooting",
+      "summary": "<p>Investigation launched as video circulates online showing officer firing at vehicle and colleagues dragging away body</p><p>Authorities in Jamaica have launched an investigation after CCTV footage of a woman\u2019s fatal shooting by police sent shock waves across the Caribbean nation.</p><p>Footage circulating on social media shows a police officer firing at a vehicle during a protest on Sunday in Granville, in Jamaica\u2019s north-western parish of St James. The bullet hit Latoya Bulgin, 45, who was behind the wheel of the vehicle.</p> <a href=\"https://www.theguardian.com/world/2026/may/19/woman-sho",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/may/19/woman-shot-dead-by-police-jamaica-protest",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-71ef",
+      "region": "north_america",
+      "country": "United States",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T16:20:00Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "US Dept Of War Suspends Permanent Joint Board On Defense With Canada",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">US Dept Of War Suspends Permanent Joint Board On Defense With Canada</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><a href=\"https://theconservativetreehouse.com/blog/2026/05/18/u-s-dept-of-war-suspends-permanent-joint-board-on-defense-with-canada/\"><em>Authored by 'sundance' via The Last Refuge,</em></a></p>\n\n<p>Remarkably, many news articles are citing confusion in trying to",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/geopolitical/us-dept-war-suspends-permanent-joint-board-defense-canada",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-cdbf",
+      "region": "europe",
+      "country": "Estonia",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T15:57:54Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "Russian jamming blamed after Nato jet downs Ukrainian drone over Estonia",
+      "summary": "<p>Officials from Baltic states say Moscow behind latest such incident but also tell Kyiv to be more careful with its routing</p><p>A Romanian F-16 Nato jet shot down a drone over Estonia on Tuesday in what appears to be the latest case of Russian electronic jamming diverting long-range Ukrainian drones into the alliance\u2019s territory.</p><p>A local resident <a href=\"https://www.err.ee/1610027854/eestis-allatulistatud-droon-kukkus-poltsamaa-vallas-pollule\">told</a> the Estonian public broadcaster, ERR, that he had seen two fighter jets \u2013 part of a Nato force policing the skies over the Baltic st",
+      "sources": [
+        {
+          "name": "The Guardian World",
+          "url": "https://www.theguardian.com/world/2026/may/19/russian-jamming-blamed-nato-jet-downs-ukrainian-drone-estonia",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-29c5",
+      "region": "asia",
+      "country": "China",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T15:56:57Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Putin and Xi to discuss huge gas project at China summit",
+      "summary": "Talks on Power of Siberia 2 pipeline come just days after Donald Trump\u2019s visit to Beijing",
+      "sources": [
+        {
+          "name": "FT World",
+          "url": "https://www.ft.com/content/7612a618-fbaf-4e3e-8e55-0cf5cc88d132",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-e50e",
+      "region": "global_finance",
+      "country": null,
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T15:45:00Z",
+      "actors": [],
+      "category": "maritime",
+      "headline": "Supreme Court Directs Lower Courts To Reexamine Decisions In Voting Rights Act Cases",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Supreme Court Directs Lower Courts To Reexamine Decisions In Voting Rights Act Cases</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><a href=\"https://www.theepochtimes.com/us/supreme-court-directs-lower-courts-to-reexamine-decisions-in-voting-rights-act-cases-6027258?utm_source=partner&utm_campaign=ZeroHedge\"><em>Authored by Matthew Vadum via The Epoch Times,</em></a></p>\n\n<p><",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/political/supreme-court-directs-lower-courts-reexamine-decisions-voting-rights-act-cases",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-164e",
+      "region": "europe",
+      "country": "Estonia",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T14:46:35Z",
+      "actors": [],
+      "category": "aviation",
+      "headline": "Ukraine apologizes to\u00a0Estonia after drone enters its airspace and is\u00a0shot down by\u00a0NATO fighter jets",
+      "summary": "<p>Ukraine has apologized to\u00a0Estonia after a\u00a0drone entered Estonian airspace and was shot down by\u00a0a\u00a0fighter\u00a0jet. Ukrainian Foreign Ministry spokesperson Heorhii Tykhyi posted the apology on\u00a0social media platform X.<p>",
+      "sources": [
+        {
+          "name": "Meduza (English)",
+          "url": "https://meduza.io/en/news/2026/05/19/ukraine-apologizes-to-estonia-after-drone-enters-its-airspace-and-is-shot-down-by-nato-fighter-jets",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-c784",
+      "region": "asia",
+      "country": "China",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T14:15:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "\"Stop Hiring Humans\" Billboards Are Appearing In US Cities...",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">\"Stop Hiring Humans\" Billboards Are Appearing In US Cities...</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><a href=\"https://modernity.news/2026/05/18/stop-hiring-humans-billboards-are-appearing-in-u-s-cities/\"><em>Authored by Steve Watson via Modernity.news,</em></a></p>\n\n<p><strong>\u201cStop Hiring Humans.\u201d Those words are now plastered on billboards from San Francisco to New Y",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/ai/stop-hiring-humans-billboards-are-appearing-us-cities",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-dec4",
+      "region": "south_central_america",
+      "country": "Venezuela",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T13:05:00Z",
+      "actors": [],
+      "category": "kinetic",
+      "headline": "Striking",
+      "summary": "<span property=\"schema:name\" class=\"field field--name-title field--type-string field--label-hidden\">Striking</span>\n\n            <div property=\"schema:text\" class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p><em>By Bas van Geffen, senior macro strategist at Rabobank</em></p>\n\n<h3>Striking</h3>\n\n<p>Trump said that he had delayed a planned military <em><u><strong>strike </strong></u></em>on Tuesday, at the request of Qatar, Saudia Arabia, and the UAE. According to Trump, the leaders of the Gulf states had asked the US to call o",
+      "sources": [
+        {
+          "name": "ZeroHedge",
+          "url": "https://www.zerohedge.com/markets/striking",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-b888",
+      "region": "north_america",
+      "country": "United States",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T12:30:05Z",
+      "actors": [],
+      "category": "political",
+      "headline": "Despite summit pledges, don\u2019t expect US-China trade to improve",
+      "summary": "At last week\u2019s summit in Beijing, the presidents of China and the United States pledged to steer towards a stable and constructive relationship. The two sides announced new joint trade and investment councils. This combination of high-level commitment and institutional progress has stirred hopes that long-running bilateral economic tensions will ease substantially, if not take a turn for the better.\nBut will the world\u2019s largest economies live happily ever after? History offers a sobering...",
+      "sources": [
+        {
+          "name": "South China Morning Post",
+          "url": "https://www.scmp.com/opinion/china-opinion/article/3353987/despite-summit-pledges-dont-expect-us-china-trade-improve?utm_source=rss_feed",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    },
+    {
+      "id": "i-2026-05-19-b099",
+      "region": "asia",
+      "country": "Philippines",
+      "lat": null,
+      "lon": null,
+      "occurred_at_utc": "2026-05-19T04:19:20Z",
+      "actors": [],
+      "category": "humanitarian",
+      "headline": "Beijing rebukes Philippines over claim proximity guarantees involvement in Taiwan conflict",
+      "summary": "Manila should not use \u201cgeographical proximity\u201d and a \u201clarge population of migrants\u201d as an excuse to interfere in another country\u2019s internal affairs or meddle in its sovereign affairs, China\u2019s foreign ministry spokesman Guo Jiakun said on Tuesday.\nWhen asked about earlier comments made by Philippine president Ferdinand Marcos Jnr during a daily press conference, Guo said the Philippine leader had reaffirmed the one-China policy and non-interference in China\u2019s internal affairs.\n\u201cWe hope that the...",
+      "sources": [
+        {
+          "name": "South China Morning Post",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3354044/marcos-sees-philippines-likely-be-involved-taiwan-conflict-due-proximity?utm_source=rss_feed",
+          "admiralty_reliability": "B",
+          "admiralty_credibility": 2,
+          "retrieved_at_utc": "2026-05-19T23:52:56.143496Z"
+        }
+      ],
+      "single_source": true,
+      "confidence_collector": "medium"
+    }
+  ],
+  "collection_gaps": [
+    "feed unreachable: ABC News (AU)",
+    "feed unreachable: Gulf News",
+    "feed unreachable: The National (UAE)",
+    "feed unreachable: Arab News",
+    "feed unreachable: The New Arab",
+    "feed unreachable: El Pa\u00eds (English)",
+    "feed unreachable: Nikkei Asia",
+    "feed unreachable: The Hindu",
+    "feed unreachable: The Japan Times",
+    "feed unreachable: Korea Herald",
+    "feed unreachable: allAfrica",
+    "feed unreachable: Daily Maverick (SA)",
+    "feed unreachable: The East African",
+    "feed unreachable: MercoPress"
+  ]
+}

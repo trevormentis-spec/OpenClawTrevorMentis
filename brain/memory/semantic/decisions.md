@@ -4,3 +4,4 @@
 - [2026-05-12] {"ts": "2026-05-12T02:01:03.949430Z", "text": "LDAP-7 framework ingested: 7-dimension leader analysis + decision cycle + CPCA overlay integrated as procedural skill. Trump D1-D7 profile created."} (source: 2026-05-12.jsonl, confidence: medium)
 - [2026-05-15] - The Morena internal split (AMLO faction vs younger reformers) over the Rocha case is the most important structural constraint on Sheinbaum's decision-making. The Rocha case is the defining stress te... (source: 2026-05-15.md, confidence: medium)
 - [2026-05-17] **Probe B** — "Brief me on the ECB rate decision this week." (source: 2026-05-17.md, confidence: medium)
+- [2026-05-19] - Decision: no public pushes to openweb repo without Roderick's approval (source: 2026-05-19.md, confidence: medium)

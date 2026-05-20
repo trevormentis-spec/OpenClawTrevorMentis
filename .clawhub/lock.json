@@ -136,6 +136,14 @@
     "news": {
       "version": "1.0.1",
       "installedAt": 1779181356517
+    },
+    "opensky-flight-tracker": {
+      "version": "0.1.0",
+      "installedAt": 1779267788322
+    },
+    "mobula": {
+      "version": "1.0.1",
+      "installedAt": 1779267788826
     }
   }
 }

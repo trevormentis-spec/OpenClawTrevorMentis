@@ -1,0 +1,32 @@
+# Trevor Intelligence — Social Brand Tokens
+# Single source of truth for all social card templates.
+
+brand_name: Trevor Intelligence
+tagline: Threat Research & Evaluation Virtual Operations Resource
+
+# Colors
+color_primary: "#0f3460"
+color_accent: "#e94560"
+color_gold: "#c9a84c"
+color_body: "#1a1a2e"
+color_surface: "#f5f5f5"
+color_white: "#ffffff"
+color_text: "#1a1a2e"
+color_muted: "#888888"
+
+# Fonts
+font_heading: "'Inter', 'Segoe UI', Helvetica, Arial, sans-serif"
+font_body: "'Inter', 'Segoe UI', Helvetica, Arial, sans-serif"
+
+# Social dimensions
+social_dimensions:
+  linkedin_carousel: [1080, 1350]
+  x_hero: [1200, 675]
+  instagram_square: [1080, 1080]
+  exec_card: [1200, 1800]
+
+# Layout
+max_lines_title: 3
+max_lines_judgment: 4
+max_judgments_slide: 5
+max_judgments_hero: 3

@@ -1,0 +1,96 @@
+{
+  "cycle": 11,
+  "generated_at": "2026-05-19T23:43:20.213995Z",
+  "task_count": 7,
+  "tasks": [
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/brain/memory/semantic/calibration-tracking.json",
+      "unresolved_count": 30,
+      "priority": "high",
+      "estimated_cost": 0.003,
+      "estimated_duration_mins": 5,
+      "task_type": "postdiction_sweep",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.261091Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "target": "all_entity_files",
+      "priority": "high",
+      "estimated_cost": 0.0,
+      "estimated_duration_mins": 1,
+      "task_type": "source_freshness_scan",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.262162Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "target": "/home/ubuntu/.openclaw/workspace/analyst/meta/capability_gaps.json",
+      "priority": "medium",
+      "estimated_cost": 0.002,
+      "estimated_duration_mins": 3,
+      "task_type": "self_question_generation",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.262951Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "priority": "medium",
+      "estimated_cost": 0.005,
+      "estimated_duration_mins": 5,
+      "target": "non_traditional_sources",
+      "task_type": "weekly_source_brainstorm",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.263733Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "priority": "medium",
+      "estimated_cost": 0.005,
+      "estimated_duration_mins": 5,
+      "target": "questions_source_gaps",
+      "task_type": "targeted_source_discovery",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.264543Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "target": {
+        "id": "mx-scan-1",
+        "headline": "Enrique D\u00edaz Vega, exsecretario de Finanzas de Rocha, se entrega a EU",
+        "category": "security"
+      },
+      "priority": "low",
+      "estimated_cost": 0.001,
+      "estimated_duration_mins": 2,
+      "task_type": "framework_stress_test",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.265363Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    },
+    {
+      "priority": "low",
+      "estimated_cost": 0.001,
+      "estimated_duration_mins": 2,
+      "target": "source_registry_quality",
+      "task_type": "source_quality_audit",
+      "generated_at": "2026-05-19T23:43:20.213995Z",
+      "status": "dry_run",
+      "completed_at": "2026-05-19T23:43:20.266178Z",
+      "cost": 0.0,
+      "outcome": "WOULD_EXECUTE"
+    }
+  ]
+}

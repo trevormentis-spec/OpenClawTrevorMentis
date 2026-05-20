@@ -1,0 +1,61 @@
+{
+  "brief": "test_fixtures/sample_brief.json",
+  "date": "2026-05-20",
+  "title": "Global Security Briefing \u2014 Baseline Verification",
+  "output_dir": "exports/present/test-brief-2026-05-20",
+  "budget": 0.5,
+  "remaining_budget": 0.34,
+  "results": [
+    {
+      "name": "cover_image",
+      "success": true,
+      "elapsed_sec": 30.9,
+      "returncode": 0,
+      "stdout": "  \u2705 Cover: exports/present/test-brief-2026-05-20/cover.png (543 KB, 1 credit(s))\n  Verification: {'exists': True, 'not_empty': True, 'valid_format': True, 'size_kb': 543.9}\n  \u2705 Stage 1 deliverable: exports/present/test-brief-2026-05-20/cover.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "charts",
+      "success": true,
+      "elapsed_sec": 1.0,
+      "returncode": 0,
+      "stdout": "  \u2705 kent_bar: exports/present/test-brief-2026-05-20/kent-bar.png\n  \u2705 trade_bar: exports/present/test-brief-2026-05-20/trade-bar.png\n  \u2705 mermaid: exports/present/test-brief-2026-05-20/sections-diagram.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "maps",
+      "success": true,
+      "elapsed_sec": 0.1,
+      "returncode": 0,
+      "stdout": "  \u2705 Map: exports/present/test-brief-2026-05-20/map.png (1225 KB, zoom 4)\n  Verification: {'exists': True, 'size_kb': 1225.2, 'not_empty': True, 'valid_format': True}\n  \u2705 Stage 3 deliverable: exports/present/test-brief-2026-05-20/map.png\n",
+      "stderr": ""
+    },
+    {
+      "name": "audio",
+      "success": true,
+      "elapsed_sec": 16.8,
+      "returncode": 0,
+      "stdout": "pty': True, 'format': 'mp3', 'duration_s': 10.0, 'valid_audio': True, 'duration_ok': False, 'script_match': False, 'pass': False}\n  \u26a0\ufe0f Stage 4 verification partial \u2014 audio exists but duration/transcription may not meet target\n  (Expected with silent fallback \u2014 real TTS needed for full verification)\n",
+      "stderr": ""
+    },
+    {
+      "name": "video",
+      "success": true,
+      "elapsed_sec": 5.0,
+      "returncode": 0,
+      "stdout": "\u2705 Video: exports/present/test-brief-2026-05-20/briefing.mp4 (0.6 MB, 30s)\n  Verification: {'exists': True, 'size_mb': 0.6, 'not_empty': True, 'container': 'mov,mp4,m4a,3gp,3g2,mj2', 'duration_s': 21.0, 'valid_format': True}\n  \u2705 Stage 5 deliverable: exports/present/test-brief-2026-05-20/briefing.mp4\n",
+      "stderr": ""
+    }
+  ],
+  "total_elapsed_sec": 53.9,
+  "generated_files": [
+    "exports/present/test-brief-2026-05-20/cover.png",
+    "exports/present/test-brief-2026-05-20/kent-bar.png",
+    "exports/present/test-brief-2026-05-20/trade-bar.png",
+    "exports/present/test-brief-2026-05-20/sections-diagram.png",
+    "exports/present/test-brief-2026-05-20/map.png",
+    "exports/present/test-brief-2026-05-20/narration.script.txt",
+    "exports/present/test-brief-2026-05-20/narration.mp3",
+    "exports/present/test-brief-2026-05-20/briefing.mp4"
+  ]
+}

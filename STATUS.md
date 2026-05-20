@@ -1,6 +1,6 @@
 # Trevor — Status
 
-*Generated: 2026-05-19 23:27 UTC*
+*Generated: 2026-05-19 23:52 UTC*
 
 ## In-Flight Directives
 
@@ -21,12 +21,14 @@ None.
 
 | Provider | Last Auth |
 |---|---|
-| openrouter | 2026-05-19T23:24 |
-| deepseek_direct | 2026-05-19T23:24 |
+| openrouter | 2026-05-19T22:42 |
+| deepseek_direct | 2026-05-19T22:17 |
 
 ## Recent Outputs (Last 7 Days)
 
 ```
+126797b Activate Phase 2 (enabled: true), decouple cron from Mexico scripts, wire activation gate into worker.py
+3102322 Phase 2+4+5: Brazil flagship brief (8,263 words, 34 judgments), Semiconductor validation brief, system verification complete. Total ~/usr/bin/sh.88 of 0 budget.
 4b7403e Phase 4: Semiconductor supply chain activated + probes.yaml + validation brief (V4 Pro, no recs, /usr/bin/sh.0055). Multi-topic routing confirmed.
 eb95ef0 Phase 3: Continuous learning loop rebuilt — scheduler, activation gate, cron entry, 3 missing task types. DRY-RUN verified (7 tasks, /usr/bin/sh.028). NOT activated.
 8dba530 Phase 1: Mexico residue cleanup — 11 Category B files archived, inventory saved. A files surfaced for decision.
@@ -39,12 +41,9 @@ eb95ef0 Phase 3: Continuous learning loop rebuilt — scheduler, activation gate
 e35a8f9 #2: High-priority bypass fixes — postdict.py + analyze.py now route through llm_gate
 b005999 #1: Routing spec refinement — has_recommendations:true replaces audience_family_office. 3/3 test scenarios pass.
 03636eb Post-fix validation: routing cost-quality memo + full gate-bypass audit (13 bypasses found, 2 fixed, 11 pending)
-06efc96 Fix routing gate bypass: llm_gate now called for all model requests. Added audience_family_office escalation trigger. Fixed multi_turn_generator to use llm_gate.route().
-0bc3f2f v2 validation: Brazil fiscal H1 2026 watch brief (1548 words, V4 Pro)
-e519712 Fix: fabrication_check price regex — exclude percentages, ranges, years, unit suffixes
-afbf327 v2 fixes: scope_check --regression-test, probes.yaml for Braz
+06efc96 Fix routing gate bypass: llm_gate now called for all model requests. Added audience_family_office escalation trigger. Fixed multi_
 ```
 
 ---
 
-*Updated by status_generator.py at 2026-05-19 23:27 UTC*
+*Updated by status_generator.py at 2026-05-19 23:52 UTC*

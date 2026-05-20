@@ -1,0 +1,26 @@
+{"ts": "2026-05-20T14:30:00Z", "stage": 0, "event": "directive_received", "status": "acknowledged"}
+{"ts": "2026-05-20T14:30:10Z", "stage": 0, "event": "environment_audit", "apis_ok": ["GENVIRAL","OPENROUTER","MAPBOX","DEEPSEEK","ELEVENLABS"], "apis_missing": ["HEYGEN_API_KEY","HEYGEN_AVATAR_ID","KLING_API_KEY","GOOGLE_VERTEX_PROJECT"], "binaries_ok": ["ffmpeg","python3","mmdc","dot","tesseract","pdftoppm"], "build_readiness": "written to analysis/build_readiness.md"}
+{"ts": "2026-05-20T14:32:01Z", "stage": 2, "event": "started"}
+{"ts": "2026-05-20T14:32:47Z", "stage": 2, "event": "cover_generated", "provider": "genviral/nano-banana-2", "size_kb": 759, "credits": 1}
+{"ts": "2026-05-20T14:33:14Z", "stage": 2, "event": "vision_check", "verdict": "fail", "issues": ["asterisks on region labels", "geography inaccuracies", "labels over ocean"], "fixes": ["remove asterisks", "reposition labels"]}
+{"ts": "2026-05-20T14:33:30Z", "stage": 2, "event": "opus_consult", "reason": "refine GenViral prompt after vision QC fail", "model": "anthropic/claude-opus-4.7", "cost_usd": 0.07}
+{"ts": "2026-05-20T14:34:45Z", "stage": 2, "event": "completed", "attempts": 1, "duration_s": 164, "cost_usd": 0.42, "quality": "ok", "output": "exports/covers/cover-v2.png"}
+{"ts": "2026-05-20T14:35:00Z", "stage": 3, "event": "started"}
+{"ts": "2026-05-20T14:37:10Z", "stage": 3, "event": "completed", "slides": 4, "cards": ["linkedin","x_hero","instagram"], "dimensions_ok": true, "quality": "degraded", "issues": ["vertical layout balance", "date format ISO vs human-readable"], "duration_s": 130, "cost_usd": 0.05, "output": "exports/social/test-v3/"}
+{"ts": "2026-05-20T14:38:00Z", "stage": 4, "event": "started"}
+{"ts": "2026-05-20T14:40:30Z", "stage": 4, "event": "script_generated", "model": "anthropic/claude-opus-4.7", "words": 374, "cost_usd": 0.08}
+{"ts": "2026-05-20T14:40:35Z", "stage": 4, "event": "tts_failed", "provider": "elevenlabs", "http_status": 402, "reason": "account needs credits"}
+{"ts": "2026-05-20T14:40:35Z", "stage": 4, "event": "substitution", "substitute": "silent_fallback", "note": "OpenAI TTS also missing OPENAI_API_KEY, using ffmpeg silent MP3"}
+{"ts": "2026-05-20T14:40:40Z", "stage": 4, "event": "completed", "status": "disabled", "reason": "ElevenLabs HTTP 402 + no OpenAI TTS substitute key", "script_words": 374, "duration_s": 10, "cost_usd": 0.08, "output": "exports/audio/stage4-narration.mp3"}
+{"ts": "2026-05-20T14:41:00Z", "stage": 5, "event": "started"}
+{"ts": "2026-05-20T14:41:30Z", "stage": 5, "event": "phase_a_pass", "resolution": "1920x1080", "codec": "h264+aac", "duration_s": 21}
+{"ts": "2026-05-20T14:42:00Z", "stage": 5, "event": "vision_check", "verdict": "fail", "keyframe": "cover", "issues": ["watermark missing", "captions over content"]}
+{"ts": "2026-05-20T14:43:00Z", "stage": 5, "event": "retry", "attempt": 2, "fix": "reorder overlay: brand label added, watermark priority fixed"}
+{"ts": "2026-05-20T14:44:00Z", "stage": 5, "event": "vision_check", "verdict": "fail", "keyframe": "mid25", "issues": ["caption text overlaps axis labels", "watermark not visible on content slides"]}
+{"ts": "2026-05-20T14:45:00Z", "stage": 5, "event": "retry", "attempt": 3, "fix": "move captions below watermark, use solid dark bar instead of semi-transparent"}
+{"ts": "2026-05-20T14:46:30Z", "stage": 5, "event": "vision_check", "verdict": "fail", "keyframe": "mid25", "issues": ["captions cut mid-sentence (word boundary)", "no visible watermark"]}
+{"ts": "2026-05-20T14:47:00Z", "stage": 5, "event": "retry", "attempt": 4, "fix": "reorder draw: caption bar → watermark → brief_id, limit cap to 40 words"}
+{"ts": "2026-05-20T14:49:00Z", "stage": 5, "event": "vision_check", "verdict": "fail_quality", "issues": ["captions cut mid-sentence", "no caption on cover (intentional)"], "classification": "quality_not_functional"}
+{"ts": "2026-05-20T14:49:30Z", "stage": 5, "event": "verdict", "status": "functional", "quality": "degraded", "reason": "captions use word-boundary splitting without audio timing; watermark present but small", "duration_s": 21, "cost_usd": 0.0, "output": "exports/videos/stage5-v7.mp4"}
+{"ts": "2026-05-20T14:50:00Z", "stage": 0, "event": "operator_escalation", "count": 1, "items": ["ElevenLabs credits (HTTP 402)", "HEYGEN_API_KEY + HEYGEN_AVATAR_ID", "KLING_API_KEY or GOOGLE_VERTEX_PROJECT"], "note": "All batched into single ask"}
+{"ts": "2026-05-20T14:50:30Z", "stage": 0, "event": "report_delivered", "recipient": "operator"}

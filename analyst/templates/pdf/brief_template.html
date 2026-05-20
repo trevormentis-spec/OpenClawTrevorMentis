@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <style>
-  /* Open Claw Mexico — PDF Brand Template v1 */
+  /* Trevor Intelligence — PDF Brand Template v2 */
   /* Typography */
   @page {
     size: letter;
     margin: 1.5in 1in 1in 1in;
-    @top-left { content: "OPEN CLAW MEXICO"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
-    @top-right { content: "Confidential"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #999; }
+    @top-left { content: "TREVOR INTELLIGENCE"; font-family: 'Inter', sans-serif; font-size: 8pt; color: #0f3460; letter-spacing: 1px; }
+    @top-right { content: "SENSITIVE — For Authorised Recipients"; font-family: 'Inter', sans-serif; font-size: 7pt; color: #e94560; }
     @bottom-left { content: counter(page); font-family: 'Inter', sans-serif; font-size: 8pt; color: #666; }
     @bottom-right { content: string(brief_id); font-family: 'Inter', sans-serif; font-size: 7pt; color: #999; }
   }
@@ -40,14 +40,15 @@
     min-height: 11in;
     position: relative;
   }
-  .cover .brand { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #e94560; margin-bottom: 2in; }
-  .cover .title { font-size: 22pt; font-weight: 700; line-height: 1.2; margin-bottom: 0.3in; }
-  .cover .subtitle { font-size: 13pt; color: #ccc; margin-bottom: 1in; }
+  .cover .brand { font-size: 11pt; letter-spacing: 4px; text-transform: uppercase; color: #c9a84c; margin-bottom: 1.5in; }
+  .cover .title { font-size: 28pt; font-weight: 700; line-height: 1.2; margin-bottom: 0.4in; }
+  .cover .subtitle { font-size: 13pt; color: #c9a84c; margin-bottom: 0.8in; }
   .cover .meta { font-size: 9pt; color: #999; }
   .cover .meta table { width: 100%; }
   .cover .meta td { padding: 4px 8px; }
-  .cover .meta .label { color: #999; width: 120px; }
+  .cover .meta .label { color: #999; width: 150px; }
   .cover .meta .value { color: #ddd; }
+  .cover .gold-line { height: 2px; background: #c9a84c; width: 80px; margin: 0.4in 0; }
 
   /* Section headers */
   h1 { font-size: 16pt; font-weight: 700; color: #0f3460; border-bottom: 2px solid #e94560; padding-bottom: 6px; margin-top: 0.5in; }
@@ -122,7 +123,7 @@
 
   <!-- COVER PAGE -->
   <div class="cover">
-    <div class="brand">Open Claw Mexico</div>
+    <div class="brand">Trevor Intelligence</div>
     <div class="title">{{ brief_title }}</div>
     <div class="subtitle">{{ bluf }}</div>
     <div class="meta">
@@ -243,7 +244,7 @@
   {% endif %}
 
   <div class="footer">
-    Open Claw Mexico &middot; Brief {{ brief_id }} &middot; Produced {{ produced_at }} &middot; v{{ schema_version }}
+    Trevor Intelligence &middot; Brief {{ brief_id }} &middot; Produced {{ produced_at }} &middot; v{{ schema_version }}
   </div>
 
 </body>

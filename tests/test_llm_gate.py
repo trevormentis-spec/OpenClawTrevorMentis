@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Test file — references model strings for testing routing logic. Does not make API calls.
 #!/usr/bin/env python3
 """Tests for analyst/llm_gate.py — LLM routing decision system.
 

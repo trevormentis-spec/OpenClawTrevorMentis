@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html style="height:100%"><head><meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; width: 100%; }
+  body {
+    width: 1080px; height: 1350px;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    padding: 50px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-bar {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .brand { font-size: 11pt; letter-spacing: 3px; color: #c9a84c; text-transform: uppercase; }
+  .slide-num { font-size: 10pt; color: #666; }
+
+  .divider { width: 60px; height: 2px; background: #c9a84c; margin: 30px 0; }
+
+  .title-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .brief-title { font-size: 30pt; font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+  .brief-date { font-size: 14pt; color: #c9a84c; margin-bottom: 24px; }
+  .brief-bluf { font-size: 12pt; color: #bbb; line-height: 1.5; }
+
+  .content-area { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .slide-heading { font-size: 16pt; font-weight: 600; color: #c9a84c; margin-bottom: 24px; }
+  .judgment-list { list-style: none; }
+  .judgment-item {
+    font-size: 13pt; line-height: 1.4; padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .judgment-item:last-child { border-bottom: none; }
+  .judgment-band {
+    display: inline-block;
+    font-size: 8pt; padding: 2px 8px; border-radius: 2px;
+    margin-right: 10px; font-weight: 600; text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .band-almost_certain { background: #00b300; color: white; }
+  .band-highly_likely { background: #33cc33; color: white; }
+  .band-likely { background: #99cc33; color: #1a1a2e; }
+  .band-probable { background: #cccc33; color: #1a1a2e; }
+  .band-even_chance { background: #cc9933; color: white; }
+  .band-unlikely { background: #cc6633; color: white; }
+
+  .footer {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 8pt; color: #666;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head><body>
+<div class="top-bar">
+  <div class="brand">Trevor Intelligence</div>
+  <div class="slide-num">{{ slide_num }} / {{ total_slides }}</div>
+</div>
+<div class="divider"></div>
+
+{% if slide_index == 0 %}
+<div class="title-area">
+  <div class="brief-title">{{ title }}</div>
+  <div class="brief-date">{{ date }}</div>
+  {% if bluf %}
+  <div class="brief-bluf">{{ bluf }}</div>
+  {% endif %}
+</div>
+{% else %}
+<div class="content-area">
+  <div class="slide-heading">Key Judgments</div>
+  <ul class="judgment-list">
+    {% for j in judgments %}
+    <li class="judgment-item">
+      <span class="judgment-band band-{{ j.kent_band | lower | replace(' ', '_') }}">{{ j.kent_band }}</span>
+      {{ j.claim }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="footer">
+  <span>trevorintel.com</span>
+  <span>Not investment advice</span>
+</div>
+</body></html>

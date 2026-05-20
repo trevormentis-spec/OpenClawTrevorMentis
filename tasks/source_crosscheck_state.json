@@ -13,7 +13,55 @@
         "Channel 4 contacted by police after Married at First Sight UK rape claims",
         "HS2 could cost up to £102.7bn and trains will be slower than first planned"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-19T23:50:57.394168+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 34,
+      "checked_at": "2026-05-19T23:50:58.048505+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Surrey Police investigating child sex abuse allegations after Epstein files release",
+        "Channel 4 contacted by police after Married at First Sight UK rape claims",
+        "Twenty-two years in the making - how Arsenal celebrated title win"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-19T23:52:26.653745+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 34,
+      "checked_at": "2026-05-19T23:52:27.507425+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Surrey Police investigating child sex abuse allegations after Epstein files release",
+        "Channel 4 contacted by police after Married at First Sight UK rape claims",
+        "Twenty-two years in the making - how Arsenal celebrated title win"
+      ]
     }
   ],
-  "last_updated": "2026-05-19T18:28:58.168671+00:00"
+  "last_updated": "2026-05-19T23:52:27.507577+00:00"
 }

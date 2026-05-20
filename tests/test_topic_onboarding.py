@@ -1,3 +1,4 @@
+# GATE_EXEMPT: Test file — references model strings for testing topic onboarding. Does not make API calls.
 #!/usr/bin/env python3
 """Tests for topic onboarding and domain-general scope framework.
 

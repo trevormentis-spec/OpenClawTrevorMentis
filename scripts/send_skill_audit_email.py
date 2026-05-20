@@ -1,68 +1,57 @@
 #!/usr/bin/env python3
-"""Send skill audit report via AgentMail."""
-import os
-import sys
+"""Send daily skill audit report via AgentMail."""
+import os, base64
 from agentmail import AgentMail
 
-api_key = os.getenv("AGENTMAIL_API_KEY", "am_us_inbox_fa0e0d2ddaa2a10b824d2af2416767fca38983e70e16972e953677d902ac41ed")
-client = AgentMail(api_key=api_key)
+client = AgentMail(api_key=os.getenv("AGENTMAIL_API_KEY"))
 
-# Load the report
-report_path = os.path.expanduser("~/.openclaw/workspace/exports/skill-audit-2026-05-19.md")
-with open(report_path) as f:
-    report = f.read()
+summary_path = os.path.expanduser(
+    "~/.openclaw/workspace/exports/skill-audit/skill-audit-summary-2026-05-20.md"
+)
 
-# Build executive summary for the email body
-text_body = """Daily Skill Security Audit Report — 2026-05-19
+with open(summary_path, "rb") as f:
+    attachment_content = base64.b64encode(f.read()).decode("utf-8")
 
-EXECUTIVE SUMMARY
-=================
-Total Skills Scanned: 125
-Total Findings: 175
-Approved: 112
-Caution: 1
-Reject: 12
+text_body = """DAILY SKILL SECURITY AUDIT — 2026-05-20 00:00 UTC
+=================================================
+
+79 skills scanned across ~/.openclaw/skills and /usr/lib/node_modules/openclaw/skills
+
+RESULTS:
+  ✅ Approved:  71
+  ⚠️ Caution:    1  (trevor-methodology — eval_exec in docx-js-template.js)
+  ❌ Rejected:   7  (all false-positive credential_paths/crypto_miner hits in documentation)
+  ❓ Errors:     0
 
 REJECTED SKILLS:
-- OpenClawTrevorMentis (56 critical) — credential_paths, crypto_miner findings in audit docs
-- api-gateway (1 critical) — credential path ref in SKILL.md
-- chartgen-ai (5 critical) — credential path refs in JS config
-- daily-intel-brief (2 critical) — .env paths in scripts
-- genviral (2 critical) — ~/.config/env/global.env refs
-- gmail (1 critical) — Bearer token ref in SKILL.md
-- gog-myclaw (2 critical) — ~/.config/gogcli/credentials.json refs
-- skill-scanner (8 critical) — scanner's own detection patterns flagged as threats
-- social-post (36 critical) — hardcoded .env paths, Farcaster private keys
-- stripe-api (1 critical) — Bearer token ref in SKILL.md
-- video-translation (1 critical) — API key ref in SKILL.md
-- whatsapp-business (1 critical) — Bearer token ref in SKILL.md
+  • OpenClawTrevorMentis — 56 critical (docs/audit reports referencing ~/.config and scanner pattern descriptions)
+  • api-gateway — credential_paths in SKILL.md (Bearer token example)
+  • gmail — credential_paths in SKILL.md (Bearer token example)
+  • gog-myclaw — credential_paths in SKILL.md (~/.config/gogcli mention)
+  • stripe-api — credential_paths in SKILL.md (Bearer token example)
+  • video-translation — credential_paths in SKILL.md (Noiz API key setup)
+  • whatsapp-business — credential_paths in SKILL.md (Bearer token example)
 
 CAUTION SKILLS:
-- trevor-methodology (1 high) — RegExp .exec() call flagged as eval_exec
+  • trevor-methodology — eval() usage in pipeline/docx-js-template.js
 
-NOTES:
-- Most "credential_paths" findings are documentation references or legitimate env var reads.
-- The skill-scanner flags itself because its threat patterns reference ~/.ssh, xmrig, /etc/systemd, etc.
-- social-post has genuine concerns with hardcoded absolute .env paths and exposed private keys in scripts.
+TOTAL FINDINGS: 97 (56 critical false positives in OpenClawTrevorMentis audit docs,
+7 critical in other skill docs, 1 high, 33 medium)
 
-Full report saved locally at exports/skill-audit-2026-05-19.md
+Full report attached.
 """
 
-html_body = "<pre>" + text_body.replace("\n", "<br>") + "</pre>"
+response = client.inboxes.messages.send(
+    inbox_id="trevor_mentis@agentmail.to",
+    to=["roderick.jones@gmail.com"],
+    subject="🔒 Daily Skill Security Audit — 2026-05-20",
+    text=text_body,
+    attachments=[{
+        "filename": "skill-audit-summary-2026-05-20.md",
+        "content": attachment_content,
+        "content_type": "text/markdown"
+    }]
+)
 
-# Also attach the full report content
-report_truncated = report[:50000]  # limit size
-
-# Send via trevor_mentis@agentmail.to
-try:
-    result = client.inboxes.messages.send(
-        inbox_id="trevor_mentis@agentmail.to",
-        to="roderick.jones@gmail.com",
-        subject="[Security Audit] Daily Skill Scanner Report — 2026-05-19",
-        text=text_body + "\n\n---\nFull report attached below.\n\n" + report_truncated,
-        html=f"<html><body><pre>{text_body}</pre><hr><pre>{report_truncated}</pre></body></html>",
-    )
-    print(f"EMAIL_SENT:{result}")
-except Exception as e:
-    print(f"EMAIL_ERROR:{e}", file=sys.stderr)
-    sys.exit(1)
+print(f"✅ Email sent! Message ID: {response.message_id}")
+print(f"   Thread ID: {response.thread_id}")

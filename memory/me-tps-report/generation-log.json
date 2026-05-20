@@ -1,0 +1,35 @@
+{
+  "routing": {
+    "model": "anthropic/claude-opus-4.7",
+    "provider": "openrouter",
+    "cost": 0.208
+  },
+  "generation": {
+    "chars": 8916,
+    "tokens_in": 496,
+    "tokens_out": 3800
+  },
+  "plan": {
+    "assets": 8,
+    "deliverables": [
+      "pdf",
+      "exec_card",
+      "briefing_video"
+    ]
+  },
+  "execution": {
+    "successes": [
+      "f0b63a0d",
+      "b9b8e052",
+      "5be091a2",
+      "6d182a0e"
+    ],
+    "failures": [
+      "cad9f5e2",
+      "f0032d12",
+      "9b523353",
+      "596e7a69"
+    ]
+  },
+  "timestamp": "2026-05-20T03:40:25.310342+00:00"
+}
