@@ -1,2 +1,13 @@
 - [2026-05-13] - Cooldown: 4h per region before firing again (source: 2026-05-13.md, confidence: medium)
 - [2026-05-20] - Gmail Intelligence label: 8/10 unread within 24h, consistent high-signal sources (ISW, CTP, CISA, Cipher Brief). Pipeline extracts summaries appended to tasks/news_raw.md with timestamps. (source: 2026-05-19 operational logs, confidence: high)
+
+- [2026-05-21] Mock data footgun: --use-mock-incidents skips BOTH collection AND real analysis. Only use for testing, never production.
+- [2026-05-21] DeepSeek V4 Pro: 77% of output tokens consumed by reasoning. Must set max_tokens >= 4096 to get substantive response.
+- [2026-05-21] DeepSeek V4 Pro: model name is "deepseek-v4-pro" (not "deepseek/deepseek-v4-pro") for Direct API.
+- [2026-05-21] DeepSeek V4 Pro: response time 60-240s on long prompts. Opus 4.7: 15-45s.
+- [2026-05-21] Opus 4.7 via OpenRouter: extra headers needed (HTTP-Referer, X-Title).
+- [2026-05-21] Gmail via Maton API: BASE64-encoded MIMEText, bearer auth, endpoint at gateway.maton.ai/google-mail/gmail/v1/.
+- [2026-05-21] AgentMail SDK: use client.inboxes.messages.send() with inbox_id, to, subject, text (not text_body).
+- [2026-05-21] Copernicus Data Space: auth at identity.dataspace.copernicus.eu (not services.sentinel-hub.com).
+- [2026-05-21] Sources in .env are gitignored. Cron scripts source .env.
+- [2026-05-21] Reports are logged to memory/YYYY-MM-DD.md for search. Key judgments and summaries included.
