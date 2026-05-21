@@ -306,7 +306,7 @@ def save_source_provenance(date_str: str, sources: list[str], output_dir: pathli
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Send daily text brief via Gmail")
-    parser.add_argument("--working-dir", required=True, help="Path to trevor-briefings date dir")
+    parser.add_argument("--working-dir", help="Path to trevor-briefings date dir")
     parser.add_argument("--date", required=True, help="Date string YYYY-MM-DD")
     parser.add_argument("--to", default="roderick.jones@gmail.com", help="Recipient email")
     parser.add_argument("--kalshi-scan", help="Path to Kalshi scan markdown")
@@ -316,8 +316,6 @@ def main() -> None:
     parser.add_argument("--read-saved", action="store_true", help="Read from saved file and send")
     args = parser.parse_args()
 
-    working_dir = pathlib.Path(args.working_dir).expanduser().resolve()
-    analysis_dir = working_dir / "analysis"
     date_str = args.date
     maton_key = os.environ.get("MATON_API_KEY", "")
 
@@ -342,6 +340,13 @@ def main() -> None:
             log("Delivery FAILED")
             sys.exit(1)
         return
+
+    # Normal mode: working_dir required
+    if not args.working_dir:
+        log("ERROR: --working-dir required for assembly mode")
+        sys.exit(1)
+    working_dir = pathlib.Path(args.working_dir).expanduser().resolve()
+    analysis_dir = working_dir / "analysis"
 
     # Load analysis
     analysis = load_analysis(analysis_dir)
