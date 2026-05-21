@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T22:07:28.729663+00:00",
+  "generated_at": "2026-05-21T22:16:24.342484+00:00",
   "data_feeds": {
     "fcc-earth-stations": {
       "status": "ok",
@@ -604,6 +604,105 @@
           ]
         }
       }
+    },
+    "sentinel-imagery": {
+      "status": "ok",
+      "collected_at": "2026-05-21T22:16:24.342064+00:00",
+      "sentinel_api_configured": true,
+      "sites_checked": 10,
+      "sites": [
+        {
+          "site": "Ushuaia Region",
+          "operator": "Starlink",
+          "lat": -54.802,
+          "lon": -68.303,
+          "composite_risk": 2.95,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Marica, Rio de Janeiro",
+          "operator": "OneWeb",
+          "lat": -22.919,
+          "lon": -42.818,
+          "composite_risk": 2.8,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Puerto Rico",
+          "operator": "Starlink",
+          "lat": 18.22,
+          "lon": -66.59,
+          "composite_risk": 2.7,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Boca Chica, TX",
+          "operator": "Starlink",
+          "lat": 25.997,
+          "lon": -97.155,
+          "composite_risk": 2.5,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Broken Hill, NSW",
+          "operator": "Starlink",
+          "lat": -31.957,
+          "lon": 141.468,
+          "composite_risk": 2.4,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Abuja",
+          "operator": "Starlink",
+          "lat": 9.058,
+          "lon": 7.489,
+          "composite_risk": 2.4,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Santiago (Colina)",
+          "operator": "Starlink",
+          "lat": -33.198,
+          "lon": -70.677,
+          "composite_risk": 2.35,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Merrillan, WI",
+          "operator": "Starlink",
+          "lat": 44.449,
+          "lon": -90.833,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Conrad, MT",
+          "operator": "Starlink",
+          "lat": 48.17,
+          "lon": -111.946,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Sanya, Hainan",
+          "operator": "OneWeb",
+          "lat": 18.253,
+          "lon": 109.504,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        }
+      ],
+      "action_needed": "Credentials validated against Copernicus Data Space. Monthly run will query all sites via Process API."
     }
   }
 }

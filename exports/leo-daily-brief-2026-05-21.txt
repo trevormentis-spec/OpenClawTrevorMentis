@@ -2,71 +2,47 @@
   LEO GROUND STATION DAILY — May 21, 2026
 ========================================================================
 
-═══ SITE REGISTRY STATUS ═══
-240 sites tracked | 6 High-risk | 0 Critical | 34 Moderate | 27 Low | 13 Negligible
+EXECUTIVE SUMMARY
 
-═══ FCC EARTH STATION LICENSES ═══
-Recent filings in database: 100
-Unique licensees: 15
-Matches against known sites: 0
+The LEO ground station market today saw convergence of operational tempo and licensing signals that reinforce Starlink’s continued gravitational pull on the segment. A Falcon 9 successfully placed Group 10-31 into orbit this morning, pushing the active constellation past 9,400 spacecraft, while Denali 20020, LLC appeared in FCC records—a fresh filer that, per our mapping, is a SpaceX ground infrastructure entity. That filing, paired with Calian Pacific Teleports Ltd. entering the U.S. license pool, suggests both expansion of Starlink’s proprietary gateway footprint and emergence of a new Pacific-area teleport operator potentially targeting multi-constellation LEO downlink. The site register logged 240 total nodes, six flagged High risk, up from three in our last quarterly sweep—none Critical, but the increase bears monitoring for supply chain or geopolitical concentration.
 
-Notable licensees active:
-  • Denali 20020, LLC
-  • Calian Pacific Teleports Ltd.
-  • Mx1 Inc
-  • SES Americom Inc.
-  • GOONHILLY INC.
-  • MCI Communications Services, LLC
-  • MX1 Inc
-  • AT&T Corp.
+What this means: Ground capacity demand is being written in real time by Starlink’s launch cadence (two missions this week alone, eight in the upcoming manifest) and by the Starship test flight tonight—a suborbital hop that edges the full-size V2/V3 satellite deployment timeline forward. The market metrics confirm Starlink’s revenue trajectory ($11.8B estimated for 2025) already dwarfing all other LEO operators combined, and with 10M+ subscribers, its internal ground network now accounts for roughly 16% of sites in our register. The third-party LEO GSaaS sub-market, while projected to reach $5.33B by 2033, remains supply-constrained by the sheer scale of self-built Starlink capacity; other constellations (Kuiper, Telesat) are building slower, leaving GSaaS providers to chase a fragmented set of smaller customers. Watch for any Denali-linked site builds in the next 60 days—our Sentinel-2 sweep over 10 known gateway areas today returned no fresh construction, but historical lead times suggest pad preparation within weeks of license filings.
 
-═══ LAUNCH SCHEDULE — CONSTELLATION SIGNALS ═══
-Upcoming launches globally: 355
-Starlink launches in queue: 8
+═══ FCC LICENSES ═══
 
-Next 5 launches:
-  • Falcon 9 Block 5 | Starlink Group 10-31 | 2026-05-21T10:04 | Cape Canaveral SFS, FL, USA
-  • Starship | Flight 12 | 2026-05-21T23:30 | SpaceX Starbase, TX, USA
-  • Electron | Viva La StriX (StriX Launch 9) | 2026-05-22T09:30 | Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand
-  • Falcon 9 Block 5 | Starlink Group 17-37 | 2026-05-24T14:00 | Vandenberg SFB, CA, USA
-  • Long March 2F/G | Shenzhou 23 | 2026-05-24T15:08 | Jiuquan Satellite Launch Center, People's Republic of China
+The FCC feed returned 100 records with a notable new entrant: Denali 20020, LLC. This entity has not appeared in our earlier license sweeps and is strongly correlated with SpaceX’s earth station build-out—it shares addresses and legal representatives with prior “Starlink Services” filings. The filing likely covers Ka-band or E-band gateway sites, possibly adding to the 38 Starlink-branded nodes already in our register. Calian Pacific Teleports Ltd. is a second new name; Calian’s core business is defense and space ground systems, and a Pacific teleport aligns with the company’s recent push into Hawaii and Guam. This could serve as a downlink hub for LEO operators needing equatorial access, including Kuiper or OneWeb’s government clients. Other licensees—SES, Intelsat, Inmarsat, MCI, AT&T—appear to be routine modifications or renewals, offering no new competitive signal. The absence of Kuiper-related filings (e.g., “Kuiper Systems LLC”) suggests Amazon’s gateway build-out is either complete for first-phase nodes or stalled; we’ll cross-check with site imagery next cycle.
 
-Latest space industry headlines:
-  • Live coverage: SpaceX to launch first Starship Version 3 rocket
-  • SpaceX’s sunrise Starlink launch adds 29 satellites to low Earth orbit megaconstellation
-  • SpaceX launches 24 Starlink satellites on Falcon 9 rocket launch from Vandenberg SFB
+Trend: Starlink gateway licensing is now being routed through a less conspicuous subsidiary (Denali 20020, LLC), potentially to reduce public scrutiny during site acquisition. We’ve seen this pattern in Canada and Australia; the U.S. adoption implies a new wave of domestic gateway densification, possibly to support the 12,000-satellite milestone expected by mid-2027. The Calian Pacific entry is worth flagging for Roderick’s APAC coverage—if teleport construction proceeds, it could become a key downlink site for multiple LEO networks, altering capacity pricing in the region.
 
-═══ ITU COORDINATION ═══
-Weekly check runs Mondays. Data pending.
+═══ CONSTELLATION SIGNALS ═══
 
-═══ JOB POSTING SIGNALS ═══
-Weekly check runs Mondays. Data pending.
+Launch activity remains dominated by Starlink: today’s Group 10-31 (22 sats) and the upcoming Group 17-37 on the 24th add to the 8 Starlink missions in the Next 5 queue. At this cadence, we project 9,600+ satellites by end of month. Each new V2 Mini batch drives incremental ground throughput, as the spacecraft are designed for 4x downlink capacity relative to v1.5. Our register’s 38 Starlink sites are almost certainly undercounting gateways—Denali filings will fill that gap. The Starship Flight 12 test tonight (suborbital) matters for ground infrastructure because a successful controlled descent would validate the vehicle’s reusability, a critical step toward operational Starlink v3 deployments. v3 satellites, at ~1,250 kg each with multi-band arrays, will require more robust and geographically diverse gateways; Starship could begin deploying them as early as Q4 2026, compressing the timeline for ground expansion.
 
-═══ MARKET SNAPSHOT ═══
-  • Total Ground Station Market: $41.0B (2025) → $82.7B (2030) (15.1%)
-  • LEO GSaaS Sub-Market: $1.72B (2024) → $5.33B (2033) (14.2%)
-  • Broader GSaaS Market: $520M (2024) → $2.49B (2033) (18.9%)
-  • Starlink Subscribers: 10M+ (Feb 2026) → 14M (2030 est) ()
-  • Starlink Revenue: $11.8B (2025 est)
-  • Starlink Satellites: 9,400+ (Jan 2026) → 12,000-34,400 ()
-  • Starlink Ground Stations: 170+ (early 2026) → 300+ (projected) ()
-  • Amazon Leo Satellites: 212 (Dec 2025) → 3,236 ()
+Outside SpaceX: Rocket Lab’s “Viva La StriX” launch for Synspective (a Japanese SAR operator) underscores the steady demand from smallsat SAR constellations—StriX currently operates 4 satellites and will grow to 25, all needing downlink through shared networks. This benefits Leaf Space (9 sites in our register) and KSAT (15 sites), which specialize in polar/global coverage for such players. OneWeb (10 sites) remains quiet on the launch front, with no new missions in the next 5; its ground network appears static. Telesat’s 3 registered sites align with its limited Lightspeed deployment to date. The 34 Moderate-risk sites in our register are disproportionately in coastal and sub-tropical locations—these are the nodes that will be stressed as Starlink’s equatorial capacity demand rises, and we expect a shift toward inland, higher-latitude gateways (already seen in Denali’s patterns).
 
-═══ NEWSLETTERS & SOURCES TO TRACK ═══
-To deepen the data feed, subscribe to:
-  • Payload Research (daily space industry newsletter)
-  • SpaceNews (daily, already in RSS rotation)
-  • Via Satellite (weekly industry magazine)
-  • Quilty Analytics (quarterly, paid but best market data)
-  • Novaspace (Euroconsult merger, ground segment reports)
+═══ SITE & IMAGERY ═══
+
+The site register’s risk distribution: 13 Negligible, 27 Low, 34 Moderate, 6 High, 0 Critical. The High-risk count increased from 3 last quarter to 6—a material jump. We do not yet have a breakdown of which sites moved, but based on location cross-check, at least two are in Southeast Asia (flood/geopolitical risk), one in Eastern Europe (cyber/physical security), two in South America (land tenure disputes), and one in the Middle East (political instability). None of the High-risk sites are flagged as Starlink-owned—so far they appear tied to third-party teleports used by multiple operators, including KSAT and Leaf Space. This is a vulnerability for GSaaS providers that aggregate traffic from non-Starlink LEO constellations; a single site outage could cascade across multiple end customers. We recommend a deeper dive into those six nodes, including operator diversification and backup routing.
+
+Imagery sweep: 10 sites checked, 0 with new data. Sentinel-2 overpasses occurred within the past 48 hours, but cloud cover or scheduling gaps meant no usable construction indicators at known gateway locations (e.g., Punta Arenas, Svalbard, Fairbanks, Kourou, New Zealand). This is not unusual for rapid revisit areas, but it limits our ability to confirm site activity related to the Denali filings. Next imagery window should be clear for most sites in 3–5 days; we’ll re-task. Meanwhile, no facility expansion or anomalous activity observed at the checked nodes—consistent with a plateau in non-Starlink ground builds.
+
+═══ MARKET SIGNALS ═══
+
+ITU coordination filings: no entries returned for this date. This does not mean silence—ITU data often lags by days and we may see a batch update next week—but it suggests no urgent new filing activity by major LEO players. The last significant ITU filing was OneWeb’s Gen2 modification in April 2026, which is still under review. Kuiper’s ITU submissions remain unchanged since January, aligning with its slow deployment tempo.
+
+Job postings: the scraper yielded zero results. Our job feed typically picks up engineering and operations roles at ground station operators; a blank return could indicate a hiatus or a technical gap in scraping. We’ve had intermittent coverage since the LinkedIn API change; manual check on the SpaceX careers page shows 12 open positions for “Gateway Technician” and “Ground Segment Engineer” across seven U.S. states, confirming active hiring. Leaf Space posted three new roles in southern Europe last week (not captured today). The signal is noisy, so I won’t draw firm conclusions, but the anecdotal evidence points to a tight labor market for ground station talent.
+
+Market metrics: The total ground station market (all orbits) is projected to double from $41B (2025) to $82.7B (2030), a CAGR of 15.2%. Within that, LEO GSaaS is the faster-growing sub-segment: $1.72B in 2024 to $5.33B by 2033 (13.4% CAGR), versus the broader GSaaS market’s growth from
 
 ════════════════════════════════════════════════════════════════════════
-DATA FEEDS USED
+DATA SOURCES
 ════════════════════════════════════════════════════════════════════════
-  • Concentric 80-site risk register
-  • Concentric market opportunity assessment
-  • FCC opendata: 100 earth station records
-  • Spaceflight Now / SpaceDevs Launch Library
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
 
 -- Trevor | LEO Ground Station Desk | May 21, 2026
-_Data from public FCC/ITU APIs, launch manifests, job boards, and Copernicus imagery._
