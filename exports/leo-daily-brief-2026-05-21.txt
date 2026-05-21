@@ -1,0 +1,72 @@
+========================================================================
+  LEO GROUND STATION DAILY — May 21, 2026
+========================================================================
+
+═══ SITE REGISTRY STATUS ═══
+240 sites tracked | 6 High-risk | 0 Critical | 34 Moderate | 27 Low | 13 Negligible
+
+═══ FCC EARTH STATION LICENSES ═══
+Recent filings in database: 100
+Unique licensees: 15
+Matches against known sites: 0
+
+Notable licensees active:
+  • Denali 20020, LLC
+  • Calian Pacific Teleports Ltd.
+  • Mx1 Inc
+  • SES Americom Inc.
+  • GOONHILLY INC.
+  • MCI Communications Services, LLC
+  • MX1 Inc
+  • AT&T Corp.
+
+═══ LAUNCH SCHEDULE — CONSTELLATION SIGNALS ═══
+Upcoming launches globally: 355
+Starlink launches in queue: 8
+
+Next 5 launches:
+  • Falcon 9 Block 5 | Starlink Group 10-31 | 2026-05-21T10:04 | Cape Canaveral SFS, FL, USA
+  • Starship | Flight 12 | 2026-05-21T23:30 | SpaceX Starbase, TX, USA
+  • Electron | Viva La StriX (StriX Launch 9) | 2026-05-22T09:30 | Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand
+  • Falcon 9 Block 5 | Starlink Group 17-37 | 2026-05-24T14:00 | Vandenberg SFB, CA, USA
+  • Long March 2F/G | Shenzhou 23 | 2026-05-24T15:08 | Jiuquan Satellite Launch Center, People's Republic of China
+
+Latest space industry headlines:
+  • Live coverage: SpaceX to launch first Starship Version 3 rocket
+  • SpaceX’s sunrise Starlink launch adds 29 satellites to low Earth orbit megaconstellation
+  • SpaceX launches 24 Starlink satellites on Falcon 9 rocket launch from Vandenberg SFB
+
+═══ ITU COORDINATION ═══
+Weekly check runs Mondays. Data pending.
+
+═══ JOB POSTING SIGNALS ═══
+Weekly check runs Mondays. Data pending.
+
+═══ MARKET SNAPSHOT ═══
+  • Total Ground Station Market: $41.0B (2025) → $82.7B (2030) (15.1%)
+  • LEO GSaaS Sub-Market: $1.72B (2024) → $5.33B (2033) (14.2%)
+  • Broader GSaaS Market: $520M (2024) → $2.49B (2033) (18.9%)
+  • Starlink Subscribers: 10M+ (Feb 2026) → 14M (2030 est) ()
+  • Starlink Revenue: $11.8B (2025 est)
+  • Starlink Satellites: 9,400+ (Jan 2026) → 12,000-34,400 ()
+  • Starlink Ground Stations: 170+ (early 2026) → 300+ (projected) ()
+  • Amazon Leo Satellites: 212 (Dec 2025) → 3,236 ()
+
+═══ NEWSLETTERS & SOURCES TO TRACK ═══
+To deepen the data feed, subscribe to:
+  • Payload Research (daily space industry newsletter)
+  • SpaceNews (daily, already in RSS rotation)
+  • Via Satellite (weekly industry magazine)
+  • Quilty Analytics (quarterly, paid but best market data)
+  • Novaspace (Euroconsult merger, ground segment reports)
+
+════════════════════════════════════════════════════════════════════════
+DATA FEEDS USED
+════════════════════════════════════════════════════════════════════════
+  • Concentric 80-site risk register
+  • Concentric market opportunity assessment
+  • FCC opendata: 100 earth station records
+  • Spaceflight Now / SpaceDevs Launch Library
+
+-- Trevor | LEO Ground Station Desk | May 21, 2026
+_Data from public FCC/ITU APIs, launch manifests, job boards, and Copernicus imagery._
