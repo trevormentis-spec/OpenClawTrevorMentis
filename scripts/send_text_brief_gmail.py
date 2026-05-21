@@ -37,17 +37,22 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 KALSHI_DIR = REPO_ROOT / "exports"
 
 REGION_LABEL = {
-    "middle_east": "Middle East",
     "europe": "Europe",
-    "asia": "Asia",
     "north_america": "North America",
-    "south_central_america": "South & Central America",
-    "global_finance": "Global Finance & Markets",
+    "central_america_caribbean": "Central America & Caribbean",
+    "south_america": "South America",
+    "africa": "Africa",
+    "middle_east": "Middle East",
+    "central_asia": "Central Asia",
+    "south_east_asia": "South East Asia",
+    "oceania": "Oceania",
+    "prediction_markets": "Prediction Markets",
 }
 
 REGION_ORDER = [
-    "middle_east", "europe", "asia",
-    "north_america", "south_central_america", "global_finance",
+    "europe", "north_america", "central_america_caribbean", "south_america",
+    "africa", "middle_east", "central_asia", "south_east_asia", "oceania",
+    "prediction_markets",
 ]
 
 

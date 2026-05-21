@@ -1,6 +1,6 @@
 {
-  "_comment": "Country -> region taxonomy for Trevor's Daily Intel Brief. The six regions are fixed; reassignments are by editing this file, never at runtime. 'global_finance' has no countries — it's incident-typed in the collector.",
-  "version": "1.0.0",
+  "_comment": "10-region taxonomy per principal directive 2026-05-21",
+  "version": "2.0.0",
   "regions": {
     "europe": {
       "label": "Europe",
@@ -12,39 +12,9 @@
         "Poland", "Czechia", "Slovakia", "Hungary", "Romania", "Bulgaria",
         "Greece", "Cyprus", "Malta",
         "Estonia", "Latvia", "Lithuania", "Belarus", "Ukraine", "Moldova",
-        "Russia", "Russian Federation",
         "Serbia", "Croatia", "Slovenia", "Bosnia and Herzegovina", "Montenegro",
         "North Macedonia", "Albania", "Kosovo",
         "Vatican City", "San Marino", "Andorra", "Monaco"
-      ]
-    },
-    "asia": {
-      "label": "Asia",
-      "bbox_caps": { "min_lon": 60, "min_lat": -11, "max_lon": 180, "max_lat": 55 },
-      "countries": [
-        "China", "Taiwan", "Hong Kong", "Macau", "Mongolia",
-        "Japan", "South Korea", "North Korea", "DPRK", "Republic of Korea",
-        "India", "Pakistan", "Bangladesh", "Nepal", "Bhutan", "Sri Lanka", "Maldives",
-        "Afghanistan",
-        "Myanmar", "Burma", "Thailand", "Laos", "Cambodia", "Vietnam",
-        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste",
-        "Kazakhstan", "Uzbekistan", "Turkmenistan", "Kyrgyzstan", "Tajikistan",
-        "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Islands",
-        "Vanuatu", "Samoa", "Tonga", "Kiribati", "Tuvalu", "Nauru", "Palau",
-        "Micronesia", "Marshall Islands"
-      ]
-    },
-    "middle_east": {
-      "label": "Middle East",
-      "_note": "Türkiye is in Middle East per analyst convention (not Europe). Includes North Africa for kinetic continuity (Libya, Egypt, Sudan). Iran is here, not Asia.",
-      "bbox_caps": { "min_lon": -18, "min_lat": 12, "max_lon": 65, "max_lat": 42 },
-      "countries": [
-        "Türkiye", "Turkey",
-        "Iran", "Iraq", "Syria", "Lebanon", "Israel", "Palestine", "Jordan",
-        "Saudi Arabia", "Yemen", "Oman", "United Arab Emirates", "Qatar", "Bahrain", "Kuwait",
-        "Egypt", "Libya", "Sudan", "South Sudan",
-        "Tunisia", "Algeria", "Morocco", "Western Sahara", "Mauritania",
-        "Azerbaijan", "Armenia", "Georgia"
       ]
     },
     "north_america": {
@@ -52,25 +22,98 @@
       "bbox_caps": { "min_lon": -170, "min_lat": 14, "max_lon": -50, "max_lat": 75 },
       "countries": [
         "United States", "USA", "United States of America",
-        "Canada",
-        "Mexico"
+        "Canada", "Mexico", "Greenland"
       ]
     },
-    "south_central_america": {
-      "label": "South & Central America (incl. Caribbean)",
-      "bbox_caps": { "min_lon": -95, "min_lat": -57, "max_lon": -33, "max_lat": 28 },
+    "central_america_caribbean": {
+      "label": "Central America & Caribbean",
+      "bbox_caps": { "min_lon": -95, "min_lat": 7, "max_lon": -58, "max_lat": 28 },
       "countries": [
         "Guatemala", "Belize", "Honduras", "El Salvador", "Nicaragua", "Costa Rica", "Panama",
-        "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana",
-        "Brazil", "Ecuador", "Peru", "Bolivia", "Paraguay", "Chile", "Argentina", "Uruguay",
         "Cuba", "Jamaica", "Haiti", "Dominican Republic",
         "Bahamas", "Barbados", "Trinidad and Tobago", "Grenada", "Saint Lucia",
         "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica",
         "Saint Kitts and Nevis", "Puerto Rico"
       ]
     },
-    "global_finance": {
-      "label": "Global Finance",
+    "south_america": {
+      "label": "South America",
+      "bbox_caps": { "min_lon": -82, "min_lat": -57, "max_lon": -33, "max_lat": 13 },
+      "countries": [
+        "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana",
+        "Brazil", "Ecuador", "Peru", "Bolivia", "Paraguay", "Chile", "Argentina", "Uruguay"
+      ]
+    },
+    "africa": {
+      "label": "Africa",
+      "_note": "All 54 UN-recognised African nations. Split from old middle_east (North Africa) + new sub-Saharan coverage.",
+      "bbox_caps": { "min_lon": -20, "min_lat": -36, "max_lon": 52, "max_lat": 38 },
+      "countries": [
+        "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi",
+        "Cabo Verde", "Cameroon", "Central African Republic", "Chad", "Comoros",
+        "Congo", "Côte d'Ivoire", "Ivory Coast",
+        "Democratic Republic of the Congo", "DR Congo", "Djibouti",
+        "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini", "Swaziland", "Ethiopia",
+        "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
+        "Kenya", "Lesotho", "Liberia", "Libya",
+        "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique",
+        "Namibia", "Niger", "Nigeria",
+        "Rwanda",
+        "São Tomé and Príncipe", "Senegal", "Seychelles", "Sierra Leone", "Somalia",
+        "South Africa", "South Sudan", "Sudan",
+        "Tanzania", "Togo", "Tunisia",
+        "Uganda",
+        "Western Sahara",
+        "Zambia", "Zimbabwe"
+      ]
+    },
+    "middle_east": {
+      "label": "Middle East",
+      "_note": "Türkiye is in Middle East per analyst convention (not Europe). North Africa moved to africa region. Iran is here, not Asia.",
+      "bbox_caps": { "min_lon": 25, "min_lat": 12, "max_lon": 65, "max_lat": 42 },
+      "countries": [
+        "Türkiye", "Turkey",
+        "Iran", "Iraq", "Syria", "Lebanon", "Israel", "Palestine", "Jordan",
+        "Saudi Arabia", "Yemen", "Oman", "United Arab Emirates", "Qatar", "Bahrain", "Kuwait"
+      ]
+    },
+    "central_asia": {
+      "label": "Central Asia",
+      "_note": "Includes Caucasus, Afghanistan, Mongolia, and the Russian Federation. Split from old asia and old europe.",
+      "bbox_caps": { "min_lon": 40, "min_lat": 35, "max_lon": 120, "max_lat": 82 },
+      "countries": [
+        "Kazakhstan", "Uzbekistan", "Turkmenistan", "Kyrgyzstan", "Tajikistan",
+        "Afghanistan", "Mongolia",
+        "Azerbaijan", "Armenia", "Georgia",
+        "Russia", "Russian Federation",
+        "China", "Hong Kong", "Macau",
+        "Japan", "South Korea", "North Korea", "DPRK", "Republic of Korea",
+        "India", "Pakistan"
+      ]
+    },
+    "south_east_asia": {
+      "label": "South East Asia",
+      "_note": "Mainland and maritime SE Asia plus South Asian island states. Split from old asia.",
+      "bbox_caps": { "min_lon": 92, "min_lat": -11, "max_lon": 142, "max_lat": 30 },
+      "countries": [
+        "Myanmar", "Burma", "Thailand", "Laos", "Cambodia", "Vietnam",
+        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste",
+        "Sri Lanka", "Bangladesh", "Nepal", "Bhutan", "Maldives"
+      ]
+    },
+    "oceania": {
+      "label": "Oceania",
+      "_note": "Australia, New Zealand, Pacific island nations, and Taiwan. Split from old asia.",
+      "bbox_caps": { "min_lon": 110, "min_lat": -48, "max_lon": -120, "max_lat": 25 },
+      "countries": [
+        "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Islands",
+        "Vanuatu", "Samoa", "Tonga", "Kiribati", "Tuvalu", "Nauru", "Palau",
+        "Micronesia", "Marshall Islands",
+        "Taiwan"
+      ]
+    },
+    "prediction_markets": {
+      "label": "Prediction Markets",
       "_note": "Not geographic. Filled by incident-type in the collector (>1.5σ index moves, central-bank actions, sovereign yield moves >15bp, FX >1σ, commodity >3σ, major credit events).",
       "bbox_caps": null,
       "countries": []

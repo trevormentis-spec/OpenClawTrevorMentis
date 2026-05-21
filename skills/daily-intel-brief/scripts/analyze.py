@@ -39,22 +39,30 @@ OPENROUTER_BASE = "https://openrouter.ai/api"
 OPENROUTER_PATH = "/v1/chat/completions"
 
 REGIONS_ORDER = [
-    "europe", "asia", "middle_east",
-    "north_america", "south_central_america", "global_finance",
+    "europe", "north_america", "central_america_caribbean", "south_america",
+    "africa", "middle_east", "central_asia", "south_east_asia", "oceania",
+    "prediction_markets",
 ]
 
 REGION_LABEL = {
     "europe": "Europe",
-    "asia": "Asia",
-    "middle_east": "Middle East",
     "north_america": "North America",
-    "south_central_america": "South & Central America (incl. Caribbean)",
-    "global_finance": "Global Finance",
+    "central_america_caribbean": "Central America & Caribbean",
+    "south_america": "South America",
+    "africa": "Africa",
+    "middle_east": "Middle East",
+    "central_asia": "Central Asia",
+    "south_east_asia": "South East Asia",
+    "oceania": "Oceania",
+    "prediction_markets": "Prediction Markets",
 }
 
 REGION_SHORT = {
-    "europe": "EU", "asia": "AS", "middle_east": "ME",
-    "north_america": "NA", "south_central_america": "SC", "global_finance": "FIN",
+    "europe": "EU", "north_america": "NA",
+    "central_america_caribbean": "CAC", "south_america": "SA",
+    "africa": "AF", "middle_east": "ME",
+    "central_asia": "CAS", "south_east_asia": "SEA", "oceania": "OC",
+    "prediction_markets": "FIN",
 }
 
 
@@ -507,8 +515,8 @@ def main() -> int:
                         help="path to behavioral-state.json for hard behavioral constraints (overrides individual --collection-state and --calibration)")
     parser.add_argument("--self-assessment", default="",
                         help="path to self-assessment-injection.md for system health feedback")
-    parser.add_argument("--scope-topic", default="Mexico daily intelligence brief",
-                        help="topic to validate against scope gate; default treats pipeline as Mexico-scoped")
+    parser.add_argument("--scope-topic", default="global intelligence brief",
+                        help="topic to validate against scope gate; default treats pipeline as global-scoped")
     parser.add_argument("--mock", action="store_true",
                         help="return canned analysis without calling the API")
     args = parser.parse_args()
@@ -745,7 +753,7 @@ def main() -> int:
     tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-pro — regional analysis
     # Tier-2 provider follows the --provider flag (override from deepseek-only in v2)
     tier2_provider = args.provider
-    log(f"Tiered routing: 6 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "
+    log(f"Tiered routing: 10 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "
         f"exec+redteam → {tier1_model.split('/')[-1]} (tier-1 via {args.provider})")
 
     regional_payloads: dict[str, dict] = {}
@@ -810,7 +818,7 @@ def main() -> int:
                                temperature=0.4, provider=args.provider)
     (analysis_dir / "red_team.md").write_text(red_md)
 
-    log(f"wrote 7 analysis files to {analysis_dir}")
+    log(f"wrote 11 analysis files to {analysis_dir}")
     return 0
 
 

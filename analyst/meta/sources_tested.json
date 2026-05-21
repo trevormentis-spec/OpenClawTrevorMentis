@@ -4,14 +4,17 @@
   "failed_feeds": 98,
   "generated_at": "2026-05-21T17:00:00Z",
   "regions_breakdown": {
-    "global": 104,
-    "europe": 17,
-    "middle_east": 8,
-    "asia": 8,
-    "africa": 4,
-    "south_central_america": 4,
-    "global_finance": 10,
-    "north_america": 6
+    "global": 139,
+    "europe": 23,
+    "middle_east": 24,
+    "south_east_asia": 5,
+    "africa": 10,
+    "south_america": 3,
+    "global_finance": 23,
+    "oceania": 1,
+    "north_america": 13,
+    "central_asia": 14,
+    "central_america_caribbean": 2
   },
   "types_breakdown": {
     "wire_service": 18,
@@ -112,7 +115,7 @@
       "type": "wire_service",
       "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
       "rss": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
-      "region": "asia",
+      "region": "south_east_asia",
       "themes": [
         "wire_service"
       ],
@@ -148,7 +151,7 @@
       "type": "wire_service",
       "url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
       "rss": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
-      "region": "south_central_america",
+      "region": "south_america",
       "themes": [
         "wire_service"
       ],
@@ -364,7 +367,7 @@
       "type": "wire_service",
       "url": "https://www.abc.net.au/news/feed/46078/rss.xml",
       "rss": null,
-      "region": "asia",
+      "region": "oceania",
       "themes": [
         "wire_service"
       ],
@@ -1012,7 +1015,7 @@
       "type": "newspaper",
       "url": "https://asia.nikkei.com/rss/feed",
       "rss": null,
-      "region": "asia",
+      "region": "south_east_asia",
       "themes": [
         "newspaper"
       ],
@@ -1030,7 +1033,7 @@
       "type": "newspaper",
       "url": "https://www.scmp.com/rss/4/feed",
       "rss": "https://www.scmp.com/rss/4/feed",
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1048,7 +1051,7 @@
       "type": "newspaper",
       "url": "https://www.japantimes.co.jp/feed/top",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1066,7 +1069,7 @@
       "type": "newspaper",
       "url": "https://www.thehindu.com/news/feeder/default.rss",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1084,7 +1087,7 @@
       "type": "newspaper",
       "url": "http://www.koreaherald.com/rssxml/HeraldNews.xml",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1102,7 +1105,7 @@
       "type": "news",
       "url": "https://www.channelnewsasia.com/rssfeeds/8395986",
       "rss": "https://www.channelnewsasia.com/rssfeeds/8395986",
-      "region": "asia",
+      "region": "south_east_asia",
       "themes": [
         "news"
       ],
@@ -1120,7 +1123,7 @@
       "type": "newspaper",
       "url": "https://www.chinadaily.com.cn/rss/world_rss.xml",
       "rss": "https://www.chinadaily.com.cn/rss/world_rss.xml",
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1138,7 +1141,7 @@
       "type": "newspaper",
       "url": "https://www.globaltimes.cn/rss",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1156,7 +1159,7 @@
       "type": "wire_service",
       "url": "http://www.xinhuanet.com/english/rss/worldrss.xml",
       "rss": "http://www.xinhuanet.com/english/rss/worldrss.xml",
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "wire_service"
       ],
@@ -1174,7 +1177,7 @@
       "type": "newspaper",
       "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
       "rss": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1192,7 +1195,7 @@
       "type": "magazine",
       "url": "https://thediplomat.com/feed/",
       "rss": "https://thediplomat.com/feed/",
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "magazine"
       ],
@@ -1210,7 +1213,7 @@
       "type": "wire_service",
       "url": "https://www3.nhk.or.jp/nhkworld/rss/world.xml",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "wire_service"
       ],
@@ -1228,7 +1231,7 @@
       "type": "newspaper",
       "url": "https://www.straitstimes.com/news/asia/rss.xml",
       "rss": "https://www.straitstimes.com/news/asia/rss.xml",
-      "region": "asia",
+      "region": "south_east_asia",
       "themes": [
         "newspaper"
       ],
@@ -1246,7 +1249,7 @@
       "type": "newspaper",
       "url": "https://www.dawn.com/feeds/feeds/rss.xml",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "newspaper"
       ],
@@ -1390,7 +1393,7 @@
       "type": "newspaper",
       "url": "https://www.batimes.com.ar/feed",
       "rss": "https://www.batimes.com.ar/feed",
-      "region": "south_central_america",
+      "region": "south_america",
       "themes": [
         "newspaper"
       ],
@@ -1408,7 +1411,7 @@
       "type": "news",
       "url": "https://en.mercopress.com/rss.xml",
       "rss": null,
-      "region": "south_central_america",
+      "region": "south_america",
       "themes": [
         "news"
       ],
@@ -1426,7 +1429,7 @@
       "type": "magazine",
       "url": "https://americasquarterly.org/feed/",
       "rss": "https://americasquarterly.org/feed/",
-      "region": "south_central_america",
+      "region": "central_america_caribbean",
       "themes": [
         "magazine"
       ],
@@ -1444,7 +1447,7 @@
       "type": "news",
       "url": "https://dialogo-americas.com/feed/",
       "rss": "https://dialogo-americas.com/feed/",
-      "region": "south_central_america",
+      "region": "central_america_caribbean",
       "themes": [
         "news"
       ],
@@ -1948,7 +1951,7 @@
       "type": "think_tank",
       "url": "https://www.crisisgroup.org/rss/asia.xml",
       "rss": null,
-      "region": "asia",
+      "region": "south_east_asia",
       "themes": [
         "think_tank"
       ],
@@ -2038,7 +2041,7 @@
       "type": "think_tank",
       "url": "https://www.orfonline.org/feed/",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "think_tank"
       ],
@@ -2056,7 +2059,7 @@
       "type": "think_tank",
       "url": "https://eastasiaforum.org/feed/",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "think_tank"
       ],
@@ -3460,7 +3463,7 @@
       "type": "watchdog",
       "url": "https://www.hrw.org/rss/asia.xml",
       "rss": null,
-      "region": "asia",
+      "region": "central_asia",
       "themes": [
         "watchdog"
       ],

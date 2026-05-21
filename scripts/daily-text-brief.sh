@@ -100,7 +100,15 @@ set +e
 python3 "$REPO/scripts/compile_calibration_directives.py" 2>&1 | tee -a "$LOG"
 set -e 2>/dev/null || true
 
-# Step 1d: Kalshi/Polymarket scan
+# Step 1d: Source discovery — find new RSS/sources
+# Runs a random-query rotated source discovery to continuously expand coverage
+# across all 10 regions.
+echo "--- Source discovery (random query rotation) ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/source_discovery.py" 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
+
+# Step 1e: Kalshi/Polymarket scan
 echo "--- Scanning prediction markets ---" | tee -a "$LOG"
 set +e
 python3 "$REPO/scripts/kalshi_scanner.py" --save --compare-polymarket 2>&1 | tee -a "$LOG"
@@ -194,24 +202,31 @@ fi
 set -e 2>/dev/null || true
 
 # =========================================================================
-# STEP 4: ANALYSIS — Opus 4.7 for ALL tiers
+# STEP 4: ANALYSIS — Run analyze.py directly (not through orchestrator)
+#
+# This gives us control over sequencing: collect.py → enrich → analyze
+# Using the orchestrator's --use-mock-incidents would skip real analysis.
 # =========================================================================
 
-# Run orchestrator in mock-incidents mode (skips collect, reads pre-populated incidents.json)
-# --use-mock-incidents means: "don't re-run collect.py, use what's already in incidents.json"
-echo "--- Running orchestrator analysis (Opus 4.7 for all tiers) ---" | tee -a "$LOG"
-python3 skills/daily-intel-brief/scripts/orchestrate.py \
+echo "--- Running analysis (Opus 4.7 for all tiers, enriched incidents) ---" | tee -a "$LOG"
+python3 skills/daily-intel-brief/scripts/analyze.py \
+    --working-dir "$WORKING_DIR" \
+    --prompts skills/daily-intel-brief/references/deepseek-prompts.md \
+    --regions skills/daily-intel-brief/references/regions.json \
     --model "anthropic/claude-opus-4.7" \
     --tier2-model "anthropic/claude-opus-4.7" \
     --provider openrouter \
-    --no-deliver \
-    --use-mock-incidents \
     --strict-env 2>&1 | tee -a "$LOG"
-ORCHESTRATE_RC=${PIPESTATUS[0]}
-if [ $ORCHESTRATE_RC -ne 0 ]; then
-    echo "ERROR: Orchestrator failed with rc=$ORCHESTRATE_RC" | tee -a "$LOG"
-    exit $ORCHESTRATE_RC
+ANALYZE_RC=${PIPESTATUS[0]}
+if [ $ANALYZE_RC -ne 0 ]; then
+    echo "ERROR: Analysis failed with rc=$ANALYZE_RC" | tee -a "$LOG"
+    exit $ANALYZE_RC
 fi
+
+# Post-analysis: update collection state
+set +e
+python3 scripts/collection_state.py --update --analysis-dir "$WORKING_DIR/analysis" 2>&1 | tee -a "$LOG"
+set -e 2>/dev/null || true
 
 # =========================================================================
 # STEP 5: NEWSLETTER RECOMMENDATIONS
