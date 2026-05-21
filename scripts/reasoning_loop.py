@@ -320,6 +320,126 @@ def deliver_alert(alert: dict) -> bool:
         log(f"Alert failed: {e}")
         return False
 
+
+
+def rescore_judgments(last_brief: dict, rss_items: list[dict], kalshi_moves: list[dict], fcc_delta: dict) -> list[dict]:
+    """Check last brief's key judgments against new data.
+    
+    For each judgment, determine if new data confirms, contradicts,
+    or leaves it unresolved. Uses DeepSeek V4 Pro for comparison.
+    Returns rescore records.
+    """
+    kjs = last_brief.get("key_judgments", [])
+    brief_summary = last_brief.get("summary", "")
+    
+    if not kjs:
+        log("No key judgments in last brief — skipping rescore")
+        return []
+    
+    # Build compact input for LLM
+    kjs_text = "\n".join([f"KJ-{i+1}: {kj}" for i, kj in enumerate(kjs)])
+    
+    # Collect new signals
+    signals = []
+    
+    # RSS breaking headlines
+    breaking = [a.get("headline", "") for a in rss_items if a.get("matched_keywords")]
+    if breaking:
+        signals.append("BREAKING HEADLINES:")
+        for h in breaking[:5]:
+            signals.append(f"  - {h}")
+    
+    # Kalshi moves
+    for m in kalshi_moves:
+        signals.append(f"MARKET MOVE: {m.get('label', m.get('ticker', '?'))} moved {m.get('move_pp', 0):+.1f}pp")
+    
+    # FCC changes
+    fcd = fcc_delta.get("delta", {})
+    if fcd.get("count_changed"):
+        signals.append(f"FCC FILINGS: {fcd.get('prev', 0)} -> {fcd.get('current', 0)} records, top filer: {fcd.get('top_filer', '?')}")
+    
+    if not signals:
+        log("No new signals to rescore against")
+        return []
+    
+    signal_text = "\n".join(signals)
+    
+    prompt = f"""You are a calibration analyst. Compare these key judgments against new data and determine if each judgment is confirmed, contradicted, or unresolved.
+
+KEY JUDGMENTS FROM LAST BRIEF:
+{kjs_text}
+
+NEW DATA SINCE BRIEF WAS PRODUCED:
+{signal_text}
+
+For each KJ, respond with EXACTLY one of:
+- CONFIRMED: (explain why)
+- CONTRADICTED: (explain why)
+- UNRESOLVED: (explain why still open)
+
+Respond with one line per KJ in format: KJ-1: CONFIRMED: reason
+Do not add extra commentary."""
+
+    try:
+        import urllib.request
+        key = ""
+        env_path = pathlib.Path(__file__).resolve().parent.parent / ".env" if 'pathlib' in dir() else pathlib.Path(__file__).resolve().parent.parent / ".env"
+        # Get API key
+        key = os.environ.get("DEEPSEEK_API_KEY", "")
+        if not key:
+            env_file = REPO_ROOT / ".env"
+            if env_file.exists():
+                for line in env_file.read_text().split("\n"):
+                    if "DEEPSEEK_API_KEY=" in line and "V4" not in line:
+                        key = line.split("=", 1)[1].strip().strip("'\"")
+                        break
+        
+        if not key:
+            log("No DeepSeek API key for rescore")
+            return []
+        
+        payload = json.dumps({
+            "model": "deepseek-v4-pro",
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 1024,
+            "temperature": 0.1,
+        }).encode()
+        
+        req = urllib.request.Request(
+            "https://api.deepseek.com/v1/chat/completions",
+            data=payload,
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            method="POST",
+        )
+        
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            result = json.loads(resp.read())
+            response = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+        
+    except Exception as e:
+        log(f"Rescore failed: {e}")
+        return []
+    
+    # Parse results
+    rescores = []
+    for line in response.strip().split("\n"):
+        for i, kj in enumerate(kjs):
+            prefix = f"KJ-{i+1}:"
+            if line.startswith(prefix):
+                parts = line[len(prefix):].strip().split(":", 1)
+                status = parts[0].strip() if parts else "UNRESOLVED"
+                reason = parts[1].strip() if len(parts) > 1 else ""
+                rescores.append({
+                    "judgment": kj,
+                    "status": status,
+                    "reason": reason,
+                    "source": "reasoning_loop_rescore",
+                })
+                break
+    
+    log(f"Rescored {len(rescores)}/{len(kjs)} judgments against new data")
+    return rescores
+
 def should_run(state: dict) -> bool:
     """Check if enough time has passed since last run."""
     last = state.get("last_check")
@@ -361,7 +481,21 @@ def main() -> None:
         check_kalshi(cache),
     ]
 
-    # Step 3: Analyze deltas against last brief
+    # Step 3: Rescore judgments against new data
+    rss_breaking = []
+    for fd in feed_deltas:
+        rss_breaking.extend(fd.get("breaking_alerts", []))
+    kalshi_moves = []
+    for fd in feed_deltas:
+        kalshi_moves.extend(fd.get("significant_moves", []))
+    fcc_delta = {}
+    for fd in feed_deltas:
+        if fd.get("feed") == "fcc":
+            fcc_delta = fd
+            break
+    rescore_results = rescore_judgments(last_brief, rss_breaking, kalshi_moves, fcc_delta)
+    
+    # Step 4: Analyze deltas against last brief
     alerts = analyze_deltas(last_brief, feed_deltas)
 
     # Step 4: Deliver alerts
@@ -387,6 +521,21 @@ def main() -> None:
     state["last_brief_id"] = brief_id
     save_state(state)
 
+    # Write rescore results to episodic memory (always, even if no alerts)
+    if rescore_results:
+        rescore_record = {
+            "type": "judgment_rescore",
+            "timestamp": now,
+            "brief_id": brief_id,
+            "judgments_checked": len(rescore_results),
+            "results": rescore_results,
+        }
+        EPISODIC_DIR.mkdir(parents=True, exist_ok=True)
+        today = dt.date.today().isoformat()
+        with open(EPISODIC_DIR / f"{today}.jsonl", "a") as f:
+            f.write(json.dumps(rescore_record) + "\n")
+        log(f"Written rescore to episodic memory: {len(rescore_results)} judgments")
+    
     # Write findings to episodic memory for future sessions
     if alerts:
         memory_record = {
@@ -413,6 +562,10 @@ def main() -> None:
             gap_lines.append(f"- {a.get('type')}: {a.get('detail', a.get('headline', ''))}")
         if len(alerts) > 5:
             gap_lines.append(f"- ... (+{len(alerts)-5} more)")
+        if rescore_results:
+            gap_lines.append("")
+            for r in rescore_results:
+                gap_lines.append(f"- JUDGMENT {r['status']}: {r['judgment'][:80]}")
         with open(memory_file, "a") as f:
             f.write("\n".join(gap_lines) + "\n")
 
