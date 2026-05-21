@@ -347,6 +347,22 @@ def generate_brief(
         json_path.write_text(json.dumps(brief, indent=2, default=str))
         log(f"JSON saved: {output_json}")
 
+    # Procedural memory feedback — log generation outcomes
+    if output_json:
+        try:
+            import subprocess as _sp
+            feedback_script = REPO_ROOT / "scripts" / "procedural_feedback.py"
+            if feedback_script.exists():
+                _sp.run(
+                    [sys.executable, str(feedback_script),
+                     "--brief-json", str(output_json)],
+                    capture_output=True, text=True, timeout=15,
+                    cwd=str(REPO_ROOT),
+                )
+                log("Procedural feedback recorded")
+        except Exception as exc:
+            log(f"Procedural feedback skipped: {exc}")
+
     return brief
 
 

@@ -141,6 +141,22 @@ def get_provider_health() -> dict:
     return health
 
 
+def get_source_freshness() -> dict:
+    """Get source freshness summary from check_source_freshness.py."""
+    try:
+        result = subprocess.run(
+            [sys.executable, str(REPO_ROOT / "scripts" / "check_source_freshness.py"),
+             "--pipeline", "--json"],
+            capture_output=True, text=True, timeout=15,
+            cwd=str(REPO_ROOT),
+        )
+        if result.stdout.strip():
+            return json.loads(result.stdout)
+    except Exception:
+        pass
+    return {}
+
+
 def generate_status() -> dict:
     """Generate full status report."""
     topics = get_active_topics()
@@ -148,6 +164,7 @@ def generate_status() -> dict:
     cost = get_cost_summary()
     git_log = get_git_log(7)
     provider_health = get_provider_health()
+    freshness = get_source_freshness()
 
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -155,6 +172,7 @@ def generate_status() -> dict:
         "active_topics": topics,
         "cost_summary": cost,
         "provider_health": provider_health,
+        "source_freshness": freshness,
         "recent_git_activity": git_log[:2000] if git_log else "(none)",
     }
 
@@ -214,6 +232,26 @@ def format_markdown(status: dict) -> str:
             lines.append(f"| {prov} | {ts} |")
     else:
         lines.append("No routing log entries yet.\n")
+    lines.append("")
+
+    # Source Freshness
+    lines.append("## Source Freshness\n")
+    freshness = status.get("source_freshness", {})
+    sources = freshness.get("sources", [])
+    if sources:
+        ok = freshness.get("ok", 0)
+        warn = freshness.get("warning", 0)
+        crit = freshness.get("critical", 0)
+        lines.append(f"**Pipeline sources:** {ok} fresh, {warn} warning, {crit} critical\n")
+        stale = [s for s in sources if s.get("status") in ("warning", "critical")]
+        if stale:
+            lines.append("| Source | Days Stale | Status |")
+            lines.append("|---|---|---|")
+            for s in stale:
+                lines.append(f"| {s['source']} | {s.get('days_since', '?')} | {s['status'].upper()} |")
+            lines.append("")
+    else:
+        lines.append("No pipeline freshness data available.\n")
     lines.append("")
 
     # Recent Git Activity

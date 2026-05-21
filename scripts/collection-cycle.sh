@@ -41,7 +41,12 @@ fi
 echo "--- Step 5: Collection records stats ---" | tee -a "$LOG"
 python3 scripts/append_collection_record.py --stats 2>&1 | tee -a "$LOG"
 
-# 6. Update STATUS.md
+# 6. Source freshness check + auto-demote stale feeds
+echo "--- Step 6: Source freshness + auto-demote ---" | tee -a "$LOG"
+python3 scripts/check_source_freshness.py --pipeline --auto-demote --summary 2>&1 | tee -a "$LOG"
+python3 scripts/check_source_freshness.py --summary 2>&1 | tee -a "$LOG"
+
+# 7. Update STATUS.md
 python3 analyst/status_generator.py 2>&1 | tee -a "$LOG"
 
 echo "[collection] $(date -u '+%Y-%m-%d %H:%M UTC') — Complete" | tee -a "$LOG"
