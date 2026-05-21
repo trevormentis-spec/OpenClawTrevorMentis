@@ -370,6 +370,118 @@ def log_to_episodic(record: dict) -> None:
 # Main
 # =========================================================================
 
+
+# =========================================================================
+# CREATIVE SOURCE COLLECTORS
+# =========================================================================
+
+def collect_epa_tri() -> dict:
+    """EPA Toxics Release Inventory — production change signals from explosives plants."""
+    log("Checking EPA TRI for explosives plant signals...")
+    results = []
+    for fac in [{"name": "Holston AAP", "city": "Kingsport", "state": "TN"}, {"name": "Radford AAP", "city": "Radford", "state": "VA"}]:
+        try:
+            q = urllib.parse.quote(f"{fac['name']} {fac['city']} {fac['state']}")
+            url = f"https://data.epa.gov/efservice/PUBLIC_CONTACT/FACILITY_NAME/{q}/json"
+            req = urllib.request.Request(url, headers={"User-Agent": "TrevorIntel/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read())
+                results.append({"facility": fac['name'], "status": "found", "records": len(data) if isinstance(data, list) else 1})
+        except Exception as e:
+            results.append({"facility": fac['name'], "status": "unavailable", "note": str(e)[:80]})
+    out = {"status": "ok", "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(), "facilities": results}
+    save_output("epa-tri", out)
+    return out
+
+def _brave_search(query: str, count: int = 5) -> list:
+    """Search via Brave Search API."""
+    key = os.environ.get("BRAVE_API_KEY", "")
+    if not key:
+        env_file = REPO_ROOT.parent / ".env" if 'REPO_ROOT' in dir() else pathlib.Path(__file__).resolve().parent.parent / ".env"
+        # From env
+        try:
+            for line in open(REPO_ROOT / ".env").read().split("\n"):
+                if "BRAVE_API_KEY=" in line:
+                    key = line.split("=", 1)[1].strip().strip("'\"")
+                    break
+        except:
+            pass
+    if not key:
+        return []
+    try:
+        encoded = urllib.parse.quote(query)
+        url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count={count}"
+        req = urllib.request.Request(url, headers={"Accept": "application/json", "X-Subscription-Token": key})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        return data.get("web", {}).get("results", [])
+    except Exception as e:
+        log(f"  Brave search failed: {e}")
+        return []
+
+def collect_jobs() -> dict:
+    """Job posting signals — hiring at explosives plants = expansion."""
+    log("Scanning job postings for explosives hiring...")
+    signals = []
+    for query, label in [("BAE Systems Holston Army Ammunition Plant explosive operator hiring", "Holston AAP"), ("Eurenco Bergerac explosive chemist", "Eurenco"), ("Chemring Nobel RDX chemist", "Chemring Nobel"), ("Rheinmetall explosive propellant engineer", "Rheinmetall"), ("Hanwha Corporation energetic materials", "Hanwha"), ("Solar Industries India explosive chemist", "Solar Industries")]:
+        results = _brave_search(query, 3)
+        found = len(results)
+        signals.append({"query": label, "results_found": found, "status": "active_hiring" if found > 0 else "static"})
+        if found:
+            log(f"  {label}: {found} results (hiring signal)")
+    out = {"status": "ok", "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(), "signals": signals}
+    save_output("job-signals", out)
+    return out
+
+def collect_patents() -> dict:
+    """Google Patents — RDX/HMX synthesis technology direction."""
+    log("Checking RDX/HMX patent filings...")
+    # Use Brave to find recent news about RDX patents
+    items = _brave_search("RDX HMX insensitive munition patent 2025 2026", 5)
+    patents = [{"title": item.get("title",""), "url": item.get("url","")} for item in items]
+    out = {"status": "ok", "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(), "patents_found": len(patents), "patents": patents}
+    save_output("patents", out)
+    return out
+
+def collect_car() -> dict:
+    """Conflict Armament Research — munitions tracing back to RDX producers."""
+    log("Checking CAR for munitions tracing reports...")
+    results = []
+    try:
+        import feedparser
+        feed = feedparser.parse("https://www.conflictarm.com/feed/")
+        for entry in feed.get("entries", [])[:10]:
+            title = entry.get("title", "")
+            link = entry.get("link", "")
+            if any(k in title.lower() for k in ["rdx", "explosive", "munition", "propellant", "ammunition"]):
+                results.append({"title": title, "url": link, "published": entry.get("published", "")})
+        if not results:
+            # Fallback to Brave
+            items = _brave_search("Conflict Armament Research ammunition explosives report", 5)
+            for item in items:
+                results.append({"title": item.get("title",""), "url": item.get("url",""), "description": item.get("description","")[:200]})
+    except Exception as e:
+        log(f"  CAR: {e}")
+        items = _brave_search("Conflict Armament Research ammunition explosives", 5)
+        for item in items:
+            results.append({"title": item.get("title",""), "url": item.get("url","")})
+    out = {"status": "ok", "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(), "reports_found": len(results), "reports": results[:15]}
+    save_output("car-reports", out)
+    return out
+
+def collect_trade_remedy() -> dict:
+    """Trade-remedy actions on precursors — hexamine AD/CVD, ammonium nitrate."""
+    log("Checking trade-remedy actions on precursors...")
+    results = []
+    for label, q in [("USITC hexamine", "hexamine antidumping USITC 2025 2026 Bakelite"), ("USITC ammonium nitrate", "ammonium nitrate antidumping USITC 2026"), ("EC defence trade", "European Commission defence explosives propellant regulation")]:
+        items = _brave_search(q, 3)
+        for item in items:
+            results.append({"source": label, "title": item.get("title",""), "url": item.get("url",""), "description": item.get("description","")[:200]})
+    out = {"status": "ok", "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(), "actions_found": len(results), "actions": results}
+    save_output("trade-remedy", out)
+    return out
+
+
 def main() -> None:
     import argparse
     ap = argparse.ArgumentParser(description="RDX/C4 supply market data collectors")
@@ -377,6 +489,12 @@ def main() -> None:
     ap.add_argument("--osint-daily", action="store_true", help="Telegram OSINT channels")
     ap.add_argument("--contracts-weekly", action="store_true", help="USAspending contracts")
     ap.add_argument("--filings-weekly", action="store_true", help="Corporate filings")
+    ap.add_argument("--epa-tri", action="store_true", help="EPA toxic release data")
+    ap.add_argument("--jobs", action="store_true", help="Job posting signals")
+    ap.add_argument("--patents", action="store_true", help="Patent filings")
+    ap.add_argument("--car", action="store_true", help="Conflict Armament Research")
+    ap.add_argument("--trade-remedy", action="store_true", help="Trade remedy monitoring")
+    ap.add_argument("--all-creative", action="store_true", help="All creative source collectors")
     ap.add_argument("--all-daily", action="store_true", help="All daily tasks")
     ap.add_argument("--compile", action="store_true", help="Compile market tracker")
     args = ap.parse_args()
@@ -390,6 +508,16 @@ def main() -> None:
         collect_contracts_weekly(); ran = True
     if args.filings_weekly:
         collect_filings_weekly(); ran = True
+    if args.epa_tri or args.all_creative:
+        collect_epa_tri(); ran = True
+    if args.jobs or args.all_creative:
+        collect_jobs(); ran = True
+    if args.patents or args.all_creative:
+        collect_patents(); ran = True
+    if args.car or args.all_creative:
+        collect_car(); ran = True
+    if args.trade_remedy or args.all_creative:
+        collect_trade_remedy(); ran = True
     if args.compile or ran:
         compile_tracker()
     if not ran and not args.compile:
