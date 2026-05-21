@@ -42,6 +42,26 @@ def log_report(report_type: str, date_str: str, file_path: str, summary: str,
     with open(log_file, "a") as f:
         f.write(json.dumps(record) + "\n")
     
+    # Also append a readable entry to the daily memory file for searchability
+    memory_dir = pathlib.Path(__file__).resolve().parent.parent / "memory"
+    memory_dir.mkdir(parents=True, exist_ok=True)
+    memory_file = memory_dir / f"{today}.md"
+    
+    memory_entry = f"\n## Report: {report_type} — {date_str}\n"
+    memory_entry += f"**File:** {file_path}\n"
+    memory_entry += f"**Words:** {word_count} | **Model:** {model}\n"
+    memory_entry += f"**Summary:** {summary[:200]}\n"
+    if key_judgments:
+        memory_entry += "**Key judgments:**\n"
+        for kj in key_judgments:
+            memory_entry += f"- {kj}\n"
+    if regions:
+        memory_entry += f"**Regions:** {', '.join(regions)}\n"
+    memory_entry += "\n"
+    
+    with open(memory_file, "a") as f:
+        f.write(memory_entry)
+    
     print(f"[report-memory] Logged {report_type} ({date_str}) — {word_count} words, {len(sources or [])} sources", 
           file=sys.stderr)
 
