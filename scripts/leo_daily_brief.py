@@ -205,10 +205,9 @@ def build_brief() -> tuple[str, list[str]]:
                 risk = s.get("composite_risk", "?")
                 lines.append(f"  • {name} (risk: {risk})")
         else:
-            lines.append("⚠️ Sentinel Hub API key not configured.")
-            lines.append("To enable automated site imagery checks:")
-            lines.append("  1. Sign up at sentinel-hub.com")
-            lines.append(f"  2. Set SENTINEL_CLIENT_ID and SENTINEL_CLIENT_SECRET")
+            lines.append("⚠️ Sentinel Hub API key not configured for this session.")
+            lines.append("Check .env has SENTINEL_CLIENT_ID and SENTINEL_CLIENT_SECRET.")
+            lines.append("Cron jobs source .env automatically.")
         lines.append("")
         sources_used.append("Copernicus Sentinel-2")
     

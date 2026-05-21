@@ -343,6 +343,8 @@ def collect_imagery_monthly() -> dict:
     # Uses OAuth client credentials
     sentinel_client_id = os.environ.get("SENTINEL_CLIENT_ID", "")
     sentinel_client_secret = os.environ.get("SENTINEL_CLIENT_SECRET", "")
+    copernicus_token_url = "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token"
+    copernicus_api_url = "https://sh.dataspace.copernicus.eu/api/v1/process"
     
     imagery_results = []
     for site in priority_sites:
@@ -358,12 +360,82 @@ def collect_imagery_monthly() -> dict:
             "lon": lon,
             "composite_risk": site.get("Composite"),
             "imagery_available": False,
-            "note": "Sentinel Hub API key not configured",
+            "note": "Copernicus Data Space credentials available — will query on monthly run",
         }
         
         if sentinel_client_id and sentinel_client_secret:
-            info["note"] = "API key configured but Sentinel-2 query requires OAuth token exchange"
-            # Full implementation would use sentinelhub-py or direct REST API
+            try:
+                # Authenticate to Copernicus Data Space
+                import urllib.parse
+                auth_data = urllib.parse.urlencode({
+                    "client_id": sentinel_client_id,
+                    "client_secret": sentinel_client_secret,
+                    "grant_type": "client_credentials",
+                }).encode()
+                auth_req = urllib.request.Request(
+                    copernicus_token_url,
+                    data=auth_data,
+                    headers={"Content-Type": "application/x-www-form-urlencoded"},
+                    method="POST",
+                )
+                with urllib.request.urlopen(auth_req, timeout=15) as auth_resp:
+                    token = json.loads(auth_resp.read())["access_token"]
+                
+                # Query Sentinel-2 imagery for this site
+                evalscript = """
+                //VERSION=3
+                function setup() {
+                    return { input: ["B04", "B08"], output: { bands: 1, sampleType: "UINT16" } };
+                }
+                function evaluatePixel(sample) {
+                    return [sample.B08 - sample.B04];
+                }
+                """
+                
+                # Check for recent cloud-free imagery
+                today = dt.date.today().isoformat()
+                thirty_days_ago = (dt.date.today() - dt.timedelta(days=30)).isoformat()
+                
+                payload = json.dumps({
+                    "input": {
+                        "bounds": {
+                            "properties": {"crs": "http://www.opengis.net/def/crs/EPSG/0/4326"},
+                            "bbox": [lon-0.1, lat-0.1, lon+0.1, lat+0.1]
+                        },
+                        "data": [{
+                            "type": "SENTINEL-2-L2A",
+                            "dataFilter": {
+                                "timeRange": {"from": f"{thirty_days_ago}T00:00:00Z", "to": f"{today}T23:59:59Z"},
+                                "maxCloudCoverage": 30
+                            }
+                        }]
+                    },
+                    "evalscript": evalscript,
+                    "output": {"width": 64, "height": 64}
+                }).encode()
+                
+                img_req = urllib.request.Request(
+                    copernicus_api_url,
+                    data=payload,
+                    headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+                    method="POST",
+                )
+                with urllib.request.urlopen(img_req, timeout=30) as img_resp:
+                    img_data = img_resp.read()
+                    if img_data and len(img_data) > 100:
+                        info["imagery_available"] = True
+                        info["image_size_bytes"] = len(img_data)
+                        info["note"] = "Recent imagery retrieved"
+                        # Save image
+                        img_dir = LEO_DATA_DIR / "satellite_imagery"
+                        img_dir.mkdir(parents=True, exist_ok=True)
+                        img_path = img_dir / f"{name.lower().replace(' ', '_')[:30]}-{today}.png"
+                        img_path.write_bytes(img_data)
+                        info["saved_image"] = str(img_path)
+                    else:
+                        info["note"] = "No suitable imagery found (cloud cover or no recent pass)"
+            except Exception as img_err:
+                info["note"] = f"Imagery query failed: {str(img_err)[:100]}"
         
         imagery_results.append(info)
     
@@ -372,8 +444,8 @@ def collect_imagery_monthly() -> dict:
         "collected_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "sentinel_api_configured": bool(sentinel_client_id),
         "sites_checked": len(priority_sites),
+        "sites_with_recent_imagery": sum(1 for s in imagery_results if s.get("imagery_available")),
         "sites": imagery_results,
-        "action_needed": "Install sentinelhub-py and configure SENTINEL_CLIENT_ID/SENTINEL_CLIENT_SECRET for automated imagery",
     }
     save_output("sentinel-imagery", output)
     return output
