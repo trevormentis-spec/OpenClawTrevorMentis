@@ -1,0 +1,464 @@
+CONCENTRIC | INTELLIGENCE MEMORANDUM
+
+Lloyd's LEO Ground-Station Insurance — May 2026
+
+LLOYD'S OF LONDON · LEO GROUND-STATION INSURANCE
+
+Who is actually insuring ground stations for LEO
+networks out of Lloyd's
+Bottom line up front. There is no single Lloyd's syndicate that writes a stand-alone “LEO ground-station” policy. Ground stations are
+insured at Lloyd's through a stack of four parallel risk classes — space third-party liability, terrestrial property/all-risks, cyber, and
+political violence/terrorism — placed by specialist space brokers across overlapping but distinct syndicates. The space-class
+consortia (Brit-led Llift Space, Atrium 609, Hiscox MGA, Beazley 623/2623, Munich Re Syndicate 457, Tokio Marine Kiln, Chaucer,
+Canopius) provide the satellite-side cover; the ground-asset perils sit with property, cyber, and PV/terror syndicates in the same
+buildings.1
+
+1. How LEO ground-station risk actually places at Lloyd's
+Standard property and casualty policies typically exclude extra-atmospheric losses, while pure space policies stop at the antenna
+2
+interface. Brokers therefore manuscript a multi-class programme that follows the asset across the link. The four layers are:
+Risk layer
+
+What it covers on a LEO ground station
+
+Where it sits at Lloyd's
+
+Space TPL /
+space-segment
+
+Third-party liability for harmful RF interference, spectrum bleed, or
+“noncontact” signal-loss claims arising from ground-station
+operation; extensions for damage to neighbouring infrastructure.
+
+Llift Space (Brit + Hiscox MGA + 16 follower syndicates);
+Atrium Space Consortium (Syndicate 609); Beazley
+623/2623; Munich Re Syndicate 457; Tokio Marine Kiln;
+Chaucer.
+
+Terrestrial property /
+all-risks
+
+Physical damage to dishes, radomes, modems, electronics, power
+and HVAC plant from fire, storm, flood, equipment breakdown;
+business interruption from site loss.
+
+Same syndicates' property & specialty stamps
+(Beazley, Brit, Canopius, Tokio Marine Kiln, Munich Re
+457, Aegis 1225, Hiscox property treaty), led by
+international property underwriters — not the space
+box.
+
+Cyber &
+space-segment cyber
+
+Signal jamming, spoofing, unauthorised command override,
+modem-wiper events (KA-SAT precedent), system-restoration
+funds, business interruption from malicious outage.
+
+Lloyd's cyber market under LMA5567A/B war-exclusion
+wordings (Beazley, Brit, Chaucer, Hiscox, CFC, Tokio
+Marine Kiln, Munich Re 457); space-segment cyber
+requires manuscript wording bridging space + cyber
+boxes.
+
+Political violence /
+terrorism
+
+Sabotage, terrorism, strikes/riots/civil commotion, and (where
+bought back) war on land cover for fixed gateway sites —
+especially outside ITAR/Five-Eyes geographies.
+
+Lloyd's PV/terror syndicates (Hiscox, Chaucer, Beazley
+623, Canopius, Talbot Syndicate 1183, Tokio Marine
+Kiln, Aegis 1225) — not the space box.
+
+Implication: when an operator says “our Lloyd's policy” on a ground station, they usually mean a programme placed across two to
+four of these classes by the same broker, often with the space lead's name on the slip even though the property and cyber capacity
+sits behind it.
+
+2. Named Lloyd's space leads relevant to ground-segment programmes
+These are the Lloyd's vehicles whose space underwriters either lead or follow LEO ground-station-adjacent risks today. Capacity and
+named underwriters are pulled from current carrier disclosures.
+
+RESTRICTED — For Principal and onward institutional distribution only.
+
+Page 1 · Your World, Secured.
+
+CONCENTRIC | INTELLIGENCE MEMORANDUM
+
+Lloyd's LEO Ground-Station Insurance — May 2026
+
+Vehicle
+
+Lloyd's syndicate
+
+Lead role
+
+Capacity / line
+
+Named space lead
+
+Brit Global Specialty — Llift
+Space consortium
+
+Syndicates 2987 / 2988
+(Brit), plus 16 follower
+syndicates
+
+Lead carrier on Llift Space; primary
+capacity for NewSpace / LEO
+programmes including ground-segment
+endorsements
+
+Llift Space:
+US$25M / risk
+consortium line;
+Brit own line larger
+on bespoke
+programmes
+
+Gary Brice (Head of
+Marine & Space, Brit
+Global Specialty)
+
+Hiscox London Market —
+Hiscox MGA Space
+
+Underwrites on behalf
+of multiple Lloyd's
+syndicates (incl. Hiscox
+33)
+
+Co-lead on Llift Space; primary writer for
+satellite operators, telecom,
+earth-imaging, NewSpace
+
+US$35M any one
+risk
+
+Pascal Lecointe (Line
+Underwriter), Michele
+Biagi (Deputy), Heike
+Bienvenu
+
+Atrium Underwriters —
+Atrium Space Insurance
+Consortium
+
+Syndicate 609
+
+Long-standing space lead at Lloyd's;
+launch + in-orbit; programme
+participation on constellation business
+
+Consortium
+capacity not
+publicly disclosed;
+historically a top-3
+Lloyd's space line
+
+London-based
+underwriting team with
+dedicated satellite
+engineer (Canada)
+
+Beazley — Aviation & Space,
+London Market
+
+Syndicates 623 / 2623 /
+3623
+
+Asset physical damage, space TPL +
+associated aerospace liabilities, BI,
+comprehensive covers for NewSpace
+start-ups
+
+Up to
+US$15M–20M per
+spacecraft;
+US$100M for
+liability
+
+Denis Bensoussan
+(Head of Space);
+Anthony Collins (Claims
+Focus Group Leader —
+Aviation)
+
+Munich Re Specialty — Global
+Markets Syndicate
+
+Syndicate 457
+(rebranded 2016;
+ex-Watkins)
+
+Space line sits inside MRS-GMS; also
+writes cargo, cyber, energy, financial
+lines, liability, political risks, specie,
+trade credit, transport, war
+
+Not publicly
+disclosed per-risk;
+significant follow
+capacity
+
+Stephanie Ogden (CEO,
+MRS-GMS); space
+underwriter team under
+MRS-GMS structure
+
+Tokio Marine Kiln
+
+Syndicate 510 (TMK
+510); Syndicate 1880
+(TMK 1880)
+
+Aerospace & Space line; writes satellite,
+launch, in-orbit, plus aerospace
+product/manufacturer liability that
+bridges into ground equipment
+
+Top-5 Lloyd's
+aerospace
+platform by stamp
+capacity
+
+Aerospace & Space
+team within TMK Lloyd's
+box
+
+Chaucer (China Re-owned)
+
+Syndicate 1084
+
+Space line; aviation & aerospace;
+marine; treaty — relevant follower on
+Llift Space consortium and on cyber/PV
+stacks
+
+Stamp capacity
+~£1.3bn group;
+space line is a
+specialty
+sub-segment
+
+Chaucer Space &
+Aviation team (boxes
+15/16/16A &
+140/140A/141A in the
+Room)
+
+Canopius
+
+Syndicate 4444
+(Canopius main);
+Syndicate 1861
+(Canopius Capital)
+
+Aerospace, space, property, cyber and
+PV/terror lines — the rare house that can
+put all four ground-station perils on one
+paper
+
+Top-10 Lloyd's
+stamp by capacity;
+multi-class follow
+on LEO
+programmes
+
+Canopius Specialty &
+Aerospace teams
+
+Convex Insurance (Lloyd's
+syndicate +
+Bermuda/London co.)
+
+Syndicate 1200
+(Convex SY1200)
+
+Aerospace line opened 2021; selectively
+writes space and
+ground-segment-adjacent risks
+alongside aviation
+
+Selective follower;
+not a primary
+space lead
+
+Convex Aerospace team
+
+Inigo (announced acquisition
+by Radian, Sep 2025)
+
+Syndicate 1301
+
+Property catastrophe, specialty,
+aerospace; selective follower on
+ground-station property + PV layers
+
+Selective follower
+
+Inigo Aerospace &
+Specialty
+
+Note. Atrium Insurance Agency Limited completed its sale to Enstar in March 2025; the Space Consortium and Syndicate 609
+platform continue operating in the Room. AXA XL's space team — previously a dominant Lloyd's-adjacent lead under Chris
+Kunstadter — was scaled back in 2024; Kunstadter now runs Triton Space LLC as a consultancy. That capacity gap is one reason Llift
+Space and Atrium remain the most cited LEO leads in current placements.3
+RESTRICTED — For Principal and onward institutional distribution only.
+
+Page 2 · Your World, Secured.
+
+CONCENTRIC | INTELLIGENCE MEMORANDUM
+
+Lloyd's LEO Ground-Station Insurance — May 2026
+
+3. Brokers placing LEO ground-station business into Lloyd's
+Four firms dominate the space-broking community that touches Lloyd's. None publishes a stand-alone “ground-station” product,
+but each places the multi-class stack described above and is the route through which a LEO operator (Starlink, Kuiper,
+OneWeb/Eutelsat, Iridium, Globalstar, Telesat, the GaaS providers AWS Ground Station, KSAT, Viasat RTE, SSC, Atlas Space
+Operations) reaches Lloyd's capacity.
+Broker
+
+Lloyd's reach for LEO ground-segment
+
+Named team / contact
+
+Marsh Specialty — Space
+practice
+
+Active in space since 1977; placed manuscript wordings including a NASA SLS
+bespoke solution; largest stamp footprint across Lloyd's aerospace / space
+syndicates. Places programmes that package space TPL with terrestrial property
+and cyber.
+
+Marsh Specialty Space team,
+London. (In 2025 Marsh sued
+Willis over aerospace-team hires
+— indicates how concentrated
+and competed this small bench
+is.)
+
+Aon — International Space
+Brokers (ISB)
+
+Self-describes as the world's only broker dedicated exclusively to space; places
+~35% of global space premium; eight of the world's top-20 satellite operators are
+clients. The ISB structure is the most likely route for a tier-1 LEO operator's bundled
+Lloyd's placement.
+
+ISB offices: London (Aon Centre,
+Leadenhall), Washington-area,
+Paris, Madrid
+
+Gallagher Specialty —
+Aerospace
+
+Issues quarterly “Plane Talking” market updates on space; aerospace CEO Peter
+Elson is principal contact. Active on LEO constellation placements and on the
+rising volume of ground-handling / ground-segment risk as LEO uptake grows.
+
+Peter Elson (CEO Aerospace,
+Arthur J. Gallagher UK)
+
+WTW (Willis Towers Watson)
+— Aviation & Space
+
+Long-standing Lloyd's aerospace and space broker; hosts the annual Willis
+Aviation & Space Conference. Strong on programme design across launch + life +
+ground assets; competing directly with Marsh after 2025 team movements.
+
+WTW Aviation & Space, London
+
+Price Forbes (Ardonagh)
+
+London & Bermuda placement support specifically for launch, satellite
+constellations, in-orbit servicing, space tourism, national space programmes, GEO
+and LEO. Positions as the wholesaler securing specialist Lloyd's capacity for retail
+brokers.
+
+Price Forbes Space practice,
+London
+
+McGill & Partners
+
+Independent specialist designed for “large clients and complex risks.” Active in
+space and aerospace as part of its Lloyd's specialty franchise; relevant for bespoke
+LEO ground-station / gateway-network programmes.
+
+McGill & Partners Specialty,
+London
+
+4. Market dynamics specific to LEO ground stations
+■ Capacity is tight and shrinking. Lloyd's space-market capacity has not returned to 2018 levels; the 2023 loss year produced the
+worst space-line result in 20+ years and pushed several insurers out. A handful of start-up space syndicates were lining up to
+begin underwriting in late 2025 — the first material new entrants in years.4
+■ LEO operators self-insure the satellites — but not the ground. By Gallagher's count, ~99% of LEO satellites are uninsured; LEO
+constellations rely on in-orbit redundancy. That economics is inverted on the ground: a single gateway loss is not redundant in
+the same way, so ground-station property, cyber, and PV are where the actual buy is for LEO networks. Underwriters see the
+ground-segment as the more buyable, higher-frequency exposure.5
+■ Cyber is the live concern. The 24-Feb-2022 KA-SAT attack — ground-network intrusion via a misconfigured VPN appliance,
+lateral movement to a management segment, modem-wiper deployment — remains the canonical LEO/MEO ground-segment
+cyber loss scenario in London. It is the reason Lloyd's pushed through the LMA5567A/B state-backed cyber war exclusions
+effective March 2023, which now sit on every cyber slip touching satellite ground infrastructure.6
+■ Space-segment cyber is the manuscript product to ask for. Coverage that “integrates the satellite, its ground infrastructure,
+and the communication links as a single unified system” with system-restoration funds and BI for malicious-outage scenarios is
+the form most relevant to a LEO gateway operator. It is written by space-and-cyber crossovers at Hiscox, Brit, Beazley, Tokio
+Marine Kiln, and Munich Re 457, with Marsh and Aon ISB as the principal placing brokers.7
+
+RESTRICTED — For Principal and onward institutional distribution only.
+
+Page 3 · Your World, Secured.
+
+CONCENTRIC | INTELLIGENCE MEMORANDUM
+
+Lloyd's LEO Ground-Station Insurance — May 2026
+
+■ PV/terror is location-driven. Demand spikes for gateway sites in higher-threat geographies (LATAM, MENA, sub-Saharan Africa,
+Pacific island nodes). Hiscox, Chaucer, Beazley 623, Canopius, Talbot 1183, Tokio Marine Kiln, and Aegis 1225 are the typical
+Lloyd's lines on the PV/terror stack for fixed satcom sites — not the space box.
+■ Brokers, not syndicates, hold the relationship. Because no single Lloyd's vehicle writes the whole ground-station risk, the
+broker is the integrator. The four firms that effectively control LEO ground-station placement at Lloyd's are Marsh, Aon ISB,
+Gallagher, and WTW, with Price Forbes and McGill & Partners as specialist wholesalers.
+
+5. Implications for Concentric / KESSLER SENTINEL
+Three takeaways for the Lloyd's space-syndicate go-to-market that sits behind KESSLER SENTINEL and the LEO ground-station
+physical-security line:
+(i) The buyer of LEO ground-station risk intelligence at Lloyd's is the broker, not the syndicate. The decision to bind a multi-class
+stack — and therefore the demand for site-level physical security, cyber posture, and threat-geography data — aggregates inside
+Marsh, Aon ISB, Gallagher, and WTW. Engagement priority should follow that order, with the specialist wholesalers (Price Forbes,
+McGill) as a faster route in for bespoke programmes.
+(ii) The named-underwriter map is small enough to work directly. The Lloyd's ground-station-adjacent space community is
+effectively a dozen named people: Brice (Brit), Lecointe / Biagi / Bienvenu (Hiscox MGA), Bensoussan (Beazley), the Atrium 609 lead,
+the TMK 510 aerospace head, plus Ogden's MRS-GMS team. A targeted briefing programme — KESSLER SENTINEL outputs +
+ground-station physical-security capability deck — can cover the core leads in a single London week.
+(iii) Cyber + PV/terror are the higher-conviction wedges. Pure space-class business is soft, capacity-constrained, and dominated by
+long incumbents. The growth wedge that touches LEO ground stations is in space-segment cyber and PV/terror for fixed gateway
+sites — both of which sit in different Lloyd's boxes (Hiscox, Brit, Chaucer, Canopius, Talbot 1183, Aegis 1225, TMK 510, Munich Re 457)
+and therefore extend Concentric's addressable underwriter list well beyond the “space-only” bench.
+
+Sources
+1. Lloyd's of London, “Space” line of business overview. https://www.lloyds.com/about-lloyds/our-market/what-we-insure/space
+2. Morgan Lewis, “Satellite and Spacecraft Insurance: Mitigating Unique Risks in the Texas Aerospace Industry” (Apr 2026).
+https://www.morganlewis.com/pubs/2026/04/satellite-and-spacecraft-insurance-mitigating-unique-risks-in-the-texas-aerospace-industry
+3. Atrium Underwriters — Space; Enstar / Atrium transaction completion (Mar 2025); Gallagher “Plane Talking” Q2 2025 space update. https://www.atrium-uw.com/underwriting/space/
+4. Gallagher Specialty, “Space Insurance Market Update Q2 2025”. https://specialty.ajg.com/plane-talking/space-insurance-update-q2-2025
+5. International Insurance Society, “The Space Debris Dilemma” (Jan 2025). https://www.internationalinsurance.org/insights_cyber_the_space_debris_dilemma
+6. Viasat, “KA-SAT Network cyber attack overview” (Mar 2022); Cybersecurity Dive on LMA cyber war exclusions; LMA5567A/B 2026 market update.
+https://www.viasat.com/perspectives/corporate/2022/ka-sat-network-cyber-attack-overview/
+7. Hiscox London Market Space brochure; Beazley “Space” product page; Aon International Space Brokers; Price Forbes Space; McGill & Partners.
+https://www.hiscoxlondonmarket.com/sites/londonmarket/files/2020-06/17185%20-%20MGA%20-%20Space%20brochure%20-%20Final%20-%2012.04.17.pdf
+8. Reinsurance News, “Lloyd's of London launches space insurance policy” (Llift Space consortium, Brit + Hiscox MGA + 18 syndicates, US$25M/risk).
+https://www.reinsurancene.ws/lloyds-of-london-launches-space-insurance-policy/
+9. Beazley Space product page (Syndicates 623/2623/3623; Denis Bensoussan, Head of Space). https://beazley.com/en-001/products/aviation-space-london-market/space/
+10. Munich Re Specialty — Global Markets, Syndicate 457 (about page). https://www.munichre.com/specialty/global-markets-syndicate/en/about-us.html
+11. Marsh, Space practice overview. https://www.marsh.com/en/industries/aviation-space/expertise/space.html
+12. Aon, International Space Brokers (ISB). https://www.aon.com/industry-expertise/space.jsp
+13. Insurance Journal, “Space War: Marsh Sues Willis Over Aviation Insurance Hires” (May 2025). https://www.insurancejournal.com/news/east/2025/05/12/823361.htm
+14. Yahoo Finance / Reuters, “Radian to acquire Lloyd's syndicate Inigo in $1.7bn deal” (Sep 2025). https://finance.yahoo.com/news/radian-acquire-lloyd-syndicate-inigo-081951475.html
+
+RESTRICTED — For Principal and onward institutional distribution only.
+
+Page 4 · Your World, Secured.
+
+

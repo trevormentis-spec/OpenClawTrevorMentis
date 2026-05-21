@@ -2371,6 +2371,64 @@
   sub_type: analyst
   importance: medium
   aliases: [Quilty Space]
+
+  # Lloyd's Insurance Market Entities (from Concentric Intelligence Memorandum May 2026)
+  - name: Brit Global Specialty (Llift Space)
+    type: lloyds_syndicate
+    syndicate: 2987/2988
+    importance: critical
+    named_underwriter: Gary Brice
+    capacity: US$25M/risk
+  - name: Hiscox MGA Space
+    type: lloyds_syndicate
+    syndicate: 33
+    importance: critical
+    named_underwriter: Pascal Lecointe
+    capacity: US$35M any one risk
+  - name: Atrium Space Consortium
+    type: lloyds_syndicate
+    syndicate: 609
+    importance: high
+  - name: Beazley Aviation & Space
+    type: lloyds_syndicate
+    syndicate: 623/2623/3623
+    importance: high
+    named_underwriter: Denis Bensoussan
+  - name: Munich Re Specialty MRS-GMS
+    type: lloyds_syndicate
+    syndicate: 457
+    importance: medium
+  - name: Tokio Marine Kiln
+    type: lloyds_syndicate
+    syndicate: 510/1880
+    importance: high
+  - name: Chaucer China Re-owned
+    type: lloyds_syndicate
+    syndicate: 1084
+    importance: medium
+  - name: Canopius
+    type: lloyds_syndicate
+    syndicate: 4444/1861
+    importance: medium
+  - name: Marsh Specialty Space
+    type: insurance_broker
+    importance: critical
+  - name: Aon International Space Brokers
+    type: insurance_broker
+    importance: critical
+  - name: Gallagher Specialty Aerospace
+    type: insurance_broker
+    importance: high
+    named_contact: Peter Elson
+  - name: WTW Aviation and Space
+    type: insurance_broker
+    importance: high
+  - name: Price Forbes Ardonagh
+    type: insurance_broker
+    importance: medium
+  - name: McGill and Partners
+    type: insurance_broker
+    importance: medium
   notes: "Space industry equity research. Ground segment M&A and public comps."
 
 # ─── CONCENTRIC SECURITY GROUP (Original Author) ─────────────────────────────
