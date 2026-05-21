@@ -19,6 +19,7 @@ import os
 import pathlib
 import sys
 import urllib.request
+from scripts.report_memory import log_report
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 LEO_DATA_DIR = REPO_ROOT / "analyst" / "knowledge" / "leo_ground_stations" / "data_feeds"
@@ -292,6 +293,8 @@ def main() -> None:
     log(f"Sending to {TO_EMAIL}...")
     if send_gmail(TO_EMAIL, subject, body, maton_key):
         log("Delivery successful")
+        log_report("leo_daily_brief", date_str, str(brief_path), body[:200],
+                   len(body.split()), model="deepseek-v4-pro")
     else:
         log("Delivery FAILED")
         sys.exit(1)

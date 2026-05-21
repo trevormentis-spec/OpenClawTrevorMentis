@@ -28,6 +28,7 @@ import pathlib
 import re
 import sys
 import urllib.request
+from scripts.report_memory import log_report
 from typing import Any
 
 MATON_BASE = "https://gateway.maton.ai/google-mail"
@@ -422,6 +423,8 @@ def main() -> None:
     log(f"Sending brief to {args.to}...")
     if send_gmail(args.to, subject, body, maton_key):
         log("Delivery successful")
+        log_report("daily_brief", date_str, str(brief_path), body[:200],
+                   len(body.split()), model="opus-4.7 / deepseek-v4-pro")
     else:
         log("Delivery FAILED")
         sys.exit(1)
