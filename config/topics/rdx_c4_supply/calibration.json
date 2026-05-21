@@ -1,0 +1,88 @@
+{
+  "topic": "RDX and C4 Global Supply Market",
+  "created": "2026-05-21T23:26:00Z",
+  "judgments": [
+    {
+      "id": "holston_plant_x_fy2027",
+      "statement": "US Army will have awarded construction contract for Holston Plant X expansion by end of FY2027",
+      "band": "likely",
+      "range": [63, 79],
+      "rationale": "NTRL study documented; USD $500M+ appropriations likely; but siting/environmental review may slip",
+      "backtest_target": "2027-09-30",
+      "source": "NTRL / Army ASC"
+    },
+    {
+      "id": "eurenco_bergerac_nc_restart_q1_2025",
+      "statement": "Eurenco Bergerac NC production restart achieves full-rate production by Q4 2026",
+      "band": "likely",
+      "range": [63, 79],
+      "rationale": "Restart announced, line operational Jan 2025, but ramp-up and quality acceptance testing may take 18+ months",
+      "backtest_target": "2026-12-31",
+      "source": "Eurenco press release / Defense News"
+    },
+    {
+      "id": "sverdlov_strike_joint_capacity_impact",
+      "statement": "Sverdlov Plant April 2026 strike will reduce Russian RDX/HMX production by at least 30% for 6+ months",
+      "band": "highly_likely",
+      "range": [80, 92],
+      "rationale": "Satellite confirmation of production building damage; sole Russian RDX/HMX source; repairs constrained by sanctions",
+      "backtest_target": "2026-10-30",
+      "source": "Satellite imagery / UA General Staff / CyberBoroshno"
+    },
+    {
+      "id": "bakelite_hexamine_tariff_final",
+      "statement": "USITC will issue final affirmative injury determination on hexamine AD/CVD from China by mid-2026",
+      "band": "highly_likely",
+      "range": [80, 92],
+      "rationale": "Preliminary affirmative threat determination from Sep 2025; strong domestic petitioner; national security nexus",
+      "backtest_target": "2026-06-30",
+      "source": "USITC Federal Register / Clark Hill"
+    },
+    {
+      "id": "rheinmetall_varpalota_full_production",
+      "statement": "Rheinmetall Várpalota 155mm ammunition line achieves series production by Q2 2026",
+      "band": "likely",
+      "range": [63, 79],
+      "rationale": "Construction complete; commissioning started; production slated for early 2026; first customer shells expected Q2",
+      "backtest_target": "2026-06-30",
+      "source": "Rheinmetall corporate / Defense Turkey"
+    },
+    {
+      "id": "us_100k_shells_milestone",
+      "statement": "US Army achieves sustained 100K 155mm shells/month production rate by Q4 2026",
+      "band": "chances_about_even",
+      "range": [40, 62],
+      "rationale": "Program delayed from Oct 2025 target; RDX bottleneck at Holston; Plant X not yet built; workforce constraints",
+      "backtest_target": "2026-12-31",
+      "source": "Defense News / The Defense Post / Reuters"
+    }
+  ],
+  "calibration_bands": {
+    "almost_certain": {"range": [93, 99], "count": 0, "correct": 0},
+    "highly_likely": {"range": [80, 92], "count": 2, "correct": 0},
+    "likely": {"range": [63, 79], "count": 3, "correct": 0},
+    "chances_about_even": {"range": [40, 62], "count": 1, "correct": 0},
+    "unlikely": {"range": [21, 39], "count": 0, "correct": 0},
+    "highly_unlikely": {"range": [8, 20], "count": 0, "correct": 0},
+    "remote": {"range": [2, 7], "count": 0, "correct": 0},
+    "negligible": {"range": [0, 1], "count": 0, "correct": 0}
+  },
+  "brier_scores": [],
+  "postdiction_queue": [
+    {
+      "id": "holston_plant_x_fy2027",
+      "backtest_target": "2027-09-30",
+      "status": "pending"
+    },
+    {
+      "id": "sverdlov_strike_joint_capacity_impact",
+      "backtest_target": "2026-10-30",
+      "status": "pending"
+    },
+    {
+      "id": "us_100k_shells_milestone",
+      "backtest_target": "2026-12-31",
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Branding for RDX and C4 Global Supply Market
+# Used by render_pdf.py and render_audio.py
+
+brand_name: "Trevor Intelligence"
+topic_label: "RDX and C4 Supply Market"
+color_primary: "#1a0a00"
+color_accent: "#ff4500"
+logo_path: ""
+footer_text: "Trevor Intelligence | Energetics Supply Chain"
+audio_voice_id: "21m00Tcm4TlvDq8ikWAM"

@@ -1,0 +1,13 @@
+# Topic-Specific Routing Overrides: RDX and C4 Global Supply Market
+# Leave empty to use default llm_gate routing.
+# Add overrides here to customize model selection for this topic.
+
+# Overrides for this topic:
+# - First analytical report should use higher-quality model for calibration precision
+# - Routine monitoring can use default flash model
+
+# subscriber_brief:
+#   escalate_if_any:
+#     - audience:defense_primes
+#     - audience:government
+#   budget_cap: 15.00
