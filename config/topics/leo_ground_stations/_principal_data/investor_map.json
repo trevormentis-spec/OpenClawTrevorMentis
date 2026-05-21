@@ -1,0 +1,176 @@
+[
+  {
+    "Investor": "CDP Venture Capital",
+    "Type": "State VC",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "Yes \u2014 subsidiary of Cassa Depositi e Prestiti (Italian state development bank)",
+    "Strategic Interest": "Italian sovereign technology. Space economy national champion."
+  },
+  {
+    "Investor": "Neva SGR",
+    "Type": "Bank VC",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "Indirect \u2014 asset management arm of Intesa Sanpaolo (Italy's largest bank)",
+    "Strategic Interest": "Italian financial sector exposure to space economy."
+  },
+  {
+    "Investor": "SIMEST",
+    "Type": "State Trade Finance",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "Yes \u2014 Italian trade promotion agency, part of CDP group",
+    "Strategic Interest": "Italian export and internationalisation support."
+  },
+  {
+    "Investor": "European Investment Bank",
+    "Type": "EU Institution",
+    "Nationality": "Supranational (EU)",
+    "Portfolio Companies": "Leaf Space (debt)",
+    "Government/State Link": "Yes \u2014 EU policy bank",
+    "Strategic Interest": "EU strategic autonomy in space infrastructure."
+  },
+  {
+    "Investor": "RedSeed Ventures",
+    "Type": "Early-stage VC",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "No",
+    "Strategic Interest": "First institutional investor. Early-stage space focus."
+  },
+  {
+    "Investor": "Primo Space (Primomiglio)",
+    "Type": "Space VC",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "No",
+    "Strategic Interest": "Dedicated space investment fund."
+  },
+  {
+    "Investor": "Whysol Investments",
+    "Type": "Private Investor",
+    "Nationality": "Italian",
+    "Portfolio Companies": "Leaf Space",
+    "Government/State Link": "No",
+    "Strategic Interest": "Board seat. Active governance role."
+  },
+  {
+    "Investor": "Alven Capital Partners",
+    "Type": "VC",
+    "Nationality": "French",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "No",
+    "Strategic Interest": "Tech-focused French VC. Led Skynopy's largest round."
+  },
+  {
+    "Investor": "CNES (SpaceFounders)",
+    "Type": "Space Agency",
+    "Nationality": "French",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "Yes \u2014 French national space agency",
+    "Strategic Interest": "French sovereign ground infrastructure. Overseas territory expansion."
+  },
+  {
+    "Investor": "BPI France",
+    "Type": "State Investment Bank",
+    "Nationality": "French",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "Yes \u2014 French state investment bank",
+    "Strategic Interest": "French industrial policy. Tech sovereignty."
+  },
+  {
+    "Investor": "Expansion Venture Capital",
+    "Type": "VC",
+    "Nationality": "French",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "No"
+  },
+  {
+    "Investor": "Omnes Capital",
+    "Type": "VC",
+    "Nationality": "French",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "No"
+  },
+  {
+    "Investor": "Heartcore Capital",
+    "Type": "VC",
+    "Nationality": "Danish/European",
+    "Portfolio Companies": "Skynopy",
+    "Government/State Link": "No",
+    "Strategic Interest": "Pan-European early-stage. Led Skynopy's pre-seed."
+  },
+  {
+    "Investor": "NewSpace Capital",
+    "Type": "Space PE",
+    "Nationality": "Luxembourg",
+    "Portfolio Companies": "Atlas Space Ops",
+    "Government/State Link": "No",
+    "Strategic Interest": "Dedicated space PE. Martin Halliwell (ex-SES CTO) as partner."
+  },
+  {
+    "Investor": "Michigan Capital Network",
+    "Type": "Angel Network",
+    "Nationality": "US",
+    "Portfolio Companies": "Atlas Space Ops",
+    "Government/State Link": "No",
+    "Strategic Interest": "Local Michigan investor community."
+  },
+  {
+    "Investor": "Beringea",
+    "Type": "VC",
+    "Nationality": "US/UK",
+    "Portfolio Companies": "Atlas Space Ops",
+    "Government/State Link": "No",
+    "Strategic Interest": "Transatlantic VC."
+  },
+  {
+    "Investor": "Bee Partners",
+    "Type": "Seed VC",
+    "Nationality": "US",
+    "Portfolio Companies": "RBC Signals",
+    "Government/State Link": "No",
+    "Strategic Interest": "San Francisco early-stage fund."
+  },
+  {
+    "Investor": "ITOCHU Corporation",
+    "Type": "Trading House",
+    "Nationality": "Japanese",
+    "Portfolio Companies": "Infostellar",
+    "Government/State Link": "Indirect \u2014 Japanese industrial conglomerate, close government ties",
+    "Strategic Interest": "Japanese space infrastructure. Asia-Pacific distribution."
+  },
+  {
+    "Investor": "Mitsubishi UFJ Capital",
+    "Type": "Bank VC",
+    "Nationality": "Japanese",
+    "Portfolio Companies": "Infostellar",
+    "Government/State Link": "Indirect \u2014 MUFG banking group",
+    "Strategic Interest": "Japanese financial sector space exposure."
+  },
+  {
+    "Investor": "Mitsubishi Corporation",
+    "Type": "Trading House",
+    "Nationality": "Japanese",
+    "Portfolio Companies": "Infostellar",
+    "Government/State Link": "Indirect \u2014 Japanese industrial conglomerate",
+    "Strategic Interest": "Strategic industrial investment."
+  },
+  {
+    "Investor": "Airbus Ventures",
+    "Type": "Corporate VC",
+    "Nationality": "European (FR/DE/ES)",
+    "Portfolio Companies": "Infostellar",
+    "Government/State Link": "Indirect \u2014 Airbus group",
+    "Strategic Interest": "European aerospace strategic interest."
+  },
+  {
+    "Investor": "Sony Innovation Fund",
+    "Type": "Corporate VC",
+    "Nationality": "Japanese",
+    "Portfolio Companies": "Infostellar",
+    "Government/State Link": "No",
+    "Strategic Interest": "Technology convergence (imaging, comms, entertainment)."
+  }
+]

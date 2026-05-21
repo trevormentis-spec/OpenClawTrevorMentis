@@ -1,0 +1,129 @@
+[
+  {
+    "Metric": "Total Ground Station Market",
+    "Current Value": "$41.0B (2025)",
+    "Projected Value": "$82.7B (2030)",
+    "CAGR": "15.1%",
+    "Source": "MarketsandMarkets"
+  },
+  {
+    "Metric": "LEO GSaaS Sub-Market",
+    "Current Value": "$1.72B (2024)",
+    "Projected Value": "$5.33B (2033)",
+    "CAGR": "14.2%",
+    "Source": "DataIntelo"
+  },
+  {
+    "Metric": "Broader GSaaS Market",
+    "Current Value": "$520M (2024)",
+    "Projected Value": "$2.49B (2033)",
+    "CAGR": "18.9%",
+    "Source": "GrowthMarketReports"
+  },
+  {
+    "Metric": "Starlink Subscribers",
+    "Current Value": "10M+ (Feb 2026)",
+    "Projected Value": "14M (2030 est)",
+    "Source": "Wikipedia/SpaceX"
+  },
+  {
+    "Metric": "Starlink Revenue",
+    "Current Value": "$11.8B (2025 est)",
+    "Source": "Deloitte TMT Predictions"
+  },
+  {
+    "Metric": "Starlink Satellites",
+    "Current Value": "9,400+ (Jan 2026)",
+    "Projected Value": "12,000-34,400",
+    "Source": "SpaceX/FCC"
+  },
+  {
+    "Metric": "Starlink Ground Stations",
+    "Current Value": "170+ (early 2026)",
+    "Projected Value": "300+ (projected)",
+    "Source": "InstallPros / DCD"
+  },
+  {
+    "Metric": "Amazon Leo Satellites",
+    "Current Value": "212 (Dec 2025)",
+    "Projected Value": "3,236",
+    "Source": "Amazon/FCC"
+  },
+  {
+    "Metric": "Amazon Leo Ground Stations",
+    "Current Value": "12 (AWS regions)",
+    "Projected Value": "300+ (planned)",
+    "Source": "Amazon re:Invent"
+  },
+  {
+    "Metric": "OneWeb Satellites",
+    "Current Value": "648",
+    "Projected Value": "648 + Gen 2",
+    "Source": "Eutelsat"
+  },
+  {
+    "Metric": "OneWeb Ground Stations",
+    "Current Value": "~45",
+    "Projected Value": "~50+",
+    "Source": "DCD / OneWeb"
+  },
+  {
+    "Metric": "KSAT Network",
+    "Current Value": "26 locations / 280+ antennas",
+    "Projected Value": "Expanding + Hyper relay",
+    "Source": "KSAT"
+  },
+  {
+    "Metric": "Leaf Space Network",
+    "Current Value": "20+ locations / 40+ antennas",
+    "Projected Value": "38+ locations by end-2026",
+    "Source": "Leaf Space"
+  },
+  {
+    "Metric": "Skynopy Network",
+    "Current Value": "15+ antennas",
+    "Projected Value": "100+ (3-year target)",
+    "Source": "Skynopy / Payload"
+  },
+  {
+    "Metric": "Atlas Network",
+    "Current Value": "34+ locations / 50+ antennas",
+    "Projected Value": "Expanding (York acquisition)",
+    "Source": "Atlas Space Ops"
+  },
+  {
+    "Metric": "SSC Space Network",
+    "Current Value": "10 owned + 11 partner",
+    "Projected Value": "Expanding",
+    "Source": "SSC"
+  },
+  {
+    "Metric": "Active LEO Satellites (all)",
+    "Current Value": "15,000+ (early 2026)",
+    "Projected Value": "25,000+ (2030)",
+    "Source": "Deloitte"
+  },
+  {
+    "Metric": "LEO Broadband Revenue (all)",
+    "Current Value": "~$15B (2026 est)",
+    "Projected Value": "$30B+ (2030)",
+    "Source": "Deloitte"
+  },
+  {
+    "Metric": "Global Satellite Internet Subscribers",
+    "Current Value": "15M+ (2026 est)",
+    "Projected Value": "30M+ (2030)",
+    "Source": "Deloitte"
+  },
+  {
+    "Metric": "Eutelsat GS Asset Sale (2024)",
+    "Current Value": "\u20ac790M ($830M)",
+    "Source": "EQT / Eutelsat"
+  },
+  {
+    "Metric": "VC Investment in GSaaS (2023-25)",
+    "Current Value": "~$90M+ (aggregate)",
+    "Projected Value": "Accelerating",
+    "Source": "Concentric analysis"
+  }
+]

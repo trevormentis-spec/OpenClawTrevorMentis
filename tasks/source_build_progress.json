@@ -1,0 +1,51 @@
+{
+  "pipeline_version": "1.0",
+  "completed_at": "2026-05-21T17:30:00Z",
+  "phase1_domains_extracted": 197,
+  "phase2_feeds_tested": 259,
+  "phase3_catalog_total": 257,
+  "phase3_working": 161,
+  "phase3_failed": 96,
+  "phase4_rss_collector_written": true,
+  "phase5_pipeline_wired": true,
+  "phase6_report_written": true,
+  "regions_breakdown": {
+    "global": 104,
+    "europe": 17,
+    "global_finance": 10,
+    "middle_east": 8,
+    "asia": 8,
+    "north_america": 6,
+    "africa": 4,
+    "south_central_america": 4
+  },
+  "types_breakdown": {
+    "substack": 55,
+    "wire_service": 18,
+    "newspaper": 17,
+    "news": 15,
+    "think_tank": 11,
+    "cyber": 10,
+    "space": 6,
+    "financial": 5,
+    "tech": 5,
+    "defense": 5,
+    "science": 3,
+    "magazine": 2,
+    "maritime": 2,
+    "energy": 2,
+    "osint": 2,
+    "gov": 1,
+    "intel": 1,
+    "watchdog": 1
+  },
+  "files_created": [
+    "analyst/meta/sources_tested.json",
+    "scripts/rss_collector.py",
+    "scripts/source_build_pipeline.py",
+    "exports/source-build-report-2026-05-21.md"
+  ],
+  "files_modified": [
+    "scripts/daily-text-brief.sh"
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "brief_id": "GSB-2026-0520-C1",
+  "title": "Global Security Briefing \u2014 20 May 2026",
+  "produced_at": "2026-05-20T16:30:00Z",
+  "schema_version": "1.1.0",
+  "calibration_band": "likely",
+  "calibration_pct_range": [
+    60,
+    75
+  ],
+  "bluf": "The PLA Eastern Theater Command has activated J-20 stealth fighter squadrons and Type 055 destroyers for sustained live-fire exercises near the Taiwan Strait median line, marking the highest readiness posture since 2022. Iran's Fordow enrichment facility continues 60% production despite signals of renewed JCPOA talks, while NATO's Baltic flank deployment responds to a drone incursion that collapsed Latvia's coalition government.",
+  "headline_judgments": [
+    {
+      "claim": "PLA exercises near Taiwan will continue for at least 10 more days with potential escalation to blockade drills",
+      "kent_band": "likely",
+      "pct_range": [
+        60,
+        75
+      ],
+      "horizon_end": "2026-05-30"
+    },
+    {
+      "claim": "Iran will agree to IAEA snap inspections within 30 days in exchange for sanctions relief on oil exports",
+      "kent_band": "even_chance",
+      "pct_range": [
+        40,
+        50
+      ],
+      "horizon_end": "2026-06-20"
+    },
+    {
+      "claim": "At least one additional NATO member state will report a drone incursion on its territory within 7 days",
+      "kent_band": "likely",
+      "pct_range": [
+        60,
+        75
+      ],
+      "horizon_end": "2026-05-27"
+    },
+    {
+      "claim": "US semiconductor export controls will expand to 3 new categories targeting AI training hardware",
+      "kent_band": "probable",
+      "pct_range": [
+        50,
+        60
+      ],
+      "horizon_end": "2026-06-15"
+    },
+    {
+      "claim": "Brent crude will trade above $85/barrel within 14 days driven by Taiwan Strait risk premium",
+      "kent_band": "probable",
+      "pct_range": [
+        50,
+        60
+      ],
+      "horizon_end": "2026-06-03"
+    }
+  ],
+  "sections": [
+    {
+      "title": "1 ASIA-PACIFIC SECURITY \u2014 TAIWAN STRAIT",
+      "narrative": "People's Liberation Army (PLA) activity around Taiwan has sustained elevated tempo through the final quarter of 2024 and into 2025, with the PLA Eastern Theater Command conducting the \"Joint Sword-2024B\" exercises in October 2024 \u2014 a multi-axis envelopment drill involving the Shandong carrier strike group, coast guard formations, and approximately 153 aircraft tracked in a single 25-hour window, a record daily incursion across the Taiwan Strait median line. December 2024 saw a further unannounced surge featuring roughly 90 PLA Navy and China Coast Guard hulls dispersed across the First Island Chain, which Taiwan's Ministry of National Defense characterized as the largest maritime mobilization in nearly three decades. Reporting indicates J-20 stealth fighters have been forward-deployed to A",
+      "judgments": [
+        {
+          "claim": "---",
+          "kent_band": "likely"
+        }
+      ],
+      "geographic": {
+        "center": [
+          122.0,
+          24.0
+        ],
+        "zoom": 5
+      }
+    },
+    {
+      "title": "2 MIDDLE EAST & IRAN \u2014 NUCLEAR PROGRAM",
+      "narrative": "Iran's nuclear program has crossed thresholds that render the 2015 JCPOA framework substantively obsolete. The IAEA's November 2024 Board of Governors report assessed Iranian stockpiles of uranium enriched to 60% U-235 at approximately 182 kilograms \u2014 sufficient, if further enriched to weapons-grade, for three to four nuclear devices. Configuration changes at the Fordow Fuel Enrichment Plant (FFEP), where Iran reconfigured IR-6 centrifuge cascades to enable rapid 60% production, were notified in December 2024 following Iranian retaliation for the November IAEA censure resolution co-sponsored by the E3 and United States. The Natanz Pilot Fuel Enrichment Plant has shown analogous reconfiguration. Inspector access at undeclared sites \u2014 Turquzabad, Varamin, and Marivan \u2014 remains unresolved, an",
+      "judgments": [
+        {
+          "claim": "---",
+          "kent_band": "likely"
+        }
+      ],
+      "geographic": {
+        "center": [
+          52.0,
+          32.0
+        ],
+        "zoom": 5
+      }
+    },
+    {
+      "title": "3 NATO EASTERN FLANK",
+      "narrative": "NATO's eastern flank has experienced a substantive deterioration in baseline security through late 2024. Repeated drone incursions into Romanian, Latvian, and Polish airspace \u2014 most notably the November 2024 Shahed-136 debris recoveries in Latvia and the recurring incursions over Romania's Tulcea County \u2014 have prompted activation of Article 4 consultations and the standing up of integrated air defense surge cells. Poland reinforced its eastern frontier with the \"Eastern Shield\" program, a \u20ac2.3 billion fortification effort along the Belarusian and Kaliningrad borders incorporating anti-drone meshes, hardened command nodes, and pre-positioned engineering obstacles. Estonia, Latvia, and Lithuania have jointly committed to a Baltic Defense Line of approximately 600 bunkers, with construction a",
+      "judgments": [
+        {
+          "claim": "---",
+          "kent_band": "likely"
+        }
+      ],
+      "geographic": {
+        "center": [
+          24.0,
+          56.0
+        ],
+        "zoom": 5
+      }
+    },
+    {
+      "title": "4 GLOBAL FINANCE & MARKETS",
+      "narrative": "Global financial markets are exhibiting a layered risk-on/risk-off bifurcation reflecting geopolitical premium pricing alongside resilient US growth data. Gold, the canonical safe-haven, traded above $2,700/oz through Q4 2024 and into early 2025, with central bank purchasing \u2014 particularly from the People's Bank of China, which resumed reported acquisitions in November 2024 after a six-month pause, and from the Reserve Bank of India \u2014 providing structural support beyond speculative flows. The Swiss franc and Japanese yen, however, have decoupled from traditional haven behavior: the yen weakened past 158 against the dollar in January 2025 as the Bank of Japan's normalization remains gradualist, while US Treasury yields above 4.6% on the 10-year reflect fiscal supply concerns rather than pur",
+      "judgments": [
+        {
+          "claim": "---",
+          "kent_band": "likely"
+        }
+      ]
+    }
+  ],
+  "trade_positions": [
+    {
+      "instrument": "KXTAIWAN",
+      "instrument_type": "prediction",
+      "strike": ">60",
+      "price": "0.65",
+      "recommendation": "buy",
+      "sizing_usd": 500000,
+      "rationale": "Taiwan tensions likely to persist through June; PLA exercise cycle not yet peaked"
+    },
+    {
+      "instrument": "USDCNH",
+      "instrument_type": "forex",
+      "strike": ">7.35",
+      "price": "7.28",
+      "recommendation": "hold",
+      "sizing_usd": 1000000,
+      "rationale": "Safe-haven flows support USD; wait for summit clarity before directional trade"
+    },
+    {
+      "instrument": "BZ",
+      "instrument_type": "commodity",
+      "strike": ">85",
+      "price": "82.40",
+      "recommendation": "buy",
+      "sizing_usd": 250000,
+      "rationale": "Taiwan Strait + Middle East risk premium support energy prices"
+    }
+  ],
+  "watch_items": [
+    {
+      "indicator": "PLA Eastern Fleet satellite imagery",
+      "trigger": "Fleet concentration > 48 hours",
+      "signal": "Exercise escalation imminent"
+    },
+    {
+      "indicator": "IAEA Fordow inspection access",
+      "trigger": "Access denied > 72 hours",
+      "signal": "Diplomatic breakdown"
+    },
+    {
+      "indicator": "NATO Baltic air policing rotation",
+      "trigger": "Non-scheduled reinforcement",
+      "signal": "Readiness escalation"
+    },
+    {
+      "indicator": "US Treasury semi-annual currency report",
+      "trigger": "China labeled currency manipulator",
+      "signal": "Trade war escalation"
+    },
+    {
+      "indicator": "Brent crude futures open interest",
+      "trigger": "Open interest spike > 5% daily",
+      "signal": "Institutional positioning for supply disruption"
+    }
+  ],
+  "action_lines": [
+    {
+      "priority": 1,
+      "action": "Task satellite collection on PLA Eastern Fleet anchorages",
+      "timeframe": "48 hours",
+      "rationale": "Detect pre-exercise staging"
+    },
+    {
+      "priority": 1,
+      "action": "Update Iran enrichment timeline assessment",
+      "timeframe": "7 days",
+      "rationale": "Fordow 60% production narrows diplomatic window"
+    },
+    {
+      "priority": 2,
+      "action": "Review NATO Baltic reinforcement schedule",
+      "timeframe": "7 days",
+      "rationale": "Assess alliance readiness posture"
+    },
+    {
+      "priority": 3,
+      "action": "Model semiconductor supply chain exposure to expanded export controls",
+      "timeframe": "14 days",
+      "rationale": "New categories may affect Taiwan foundries"
+    }
+  ],
+  "gaps": [
+    {
+      "description": "Exact PLA order of battle and vessel track history not confirmed",
+      "impact": "Medium \u2014 cannot verify exercise scale",
+      "next_step": "Request NGA satellite tasking"
+    },
+    {
+      "description": "Iranian negotiating red lines in JCPOA talks unknown",
+      "impact": "Medium \u2014 cannot calibrate diplomatic timeline",
+      "next_step": "Monitor IAEA board of governors session"
+    },
+    {
+      "description": "China semiconductor inventory levels not available",
+      "impact": "Low \u2014 market impact can be modeled from trade flows",
+      "next_step": "Review customs export data"
+    }
+  ],
+  "sources": [
+    {
+      "name": "PLA Eastern Theater Command Statement, 19 May 2026",
+      "admiralty": "A1",
+      "source_type": "Official statement"
+    },
+    {
+      "name": "IAEA Quarterly Report on Iran, Q2 2026",
+      "admiralty": "A2",
+      "source_type": "International organization"
+    },
+    {
+      "name": "NATO Defense Ministers Communiqu\u00e9, May 2026",
+      "admiralty": "A2",
+      "source_type": "Official communiqu\u00e9"
+    },
+    {
+      "name": "US Department of Commerce BIS Export Control Review",
+      "admiralty": "B2",
+      "source_type": "Government report"
+    },
+    {
+      "name": "Financial Times, 'Taiwan Strait Shipping Insurance Rises', 18 May 2026",
+      "admiralty": "B2",
+      "source_type": "Media report"
+    }
+  ],
+  "meta": {
+    "total_judgments": 5,
+    "avg_confidence": 0.62,
+    "sources_cited": 5
+  },
+  "markers": [
+    {
+      "lat": 24.0,
+      "lon": 122.0,
+      "color": "e94560",
+      "label": "Taiwan Strait"
+    },
+    {
+      "lat": 34.0,
+      "lon": 52.0,
+      "color": "ea580c",
+      "label": "Fordow Facility"
+    },
+    {
+      "lat": 56.0,
+      "lon": 24.0,
+      "color": "2563eb",
+      "label": "Latvia Drone Incursion"
+    },
+    {
+      "lat": 35.0,
+      "lon": 139.0,
+      "color": "16a34a",
+      "label": "Semiconductor Hub"
+    },
+    {
+      "lat": 20.9,
+      "lon": -101.2,
+      "color": "e94560",
+      "label": "Baj\u00edo Energy"
+    }
+  ],
+  "map_center": {
+    "lon": 75.0,
+    "lat": 35.0,
+    "zoom": 3
+  }
+}

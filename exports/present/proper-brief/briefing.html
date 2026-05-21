@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+    @top-left { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
+  @page content {
+    size: A4;
+    margin: 2.5cm 2.5cm 2.5cm 2.5cm;
+    @top-left { content: "TREVOR INTELLIGENCE"; font-family: Helvetica, Arial, sans-serif; font-size: 7pt; color: #888; letter-spacing: 1.5px; }
+    @top-right { content: "2026-05-20"; font-family: Helvetica, Arial, sans-serif; font-size: 7pt; color: #aaa; }
+    @bottom-left { content: counter(page); font-family: Helvetica, Arial, sans-serif; font-size: 7pt; color: #aaa; }
+    @bottom-right { content: "Confidential"; font-family: Helvetica, Arial, sans-serif; font-size: 7pt; color: #c9a84c; letter-spacing: 1px; }
+  }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 9.5pt; line-height: 1.5; color: #1a1a2e; margin: 0;
+  }
+  .cover {
+    position: relative; width: 210mm; height: 297mm; overflow: hidden; page-break-after: always;
+  }
+  .cover img {
+    position: absolute; top: 0; left: 0; width: 210mm; height: 297mm; object-fit: cover; z-index: 0;
+  }
+  .cover-overlay {
+    position: absolute; top: 0; left: 0; width: 210mm; height: 297mm;
+    background: linear-gradient(to bottom, rgba(10,10,30,0.92) 0%, rgba(15,52,96,0.85) 100%);
+    z-index: 1;
+  }
+  /* unused */ position: absolute; top: 0; left: 0; width: 210mm; height: 2.5cm; background: #c9a84c; z-index: 1; }
+  /* unused */
+    position: absolute; top: 1.5cm; left: 2.5cm; right: 2.5cm; z-index: 2;
+    font-size: 7pt; letter-spacing: 2px; color: #e94560; text-transform: uppercase;
+  }
+  /* unused */
+    position: absolute; bottom: 8cm; left: 2.5cm; right: 2.5cm; z-index: 2;
+  }
+  /* unused */
+    font-size: 30pt; font-weight: 700; color: #fff; line-height: 1.15;
+    margin-bottom: 0.4cm; letter-spacing: -0.5px;
+  }
+  /* unused */ font-size: 11pt; color: #c9a84c; margin-bottom: 0.8cm; letter-spacing: 1px; }
+  /* unused */ width: 60px; height: 2px; background: #c9a84c; margin-bottom: 0.6cm; }
+  /* unused */ font-size: 9pt; color: #ccc; line-height: 1.5; max-width: 75%; }
+  /* unused */
+    position: absolute; bottom: 1.2cm; left: 2.5cm; right: 2.5cm; z-index: 2;
+    display: flex; justify-content: space-between; font-size: 7pt; color: #888;
+    border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.4cm;
+  }
+  .content { page: content; }
+  .bluf-box {
+    background: linear-gradient(135deg, #0f3460, #1a1a2e); color: white;
+    padding: 0.5cm 0.7cm; margin-bottom: 0.5cm; border-radius: 2px;
+  }
+  .bluf-box .l { font-size: 7pt; letter-spacing: 2px; color: #c9a84c; text-transform: uppercase; margin-bottom: 0.2cm; }
+  .bluf-box .t { font-size: 9pt; line-height: 1.5; color: #eee; }
+  h2 { font-size: 12pt; font-weight: 700; color: #0f3460; border-bottom: 1.5px solid #c9a84c; padding-bottom: 3pt; margin: 0.5cm 0 0.3cm 0; page-break-after: avoid; }
+  p { margin: 0 0 0.3cm 0; text-align: justify; }
+  .j {
+    padding: 4pt 8pt; margin: 3pt 0; border-left: 3px solid #c9a84c;
+    background: #faf8f4; font-size: 8.5pt; page-break-inside: avoid;
+  }
+  .ba {
+    display: inline-block; padding: 1pt 5pt; font-size: 6.5pt; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px; border-radius: 2px; margin-right: 3pt;
+  }
+  .ba1 { background: #00b300; color: white; }  .ba2 { background: #33cc33; color: white; }
+  .ba3 { background: #99cc33; color: #1a1a2e; } .ba4 { background: #cccc33; color: #1a1a2e; }
+  .ba5 { background: #cc9933; color: white; }   .ba6 { background: #cc6633; color: white; }
+  .figure { margin: 0.4cm 0; text-align: center; page-break-inside: avoid; }
+  .figure img { max-width: 100%; height: auto; }
+  .figure .cap { font-size: 7pt; color: #888; margin-top: 3pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 0.3cm 0; }
+  th { background: #0f3460; color: white; padding: 4pt 6pt; text-align: left; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 4pt 6pt; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #fafafa; }
+  .qc {
+    margin-top: 0.8cm; padding: 0.3cm; background: #fff8e6;
+    border: 1px solid #e6c300; font-size: 7.5pt; color: #7a6200; text-align: center;
+  }
+  .src { font-size: 7.5pt; color: #666; padding: 2pt 0; }
+  .src .a { display: inline-block; padding: 0 3pt; background: #eee; font-size: 6.5pt; border-radius: 2px; margin-right: 3pt; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  
+  <img src="file:///home/ubuntu/.openclaw/workspace/exports/covers/cover-v3.png" alt="">
+  
+  <div class="cover-overlay"></div>
+  <div style="position:relative;z-index:2;height:297mm;display:flex;flex-direction:column;">
+    <div>
+      <div style="background:#c9a84c;padding:0.3cm 2.5cm;margin-bottom:1.5cm;">
+        <span style="font-size:7pt;letter-spacing:2px;color:#1a1a2e;font-weight:700;text-transform:uppercase;">SENSITIVE &mdash; FOR AUTHORISED RECIPIENTS</span>
+      </div>
+    </div>
+    <div style="padding:0 2.5cm 2cm 2.5cm;">
+      <div style="font-size:30pt;font-weight:700;color:#fff;line-height:1.15;margin-bottom:0.4cm;letter-spacing:-0.5px;">Global Security Briefing — 20 May 2026</div>
+      <div style="font-size:11pt;color:#c9a84c;margin-bottom:0.8cm;letter-spacing:1px;">2026-05-20</div>
+      <div style="width:60px;height:2px;background:#c9a84c;margin-bottom:0.6cm;"></div>
+      
+      <div style="font-size:9pt;color:#ccc;line-height:1.5;max-width:75%;">The PLA Eastern Theater Command has activated J-20 stealth fighter squadrons and Type 055 destroyers for sustained live-fire exercises near the Taiwan Strait median line, marking the highest readiness posture since 2022. Iran's Fordow enrichment facility continues 60% production despite signals of renewed JCPOA talks, while NATO's Baltic flank deployment responds to a drone incursion that collapsed Latvia's coalition government.</div>
+      
+    </div>
+    <div style="flex:1;"></div>
+    <div style="padding:0.4cm 2.5cm 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:flex-start;font-size:7pt;color:#888;">
+      <span style="color:#c9a84c;letter-spacing:2px;">Trevor Intelligence</span>
+      <span>Brief GSB-2026-0520-C1</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<div class="bluf-box">
+  <div class="l">Bottom Line Up Front</div>
+  <div class="t">The PLA Eastern Theater Command has activated J-20 stealth fighter squadrons and Type 055 destroyers for sustained live-fire exercises near the Taiwan Strait median line, marking the highest readiness posture since 2022. Iran's Fordow enrichment facility continues 60% production despite signals of renewed JCPOA talks, while NATO's Baltic flank deployment responds to a drone incursion that collapsed Latvia's coalition government.</div>
+</div>
+
+
+
+<h2>Headline Judgments</h2>
+
+<div class="j"><span class="ba ba1">likely</span> <strong>PLA exercises near Taiwan will continue for at least 10 more days with potential escalation to blockade drills</strong></div>
+
+<div class="j"><span class="ba ba2">even_chance</span> <strong>Iran will agree to IAEA snap inspections within 30 days in exchange for sanctions relief on oil exports</strong></div>
+
+<div class="j"><span class="ba ba3">likely</span> <strong>At least one additional NATO member state will report a drone incursion on its territory within 7 days</strong></div>
+
+<div class="j"><span class="ba ba4">probable</span> <strong>US semiconductor export controls will expand to 3 new categories targeting AI training hardware</strong></div>
+
+<div class="j"><span class="ba ba5">probable</span> <strong>Brent crude will trade above $85/barrel within 14 days driven by Taiwan Strait risk premium</strong></div>
+
+
+
+
+<div class="figure"><img src="file:///home/ubuntu/.openclaw/workspace/exports/charts/proper/kent-bar.png" alt=""><div class="cap">Figure 1: Judgment confidence distribution</div></div>
+
+
+
+<h2>1 ASIA-PACIFIC SECURITY — TAIWAN STRAIT</h2>
+<p>People's Liberation Army (PLA) activity around Taiwan has sustained elevated tempo through the final quarter of 2024 and into 2025, with the PLA Eastern Theater Command conducting the "Joint Sword-2024B" exercises in October 2024 — a multi-axis envelopment drill involving the Shandong carrier strike group, coast guard formations, and approximately 153 aircraft tracked in a single 25-hour window, a record daily incursion across the Taiwan Strait median line. December 2024 saw a further unannounced surge featuring roughly 90 PLA Navy and China Coast Guard hulls dispersed across the First Island Chain, which Taiwan's Ministry of National Defense characterized as the largest maritime mobilization in nearly three decades. Reporting indicates J-20 stealth fighters have been forward-deployed to A</p>
+
+<div class="j"><span class="ba ba1">likely</span> ---</div>
+
+
+<h2>2 MIDDLE EAST & IRAN — NUCLEAR PROGRAM</h2>
+<p>Iran's nuclear program has crossed thresholds that render the 2015 JCPOA framework substantively obsolete. The IAEA's November 2024 Board of Governors report assessed Iranian stockpiles of uranium enriched to 60% U-235 at approximately 182 kilograms — sufficient, if further enriched to weapons-grade, for three to four nuclear devices. Configuration changes at the Fordow Fuel Enrichment Plant (FFEP), where Iran reconfigured IR-6 centrifuge cascades to enable rapid 60% production, were notified in December 2024 following Iranian retaliation for the November IAEA censure resolution co-sponsored by the E3 and United States. The Natanz Pilot Fuel Enrichment Plant has shown analogous reconfiguration. Inspector access at undeclared sites — Turquzabad, Varamin, and Marivan — remains unresolved, an</p>
+
+<div class="j"><span class="ba ba1">likely</span> ---</div>
+
+
+<h2>3 NATO EASTERN FLANK</h2>
+<p>NATO's eastern flank has experienced a substantive deterioration in baseline security through late 2024. Repeated drone incursions into Romanian, Latvian, and Polish airspace — most notably the November 2024 Shahed-136 debris recoveries in Latvia and the recurring incursions over Romania's Tulcea County — have prompted activation of Article 4 consultations and the standing up of integrated air defense surge cells. Poland reinforced its eastern frontier with the "Eastern Shield" program, a €2.3 billion fortification effort along the Belarusian and Kaliningrad borders incorporating anti-drone meshes, hardened command nodes, and pre-positioned engineering obstacles. Estonia, Latvia, and Lithuania have jointly committed to a Baltic Defense Line of approximately 600 bunkers, with construction a</p>
+
+<div class="j"><span class="ba ba1">likely</span> ---</div>
+
+
+<h2>4 GLOBAL FINANCE & MARKETS</h2>
+<p>Global financial markets are exhibiting a layered risk-on/risk-off bifurcation reflecting geopolitical premium pricing alongside resilient US growth data. Gold, the canonical safe-haven, traded above $2,700/oz through Q4 2024 and into early 2025, with central bank purchasing — particularly from the People's Bank of China, which resumed reported acquisitions in November 2024 after a six-month pause, and from the Reserve Bank of India — providing structural support beyond speculative flows. The Swiss franc and Japanese yen, however, have decoupled from traditional haven behavior: the yen weakened past 158 against the dollar in January 2025 as the Bank of Japan's normalization remains gradualist, while US Treasury yields above 4.6% on the 10-year reflect fiscal supply concerns rather than pur</p>
+
+<div class="j"><span class="ba ba1">likely</span> ---</div>
+
+
+
+
+<div class="figure"><img src="file:///home/ubuntu/.openclaw/workspace/exports/maps/proper-map.png" alt=""><div class="cap">Figure 2: Geographic context</div></div>
+
+
+
+<h2>Trade Positions</h2>
+<table>
+  <tr><th>Instrument</th><th>Strike</th><th>Price</th><th>Rec</th><th>Sizing</th></tr>
+  
+  <tr>
+    <td><strong>KXTAIWAN</strong></td>
+    <td>>60</td><td>0.65</td>
+    <td>buy</td>
+    <td>$500,000</td>
+  </tr>
+  
+  <tr>
+    <td><strong>USDCNH</strong></td>
+    <td>>7.35</td><td>7.28</td>
+    <td>hold</td>
+    <td>$1,000,000</td>
+  </tr>
+  
+  <tr>
+    <td><strong>BZ</strong></td>
+    <td>>85</td><td>82.40</td>
+    <td>buy</td>
+    <td>$250,000</td>
+  </tr>
+  
+</table>
+
+
+
+<h2>Watch Items</h2>
+<table><tr><th>Indicator</th><th>Trigger</th><th>Signal</th></tr>
+
+<tr><td>PLA Eastern Fleet satellite imagery</td><td>Fleet concentration > 48 hours</td><td>Exercise escalation imminent</td></tr>
+
+<tr><td>IAEA Fordow inspection access</td><td>Access denied > 72 hours</td><td>Diplomatic breakdown</td></tr>
+
+<tr><td>NATO Baltic air policing rotation</td><td>Non-scheduled reinforcement</td><td>Readiness escalation</td></tr>
+
+<tr><td>US Treasury semi-annual currency report</td><td>China labeled currency manipulator</td><td>Trade war escalation</td></tr>
+
+<tr><td>Brent crude futures open interest</td><td>Open interest spike > 5% daily</td><td>Institutional positioning for supply disruption</td></tr>
+
+</table>
+
+
+
+<h2>Actions</h2>
+<table><tr><th>Priority</th><th>Action</th><th>Timeframe</th></tr>
+
+<tr><td>1</td><td><strong>Task satellite collection on PLA Eastern Fleet anchorages</strong></td><td>48 hours</td></tr>
+
+<tr><td>1</td><td><strong>Update Iran enrichment timeline assessment</strong></td><td>7 days</td></tr>
+
+<tr><td>2</td><td><strong>Review NATO Baltic reinforcement schedule</strong></td><td>7 days</td></tr>
+
+<tr><td>3</td><td><strong>Model semiconductor supply chain exposure to expanded export controls</strong></td><td>14 days</td></tr>
+
+</table>
+
+
+
+<h2>Sources</h2>
+
+<div class="src"><span class="a">A1</span>PLA Eastern Theater Command Statement, 19 May 2026</div>
+
+<div class="src"><span class="a">A2</span>IAEA Quarterly Report on Iran, Q2 2026</div>
+
+<div class="src"><span class="a">A2</span>NATO Defense Ministers Communiqué, May 2026</div>
+
+<div class="src"><span class="a">B2</span>US Department of Commerce BIS Export Control Review</div>
+
+<div class="src"><span class="a">B2</span>Financial Times, 'Taiwan Strait Shipping Insurance Rises', 18 May 2026</div>
+
+
+
+<div class="qc">&#9888; PENDING HUMAN ANALYST QC REVIEW &mdash; GSB-2026-0520-C1 &middot; 2026-05-20</div>
+</div>
+</body></html>

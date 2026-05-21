@@ -1,0 +1,25 @@
+{
+  "compiled_at": "2026-05-21T18:54:03.782313+00:00Z",
+  "overall": {
+    "total_judgments": 55,
+    "correct": 5,
+    "incorrect": 20,
+    "unresolved": 30,
+    "accuracy_pct": 20.0,
+    "posture": "widen_two_notches",
+    "overconfidence_regions": []
+  },
+  "band_directives": [],
+  "region_table": [
+    {
+      "region": "europe",
+      "accuracy": 1.0,
+      "samples": 11
+    },
+    {
+      "region": "asia",
+      "accuracy": 1.0,
+      "samples": 11
+    }
+  ]
+}

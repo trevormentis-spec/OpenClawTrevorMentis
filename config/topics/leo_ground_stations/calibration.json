@@ -1,0 +1,142 @@
+{
+  "topic": "LEO Ground Stations",
+  "created": "2026-05-21T15:45:00Z",
+  "source_document": "Concentric Security Group LEO Ground Station Market Opportunity Assessment (Mar 2026)",
+  "judgments": [],
+  "calibration_bands": {
+    "almost_certain": {
+      "range": [93, 99],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "95-99%"
+    },
+    "highly_likely": {
+      "range": [80, 92],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "85-92%"
+    },
+    "likely": {
+      "range": [63, 79],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "67-79%"
+    },
+    "chances_about_even": {
+      "range": [40, 62],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "45-62%"
+    },
+    "unlikely": {
+      "range": [21, 39],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "25-39%"
+    },
+    "highly_unlikely": {
+      "range": [8, 20],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "10-20%"
+    },
+    "remote": {
+      "range": [2, 7],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "3-7%"
+    },
+    "negligible": {
+      "range": [0, 1],
+      "count": 0,
+      "correct": 0,
+      "target_accuracy": "0-1%"
+    }
+  },
+  "brier_scores": [],
+  "postdiction_queue": [
+    {
+      "prediction": "Amazon Kuiper will deploy at least 1,000 of its planned 3,236 satellites by end of 2026",
+      "band": "highly_likely",
+      "expiry": "2027-01-15",
+      "rationale": "FCC deadline Jul 2026 for half constellation. Concentric assessment confirms active deployment trajectory."
+    },
+    {
+      "prediction": "Telesat Lightspeed will have launched at least 50 satellites by end of 2027",
+      "band": "likely",
+      "expiry": "2028-01-15",
+      "rationale": "SpaceX launches from mid-2026. 188-satellite initial deployment. Concentric identifies as actively seeking GS partners."
+    },
+    {
+      "prediction": "Microsoft will not re-enter the GSaaS market within 3 years of exiting (by Oct 2027)",
+      "band": "highly_likely",
+      "expiry": "2027-10-15",
+      "rationale": "Concentric assessment: Microsoft concluded ownership too capital-intensive and operationally specialised. Market favours dedicated operators."
+    },
+    {
+      "prediction": "At least one additional VC-backed GSaaS operator will be acquired by a defence contractor in 2026-2027",
+      "band": "likely",
+      "expiry": "2028-01-15",
+      "rationale": "Atlas/York acquisition sets precedent. Concentric assessment identifies GSaaS as scaling faster than security capability."
+    },
+    {
+      "prediction": "KSAT Hyper space-based relay will achieve initial operating capability by end of 2028",
+      "band": "chances_about_even",
+      "expiry": "2029-01-15",
+      "rationale": "Concentric identifies as 'potential game-changer' but in-orbit ground station tech is unproven at scale. Moved to chances_about_even from original likely."
+    },
+    {
+      "prediction": "Starlink will exceed 14M subscribers by end of 2027",
+      "band": "likely",
+      "expiry": "2028-01-15",
+      "rationale": "Concentric projects 14M by 2030. Faster growth trajectory (10M Feb 2026) suggests 14M potential ahead of schedule."
+    },
+    {
+      "prediction": "Total global ground stations will exceed 800 by end of 2027 (from ~500 in 2025/26)",
+      "band": "likely",
+      "expiry": "2028-01-15",
+      "rationale": "Concentric projects 1,000+ by 2030 from ~500 in 2025/26. Kuiper alone plans 300+ new stations."
+    },
+    {
+      "prediction": "Neither Chinese mega-constellation (Guowang 12,992 sats / Qianfan 14,000 sats) will achieve 500 operational satellites by end of 2028",
+      "band": "likely",
+      "expiry": "2029-01-15",
+      "rationale": "Qianfan has 18 launched to date. Guowang initial launches expected 2026. 12K-14K satellite deployments at Chinese production rates."
+    }
+  ],
+  "investment_thesis_frames": [
+    {
+      "frame": "Physical Security to GSaaS Providers",
+      "source": "Concentric Security Group Opportunity Assessment",
+      "model": "Per-site security assessment, ongoing monitoring, guard force and hardening services. Recurring revenue per station per year.",
+      "priority_targets": ["KSAT (26 sites, NATO/defence clients, state-backed)", "Leaf Space (20+ locations, VC-backed, scaling into high-risk geographies)", "Skynopy (French, 20+ sites, expanding to overseas territories)"],
+      "key_signals": [
+        "GSaaS operator announces expansion into politically unstable region",
+        "GSaaS operator reports security incident at remote site",
+        "Insurance market increases premium for ground station coverage"
+      ]
+    },
+    {
+      "frame": "Insurance Market Risk Surveys",
+      "source": "Concentric Security Group Opportunity Assessment",
+      "model": "Site-specific physical risk surveys for Lloyd's space underwriting syndicates. Fee per survey, commissioned via specialist brokers.",
+      "priority_targets": ["Aon International Space Brokers (35% global premium share)", "Marsh Space Projects", "Atrium ASIC (Syndicate 609)", "Hiscox London Market", "AXA XL", "Munich Re"],
+      "key_signals": [
+        "Lloyd's syndicate expands space underwriting capacity",
+        "Major ground station incident triggers insurance claim",
+        "New regulatory requirements for physical security certifications"
+      ]
+    },
+    {
+      "frame": "Secure Site Provision",
+      "source": "Concentric Security Group Opportunity Assessment",
+      "model": "Identify, secure, and lease hardened ground station sites in strategically valuable locations. Landlord model with security wrapper. Longer-term capital commitment, higher margin.",
+      "priority_targets": ["Amazon/Kuiper (300+ stations needed, regulatory mandate for in-country sites)", "Telesat (actively seeking GS partners)", "New African/Asian market entrants"],
+      "key_signals": [
+        "New regulatory mandate requiring in-country ground stations",
+        "Constellation operator announces ground station RFP for specific region",
+        "Satellite operator seeks local site partner for market entry"
+      ]
+    }
+  ]
+}

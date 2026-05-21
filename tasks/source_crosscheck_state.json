@@ -61,7 +61,31 @@
         "Channel 4 contacted by police after Married at First Sight UK rape claims",
         "Twenty-two years in the making - how Arsenal celebrated title win"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-21T12:15:59.380418+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 33,
+      "checked_at": "2026-05-21T12:16:00.193003+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Cheaper theme park tickets and children's meals as VAT to be cut for some attractions this summer",
+        "NHS trust sacks staff over accessing Nottingham attacks victims' records",
+        "EasyJet boss says summer flights won't be hit by jet fuel shortages"
+      ]
     }
   ],
-  "last_updated": "2026-05-19T23:52:27.507577+00:00"
+  "last_updated": "2026-05-21T12:16:00.193162+00:00"
 }

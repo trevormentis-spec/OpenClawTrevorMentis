@@ -1,0 +1,56 @@
+[
+  {
+    "Date": "Oct 2024",
+    "Transaction": "Eutelsat ground station asset sale",
+    "Buyer": "EQT (Swedish PE)",
+    "Seller": "Eutelsat Group",
+    "Value": "\u20ac790M ($830M)",
+    "Type": "Sale-Leaseback",
+    "Strategic Significance": "Largest ground segment transaction. 1,400 antennas, 100+ locations. Establishes GS infrastructure as investment asset class."
+  },
+  {
+    "Date": "Oct 2024",
+    "Transaction": "Azure Orbital asset sale",
+    "Buyer": "Space Leasing International",
+    "Seller": "Microsoft",
+    "Value": "Not disclosed",
+    "Type": "Asset Sale",
+    "Strategic Significance": "Hyperscaler exits direct GSaaS. Assets transferred to RBC Signals. Validates dedicated operator model."
+  },
+  {
+    "Date": "Jul 2025",
+    "Transaction": "Atlas Space Operations acquisition",
+    "Buyer": "York Space Systems (US defence)",
+    "Seller": "Atlas investors",
+    "Value": "Not disclosed",
+    "Type": "Full Acquisition",
+    "Strategic Significance": "US defence co acquires largest US-owned GSaaS. Integration into Golden Dome defence architecture. Pending FCC approval."
+  },
+  {
+    "Date": "Feb 2026",
+    "Transaction": "KSAT Hyper satellite relay announcement",
+    "Buyer": "N/A (internal development)",
+    "Seller": "N/A",
+    "Value": "N/A",
+    "Type": "Organic",
+    "Strategic Significance": "Orbiting ground stations. Extends KSAT polar monopoly into space-based relay. Game-changer for latency."
+  },
+  {
+    "Date": "Jan 2026",
+    "Transaction": "AWS expands GSaaS Partner Programme",
+    "Buyer": "AWS",
+    "Seller": "N/A",
+    "Value": "N/A",
+    "Type": "Partnership",
+    "Strategic Significance": "KSAT and Skynopy join AWS GSaaS Partner Programme. Cloud integration deepens."
+  },
+  {
+    "Date": "Mar 2025",
+    "Transaction": "RBC Signals acquires Microsoft antennas",
+    "Buyer": "RBC Signals (via SLI)",
+    "Seller": "Microsoft",
+    "Value": "Not disclosed",
+    "Type": "Asset Purchase",
+    "Strategic Significance": "10 x 6m S/X band tracking antennas. Transforms RBC from pure aggregator to asset owner."
+  }
+]

@@ -1,0 +1,77 @@
+# LEO Ground Stations — Scope Probes for Regression Testing
+probes:
+  - query: "KSAT Svalbard antenna count and expansion timeline"
+    expected: in_scope
+    rationale: "Core topic: Tier-1 GSaaS operator infrastructure details"
+
+  - query: "Starlink subscriber growth trajectory in Southeast Asia"
+    expected: adjacent
+    rationale: "Satellite operator demand drives GSaaS market growth — adjacent mechanism"
+
+  - query: "FCC space bureau licensing backlog for non-geostationary earth station filings"
+    expected: in_scope
+    rationale: "Direct regulatory factor affecting ground station deployment timelines"
+
+  - query: "Lloyd's space insurance capacity for LEO constellation ground segment"
+    expected: in_scope
+    rationale: "Insurance risk for ground station assets — within scope"
+
+  - query: "Kessler syndrome debris collision probability affecting Svalbard ground station operations"
+    expected: in_scope
+    rationale: "Space debris risk affecting ground station operational continuity"
+
+  - query: "AST SpaceMobile direct-to-handle cellular spectrum allocation at 850MHz"
+    expected: out_of_scope
+    rationale: "Direct-to-handle cellular is explicitly blocklisted unless affecting GSaaS"
+
+  - query: "GEO satellite fleet replacement cycle for Intelsat 40e"
+    expected: out_of_scope
+    rationale: "GEO satellite operations explicitly excluded from scope"
+
+  - query: "US Space Force FORGE C2 integration with Atlas Space Operations Freedom platform"
+    expected: in_scope
+    rationale: "Defense space adjacency vector — ground station software integration"
+
+  - query: "China BRI ground station investment in Argentina's Neuquén"
+    expected: adjacent
+    rationale: "Geopolitical/sovereignty adjacency — competing infrastructure networks"
+
+  - query: "Mynaric laser communication terminal production capacity for ground stations"
+    expected: in_scope
+    rationale: "Technology evolution — optical ground station deployment"
+
+  - query: "SL-050 Lagos Starlink ground station context profile scores"
+    expected: in_scope
+    rationale: "Direct reference to 80-site risk register entity with full 7-dimension scoring"
+
+  - query: "Concentric composite score distribution by operator across the 80-site risk register"
+    expected: in_scope
+    rationale: "Aggregate analysis of the ingested 80-site register — core analytical output"
+
+  - query: "Baikonur Region OneWeb ground station Geopolitical Stability score and threat assessment"
+    expected: in_scope
+    rationale: "Specific site risk assessment from the 80-site register — geopol dimension key"
+
+  - query: "Inuvik Telesat ground station isolation score and emergency response implications"
+    expected: in_scope
+    rationale: "Site isolation dimension directly affects security assessment — in scope"
+
+  - query: "Amazon Kuiper AWS US-East-1 ground station security posture assessment"
+    expected: in_scope
+    rationale: "Kuiper is a constellation operator — ground station physical security is core"
+
+  - query: "Comparison of Concentric 80-site risk register vs 129-site market opportunity register"
+    expected: in_scope
+    rationale: "Cross-register reconciliation is a core analytical task"
+
+  - query: "Port Harcourt Niger Delta militant group threat to Starlink ground station construction"
+    expected: in_scope
+    rationale: "Starlink ground station in highest-risk Nigerian site — core physical security topic"
+
+  - query: "Merrillan WI severe winter impact on ground station operations and security staffing"
+    expected: in_scope
+    rationale: "Natural hazard dimension affecting site operability — in scope"
+
+  - query: "Troll Antarctica ground station emergency evacuation procedures and insurance coverage"
+    expected: in_scope
+    rationale: "TT&C facility in polar region with insurance implications — in scope"

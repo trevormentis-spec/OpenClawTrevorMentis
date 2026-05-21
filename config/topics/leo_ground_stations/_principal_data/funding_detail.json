@@ -1,0 +1,115 @@
+[
+  {
+    "Company": "Leaf Space",
+    "Round": "Seed",
+    "Date": "2016",
+    "Amount ($M)": 0.5,
+    "Lead Investor(s)": "RedSeed Ventures",
+    "Purpose": "Initial ground station development"
+  },
+  {
+    "Company": "Leaf Space",
+    "Round": "Series A",
+    "Date": "Jan 2021",
+    "Amount ($M)": 5.5,
+    "Lead Investor(s)": "Whysol Investments",
+    "Other Investors": "Primo Space, RedSeed Ventures",
+    "Purpose": "Scale from 8 to 11 stations. US market entry."
+  },
+  {
+    "Company": "Leaf Space",
+    "Round": "Series B",
+    "Date": "Jul 2023",
+    "Amount ($M)": 22,
+    "Lead Investor(s)": "CDP Venture Capital (Fondo Evoluzione), Neva SGR",
+    "Other Investors": "SIMEST, Digital Transition Fund (CDP), RedSeed, Primo Space, Whysol",
+    "Purpose": "Expand to 20+ locations. New frequencies for remote sensing."
+  },
+  {
+    "Company": "Leaf Space",
+    "Round": "Venture Debt",
+    "Date": "Jul 2023",
+    "Amount ($M)": 16.5,
+    "Lead Investor(s)": "European Investment Bank",
+    "Purpose": "Infrastructure deployment capital."
+  },
+  {
+    "Company": "Skynopy",
+    "Round": "Pre-Seed",
+    "Date": "Jun 2024",
+    "Amount ($M)": 3.1,
+    "Lead Investor(s)": "Heartcore Capital",
+    "Other Investors": "BPI France, Kima Ventures, Better Angle",
+    "Purpose": "Break into GSaaS market. Initial partner onboarding."
+  },
+  {
+    "Company": "Skynopy",
+    "Round": "Seed/Series A",
+    "Date": "Jun 2025",
+    "Amount ($M)": 17.6,
+    "Lead Investor(s)": "Alven Capital Partners",
+    "Other Investors": "Expansion, Omnes, CNES (SpaceFounders), Heartcore",
+    "Purpose": "Deploy 100+ antenna network. Build Saint-Pierre and R\u00e9union own-sites. AKAR project."
+  },
+  {
+    "Company": "Atlas Space Ops",
+    "Round": "Series A/B",
+    "Date": "Various",
+    "Lead Investor(s)": "Michigan Capital Network, Beringea",
+    "Other Investors": "Wakestream Ventures, Boomerang Catapult",
+    "Purpose": "Network buildout. Freedom\u00ae software development."
+  },
+  {
+    "Company": "Atlas Space Ops",
+    "Round": "Growth",
+    "Date": "Sep 2024",
+    "Amount ($M)": 15,
+    "Lead Investor(s)": "NewSpace Capital",
+    "Other Investors": "Michigan Rise, Red Cedar Ventures",
+    "Purpose": "Scale operations. EMEA expansion."
+  },
+  {
+    "Company": "RBC Signals",
+    "Round": "Seed (multiple)",
+    "Date": "2019-2021",
+    "Amount ($M)": 3.2,
+    "Lead Investor(s)": "Bee Partners",
+    "Other Investors": "Freerun Ventures, Morgan Brook Capital, Dcode, Abstract Ventures",
+    "Purpose": "Platform development. Initial aggregation network."
+  },
+  {
+    "Company": "RBC Signals",
+    "Round": "Asset Acquisition",
+    "Date": "Mar 2025",
+    "Lead Investor(s)": "N/A (Microsoft)",
+    "Other Investors": "Space Leasing International",
+    "Purpose": "Acquired 10 x 6m S/X band tracking antennas from Azure Orbital."
+  },
+  {
+    "Company": "Infostellar",
+    "Round": "Seed",
+    "Date": "Sep 2017",
+    "Amount ($M)": 7.3,
+    "Lead Investor(s)": "Multiple",
+    "Other Investors": "Airbus Ventures, Sony Innovation Fund",
+    "Purpose": "StellarStation platform development."
+  },
+  {
+    "Company": "Infostellar",
+    "Round": "Bridge",
+    "Date": "Apr 2020",
+    "Amount ($M)": 3.5,
+    "Lead Investor(s)": "Existing investors",
+    "Other Investors": "Mitsubishi UFJ Capital, Daiwa Energy Infrastructure",
+    "Purpose": "Sales scale-up during COVID."
+  },
+  {
+    "Company": "Infostellar",
+    "Round": "Series B",
+    "Date": "Jan 2022",
+    "Amount ($M)": 4.3,
+    "Lead Investor(s)": "Pavilion Capital Partners",
+    "Other Investors": "Mitsubishi Corporation, Mizuho Capital, ITOCHU",
+    "Purpose": "Business expansion. Additional ground stations."
+  }
+]

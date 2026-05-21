@@ -9,8 +9,19 @@
     "memory_hygiene": 1779216600,
     "openrouter_usage": 1779216600,
     "brain_index": 1779216600,
-    "social_monitor": 1777660000
+    "social_monitor": 1777660000,
+    "phase_d": 1779195720,
+    "cost_snapshot": 1779195720,
+    "memory_maintenance": 1779195720
   },
-  "lastHeartbeat": 1777660000,
-  "rotationCursor": 2
+  "lastHeartbeat": 1779195720,
+  "rotationCursor": 3,
+  "alerts": [
+    {
+      "id": "deepseek_401",
+      "date": "2026-05-21",
+      "phase": "D",
+      "msg": "DeepSeek balance monitor returned 401 - API key may need rotation"
+    }
+  ]
 }

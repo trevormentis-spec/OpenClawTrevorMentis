@@ -22,12 +22,15 @@ from typing import Optional
 
 # Ensure workspace root is on sys.path for analyst/ imports
 _ws = pathlib.Path(__file__).resolve().parent.parent.parent
-if str(_ws) not in sys.path:
+_ws_path = str(_ws)
+if _ws_path not in sys.path:
+    sys.path.insert(0, _ws_path)
 
 WORKSPACE = pathlib.Path("/home/ubuntu/.openclaw/workspace")
 ENV_PATH = WORKSPACE / ".env"
 
 # Keys that should NEVER be loaded here — they must go through analyst/llm_clients/
+# Only actual LLM model providers. TTS, image gen, maps are NOT LLMs.
 LLM_GATE_KEYS = frozenset({
     "OPENROUTER_API_KEY",
     "DEEPSEEK_API_KEY",
@@ -35,10 +38,11 @@ LLM_GATE_KEYS = frozenset({
 })
 
 # Keys that ARE safe to load here (non-LLM services)
+# ElevenLabs is TTS, not an LLM — safe to load here
 SAFE_KEYS = frozenset({
     "GENVIRAL_API_KEY",
     "MAPBOX_TOKEN",
-    "ELEVENLABS_API_KEY",  # TTS is not an LLM call
+    "ELEVENLABS_API_KEY",
     "AGENTMAIL_API_KEY",
     "GITHUB_TOKEN",
 })

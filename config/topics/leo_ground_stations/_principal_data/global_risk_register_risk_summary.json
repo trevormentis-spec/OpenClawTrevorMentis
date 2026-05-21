@@ -1,0 +1,132 @@
+[
+  {
+    "Risk Rating": "Negligible",
+    "Count": 13,
+    "% of Total": 0.1625
+  },
+  {
+    "Risk Rating": "Low",
+    "Count": 27,
+    "% of Total": 0.3375
+  },
+  {
+    "Risk Rating": "Moderate",
+    "Count": 34,
+    "% of Total": 0.425
+  },
+  {
+    "Risk Rating": "High",
+    "Count": 6,
+    "% of Total": 0.075
+  },
+  {
+    "Risk Rating": "Critical",
+    "Count": 0,
+    "% of Total": 0
+  },
+  {
+    "Risk Rating": "TOTAL",
+    "Count": 80
+  },
+  {
+    "Risk Rating": "By Operator"
+  },
+  {
+    "Risk Rating": "Operator",
+    "Count": "Sites",
+    "% of Total": "Avg Score"
+  },
+  {
+    "Risk Rating": "KSAT",
+    "Count": 15,
+    "% of Total": 2.02
+  },
+  {
+    "Risk Rating": "Kuiper",
+    "Count": 5,
+    "% of Total": 1.53
+  },
+  {
+    "Risk Rating": "Leaf Space",
+    "Count": 9,
+    "% of Total": 2.07
+  },
+  {
+    "Risk Rating": "OneWeb",
+    "Count": 10,
+    "% of Total": 2.2
+  },
+  {
+    "Risk Rating": "Starlink",
+    "Count": 38,
+    "% of Total": 2.13
+  },
+  {
+    "Risk Rating": "Telesat",
+    "Count": 3,
+    "% of Total": 2.5
+  },
+  {
+    "Risk Rating": "By Region"
+  },
+  {
+    "Risk Rating": "Region",
+    "Count": "Sites"
+  },
+  {
+    "Risk Rating": "N. America",
+    "Count": 26
+  },
+  {
+    "Risk Rating": "Europe",
+    "Count": 18
+  },
+  {
+    "Risk Rating": "Asia",
+    "Count": 8
+  },
+  {
+    "Risk Rating": "Oceania",
+    "Count": 7
+  },
+  {
+    "Risk Rating": "S. America",
+    "Count": 6
+  },
+  {
+    "Risk Rating": "Africa",
+    "Count": 5
+  },
+  {
+    "Risk Rating": "Pacific",
+    "Count": 2
+  },
+  {
+    "Risk Rating": "Arctic",
+    "Count": 2
+  },
+  {
+    "Risk Rating": "Caribbean",
+    "Count": 1
+  },
+  {
+    "Risk Rating": "Central Asia",
+    "Count": 1
+  },
+  {
+    "Risk Rating": "Polar",
+    "Count": 1
+  },
+  {
+    "Risk Rating": "Middle East",
+    "Count": 1
+  },
+  {
+    "Risk Rating": "Indian Ocean",
+    "Count": 1
+  },
+  {
+    "Risk Rating": "Atlantic",
+    "Count": 1
+  }
+]

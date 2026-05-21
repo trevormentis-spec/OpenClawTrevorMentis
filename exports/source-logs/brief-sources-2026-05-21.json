@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-21",
+  "source_count": 14,
+  "sources": [
+    "Al Jazeera \u2014 Middle East coverage",
+    "Associated Press \u2014 wire service",
+    "BBC Monitoring \u2014 global media monitoring",
+    "EIA \u2014 energy data",
+    "Gmail inbox (ISW, CTP, Cipher Brief, Foreign Policy newsletters)",
+    "ISW/Critical Threats Project \u2014 daily Iran update",
+    "OpenWeb API collection (spec-based scraping)",
+    "Regional analysis: Asia",
+    "Regional analysis: Europe",
+    "Regional analysis: Global Finance & Markets",
+    "Regional analysis: Middle East",
+    "Regional analysis: North America",
+    "Regional analysis: South & Central America",
+    "Reuters \u2014 wire service"
+  ],
+  "generated_at": "2026-05-21T12:14:54.849783+00:00"
+}

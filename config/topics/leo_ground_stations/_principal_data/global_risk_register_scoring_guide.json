@@ -1,0 +1,65 @@
+[
+  {
+    "Dimension": "Geopolitical Stability",
+    "Weight": "20%",
+    "Score 1": "Stable NATO/EU/Five Eyes",
+    "Score 2": "Stable democracy, minor tensions",
+    "Score 3": "Emerging market, moderate instability",
+    "Score 4": "Significant instability, regional conflict",
+    "Score 5": "Active conflict zone or failed state"
+  },
+  {
+    "Dimension": "Local Crime Environment",
+    "Weight": "15%",
+    "Score 1": "Very low crime rates",
+    "Score 2": "Low crime, minimal organised crime",
+    "Score 3": "Moderate crime, some organised presence",
+    "Score 4": "High crime rates, active organised crime",
+    "Score 5": "Extreme crime, ungoverned areas"
+  },
+  {
+    "Dimension": "Protest / Activism Risk",
+    "Weight": "10%",
+    "Score 1": "No history of targeting comms",
+    "Score 2": "Rare, low-impact protest",
+    "Score 3": "Periodic protest, anti-tech sentiment",
+    "Score 4": "Regular targeting of tech/comms sites",
+    "Score 5": "Active sustained campaign against operator"
+  },
+  {
+    "Dimension": "Natural Hazard Exposure",
+    "Weight": "15%",
+    "Score 1": "Minimal hazard risk",
+    "Score 2": "Single low-probability hazard",
+    "Score 3": "Moderate (e.g. seismic zone)",
+    "Score 4": "High exposure, multiple hazards",
+    "Score 5": "Extreme multi-hazard environment"
+  },
+  {
+    "Dimension": "Site Isolation / Remoteness",
+    "Weight": "15%",
+    "Score 1": "Urban, <5min LE response",
+    "Score 2": "Suburban, <15min LE response",
+    "Score 3": "Rural, 15-30min LE response",
+    "Score 4": "Remote, 30-60min LE response",
+    "Score 5": "Extremely remote, >60min or none"
+  },
+  {
+    "Dimension": "Security Posture",
+    "Weight": "15%",
+    "Score 1": "Hardened, 24/7 guarding, full CCTV",
+    "Score 2": "Good perimeter, access control, CCTV",
+    "Score 3": "Basic fencing and cameras",
+    "Score 4": "Minimal controls, limited monitoring",
+    "Score 5": "No observable security measures"
+  },
+  {
+    "Dimension": "Strategic Value",
+    "Weight": "10%",
+    "Score 1": "High redundancy, many alternatives",
+    "Score 2": "Good redundancy, backup coverage",
+    "Score 3": "Moderate criticality, some redundancy",
+    "Score 4": "High criticality, limited alternatives",
+    "Score 5": "Single point of failure / TT&C"
+  }
+]

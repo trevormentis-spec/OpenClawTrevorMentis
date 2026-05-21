@@ -743,8 +743,8 @@ def main() -> int:
     # Tiered model routing: cheap model for regional data synthesis, frontier for strategy
     tier1_model = args.model       # e.g., anthropic/claude-opus-4.7 — exec summary + red team
     tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-pro — regional analysis
-    # Tier-2 ALWAYS uses DeepSeek Direct API (never route DeepSeek through OpenRouter)
-    tier2_provider = "deepseek"
+    # Tier-2 provider follows the --provider flag (override from deepseek-only in v2)
+    tier2_provider = args.provider
     log(f"Tiered routing: 6 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "
         f"exec+redteam → {tier1_model.split('/')[-1]} (tier-1 via {args.provider})")
 

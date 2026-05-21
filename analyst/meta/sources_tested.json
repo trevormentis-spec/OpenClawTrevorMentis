@@ -1,0 +1,4719 @@
+{
+  "total_entries": 257,
+  "working_feeds": 161,
+  "failed_feeds": 98,
+  "generated_at": "2026-05-21T17:00:00Z",
+  "regions_breakdown": {
+    "global": 104,
+    "europe": 17,
+    "middle_east": 8,
+    "asia": 8,
+    "africa": 4,
+    "south_central_america": 4,
+    "global_finance": 10,
+    "north_america": 6
+  },
+  "types_breakdown": {
+    "wire_service": 18,
+    "newspaper": 17,
+    "financial": 5,
+    "news": 15,
+    "magazine": 2,
+    "think_tank": 11,
+    "cyber": 10,
+    "space": 6,
+    "tech": 5,
+    "science": 3,
+    "gov": 1,
+    "maritime": 2,
+    "defense": 5,
+    "intel": 1,
+    "energy": 2,
+    "osint": 2,
+    "watchdog": 1,
+    "substack": 55
+  },
+  "sources": [
+    {
+      "name": "BBC World News",
+      "shortname": "BBC World",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 40
+    },
+    {
+      "name": "BBC Top Stories",
+      "shortname": "BBC Top",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/rss.xml",
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 37
+    },
+    {
+      "name": "BBC Europe",
+      "shortname": "BBC EU",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+      "region": "europe",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 23
+    },
+    {
+      "name": "BBC Middle East",
+      "shortname": "BBC ME",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "region": "middle_east",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 28
+    },
+    {
+      "name": "BBC Asia",
+      "shortname": "BBC Asia",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "region": "asia",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 17
+    },
+    {
+      "name": "BBC Africa",
+      "shortname": "BBC Africa",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+      "region": "africa",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 27
+    },
+    {
+      "name": "BBC Latin America",
+      "shortname": "BBC LA",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+      "region": "south_central_america",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 18
+    },
+    {
+      "name": "BBC Business",
+      "shortname": "BBC Biz",
+      "type": "wire_service",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "rss": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "region": "global_finance",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 49
+    },
+    {
+      "name": "Al Jazeera All",
+      "shortname": "AJ All",
+      "type": "wire_service",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "rss": "https://www.aljazeera.com/xml/rss/all.xml",
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "Al Jazeera Middle East",
+      "shortname": "AJ ME",
+      "type": "wire_service",
+      "url": "https://www.aljazeera.com/xml/rss/middle-east.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Guardian World",
+      "shortname": "Guardian",
+      "type": "newspaper",
+      "url": "https://www.theguardian.com/world/rss",
+      "rss": "https://www.theguardian.com/world/rss",
+      "region": "global",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 45
+    },
+    {
+      "name": "The Guardian UK",
+      "shortname": "Guardian UK",
+      "type": "newspaper",
+      "url": "https://www.theguardian.com/uk/rss",
+      "rss": "https://www.theguardian.com/uk/rss",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 139
+    },
+    {
+      "name": "The Guardian Business",
+      "shortname": "Guardian Biz",
+      "type": "newspaper",
+      "url": "https://www.theguardian.com/business/rss",
+      "rss": "https://www.theguardian.com/business/rss",
+      "region": "global_finance",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "NPR World",
+      "shortname": "NPR World",
+      "type": "wire_service",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "rss": "https://feeds.npr.org/1004/rss.xml",
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "France 24 EN",
+      "shortname": "F24 EN",
+      "type": "wire_service",
+      "url": "https://www.france24.com/en/rss",
+      "rss": "https://www.france24.com/en/rss",
+      "region": "europe",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 23
+    },
+    {
+      "name": "France 24 Middle East",
+      "shortname": "F24 ME",
+      "type": "wire_service",
+      "url": "https://www.france24.com/en/middle-east/rss",
+      "rss": "https://www.france24.com/en/middle-east/rss",
+      "region": "middle_east",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 29
+    },
+    {
+      "name": "DW World",
+      "shortname": "DW World",
+      "type": "wire_service",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "rss": "https://rss.dw.com/rdf/rss-en-world",
+      "region": "europe",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 11
+    },
+    {
+      "name": "Sky News World",
+      "shortname": "Sky News",
+      "type": "wire_service",
+      "url": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "rss": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 6
+    },
+    {
+      "name": "ABC News (AU)",
+      "shortname": "ABC AU",
+      "type": "wire_service",
+      "url": "https://www.abc.net.au/news/feed/46078/rss.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "CNBC Top News",
+      "shortname": "CNBC Top",
+      "type": "financial",
+      "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362",
+      "rss": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362",
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "CBC Top Stories",
+      "shortname": "CBC Top",
+      "type": "wire_service",
+      "url": "https://www.cbc.ca/cmlink/rss-topstories",
+      "rss": "https://www.cbc.ca/cmlink/rss-topstories",
+      "region": "north_america",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "CBC World",
+      "shortname": "CBC World",
+      "type": "wire_service",
+      "url": "https://www.cbc.ca/cmlink/rss-world",
+      "rss": "https://www.cbc.ca/cmlink/rss-world",
+      "region": "north_america",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "NYT World",
+      "shortname": "NYT World",
+      "type": "newspaper",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "rss": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "region": "global",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 53
+    },
+    {
+      "name": "NYT Home Page",
+      "shortname": "NYT Home",
+      "type": "newspaper",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "rss": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "region": "global",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 33
+    },
+    {
+      "name": "Reuters Top News",
+      "shortname": "Reuters",
+      "type": "wire_service",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v3/all/?outputType=xml&size=20",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "USA Today Top",
+      "shortname": "USA Today",
+      "type": "newspaper",
+      "url": "https://rssfeeds.usatoday.com/usatoday-NewsTopStories",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "EuroNews",
+      "shortname": "EuroNews",
+      "type": "news",
+      "url": "https://www.euronews.com/rss",
+      "rss": "https://www.euronews.com/rss",
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Gulf News",
+      "shortname": "Gulf News",
+      "type": "newspaper",
+      "url": "https://gulfnews.com/rss-feeds",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The National UAE",
+      "shortname": "Nat UAE",
+      "type": "newspaper",
+      "url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Arab News",
+      "shortname": "Arab News",
+      "type": "newspaper",
+      "url": "https://www.arabnews.com/rss.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Middle East Eye",
+      "shortname": "MEE",
+      "type": "news",
+      "url": "https://www.middleeasteye.net/rss",
+      "rss": "https://www.middleeasteye.net/rss",
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The New Arab",
+      "shortname": "New Arab",
+      "type": "news",
+      "url": "https://www.newarab.com/rss.xml",
+      "rss": "https://www.newarab.com/rss.xml",
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 93
+    },
+    {
+      "name": "Haaretz EN",
+      "shortname": "Haaretz",
+      "type": "newspaper",
+      "url": "https://www.haaretz.com/srv/haaretz-latest-news-xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Times of Israel",
+      "shortname": "ToI",
+      "type": "newspaper",
+      "url": "https://www.timesofisrael.com/feed/",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Jerusalem Post",
+      "shortname": "JPost",
+      "type": "newspaper",
+      "url": "https://www.jpost.com/Rss/RssFeedsHeadlines.aspx",
+      "rss": "https://www.jpost.com/Rss/RssFeedsHeadlines.aspx",
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "Al-Monitor",
+      "shortname": "Al-Monitor",
+      "type": "news",
+      "url": "https://www.al-monitor.com/rss/feeds",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Iran International",
+      "shortname": "Iran Intl",
+      "type": "news",
+      "url": "https://www.iranintl.com/en/rss.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Saudi Gazette",
+      "shortname": "S Gaz",
+      "type": "newspaper",
+      "url": "https://saudigazette.com.sa/rss",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Al Arabiya EN",
+      "shortname": "Arabiya EN",
+      "type": "news",
+      "url": "https://english.alarabiya.net/feed/rss2/en.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Asharq Al-Awsat EN",
+      "shortname": "Asharq EN",
+      "type": "newspaper",
+      "url": "https://english.aawsat.com/rss.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "i24 News EN",
+      "shortname": "i24",
+      "type": "news",
+      "url": "https://www.i24news.tv/en/rss",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Le Monde EN",
+      "shortname": "Le Monde EN",
+      "type": "newspaper",
+      "url": "https://www.lemonde.fr/en/rss/une.xml",
+      "rss": "https://www.lemonde.fr/en/rss/une.xml",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 18
+    },
+    {
+      "name": "El Pais EN",
+      "shortname": "El Pais EN",
+      "type": "newspaper",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Der Spiegel Intl",
+      "shortname": "Spiegel",
+      "type": "newspaper",
+      "url": "https://www.spiegel.de/international/index.rss",
+      "rss": "https://www.spiegel.de/international/index.rss",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Politico EU",
+      "shortname": "Politico EU",
+      "type": "news",
+      "url": "https://www.politico.eu/feed/",
+      "rss": "https://www.politico.eu/feed/",
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "EU Observer",
+      "shortname": "EU Obs",
+      "type": "news",
+      "url": "https://euobserver.com/rss.xml",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Local EU",
+      "shortname": "Local EU",
+      "type": "news",
+      "url": "https://feeds.thelocal.com/feeds/feeds/rss/en/all",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Corriere della Sera",
+      "shortname": "Corriere",
+      "type": "newspaper",
+      "url": "https://xml2.corriereobjects.it/rss/esteri.xml",
+      "rss": "https://xml2.corriereobjects.it/rss/esteri.xml",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 49
+    },
+    {
+      "name": "Moscow Times",
+      "shortname": "Moscow T",
+      "type": "newspaper",
+      "url": "https://www.themoscowtimes.com/rss/news",
+      "rss": "https://www.themoscowtimes.com/rss/news",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Meduza EN",
+      "shortname": "Meduza EN",
+      "type": "news",
+      "url": "https://meduza.io/rss/en/all",
+      "rss": "https://meduza.io/rss/en/all",
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "Meduza RU",
+      "shortname": "Meduza RU",
+      "type": "news",
+      "url": "https://meduza.io/rss/all",
+      "rss": "https://meduza.io/rss/all",
+      "region": "europe",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "TASS EN",
+      "shortname": "TASS",
+      "type": "wire_service",
+      "url": "https://tass.com/rss/v2.xml",
+      "rss": "https://tass.com/rss/v2.xml",
+      "region": "europe",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "Kommersant",
+      "shortname": "Kommersant",
+      "type": "newspaper",
+      "url": "https://www.kommersant.ru/RSS/main.xml",
+      "rss": "https://www.kommersant.ru/RSS/main.xml",
+      "region": "europe",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "FT World",
+      "shortname": "FT",
+      "type": "newspaper",
+      "url": "https://www.ft.com/world?format=rss",
+      "rss": "https://www.ft.com/world?format=rss",
+      "region": "global_finance",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "Nikkei Asia",
+      "shortname": "Nikkei",
+      "type": "newspaper",
+      "url": "https://asia.nikkei.com/rss/feed",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "SCMP",
+      "shortname": "SCMP",
+      "type": "newspaper",
+      "url": "https://www.scmp.com/rss/4/feed",
+      "rss": "https://www.scmp.com/rss/4/feed",
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Japan Times",
+      "shortname": "JT",
+      "type": "newspaper",
+      "url": "https://www.japantimes.co.jp/feed/top",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Hindu",
+      "shortname": "Hindu",
+      "type": "newspaper",
+      "url": "https://www.thehindu.com/news/feeder/default.rss",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Korea Herald",
+      "shortname": "Korea Herald",
+      "type": "newspaper",
+      "url": "http://www.koreaherald.com/rssxml/HeraldNews.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "CNA Singapore",
+      "shortname": "CNA",
+      "type": "news",
+      "url": "https://www.channelnewsasia.com/rssfeeds/8395986",
+      "rss": "https://www.channelnewsasia.com/rssfeeds/8395986",
+      "region": "asia",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "China Daily World",
+      "shortname": "China Daily",
+      "type": "newspaper",
+      "url": "https://www.chinadaily.com.cn/rss/world_rss.xml",
+      "rss": "https://www.chinadaily.com.cn/rss/world_rss.xml",
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "Global Times",
+      "shortname": "Global T",
+      "type": "newspaper",
+      "url": "https://www.globaltimes.cn/rss",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Xinhua World",
+      "shortname": "Xinhua",
+      "type": "wire_service",
+      "url": "http://www.xinhuanet.com/english/rss/worldrss.xml",
+      "rss": "http://www.xinhuanet.com/english/rss/worldrss.xml",
+      "region": "asia",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "3",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Times of India",
+      "shortname": "TOI",
+      "type": "newspaper",
+      "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+      "rss": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Diplomat",
+      "shortname": "Diplomat",
+      "type": "magazine",
+      "url": "https://thediplomat.com/feed/",
+      "rss": "https://thediplomat.com/feed/",
+      "region": "asia",
+      "themes": [
+        "magazine"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 96
+    },
+    {
+      "name": "NHK World",
+      "shortname": "NHK",
+      "type": "wire_service",
+      "url": "https://www3.nhk.or.jp/nhkworld/rss/world.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "wire_service"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Straits Times",
+      "shortname": "Straits T",
+      "type": "newspaper",
+      "url": "https://www.straitstimes.com/news/asia/rss.xml",
+      "rss": "https://www.straitstimes.com/news/asia/rss.xml",
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Dawn Pakistan",
+      "shortname": "Dawn",
+      "type": "newspaper",
+      "url": "https://www.dawn.com/feeds/feeds/rss.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "allAfrica",
+      "shortname": "allAfrica",
+      "type": "aggregator",
+      "url": "https://allafrica.com/tools/headlines/rss/latest/headlines.rdf",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "aggregator"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Africanews",
+      "shortname": "Africanews",
+      "type": "news",
+      "url": "https://www.africanews.com/feed/",
+      "rss": "https://www.africanews.com/feed/",
+      "region": "africa",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Daily Maverick",
+      "shortname": "Maverick",
+      "type": "newspaper",
+      "url": "https://www.dailymaverick.co.za/feed/",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The East African",
+      "shortname": "E African",
+      "type": "newspaper",
+      "url": "https://www.theeastafrican.co.ke/rss/",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "African Arguments",
+      "shortname": "Afr Arg",
+      "type": "news",
+      "url": "https://africanarguments.org/feed/",
+      "rss": "https://africanarguments.org/feed/",
+      "region": "africa",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "The Africa Report",
+      "shortname": "Afr Report",
+      "type": "news",
+      "url": "https://www.theafricareport.com/feed/",
+      "rss": "https://www.theafricareport.com/feed/",
+      "region": "africa",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "ISS Africa",
+      "shortname": "ISS Africa",
+      "type": "think_tank",
+      "url": "https://issafrica.org/feed/",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Buenos Aires Times",
+      "shortname": "BA Times",
+      "type": "newspaper",
+      "url": "https://www.batimes.com.ar/feed",
+      "rss": "https://www.batimes.com.ar/feed",
+      "region": "south_central_america",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "MercoPress",
+      "shortname": "MercoPress",
+      "type": "news",
+      "url": "https://en.mercopress.com/rss.xml",
+      "rss": null,
+      "region": "south_central_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Americas Quarterly",
+      "shortname": "Am Q",
+      "type": "magazine",
+      "url": "https://americasquarterly.org/feed/",
+      "rss": "https://americasquarterly.org/feed/",
+      "region": "south_central_america",
+      "themes": [
+        "magazine"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Dialogo Americas",
+      "shortname": "Dialogo",
+      "type": "news",
+      "url": "https://dialogo-americas.com/feed/",
+      "rss": "https://dialogo-americas.com/feed/",
+      "region": "south_central_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "CSIS Analysis",
+      "shortname": "CSIS",
+      "type": "think_tank",
+      "url": "https://www.csis.org/rss/analysis.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "CFR",
+      "shortname": "CFR",
+      "type": "think_tank",
+      "url": "https://www.cfr.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Chatham House",
+      "shortname": "Chatham",
+      "type": "think_tank",
+      "url": "https://www.chathamhouse.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "RUSI",
+      "shortname": "RUSI",
+      "type": "think_tank",
+      "url": "https://rusi.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Carnegie Endowment",
+      "shortname": "Carnegie",
+      "type": "think_tank",
+      "url": "https://carnegieendowment.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Brookings",
+      "shortname": "Brookings",
+      "type": "think_tank",
+      "url": "https://www.brookings.edu/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "AEI",
+      "shortname": "AEI",
+      "type": "think_tank",
+      "url": "https://www.aei.org/rss/all/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Atlantic Council",
+      "shortname": "Atl Council",
+      "type": "think_tank",
+      "url": "https://www.atlanticcouncil.org/feed/",
+      "rss": "https://www.atlanticcouncil.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "Wilson Center",
+      "shortname": "Wilson",
+      "type": "think_tank",
+      "url": "https://www.wilsoncenter.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "MEI",
+      "shortname": "MEI",
+      "type": "think_tank",
+      "url": "https://www.mei.edu/rss.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Hudson Institute",
+      "shortname": "Hudson",
+      "type": "think_tank",
+      "url": "https://www.hudson.org/rss.xml",
+      "rss": "https://www.hudson.org/rss.xml",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "RAND Corp",
+      "shortname": "RAND",
+      "type": "think_tank",
+      "url": "https://www.rand.org/rss/rand.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "ISW/UnderstandingWar",
+      "shortname": "ISW",
+      "type": "think_tank",
+      "url": "https://www.understandingwar.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "IISS",
+      "shortname": "IISS",
+      "type": "think_tank",
+      "url": "https://www.iiss.org/rss/press.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Quincy Institute",
+      "shortname": "Quincy",
+      "type": "think_tank",
+      "url": "https://quincyinst.org/feed/",
+      "rss": "https://quincyinst.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Stimson Center",
+      "shortname": "Stimson",
+      "type": "think_tank",
+      "url": "https://www.stimson.org/feed/",
+      "rss": "https://www.stimson.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 12
+    },
+    {
+      "name": "FPRI",
+      "shortname": "FPRI",
+      "type": "think_tank",
+      "url": "https://www.fpri.org/feed/",
+      "rss": "https://www.fpri.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Cato Institute",
+      "shortname": "Cato",
+      "type": "think_tank",
+      "url": "https://www.cato.org/rss/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Heritage Foundation",
+      "shortname": "Heritage",
+      "type": "think_tank",
+      "url": "https://www.heritage.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Washington Institute",
+      "shortname": "Wash Inst",
+      "type": "think_tank",
+      "url": "https://www.washingtoninstitute.org/rss.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "INSS Israel",
+      "shortname": "INSS",
+      "type": "think_tank",
+      "url": "https://www.inss.org.il/feed/",
+      "rss": "https://www.inss.org.il/feed/",
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 1
+    },
+    {
+      "name": "CNAS",
+      "shortname": "CNAS",
+      "type": "think_tank",
+      "url": "https://www.cnas.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "CSBA",
+      "shortname": "CSBA",
+      "type": "think_tank",
+      "url": "https://csbaonline.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Soufan Center",
+      "shortname": "Soufan",
+      "type": "think_tank",
+      "url": "https://thesoufancenter.org/feed/",
+      "rss": "https://thesoufancenter.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "ECFR",
+      "shortname": "ECFR",
+      "type": "think_tank",
+      "url": "https://ecfr.eu/feed/",
+      "rss": "https://ecfr.eu/feed/",
+      "region": "europe",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "Crisis Group Latest",
+      "shortname": "Crisis G",
+      "type": "think_tank",
+      "url": "https://www.crisisgroup.org/rss/latest.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Crisis Group Africa",
+      "shortname": "Crisis Afr",
+      "type": "think_tank",
+      "url": "https://www.crisisgroup.org/rss/africa.xml",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Crisis Group Asia",
+      "shortname": "Crisis Asia",
+      "type": "think_tank",
+      "url": "https://www.crisisgroup.org/rss/asia.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Crisis Group ME",
+      "shortname": "Crisis ME",
+      "type": "think_tank",
+      "url": "https://www.crisisgroup.org/rss/middle-east-north-africa.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Crisis Group Europe",
+      "shortname": "Crisis EU",
+      "type": "think_tank",
+      "url": "https://www.crisisgroup.org/rss/europe-central-asia.xml",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Jamestown Foundation",
+      "shortname": "Jamestown",
+      "type": "think_tank",
+      "url": "https://jamestown.org/feed/",
+      "rss": "https://jamestown.org/feed/",
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "ACLED",
+      "shortname": "ACLED",
+      "type": "conflict_data",
+      "url": "https://acleddata.com/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "conflict_data"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "ORF Online",
+      "shortname": "ORF",
+      "type": "think_tank",
+      "url": "https://www.orfonline.org/feed/",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "East Asia Forum",
+      "shortname": "E Asia F",
+      "type": "think_tank",
+      "url": "https://eastasiaforum.org/feed/",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "SIPRI",
+      "shortname": "SIPRI",
+      "type": "think_tank",
+      "url": "https://www.sipri.org/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Alma Research",
+      "shortname": "Alma",
+      "type": "think_tank",
+      "url": "https://israel-alma.org/feed/",
+      "rss": "https://israel-alma.org/feed/",
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 8
+    },
+    {
+      "name": "BESA Center",
+      "shortname": "BESA",
+      "type": "think_tank",
+      "url": "https://besacenter.org/feed/",
+      "rss": "https://besacenter.org/feed/",
+      "region": "middle_east",
+      "themes": [
+        "think_tank"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Recorded Future",
+      "shortname": "Rec Future",
+      "type": "cyber",
+      "url": "https://www.recordedfuture.com/feed/",
+      "rss": "https://www.recordedfuture.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Unit 42",
+      "shortname": "Unit 42",
+      "type": "cyber",
+      "url": "https://unit42.paloaltonetworks.com/feed/",
+      "rss": "https://unit42.paloaltonetworks.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 15
+    },
+    {
+      "name": "Krebs on Security",
+      "shortname": "Krebs",
+      "type": "cyber",
+      "url": "https://krebsonsecurity.com/feed/",
+      "rss": "https://krebsonsecurity.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Bleeping Computer",
+      "shortname": "BleepComp",
+      "type": "cyber",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "rss": "https://www.bleepingcomputer.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 15
+    },
+    {
+      "name": "The Hacker News",
+      "shortname": "THN",
+      "type": "cyber",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "rss": "https://feeds.feedburner.com/TheHackersNews",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "SANS ISC",
+      "shortname": "SANS ISC",
+      "type": "cyber",
+      "url": "https://isc.sans.edu/dailypage.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Talos Intel",
+      "shortname": "Talos",
+      "type": "cyber",
+      "url": "https://blog.talosintelligence.com/feed/",
+      "rss": "https://blog.talosintelligence.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 15
+    },
+    {
+      "name": "Mandiant",
+      "shortname": "Mandiant",
+      "type": "cyber",
+      "url": "https://www.mandiant.com/resources/blog/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Dark Reading",
+      "shortname": "Dark Read",
+      "type": "cyber",
+      "url": "https://www.darkreading.com/rss.xml",
+      "rss": "https://www.darkreading.com/rss.xml",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "Threatpost",
+      "shortname": "Threatpost",
+      "type": "cyber",
+      "url": "https://threatpost.com/feed/",
+      "rss": "https://threatpost.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "SecurityWeek",
+      "shortname": "SecWeek",
+      "type": "cyber",
+      "url": "https://www.securityweek.com/feed/",
+      "rss": "https://www.securityweek.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "CyberScoop",
+      "shortname": "CyberScoop",
+      "type": "cyber",
+      "url": "https://cyberscoop.com/feed/",
+      "rss": "https://cyberscoop.com/feed/",
+      "region": "global",
+      "themes": [
+        "cyber"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "CISA Alerts",
+      "shortname": "CISA",
+      "type": "cyber_gov",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/alerts.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "cyber_gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "SpaceNews",
+      "shortname": "SpaceNews",
+      "type": "space",
+      "url": "https://spacenews.com/feed/",
+      "rss": "https://spacenews.com/feed/",
+      "region": "global",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 24
+    },
+    {
+      "name": "Ars Technica",
+      "shortname": "Ars Tech",
+      "type": "tech",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "rss": "https://feeds.arstechnica.com/arstechnica/index",
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "TechCrunch",
+      "shortname": "TechCrunch",
+      "type": "tech",
+      "url": "https://techcrunch.com/feed/",
+      "rss": "https://techcrunch.com/feed/",
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "IEEE Spectrum",
+      "shortname": "IEEE",
+      "type": "tech",
+      "url": "https://spectrum.ieee.org/rss/fulltext.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "NASA Breaking News",
+      "shortname": "NASA",
+      "type": "space",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "rss": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "region": "global",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "ESA Activities",
+      "shortname": "ESA",
+      "type": "space",
+      "url": "https://www.esa.int/rssfeed/Our_Activities",
+      "rss": "https://www.esa.int/rssfeed/Our_Activities",
+      "region": "europe",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 9
+    },
+    {
+      "name": "Payload Space",
+      "shortname": "Payload",
+      "type": "space",
+      "url": "https://payloadspace.com/feed/",
+      "rss": "https://payloadspace.com/feed/",
+      "region": "global",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 13
+    },
+    {
+      "name": "Via Satellite",
+      "shortname": "ViaSat",
+      "type": "space",
+      "url": "https://www.satellitetoday.com/feed/",
+      "rss": "https://www.satellitetoday.com/feed/",
+      "region": "global",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "SpaceWatch.Global",
+      "shortname": "SpaceWatch",
+      "type": "space",
+      "url": "https://spacewatch.global/feed/",
+      "rss": "https://spacewatch.global/feed/",
+      "region": "global",
+      "themes": [
+        "space"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Wired",
+      "shortname": "Wired",
+      "type": "tech",
+      "url": "https://www.wired.com/feed/rss",
+      "rss": "https://www.wired.com/feed/rss",
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 50
+    },
+    {
+      "name": "The Verge",
+      "shortname": "Verge",
+      "type": "tech",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "rss": "https://www.theverge.com/rss/index.xml",
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "MIT Tech Review",
+      "shortname": "MIT TR",
+      "type": "tech",
+      "url": "https://www.technologyreview.com/feed/",
+      "rss": "https://www.technologyreview.com/feed/",
+      "region": "global",
+      "themes": [
+        "tech"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Nature News",
+      "shortname": "Nature",
+      "type": "science",
+      "url": "https://feeds.nature.com/nature/rss/current",
+      "rss": "https://feeds.nature.com/nature/rss/current",
+      "region": "global",
+      "themes": [
+        "science"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 75
+    },
+    {
+      "name": "Science Daily",
+      "shortname": "Sci Daily",
+      "type": "science",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "rss": "https://www.sciencedaily.com/rss/all.xml",
+      "region": "global",
+      "themes": [
+        "science"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 60
+    },
+    {
+      "name": "New Scientist",
+      "shortname": "New Sci",
+      "type": "science",
+      "url": "https://www.newscientist.com/feed/home",
+      "rss": "https://www.newscientist.com/feed/home",
+      "region": "global",
+      "themes": [
+        "science"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "State Dept Press Briefings",
+      "shortname": "State Dept",
+      "type": "gov",
+      "url": "https://www.state.gov/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Pentagon News",
+      "shortname": "Pentagon",
+      "type": "gov",
+      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?Max=20&Site=945",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "EU Commission Press",
+      "shortname": "EU Press",
+      "type": "gov",
+      "url": "https://ec.europa.eu/commission/presscorner/rss/en",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "UN News",
+      "shortname": "UN News",
+      "type": "gov",
+      "url": "https://www.un.org/feeds/news/latest_news.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "IAEA Press Releases",
+      "shortname": "IAEA",
+      "type": "gov",
+      "url": "https://www.iaea.org/rss/press-releases.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "IEA News",
+      "shortname": "IEA",
+      "type": "gov",
+      "url": "https://www.iea.org/feeds/news.xml",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "OPEC Press Room",
+      "shortname": "OPEC",
+      "type": "gov",
+      "url": "https://www.opec.org/opec_web/en/rss/pressroom.xml",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "UK Gov News",
+      "shortname": "UK Gov",
+      "type": "gov",
+      "url": "https://www.gov.uk/government/feed",
+      "rss": "https://www.gov.uk/government/feed",
+      "region": "europe",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Canada Gov News",
+      "shortname": "Canada Gov",
+      "type": "gov",
+      "url": "https://www.canada.ca/en/news/rss.xml",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "NATO News",
+      "shortname": "NATO",
+      "type": "gov",
+      "url": "https://www.nato.int/rss/news.xml",
+      "rss": null,
+      "region": "europe",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "UNHCR Latest",
+      "shortname": "UNHCR",
+      "type": "gov",
+      "url": "https://www.unhcr.org/rss/latest.rss",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "WFP News",
+      "shortname": "WFP",
+      "type": "gov",
+      "url": "https://www.wfp.org/rss/news",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "MarketWatch Top",
+      "shortname": "MktWatch",
+      "type": "financial",
+      "url": "https://feeds.marketwatch.com/marketwatch/topstories/",
+      "rss": "https://feeds.marketwatch.com/marketwatch/topstories/",
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Bloomberg Markets",
+      "shortname": "Bloomberg",
+      "type": "financial",
+      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "rss": "https://feeds.bloomberg.com/markets/news.rss",
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "Trading Economics",
+      "shortname": "TradEcon",
+      "type": "financial",
+      "url": "https://feeds.tradingeconomics.com/rss/news.xml",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "FRED Blog",
+      "shortname": "FRED",
+      "type": "financial",
+      "url": "https://fredblog.stlouisfed.org/feed/",
+      "rss": "https://fredblog.stlouisfed.org/feed/",
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "EIA Today In Energy",
+      "shortname": "EIA",
+      "type": "gov",
+      "url": "https://www.eia.gov/todayinenergy/index.php?rss",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "EIA Weekly Petroleum",
+      "shortname": "EIA WPSR",
+      "type": "gov",
+      "url": "https://ir.eia.gov/wpsr/wpsrsummary.rss",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "gov"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "1",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "IMF Blog",
+      "shortname": "IMF",
+      "type": "financial",
+      "url": "https://www.imf.org/en/Blogs/RSS",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "World Bank News",
+      "shortname": "World Bank",
+      "type": "financial",
+      "url": "https://www.worldbank.org/en/news/rss",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "St. Louis Fed",
+      "shortname": "STL Fed",
+      "type": "financial",
+      "url": "https://www.stlouisfed.org/rss/",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Investing.com",
+      "shortname": "Investing",
+      "type": "financial",
+      "url": "https://www.investing.com/rss/news.rss",
+      "rss": "https://www.investing.com/rss/news.rss",
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "BIS News",
+      "shortname": "BIS",
+      "type": "financial",
+      "url": "https://www.bis.org/rss/feeds_news.rss",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "financial"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Maritime Executive",
+      "shortname": "MarExec",
+      "type": "maritime",
+      "url": "https://www.maritime-executive.com/rss.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Safety4Sea",
+      "shortname": "S4S",
+      "type": "maritime",
+      "url": "https://safety4sea.com/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "gCaptain",
+      "shortname": "gCaptain",
+      "type": "maritime",
+      "url": "https://gcaptain.com/feed/",
+      "rss": "https://gcaptain.com/feed/",
+      "region": "global",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 12
+    },
+    {
+      "name": "Marine Link",
+      "shortname": "MarineLink",
+      "type": "maritime",
+      "url": "https://www.marinelink.com/rss/news",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Hellenic Shipping News",
+      "shortname": "HellShip",
+      "type": "maritime",
+      "url": "https://www.hellenicshippingnews.com/feed/",
+      "rss": "https://www.hellenicshippingnews.com/feed/",
+      "region": "global",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Ship & Bunker",
+      "shortname": "ShipBunker",
+      "type": "maritime",
+      "url": "https://shipandbunker.com/rss/news",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "maritime"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "USNI News",
+      "shortname": "USNI",
+      "type": "defense",
+      "url": "https://news.usni.org/feed",
+      "rss": "https://news.usni.org/feed",
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "Breaking Defense",
+      "shortname": "BreakDef",
+      "type": "defense",
+      "url": "https://breakingdefense.com/feed/",
+      "rss": "https://breakingdefense.com/feed/",
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 15
+    },
+    {
+      "name": "Defense One",
+      "shortname": "DefOne",
+      "type": "defense",
+      "url": "https://www.defenseone.com/feed/",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "War on the Rocks",
+      "shortname": "WotR",
+      "type": "defense",
+      "url": "https://warontherocks.com/feed/",
+      "rss": "https://warontherocks.com/feed/",
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 100
+    },
+    {
+      "name": "The Drive War Zone",
+      "shortname": "War Zone",
+      "type": "defense",
+      "url": "https://www.thedrive.com/the-war-zone/rss",
+      "rss": "https://www.thedrive.com/the-war-zone/rss",
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 41
+    },
+    {
+      "name": "Naval News",
+      "shortname": "NavalNews",
+      "type": "defense",
+      "url": "https://www.navalnews.com/feed/",
+      "rss": "https://www.navalnews.com/feed/",
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "SOFREP",
+      "shortname": "SOFREP",
+      "type": "defense",
+      "url": "https://sofrep.com/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "defense"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Cipher Brief",
+      "shortname": "Cipher",
+      "type": "intel",
+      "url": "https://www.thecipherbrief.com/feed",
+      "rss": "https://www.thecipherbrief.com/feed",
+      "region": "global",
+      "themes": [
+        "intel"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "OilPrice.com",
+      "shortname": "OilPrice",
+      "type": "energy",
+      "url": "https://oilprice.com/rss/main",
+      "rss": "https://oilprice.com/rss/main",
+      "region": "global_finance",
+      "themes": [
+        "energy"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 15
+    },
+    {
+      "name": "Energy Voice",
+      "shortname": "EnergyV",
+      "type": "energy",
+      "url": "https://www.energyvoice.com/feed/",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "energy"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Rigzone",
+      "shortname": "Rigzone",
+      "type": "energy",
+      "url": "https://www.rigzone.com/news/rss/rigzone_latest.xml",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "energy"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Natural Gas World",
+      "shortname": "NGW",
+      "type": "energy",
+      "url": "https://www.naturalgasworld.com/rss",
+      "rss": "https://www.naturalgasworld.com/rss",
+      "region": "global_finance",
+      "themes": [
+        "energy"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Bellingcat",
+      "shortname": "Bellingcat",
+      "type": "osint",
+      "url": "https://www.bellingcat.com/feed/",
+      "rss": "https://www.bellingcat.com/feed/",
+      "region": "global",
+      "themes": [
+        "osint"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 10
+    },
+    {
+      "name": "Oryx Blog",
+      "shortname": "Oryx",
+      "type": "osint",
+      "url": "https://www.oryxspioenkop.com/feeds/posts/default",
+      "rss": "https://www.oryxspioenkop.com/feeds/posts/default",
+      "region": "global",
+      "themes": [
+        "osint"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "OSINT Combine",
+      "shortname": "OSINT Com",
+      "type": "osint",
+      "url": "https://www.osintcombine.com/feed/",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "osint"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "HRW Latest",
+      "shortname": "HRW",
+      "type": "watchdog",
+      "url": "https://www.hrw.org/rss/latest.xml",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "HRW Middle East",
+      "shortname": "HRW ME",
+      "type": "watchdog",
+      "url": "https://www.hrw.org/rss/middle-east.xml",
+      "rss": null,
+      "region": "middle_east",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "HRW Asia",
+      "shortname": "HRW Asia",
+      "type": "watchdog",
+      "url": "https://www.hrw.org/rss/asia.xml",
+      "rss": null,
+      "region": "asia",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "HRW Africa",
+      "shortname": "HRW Africa",
+      "type": "watchdog",
+      "url": "https://www.hrw.org/rss/africa.xml",
+      "rss": null,
+      "region": "africa",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Amnesty Intl",
+      "shortname": "Amnesty",
+      "type": "watchdog",
+      "url": "https://www.amnesty.org/en/rss/",
+      "rss": "https://www.amnesty.org/en/rss/",
+      "region": "global",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 12
+    },
+    {
+      "name": "Transparency Intl",
+      "shortname": "TI",
+      "type": "watchdog",
+      "url": "https://www.transparency.org/en/rss",
+      "rss": null,
+      "region": "global",
+      "themes": [
+        "watchdog"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Axios",
+      "shortname": "Axios",
+      "type": "news",
+      "url": "https://www.axios.com/feed/",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Politico US",
+      "shortname": "Politico US",
+      "type": "news",
+      "url": "https://www.politico.com/rss/politicopicks.xml",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Hill",
+      "shortname": "The Hill",
+      "type": "news",
+      "url": "https://thehill.com/rss/syndication/feed.xml",
+      "rss": null,
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "Newsweek",
+      "shortname": "Newsweek",
+      "type": "news",
+      "url": "https://www.newsweek.com/rss",
+      "rss": "https://www.newsweek.com/rss",
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "NBC News",
+      "shortname": "NBC",
+      "type": "news",
+      "url": "https://feeds.nbcnews.com/nbcnews/public/news",
+      "rss": "https://feeds.nbcnews.com/nbcnews/public/news",
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "ABC News US",
+      "shortname": "ABC US",
+      "type": "news",
+      "url": "https://abcnews.go.com/abcnews/topstories",
+      "rss": "https://abcnews.go.com/abcnews/topstories",
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 25
+    },
+    {
+      "name": "CBS News",
+      "shortname": "CBS",
+      "type": "news",
+      "url": "https://www.cbsnews.com/latest/rss/main",
+      "rss": "https://www.cbsnews.com/latest/rss/main",
+      "region": "north_america",
+      "themes": [
+        "news"
+      ],
+      "admiralty_source": "B",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 30
+    },
+    {
+      "name": "The Economist",
+      "shortname": "Economist",
+      "type": "newspaper",
+      "url": "https://www.economist.com/feeds/print-sections/77/business.xml",
+      "rss": null,
+      "region": "global_finance",
+      "themes": [
+        "newspaper"
+      ],
+      "admiralty_source": "A",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "feed_failed",
+      "fetched_sample": false,
+      "sample_entry_count": 0
+    },
+    {
+      "name": "The Hormuz Trap (Julian Alexander Brown)",
+      "shortname": "The Hormuz Trap (Julian Alexander B",
+      "type": "substack",
+      "url": "https://julianalexanderbrown.substack.com",
+      "rss": "https://julianalexanderbrown.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 18
+    },
+    {
+      "name": "HTSF (Paul Mason)",
+      "shortname": "HTSF (Paul Mason)",
+      "type": "substack",
+      "url": "https://htsf.substack.com",
+      "rss": "https://htsf.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Richard Haass Substack",
+      "shortname": "Richard Haass Substack",
+      "type": "substack",
+      "url": "https://richardhaass.substack.com",
+      "rss": "https://richardhaass.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "TheBoardWorld",
+      "shortname": "TheBoardWorld",
+      "type": "substack",
+      "url": "https://theboardworld.substack.com",
+      "rss": "https://theboardworld.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Omid SoureSrafil",
+      "shortname": "Omid SoureSrafil",
+      "type": "substack",
+      "url": "https://omidsouresrafil.substack.com",
+      "rss": "https://omidsouresrafil.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Paul Stewart II (Oil Markets)",
+      "shortname": "Paul Stewart II (Oil Markets)",
+      "type": "substack",
+      "url": "https://paulstewartii.substack.com",
+      "rss": "https://paulstewartii.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Ronald J. Botelho (Strategic Implications)",
+      "shortname": "Ronald J. Botelho (Strategic Implic",
+      "type": "substack",
+      "url": "https://ronaldjbotelho.substack.com",
+      "rss": "https://ronaldjbotelho.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Napoleon's Corporal (Substack)",
+      "shortname": "Napoleon's Corporal (Substack)",
+      "type": "substack",
+      "url": "https://napoleonscorporal.substack.com",
+      "rss": "https://napoleonscorporal.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Wajeeh Lion (Substack)",
+      "shortname": "Wajeeh Lion (Substack)",
+      "type": "substack",
+      "url": "https://wajeehlion.substack.com",
+      "rss": "https://wajeehlion.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Defence Affairs Magazine (Substack)",
+      "shortname": "Defence Affairs Magazine (Substack)",
+      "type": "substack",
+      "url": "https://defenceaffairs.substack.com",
+      "rss": "https://defenceaffairs.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "GeoPolitiQ (Ismaele) (Substack)",
+      "shortname": "GeoPolitiQ (Ismaele) (Substack)",
+      "type": "substack",
+      "url": "https://geopolitiq.substack.com",
+      "rss": "https://geopolitiq.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Firing Line (Substack)",
+      "shortname": "The Firing Line (Substack)",
+      "type": "substack",
+      "url": "https://thefiringline.substack.com",
+      "rss": "https://thefiringline.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Joe Cirincione - Strategy & History",
+      "shortname": "Joe Cirincione - Strategy & History",
+      "type": "substack",
+      "url": "https://joecirincione.substack.com",
+      "rss": "https://joecirincione.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Thotharis - Briefing Notes",
+      "shortname": "Thotharis - Briefing Notes",
+      "type": "substack",
+      "url": "https://thotharis.substack.com",
+      "rss": "https://thotharis.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Firebrand Project",
+      "shortname": "The Firebrand Project",
+      "type": "substack",
+      "url": "https://thefirebrandproject.substack.com",
+      "rss": "https://thefirebrandproject.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Kian - Iran Crisis Notebook",
+      "shortname": "Kian - Iran Crisis Notebook",
+      "type": "substack",
+      "url": "https://kian.substack.com",
+      "rss": "https://kian.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "James M. Dorsey - Geopolitics",
+      "shortname": "James M. Dorsey - Geopolitics",
+      "type": "substack",
+      "url": "https://jamesmdorsey.substack.com",
+      "rss": "https://jamesmdorsey.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Hutchinson G. - Fault Lines Daily",
+      "shortname": "Hutchinson G. - Fault Lines Daily",
+      "type": "substack",
+      "url": "https://hutchinsong.substack.com",
+      "rss": "https://hutchinsong.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Global Community Weekly",
+      "shortname": "Global Community Weekly",
+      "type": "substack",
+      "url": "https://globalcommunityweekly.substack.com",
+      "rss": "https://globalcommunityweekly.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Black Trust Fund Kids",
+      "shortname": "Black Trust Fund Kids",
+      "type": "substack",
+      "url": "https://blacktrustfundkids.substack.com",
+      "rss": "https://blacktrustfundkids.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Andrew Siegler",
+      "shortname": "Andrew Siegler",
+      "type": "substack",
+      "url": "https://andrewsiegler.substack.com",
+      "rss": "https://andrewsiegler.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "PR Insights",
+      "shortname": "PR Insights",
+      "type": "substack",
+      "url": "https://prinsights.substack.com",
+      "rss": "https://prinsights.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Pecos Crude Truth",
+      "shortname": "Pecos Crude Truth",
+      "type": "substack",
+      "url": "https://pecoscrudetruth.substack.com",
+      "rss": "https://pecoscrudetruth.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "David Lin Report",
+      "shortname": "David Lin Report",
+      "type": "substack",
+      "url": "https://davidlinreport.substack.com",
+      "rss": "https://davidlinreport.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Daniel Hynes - Commodities Wrap",
+      "shortname": "Daniel Hynes - Commodities Wrap",
+      "type": "substack",
+      "url": "https://danielhynes.substack.com",
+      "rss": "https://danielhynes.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Ecomodities - Asia Morning Brief",
+      "shortname": "Ecomodities - Asia Morning Brief",
+      "type": "substack",
+      "url": "https://ecomodities.substack.com",
+      "rss": "https://ecomodities.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Ares Investing",
+      "shortname": "Ares Investing",
+      "type": "substack",
+      "url": "https://aresinvesting.substack.com",
+      "rss": "https://aresinvesting.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Pantheon Insights",
+      "shortname": "Pantheon Insights",
+      "type": "substack",
+      "url": "https://pantheoninsights.substack.com",
+      "rss": "https://pantheoninsights.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Chet Nagle",
+      "shortname": "Chet Nagle",
+      "type": "substack",
+      "url": "https://chetnagle.substack.com",
+      "rss": "https://chetnagle.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Princeton Chen",
+      "shortname": "Princeton Chen",
+      "type": "substack",
+      "url": "https://princetonchen.substack.com",
+      "rss": "https://princetonchen.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Gerry Pallor",
+      "shortname": "Gerry Pallor",
+      "type": "substack",
+      "url": "https://geraldpallor.substack.com",
+      "rss": "https://geraldpallor.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Pleroma Capital",
+      "shortname": "Pleroma Capital",
+      "type": "substack",
+      "url": "https://pleromacapital.substack.com",
+      "rss": "https://pleromacapital.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Lucas Kandia",
+      "shortname": "Lucas Kandia",
+      "type": "substack",
+      "url": "https://lucaskandia.substack.com",
+      "rss": "https://lucaskandia.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Vi\u1ec7t Hustler",
+      "shortname": "Vi\u1ec7t Hustler",
+      "type": "substack",
+      "url": "https://viethustler.substack.com",
+      "rss": "https://viethustler.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "And Magazine",
+      "shortname": "And Magazine",
+      "type": "substack",
+      "url": "https://andmagazine.substack.com",
+      "rss": "https://andmagazine.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Seemorerocks",
+      "shortname": "Seemorerocks",
+      "type": "substack",
+      "url": "https://seemorerocks.substack.com",
+      "rss": "https://seemorerocks.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Omission",
+      "shortname": "The Omission",
+      "type": "substack",
+      "url": "https://theomission26.substack.com",
+      "rss": "https://theomission26.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "No1s Daily Digest",
+      "shortname": "No1s Daily Digest",
+      "type": "substack",
+      "url": "https://no1sdailydigest.substack.com",
+      "rss": "https://no1sdailydigest.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Caffeinated Capital",
+      "shortname": "Caffeinated Capital",
+      "type": "substack",
+      "url": "https://caffeinatedcaptial.substack.com",
+      "rss": "https://caffeinatedcaptial.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Felipe Germini",
+      "shortname": "Felipe Germini",
+      "type": "substack",
+      "url": "https://fgermini.substack.com",
+      "rss": "https://fgermini.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "CyberWarrior76",
+      "shortname": "CyberWarrior76",
+      "type": "substack",
+      "url": "https://cyberwarrior76.substack.com",
+      "rss": "https://cyberwarrior76.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Savageminds - Epic Interruptus",
+      "shortname": "Savageminds - Epic Interruptus",
+      "type": "substack",
+      "url": "https://savageminds.substack.com",
+      "rss": "https://savageminds.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Rachel Blevins (Independent Journalism)",
+      "shortname": "Rachel Blevins (Independent Journal",
+      "type": "substack",
+      "url": "https://rachelblevins.substack.com",
+      "rss": "https://rachelblevins.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Conflicts Forum (Alastair Crooke)",
+      "shortname": "Conflicts Forum (Alastair Crooke)",
+      "type": "substack",
+      "url": "https://conflictsforum.substack.com",
+      "rss": "https://conflictsforum.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Markham Hislop Substack",
+      "shortname": "Markham Hislop Substack",
+      "type": "substack",
+      "url": "https://markhamhislop.substack.com",
+      "rss": "https://markhamhislop.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Energy Newsbeat (Stu Turley)",
+      "shortname": "The Energy Newsbeat (Stu Turley)",
+      "type": "substack",
+      "url": "https://theenergynewsbeat.substack.com",
+      "rss": "https://theenergynewsbeat.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Samuel E. Roberson Jr.",
+      "shortname": "Samuel E. Roberson Jr.",
+      "type": "substack",
+      "url": "https://samuelerobersonjr.substack.com",
+      "rss": "https://samuelerobersonjr.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Ru4People (Mike Simpson)",
+      "shortname": "Ru4People (Mike Simpson)",
+      "type": "substack",
+      "url": "https://ru4people.substack.com",
+      "rss": "https://ru4people.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Prekend",
+      "shortname": "The Prekend",
+      "type": "substack",
+      "url": "https://theprekend.substack.com",
+      "rss": "https://theprekend.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Defense Forum (Substack)",
+      "shortname": "Defense Forum (Substack)",
+      "type": "substack",
+      "url": "https://defenseforum.substack.com",
+      "rss": "https://defenseforum.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "hejon07 (Substack)",
+      "shortname": "hejon07 (Substack)",
+      "type": "substack",
+      "url": "https://hejon07.substack.com",
+      "rss": "https://hejon07.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Defenders of Democracy (Substack)",
+      "shortname": "Defenders of Democracy (Substack)",
+      "type": "substack",
+      "url": "https://defendersofdemocracy.substack.com",
+      "rss": "https://defendersofdemocracy.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "RA Economics (Substack)",
+      "shortname": "RA Economics (Substack)",
+      "type": "substack",
+      "url": "https://raeconomics.substack.com",
+      "rss": "https://raeconomics.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "Peter Lewis Money Talk (Substack)",
+      "shortname": "Peter Lewis Money Talk (Substack)",
+      "type": "substack",
+      "url": "https://peterlewismoneytalk.substack.com",
+      "rss": "https://peterlewismoneytalk.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    },
+    {
+      "name": "The Kingston Crow (Substack)",
+      "shortname": "The Kingston Crow (Substack)",
+      "type": "substack",
+      "url": "https://thekingstoncrow.substack.com",
+      "rss": "https://thekingstoncrow.substack.com/feed",
+      "region": "global",
+      "themes": [
+        "geopolitics",
+        "analysis"
+      ],
+      "admiralty_source": "C",
+      "admiralty_info": "2",
+      "tested": true,
+      "tested_at": "2026-05-21T17:00:00Z",
+      "status": "working",
+      "fetched_sample": true,
+      "sample_entry_count": 20
+    }
+  ]
+}

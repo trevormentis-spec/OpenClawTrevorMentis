@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-20T15:46:20.456Z",
+  "updatedAt": "2026-05-21T04:20:33.705Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -581,13 +581,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.751788668739627,
+      "totalScore": 11.751788668739627,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-15T13:36:29.865Z",
+      "lastRecalledAt": "2026-05-21T04:20:33.705Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -599,7 +599,8 @@
         "29111942a45c",
         "f7d1f8923a5d",
         "088d05594874",
-        "b62b199ec189"
+        "b62b199ec189",
+        "f6d1fca16aa8"
       ],
       "recallDays": [
         "2026-05-04",
@@ -609,7 +610,8 @@
         "2026-05-08",
         "2026-05-09",
         "2026-05-11",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-21"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -1684,6 +1686,37 @@
         "scripts/render-pdf.py",
         "html/css",
         "round-trip"
+      ]
+    },
+    "memory:memory/2026-05-11.md:16:42": {
+      "key": "memory:memory/2026-05-11.md:16:42",
+      "path": "memory/2026-05-11.md",
+      "startLine": 16,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T04:20:33.705Z",
+      "lastRecalledAt": "2026-05-21T04:20:33.705Z",
+      "queryHashes": [
+        "f6d1fca16aa8"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "second-guess",
+        "venv-pdf/bin/python",
+        "python/system",
+        "daily-brief-cron.sh",
+        "generate-brief-maps-v3.py",
+        "generate-brief-maps.py",
+        "generate-brief-charts.py",
+        "kalshi-json"
       ]
     }
   }

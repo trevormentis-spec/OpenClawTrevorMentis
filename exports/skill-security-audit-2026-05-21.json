@@ -1,0 +1,3255 @@
+{
+  "timestamp": "2026-05-21 00:00 UTC",
+  "total_skills": 133,
+  "approved": 118,
+  "caution": 1,
+  "rejected": 14,
+  "errors": 0,
+  "total_findings": 405,
+  "critical_count": 179,
+  "high_count": 122,
+  "medium_count": 104,
+  "findings": [
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "audit_skills.py",
+      "line": 6,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "consolidated_audit_report.md",
+      "line": 21,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "consolidated_audit_report.md",
+      "line": 33,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "consolidated_audit_report.md",
+      "line": 39,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "consolidated_audit_report.md",
+      "line": 40,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "skill_audit_report.json",
+      "line": 144,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "skill_audit_report.json",
+      "line": 153,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "skill_audit_report.json",
+      "line": 189,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 29,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 36,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 43,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 50,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 57,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 64,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 71,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 78,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 85,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 92,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 99,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 106,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 113,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 120,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 127,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 134,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 141,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 148,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "system_skills_audit.md",
+      "line": 155,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 29,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 36,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 43,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 50,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 57,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 64,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 71,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 92,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 78,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 85,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "user_skills_audit.md",
+      "line": 113,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "brain/README.md",
+      "line": 61,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "brain/scripts/brain.py",
+      "line": 62,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "skills/daily_intel/deepseek_client.py",
+      "line": 60,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 54,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 63,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 64,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 65,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 80,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 81,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 82,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 83,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 86,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_config.py",
+      "line": 87,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_log.py",
+      "line": 32,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/trevor_fonts.py",
+      "line": 38,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/agentmail/scripts/check_inbox.py",
+      "line": 83,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/agentmail/scripts/send_email.py",
+      "line": 46,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/agentmail/scripts/setup_webhook.py",
+      "line": 51,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/chartgen-ai/tools/chartgen_api.js",
+      "line": 25,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/chartgen-ai/tools/chartgen_api.js",
+      "line": 40,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/chartgen-ai/tools/chartgen_api.js",
+      "line": 44,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/chartgen-ai/tools/chartgen_api.js",
+      "line": 45,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/chartgen-ai/tools/chartgen_api.js",
+      "line": 74,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/pdf-report/scripts/render_pdf.py",
+      "line": 17,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 165,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 173,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 174,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 179,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 180,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 19,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/cron/run_daily.py",
+      "line": 21,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/generate_assessments.py",
+      "line": 134,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/_email_brief.py",
+      "line": 16,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/_email_brief.py",
+      "line": 19,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/_email_brief.py",
+      "line": 21,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/_fetch_intel_emails.py",
+      "line": 106,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/_fetch_intel_emails.py",
+      "line": 105,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/_fetch_intel_emails.py",
+      "line": 108,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 49,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 50,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 490,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 29,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 32,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/improvement_daemon.py",
+      "line": 41,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/osint_collection_expansion.py",
+      "line": 175,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/scrape_creators.py",
+      "line": 29,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/sonar_scout.py",
+      "line": 76,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "skills/daily_intel/scripts/sonar_scout.py",
+      "line": 216,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/sonar_scout.py",
+      "line": 70,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skills/daily_intel/scripts/sonar_scout.py",
+      "line": 71,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "api-gateway",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 539,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "gmail",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 267,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "gog",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 23,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "gog",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 24,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "gog",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "config/exchange.py",
+      "line": 16,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 155,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 9,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 158,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "skill_scanner.py",
+      "line": 101,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "crontab_modify",
+      "severity": "high",
+      "file": "skill_scanner.py",
+      "line": 118,
+      "description": "Modifies system scheduled tasks"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "systemd_modify",
+      "severity": "critical",
+      "file": "skill_scanner.py",
+      "line": 126,
+      "description": "Creates system services for persistence"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "crypto_miner",
+      "severity": "critical",
+      "file": "skill_scanner.py",
+      "line": 135,
+      "description": "Cryptocurrency mining indicators"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "reverse_shell",
+      "severity": "critical",
+      "file": "skill_scanner.py",
+      "line": 161,
+      "description": "Reverse shell pattern detected"
+    },
+    {
+      "skill": "skill-scanner",
+      "pattern": "base64_decode_exec",
+      "severity": "critical",
+      "file": "skill_scanner.py",
+      "line": 170,
+      "description": "Decodes and executes base64 - classic obfuscation"
+    },
+    {
+      "skill": "stripe",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 778,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-methodology",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "pipeline/docx-js-template.js",
+      "line": 37,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "video-translation",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 90,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "whatsapp-business",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 494,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "agentmail",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/check_inbox.py",
+      "line": 83,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "agentmail",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/send_email.py",
+      "line": 46,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "agentmail",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/setup_webhook.py",
+      "line": 51,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "chartgen",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "tools/chartgen_api.js",
+      "line": 25,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "chartgen",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "tools/chartgen_api.js",
+      "line": 40,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "chartgen",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "tools/chartgen_api.js",
+      "line": 44,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "chartgen",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "tools/chartgen_api.js",
+      "line": 45,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "chartgen",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "tools/chartgen_api.js",
+      "line": 74,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "download_execute",
+      "severity": "critical",
+      "file": "openweb/install-skill.sh",
+      "line": 5,
+      "description": "Downloads and executes remote code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "reverse-api-engineer/RELEASING.md",
+      "line": 40,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "_specs/animalpolitico/client.py",
+      "line": 13,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/scripts/adapter-inventory.ts",
+      "line": 121,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/scripts/adapter-inventory.ts",
+      "line": 124,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/scripts/adapter-inventory.ts",
+      "line": 131,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/scripts/adapter-inventory.ts",
+      "line": 139,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/scripts/pack-check.js",
+      "line": 14,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/doc/main/security.md",
+      "line": 121,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/capture/session.ts",
+      "line": 111,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/commands/browser.ts",
+      "line": 23,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/adapter-helpers.ts",
+      "line": 71,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/adapter-helpers.ts",
+      "line": 90,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/lib/adapter-helpers.ts",
+      "line": 350,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/config.test.ts",
+      "line": 20,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/config.test.ts",
+      "line": 21,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/config.test.ts",
+      "line": 26,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/config.test.ts",
+      "line": 28,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/lib/config.ts",
+      "line": 18,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/lib/template-resolver.ts",
+      "line": 62,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/runtime/http-executor.ts",
+      "line": 121,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/auth-candidates.ts",
+      "line": 303,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/classify.ts",
+      "line": 40,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/classify.ts",
+      "line": 63,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/classify.ts",
+      "line": 69,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/classify.ts",
+      "line": 70,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/classify.ts",
+      "line": 102,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/csrf-detect.ts",
+      "line": 85,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/graphql-cluster.ts",
+      "line": 152,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/analyzer/graphql-cluster.ts",
+      "line": 168,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/compiler/curation/apply-curation.test.ts",
+      "line": 177,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/page-expression.ts",
+      "line": 12,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/page-expression.ts",
+      "line": 13,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/page-expression.ts",
+      "line": 46,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/runtime/primitives/primitives.test.ts",
+      "line": 870,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/primitives.test.ts",
+      "line": 281,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/script-json-parse.ts",
+      "line": 10,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/script-json-parse.ts",
+      "line": 55,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/script-json-parse.ts",
+      "line": 88,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/script-json-parse.ts",
+      "line": 105,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/runtime/primitives/script-json-parse.ts",
+      "line": 116,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/PROGRESS.md",
+      "line": 9,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/PROGRESS.md",
+      "line": 11,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/angellist/adapters/angellist.ts",
+      "line": 125,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/angellist/adapters/angellist.js",
+      "line": 105,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/bluesky/adapters/bluesky-public.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/booking/adapters/booking.ts",
+      "line": 267,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/booking/adapters/booking.ts",
+      "line": 270,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/booking/adapters/booking.js",
+      "line": 163,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/boss/adapters/boss.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/coingecko/adapters/coingecko.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/coinmarketcap/adapters/coinmarketcap.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 190,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 271,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 445,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 584,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 769,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 814,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/costco/adapters/costco-api.ts",
+      "line": 946,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 134,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 199,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 340,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 456,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 605,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 642,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/costco/adapters/costco-api.js",
+      "line": 758,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.ts",
+      "line": 62,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.ts",
+      "line": 129,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.ts",
+      "line": 140,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.ts",
+      "line": 152,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.ts",
+      "line": 173,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.js",
+      "line": 42,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.js",
+      "line": 87,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.js",
+      "line": 96,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.js",
+      "line": 106,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/craigslist/adapters/craigslist.js",
+      "line": 120,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/docker-hub/adapters/docker-hub.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/douban/adapters/douban-read.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/ebay/adapters/ebay.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/espn/adapters/espn.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/github/adapters/github-web.ts",
+      "line": 83,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/github/adapters/github-read.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/github/adapters/github-web.js",
+      "line": 27,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/gitlab/adapters/gitlab.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.ts",
+      "line": 60,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.ts",
+      "line": 214,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.ts",
+      "line": 227,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.js",
+      "line": 494,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.js",
+      "line": 608,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/goodreads/adapters/goodreads.js",
+      "line": 617,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/google-flights/adapters/google-flights.ts",
+      "line": 21,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/google-flights/adapters/google-flights.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/google-flights/adapters/google-flights.js",
+      "line": 458,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/google-search/adapters/google-search.ts",
+      "line": 152,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/google-search/adapters/google-search.js",
+      "line": 123,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/guardian/adapters/guardian.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/huggingface/adapters/huggingface.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/imdb/adapters/imdb.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/instagram/adapters/instagram-api.ts",
+      "line": 80,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/instagram/adapters/instagram-api.js",
+      "line": 63,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/linkedin/adapters/linkedin-graphql.ts",
+      "line": 67,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/linkedin/adapters/linkedin-graphql.ts",
+      "line": 70,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/linkedin/adapters/linkedin-graphql.js",
+      "line": 30,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/linkedin/adapters/linkedin-graphql.js",
+      "line": 33,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/medium/adapters/medium-graphql.ts",
+      "line": 232,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/medium/adapters/medium-graphql.ts",
+      "line": 345,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/medium/adapters/medium-graphql.js",
+      "line": 482,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/medium/adapters/medium-graphql.js",
+      "line": 576,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/npm/adapters/npm.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/npr/adapters/npr.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/pypi/adapters/pypi.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/reddit/adapters/reddit-read.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/redfin/adapters/redfin.ts",
+      "line": 95,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/redfin/adapters/redfin.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/redfin/adapters/redfin.js",
+      "line": 538,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/rotten-tomatoes/adapters/rotten-tomatoes-web.ts",
+      "line": 78,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/rotten-tomatoes/adapters/rotten-tomatoes-web.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/rotten-tomatoes/adapters/rotten-tomatoes-web.js",
+      "line": 493,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/soundcloud/adapters/soundcloud.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.ts",
+      "line": 382,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.ts",
+      "line": 403,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.ts",
+      "line": 419,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.ts",
+      "line": 433,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.js",
+      "line": 280,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.js",
+      "line": 301,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.js",
+      "line": 315,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/spotify/adapters/spotify-pathfinder.js",
+      "line": 326,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/stackoverflow/adapters/stackoverflow.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/steam/adapters/steam.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/substack/adapters/substack.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/techcrunch/adapters/techcrunch.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 124,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 126,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 169,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 215,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 251,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 290,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 315,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 339,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 372,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 385,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 410,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 435,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 473,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 496,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 523,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 566,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 600,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 667,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.ts",
+      "line": 669,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 104,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 106,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 131,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 167,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 198,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 232,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 251,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 268,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 292,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 304,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 328,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 352,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 388,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 410,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 435,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 461,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 492,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 531,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/telegram/adapters/telegram-protocol.js",
+      "line": 533,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 210,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 219,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 223,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 233,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 236,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 238,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.ts",
+      "line": 247,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 160,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 168,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 172,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 182,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 185,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 187,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/todoist/adapters/todoist-api.js",
+      "line": 196,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/trello/adapters/trello-api.ts",
+      "line": 228,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/trello/adapters/trello-api.js",
+      "line": 167,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.ts",
+      "line": 66,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.ts",
+      "line": 67,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.ts",
+      "line": 92,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.ts",
+      "line": 95,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/x/adapters/x-graphql.ts",
+      "line": 187,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.js",
+      "line": 38,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.js",
+      "line": 41,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.js",
+      "line": 60,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/x/adapters/x-graphql.js",
+      "line": 63,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/x/adapters/x-graphql.js",
+      "line": 139,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.ts",
+      "line": 101,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.ts",
+      "line": 243,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.ts",
+      "line": 352,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.ts",
+      "line": 498,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.js",
+      "line": 77,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.js",
+      "line": 236,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.js",
+      "line": 342,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/xiaohongshu/adapters/xiaohongshu-web.js",
+      "line": 501,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/yahoo-finance/adapters/yahoo-finance.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/yelp/adapters/yelp.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.ts",
+      "line": 424,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.ts",
+      "line": 123,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.ts",
+      "line": 158,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.js",
+      "line": 316,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.js",
+      "line": 71,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "http_post_external",
+      "severity": "medium",
+      "file": "openweb/src/sites/youtube/adapters/youtube-innertube.js",
+      "line": 98,
+      "description": "HTTP POST to external endpoint - could exfiltrate data"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/src/sites/zhihu/adapters/zhihu-read.js",
+      "line": 7,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "openweb/tests/integration/runner.ts",
+      "line": 14,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/base_engineer.py",
+      "line": 17,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "reverse-api-engineer/src/reverse_api/browser.py",
+      "line": 326,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "reverse-api-engineer/src/reverse_api/browser.py",
+      "line": 94,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "reverse-api-engineer/src/reverse_api/browser.py",
+      "line": 103,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "reverse-api-engineer/src/reverse_api/browser.py",
+      "line": 115,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "eval_exec",
+      "severity": "high",
+      "file": "reverse-api-engineer/src/reverse_api/browser.py",
+      "line": 127,
+      "description": "Dynamic code execution - could run arbitrary code"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/cli.py",
+      "line": 258,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/cursor_engineer.py",
+      "line": 184,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/cursor_engineer.py",
+      "line": 347,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/cursor_engineer.py",
+      "line": 479,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "bulk_env_access",
+      "severity": "high",
+      "file": "reverse-api-engineer/src/reverse_api/cursor_engineer.py",
+      "line": 218,
+      "description": "Bulk access to all environment variables - likely exfiltration"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/opencode_engineer.py",
+      "line": 20,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/opencode_engineer.py",
+      "line": 128,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/opencode_engineer.py",
+      "line": 129,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "trevor-web-collection",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "reverse-api-engineer/src/reverse_api/utils.py",
+      "line": 458,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "bulk_env_access",
+      "severity": "high",
+      "file": "scripts/build_pdf.py",
+      "line": 330,
+      "description": "Bulk access to all environment variables - likely exfiltration"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/build_visuals.py",
+      "line": 152,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/collect.py",
+      "line": 696,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "scripts/collect.py",
+      "line": 510,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "scripts/collect.py",
+      "line": 511,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/orchestrate.py",
+      "line": 57,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/orchestrate.py",
+      "line": 65,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/orchestrate.py",
+      "line": 548,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/analyze.py",
+      "line": 35,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/analyze.py",
+      "line": 124,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "daily-intel-brief",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/analyze.py",
+      "line": 134,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "genviral",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "scripts/genviral.sh",
+      "line": 192,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "genviral",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "scripts/genviral.sh",
+      "line": 219,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "pdf-report",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/render_pdf.py",
+      "line": 17,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/research.py",
+      "line": 18,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/research.py",
+      "line": 19,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 19,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 20,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 114,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 128,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 129,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 135,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 136,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "polymarket-trader",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "scripts/trade.py",
+      "line": 137,
+      "description": "Reads environment variables - could access secrets"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "CHANGELOG.md",
+      "line": 42,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "CHANGELOG.md",
+      "line": 143,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "CHANGELOG.md",
+      "line": 175,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 44,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 91,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 92,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 180,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 308,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 311,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "README.md",
+      "line": 314,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 43,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 76,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 78,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 79,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 80,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 81,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 98,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 99,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 100,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 101,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 179,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 253,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 266,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "SKILL.md",
+      "line": 362,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 30,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 31,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 33,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 34,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 117,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 118,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 120,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 121,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 131,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/farcaster.sh",
+      "line": 132,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "lib/twitter.sh",
+      "line": 8,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "social-post",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "scripts/reply.sh",
+      "line": 272,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "unknown",
+      "pattern": "credential_paths",
+      "severity": "critical",
+      "file": "publishing/build-agent-brief.md",
+      "line": 40,
+      "description": "Accesses sensitive credential locations"
+    },
+    {
+      "skill": "visual_production",
+      "pattern": "env_scraping",
+      "severity": "medium",
+      "file": "visual_production/pipeline.py",
+      "line": 233,
+      "description": "Reads environment variables - could access secrets"
+    }
+  ],
+  "error_details": []
+}

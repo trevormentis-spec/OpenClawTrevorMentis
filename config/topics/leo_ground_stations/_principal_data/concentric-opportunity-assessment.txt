@@ -1,0 +1,1957 @@
+C O N C E N T R I C
+SECURITY GROUP
+
+LEO Ground Station Market
+Opportunity Assessment
+Operators | Ownership | Infrastructure | Traffic | Projections
+COMMERCIAL IN CONFIDENCE | March 2026
+Prepared by: Concentric Security Group | concentric.io
+Satellite Imagery: Copernicus Sentinel-2 (separate annex available)
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+1. Market Overview
+The LEO satellite ground station market is undergoing structural expansion. Multiple broadband
+constellations are scaling simultaneously, Ground Station as a Service (GSaaS) has emerged as the
+dominant delivery model, and regulatory requirements force in-country ground infrastructure for every
+market a constellation operator enters. This document maps the full operator landscape, identifies
+where the next stations will be built, estimates traffic volumes, and flags the most difficult deployment
+environments.
+Metric
+
+2025/26
+
+2030 (Projected)
+
+Total Ground Station Market
+
+$41.0B
+
+$82.7B (15.1% CAGR)
+
+LEO GSaaS Sub-Market
+
+$1.72B (2024)
+
+$5.33B by 2033 (14.2% CAGR)
+
+Active LEO Satellites
+
+15,000+
+
+25,000+
+
+Starlink Subscribers
+
+10M+ (Feb 2026)
+
+14M (est)
+
+Ground Stations Required
+
+~500 (all operators)
+
+1,000+
+
+Sites in This Register
+
+129
+
+Commercial in Confidence | Page 2
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+2. LEO Constellation Operators
+Seven LEO broadband constellations are either operational, launching, or in funded development.
+Ownership structures range from wholly-owned subsidiaries of US tech giants to Chinese state
+enterprises and EU multi-national consortia. Architecture choices — particularly whether the
+constellation uses a transparent (ground-dependent) or regenerative (ISL-enabled) design — directly
+determine ground station density requirements.
+Satellites
+
+Ground
+Stns
+
+Architectur
+e
+
+Status (Mar
+2026)
+
+SpaceX (private).
+Elon Musk
+controlling
+shareholder.
+
+9,400+
+
+170+
+
+Regenerative
++ ISL
+
+Operational. 10M
+subs. 150
+countries. E-band
+expansion.
+
+USA
+
+Amazon subsidiary
+(NASDAQ: AMZN).
+Jeff Bezos executive
+chairman.
+
+212
+
+12 + 300
+planned
+
+Regenerative
++ OISL
+
+Deploying. FCC
+deadline Jul 2026.
+Beta programme.
+
+UK / France
+
+Eutelsat Group
+(Euronext: ETL).
+Bharti Global
+(India), UK Govt
+minority stakes.
+
+648
+
+~45
+
+Transparent
+(bent-pipe)
+
+Operational. Global
+coverage. Gen 2
+planned.
+
+Canada
+
+Telesat Corp
+(NASDAQ: TSAT).
+Loral Space &
+Comms + PSP
+Investments
+(Canadian pension).
+
+0
+
+3 planned
+
+Regenerative
+
+SpaceX launches
+from mid-2026.
+Seeking GS
+partners.
+
+IRIS²
+
+EU (Belgium)
+
+EU consortium.
+Eutelsat (prime),
+SES (Luxembourg),
+Hispasat (Spain).
+EU-funded.
+
+0
+
+TBD
+
+Multi-orbit
+
+First launch 2029.
+€6B budget.
+
+Guowang
+
+China
+
+China SatNet (state
+enterprise). PRC
+sovereign
+constellation.
+
+0
+
+TBD
+
+Regenerative
+
+12,992 sats
+planned. Initial
+launches 2026.
+
+Qianfan (G60)
+
+China
+
+Shanghai Spacecom
+Satellite Tech.
+Shanghai municipal
++ private.
+
+18
+
+TBD
+
+Regenerative
+
+14,000 sats
+planned. 18
+launched to date.
+
+Constellation
+
+HQ Nation
+
+Ownership
+
+Starlink
+
+USA
+
+Amazon Leo
+(Kuiper)
+
+Eutelsat
+OneWeb
+
+Telesat
+Lightspeed
+
+Key Ownership Observations
+•
+
+•
+
+•
+
+•
+
+•
+
+Western LEO broadband is dominated by two American billionaire-controlled entities
+(SpaceX/Musk and Amazon/Bezos) competing directly. Neither is publicly traded at the
+operating entity level, limiting transparency.
+OneWeb’s ownership is a UK-India-France structure reflecting its bankruptcy rescue: Bharti
+Global (Indian), the UK Government, and now Eutelsat (French). This multi-national ownership
+creates complex jurisdictional considerations for ground station data sovereignty.
+Telesat is Canadian-controlled via Loral and PSP Investments (a Canadian federal pension
+fund). It is the only Western constellation operator with significant state-adjacent institutional
+ownership.
+Both Chinese constellations (Guowang at 12,992 satellites and Qianfan at 14,000) are statebacked and will deploy sovereign ground infrastructure outside Western GSaaS networks. They
+represent a separate, parallel ground station ecosystem.
+The EU’s IRIS² is explicitly a sovereignty play — designed to reduce European dependence on
+Starlink. Its ground segment will be operated by Hispasat (Spanish state-owned), creating a
+European government-controlled ground network.
+
+Commercial in Confidence | Page 3
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+3. Ground Station as a Service Providers
+GSaaS providers offer ground station access on a pay-per-use or subscription basis, allowing satellite
+operators to avoid the capital expenditure of building proprietary ground infrastructure. The market
+divides into three tiers: legacy operators with decades of heritage, VC-backed NewSpace entrants, and
+hyperscaler cloud platforms.
+
+3.1 Provider Overview
+Provider
+
+Nation
+
+Ownership /
+Control
+
+Type
+
+Sites
+
+Antennas
+
+Model
+
+Funding /
+Rev
+
+TIER 1: Heritage Operators (State-Backed)
+
+KSAT
+
+Norway
+
+Space Norway AS
+(50%) + Kongsberg
+Defence (50%). Both
+Norwegian statecontrolled entities.
+
+SSC Space
+
+Sweden
+
+Swedish Space Corp.
+100% Swedish stateowned via Ministry of
+Education.
+
+State
+
+26 loc.
+
+280+
+
+Owned
+network
+
+~$200M rev
+
+State
+
+10 owned
++ 11
+partner
+
+100+
+
+Owned +
+partner
+
+SEK 1.7B rev
+
+TIER 2: VC-Backed NewSpace Operators
+Leaf Space
+
+Italy
+
+Private (VC-backed).
+Founded Politecnico di
+Milano. Italianincorporated.
+
+Private
+
+20+ loc.
+
+40+
+
+Owned
+SDR
+network
+
+$35M Series B
+
+Skynopy
+
+France
+
+Private (VC-backed).
+French-incorporated.
+Paris HQ.
+
+Private
+
+20+ loc.
+
+20+
+
+Hybrid
+(own +
+lease)
+
+$17.6M (2025)
+
+Atlas Space
+Ops
+
+USA
+
+Private. Traverse City,
+MI. US-incorporated.
+
+Private
+
+~10 loc.
+
+21
+
+Cloudnative
+owned
+
+Undisclosed
+
+RBC Signals
+
+USA
+
+Private. Austin, TX.
+Acquired Microsoft
+Azure Orbital antenna
+assets 2024.
+
+Private
+
+30+ loc.
+
+30+
+
+Aggregatio
+n
+
+Undisclosed
+
+Infostellar
+
+Japan
+
+Private (VC-backed).
+Tokyo. Japaneseincorporated.
+
+Private
+
+N/A
+
+20+
+(marketplace)
+
+Marketplac
+e
+
+$7.3M raised
+
+Sfera
+Technologies
+
+Bulgaria
+
+Private. Sofia.
+Bulgarianincorporated.
+
+Private
+
+Small
+
+Small
+
+HomePort
+platform
+
+Undisclosed
+
+TIER 3: Hyperscaler Cloud Platforms
+AWS Ground
+Stn
+
+USA
+
+Amazon Web Services
+(NASDAQ: AMZN). UScontrolled.
+
+Corporat
+e
+
+12
+regions
+
+N/A
+
+Cloudintegrated
+
+Part of AWS
+
+Azure Orbital
+
+USA
+
+Microsoft (NASDAQ:
+MSFT). EXITED 2024 —
+assets sold to SLI/RBC
+Signals.
+
+Exited
+
+—
+
+—
+
+Exited
+market
+
+N/A
+
+Public
+
+10+ loc.
+
+10+
+
+Highthroughput
+owned
+
+Part of Viasat
+
+TIER 4: Hybrid Operators / Integrated Players
+Viasat RTE
+
+USA
+
+Viasat Inc (NASDAQ:
+VSAT). US public
+company.
+
+3.2 Ownership and Nationality Analysis
+The GSaaS market presents a clear division along national lines that has significant implications for
+data sovereignty, government/defence customers, and geopolitical alignment:
+•
+
+Norwegian dominance at the top: KSAT, the world’s largest GSaaS provider, is 100%
+Norwegian state-controlled through Space Norway and Kongsberg. Norway’s unique
+
+Commercial in Confidence | Page 4
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+•
+
+•
+
+•
+
+•
+
+•
+
+geographic position (Svalbard at 78°N, Troll Antarctica at 72°S) gives it an irreplaceable polar
+coverage monopoly. KSAT serves NATO governments and US defence agencies. Its Hyper inorbit relay concept will extend this dominance into space-based relay.
+Swedish state controls the #2: SSC Space, the second heritage GSaaS provider, is 100%
+Swedish state-owned. Between KSAT and SSC, Scandinavian government-controlled entities
+dominate the world’s polar ground station infrastructure — critical for military, intelligence,
+and Earth observation missions.
+Italian/European VC leads the NewSpace tier: Leaf Space (Italian, $35M Series B) is the fastestgrowing independent provider. Its SDR-based architecture allows rapid scaling without
+hardware lock-in. Skynopy (French, $17.6M) is the second European VC-backed challenger.
+US private sector fills the middle: Atlas, RBC Signals, and the AWS platform are US-controlled.
+RBC Signals absorbed Microsoft’s exit from the market. Atlas has a US DoD focus. AWS Ground
+Station is the cloud on-ramp, not a traditional GSaaS provider.
+Japanese marketplace: Infostellar’s StellarStation platform is the only significant East Asian
+GSaaS presence outside Chinese state systems. Its partnership with Viasat bridges the US and
+Japanese markets.
+Microsoft’s exit is the cautionary tale: Azure Orbital launched in 2020, sold assets by 2024.
+Even with Azure’s global data centre footprint, Microsoft concluded ground station ownership
+was too capital-intensive and operationally specialised. The market favours dedicated
+operators over generalists.
+
+3.3 Implications for Concentric
+The state ownership structures of KSAT and SSC mean that their government/defence customers
+already operate within a trusted national security framework. A partnership with either would position
+Concentric within a Five Eyes / NATO-aligned ecosystem. Leaf Space, as a VC-backed Italian company
+scaling rapidly into new geographies, has the most acute need for external physical security capability
+— it lacks the institutional state backing that KSAT and SSC enjoy. Skynopy, as a French VC-backed
+entrant building its own stations, is a secondary target with similar characteristics.
+
+Commercial in Confidence | Page 5
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+4. Where the Next Stations Will Be Built
+Ground station deployment is driven by four factors: regulatory mandate (in-country infrastructure
+required for licensing), subscriber density (stations must be within ~1,000km of users for non-ISL
+architectures), fibre availability (backhaul to Internet exchange), and orbital coverage geometry (polar
+and equatorial gaps).
+
+4.1 Africa (Highest Priority, Highest Difficulty)
+Starlink operates in 20+ African countries with only 4 ground stations, all in Nigeria. This is the most
+under-served ground segment globally relative to subscriber growth. Kenya, South Africa, Ghana,
+Egypt, and Morocco are the most likely next deployment countries. OneWeb’s partnership with
+Bayobab/Vodacom and Gulf investment in African ground infrastructure (OneWeb NEOM JV with
+planned East African facilities) create additional demand. Most African deployments score 3-5 on
+difficulty due to security environment, regulatory complexity, and infrastructure limitations. Amazon’s
+Kuiper has Cape Town (AWS AF-South-1) as its first potential African site.
+
+4.2 Southeast Asia (Highest Priority, Moderate Difficulty)
+Vietnam was licensed in February 2026 with 4 Starlink stations planned and a 600,000 terminal target.
+Indonesia (270M population, archipelago geography forces multiple stations), Philippines (active but
+typhoon-exposed), and Thailand (licensed) represent the largest near-term opportunity. India’s 1.4
+billion population market is anticipated to open 2026-27 — the Indian government granted regulatory
+approval to Starlink as part of broader diplomatic engagement with the US administration. Both
+Starlink and Kuiper will require multiple ground stations per country.
+
+4.3 Latin America (High Priority, Low-Moderate Difficulty)
+Brazil (200M+ population, but Anatel regulatory friction), Mexico (130M, security concerns in some
+regions), Colombia, and Argentina are all growth markets. Amazon’s Vrio partnership covers Latin
+American distribution for Kuiper. Ground station density is low relative to the subscriber opportunity.
+
+4.4 Middle East (Moderate Priority, Low Difficulty)
+UAE (OrbitWorks venture, KSAT Dubai, MBRSC), Saudi Arabia (NEOM OneWeb JV), Bahrain (AWS MESouth-1 for Kuiper), Qatar (recently approved Starlink). The Gulf states are positioning themselves as
+space infrastructure hubs between Asia, Africa, and Europe. Well-resourced, security-capable, but data
+sovereignty requirements create regulatory complexity.
+
+4.5 Arctic and Polar (Critical Strategic Value, Maximum Difficulty)
+Svalbard and Troll are effectively irreplaceable for polar TT&C. Telesat’s Rankin Inlet (fly-in only,
+permafrost, no law enforcement) and Inuvik are the most challenging deployments in the entire
+register. KSAT’s Hyper in-orbit relay may partially reduce polar ground dependency but will not
+eliminate it. The Kinuvik concept (SSC’s combined Kiruna-Inuvik polar connectivity) represents the
+next-generation approach.
+
+Commercial in Confidence | Page 6
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+5. Traffic Volume Analysis
+We estimate relative traffic volumes per site on a 1-5 scale based on subscriber density within the
+coverage footprint, backbone fibre capacity, number of simultaneous satellite contacts, and operatorreported capacity allocation.
+Tier
+
+Representative Sites
+
+Traffic Driver
+
+5
+(Peak)
+
+Redmond WA, N. Virginia, Hawthorne CA, Lagos,
+Tokyo, Manila, Jakarta, Mumbai, São Paulo, Ho Chi
+Minh City, KSAT Svalbard/Tromsø
+
+Constellation HQ/control centres, mega-population coverage
+footprints (100M+), polar TT&C concentration
+
+4
+(High)
+
+Goonhilly, Gravelines, Stuttgart, Fairbanks/Inuvik,
+Guam, Punta Arenas, Hartebeesthoek, Maricá,
+Puerto Rico, Abuja
+
+Major European gateways, polar coverage, military strategic,
+southern hemisphere backbone, Africa coverage
+
+3
+(Moder
+ate)
+
+Most GSaaS multi-mission sites, smaller gateways,
+US regional E-band sites, planned/projected sites
+
+Standard GSaaS operations, US domestic backbone fill, new
+market entry pre-scaling
+
+2 (Low)
+
+Remote backup sites, low-population-density
+coverage, early-phase GSaaS expansion
+
+Redundancy coverage, niche EO downlink, early commercial
+viability uncertain
+
+Critical finding: The highest-traffic sites are increasingly in developing markets (Nigeria, Philippines,
+Vietnam, Indonesia, India) where ground station physical security capability is weakest. This is where
+Concentric’s differentiation is most valuable.
+
+6. Most Difficult Deployment Environments
+Deployment difficulty is assessed on a 1-5 scale incorporating political instability, contested
+sovereignty, regulatory hostility, physical security risk, terrain, climate, and infrastructure quality.
+
+Difficulty 5 — Extreme
+Svalbard / Troll Antarctica / Rankin Inlet: Operationally essential for polar orbit TT&C but present
+extreme challenges — no law enforcement, seasonal access only (Antarctica), permafrost structural
+risk, polar darkness for months, emergency response measured in hours. Port Harcourt, Nigeria: Niger
+Delta militant groups, organised crime, kidnapping. Baikonur Region, Kazakhstan: Geopolitical
+instability, Russian sphere, state-level threat vector.
+
+Difficulty 4 — Very High
+Lagos/Sagamu (Nigeria), Inuvik (Canada), Punta Arenas/Ushuaia (extreme Patagonia), Sanya (Chinese
+regulatory control), Addis Ababa (ethnic conflict, telecom monopoly), Karachi (terrorism risk). These
+combine high strategic value with genuine security threats or regulatory barriers.
+
+Difficulty 3 — Elevated
+Merrillan WI (dense forest concealment, severe winter), Manila (typhoon corridor), Maricá Brazil (dense
+informal urban), Hanoi/HCMC (state surveillance), Mumbai/Jakarta (developing-market infrastructure).
+Solvable with professional security design but not trivial.
+
+7. Satellite Imagery
+Concentric has acquired Copernicus Sentinel-2 true colour satellite imagery (10m resolution, L2A
+surface reflectance) for 29 ground station sites via the Sentinel Hub Process API (Copernicus Data
+Space Ecosystem). Imagery validates site isolation, security posture, and natural hazard exposure.
+NDVI vegetation analysis and Sentinel-1 SAR change detection capability is available via the
+Concentric LEO Basestation Imagery Toolkit. The imagery annex is available as a separate document.
+
+Commercial in Confidence | Page 7
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+8. Opportunity Summary
+The LEO ground station market presents three entry points for Concentric, each with distinct
+commercial models:
+Entry Point
+
+Commercial Model
+
+Priority Targets
+
+Physical Security to
+GSaaS Providers
+
+Per-site security assessment, ongoing
+monitoring, guard force and hardening services.
+Recurring revenue per station per year.
+
+KSAT (26 sites, NATO/defence clients,
+Norwegian state-backed). Leaf Space (20+
+locations, VC-backed, scaling fast). Skynopy
+(French, 20+ sites, expanding). All three need
+physical security as they enter higher-risk
+geographies.
+
+Insurance Market Risk
+Surveys
+
+Site-specific physical risk surveys for Lloyd’s
+space underwriting syndicates. Fee per survey,
+commissioned via specialist brokers. Extends
+existing Concentric Lloyd’s relationships.
+
+Aon International Space Brokers (35% global
+premium share). Marsh Space Projects. Lead
+underwriters: Atrium ASIC (Syndicate 609),
+Hiscox London Market, AXA XL, Munich Re.
+
+Secure Site Provision
+
+Identify, secure, and lease hardened ground
+station sites in strategically valuable locations.
+Landlord model with security wrapper. Longerterm capital commitment but higher margin.
+
+Amazon (300+ stations needed, regulatory
+mandate for in-country sites). Telesat (actively
+seeking GS partners). New African/Asian market
+entrants requiring local site partners.
+
+The timing is optimal. Amazon must deploy half its constellation by July 2026. Starlink filed for 21 new US
+sites in February 2026 and entered Vietnam. Telesat is actively seeking ground station partners. The GSaaS
+providers are scaling faster than their physical security capability. The accompanying spreadsheet provides
+the complete data set across 129 sites, 16 operators, and 45+ countries.
+
+C O N C E N T R I C
+Your World, Secured. | concentric.io
+
+Commercial in Confidence | Page 8
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+3.4 VC-Backed NewSpace Operator Deep Dives
+The following profiles provide detailed ownership, funding, infrastructure, and expansion analysis for
+each VC-backed GSaaS provider. These companies represent the most dynamic and partnershipreceptive segment of the market.
+
+Commercial in Confidence | Page 9
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Leaf Space
+Parameter
+
+Detail
+
+Legal Entity
+
+Leaf Space S.p.A.
+
+Incorporated
+
+Italy (Lomazzo, Como)
+
+Founded
+
+2014 at Politecnico di Milano
+
+HQ
+
+Lomazzo (Como), Italy
+
+US Presence
+
+US subsidiary (established 2021)
+
+Founders
+
+Jonata Puglia (CEO), Giovanni Pandolfi Bortoletto (CSO),
+Matteo Boiocchi, Michele Messina
+
+Employees
+
+~50-70 (estimated 2025)
+
+Total Funding
+
+€35M+ equity + €15M EIB venture debt = ~€50M total
+capital
+
+Latest Round
+
+Series B, €20M (July 2023)
+
+Lead Investors (Series B)
+
+CDP Venture Capital (Fondo Evoluzione), Neva SGR
+
+Other Investors
+
+SIMEST, Digital Transition Fund (CDP group), RedSeed
+Ventures, Primo Space (Primomiglio SGR), Whysol
+Investments, European Investment Bank (debt)
+
+Revenue Growth
+
+3x year-over-year since 2020 (company-reported)
+
+Satellites Supported
+
+140+ (2025)
+
+Monthly Passes
+
+24,000+ (2025)
+
+Stations
+
+40+ antennas across 20+ locations
+
+Ownership Nationality
+
+Italian. Investors are predominantly Italian institutional
+(CDP is Italian state development bank subsidiary, Neva
+is Intesa Sanpaolo banking group).
+
+Current Ground Station Locations: Graz (Austria), Viterbo (Italy), Azores (Portugal),
+Hartebeesthoek (South Africa), Hokkaido (Japan), Alice Springs (Australia), Sri Lanka, Santiago (Chile),
+Reykjavik (Iceland), Bulgaria (2025), Canada (2025 expansion). 18 new stations planned through 2026
+in high-demand regions.
+Expansion Plan: Adding 18 stations by end-2026. Targeting Ka-band for remote sensing, larger
+aperture antennas for GEO, optical ground systems, and cislunar solutions. New Leaf Key (dedicated
+stations) and Leaf Hosting (customer equipment on Leaf sites) services launched 2025.
+Concentric Assessment: Leaf Space is the strongest partnership target for Concentric. VC-backed
+with no state security apparatus. Scaling into higher-risk geographies (Africa, South Asia) where
+physical security is the primary capability gap. Italian ownership with Italian state development capital
+backing creates a clean jurisdictional profile for Five Eyes / NATO-adjacent work. CYSEC cybersecurity
+partnership (Swiss) shows awareness of security needs. The Leaf Hosting model — where customers
+deploy their own equipment on Leaf sites — creates a natural role for Concentric as the physical
+security provider for hosted infrastructure.
+
+Commercial in Confidence | Page 10
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Skynopy
+Parameter
+
+Detail
+
+Legal Entity
+
+Skynopy SAS
+
+Incorporated
+
+France (Paris)
+
+Founded
+
+October 2023
+
+HQ
+
+Paris, France
+
+Founders
+
+Pierre Bertrand (CEO, ex-Loft Orbital, MIT), Antonin
+Hirsch (CTO, ex-Loft Orbital)
+
+Employees
+
+~15 (PitchBook 2025)
+
+Total Funding
+
+~€18M (~$21M)
+
+Latest Round
+
+Seed/Series A, €15M (June 2025). Closed in under one
+month.
+
+Lead Investor
+
+Alven Capital Partners (French VC)
+
+Other Investors
+
+Expansion Venture Capital, Omnes Capital, CNES
+(SpaceFounders programme), Heartcore Capital, BPI
+France, Kima Ventures
+
+Revenue
+
+Pre-revenue / early commercial (estimated)
+
+Stations
+
+15+ antennas (mid-2025), targeting 100+ by 2028
+
+Ownership Nationality
+
+French. CNES (French space agency) is a strategic
+investor via SpaceFounders. French government has
+policy interest in sovereign ground infrastructure.
+
+Current Ground Station Locations: Hybrid model — leases spare capacity from constellation
+operators (leveraging unused Starlink/OneWeb antennas) plus building own sites. Confirmed ownbuild: Saint-Pierre et Miquelon (French territory, near Newfoundland) and Réunion (French territory,
+Indian Ocean). Orange named as a partner.
+Expansion Plan: AKAR project: unified high-speed real-time space network planned for 2028. Target
+100+ antennas within 3 years via ‘massive agreement’ with unnamed major industry partner. Focus
+on S, X, and Ka-band high-throughput for EO constellations.
+Concentric Assessment: Skynopy is the fastest-growing entrant. Founded 18 months ago, already
+has 15+ stations and €18M in funding. The French government (via CNES and BPI France) has
+strategic interest in sovereign ground infrastructure, which aligns with Concentric’s
+government/defence positioning. Building own stations in French overseas territories (Saint-Pierre,
+Réunion) creates immediate site security requirements. The hybrid model of leasing spare
+constellation capacity is innovative but creates complex site access arrangements that would benefit
+from professional security management.
+
+Commercial in Confidence | Page 11
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Atlas Space Operations
+Parameter
+
+Detail
+
+Legal Entity
+
+ATLAS Space Operations, Inc.
+
+Incorporated
+
+United States (Delaware)
+
+Founded
+
+2015 (California, moved to Michigan 2017)
+
+HQ
+
+Traverse City, Michigan, USA
+
+Other Offices
+
+Colorado Springs, CO
+
+CEO
+
+John Williams (former Viasat executive)
+
+Employees
+
+~30-50 (estimated)
+
+Total Funding
+
+$15M+ (growth round Sept 2024)
+
+Lead Investor
+
+NewSpace Capital (Luxembourg-based space PE)
+
+Other Investors
+
+Michigan Capital Network, Beringea, Wakestream
+Ventures, Boomerang Catapult, Michigan Rise, Red
+Cedar Ventures
+
+Stations
+
+50+ antennas across 34+ ground stations in 20+
+countries
+
+Key Platform
+
+Freedom® Software — cloud-native, single API,
+federated network-of-networks
+
+Key Clients
+
+US Space Force (FORGE C2 programme), Viasat/NASA,
+HawkEye 360
+
+Acquisition
+
+York Space Systems (US defence tech) agreed to
+acquire Atlas, July 2025. Pending FCC approval.
+
+Ownership Nationality
+
+US-owned. Post-acquisition will be part of York Space
+Systems (US defence). Strong US DoD/IC alignment.
+
+Current Ground Station Locations: Federated network across 34+ locations globally including
+Traverse City MI (HQ), Finland (Muonio, NorthBase partnership), Mingenew Australia, Awarua New
+Zealand, American Samoa (construction started March 2026), Rwanda. Freedom software integrates
+partner antennas into unified network.
+Expansion Plan: EMEA expansion strategy (Europe, Middle East, Africa). Lunar orbit antenna
+capability under development. Post-York acquisition will integrate into Golden Dome defence
+architecture. 100% contract renewal rate demonstrates sticky customer base.
+Concentric Assessment: Atlas is being acquired by York Space Systems, a US defence company.
+Post-acquisition, it becomes part of a US military-industrial ecosystem where Concentric’s government
+security credentials are directly relevant. The Freedom software platform’s strength is network
+federation — connecting disparate partner antennas into one system. This means Atlas operates
+across sites it doesn’t own, creating a complex multi-party physical security challenge. The American
+Samoa and Rwanda expansions into challenging geographies create near-term security requirements.
+
+Commercial in Confidence | Page 12
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+RBC Signals
+Parameter
+
+Detail
+
+Legal Entity
+
+RBC Signals Inc.
+
+Incorporated
+
+United States
+
+Founded
+
+2015
+
+HQ
+
+Redmond, WA (previously Austin, TX)
+
+Founders
+
+Christopher Richins (CEO), Olga Gershenzon
+
+Employees
+
+1-10 (Tracxn 2024)
+
+Total Funding
+
+$3.2M (seed rounds)
+
+Investors
+
+Bee Partners, Freerun Ventures, Morgan Brook Capital,
+Dcode, Abstract Ventures
+
+Key Asset Acquisition
+
+Microsoft Azure Orbital ground station assets (10 x 6m
+S/X band tracking antennas), completed March 2025 via
+Space Leasing International
+
+Stations
+
+30+ (aggregated from partner ground station owners)
+
+Business Model
+
+Capacity aggregation / marketplace. Monetises unused
+capacity from existing ground station owners under
+revenue-sharing.
+
+Ownership Nationality
+
+US-owned. Small team, bootstrapped growth model
+augmented by Microsoft asset acquisition.
+
+Concentric Assessment: RBC Signals is the scrappiest player in the market. Very lean team, modest
+funding, but strategically acquired Microsoft’s physical ground station assets when the hyperscaler
+exited. The aggregation model means RBC doesn’t own most of its network — it brokers spare
+capacity. This limits the physical security partnership opportunity compared to operators who own
+their infrastructure. However, the Microsoft antenna assets are now RBC-owned and may require site
+security services. Partnership with mu Space for Thailand site shows expansion into Southeast Asia.
+
+Commercial in Confidence | Page 13
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Infostellar
+Parameter
+
+Detail
+
+Legal Entity
+
+Infostellar Inc.
+
+Incorporated
+
+Japan (Tokyo)
+
+Founded
+
+2016
+
+HQ
+
+Tokyo, Japan
+
+Founders
+
+Naomi Kurahara (CEO), Kazuo Ishigame
+
+Employees
+
+11-50 (Tracxn 2024)
+
+Total Funding
+
+$21.3M across 4 rounds
+
+Latest Round
+
+Series B, $4.3M (January 2022)
+
+Key Investors
+
+ITOCHU Corporation, Mitsubishi UFJ Capital, Mitsubishi
+Corporation, Mizuho Capital, Airbus Ventures, Sony
+Innovation Fund, Pavilion Capital Partners
+
+Stations
+
+28+ (StellarStation marketplace network)
+
+Owned Infrastructure
+
+Taiki teleport (Hokkaido, Japan). Expanding to
+Central/Southern Japan.
+
+Key Partnership
+
+Viasat RTE — mutual distribution agreement since 2020.
+Viasat RTE station co-located at Infostellar’s Hokkaido
+site.
+
+Ownership Nationality
+
+Japanese. Investors are major Japanese industrial
+conglomerates (ITOCHU, Mitsubishi, Mizuho) plus Airbus
+Ventures (European). Deep Japanese institutional
+backing.
+
+Concentric Assessment: Infostellar is a marketplace model (like Airbnb for ground stations) rather
+than an infrastructure owner. Its StellarStation platform connects satellite operators with antenna
+owners who have spare capacity. This limits direct physical security partnership opportunity. However,
+the Japanese institutional investor base (ITOCHU, Mitsubishi, Mizuho) represents significant corporate
+relationships that could open doors for broader security mandates. The Viasat co-location in Hokkaido
+is a concrete infrastructure asset. NorthBase partnership in Finland extends into Nordic territory.
+
+Sfera Technologies
+Parameter
+
+Detail
+
+Legal Entity
+
+Sfera Technologies Ltd.
+
+Incorporated
+
+Bulgaria (Sofia)
+
+Founded
+
+2019
+
+HQ
+
+Sofia, Bulgaria
+
+Platform
+
+HomePort — integrated ground segment service with
+privacy-oriented storage and processing
+
+Funding
+
+Undisclosed (early stage)
+
+Stations
+
+Small, own-operated (Bulgaria)
+
+Ownership Nationality
+
+Bulgarian. EU member state. Early stage, limited public
+information on investors.
+
+Concentric Assessment: Too early stage for immediate partnership. Monitor as a potential
+acquisition target for larger GSaaS players. Privacy-oriented architecture (HomePort) is a differentiator
+that may attract government/defence customers.
+
+Commercial in Confidence | Page 14
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Appendix A: Potential Real Estate Sites for Future Ground
+Stations
+The following locations are assessed as high-probability sites for future LEO ground station deployment
+based on coverage gap analysis, regulatory trajectory, fibre backbone availability, and population
+density drivers. These represent potential real estate acquisition or leasing opportunities for a ground
+station hosting business.
+Priority
+
+Location
+
+Country
+
+Rationale
+
+1
+
+Mombasa /
+Malindi
+
+Kenya
+
+East African
+Excellent
+Coastal
+gateway.
+(cable landing) tropical
+Undersea
+cable landing
+(TEAMS,
+EASSy, LION2).
+Starlink
+licensed. Only
+existing GS
+infrastructure
+is Malindi ESA
+tracking
+station.
+
+3
+
+2
+
+Accra / Tema
+
+Ghana
+
+West African
+coverage gap.
+Undersea
+cables (ACE,
+WACS,
+MainOne).
+Stable
+governance.
+Starlink
+licensed.
+
+Coastal
+tropical
+
+2
+
+3
+
+Muscat / Duqm Oman
+
+Etlaq
+Good
+Spaceport
+under
+construction in
+Duqm (2027).
+Strategic
+position
+between
+Asia/Africa/Eur
+ope. Clean
+regulatory
+environment.
+
+Desert coastal
+
+2
+
+4
+
+Tashkent area
+
+Central Asian
+coverage gap.
+Reforming
+economy.
+China BRI
+connectivity.
+Minimal
+existing
+ground
+infrastructure.
+
+Continental
+steppe
+
+3
+
+5
+
+Surabaya / Bali Indonesia
+
+Tropical
+volcanic
+
+3
+
+Uzbekistan
+
+Fibre Access
+
+Good (cable
+landing)
+
+Developing
+
+Eastern
+Good (Java
+Indonesia
+backbone)
+coverage.
+270M
+population.
+Archipelago
+forces multiple
+stations.
+Starlink
+licensed.
+
+Terrain
+
+Difficulty
+
+Commercial in Confidence | Page 15
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+6
+
+Pune /
+Hyderabad
+
+India
+
+1.4B
+Excellent
+population.
+Tech hub
+infrastructure.
+Starlink/Kuiper
+regulatory
+entry
+expected
+2026-27. AWS
+region nearby.
+
+Plateau,
+moderate
+
+2
+
+7
+
+Dakar
+
+Senegal
+
+Francophone
+West Africa
+gateway.
+Undersea
+cable landing.
+Stable
+governance.
+French GSaaS
+operators
+(Skynopy)
+have strategic
+interest.
+
+Coastal semiarid
+
+3
+
+8
+
+Antananarivo
+area
+
+Madagascar
+
+Indian Ocean
+Limited
+coverage gap.
+Between Africa
+and Asia.
+Réunion
+(French)
+nearby.
+
+Tropical
+highland
+
+4
+
+9
+
+Medellín area
+
+Colombia
+
+Andean
+Good
+coverage.
+Growing tech
+hub. AWS
+Bogotá local
+zone nearby.
+Lower security
+risk than other
+Colombian
+regions.
+
+Mountain
+valley
+
+2
+
+10
+
+Thessaloniki
+
+Greece
+
+Eastern
+Good
+Mediterranean
+coverage. EU
+member. Low
+cost. Good
+fibre via
+submarine
+cables. KSAT
+Athens nearby
+but this
+extends
+coverage east.
+
+Coastal
+Mediterranean
+
+1
+
+11
+
+Perth suburbs
+
+Australia
+
+Western
+Australian
+coverage
+complement
+to Geraldton.
+AWS APSoutheast-2
+region. Strong
+fibre
+backbone.
+
+Excellent
+
+Coastal
+temperate
+
+1
+
+12
+
+Nouméa
+
+New Caledonia South Pacific
+(FR)
+coverage gap.
+French
+territory
+(sovereign
+advantage for
+
+Good (cable)
+
+Tropical island
+
+3
+
+Good (cable
+landing)
+
+Commercial in Confidence | Page 16
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Skynopy/CNES
+). Undersea
+cable
+(Gondwana-2).
+13
+
+Djibouti
+
+Djibouti
+
+Strategic Horn Excellent
+of Africa.
+(cables)
+Military base
+concentration
+(US, France,
+China, Japan).
+Multiple
+submarine
+cable landings.
+Extreme heat.
+
+Desert coastal
+
+3
+
+14
+
+Tánger area
+
+Morocco
+
+North African
+Good
+gateway.
+(submarine
+OneWeb
+cables)
+regulatory
+approval
+anticipated
+2025. EUadjacent.
+Gibraltar Strait
+strategic
+position.
+
+Mediterranean
+coastal
+
+2
+
+15
+
+Ulaanbaatar
+area
+
+Mongolia
+
+Central/East
+Asian
+coverage gap.
+Between
+Russian and
+Chinese
+infrastructure.
+Sparse
+population but
+growing
+connectivity
+demand.
+
+Continental
+steppe
+
+4
+
+Developing
+
+Site selection criteria: (1) Coverage gap in current constellation ground networks, (2) Regulatory environment
+permitting foreign ground station operation, (3) Proximity to existing fibre backbone or submarine cable landing,
+(4) Population density within 1,000km radius, (5) Availability of suitable land (flat, low RFI, adequate power supply),
+(6) Political stability and physical security environment.
+
+Commercial in Confidence | Page 17
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+Appendix B: VC-Backed GSaaS Provider Financial Summary
+The following table summarises publicly available financial data for the VC-backed GSaaS providers
+profiled in Section 3.4. All figures are from company announcements, press coverage, and investor
+databases (Tracxn, PitchBook, Crunchbase). Revenue figures are estimates where not publicly
+disclosed. All figures in USD unless otherwise stated.
+Company
+
+Total
+Raised
+
+Latest
+Round
+
+Date
+
+Lead
+Investor
+
+Leaf Space
+
+$32.7M
+equity +
+$16.5M EIB
+debt
+
+Series B,
+€20M
+
+Jul 2023
+
+Skynopy
+
+~$21M
+(€18M)
+
+Seed/Series
+A, €15M
+
+Atlas
+Space Ops
+
+$15M
+(growth
+round)
+
+RBC
+Signals
+
+Valuation
+(est)
+
+Revenue
+Status
+
+Burn Rate
+Indicator
+
+CDP Venture Not
+Capital /
+disclosed
+Neva SGR
+(~$80-120M
+est)
+
+Revenuegenerating.
+3x YoY
+growth since
+2020.
+
+Moderate.
+EIB debt
+suggests
+sustainable
+model.
+
+Jun 2025
+
+Alven
+Capital
+Partners
+
+Not
+disclosed
+(~$40-60M
+est)
+
+Early
+commercial.
+Strategic
+clients
+onboarding.
+
+High. 15
+employees,
+rapid hiring
+planned.
+
+Growth,
+$15M
+
+Sep 2024
+
+NewSpace
+Capital
+
+Not
+disclosed
+
+Revenuegenerating.
+100%
+contract
+renewal.
+
+Moderate.
+34+
+stations,
+govt
+contracts.
+
+$3.2M
+(seed)
+
+Seed
+
+Apr 2021
+
+Bee Partners Not
+disclosed
+
+Early
+revenue.
+Asset-light
+model.
+
+Low. <10
+employees,
+aggregation
+model.
+
+Infostellar
+
+$21.3M
+
+Series B,
+$4.3M
+
+Jan 2022
+
+Pavilion
+Capital
+Partners
+
+Not
+disclosed
+
+Pre-profit.
+~500
+passes/mont
+h.
+
+Moderate.
+11-50
+employees.
+Japanese
+institutional
+backers
+provide
+runway.
+
+Sfera Tech
+
+Undisclosed
+
+Early stage
+
+N/A
+
+N/A
+
+Not
+disclosed
+
+Pre-revenue
+(estimated)
+
+Low. Small
+team.
+
+Investor Nationality Map
+Understanding investor nationality is critical for assessing alignment with Concentric’s government and
+defence client base:
+Company
+
+Primary Investor
+Nationality
+
+Government/State
+Capital
+
+Strategic Implications
+
+Leaf Space
+
+Italian
+
+Yes — CDP (Italian state
+development bank),
+SIMEST (Italian trade
+promotion), EIB (EU
+institution)
+
+Italian state has strategic
+interest. EU institutional
+backing. Clean for
+NATO/Five Eyes adjacent
+work.
+
+Skynopy
+
+French
+
+Yes — CNES (French space
+agency), BPI France
+(French state investment
+bank)
+
+French sovereign ground
+infrastructure agenda.
+Overseas territory
+expansion (Saint-Pierre,
+Réunion) is governmentsupported.
+
+Atlas Space Ops
+
+US / Luxembourg
+
+No direct state capital. But
+York acquisition (US
+defence) changes this.
+
+Post-acquisition: US
+defence ecosystem. Direct
+DoD/IC alignment.
+
+RBC Signals
+
+US
+
+US DoD connection (Dcode
+
+Lean, bootstrapped.
+
+Commercial in Confidence | Page 18
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+accelerator participation).
+
+Microsoft asset deal shows
+opportunistic growth.
+
+Infostellar
+
+Japanese
+
+No direct state capital. But
+ITOCHU, Mitsubishi, Mizuho
+are quasi-institutional
+Japanese keiretsu.
+
+Japanese corporate
+backing provides stability.
+Airbus Ventures adds
+European connection.
+
+Sfera Tech
+
+Bulgarian
+
+None known.
+
+EU member state. Early
+stage.
+
+Key M&A Activity (2024-2026)
+Date
+
+Transaction
+
+Value
+
+Significance
+
+Oct 2024
+
+Eutelsat sells ground
+station assets to EQT
+
+€790M ($830M)
+
+1,400 antennas across
+100+ locations. Largest
+ground segment
+transaction. Establishes
+infrastructure-asinvestment-asset class.
+
+Oct 2024
+
+Microsoft sells Azure
+Orbital assets to SLI
+
+Not disclosed
+
+Hyperscaler exits direct
+GSaaS. Assets transferred
+to RBC Signals. Validates
+dedicated operator model
+over generalist.
+
+Jul 2025
+
+York Space Systems
+acquires Atlas Space Ops
+
+Not disclosed
+
+US defence company
+acquires largest US-owned
+GSaaS provider. Pending
+FCC approval. Integration
+into Golden Dome
+architecture.
+
+Feb 2026
+
+KSAT announces Hyper inorbit relay
+
+N/A
+
+Orbiting ground stations.
+Extends KSAT’s polar
+dominance into spacebased relay. Potential
+game-changer for latencycritical EO.
+
+Commercial in Confidence | Page 19
+
+CONCENTRIC | LEO Ground Station Market: Opportunity Assessment
+
+C O N C E N T R I C
+Your World, Secured. | concentric.io
+
+Commercial in Confidence | Page 20
+
+

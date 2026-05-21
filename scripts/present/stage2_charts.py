@@ -13,6 +13,7 @@ Routing table (10-line if/elif):
   - section.type == "economic" → trade_bar if has trades
   - default → skip (no chart for this section)
 
+import sys
 Self-test: matplotlib importable? mmdc or mermaid.ink reachable?
 
 Usage:
@@ -22,8 +23,13 @@ Usage:
 
 Budget: $0.00 (all local tools).
 """
-from __future__ import annotations
 
+from __future__ import annotations
+import sys
+sys.path.insert(0, "/home/ubuntu/.openclaw/workspace")
+
+import sys
+if "/home/ubuntu/.openclaw/workspace" not in sys.path:
 import argparse
 import json
 import os
@@ -33,22 +39,16 @@ import subprocess
 import sys
 import textwrap
 from typing import Any, Optional
-
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-
 WORKSPACE = pathlib.Path("/home/ubuntu/.openclaw/workspace")
-
-# Brand colours
 DARK_BG = "#1a1a2e"
 NAVY = "#0f3460"
 GOLD = "#c9a84c"
 WHITE = "#f0f0f0"
 GREY = "#888888"
-
-# Sherman Kent band → (score, colour, label)
 KENT_BANDS = {
     "almost_certain":  (9.5, "#00b300", "Almost Certain (≥93%)"),
     "highly_likely":   (8.5, "#33cc33", "Highly Likely (80-90%)"),
@@ -59,9 +59,6 @@ KENT_BANDS = {
     "highly_unlikely": (1.5, "#cc3333", "Highly Unlikely (10-20%)"),
     "remote":          (0.5, "#990000", "Remote (<10%)"),
 }
-
-# ── Rule-based routing table ────────────────────────────────────────────
-# Stub: this section type → chart type. Fixed dictionary, not LLM.
 SECTION_ROUTE: dict[str, list[str]] = {
     "political": ["kent_bar"],
     "military":  ["kent_bar"],
@@ -71,8 +68,6 @@ SECTION_ROUTE: dict[str, list[str]] = {
     "energy":    ["trade_bar"],
     "default":   ["kent_bar"],
 }
-
-
 def self_test() -> list[str]:
     """Check prerequisites. Returns list of failures (empty = pass)."""
     failures = []
@@ -87,15 +82,8 @@ def self_test() -> list[str]:
     except ImportError:
         failures.append("numpy not importable")
     if not shutil.which("mmdc"):
-        # mermaid.ink API fallback should work, but log a warning
         pass  # soft requirement — mermaid.ink is fallback
     return failures
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# Chart renderers
-# ═══════════════════════════════════════════════════════════════════════
-
 def _style():
     plt.style.use("dark_background")
     plt.rcParams.update({
@@ -105,17 +93,12 @@ def _style():
         "grid.color": "#2a2a3e", "grid.alpha": 0.3,
         "font.family": "sans-serif",
     })
-
-
 def _figsize(w: int = 1200, h: int = 800, dpi: int = 120) -> tuple:
     return (w / dpi, h / dpi)
-
-
 def render_kent_bar(judgments: list[dict], output_path: str) -> None:
     """Horizontal bar chart of Sherman Kent probability bands."""
     _style()
     fig, ax = plt.subplots(figsize=_figsize())
-
     claims, scores, colors = [], [], []
     for j in judgments[:8]:
         band = j.get("kent_band", "").lower().replace(" ", "_")
@@ -126,7 +109,6 @@ def render_kent_bar(judgments: list[dict], output_path: str) -> None:
         claims.append(textwrap.fill(j.get("claim", "Untitled"), width=40))
         scores.append(score)
         colors.append(color)
-
     if claims:
         bars = ax.barh(range(len(claims)), scores, color=colors, height=0.6)
         ax.set_yticks(range(len(claims)))
@@ -140,24 +122,19 @@ def render_kent_bar(judgments: list[dict], output_path: str) -> None:
     else:
         ax.text(0.5, 0.5, "No judgments to display",
                 ha="center", va="center", transform=ax.transAxes, color=GREY)
-
     plt.tight_layout()
     fig.savefig(output_path, dpi=120, bbox_inches="tight",
                 facecolor=DARK_BG, edgecolor="none")
     plt.close(fig)
-
-
 def render_trade_bar(trades: list[dict], output_path: str) -> None:
     """Horizontal bar of trade position sizes."""
     _style()
     fig, ax = plt.subplots(figsize=_figsize(1200, 600))
-
     instruments = [t.get("instrument", "?")[:25] for t in trades[:6]]
     sizes = [t.get("sizing_usd", 0) or 0 for t in trades[:6]]
     recs = [t.get("recommendation", "hold") for t in trades[:6]]
     rec_colors = {"buy": "#33cc33", "sell": "#cc3333", "hold": "#cccc33"}
     bar_colors = [rec_colors.get(r, GREY) for r in recs]
-
     if instruments and any(s > 0 for s in sizes):
         bars = ax.barh(range(len(instruments)), sizes, color=bar_colors, height=0.5)
         for bar, size in zip(bars, sizes):
@@ -172,23 +149,18 @@ def render_trade_bar(trades: list[dict], output_path: str) -> None:
     else:
         ax.text(0.5, 0.5, "No trade positions",
                 ha="center", va="center", transform=ax.transAxes, color=GREY)
-
     plt.tight_layout()
     fig.savefig(output_path, dpi=120, bbox_inches="tight",
                 facecolor=DARK_BG, edgecolor="none")
     plt.close(fig)
-
-
 def render_mermaid_diagram(mermaid_code: str, output_path: str) -> None:
     """Render Mermaid → PNG via local mmdc or mermaid.ink fallback."""
     path = pathlib.Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-
     if shutil.which("mmdc"):
         tmp = path.parent / f"_tmp_{path.stem}.mmd"
         try:
             tmp.write_text(mermaid_code)
-            # Puppeteer config for no-sandbox (container requirement)
             config_path = path.parent / f"_puppeteer_{path.stem}.json"
             config_path.write_text(json.dumps({
                 "puppeteerConfig": {"args": ["--no-sandbox", "--disable-setuid-sandbox"]}
@@ -207,25 +179,15 @@ def render_mermaid_diagram(mermaid_code: str, output_path: str) -> None:
         finally:
             tmp.unlink(missing_ok=True)
             config_path.unlink(missing_ok=True)
-
-    # Fallback: mermaid.ink API
     import base64, urllib.request
     encoded = base64.urlsafe_b64encode(mermaid_code.encode("utf-8")).decode("ascii")
     url = f"https://mermaid.ink/img/{encoded}"
     req = urllib.request.Request(url, headers={"User-Agent": "Trevor-Present/1.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         path.write_bytes(resp.read())
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# Rule-based routing: brief JSON → which charts
-# ═══════════════════════════════════════════════════════════════════════
-
 def route_brief(brief: dict) -> list[dict]:
     """Apply routing rules to a brief JSON. Returns list of chart specs.
-
     Each spec: {"type": str, "data": ..., "output": str}
-
     Fixed dictionary routing — no LLM calls.
     """
     specs = []
@@ -233,16 +195,10 @@ def route_brief(brief: dict) -> list[dict]:
     trades = brief.get("trade_positions", [])
     sections = brief.get("sections", [])
     output_base = "exports/charts"  # will be overridden by caller
-
-    # Rule 1: Has headline judgments → kent_bar
     if judgments:
         specs.append({"type": "kent_bar", "data": judgments, "output": "kent-bar.png"})
-
-    # Rule 2: Has trade positions → trade_bar
     if trades:
         specs.append({"type": "trade_bar", "data": trades, "output": "trade-bar.png"})
-
-    # Rule 3: Has 3+ sections → mermaid sections diagram
     if len(sections) >= 2:
         mermaid_lines = ["graph TD"]
         for i, s in enumerate(sections[:8]):
@@ -253,13 +209,10 @@ def route_brief(brief: dict) -> list[dict]:
                 mermaid_lines.append(f'    S{i-1} --> S{i}["{title}"]')
         specs.append({"type": "mermaid", "data": "\n".join(mermaid_lines),
                       "output": "sections-diagram.png"})
-
-    # Rule 4: Per-section routing (deeper analysis)
     for i, s in enumerate(sections):
         sec_judgments = s.get("judgments", []) + s.get("subsections", [{}])[0].get("judgments", []) if s.get("subsections") else []
         sec_trades = s.get("trade_positions", [])
         sec_type = s.get("type", "default")
-
         if sec_judgments:
             route = SECTION_ROUTE.get(sec_type, SECTION_ROUTE["default"])
             if "kent_bar" in route and len(specs) < 6:
@@ -268,15 +221,11 @@ def route_brief(brief: dict) -> list[dict]:
                     "data": sec_judgments[:8],
                     "output": f"section-{i}-judgments.png",
                 })
-
     return specs
-
-
 def generate_chart(spec: dict, output_dir: str) -> dict:
     """Execute a single chart spec and return result metadata."""
     output_path = str(pathlib.Path(output_dir) / spec["output"])
     pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
-
     try:
         if spec["type"] == "kent_bar":
             render_kent_bar(spec["data"], output_path)
@@ -286,17 +235,10 @@ def generate_chart(spec: dict, output_dir: str) -> dict:
             render_mermaid_diagram(spec["data"], output_path)
         else:
             return {"success": False, "error": f"Unknown type: {spec['type']}"}
-
         size_kb = pathlib.Path(output_path).stat().st_size / 1024
         return {"success": True, "output": output_path, "size_kb": round(size_kb, 1)}
     except Exception as exc:
         return {"success": False, "error": str(exc)}
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# CLI
-# ═══════════════════════════════════════════════════════════════════════
-
 def process_brief(brief_path: str, output_dir: str) -> list[dict]:
     """Process a brief JSON and generate all routed charts."""
     brief = json.loads(pathlib.Path(brief_path).read_text())
@@ -307,8 +249,6 @@ def process_brief(brief_path: str, output_dir: str) -> list[dict]:
         result["spec_type"] = spec["type"]
         results.append(result)
     return results
-
-
 def main():
     parser = argparse.ArgumentParser(description="Stage 2 — Charts & Diagrams")
     parser.add_argument("--brief", help="Path to brief JSON")
@@ -317,7 +257,6 @@ def main():
     parser.add_argument("--self-test", action="store_true",
                         help="Run self-test and exit")
     args = parser.parse_args()
-
     if args.self_test:
         failures = self_test()
         if failures:
@@ -326,16 +265,12 @@ def main():
         else:
             print("  STAGE 2 READY: matplotlib + mmdc available")
         return
-
     if not args.brief or not pathlib.Path(args.brief).exists():
         parser.error("--brief path required and must exist")
-
     results = process_brief(args.brief, args.output_dir)
     for r in results:
         status = "✅" if r["success"] else "❌"
         details = r.get("output", r.get("error", ""))
         print(f"  {status} {r['spec_type']}: {details}")
-
-
 if __name__ == "__main__":
     main()

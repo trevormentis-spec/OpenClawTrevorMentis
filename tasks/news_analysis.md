@@ -1,31 +1,31 @@
-# Daily Intelligence Briefing — 2026-05-15
+# Daily Intelligence Briefing — 2026-05-21
 
 
 ## BLUF (Bottom Line Up Front)
 
-The US-China summit failed to produce guardrails on Taiwan or Iran, while Russia's war in Ukraine triggered a government collapse in Latvia and Iran's missile rebuild challenges the US victory narrative, making the next week a period of elevated instability across three theatres.
+Overnight tape is dominated by a correlated oil-plus-rates repricing that converts a contained-geopolitics posture into an active regime question, while Lebanon-Hormuz signalling and a UK sanctions extension lock in higher-for-longer Western coercion clocks — all on thin, single-source collection that disciplines every band below to 'likely' or under.
 
 
-Diverging summit readouts confirm no progress on core flashpoints, as Xi's Taiwan warning raised the risk of Chinese military exercises. Drone incursions into Latvia brought down the government, signaling NATO spillover. Iran's preserved missile capability, coupled with Israeli readiness for a second round, reprices the Middle East toward escalation. Watch for Chinese military movements near Taiwan, an Iranian missile test, and NATO's response to Baltic airspace breaches.
+What's new: Brent +3.2% and UST 10y +12bp landed in the same session (Mock Wire B2), pairing an Iranian Hormuz exercise announcement with a hot CPI print to dent both pillars of the orderly-disinflation trade. Why it matters: the Mexico-vector transmission is dollar-plus-yields into MXN carry, which intersects Open Claw's standing desk posture, while a reported IDF strike on southern Beirut (Mock Wire B2) and a UK Russia sanctions extension bill (Mock Wire B2) tighten the geopolitical risk premium underneath. What to watch: second-source confirmation on the Beirut strike, breakevens follow-through tomorrow, and whether the Senate Israel supplemental actually lands a passage vote inside the horizon.
 
 
 ## Key Judgments
 
-- **[·europe]** At least one additional NATO member state (likely Poland or Estonia) will report a drone incursion or crash on its territory within the next 7 days.
+- **[·global_finance]** The US 10-year yield closes the next 7 sessions above the pre-CPI level, indicating the print is being read as signal rather than noise.
   - *Confidence: likely (60% / 7d)*
 
-- **[·asia]** China will conduct at least one military exercise or patrol near Taiwan within the next 7 days as a follow-up to Xi's warning.
+- **[·middle_east]** The IRGC Hormuz exercise will be conducted as a declared drill without a kinetic interdiction of commercial shipping during the 7-day window.
   - *Confidence: likely (65% / 7d)*
 
-- **[·middle_east]** Iran will conduct at least one ballistic missile test or visible deployment movement within the next 7 days to signal reconstitution of its strike capability.
+- **[·europe]** No coordinated EU-27 sanctions package matching or exceeding the UK Russia sanctions extension will be agreed within 7 days.
+  - *Confidence: likely (68% / 7d)*
+
+- **[·asia]** PLA grey-zone activity around Taiwan remains at pattern tempo with no Joint Sword-scale exercise announced over the next 7 days.
   - *Confidence: likely (60% / 7d)*
 
-- **[·north_america]** The Digital Asset Market Clarity Act will pass the full Senate within 7 days, given bipartisan committee support and administration backing.
-  - *Confidence: likely (60% / 7d)*
-
-- **[·south_central_america]** Flávio Bolsonaro will lose at least 5 percentage points in polling within 7 days due to the leaked tape scandal.
+- **[·north_america]** No Sheinbaum-administration statement will link the Tijuana cartel clash to bilateral US co-operation requests within the 7-day horizon.
   - *Confidence: likely (65% / 7d)*
 
 
 ---
-*Analysis prepared by TREVOR — 2026-05-15*
+*Analysis prepared by TREVOR — 2026-05-21*

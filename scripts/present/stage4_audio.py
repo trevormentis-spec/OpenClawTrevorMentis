@@ -11,6 +11,7 @@ Usage:
     python3 scripts/present/stage4_audio.py --brief /tmp/brief.json --output exports/audio/narration.mp3
     python3 scripts/present/stage4_audio.py --self-test
 """
+from _present_env import get_key, load_env as _load_env
 from __future__ import annotations
 
 import argparse
@@ -61,7 +62,7 @@ def _get_env_key(key_name: str) -> str:
     """Get a key from env or .env."""
     val = os.environ.get(key_name, "")
     if not val:
-        env_path = WORKSPACE / ".env"
+        env_path = os.environ.get("ENV_NOT_USED", "")
         if env_path.exists():
             for line in env_path.read_text().splitlines():
                 if line.startswith(f"{key_name}="):

@@ -3,3 +3,12 @@ assignments:
     priority: secondary
     assigned: 2026-05-20
     principal_notes: "Multi-topic routing validation"
+
+  - topic: leo_ground_stations
+    priority: primary
+    assigned: 2026-05-21
+    principal_notes: >
+      Venture-relevant expertise domain. Three principal documents incorporated
+      (Concentric market opportunity assessment, physical security methodology,
+      80-site risk register). 54 entities, 83 sources, 8 themes configured.
+      Initial validation brief required. Depth target: expert-level.

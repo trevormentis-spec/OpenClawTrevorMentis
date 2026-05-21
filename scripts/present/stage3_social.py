@@ -19,6 +19,7 @@ Usage:
 
 Cost: ~$0.05 per brief (Opus 4.7 copy generation only). Rendering is free.
 """
+from _present_env import get_key, load_env as _load_env
 from __future__ import annotations
 
 import argparse
@@ -64,7 +65,7 @@ def self_test() -> list[str]:
 def _get_openrouter_key() -> str:
     key = os.environ.get("OPENROUTER_API_KEY", "")
     if not key:
-        for line in pathlib.Path(WORKSPACE / ".env").read_text().splitlines():
+        for line in pathlib.Path(os.environ.get("ENV_NOT_USED", "")).read_text().splitlines():
             if line.startswith("OPENROUTER_API_KEY="):
                 key = line.split("=", 1)[1].strip('"').strip("'")
                 break

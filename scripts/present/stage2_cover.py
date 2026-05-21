@@ -17,6 +17,7 @@ Usage:
 Cost: ~$0.05 per iteration (1 GenViral credit + 1 Opus prompt refinement)
 Ceiling: $0.50 max (3 iterations at ~$0.15 each)
 """
+from _present_env import get_key, load_env as _load_env
 from __future__ import annotations
 
 import argparse
@@ -52,9 +53,9 @@ def self_test() -> list[str]:
     return failures
 
 
-def _load_env() -> dict[str, str]:
+def _load_env_original() -> dict[str, str]:
     env = os.environ.copy()
-    env_path = WORKSPACE / ".env"
+    env_path = os.environ.get("ENV_NOT_USED", "")
     if env_path.exists():
         for line in env_path.read_text().splitlines():
             line = line.strip()
@@ -67,7 +68,7 @@ def _load_env() -> dict[str, str]:
 def _get_openrouter_key() -> str:
     key = os.environ.get("OPENROUTER_API_KEY", "")
     if not key:
-        for line in pathlib.Path(WORKSPACE / ".env").read_text().splitlines():
+        for line in pathlib.Path(os.environ.get("ENV_NOT_USED", "")).read_text().splitlines():
             if line.startswith("OPENROUTER_API_KEY="):
                 key = line.split("=", 1)[1].strip('"').strip("'")
                 break

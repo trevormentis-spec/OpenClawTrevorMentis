@@ -3,14 +3,13 @@
   "generated_at": "2026-05-13T05:28:11Z",
   "calibration_directives": {
     "overall": {
-      "total_judgments": 25,
-      "correct": 1,
-      "incorrect": 0,
-      "accuracy_pct": 4.0,
-      "overconfidence_regions": [],
-      "underconfidence_regions": [],
-      "unresolved": 24,
-      "global_caution_reason": "24/25 judgments unresolved \u2014 restricting top band"
+      "total_judgments": 55,
+      "correct": 5,
+      "incorrect": 20,
+      "unresolved": 30,
+      "accuracy_pct": 20.0,
+      "posture": "widen_two_notches",
+      "overconfidence_regions": []
     },
     "by_region": {
       "europe": {
@@ -72,7 +71,21 @@
     },
     "restricted_bands_globally": [
       "almost certain"
-    ]
+    ],
+    "band_directives": [],
+    "region_table": [
+      {
+        "region": "europe",
+        "accuracy": 1.0,
+        "samples": 11
+      },
+      {
+        "region": "asia",
+        "accuracy": 1.0,
+        "samples": 11
+      }
+    ],
+    "compiled_at": "2026-05-21T18:54:03.782313+00:00Z"
   },
   "collection_directives": {
     "by_region": {
@@ -335,5 +348,6 @@
       "priority_tier": "medium",
       "reasons": []
     }
-  }
+  },
+  "updated_at": "2026-05-21T18:54:03.782313+00:00Z"
 }

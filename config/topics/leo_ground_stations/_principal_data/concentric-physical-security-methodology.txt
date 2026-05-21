@@ -1,0 +1,575 @@
+C O N C E N T R I C
+SECURITY GROUP
+
+Physical Security Risk Assessment
+Methodology
+LEO Basestation Ground Infrastructure
+
+Classification: CLIENT CONFIDENTIAL
+Version: 1.0 | March 2026
+Prepared by: Concentric Security Group
+Washington State, USA | concentric.io
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+1. Executive Summary
+This document establishes a repeatable, transparent methodology for assessing the physical
+security risk to Low Earth Orbit (LEO) satellite basestation ground infrastructure. While the
+cyber threat landscape for LEO constellations has been extensively studied, the physical
+security of ground segment assets remains under-examined despite representing a critical
+single point of failure in constellation architectures.
+The methodology is designed for application across all major LEO constellation operators,
+including SpaceX Starlink, Amazon Project Kuiper, Eutelsat OneWeb, and Telesat Lightspeed.
+It provides a structured framework that can be applied by Concentric field assessors to
+produce standardised, comparable risk ratings across a global portfolio of basestation sites.
+The accompanying spreadsheet provides an initial risk register of identified global LEO
+basestation locations with preliminary risk ratings derived from this methodology.
+
+2. Scope and Applicability
+This methodology addresses physical security threats to LEO basestation ground
+infrastructure exclusively. It does not replicate the digital/cyber risk frameworks already
+established by NIST CSF alignment, NTRA regulatory compliance, or operator-specific
+cybersecurity programmes. The focus is on threats that manifest through physical access,
+proximity, or kinetic action against ground segment assets.
+
+2.1 Assets in Scope
+•
+
+•
+•
+•
+
+Gateway Earth Stations (GES): Primary ground stations hosting Ka/Ku-band phased
+array antenna arrays, radome enclosures, and fibre interconnects to Internet
+Exchange Points.
+Satellite Network Portals (SNP): Data processing and routing facilities co-located with
+or adjacent to gateway stations.
+Telemetry, Tracking and Command (TT&C) Facilities: Sites responsible for satellite
+orbit management and health monitoring.
+Supporting Infrastructure: Power substations, backup generators, cooling systems,
+fibre landing points, and access roads serving basestation complexes.
+
+2.2 Assets Out of Scope
+•
+•
+•
+
+User terminal equipment and residential/commercial customer premises.
+Space segment assets (satellites, inter-satellite links).
+Mission Operations Centres (MOCs) unless co-located with ground stations.
+
+3. Physical Threat Taxonomy for LEO Ground
+Stations
+
+Client Confidential | Page 2
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+The following threat categories have been developed specifically for LEO ground
+infrastructure, informed by the segmented risk model established in the source reference
+material and adapted to address physical rather than digital vectors.
+Threat Category
+
+Threat ID
+
+Description
+
+Unauthorised
+Access
+
+PA-01
+
+Perimeter breach by hostile actors seeking to
+damage, destroy, or tamper with antenna arrays,
+radomes, or data centre equipment.
+
+PA-02
+
+Insider threat from maintenance contractors,
+construction workers, or co-located facility staff with
+legitimate physical access.
+
+PS-01
+
+Deliberate damage to antenna infrastructure, fibre
+optic cables, or power supply systems by
+ideologically motivated, criminal, or state-sponsored
+actors.
+
+PS-02
+
+Destruction of access roads or supporting utilities to
+deny operational capability.
+
+Surveillance /
+Reconnaissance
+
+PR-01
+
+Hostile reconnaissance of site layout, security
+posture, shift patterns, and vulnerability mapping
+by adversary actors.
+
+Theft
+
+PT-01
+
+Theft of high-value electronic components, copper
+cabling, or backup power equipment.
+
+Drone / UAS Threat
+
+PD-01
+
+Unmanned aerial systems used for surveillance,
+signal interference, or direct kinetic attack on
+exposed antenna arrays.
+
+Environmental /
+Natural Hazard
+
+PE-01
+
+Severe weather, seismic events, flooding, wildfire,
+or volcanic activity affecting site operability and
+structural integrity.
+
+Civil Unrest /
+Protest
+
+PC-01
+
+Protest activity, blockade, or civil disorder targeting
+the facility or its operator due to political,
+environmental, or social grievance.
+
+State-Level Threat
+
+PX-01
+
+Covert or overt state action against ground
+infrastructure in the context of geopolitical
+competition, hybrid warfare, or conflict escalation.
+
+Sabotage /
+Vandalism
+
+4. Assessment Methodology: The Concentric 5Phase Process
+The methodology follows a structured five-phase process aligned with the Orient-AssessControl-Conform model referenced in NTRA regulatory frameworks, adapted for physical
+security application.
+
+4.1 Phase 1: Orient
+Establish the assessment scope by identifying and cataloguing all physical assets at the
+target site. This phase produces a Site Asset Register including GPS coordinates, building
+footprints, antenna counts, perimeter dimensions, access points, and utility
+interconnections. The assessor maps the site against the asset categories defined in Section
+2.1.
+
+Client Confidential | Page 3
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+4.2 Phase 2: Context
+Evaluate the environmental and geopolitical context of the site. This phase produces a Site
+Context Profile covering seven scoring dimensions, each rated 1 to 5. These dimensions
+form the core of the risk calculation and are detailed in Section 5.
+
+4.3 Phase 3: Threat Assessment
+Apply the Threat Taxonomy (Section 3) to the specific site, assessing the likelihood and
+consequence of each applicable threat. Likelihood is informed by the Context Profile scores
+and local intelligence. Consequence is assessed against a standardised impact scale
+covering operational disruption, financial loss, reputational damage, and national security
+implications.
+
+4.4 Phase 4: Vulnerability Assessment
+Conduct a detailed assessment of existing physical security controls against each identified
+threat. This includes perimeter security (fencing, barriers, detection systems), access control
+(authentication, visitor management, lock hardware), surveillance systems (CCTV,
+monitoring coverage, retention), guard force (manning levels, response times, training
+standards), and resilience measures (backup power, redundant connectivity, hardening
+against natural hazards).
+
+4.5 Phase 5: Risk Rating and Recommendations
+Integrate findings from Phases 2 through 4 to produce a composite Physical Security Risk
+Rating for the site. Apply the risk matrix (Section 6) and generate prioritised
+recommendations with implementation timelines and cost estimates.
+
+Client Confidential | Page 4
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+5. Scoring Dimensions: The Context Profile
+Each site is assessed against seven dimensions. Each dimension is scored 1 (lowest risk) to
+5 (highest risk). The composite Context Score is the weighted average of all dimensions.
+Dimension
+
+Weight
+
+Assessment Criteria
+
+Score Range
+
+Geopolitica
+l Stability
+
+20%
+
+Country-level stability, conflict proximity,
+sanctions exposure, governance quality (Fragile
+States Index, EIU Democracy Index).
+
+1 = Stable NATO/EU
+state; 5 = Active
+conflict zone
+
+Local Crime
+Environme
+nt
+
+15%
+
+Violent crime rates, organised crime presence,
+theft/burglary rates within 50km radius of site.
+
+1 = Very low crime; 5
+= High violent crime
+
+Protest /
+Activism
+Risk
+
+10%
+
+History of anti-technology, environmental, or
+anti-corporate protest activity targeting
+communications infrastructure.
+
+1 = No history; 5 =
+Active / recent
+targeting
+
+Natural
+Hazard
+Exposure
+
+15%
+
+Seismic zone classification, flood plain
+mapping, hurricane/cyclone exposure, wildfire
+risk, extreme temperature events.
+
+1 = Minimal hazards;
+5 = Multiple severe
+hazards
+
+Site
+Isolation /
+Remotenes
+s
+
+15%
+
+Distance to nearest law enforcement,
+emergency services response time, road
+accessibility, proximity to population centres.
+
+1 = Urban, rapid
+response; 5 =
+Extremely remote
+
+Existing
+Security
+Posture
+
+15%
+
+Observed or reported quality of perimeter
+security, access control, CCTV, guard force, and
+hardening measures.
+
+1 = Robust controls;
+5 = Minimal/no
+controls
+
+Strategic
+Value /
+Criticality
+
+10%
+
+Constellation dependency on this node
+(redundancy level), military/government use,
+TT&C function, population served.
+
+1 = High redundancy;
+5 = Single point of
+failure
+
+Composite Context Score = (Geopolitical x 0.20) + (Crime x 0.15) + (Protest x 0.10) + (Natural
+Hazard x 0.15) + (Isolation x 0.15) + (Security Posture x 0.15) + (Strategic Value x 0.10)
+
+6. Risk Matrix
+The final Physical Security Risk Rating for each site is determined by plotting Likelihood
+(derived from threat assessment and context scoring) against Consequence (derived from
+impact analysis).
+Likelihood \
+Consequence
+Very Likely
+
+Negligible
+
+Low
+
+Moderate
+
+High
+
+Moderate
+
+High
+
+Critical
+
+Critical
+
+Likely
+
+Low
+
+Moderate
+
+High
+
+Critical
+
+Possible
+
+Low
+
+Low
+
+Moderate
+
+High
+
+Unlikely
+
+Negligible
+
+Low
+
+Low
+
+Moderate
+
+Rare
+
+Negligible
+
+Negligible
+
+Low
+
+Low
+
+Client Confidential | Page 5
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+Risk Level
+
+Response Requirement
+
+Negligible
+
+Monitor. No additional physical security measures required beyond baseline
+standards.
+
+Low
+
+Awareness. Standard perimeter and access control measures. Annual
+reassessment.
+
+Moderate
+
+Enhanced controls. Active CCTV monitoring, intrusion detection, regular patrol.
+Semi-annual reassessment.
+
+High
+
+Significant investment. 24/7 guard force, hardened perimeter, integrated alarm
+systems, liaison with local law enforcement. Quarterly reassessment.
+
+Critical
+
+Maximum protection. Armed security, counter-UAS capability, blast protection,
+redundant site planning, government coordination. Continuous monitoring.
+
+Client Confidential | Page 6
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+7. Application to LEO Ground Segment Architecture
+The physical risk profile of a LEO basestation is shaped by factors unique to the satellite
+communications ground segment. Assessors must account for the following architectural
+considerations when applying this methodology.
+
+7.1 Transparent vs. Regenerative Architecture Implications
+In transparent (bent-pipe) architectures, the ground station hosts the entire gNB processing
+stack, making it an exceptionally high-value target. Loss of a ground station in a transparent
+architecture directly eliminates connectivity for all users in the coverage footprint. In
+regenerative architectures with inter-satellite links (ISLs), the satellite can route traffic via
+alternative ground stations, reducing single-point-of-failure risk but not eliminating the
+physical threat to the node itself.
+Assessors must determine the architecture type served by each ground station and adjust
+the Strategic Value / Criticality score accordingly. Transparent-architecture stations warrant
+a minimum score of 3 on this dimension.
+
+7.2 Handover Topology and Redundancy
+LEO constellations depend on continuous handover between satellites and ground stations.
+The loss of a single ground station affects Topologies B and C (inter-satellite handover to
+different ground stations) and may cascade to Topology D/E swarm architectures if the
+station serves as a Master-Satellite control point. Assessors should map each station’s role
+in the handover topology to understand the operational impact of physical disruption.
+
+7.3 The ‘Anonymous Attacking’ Problem in Physical Space
+The source material identifies ‘anonymous attacking’ as a vulnerability in the digital domain
+where actors exploit the absence of national boundaries in space. An analogous physical
+vulnerability exists: many LEO ground stations are located in rural or semi-rural areas with
+minimal surveillance coverage and limited law enforcement presence. This creates
+conditions where physical attacks can be executed with low attribution risk. The Site
+Isolation / Remoteness dimension directly addresses this factor.
+
+8. Deliverables and Reporting
+Each site assessment conducted under this methodology will produce the following
+deliverables:
+•
+•
+•
+•
+
+Site Asset Register: Catalogued inventory of all physical assets with GPS coordinates
+and photographs.
+Context Profile Scorecard: Completed scoring across all seven dimensions with
+supporting evidence and source citations.
+Threat Assessment Matrix: Each threat from the taxonomy assessed for likelihood
+and consequence at the specific site.
+Vulnerability Gap Analysis: Current security controls mapped against identified
+threats, with gaps highlighted.
+
+Client Confidential | Page 7
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+•
+•
+
+Physical Security Risk Rating: Composite rating with supporting narrative and
+comparison to portfolio benchmark.
+Prioritised Recommendations Register: Costed and time-bound remediation
+recommendations ranked by risk reduction impact.
+
+8.1 Reporting Classification
+All assessment reports are classified using the Traffic Light Protocol (TLP) as mandated by
+the regulatory framework. Default classification for site-specific assessments is TLP:AMBER
+(restricted to the commissioning organisation and its direct security partners). Portfolio-level
+summaries may be classified TLP:GREEN for broader stakeholder distribution.
+
+9. Quality Assurance and Methodology Governance
+This methodology will be reviewed annually or following any significant change in the LEO
+ground segment threat landscape. All assessors must be Concentric-certified and
+demonstrate competence in physical security assessment, satellite communications
+fundamentals, and the specific regulatory environment of the country in which the
+assessment is being conducted.
+Assessment calibration will be maintained through annual inter-rater reliability exercises
+where multiple assessors independently score the same site and results are compared.
+Maximum permissible variance between assessors on any single dimension is 1.0 points.
+
+Client Confidential | Page 8
+
+CONCENTRIC | LEO Basestation Physical Security Risk Assessment Methodology
+
+Appendix A: Concentric Physical Security Control
+Checklist
+The following checklist provides the minimum control standards against which each LEO
+ground station will be assessed during the Vulnerability Assessment phase.
+Control Area
+
+Minimum Standard
+
+Evidence
+Required
+
+Perimeter
+
+2.4m anti-climb fencing with topping; clear zone of 3m
+minimum inside and outside fence line; anti-vehicle barriers
+at all approach points.
+
+Site survey /
+photos
+
+Detection
+
+Perimeter intrusion detection system (PIDS) with alarm
+annunciation to manned control room; response time under
+5 minutes.
+
+System specs /
+test logs
+
+CCTV
+
+Full perimeter coverage with IR/low-light capability; 30-day
+minimum retention; remote monitoring capability.
+
+Camera plan /
+retention policy
+
+Access Control
+
+Multi-factor authentication at all entry points; visitor
+management system; vehicle search capability.
+
+Access logs /
+system audit
+
+Guard Force
+
+Risk-appropriate manning levels; documented response
+procedures; training records; communications equipment.
+
+Manning plan /
+training records
+
+Lighting
+
+Full perimeter and approach lighting to LUX standards
+appropriate for CCTV performance; emergency backup
+lighting.
+
+Lighting survey
+
+Resilience
+
+UPS and backup generator with minimum 72-hour fuel
+autonomy; redundant fibre paths; fire suppression in data
+halls.
+
+Maintenance logs
+/ test records
+
+Counter-UAS
+
+For High/Critical rated sites: drone detection system with
+alerting; response protocol documented.
+
+System specs /
+response SOP
+
+C O N C E N T R I C
+Your World, Secured. | concentric.io
+
+Client Confidential | Page 9
+
+
