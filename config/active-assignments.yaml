@@ -1,14 +1,19 @@
 assignments:
-  - topic: semiconductor-supply-chain
-    priority: secondary
-    assigned: 2026-05-20
-    principal_notes: "Multi-topic routing validation"
+- assigned: 2026-05-20
+  principal_notes: Multi-topic routing validation
+  priority: secondary
+  topic: semiconductor-supply-chain
+- assigned: 2026-05-21
+  principal_notes: 'Venture-relevant expertise domain. Three principal documents incorporated
+    (Concentric market opportunity assessment, physical security methodology, 80-site
+    risk register). 54 entities, 83 sources, 8 themes configured. Initial validation
+    brief required. Depth target: expert-level.
 
-  - topic: leo_ground_stations
-    priority: primary
-    assigned: 2026-05-21
-    principal_notes: >
-      Venture-relevant expertise domain. Three principal documents incorporated
-      (Concentric market opportunity assessment, physical security methodology,
-      80-site risk register). 54 entities, 83 sources, 8 themes configured.
-      Initial validation brief required. Depth target: expert-level.
+    '
+  priority: primary
+  topic: leo_ground_stations
+- assigned: '2026-05-21'
+  principal_notes: Full source stack from principal document. 5-layer collection plan.
+    30 entities. 8 Russian strike events logged.
+  priority: primary
+  topic: rdx_c4_supply

@@ -1,0 +1,394 @@
+{
+  "generated_at": "2026-05-21T23:40:46.069899+00:00",
+  "data_feeds": {
+    "gdelt-sweep": {
+      "status": "ok",
+      "collected_at": "2026-05-21T23:40:42.312336+00:00",
+      "articles_found": 44,
+      "articles": [
+        {
+          "keyword": "RDX",
+          "title": "Coconut husks and bacteria: a new recipe for cleaning explosive-contaminated soil - EurekAlert!",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55Q3ZWVHVsaDkwVHVFTm5qYnE1VWFpM0V6ZzY2TUdQblh6a3B3ajNyZWVCOXNaWXdRMjkyeFlmM3JVN1RvWkRiV1pld0QzUGQwVTNNZnl6TjNGc2FO?oc=5",
+          "published": "Sat, 04 Apr 2026 07:00:00 GMT",
+          "source": "EurekAlert!",
+          "collected_at": "2026-05-21T23:40:39.389756+00:00"
+        },
+        {
+          "keyword": "RDX",
+          "title": "US Army plans research center to boost explosives production - Defense News",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdzBaVmRQV0ZXMENBV3ZLdFJnbGlwNWl0TU11a1RsQ04wSGhyM1M3RG5qcnpIcG1NbGNYUU9IV3lxQWt6aFhNZ0ZZZzR5UUtiaGZRdUFFQnJhWmpxVGktdGpodi1RdVNtMURCOU5HVTN4ZkdlOU5Ca0xTZW9PLXNXZ0NQNXhkeG0wbFRJSF9fR2ZCcWo2andXQzNMajlqSU8tSzdpZWlLdXI?oc=5",
+          "published": "Mon, 16 Mar 2026 07:00:00 GMT",
+          "source": "Defense News",
+          "collected_at": "2026-05-21T23:40:39.389771+00:00"
+        },
+        {
+          "keyword": "RDX",
+          "title": "US Army plans new \u2018Center of Excellence\u2019 for explosives to boost RDX, HMX production - Interesting Engineering",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM0RKT2pQM3Q4ajNWY0FSTWh6ZDJpdnB2bENCUEJlTVAyRXhlR19oZW04ellabGJPOHNfT0FXZkFGU2Rkel9HaU44bzQyejRVOXFUWGlQSWFUaWc0V3U5N3ZrZXhLNDNCa3JYSFZnY0RBRnBVS3h4akE0cWR5eENLQm9Dd0paUQ?oc=5",
+          "published": "Tue, 17 Mar 2026 07:00:00 GMT",
+          "source": "Interesting Engineering",
+          "collected_at": "2026-05-21T23:40:39.389777+00:00"
+        },
+        {
+          "keyword": "RDX",
+          "title": "US Army Plans New Explosives Research and Factory Hub in Kentucky - The Defense Post",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zYUlGWU5QalRnSzFpd2lkVzVOVFUxQWRrYmRObnhPVFhGbXpnb2JPb0o4QXlYakcyMHBVN2Z6U1lwS0dqMEQxbVZwYTdSb2pEdWZfS004TlZGYmYtQXBrNGF1Slh0QXlfQlhCYjkzbEtpSVXSAXhBVV95cUxOTnVkWnlZRnBoWF9HNHM2NDVZNHhjNFVhOGtka0NwOEdqM2k2RUR4T0dfZHd1UU5LT1NRQ1ZlX3NhMnN1bHVVSGVrMDM5MDFLMGNaZ3o3ZEVpSk1TYUh1ZXRjMllBVVBGWUV4U2FDbTVtdXA2N0o2NGc?oc=5",
+          "published": "Tue, 17 Mar 2026 07:00:00 GMT",
+          "source": "The Defense Post",
+          "collected_at": "2026-05-21T23:40:39.389782+00:00"
+        },
+        {
+          "keyword": "RDX",
+          "title": "US set to boost explosives production - Taipei Times",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JdTcxM0EtSzV4Qk1QNWdtLU9LSjF4QU5BVGx6TGE0TlJ3OXRBOU1hYy10T1FBTzRiVDFjam1lZEZ2ZjRhRmJpMWNfOGhqdm1yQkZ6QmJ4Rm1OX29XelNUb1FrUkFMdllFc3VfbkUzY29RNDF2cDZ1TA?oc=5",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT",
+          "source": "Taipei Times",
+          "collected_at": "2026-05-21T23:40:39.389787+00:00"
+        },
+        {
+          "keyword": "hexogen",
+          "title": "Lithuania's state explosives maker to produce military-grade munition, build two factories - LRT",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVkl0WEVqZEhhNWxWOVpVcHlmYkJzRHJNZ2cyMHpNMkViX0R4ZTVjQS1HM1IyZkNvUjV2cnNSYnNPLVRYc2ZkVnNZa3NEd21NS0JrM1Jqb1VVNDUyWkZyV2FjeFdSZlRhWGhMMFhidC12RUlOU05ZUFE1Z0xaREpxQWpSbnJ2djhPRmpxTEtPR3gwQ2RZckl4c1h3a1NSNTBfVFNJN09RNEpEU0h3bHdRVXlfVWpsLU1ZQWo0bU5WRVdfbXJ2UTd6WkJ6SGk3dGJPQ3pmbw?oc=5",
+          "published": "Fri, 24 Apr 2026 07:00:00 GMT",
+          "source": "LRT",
+          "collected_at": "2026-05-21T23:40:39.710471+00:00"
+        },
+        {
+          "keyword": "hexogen",
+          "title": "Defense chief defends awarding explosive import bid to furniture company - Focus Taiwan",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA3TzgxTFFPUmZmRXZQcEd4dk5CY1RfMHM0NUs1aXRxU3BFTk9zTzJLRXFNYnBySWVtV2lYQWxuTW43S25CMEZRd3RjbFZNQlVkZWs4Nk9xOA?oc=5",
+          "published": "Thu, 11 Dec 2025 08:00:00 GMT",
+          "source": "Focus Taiwan",
+          "collected_at": "2026-05-21T23:40:39.710485+00:00"
+        },
+        {
+          "keyword": "hexogen",
+          "title": "Two Ukrainians Arrested for Explosives in Georgia - Kyiv Post",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9ZRnhsUW1NZDgwV1l0dlVRMUFYQ29Wd2R3bHRRYm44N2l6azhpTjhHRXBibEVrYW1qQnY4WW5KdTdzUzU0NmJzSS1hZw?oc=5",
+          "published": "Thu, 11 Sep 2025 07:00:00 GMT",
+          "source": "Kyiv Post",
+          "collected_at": "2026-05-21T23:40:39.710490+00:00"
+        },
+        {
+          "keyword": "hexogen",
+          "title": "Israel/OPT: Slovenia, Montenegro and Portugal must not assist the MV Kathrin\u2019s delivery of explosives to Israel - Amnesty International",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQ2pGX1NKbDA4S0VYXzBXNm5fNDFRekw1YktSSXpQaWRRVFJuUnplUEo2QWh6bG03Y2JfSjJRdHNzZUhWaXdQU3ZSNlBFd2pQVElFN09tRHY4ZG9IVE94X2Y2ODgxZWZmNVhBaG5GaHJNbzlWMjNfeVo3cENxbmtPWkoxUWJxU1Q4YkcyaTZQSUt6c2NBcFFSZXdYeWV0TE1FVGhtcTFpNW5Kb0tzNmpTSzViaFEwWHdfVmRsMWtZZDhnUnpIQWQ3RzhQS3N3Rlk2c2hyaFBEZTl4c3NWckE3TmtxREllTXNSRTZPcQ?oc=5",
+          "published": "Tue, 01 Oct 2024 07:00:00 GMT",
+          "source": "Amnesty International",
+          "collected_at": "2026-05-21T23:40:39.710495+00:00"
+        },
+        {
+          "keyword": "hexogen",
+          "title": "Russia Builds New Explosives Plant in Siberia to Shield It From Long-Range Ukrainian Strikes - UNITED24 Media",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQVo3RDh6NUFnNk5zQWJvTUFxNHFJUi1zWjlLQ1dCVUJsY2xJV1dsNzg2TGtxa3BTRnREYy1mdWxCY0V2ZGFOdlNfaFRKMndTMTFiTWJEYkZCU2p4d3kzbldLM3pIbDVDZ0VwblFMQThMT0FHYUUwWV83NV9ad3hfU01uZnRNbGZfZ1pJQU5LWm85T1Zhb2lRQTVfMkVkS0hraXdxSUJ0ZUNwQl94MmhRNl84Ri16MjJITlBXRE1xd1dPdUdFSW1fRjAxcU9vX1Ju?oc=5",
+          "published": "Thu, 08 May 2025 07:00:00 GMT",
+          "source": "UNITED24 Media",
+          "collected_at": "2026-05-21T23:40:39.710500+00:00"
+        },
+        {
+          "keyword": "cyclonite",
+          "title": "16 dead in US munitions factory explosion - Chemistry World",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSXF2NEVfMm5taWJ6Zjg1Q29IWm00TGh5akxDMUVyc0lPcG9ZbkdRRnFvamFfOGF0YnltVHVSWmRhMUtEZzFwZVdGX3FqYmNONHFhWXpqdi1iNXBuMnF5NVNxMUxxTl85RkxWejNaOVdncWkyd1dLYUcwYUtsbFQyZ3l2VTFVSEFRVGJ4Z1dRbWpXZFd2U0RlLQ?oc=5",
+          "published": "Tue, 14 Oct 2025 07:00:00 GMT",
+          "source": "Chemistry World",
+          "collected_at": "2026-05-21T23:40:39.960299+00:00"
+        },
+        {
+          "keyword": "cyclonite",
+          "title": "16 people presumed dead after explosion at Middle TN explosives company, sheriff says - WBIR",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLUZjQjZKeHN3aWxGRWlKUlZBQVlFNGNXU29odjhSTXctYUdwTW80WWx3Qm9CbEFEdFZhUnZGcFFMZWpzT0FwOVdlck16QmVTWnA4Q0wxUzl4UlBiVEY4XzhtdXlDTnRXdGg5NklvTkxveGppNVE2UjBjbGZpY1l5c2VfQTB2SnlEa2tEaEtoRjNqTkY1ZzBMM0g5N0E5V2E2S2laQ2tQSVBTcTBGNUFSS1U3bENkN1JTeUtxdk5R?oc=5",
+          "published": "Fri, 10 Oct 2025 07:00:00 GMT",
+          "source": "WBIR",
+          "collected_at": "2026-05-21T23:40:39.960311+00:00"
+        },
+        {
+          "keyword": "cyclonite",
+          "title": "The fatal blast at a military munitions factory was a chain reaction of up to 28,000 pounds of explosives - Fortune",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbHVhejlGekdCQl9zOVhvZGhTeFpoVXNpQmQ0U0lDaFVxX21jWkF1cVJtV3NOcFhhUElpdzlDWU5xeUppQzJJVTFBeWpyem9IOVVPdzlIQVhROE85SkYtbWIxd243dXRqN0pLNTNuVEFOSmp3TmVmMm5JT3hUalpFaEtCTHpNR2tnbmo4LXFEdWVsMHYtS2JYNFhMdFhJX05pekxaSVFXZWlEMWNWVWVOeVAtQmpqU1N0a1E?oc=5",
+          "published": "Sat, 25 Oct 2025 07:00:00 GMT",
+          "source": "Fortune",
+          "collected_at": "2026-05-21T23:40:39.960317+00:00"
+        },
+        {
+          "keyword": "cyclonite",
+          "title": "Research Department Explosive Market Size, Growth, Demand - Allied Market Research",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNU3FBOUR1d0tCd2lwMzFhZ2NGaGhCSk1LbFFTT2VhbmlMaEt5Ykdsc05wU2VNa1I4dWIyX052U3NOSDhsUFBZcE1HMlVLZ2JObm90bkhVbk4yTUJJQmN6NmwyZVpEYXRDbGdhd0NKdGt3S3hLNjEteXZMQlVWNDREMVhvemRXQ1E?oc=5",
+          "published": "Wed, 29 Sep 2021 06:16:53 GMT",
+          "source": "Allied Market Research",
+          "collected_at": "2026-05-21T23:40:39.960322+00:00"
+        },
+        {
+          "keyword": "cyclonite",
+          "title": "Deadly Explosion at Tennessee Military Munitions Plant Devastates Community - USA Herald",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcWpMci1xcUxDemYxUmFNX2lOZHNjVm1TbmYwVm1BajktdjhQSXhVakl2djlTbkp2N3Y5LUdCTHhYUm9ZWWduazhDN0ZsM19faDNubXpoTjFPQ2V6blNXemtORU9tUDlpSjJCRXZMcWdXeVAzOVJOVzhrR3dHZUdqQzFXVG5FRVVVWms0WkZFU2ZuOGJyZTZnNEdMYVVTdUU?oc=5",
+          "published": "Sat, 11 Oct 2025 07:00:00 GMT",
+          "source": "USA Herald",
+          "collected_at": "2026-05-21T23:40:39.960326+00:00"
+        },
+        {
+          "keyword": "C-4",
+          "title": "Chinese man arrested with military arsenal, C-4 explosives in Pattaya - Thai PBS World",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbl9GcHZkbGhQaDRQeEZKMjBNMlh6enB3cERydUN6N1VKOV9famR6QU5LY1lMaFpOT0tKbDZIMXlTXzZTc1p0M1hiZHhHT0pKSjI5Q281VkpMT3lFT1h3S0dWMlFPdkxGTFQweHM4UWhLck5rYjM4emhyZjNiZzBDNjlEUHFlcVpYRGY4VnhWQXFxaEl4TjdDeEhDZGJXYlRzZUFUZVVFQmx3ZnQy?oc=5",
+          "published": "Sat, 09 May 2026 05:33:41 GMT",
+          "source": "Thai PBS World",
+          "collected_at": "2026-05-21T23:40:40.373483+00:00"
+        },
+        {
+          "keyword": "C-4",
+          "title": "Son linked to stolen military explosives found at parents\u2019 home in The Villages - Villages-News.com",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQmtCM3dSRmM0UEV0bFRfSTlyQlY3dk9ObG1YOGhpNl9DNU1XSFM5a0dMVnRMVF91WVZ0MDhXWW96NEZHRHpPNk5Jd0ZiRlBuOHhrLWtaVDhFVVlmalFMd1RPSE5NMDdQRzljR0NtT0ZPeVd2cmd2OFotMllGaGk2N2dmME90XzN6bUlJR2dmamVScFFDTkdqSjBBSjlkMnBhZmczQmZKUklUcW9zUVZNc21nbjh5RUp1YXc?oc=5",
+          "published": "Sat, 21 Feb 2026 08:00:00 GMT",
+          "source": "Villages-News.com",
+          "collected_at": "2026-05-21T23:40:40.373500+00:00"
+        },
+        {
+          "keyword": "C-4",
+          "title": "741 BEB DEMO Range - europeafrica.army.mil",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BS3ZKT1V2TmxuQkt1NTBEanF6T0ZLaW9LaDJOR0ZHNUw1SHBxWnVMUGtydFA3WXBDX1ViYU1NMl9lS3NEQ3ppNVlyaS1XZ3NSaXBFQUVEdFM3Y3VJQlpfZ0E1R1ZjRkI2UXBtblZ3?oc=5",
+          "published": "Thu, 04 Nov 2021 07:00:00 GMT",
+          "source": "europeafrica.army.mil",
+          "collected_at": "2026-05-21T23:40:40.373505+00:00"
+        },
+        {
+          "keyword": "C-4",
+          "title": "Soldier arrested for allegedly taking C-4 explosive home - FOX21 News Colorado",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRU4yV1ItQjAySDB3TTdia3RFbzdnYmFoU1otZ1NKaHVBbFc5bHNleFdXdENuVGU4Q2NpdzU4QUZVUHpyS202alRLS1J4Ti1VTV9QS0VaQV9aQ3plVTJwT25xV3dZak80ekI0V0wxd0J0eEVlUzJIMVJSN01PQk5uOU9QQWFaTkpwUEthMHFhV201QdIBlwFBVV95cUxPV29aS3pkMzdhMGM0VWc3d3AyRGJzNzZqUEVWZWs1aldrV1hmODFPVW9fQ2xFVEhIcjNIdVJHOTlpS1pSQmt4SjhFSEc1MnVFZUowV3NSV3JweEtmVmxIdGp5TFFkU21iX0JrUUhIQ0VmQWZzcXBITUgxZ0lmZGJpam1fZUVuVmppckdLUGR3RWFGM1QySkVV?oc=5",
+          "published": "Thu, 20 Mar 2025 07:00:00 GMT",
+          "source": "FOX21 News Colorado",
+          "collected_at": "2026-05-21T23:40:40.373511+00:00"
+        },
+        {
+          "keyword": "C4 explosive",
+          "title": "Thai Police Probe Chinese Suspect After Seizing Military-Grade Weapons, C4 Explosives - Thai Enquirer",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcmxnTWxGYkZteVZsVHFyLWZTYnpwaDRrcVhlRl9zcUZhckN3NldmRFYwMUZhQ1VHeUFUbWRmN2RZd2ZIQzlzME9iWk1LczcyNUlydFU4N3BjUUNlQVJVRzNGYXoySlRFSFVGbkJyTHVtUjhhcXZjTU9WaTVJY2lZLXV6a2k2NExEakZ0RWpOVTlqM3lOWi1JcGZRY2FuY1RLQndRSDVqQ3lMbGhMZzBYcmlxb1M0QmtoQ2pvaw?oc=5",
+          "published": "Sat, 09 May 2026 07:39:04 GMT",
+          "source": "Thai Enquirer",
+          "collected_at": "2026-05-21T23:40:40.634073+00:00"
+        },
+        {
+          "keyword": "C4 explosive",
+          "title": "Chinese nationals arrested after Pattaya crash uncovers cache of weapons and explosives - Khaosod English",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQVU2N0gzRVQ3ejlpZ1hSY2F3d0doS0JjMTFCQlFRV0ZvT1BscnBESlNPcmdZVzZ6ZTE2SWt0TGJ5ZmM2ZU9nUFRleXBvbUNPZ0ViV0Fud0c4UnhlbGdoeDluSW0tcW5UMjhNM3lqSE0wa1lQczh6OVhaZ3dVZmVLZFE3OXBnVVBUWlF6c3Y4YVN2NmNiNjktZVZoVE91RGpGNV9Wam1wNjhZQ2gzTGRyU19lWV85RWdGWEktdWNZS0pvQmlreVl1Y1AyVXNYVEVTNURLWTNR0gHbAUFVX3lxTE9qbmlfYUJlbFJMVTBtYTVmbnVQdEpjM1gzTzhYZjBOcU9zZ0labE9fV3k3TFBfYmJNNDQyZ2JWUC14QzZpY0dOR1FtbVowYU4tRlRrMVpfYmxMaTBoc1FfLW9mbndhS2pTNE4tVW9ZRXhGTG5xLU9lWVhhajhOWFJmYzRXX1RPYXJIVzBoV2dNc1UyN3V5Q1VCRGhPSnVVdFJxa0g5aVR1bExvQ1l5SGRNbFcxMEg4YkhFRkhhZmZvUUVnY0JsX3BrOXdOemJ0SGdlTjJXOVc2M3ZVdw?oc=5",
+          "published": "Sat, 09 May 2026 07:00:00 GMT",
+          "source": "Khaosod English",
+          "collected_at": "2026-05-21T23:40:40.634086+00:00"
+        },
+        {
+          "keyword": "C4 explosive",
+          "title": "Army Reservists detonate a C4 explosive pack during explosives training at Fort Hunter Liggett, Calif., July 26, 2015. - U.S. Department of War (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3aElrY1piQnVsejBUajNucjZrWmZ4QW4ySUx6SEFKQnFMNF9MVXhmOHcwY1h2TVJNOFY0N2FyNVZ0dWZMQ1FGRWNTR3oyT09LcXhDWktxaVpnNGwyZTF5dVJJc0U0VF9C?oc=5",
+          "published": "Sat, 06 Sep 2025 13:50:01 GMT",
+          "source": "U.S. Department of War (.gov)",
+          "collected_at": "2026-05-21T23:40:40.634091+00:00"
+        },
+        {
+          "keyword": "C4 explosive",
+          "title": "Flint man finds military-grade explosives in car door - The Detroit News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUFVaZGk2Z3FsVjlhR0tzTWdNMWtlYUVaWEptWVJYZFl0MS1EUTFNeVpJVjhSOUg4VXNYelZwVDBPY2s1Q2llUldvc19yZmdONVM2bTRJeFVWMnRiaG5sYTRfUU5tNGplUkw1TnpaZWwyR2tvRU5UYlh5XzRFYk5FZy1GaE9PSnFtbzNWSUFXSWhGQ19ydUlmZFZ0Z2ZyTmR5NGlOdS1KVkVCM1MxelhzU2pKdWVkTi03MFBnYmpBRGtYblpLVHl3VUtoZw?oc=5",
+          "published": "Mon, 21 Nov 2022 08:00:00 GMT",
+          "source": "The Detroit News",
+          "collected_at": "2026-05-21T23:40:40.634096+00:00"
+        },
+        {
+          "keyword": "C4 explosive",
+          "title": "Army sergeant charged with taking C4 explosive to his Colorado Springs home - KRDO",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeEdqU0U1WjhwbXJQcUEwOFRSUVdrbXFHc2pqN3JiTlBiZjk3QnVtSHN5ZnpzNEE0cVktcDJ2Z0pqQkVWU1N0QUw3TWlsbl9XQ0wtaEx6blEwN21yREhIUGt5RzBRVUxDUUZxeVhPTDZxSUo1NnM1cy10TnMwX3gyMXpVSUlnVHdoM1JTRnpORjdvczBnOEdvSzhHMWNuM3NnOFBGZFYyNHdRcGE3b1pXMzJHOVU0ZXE2YVM4NUh4UQ?oc=5",
+          "published": "Mon, 17 Mar 2025 07:00:00 GMT",
+          "source": "KRDO",
+          "collected_at": "2026-05-21T23:40:40.634101+00:00"
+        },
+        {
+          "keyword": "HMX",
+          "title": "RDX and HMX Industry Intelligence Report 2026: Next-Gen - GlobeNewswire",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPQldON01nZXE5LXNocFRYNVVxeGJzd0VwYlFydnc4bkcteVdLcmNKQTl1dXVTbFQyMmpKLXltUWVGU2hFY09scEFTTTBkdy16dmVlTHlldGJjN1JqTWRGTTNWUTF1MXNGWnFjQWlKU2lDWTM2dDJOZV9vdmNLS3A4dXZwVm9YclNnMVByUHJKZW9VbktJX3dTYmo5eFIyZmRSR0pvZHJPdjlxd2ZWM2hDa3I1aXluekZrUjJUdXM4QzNqUTRTY29lSElZLWhYX2dhSVhjemF5Y2ZfaFlQNGxGZDBXcUg5VWI2MVFvaEFQZF9ielNOLUV2dmt4MXRXZVp4UERYdFVXbFViRThaNkJoMGpyS0FUWjBCWlI2bEZ1V1FGSm54S2htcHJB?oc=5",
+          "published": "Mon, 26 Jan 2026 08:00:00 GMT",
+          "source": "GlobeNewswire",
+          "collected_at": "2026-05-21T23:40:41.062243+00:00"
+        },
+        {
+          "keyword": "octogen",
+          "title": "Exclusive: Indian firm shipped explosives to Russia despite US warnings - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQzNHUmlhU1l5T005Z1paNm5zY2JSUERYRWF5WVRmN3FmZkhzY20yQnF0cVlqd014eXhaWENDWVhWaGFBTkF1ZUdyQjNmVWQxWW9VTy1DbVEyVUUtNWxJMFFvYkNoQjk5N1NZMV90bnNOYzlGZ0F5SlZ5bXM5SHNwOVB4MDlWcmVidUpSX0J5N0QxdjF3ci1WSEpLOWItMzNkajVxdFFGakhCeWVXN3JOVlpBVF8ybDZGOFdpZg?oc=5",
+          "published": "Thu, 24 Jul 2025 07:00:00 GMT",
+          "source": "Reuters",
+          "collected_at": "2026-05-21T23:40:41.373905+00:00"
+        },
+        {
+          "keyword": "octogen",
+          "title": "Indian company sent explosives to Russia despite US warnings, Reuters reports - The Kyiv Independent",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHl4SzRkenV6VFVWNkdhQlA4dmhUaU9JeVRtS3BMeTRVdVdHeW5IRlZnWElWekRuMkF6UHFIcFpjU19ESHlZNGJMQnpWX1ZSekpsand3TWlQa0NvWmw2VXNfVlhmYnQxdnFlWXctRWdUSnFjcHBLTHYzQzc5dEtUdHZUNVlFeFBCSjlScHd2dDhXWnBTaFh2OGpWSTl6T1V4Nmx0WUJlLTA?oc=5",
+          "published": "Thu, 24 Jul 2025 07:00:00 GMT",
+          "source": "The Kyiv Independent",
+          "collected_at": "2026-05-21T23:40:41.373918+00:00"
+        },
+        {
+          "keyword": "octogen",
+          "title": "India Ships Explosives to Russia Despite US Sanctions Threats - UNITED24 Media",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMkJvZ2dObjZKSF8zMHR1MG9YX3NYR0hRRGZkTzkzVTFJSWstdVpCNXdlX0txeURwZ1FZRlhWUUxNSnRWSTg4QWhidUxrUEFuVjg3M244QVJRVHVuWEtTbW95LWZoams0dGVLZ0pBc2x3RUprcjZwblFCc09lMGdGTko2ZzBHSWFvVkFrWGpjYWdlb2J1Y1FseFlGVHoteEc4UG93UFRXc0k?oc=5",
+          "published": "Thu, 24 Jul 2025 07:00:00 GMT",
+          "source": "UNITED24 Media",
+          "collected_at": "2026-05-21T23:40:41.373924+00:00"
+        },
+        {
+          "keyword": "octogen",
+          "title": "Reuters: Indian Firm Shipped Explosives to Russia Despite U.S. Warnings - \u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdnUxUW1kcGZYVXdTeUdzbk15WjZuQ1NuemNla2pOUHhTTTlsSHBsOUppSDM1aF96a2lhc2pWbmpqZWVwZEtmb1pGb1hES09ET3Z0RWd0N2ZxcTQxZm9qT1Q1Y2JEcDFpWnZpWEw5Rm1maE1jVVlBMTIzN1FkV0xpWWx6Nmo1Y0lSZGZvY3czNlR6X2tYd2VzSkcySlh4Vy1fYlcw?oc=5",
+          "published": "Thu, 24 Jul 2025 12:14:31 GMT",
+          "source": "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+          "collected_at": "2026-05-21T23:40:41.373929+00:00"
+        },
+        {
+          "keyword": "octogen",
+          "title": "Hyderabad Firm Shipped Non-Military Explosives to Russia - Deccan Chronicle",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMUVBcWZlNEZXbmVQTWw5amhQUFBvMVN4c3dJcGVYZFB3ZmlTbm8xZ0RpWk4ycW50MmtyVVZyNVRnQ2xXRlNUeFJTX0MyOWxRTjVFQlowUm1xc09ZY2pHTGwweEExd2xfQXM2VEozUWpxQlhTMDNlbnFOb3dxUWJiSkcxX05iM2tpN0JsMmh6NzkxckhYb3liQWFpUDFmbWdUV3hKZGNn0gGrAUFVX3lxTFBnTmFRVHBibzVEMmVocXJqZW9RVE9DWGtQMUFoLXN0SzAtZ2JsUjRKeHZjQXc4NXN3STlGLURIemlRM285S0U3a0RxU0R0bWpVeVZhN1B4S3M1Zk5UNkFQZlc3ekdQVVEteGN3X2dMbzdpMHlESUpwWVJJb19MaWxEOFRUcEROQjdNY0lZbWpXbFQySEFJQXdmSXc3a09tWkE2QVhoODdMRFRFYw?oc=5",
+          "published": "Sat, 26 Jul 2025 07:00:00 GMT",
+          "source": "Deccan Chronicle",
+          "collected_at": "2026-05-21T23:40:41.373934+00:00"
+        },
+        {
+          "keyword": "Composition B",
+          "title": "Military Periscope Spotlights BAE Systems' efforts to make Explosives Safer - BAE Systems",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcWN1YkdzNm52SnNiRTF3NEx4b2w2azhZWXhNYmNWY0l5SDhickFKSUZmLXQwR0NTdEkxTDdFOXFEYVptZEJHQ2NPdmxiMlVlbnBfMlVwRDNHNHNfUkxmQ29Ob0M0Qnh3VGFtemxJN0hGRVNoN0xXdVVHSHBEVDFaODZ1b0RSXzlpcVBSWG9NSmtQZTJRX2xsNVMzMEJZYWJZd1BQc3oyQXhHLVl3dThrMlJ3?oc=5",
+          "published": "Mon, 02 Dec 2013 08:00:00 GMT",
+          "source": "BAE Systems",
+          "collected_at": "2026-05-21T23:40:41.705213+00:00"
+        },
+        {
+          "keyword": "Composition B",
+          "title": "Soldiers to get safer artillery rounds - army.mil",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03TTljcU1HZTRaRVkzMmhIUUd1ZlpLYnIzZ1A3YU90WWhWckpwaGRTNzk0Nmh4OEVjMzVabGowMkhtUlUzeVFVRXdkeEF2cXRuVXA2VWdjQ1YtVWhLY3ZHUlRYV1ZUZ3BDcHZVeVh0ZVhqYk1JNlBJRDUzbDAzUdIBgwFBVV95cUxOaGFhSVdKd2s2aG50eUN1MjlKdGpkNWpKTjdZNFNlalpkbHRlemhKR2dzSnMzV0ZOYXRuR2RSMlBsUDlYdG9SUjNjc1doejFKempJX1RSSDNJSnJsbklvdjF6dXJJcHNxYlI0QUlqbVc2YXFIMGRXUENKOGFYNDFJSVl0VQ?oc=5",
+          "published": "Mon, 01 Apr 2013 07:00:00 GMT",
+          "source": "army.mil",
+          "collected_at": "2026-05-21T23:40:41.705226+00:00"
+        },
+        {
+          "keyword": "Composition B",
+          "title": "The military\u2019s quest for bombs that won\u2019t accidentally explode - The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNanlBNjVlZlRoOW5OZjlKeTdSMElBX0dCZkU2TUFMUi10Y0pvUTZvTDZpejVRWHJzWWoxVll4ak85VTZJaW94UzhWMkJaVVFQS05HRDJ0MFhPRS1fUmlfTGdDZzlNZk5CTlZleXVfU1E1YnNnM2ZBWVNPVFB1eFF1VEpFX1FJalpuWTlxanlpQk14WlNjZ2QzMDJhZHpMSkRPYjVGNGFSc0hhZGh4Q2YxLUhKREFSLWtDc3M5eGh2bw?oc=5",
+          "published": "Tue, 14 Apr 2015 07:00:00 GMT",
+          "source": "The Washington Post",
+          "collected_at": "2026-05-21T23:40:41.705232+00:00"
+        },
+        {
+          "keyword": "Composition B",
+          "title": "Military is on a quest for bombs that won\u2019t accidentally explode - Athens The News Courier",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYVJFajlBa1ZOUnM1ekhscTZ4R2xjZU9YLXJHRkl3Z3lwYUpKZ193TmJ3UWwzNnJ4b2loLVc3OTZtOVpITkNnYmlxVGFzVFRrM21jRjBTY3p3YzlQaFdnU0hOQ2w0TWtIQzNaLUExbDNFek5lZTA4Wl90dkpmWTZPd3dUSHc3M1A2WlJuaTRCeHhsVnpaZ2lIbFBMMlh2eXNmOHc?oc=5",
+          "published": "Tue, 14 Apr 2015 07:00:00 GMT",
+          "source": "Athens The News Courier",
+          "collected_at": "2026-05-21T23:40:41.705237+00:00"
+        },
+        {
+          "keyword": "Composition B",
+          "title": "U.S. Army Awards BAE Systems Contract to Produce More Innovative Explosives - BAE Systems",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmc1UkhqdlBNRDNEeTRTSXRxS3p5QlN0YXl2YU84YlRGWHJ6SzZYZVVmMkZnenNwMU81OV9kdHI0aEZmc01tcjFDbVg3X3V5TXFRLVBtZ21GSzBlR2lkZklPVTlJa3JwN2RadEJpOU1RbHJCMjJVeWk5OXhKSk1vUENzV010TFdsZlhYa1V2eGJzalI0VE9leHBYLVBsTjFtcDN5WkFUWFZPYnNTdktQSw?oc=5",
+          "published": "Fri, 22 Mar 2013 07:00:00 GMT",
+          "source": "BAE Systems",
+          "collected_at": "2026-05-21T23:40:41.705241+00:00"
+        },
+        {
+          "keyword": "PBXN",
+          "title": "U.S. Used Its New 5,000-Pound Bunker Busters To Hit Iranian Anti-Ship Missile Sites: Reports - Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OX0Fidl93bnFsUG9DS2J1VHZsRmdaLXJxS0xiN2ljdS1XVE9XWFZoZ25ReEprUk1iWjdBd0dveHpESXFpVWZGZmJ6eUVRYVV4ZUFqcEp5ZHBjNFc4RHlIZV9kTThmbnZTdHM1OURWbE5NN0N3ZDk2Yg?oc=5",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT",
+          "source": "Yahoo",
+          "collected_at": "2026-05-21T23:40:42.045496+00:00"
+        },
+        {
+          "keyword": "PBXN",
+          "title": "PFAS \u2018forever chemicals\u2019 are in munitions, and other military applications too - The Conflict and Environment Observatory",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZktROGRXRmd6R0xBWUg0MHBueGN2NV9qR0lWY1RCbnBQTGphc3ZRZVdodngwZi1LWjZiOE9fM1FwaEFSdmZQbGYzR0hYbS1xOHBUVjVVaWhxcndwSm9MdERMazNPMHlwOHprWHQ5RlVaXzhNeHcyTW1yYTBWNTBOcXZhMllZamxvUUMxNG9iV1gzaDZGeHFVcFdn?oc=5",
+          "published": "Mon, 17 Feb 2025 08:00:00 GMT",
+          "source": "The Conflict and Environment Observatory",
+          "collected_at": "2026-05-21T23:40:42.045510+00:00"
+        },
+        {
+          "keyword": "PBXN",
+          "title": "US military posts then removes photos of bomb designed to target underground bunkers - Middle East Eye",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM09BaDBpS2MxcWNHWExFS1F4VTdCSjlsZTBXaVNSMWZhUHNzeEN3eS1FSnZWcXJ4SnNxRTUxZ1lxTDB3YTZCbFcwY2E5MThycTlxV1laVXBnQ0FwLVJ6UjhEOU5SNzZKMkZlNGRyR3lmd05QNk5kZVNuMlFoclAzSGsxdjdCLWhBMnhtenNwYU91TDlwcU5kbnd6VEw1UWtlUWlhcFMtck9HbEQ1VUxFbmFn?oc=5",
+          "published": "Mon, 22 May 2023 07:00:00 GMT",
+          "source": "Middle East Eye",
+          "collected_at": "2026-05-21T23:40:42.045516+00:00"
+        },
+        {
+          "keyword": "PBXN",
+          "title": "16 workers killed in explosion at Tennessee munitions plant: Another tragedy in America\u2019s industrial slaughterhouse - World Socialist Web Site",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nNE1ZcDNrLW4yYzJvNlprQ18wSTA3aXNNRXFJNzBPc1lKNzQ0QU1DRzd0OVNVaW9DREV1MWRBNjlNX1luYmhENnFzZHJGOFVnZWtDSDBoUUZWQk80NVYyY0JqNWZFN1Aw?oc=5",
+          "published": "Fri, 10 Oct 2025 07:00:00 GMT",
+          "source": "World Socialist Web Site",
+          "collected_at": "2026-05-21T23:40:42.045521+00:00"
+        },
+        {
+          "keyword": "PBXN",
+          "title": "As tensions with Iran escalate, U.S. military posts photos of bomb capable of destroying underground bunkers - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPalhjUldpVzdXWUx1M2lsakttUkFtMFhqYnpWcEg2bV9laEZfZmh2djV2VFpkWGJZWVFvMHVGNHZqT2l2UzB1MEJ6cVlKY1Y1OTF4VkRYYTl5U01YWW1pS1FZMU5TMWwzV0hoTTViNDdETkhiU1E2ZnJ3c3lWMkJMc3F6TWxZMkZDSW91SzhxNXk2S2hnOTlEd1FhVWxMOXNxMVpwOTJDdWlYTk11NExzSlI3TEhlU1BESXNpLUUwTkdjVWJ2ZXpJdHFWWTF2R01ySmsxNHNsWDJNd3Y20gHiAUFVX3lxTE5YRVRuRnZLTURncDNIQzJQZXBFT05rWlBma1I4TUxWcmd2NDNNNEtqOHA1aWVjSE1lZXE2WEx2ZnRZY2p2bjRXNGViVmZGQlc3dFZ2X3lfZ3JfZ0RuamJIY0F0WmJZMEtySWlXdkxfbFRiaEhVdTQwaWNEX3BKX2J1UUx2N1QyeFhJd0dBM2t1Tmx2N3piLWFmZHZOMlRUcDhMbzlDU2wxZ0drcGtpTmpnVEdfSnZYZDFwUjRPZ2UyU1Bza3Q0YjIzOXVSakM2QmNYd08tYWpiUU9xaTlFbFV2WWc?oc=5",
+          "published": "Mon, 22 May 2023 07:00:00 GMT",
+          "source": "PBS",
+          "collected_at": "2026-05-21T23:40:42.045525+00:00"
+        },
+        {
+          "keyword": "IMX-101",
+          "title": "New Insensitive Munitions may pose lingering toxic threat - Center for International Policy",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLUQxLXJKY0NJdmppRGVRZEhmcDA4cVN1aXRQVU5yM3JGOUFMeV9sM0tvVXVhZW1sYVpkUU1hRDZkSWVBVFpRMkdaQkI0aXJkRGJaRWswSWZQM2VqRDhWbUlsUHllZDlDUEtxNVhRdTFST3k2NVJ4czZSZ1hVSTV4LWJ3MFY4ZW1zYTdFN3dLRnFkNU1WZm5fZm43ek9YeWxBS09OdVJ3?oc=5",
+          "published": "Mon, 22 Apr 2024 07:00:00 GMT",
+          "source": "Center for International Policy",
+          "collected_at": "2026-05-21T23:40:42.311769+00:00"
+        },
+        {
+          "keyword": "IMX-101",
+          "title": "Safer explosive tested & qualified at Picatinny named a TIME Best Invention of 2010 - army.mil",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVcwRUdVeTNsbS1xWXppRk8zbGFhX3BZeHBsTWtHVU9pMWNjd1B1TDM3U2dXTGdkYkV5Qk5KZ2x3OE9GYUpXMTJNa0ZGRVBXWGRLVUd4Y2FhZ2Rkb1FZbmhmQXdOMWpqSDhPZ3B0WVVldTExTm5qVjBPTWwwTGE1WXhtSU14U0VhVHd4TVRjeGRVNk4yRk9EZHBNZWczVlh2OFRUM3BoYzJ3cEtybFQ5QkIzVWV5VGvSAbwBQVVfeXFMT1F5XzZrQWUzM0dNdkJVQzdKeUlscjM4YlY1WnFQNmRoRC00TFdjN1lFMVVFRmU2bmpobTk5WDRPQUJ4Q3l3Z29UQnBETDA1NUhvT2JKSFR6cllBUkpvSVJ3VklLQ2ZYX1Rnc21iUkc0VDhHbjl4OTdJZHNVaGhSU0ZueDlZRjdNbEFrRzFETHkxQUFMeDFuNUtGLVZuTmtrWGtqcG5FWnRTVUNxYVJYOWZKLUhyUGtGeDVGWVc?oc=5",
+          "published": "Mon, 15 Nov 2010 08:00:00 GMT",
+          "source": "army.mil",
+          "collected_at": "2026-05-21T23:40:42.311783+00:00"
+        },
+        {
+          "keyword": "IMX-101",
+          "title": "BAE to continue IMX-101 projectiles production for US Army - Army Technology",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcUdQUWFQbUlaQm55VXhjb0N3U3FMbWNreWRobWJua2pBMGZPckdjelB3cDU1bHNUT2Z2T29JSzhLaFpsTVkzemJ2NFcyLXN3cG5HNWpnVlVuTWJTOWE3bWdyTGJBb0g0OVVnaVh2MHozTGo2eS04VThORTVRRmNHRjEyUGc4S0hJWjF6TkwwWDA0OW9CRnZWSg?oc=5",
+          "published": "Wed, 27 Mar 2013 07:00:00 GMT",
+          "source": "Army Technology",
+          "collected_at": "2026-05-21T23:40:42.311792+00:00"
+        },
+        {
+          "keyword": "IMX-101",
+          "title": "New Generation of Explosives for the Army - Military.com",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeGR1d2NVbVhfaVVLWkxfQ1NJZF9zMzRwcXJsSkdjckVGZGNELXgxS1pDeE0wcmNEU3dMWUFJREIwVEZfTXVaX0xBWWVWZTFwUUphQ1VUVVR0a2VVQ284Sm5YOFIxbThUbnU3eEFfb2ppdTIyNHBxWFBlNk9naFhRdmhxZDIyVjRpWjBfVG43d21hNmUzY2FSWg?oc=5",
+          "published": "Tue, 02 Apr 2013 07:00:00 GMT",
+          "source": "Military.com",
+          "collected_at": "2026-05-21T23:40:42.311797+00:00"
+        }
+      ]
+    },
+    "osint-events": {
+      "status": "ok",
+      "collected_at": "2026-05-21T23:40:46.069653+00:00",
+      "channels_checked": 5,
+      "events_found": 3,
+      "events": [
+        {
+          "channel": "Defence-Blog",
+          "producer": "BAE Systems",
+          "context": "ivers-its-self-funded-ampv-drone-killer-to-the-army/\"  rel=\"bookmark\" class=\"td-image-wrap \" title=\"BAE Systems delivers its self-funded AMPV &#8220;Drone Killer&#8221; to the Army\" ><span class=\"entr",
+          "detected_at": "2026-05-21T23:40:46.012320+00:00"
+        },
+        {
+          "channel": "Defence-Blog",
+          "producer": "BAE Systems",
+          "context": "log.com/bae-systems-delivers-its-self-funded-ampv-drone-killer-to-the-army/\"  rel=\"bookmark\" title=\"BAE Systems delivers its self-funded AMPV &#8220;Drone Killer&#8221; to the Army\">BAE Systems delive",
+          "detected_at": "2026-05-21T23:40:46.012343+00:00"
+        },
+        {
+          "channel": "Defence-Blog",
+          "producer": "BAE Systems",
+          "context": "<div class=\"td-excerpt\">BAE Systems built an armored vehicle with drone-killing capabilities in ten months and put it in front of soldi",
+          "detected_at": "2026-05-21T23:40:46.012349+00:00"
+        }
+      ]
+    }
+  },
+  "russian_plant_alerts": 3,
+  "russian_plant_counts": {
+    "BAE Systems": 3
+  }
+}

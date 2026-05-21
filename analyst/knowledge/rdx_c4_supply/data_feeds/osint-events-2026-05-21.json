@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-21T23:40:46.069653+00:00",
+  "channels_checked": 5,
+  "events_found": 3,
+  "events": [
+    {
+      "channel": "Defence-Blog",
+      "producer": "BAE Systems",
+      "context": "ivers-its-self-funded-ampv-drone-killer-to-the-army/\"  rel=\"bookmark\" class=\"td-image-wrap \" title=\"BAE Systems delivers its self-funded AMPV &#8220;Drone Killer&#8221; to the Army\" ><span class=\"entr",
+      "detected_at": "2026-05-21T23:40:46.012320+00:00"
+    },
+    {
+      "channel": "Defence-Blog",
+      "producer": "BAE Systems",
+      "context": "log.com/bae-systems-delivers-its-self-funded-ampv-drone-killer-to-the-army/\"  rel=\"bookmark\" title=\"BAE Systems delivers its self-funded AMPV &#8220;Drone Killer&#8221; to the Army\">BAE Systems delive",
+      "detected_at": "2026-05-21T23:40:46.012343+00:00"
+    },
+    {
+      "channel": "Defence-Blog",
+      "producer": "BAE Systems",
+      "context": "<div class=\"td-excerpt\">BAE Systems built an armored vehicle with drone-killing capabilities in ten months and put it in front of soldi",
+      "detected_at": "2026-05-21T23:40:46.012349+00:00"
+    }
+  ]
+}
