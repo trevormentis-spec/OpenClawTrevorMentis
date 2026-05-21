@@ -387,6 +387,35 @@ def main() -> None:
     state["last_brief_id"] = brief_id
     save_state(state)
 
+    # Write findings to episodic memory for future sessions
+    if alerts:
+        memory_record = {
+            "type": "reasoning_loop_findings",
+            "timestamp": now,
+            "brief_id": brief_id,
+            "feeds_checked": len(feed_deltas),
+            "alerts_count": len(alerts),
+            "alerts_sent": alerts_sent,
+            "alerts": [{"type": a["type"], "detail": a.get("detail", a.get("headline", ""))} for a in alerts],
+            "summary": f"{len(alerts)} delta(s) detected across {len(feed_deltas)} feeds, {alerts_sent} alert(s) sent",
+        }
+        EPISODIC_DIR.mkdir(parents=True, exist_ok=True)
+        today = dt.date.today().isoformat()
+        with open(EPISODIC_DIR / f"{today}.jsonl", "a") as f:
+            f.write(json.dumps(memory_record) + "\n")
+        log(f"Written to episodic memory: {len(alerts)} alerts logged")
+        # Write gap summary to daily memory file
+        memory_dir = REPO_ROOT / "memory"
+        memory_file = memory_dir / f"{today}.md"
+        gap_lines = [f"\n## Reasoning Loop - {now[:16]}",
+                      f"Feeds: {len(feed_deltas)} | Alerts: {len(alerts)}"]
+        for a in alerts[:5]:
+            gap_lines.append(f"- {a.get('type')}: {a.get('detail', a.get('headline', ''))}")
+        if len(alerts) > 5:
+            gap_lines.append(f"- ... (+{len(alerts)-5} more)")
+        with open(memory_file, "a") as f:
+            f.write("\n".join(gap_lines) + "\n")
+
     log(f"Check complete: {len(feed_deltas)} feeds, {len(alerts)} deltas, {alerts_sent} alerts sent")
     if alerts:
         for a in alerts:

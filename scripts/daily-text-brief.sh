@@ -202,7 +202,24 @@ fi
 set -e 2>/dev/null || true
 
 # =========================================================================
-# STEP 4: ANALYSIS — Run analyze.py directly (not through orchestrator)
+# STEP 4: MEMORY RETRIEVAL — recall past judgments before analysis
+# =========================================================================
+
+echo "--- Recalling relevant memory for today's analysis ---" | tee -a "$LOG"
+set +e
+python3 brain/scripts/brain.py recall --max-results 10 --query "daily brief predictions judgments assessments" 2>&1 | tee -a "$LOG" || true
+python3 brain/scripts/brain.py recall --max-results 5 --query "standing assessment calibration postdiction" 2>&1 | tee -a "$LOG" || true
+set -e 2>/dev/null || true
+
+echo "--- Checking unresolved reasoning gaps ---" | tee -a "$LOG"
+REASONING_STATE="$REPO/brain/memory/semantic/reasoning-state.json"
+if [ -f "$REASONING_STATE" ]; then
+    GAP_COUNT=$(python3 -c "import json; d=json.load(open('$REASONING_STATE')); print(len(d.get('active_gaps', [])))" 2>/dev/null || echo "0")
+    echo "  Open reasoning gaps: $GAP_COUNT" | tee -a "$LOG"
+fi
+
+# =========================================================================
+# STEP 5: ANALYSIS — Run analyze.py directly (not through orchestrator)
 #
 # This gives us control over sequencing: collect.py → enrich → analyze
 # Using the orchestrator's --use-mock-incidents would skip real analysis.
