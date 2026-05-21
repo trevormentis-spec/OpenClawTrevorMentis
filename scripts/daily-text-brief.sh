@@ -214,9 +214,10 @@ python3 skills/daily-intel-brief/scripts/analyze.py \
     --prompts skills/daily-intel-brief/references/deepseek-prompts.md \
     --regions skills/daily-intel-brief/references/regions.json \
     --model "anthropic/claude-opus-4.7" \
-    --tier2-model "anthropic/claude-opus-4.7" \
+    --tier2-model "deepseek/deepseek-v4-pro" \
     --provider openrouter \
-    --strict-env 2>&1 | tee -a "$LOG"
+    --tier2-provider deepseek \
+    2>&1 | tee -a "$LOG"
 ANALYZE_RC=${PIPESTATUS[0]}
 if [ $ANALYZE_RC -ne 0 ]; then
     echo "ERROR: Analysis failed with rc=$ANALYZE_RC" | tee -a "$LOG"

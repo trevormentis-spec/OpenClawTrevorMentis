@@ -500,7 +500,8 @@ def main() -> int:
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
     parser.add_argument("--model", default="deepseek/deepseek-v4-flash")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash", help="Tier-2 fast model for regional analysis (default: DeepSeek V4 Flash)")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash", help="Tier-2 model for regional analysis (default: DeepSeek V4 Flash)")
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek", help="API provider for tier-2 regional analysis (default: deepseek)")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
                         help="API provider to route through (default: deepseek)")
     parser.add_argument("--recall", default="",
@@ -752,7 +753,7 @@ def main() -> int:
     tier1_model = args.model       # e.g., anthropic/claude-opus-4.7 — exec summary + red team
     tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-pro — regional analysis
     # Tier-2 provider follows the --provider flag (override from deepseek-only in v2)
-    tier2_provider = args.provider
+    tier2_provider = args.tier2_provider
     log(f"Tiered routing: 10 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "
         f"exec+redteam → {tier1_model.split('/')[-1]} (tier-1 via {args.provider})")
 
