@@ -131,7 +131,6 @@ def web_search(query: str, count: int = 5) -> list[dict]:
         url,
         headers={
             "Accept": "application/json",
-            "Accept-Encoding": "gzip",
             "X-Subscription-Token": api_key,
         },
     )
@@ -309,12 +308,40 @@ def save_report(discoveries: list[dict], added: list[dict], week_str: str) -> No
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Weekly source discovery")
+    parser = argparse.ArgumentParser(description="Source discovery")
     parser.add_argument("--week", help="Week string (auto-detected if omitted)")
+    parser.add_argument("--query", help="Single-search-mode: search this query instead of rotating")
+    parser.add_argument("--auto-add", action="store_true", help="Add discoveries to registry automatically")
+    parser.add_argument("--region", help="Region label for discoveries (used with --query)")
     args = parser.parse_args()
 
-    week_str = args.week or f"{dt.date.today().year}-W{dt.date.today().isocalendar()[1]:02d}"
+    # Quick single-query mode (used by heartbeat)
+    if args.query:
+        log(f"Single-query mode: {args.query}")
+        results = web_search(args.query, count=8)
+        if not results:
+            print("No new sources discovered.")
+            return
+        scored = []
+        for r in results:
+            r["region"] = args.region or "global"
+            r["score"] = quality_score(r)
+            scored.append(r)
+        scored.sort(key=lambda x: x.get("score", 0), reverse=True)
+        top = [r for r in scored if r.get("score", 0) >= 3][:3]
+        if top and args.auto_add:
+            added = add_to_registry(top, max_add=3)
+            print(f"Discovery: {len(results)} found, {len(added)} added to registry for '{args.query}'")
+        elif top:
+            print(f"Discovery: {len(results)} found, top picks:")
+            for r in top:
+                print(f"  - {r.get('title','?')} ({r.get('url','?')}) [{r.get('score',0)}/10]")
+        else:
+            print(f"Discovery: {len(results)} found, none above quality threshold")
+        return
 
+    # Weekly batch mode
+    week_str = args.week or f"{dt.date.today().year}-W{dt.date.today().isocalendar()[1]:02d}"
     log(f"Starting source discovery for {week_str}")
 
     discoveries = run_discovery()
@@ -325,7 +352,6 @@ def main() -> None:
 
     added = add_to_registry(discoveries)
     save_report(discoveries, added, week_str)
-
     print(f"Discovery complete: {len(discoveries)} found, {len(added)} added to registry")
 
 
