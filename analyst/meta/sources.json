@@ -1362,6 +1362,33 @@
       "signal_level": "Medium",
       "discovered": "2026-05-18",
       "source": "NewsAPI"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-21",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-05-21",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-21",
+      "signal_level": "Medium",
+      "region": "north_america"
     }
   ],
   "moltbook_sources": [
