@@ -1,0 +1,77 @@
+INTELLIGENCE BRIEFING: THE GLOBAL MARKET FOR RDX AND C4 EXPLOSIVES
+
+Prepared for general readership. All technical terms explained on first use.
+
+===
+
+THE BIG PICTURE: WHY EXPLOSIVES ARE SUDDENLY A STRATEGIC COMMODITY
+
+For most of the last thirty years, military explosives were a sleepy industrial backwater. Western governments quietly drew down their Cold War stockpiles, closed production lines, and assumed that whatever they needed could be ordered up on a comfortable timeline. That assumption has now collapsed.
+
+At the center of the new scramble is a white crystalline powder called RDX, short for Research Department Explosive, a name given to it by British chemists during the Second World War. RDX is the workhorse military explosive of the modern age. It is the main ingredient in C4, short for Composition 4, the plastic explosive familiar from films and demolition kits. It fills the warheads of artillery shells, the bursting charges of cruise missiles, the shaped charges in anti-tank rockets, and the booster charges that set off larger weapons. Its more powerful cousin, HMX, short for High Melting Explosive, goes into the most demanding applications, including the warheads on certain missiles and the propellants in some rocket motors.
+
+The global market for RDX is on track to reach roughly 13.77 billion United States dollars by 2029, growing at about 5.7 percent each year. Global production already exceeds 60,000 metric tons annually. Those numbers sound large until you compare them to demand. Ukraine alone is consuming artillery shells at rates not seen in Europe since 1945. Asia-Pacific mining operations, particularly in Australia and India, are competing for the same industrial-grade material. And Western militaries are simultaneously trying to replace older, more sensitive explosives with newer, safer formulations called insensitive munitions, which require even more RDX and HMX per round than the explosives they replace.
+
+The result is a structural shortage. Demand is outrunning supply, and the supply side cannot expand quickly. Building a new RDX plant takes years, requires extensive environmental permitting, and demands a workforce with specialized skills that almost no one has been training. This is the backdrop against which every signal in this briefing should be read.
+
+===
+
+WHAT OUR MONITORING PICKED UP
+
+Six of six major producers are hiring at once. This is the single most important pattern in this collection cycle. When Holston Army Ammunition Plant in Kingsport, Tennessee, Eurenco in France, Chemring Nobel in Norway, Rheinmetall in Germany and Hungary, Hanwha in South Korea, and Solar Industries in India are all expanding headcount simultaneously, that is not coincidence. That is a coordinated industrial response to a sustained demand surge. Hiring is one of the most reliable leading indicators of industrial expansion because companies do not pay people to show up unless they expect orders. We assess it as highly likely (75 to 85 percent) that current production capacity will increase meaningfully across all six firms within 18 to 24 months.
+
+Holston Army Ammunition Plant deserves its own paragraph. It is the only producer of military-grade RDX and HMX in the entire United States. It sits in eastern Tennessee, operated by BAE Systems under a government contract that runs through 2033. If something happens to Holston, whether an accident, a natural disaster, or a labor dispute, the United States has no domestic backup. This is what analysts call a single point of failure, and the Pentagon has been quietly aware of it for years. The current modernization program at Holston is the most expensive ammunition-plant upgrade in American history, and it is happening because there is no alternative.
+
+The hexamine trade case is a quieter but equally important signal. Hexamine is a chemical precursor used to manufacture RDX. If you control hexamine, you have leverage over RDX production. The United States International Trade Commission, the federal body that handles unfair-trade complaints, has confirmed a case brought by Bakelite LLC against hexamine imports from China, Germany, India, and Saudi Arabia. On its surface this looks like a routine industrial dispute about chemical dumping. In context, it is something more interesting: an effort to ensure that American RDX production is not dependent on foreign precursor supply, particularly Chinese supply. Trade cases like this are how strategic supply chains get quietly rebuilt before anyone announces a policy.
+
+The Russian plants have been hit, repeatedly. Open-source reporting indicates that three major Russian energetics facilities have been struck in 2026: JSC Promsintez in Chapayevsk on March 28, the Sverdlov Plant in Dzerzhinsk on April 30, and Bryansk Chemical in Seltso in May. These are not random targets. They are the backbone of Russian explosive-fill production. Strikes on these plants degrade Russia's ability to load artillery shells, the single most important munition in the current war. We assess it as likely (55 to 70 percent) that Ukrainian targeting of Russian energetics infrastructure will continue and intensify, and that Russian shell production will face real, not just rhetorical, constraints over the next year.
+
+The patent filings tell a quieter story about where the science is going. Four of the five patents flagged in this cycle concern insensitive munitions, the safer formulations mentioned earlier. Insensitive munitions are explosives that will not detonate if a ship is hit by a missile, a magazine catches fire, or a truck rolls over. The militaries that adopted them first, the United States Navy in particular, did so after losing ships and aircraft to sympathetic detonations of their own munitions. The patent flow suggests that insensitive-munition chemistry is still an active R&D frontier, which in turn means that RDX and HMX demand is being pulled upward by quality requirements, not just quantity requirements.
+
+The news sweep returned nothing this cycle, which is itself worth noting. RDX is a low-visibility commodity. It rarely makes headlines unless a plant blows up or a smuggling case breaks. That silence is one reason monitoring needs to lean on indirect indicators: hiring, patents, trade cases, and infrastructure events.
+
+===
+
+SOURCES AND METHODS
+
+GDELT, the Global Database of Events, Language, and Tone, is an open-source news monitoring system that scans worldwide media in near real time. We use it to catch breaking events involving named facilities, companies, or chemicals.
+
+Job-posting feeds aggregate hiring activity from corporate career pages and major job boards. Hiring patterns are a leading indicator of industrial expansion or contraction.
+
+Patent databases, primarily the United States Patent and Trademark Office and the European Patent Office, reveal where research and development money is going. Patents take years to file and grant, so they reflect strategic direction, not short-term noise.
+
+The United States International Trade Commission, abbreviated USITC, publishes trade-remedy cases involving unfair imports. Cases involving chemical precursors flag attempts to reshape strategic supply chains.
+
+Conflict Armament Research is a private investigative organization that physically traces weapons recovered from battlefields back to their manufacturers. Their reports are the gold standard for understanding how munitions move through grey markets and conflict zones.
+
+The Environmental Protection Agency's Toxics Release Inventory, or TRI, requires industrial facilities in the United States to report pollutant releases. Changes in reported emissions can is a rough proxy for changes in production volume. In this cycle, data for Holston and Radford Army Ammunition Plants was unavailable, likely due to reporting lag or classification.
+
+Producer pipeline tracking combines public corporate disclosures, government contract announcements, and on-the-ground reporting to maintain a current picture of who is producing what, where, and at what capacity.
+
+===
+
+WHAT A REGULAR REPORT SHOULD LOOK LIKE
+
+A useful recurring product on this topic would have a consistent structure so readers can find what they need quickly.
+
+A weekly cadence is appropriate. RDX market dynamics move on industrial timescales, not news timescales, and a daily report would be padded with noise.
+
+Each issue should open with a one-paragraph headline assessment: what changed this week, and what it means. Then a short market-conditions section covering price signals, contract awards, and capacity announcements. Then a producer-by-producer status board, flagging any facility that experienced an event, a contract, a workforce change, or a regulatory action. Then a precursor-chemicals section tracking hexamine, nitric acid, and related inputs. Then a conflict-and-targeting section covering strikes on energetics infrastructure and battlefield recovery of munitions. Finally, a forward-watch section listing specific developments expected in the next reporting cycle.
+
+Each finding should carry a confidence judgment using standard probability language, and each forward judgment should be testable, so the report can be graded against reality over time.
+
+===
+
+WHAT TO WATCH IN THE NEXT 30 DAYS
+
+Watch for any announcement of new contract awards at Holston Army Ammunition Plant, particularly any expansion of the BAE Systems operating contract.
+
+Watch for a preliminary determination from the United States International Trade Commission on the hexamine case. The timing and scope of that ruling will indicate how aggressively Washington intends to protect domestic precursor supply.
+
+Watch for further strikes on Russian energetics facilities, and for any Russian announcement of new or relocated production capacity, which would signal that the strikes are biting.
+
+Watch for hiring spikes or contract awards at Eurenco in France and at Nitro-Chem in Poland, both of which are positioned to absorb European demand that the United States cannot meet.
+
+Watch for any news from Rheinmetall's new plant in Varpalota, Hungary, which is in commissioning. The transition from commissioning to full production would materially loosen the European supply picture.
+
+End of briefing.

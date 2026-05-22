@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-22T00:16:50.641547+00:00",
+  "facilities": [
+    {
+      "facility": "Holston AAP",
+      "status": "unavailable",
+      "note": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "facility": "Radford AAP",
+      "status": "unavailable",
+      "note": "HTTP Error 404: NOT FOUND"
+    }
+  ]
+}
