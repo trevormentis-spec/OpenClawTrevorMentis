@@ -1,14 +1,387 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Newsletter Subscription Links</title>
-<style>body{font-family:-apple-system,sans-serif;max-width:800px;margin:40px auto;padding:20px}
-h2{color:#1a1a2e;border-bottom:2px solid #e94560;padding-bottom:8px;margin-top:32px}
-.cat{background:#f8f9fa;padding:12px;margin:8px 0;border-radius:6px}
-.cat a{color:#e94560;text-decoration:none;font-weight:500}
-.cat a:hover{text-decoration:underline}
-.count{color:#666;font-size:13px;margin-left:8px}
-small{color:#999}
-</style></head><body>
-<h1>📬 Newsletter Subscription Links</h1>
-<p style="color:#666;">Email: <strong>trevor_mentis@agentmail.to</strong> &middot; 181 newsletters</p>
-<hr>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📬 Newsletter Subscription Master List — 181 Newsletters</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 2px solid #30363d; }
+  header h1 { font-size: 28px; color: #58a6ff; margin-bottom: 8px; }
+  header p { color: #8b949e; font-size: 15px; }
+  .email-box { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 20px; margin: 20px 0; display: flex; align-items: center; gap: 12px; }
+  .email-box .label { color: #8b949e; font-size: 13px; flex-shrink: 0; }
+  .email-box .addr { color: #7ee787; font-family: monospace; font-size: 16px; font-weight: 600; flex: 1; user-select: all; }
+  .email-box button { background: #238636; border: none; color: #fff; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; }
+  .email-box button:hover { background: #2ea043; }
+  .stats { display: flex; gap: 20px; justify-content: center; margin: 24px 0; flex-wrap: wrap; }
+  .stat { text-align: center; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 24px; min-width: 100px; }
+  .stat .num { font-size: 28px; font-weight: 700; color: #58a6ff; }
+  .stat .lbl { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+  .category { margin: 32px 0; }
+  .category h2 { color: #f0883e; font-size: 18px; padding: 10px 16px; background: #161b22; border: 1px solid #30363d; border-radius: 8px 8px 0 0; margin: 0; display: flex; justify-content: space-between; }
+  .category h2 .count { font-size: 14px; color: #8b949e; font-weight: 400; }
+  .nl-list { list-style: none; }
+  .nl-list li { border: 1px solid #30363d; border-top: none; transition: background 0.15s; }
+  .nl-list li:last-child { border-radius: 0 0 8px 8px; }
+  .nl-list li:hover { background: #161b22; }
+  .nl-list li a { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: #c9d1d9; text-decoration: none; font-size: 14px; }
+  .nl-list li a:hover { color: #58a6ff; }
+  .nl-list li a .name { font-weight: 500; }
+  .nl-list li a .notes { font-size: 12px; color: #8b949e; text-align: right; max-width: 280px; }
+  .nl-list li a .url { font-size: 11px; color: #6e7681; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 300px; }
+  .done .name { color: #6e7681 !important; }
+  .done a { opacity: 0.5; }
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 28px 0; }
+  .toc a { background: #21262d; color: #58a6ff; padding: 6px 14px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 500; border: 1px solid #30363d; }
+  .toc a:hover { background: #30363d; }
+  footer { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #30363d; color: #6e7681; font-size: 12px; }
+  .progress-bar { background: #21262d; border-radius: 10px; height: 8px; margin: 16px 0; overflow: hidden; }
+  .progress-bar .fill { background: linear-gradient(90deg, #238636, #58a6ff); height: 100%; border-radius: 10px; transition: width 0.3s; width: 0%; }
+  .search { width: 100%; padding: 10px 16px; background: #0d1117; border: 1px solid #30363d; border-radius: 8px; color: #c9d1d9; font-size: 15px; margin: 8px 0 20px; }
+  .search:focus { outline: none; border-color: #58a6ff; }
+  @media (max-width: 600px) {
+    .nl-list li a { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .nl-list li a .notes, .nl-list li a .url { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>📬 Newsletter Subscription Master List</h1>
+  <p>181 geopolitical, security, defense, and intelligence newsletters — organized by category</p>
+  <div class="email-box">
+    <span class="label">Subscribe with:</span>
+    <span class="addr" id="emailAddr">trevor_mentis@agentmail.to</span>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('emailAddr').textContent);this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)">Copy</button>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="num">181</div><div class="lbl">Total</div></div>
+    <div class="stat"><div class="num">12</div><div class="lbl">Categories</div></div>
+    <div class="stat"><div class="num" id="doneCount">0</div><div class="lbl">Done</div></div>
+  </div>
+  <div class="progress-bar"><div class="fill" id="progress"></div></div>
+  <input type="text" class="search" placeholder="🔍 Filter newsletters..." oninput="filter(this.value)">
+</header>
+
+<nav class="toc">
+  <a href="#global">Global Daily</a>
+  <a href="#defense">US Defense</a>
+  <a href="#thinktanks">Think Tanks</a>
+  <a href="#substack">Substack/Indie</a>
+  <a href="#asia">Asia Pacific</a>
+  <a href="#africa">Africa</a>
+  <a href="#middleeast">Middle East</a>
+  <a href="#latam">Latin America</a>
+  <a href="#europe">Europe</a>
+  <a href="#maritime">Maritime</a>
+  <a href="#space">Space</a>
+  <a href="#cyber">Cyber & Nuclear</a>
+  <a href="#energy">Energy</a>
+</nav>
+
+<script>
+function toggleDone(el) {
+  el.closest('li').classList.toggle('done');
+  updateCount();
+}
+function updateCount() {
+  var done = document.querySelectorAll('.nl-list li.done').length;
+  var total = document.querySelectorAll('.nl-list li').length;
+  var pct = Math.round(done / total * 100);
+  document.getElementById('doneCount').textContent = done;
+  document.getElementById('progress').style.width = pct + '%';
+}
+function filter(q) {
+  q = q.toLowerCase();
+  document.querySelectorAll('.nl-list li').forEach(function(li) {
+    var txt = li.textContent.toLowerCase();
+    li.style.display = q && !txt.includes(q) ? 'none' : '';
+  });
+}
+</script>
+
+<!-- TIER 1: GLOBAL DAILY BRIEFS -->
+<div class="category" id="global">
+  <h2>🌍 Tier 1 — Global Daily Briefs <span class="count">20 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.economist.com/espresso" target="_blank"><span><span class="name">The Economist Espresso</span><br><span class="url">economist.com/espresso</span></span><span class="notes">Daily global briefing, 5 min read, before breakfast</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — Morning Brief</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">Morning global affairs briefing</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — Situation Report</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">NatSec/defense weekly</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — China Brief</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">China-focused weekly</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — Africa Brief</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">Africa-focused weekly</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — South Asia Brief</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">South Asia-focused weekly</span></a></li>
+    <li><a href="https://foreignpolicy.com/newsletters/" target="_blank"><span><span class="name">Foreign Policy — Latin America Brief</span><br><span class="url">foreignpolicy.com/newsletters</span></span><span class="notes">LatAm-focused weekly</span></a></li>
+    <li><a href="https://www.foreignaffairs.com/newsletter" target="_blank"><span><span class="name">Foreign Affairs (CFR)</span><br><span class="url">foreignaffairs.com/newsletter</span></span><span class="notes">Weekly analysis, magazine essays</span></a></li>
+    <li><a href="https://www.cfr.org/newsletters/daily-news-brief" target="_blank"><span><span class="name">CFR Daily News Brief</span><br><span class="url">cfr.org/newsletters</span></span><span class="notes">Global news with CFR analysis, weekday mornings</span></a></li>
+    <li><a href="https://www.politico.com/newsletters/national-security-daily" target="_blank"><span><span class="name">Politico NatSec Daily</span><br><span class="url">politico.com/national-security-daily</span></span><span class="notes">Pentagon, State Dept, NSC reporting, afternoon brief</span></a></li>
+    <li><a href="https://www.politico.com/playbook" target="_blank"><span><span class="name">Politico Playbook + PM</span><br><span class="url">politico.com/playbook</span></span><span class="notes">DC insider morning + afternoon</span></a></li>
+    <li><a href="https://www.politico.eu/newsletters/" target="_blank"><span><span class="name">Politico Europe Playbooks</span><br><span class="url">politico.eu/newsletters</span></span><span class="notes">Brussels, London, Berlin, Paris insider briefs</span></a></li>
+    <li><a href="https://www.bloomberg.com/account/newsletters" target="_blank"><span><span class="name">Bloomberg Defense Monitor</span><br><span class="url">bloomberg.com/newsletters</span></span><span class="notes">Weekly defense industry & geopolitics</span></a></li>
+    <li><a href="https://www.bloomberg.com/account/newsletters" target="_blank"><span><span class="name">Bloomberg Supply Lines</span><br><span class="url">bloomberg.com/newsletters</span></span><span class="notes">Trade, tariffs, logistics, choke points</span></a></li>
+    <li><a href="https://www.reuters.com/newsletters/" target="_blank"><span><span class="name">Reuters World News</span><br><span class="url">reuters.com/newsletters</span></span><span class="notes">Daily wire-grade brief</span></a></li>
+    <li><a href="https://www.axios.com/newsletters/axios-world" target="_blank"><span><span class="name">Axios World</span><br><span class="url">axios.com/axios-world</span></span><span class="notes">Twice-weekly global affairs</span></a></li>
+    <li><a href="https://www.nytimes.com/newsletters" target="_blank"><span><span class="name">NYT The Morning + DealBook</span><br><span class="url">nytimes.com/newsletters</span></span><span class="notes">General + business/geopolitics overlap</span></a></li>
+    <li><a href="https://www.gzeromedia.com/newsletters/" target="_blank"><span><span class="name">GZERO Daily / Signal</span><br><span class="url">gzeromedia.com/newsletters</span></span><span class="notes">Ian Bremmer — daily political risk briefing</span></a></li>
+    <li><a href="https://zeihan.com/newsletter/" target="_blank"><span><span class="name">Zeihan on Geopolitics</span><br><span class="url">zeihan.com/newsletter</span></span><span class="notes">Daily video + newsletter</span></a></li>
+    <li><a href="https://dailybrief.oxan.com/" target="_blank"><span><span class="name">Oxford Analytica Daily Brief</span><br><span class="url">dailybrief.oxan.com</span></span><span class="notes">Expert geopolitical analysis (premium)</span></a></li>
+  </ul>
+</div>
+
+<!-- TIER 2: US NATIONAL SECURITY & DEFENSE -->
+<div class="category" id="defense">
+  <h2>🛡️ Tier 2 — US National Security & Defense <span class="count">15 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://warontherocks.com/membership/" target="_blank"><span><span class="name">War on the Rocks</span><br><span class="url">warontherocks.com</span></span><span class="notes">Strategy, defense, foreign policy (also in RSS)</span></a></li>
+    <li><a href="https://www.thecipherbrief.com/subscribe" target="_blank"><span><span class="name">The Cipher Brief</span><br><span class="url">thecipherbrief.com</span></span><span class="notes">Daily Open Source Report, IC-perspective</span></a></li>
+    <li><a href="https://www.lawfaremedia.org/newsletter" target="_blank"><span><span class="name">Lawfare</span><br><span class="url">lawfaremedia.org</span></span><span class="notes">National security law & policy</span></a></li>
+    <li><a href="https://www.justsecurity.org/subscribe/" target="_blank"><span><span class="name">Just Security</span><br><span class="url">justsecurity.org</span></span><span class="notes">National security law & policy</span></a></li>
+    <li><a href="https://www.defenseone.com/newsletters/" target="_blank"><span><span class="name">Defense One</span><br><span class="url">defenseone.com</span></span><span class="notes">Daily Brief, China Brief, Space Race</span></a></li>
+    <li><a href="https://breakingdefense.com/newsletter/" target="_blank"><span><span class="name">Breaking Defense</span><br><span class="url">breakingdefense.com</span></span><span class="notes">Weekly Break Out + defense industry</span></a></li>
+    <li><a href="https://www.defensenews.com/newsletters/" target="_blank"><span><span class="name">Defense News Daily</span><br><span class="url">defensenews.com</span></span><span class="notes">Daily defense industry brief</span></a></li>
+    <li><a href="https://defensescoop.com/" target="_blank"><span><span class="name">DefenseScoop</span><br><span class="url">defensescoop.com</span></span><span class="notes">Daily defense tech & policy</span></a></li>
+    <li><a href="https://www.twz.com/newsletter" target="_blank"><span><span class="name">The War Zone</span><br><span class="url">twz.com</span></span><span class="notes">Tactical/operational defense reporting</span></a></li>
+    <li><a href="https://www.militarytimes.com/newsletters/" target="_blank"><span><span class="name">Military Times</span><br><span class="url">militarytimes.com</span></span><span class="notes">Service-member focused</span></a></li>
+    <li><a href="https://www.stripes.com/newsletters" target="_blank"><span><span class="name">Stars and Stripes</span><br><span class="url">stripes.com</span></span><span class="notes">Independent military news</span></a></li>
+    <li><a href="https://smallwarsjournal.com/subscribe" target="_blank"><span><span class="name">Small Wars Journal</span><br><span class="url">smallwarsjournal.com</span></span><span class="notes">Irregular warfare, counter-insurgency</span></a></li>
+    <li><a href="https://tnsr.org/subscribe/" target="_blank"><span><span class="name">Texas National Security Review</span><br><span class="url">tnsr.org</span></span><span class="notes">Long-form scholarship</span></a></li>
+    <li><a href="https://mwi.westpoint.edu/subscribe/" target="_blank"><span><span class="name">Modern War Institute (West Point)</span><br><span class="url">mwi.westpoint.edu</span></span><span class="notes">Strategy & doctrine</span></a></li>
+    <li><a href="https://www.cipherbrief.com/subscribe" target="_blank"><span><span class="name">Cipher Brief Daily Report</span><br><span class="url">cipherbrief.com</span></span><span class="notes">Daily threat assessment</span></a></li>
+  </ul>
+</div>
+
+<!-- THINK TANKS -->
+<div class="category" id="thinktanks">
+  <h2>🏛️ Think Tanks <span class="count">30 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.csis.org/subscribe" target="_blank"><span><span class="name">CSIS — All Topic Newsletters</span><br><span class="url">csis.org/subscribe</span></span><span class="notes">Africa, Asia, Russia, China, ME, defense, energy, etc.</span></a></li>
+    <li><a href="https://www.brookings.edu/subscribe-to-newsletters/" target="_blank"><span><span class="name">Brookings — Order from Chaos</span><br><span class="url">brookings.edu/subscribe</span></span><span class="notes">Africa Update, foreign policy analysis</span></a></li>
+    <li><a href="https://www.rand.org/newsletters.html" target="_blank"><span><span class="name">RAND — Research Newsletters</span><br><span class="url">rand.org/newsletters</span></span><span class="notes">Multiple research streams</span></a></li>
+    <li><a href="https://www.cfr.org/newsletters" target="_blank"><span><span class="name">Council on Foreign Relations</span><br><span class="url">cfr.org/newsletters</span></span><span class="notes">20+ newsletters by region/topic</span></a></li>
+    <li><a href="https://carnegieendowment.org/subscribe" target="_blank"><span><span class="name">Carnegie Endowment</span><br><span class="url">carnegieendowment.org</span></span><span class="notes">Russia/Eurasia, China, India, ME, Europe</span></a></li>
+    <li><a href="https://www.atlanticcouncil.org/newsletters/" target="_blank"><span><span class="name">Atlantic Council</span><br><span class="url">atlanticcouncil.org</span></span><span class="notes">NATO, Russia/Eurasia, Africa, Indo-Pacific</span></a></li>
+    <li><a href="https://www.hudson.org/subscribe" target="_blank"><span><span class="name">Hudson Institute</span><br><span class="url">hudson.org</span></span><span class="notes">China Digest, Europe-Eurasia, Central Asia</span></a></li>
+    <li><a href="https://www.aei.org/subscribe/" target="_blank"><span><span class="name">American Enterprise Institute</span><br><span class="url">aei.org</span></span><span class="notes">Foreign & defense policy</span></a></li>
+    <li><a href="https://www.cato.org/newsletters" target="_blank"><span><span class="name">Cato Institute</span><br><span class="url">cato.org</span></span><span class="notes">Libertarian foreign policy analysis</span></a></li>
+    <li><a href="https://www.stimson.org/subscribe/" target="_blank"><span><span class="name">Stimson Center</span><br><span class="url">stimson.org</span></span><span class="notes">Arms control, South Asia, SE Asia</span></a></li>
+    <li><a href="https://www.cnas.org/about/subscribe" target="_blank"><span><span class="name">CNAS</span><br><span class="url">cnas.org</span></span><span class="notes">Defense strategy, tech & security</span></a></li>
+    <li><a href="https://www.fdd.org/subscribe/" target="_blank"><span><span class="name">Foundation for Defense of Democracies</span><br><span class="url">fdd.org</span></span><span class="notes">Iran, counterterrorism, sanctions</span></a></li>
+    <li><a href="https://www.wilsoncenter.org/subscribe" target="_blank"><span><span class="name">Wilson Center</span><br><span class="url">wilsoncenter.org</span></span><span class="notes">Global affairs, regional programs</span></a></li>
+    <li><a href="https://www.washingtoninstitute.org/subscribe" target="_blank"><span><span class="name">Washington Institute</span><br><span class="url">washingtoninstitute.org</span></span><span class="notes">Middle East policy</span></a></li>
+    <li><a href="https://www.mei.edu/subscribe" target="_blank"><span><span class="name">Middle East Institute</span><br><span class="url">mei.edu</span></span><span class="notes">Middle East analysis & policy</span></a></li>
+    <li><a href="https://www.iiss.org/newsletter-signup/" target="_blank"><span><span class="name">IISS (Intl Institute for Strategic Studies)</span><br><span class="url">iiss.org</span></span><span class="notes">Defense, military balance, strategic analysis</span></a></li>
+    <li><a href="https://www.rusi.org/email" target="_blank"><span><span class="name">RUSI (Royal United Services Institute)</span><br><span class="url">rusi.org</span></span><span class="notes">UK defense & security think tank</span></a></li>
+    <li><a href="https://www.chathamhouse.org/get-our-newsletter" target="_blank"><span><span class="name">Chatham House</span><br><span class="url">chathamhouse.org</span></span><span class="notes">UK international affairs</span></a></li>
+    <li><a href="https://www.swp-berlin.org/en/newsletter" target="_blank"><span><span class="name">SWP Berlin (German Institute)</span><br><span class="url">swp-berlin.org</span></span><span class="notes">German foreign & security policy research</span></a></li>
+    <li><a href="https://www.ispionline.it/en/newsletter" target="_blank"><span><span class="name">ISPI (Italian Institute)</span><br><span class="url">ispionline.it</span></span><span class="notes">Italian foreign policy think tank</span></a></li>
+    <li><a href="https://www.ifri.org/en/newsletters" target="_blank"><span><span class="name">IFRI (French Institute)</span><br><span class="url">ifri.org</span></span><span class="notes">French international relations</span></a></li>
+    <li><a href="https://dgap.org/en/newsletter" target="_blank"><span><span class="name">DGAP (German Foreign Policy)</span><br><span class="url">dgap.org</span></span><span class="notes">German Council on Foreign Relations</span></a></li>
+    <li><a href="https://www.ceps.eu/newsletter/" target="_blank"><span><span class="name">CEPS (Centre for European Policy)</span><br><span class="url">ceps.eu</span></span><span class="notes">EU policy & economics</span></a></li>
+    <li><a href="https://www.bruegel.org/newsletters" target="_blank"><span><span class="name">Bruegel</span><br><span class="url">bruegel.org</span></span><span class="notes">EU economic policy & governance</span></a></li>
+    <li><a href="https://ecfr.eu/newsletter/" target="_blank"><span><span class="name">ECFR (European Council on Foreign Relations)</span><br><span class="url">ecfr.eu</span></span><span class="notes">Pan-European foreign policy</span></a></li>
+    <li><a href="https://www.globsec.org/newsletter" target="_blank"><span><span class="name">GLOBSEC</span><br><span class="url">globsec.org</span></span><span class="notes">Central/Eastern Europe security</span></a></li>
+    <li><a href="https://www.fiia.fi/en/subscribe" target="_blank"><span><span class="name">FIIA (Finnish Institute)</span><br><span class="url">fiia.fi</span></span><span class="notes">Finnish foreign policy research</span></a></li>
+    <li><a href="https://www.nupi.no/en/subscribe" target="_blank"><span><span class="name">NUPI (Norwegian Institute)</span><br><span class="url">nupi.no</span></span><span class="notes">Norwegian foreign policy</span></a></li>
+    <li><a href="https://icds.ee/en/subscribe/" target="_blank"><span><span class="name">ICDS (Estonian Institute)</span><br><span class="url">icds.ee</span></span><span class="notes">Baltic & Eastern European defense</span></a></li>
+    <li><a href="https://www.osw.waw.pl/en/newsletter" target="_blank"><span><span class="name">OSW (Centre for Eastern Studies)</span><br><span class="url">osw.waw.pl</span></span><span class="notes">Polish Eastern Europe/Russia analysis</span></a></li>
+  </ul>
+</div>
+
+<!-- SUBSTACK / INDEPENDENT -->
+<div class="category" id="substack">
+  <h2>📝 Substack / Independent Analysts <span class="count">11 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://geopoliticalfutures.com/gpf-newsletter/" target="_blank"><span><span class="name">Geopolitical Futures</span><br><span class="url">geopoliticalfutures.com</span></span><span class="notes">George Friedman — weekly geopolitical forecasting ⚠️ not substack RSS</span></a></li>
+    <li><a href="https://worldview.stratfor.com/" target="_blank"><span><span class="name">Stratfor / RANE Worldview</span><br><span class="url">stratfor.com</span></span><span class="notes">Geopolitical intelligence platform</span></a></li>
+    <li><a href="https://sinocism.com/" target="_blank"><span><span class="name">Sinocism</span><br><span class="url">sinocism.com</span></span><span class="notes">Bill Bishop — Premium China analysis</span></a></li>
+    <li><a href="https://osintnewsletter.com/subscribe" target="_blank"><span><span class="name">OSINT Newsletter</span><br><span class="url">osintnewsletter.com</span></span><span class="notes">Weekly OSINT roundup</span></a></li>
+    <li><a href="https://sector035.nl/week-in-osint" target="_blank"><span><span class="name">Week in OSINT</span><br><span class="url">sector035.nl</span></span><span class="notes">Sector035 — OSINT tools & techniques</span></a></li>
+    <li><a href="https://www.bellingcat.com/newsletter/" target="_blank"><span><span class="name">Bellingcat Newsletter</span><br><span class="url">bellingcat.com</span></span><span class="notes">Open source investigations</span></a></li>
+    <li><a href="https://krebsonsecurity.com/" target="_blank"><span><span class="name">Krebs on Security</span><br><span class="url">krebsonsecurity.com</span></span><span class="notes">Cybercrime & security journalism</span></a></li>
+    <li><a href="https://news.risky.biz/" target="_blank"><span><span class="name">Risky Business</span><br><span class="url">risky.biz</span></span><span class="notes">Cybersecurity & infosec news</span></a></li>
+    <li><a href="https://thecyberwire.com/newsletters.html" target="_blank"><span><span class="name">The CyberWire</span><br><span class="url">thecyberwire.com</span></span><span class="notes">Daily cybersecurity brief</span></a></li>
+    <li><a href="https://www.sans.org/newsletters/newsbites/" target="_blank"><span><span class="name">SANS NewsBites</span><br><span class="url">sans.org</span></span><span class="notes">Bi-weekly security awareness</span></a></li>
+    <li><a href="https://www.schneier.com/crypto-gram/" target="_blank"><span><span class="name">Schneier on Security (Crypto-Gram)</span><br><span class="url">schneier.com</span></span><span class="notes">Bruce Schneier — monthly security analysis</span></a></li>
+  </ul>
+</div>
+
+<!-- ASIA PACIFIC -->
+<div class="category" id="asia">
+  <h2>🌏 Asia Pacific <span class="count">20 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://asia.nikkei.com/newsletters" target="_blank"><span><span class="name">Nikkei Asia</span><br><span class="url">asia.nikkei.com</span></span><span class="notes">Asian business & geopolitics</span></a></li>
+    <li><a href="https://thediplomat.com/newsletters/" target="_blank"><span><span class="name">The Diplomat</span><br><span class="url">thediplomat.com</span></span><span class="notes">Asia-Pacific current affairs</span></a></li>
+    <li><a href="https://eastasiaforum.org/subscribe/" target="_blank"><span><span class="name">East Asia Forum</span><br><span class="url">eastasiaforum.org</span></span><span class="notes">ANU — East Asian economics & politics</span></a></li>
+    <li><a href="https://www.38north.org/subscribe/" target="_blank"><span><span class="name">38 North (North Korea)</span><br><span class="url">38north.org</span></span><span class="notes">Stimson Center — DPRK analysis</span></a></li>
+    <li><a href="https://www.nknews.org/subscribe/" target="_blank"><span><span class="name">NK News</span><br><span class="url">nknews.org</span></span><span class="notes">North Korea specialist</span></a></li>
+    <li><a href="https://japan-forward.com/newsletter/" target="_blank"><span><span class="name">Japan Forward</span><br><span class="url">japan-forward.com</span></span><span class="notes">Japanese current affairs (English)</span></a></li>
+    <li><a href="https://www.chinatranslated.com/" target="_blank"><span><span class="name">China Translated</span><br><span class="url">chinatranslated.com</span></span><span class="notes">Chinese domestic discourse (English)</span></a></li>
+    <li><a href="https://www.pekingnology.com/" target="_blank"><span><span class="name">Pekingnology</span><br><span class="url">pekingnology.com</span></span><span class="notes">PRC foreign policy analysis</span></a></li>
+    <li><a href="https://triviumchina.com/subscribe/" target="_blank"><span><span class="name">Trivium China</span><br><span class="url">triviumchina.com</span></span><span class="notes">China policy & political risk</span></a></li>
+    <li><a href="https://macropolo.org/newsletter/" target="_blank"><span><span class="name">MacroPolo</span><br><span class="url">macropolo.org</span></span><span class="notes">Paulson Institute — China political economy</span></a></li>
+    <li><a href="https://www.iseas.edu.sg/" target="_blank"><span><span class="name">ISEAS — Yusof Ishak Institute</span><br><span class="url">iseas.edu.sg</span></span><span class="notes">Southeast Asia research</span></a></li>
+    <li><a href="https://www.orfonline.org/newsletters" target="_blank"><span><span class="name">ORF India</span><br><span class="url">orfonline.org</span></span><span class="notes">Observer Research Foundation — Indian policy</span></a></li>
+    <li><a href="https://theprint.in/newsletters/" target="_blank"><span><span class="name">The Print (India)</span><br><span class="url">theprint.in</span></span><span class="notes">Indian news & analysis</span></a></li>
+    <li><a href="https://www.hindustantimes.com/newsletters" target="_blank"><span><span class="name">Hindustan Times</span><br><span class="url">hindustantimes.com</span></span><span class="notes">Indian news & politics</span></a></li>
+    <li><a href="https://takshashila.org.in/subscribe" target="_blank"><span><span class="name">Takshashila Institution</span><br><span class="url">takshashila.org.in</span></span><span class="notes">Indian public policy & strategy</span></a></li>
+    <li><a href="https://www.dawn.com/newsletters" target="_blank"><span><span class="name">Dawn (Pakistan)</span><br><span class="url">dawn.com</span></span><span class="notes">Pakistan's leading English daily</span></a></li>
+    <li><a href="https://cabar.asia/en/newsletter" target="_blank"><span><span class="name">CABAR.asia</span><br><span class="url">cabar.asia</span></span><span class="notes">Central Asia analytical reporting</span></a></li>
+    <li><a href="https://eurasianet.org/newsletters" target="_blank"><span><span class="name">EurasiaNet</span><br><span class="url">eurasianet.org</span></span><span class="notes">Central Asia/Caucasus news & analysis</span></a></li>
+    <li><a href="https://theasiasentinel.com/" target="_blank"><span><span class="name">Asia Sentinel</span><br><span class="url">asiasentinel.com</span></span><span class="notes">Independent Asia watchdog</span></a></li>
+    <li><a href="https://www.asiasociety.org/policy-institute/subscribe" target="_blank"><span><span class="name">Asia Society Policy Institute</span><br><span class="url">asiasociety.org</span></span><span class="notes">Asia-focused policy research</span></a></li>
+  </ul>
+</div>
+
+<!-- AFRICA -->
+<div class="category" id="africa">
+  <h2>🌍 Africa <span class="count">11 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.africa-confidential.com/" target="_blank"><span><span class="name">Africa Confidential</span><br><span class="url">africa-confidential.com</span></span><span class="notes">Premium Africa intelligence</span></a></li>
+    <li><a href="https://www.theafricareport.com/newsletters/" target="_blank"><span><span class="name">The Africa Report</span><br><span class="url">theafricareport.com</span></span><span class="notes">Business & politics across Africa</span></a></li>
+    <li><a href="https://www.semafor.com/newsletters/africa" target="_blank"><span><span class="name">Semafor Africa</span><br><span class="url">semafor.com/africa</span></span><span class="notes">Daily Africa news briefing</span></a></li>
+    <li><a href="https://issafrica.org/subscribe" target="_blank"><span><span class="name">ISS Africa</span><br><span class="url">issafrica.org</span></span><span class="notes">Institute for Security Studies</span></a></li>
+    <li><a href="https://mg.co.za/newsletter/" target="_blank"><span><span class="name">Mail & Guardian (SA)</span><br><span class="url">mg.co.za</span></span><span class="notes">South Africa's investigative weekly</span></a></li>
+    <li><a href="https://www.dailymaverick.co.za/subscribe/" target="_blank"><span><span class="name">Daily Maverick (SA)</span><br><span class="url">dailymaverick.co.za</span></span><span class="notes">South African news & analysis</span></a></li>
+    <li><a href="https://africanarguments.org/subscribe/" target="_blank"><span><span class="name">African Arguments</span><br><span class="url">africanarguments.org</span></span><span class="notes">RVI — African politics & analysis</span></a></li>
+    <li><a href="https://africacenter.org/subscribe/" target="_blank"><span><span class="name">Africa Center (ACSS)</span><br><span class="url">africacenter.org</span></span><span class="notes">US DoD Africa strategic studies</span></a></li>
+    <li><a href="https://www.thecontinent.org/subscribe" target="_blank"><span><span class="name">The Continent</span><br><span class="url">thecontinent.org</span></span><span class="notes">Pan-African weekly newspaper</span></a></li>
+    <li><a href="https://amwaj.media/newsletter" target="_blank"><span><span class="name">Amwaj.media</span><br><span class="url">amwaj.media</span></span><span class="notes">Iran & Middle East deep reporting</span></a></li>
+    <li><a href="https://africanews.com/newsletter/" target="_blank"><span><span class="name">Africanews Newsletter</span><br><span class="url">africanews.com</span></span><span class="notes">Euronews Africa partner</span></a></li>
+  </ul>
+</div>
+
+<!-- MIDDLE EAST -->
+<div class="category" id="middleeast">
+  <h2>🕌 Middle East <span class="count">11 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.haaretz.com/newsletter-signup" target="_blank"><span><span class="name">Haaretz</span><br><span class="url">haaretz.com</span></span><span class="notes">Israeli left-leaning daily (English)</span></a></li>
+    <li><a href="https://www.jpost.com/newsletter" target="_blank"><span><span class="name">Jerusalem Post</span><br><span class="url">jpost.com</span></span><span class="notes">Israeli daily (English)</span></a></li>
+    <li><a href="https://www.timesofisrael.com/signup-for-our-" target="_blank"><span><span class="name">Times of Israel</span><br><span class="url">timesofisrael.com</span></span><span class="notes">Israeli news & analysis</span></a></li>
+    <li><a href="https://www.middleeasteye.net/newsletter" target="_blank"><span><span class="name">Middle East Eye</span><br><span class="url">middleeasteye.net</span></span><span class="notes">Independent ME coverage</span></a></li>
+    <li><a href="https://www.middleeastmonitor.com/subscribe/" target="_blank"><span><span class="name">Middle East Monitor</span><br><span class="url">middleeastmonitor.com</span></span><span class="notes">Palestine-focused ME analysis</span></a></li>
+    <li><a href="https://www.arabnews.com/newsletter" target="_blank"><span><span class="name">Arab News</span><br><span class="url">arabnews.com</span></span><span class="notes">Saudi-based English daily</span></a></li>
+    <li><a href="https://www.thenationalnews.com/newsletter/" target="_blank"><span><span class="name">The National (UAE)</span><br><span class="url">thenationalnews.com</span></span><span class="notes">UAE-based English daily</span></a></li>
+    <li><a href="https://www.iranintl.com/en/newsletter" target="_blank"><span><span class="name">Iran International</span><br><span class="url">iranintl.com</span></span><span class="notes">Independent Iran coverage (English)</span></a></li>
+    <li><a href="https://www.memri.org/subscribe" target="_blank"><span><span class="name">MEMRI</span><br><span class="url">memri.org</span></span><span class="notes">Middle East media translations</span></a></li>
+    <li><a href="https://www.turkeyrecap.com/" target="_blank"><span><span class="name">Turkey Recap</span><br><span class="url">turkeyrecap.com</span></span><span class="notes">Turkish politics & economy weekly</span></a></li>
+    <li><a href="https://www.hurriyetdailynews.com/" target="_blank"><span><span class="name">Hürriyet Daily News</span><br><span class="url">hurriyetdailynews.com</span></span><span class="notes">Turkey's leading English daily</span></a></li>
+  </ul>
+</div>
+
+<!-- LATIN AMERICA -->
+<div class="category" id="latam">
+  <h2>🌎 Latin America <span class="count">9 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://brazilian.report/subscribe/" target="_blank"><span><span class="name">Brazilian Report</span><br><span class="url">brazilian.report</span></span><span class="notes">Brazil politics & business (English)</span></a></li>
+    <li><a href="https://www.batimes.com.ar/" target="_blank"><span><span class="name">Buenos Aires Times</span><br><span class="url">batimes.com.ar</span></span><span class="notes">Argentina news (English)</span></a></li>
+    <li><a href="https://www.americasquarterly.org/newsletter/" target="_blank"><span><span class="name">Americas Quarterly</span><br><span class="url">americasquarterly.org</span></span><span class="notes">Latin America politics & business</span></a></li>
+    <li><a href="https://www.wilsoncenter.org/program/latin-american-program" target="_blank"><span><span class="name">Wilson Center — Latin America</span><br><span class="url">wilsoncenter.org/latin-american</span></span><span class="notes">US-LatAm relations research</span></a></li>
+    <li><a href="https://www.wola.org/subscribe/" target="_blank"><span><span class="name">WOLA (Washington Office on LA)</span><br><span class="url">wola.org</span></span><span class="notes">Human rights & security in Americas</span></a></li>
+    <li><a href="https://www.thedialogue.org/subscribe/" target="_blank"><span><span class="name">Inter-American Dialogue</span><br><span class="url">thedialogue.org</span></span><span class="notes">Western Hemisphere policy analysis</span></a></li>
+    <li><a href="https://mexiconewsdaily.com/subscribe/" target="_blank"><span><span class="name">Mexico News Daily</span><br><span class="url">mexiconewsdaily.com</span></span><span class="notes">Mexico news (English)</span></a></li>
+    <li><a href="https://elpais.com/newsletters/" target="_blank"><span><span class="name">El País Newsletter (English)</span><br><span class="url">elpais.com</span></span><span class="notes">Spanish daily (English edition)</span></a></li>
+    <li><a href="https://insightcrime.org/subscribe/" target="_blank"><span><span class="name">InSight Crime</span><br><span class="url">insightcrime.org</span></span><span class="notes">Organized crime in the Americas</span></a></li>
+  </ul>
+</div>
+
+<!-- EUROPE -->
+<div class="category" id="europe">
+  <h2>🏰 Europe / Russia / Caucasus <span class="count">12 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://balkaninsight.com/newsletters/" target="_blank"><span><span class="name">Balkan Insight</span><br><span class="url">balkaninsight.com</span></span><span class="notes">BIRN — Balkan investigative journalism</span></a></li>
+    <li><a href="https://meduza.io/en/newsletter" target="_blank"><span><span class="name">Meduza (English)</span><br><span class="url">meduza.io</span></span><span class="notes">Independent Russian news (exile)</span></a></li>
+    <li><a href="https://www.themoscowtimes.com/subscribe" target="_blank"><span><span class="name">The Moscow Times</span><br><span class="url">themoscowtimes.com</span></span><span class="notes">Independent Russian news (English)</span></a></li>
+    <li><a href="https://en.thebell.io/subscribe" target="_blank"><span><span class="name">The Bell (Russia)</span><br><span class="url">thebell.io</span></span><span class="notes">Russian business & politics (English)</span></a></li>
+    <li><a href="https://oc-media.org/subscribe/" target="_blank"><span><span class="name">OC Media (Caucasus)</span><br><span class="url">oc-media.org</span></span><span class="notes">North & South Caucasus reporting</span></a></li>
+    <li><a href="https://jam-news.net/" target="_blank"><span><span class="name">JAMnews (Caucasus)</span><br><span class="url">jam-news.net</span></span><span class="notes">Caucasus news (English)</span></a></li>
+    <li><a href="https://kyivindependent.com/subscribe/" target="_blank"><span><span class="name">Kyiv Independent</span><br><span class="url">kyivindependent.com</span></span><span class="notes">Independent Ukraine reporting (English)</span></a></li>
+    <li><a href="https://icct.nl/newsletter" target="_blank"><span><span class="name">ICCT (The Hague)</span><br><span class="url">icct.nl</span></span><span class="notes">Counter-terrorism & intl law</span></a></li>
+    <li><a href="https://www.clingendael.org/newsletter" target="_blank"><span><span class="name">Clingendael Institute</span><br><span class="url">clingendael.org</span></span><span class="notes">Dutch international relations</span></a></li>
+    <li><a href="https://ridl.io/subscribe/" target="_blank"><span><span class="name">RIDL (Russia/Ukraine)</span><br><span class="url">ridl.io</span></span><span class="notes">Russian disinformation & Ukraine</span></a></li>
+    <li><a href="https://merics.org/en/newsletter" target="_blank"><span><span class="name">MERICS (China/EU)</span><br><span class="url">merics.org</span></span><span class="notes">Mercator Institute for China Studies</span></a></li>
+    <li><a href="https://cepa.org/subscribe/" target="_blank"><span><span class="name">CEPA (Center for European Policy)</span><br><span class="url">cepa.org</span></span><span class="notes">Transatlantic security & defense</span></a></li>
+  </ul>
+</div>
+
+<!-- MARITIME -->
+<div class="category" id="maritime">
+  <h2>⚓ Maritime & Trade <span class="count">8 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.lloydslist.com/subscribe" target="_blank"><span><span class="name">Lloyd's List</span><br><span class="url">lloydslist.com</span></span><span class="notes">Maritime intelligence since 1734</span></a></li>
+    <li><a href="https://www.tradewindsnews.com/subscribe" target="_blank"><span><span class="name">TradeWinds</span><br><span class="url">tradewindsnews.com</span></span><span class="notes">Global shipping news</span></a></li>
+    <li><a href="https://splash247.com/newsletter/" target="_blank"><span><span class="name">Splash 247</span><br><span class="url">splash247.com</span></span><span class="notes">Maritime & offshore news</span></a></li>
+    <li><a href="https://www.seatrade-maritime.com/newsletter" target="_blank"><span><span class="name">Seatrade Maritime</span><br><span class="url">seatrade-maritime.com</span></span><span class="notes">Shipping industry intelligence</span></a></li>
+    <li><a href="https://www.hellenicshippingnews.com/newsletter/" target="_blank"><span><span class="name">Hellenic Shipping News</span><br><span class="url">hellenicshippingnews.com</span></span><span class="notes">Global shipping & commodities</span></a></li>
+    <li><a href="https://www.maritime-executive.com/subscribe" target="_blank"><span><span class="name">Maritime Executive</span><br><span class="url">maritime-executive.com</span></span><span class="notes">Maritime industry & security</span></a></li>
+    <li><a href="https://gcaptain.com/newsletter/" target="_blank"><span><span class="name">gCaptain</span><br><span class="url">gcaptain.com</span></span><span class="notes">Maritime & offshore news</span></a></li>
+    <li><a href="https://container-news.com/" target="_blank"><span><span class="name">Container News</span><br><span class="url">container-news.com</span></span><span class="notes">Container shipping & logistics</span></a></li>
+  </ul>
+</div>
+
+<!-- SPACE -->
+<div class="category" id="space">
+  <h2>🚀 Space <span class="count">8 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://spacenews.com/newsletters/" target="_blank"><span><span class="name">Space News</span><br><span class="url">spacenews.com</span></span><span class="notes">Space industry & policy</span></a></li>
+    <li><a href="https://payloadspace.com/subscribe/" target="_blank"><span><span class="name">Payload Space</span><br><span class="url">payloadspace.com</span></span><span class="notes">Space business & policy</span></a></li>
+    <li><a href="https://spaceq.ca/newsletter/" target="_blank"><span><span class="name">SpaceQ (Canada)</span><br><span class="url">spaceq.ca</span></span><span class="notes">Canadian space industry</span></a></li>
+    <li><a href="https://orbitalindex.com/subscribe/" target="_blank"><span><span class="name">Orbital Index</span><br><span class="url">orbitalindex.com</span></span><span class="notes">Weekly space science & engineering</span></a></li>
+    <li><a href="https://www.n2k.com/podcasts/t-minus" target="_blank"><span><span class="name">T-Minus (N2K)</span><br><span class="url">n2k.com/t-minus</span></span><span class="notes">Daily space & defense briefing</span></a></li>
+    <li><a href="https://aerospace.csis.org/" target="_blank"><span><span class="name">CSIS Aerospace Security</span><br><span class="url">aerospace.csis.org</span></span><span class="notes">Space policy & security</span></a></li>
+    <li><a href="https://swfound.org/" target="_blank"><span><span class="name">Secure World Foundation</span><br><span class="url">swfound.org</span></span><span class="notes">Space sustainability & security</span></a></li>
+    <li><a href="https://www.thespacereview.com/" target="_blank"><span><span class="name">The Space Review</span><br><span class="url">thespacereview.com</span></span><span class="notes">Weekly space policy essays</span></a></li>
+  </ul>
+</div>
+
+<!-- CYBER & NUCLEAR -->
+<div class="category" id="cyber">
+  <h2>🔐 Cyber, Nuclear & OSINT <span class="count">18 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://cyberscoop.com/newsletter/" target="_blank"><span><span class="name">CyberScoop</span><br><span class="url">cyberscoop.com</span></span><span class="notes">Cybersecurity news & policy</span></a></li>
+    <li><a href="https://www.cybersecuritydive.com/signup/" target="_blank"><span><span class="name">Cybersecurity Dive</span><br><span class="url">cybersecuritydive.com</span></span><span class="notes">Daily cybersecurity industry brief</span></a></li>
+    <li><a href="https://www.bleepingcomputer.com/newsletter/" target="_blank"><span><span class="name">Bleeping Computer</span><br><span class="url">bleepingcomputer.com</span></span><span class="notes">Tech & security news</span></a></li>
+    <li><a href="https://www.darkreading.com/newsletter" target="_blank"><span><span class="name">Dark Reading</span><br><span class="url">darkreading.com</span></span><span class="notes">Enterprise cybersecurity</span></a></li>
+    <li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank"><span><span class="name">CISA Cybersecurity Advisories</span><br><span class="url">cisa.gov</span></span><span class="notes">US government cyber alerts</span></a></li>
+    <li><a href="https://www.sans.org/newsletters/at-risk/" target="_blank"><span><span class="name">SANS @RISK</span><br><span class="url">sans.org</span></span><span class="notes">Weekly vulnerability digest</span></a></li>
+    <li><a href="https://www.sans.org/newsletters/ouch/" target="_blank"><span><span class="name">SANS OUCH!</span><br><span class="url">sans.org/ouch</span></span><span class="notes">Monthly security awareness</span></a></li>
+    <li><a href="https://therecord.media/newsletter" target="_blank"><span><span class="name">The Record (Recorded Future)</span><br><span class="url">therecord.media</span></span><span class="notes">Cybersecurity & intelligence news</span></a></li>
+    <li><a href="https://dfrlab.org/subscribe/" target="_blank"><span><span class="name">DFRLab (Atlantic Council)</span><br><span class="url">dfrlab.org</span></span><span class="notes">Digital forensic research</span></a></li>
+    <li><a href="https://cyber.fsi.stanford.edu/io/subscribe" target="_blank"><span><span class="name">Stanford Internet Observatory</span><br><span class="url">cyber.fsi.stanford.edu</span></span><span class="notes">Online trust & safety research</span></a></li>
+    <li><a href="https://cybergeodigest.com/" target="_blank"><span><span class="name">CyberGeo Digest</span><br><span class="url">cybergeodigest.com</span></span><span class="notes">Cyber & geopolitical risk analysis</span></a></li>
+    <li><a href="https://fas.org/subscribe/" target="_blank"><span><span class="name">FAS (Federation of American Scientists)</span><br><span class="url">fas.org</span></span><span class="notes">Nuclear, bio, & emerging tech security</span></a></li>
+    <li><a href="https://thebulletin.org/subscribe/" target="_blank"><span><span class="name">Bulletin of the Atomic Scientists</span><br><span class="url">thebulletin.org</span></span><span class="notes">Doomsday Clock, nuclear risk</span></a></li>
+    <li><a href="https://www.armscontrol.org/subscribe" target="_blank"><span><span class="name">Arms Control Association</span><br><span class="url">armscontrol.org</span></span><span class="notes">Arms control & nonproliferation</span></a></li>
+    <li><a href="https://www.nti.org/newsletter" target="_blank"><span><span class="name">NTI (Nuclear Threat Initiative)</span><br><span class="url">nti.org</span></span><span class="notes">Nuclear & biological threat reduction</span></a></li>
+    <li><a href="https://www.pism.pl/newsletter" target="_blank"><span><span class="name">PISM (Polish Institute)</span><br><span class="url">pism.pl</span></span><span class="notes">Polish international affairs</span></a></li>
+    <li><a href="https://www.gmfus.org/subscribe" target="_blank"><span><span class="name">GMF (German Marshall Fund)</span><br><span class="url">gmfus.org</span></span><span class="notes">Transatlantic policy & security</span></a></li>
+    <li><a href="https://www.globaltaiwan.org/subscribe/" target="_blank"><span><span class="name">Global Taiwan Institute</span><br><span class="url">globaltaiwan.org</span></span><span class="notes">Taiwan affairs & cross-strait</span></a></li>
+  </ul>
+</div>
+
+<!-- ENERGY -->
+<div class="category" id="energy">
+  <h2>⚡ Energy & Commodities <span class="count">7 newsletters</span></h2>
+  <ul class="nl-list">
+    <li><a href="https://www.iea.org/newsletter" target="_blank"><span><span class="name">IEA Newsletter</span><br><span class="url">iea.org</span></span><span class="notes">International Energy Agency</span></a></li>
+    <li><a href="https://www.energyintel.com/subscribe" target="_blank"><span><span class="name">Energy Intelligence</span><br><span class="url">energyintel.com</span></span><span class="notes">Oil, gas, & energy markets</span></a></li>
+    <li><a href="https://www.spglobal.com/commodityinsights/subscribe" target="_blank"><span><span class="name">S&P Global Commodity Insights</span><br><span class="url">spglobal.com</span></span><span class="notes">Commodity prices & analysis</span></a></li>
+    <li><a href="https://www.energypolicy.columbia.edu/subscribe" target="_blank"><span><span class="name">Columbia Energy Policy</span><br><span class="url">energypolicy.columbia.edu</span></span><span class="notes">Energy policy & climate research</span></a></li>
+    <li><a href="https://www.mees.com/subscribe" target="_blank"><span><span class="name">MEES (Middle East Economic Survey)</span><br><span class="url">mees.com</span></span><span class="notes">Middle East energy intelligence</span></a></li>
+    <li><a href="https://www.atlanticcouncil.org/programs/global-energy-center/" target="_blank"><span><span class="name">Atlantic Council — Global Energy Center</span><br><span class="url">atlanticcouncil.org/energy</span></span><span class="notes">Energy security & geopolitics</span></a></li>
+    <li><a href="https://www.csis.org/programs/energy-security-and-climate-change" target="_blank"><span><span class="name">CSIS — Energy Security & Climate</span><br><span class="url">csis.org/energy</span></span><span class="notes">Energy transition & security</span></a></li>
+  </ul>
+</div>
+
+<footer>
+  <p>181 newsletters · 12 categories · Use <strong>trevor_mentis@agentmail.to</strong> for all subscriptions</p>
+  <p>CTRL+Click each link to open in new tab · Most signups take &lt;30 seconds</p>
+</footer>
+
+</div>
+</body>
+</html>
