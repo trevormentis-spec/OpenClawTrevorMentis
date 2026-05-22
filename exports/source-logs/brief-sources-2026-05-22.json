@@ -1,0 +1,25 @@
+{
+  "date": "2026-05-22",
+  "source_count": 18,
+  "sources": [
+    "Al Jazeera \u2014 Middle East coverage",
+    "Associated Press \u2014 wire service",
+    "BBC Monitoring \u2014 global media monitoring",
+    "EIA \u2014 energy data",
+    "Gmail inbox (ISW, CTP, Cipher Brief, Foreign Policy newsletters)",
+    "ISW/Critical Threats Project \u2014 daily Iran update",
+    "OpenWeb API collection (spec-based scraping)",
+    "Regional analysis: Africa",
+    "Regional analysis: Central America & Caribbean",
+    "Regional analysis: Central Asia",
+    "Regional analysis: Europe",
+    "Regional analysis: Middle East",
+    "Regional analysis: North America",
+    "Regional analysis: Oceania",
+    "Regional analysis: Prediction Markets",
+    "Regional analysis: South America",
+    "Regional analysis: South East Asia",
+    "Reuters \u2014 wire service"
+  ],
+  "generated_at": "2026-05-22T12:40:06.497589+00:00"
+}

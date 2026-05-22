@@ -27,10 +27,12 @@ the collector's `incidents.json` to get started.
 ```
 WORKING_DIR/visuals/
 ├── map_europe.png
-├── map_asia.png
+├── map_central_asia.png
 ├── map_middle_east.png
 ├── map_north_america.png
-├── map_south_central_america.png
+├── map_central_america_caribbean.png
+├── map_east_asia.png
+├── map_south_asia.png
 ├── finance_charts.png
 ├── relationships_<region>.png         # the most active region only
 └── manifest.json                      # one-line entry per asset
@@ -55,10 +57,10 @@ WORKING_DIR/visuals/
 
 ## Procedure
 
-### 1. Regional maps (×5)
+### 1. Regional maps (×7)
 
-For each of the five geographic regions (Europe, Asia, Middle East,
-North America, South & Central America incl. Caribbean):
+For each of the seven geographic regions (Europe, Asia, Middle East,
+North America, Central America & Caribbean, South America, East Asia, South Asia):
 
 1. Filter `incidents.json` to incidents with `region == <region>`
    AND `lat`/`lon` not null.
@@ -85,7 +87,7 @@ spot the difference.
 
 Per `references/visual-spec.md` → "Finance panel":
 
-1. Filter `incidents.json` to `region == "global_finance"`.
+1. Filter `incidents.json` to `region == "prediction_markets"`.
 2. Pull a 30-day price series (close-of-day) for the affected
    instruments. Use:
    - Equity indices: Yahoo Finance public API (no auth) or the

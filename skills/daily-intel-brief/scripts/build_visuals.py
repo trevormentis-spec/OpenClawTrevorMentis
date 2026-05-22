@@ -52,8 +52,8 @@ CATEGORY_COLOR = {
     "other":        "6b7280",
 }
 
-REGION_ORDER = ["europe", "asia", "middle_east",
-                "north_america", "south_central_america"]
+REGION_ORDER = ["europe", "north_america", "central_america_caribbean", "south_america",
+                "africa", "middle_east", "central_asia", "south_east_asia", "oceania"]
 
 
 def log(msg: str) -> None:
@@ -233,7 +233,7 @@ def render_finance_panel(incidents: list[dict], visuals_dir: pathlib.Path) -> di
     return {
         "path": "visuals/finance_charts.png",
         "kind": "finance_panel",
-        "region": "global_finance",
+        "region": "prediction_markets",
         "rendered_at_utc": dt.datetime.utcnow().isoformat() + "Z",
         "data_source": "matplotlib-fallback (synthetic series)",
     }
@@ -333,7 +333,7 @@ def main() -> int:
         manifest_assets.append(fin_asset)
 
     counts = Counter(i["region"] for i in incidents
-                     if i.get("region") and i.get("region") != "global_finance")
+                     if i.get("region") and i.get("region") not in ("prediction_markets", None))
     if counts:
         active = counts.most_common(1)[0][0]
         rel_asset = render_relationships(active, incidents, visuals_dir)

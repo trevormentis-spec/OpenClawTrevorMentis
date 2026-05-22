@@ -21,7 +21,7 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 # Policy from ORCHESTRATION.md
 POLICY = {
     "tier_1_strategic": "anthropic/claude-opus-4.7 (via OpenRouter) — exec summary + red-team",
-    "tier_2_regional": "deepseek/deepseek-v4-flash (DeepSeek Direct API) — 6 regional analyses",
+    "tier_2_regional": "deepseek/deepseek-v4-pro (DeepSeek Direct API) — 10 regional analyses",
     "tier_3_conversational": "deepseek/deepseek-v4-flash (DeepSeek Direct API) — all chat, tools, memory",
     "fallback_chain": ["deepseek-chat", "deepseek-v4-pro", "myclaw/minimax-m2.7"],
     "openrouter_policy": "enabled for Tier-1 strategic analysis (Opus 4.7) + specialist models (image gen, video, TTS). Never route DeepSeek models through OpenRouter.",

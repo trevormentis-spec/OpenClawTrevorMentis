@@ -218,6 +218,13 @@ PREDICTION MARKETS:
 
 {collection_quality_summary}
 
+MODELS USED FOR THIS BRIEF:
+Region analysis: {region_model}
+Executive summary: {exec_model}
+
+Collect sources_used from the region assessments cited below —
+the source names are embedded in each region's incident items.
+
 YOUR TASK
 
 Produce a single JSON object matching this schema exactly:
@@ -239,6 +246,17 @@ Produce a single JSON object matching this schema exactly:
       "drawn_from_kj_id": "<KJ-XX-N>"
     },
     ... 4 more, exactly 5 total ...
+  ],
+  "sources_used": [
+    "<Source name 1 — the most influential source for these judgments>",
+    "<Source name 2>",
+    "<Source name 3>",
+    "<Source name 4>",
+    "<Source name 5>"
+  ],
+  "models_used": [
+    "<Model/provider used for region analysis, e.g. deepseek/deepseek-v4-flash>",
+    "<Model/provider used for executive summary composition, e.g. anthropic/claude-opus-4.7>"
   ]
 }
 

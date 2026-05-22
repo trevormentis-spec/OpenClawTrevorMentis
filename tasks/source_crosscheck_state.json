@@ -85,7 +85,55 @@
         "NHS trust sacks staff over accessing Nottingham attacks victims' records",
         "EasyJet boss says summer flights won't be hit by jet fuel shortages"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-22T03:02:56.217033+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 38,
+      "checked_at": "2026-05-22T03:02:56.944621+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Toilets and changing rooms must be used on basis of biological sex, guidance confirms",
+        "Prepare for half term queues at Dover due to EU border process, port says",
+        "Police to score train firms on tackling sexual harassment"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-22T12:41:38.756502+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 30,
+      "checked_at": "2026-05-22T12:41:39.629352+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Parents of Southport survivors say anonymity has erased their girls from the story",
+        "Andrew investigation could look into sexual misconduct allegations",
+        "Stop blaming young people for being unemployed, says Amazon's UK boss"
+      ]
     }
   ],
-  "last_updated": "2026-05-21T12:16:00.193162+00:00"
+  "last_updated": "2026-05-22T12:41:39.629517+00:00"
 }

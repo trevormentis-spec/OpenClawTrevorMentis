@@ -63,7 +63,7 @@ Task → route(task_type, metadata) → GatingDecision → provider client → m
 - Capability gap review
 
 ### Tier-3 — High-Volume (DeepSeek Direct API)
-**Model:** `deepseek/deepseek-v4-flash`
+**Model:** `deepseek/deepseek-v4-pro`
 **Cost:** ~$0.14/M input, ~$0.28/M output
 **Use for:**
 - Daily intel ingestion and triage

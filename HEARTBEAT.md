@@ -6,10 +6,13 @@ Goal: every source pulled at least once per day.
 
 ## Phases (rotate through; one per heartbeat fire)
 
-- [ ] Phase A — OpenWeb API specs + Mexico custom specs + Wikipedia monitor
-- [ ] Phase B — Social monitor (Bluesky + HackerNews) + source cross-check
-- [ ] Phase C — RSS feed collection + pipeline stats
-- [ ] Phase D — Idle / memory maintenance / cost snapshot
+- [ ] Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)
+- [ ] Phase B — Source discovery (find new RSS/Substack feeds for gap regions)
+- [ ] Phase C — Source pruning (remove dead feeds, add replacements from discovery)
+- [ ] Phase D — Collection state + cost snapshot + brain reindex
+
+After all phases complete, cycle resets. Each phase contributes to a continuous improvement loop:
+test → discover → add → prune, keeping the feed list healthy and coverage balanced.
 
 After all phases complete, cycle resets.
 

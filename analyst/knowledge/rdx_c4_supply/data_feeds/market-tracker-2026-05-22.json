@@ -1,15 +1,24 @@
 {
-  "generated_at": "2026-05-22T00:16:56.988883+00:00",
+  "generated_at": "2026-05-22T17:30:20.555721+00:00",
   "data_feeds": {
     "gdelt-sweep": {
       "status": "ok",
-      "collected_at": "2026-05-22T00:16:38.015737+00:00",
-      "articles_found": 0,
-      "articles": []
+      "collected_at": "2026-05-22T17:00:24.588365+00:00",
+      "articles_found": 1,
+      "articles": [
+        {
+          "keyword": "PBXN",
+          "title": "Our Best Look Yet At The Massive Ordnance Penetrator Bunker Buster Bomb - The War Zone",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeHhJc0hHQUUxZFhCUnY1YUxBeGFQRmdfM0xpdWo3MnlWXzhZVU11WU1QYzNSY0JnLTZxSFhBR2d0RF8weU1heGFWd21LeEFMcDhMbndBNncyM0tLVEJTNF92dU1WUzBWNldLWE5pclA1eWdzdHZCNEphelJlb0duNko4S3plX0c2V2VZT2lhU09DOEl4MHc?oc=5",
+          "published": "Wed, 03 May 2023 07:00:00 GMT",
+          "source": "The War Zone",
+          "collected_at": "2026-05-22T17:00:24.321780+00:00"
+        }
+      ]
     },
     "osint-events": {
       "status": "ok",
-      "collected_at": "2026-05-22T00:16:41.527441+00:00",
+      "collected_at": "2026-05-22T17:30:20.555397+00:00",
       "channels_checked": 5,
       "events_found": 0,
       "events": []

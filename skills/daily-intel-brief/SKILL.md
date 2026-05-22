@@ -1,23 +1,21 @@
 ---
 name: daily-intel-brief
-description: Produce Trevor's Daily Intelligence Brief — a dated, structured intelligence product with six regional sections (Europe, Asia, Middle East, North America, South & Central America incl. Caribbean, Global Finance), each carrying calibrated key judgments and prediction bands. Trigger this skill on "daily brief", "morning brief", "today's brief", "INTSUM", "daily intel", "Trevor brief", "run the brief", "kick off today's product", "where are we today", or any standing-product request that implies the daily cadence. Composes existing analyst skills (sat-toolkit, source-evaluation, indicators-and-warnings, bluf-report, geospatial-osint, chartgen, mermaid, pdf-report) and the analyst/ scaffold; routes analysis to deepseek-v4-pro per ORCHESTRATION.md escalation criteria. Do not use this skill for ad-hoc single-region deep dives, single-incident analysis, or non-security topics — those should run through the standard analytic-workflow playbook.
+description: Produce Trevor's Daily Intelligence Brief — a dated, structured intelligence product with ten regional sections (Europe, North America, Central America & Caribbean, South America, Africa, Middle East, Central Asia, South East Asia, Oceania, Prediction Markets), each carrying calibrated key judgments and prediction bands. Trigger this skill on "daily brief", "morning brief", "today's brief", "INTSUM", "daily intel", "Trevor brief", "run the brief", "kick off today's product", "where are we today", or any standing-product request that implies the daily cadence. Composes existing analyst skills (sat-toolkit, source-evaluation, indicators-and-warnings, bluf-report, geospatial-osint, chartgen, mermaid, pdf-report) and the analyst/ scaffold; routes analysis to deepseek-v4-pro per ORCHESTRATION.md escalation criteria. Do not use this skill for ad-hoc single-region deep dives, single-incident analysis, or non-security topics — those should run through the standard analytic-workflow playbook.
 metadata:
   trevor:
+    constraints:
+      no_visual_assets: true       # principal directive 2026-05-22 — text-only
+      no_social_pipeline: true      # principal directive 2026-05-22 — paused
+      delivery: agentmail-email     # principal directive 2026-05-22 — no PDF
     requires:
-      bins: [python3, mmdc, node]
+      bins: [python3]
       env: [DEEPSEEK_API_KEY]
-      env_optional: [MAPBOX_TOKEN, CHARTGEN_API_KEY]
+      env_optional: []
     composes:
       skills:
-        - sat-toolkit
         - source-evaluation
         - indicators-and-warnings
         - bluf-report
-        - geospatial-osint
-        - chartgen
-        - mermaid
-        - visual_production
-        - pdf-report
       analyst_assets:
         - analyst/playbooks/analytic-workflow.md
         - analyst/playbooks/scenario-triage.md

@@ -1,0 +1,14 @@
+{
+  "current_phase": "A",
+  "phase_label": "Phase A — OpenWeb API specs + Mexico custom specs + Wikipedia monitor",
+  "last_phase_completed": null,
+  "last_cycle_completed_at": null,
+  "created_at": "2026-05-22T18:37:00Z",
+  "phases": {
+    "A": "Phase A — OpenWeb API specs + Mexico custom specs + Wikipedia monitor",
+    "B": "Phase B — Social monitor (Bluesky + HackerNews) + source cross-check",
+    "C": "Phase C — RSS feed collection + pipeline stats",
+    "D": "Phase D — Idle / memory maintenance / cost snapshot"
+  },
+  "notes": "Recreated 2026-05-22. Previous state file was missing. Starting at Phase A per heartbeat recovery procedure."
+}

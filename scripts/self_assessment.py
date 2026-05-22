@@ -293,7 +293,7 @@ def assess_autonomy() -> dict:
                                  if len(c.get("available_bands", [])) < 4)
         if restricted_regions > 0:
             closed += 1
-            _bands_detail = f"{restricted_regions}/6 regions have restricted bands"
+            _bands_detail = f"{restricted_regions}/10 regions have restricted bands"
         else:
             problems.append("Behavioral state exists but no regions are constrained")
     else:

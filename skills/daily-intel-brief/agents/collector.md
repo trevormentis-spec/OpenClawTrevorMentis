@@ -24,7 +24,7 @@ A single file: `WORKING_DIR/raw/incidents.json`. Schema:
 {
   "generated_at_utc": "2026-05-01T05:32:00Z",
   "window_hours": 24,
-  "regions_covered": ["europe", "asia", "middle_east", "north_america", "south_central_america", "global_finance"],
+  "regions_covered": ["europe", "north_america", "central_america_caribbean", "south_america", "africa", "middle_east", "central_asia", "south_east_asia", "east_asia", "south_asia", "oceania", "prediction_markets"],
   "incidents": [
     {
       "id": "i-2026-05-01-0001",
@@ -59,7 +59,7 @@ A single file: `WORKING_DIR/raw/incidents.json`. Schema:
 
 Field rules:
 
-- `region` MUST be one of the six lower-snake values in `regions_covered`.
+- `region` MUST be one of the ten lower-snake values in `regions_covered`.
   Use `regions.json` to map country → region. **Do not invent a region.**
 - `category` ∈ `["kinetic", "cyber", "political", "economic", "humanitarian", "maritime", "aviation", "other"]`.
 - `admiralty_reliability` is `A`–`F` per `skills/source-evaluation/SKILL.md`.
@@ -130,7 +130,8 @@ Aim for **3–8 incidents per region**, with the following skew:
 | Region                       | Target | Notes                                        |
 |------------------------------|--------|----------------------------------------------|
 | Europe                       | 4–6    | Include Russia/Ukraine, EU politics, NATO    |
-| Asia                         | 4–6    | China/Taiwan, Korea, South Asia, SE Asia     |
+| East Asia                    | 3–5    | China/Taiwan, Japan, Koreas, Mongolia        |
+| South Asia                   | 3–5    | India, Pakistan, Bangladesh, Afghanistan, Nepal, Sri Lanka |
 | Middle East                  | 5–8    | Highest-tempo region; budget more incidents  |
 | North America                | 3–5    | US/Canada/Mexico; cartels count as kinetic   |
 | South & Central America      | 3–5    | Caribbean included; expect collection gaps   |
@@ -154,7 +155,7 @@ incident:
 - Any major credit event (sovereign downgrade, large default).
 
 Use the wire feeds above plus CoinDesk MCP if connected for crypto
-context. Set `region` to `global_finance` and `country` to the most
+context. Set `region` to `prediction_markets` and `country` to the most
 relevant national market (or `null` for cross-market moves).
 
 ### 7. Write incidents.json
@@ -184,4 +185,4 @@ Return the path to `incidents.json` and a one-paragraph summary of:
 - **Analysis creep.** Your `summary` field is what happened, not what
   it means. Do not use the words "likely", "suggests", "indicates",
   "probably". The analyst owns those.
-- **Inventing a region.** Stick to the six.
+- **Inventing a region.** Stick to the twelve.

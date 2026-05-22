@@ -1,0 +1,44 @@
+========================================================================
+  LEO GROUND STATION DAILY — May 22, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+The LEO ground station landscape remains in a holding pattern of incremental expansion, punctuated by Starship’s test flight today and sustained Starlink launch cadence. No disruptive shifts emerged in this cycle—the risk register is unchanged, imagery yields nothing, and ITU/job feeds are silent. But the alignment of Starship’s suborbital test with two Starlink launches in the next 72 hours sharpens the medium-term outlook: if Flight 12 clears operational milestones, SpaceX can accelerate V2/V3 deployments, potentially overwhelming the 38 current Starlink gateway sites and forcing a major capacity build-out. Meanwhile, the appearance of Denali 20020, LLC in FCC filings confirms Amazon’s Kuiper is still methodically licensing earth stations, though at a pace that lags Starlink’s real-world tempo.
+
+The market data reaffirms the growth thesis: Starlink’s subscriber base now exceeds 10 million, generating an estimated $11.8 billion in 2025 revenue, while the LEO GSaaS sub-segment is forecast to triple to $5.33 billion by 2033. The risk register’s 240 sites, with 38 under Starlink and only 6 flagged as high risk, suggests current ground infrastructure is absorbing the constellation’s expansion without acute stress. What to watch: Starship’s return performance, any uptick in Kuiper gateway applications, and whether the two upcoming Falcon 9 launches signal a cadence increase toward the 12,000-satellite horizon.
+
+═══ FCC LICENSES ═══
+
+FCC records total 100, with no unusual filings volume. The notables list includes the usual legacy heavyweights—Intelsat, SES, Inmarsat, AT&T—but two entries warrant attention. First, Denali 20020, LLC, which is Amazon’s shell company for Kuiper gateway earth stations; its appearance confirms ongoing licensing activity, though the current count of 5 Kuiper sites in our register suggests the constellation’s ground segment is still nascent. Second, GOONHILLY INC., the UK-based commercial teleport operator, now shows up in US filings, hinting at a transatlantic expansion of its GSaaS offering, possibly targeting LEO operators seeking diverse downlinks. No trends in band usage or orbital filings; the rest is housekeeping from existing licensees like MCI, Cogent, and Calian.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Launch tempo remains the dominant signal. Two Starlink missions—Group 17-37 out of Vandenberg on May 24 and Group 10-47 from Cape Canaveral on May 25—will together add up to 120 satellites (assuming ~60 per launch) to the 9,400+ already on orbit. That persistently increases aggregate downlink demand, but SpaceX’s own 38 registered gateway sites (12 in N. America alone) likely absorb the load for now. The bigger wildcard is today’s Starship Flight 12: a suborbital test, so ground station impact is nil immediately, but a success would unlock rapid deployment of full-sized V3 satellites with laser crosslinks and higher bandwidth, which could strain the existing gateway footprint within 12–18 months.
+
+Separately, Rocket Lab’s successful Electron launch today placed the next StriX SAR satellite into LEO for Synspective. That constellation, now at 9 satellites, typically uses third-party ground networks—KSAT (15 sites in our register) and Leaf Space (9 sites) are poised to capture this routine Earth-observation demand.
+
+═══ SITE & IMAGERY ═══
+
+No change. The risk register holds at 240 total sites: 6 High, 34 Moderate, 27 Low, 13 Negligible, zero Critical. The geographic distribution remains heavily weighted to N. America (26) and Europe (18), with Asia (8) and Oceania (7) trailing. Sentinel-2 imagery checked 10 sites across the register and returned no actionable data—likely cloud cover or no detectable construction activity. No new sites were added or removed this cycle. For now, the physical infrastructure baseline is stable.
+
+═══ MARKET SIGNALS ═══
+
+Job postings and ITU filings feeds are empty, so no labor market or international coordination churn to report. Market metrics, however, underscore the revenue reality: the broader GSaaS market is projected to grow from $520M in 2024 to $2.49B by 2033, with the LEO-specific slice reaching $5.33B. Starlink’s 10M+ subscribers and $11.8B revenue anchor the demand side. The absence of new ITU filings from other mega-constellations (e.g., China’s Guowang) suggests a near-term focus on domestic regulatory processes; when those hit the ITU, expect a surge in ground station coordination requests, especially across Asia and Africa.
+
+═══ BOTTOM LINE ═══
+
+Roderick, the near term is quiet, but the Starship test is the pivot. If it succeeds, start mapping the capacity limits of Starlink’s existing gateway sites—38 may not scale for V3 birds with multi-terabit throughput. Monitor Denali/Kuiper FCC filings for geographic concentration; if they start clustering in the same North American and European corridors as Starlink, it could spark siting conflicts or spectrum competition. Otherwise, hold positions, and stay alert for any Chinese constellation ITU filings that could trigger a rush for equatorial and southern hemisphere ground slots.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | May 22, 2026

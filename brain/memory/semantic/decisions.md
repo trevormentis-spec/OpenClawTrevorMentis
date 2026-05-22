@@ -13,7 +13,7 @@
 - **[2026-05-21]** Delivery: send_text_brief_gmail.py → roderick.jones@gmail.com via Maton Gmail API.
 - **[2026-05-21]** 10-region taxonomy: europe, north_america, central_america_caribbean, south_america, africa, middle_east, central_asia, south_east_asia, oceania, prediction_markets.
 - **[2026-05-21]** North America reframed: includes USA + Canada + Mexico stories (not Mexico-only).
-- **[2026-05-21]** Tiered routing: DeepSeek V4 Pro (Direct API) for 10 regional analyses, Opus 4.7 (OpenRouter) for exec summary + red team.
+- **[2026-05-22]** Final routing: DeepSeek V4 Pro for ALL non-chat work (pipeline products, analysis, briefs, reports, calibration, entity work, source discovery). DeepSeek V4 Flash for interactive chat only (speed + cost).
 - **[2026-05-21]** analyze.py: added --tier2-provider flag to allow tier-2 to route through different API than tier-1.
 - **[2026-05-21]** Humanizer: scripts/humanize_brief.py strips AI patterns (em dashes, AI vocab, -ing constructions) from brief before delivery.
 
@@ -47,3 +47,4 @@
 - **[2026-05-21]** Analyst-to-analyst voice. Direct address ("Roderick —"). Signal-dense. No hand-holding.
 - **[2026-05-21]** Sources list every day with provenance.
 - **[2026-05-21]** Newsletter recommendations at bottom of brief.
+- [2026-05-22] BLUF: Mock BLUF: a calibrated one-sentence headline judgment covering the most decision-relevant overnight development. (source: 2026-05-22.md, confidence: medium)

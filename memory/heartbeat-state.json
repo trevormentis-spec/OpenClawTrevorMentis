@@ -12,10 +12,26 @@
     "social_monitor": 1777660000,
     "phase_d": 1779195720,
     "cost_snapshot": 1779195720,
-    "memory_maintenance": 1779195720
+    "memory_maintenance": 1779195720,
+    "phase_a": 1779219440,
+    "feed_audit": 1779219440
   },
-  "lastHeartbeat": 1779195720,
-  "rotationCursor": 3,
+  "lastHeartbeat": 1779219440,
+  "rotationCursor": 0,
+  "previousPhase": "D",
+  "currentPhase": "A",
+  "phaseAStatus": "completed",
+  "phaseANotes": {
+    "feedsTested": 290,
+    "working": 137,
+    "empty": 7,
+    "failed": 50,
+    "regionLabelsExcluded": 10,
+    "healthPct": 48.9,
+    "topFailingErrors": "HTTP 404 (20), HTTP 403 (17), PARSE (9)",
+    "reportSaved": "brain/memory/semantic/feed-health-latest.json"
+  },
+  "nextPhase": "B",
   "alerts": [
     {
       "id": "deepseek_401",

@@ -36,7 +36,7 @@ Input Layer (always on)
 ├── Analyst source list (curated OSINT feeds)
 │
 Processing Layer (05:00 PT daily)
-├── DeepSeek v4-Flash → regional analysis (6 regions)
+├── DeepSeek v4-Pro → regional analysis (10 regions)
 ├── DeepSeek v4-Pro → escalation (key judgments)
 ├── SAT toolkits → structured analysis
 ├── Source evaluation → Admiralty Code scoring
@@ -63,7 +63,7 @@ Revenue Layer
 ## 3. Pricing Strategy
 
 ### Single Tier: $19/mo
-- Full daily brief (6 regions, 16 sections)
+- Full daily brief (10 regions, 16 sections)
 - Calibrated probability judgments
 - OSINT source scoring
 - Magazine PDF export

@@ -1,6 +1,6 @@
 {
-  "_comment": "10-region taxonomy per principal directive 2026-05-21",
-  "version": "2.0.0",
+  "_comment": "12-region taxonomy per principal directive 2026-05-22",
+  "version": "3.0.0",
   "regions": {
     "europe": {
       "label": "Europe",
@@ -79,37 +79,49 @@
     },
     "central_asia": {
       "label": "Central Asia",
-      "_note": "Includes Caucasus, Afghanistan, Mongolia, and the Russian Federation. Split from old asia and old europe.",
+      "_note": "Per principal directive 2026-05-22: ONLY the 5 Stans. Russia, China, India, Japan, etc. removed pending new region definitions.",
       "bbox_caps": { "min_lon": 40, "min_lat": 35, "max_lon": 120, "max_lat": 82 },
       "countries": [
-        "Kazakhstan", "Uzbekistan", "Turkmenistan", "Kyrgyzstan", "Tajikistan",
-        "Afghanistan", "Mongolia",
-        "Azerbaijan", "Armenia", "Georgia",
-        "Russia", "Russian Federation",
-        "China", "Hong Kong", "Macau",
-        "Japan", "South Korea", "North Korea", "DPRK", "Republic of Korea",
-        "India", "Pakistan"
+        "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan"
       ]
     },
     "south_east_asia": {
       "label": "South East Asia",
-      "_note": "Mainland and maritime SE Asia plus South Asian island states. Split from old asia.",
+      "_note": "Mainland and maritime SE Asia only. South Asian states split to south_asia per 12-region taxonomy.",
       "bbox_caps": { "min_lon": 92, "min_lat": -11, "max_lon": 142, "max_lat": 30 },
       "countries": [
         "Myanmar", "Burma", "Thailand", "Laos", "Cambodia", "Vietnam",
-        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste",
-        "Sri Lanka", "Bangladesh", "Nepal", "Bhutan", "Maldives"
+        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste"
       ]
     },
     "oceania": {
       "label": "Oceania",
-      "_note": "Australia, New Zealand, Pacific island nations, and Taiwan. Split from old asia.",
+      "_note": "Australia, New Zealand, Pacific island nations. Taiwan moved to east_asia per 12-region taxonomy.",
       "bbox_caps": { "min_lon": 110, "min_lat": -48, "max_lon": -120, "max_lat": 25 },
       "countries": [
         "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Islands",
         "Vanuatu", "Samoa", "Tonga", "Kiribati", "Tuvalu", "Nauru", "Palau",
-        "Micronesia", "Marshall Islands",
+        "Micronesia", "Marshall Islands"
+      ]
+    },
+    "east_asia": {
+      "label": "East Asia",
+      "_note": "Greater China, Koreas, Japan, Mongolia. Split from old asia per 12-region taxonomy.",
+      "bbox_caps": { "min_lon": 70, "min_lat": 15, "max_lon": 148, "max_lat": 55 },
+      "countries": [
+        "China", "Hong Kong", "Macau",
+        "Japan",
+        "South Korea", "North Korea", "DPRK", "Republic of Korea",
+        "Mongolia",
         "Taiwan"
+      ]
+    },
+    "south_asia": {
+      "label": "South Asia",
+      "_note": "Indian subcontinent and surrounding island states. Split from old south_east_asia per 12-region taxonomy.",
+      "bbox_caps": { "min_lon": 60, "min_lat": -2, "max_lon": 95, "max_lat": 38 },
+      "countries": [
+        "India", "Pakistan", "Bangladesh", "Sri Lanka", "Nepal", "Bhutan", "Maldives", "Afghanistan"
       ]
     },
     "prediction_markets": {

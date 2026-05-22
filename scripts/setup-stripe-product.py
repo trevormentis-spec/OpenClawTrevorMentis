@@ -29,7 +29,7 @@ def stripe_post(path, data):
 
 # Create product
 print("📦 Creating Stripe product...")
-product = stripe_post("/products", "name=Daily OSINT Briefing&description=Automated daily open-source intelligence analysis with calibrated judgments, 6-region coverage, and professional PDF exports.")
+product = stripe_post("/products", "name=Daily OSINT Briefing&description=Automated daily open-source intelligence analysis with calibrated judgments, 10-region coverage, and professional PDF exports.")
 print(f"   Product ID: {product['id']} | Name: {product['name']}")
 
 # Create price ($19/month)

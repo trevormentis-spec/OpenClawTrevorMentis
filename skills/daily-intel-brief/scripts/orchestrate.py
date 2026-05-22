@@ -163,9 +163,11 @@ def quality_gates(wd: pathlib.Path) -> list[str]:
     failures: list[str] = []
     analysis_dir = wd / "analysis"
     expected = {
-        "europe.json", "asia.json", "middle_east.json",
-        "north_america.json", "south_central_america.json",
-        "global_finance.json", "exec_summary.json",
+        "europe.json", "north_america.json", "central_america_caribbean.json",
+        "south_america.json", "africa.json", "middle_east.json",
+        "central_asia.json", "south_east_asia.json", "east_asia.json", "south_asia.json",
+        "oceania.json",
+        "prediction_markets.json", "exec_summary.json",
     }
     have = {p.name for p in analysis_dir.glob("*.json")}
     missing = sorted(expected - have)
@@ -229,10 +231,10 @@ def main() -> int:
                         help="use scripts/mock_incidents.json instead of live collection")
     parser.add_argument("--no-deliver", action="store_true",
                         help="produce the PDF/DOCX but skip agentmail")
-    parser.add_argument("--model", default="anthropic/claude-opus-4.7",
-                        help="Tier-1 frontier model for exec summary + red-team (default: Opus 4.7)")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash",
-                        help="Tier-2 fast/cheap model for regional analysis (default: DeepSeek V4 Flash)")
+    parser.add_argument("--model", default="deepseek/deepseek-v4-pro",
+                        help="Tier-1 model for exec summary + red-team (default: DeepSeek V4 Pro)")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro",
+                        help="Tier-2 model for regional analysis (default: DeepSeek V4 Pro)")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
                         help="API provider for tier-1 (default: openrouter). Tier-2 always uses deepseek.")
     parser.add_argument("--strict-env", action="store_true", default=True,
@@ -399,6 +401,18 @@ def main() -> int:
     if rc != 0:
         fail(f"collector exited with rc={rc}", rc)
 
+    # Step 1b — inject email intel from Gmail + AgentMail into incidents
+    email_intel_script = REPO_ROOT / "scripts" / "collect_email_intel.py"
+    if email_intel_script.exists():
+        rc = run_step("email-intel", [
+            "python3", str(email_intel_script),
+            "--working-dir", str(wd),
+        ], wd)
+        if rc != 0:
+            log(f"WARN: email-intel rc={rc} (non-fatal)")
+    else:
+        log("email-intel script not found — skipping Gmail/AgentMail intel injection")
+
     # Steps 2 and 3 in parallel
     analyst_cmd = [
         "python3", str(SCRIPTS / "analyze.py"),
@@ -428,16 +442,16 @@ def main() -> int:
     analyst_cmd.extend(["--tier2-model", args.tier2_model])
     if args.dry_run:
         analyst_cmd.append("--mock")
-    visuals_cmd = [
-        "python3", str(SCRIPTS / "build_visuals.py"),
-        "--working-dir", str(wd),
-        "--regions", str(SKILL_DIR / "references" / "regions.json"),
-    ]
-    rc_a, rc_v = run_parallel("analyst", analyst_cmd, "visuals", visuals_cmd, wd)
+    # [DISABLED] no visual assets — principal directive 2026-05-22
+    # visuals_cmd = [
+    #     "python3", str(SCRIPTS / "build_visuals.py"),
+    #     "--working-dir", str(wd),
+    #     "--regions", str(SKILL_DIR / "references" / "regions.json"),
+    # ]
+    rc_v = 0  # simulate success (visuals disabled)
+    rc_a, _rc_v = run_parallel("analyst", analyst_cmd, "echo-skips", ["echo", "skip"], wd)
     if rc_a != 0:
         fail(f"analyst exited with rc={rc_a}", rc_a)
-    if rc_v != 0:
-        log(f"WARN: visuals exited with rc={rc_v} — continuing without all figures")
 
     # Step 3b — update collection state from analysis output
     if coll_state_script.exists():
@@ -495,12 +509,8 @@ def main() -> int:
     # Step 5 — assemble
     pdf_path = wd / "final" / f"brief-{date_utc}.pdf"
     docx_path = wd / "final" / f"brief-{date_utc}.docx"
-    rc = run_step("assemble", [
-        "python3", str(SCRIPTS / "build_pdf.py"),
-        "--working-dir", str(wd),
-        "--out-pdf", str(pdf_path),
-        "--out-docx", str(docx_path),
-    ], wd)
+        # [DISABLED] no PDF — principal directive 2026-05-22
+    log("assemble skipped — text-only delivery mode")
     if rc != 0:
         fail(f"assembler exited with rc={rc}", rc)
 
@@ -546,20 +556,19 @@ def main() -> int:
         return 0
 
     if os.environ.get("AGENTMAIL_API_KEY"):
-        agentmail_script = REPO_ROOT / "skills" / "agentmail" / "scripts" / "send_email.py"
-        if agentmail_script.exists():
-            rc = run_step("agentmail-deliver", [
-                "python3", str(agentmail_script),
-                "--to-config", "trevor.principal_email",
-                "--subject", f"TREVOR Daily Brief — {date_utc}",
-                "--attachment", str(pdf_path),
-            ], wd)
-            if rc != 0:
-                log(f"WARN: agentmail rc={rc}; product at {pdf_path}")
-        else:
-            log(f"agentmail script not found; product at {pdf_path}")
+        # Build email body from exec_summary and send via AgentMail
+        # Text-only delivery — no PDF, no visuals, no attachments
+        delivery_cmd = [
+            "python3", str(SCRIPTS / "deliver_text_brief.py"),
+            "--working-dir", str(wd),
+            "--to", "roderick.jones@gmail.com",
+            "--from", "trevor_mentis@agentmail.to",
+        ]
+        rc = run_step("agentmail-deliver", delivery_cmd, wd)
+        if rc != 0:
+            log(f"WARN: agentmail rc={rc}")
     else:
-        log(f"AGENTMAIL_API_KEY not set; product at {pdf_path}")
+        log(f"AGENTMAIL_API_KEY not set — text brief saved to {wd}/analysis/exec_summary.json")
 
     return 0
 

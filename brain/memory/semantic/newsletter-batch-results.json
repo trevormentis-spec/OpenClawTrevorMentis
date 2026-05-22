@@ -1,0 +1,211 @@
+{
+  "batch_info": {
+    "email": "trevor_mentis@agentmail.to",
+    "timestamp": "2026-05-22T19:45:00Z",
+    "method": "mixed (direct API + browser automation)"
+  },
+  "results": [
+    {
+      "name": "Stars and Stripes",
+      "url": "https://www.stripes.com/newsletters",
+      "method": "mailchimp_form_post",
+      "status": "captcha_blocked",
+      "detail": "Found Mailchimp URL: https://stripes.us2.list-manage.com/subscribe/post?u=f141047f5265cca1bca1a0c28&id=0ab8697a7f. Form POST returned 200 but Mailchimp requires CAPTCHA. post-json endpoint returned {'result':'redirect','msg':'captcha'}."
+    },
+    {
+      "name": "GZERO Media",
+      "url": "https://www.gzeromedia.com/newsletters/",
+      "method": "mailchimp_form_post",
+      "status": "captcha_blocked",
+      "detail": "Found Mailchimp URL: https://eurasiagroup.us12.list-manage.com/subscribe/post?u=7404e6dcdc8018f49c82e941d&id=e605619869. Embed form (mc_embed_signup) detected on /subscribe/ page. POST blocked by CAPTCHA."
+    },
+    {
+      "name": "Atlantic Council",
+      "url": "https://www.atlanticcouncil.org/newsletters/",
+      "method": "hubspot_api",
+      "status": "needs_browser_session",
+      "detail": "HubSpot portal=43957839, form=c93256d8-58e1-4a9f-ac49-d40f2065653e. Direct API call fails without valid hutk cookie. Needs browser to generate session cookie first then submit."
+    },
+    {
+      "name": "Space News",
+      "url": "https://spacenews.com/newsletters/",
+      "method": "browser_form_submit",
+      "status": "recaptcha_blocked",
+      "detail": "Newspack-powered form with checkboxes (First Up, Military Space, SpaceNews This Week checked) and text fields filled. reCAPTCHA 'I'm not a robot' prevents automated submission. Has Newsletter list options."
+    },
+    {
+      "name": "Defense News",
+      "url": "https://www.defensenews.com/newsletters/",
+      "method": "sightline_form_post",
+      "status": "needs_browser_js",
+      "detail": "Uses Sightline platform at link.defensenews.com/join/5ba/signup-newsletters. Form has email field but form action is JS-rendered with CAPTCHA. POST to URL returned 200 (landing page)."
+    },
+    {
+      "name": "Military Times",
+      "url": "https://www.militarytimes.com/newsletters/",
+      "method": "sightline_form_post",
+      "status": "needs_browser_js",
+      "detail": "Uses Sightline platform at link.militarytimes.com/join/5b9/sign-up. Same platform as Defense News. Form has email field but needs JS rendering."
+    },
+    {
+      "name": "CFR",
+      "url": "https://www.cfr.org/newsletters",
+      "method": "sightline_form_post",
+      "status": "needs_browser_js",
+      "detail": "Uses Sightline platform at link.cfr.org/join/66n/signup. Same platform as Defense News/Military Times. Has email field input but JS-rendered form with reCAPTCHA."
+    },
+    {
+      "name": "Defense One",
+      "url": "https://www.defenseone.com/newsletters/",
+      "method": "direct_api",
+      "status": "needs_browser",
+      "detail": "Found form actions: /newsletter-subscribe/ and /newsletters/subscribe/conversion-module/defense-one-today/. POST to /newsletter-subscribe/ returned 403. JS-rendered form."
+    },
+    {
+      "name": "Foreign Policy",
+      "url": "https://foreignpolicy.com/newsletters/",
+      "method": "scan",
+      "status": "requires_login",
+      "detail": "Uses custom managed newsletter system via HTMX (hx-post to /endpoint/htmx). Newsletters are managed via authenticated account. Requires login. No Mailchimp/ConvertKit found."
+    },
+    {
+      "name": "Politico (National Security Daily)",
+      "url": "https://www.politico.com/newsletters/national-security-daily",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403 (Cloudflare). Cannot scrape. Likely uses Politico's proprietary newsletter system."
+    },
+    {
+      "name": "The Diplomat",
+      "url": "https://thediplomat.com/newsletters/",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/newsletters/axios-world",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "RAND",
+      "url": "https://www.rand.org/newsletters.html",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "Dawn Pakistan",
+      "url": "https://www.dawn.com/newsletters",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403 (Cloudflare). Cannot scrape."
+    },
+    {
+      "name": "Small Wars Journal",
+      "url": "https://smallwarsjournal.com/subscribe",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "Middle East Institute (MEI)",
+      "url": "https://www.mei.edu/subscribe",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403 (Cloudflare). Cannot scrape."
+    },
+    {
+      "name": "Africa Center",
+      "url": "https://africacenter.org/subscribe/",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "Chatham House",
+      "url": "https://www.chathamhouse.org/get-our-newsletter",
+      "method": "scan",
+      "status": "cloudflare_blocked",
+      "detail": "Returned 403. Cannot scrape."
+    },
+    {
+      "name": "Nikkei Asia",
+      "url": "https://asia.nikkei.com/newsletters",
+      "method": "scan",
+      "status": "server_error",
+      "detail": "Returned HTTP 500 (Internal Server Error). Cannot scrape."
+    },
+    {
+      "name": "Brookings",
+      "url": "https://www.brookings.edu/newsletters/",
+      "method": "scan",
+      "status": "no_form_found",
+      "detail": "WordPress site. Original URL (subscribe-to-newsletters/) returned 404. Fallback URL loaded but no newsletter signup form found in static HTML. Likely JS-rendered."
+    },
+    {
+      "name": "IISS",
+      "url": "https://www.iiss.org/newsletter-signup/",
+      "method": "scan",
+      "status": "needs_drupal_webform",
+      "detail": "Drupal webform. Returns 404 on direct scrape. Needs JS rendering."
+    },
+    {
+      "name": "Hudson Institute",
+      "url": "https://www.hudson.org/subscribe",
+      "method": "scan",
+      "status": "needs_drupal_webform",
+      "detail": "Drupal webform action=/subscribe found. JS-rendered newsletter form with 'Customize Your Inbox' options."
+    },
+    {
+      "name": "Carnegie Endowment",
+      "url": "https://carnegieendowment.org/subscribe",
+      "method": "scan",
+      "status": "no_form_found",
+      "detail": "Page loaded but no signup form found in static HTML. JS-rendered."
+    },
+    {
+      "name": "The Africa Report",
+      "url": "https://www.theafricareport.com/newsletters/",
+      "method": "scan",
+      "status": "no_form_found",
+      "detail": "No signup form found in static HTML. JS-rendered."
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/newsletters/",
+      "method": "scan",
+      "status": "no_form_found",
+      "detail": "Page loaded but no signup form found. Reuters uses its own proprietary system."
+    }
+  ],
+  "summary": {
+    "total": 25,
+    "successful_subscriptions": 0,
+    "captcha_blocked": 3,
+    "cloudflare_blocked": 7,
+    "needs_browser_js": 6,
+    "requires_login": 1,
+    "server_error": 1,
+    "no_form_found": 4,
+    "recaptcha_blocked": 1,
+    "other": 2
+  },
+  "recommendations": [
+    "Most newsletter signup forms are protected by CAPTCHA (Mailchimp, reCAPTCHA), Cloudflare, or require full browser sessions (HubSpot hutk cookies).",
+    "The Atlantic Council is the most viable for automation: get HubSpot hutk via browser session, then submit via API.",
+    "Stars and Stripes and GZERO have valid Mailchimp endpoints but need manual CAPTCHA solving.",
+    "Sightline-based newsletters (Defense News, Military Times, CFR) all use the same JS-rendered platform with reCAPTCHA.",
+    "For Cloudflare-protected sites (7 total), browser automation with proper profile/cookies may work.",
+    "Recommend: Use browser profile with persistent cookies for Cloudflare sites, solve CAPTCHAs manually one-time per newsletter."
+  ],
+  "mailchimp_urls_found": [
+    {"name": "Stars and Stripes", "mc_url": "https://stripes.us2.list-manage.com/subscribe/post?u=f141047f5265cca1bca1a0c28&id=0ab8697a7f"},
+    {"name": "GZERO", "mc_url": "https://eurasiagroup.us12.list-manage.com/subscribe/post?u=7404e6dcdc8018f49c82e941d&id=e605619869"}
+  ],
+  "hubspot_forms_found": [
+    {"name": "Atlantic Council", "portal_id": "43957839", "form_id": "c93256d8-58e1-4a9f-ac49-d40f2065653e"}
+  ]
+}

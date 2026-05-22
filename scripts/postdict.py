@@ -46,7 +46,7 @@ def log(msg: str) -> None:
     print(f"[postdict {ts}] {msg}", file=sys.stderr, flush=True)
 
 
-ROUTING_LOG = repo_root / "memory" / "llm-routing-log.jsonl"
+ROUTING_LOG = REPO_ROOT / "memory" / "llm-routing-log.jsonl"
 
 
 def _log_routing(decision, task_type: str, metadata: dict) -> None:
@@ -448,9 +448,12 @@ def main() -> int:
     # For calibration scoring: confirmed corrects, partially_confirmed counts as 0.5 correct,
     # disconfirmed and expired_no_resolution count as incorrect
     effective_correct = correct + (partially_confirmed * 0.5)
+    # Aggregate counts for backward compatibility with calibration history
+    incorrect = disconfirmed + expired
+    unresolved = not_yet_testable
     effective_incorrect = disconfirmed + expired
     total = len(evaluations)
-    resolved = correct + incorrect
+    resolved = correct + disconfirmed + expired
     accuracy_pct = round((correct / resolved * 100) if resolved > 0 else None, 1) if resolved > 0 else None
 
     # Build calibration report (5-category verdict system)
@@ -481,8 +484,8 @@ def main() -> int:
     history = load_calibration_history()
     history["total_judgments"] += total
     history["correct"] += correct
-    history["incorrect"] += incorrect
-    history["unresolved"] += unresolved
+    history["incorrect"] += disconfirmed + expired
+    history["unresolved"] += not_yet_testable
     history["last_updated"] = dt.datetime.now(dt.timezone.utc).isoformat() + "Z"
 
     # Update by-band stats

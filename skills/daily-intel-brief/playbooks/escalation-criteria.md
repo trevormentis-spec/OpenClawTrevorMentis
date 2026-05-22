@@ -26,7 +26,7 @@ minor wire becomes a special and the daily product loses its meaning).
    ground operation outside Gaza/Lebanon.
 
 4. **Cross-region cascade:** A development whose second-order effects
-   span ≥3 of the six regions within the next 7 days. Example: a major
+   span ≥3 of the ten regions within the next 7 days. Example: a major
    Saudi oil facility strike (Middle East kinetic, North America gas
    prices, Asia LNG flows, Europe inflation, Global Finance vol spike).
 

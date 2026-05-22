@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "collected_at": "2026-05-22T00:16:54.394900+00:00",
+  "collected_at": "2026-05-22T01:31:10.156330+00:00",
   "patents_found": 5,
   "patents": [
     {
@@ -20,8 +20,8 @@
       "url": "https://patents.google.com/patent/US8277584B2/en"
     },
     {
-      "title": "US3400025A - Flexible explosive comprising rdx, hmx or petn and mixed plasticizer - Google Patents",
-      "url": "https://patents.google.com/patent/US3400025A/en"
+      "title": "US7857922B2 - Pressable plastic-bound explosive composition - Google Patents",
+      "url": "https://patents.google.com/patent/US7857922B2/en"
     }
   ]
 }

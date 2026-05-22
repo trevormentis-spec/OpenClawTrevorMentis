@@ -32,16 +32,25 @@ PDF_REPORT_RENDERER = REPO_ROOT_GUESS / "skills" / "pdf-report" / "scripts" / "r
 PDF_VENV = pathlib.Path("~/.openclaw/workspace/.venv_pdf/bin/python").expanduser()
 
 REGIONS_ORDER = [
-    "europe", "asia", "middle_east",
-    "north_america", "south_central_america", "global_finance",
+    "europe", "north_america", "central_america_caribbean",
+    "south_america", "africa", "middle_east",
+    "central_asia", "south_east_asia", "east_asia", "south_asia",
+    "oceania",
+    "prediction_markets",
 ]
 REGION_LABEL = {
     "europe": "Europe",
-    "asia": "Asia",
-    "middle_east": "Middle East",
     "north_america": "North America",
-    "south_central_america": "South & Central America (incl. Caribbean)",
-    "global_finance": "Global Finance",
+    "central_america_caribbean": "Central America & Caribbean",
+    "south_america": "South America",
+    "africa": "Africa",
+    "middle_east": "Middle East",
+    "central_asia": "Central Asia",
+    "south_east_asia": "South East Asia",
+    "east_asia": "East Asia",
+    "south_asia": "South Asia",
+    "oceania": "Oceania",
+    "prediction_markets": "Prediction Markets",
 }
 
 
@@ -120,7 +129,7 @@ def build_pdfreport_payload(wd: pathlib.Path) -> dict:
             ])
 
         # Visual
-        chart_kind = "finance_panel" if region == "global_finance" else "regional_map"
+        chart_kind = "finance_panel" if region == "prediction_markets" else "regional_map"
         chart_path = find_visual(manifest, region, chart_kind)
         charts = []
         if chart_path:
@@ -129,7 +138,7 @@ def build_pdfreport_payload(wd: pathlib.Path) -> dict:
                 "src": chart_path,
                 "caption": (
                     f"{region_label} — {len(region_incidents)} "
-                    f"{'market events' if region == 'global_finance' else 'incidents'} "
+                    f"{'market events' if region == 'prediction_markets' else 'incidents'} "
                     f"in 24h to {dtg}."
                 ),
             })
@@ -163,6 +172,21 @@ def build_pdfreport_payload(wd: pathlib.Path) -> dict:
         f"{name} ({count})"
         for name, count in sources_count.most_common()
     ]
+
+    # Add models_used and sources_used from exec_summary (if present)
+    exec_sources = exec_summary.get("sources_used") or []
+    exec_models = exec_summary.get("models_used") or []
+    if exec_models:
+        annex_a_items.append("")
+        annex_a_items.append("Models used for this brief:")
+        for m in exec_models:
+            annex_a_items.append(f"- {m}")
+    if exec_sources:
+        annex_a_items.append("")
+        annex_a_items.append("Key sources cited in analysis:")
+        for s in exec_sources:
+            annex_a_items.append(f"- {s}")
+
     if incidents_payload.get("collection_gaps"):
         annex_a_items.append("")
         annex_a_items.append("Collection gaps in this window:")

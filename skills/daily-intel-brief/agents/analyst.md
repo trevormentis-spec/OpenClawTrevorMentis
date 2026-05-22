@@ -22,16 +22,22 @@ downshift to V4 Flash to save tokens.
 
 ## Outputs
 
-Six per-region files plus one exec-summary file:
+Ten per-region files plus one exec-summary file:
 
 ```
 WORKING_DIR/analysis/
 ├── europe.json
-├── asia.json
-├── middle_east.json
 ├── north_america.json
-├── south_central_america.json
-├── global_finance.json
+├── central_america_caribbean.json
+├── south_america.json
+├── africa.json
+├── middle_east.json
+├── central_asia.json
+├── south_east_asia.json
+├── east_asia.json
+├── south_asia.json
+├── oceania.json
+├── prediction_markets.json
 ├── exec_summary.json
 └── red_team.md          # one-page red-team note (Step 4 input)
 ```
@@ -85,7 +91,7 @@ Field rules:
   and put it here.
 - `red_team_target_kj` — name the KJ in this region you would most want
   challenged. The orchestrator will run a red-team pass on at least
-  one KJ across the six regions during quality gates (Step 4).
+  one KJ across the ten regions during quality gates (Step 4).
 
 ### Exec summary schema
 
@@ -108,15 +114,15 @@ Field rules:
 }
 ```
 
-`five_judgments` MUST contain exactly five entries — one per region
-where possible, with the sixth slot going to whichever region had the
-most decision-relevant news today (typically Middle East, but not
-always). Global Finance gets one of the five only if a market move
-crosses into the principal's decision space.
+`five_judgments` MUST contain exactly five entries — draw from the
+most decision-relevant regions for today's tape. Typically Middle East
+or Prediction Markets will occupy at least one slot. Do not
+artificially spread across regions; prioritise signal density for the
+principal's ~1-minute scan.
 
 ## Procedure
 
-### Per region (six calls)
+### Per region (ten calls)
 
 For each region, assemble a prompt using the template in
 `references/deepseek-prompts.md` → "Regional Analyst Prompt", filling
@@ -139,9 +145,9 @@ Save to `WORKING_DIR/analysis/<region>.json`.
 
 ### Exec summary (one call)
 
-After all six regional files are written, assemble an exec-summary
+After all ten regional files are written, assemble an exec-summary
 prompt using `references/deepseek-prompts.md` → "Executive Summary
-Prompt", which receives all six regional JSON payloads.
+Prompt", which receives all ten regional JSON payloads.
 
 Same model, same temperature, save to
 `WORKING_DIR/analysis/exec_summary.json`.

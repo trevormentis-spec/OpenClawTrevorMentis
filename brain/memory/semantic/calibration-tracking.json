@@ -1,14 +1,14 @@
 {
   "version": 3,
   "created": "2026-05-12T05:10:00Z",
-  "last_updated": "2026-05-18T12:45:00Z",
-  "total_judgments": 55,
+  "last_updated": "2026-05-22T17:03:28.254850+00:00Z",
+  "total_judgments": 70,
   "correct": 5,
   "incorrect": 20,
-  "unresolved": 30,
+  "unresolved": 45,
   "by_confidence_band": {
     "likely": {
-      "total": 34,
+      "total": 40,
       "correct": 5,
       "incorrect": 0,
       "confirmed": 5,
@@ -17,7 +17,7 @@
       "not_yet_testable": 0
     },
     "highly likely": {
-      "total": 10,
+      "total": 16,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -33,11 +33,16 @@
       "disconfirmed": 0,
       "partially_confirmed": 0,
       "not_yet_testable": 0
+    },
+    "highly unlikely": {
+      "total": 3,
+      "correct": 0,
+      "incorrect": 0
     }
   },
   "by_region": {
     "europe": {
-      "total": 11,
+      "total": 14,
       "correct": 2,
       "incorrect": 0,
       "confirmed": 2,
@@ -46,7 +51,7 @@
       "not_yet_testable": 0
     },
     "asia": {
-      "total": 11,
+      "total": 14,
       "correct": 3,
       "incorrect": 0,
       "confirmed": 3,
@@ -55,7 +60,7 @@
       "not_yet_testable": 0
     },
     "middle_east": {
-      "total": 11,
+      "total": 14,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -73,7 +78,7 @@
       "not_yet_testable": 0
     },
     "south_central_america": {
-      "total": 7,
+      "total": 10,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -82,7 +87,7 @@
       "not_yet_testable": 0
     },
     "global_finance": {
-      "total": 4,
+      "total": 7,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -291,6 +296,39 @@
       "partially_confirmed": 0,
       "not_yet_testable": 0,
       "caveat": "Pre-May-18 data \u2014 unresolved mapped to expired_no_resolution"
+    },
+    {
+      "date": "2026-05-22",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 8.3,
+      "horizon_expiry": "2026-05-29T06:51:48.776696+00:00",
+      "rechecked": false
+    },
+    {
+      "date": "2026-05-22",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 7.7,
+      "horizon_expiry": "2026-05-29T12:41:34.960738+00:00",
+      "rechecked": false
+    },
+    {
+      "date": "2026-05-22",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 7.1,
+      "horizon_expiry": "2026-05-29T17:03:28.254868+00:00",
+      "rechecked": false
     }
   ],
   "overconfidence_flags": [

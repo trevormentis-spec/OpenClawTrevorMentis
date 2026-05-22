@@ -132,7 +132,7 @@
 
 ## 6. Cost Estimate
 
-Based on typical run (~6 region analyses + exec summary + red-team):
+Based on typical run (~10 region analyses + exec summary + red-team):
 - **DeepSeek V4 Pro:** ~$0.15-0.30 per pipeline run (est.)
 - **Claude Opus 4.7:** ~$1.50-3.00 per pipeline run (est.)
 - **Delta:** Opus 4.7 is roughly **10x** the cost of DSv4 Pro

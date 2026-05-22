@@ -40,7 +40,8 @@ OPENROUTER_PATH = "/v1/chat/completions"
 
 REGIONS_ORDER = [
     "europe", "north_america", "central_america_caribbean", "south_america",
-    "africa", "middle_east", "central_asia", "south_east_asia", "oceania",
+    "africa", "middle_east", "central_asia", "south_east_asia", "east_asia", "south_asia",
+    "oceania",
     "prediction_markets",
 ]
 
@@ -53,6 +54,8 @@ REGION_LABEL = {
     "middle_east": "Middle East",
     "central_asia": "Central Asia",
     "south_east_asia": "South East Asia",
+    "east_asia": "East Asia",
+    "south_asia": "South Asia",
     "oceania": "Oceania",
     "prediction_markets": "Prediction Markets",
 }
@@ -61,7 +64,9 @@ REGION_SHORT = {
     "europe": "EU", "north_america": "NA",
     "central_america_caribbean": "CAC", "south_america": "SA",
     "africa": "AF", "middle_east": "ME",
-    "central_asia": "CAS", "south_east_asia": "SEA", "oceania": "OC",
+    "central_asia": "CAS", "south_east_asia": "SEA",
+    "east_asia": "EAS", "south_asia": "SAS",
+    "oceania": "OC",
     "prediction_markets": "FIN",
 }
 
@@ -333,8 +338,12 @@ def regional_prompt(template: str, region_snake: str, incidents: list[dict],
 
 def exec_prompt(template: str, regional_payloads: dict[str, dict],
                 date_utc: str, collection_state: dict | None = None,
-                behavioral_state: dict | None = None) -> str:
+                behavioral_state: dict | None = None,
+                region_model: str = "deepseek/deepseek-v4-pro",
+                exec_model: str = "deepseek/deepseek-v4-pro") -> str:
     user = template.replace("{date_utc}", date_utc)
+    user = user.replace("{region_model}", region_model)
+    user = user.replace("{exec_model}", exec_model)
     
     # Build collection quality summary from either behavioral state or raw collection state
     if behavioral_state:
@@ -482,6 +491,16 @@ def mock_exec(regional: dict[str, dict], date_utc: str) -> dict:
             "is new in the last 24 hours, why it matters today, and what "
             "the principal should watch for."),
         "five_judgments": five,
+        "sources_used": [
+            "Mock Wire Feed 1 (BBC World / Al Jazeera / Reuters)",
+            "Mock Regional Feed 2",
+            "Mock Think Tank Report 3",
+            "Mock Substack Analysis 4",
+            "Mock OSINT Dashboard 5",
+        ],
+        "models_used": [
+            "deepseek/deepseek-v4-pro",
+        ],
     }
 
 
@@ -499,8 +518,8 @@ def main() -> int:
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
-    parser.add_argument("--model", default="deepseek/deepseek-v4-flash")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-flash", help="Tier-2 model for regional analysis (default: DeepSeek V4 Flash)")
+    parser.add_argument("--model", default="deepseek/deepseek-v4-pro")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 model for regional analysis (default: DeepSeek V4 Pro)")
     parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek", help="API provider for tier-2 regional analysis (default: deepseek)")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
                         help="API provider to route through (default: deepseek)")
@@ -788,7 +807,9 @@ def main() -> int:
     else:
         user = exec_prompt(exec_template, regional_payloads, date_utc,
                                collection_state=collection_state,
-                               behavioral_state=behavioral_state)
+                               behavioral_state=behavioral_state,
+                               region_model=args.tier2_model or "deepseek/deepseek-v4-flash",
+                               exec_model=args.model or "anthropic/claude-opus-4.7")
         content = call_deepseek(tier1_model, system, user, provider=args.provider)
         exec_payload = parse_json_strict(content)
     (analysis_dir / "exec_summary.json").write_text(

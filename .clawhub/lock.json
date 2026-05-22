@@ -152,6 +152,10 @@
     "data-pipeline": {
       "version": "1.1.0",
       "installedAt": 1779354083946
+    },
+    "osint-social": {
+      "version": "1.0.0",
+      "installedAt": 1779440486715
     }
   }
 }
