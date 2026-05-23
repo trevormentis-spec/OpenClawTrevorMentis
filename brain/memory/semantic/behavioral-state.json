@@ -3,10 +3,10 @@
   "generated_at": "2026-05-13T05:28:11Z",
   "calibration_directives": {
     "overall": {
-      "total_judgments": 60,
+      "total_judgments": 75,
       "correct": 5,
       "incorrect": 20,
-      "unresolved": 35,
+      "unresolved": 50,
       "accuracy_pct": 20.0,
       "posture": "widen_two_notches",
       "overconfidence_regions": []
@@ -77,15 +77,15 @@
       {
         "region": "europe",
         "accuracy": 1.0,
-        "samples": 12
+        "samples": 15
       },
       {
         "region": "asia",
         "accuracy": 1.0,
-        "samples": 12
+        "samples": 14
       }
     ],
-    "compiled_at": "2026-05-22T12:06:33.467922+00:00Z"
+    "compiled_at": "2026-05-23T12:00:07.808184+00:00Z"
   },
   "collection_directives": {
     "by_region": {
@@ -349,5 +349,5 @@
       "reasons": []
     }
   },
-  "updated_at": "2026-05-22T12:06:33.467922+00:00Z"
+  "updated_at": "2026-05-23T12:00:07.808184+00:00Z"
 }

@@ -1,31 +1,31 @@
-# Daily Intelligence Briefing — 2026-05-22
+# Daily Intelligence Briefing — 2026-05-23
 
 
 ## BLUF (Bottom Line Up Front)
 
-Mock BLUF: a calibrated one-sentence headline judgment covering the most decision-relevant overnight development.
+Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure.
 
 
-Mock context paragraph. Two to three sentences naming what is new in the last 24 hours, why it matters today, and what the principal should watch for.
+The Latvian caretaker government will likely request NATO Article 4 consultations within days, forcing the alliance to confront Russian hybrid warfare in the Baltics while sustaining Ukraine support. A second large-scale Russian energy strike on Ukraine is highly probable before month's end, and the Kalshi ceasefire contract has repriced to 12¢, signaling market consensus that no diplomatic off-ramp is near. The principal's attention should focus on the 25 May European Council emergency session as a barometer for whether NATO bandwidth fractures or holds.
 
 
 ## Key Judgments
 
-- **[·europe]** Mock judgment 1 for Europe: an observable forward-looking event would be stated here.
-  - *Confidence: highly likely (78% / 7d)*
+- **[·europe]** The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference.
+  - *Confidence: likely (68% / 7d)*
 
-- **[·north_america]** Mock judgment 1 for North America: an observable forward-looking event would be stated here.
+- **[·europe]** Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May.
+  - *Confidence: highly likely (82% / 7d)*
+
+- **[·europe]** No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum.
+  - *Confidence: highly likely (85% / 7d)*
+
+- **[·central_america_caribbean]** Cuban fuel-shortage protests will not escalate into a nationwide crisis within 7 days, consistent with the pattern of localized, muted contention despite worsening economic conditions.
+  - *Confidence: unlikely (33% / 7d)*
+
+- **[·oceania]** The collection gap across multiple theatres will self-resolve within 24 hours with no major intelligence surprises surfacing retroactively.
   - *Confidence: likely (60% / 7d)*
-
-- **[·central_america_caribbean]** Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here.
-  - *Confidence: highly likely (78% / 7d)*
-
-- **[·south_america]** Mock judgment 1 for South America: an observable forward-looking event would be stated here.
-  - *Confidence: likely (60% / 7d)*
-
-- **[·africa]** Mock judgment 1 for Africa: an observable forward-looking event would be stated here.
-  - *Confidence: highly likely (78% / 7d)*
 
 
 ---
-*Analysis prepared by TREVOR — 2026-05-22*
+*Analysis prepared by TREVOR — 2026-05-23*

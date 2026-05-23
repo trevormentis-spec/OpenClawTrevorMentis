@@ -133,7 +133,31 @@
         "Andrew investigation could look into sexual misconduct allegations",
         "Stop blaming young people for being unemployed, says Amazon's UK boss"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-23T03:02:57.322946+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-05-23T03:02:58.292174+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Attorney general to review teen boys' rape sentences",
+        "Hot weather to intensify in UK over bank holiday weekend",
+        "Rubio tries to reassure Nato allies over US troop deployments"
+      ]
     }
   ],
-  "last_updated": "2026-05-22T12:41:39.629517+00:00"
+  "last_updated": "2026-05-23T03:02:58.292357+00:00"
 }

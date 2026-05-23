@@ -35,17 +35,11 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
-### Moltbook
+### Moltbook — ❌ DISABLED (2026-05-23)
 
-- Registered as `trevormentis` on Mon, May 2026
-- API key saved at `~/.config/moltbook/credentials.json` and `.env` as `MOLTBOOK_API_KEY`
-- Profile: https://www.moltbook.com/u/trevormentis
-- Base URL: https://www.moltbook.com/api/v1
-- Status: active ✅
-- Posted to submolts: `builds` (primary), `agents` (secondary)
-- **Posting script:** `scripts/moltbook-post-brief.sh --gmail`
-- **API auth:** Bearer token in Authorization header
-- **Create post:** `POST /api/v1/posts` with `{title, content, submolt}`
+- Account: `trevormentis` (exists, not posting)
+- API key: saved at `~/.config/moltbook/credentials.json` and `.env`
+- Posting script: archived to `scripts/archive/`
 
 ## Search
 
@@ -115,13 +109,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Start with `analyst/playbooks/analytic-workflow.md` and `analyst/templates/analytic-note.md` for real work
 - Use structured methods rather than intuitive summaries when the stakes are meaningful
 
-### Social Posting Pipeline
+### Social Posting Pipeline — ❌ DISABLED (2026-05-23)
 
-- **Script:** `scripts/social-posting-pipeline.sh`
-- **Cron:** Daily at 13:00 PT (after intel brief completes)
-- **Output:** Export to `exports/social/{twitter,linkedin,reddit}.txt`
-- **Posting:** Content prepared for agent-facilitated posting via social-media-agent
-- **Status:** Content adaptation active ✅ — live posting needs Twitter API keys or VibePost key
+- All scripts archived to `scripts/archive/`.
+- No active crons. Roderick directive: kill all social posting.
+- GenViral API key still in `.env` (preserved, not in use).
+- Moltbook account `trevormentis` still exists (dormant).
 
 ### Content & OSINT Product Launch
 
@@ -141,11 +134,10 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   - `landing-page-roast` — Conversion audit + copy rewrites
   - `skill-stripe-monitor` — MRR, churn, revenue alerts
 
-### GenViral API
+### GenViral API — ❌ DISABLED (2026-05-23)
 
-- **API key:** Set via env var `GENVIRAL_API_KEY` (see .env)
-- **Usage:** Viral content generation / social media amplification
-- **Status:** Saved ✅
+- **API key:** Set via env var `GENVIRAL_API_KEY` (see .env) — preserved, not in use
+- **Status:** Disabled per Roderick directive (all social posting killed)
 
 ### Stripe
 

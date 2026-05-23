@@ -1,38 +1,47 @@
-# Gmail Intel Digest — 2026-05-22 19:02 UTC
+# Gmail Intel Digest — 2026-05-23 11:01 UTC
 
-## “The End of the World as We Know It”
-**From:** Foreign Policy <reply@foreignpolicy.com>
-**Date:** Fri, 22 May 2026 09:52:21 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
-
----
-
-## Russian Offensive Campaign Assessment, May 21, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Thu, 21 May 2026 21:15:48 -0400 (EDT)
+## Why Trump might be losing the Iran war
+**From:** Reuters Weekend Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Sat, 23 May 2026 07:00:50 -0400 (EDT)
 **Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War Russia and Belarus completed their combined nuclear exercises on May 21, highlighting Russia’s ability to leverage Belarus for future Russian military operations May 21, 2026 Assessment as of: 8:00 PM ET ﻿Data Cutoff: 1:00 PM ET Anna Thacker, Jakub Kostka, Grace Mappes, Samuel Shafiro, Christina Harward, and George Barros TOPLINES Russia and Belarus completed their combined nuclear exercises on May 21, highlighting Russia's ability to leverage Belarus fo
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
 
 ---
 
-## Iran Update Special Report, May 21, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Thu, 21 May 2026 18:45:57 -0400 (EDT)
+## Three months in, is Trump losing the Iran war?
+**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
+**Date:** Sat, 23 May 2026 06:31:09 -0400 (EDT)
 **Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War Iran has not submitted a response to the latest US proposal as multiple mediators continue efforts to narrow gaps between the United States and Iran. May 21, 2026 Data Cutoff: 2:00 PM ET Ben Rezaei, Katherine Wells, Carolyn Moorman, Avery Borens, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES Iran has not submitted a response to the latest US proposal as multipl
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
 
 ---
 
-## Editors’ Picks: Trump’s war on tourism
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Thu, 21 May 2026 18:01:21 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
+## Giving up on governance
+**From:** The Week in Breakingviews <breakingviews@thomsonreuters.com>
+**Date:** Sat, 23 May 2026 06:00:08 -0400 (EDT)
+**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## アングル：米国でガソリン価格高騰、バス利用からおもちゃの車までコストカットあの手この手【5月 23日】
+**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
+**Date:** Fri, 22 May 2026 21:01:08 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+
+---
+
+## Russian Offensive Campaign Assessment, May 22, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Fri, 22 May 2026 20:30:47 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Western officials are increasingly reporting that Ukraine is hindering Russia’s advances in Ukraine, in line with ISW’s consistent assessments, but that the Kremlin likely remains committed to its ori May 22, 2026 Data Cutoff: 1:45 PM ET Grace Mappes, Jennie Olmsted, Anna Thacker, Diana Nasreddine, Anjou Kang-Stryker, and Frederick W. Kagan TOPLINES Western officials are increasingly reporting that Ukraine is hindering Russia’s advances in Ukraine, in li
 
 ---
 

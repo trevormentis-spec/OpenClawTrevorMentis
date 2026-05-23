@@ -118,8 +118,16 @@ query_categories:
     rationale_cartel_security: "Security varies dramatically by region."
     rationale_economy_markets: "Investment climate varies by region."
 
-# Default (when query category cannot be determined)
+# Global geopolitical intelligence brief — daily default
+geopolitical_intelligence_brief:
+  required: [political_risk, economy_markets, cartel_security]
+  recommended: [us_mexico, energy_infra]
+  rationale_political_risk: "Geopolitical risk assessment is the core analytical mission."
+  rationale_economy_markets: "Market impact of geopolitical events is a primary decision input."
+  rationale_cartel_security: "Conflict and security dynamics span all regions."
+
+# Default (when query category cannot be determined) — broad coverage
 default:
-  required: [cartel_security, political_risk, economy_markets]
-  recommended: [us_mexico, energy_infra, worldcup_travel]
-  rationale_default: "Query category could not be resolved. Defaulting to broad coverage."
+  required: [political_risk, economy_markets, cartel_security]
+  recommended: [us_mexico, energy_infra]
+  rationale_default: "Query category could not be resolved. Defaulting to broad geopolitical coverage."

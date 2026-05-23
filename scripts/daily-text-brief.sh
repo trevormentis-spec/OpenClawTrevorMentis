@@ -74,7 +74,6 @@ python3 skills/daily-intel-brief/scripts/orchestrate.py \
     --model "deepseek/deepseek-v4-pro" \
     --tier2-model "deepseek/deepseek-v4-pro" \
     --provider deepseek \
-    --tier2-provider deepseek \
     2>&1 | tee -a "$LOG"
 ORCH_RC=${PIPESTATUS[0]}
 

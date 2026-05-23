@@ -38,12 +38,23 @@ THEME_SIGNATURES: dict[str, list[str]] = {
         "violence", "extortion", "homicide", "security", "kidnap",
         "fentanyl", "trafficking", "drug", "organized crime",
         "armed group", "criminal", "shooting", "attack", "blockade",
+        # Global keywords
+        "military", "war", "conflict", "strike", "drone", "missile",
+        "offensive", "defense", "troop", "militia", "rebel", "terrorist",
+        "airstrike", "shelling", "invasion", "occupation", "civil war",
+        "weapon", "arms", "naval", "air force", "intelligence agency",
     ],
     "political_risk": [
         "sheinbaum", "amlo", "morena", "government", "president",
         "congress", "reform", "judicial", "election", "governor",
         "mayor", "policy", "regulation", "decree", "corruption",
         "human rights", "press freedom", "rule of law",
+        # Global keywords
+        "parliament", "prime minister", "coalition", "opposition",
+        "coup", "protest", "regime", "authoritarian", "democracy",
+        "geopolitical", "alliance", "nato", "un", "diplomatic",
+        "sanction", "resolution", "summit", "treaty", "ceasefire",
+        "sovereignty", "referendum", "secession", "insurgency",
     ],
     "us_mexico": [
         "usmca", "tariff", "border", "us mexico", "united states",
@@ -63,6 +74,11 @@ THEME_SIGNATURES: dict[str, list[str]] = {
         "gdp", "growth", "inflation", "interest rate", "banxico",
         "bond", "equity", "stock", "trade", "export", "import",
         "remittance", "manufacturing", "supply chain", "logistics",
+        # Global keywords
+        "commodity", "oil", "gas price", "currency", "central bank",
+        "fiscal", "deficit", "debt", "yield", "treasury",
+        "recession", "stimulus", "subsidy", "tariff", "trade war",
+        "dollar", "forex", "reserve", "sovereign", "credit rating",
     ],
     "worldcup_travel": [
         "world cup", "2026", "tourist", "travel", "visa", "airport",
@@ -87,7 +103,7 @@ CATEGORY_SYNONYMS: dict[str, list[str]] = {
     "cartel_succession": ["succession", "leadership", "el pelon", "internal split", "faction"],
     "nearshoring_analysis": ["nearshore", "relocation", "supply chain diversification", "china plus one"],
     "regional_diversification": ["diversification", "nuevo leon", "baja california", "northern mexico", "comparison"],
-    "worldcup_travel_risk": ["world cup security", "tourist safety", "fan safety"],
+    "geopolitical_intelligence_brief": ["geopolitical", "intelligence brief", "global brief", "daily brief", "world briefing", "geopolitical risk"],
     "cartel_security_assessment": ["security assessment", "cartel threat", "criminal risk"],
     "political_risk_assessment": ["political risk", "governance", "stability assessment"],
     "financial_markets": ["financial market", "peso", "mxn", "stock market", "bond market", "interest rate", "portfolio", "hedge"],

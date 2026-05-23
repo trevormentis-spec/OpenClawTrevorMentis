@@ -13,11 +13,28 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 LOG="$REPO/logs/collection-$(date +%Y%m%d).log"
 mkdir -p "$(dirname "$LOG")"
 
+echo "[collection] $(date -u '+%Y-%m-%d %H:%M UTC') — Full heartbeat cycle" | tee -a "$LOG"
+
+# Rotate through all 4 phases
+echo "--- Phase A: Feed health audit ---" | tee -a "$LOG"
+python3 "$REPO/scripts/feed_health_audit.py" 2>&1 | tee -a "$LOG"
+
+echo "--- Phase B: Source discovery ---" | tee -a "$LOG"
+python3 "$REPO/scripts/source_discovery.py" 2>&1 | tee -a "$LOG"
+
+echo "--- Phase C: Source pruning ---" | tee -a "$LOG"
+# Phase C: Auto-prune dead feeds (>3 consecutive failures)
+python3 "$REPO/scripts/feed_health_audit.py" --prune  # AUTO_PRUNE enabled 2>&1 | tee -a "$LOG"
+
+echo "--- Phase D: Brain reindex + cost snapshot ---" | tee -a "$LOG"
+python3 "$REPO/brain/scripts/brain.py" reindex 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/deepseek_monitor.py" --snapshot 2>&1 | tee -a "$LOG"
+
 echo "[collection] $(date -u '+%Y-%m-%d %H:%M UTC') — Start" | tee -a "$LOG"
 cd "$REPO"
 
-# 1. OpenWeb API specs + Mexico custom specs + Wikipedia monitor
-echo "--- Step 1: OpenWeb pipeline (API specs + Wikipedia) ---" | tee -a "$LOG"
+# 1. Phase A: Feed health audit
+echo "--- Phase A: Feed health audit ---" | tee -a "$LOG"
 python3 scripts/pipeline_openweb_collect.py 2>&1 | tee -a "$LOG"
 
 # 2. Social monitor (Bluesky + HackerNews)
@@ -48,5 +65,22 @@ python3 scripts/check_source_freshness.py --summary 2>&1 | tee -a "$LOG"
 
 # 7. Update STATUS.md
 python3 analyst/status_generator.py 2>&1 | tee -a "$LOG"
+
+echo "[collection] $(date -u '+%Y-%m-%d %H:%M UTC') — Full heartbeat cycle" | tee -a "$LOG"
+
+# Rotate through all 4 phases
+echo "--- Phase A: Feed health audit ---" | tee -a "$LOG"
+python3 "$REPO/scripts/feed_health_audit.py" 2>&1 | tee -a "$LOG"
+
+echo "--- Phase B: Source discovery ---" | tee -a "$LOG"
+python3 "$REPO/scripts/source_discovery.py" 2>&1 | tee -a "$LOG"
+
+echo "--- Phase C: Source pruning ---" | tee -a "$LOG"
+# Phase C: Auto-prune dead feeds (>3 consecutive failures)
+python3 "$REPO/scripts/feed_health_audit.py" --prune  # AUTO_PRUNE enabled 2>&1 | tee -a "$LOG"
+
+echo "--- Phase D: Brain reindex + cost snapshot ---" | tee -a "$LOG"
+python3 "$REPO/brain/scripts/brain.py" reindex 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/deepseek_monitor.py" --snapshot 2>&1 | tee -a "$LOG"
 
 echo "[collection] $(date -u '+%Y-%m-%d %H:%M UTC') — Complete" | tee -a "$LOG"

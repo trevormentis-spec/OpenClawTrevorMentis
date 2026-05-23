@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-22T20:18:04Z",
-  "total": 290,
-  "working": 136,
-  "dead": 147,
-  "health_pct": 46.9,
+  "timestamp": "2026-05-23T11:54:51Z",
+  "total": 416,
+  "working": 215,
+  "dead": 190,
+  "health_pct": 51.7,
   "dead_list": [
     {
       "name": "ABC News (AU)",
@@ -86,10 +86,6 @@
       "error": "HTTP 404"
     },
     {
-      "name": "ASEAN Secretariat News",
-      "error": "not well-formed (invalid token): line 454, column 323"
-    },
-    {
       "name": "RFE/RL Central Asia",
       "error": "HTTP 404"
     },
@@ -112,10 +108,6 @@
     {
       "name": "EurasiaNet",
       "error": "HTTP 403"
-    },
-    {
-      "name": "The Kathmandu Post",
-      "error": "not well-formed (invalid token): line 1, column 10692"
     },
     {
       "name": "ORF India (security/geopolitics)",
@@ -203,6 +195,14 @@
     },
     {
       "name": "The New Humanitarian",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "The Africa Report",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Garowe Online (Somalia)",
       "error": "HTTP 404"
     }
   ]

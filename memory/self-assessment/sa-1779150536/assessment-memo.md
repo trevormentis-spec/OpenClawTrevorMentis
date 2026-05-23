@@ -89,3 +89,19 @@ The biggest unaddressed weakness is that the system has no unified quality gate 
 The second weakness is that the multi-turn generator bypasses the routing system — sections hardcode their assigned model rather than calling analyst/routing.py to determine the correct tier. This was a development shortcut that should be refactored.
 
 Both are fixable. Neither is structural — they're integration gaps between independently working components.
+## Unified Quality Gate — RESOLVED (2026-05-23)
+
+**Original gap:** Principal Review item 7 — Unified guard pipeline. No pipeline ran all guards on every deliverable before delivery.
+
+**Resolution:** Built analyst/guard_pipeline.py as the single unified quality gate composing ALL 7 guards:
+0. STRUCTURAL — files present and valid JSON
+1. FABRICATION — unverified contracts/prices/tickers/pct claims (wraps fabrication_check.py)
+2. THEMES — required theme coverage (wraps themes_preflight.py, scans ALL regional files)
+3. CALIBRATION — Sherman Kent band ↔ numeric prediction agreement + single-source cap
+4. COMPLETENESS — truncation detection, word count, section presence
+5. SCOPE — topic within assignment scope (wraps scope_check.py)
+6. RED_TEAM — forced dissent note exists and is substantive
+
+Wired into orchestrator.py at Step 4 (post-analysis, pre-delivery). BLOCK gates prevent delivery. WARN gates log but proceed.
+
+**Status:** ✅ RESOLVED

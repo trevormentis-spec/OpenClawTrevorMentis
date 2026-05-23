@@ -1,14 +1,16 @@
 {
   "current_phase": "A",
-  "phase_label": "Phase A — OpenWeb API specs + Mexico custom specs + Wikipedia monitor",
+  "phase_label": "Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)",
   "last_phase_completed": null,
   "last_cycle_completed_at": null,
   "created_at": "2026-05-22T18:37:00Z",
+  "updated_at": "2026-05-22T23:49:00Z",
+  "update_reason": "System audit 2026-05-22: aligned phases with HEARTBEAT.md (v2 phases: feed health → discovery → pruning → reindex+cost)",
   "phases": {
-    "A": "Phase A — OpenWeb API specs + Mexico custom specs + Wikipedia monitor",
-    "B": "Phase B — Social monitor (Bluesky + HackerNews) + source cross-check",
-    "C": "Phase C — RSS feed collection + pipeline stats",
-    "D": "Phase D — Idle / memory maintenance / cost snapshot"
+    "A": "Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)",
+    "B": "Phase B — Source discovery (find new RSS/Substack feeds for gap regions)",
+    "C": "Phase C — Source pruning (remove dead feeds, add replacements from discovery)",
+    "D": "Phase D — Collection state + cost snapshot + brain reindex"
   },
-  "notes": "Recreated 2026-05-22. Previous state file was missing. Starting at Phase A per heartbeat recovery procedure."
+  "notes": "Recreated 2026-05-22. Previous state file was missing. Starting at Phase A per heartbeat recovery procedure. Updated 2026-05-22 23:49 UTC to match HEARTBEAT.md v2 phases."
 }

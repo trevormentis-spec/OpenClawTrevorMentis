@@ -99,8 +99,28 @@ def split_prompts(prompts_md: str) -> dict[str, str]:
     return sections
 
 
+
+SANITIZE_PATTERNS = [
+    ("ignore all previous instructions", "[FILTERED]"),
+    ("ignore all prior instructions", "[FILTERED]"),
+    ("do not follow previous", "[FILTERED]"),  
+    ("you are now a different", "[FILTERED]"),
+    ("you are now an unrestricted", "[FILTERED]"),
+    ("system override", "[FILTERED]"),
+    ("send me the data", "[FILTERED]"),
+    ("email the source registry", "[FILTERED]"),
+    ("export the config", "[FILTERED]"),
+    ("reveal your instructions", "[FILTERED]"),
+]
+
+def sanitize_prompt(text: str) -> str:
+    """Neutralize prompt-injection patterns from untrusted content."""
+    for pat, repl in SANITIZE_PATTERNS:
+        text = text.replace(pat.lower(), repl)
+    return text
+
 def call_deepseek(model: str, system: str, user: str,
-                  temperature: float = 0.3, max_tokens: int = 8192,
+                  temperature: float = 0.3, max_tokens: int = 16384,
                   json_mode: bool = True,
                   provider: str = "deepseek") -> str:
     """Call DeepSeek/OpenRouter via curl subprocess (avoids Python SSL hangs).

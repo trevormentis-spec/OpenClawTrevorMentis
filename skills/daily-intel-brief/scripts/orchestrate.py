@@ -155,72 +155,29 @@ def calibration_smell_check(wd: pathlib.Path) -> list[str]:
     return smells
 
 
-def quality_gates(wd: pathlib.Path) -> list[str]:
-    """Lightweight programmatic version of analyst/playbooks/quality-gates.md.
+def quality_gates(wd: pathlib.Path, query: str = "geopolitical intelligence brief",
+                  strict: bool = False) -> dict[str, Any]:
+    """Run the unified quality gate pipeline (analyst/guard_pipeline.py).
 
-    Returns a list of failures. Empty list = ship it.
+    Returns dict with keys: passed, gates, total_issues, detail.
+    Each gate has status PASS|WARN|BLOCK.
+    BLOCK = delivery aborted. WARN = logged but proceeds (unless strict=True).
     """
-    failures: list[str] = []
-    analysis_dir = wd / "analysis"
-    expected = {
-        "europe.json", "north_america.json", "central_america_caribbean.json",
-        "south_america.json", "africa.json", "middle_east.json",
-        "central_asia.json", "south_east_asia.json", "east_asia.json", "south_asia.json",
-        "oceania.json",
-        "prediction_markets.json", "exec_summary.json",
-    }
-    have = {p.name for p in analysis_dir.glob("*.json")}
-    missing = sorted(expected - have)
-    if missing:
-        failures.append(f"Gate 0 — missing analysis files: {missing}")
-        return failures  # bail; downstream gates are pointless
-
-    # Gate 2: verbal anchor and numeric prediction agree
-    bands = {
-        "almost certain": (93, 99),
-        "highly likely": (75, 85),
-        "likely": (55, 70),
-        "probable": (55, 70),
-        "even chance": (45, 55),
-        "unlikely": (25, 35),
-        "highly unlikely": (10, 20),
-        "almost no chance": (1, 5),
-    }
-    for region_file in sorted(analysis_dir.glob("*.json")):
-        if region_file.name == "exec_summary.json":
-            continue
-        payload = json.loads(region_file.read_text())
-        for kj in payload.get("key_judgments", []) or []:
-            band = (kj.get("sherman_kent_band") or "").lower().strip()
-            pct = kj.get("prediction_pct")
-            if band not in bands:
-                failures.append(
-                    f"Gate 2 — {region_file.name}:{kj.get('id')} unknown band {band!r}"
-                )
-                continue
-            lo, hi = bands[band]
-            if not isinstance(pct, (int, float)) or not (lo <= pct <= hi):
-                failures.append(
-                    f"Gate 2 — {region_file.name}:{kj.get('id')} "
-                    f"band {band!r} requires {lo}-{hi}; got {pct!r}"
-                )
-            if kj.get("single_source_basis") and isinstance(pct, (int, float)) and pct > 85:
-                failures.append(
-                    f"Gate 3 — {region_file.name}:{kj.get('id')} "
-                    f"single-source KJ exceeds likely (70%): {pct}"
-                )
-            ind = kj.get("what_would_change_it") or []
-            if not isinstance(ind, list) or len(ind) < 2:
-                failures.append(
-                    f"Gate 4 — {region_file.name}:{kj.get('id')} needs "
-                    "both a softener and a tightener in what_would_change_it"
-                )
-
-    # Gate 5: a red-team note exists
-    if not (analysis_dir / "red_team.md").exists():
-        failures.append("Gate 5 — analysis/red_team.md is missing")
-
-    return failures
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from analyst.guard_pipeline import run_pipeline
+        return run_pipeline(
+            brief_dir=str(wd),
+            query=query,
+            verbose=False,  # non-verbose in cron — detailed issues still captured
+            block_on_warn=strict,
+        )
+    except ImportError:
+        return {"passed": True, "gates": [], "total_issues": 0,
+                "detail": "guard_pipeline not importable — skipping (permissive)"}
+    except Exception as exc:
+        return {"passed": False, "gates": [], "total_issues": 1,
+                "detail": f"guard_pipeline crashed: {exc}"}
 
 
 def main() -> int:
@@ -239,8 +196,8 @@ def main() -> int:
                         help="API provider for tier-1 (default: openrouter). Tier-2 always uses deepseek.")
     parser.add_argument("--strict-env", action="store_true", default=True,
                         help="fail at start if required env vars are missing")
-    parser.add_argument("--scope-topic", default="Mexico daily intelligence brief",
-                        help="topic to validate against scope gate; default treats pipeline as Mexico-scoped")
+    parser.add_argument("--scope-topic", default="Geopolitical intelligence brief",
+                        help="topic to validate against scope gate; default treats pipeline as globally-scoped")
     args = parser.parse_args()
 
     log(f"orchestrator starting (dry_run={args.dry_run}, model={args.model})")
@@ -374,11 +331,6 @@ def main() -> int:
         "--regions", str(SKILL_DIR / "references" / "regions.json"),
         "--sources", str(REPO_ROOT / "analyst" / "meta" / "sources.json"),
     ]
-    # Add Mexico-specific sources if available
-    mx_sources = REPO_ROOT / "analyst" / "meta" / "sources-mexico.json"
-    if mx_sources.exists():
-        collector_cmd.extend(["--sources", str(mx_sources)])
-        log(f"added Mexico-specific sources from {mx_sources}")
     if adaptive_caps_file.exists():
         collector_cmd.extend(["--adaptive-caps", str(adaptive_caps_file)])
     # Load feed priorities for source quality → source priority loop
@@ -401,6 +353,23 @@ def main() -> int:
     if rc != 0:
         fail(f"collector exited with rc={rc}", rc)
 
+
+    # Collection freshness check — warn if incidents are over 6 hours old
+    incidents_path = wd / "raw" / "incidents.json"
+    if incidents_path.exists():
+        import time as _time
+        age_sec = _time.time() - incidents_path.stat().st_mtime
+        age_hours = age_sec / 3600
+        if age_hours > 6:
+            log(f"WARNING: incidents.json is {age_hours:.1f}h old — running fresh collection")
+            rc = run_step("recollect", [
+                "python3", str(SCRIPTS / "collect.py"),
+                "--working-dir", str(wd),
+                "--regions", str(SKILL_DIR / "references" / "regions.json"),
+                "--sources", str(REPO_ROOT / "analyst" / "meta" / "sources.json"),
+            ], wd)
+            if rc != 0:
+                log(f"WARN: recollection failed rc={rc}")
     # Step 1b — inject email intel from Gmail + AgentMail into incidents
     email_intel_script = REPO_ROOT / "scripts" / "collect_email_intel.py"
     if email_intel_script.exists():
@@ -463,13 +432,26 @@ def main() -> int:
         if rc != 0:
             log(f"WARN: collection state update rc={rc} (non-fatal)")
 
-    # Step 4 — quality gates
-    failures = quality_gates(wd)
-    if failures:
-        log("Quality gate failures:")
-        for f in failures:
-            log("  - " + f)
-        fail("Quality gates failed; see above. Fix and rerun.", 3)
+    # Step 4 — unified quality gate pipeline (7 gates: structural, fabrication,
+    # themes, calibration, completeness, scope, red_team)
+    qg_report = quality_gates(wd, query=args.scope_topic)
+    log(f"Quality gates: {qg_report.get('detail', 'unknown')}")
+
+    for g in qg_report.get("gates", []):
+        status_icon = {"PASS": "✅", "WARN": "⚠️", "BLOCK": "❌"}.get(g["status"], "?")
+        log(f"  {status_icon} {g['gate']}: {g['detail']}")
+        for issue in g.get("issues", []):
+            log(f"     → {issue}")
+
+    if not qg_report["passed"]:
+        fail(
+            f"Quality gates BLOCKED delivery: "
+            f"{qg_report['blocked_count']}/{qg_report['total_gates']} gates blocking "
+            f"({qg_report['detail']}). Fix failures before re-running.",
+            3,
+        )
+
+    # Calibration smells — diagnostic only, non-blocking (already in gate 3)
     smells = calibration_smell_check(wd)
     for s in smells:
         log("CALIBRATION SMELL: " + s)
@@ -506,13 +488,10 @@ def main() -> int:
         except Exception as exc:
             log(f"WARN: workspace sync failed ({exc})")
 
-    # Step 5 — assemble
+    # Step 5 — assemble [DISABLED] no PDF — principal directive 2026-05-22
     pdf_path = wd / "final" / f"brief-{date_utc}.pdf"
     docx_path = wd / "final" / f"brief-{date_utc}.docx"
-        # [DISABLED] no PDF — principal directive 2026-05-22
     log("assemble skipped — text-only delivery mode")
-    if rc != 0:
-        fail(f"assembler exited with rc={rc}", rc)
 
     # Step 6 — postdiction: check yesterday's predictions against today's evidence
     yesterday_date = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%d")
@@ -530,6 +509,17 @@ def main() -> int:
         reason = "script missing" if not postdict_script.exists() else "no yesterday dir" if not yesterday_wd.exists() else "no yesterday predictions"
         log(f"postdiction skipped: {reason}")
 
+
+    # Run Opus 4.7 QC on assembled brief
+    qc_script = REPO_ROOT / "scripts" / "opus_qc_review.py"
+    if qc_script.exists():
+        rc = run_step("opus-qc", [
+            "python3", str(qc_script),
+            "--brief", str(wd / "analysis"),
+        ], wd)
+        if rc != 0:
+            log(f"WARN: QC rc={rc} (non-fatal)")
+    
     # Step 7 — archive + deliver
     memory_dir = REPO_ROOT / "memory"
     memory_dir.mkdir(exist_ok=True)

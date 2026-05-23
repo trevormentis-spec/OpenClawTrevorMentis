@@ -3746,6 +3746,411 @@
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-22",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "Up-and-coming Moroccan manufacturer Aerodrive Engineering Services has just secured a contract to supply 500 loitering munitions to the army. The king",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "The Middle East is undergoing a transformative moment where the old order is vanishing and a new one is beginning to take shape. Wars in Gaza and Iran",
+      "url": "https://www.csis.org/regions/middle-east",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+      "type": "Blog/Website",
+      "focus": "In charting out Southeast Asia regional security outlook in 2025, there are three critical development worth scrutinising: ... Tensions over overlappi",
+      "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security Architecture Programme - RSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The Regional Security Architecture Programme conducts research, networking and teaching on security multilateralism in the Asia Pacific, inclu",
+      "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+      "type": "Blog/Website",
+      "focus": "&quot;The thread of this very well researched and comprehensively argued book is summarised by the question as to &#x27;whether ASEAN&#x27;s mechanism",
+      "url": "https://bookshop.iseas.edu.sg/publication/1547",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "U.S. Markets ... <strong>House Oversight and Government Reform Committee Chair James Comer, R-Ky., on Friday announced investigations into insider tra",
+      "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "House Oversight and Government ... (R-Ky.) <strong>launched an investigation Friday into prediction market platforms Kalshi and Polymarket to determin",
+      "url": "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
     }
   ],
   "moltbook_sources": [

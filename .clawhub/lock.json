@@ -156,6 +156,14 @@
     "osint-social": {
       "version": "1.0.0",
       "installedAt": 1779440486715
+    },
+    "knowledge-graph": {
+      "version": "1.0.0",
+      "installedAt": 1779526899811
+    },
+    "pdf-translate": {
+      "version": "4.0.0",
+      "installedAt": 1779526900562
     }
   }
 }

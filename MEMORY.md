@@ -12,7 +12,10 @@
 - For future integrations, Trevor should check existing skills/integrations before building custom alternatives.
 
 ## Durable Decisions — Social Posting
-- **Pipeline:** `scripts/genviral-post-brief.sh` with GenViral API. Runs daily at 13:30 PT via cron. Performance tracked in `skills/genviral/workspace/performance/log.json`.
+- **STATUS: DISABLED (2026-05-23)** — All social posting killed per Roderick directive.
+  Scripts archived: genviral-post-brief.sh, moltbook-post-brief.sh, social-posting-pipeline.sh,
+  _genviral_extract.py, social-tracker.py → `scripts/archive/`.
+  No OpenClaw crons or system crontabs pointed at these. Daily pipeline already declares NO social.
 
 ## Durable Decisions - Orchestration
 - [2026-05-01] **Canonical routing is DeepSeek Direct API.** OpenRouter is disabled.
@@ -53,6 +56,21 @@
 - **Status:** Operational
 
 ### Technical Debt Ledger
+
+### Unified Quality Gate Pipeline (2026-05-23)
+- **analyst/guard_pipeline.py** — rebuilt as the single unified quality gate composing ALL 7 guards:
+  0. STRUCTURAL — files present and valid JSON
+  1. FABRICATION — unverified contracts/prices/tickers/pct claims (via fabrication_check.py)
+  2. THEMES — required theme coverage (via themes_preflight.py, scanning ALL regional files)
+  3. CALIBRATION — Sherman Kent band ↔ numeric prediction agreement + single-source cap
+  4. COMPLETENESS — no truncation, adequate word count, all sections present
+  5. SCOPE — topic within assignment scope (via scope_check.py)
+  6. RED_TEAM — forced dissent note exists and is substantive
+- **Wired into orchestrate.py** — runs post-analysis, pre-delivery. BLOCK gates stop delivery.
+  WARN gates log but proceed. `--block-on-warn` flag available for stricter gating.
+- **Theme system broadened** — global keywords added to political_risk, economy_markets, cartel_security.
+  New query category "geopolitical_intelligence_brief" for daily brief pipeline.
+- **Status:** ✅ Operational — closes self-assessment gap (Principal Review item 7).
 
 ### Adaptive Collection (2026-05-12)
 - Source utilization tracked: if a source is fetched but never cited, it's flagged

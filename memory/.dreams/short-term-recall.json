@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T04:20:33.705Z",
+  "updatedAt": "2026-05-23T09:33:37.838Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -208,13 +208,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 21,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20.042409226740567,
+      "totalScore": 21.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
+      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -236,7 +236,8 @@
         "577729f1e069",
         "bfb778309dbc",
         "3c68673febfe",
-        "859f13d9e78f"
+        "859f13d9e78f",
+        "69aac40b64bc"
       ],
       "recallDays": [
         "2026-04-28",
@@ -250,7 +251,8 @@
         "2026-05-09",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-23"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -581,13 +583,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.751788668739627,
+      "totalScore": 13.751788668739627,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-21T04:20:33.705Z",
+      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -600,7 +602,9 @@
         "f7d1f8923a5d",
         "088d05594874",
         "b62b199ec189",
-        "f6d1fca16aa8"
+        "f6d1fca16aa8",
+        "50d95fe6b691",
+        "f8d5cf7b3c91"
       ],
       "recallDays": [
         "2026-05-04",
@@ -611,7 +615,8 @@
         "2026-05-09",
         "2026-05-11",
         "2026-05-15",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -1270,23 +1275,25 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
+      "lastRecalledAt": "2026-05-23T04:46:23.458Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
         "b2960036661c",
-        "cc764312eb50"
+        "cc764312eb50",
+        "13584e1c3564"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-23"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -1306,20 +1313,26 @@
       "endLine": 98,
       "source": "memory",
       "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
-      "recallCount": 2,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-15T19:00:09.417Z",
+      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
       "queryHashes": [
         "35087ae309b1",
-        "b2960036661c"
+        "b2960036661c",
+        "d47a29803ed1",
+        "13584e1c3564",
+        "df855bba4611",
+        "69aac40b64bc"
       ],
       "recallDays": [
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-22",
+        "2026-05-23"
       ],
       "conceptTags": [
         "gateway",
@@ -1695,18 +1708,21 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-21T04:20:33.705Z",
+      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
       "queryHashes": [
-        "f6d1fca16aa8"
+        "f6d1fca16aa8",
+        "50d95fe6b691",
+        "f8d5cf7b3c91"
       ],
       "recallDays": [
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "second-guess",
@@ -1717,6 +1733,137 @@
         "generate-brief-maps.py",
         "generate-brief-charts.py",
         "kalshi-json"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:4": {
+      "key": "memory:memory/2026-05-16.md:1:4",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "2026-05-16 08:04 UTC — Hourly market check (improvement_daemon.py --hourly): completed clean 2026-05-16 19:05 UTC — Gmail Intel Digest: processed 7 intelligence-labelled emails into news_raw.md 2026-05-16 19:27 UTC — Heartbeat: promoted Mexico analysis framework to MEMORY.md, committed news_raw.md",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T20:38:32.958Z",
+      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "queryHashes": [
+        "d47a29803ed1",
+        "df855bba4611",
+        "69aac40b64bc"
+      ],
+      "recallDays": [
+        "2026-05-22",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "improvement-daemon.py",
+        "intelligence-labelled",
+        "news-raw.md",
+        "memory.md",
+        "utc",
+        "hourly",
+        "market",
+        "check"
+      ]
+    },
+    "memory:memory/2026-05-22.md:180:200": {
+      "key": "memory:memory/2026-05-22.md:180:200",
+      "path": "memory/2026-05-22.md",
+      "startLine": 180,
+      "endLine": 200,
+      "source": "memory",
+      "snippet": "- [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Phase A — RSS Feed Health Audit (19:00 UTC) **Results:** 290 feeds tested (280 real + 10 region labels) - ✅ **Working:** 137 (48.9% effective health",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-22T20:38:32.958Z",
+      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "queryHashes": [
+        "d47a29803ed1",
+        "df855bba4611",
+        "69aac40b64bc"
+      ],
+      "recallDays": [
+        "2026-05-22",
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "north-america",
+        "forward-looking",
+        "central-america-caribbean",
+        "south-america",
+        "48.9",
+        "mock",
+        "judgment",
+        "north"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:21": {
+      "key": "memory:memory/2026-05-11.md:1:21",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# Memory — 11 May 2026 ## Daily Briefings Pipeline — Major Lesson ### What went wrong - Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lesson",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-23T04:46:23.407Z",
+      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
+      "queryHashes": [
+        "50d95fe6b691",
+        "f8d5cf7b3c91"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "render-brief-magazine.py",
+        "generate-brief-maps-v3.py",
+        "daily-brief-cron.sh",
+        "may",
+        "briefings",
+        "pipeline",
+        "major",
+        "lesson"
+      ]
+    },
+    "memory:memory/2026-05-18.md:30:42": {
+      "key": "memory:memory/2026-05-18.md:30:42",
+      "path": "memory/2026-05-18.md",
+      "startLine": 30,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- Autonomy boundaries in ORCHESTRATION.md: self-detected, clean diagnosis, contained fix, regression-testable = autonomous. Principal review for architectural/guard/identity changes. - Default-non-executing rule: new automated executors default to dry-run; explicit --live flag required. - Preflight data rule: tracking data changes must confirm prior state is recoverable before commit. ### Key Technical Debts 1. Entity deepening task module scaffolds-only — needs actual Haiku/Opus call wired 2. Framework stress test module scaffolds-only — needs actual framework analysis call 3. Self_question_generation hardcodes 4 questions — needs LLM call for novel gaps 4. Cross_source_correlation dormant",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-23T05:05:55.974Z",
+      "lastRecalledAt": "2026-05-23T05:05:55.974Z",
+      "queryHashes": [
+        "5bf81ea520aa"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "orchestration.md",
+        "self-detected",
+        "regression-testable",
+        "architectural/guard/identity",
+        "default-non-executing",
+        "dry-run",
+        "scaffolds-only",
+        "haiku/opus"
       ]
     }
   }

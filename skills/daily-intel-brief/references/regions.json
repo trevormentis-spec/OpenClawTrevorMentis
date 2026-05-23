@@ -4,114 +4,316 @@
   "regions": {
     "europe": {
       "label": "Europe",
-      "bbox_caps": { "min_lon": -25, "min_lat": 34, "max_lon": 60, "max_lat": 72 },
+      "bbox_caps": {
+        "min_lon": -25,
+        "min_lat": 34,
+        "max_lon": 60,
+        "max_lat": 72
+      },
       "countries": [
-        "United Kingdom", "Ireland", "France", "Germany", "Italy", "Spain", "Portugal",
-        "Netherlands", "Belgium", "Luxembourg", "Switzerland", "Austria", "Liechtenstein",
-        "Denmark", "Norway", "Sweden", "Finland", "Iceland",
-        "Poland", "Czechia", "Slovakia", "Hungary", "Romania", "Bulgaria",
-        "Greece", "Cyprus", "Malta",
-        "Estonia", "Latvia", "Lithuania", "Belarus", "Ukraine", "Moldova",
-        "Serbia", "Croatia", "Slovenia", "Bosnia and Herzegovina", "Montenegro",
-        "North Macedonia", "Albania", "Kosovo",
-        "Vatican City", "San Marino", "Andorra", "Monaco"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "Germany",
+        "Italy",
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg",
+        "Switzerland",
+        "Austria",
+        "Liechtenstein",
+        "Denmark",
+        "Norway",
+        "Sweden",
+        "Finland",
+        "Iceland",
+        "Poland",
+        "Czechia",
+        "Slovakia",
+        "Hungary",
+        "Romania",
+        "Bulgaria",
+        "Greece",
+        "Cyprus",
+        "Malta",
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Belarus",
+        "Ukraine",
+        "Moldova",
+        "Serbia",
+        "Croatia",
+        "Slovenia",
+        "Bosnia and Herzegovina",
+        "Montenegro",
+        "North Macedonia",
+        "Albania",
+        "Kosovo",
+        "Vatican City",
+        "San Marino",
+        "Andorra",
+        "Monaco"
       ]
     },
     "north_america": {
       "label": "North America",
-      "bbox_caps": { "min_lon": -170, "min_lat": 14, "max_lon": -50, "max_lat": 75 },
+      "bbox_caps": {
+        "min_lon": -170,
+        "min_lat": 14,
+        "max_lon": -50,
+        "max_lat": 75
+      },
       "countries": [
-        "United States", "USA", "United States of America",
-        "Canada", "Mexico", "Greenland"
+        "United States",
+        "USA",
+        "United States of America",
+        "Canada",
+        "Mexico",
+        "Greenland"
       ]
     },
     "central_america_caribbean": {
       "label": "Central America & Caribbean",
-      "bbox_caps": { "min_lon": -95, "min_lat": 7, "max_lon": -58, "max_lat": 28 },
+      "bbox_caps": {
+        "min_lon": -95,
+        "min_lat": 7,
+        "max_lon": -58,
+        "max_lat": 28
+      },
       "countries": [
-        "Guatemala", "Belize", "Honduras", "El Salvador", "Nicaragua", "Costa Rica", "Panama",
-        "Cuba", "Jamaica", "Haiti", "Dominican Republic",
-        "Bahamas", "Barbados", "Trinidad and Tobago", "Grenada", "Saint Lucia",
-        "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica",
-        "Saint Kitts and Nevis", "Puerto Rico"
+        "Guatemala",
+        "Belize",
+        "Honduras",
+        "El Salvador",
+        "Nicaragua",
+        "Costa Rica",
+        "Panama",
+        "Cuba",
+        "Jamaica",
+        "Haiti",
+        "Dominican Republic",
+        "Bahamas",
+        "Barbados",
+        "Trinidad and Tobago",
+        "Grenada",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Antigua and Barbuda",
+        "Dominica",
+        "Saint Kitts and Nevis",
+        "Puerto Rico"
       ]
     },
     "south_america": {
       "label": "South America",
-      "bbox_caps": { "min_lon": -82, "min_lat": -57, "max_lon": -33, "max_lat": 13 },
+      "bbox_caps": {
+        "min_lon": -82,
+        "min_lat": -57,
+        "max_lon": -33,
+        "max_lat": 13
+      },
       "countries": [
-        "Colombia", "Venezuela", "Guyana", "Suriname", "French Guiana",
-        "Brazil", "Ecuador", "Peru", "Bolivia", "Paraguay", "Chile", "Argentina", "Uruguay"
+        "Colombia",
+        "Venezuela",
+        "Guyana",
+        "Suriname",
+        "French Guiana",
+        "Brazil",
+        "Ecuador",
+        "Peru",
+        "Bolivia",
+        "Paraguay",
+        "Chile",
+        "Argentina",
+        "Uruguay"
       ]
     },
     "africa": {
       "label": "Africa",
       "_note": "All 54 UN-recognised African nations. Split from old middle_east (North Africa) + new sub-Saharan coverage.",
-      "bbox_caps": { "min_lon": -20, "min_lat": -36, "max_lon": 52, "max_lat": 38 },
+      "bbox_caps": {
+        "min_lon": -20,
+        "min_lat": -36,
+        "max_lon": 52,
+        "max_lat": 38
+      },
       "countries": [
-        "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi",
-        "Cabo Verde", "Cameroon", "Central African Republic", "Chad", "Comoros",
-        "Congo", "Côte d'Ivoire", "Ivory Coast",
-        "Democratic Republic of the Congo", "DR Congo", "Djibouti",
-        "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini", "Swaziland", "Ethiopia",
-        "Gabon", "Gambia", "Ghana", "Guinea", "Guinea-Bissau",
-        "Kenya", "Lesotho", "Liberia", "Libya",
-        "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique",
-        "Namibia", "Niger", "Nigeria",
+        "Algeria",
+        "Angola",
+        "Benin",
+        "Botswana",
+        "Burkina Faso",
+        "Burundi",
+        "Cabo Verde",
+        "Cameroon",
+        "Central African Republic",
+        "Chad",
+        "Comoros",
+        "Congo",
+        "Côte d'Ivoire",
+        "Ivory Coast",
+        "Democratic Republic of the Congo",
+        "DR Congo",
+        "Djibouti",
+        "Egypt",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Eswatini",
+        "Swaziland",
+        "Ethiopia",
+        "Gabon",
+        "Gambia",
+        "Ghana",
+        "Guinea",
+        "Guinea-Bissau",
+        "Kenya",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Madagascar",
+        "Malawi",
+        "Mali",
+        "Mauritania",
+        "Mauritius",
+        "Morocco",
+        "Mozambique",
+        "Namibia",
+        "Niger",
+        "Nigeria",
         "Rwanda",
-        "São Tomé and Príncipe", "Senegal", "Seychelles", "Sierra Leone", "Somalia",
-        "South Africa", "South Sudan", "Sudan",
-        "Tanzania", "Togo", "Tunisia",
+        "São Tomé and Príncipe",
+        "Senegal",
+        "Seychelles",
+        "Sierra Leone",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Sudan",
+        "Tanzania",
+        "Togo",
+        "Tunisia",
         "Uganda",
         "Western Sahara",
-        "Zambia", "Zimbabwe"
+        "Zambia",
+        "Zimbabwe"
       ]
     },
     "middle_east": {
       "label": "Middle East",
       "_note": "Türkiye is in Middle East per analyst convention (not Europe). North Africa moved to africa region. Iran is here, not Asia.",
-      "bbox_caps": { "min_lon": 25, "min_lat": 12, "max_lon": 65, "max_lat": 42 },
+      "bbox_caps": {
+        "min_lon": 25,
+        "min_lat": 12,
+        "max_lon": 65,
+        "max_lat": 42
+      },
       "countries": [
-        "Türkiye", "Turkey",
-        "Iran", "Iraq", "Syria", "Lebanon", "Israel", "Palestine", "Jordan",
-        "Saudi Arabia", "Yemen", "Oman", "United Arab Emirates", "Qatar", "Bahrain", "Kuwait"
+        "Türkiye",
+        "Turkey",
+        "Iran",
+        "Iraq",
+        "Syria",
+        "Lebanon",
+        "Israel",
+        "Palestine",
+        "Jordan",
+        "Saudi Arabia",
+        "Yemen",
+        "Oman",
+        "United Arab Emirates",
+        "Qatar",
+        "Bahrain",
+        "Kuwait"
       ]
     },
     "central_asia": {
       "label": "Central Asia",
       "_note": "Per principal directive 2026-05-22: ONLY the 5 Stans. Russia, China, India, Japan, etc. removed pending new region definitions.",
-      "bbox_caps": { "min_lon": 40, "min_lat": 35, "max_lon": 120, "max_lat": 82 },
+      "bbox_caps": {
+        "min_lon": 40,
+        "min_lat": 35,
+        "max_lon": 120,
+        "max_lat": 82
+      },
       "countries": [
-        "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan"
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
       ]
     },
     "south_east_asia": {
       "label": "South East Asia",
       "_note": "Mainland and maritime SE Asia only. South Asian states split to south_asia per 12-region taxonomy.",
-      "bbox_caps": { "min_lon": 92, "min_lat": -11, "max_lon": 142, "max_lat": 30 },
+      "bbox_caps": {
+        "min_lon": 92,
+        "min_lat": -11,
+        "max_lon": 142,
+        "max_lat": 30
+      },
       "countries": [
-        "Myanmar", "Burma", "Thailand", "Laos", "Cambodia", "Vietnam",
-        "Malaysia", "Singapore", "Brunei", "Philippines", "Indonesia", "Timor-Leste"
+        "Myanmar",
+        "Burma",
+        "Thailand",
+        "Laos",
+        "Cambodia",
+        "Vietnam",
+        "Malaysia",
+        "Singapore",
+        "Brunei",
+        "Philippines",
+        "Indonesia",
+        "Timor-Leste"
       ]
     },
     "oceania": {
       "label": "Oceania",
       "_note": "Australia, New Zealand, Pacific island nations. Taiwan moved to east_asia per 12-region taxonomy.",
-      "bbox_caps": { "min_lon": 110, "min_lat": -48, "max_lon": -120, "max_lat": 25 },
+      "bbox_caps": {
+        "min_lon": 110,
+        "min_lat": -48,
+        "max_lon": -120,
+        "max_lat": 25
+      },
       "countries": [
-        "Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Islands",
-        "Vanuatu", "Samoa", "Tonga", "Kiribati", "Tuvalu", "Nauru", "Palau",
-        "Micronesia", "Marshall Islands"
+        "Australia",
+        "New Zealand",
+        "Papua New Guinea",
+        "Fiji",
+        "Solomon Islands",
+        "Vanuatu",
+        "Samoa",
+        "Tonga",
+        "Kiribati",
+        "Tuvalu",
+        "Nauru",
+        "Palau",
+        "Micronesia",
+        "Marshall Islands"
       ]
     },
     "east_asia": {
       "label": "East Asia",
       "_note": "Greater China, Koreas, Japan, Mongolia. Split from old asia per 12-region taxonomy.",
-      "bbox_caps": { "min_lon": 70, "min_lat": 15, "max_lon": 148, "max_lat": 55 },
+      "bbox_caps": {
+        "min_lon": 70,
+        "min_lat": 15,
+        "max_lon": 148,
+        "max_lat": 55
+      },
       "countries": [
-        "China", "Hong Kong", "Macau",
+        "China",
+        "Hong Kong",
+        "Macau",
         "Japan",
-        "South Korea", "North Korea", "DPRK", "Republic of Korea",
+        "South Korea",
+        "North Korea",
+        "DPRK",
+        "Republic of Korea",
         "Mongolia",
         "Taiwan"
       ]
@@ -119,9 +321,21 @@
     "south_asia": {
       "label": "South Asia",
       "_note": "Indian subcontinent and surrounding island states. Split from old south_east_asia per 12-region taxonomy.",
-      "bbox_caps": { "min_lon": 60, "min_lat": -2, "max_lon": 95, "max_lat": 38 },
+      "bbox_caps": {
+        "min_lon": 60,
+        "min_lat": -2,
+        "max_lon": 95,
+        "max_lat": 38
+      },
       "countries": [
-        "India", "Pakistan", "Bangladesh", "Sri Lanka", "Nepal", "Bhutan", "Maldives", "Afghanistan"
+        "India",
+        "Pakistan",
+        "Bangladesh",
+        "Sri Lanka",
+        "Nepal",
+        "Bhutan",
+        "Maldives",
+        "Afghanistan"
       ]
     },
     "prediction_markets": {
