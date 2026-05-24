@@ -554,11 +554,28 @@ def country_to_region(country: str, regions: dict) -> str | None:
 # ── Dead-feed cache ──────────────────────────────────────────────
 # Avoids wasting 30s+ on feeds that consistently fail.
 # Skips feeds with ≥3 consecutive failures, retests after 48h.
+import atexit as _atexit
+
 DEAD_FEED_PATH = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "brain" / "memory" / "semantic" / "dead-feeds.json"
 DEAD_FEED_THRESHOLD = 3      # consecutive failures before we skip
 DEAD_FEED_RETEST_HOURS = 48  # retest after this many hours
 FETCH_TIMEOUT = 8            # seconds (down from 15 — dead feeds waste too much time)
 FETCH_RETRIES = 1            # one retry max
+
+_dead_cache_dirty = False
+_dead_cache: dict[str, dict] = {}
+
+def _save_on_exit():
+    """atexit handler — ensures dead-feed cache is persisted even on crash."""
+    global _dead_cache_dirty, _dead_cache
+    if _dead_cache_dirty and _dead_cache:
+        try:
+            DEAD_FEED_PATH.parent.mkdir(parents=True, exist_ok=True)
+            DEAD_FEED_PATH.write_text(json.dumps(_dead_cache, indent=2))
+        except Exception:
+            pass  # last-ditch save — can't log during interpreter shutdown
+
+_atexit.register(_save_on_exit)
 
 def load_dead_feeds() -> dict[str, dict]:
     """Load the dead-feed cache. Returns {url: {failures, last_failed_at}}."""
@@ -595,16 +612,20 @@ def is_dead(url: str, cache: dict[str, dict]) -> bool:
 
 def record_feed_failure(url: str, cache: dict[str, dict]) -> None:
     """Record a fetch failure in the dead-feed cache."""
+    global _dead_cache_dirty
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     entry = cache.get(url, {"failures": 0, "last_failed_at": now})
     entry["failures"] = entry.get("failures", 0) + 1
     entry["last_failed_at"] = now
     cache[url] = entry
+    _dead_cache_dirty = True
 
 def record_feed_success(url: str, cache: dict[str, dict]) -> None:
     """Reset failure count on successful fetch."""
+    global _dead_cache_dirty
     if url in cache:
         del cache[url]
+        _dead_cache_dirty = True
 # ── end dead-feed cache ─────────────────────────────────────────
 
 def fetch(url: str, timeout: int = FETCH_TIMEOUT, max_retries: int = FETCH_RETRIES) -> str | None:

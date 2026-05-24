@@ -1,6 +1,6 @@
 # Trevor — Status
 
-*Generated: 2026-05-24 16:04 UTC*
+*Generated: 2026-05-24 22:02 UTC*
 
 ## In-Flight Directives
 
@@ -9,12 +9,18 @@ None.
 
 ## Active Topics
 
-No active assignments. General autonomy maturation mode.
+| Topic | Priority | Assigned | Status |
+|---|---|---|---|
+| leo_ground_stations | primary | 2026-05-21 | Active — daily brief running |
+| rdx_c4_supply | primary | 2026-05-21 | Active — GDELT sweep active |
+| semiconductor-supply-chain | secondary | 2026-05-20 | Active — monitoring |
 
 
-## Cost Summary (Current Month)
+## Cost Summary (May 2026)
 
-**Total:** $0.0000
+**DeepSeek (week of May 18-24):** $1.26 (586 sessions, 4.1M tokens)
+**Today (May 24):** $0.37 (90 sessions)
+**Estimated monthly:** ~$5.00
 
 
 ## Provider Health
@@ -62,4 +68,4 @@ f59b4bd Copernicus Data Space integration for LEO imagery checks
 
 ---
 
-*Updated by status_generator.py at 2026-05-24 16:04 UTC*
+*Updated by heartbeat rotation at 2026-05-24 22:02 UTC*

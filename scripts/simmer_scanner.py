@@ -121,7 +121,7 @@ def main():
         return
 
     b = data.get("briefing", {})
-    print(f"Simmer: {data['markets_found']} geopolitics markets | PnL: \${b.get('total_pnl', 0):.2f}")
+    print(f"Simmer: {data['markets_found']} geopolitics markets | PnL: ${b.get('total_pnl', 0):.2f}")
 
     if data["markets_found"] == 0:
         print("  (no geopolitics markets currently indexed on Simmer — see Kalshi scanner)")

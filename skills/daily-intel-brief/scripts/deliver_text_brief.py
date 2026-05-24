@@ -146,6 +146,7 @@ def main() -> int:
         return "⚪"
 
     from html import escape as h
+    import re as _re  # for sentence splitting — imported once, used in loop
 
     regions_order = [
         "europe", "middle_east", "north_america", "east_asia",
@@ -183,7 +184,6 @@ def main() -> int:
         bullets = []
         if narrative:
             # Split on sentence boundaries: period, semicolon, or colon followed by space and capital
-            import re as _re
             sentences = _re.split(r'(?<=[.;])\s+(?=[A-Z])', narrative)
             for s in sentences:
                 s = s.strip().rstrip(".")

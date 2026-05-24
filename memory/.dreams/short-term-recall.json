@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-24T14:09:54.294Z",
+  "updatedAt": "2026-05-24T22:03:16.119Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -689,13 +689,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T16:01:51.278Z",
-      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
+      "lastRecalledAt": "2026-05-24T22:03:16.119Z",
       "queryHashes": [
         "92a6782d6fa7",
         "50bca59fec26",
@@ -707,7 +707,8 @@
         "b8dd5e880386",
         "577729f1e069",
         "f7d1f8923a5d",
-        "2de51dfe8bc5"
+        "2de51dfe8bc5",
+        "33046e596a0d"
       ],
       "recallDays": [
         "2026-05-05",
@@ -715,7 +716,8 @@
         "2026-05-07",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-24"
       ],
       "conceptTags": [
         "end-to-end",
@@ -1717,18 +1719,19 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
+      "lastRecalledAt": "2026-05-24T22:03:16.119Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
         "f8d5cf7b3c91",
-        "0a8ae9598584"
+        "0a8ae9598584",
+        "33046e596a0d"
       ],
       "recallDays": [
         "2026-05-21",
@@ -2102,6 +2105,68 @@
         "fixed",
         "jobs",
         "had"
+      ]
+    },
+    "memory:memory/2026-05-17.md:130:152": {
+      "key": "memory:memory/2026-05-17.md:130:152",
+      "path": "memory/2026-05-17.md",
+      "startLine": 130,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "5. Updated ORCHESTRATION.md with three-branch flow and discipline note ### Adjacency Fix Test — Four Probes (2026-05-17 02:55 UTC) **Probe A** — \"Brief me on the Saudi-Russia oil production talks this week.\" Gate: in_scope (permissive default, LLM unavailable). Behavior: adjacent brief produced. Vectors: brent-pemex, Hacienda hedge, MXN carry trade, US gasoline politics. ✅ **Probe B** — \"Brief me on the ECB rate decision this week.\" Gate: in_scope (permissive default). Behavior: adjacent brief through MXN/capital-flows lens. ✅ **Probe C** — \"Brief me on the Russia-Ukraine front for today.\" Gate: out_of_scope (blocklist). ✅ **Probe D** — \"What's happening with Pemex Cadereyta refinery th",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T22:03:16.119Z",
+      "lastRecalledAt": "2026-05-24T22:03:16.119Z",
+      "queryHashes": [
+        "33046e596a0d"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "orchestration.md",
+        "three-branch",
+        "saudi-russia",
+        "in-scope",
+        "brent-pemex",
+        "mxn/capital-flows",
+        "russia-ukraine",
+        "out-of-scope"
+      ]
+    },
+    "memory:memory/2026-05-24.md:207:241": {
+      "key": "memory:memory/2026-05-24.md:207:241",
+      "path": "memory/2026-05-24.md",
+      "startLine": 207,
+      "endLine": 241,
+      "source": "memory",
+      "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T22:03:16.119Z",
+      "lastRecalledAt": "2026-05-24T22:03:16.119Z",
+      "queryHashes": [
+        "33046e596a0d"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "north-america",
+        "high-profile",
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "secret",
+        "service",
+        "will"
       ]
     }
   }

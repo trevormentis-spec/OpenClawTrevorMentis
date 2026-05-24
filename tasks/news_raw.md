@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-24 19:03 UTC
+# Gmail Intel Digest — 2026-05-24 21:01 UTC
 
 ## Nvidia says its forecast for $200 billion CPU market includes China
 **From:** Reuters Technology Roundup <newsletters@email.reuters.com>
@@ -47,12 +47,16 @@ Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/
 
 ---
 
-## How Iran Hopes to Control the Strait of Hormuz: It’s Not Just About Fees
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sat, 23 May 2026 15:01:34 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War One of Iran’s primary objectives in the current negotiations is to secure its sovereignty over the Strait of Hormuz. How Iran Hopes to Control the Strait of Hormuz: It’s Not Just About Fees May 23, 2026 Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. ﻿Help us stay independent and impactful. TOPLINES One of Iran’s primary objectives in the current negotiations is to secure its sovereignty over the Strait of Hormuz. 
+## AgentMail Intel — 2026-05-24 21:01 UTC
 
----
+### Global Update: Inside the British Lab Hunting for Dangers Lurking in A.I.
+**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
 
+### By The Numbers: China's Fourth Aircraft Carrier, How Trade Reduces War, China's Agricultural Coercion, and More
+**From:** CSIS External Relations <externalrelations@csis.org>  
+Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4192074161/14c107f32e527e3224c46d9264dcd09ecb62fae60d1bf9f80ec5a7d524b7df87 Each week, we'll share wi
+
+### A turning point in the war?
+**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
+Presented by Vapor Technology Association: The unofficial guide to official Washington. May 24, 2026 View in browser By Eli Okun Presented by

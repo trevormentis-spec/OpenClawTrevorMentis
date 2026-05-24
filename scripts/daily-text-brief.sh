@@ -55,25 +55,25 @@ cd "$REPO"
 # Step 1a: Compile calibration directives from postdiction history
 echo "--- Compiling calibration directives ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/compile_calibration_directives.py" 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/compile_calibration_directives.py" >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 # Step 1b: Source discovery — find new RSS/sources
 echo "--- Source discovery ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/source_discovery.py" 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/source_discovery.py" >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 # Step 1c: Kalshi prediction market scan
 echo "--- Scanning prediction markets ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/kalshi_scanner.py" --save 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/kalshi_scanner.py" --save >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 # Step 1d: Simmer market signal overlay (trading context, risk alerts, PnL)
 echo "--- Simmer signal overlay ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/simmer_scanner.py" --save 2>&1 | tee -a "$LOG"
+python3 "$REPO/scripts/simmer_scanner.py" --save >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 # =========================================================================
@@ -145,7 +145,7 @@ try:
             print(f'     → {issue}')
 except:
     print(f'Quality gate parse error: {sys.stdin.read()[:500]}')
-" | tee -a "$LOG"
+" >> "$LOG"
 
 # Also verify model
 MODEL_CHECK=$(python3 -c "
