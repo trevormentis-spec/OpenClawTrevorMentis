@@ -1,6 +1,6 @@
 {
-  "last_dream": "2026-05-23T10:00:13.117012+00:00",
-  "last_memory_md_lines": 121,
+  "last_dream": "2026-05-24T10:00:13.424016+00:00",
+  "last_memory_md_lines": 129,
   "last_results": {
     "files_scanned": 13,
     "total_signals": 16,
@@ -8,8 +8,8 @@
     "contradictions_resolved": 0,
     "relative_dates_normalized": 0,
     "duplicates_removed": 0,
-    "memory_md_before": 121,
-    "memory_md_after": 121,
+    "memory_md_before": 129,
+    "memory_md_after": 129,
     "entries_archived": 0,
     "index_rebuilt": true
   }

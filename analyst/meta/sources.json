@@ -100,7 +100,7 @@
       "type": "US Gov/Energy Data",
       "focus": "LNG price divergence (TTF/JKM/HH), Brent backwardation, SPR drawdowns, weekly petroleum status reports, official energy data pipeline",
       "url": "https://www.eia.gov/todayinenergy/",
-      "signal_level": "High \u2014 authoritative",
+      "signal_level": "High — authoritative",
       "discovered": "2026-05-02"
     },
     {
@@ -130,7 +130,7 @@
     {
       "name": "Radio007 (YouTube)",
       "type": "YouTube/OSINT",
-      "focus": "OSINT Geopolitics Weekly \u2014 small channel producing weekly OSINT roundups covering Hormuz, Iran, oil shock",
+      "focus": "OSINT Geopolitics Weekly — small channel producing weekly OSINT roundups covering Hormuz, Iran, oil shock",
       "url": "https://www.youtube.com/@Radio-zq8yn",
       "signal_level": "Medium",
       "discovered": "2026-05-02",
@@ -191,12 +191,12 @@
       "url": "https://www.youtube.com/channel/UCC3ehuUksTyQ7bbjGntmx3Q",
       "signal_level": "High",
       "discovered": "2026-05-03",
-      "note": "\"Military Lessons of the Iran War (so far)\" \u2014 April 2026, 1 week old"
+      "note": "\"Military Lessons of the Iran War (so far)\" — April 2026, 1 week old"
     },
     {
       "name": "Bilawal Sidhu (YouTube Channel)",
       "type": "YouTube/Geospatial OSINT",
-      "focus": "God's Eye View \u2014 4D geospatial reconstruction of Iran strikes using public OSINT, ship tracking, dark vessel detection, pipeline routes, oil futures.",
+      "focus": "God's Eye View — 4D geospatial reconstruction of Iran strikes using public OSINT, ship tracking, dark vessel detection, pipeline routes, oil futures.",
       "url": "https://www.youtube.com/@bilawalsidhu",
       "signal_level": "High",
       "discovered": "2026-05-03",
@@ -244,7 +244,7 @@
     },
     {
       "name": "TankerTrackers.com (@TankerTrackers)",
-      "type": "X/Twitter \u2014 Oil Tracking",
+      "type": "X/Twitter — Oil Tracking",
       "focus": "Real-time Iranian supertanker movements, US blockade evasion tracking, dark fleet VLCC monitoring, NITC fleet.",
       "url": "https://x.com/TankerTrackers",
       "signal_level": "High",
@@ -259,7 +259,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "CSIS \u2014 War with Iran",
+      "name": "CSIS — War with Iran",
       "type": "Think Tank",
       "focus": "Expert analysis on Iranian conflict, Lebanese government challenges, military assessments, timeline analysis.",
       "url": "https://www.csis.org/programs/latest-analysis-war-iran",
@@ -267,7 +267,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "CFR \u2014 Iran War Analysis and Updates",
+      "name": "CFR — Iran War Analysis and Updates",
       "type": "Think Tank",
       "focus": "Expert briefings on military dimensions, regional fallout, global implications of the Iran war.",
       "url": "https://www.cfr.org/topics/iran-war-analysis-and-updates",
@@ -275,7 +275,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "Recorded Future \u2014 Iran Conflict",
+      "name": "Recorded Future — Iran Conflict",
       "type": "Threat Intelligence",
       "focus": "Iran conflict analysis, threat actor tracking, cyber/physical convergence in Middle East.",
       "url": "https://www.recordedfuture.com/blog/ongoing-iran-conflict-what-you-need-to-know",
@@ -283,7 +283,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "Unit 42 (Palo Alto Networks) \u2014 Iran Cyber Threat Brief",
+      "name": "Unit 42 (Palo Alto Networks) — Iran Cyber Threat Brief",
       "type": "Cybersecurity/Threat Intel",
       "focus": "Iran cyber attack tracking, APT group monitoring, Operation Epic Fury cyber dimension.",
       "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
@@ -339,7 +339,7 @@
       "discovered": "2026-05-03"
     },
     {
-      "name": "SOC Radar \u2014 Iran Cyber Conflict Dashboard",
+      "name": "SOC Radar — Iran Cyber Conflict Dashboard",
       "type": "Cyber Threat Intelligence",
       "focus": "Iran-Israel/US cyber war tracking, drone incidents, APT group activity mapping.",
       "url": "https://socradar.io/iran-israel-cyber-conflict-dashboard/",
@@ -367,7 +367,7 @@
     {
       "name": "Scientific American",
       "type": "News/Journalism",
-      "focus": "The SciFy program tests whether adversaries\u2019 most outlandish scientific claims add up or fall apart",
+      "focus": "The SciFy program tests whether adversaries’ most outlandish scientific claims add up or fall apart",
       "url": "https://www.scientificamerican.com/article/darpa-built-an-ai-to-fact-check-enemy-weapons-claims/",
       "signal_level": "Medium",
       "discovered": "2026-05-07",
@@ -421,7 +421,7 @@
     {
       "name": "Naturalnews.com",
       "type": "News/Journalism",
-      "focus": "An intelligence source warns Iranian-made, Chinese-based MANPADs are inside the U.S. with kill teams targeting Trump. The source claims these portable missiles threaten Trump\u2019s aircraft during vulnera",
+      "focus": "An intelligence source warns Iranian-made, Chinese-based MANPADs are inside the U.S. with kill teams targeting Trump. The source claims these portable missiles threaten Trump’s aircraft during vulnera",
       "url": "https://www.naturalnews.com/2026-04-16-intelligence-warns-of-iranian-mandpads-targeting-trumps-aircraft.html",
       "signal_level": "Medium",
       "discovered": "2026-05-07",
@@ -430,7 +430,7 @@
     {
       "name": "Nature.com",
       "type": "News/Journalism",
-      "focus": "Daily satellite data reveal that Earth\u2019s artificial lights at night are highly volatile, with frequent brightening and dimming between 2014 and 2022.",
+      "focus": "Daily satellite data reveal that Earth’s artificial lights at night are highly volatile, with frequent brightening and dimming between 2014 and 2022.",
       "url": "https://www.nature.com/articles/s41586-026-10260-w",
       "signal_level": "Medium",
       "discovered": "2026-05-07",
@@ -538,7 +538,7 @@
     {
       "name": "Ing.dk",
       "type": "News/Journalism",
-      "focus": "Amid hybrid threats and geopolitical pressure, \u201cfatigue\u201d is dangerous, according to a consultant. In a new report, researchers describe the situation as a crossroads in security policy.",
+      "focus": "Amid hybrid threats and geopolitical pressure, “fatigue” is dangerous, according to a consultant. In a new report, researchers describe the situation as a crossroads in security policy.",
       "url": "https://ing.dk/artikel/energy-sector-warned-not-let-its-guard-down-threat-still-here",
       "signal_level": "Medium",
       "discovered": "2026-05-11",
@@ -556,7 +556,7 @@
     {
       "name": "Forbes",
       "type": "News/Journalism",
-      "focus": "Retail investors keep buying the dip as volatility rises, fueling the AI\u2011driven rally. This piece explores the behavior, risks and cultural forces shaping the trend.",
+      "focus": "Retail investors keep buying the dip as volatility rises, fueling the AI‑driven rally. This piece explores the behavior, risks and cultural forces shaping the trend.",
       "url": "https://www.forbes.com/sites/rahkimsabree/2026/05/08/retail-investors-are-doubling-down-and-fear-may-be-driving-the-rally/",
       "signal_level": "Medium",
       "discovered": "2026-05-11",
@@ -612,7 +612,7 @@
     {
       "name": "Joe Cirincione - Strategy & History",
       "type": "Substack/National Security",
-      "focus": "\"America's Strategic Defeat in the Persian Gulf\" \u2014 critiques US policy failures in Gulf. Also \"A Humiliating Defeat.\" Former nuclear policy expert.",
+      "focus": "\"America's Strategic Defeat in the Persian Gulf\" — critiques US policy failures in Gulf. Also \"A Humiliating Defeat.\" Former nuclear policy expert.",
       "url": "https://joecirincione.substack.com",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -630,7 +630,7 @@
     {
       "name": "The Firebrand Project",
       "type": "Substack/War Analysis",
-      "focus": "Iran War series: 'The War Is Not Over' (Day 68 analysis), 'Operation FUBAR' \u2014 Iran uranium 'heist' speculation, Netanyahu red lines on enriched uranium.",
+      "focus": "Iran War series: 'The War Is Not Over' (Day 68 analysis), 'Operation FUBAR' — Iran uranium 'heist' speculation, Netanyahu red lines on enriched uranium.",
       "url": "https://thefirebrandproject.substack.com",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -639,7 +639,7 @@
     {
       "name": "Kian - Iran Crisis Notebook",
       "type": "Substack/Iran Analysis",
-      "focus": "Real-time Iran crisis timeline, 'confused about Iran's oil clock' \u2014 Iranian oil export endurance under blockade questioning.",
+      "focus": "Real-time Iran crisis timeline, 'confused about Iran's oil clock' — Iranian oil export endurance under blockade questioning.",
       "url": "https://kian.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -648,7 +648,7 @@
     {
       "name": "James M. Dorsey - Geopolitics",
       "type": "Substack/Middle East",
-      "focus": "US-Iran diplomacy analysis: 'motion without movement' \u2014 diplomatic stagnation despite negotiations. Veteran journalist covering Middle East/sports/geopolitics nexus.",
+      "focus": "US-Iran diplomacy analysis: 'motion without movement' — diplomatic stagnation despite negotiations. Veteran journalist covering Middle East/sports/geopolitics nexus.",
       "url": "https://jamesmdorsey.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -675,7 +675,7 @@
     {
       "name": "Black Trust Fund Kids",
       "type": "Substack/Daily Briefing",
-      "focus": "BTFK Morning Briefing (May 8, 2026) \u2014 Iran war daily situational recap.",
+      "focus": "BTFK Morning Briefing (May 8, 2026) — Iran war daily situational recap.",
       "url": "https://blacktrustfundkids.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -684,7 +684,7 @@
     {
       "name": "Andrew Siegler",
       "type": "Substack/Energy Analysis",
-      "focus": "\"Destroying Demand\" \u2014 analysis of how war-induced shortages reshape global energy demand patterns.",
+      "focus": "\"Destroying Demand\" — analysis of how war-induced shortages reshape global energy demand patterns.",
       "url": "https://andrewsiegler.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -693,7 +693,7 @@
     {
       "name": "PR Insights",
       "type": "Substack/Investment Analysis",
-      "focus": "\"Hormuz Impasse: 3 Sectors Profiting\" \u2014 shipping & logistics, non-ME oil producers, Wall Street banks. Energy realignment trade analysis.",
+      "focus": "\"Hormuz Impasse: 3 Sectors Profiting\" — shipping & logistics, non-ME oil producers, Wall Street banks. Energy realignment trade analysis.",
       "url": "https://prinsights.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -702,7 +702,7 @@
     {
       "name": "Pecos Crude Truth",
       "type": "Substack/Energy Markets",
-      "focus": "\"The Crude Truth\" \u2014 global oil market conditions, China import analysis (-2.6 mb/d fall), inventory draws, demand resilience.",
+      "focus": "\"The Crude Truth\" — global oil market conditions, China import analysis (-2.6 mb/d fall), inventory draws, demand resilience.",
       "url": "https://pecoscrudetruth.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -738,7 +738,7 @@
     {
       "name": "Ares Investing",
       "type": "Substack/Macro Analysis",
-      "focus": "CPI print analysis, 'bear cluster live phase' \u2014 Hormuz volatility effects on inflation data.",
+      "focus": "CPI print analysis, 'bear cluster live phase' — Hormuz volatility effects on inflation data.",
       "url": "https://aresinvesting.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -747,7 +747,7 @@
     {
       "name": "Pantheon Insights",
       "type": "Substack/Maritime Insurance",
-      "focus": "\"How Tanker Insurance Became the Real Blockade\" \u2014 underwriters withdrew war-risk coverage, creating financial blockade. Insurance 'quiet veto' keeping 20-30% global oil flows sidelined.",
+      "focus": "\"How Tanker Insurance Became the Real Blockade\" — underwriters withdrew war-risk coverage, creating financial blockade. Insurance 'quiet veto' keeping 20-30% global oil flows sidelined.",
       "url": "https://pantheoninsights.substack.com",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -756,7 +756,7 @@
     {
       "name": "Chet Nagle",
       "type": "Substack/Maritime Insurance",
-      "focus": "\"Maritime Insurance Closed the Strait\" \u2014 even with political de-escalation, insurers demand 30-60 days stable conditions before restoring war-risk cover.",
+      "focus": "\"Maritime Insurance Closed the Strait\" — even with political de-escalation, insurers demand 30-60 days stable conditions before restoring war-risk cover.",
       "url": "https://chetnagle.substack.com",
       "signal_level": "High",
       "discovered": "2026-05-13",
@@ -765,7 +765,7 @@
     {
       "name": "Princeton Chen",
       "type": "Substack/Geopolitical Risk",
-      "focus": "\"Western Illusions Meet the Swan Song\" \u2014 commodity encumbrance analysis, physical vs paper market decoupling, credit lines evaporating.",
+      "focus": "\"Western Illusions Meet the Swan Song\" — commodity encumbrance analysis, physical vs paper market decoupling, credit lines evaporating.",
       "url": "https://princetonchen.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -774,7 +774,7 @@
     {
       "name": "Gerry Pallor",
       "type": "Substack/Energy Supply",
-      "focus": "\"Supply, Shock and the Strait\" \u2014 Q2 2026 Asia shortages predicted, VLCC charter rates up 300%, physical supply chain freeze.",
+      "focus": "\"Supply, Shock and the Strait\" — Q2 2026 Asia shortages predicted, VLCC charter rates up 300%, physical supply chain freeze.",
       "url": "https://geraldpallor.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -783,7 +783,7 @@
     {
       "name": "Pleroma Capital",
       "type": "Substack/Macro Analysis",
-      "focus": "\"Strait of Bad Assumptions\" \u2014 Western models underestimated insurer conservatism, tail risk now priced into oil markets.",
+      "focus": "\"Strait of Bad Assumptions\" — Western models underestimated insurer conservatism, tail risk now priced into oil markets.",
       "url": "https://pleromacapital.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -792,14 +792,14 @@
     {
       "name": "Lucas Kandia",
       "type": "Substack/Shipping Analysis",
-      "focus": "\"The Invisible Scorched Earth\" series \u2014 hidden shipping reroutes burning bunker fuel, CO2 emissions masking oil supply deficits.",
+      "focus": "\"The Invisible Scorched Earth\" series — hidden shipping reroutes burning bunker fuel, CO2 emissions masking oil supply deficits.",
       "url": "https://lucaskandia.substack.com",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
       "discovery_method": "deep_horizon_scan"
     },
     {
-      "name": "Vi\u1ec7t Hustler",
+      "name": "Việt Hustler",
       "type": "Substack/Geopolitics",
       "focus": "Hormuz blockade 'two shocks' analysis: economic and logistics impacts on Vietnam and Southeast Asian supply chains.",
       "url": "https://viethustler.substack.com",
@@ -819,7 +819,7 @@
     {
       "name": "Seemorerocks",
       "type": "Substack/Headline Aggregator",
-      "focus": "WW3 headlines and aggregated updates \u2014 useful for rapid news monitoring across Iran, Hormuz, energy, Lebanon.",
+      "focus": "WW3 headlines and aggregated updates — useful for rapid news monitoring across Iran, Hormuz, energy, Lebanon.",
       "url": "https://seemorerocks.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -846,7 +846,7 @@
     {
       "name": "Caffeinated Capital",
       "type": "Substack/Market Analysis",
-      "focus": "\"Everyone Was Short Jet Fuel\" \u2014 jet fuel derivatives spike 50%+ amid Hormuz fears, positioning unwind analysis.",
+      "focus": "\"Everyone Was Short Jet Fuel\" — jet fuel derivatives spike 50%+ amid Hormuz fears, positioning unwind analysis.",
       "url": "https://caffeinatedcaptial.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -855,7 +855,7 @@
     {
       "name": "Felipe Germini",
       "type": "Substack/Energy Analysis",
-      "focus": "\"The UK Two-Front Squeeze\" \u2014 Europe faces 10-15% energy import shortfall, LNG pivots fail to offset.",
+      "focus": "\"The UK Two-Front Squeeze\" — Europe faces 10-15% energy import shortfall, LNG pivots fail to offset.",
       "url": "https://fgermini.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -873,7 +873,7 @@
     {
       "name": "Savageminds - Epic Interruptus",
       "type": "Substack/Geopolitics",
-      "focus": "\"Epic Interruptus\" \u2014 analysis of Iran war as historic disruption to global order, supply chains.",
+      "focus": "\"Epic Interruptus\" — analysis of Iran war as historic disruption to global order, supply chains.",
       "url": "https://savageminds.substack.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -936,7 +936,7 @@
     {
       "name": "helenarbrt (Sayranith Blog)",
       "type": "WordPress/Niche Geopolitics Blog",
-      "focus": "\"The War of the Clock\" \u2014 provocative analysis of Hormuz as 'four simultaneous chess games': oil, inflation, succession, bypasses. Non-mainstream analytic lens.",
+      "focus": "\"The War of the Clock\" — provocative analysis of Hormuz as 'four simultaneous chess games': oil, inflation, succession, bypasses. Non-mainstream analytic lens.",
       "url": "https://helenarbrt.wordpress.com",
       "signal_level": "Medium",
       "discovered": "2026-05-13",
@@ -950,12 +950,12 @@
       "signal_level": "High",
       "discovered": "2026-05-13",
       "discovery_method": "deep_horizon_scan",
-      "note": "\"Hormuz Blockade Maritime OSINT Analysis | US-Iran Tensions, Vessel Tracking & Economic Fallout\" (May 12, 2026) \u2014 12:45 duration, 247K views."
+      "note": "\"Hormuz Blockade Maritime OSINT Analysis | US-Iran Tensions, Vessel Tracking & Economic Fallout\" (May 12, 2026) — 12:45 duration, 247K views."
     },
     {
       "name": "Energy News Beat (Podcast/YouTube)",
       "type": "YouTube/Podcast/Energy",
-      "focus": "Long-form podcast episode: 'Iran War Has Brought the Energy Crisis to Center Stage' \u2014 covers Exxon/Chevron earnings, energy transition critique, California refinery crisis, Hoover Dam drought.",
+      "focus": "Long-form podcast episode: 'Iran War Has Brought the Energy Crisis to Center Stage' — covers Exxon/Chevron earnings, energy transition critique, California refinery crisis, Hoover Dam drought.",
       "url": "https://podcasts.apple.com/ca/podcast/iran-war-has-brought-the-energy-crisis-to-the/id1564334366?i=1000765649628",
       "signal_level": "Medium-High",
       "discovered": "2026-05-13",
@@ -1037,7 +1037,7 @@
       "signal_level": "Medium-High",
       "discovered": "2026-05-14",
       "discovery_method": "deep_horizon_scan",
-      "note": "\"Analysis: Evolving drone war in southern Lebanon clouds Iran peace prospects\" (May 12) \u2014 Hezbollah fiber-optic FPV drones evading Israeli jamming. Also Hegseth ceasefire statement (May 7)."
+      "note": "\"Analysis: Evolving drone war in southern Lebanon clouds Iran peace prospects\" (May 12) — Hezbollah fiber-optic FPV drones evading Israeli jamming. Also Hegseth ceasefire statement (May 7)."
     },
     {
       "name": "HSToday (Homeland Security Today)",
@@ -1147,7 +1147,7 @@
       "signal_level": "Medium",
       "discovered": "2026-05-14",
       "discovery_method": "deep_horizon_scan",
-      "note": "\"Trump Iran War Rhetoric: Psychological Analysis \u2014 May 2026\" (May 13). Niche analytic frame useful for behavioral profiling."
+      "note": "\"Trump Iran War Rhetoric: Psychological Analysis — May 2026\" (May 13). Niche analytic frame useful for behavioral profiling."
     },
     {
       "name": "Ru4People (Mike Simpson)",
@@ -1277,7 +1277,7 @@
       "signal_level": "Medium-High",
       "discovered": "2026-05-15",
       "discovery_method": "deep_horizon_scan",
-      "note": "\"Debt Rattle May 11 2026\" \u2014 Iran warning to European naval vessels. Long-established independent blog (since 2009)."
+      "note": "\"Debt Rattle May 11 2026\" — Iran warning to European naval vessels. Long-established independent blog (since 2009)."
     },
     {
       "name": "UK House of Commons Library",
@@ -1339,7 +1339,7 @@
     {
       "name": "Naturalnews.com",
       "type": "News/Journalism",
-      "focus": "The U.S. and Iran face a stalemate as Iran\u2019s resilience undermines Washington\u2019s \u201cmaximum pressure\u201d strategy. Global oil markets and economic instability now bear the unintended costs of U.S. sanctions",
+      "focus": "The U.S. and Iran face a stalemate as Iran’s resilience undermines Washington’s “maximum pressure” strategy. Global oil markets and economic instability now bear the unintended costs of U.S. sanctions",
       "url": "https://www.naturalnews.com/2026-05-15-iran-resilience-costing-america-war.html",
       "signal_level": "Medium",
       "discovered": "2026-05-18",
@@ -1357,7 +1357,7 @@
     {
       "name": "CBC News",
       "type": "News/Journalism",
-      "focus": "Ontario's plans to fast-track a major new transmission line between Barrie and Sudbury is raising eyebrows about the possible impact on the environment. Advocates are questioning how the project \u2014 a 5",
+      "focus": "Ontario's plans to fast-track a major new transmission line between Barrie and Sudbury is raising eyebrows about the possible impact on the environment. Advocates are questioning how the project — a 5",
       "url": "https://www.cbc.ca/news/canada/sudbury/northern-ontario-transmission-lines-environment-9.7183141",
       "signal_level": "Medium",
       "discovered": "2026-05-18",
@@ -1384,7 +1384,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-21",
       "signal_level": "Medium",
@@ -1411,7 +1411,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-21",
       "signal_level": "Medium",
@@ -1438,7 +1438,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-21",
       "signal_level": "Medium",
@@ -1447,7 +1447,7 @@
     {
       "name": "South America: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
       "url": "https://www.csis.org/regions/americas/south-america",
       "discovered": "2026-05-21",
       "signal_level": "Medium",
@@ -1490,7 +1490,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -1517,7 +1517,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -1546,7 +1546,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -1573,7 +1573,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -1591,7 +1591,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -1609,7 +1609,7 @@
     {
       "name": "South America: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
       "url": "https://www.csis.org/regions/americas/south-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2024,7 +2024,7 @@
       "signal_level": "Medium"
     },
     {
-      "name": "Ag\u00eancia Brasil",
+      "name": "Agência Brasil",
       "type": "Regional RSS Feed",
       "focus": "South America news and analysis",
       "url": "https://agenciabrasil.ebc.com.br/en/rss",
@@ -2087,14 +2087,14 @@
       "signal_level": "Medium"
     },
     {
-      "name": "La Prensa Gr\u00e1fica (El Salvador)",
+      "name": "La Prensa Gráfica (El Salvador)",
       "type": "Regional RSS Feed",
       "focus": "Central America Caribbean news and analysis",
       "url": "https://www.laprensagrafica.com/rss",
       "signal_level": "High"
     },
     {
-      "name": "N\u00f3mada (Guatemala)",
+      "name": "Nómada (Guatemala)",
       "type": "Regional RSS Feed",
       "focus": "Central America Caribbean news and analysis",
       "url": "https://nomada.gt/feed",
@@ -2310,7 +2310,7 @@
     {
       "name": "Middle East Conflict Monitor | ACLED",
       "type": "Blog/Website",
-      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
       "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2337,7 +2337,7 @@
     {
       "name": "Middle East Conflict Monitor | ACLED",
       "type": "Blog/Website",
-      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
       "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2346,7 +2346,7 @@
     {
       "name": "Central Asia: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
       "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2355,16 +2355,16 @@
     {
       "name": "Russia-China Relations in Central Asia - CEPA",
       "type": "Blog/Website",
-      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
       "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "central_asia"
     },
     {
-      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
       "type": "Blog/Think Tank",
-      "focus": "On a much larger scale, China\u2019s treatment of the Muslim Uyghur minority in Xinjiang raises concerns in Muslim-majority Central Asian states, potential",
+      "focus": "On a much larger scale, China’s treatment of the Muslim Uyghur minority in Xinjiang raises concerns in Muslim-majority Central Asian states, potential",
       "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2373,7 +2373,7 @@
     {
       "name": "Caribbean National Weekly - CNW Network",
       "type": "Blog/Website",
-      "focus": "The head of the Roman Catholic Church, Pope Leo XIV, met on Saturday with Haitian Prime Minister Alix Didier Fils-Aim\u00e9 at the Vatican, as... ... Inter",
+      "focus": "The head of the Roman Catholic Church, Pope Leo XIV, met on Saturday with Haitian Prime Minister Alix Didier Fils-Aimé at the Vatican, as... ... Inter",
       "url": "https://www.caribbeannationalweekly.com/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2382,7 +2382,7 @@
     {
       "name": "Caribbean News | Latest News - NewsNow",
       "type": "Blog/Website",
-      "focus": "Dominican Republic designates Iran\u2019s IRGC, Hezbollah as terrorist organizations Jerusalem Post 15h ... Bahamas PM Davis guides ruling party to victory",
+      "focus": "Dominican Republic designates Iran’s IRGC, Hezbollah as terrorist organizations Jerusalem Post 15h ... Bahamas PM Davis guides ruling party to victory",
       "url": "https://www.newsnow.com/us/World/Caribbean",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2400,23 +2400,23 @@
     {
       "name": "Latinvex | RSS",
       "type": "X/Twitter",
-      "focus": "Get RSS feeds of Latinvex content \u00b7 Companies, media and individuals can use the feeds free of charge and without prior permission. Latin America news",
+      "focus": "Get RSS feeds of Latinvex content · Companies, media and individuals can use the feeds free of charge and without prior permission. Latin America news",
       "url": "https://latinvex.com/latinvex-rss/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "south_america"
     },
     {
-      "name": "RSS Feeds \u00b7 Global Voices",
+      "name": "RSS Feeds · Global Voices",
       "type": "Blog/Website",
-      "focus": "Argentina \u00b7 Bolivia \u00b7 Brazil \u00b7 Chile \u00b7 Colombia \u00b7 Costa Rica \u00b7 Cuba \u00b7 Dominican Republic \u00b7 Ecuador \u00b7 El Salvador \u00b7 Guatemala \u00b7 Honduras \u00b7 Mexico \u00b7 Nic",
+      "focus": "Argentina · Bolivia · Brazil · Chile · Colombia · Costa Rica · Cuba · Dominican Republic · Ecuador · El Salvador · Guatemala · Honduras · Mexico · Nic",
       "url": "https://globalvoices.org/feeds/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "south_america"
     },
     {
-      "name": "GitHub - yavuz/news-feed-list-of-countries: News feed list of countries \u00b7 GitHub",
+      "name": "GitHub - yavuz/news-feed-list-of-countries: News feed list of countries · GitHub",
       "type": "Blog/Website",
       "focus": "News feed list of countries. Contribute to yavuz/news-feed-list-of-countries development by creating an account on GitHub.",
       "url": "https://github.com/yavuz/news-feed-list-of-countries",
@@ -2454,7 +2454,7 @@
     {
       "name": "Central America Newspapers | Newspapers Land",
       "type": "Blog/Website",
-      "focus": "Costa Rica \u00b7 El Salvador \u00b7 Guatemala \u00b7 Honduras \u00b7 Nicaragua \u00b7 Panama \u00b7 World News: Get thousands of online news sources from around the world. Collect",
+      "focus": "Costa Rica · El Salvador · Guatemala · Honduras · Nicaragua · Panama · World News: Get thousands of online news sources from around the world. Collect",
       "url": "https://www.newspapersland.com/central-america/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2470,7 +2470,7 @@
       "region": "central_america_caribbean"
     },
     {
-      "name": "8.1 Identifying the Boundaries \u2013 Introduction to World Regional Geography",
+      "name": "8.1 Identifying the Boundaries – Introduction to World Regional Geography",
       "type": "Blog/Website",
       "focus": "<strong>Central America refers to the seven states south of Mexico: Belize, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, and Panama</stron",
       "url": "https://slcc.pressbooks.pub/worldgeography/chapter/8-1/",
@@ -2508,14 +2508,14 @@
     {
       "name": "RSS | International Crisis Group",
       "type": "Blog/Website",
-      "focus": "Kazakhstan \u00b7 Kyrgyzstan \u00b7 Tajikistan \u00b7 Turkmenistan \u00b7 Uzbekistan \u00b7 Latin America &amp; Caribbean Projects \u00b7 Andes \u00b7 Caribbean \u00b7 Central America \u00b7 Sout",
+      "focus": "Kazakhstan · Kyrgyzstan · Tajikistan · Turkmenistan · Uzbekistan · Latin America &amp; Caribbean Projects · Andes · Caribbean · Central America · Sout",
       "url": "https://www.crisisgroup.org/rss-0",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "central_asia"
     },
     {
-      "name": "Central Asia \u2013 Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan - RSIS",
+      "name": "Central Asia – Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan - RSIS",
       "type": "Blog/Website",
       "focus": "Though <strong>no large-scale terrorist attacks were witnessed in 2023 within the five countries</strong> (Kazakhstan, Kyrgyzstan, Tajikistan, Turkmen",
       "url": "https://rsis.edu.sg/ctta-newsarticle/central-asia-kazakhstan-kyrgyzstan-tajikistan-turkmenistan-uzbekistan/",
@@ -2526,7 +2526,7 @@
     {
       "name": "RSS Feeds | Asian Development Bank",
       "type": "Blog/Website",
-      "focus": "Afghanistan \u00b7 Armenia \u00b7 Azerbaijan \u00b7 Georgia \u00b7 Kazakhstan [\u0420\u0443\u0441\u0441\u043a\u0438\u0439] Kyrgyz Republic \u00b7 Pakistan \u00b7 Tajikistan \u00b7 T\u00fcrkiye \u00b7 Turkmenistan \u00b7 Uzbekistan \u00b7 AD",
+      "focus": "Afghanistan · Armenia · Azerbaijan · Georgia · Kazakhstan [Русский] Kyrgyz Republic · Pakistan · Tajikistan · Türkiye · Turkmenistan · Uzbekistan · AD",
       "url": "https://www.adb.org/rss",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2544,7 +2544,7 @@
     {
       "name": "BERNAMA - Top News Headlines In Cambodia, Indonesia, Laos, Myanmar, Philippines, Singapore, Thailand & Vietnam : April 6, 2026",
       "type": "Blog/Website",
-      "focus": "2.DRUG PIPELINE SMASHED BY SECURITY FORCES -- THE GLOBAL NEW LIGHT OF MYANMAR \u00b7 Security forces have crippled a syndicate involved in trafficking narc",
+      "focus": "2.DRUG PIPELINE SMASHED BY SECURITY FORCES -- THE GLOBAL NEW LIGHT OF MYANMAR · Security forces have crippled a syndicate involved in trafficking narc",
       "url": "https://www.bernama.com/en/news.php/?id=2541382",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2578,9 +2578,9 @@
       "region": "central_america_caribbean"
     },
     {
-      "name": "GitHub - yavuz/news-feed-list-of-countries: News feed list of countries \u00b7 GitHub",
+      "name": "GitHub - yavuz/news-feed-list-of-countries: News feed list of countries · GitHub",
       "type": "Blog/Website",
-      "focus": "Cuba \u00b7 Cyprus \u00b7 Czech Republic \u00b7 Democratic Republic of the Congo \u00b7 Denmark \u00b7 Djibouti \u00b7 Dominica \u00b7 Dominican Republic \u00b7 Ecuador \u00b7 Egypt \u00b7 Eritrea \u00b7 E",
+      "focus": "Cuba · Cyprus · Czech Republic · Democratic Republic of the Congo · Denmark · Djibouti · Dominica · Dominican Republic · Ecuador · Egypt · Eritrea · E",
       "url": "https://github.com/yavuz/news-feed-list-of-countries",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2605,7 +2605,7 @@
       "region": "south_east_asia"
     },
     {
-      "name": "Thai Newspapers (\u0e2b\u0e19\u0e31\u0e07\u0e2a\u0e37\u0e2d\u0e1e\u0e34\u0e21\u0e1e\u0e4c\u0e44\u0e17\u0e22) - Thailand News Sites Online",
+      "name": "Thai Newspapers (หนังสือพิมพ์ไทย) - Thailand News Sites Online",
       "type": "Blog/Website",
       "focus": "Pan-Asia English outlet founded in the 1990s with newsrooms in Hong Kong and Bangkok. Digital-first English news site covering Pattaya and national st",
       "url": "https://www.w3newspapers.com/thailand/",
@@ -2616,16 +2616,16 @@
     {
       "name": "Siga nosso feed RSS - Folha - UOL",
       "type": "Blog/Website",
-      "focus": "Siga a Folha e fique informado sobre tudo o que acontece no Brasil e no mundo. Not\u00edcias sobre pol\u00edtica, economia, cultura, esporte, entretenimento e m",
+      "focus": "Siga a Folha e fique informado sobre tudo o que acontece no Brasil e no mundo. Notícias sobre política, economia, cultura, esporte, entretenimento e m",
       "url": "https://www1.folha.uol.com.br/feed/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "south_america"
     },
     {
-      "name": "Not\u00edcias de hoje do Brasil e do Mundo | Folha de S.Paulo",
+      "name": "Notícias de hoje do Brasil e do Mundo | Folha de S.Paulo",
       "type": "Blog/Website",
-      "focus": "Siga a Folha e fique informado sobre tudo o que acontece no Brasil e no mundo. Not\u00edcias sobre pol\u00edtica, economia, cultura, esporte, entretenimento e m",
+      "focus": "Siga a Folha e fique informado sobre tudo o que acontece no Brasil e no mundo. Notícias sobre política, economia, cultura, esporte, entretenimento e m",
       "url": "https://www.folha.uol.com.br/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2661,7 +2661,7 @@
     {
       "name": "News | Daily Nation",
       "type": "Blog/Website",
-      "focus": "Latest news headlines from Kenya, Africa and around the world. Check out today\u2019s most recent and up-to-date news coverage, videos and photos at Nation",
+      "focus": "Latest news headlines from Kenya, Africa and around the world. Check out today’s most recent and up-to-date news coverage, videos and photos at Nation",
       "url": "https://nation.africa/kenya/news",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2679,7 +2679,7 @@
     {
       "name": "Tashkent Times - Tashkent Times",
       "type": "Blog/Website",
-      "focus": "President Shavkat Mirziyoyev will travel to Kazakhstan today for a working visit to attend the informal Turkic Summit... 2026-05-15 ... \u041a\u0430\u043a \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e ",
+      "focus": "President Shavkat Mirziyoyev will travel to Kazakhstan today for a working visit to attend the informal Turkic Summit... 2026-05-15 ... Как безопасно ",
       "url": "https://tashkenttimes.uz/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2688,34 +2688,34 @@
     {
       "name": "News of Uzbekistan and the World",
       "type": "Blog/Website",
-      "focus": "Stay updated with the most exciting news \u2014 right here! Follow our page for the latest in world news, local updates, gadgets, sports, the world of auto",
+      "focus": "Stay updated with the most exciting news — right here! Follow our page for the latest in world news, local updates, gadgets, sports, the world of auto",
       "url": "https://kun.uz/en",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "central_asia"
     },
     {
-      "name": "Danh s\u00e1ch RSS feed c\u00e1c trang Vi\u1ec7t Nam hi\u1ec7n nay",
+      "name": "Danh sách RSS feed các trang Việt Nam hiện nay",
       "type": "Blog/Website",
-      "focus": "VNExpress RSS Feed \u0111\u1ec1u \u0111\u01b0\u1ee3c t\u1ed5ng h\u1ee3p t\u1ea1i \u0111\u1ecba ch\u1ec9 <strong>https://vnexpress.net/rss</strong>. B\u1ea1n th\u00edch theo d\u00f5i chuy\u00ean m\u1ee5c n\u00e0o th\u00ec c\u00f3 th\u1ec3 \u0111\u0103ng k\u00fd RSS ",
+      "focus": "VNExpress RSS Feed đều được tổng hợp tại địa chỉ <strong>https://vnexpress.net/rss</strong>. Bạn thích theo dõi chuyên mục nào thì có thể đăng ký RSS ",
       "url": "https://trainghiemso.vn/danh-sach-rss-feed/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "south_east_asia"
     },
     {
-      "name": "Rss - Tin t\u1ee9c 24h m\u1edbi nh\u1ea5t, tin nhanh, tin n\u00f3ng h\u00e0ng ng\u00e0y | B\u00e1o Thanh Ni\u00ean",
+      "name": "Rss - Tin tức 24h mới nhất, tin nhanh, tin nóng hàng ngày | Báo Thanh Niên",
       "type": "Blog/Website",
-      "focus": "RSS (Really Simple Syndication) <strong>l\u00e0 \u0111\u1ecbnh d\u1ea1ng d\u1eef li\u1ec7u d\u1ef1a theo chu\u1ea9n XML \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng \u0111\u1ec3 chia s\u1ebb v\u00e0 ph\u00e1t t\u00e1n n\u1ed9i dung Web</strong>. Vi\u1ec7c s\u1eed d\u1ee5n",
+      "focus": "RSS (Really Simple Syndication) <strong>là định dạng dữ liệu dựa theo chuẩn XML được sử dụng để chia sẻ và phát tán nội dung Web</strong>. Việc sử dụn",
       "url": "https://thanhnien.vn/rss.html",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "south_east_asia"
     },
     {
-      "name": "T\u1ed5ng h\u1ee3p c\u00e1c link RSS hay \u0111\u1ec3 \u0111\u1ecdc b\u00e1o tr\u00ean Kindle",
+      "name": "Tổng hợp các link RSS hay để đọc báo trên Kindle",
       "type": "Blog/Website",
-      "focus": "VNExpress RSS Feed \u0111\u1ec1u \u0111\u01b0\u1ee3c t\u1ed5ng h\u1ee3p t\u1ea1i \u0111\u1ecba ch\u1ec9 <strong>https://vnexpress.net/rss</strong>. B\u1ea1n th\u00edch theo d\u00f5i chuy\u00ean m\u1ee5c n\u00e0o th\u00ec c\u00f3 th\u1ec3 \u0111\u0103ng k\u00fd RSS ",
+      "focus": "VNExpress RSS Feed đều được tổng hợp tại địa chỉ <strong>https://vnexpress.net/rss</strong>. Bạn thích theo dõi chuyên mục nào thì có thể đăng ký RSS ",
       "url": "https://akishop.com.vn/tong-hop-cac-link-rss-hay-de-doc-bao-tren-kindle-nd49060.html",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2724,7 +2724,7 @@
     {
       "name": "Kuwait Times Newspaper - The Leading Independent Daily Kuwait News",
       "type": "Blog/Website",
-      "focus": "LONDON: <strong>Britain on Wednesday struck a long-awaited trade agreement with the six Gulf Cooperation Council states \u2014 Bahrain, Kuwait, Oman, Qatar",
+      "focus": "LONDON: <strong>Britain on Wednesday struck a long-awaited trade agreement with the six Gulf Cooperation Council states — Bahrain, Kuwait, Oman, Qatar",
       "url": "https://kuwaittimes.com/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2742,7 +2742,7 @@
     {
       "name": "Home - Latest News from Saudi Arabia and the World",
       "type": "Blog/Website",
-      "focus": "Saudi Gazette \u2013 Leading coverage of Saudi Arabia, regional affairs, politics, economy, jobs, lifestyle, and breaking global news. - Home",
+      "focus": "Saudi Gazette – Leading coverage of Saudi Arabia, regional affairs, politics, economy, jobs, lifestyle, and breaking global news. - Home",
       "url": "https://saudigazette.com.sa/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2769,7 +2769,7 @@
     {
       "name": "Morocco - Arab World Newspapers at the Library of Congress - Research Guides at Library of Congress",
       "type": "Blog/Website",
-      "focus": "Algeria \u00b7 Bahrain \u00b7 Egypt \u00b7 Iraq \u00b7 Jordan \u00b7 Kuwait \u00b7 Lebanon \u00b7 Libya \u00b7 Mauritania \u00b7 Morocco \u00b7 Oman \u00b7 Palestine/West Bank \u00b7 Qatar \u00b7 Saudi Arabia \u00b7 Suda",
+      "focus": "Algeria · Bahrain · Egypt · Iraq · Jordan · Kuwait · Lebanon · Libya · Mauritania · Morocco · Oman · Palestine/West Bank · Qatar · Saudi Arabia · Suda",
       "url": "https://guides.loc.gov/arab-world-newspapers/country/morocco",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -2821,7 +2821,7 @@
       "region": "central_america_caribbean"
     },
     {
-      "name": "La Naci\u00f3n (Costa Rica)",
+      "name": "La Nación (Costa Rica)",
       "type": "Newspaper/Central America",
       "focus": "Costa Ricas leading newspaper",
       "url": "https://www.nacion.com",
@@ -3055,7 +3055,7 @@
       "region": "africa"
     },
     {
-      "name": "El Nuevo D\u00eda (Puerto Rico)",
+      "name": "El Nuevo Día (Puerto Rico)",
       "type": "Newspaper/Puerto Rico",
       "focus": "Puerto Ricos leading newspaper",
       "url": "https://www.elnuevodia.com",
@@ -3084,7 +3084,7 @@
     {
       "name": "Software for Telegram Monitoring and Telegram OSINT",
       "type": "Telegram",
-      "focus": "Osavul\u2019s Telegram Monitoring Platform is a next-generation OSINT tool designed to extract actionable intelligence from Telegram at scale. It combines ",
+      "focus": "Osavul’s Telegram Monitoring Platform is a next-generation OSINT tool designed to extract actionable intelligence from Telegram at scale. It combines ",
       "url": "https://www.osavul.cloud/solutions/nebula/telegram-osavul",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3100,9 +3100,9 @@
       "region": "central_america_caribbean"
     },
     {
-      "name": "The Go1ano Case: OSINT in Brazil\u2019s Malware Ground Zero | OSINT Case Study",
+      "name": "The Go1ano Case: OSINT in Brazil’s Malware Ground Zero | OSINT Case Study",
       "type": "Blog/Website",
-      "focus": "This breach represents a significant escalation, with data collected from malicious Telegram channels\u2026 This breach coincides with the period of greate",
+      "focus": "This breach represents a significant escalation, with data collected from malicious Telegram channels… This breach coincides with the period of greate",
       "url": "https://www.osint.industries/project/the-go1ano-case-osint-in-brazils-malware-ground-zero",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3136,9 +3136,9 @@
       "region": "africa"
     },
     {
-      "name": "Exposing Extremism Networks in Sub-Saharan Africa Using Open Source Tools \u2013 Global Investigative Journalism Network",
+      "name": "Exposing Extremism Networks in Sub-Saharan Africa Using Open Source Tools – Global Investigative Journalism Network",
       "type": "Blog/Website",
-      "focus": "\u201cChronolocation helped determine when specific events occurred, adding a layer of verification to witness reports and social media claims.\u201d \u2014 The Nati",
+      "focus": "“Chronolocation helped determine when specific events occurred, adding a layer of verification to witness reports and social media claims.” — The Nati",
       "url": "https://gijn.org/stories/expose-extremism-networks-africa-open-source/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3190,7 +3190,7 @@
       "region": "south_east_asia"
     },
     {
-      "name": "Myanmar\u2019s Silent Digital Crisis",
+      "name": "Myanmar’s Silent Digital Crisis",
       "type": "Blog/Website",
       "focus": "However, <strong>its privacy features, intended to safeguard users, were quickly exploited</strong>. As a low-moderation platform hosting channels wit",
       "url": "https://thediplomat.com/2024/09/myanmars-silent-digital-crisis/",
@@ -3208,16 +3208,16 @@
       "region": "south_east_asia"
     },
     {
-      "name": "Pacific Islands News Roundup \u2013 April 2 \u2013 9, 2026",
+      "name": "Pacific Islands News Roundup – April 2 – 9, 2026",
       "type": "Blog/Website",
-      "focus": "New Fiji Labour Bill \u2018risks chaos for employers (FBC) Modern Hub For Growth: Solomon Islands Breaks Ground on SBD$17.9M Agriculture Center In Malaita ",
+      "focus": "New Fiji Labour Bill ‘risks chaos for employers (FBC) Modern Hub For Growth: Solomon Islands Breaks Ground on SBD$17.9M Agriculture Center In Malaita ",
       "url": "https://pireport.org/2026/04/09/pacific-islands-news-roundup-april-2-9-2026/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "oceania"
     },
     {
-      "name": "Pacific Islands News Roundup \u2013 May 7 \u2013 13, 2026",
+      "name": "Pacific Islands News Roundup – May 7 – 13, 2026",
       "type": "Blog/Website",
       "focus": "Climate Crisis Costs Solomon Islands US$79M Annually, Says Ministry Of Environment (In-depth Solomons) Resources and Economic Development, Technology ",
       "url": "https://pireport.org/2026/05/14/pacific-islands-news-roundup-may-7-13-2026/",
@@ -3361,7 +3361,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -3388,7 +3388,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -3417,7 +3417,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3435,7 +3435,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3453,7 +3453,7 @@
     {
       "name": "South America: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
       "url": "https://www.csis.org/regions/americas/south-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3552,7 +3552,7 @@
     {
       "name": "Middle East Conflict Monitor | ACLED",
       "type": "Blog/Website",
-      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
       "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3561,7 +3561,7 @@
     {
       "name": "Central Asia: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
       "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3570,16 +3570,16 @@
     {
       "name": "Russia-China Relations in Central Asia - CEPA",
       "type": "Blog/Website",
-      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
       "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
       "region": "central_asia"
     },
     {
-      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
       "type": "Blog/Think Tank",
-      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "focus": "Central Asia’s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China’s Belt and Road ",
       "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3712,7 +3712,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -3739,7 +3739,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -3768,7 +3768,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3795,7 +3795,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3804,7 +3804,7 @@
     {
       "name": "South America: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
       "url": "https://www.csis.org/regions/americas/south-america",
       "discovered": "2026-05-22",
       "signal_level": "Medium",
@@ -3847,7 +3847,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -3876,7 +3876,7 @@
     {
       "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
       "type": "Blog/Website",
-      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "focus": "The Nation » Political Figures RSS Feed · The Nation » Police and Law Enforcement RSS Feed · The Nation » Poetry RSS Feed · The Nation » Photography R",
       "url": "https://rss.feedspot.com/thenation_rss_feeds/",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -3894,7 +3894,7 @@
     {
       "name": "Central America Newswire - World News Report - EIN Presswire",
       "type": "Blog/Website",
-      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
       "url": "https://world.einnews.com/region/central-america",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -3912,7 +3912,7 @@
     {
       "name": "South America: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
       "url": "https://www.csis.org/regions/americas/south-america",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -3984,7 +3984,7 @@
     {
       "name": "Middle East Conflict Monitor | ACLED",
       "type": "Blog/Website",
-      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
       "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -3993,7 +3993,7 @@
     {
       "name": "Central Asia: Analysis, Research, & Events | CSIS",
       "type": "Blog/Website",
-      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
       "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -4002,16 +4002,16 @@
     {
       "name": "Russia-China Relations in Central Asia - CEPA",
       "type": "Blog/Website",
-      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
       "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
       "region": "central_asia"
     },
     {
-      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
       "type": "Blog/Think Tank",
-      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "focus": "Central Asia’s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China’s Belt and Road ",
       "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
       "discovered": "2026-05-23",
       "signal_level": "Medium",
@@ -4117,7 +4117,7 @@
       "region": "europe"
     },
     {
-      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
       "type": "Blog/Website",
       "focus": "You can subscribe to all our content or to specific formats.",
       "url": "https://ecfr.eu/feeds/",
@@ -4151,11 +4151,1028 @@
       "discovered": "2026-05-23",
       "signal_level": "Medium",
       "region": "north_america"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "Up-and-coming Moroccan manufacturer Aerodrive Engineering Services has just secured a contract to supply 500 loitering munitions to the army. The king",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "The Middle East is undergoing a transformative moment where the old order is vanishing and a new one is beginning to take shape. Wars in Gaza and Iran",
+      "url": "https://www.csis.org/regions/middle-east",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "On a much larger scale, China’s treatment of the Muslim Uyghur minority in Xinjiang raises concerns in Muslim-majority Central Asian states, potential",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+      "type": "Blog/Website",
+      "focus": "In charting out Southeast Asia regional security outlook in 2025, there are three critical development worth scrutinising: ... Tensions over overlappi",
+      "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security Architecture Programme - RSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The Regional Security Architecture Programme conducts research, networking and teaching on security multilateralism in the Asia Pacific, inclu",
+      "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+      "type": "Blog/Website",
+      "focus": "&quot;The thread of this very well researched and comprehensively argued book is summarised by the question as to &#x27;whether ASEAN&#x27;s mechanism",
+      "url": "https://bookshop.iseas.edu.sg/publication/1547",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Middle East Politics Newsletter | Substack",
+      "type": "Substack",
+      "focus": "the most important developments in the Middle East and North Africa. For more information, please check the `about` section. Click to read <strong>Mid",
+      "url": "https://mideastpolitics.substack.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "💪🇺🇦 The War Comes Home: Ukraine Strikes the Heart of Moscow",
+      "type": "Substack",
+      "focus": "As of spring 2026, Moscow is protected ... city itself. <strong>OSINT analysts had verified at least 89 Pantsir-S1 systems within a 50-kilometer radiu",
+      "url": "https://brentmolnar.substack.com/p/the-war-comes-home-ukraine-strikes",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Russian Offensive Campaign Update | Product Line | ISW",
+      "type": "Blog/Website",
+      "focus": "ISW’s methodology for mapping conventional maneuver war in Ukraine relies on standard US military doctrinal definitions of tactical mission tasks as w",
+      "url": "https://understandingwar.org/analysis/russia-ukraine/russian-offensive-campaign-assessment/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Understanding the Russian Military Today | Russia and Eurasia | CSIS",
+      "type": "Blog/Website",
+      "focus": "In Understanding the Russian Military Today, a five-day, professional development program, participants explored all the elements of Russian military ",
+      "url": "https://www.csis.org/programs/europe-russia-and-eurasia-program/archives/russia-and-eurasia/understanding-russian",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "NATO Agrees to New Defense Spending Target | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Welcome to the <strong>Daily News Brief</strong>, CFR’s flagship morning newsletter summarizing the top global news and analysis of the day. Subscribe",
+      "url": "https://www.cfr.org/articles/nato-agrees-new-defense-spending-target",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Geopolitical Europe | Gesine Weber | Substack",
+      "type": "Substack",
+      "focus": "Welcome to <strong>Geopolitical Europe</strong>! This Substack focuses on European security, geopolitics, and grand strategy - and bridges the gap bet",
+      "url": "https://geopoliticaleurope.substack.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Policy Brief - Towards a European Security Council",
+      "type": "Substack",
+      "focus": "<strong>Talk about Europe building its strategic autonomy has existed for the last quarter of a century</strong>. To date, existing institutions, incl",
+      "url": "https://iepbu.substack.com/p/policy-brief-towards-a-european-security",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "About ECFR – European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "<strong>The European Council on Foreign Relations (ECFR)</strong> is an award-winning international think-tank that aims to conduct cutting-edge indep",
+      "url": "https://ecfr.eu/about/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "China & Taiwan Coverage | Institute for the Study of War",
+      "type": "Blog/Website",
+      "focus": "China &amp; Taiwan Update Coalition Defense of Taiwan Korean Peninsula Update ... The Chinese Communist Party is intensifying its military and politic",
+      "url": "https://understandingwar.org/analysis/china-taiwan/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "asia_pacific"
+    },
+    {
+      "name": "Home | Asia Maritime Transparency Initiative",
+      "type": "Blog/Website",
+      "focus": "Five claimants occupy nearly 70 disputed reefs and islets spread across the South China Sea. They have built more than 90 outposts on these contested ",
+      "url": "https://amti.csis.org/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "asia_pacific"
+    },
+    {
+      "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "U.S. Markets ... <strong>House Oversight and Government Reform Committee Chair James Comer, R-Ky., on Friday announced investigations into insider tra",
+      "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi and Polymarket Are Spoiling Reality TV Shows — and Studios Don’t Know What to Do About It",
+      "type": "Blog/Website",
+      "focus": "By market’s close on the day of the finale, <strong>a staggering $32.7 million in wagers had lifted her odds to 97%</strong>. (On Polymarket, “Survivo",
+      "url": "https://variety.com/2026/tv/news/kalshi-polymarket-spoilers-reality-studios-1236756590/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "China & Taiwan Update, January 2, 2026 | ISW",
+      "type": "Blog/Website",
+      "focus": "The PRC used the exercises as a ... that support Taiwanese sovereignty and self-defense. The ISW-CDOT December 31 Special Report provides additional i",
+      "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-january-2-2026/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "asia_pacific"
+    },
+    {
+      "name": "Mexico’s Long War: Drugs, Crime, and the Cartels | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Mexico, along with China, is also a leading source of fentanyl, a synthetic opioid up to fifty times more potent than heroin and easier to produce. At",
+      "url": "https://www.cfr.org/backgrounders/mexicos-long-war-drugs-crime-and-cartels",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "mexico_americas"
+    },
+    {
+      "name": "US Oil Industry Data Analysis | Substack",
+      "type": "Substack",
+      "focus": "<strong>Independent research on US and World energy markets</strong>. The primary focus is on US petroleum and natural gas industry. Occasional update",
+      "url": "https://pauldial.substack.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "energy_markets"
+    },
+    {
+      "name": "US Oil Industry Data Analysis | Substack",
+      "type": "Substack",
+      "focus": "I focus on both US and International data. I utilize publicly available data and perform my own data analysis and interpretation. ... <strong>Independ",
+      "url": "https://substack.com/@usoilindustry",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "energy_markets"
+    },
+    {
+      "name": "Substacks recommended by The Crude Chronicles",
+      "type": "Substack",
+      "focus": "Data-centric, visualization-forward oil market research | Thematic deep-dives, monthly data reports, and a weekly market wrap-up every Friday · The gu",
+      "url": "https://thecrudechronicles.substack.com/recommendations",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "energy_markets"
+    },
+    {
+      "name": "Markets, Pipelines & Beyond | Substack",
+      "type": "Substack",
+      "focus": "Independent energy markets journalist with 15+ years of experience covering oil and gas projects—offshore, onshore, and pipeline developments. I share",
+      "url": "https://oilmarkets.substack.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "energy_markets"
+    },
+    {
+      "name": "Global Conflict Awareness — Live Strike Map: US·Israel vs Iran·Axis | OSINT Tracker 2026-03-10",
+      "type": "Blog/Website",
+      "focus": "Real-time OSINT dashboard tracking US-Israel-Iran military strikes. 89 sources (26 Telegram + 63 RSS), 17 languages, auto-updated every 5 minutes. Int",
+      "url": "https://globalconflictawareness.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East AI News | Carrington Malin | Substack",
+      "type": "Blog/Website",
+      "focus": "<strong>Middle East AI News</strong> provides news, comment and insight on how artificial intelligence, innovation and new policymaking are transformi",
+      "url": "https://www.middleeastainews.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Uncovered | Substack",
+      "type": "Blog/Website",
+      "focus": "Clear-eyed analysis, grounded reporting, and historically informed commentary on the political, cultural, and societal shifts shaping the Middle East ",
+      "url": "https://www.themiddleeastuncovered.com/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Monitoring the Strait of Hormuz: Real-Time Maritime Risk & Transit Data",
+      "type": "Blog/Website",
+      "focus": "<strong>SeaVantage has been tracking the Strait continuously</strong>, and the data we are publishing today reflects our live monitoring feed over the",
+      "url": "https://www.seavantage.com/blog/strait-of-hormuz-maritime-risk-intelligence",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-23",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
+      "type": "Blog/Website",
+      "focus": "Note that at the present time our Spanish-language text products are limited to the Tropical Weather Outlook and the Public Advisories for Atlantic, C",
+      "url": "https://www.nhc.noaa.gov/aboutrss.shtml",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "Up-and-coming Moroccan manufacturer Aerodrive Engineering Services has just secured a contract to supply 500 loitering munitions to the army. The king",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "The Middle East is undergoing a transformative moment where the old order is vanishing and a new one is beginning to take shape. Wars in Gaza and Iran",
+      "url": "https://www.csis.org/regions/middle-east",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "On a much larger scale, China’s treatment of the Muslim Uyghur minority in Xinjiang raises concerns in Muslim-majority Central Asian states, potential",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+      "type": "Blog/Website",
+      "focus": "In charting out Southeast Asia regional security outlook in 2025, there are three critical development worth scrutinising: ... Tensions over overlappi",
+      "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security Architecture Programme - RSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The Regional Security Architecture Programme conducts research, networking and teaching on security multilateralism in the Asia Pacific, inclu",
+      "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+      "type": "Blog/Website",
+      "focus": "&quot;The thread of this very well researched and comprehensively argued book is summarised by the question as to &#x27;whether ASEAN&#x27;s mechanism",
+      "url": "https://bookshop.iseas.edu.sg/publication/1547",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "U.S. Markets ... <strong>House Oversight and Government Reform Committee Chair James Comer, R-Ky., on Friday announced investigations into insider tra",
+      "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
+      "type": "Blog/Website",
+      "focus": "<strong>Tim Walz has signed the nation&#x27;s first law banning prediction market sites from operating in the state</strong>, and in response, the Tru",
+      "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed – European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /⁨EINPresswire.com⁩/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan’s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "Up-and-coming Moroccan manufacturer Aerodrive Engineering Services has just secured a contract to supply 500 loitering munitions to the army. The king",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "The Middle East is undergoing a transformative moment where the old order is vanishing and a new one is beginning to take shape. Wars in Gaza and Iran",
+      "url": "https://www.csis.org/regions/middle-east",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED’s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region’s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia’s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia’s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia’s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China’s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+      "type": "Blog/Website",
+      "focus": "In charting out Southeast Asia regional security outlook in 2025, there are three critical development worth scrutinising: ... Tensions over overlappi",
+      "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security Architecture Programme - RSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The Regional Security Architecture Programme conducts research, networking and teaching on security multilateralism in the Asia Pacific, inclu",
+      "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+      "type": "Blog/Website",
+      "focus": "&quot;The thread of this very well researched and comprehensively argued book is summarised by the question as to &#x27;whether ASEAN&#x27;s mechanism",
+      "url": "https://bookshop.iseas.edu.sg/publication/1547",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "These states are fighting prediction markets. The Trump admin is furious - Salon.com",
+      "type": "Blog/Website",
+      "focus": "On Monday, Minnesota Gov. <strong>Tim Walz signed a total ban on futures trading platforms like Kalshi and Polymarket</strong>. The Trump administrati",
+      "url": "https://www.salon.com/2026/05/24/these-states-are-fighting-prediction-markets-the-trump-admin-is-furious/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "House Oversight and Government ... (R-Ky.) <strong>launched an investigation Friday into prediction market platforms Kalshi and Polymarket to determin",
+      "url": "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [
     {
-      "category": "Moltbook \u2014 geopolitics & intel agents",
+      "category": "Moltbook — geopolitics & intel agents",
       "type": "Agent-Generated Geopolitical Analysis",
       "focus": "Geopolitical risk, Iran conflict, oil markets, defense analysis, strategic assessment",
       "signal_level": "Low-Medium",
@@ -4176,7 +5193,7 @@
       ]
     },
     {
-      "category": "Moltbook \u2014 OSINT agents",
+      "category": "Moltbook — OSINT agents",
       "type": "Agent OSINT Collection",
       "focus": "OSINT methodology, strategic research, privacy/security analysis",
       "signal_level": "Low-Medium",
@@ -4192,7 +5209,7 @@
       ]
     },
     {
-      "category": "Moltbook \u2014 analytic tradecraft",
+      "category": "Moltbook — analytic tradecraft",
       "type": "Agent Methodology Content",
       "focus": "Source evaluation, burden of proof, critical thinking, analytic rigor",
       "signal_level": "Medium",
@@ -4205,7 +5222,7 @@
       ]
     },
     {
-      "category": "Moltbook \u2014 platform communities",
+      "category": "Moltbook — platform communities",
       "type": "Agent Ecosystem Intel",
       "focus": "OpenClaw ecosystem, tooling, skills infrastructure, agent capabilities",
       "signal_level": "Medium",
@@ -4225,7 +5242,7 @@
       ]
     },
     {
-      "category": "Moltbook \u2014 skills ecosystem",
+      "category": "Moltbook — skills ecosystem",
       "type": "Agent Skill Registries",
       "focus": "Agent skill discovery and indexing",
       "signal_level": "Low-Medium",
@@ -4241,7 +5258,7 @@
       ]
     },
     {
-      "category": "Deep Horizon Scan \u2014 2026-05-10",
+      "category": "Deep Horizon Scan — 2026-05-10",
       "note": "Newly discovered from Trevor OSINT Deep Search cron (08cae30c), May 10, 2026",
       "sources": [
         {
@@ -4253,7 +5270,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Mick Ryan \u2014 The Learning Curve",
+          "name": "Mick Ryan — The Learning Curve",
           "type": "Substack/Military Strategy",
           "focus": "Military learning across Ukraine, Middle East, Indo-Pacific. PLA study of Iran War, CENTCOM Hormuz operations.",
           "url": "https://mickryan.substack.com",
@@ -4261,7 +5278,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Marc Schulman \u2014 Tel Aviv Diary",
+          "name": "Marc Schulman — Tel Aviv Diary",
           "type": "Substack/Israel Security",
           "focus": "Daily diaries: Iran-Hormuz dynamics, Israel-Lebanon ceasefire violations, Hezbollah fiber-optic drone warfare.",
           "url": "https://marcschulman.substack.com",
@@ -4326,7 +5343,7 @@
         },
         {
           "name": "OSINT 613 (@OSINT_613)",
-          "type": "X/Twitter \u2014 OSINT Aggregator",
+          "type": "X/Twitter — OSINT Aggregator",
           "focus": "Iran war OSINT aggregator: Russian drone shipments to Bandar Anzali, IDF maritime strikes, PRC satellite imagery support to IRGC. 245k followers.",
           "url": "https://x.com/OSINT_613",
           "signal_level": "High",
@@ -4334,7 +5351,7 @@
         },
         {
           "name": "Aurora Intel (@AuroraIntel)",
-          "type": "X/Twitter \u2014 Maritime OSINT",
+          "type": "X/Twitter — Maritime OSINT",
           "focus": "Live AIS tracking of Iranian oil tankers evading Hormuz post-Kharg spill, Russian Caspian drone convoys. 180k followers.",
           "url": "https://x.com/AuroraIntel",
           "signal_level": "High",
@@ -4342,7 +5359,7 @@
         },
         {
           "name": "MT Anderson (@MT_Anderson)",
-          "type": "X/Twitter \u2014 Maritime Tracker",
+          "type": "X/Twitter — Maritime Tracker",
           "focus": "Qatar-mediated tanker routes, Chinese satellite firms aiding IRGC strikes, fiber-optic drone shipments. 95k followers.",
           "url": "https://x.com/MT_Anderson",
           "signal_level": "High",
@@ -4350,7 +5367,7 @@
         },
         {
           "name": "Intel Crab (@IntelCrab)",
-          "type": "X/Twitter \u2014 Vessel Forensics",
+          "type": "X/Twitter — Vessel Forensics",
           "focus": "Russian Starlink-equipped drone shipments, oil spill impact on LNG carriers, sanctioned Chinese imagery. 340k followers.",
           "url": "https://x.com/IntelCrab",
           "signal_level": "High",
@@ -4365,7 +5382,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "Flashpoint Blog \u2014 Operation Epic Fury",
+          "name": "Flashpoint Blog — Operation Epic Fury",
           "type": "Threat Intelligence Blog",
           "focus": "Real-time tracking of US-Israel strikes on Iran: cyber threats, infrastructure hits, proxy responses.",
           "url": "https://flashpoint.io/blog/escalation-in-the-middle-east-operation-epic-fury/",
@@ -4397,7 +5414,7 @@
           "discovered": "2026-05-10"
         },
         {
-          "name": "France Charles de Gaulle CSG \u2014 Hormuz Guardian Force",
+          "name": "France Charles de Gaulle CSG — Hormuz Guardian Force",
           "type": "Multinational Naval Deployment",
           "focus": "European guardian force for Strait of Hormuz: French carrier group + Italian/Dutch escorts, Franco-British plan for post-conflict escort ops.",
           "url": "https://www.marinelink.com/news/france-deploys-aircraft-carrier-red-sea-538877",
@@ -4423,7 +5440,7 @@
       ]
     },
     {
-      "note": "Deep Horizon Scan \u2014 2026-05-11 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
+      "note": "Deep Horizon Scan — 2026-05-11 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
       "sources": [
         {
           "name": "Global Geopolitics (globalgeopolitics.co.uk)",
@@ -4516,12 +5533,12 @@
       ]
     },
     {
-      "note": "Deep Horizon Scan \u2014 2026-05-12 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
+      "note": "Deep Horizon Scan — 2026-05-12 (newly discovered from Trevor OSINT Deep Search cron 08cae30c)",
       "sources": [
         {
           "name": "Escalation Trap",
           "type": "Substack/Strategic Analysis",
-          "focus": "Iran war stalling analysis: asymmetric warfare trap, 5 warning signs, 100+ daily escorts needed but unfeasible, insurance premiums $1K\u2192$120K.",
+          "focus": "Iran war stalling analysis: asymmetric warfare trap, 5 warning signs, 100+ daily escorts needed but unfeasible, insurance premiums $1K→$120K.",
           "url": "https://escalationtrap.substack.com",
           "signal_level": "High",
           "discovered": "2026-05-12"
@@ -4551,7 +5568,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "Tatsu Ikeda \u2014 Geopolitical Risk Assessment",
+          "name": "Tatsu Ikeda — Geopolitical Risk Assessment",
           "type": "Substack/Risk Analysis",
           "focus": "Lebanon/Hezbollah fiber-optic drone warfare, Level 4/5 risk posture. IDF admits no technical solution to jam-proof drones.",
           "url": "https://tatsuikeda.substack.com",
@@ -4623,7 +5640,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "ACOUP \u2014 Bret Devereaux (acoup.blog)",
+          "name": "ACOUP — Bret Devereaux (acoup.blog)",
           "type": "Independent Academic/Military History Blog",
           "focus": "US strategic miscalculation regime-change gamble failed. Iran's Hormuz as 'weapon of mass disruption'. Predictable and ignored.",
           "url": "https://acoup.blog/2026/03/25/miscellanea-the-war-in-iran/",
@@ -4647,7 +5664,7 @@
           "discovered": "2026-05-12"
         },
         {
-          "name": "Michael Liebreich \u2014 Cleaning Up / Energy",
+          "name": "Michael Liebreich — Cleaning Up / Energy",
           "type": "Substack/Energy Transition",
           "focus": "Oil existential supply shock vs gas 3% total supply: clean energy acceleration as strategic response to Hormuz crisis.",
           "url": "https://mliebreich.substack.com",
@@ -4956,7 +5973,7 @@
       "note": "Right-leaning Hebrew source. Useful for tracking Netanyahu government narrative."
     },
     {
-      "name": "El Pa\u00eds English",
+      "name": "El País English",
       "type": "Newspaper/Spain",
       "focus": "Leading Spanish newspaper English edition. EU foreign policy, Latin America, European energy crisis.",
       "url": "https://english.elpais.com",
@@ -5011,7 +6028,170 @@
       "primary_language": "en",
       "signal_level": "High",
       "discovered": "2026-05-13"
+    },
+    {
+      "name": "Thai PBS World",
+      "type": "News/Thailand",
+      "focus": "Thailand domestic politics, ASEAN diplomacy, Southeast Asia regional affairs. English-language Thai public broadcaster.",
+      "url": "https://world.thaipbs.or.th/feed/",
+      "rss": "https://world.thaipbs.or.th/feed/",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium",
+      "discovered": "2026-05-24",
+      "note": "Thai public broadcaster — English service. Replaces dead Thai PBS World feed. Phase C addition."
+    },
+    {
+      "name": "ASEAN News Today",
+      "type": "Regional Aggregator/Southeast Asia",
+      "focus": "ASEAN-wide diplomatic, economic, and security developments. Regional multilateral coverage.",
+      "url": "https://aseannewstoday.com/feed/",
+      "rss": "https://aseannewstoday.com/feed/",
+      "languages": [
+        "en"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium",
+      "discovered": "2026-05-24",
+      "note": "Regional aggregator — ASEAN-wide. Fills Southeast Asia coverage gap. Phase C addition."
+    },
+    {
+      "name": "Global Voices Caribbean",
+      "type": "Regional Aggregator/Caribbean",
+      "focus": "Caribbean regional affairs, governance, civil society, diaspora reporting. Citizen media network.",
+      "url": "https://globalvoices.org/-/world/caribbean/feed/",
+      "rss": "https://globalvoices.org/-/world/caribbean/feed/",
+      "languages": [
+        "en"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Caribbean regional feed. Replaces several dead Caribbean sources (Haiti Libre, Listin Diario, Granma, etc.). Phase C addition."
+    },
+    {
+      "name": "Global Voices Cuba",
+      "type": "Blog/Citizen Media/Cuba",
+      "focus": "Cuba domestic affairs, governance, civil society, economic crisis coverage. Citizen media from and about Cuba.",
+      "url": "https://globalvoices.org/-/world/caribbean/cuba/feed/",
+      "rss": "https://globalvoices.org/-/world/caribbean/cuba/feed/",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Cuba country feed. Replaces dead Granma and Cubanet feeds. Phase C addition."
+    },
+    {
+      "name": "Global Voices Haiti",
+      "type": "Blog/Citizen Media/Haiti",
+      "focus": "Haiti governance, gang violence, humanitarian crisis, diaspora reporting. Creole/English citizen media.",
+      "url": "https://globalvoices.org/-/world/caribbean/haiti/feed/",
+      "rss": "https://globalvoices.org/-/world/caribbean/haiti/feed/",
+      "languages": [
+        "en",
+        "ht"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Haiti country feed. Replaces dead Haiti Libre and Le Nouvelliste feeds. Phase C addition."
+    },
+    {
+      "name": "Global Voices Latin America",
+      "type": "Regional Aggregator/Latin America",
+      "focus": "Latin America regional affairs, governance, conflict, civil society. Pan-regional citizen media network.",
+      "url": "https://globalvoices.org/-/world/latin-america/feed/",
+      "rss": "https://globalvoices.org/-/world/latin-america/feed/",
+      "languages": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Latin America regional feed. Broad LatAm coverage. Phase C addition."
+    },
+    {
+      "name": "Global Voices Guatemala",
+      "type": "Blog/Citizen Media/Guatemala",
+      "focus": "Guatemala governance, security, indigenous affairs, migration. Citizen media from and about Guatemala.",
+      "url": "https://globalvoices.org/-/world/latin-america/guatemala/feed/",
+      "rss": "https://globalvoices.org/-/world/latin-america/guatemala/feed/",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Guatemala country feed. Replaces dead Nómada feed. Phase C addition."
+    },
+    {
+      "name": "Global Voices Honduras",
+      "type": "Blog/Citizen Media/Honduras",
+      "focus": "Honduras governance, security, migration, organized crime. Citizen media from and about Honduras.",
+      "url": "https://globalvoices.org/-/world/latin-america/honduras/feed/",
+      "rss": "https://globalvoices.org/-/world/latin-america/honduras/feed/",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Honduras country feed. Replaces dead El Heraldo and La Prensa feeds. Phase C addition."
+    },
+    {
+      "name": "Africanews",
+      "type": "Regional Aggregator/Africa",
+      "focus": "Pan-African news: governance, conflict, economy, health. Euronews-affiliated 24/7 African news channel.",
+      "url": "https://www.africanews.com/feed/rss",
+      "rss": "https://www.africanews.com/feed/rss",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium",
+      "discovered": "2026-05-24",
+      "note": "Euronews affiliate — Pan-African coverage. Complements allAfrica.com. Phase C addition."
+    },
+    {
+      "name": "Global Voices Sub-Saharan Africa",
+      "type": "Regional Aggregator/Sub-Saharan Africa",
+      "focus": "Sub-Saharan Africa governance, conflict, development, civil society. Citizen media network across the region.",
+      "url": "https://globalvoices.org/-/world/sub-saharan-africa/feed/",
+      "rss": "https://globalvoices.org/-/world/sub-saharan-africa/feed/",
+      "languages": [
+        "en"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium-Low",
+      "discovered": "2026-05-24",
+      "note": "Global Voices Sub-Saharan Africa regional feed. Replaces several dead Africa feeds (Somalia Report, African Defence Review). Phase C addition."
+    },
+    {
+      "name": "Global Voices MENA",
+      "type": "Regional Aggregator/MENA",
+      "focus": "Middle East and North Africa governance, conflict, civil society, diaspora. Pan-regional citizen media.",
+      "url": "https://globalvoices.org/-/world/middle-east-north-africa/feed/",
+      "rss": "https://globalvoices.org/-/world/middle-east-north-africa/feed/",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "primary_language": "en",
+      "signal_level": "Medium",
+      "discovered": "2026-05-24",
+      "note": "Global Voices MENA regional feed. Fills North Africa coverage gap. Phase C addition."
     }
   ],
-  "last_updated": "2026-05-15 08:05 UTC"
+  "last_updated": "2026-05-24T19:29:37.503107+00:00"
 }

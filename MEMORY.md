@@ -12,10 +12,10 @@
 - For future integrations, Trevor should check existing skills/integrations before building custom alternatives.
 
 ## Durable Decisions — Social Posting
-- **STATUS: DISABLED (2026-05-23)** — All social posting killed per Roderick directive.
-  Scripts archived: genviral-post-brief.sh, moltbook-post-brief.sh, social-posting-pipeline.sh,
-  _genviral_extract.py, social-tracker.py → `scripts/archive/`.
-  No OpenClaw crons or system crontabs pointed at these. Daily pipeline already declares NO social.
+- **STATUS: ENABLED (2026-05-24)** — Moltbook reconnected per Roderick directive.
+  Agent: trevormentis, 34 karma, 11 followers, 18 following, claimed + active.
+  Posts daily brief to r/builds via scripts/moltbook_post.py in pipeline Step 6.
+  GenViral + other platforms remain disabled unless explicitly requested.
 
 ## Durable Decisions - Orchestration
 - [2026-05-01] **Canonical routing is DeepSeek Direct API.** OpenRouter is disabled.
@@ -100,6 +100,14 @@
 - [2026-05-13] **Autonomy confirmed by Roderick.** Full operational autonomy for:
   Trevor only pings for genuine anomalies, interesting intel finds, or things that need
   human judgment.
+- [2026-05-23] **Autonomous brief-quality authority granted.** Trevor may self-initiate
+  diagnosis and fixes for daily brief quality failures (model downgrade, regional
+  cross-contamination, truncation, quality gate BLOCK, Opus QC FAIL/CRITICAL).
+  QC Watchdog cron fires 5 min after delivery (13:10 UTC daily). Alert written to
+  tasks/qc-alert.md triggers autonomous fix cycle. Principal surfaced only for
+  architectural changes, budget impact, or uncertain fixes.
+- [2026-05-23] **AGENTS.md updated** — Brief Quality autonomous fix authority
+  codified. Analyst rotation now includes QC alert check and brief self-review.
 
 ## Durable Decisions — Perplexity Benchmark
 - [2026-05-14] **Perplexity GSIB is the quality benchmark.** A Perplexity-produced Global

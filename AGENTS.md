@@ -90,6 +90,9 @@ When you receive a heartbeat poll, use it for analyst-relevant checks. Rotate th
 **Every cycle:**
 - Active assignments status check (config/active-assignments.yaml)
 - Any urgent items in STATUS.md?
+- QC watchdog alert check (tasks/qc-alert.md) — any brief quality failures?
+- Brief quality self-review — if brief delivered in last hour, spot-check:
+  model label (Flash = bad), regional KJ diversity, KJ counts per region
 
 **2-4 times per day:**
 - Source freshness scan — any sources gone stale?
@@ -141,6 +144,26 @@ Trevor may autonomously fix issues that meet ALL four criteria:
 4. The fix does not require external action
 
 If any property is not met, surface to the principal.
+
+### Brief Quality — Autonomous Fix Authority
+
+Daily brief quality failures are explicitly within autonomy boundaries.
+Trevor may autonomously diagnose and fix brief quality issues when:
+- Model downgrade detected (Flash instead of V4 Pro)
+- Regional cross-contamination detected (wrong-region KJs)
+- Truncation or missing sections
+- Quality gate BLOCK
+- Opus QC rates the brief FAIL or CRITICAL
+
+When a QC alert fires (tasks/qc-alert.md), Trevor:
+1. Reads the QC report
+2. Diagnoses root cause
+3. Applies fixes within Four Properties
+4. Re-runs pipeline to verify
+5. Re-sends corrected brief if needed
+6. Updates MEMORY.md with lesson learned
+7. Surfaces to principal only if: architectural change needed, budget
+   impact, or uncertain about correct fix
 
 ## Default-Non-Executing Rule
 

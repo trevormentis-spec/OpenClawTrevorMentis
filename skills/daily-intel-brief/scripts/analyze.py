@@ -81,18 +81,28 @@ def load_json(path: pathlib.Path) -> Any:
 
 
 def split_prompts(prompts_md: str) -> dict[str, str]:
-    """Pull the four named prompt blocks out of references/deepseek-prompts.md.
+    """Pull the named prompt blocks out of references/deepseek-prompts.md.
 
     The file uses '## <name>' section headers with fenced code blocks.
     We grab the first fenced block under each section.
+    Ignores headers that appear inside fenced code blocks.
     """
     sections: dict[str, str] = {}
-    headers = list(re.finditer(r"^## (.+)$", prompts_md, flags=re.MULTILINE))
-    for i, h in enumerate(headers):
-        name = h.group(1).strip()
-        start = h.end()
-        end = headers[i + 1].start() if i + 1 < len(headers) else len(prompts_md)
-        block = prompts_md[start:end]
+    # Split into lines, track whether we're inside a code fence
+    lines = prompts_md.split('\n')
+    in_fence = False
+    header_positions = []
+    for i, line in enumerate(lines):
+        if line.startswith('```'):
+            in_fence = not in_fence
+            continue
+        if not in_fence and line.startswith('## '):
+            header_positions.append((i, line[3:].strip()))
+
+    for idx, (line_num, name) in enumerate(header_positions):
+        start_line = line_num + 1
+        end_line = header_positions[idx + 1][0] if idx + 1 < len(header_positions) else len(lines)
+        block = '\n'.join(lines[start_line:end_line])
         m = re.search(r"```(?:[a-zA-Z0-9]+)?\n(.*?)```", block, flags=re.DOTALL)
         if m:
             sections[name] = m.group(1).strip()
@@ -340,6 +350,18 @@ def regional_prompt(template: str, region_snake: str, incidents: list[dict],
     short = REGION_SHORT[region_snake]
     incidents_for_region = [i for i in incidents if i.get("region") == region_snake]
     coll_quality = build_collection_quality(region_snake, incidents, collection_state, behavioral_state)
+
+    # If this region has very few incidents, inject a low-data warning
+    low_incident_warning = ""
+    if len(incidents_for_region) < 3:
+        low_incident_warning = (
+            "\n⚠️ LOW INCIDENT COUNT: This region has very few data points today. "
+            "Produce the best assessment possible with what you have. Use GAP "
+            "markers where data is missing. Do NOT fabricate or borrow from "
+            "other regions. Max confidence: 'even chance' (50%) for any KJ "
+            "not directly supported by an incident.\n"
+        )
+
     user = (template
             .replace("{region_label}", region_label)
             .replace("{region_snake}", region_snake)
@@ -351,7 +373,8 @@ def regional_prompt(template: str, region_snake: str, incidents: list[dict],
                      iw_board_md or "No standing I&W board for this region.")
             .replace("{prediction_market_data}", prediction_market_data)
             .replace("{standing_assessment}", standing_assessment)
-            .replace("{collection_quality_markdown}", coll_quality))
+            .replace("{collection_quality_markdown}", coll_quality)
+            .replace("{low_incident_warning}", low_incident_warning))
     # the system prompt is shared (defined in references/deepseek-prompts.md)
     return user, short
 
@@ -538,11 +561,16 @@ def main() -> int:
     parser.add_argument("--working-dir", required=True)
     parser.add_argument("--prompts", required=True)
     parser.add_argument("--regions", required=True)
-    parser.add_argument("--model", default="deepseek/deepseek-v4-pro")
-    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 model for regional analysis (default: DeepSeek V4 Pro)")
-    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek", help="API provider for tier-2 regional analysis (default: deepseek)")
+    parser.add_argument("--model", default="deepseek/deepseek-v4-pro",
+                        help="Tier-1 model for executive summary (default: V4 Pro)")
+    parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 model for regional analysis")
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek", help="API provider for tier-2")
     parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
-                        help="API provider to route through (default: deepseek)")
+                        help="API provider for tier-1 exec summary")
+    parser.add_argument("--redteam-model", default=None,
+                        help="Model for red-team pass (default: same as --model)")
+    parser.add_argument("--redteam-provider", choices=["deepseek", "openrouter"], default=None,
+                        help="Provider for red-team pass (default: same as --provider)")
     parser.add_argument("--recall", default="",
                         help="path to brain-recall.md with prior memory context")
     parser.add_argument("--procedural", default="",
@@ -788,13 +816,22 @@ def main() -> int:
     analysis_dir = wd / "analysis"
     analysis_dir.mkdir(parents=True, exist_ok=True)
 
-    # Tiered model routing: cheap model for regional data synthesis, frontier for strategy
-    tier1_model = args.model       # e.g., anthropic/claude-opus-4.7 — exec summary + red team
-    tier2_model = args.tier2_model  # e.g., deepseek/deepseek-v4-pro — regional analysis
-    # Tier-2 provider follows the --provider flag (override from deepseek-only in v2)
+    # Tiered model routing: tier-1 for exec summary, optionally separate for red team
+    tier1_model = args.model
+    tier2_model = args.tier2_model
     tier2_provider = args.tier2_provider
+    redteam_model = args.redteam_model or tier2_model
+    redteam_provider = args.redteam_provider or "deepseek"
+
+    # HARD GUARD: reject Flash models — V4 Pro ONLY for production briefs
+    if "flash" in tier1_model.lower() or "flash" in tier2_model.lower() or "flash" in redteam_model.lower():
+        log(f"FATAL: Flash model detected — tier1={tier1_model}, tier2={tier2_model}, redteam={redteam_model}")
+        log("Flash models are rejected for production briefs. Use V4 Pro only.")
+        return 2
+
     log(f"Tiered routing: 10 regions → {tier2_model.split('/')[-1]} (tier-2 via {tier2_provider}), "
-        f"exec+redteam → {tier1_model.split('/')[-1]} (tier-1 via {args.provider})")
+        f"exec → {tier1_model.split('/')[-1]} (tier-1 via {args.provider}), "
+        f"red-team → {redteam_model.split('/')[-1]} (via {redteam_provider})")
 
     regional_payloads: dict[str, dict] = {}
     for region in REGIONS_ORDER:
@@ -818,6 +855,7 @@ def main() -> int:
                 )
                 content = call_deepseek(tier2_model, strict_system, user, provider=tier2_provider)
                 payload = parse_json_strict(content)
+        payload["model_used"] = tier2_model
         (analysis_dir / f"{region}.json").write_text(json.dumps(payload, indent=2))
         regional_payloads[region] = payload
 
@@ -828,15 +866,19 @@ def main() -> int:
         user = exec_prompt(exec_template, regional_payloads, date_utc,
                                collection_state=collection_state,
                                behavioral_state=behavioral_state,
-                               region_model=args.tier2_model or "deepseek/deepseek-v4-flash",
-                               exec_model=args.model or "anthropic/claude-opus-4.7")
+                               region_model=args.tier2_model or "deepseek/deepseek-v4-pro",
+                               exec_model=args.model or "deepseek/deepseek-v4-pro")
         content = call_deepseek(tier1_model, system, user, provider=args.provider)
         exec_payload = parse_json_strict(content)
+    # Enforce correct model metadata (override any LLM hallucination)
+    exec_payload["models_used"] = [tier2_model, tier1_model]
+    exec_payload["tier2_provider"] = tier2_provider
+    exec_payload["tier1_provider"] = args.provider
     (analysis_dir / "exec_summary.json").write_text(
         json.dumps(exec_payload, indent=2))
 
-    # Red-team — uses tier-1 for better adversarial reasoning
-    log("running red-team pass (tier-1)")
+    # Red-team — uses separate model for adversarial reasoning
+    log(f"running red-team pass ({redteam_model.split('/')[-1]})")
     target_region = max(REGIONS_ORDER,
                        key=lambda r: regional_payloads[r].get("incident_count", 0))
     target_payload = regional_payloads[target_region]
@@ -856,8 +898,8 @@ def main() -> int:
         user = red_team_prompt(red_team_template, REGION_LABEL[target_region],
                                target_kj, target_payload.get("narrative", ""),
                                date_utc)
-        red_md = call_deepseek(tier1_model, system, user, json_mode=False,
-                               temperature=0.4, provider=args.provider)
+        red_md = call_deepseek(redteam_model, system, user, json_mode=False,
+                               temperature=0.4, max_tokens=4096, provider=redteam_provider)
     (analysis_dir / "red_team.md").write_text(red_md)
 
     log(f"wrote 11 analysis files to {analysis_dir}")

@@ -157,7 +157,151 @@
         "Hot weather to intensify in UK over bank holiday weekend",
         "Rubio tries to reassure Nato allies over US troop deployments"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T03:02:57.929286+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 32,
+      "checked_at": "2026-05-24T03:02:58.796749+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Suspect killed after shooting at Secret Service agents outside White House",
+        "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz",
+        "Heatwave likely to be confirmed as record-breaking temperatures forecast"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T16:03:26.087762+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 25,
+      "checked_at": "2026-05-24T16:03:26.918849+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'",
+        "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+        "'Six eggs used to be £1' - why everyday essentials cost so much more now"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T16:03:57.685288+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 25,
+      "checked_at": "2026-05-24T16:03:58.533236+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'",
+        "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+        "'Six eggs used to be £1' - why everyday essentials cost so much more now"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T16:04:10.158062+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 25,
+      "checked_at": "2026-05-24T16:04:10.845717+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'",
+        "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+        "'Six eggs used to be £1' - why everyday essentials cost so much more now"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T16:04:11.690786+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 25,
+      "checked_at": "2026-05-24T16:04:12.379141+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'",
+        "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+        "'Six eggs used to be £1' - why everyday essentials cost so much more now"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-24T16:04:19.021485+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 25,
+      "checked_at": "2026-05-24T16:04:19.817337+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'",
+        "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+        "'Six eggs used to be £1' - why everyday essentials cost so much more now"
+      ]
     }
   ],
-  "last_updated": "2026-05-23T03:02:58.292357+00:00"
+  "last_updated": "2026-05-24T16:04:19.817545+00:00"
 }

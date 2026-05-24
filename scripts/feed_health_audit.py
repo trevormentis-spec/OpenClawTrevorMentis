@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """Feed health audit — test all RSS feeds, flag dead/slow ones.
 
-Reads LOCAL_LANGUAGE_FEEDS from collect.py and tests each URL.
+Reads feeds from collect.py (hardcoded) AND sources_tested.json (catalog).
 Outputs: working, dead (4xx/5xx), slow (>5s), parse_error feeds.
 
 Usage:
-    python3 scripts/feed_health_audit.py                  # full audit
+    python3 scripts/feed_health_audit.py                  # audit collect.py only
+    python3 scripts/feed_health_audit.py --catalog         # audit catalog feeds only
+    python3 scripts/feed_health_audit.py --catalog --all   # audit both
     python3 scripts/feed_health_audit.py --prune           # remove dead from collect.py
     python3 scripts/feed_health_audit.py --quick           # test only feeds flagged slow
 """
 import re, time, urllib.request, urllib.error, xml.etree.ElementTree as ET, ssl, json, sys, pathlib
 
-COLLECT_PY = pathlib.Path(__file__).resolve().parent.parent / "skills" / "daily-intel-brief" / "scripts" / "collect.py"
+REPO = pathlib.Path(__file__).resolve().parent.parent
+COLLECT_PY = REPO / "skills" / "daily-intel-brief" / "scripts" / "collect.py"
+CATALOG_JSON = REPO / "analyst" / "meta" / "sources_tested.json"
 ctx = ssl.create_default_context()
 
 def test_feed(name: str, url: str) -> dict:
@@ -38,13 +42,38 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prune", action="store_true", help="Remove dead feeds from collect.py")
     parser.add_argument("--quick", action="store_true", help="Quick mode — fewer tests")
+    parser.add_argument("--catalog", action="store_true", help="Audit catalog feeds (sources_tested.json)")
+    parser.add_argument("--all", action="store_true", help="Audit both collect.py AND catalog feeds")
     args = parser.parse_args()
 
-    # Parse feeds from collect.py
-    content = COLLECT_PY.read_text()
-    feeds = re.findall(r'^\s*\(\"([^\"]+)\",\s*\"([^\"]+)\"', content, re.MULTILINE)
+    feeds = []
 
-    print(f"Testing {len(feeds)} feeds...")
+    # Collect feeds from sources_tested.json catalog
+    if args.catalog or args.all:
+        if CATALOG_JSON.exists():
+            catalog = json.loads(CATALOG_JSON.read_text())
+            for s in catalog.get("sources", []):
+                rss = (s.get("rss") or "").strip()
+                if rss and rss.startswith("http"):
+                    feeds.append((s["name"], rss))
+            print(f"Catalog feeds: {len(feeds)}")
+
+    # Parse feeds from collect.py
+    if not args.catalog or args.all:
+        content = COLLECT_PY.read_text()
+        py_feeds = re.findall(r'^\s*\("([^"]+)",\s*"([^"]+)"', content, re.MULTILINE)
+        # Dedup against catalog feeds
+        existing = {url for _, url in feeds}
+        for name, url in py_feeds:
+            if url not in existing:
+                feeds.append((name, url))
+        print(f"Hardcoded feeds: {len(py_feeds)} (added {len(feeds) - len(existing)} new)")
+
+    if not feeds:
+        print("No feeds found. Use --catalog and/or check collect.py.")
+        return
+
+    print(f"Testing {len(feeds)} total feeds...")
     results = []
     for i, (name, url) in enumerate(feeds):
         result = test_feed(name, url)

@@ -33,7 +33,8 @@ AGENTMAIL_BASE = "https://api.agentmail.to/v0/inboxes/trevor_mentis@agentmail.to
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 TASKS_DIR = REPO_ROOT / "tasks"
 
-# Which Gmail senders count as "intelligence sources"
+# Which Gmail senders count as "intelligence sources" — specific named sources get
+# preferential routing to their primary region
 INTEL_SENDERS = [
     "criticalthreats@aei.org",          # CTP/ISW
     "publications@understandingwar.org", # ISW
@@ -41,7 +42,44 @@ INTEL_SENDERS = [
     "newsletters@foreignpolicy.com",    # Foreign Policy
     "news@mail.mapbox.com",             # Mapbox (geospatial intel)
     "foreignpolicy.com",                # FP fallback
+    "newsletters@breakingdefense.com",   # Breaking Defense
+    "communications@cfr.org",           # CFR
+    "news@hudson.org",                  # Hudson Institute
+    "aei_today@aei.org",                # AEI
+    "nytdirect@nytimes.com",            # NYT
+    "noreply@news.bloomberg.com",       # Bloomberg
+    "politicoplaybook@email.politico.com", # POLITICO
+    "info@info.politico.com",           # POLITICO
+    "mike@axios.com",                   # Axios
+    "barak.ravid@axios.com",            # Axios
+    "no-reply@substack.com",            # Substack newsletters
 ]
+
+# Sender-based region routing — known newsletters get routed to their primary region
+# regardless of keyword matching. This catches newsletters that are thematically broad
+# but cover specific regional beats.
+SENDER_REGION_MAP = {
+    # Middle East beat
+    "barak.ravid@axios.com": "middle_east",
+    # Defense/security → global, but Breaking Defense leans Middle East + Europe
+    "newsletters@breakingdefense.com": "middle_east",
+    # Foreign policy think tanks
+    "communications@cfr.org": "north_america",
+    "news@hudson.org": "north_america",
+    "aei_today@aei.org": "north_america",
+    "newsletters@foreignpolicy.com": "north_america",
+    # Major news — broad coverage, classify by content
+    "nytdirect@nytimes.com": None,  # keyword-classify
+    "noreply@news.bloomberg.com": None,  # keyword-classify
+    "politicoplaybook@email.politico.com": "north_america",
+    "info@info.politico.com": "north_america",
+    "mike@axios.com": "north_america",
+    # Substack: classify by content
+    "no-reply@substack.com": None,
+    # Specific intel feeds
+    "publications@understandingwar.org": "europe",  # ISW primarily Ukraine/Russia
+    "criticalthreats@aei.org": "middle_east",  # CTP primarily Middle East
+}
 
 # Region keywords for classification
 REGION_KEYWORDS = {
@@ -116,8 +154,23 @@ def get_agentmail_key() -> str:
     return ""
 
 
-def classify_region(text: str) -> str:
-    """Classify which region an email belongs to."""
+def classify_region(text: str, from_addr: str = "") -> str:
+    """Classify which region an email belongs to.
+    
+    Checks sender-based routing first (SENDER_REGION_MAP), then falls
+    back to keyword matching against REGION_KEYWORDS.
+    """
+    # 1. Sender-based routing (fast, accurate for known sources)
+    if from_addr:
+        # Normalize the from address — extract just the email
+        email_match = re.search(r'[\w.+-]+@[\w-]+\.[\w.]+', from_addr)
+        clean_addr = email_match.group(0).lower() if email_match else from_addr.lower()
+        if clean_addr in SENDER_REGION_MAP:
+            mapped = SENDER_REGION_MAP[clean_addr]
+            if mapped is not None:
+                return mapped
+
+    # 2. Keyword-based classification (fallback)
     text_lower = text.lower()
     scores = {}
     for region, keywords in REGION_KEYWORDS.items():
@@ -141,7 +194,10 @@ def fetch_gmail_intel(maton_key: str, max_msgs: int = 15) -> list[dict]:
 
     # Search for intel emails from last 48h
     import urllib.parse
-    q = urllib.parse.quote("from:(understandingwar.org OR ciphrbrief.com OR foreignpolicy.com OR criticalthreats@aei.org) after:2026/05/19")
+    two_days_ago = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2)).strftime("%Y/%m/%d")
+    # Build sender filter from INTEL_SENDERS
+    sender_filter = " OR ".join(f"from:({s})" for s in INTEL_SENDERS[:10])
+    q = urllib.parse.quote(f"{{{sender_filter}}} after:{two_days_ago}")
     url = f"{GMAIL_LIST}?q={q}&maxResults={max_msgs}"
 
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {maton_key}"})
@@ -190,7 +246,7 @@ def fetch_gmail_intel(maton_key: str, max_msgs: int = 15) -> list[dict]:
                         break
 
         full_text = f"{subject} {body[:2000]}"
-        region = classify_region(full_text)
+        region = classify_region(full_text, from_addr)
 
         incident = {
             "id": make_incident_id(subject, from_addr),
@@ -240,8 +296,15 @@ def fetch_agentmail_intel(api_key: str, max_msgs: int = 15) -> list[dict]:
 
             subject = msg.get("subject", "No Subject")
             body = msg.get("text_body", msg.get("body", ""))[:2000]
+
+            # Skip self-sent emails (Trevor's own brief deliveries, reports, etc.)
+            # These are output, not intelligence input
+            if "trevor_mentis@agentmail.to" in from_addr.lower() or \
+               "trevor.mentis@gmail.com" in from_addr.lower():
+                continue
+
             full_text = f"{subject} {body}"
-            region = classify_region(full_text)
+            region = classify_region(full_text, from_addr)
 
             incident = {
                 "id": make_incident_id(subject, from_addr),
@@ -335,10 +398,10 @@ def main() -> None:
             lines = section.strip().split("\n")
             headline = lines[0].strip()
             full = section[:2000]
-            region = classify_region(full)
-            # Extract "From:" line
+            # Extract "From:" line before classification
             from_match = re.search(r"\*\*From:\*\* (.+)", section)
             from_addr = from_match.group(1) if from_match else "newsletter@intel"
+            region = classify_region(full, from_addr)
 
             inc = {
                 "id": make_incident_id(headline, from_addr),

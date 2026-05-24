@@ -2,9 +2,10 @@
 """Collector worker for the Daily Intel Brief.
 
 Reads the durable source registry (analyst/meta/sources.json) plus a
-short list of major wires, pulls the last 24 hours, normalises into
-incidents tagged by region per references/regions.json, and writes
-WORKING_DIR/raw/incidents.json.
+short list of major wires and dynamically-loaded catalog feeds from
+analyst/meta/sources_tested.json (maintained by the heartbeat source builder).
+Pulls the last 24 hours, normalises into incidents tagged by region per
+references/regions.json, and writes WORKING_DIR/raw/incidents.json.
 
 This is a *reference implementation* of agents/collector.md. Subagents
 that follow that prompt are free to do better, but this script gives a
@@ -46,7 +47,7 @@ WIRE_FEEDS = [
     ("FT World", "https://www.ft.com/world?format=rss"),
     ("The Guardian World", "https://www.theguardian.com/world/rss"),
     ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
-    ("ABC News (AU)", "https://www.abc.net.au/news/feed/46078/rss.xml"),
+
     ("France 24 EN", "https://www.france24.com/en/rss"),
     ("DW News EN", "https://rss.dw.com/rdf/rss-en-world"),
     ("CNBC World", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362"),
@@ -58,44 +59,38 @@ WIRE_FEEDS = [
 # The collection model (DeepSeek V4 Flash) can handle multi-lingual content.
 LOCAL_LANGUAGE_FEEDS = [
     # Persian / Farsi (Iran)
-    ("Mehr News (English)", "https://en.mehrnews.com/rss", "en", ("C", 3)),
-    ("Iran International", "https://www.iranintl.com/en/rss.xml", "en", ("B", 2)),
+
     # Arabic (Gulf / Middle East)
-    ("Gulf News", "https://gulfnews.com/rss-feeds", "en", ("B", 2)),
-    ("The National (UAE)", "https://www.thenationalnews.com/arc/outboundfeeds/rss/", "en", ("B", 2)),
+
     ("Arab News", "https://www.arabnews.com/rss.xml", "en", ("B", 2)),
-    ("Middle East Eye", "https://www.middleeasteye.net/rss", "en", ("B", 2)),
+
     ("The New Arab", "https://www.newarab.com/rss.xml", "en", ("B", 2)),
     # Russian
     ("TASS (English)", "https://tass.com/rss/v2.xml", "en", ("C", 3)),
     ("Meduza (English)", "https://meduza.io/rss/en/all", "en", ("B", 2)),
     ("Meduza (Russian)", "https://meduza.io/rss/all", "ru", ("B", 2)),
     ("Moscow Times", "https://www.themoscowtimes.com/rss/news", "en", ("B", 2)),
-    ("Kommersant (Russian)", "https://www.kommersant.ru/RSS/main.xml", "ru", ("C", 3)),
+
     # Chinese
     ("Xinhua (English)", "http://www.xinhuanet.com/english/rss/worldrss.xml", "en", ("C", 3)),
     ("South China Morning Post", "https://www.scmp.com/rss/4/feed", "en", ("B", 2)),
-    ("CGTN (English)", "https://www.cgtn.com/subscribe/rss.html", "en", ("C", 3)),
+
     # Israeli / Hebrew
     ("Ynet (Hebrew)", "https://www.ynet.co.il/Integration/StoryRss2.xml", "he", ("B", 2)),
     ("Jerusalem Post", "https://www.jpost.com/Rss/RssFeedsHeadlines.aspx", "en", ("B", 2)),
-    ("i24 News (English)", "https://www.i24news.tv/en/rss", "en", ("B", 2)),
+
     # European
     ("Le Monde (English)", "https://www.lemonde.fr/en/rss/une.xml", "en", ("B", 2)),
-    ("El País (English)", "https://feeds.elpais.com/mrss-s/pages/ep-english/site/elpais.com/portada", "en", ("B", 2)),
+
     ("El País (Spanish)", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", "es", ("B", 2)),
     ("Corriere della Sera (Italian)", "https://xml2.corriereobjects.it/rss/esteri.xml", "it", ("B", 2)),
     # Asian
-    ("Nikkei Asia", "https://asia.nikkei.com/rss/feed", "en", ("B", 2)),
-    ("The Hindu", "https://www.thehindu.com/news/feeder/default.rss", "en", ("B", 2)),
-    ("The Japan Times", "https://www.japantimes.co.jp/feed/top", "en", ("B", 2)),
-    ("Korea Herald", "http://www.koreaherald.com/rssxml/HeraldNews.xml", "en", ("B", 2)),
+
     ("Channel News Asia", "https://www.channelnewsasia.com/rssfeeds/8395986", "en", ("B", 2)),
     # Africa
-    ("allAfrica", "https://allafrica.com/tools/headlines/rss/latest/headlines.rdf", "en", ("B", 2)),
+
     ("Africanews", "https://www.africanews.com/feed/", "en", ("B", 2)),
-    ("Daily Maverick (SA)", "https://www.dailymaverick.co.za/feed/", "en", ("B", 2)),
-    ("The East African", "https://www.theeastafrican.co.ke/rss/", "en", ("B", 2)),
+
     # South America
     ("MercoPress", "https://en.mercopress.com/rss/latin-america", "en", ("B", 2)),
     ("Buenos Aires Times", "https://www.batimes.com.ar/feed", "en", ("B", 2)),
@@ -103,48 +98,40 @@ LOCAL_LANGUAGE_FEEDS = [
     ("MarketWatch", "https://feeds.marketwatch.com/marketwatch/topstories/", "en", ("B", 2)),
     ("ZeroHedge", "https://feeds.feedburner.com/zerohedge/feed", "en", ("C", 3)),
     # --- South East Asia
-    ("Bangkok Post", "https://www.bangkokpost.com/rss/data/news.xml", "en", ("B", 2)),
-    ("The Irrawaddy (Myanmar)", "https://www.irrawaddy.com/feed", "en", ("B", 2)),
+
     ("Vietnam Express", "https://e.vnexpress.net/rss/world.rss", "en", ("B", 2)),
-    ("The Phnom Penh Post", "https://www.phnompenhpost.com/rss", "en", ("B", 2)),
+
     ("PhilStar (Philippines)", "https://www.philstar.com/rss/headlines", "en", ("B", 2)),
     ("Rappler (Philippines)", "https://www.rappler.com/world/feed", "en", ("B", 2)),
-    ("Philippine Daily Inquirer", "https://www.inquirer.net/fullfeed", "en", ("B", 2)),
-    ("The Star (Malaysia)", "https://www.thestar.com.my/rss/news/nation", "en", ("B", 2)),
+
     ("Malay Mail", "https://www.malaymail.com/feed/rss", "en", ("B", 2)),
     ("ASEAN Secretariat News", "https://asean.org/feed", "en", ("B", 2)),
     ("Fulcrum ISEAS (SE Asia)", "https://fulcrum.sg/feed", "en", ("B", 2)),
     ("The Diplomat SE Asia", "https://thediplomat.com/regions/southeast-asia/feed", "en", ("B", 2)),
     # --- Central Asia / India / China
-    ("RFE/RL Central Asia", "https://www.rferl.org/rss/central-asia/", "en", ("B", 2)),
+
     ("The Diplomat China/Asia", "https://thediplomat.com/regions/china/feed", "en", ("B", 2)),
     ("Dawn (Pakistan)", "https://www.dawn.com/feeds/home", "en", ("B", 2)),
-    ("The Hindu", "https://www.thehindu.com/news/national/feeder/default.rss", "en", ("B", 2)),
+
     ("Times of India", "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms", "en", ("B", 2)),
-    ("The Third Pole (Asia water/climate)", "https://www.thethirdpole.net/feed", "en", ("B", 2)),
-    ("AKIpress (Kyrgyzstan)", "https://akipress.com/rss.xml", "en", ("B", 2)),
+
     ("Asia Times", "https://asiatimes.com/feed", "en", ("B", 2)),
     ("Carnegie India", "https://carnegieindia.org/feed", "en", ("B", 2)),
-    ("Central Asia-Caucasus Analyst", "https://www.cacianalyst.org/feed", "en", ("B", 2)),
-    ("EurasiaNet", "https://eurasianet.org/rss.xml", "en", ("B", 2)),
+
     ("The News International (Pakistan)", "https://www.thenews.com.pk/rss/1/1", "en", ("B", 2)),
     ("The Kathmandu Post", "https://kathmandupost.com/rss", "en", ("B", 2)),
     ("Carnegie China", "https://carnegiechina.org/feed", "en", ("B", 2)),
     ("Global Voices Central Asia", "https://globalvoices.org/-/world/central-asia-caucasus/feed", "en", ("B", 2)),
     ("Himal Southasian", "https://www.himalmag.com/feed", "en", ("B", 2)),
-    ("ORF India (security/geopolitics)", "https://www.orfonline.org/feed", "en", ("B", 2)),
-    ("Nepali Times", "https://www.nepalitimes.com/feed", "en", ("B", 2)),
-    ("Brookings India/Asia", "https://www.brookings.edu/feed/asia-pacific", "en", ("B", 2)),
+
     ("StratNews Global India", "https://stratnewsglobal.com/feed", "en", ("B", 2)),
     # --- Oceania / Pacific
     ("ASPI The Strategist", "https://www.aspistrategist.org.au/feed", "en", ("B", 2)),
-    ("Lowy Interpreter", "https://www.lowyinstitute.org/feed/", "en", ("B", 2)),
+
     ("Sydney Morning Herald", "https://www.smh.com.au/rss/national.xml", "en", ("B", 2)),
-    ("The Australian", "https://www.theaustralian.com.au/feed", "en", ("B", 2)),
-    ("NZ Herald", "https://www.nzherald.co.nz/arc/outboundfeeds/rss/", "en", ("B", 2)),
+
     ("Radio NZ", "https://www.rnz.co.nz/rss/national.xml", "en", ("B", 2)),
-    ("ABC News (AU) Pacific", "https://www.abc.net.au/news/feed/2942480/pacific/rss.xml", "en", ("B", 2)),
-    ("Pacific Islands Forum", "https://www.forumsec.org/feed", "en", ("B", 2)),
+
     ("Devpolicy Blog (ANU)", "https://devpolicy.org/feed", "en", ("B", 2)),
     ("Island Business (Pacific)", "https://islandsbusiness.com/feed", "en", ("B", 2)),
     # --- South America
@@ -158,50 +145,35 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Folha de S.Paulo (Portuguese)", "https://feeds.folha.uol.com.br/emcimadahora/rss.xml", "pt", ("B", 2)),
     ("Clarin (Argentina)", "https://www.clarin.com/rss/lo-ultimo/", "es", ("B", 2)),
     ("El Tiempo (Colombia)", "https://www.eltiempo.com/rss/colombia.xml", "es", ("B", 2)),
-    ("Reforma (Mexico)", "https://www.reforma.com/rss/portada.xml", "es", ("B", 2)),
+
     ("El Nacional (Venezuela)", "https://www.elnacional.com/feed/", "es", ("B", 2)),
     ("Agência Brasil (Portuguese)", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml", "pt", ("B", 2)),
     # --- Central America & Caribbean
     ("Caribbean News Global", "https://www.caribbeannewsglobal.com/feed", "en", ("B", 2)),
-    ("Jamaica Gleaner", "https://jamaica-gleaner.com/feed", "en", ("B", 2)),
-    ("Trinidad Express", "https://trinidadexpress.com/rss", "en", ("B", 2)),
-    ("Caribbean Investigative Journalist Network", "https://www.cijn.org/feed", "en", ("B", 2)),
-    ("Central America Politics RISK Report", "https://centralamericapolitics.substack.com/feed", "en", ("C", 3)),
-    ("La Prensa Gráfica (El Salvador)", "https://www.laprensagrafica.com/rss", "es", ("B", 2)),
-    ("Nómada (Guatemala)", "https://nomada.gt/feed", "es", ("B", 2)),
-    ("Confidencial (Nicaragua)", "https://confidencial.com.ni/feed", "es", ("B", 2)),
-    ("Caribbean News Now", "https://www.caribbeannewsnow.com/rss.xml", "en", ("B", 2)),
-    ("St. Lucia Times", "https://stluciatimes.com/feed", "en", ("B", 2)),
+
     # --- Africa
-    ("ISS Africa Today", "https://issafrica.org/rss/iss-today.xml", "en", ("B", 2)),
-    ("The Continent (African journalism)", "https://www.thecontinent.co.za/feed", "en", ("B", 2)),
+
     ("DefenceWeb (Africa)", "https://www.defenceweb.co.za/feed", "en", ("B", 2)),
     ("HumAngle (Sahel/West Africa)", "https://humanglemedia.com/feed", "en", ("B", 2)),
-    ("The Sentry (Africa conflict finance)", "https://thesentry.org/feed", "en", ("B", 2)),
+
     ("Zitamar News (Mozambique)", "https://zitamar.com/feed", "en", ("B", 2)),
-    ("The New Humanitarian", "https://www.thenewhumanitarian.org/rss/feed", "en", ("B", 2)),
+
     ("Mail & Guardian (SA)", "https://mg.co.za/rss", "en", ("B", 2)),
     ("Premium Times (Nigeria)", "https://www.premiumtimesng.com/feed", "en", ("B", 2)),
-    ("The Africa Report", "https://www.theafricareport.com/feed", "en", ("B", 2)),
+
     ("Sahara Reporters (Nigeria)", "https://saharareporters.com/rss.xml", "en", ("B", 2)),
-    ("Garowe Online (Somalia)", "https://www.garoweonline.com/feed", "en", ("B", 2)),
+
     ("Ethiopia Insight", "https://www.ethiopia-insight.com/feed", "en", ("B", 2)),
-    ("Africa Confidential", "https://www.africa-confidential.com/rss", "en", ("B", 2)),
-    ("Crisis Group Africa", "https://www.crisisgroup.org/rss/africa", "en", ("B", 2)),
-    ("Amwani (African security/East Africa)", "https://amwani.substack.com/feed", "en", ("C", 3)),
-    ("ACLED Africa data", "https://acleddata.com/feed", "en", ("B", 2)),
-    ("Somalia Report", "https://somaliareport.com/feed", "en", ("B", 2)),
-    ("Chatham House Africa", "https://www.chathamhouse.org/rss/africa", "en", ("B", 2)),
-    ("African Defence Review", "https://www.africandefencereview.com/feed", "en", ("B", 2)),
+
     # --- Prediction Markets (extra)
     ("Bloomberg Markets", "https://feeds.bloomberg.com/markets/news.rss", "en", ("B", 2)),
-    ("Reuters Financial", "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=financial-services", "en", ("B", 2)),
+
     ("Financial Times Markets", "https://www.ft.com/markets?format=rss", "en", ("B", 2)),
-    ("WSJ Markets", "https://feeds.wsjonline.com/wsj/xml/rss/3_7031", "en", ("B", 2)),
+
     ("OilPrice.com", "https://oilprice.com/rss/main", "en", ("C", 3)),
     # North America
     ("Politico", "https://rss.politico.com/politics-news.xml", "en", ("B", 2)),
-    ("The Hill", "https://thehill.com/rss/syndicator/191", "en", ("B", 2)),
+
     ("CBC News (Canada)", "https://www.cbc.ca/cmlink/rss-world", "en", ("B", 2)),
     ("Mexico News Daily", "https://mexiconewsdaily.com/feed/", "en", ("B", 2)),
     ("Border Report (US-Mexico)", "https://www.borderreport.com/feed/", "en", ("B", 2)),
@@ -250,7 +222,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Unravelling Geopolitics", "https://unravellinggeopolitics.substack.com/feed", "en", ("B", 2)),
     # Replaces: Latin America Weekly Brief, Africa Strategy
     ("Latin America Daily Briefing", "https://latinamericadailybriefing.substack.com/feed", "en", ("B", 2)),
-    ("The Sentry (Africa conflict finance)", "https://thesentry.substack.com/feed", "en", ("B", 2)),
+
     # Replaces: Eurasia Geopolitics, Asia Geopolitics Review
     ("China-Russia Report", "https://chinarussiareport.substack.com/feed", "en", ("B", 2)),
     ("Interconnected (tech/Asia/geopolitics)", "https://interconnect.substack.com/feed", "en", ("B", 2)),
@@ -269,58 +241,30 @@ LOCAL_LANGUAGE_FEEDS = [
 
     # ── Central America: country-level major newspapers ──
     ("Prensa Libre (Guatemala)", "https://www.prensalibre.com/feed/", "es", ("B", 2)),
-    ("El Heraldo (Honduras)", "https://www.elheraldo.hn/rss.xml", "es", ("B", 2)),
-    ("La Prensa (Honduras)", "https://www.laprensa.hn/rss.xml", "es", ("B", 2)),
-    ("El Nuevo Diario (Nicaragua)", "https://www.elnuevodiario.com.ni/rss/", "es", ("B", 2)),
+
     ("La Nación (Costa Rica)", "https://www.nacion.com/rss/", "es", ("B", 2)),
-    ("La Estrella de Panamá", "https://www.laestrella.com.pa/rss/", "es", ("B", 2)),
+
     ("El Diario de Hoy (El Salvador)", "https://www.elsalvador.com/rss/", "es", ("B", 2)),
     ("Diario Más (El Salvador)", "https://www.diariomas.com/rss/", "es", ("B", 2)),
     # ── Caribbean: island-level major newspapers ──
-    ("Haiti Libre", "https://www.haitilibre.com/rss.xml", "fr", ("B", 2)),
-    ("Le Nouvelliste (Haiti)", "https://lenouvelliste.com/rss.xml", "fr", ("B", 2)),
-    ("Listin Diario (Dominican Republic)", "https://listindiario.com/rss/", "es", ("B", 2)),
-    ("Hoy Digital (Dominican Republic)", "https://hoy.com.do/feed/", "es", ("B", 2)),
-    ("Granma (Cuba)", "http://www.granma.cu/feed.xml", "es", ("C", 3)),
-    ("Cubanet (Independent Cuba)", "https://www.cubanet.org/feed/", "es", ("B", 2)),
-    ("El Nuevo Día (Puerto Rico)", "https://www.elnuevodia.com/rss/", "es", ("B", 2)),
-    ("Barbados Today", "https://www.barbadostoday.bb/feed/", "en", ("B", 2)),
-    ("The Nassau Guardian (Bahamas)", "https://thenassauguardian.com/feed/", "en", ("B", 2)),
+
     ("Trinidad and Tobago Newsday", "https://newsday.co.tt/feed/", "en", ("B", 2)),
     # ── Africa: country-level major newspapers ──
-    ("Daily Nation (Kenya)", "https://www.nation.co.ke/rss.xml", "en", ("B", 2)),
-    ("The Standard (Kenya)", "https://www.standardmedia.co.ke/rss/", "en", ("B", 2)),
-    ("The Guardian (Nigeria)", "https://guardian.ng/feed/", "en", ("B", 2)),
+
     ("Vanguard (Nigeria)", "https://www.vanguardngr.com/feed/", "en", ("B", 2)),
     ("The Punch (Nigeria)", "https://punchng.com/feed/", "en", ("B", 2)),
-    ("Citizen (Tanzania)", "https://www.thecitizen.co.tz/rss.xml", "en", ("B", 2)),
-    ("Daily Monitor (Uganda)", "https://www.monitor.co.ug/rss.xml", "en", ("B", 2)),
-    ("New Vision (Uganda)", "https://www.newvision.co.ug/feed/", "en", ("B", 2)),
-    ("Ghana Web", "https://www.ghanaweb.com/GhanaHomePage/rss/news.xml", "en", ("B", 2)),
-    ("Graphic Online (Ghana)", "https://www.graphic.com.gh/feed/", "en", ("B", 2)),
-    ("Ethiopian Herald", "https://www.ethiopianherald.com/feed/", "en", ("B", 2)),
-    ("Zimbabwe Herald", "https://www.herald.co.zw/feed/", "en", ("B", 2)),
+
     ("Times of Zambia", "https://www.times.co.zm/feed/", "en", ("B", 2)),
-    ("Mozambique News Agency", "https://www.poptel.org.uk/mozambique-news/rss.xml", "en", ("B", 2)),
-    ("Cameroon Tribune", "https://www.cameroon-tribune.cm/rss.xml", "fr", ("B", 2)),
+
     ("Jeune Afrique (Francophone Africa)", "https://www.jeuneafrique.com/feed/", "fr", ("B", 2)),
-    ("The New Times (Rwanda)", "https://www.newtimes.co.rw/rss/", "en", ("B", 2)),
-    ("Ahram Online (Egypt)", "https://english.ahram.org.eg/rss.aspx", "en", ("B", 2)),
+
     ("Egypt Independent", "https://egyptindependent.com/feed/", "en", ("B", 2)),
     ("Libya Herald", "https://www.libyaherald.com/feed/", "en", ("B", 2)),
-    ("Morocco World News", "https://www.moroccoworldnews.com/feed/", "en", ("B", 2)),
-    ("Algeria Press Service", "https://www.aps.dz/en/rss.xml", "en", ("C", 3)),
-    ("Tunis Afrique Presse", "https://www.tap.info.tn/en/rss.xml", "en", ("C", 3)),
-    ("Sudan Tribune", "https://www.sudantribune.com/rss.xml", "en", ("B", 2)),
+
     # ── South East Asia: country-level major newspapers ──
-    ("Thai PBS World", "https://www.thaipbsworld.com/feed/", "en", ("B", 2)),
-    ("The Nation Thailand", "https://www.nationthailand.com/rss/feed", "en", ("B", 2)),
+
     ("Khaosod English (Thailand)", "https://www.khaosodenglish.com/feed/", "en", ("B", 2)),
-    ("Tuoi Tre News (Vietnam)", "https://tuoitrenews.vn/rss", "en", ("B", 2)),
-    ("VietnamNet", "https://vietnamnet.vn/en/rss/", "en", ("B", 2)),
-    ("Kompas (Indonesia)", "https://www.kompas.com/rss/", "id", ("B", 2)),
-    ("Detik (Indonesia)", "https://www.detik.com/rss/", "id", ("B", 2)),
-    ("Jakarta Globe", "https://jakartaglobe.id/feed/", "en", ("B", 2)),
+
     ("Tempo (Indonesia)", "https://www.tempo.co/rss/", "id", ("B", 2)),
     ("Myanmar Now", "https://myanmar-now.org/en/feed/", "en", ("B", 2)),
     ("Khmer Times (Cambodia)", "https://www.khmertimeskh.com/feed/", "en", ("B", 2)),
@@ -335,7 +279,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Times of Central Asia", "https://timesca.com/feed/", "en", ("B", 2)),
     ("Tashkent Times (Uzbekistan)", "https://tashkenttimes.uz/feed/", "en", ("B", 2)),
     ("KazInform (Kazakhstan)", "https://www.inform.kz/rss.xml", "en", ("C", 3)),
-    ("AKIpress (Kyrgyzstan)", "https://akipress.com/rss.xml", "en", ("B", 2)),
+
     ("Trend News Agency (Azerbaijan)", "https://en.trend.az/feed/", "en", ("C", 3)),
     ("Caucasus Watch", "https://caucasuswatch.de/feed/", "en", ("B", 2)),
     # ── Pacific Islands: country-level sources ──
@@ -461,7 +405,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Hespress (Morocco)", "https://www.hespress.com/feed", "ar", ("B", 2)),
     ("Al-Masry Al-Youm", "https://www.almasryalyoum.com/rss/RssFeeds.aspx", "ar", ("B", 2)),
     ("An-Nahar (Lebanon)", "https://www.annahar.com/rss", "ar", ("B", 2)),
-    ("Kommersant (Russian)", "https://www.kommersant.ru/RSS/main.xml", "ru", ("B", 2)),
+
     ("Meduza (Russian)", "https://meduza.io/rss/all", "ru", ("B", 2)),
     ("RBC (Russian)", "https://static.rbc.ru/rbc/internal/rss.rbc.ru/rbc.ru/mainnews.rss", "ru", ("B", 2)),
     ("TASS (Russian)", "https://tass.ru/rss/v2.xml", "ru", ("C", 3)),
@@ -473,7 +417,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Clarín (Argentina)", "https://www.clarin.com/rss/lo-ultimo/", "es", ("B", 2)),
     ("Infobae (Spanish)", "https://www.infobae.com/arc/outboundfeeds/rss/", "es", ("B", 2)),
     ("El Universal (Mexico)", "https://www.eluniversal.com.mx/rss.xml", "es", ("B", 2)),
-    ("Reforma (Mexico)", "https://www.reforma.com/rss/portada.xml", "es", ("B", 2)),
+
     ("El Tiempo (Colombia)", "https://www.eltiempo.com/rss/colombia.xml", "es", ("B", 2)),
     ("Folha de S.Paulo (PT)", "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml", "pt", ("B", 2)),
     ("O Globo (PT)", "https://oglobo.globo.com/rss/ultimas/", "pt", ("B", 2)),
@@ -489,8 +433,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Anadolu Agency", "https://www.aa.com.tr/en/rss/default?cat=live", "en", ("B", 2)),
     ("Daily Sabah", "https://www.dailysabah.com/rssFeed/wholeSite", "en", ("B", 2)),
     ("BBC Persian", "https://feeds.bbci.co.uk/persian/rss.xml", "fa", ("B", 2)),
-    ("Iran International", "https://www.iranintl.com/en/rss.xml", "en", ("B", 2)),
-    ("Mehr News (English)", "https://en.mehrnews.com/rss", "en", ("B", 2)),
+
     ("Mehr News (Persian)", "https://www.mehrnews.com/rss", "fa", ("C", 3)),
     ("IRNA (English)", "https://en.irna.ir/rss", "en", ("C", 3)),
     ("Tasnim News", "https://www.tasnimnews.com/en/rss/feed/0/8/0", "en", ("C", 3)),
@@ -516,7 +459,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("VnExpress (Vietnamese)", "https://vnexpress.net/rss/tin-moi-nhat.rss", "vi", ("B", 2)),
     ("Tuoi Tre (Vietnamese)", "https://tuoitre.vn/rss/tin-moi-nhat.rss", "vi", ("B", 2)),
     ("Bangkok Post (Thai)", "https://www.bangkokpost.com/rss/data/topstories.xml", "en", ("B", 2)),
-    ("The Star (Malaysia)", "https://www.thestar.com.my/rss/nation", "en", ("B", 2)),
+
         # ── Priority add: state broadcaster suite + missing regional pillars ──
     ("Rossiyskaya Gazeta (RU state)", "https://rg.ru/xml/index.xml", "en", ("C", 3)),
     ("Fars News (English)", "https://www.farsnews.ir/en/rss", "en", ("C", 3)),
@@ -532,15 +475,70 @@ DEFAULT_ADMIRALTY = ("B", 2)  # major wires default; downgrade for state media
 
 USER_AGENT = "TrevorDailyBrief/1.0 (+https://github.com/trevormentis-spec/OpenClawTrevorMentis)"
 
+CATALOG_PATH = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "analyst" / "meta" / "sources_tested.json"
 
 def log(msg: str) -> None:
     ts = dt.datetime.utcnow().strftime("%H:%M:%S")
     print(f"[collect {ts}] {msg}", file=sys.stderr, flush=True)
 
-
 def load_json(path: pathlib.Path) -> Any:
     return json.loads(path.read_text())
 
+def load_catalog_feeds(catalog_path: pathlib.Path | None = None,
+                       max_per_region: int = 6,
+                       run_count: int = 1) -> list[tuple[str, str, str, str, str]]:
+    """Load working feeds from sources_tested.json catalog.
+
+    Returns list of (name, url, admiralty_source, admiralty_info, region) tuples.
+    Applies per-region rotation so collection doesn't blow up with 300+ feeds.
+    """
+    path = catalog_path or CATALOG_PATH
+    if not path.exists():
+        log(f"catalog not found: {path}")
+        return []
+    try:
+        catalog = json.loads(path.read_text())
+    except Exception as exc:
+        log(f"catalog load failed: {exc}")
+        return []
+
+    # Group working feeds by region
+    working: dict[str, list[dict]] = {}
+    for s in catalog.get("sources", []):
+        if s.get("status") != "working":
+            continue
+        rss = s.get("rss", "").strip()
+        if not rss or not rss.startswith("http"):
+            continue
+        region = s.get("region", "global")
+        working.setdefault(region, []).append(s)
+
+    # Rotate: pick up to max_per_region feeds per region
+    selected: list[tuple[str, str, str, str, str]] = []
+    dead_cache = load_dead_feeds()
+    dead_skipped = 0
+    for region, feeds in sorted(working.items()):
+        feeds_sorted = sorted(feeds, key=lambda s: s.get("name", ""))
+        # Filter out known-dead feeds
+        live_feeds = [s for s in feeds_sorted if not is_dead(s.get("rss", ""), dead_cache)]
+        dead_skipped += len(feeds_sorted) - len(live_feeds)
+        offset = (run_count * max_per_region) % max(1, len(live_feeds)) if live_feeds else 0
+        rotated = live_feeds[offset:] + live_feeds[:offset]
+        picked = rotated[:max_per_region]
+        for s in picked:
+            selected.append((
+                s["name"],
+                s["rss"],
+                s.get("admiralty_source", "C"),
+                s.get("admiralty_info", "3"),
+                region,
+            ))
+
+    if dead_skipped:
+        log(f"catalog feeds: {len(selected)} selected from {sum(len(v) for v in working.values())} working ({dead_skipped} dead-skipped) across {len(working)} regions")
+    else:
+        log(f"catalog feeds: {len(selected)} selected from {sum(len(v) for v in working.values())} working across {len(working)} regions")
+    return selected
 
 def country_to_region(country: str, regions: dict) -> str | None:
     if not country:
@@ -553,13 +551,68 @@ def country_to_region(country: str, regions: dict) -> str | None:
             return snake
     return None
 
+# ── Dead-feed cache ──────────────────────────────────────────────
+# Avoids wasting 30s+ on feeds that consistently fail.
+# Skips feeds with ≥3 consecutive failures, retests after 48h.
+DEAD_FEED_PATH = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "brain" / "memory" / "semantic" / "dead-feeds.json"
+DEAD_FEED_THRESHOLD = 3      # consecutive failures before we skip
+DEAD_FEED_RETEST_HOURS = 48  # retest after this many hours
+FETCH_TIMEOUT = 8            # seconds (down from 15 — dead feeds waste too much time)
+FETCH_RETRIES = 1            # one retry max
 
-def fetch(url: str, timeout: int = 15, max_retries: int = 2) -> str | None:
-    """Fetch a URL with retry and exponential backoff."""
-    for attempt in range(max_retries):
+def load_dead_feeds() -> dict[str, dict]:
+    """Load the dead-feed cache. Returns {url: {failures, last_failed_at}}."""
+    try:
+        if DEAD_FEED_PATH.exists():
+            return json.loads(DEAD_FEED_PATH.read_text())
+    except Exception:
+        pass
+    return {}
+
+def save_dead_feeds(cache: dict[str, dict]) -> None:
+    """Persist the dead-feed cache."""
+    DEAD_FEED_PATH.parent.mkdir(parents=True, exist_ok=True)
+    DEAD_FEED_PATH.write_text(json.dumps(cache, indent=2))
+
+def is_dead(url: str, cache: dict[str, dict]) -> bool:
+    """Check if a URL should be skipped based on cache."""
+    entry = cache.get(url)
+    if not entry:
+        return False
+    failures = entry.get("failures", 0)
+    if failures < DEAD_FEED_THRESHOLD:
+        return False
+    last_failed = entry.get("last_failed_at", "")
+    if last_failed:
+        try:
+            failed_dt = dt.datetime.fromisoformat(last_failed)
+            age_hours = (dt.datetime.now(dt.timezone.utc) - failed_dt).total_seconds() / 3600
+            if age_hours > DEAD_FEED_RETEST_HOURS:
+                return False  # expired — retest
+        except Exception:
+            pass
+    return True
+
+def record_feed_failure(url: str, cache: dict[str, dict]) -> None:
+    """Record a fetch failure in the dead-feed cache."""
+    now = dt.datetime.now(dt.timezone.utc).isoformat()
+    entry = cache.get(url, {"failures": 0, "last_failed_at": now})
+    entry["failures"] = entry.get("failures", 0) + 1
+    entry["last_failed_at"] = now
+    cache[url] = entry
+
+def record_feed_success(url: str, cache: dict[str, dict]) -> None:
+    """Reset failure count on successful fetch."""
+    if url in cache:
+        del cache[url]
+# ── end dead-feed cache ─────────────────────────────────────────
+
+def fetch(url: str, timeout: int = FETCH_TIMEOUT, max_retries: int = FETCH_RETRIES) -> str | None:
+    """Fetch a URL with retry. Short timeout — dead feeds waste pipeline time."""
+    for attempt in range(max_retries + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            t = timeout * (attempt + 1)  # 15s first, 30s retry
+            t = timeout * (attempt + 1)  # 8s first, 16s retry
             with urllib.request.urlopen(req, timeout=t) as resp:
                 data = resp.read()
                 try:
@@ -567,12 +620,11 @@ def fetch(url: str, timeout: int = 15, max_retries: int = 2) -> str | None:
                 except Exception:
                     return None
         except Exception as exc:
-            if attempt < max_retries - 1:
+            if attempt < max_retries:
                 log(f"fetch attempt {attempt+1} failed for {url}: {exc}, retrying...")
             else:
                 log(f"fetch failed for {url}: {exc}")
     return None
-
 
 def parse_rss(xml_text: str, source_name: str, default_admiralty=DEFAULT_ADMIRALTY) -> list[dict]:
     """Very tolerant RSS/Atom parser. Returns a list of normalized items."""
@@ -618,9 +670,7 @@ def parse_rss(xml_text: str, source_name: str, default_admiralty=DEFAULT_ADMIRAL
 
     return items
 
-
 COUNTRY_REGEX_CACHE: dict[str, re.Pattern] = {}
-
 
 def detect_country(text: str, regions: dict) -> str | None:
     """Cheap country detection: longest matching country name in text."""
@@ -641,7 +691,6 @@ def detect_country(text: str, regions: dict) -> str | None:
     candidates.sort(key=len, reverse=True)
     return candidates[0]
 
-
 def parse_pubdate(pub: str) -> str | None:
     if not pub:
         return None
@@ -658,7 +707,6 @@ def parse_pubdate(pub: str) -> str | None:
             continue
     return None
 
-
 SECURITY_KEYWORDS = re.compile(
     r"\b(strike|attack|killed|wounded|missile|drone|sanction|coup|protest|"
     r"clashes|operation|raid|airstrike|shelling|siege|treaty|election|"
@@ -667,11 +715,9 @@ SECURITY_KEYWORDS = re.compile(
     re.IGNORECASE,
 )
 
-
 def is_security_relevant(item: dict) -> bool:
     text = f"{item.get('title','')} {item.get('summary','')}"
     return bool(SECURITY_KEYWORDS.search(text))
-
 
 def categorise(item: dict) -> str:
     text = f"{item.get('title','')} {item.get('summary','')}".lower()
@@ -689,11 +735,9 @@ def categorise(item: dict) -> str:
         return "economic"
     return "political"
 
-
 def make_id(occurred: str, country: str, headline: str) -> str:
     h = hashlib.md5(f"{occurred}|{country}|{headline}".encode()).hexdigest()[:4]
     return f"i-{occurred[:10]}-{h}"
-
 
 def parse_news_raw(path: pathlib.Path) -> list[dict]:
     """Parse news_raw.md into collector-compatible items.
@@ -775,29 +819,40 @@ def parse_news_raw(path: pathlib.Path) -> list[dict]:
     log(f"news_raw: {len(items)} items ({len([x for x in items if x['admiralty'][0]=='B'])} global + {len([x for x in items if x['admiralty'][0]=='C'])} intel)")
     return items
 
-
 def collect_live(regions: dict, sources: dict,
-                  feeds_to_try: list[tuple[str, str]] | None = None
-                  ) -> tuple[list[dict], list[str]]:
+                  feeds_to_try: list[tuple[str, str]] | None = None,
+                  dead_cache: dict[str, dict] | None = None
+                  ) -> tuple[list[dict], list[str], dict[str, dict]]:
     raw: list[dict] = []
     gaps: list[str] = []
+    if dead_cache is None:
+        dead_cache = load_dead_feeds()
+    dead_before = {u for u in dead_cache if is_dead(u, dead_cache)}
     durable = sources.get("durable_sources", []) or []
     if feeds_to_try is None:
         feeds_to_try = WIRE_FEEDS[:]
     # Durable sources without explicit feed URLs are skipped programmatically;
     # the collector subagent prompt explains how to do better with web_fetch
     # when a richer harness is available.
+    skipped_dead = 0
     for fname, furl in feeds_to_try:
+        # Skip known-dead feeds (saves 8-16s per dead feed)
+        if is_dead(furl, dead_cache):
+            skipped_dead += 1
+            continue
         log(f"fetching {fname}")
         body = fetch(furl)
         if not body:
             gaps.append(f"feed unreachable: {fname}")
+            record_feed_failure(furl, dead_cache)
             continue
+        record_feed_success(furl, dead_cache)
         raw.extend(parse_rss(body, fname))
+    if skipped_dead:
+        log(f"skipped {skipped_dead} known-dead feeds (cache)")
     raw.extend(parse_news_raw(NEWS_RAW_PATH))
     log(f"raw items: {len(raw)}")
-    return raw, gaps
-
+    return raw, gaps, dead_cache
 
 def normalise(items: list[dict], regions: dict, window_hours: int = 24) -> list[dict]:
     now = dt.datetime.now(dt.timezone.utc)
@@ -846,7 +901,6 @@ def normalise(items: list[dict], regions: dict, window_hours: int = 24) -> list[
         })
     return out
 
-
 def deduplicate(items: list[dict]) -> list[dict]:
     by_key: dict[tuple, dict] = {}
     for it in items:
@@ -861,7 +915,6 @@ def deduplicate(items: list[dict]) -> list[dict]:
             existing["single_source"] = False
     return list(by_key.values())
 
-
 def cap_per_region(items: list[dict], cap: int = 8) -> list[dict]:
     items.sort(key=lambda x: x["occurred_at_utc"], reverse=True)
     out: list[dict] = []
@@ -873,7 +926,6 @@ def cap_per_region(items: list[dict], cap: int = 8) -> list[dict]:
         counts[it["region"]] = c + 1
         out.append(it)
     return out
-
 
 def mock_incidents(regions: dict) -> list[dict]:
     now = dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z")
@@ -925,7 +977,6 @@ def mock_incidents(regions: dict) -> list[dict]:
             "confidence_collector": "high",
         })
     return out
-
 
 def main() -> int:
     # Load .env for BRAVE_API_KEY and other secrets
@@ -1021,15 +1072,54 @@ def main() -> int:
     # These use tuple format (name, url, language, admiralty) — extra fields ignored by collect_live
     local_feeds = [(f[0], f[1]) for f in LOCAL_LANGUAGE_FEEDS]
     feeds_to_try = feeds_to_try + local_feeds
-    log(f"+{len(local_feeds)} local-language feeds — {len(feeds_to_try)} total feeds to fetch")
+
+    # --- Dynamic catalog feeds (sources_tested.json) ---
+    # Load working feeds from the heartbeat-maintained catalog.
+    # Rotation keeps per-region count manageable; dedup avoids double-fetching
+    # feeds already in WIRE_FEEDS or LOCAL_LANGUAGE_FEEDS.
+    existing_urls = {url for _, url in feeds_to_try}
+    _run_count = 1
+    if args.feed_priorities and os.path.exists(args.feed_priorities):
+        try:
+            _pd = json.loads(pathlib.Path(args.feed_priorities).read_text())
+            _run_count = _pd.get("run_count", 1)
+        except Exception:
+            pass
+    catalog_feeds_raw = load_catalog_feeds(
+        catalog_path=CATALOG_PATH,
+        max_per_region=6,
+        run_count=_run_count,
+    )
+    catalog_added = 0
+    for name, url, _adm_src, _adm_info, _region in catalog_feeds_raw:
+        if url in existing_urls:
+            continue
+        existing_urls.add(url)
+        feeds_to_try.append((name, url))
+        catalog_added += 1
+    log(f"+{catalog_added} catalog feeds (dynamic) — {len(feeds_to_try)} total feeds to fetch")
+    # ---- end catalog feeds ----
 
     if args.mock:
         log("running in mock mode")
         incidents = mock_incidents(regions)
         gaps = ["mock mode: no live collection performed"]
     else:
-        raw, gaps = collect_live(regions, sources,
-                                  feeds_to_try=feeds_to_try)
+        # Load dead-feed cache to skip known-bad URLs
+        dead_cache = load_dead_feeds()
+        dead_count = sum(1 for u in dead_cache if is_dead(u, dead_cache))
+        if dead_count:
+            log(f"dead-feed cache: {dead_count} feeds skipped, {len(dead_cache)} total tracked")
+        raw, gaps, dead_cache = collect_live(regions, sources,
+                                              feeds_to_try=feeds_to_try,
+                                              dead_cache=dead_cache)
+        # Persist updated cache
+        try:
+            save_dead_feeds(dead_cache)
+            dead_after = sum(1 for u in dead_cache if is_dead(u, dead_cache))
+            log(f"dead-feed cache saved: {dead_after} feeds now dead, {len(dead_cache)} total tracked")
+        except Exception as exc:
+            log(f"dead-feed cache save failed: {exc}")
         incidents = normalise(raw, regions)
         incidents = deduplicate(incidents)
         # Web search fallback: fill region gaps (<3 items) via Brave Search
@@ -1074,7 +1164,6 @@ def main() -> int:
     log(f"wrote {out_path} ({len(incidents)} incidents)")
     return 0
 
-
 # ── Web search fallback for region gaps ───────────────────────────────
 
 WEB_SEARCH_REGIONS = {
@@ -1091,7 +1180,6 @@ WEB_SEARCH_REGIONS = {
     "oceania": ["Oceania news", "Australia Pacific latest"],
     "prediction_markets": ["Global finance markets news", "Oil prices commodities", "IMF World Bank latest"],
 }
-
 
 def _brave_search(query: str, brave_key: str, timeout: int = 10) -> list[dict]:
     """Search Brave Web Search API and return results."""
@@ -1122,7 +1210,6 @@ def _brave_search(query: str, brave_key: str, timeout: int = 10) -> list[dict]:
                 "_bypass_filter": True,
             })
     return out
-
 
 def web_search_fallback(incidents: list[dict], regions: dict) -> list[dict]:
     """Fill region gaps using Brave Search when RSS feeds return zero or near-zero items."""
@@ -1198,7 +1285,6 @@ def web_search_fallback(incidents: list[dict], regions: dict) -> list[dict]:
     log(f"Web search fallback added {len(new_raw)} items across {len(gap_regions)} gap regions")
     return incidents
 
-
 # ── Social media collection (cost-conscious) ────────────────────────────────
 
 SOCIAL_MEDIA_QUERIES = {
@@ -1254,9 +1340,7 @@ SOCIAL_MEDIA_QUERIES = {
     ],
 }
 
-
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"
-
 
 def _sonar_sonar(query: str, sonar_model: str = "perplexity/sonar") -> list[dict]:
     """Call Perplexity Sonar via OpenRouter (cost-conscious — use sparingly)."""
@@ -1297,7 +1381,6 @@ def _sonar_sonar(query: str, sonar_model: str = "perplexity/sonar") -> list[dict
     except Exception as exc:
         log(f"Sonar query failed: {exc}")
         return []
-
 
 def social_media_collect(incidents: list[dict], regions: dict) -> list[dict]:
     """Collect social media intelligence using Brave Search primary + Sonar fallback.
@@ -1407,7 +1490,6 @@ def social_media_collect(incidents: list[dict], regions: dict) -> list[dict]:
     sonar_used = len(sonar_needed)
     log(f"Social media collection: {len(new_raw)} items added across {len(social_regions)} regions (Sonar used: {sonar_used})")
     return incidents
-
 
 if __name__ == "__main__":
     sys.exit(main())

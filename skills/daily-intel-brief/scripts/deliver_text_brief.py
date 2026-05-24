@@ -92,23 +92,72 @@ def main() -> int:
     sources_used = exec_data.get("sources_used", [])
     models_used = exec_data.get("models_used", [])
 
-    # Build region summaries from individual analysis files
-    region_html = ""
-    regions_order = [
-        "europe", "north_america", "central_america_caribbean",
-        "south_america", "africa", "middle_east",
-        "central_asia", "south_east_asia", "east_asia", "south_asia",
-        "oceania", "prediction_markets",
-    ]
+    # Parse judgments if stored as string repr
+    if isinstance(judgments, str):
+        try:
+            judgments = eval(judgments)
+        except Exception:
+            judgments = []
+    if isinstance(sources_used, str):
+        try:
+            sources_used = eval(sources_used)
+        except Exception:
+            sources_used = [sources_used]
+    if isinstance(models_used, str):
+        try:
+            models_used = eval(models_used)
+        except Exception:
+            models_used = [models_used]
+
     region_label = {
         "europe": "Europe", "north_america": "North America",
         "central_america_caribbean": "Central America & Caribbean",
         "south_america": "South America", "africa": "Africa",
         "middle_east": "Middle East", "central_asia": "Central Asia",
-        "south_east_asia": "South East Asia", "east_asia": "East Asia",
+        "south_east_asia": "Southeast Asia", "east_asia": "East Asia",
         "south_asia": "South Asia", "oceania": "Oceania",
         "prediction_markets": "Prediction Markets",
     }
+    region_emoji = {
+        "europe": "🇪🇺", "north_america": "🇺🇸",
+        "central_america_caribbean": "🌴", "south_america": "🌎",
+        "africa": "🌍", "middle_east": "🕌",
+        "central_asia": "🏔️", "south_east_asia": "🌏",
+        "east_asia": "🏯", "south_asia": "🕌",
+        "oceania": "🏝️", "prediction_markets": "📊",
+    }
+
+    def kent_color(band):
+        b = (band or "").lower()
+        if "almost cert" in b or "highly likely" in b: return "#1a7a1a"
+        if "likely" in b or "better than even" in b: return "#2563eb"
+        if "even chance" in b: return "#b8860b"
+        if "unlikely" in b: return "#c47000"
+        if "highly unlikely" in b or "almost imposs" in b: return "#b22222"
+        return "#666"
+
+    def kent_icon(band):
+        b = (band or "").lower()
+        if "almost cert" in b or "highly likely" in b: return "🟢"
+        if "likely" in b or "better than even" in b: return "🔵"
+        if "even chance" in b: return "🟡"
+        if "unlikely" in b: return "🟠"
+        if "highly unlikely" in b or "almost imposs" in b: return "🔴"
+        return "⚪"
+
+    from html import escape as h
+
+    regions_order = [
+        "europe", "middle_east", "north_america", "east_asia",
+        "south_asia", "central_asia", "south_east_asia",
+        "africa", "south_america", "central_america_caribbean",
+        "oceania", "prediction_markets",
+    ]
+
+    # Build region cards
+    region_cards = ""
+    total_incidents = 0
+    total_kjs = 0
 
     for region in regions_order:
         region_file = wd / "analysis" / f"{region}.json"
@@ -116,99 +165,130 @@ def main() -> int:
             continue
         try:
             rdata = json.loads(region_file.read_text())
-            narrative = rdata.get("narrative", "")
-            kjs = rdata.get("key_judgments", [])
-            label = region_label.get(region, region.replace("_", " ").title())
-            
-            # Collect all article URLs referenced in this region
-            all_incident_refs = set()
-            for kj in kjs[:3]:
-                for eid in kj.get("evidence_incident_ids", []):
-                    all_incident_refs.add(eid)
-
-            kj_html = ""
-            for kj in kjs[:3]:  # Max 3 judgments per region
-                band = kj.get("sherman_kent_band", "assessed")
-                pct = kj.get("prediction_pct", "")
-                statement = kj.get("statement", "")
-                single = kj.get("single_source_basis", False)
-                ss = " ⚠️ single source" if single else ""
-                ev_ids = kj.get("evidence_incident_ids", [])
-                ev_links = format_evidence_ids(ev_ids, incident_url_map)
-                kj_html += f"<li><strong>{band}</strong> ({pct}%): {statement}{ss}{ev_links}</li>"
-
-            # Incident source links
-            incident_links_html = ""
-            for eid in sorted(all_incident_refs):
-                url = incident_url_map.get(eid)
-                if url:
-                    incident_links_html += f'<a href="{url}" style="color:#0066cc;font-size:11px;">{eid}</a> '
-
-            source_links_section = ""
-            if incident_links_html:
-                source_links_section = f'<p style="font-size:11px;color:#666;">Source articles: {incident_links_html}</p>'
-
-            region_html += f"""
-<h3 style="color:#1a1a2e;border-bottom:1px solid #eee;padding-bottom:4px;">{label}</h3>
-<p>{narrative}</p>
-<ul>{kj_html}</ul>
-{source_links_section}
-"""
         except Exception as exc:
             log(f"WARN: could not load {region}.json: {exc}")
+            continue
 
-    # Key judgments table
-    kj_table = ""
-    for kj in judgments:
-        band = kj.get("sherman_kent_band", "assessed")
-        pct = kj.get("prediction_pct", "")
-        statement = kj.get("statement", "")
-        region_val = kj.get("drawn_from_region", "")
-        region_name = region_label.get(region_val, region_val.replace("_", " ").title())
-        kj_table += f"<tr><td>{region_name}</td><td>{band} ({pct}%)</td><td>{statement}</td></tr>"
+        narrative = rdata.get("narrative", rdata.get("bluf", ""))
+        kjs = rdata.get("key_judgments", [])
+        count = rdata.get("incident_count", 0)
+        story = rdata.get("story", "")
+        total_incidents += count
+        total_kjs += len(kjs)
 
-    # Source attribution with links where available
-    src_list = "".join(f"<li>{s}</li>" for s in sources_used[:20]) if sources_used else "<li>Sources listed in regional analysis files</li>"
-    model_list = "".join(f"<li>{m}</li>" for m in models_used) if models_used else "<li>DeepSeek V4 Pro (all tiers)</li>"
+        label = region_label.get(region, region)
+        emoji = region_emoji.get(region, "•")
 
+        # Extract bullet points from narrative — natural sentence breaks, no truncation
+        bullets = []
+        if narrative:
+            # Split on sentence boundaries: period, semicolon, or colon followed by space and capital
+            import re as _re
+            sentences = _re.split(r'(?<=[.;])\s+(?=[A-Z])', narrative)
+            for s in sentences:
+                s = s.strip().rstrip(".")
+                if len(s) > 15:
+                    if s.lower().startswith("overnight "):
+                        s = s[10:]
+                    bullets.append(s[0].upper() + s[1:])
+
+        bullet_html = ""
+        if bullets:
+            bullet_html = '<ul style="margin:0 0 10px;padding-left:18px;font-size:14px;color:#444;line-height:1.7">\n'
+            for pt in bullets[:6]:  # max 6 bullet points per region
+                bullet_html += f'  <li style="margin-bottom:4px">{h(pt)}</li>\n'
+            bullet_html += '</ul>\n'
+
+        # Key judgments
+        kj_html = ""
+        if kjs:
+            kj_html += '<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8ecf1">\n'
+            kj_html += '<div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#888;margin-bottom:6px">Key Judgments</div>\n'
+            for kj in kjs[:2]:
+                band = kj.get("sherman_kent_band", "assessed")
+                stmt = kj.get("statement", "")
+                color = kent_color(band)
+                icon = kent_icon(band)
+                ss = " ⚠️" if kj.get("single_source_basis") else ""
+                ev_ids = kj.get("evidence_incident_ids", [])
+                ev_links = format_evidence_ids(ev_ids, incident_url_map)
+                kj_html += f'<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:4px;font-size:13px;color:#555">'
+                kj_html += f'<span style="flex-shrink:0;margin-top:2px">{icon}</span>'
+                kj_html += f'<span><strong style="color:{color}">{h(band).title()}</strong>: {h(stmt)}{ss}{ev_links}</span>'
+                kj_html += '</div>\n'
+            kj_html += '</div>\n'
+
+        region_cards += f"""
+<div style="background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+    <span style="font-size:16px">{emoji}</span>
+    <span style="font-size:15px;font-weight:700;color:#1a2a3a">{h(label)}</span>
+    <span style="font-size:11px;color:#999;margin-left:auto">{count} signals</span>
+  </div>
+  {bullet_html}
+  {kj_html}
+</div>
+"""
+
+    # Build full HTML
     html = f"""<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"></head>
-<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:700px;margin:0 auto;padding:20px;color:#333;">
-<div style="background:#1a1a2e;color:#fff;padding:20px;border-radius:8px 8px 0 0;">
-<h1 style="margin:0;font-size:20px;">TREVOR Daily Brief</h1>
-<p style="margin:5px 0 0;font-size:14px;opacity:0.8;">{date_utc} · DeepSeek V4 Pro</p>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;max-width:680px;margin:0 auto;padding:0;color:#1a1a2e;line-height:1.65;font-size:15px;background:#f8f9fb">
+
+<div style="background:linear-gradient(135deg,#0f1923,#1a2a3a);padding:28px 24px 20px">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#5a8aaa;margin-bottom:6px">Trevor Intelligence</div>
+  <h1 style="font-size:26px;margin:0 0 6px;color:#ffffff;font-weight:700;letter-spacing:-0.5px">Daily Intelligence Brief</h1>
+  <div style="font-size:13px;color:#7f9ab0">{date_utc} · {total_incidents} incidents · {total_kjs} judgments · 11 regions</div>
 </div>
 
-<div style="background:#fff;border:1px solid #ddd;border-top:0;padding:20px;border-radius:0 0 8px 8px;">
-
-<h2 style="color:#1a1a2e;">BLUF</h2>
-<p style="font-size:15px;line-height:1.5;">{bluf}</p>
-
-<h2 style="color:#1a1a2e;margin-top:24px;">Context</h2>
-<p style="font-size:14px;line-height:1.5;">{context}</p>
-
-<h2 style="color:#1a1a2e;margin-top:24px;">Regional Analysis</h2>
-{region_html}
-
-<h2 style="color:#1a1a2e;margin-top:24px;">Key Judgments</h2>
-<table style="width:100%;border-collapse:collapse;font-size:13px;">
-<tr style="background:#f5f5f5;"><th style="padding:8px;text-align:left;border:1px solid #ddd;">Region</th><th style="padding:8px;text-align:left;border:1px solid #ddd;">Confidence</th><th style="padding:8px;text-align:left;border:1px solid #ddd;">Judgment</th></tr>
-{kj_table}
-</table>
-
-<h2 style="color:#1a1a2e;margin-top:24px;">Sources Used</h2>
-<ul style="font-size:12px;color:#666;">{src_list}</ul>
-
-<h2 style="color:#1a1a2e;margin-top:24px;">Models Used</h2>
-<ul style="font-size:12px;color:#666;">{model_list}</ul>
-
-<p style="font-size:11px;color:#999;margin-top:32px;border-top:1px solid #eee;padding-top:12px;">
-Generated by TREVOR (Threat Research and Evaluation Virtual Operations Resource) · {date_utc}
-</p>
+<div style="margin:24px 20px 8px">
+  <div style="background:#ffffff;border-radius:10px;padding:20px 22px;border-left:5px solid #c0392b;box-shadow:0 1px 4px rgba(0,0,0,0.06)">
+    <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#c0392b;font-weight:700;margin-bottom:6px">⚠️ Bottom Line Up Front</div>
+    <div style="font-size:17px;font-weight:600;color:#2c3e50;line-height:1.6">{h(bluf)}</div>
+  </div>
 </div>
-</body>
-</html>"""
+
+<div style="margin:8px 20px 20px;padding:0 2px;font-size:14px;color:#555;line-height:1.7">{h(context[:800])}</div>
+
+<div style="margin:10px 20px 16px;border-top:2px solid #e8ecf1"></div>
+
+<div style="margin:0 20px">
+  <h2 style="font-size:18px;color:#1a2a3a;margin:0 0 16px;letter-spacing:-0.3px">Regional Intelligence</h2>
+  {region_cards}
+</div>
+
+<div style="margin:20px 20px 0;padding:16px 18px;background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#888;margin-bottom:8px">Methodology & Sources</div>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:#666;line-height:1.6">
+    <div style="flex:1;min-width:150px">
+      <div style="font-weight:600;color:#444;margin-bottom:4px">Collection</div>
+      <div>286 validated RSS feeds</div>
+      <div>Gmail + AgentMail intel</div>
+      <div>Web search gap fill</div>
+    </div>
+    <div style="flex:1;min-width:150px">
+      <div style="font-weight:600;color:#444;margin-bottom:4px">Analysis</div>
+      <div>DeepSeek V4 Pro</div>
+      <div>Claude Opus 4.7</div>
+      <div>Sherman Kent calibration</div>
+    </div>
+    <div style="flex:1;min-width:150px">
+      <div style="font-weight:600;color:#444;margin-bottom:4px">Quality</div>
+      <div>NATO Admiralty ratings</div>
+      <div>Forced dissent on all</div>
+      <div>7-gate QC pre-delivery</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:20px;font-size:11px;color:#aaa">
+  Trevor — Threat Research &amp; Evaluation Virtual Operations Resource<br>
+  Automated daily brief &nbsp;·&nbsp; Reply: trevor_mentis@agentmail.to<br>
+  <a href="https://github.com/trevormentis-spec" style="color:#5a8aaa">github</a> &nbsp;·&nbsp;
+  <a href="https://www.moltbook.com/u/trevormentis" style="color:#5a8aaa">moltbook</a>
+</div>
+
+</body></html>"""
 
     # Also build a plain text version with source URLs
     text_parts = [f"TREVOR Daily Brief — {date_utc}", "", f"BLUF: {bluf}", ""]
@@ -235,6 +315,18 @@ Generated by TREVOR (Threat Research and Evaluation Virtual Operations Resource)
     text_parts.append(f"Models: {', '.join(models_used) if models_used else 'DeepSeek V4 Pro'}")
     text_parts.append(f"Sources: {len(sources_used)} cited")
     text = "\n".join(text_parts)
+
+    # ── Preflight QC — block delivery on CRITICAL issues ──
+    import importlib.util as _iu
+    _qc_path = pathlib.Path(__file__).resolve().parents[3] / "scripts" / "preflight_qc.py"
+    _spec = _iu.spec_from_file_location("preflight_qc", _qc_path)
+    _qc = _iu.module_from_spec(_spec)
+    _spec.loader.exec_module(_qc)
+    qc = _qc.check_report(text, report_type="daily_brief", min_words=200)
+    _qc.log_qc_result(qc, "daily_brief")
+    if not qc.passed:
+        log("QC BLOCKED delivery — fix issues and re-run")
+        return 1
 
     # Send via AgentMail API
     api_key = os.environ.get("AGENTMAIL_API_KEY")

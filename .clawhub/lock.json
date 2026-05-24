@@ -164,6 +164,18 @@
     "pdf-translate": {
       "version": "4.0.0",
       "installedAt": 1779526900562
+    },
+    "blogwatcher": {
+      "version": "1.0.0",
+      "installedAt": 1779613383859
+    },
+    "polymarket-research": {
+      "version": "1.0.0",
+      "installedAt": 1779613410970
+    },
+    "simmer": {
+      "version": "1.24.1",
+      "installedAt": 1779636597408
     }
   }
 }

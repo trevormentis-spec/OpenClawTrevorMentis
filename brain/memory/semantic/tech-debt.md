@@ -51,4 +51,38 @@
 3. Each entry has a unique ID (CD = critical, HD = high, MD = medium)
 4. When a fix is deployed, update the status, add resolution date, and link to the commit/PR
 
+*Last updated: 2026-05-24*
+
+## May 23-24 Fix Cycle (15 items resolved)
+
+| # | Debt | Resolution |
+|---|------|------------|
+| CD-08 | **Flash model in production** — daily brief used deepseek-v4-flash instead of v4-pro | Added hard guard in analyze.py rejecting any model with "flash" in name. Fallback changed to v4-pro. Model check in quality gate. |
+| CD-09 | **Region cross-contamination** — Europe KJs appeared in Africa, East Asia, South Asia, Central America, Middle East | Complete prompt rewrite: region lock ("analyzing ONLY {region_label}"), low-incident warning, removed "global analyst" framing from system message. |
+| CD-10 | **Quality gate bypassed** — gate was inside orchestrator which crashed, never running the checks | Moved quality gate to standalone post-orchestrator step in shell script. Emergency delivery branch deleted. Orchestrator failure = no delivery. |
+| CD-11 | **Duplicate delivery** — 6:04am and 6:07am PT, two copies sent | Added flock lock to daily-text-brief.sh preventing concurrent runs. |
+| CD-12 | **Orchestrator crashed on --tier2-provider** — argument not recognized | Added --tier2-provider to orchestrator arg parser. Passes through to analyze.py. |
+| HD-09 | **No QC watchdog** — brief delivered with no post-delivery quality check | Created qc-watchdog.sh + OpenClaw cron at 13:10 UTC. Runs Opus 4.7 QC on delivered brief. Writes alert to tasks/qc-alert.md on FAIL/CRITICAL. |
+| HD-10 | **Red team truncated** — output cut off mid-sentence | Increased max_tokens to 4096. Red team output now 753 words (was 378). |
+| HD-11 | **Prompt parser fragile** — ## headers inside code blocks treated as section headers | Rewrote split_prompts() to track code fence state, ignore headers inside fences. |
+| HD-12 | **Gmail search date hardcoded** — fixed to 2026/05/19 | Dynamic 48-hour rolling window. |
+| HD-13 | **Email OSINT misclassified** — all AgentMail newsletters went to global_finance | Added SENDER_REGION_MAP with 14 known senders. POLITICO→North America, Axios→North America, ISW→Europe, CTP→Middle East, etc. |
+| HD-14 | **Self-sent email recursion** — Trevor's own brief deliveries were re-ingested as intel | Filter in collect_email_intel.py skips from trevor_mentis@agentmail.to and trevor.mentis@gmail.com. |
+| HD-15 | **Exec summary sourcing + contradictions** — KJs contradicted each other, no sourcing on specific claims | Added CRITICAL RULES to exec summary prompt: consistency check, mandatory sourcing, no hallucinated operation names, GAP markers required. |
+| HD-16 | **No Tier-1 Opus routing** — exec summary used V4 Pro instead of Opus 4.7 | Restored Opus 4.7 for tier-1 (exec summary + red team) via OpenRouter. Tier-2 stays V4 Pro for regional analysis. |
+| MD-08 | **Round-number bias** — 21 of 25 forecasts clustered at 62-68% | Strengthened anti-round-number instruction: "AVOID ROUND-NUMBER BIAS: use calibrated values like 62%, 67%, 73%. Do NOT default to 60, 65, 70, 75, 80." |
+| MD-09 | **Brief quality autonomy gap** — Trevor couldn't self-initiate fixes for brief quality failures | AGENTS.md updated with autonomous fix authority. QC alert triggers autonomous diagnosis → fix → re-run → re-send cycle. |
+
+---
+
 *Last updated: 2026-05-12*
+
+| MD-10 | **Entity deepening scaffold-only** — task module existed but never called LLM | 2026-05-18 | Entity files went stale with no automated deepening | **RESOLVED** 2026-05-24 via `analyst/tasks/entity_deepening.py` rewrite — real DeepSeek call, writes "Recent Developments" with source citations, flags contradictions |
+| MD-11 | **Framework stress test scaffold-only** — framework analysis never ran | 2026-05-18 | Frameworks were passive documentation | **RESOLVED** 2026-05-24 via `analyst/tasks/framework_stress_test.py` rewrite — real DeepSeek call, applies concentric physical security + Lloyds insurance frameworks to incidents, logs capability gaps |
+| MD-12 | **Self-question generation hardcoded** — 4 Mexico-specific questions, never updated | 2026-05-18 | Gap discovery was static and stale | **RESOLVED** 2026-05-24 via `analyst/tasks/self_question_generation.py` rewrite — LLM-generated questions from current brief context, stores to capability_gaps.json with domain/region/collectability metadata |
+| MD-13 | **Cross-source correlation dormant** — module existed but never executed | 2026-05-18 | Multi-source incidents had no synthesis | **RESOLVED** 2026-05-24 via `analyst/tasks/cross_source_correlation.py` rewrite — real DeepSeek call, identifies factual divergences between sources, writes synthesis to analysis/source_correlations/ |
+
+
+| MD-02 | **Stripe is test mode** — can't process real subscriptions | 2026-05-12 | Product can't generate revenue | **CLOSED** 2026-05-24 — principal directive: no live Stripe key needed for now |
+| MD-03 | **Buttondown has 0 subscribers** | 2026-05-12 | Newsletter produced but nobody gets it | **CLOSED** 2026-05-24 — principal directive: not needed for now |
+

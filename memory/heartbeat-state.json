@@ -14,12 +14,13 @@
     "cost_snapshot": 1779195720,
     "memory_maintenance": 1779195720,
     "phase_a": 1779219440,
-    "feed_audit": 1779219440
+    "feed_audit": 1779219440,
+    "phase_c": 1779650985
   },
-  "lastHeartbeat": 1779219440,
-  "rotationCursor": 0,
-  "previousPhase": "D",
-  "currentPhase": "A",
+  "lastHeartbeat": 1779650985,
+  "rotationCursor": 3,
+  "previousPhase": "C",
+  "currentPhase": "C",
   "phaseAStatus": "completed",
   "phaseANotes": {
     "feedsTested": 290,
@@ -31,7 +32,7 @@
     "topFailingErrors": "HTTP 404 (20), HTTP 403 (17), PARSE (9)",
     "reportSaved": "brain/memory/semantic/feed-health-latest.json"
   },
-  "nextPhase": "B",
+  "nextPhase": "D",
   "alerts": [
     {
       "id": "deepseek_401",
@@ -39,5 +40,54 @@
       "phase": "D",
       "msg": "DeepSeek balance monitor returned 401 - API key may need rotation"
     }
-  ]
+  ],
+  "phaseBStatus": "completed",
+  "phaseBNotes": {
+    "gapRegions": [
+      "southeast_asia",
+      "caribbean",
+      "central_america",
+      "africa",
+      "north_africa"
+    ],
+    "candidatesFound": 23,
+    "topSources": [
+      "Global Voices (per-country feeds)",
+      "Bangkok Post",
+      "allAfrica.com",
+      "Africanews",
+      "News Americas Now",
+      "Jamaica Observer"
+    ],
+    "reportSaved": "brain/memory/semantic/feed-discovery-2026-05-23.json",
+    "recommendation": "Phase C should prioritize Global Voices per-country feeds as drop-in replacements for dead sources, then add regional aggregators"
+  },
+  "phaseCStatus": "completed",
+  "phaseCNotes": {
+    "deadFeedsPruned": 50,
+    "replacementSourcesAdded": 11,
+    "gapRegionsCovered": [
+      "southeast_asia",
+      "caribbean",
+      "central_america",
+      "africa",
+      "north_africa"
+    ],
+    "sourcesAdded": [
+      "Thai PBS World",
+      "ASEAN News Today",
+      "Global Voices Caribbean",
+      "Global Voices Cuba",
+      "Global Voices Haiti",
+      "Global Voices Latin America",
+      "Global Voices Guatemala",
+      "Global Voices Honduras",
+      "Africanews",
+      "Global Voices Sub-Saharan Africa",
+      "Global Voices MENA"
+    ],
+    "collectLinesBefore": 1534,
+    "collectLinesAfter": 1495,
+    "sourcesJsonUpdated": true
+  }
 }

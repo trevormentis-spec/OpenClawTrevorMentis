@@ -1,35 +1,37 @@
 #!/usr/bin/env python3
+# GATE_EXEMPT: direct API endpoints required for LLM calls without SDK wrapper
 """
-LEO Ground Station Daily Brief — DeepSeek V4 Pro analysis, Gmail delivery.
+LEO Ground Station Daily Brief — DeepSeek V4 Pro analysis, AgentMail delivery.
 
 Collects data from FCC, launch schedules, ITU filings, job boards, Sentinel-2,
 then routes to DeepSeek V4 Pro for analyst-quality synthesis.
-Delivered to roderick.jones@gmail.com independently from the main brief.
+Delivered via AgentMail (trevor_mentis@agentmail.to → roderick.jones@gmail.com).
 
 Usage:
     python3 scripts/leo_daily_brief.py
+    python3 scripts/leo_daily_brief.py --dry-run    # preview only, no send
 """
 from __future__ import annotations
 
-import base64
 import datetime as dt
-import email.mime.text
 import json
 import os
 import pathlib
+import re
 import sys
 import urllib.request
-from scripts.report_memory import log_report
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.report_memory import log_report
+
 LEO_DATA_DIR = REPO_ROOT / "analyst" / "knowledge" / "leo_ground_stations" / "data_feeds"
 PRINCIPAL_DATA = REPO_ROOT / "config" / "topics" / "leo_ground_stations" / "_principal_data"
-MATON_BASE = "https://gateway.maton.ai/google-mail"
-GMAIL_SEND = MATON_BASE + "/gmail/v1/users/me/messages/send"
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
-
+AGENTMAIL_SENDER = "trevor_mentis@agentmail.to"
 TO_EMAIL = "roderick.jones@gmail.com"
-FROM_EMAIL = "trevor.mentis@gmail.com"
+SUBJECT_PREFIX = "🛰️ LEO Ground Station Daily"
 
 
 def log(msg: str) -> None:
@@ -53,18 +55,20 @@ def load_collector(prefix: str) -> dict | None:
     return None
 
 
-def call_deepseek(system: str, user: str) -> str:
-    """Call DeepSeek V4 Pro via Direct API."""
-    key = os.environ.get("DEEPSEEK_API_KEY", "")
-    if not key:
-        # Try reading from .env
-        env_path = REPO_ROOT / ".env"
-        if env_path.exists():
-            for line in env_path.read_text().split("\n"):
-                if "DEEPSEEK_API_KEY=" in line and "V4" not in line:
-                    key = line.split("=", 1)[1].strip().strip("'\"")
-                    break
+def get_api_key(key_name: str) -> str:
+    key = os.environ.get(key_name, "")
+    if key:
+        return key
+    env_path = REPO_ROOT / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().split("\n"):
+            if line.startswith(f"{key_name}="):
+                return line.split("=", 1)[1].strip().strip("'\"")
+    return ""
 
+
+def call_deepseek(system: str, user: str) -> str:
+    key = get_api_key("DEEPSEEK_API_KEY")
     if not key:
         return "ERROR: No DeepSeek API key"
 
@@ -163,7 +167,7 @@ def build_data_packet() -> dict:
             "sites_with_data": img.get("sites_with_recent_imagery", 0),
         }
 
-    # Market metrics (first few as context)
+    # Market metrics
     metrics = load_json(PRINCIPAL_DATA / "market_metrics.json")
     if metrics:
         packet["market_metrics"] = [
@@ -174,8 +178,10 @@ def build_data_packet() -> dict:
     return packet
 
 
-def build_brief() -> tuple[str, list[str]]:
-    """Build the LEO brief using DeepSeek V4 Pro for analysis."""
+def build_brief() -> tuple[str, str, list[str]]:
+    """Build the LEO brief using DeepSeek V4 Pro for analysis.
+    Returns (full_body, analysis_text, sources_list).
+    """
     date_str = dt.date.today().strftime("%B %d, %Y")
     packet = build_data_packet()
     data_json = json.dumps(packet, indent=2)
@@ -186,8 +192,7 @@ def build_brief() -> tuple[str, list[str]]:
         "You have access to several data feeds: FCC earth station licenses, launch schedules, "
         "ITU coordination filings, job posting scans, Sentinel-2 satellite imagery, "
         "and a curated market metrics database. "
-        "Write a text-only brief (no markdown, no formatting codes). "
-        "Structure it as:\n\n"
+        "Write an analysis. Structure it as:\n\n"
         "1. EXECUTIVE SUMMARY — what changed, what it means, what to watch (2 paragraphs)\n"
         "2. FCC LICENSES — notable new filings or licensees, trends (if interesting; skip if quiet)\n"
         "3. CONSTELLATION SIGNALS — launch activity and what it means for ground capacity\n"
@@ -197,8 +202,8 @@ def build_brief() -> tuple[str, list[str]]:
         "Rules: cite specific numbers from the data. "
         "If a section has nothing new, say so briefly rather than pad. "
         "Keep the whole brief under 2500 words. "
-        "Do NOT use markdown headers — use plain text with '═══ SECTION ═══' style separators. "
-        "Do NOT include a sources section — data provenance is listed at the bottom."
+        "Use plain text with '═══ SECTION ═══' separators between sections. "
+        "Do NOT use markdown. Do NOT include a sources section."
     )
 
     user_prompt = (
@@ -214,9 +219,9 @@ def build_brief() -> tuple[str, list[str]]:
 
     if analysis.startswith("ERROR:"):
         log(f"DeepSeek call failed: {analysis}")
-        return f"LEO Brief for {date_str}\n\nError generating analysis: {analysis}\n\nCheck API key and try again.", ["deepseek-v4-pro"]
+        return f"LEO Brief for {date_str}\n\nError generating analysis: {analysis}\n\nCheck API key and try again.", analysis, ["deepseek-v4-pro"]
 
-    # Build the final brief
+    # Build plain text version (for local save)
     lines = []
     lines.append("=" * 72)
     lines.append(f"  LEO GROUND STATION DAILY — {date_str}")
@@ -247,56 +252,146 @@ def build_brief() -> tuple[str, list[str]]:
         "DeepSeek V4 Pro analysis",
     ]
 
-    return "\n".join(lines), sources
+    return "\n".join(lines), analysis, sources
 
 
-def send_gmail(to: str, subject: str, body: str, maton_key: str) -> bool:
-    msg = email.mime.text.MIMEText(body, "plain", "utf-8")
-    msg["To"] = to
-    msg["From"] = FROM_EMAIL
-    msg["Subject"] = subject
-    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode("ascii")
-    payload = json.dumps({"raw": raw}).encode("utf-8")
-    req = urllib.request.Request(
-        GMAIL_SEND,
-        data=payload,
-        headers={"Authorization": f"Bearer {maton_key}", "Content-Type": "application/json"},
-        method="POST",
+def analysis_to_html(analysis: str, date_str: str) -> str:
+    """Convert the plain-text analysis into a well-formatted HTML email."""
+    # Escape HTML
+    text = analysis.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    # Convert ═══ SECTION ═══ to styled headers
+    def section_replacer(m):
+        name = m.group(1).strip()
+        return f'</div><h2 style="color:#1a5276;border-bottom:2px solid #3498db;padding-bottom:6px;margin-top:30px;font-size:18px">{name}</h2><div style="padding-left:10px">'
+
+    text = re.sub(r'═+ ([^═]+) ═+', section_replacer, text)
+    text = re.sub(r'═══ ([^═]+) ═══', section_replacer, text)
+
+    # Handle numbered sections
+    text = re.sub(r'(\d+)\.\s+([A-Z][A-Z /-]+)', r'<h3 style="color:#2c3e50;margin-top:20px;font-size:15px">\1. \2</h3>', text)
+
+    # Bullet points
+    text = re.sub(r'^  • ', '<li>', text, flags=re.MULTILINE)
+    text = re.sub(r'^• ', '<li>', text, flags=re.MULTILINE)
+    text = re.sub(r'^  - ', '<li>', text, flags=re.MULTILINE)
+
+    # Wrap bullet groups in <ul>
+    text = re.sub(r'(<li>[^\n]+(?:<li>[^\n]+)*)', r'<ul style="padding-left:20px">\1</ul>', text)
+
+    # Line breaks
+    text = text.replace("\n\n", "<br><br>")
+    text = text.replace("\n", "<br>")
+
+    # Sources section at the bottom
+    text = re.sub(
+        r'(DATA SOURCES.*)',
+        r'<div style="margin-top:30px;padding:15px;background:#f5f6fa;border-radius:8px;font-size:12px;color:#666">\1</div>',
+        text,
+        flags=re.DOTALL,
     )
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;max-width:680px;margin:0 auto;padding:20px;color:#2c3e50;line-height:1.6;font-size:15px;background:#fafbfc">
+
+<div style="text-align:center;padding:20px 0 10px">
+  <h1 style="color:#1a5276;font-size:24px;margin:0">🛰️ LEO Ground Station Daily</h1>
+  <p style="color:#7f8c8d;font-size:13px;margin:4px 0">{date_str} — Trevor, LEO Desk</p>
+</div>
+
+<hr style="border:none;border-top:3px solid #3498db;margin:10px 0 25px">
+
+<div>
+{text}
+</div>
+
+<hr style="border:none;border-top:1px solid #ddd;margin:30px 0 15px">
+<div style="text-align:center;font-size:11px;color:#999">
+  Trevor — Threat Research &amp; Evaluation Virtual Operations Resource<br>
+  Daily automated brief. Reply to trevor_mentis@agentmail.to
+</div>
+
+</body></html>"""
+
+    return html
+
+
+def send_agentmail(to: str, subject: str, html_body: str, text_body: str) -> bool:
+    """Send via AgentMail SDK with HTML + plain text."""
+    api_key = get_api_key("AGENTMAIL_API_KEY")
+    if not api_key:
+        log("ERROR: AGENTMAIL_API_KEY not set")
+        return False
+
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            result = json.loads(resp.read())
-            log(f"Sent: {result.get('id', 'unknown')}")
-            return True
+        from agentmail import AgentMail
+        client = AgentMail(api_key=api_key)
+        result = client.inboxes.messages.send(
+            inbox_id=AGENTMAIL_SENDER,
+            to=to,
+            subject=subject,
+            html=html_body,
+            text=text_body,
+        )
+        msg_id = getattr(result, 'id', None) or getattr(result, 'message_id', 'unknown')
+        log(f"Sent via AgentMail: message_id={msg_id}")
+        return True
     except Exception as e:
-        log(f"Send failed: {e}")
+        log(f"AgentMail send failed: {e}")
         return False
 
 
 def main() -> None:
-    maton_key = os.environ.get("MATON_API_KEY", "")
-    if not maton_key:
-        log("ERROR: MATON_API_KEY not set")
-        sys.exit(1)
+    import argparse
+    parser = argparse.ArgumentParser(description="LEO Ground Station Daily Brief")
+    parser.add_argument("--dry-run", action="store_true", help="Preview only, no send")
+    parser.add_argument("--skip-qc", action="store_true", help=argparse.SUPPRESS)  # hidden, dev only
+    args = parser.parse_args()
 
     date_str = dt.date.today().isoformat()
-    log("Building LEO daily brief with DeepSeek V4 Pro analysis...")
-    body, sources = build_brief()
+    date_display = dt.date.today().strftime("%B %d, %Y")
 
+    log("Building LEO daily brief with DeepSeek V4 Pro analysis...")
+    body, analysis_raw, sources = build_brief()
+
+    # Save plain text locally
     exports_dir = REPO_ROOT / "exports"
     exports_dir.mkdir(parents=True, exist_ok=True)
     brief_path = exports_dir / f"leo-daily-brief-{date_str}.txt"
     brief_path.write_text(body)
     log(f"Saved: {brief_path} ({len(body)} chars)")
 
-    subject = f"LEO Ground Station Daily — {date_str}"
-    log(f"Sending to {TO_EMAIL}...")
-    if send_gmail(TO_EMAIL, subject, body, maton_key):
-        log("Delivery successful")
+    if args.dry_run:
+        print("\n" + "=" * 72)
+        print(body[:2000])
+        sys.exit(0)
+
+    # ── Preflight QC — block delivery on CRITICAL issues ──
+    if not args.skip_qc:
+        from scripts.preflight_qc import check_report, log_qc_result
+        qc = check_report(body, report_type="leo_brief", min_words=100)
+        log_qc_result(qc, "leo_brief")
+        if not qc.passed:
+            log("QC BLOCKED delivery — fix issues and re-run")
+            sys.exit(1)
+
+    # Build HTML from the raw analysis + source attribution
+    html_body = analysis_to_html(analysis_raw, date_display)
+
+    # Plain text fallback
+    text_body = body.replace("═", "-")
+
+    subject = f"{SUBJECT_PREFIX} — {date_display}"
+
+    log(f"Sending to {TO_EMAIL} via AgentMail...")
+    if send_agentmail(TO_EMAIL, subject, html_body, text_body):
+        log("Delivery successful ✅")
         log_report("leo_daily_brief", date_str, str(brief_path), body[:200],
                    len(body.split()), model="deepseek-v4-pro")
     else:
-        log("Delivery FAILED")
+        log("Delivery FAILED — check AGENTMAIL_API_KEY")
         sys.exit(1)
 
 

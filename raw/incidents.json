@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-19T23:52:56.668938Z",
+  "generated_at_utc": "2026-05-24T16:03:48.148003+00:00",
   "window_hours": 24,
   "regions_covered": [
     "europe",
@@ -768,6 +768,166 @@
       ],
       "single_source": true,
       "confidence_collector": "medium"
+    },
+    {
+      "id": "em-f18b9633",
+      "region": "europe",
+      "country": "multi",
+      "source": "gmail_intel",
+      "occurred_at_utc": "Sat, 23 May 2026 18:52:50 -0400 (EDT)",
+      "category": "intelligence_email",
+      "headline": "Russian Offensive Campaign Assessment, May 23, 2026",
+      "summary": "Email from Institute for the Study of War Ukrainian forces reportedly conducted a mechanized counterattack in the Borova direction, possibly penetrating up to five kilometers into the Russian defenses. May 23, 2026 Data Cutoff: 12:15 PM ET Samuel Shafiro, Jakub Kotska, Jennie Olmsted, Diana Nasreddine, and Kateryna Stepanenko   TOPLINES Ukrainian forces reportedly conducted a mechanized counterattack in the Borova direction, possibly penetrating up to five kilometers into the Russian defenses. G",
+      "sources": [
+        {
+          "name": "Gmail: ISW Publications <publications@understandingwar.org>",
+          "url": "email://ISW Publications <publications@understandingwar.org>"
+        }
+      ]
+    },
+    {
+      "id": "em-f53da35f",
+      "region": "europe",
+      "country": "multi",
+      "source": "gmail_intel",
+      "occurred_at_utc": "Sat, 23 May 2026 16:10:04 -0400 (EDT)",
+      "category": "intelligence_email",
+      "headline": "Iran Update Special Report, May 23, 2026",
+      "summary": "Email from Institute for the Study of War Iran\u2019s latest counterproposal front-loads all of Iran\u2019s key demands on the withdrawal of \u201ca US threat to Iran,\u201d financial relief, and Iran\u2019s \u201cright\u201d to manage the Strait of Hormuz. May 23, 2026 Data Cutoff: 2:00 PM ET Adham Fattah, Ben Rezaei, Will Doran, Parker Hempel, Ria Reddy, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES Iran\u2019s latest counterproposal front",
+      "sources": [
+        {
+          "name": "Gmail: ISW Publications <publications@understandingwar.org>",
+          "url": "email://ISW Publications <publications@understandingwar.org>"
+        }
+      ]
+    },
+    {
+      "id": "em-53d33f49",
+      "region": "middle_east",
+      "country": "multi",
+      "source": "gmail_intel",
+      "occurred_at_utc": "Sat, 23 May 2026 15:39:34 -0400",
+      "category": "intelligence_email",
+      "headline": "Iran Update Evening Special Report: May 23, 2026, 02:00 PM ET",
+      "summary": "A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.\r\n\r\nBanner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VWGMRH69lSQBVTzwyn8n1jw8W8XrjSc5PqgdcMtGxmH3pyd0W8wLKSR6lZ3mbW36lJPT58FjL1N5Hb5l9mVQJ4W60JmbW4D3QV4VpRsHk6DCKY2W7tS1r32cNJCmW7xdfjc4K3T_FW88BxzD4nZjr5W7PhZSs1NJNhLW6H7Y-56yP3dTW8gZ-h_53l9hrW1xrbTq12Q6JGW2bVNHM6Hhz-zW3PkSc61dKnQfW76_LRh8HrT_1W61GM4r3XYJ1RW5Q1q4G2l-l10W6GK9Yx6YhPF5W35v3_f7",
+      "sources": [
+        {
+          "name": "Gmail: CTP Publications <criticalthreats@aei.org>",
+          "url": "email://CTP Publications <criticalthreats@aei.org>"
+        }
+      ]
+    },
+    {
+      "id": "em-ed140ffb",
+      "region": "europe",
+      "country": "multi",
+      "source": "gmail_intel",
+      "occurred_at_utc": "Sat, 23 May 2026 15:01:34 -0400 (EDT)",
+      "category": "intelligence_email",
+      "headline": "How Iran Hopes to Control the Strait of Hormuz: It\u2019s Not Just About Fees",
+      "summary": "Email from Institute for the Study of War One of Iran\u2019s primary objectives in the current negotiations is to secure its sovereignty over the Strait of Hormuz. How Iran Hopes to Control the Strait of Hormuz: It\u2019s Not Just About Fees May 23, 2026 Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. \ufeffHelp us stay independent and impactful. TOPLINES One of Iran\u2019s primary objectives in the current negotiations is to secure its sovereignty over the Strait of Hormuz. ",
+      "sources": [
+        {
+          "name": "Gmail: ISW Publications <publications@understandingwar.org>",
+          "url": "email://ISW Publications <publications@understandingwar.org>"
+        }
+      ]
+    },
+    {
+      "id": "em-4726c795",
+      "region": "north_america",
+      "country": "multi",
+      "source": "gmail_intel",
+      "occurred_at_utc": "Sat, 23 May 2026 09:02:58 -0400 (EDT)",
+      "category": "intelligence_email",
+      "headline": "FP Weekend: A must-read book on the U.S. military",
+      "summary": "<!DOCTYPE html><html xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" lang=\"en\"><head><title></title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><!--[if mso]>\r\n<xml><w:WordDocument xmlns:w=\"urn:schemas-microsoft-com:office:word\"><w:DontUseAdvancedTypographyReadingMail/></w:WordDocument>\r\n<o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:",
+      "sources": [
+        {
+          "name": "Gmail: Foreign Policy <newsletters@foreignpolicy.com>",
+          "url": "email://Foreign Policy <newsletters@foreignpolicy.com>"
+        }
+      ]
+    },
+    {
+      "id": "em-55322bca",
+      "region": "central_asia",
+      "country": "multi",
+      "source": "agentmail_intel",
+      "occurred_at_utc": "2026-05-24T15:08:38.233Z",
+      "category": "intelligence_email",
+      "headline": "By The Numbers: China's Fourth Aircraft Carrier, How Trade Reduces War, China's Agricultural Coercion, and More",
+      "summary": "",
+      "sources": [
+        {
+          "name": "AgentMail: CSIS External Relations <externalrelations@csis.org>",
+          "url": "email://CSIS External Relations <externalrelations@csis.org>"
+        }
+      ]
+    },
+    {
+      "id": "em-fa44919f",
+      "region": "north_america",
+      "country": "multi",
+      "source": "agentmail_intel",
+      "occurred_at_utc": "2026-05-24T15:03:42.560Z",
+      "category": "intelligence_email",
+      "headline": "A turning point in the war?",
+      "summary": "",
+      "sources": [
+        {
+          "name": "AgentMail: POLITICO Playbook <politicoplaybook@email.politico.com>",
+          "url": "email://POLITICO Playbook <politicoplaybook@email.politico.com>"
+        }
+      ]
+    },
+    {
+      "id": "em-d39c6cd6",
+      "region": "north_america",
+      "country": "multi",
+      "source": "agentmail_intel",
+      "occurred_at_utc": "2026-05-24T13:08:13.264Z",
+      "category": "intelligence_email",
+      "headline": "\ud83c\uddee\ud83c\uddf7 Axios AM: Inside the deal talks",
+      "summary": "",
+      "sources": [
+        {
+          "name": "AgentMail: Mike Allen <mike@axios.com>",
+          "url": "email://Mike Allen <mike@axios.com>"
+        }
+      ]
+    },
+    {
+      "id": "em-88d6a963",
+      "region": "global_finance",
+      "country": "multi",
+      "source": "agentmail_intel",
+      "occurred_at_utc": "2026-05-24T12:31:37.217Z",
+      "category": "intelligence_email",
+      "headline": "The very best sunscreens",
+      "summary": "",
+      "sources": [
+        {
+          "name": "AgentMail: NYT Wirecutter <nytdirect@nytimes.com>",
+          "url": "email://NYT Wirecutter <nytdirect@nytimes.com>"
+        }
+      ]
+    },
+    {
+      "id": "em-493434f6",
+      "region": "middle_east",
+      "country": "multi",
+      "source": "gmail_intel_digest",
+      "occurred_at_utc": "2026-05-24T16:03:48.147463+00:00",
+      "category": "intelligence_email",
+      "headline": "Trump says Iran deal 'largely negotiated', would reopen Strait of Hormuz",
+      "summary": "Trump says Iran deal 'largely negotiated', would reopen Strait of Hormuz\n**From:** Reuters Iran Briefing <newsletters@email.reuters.com>\n**Date:** Sun, 24 May 2026 06:31:06 -0400 (EDT)\n**Type:** unknown | **Importance:** low\n\n96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max",
+      "sources": [
+        {
+          "name": "Gmail Digest: Reuters Iran Briefing <newsletters@email.reuters.com>",
+          "url": "email://Reuters Iran Briefing <newsletters@email.reuters.com>"
+        }
+      ]
     }
   ],
   "collection_gaps": [

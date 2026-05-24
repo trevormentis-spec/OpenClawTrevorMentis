@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# GATE_EXEMPT: Opus 4.7 QC review script — hardcoded model + OpenRouter endpoint are intentional design choices for the quality audit pipeline
 """Opus 4.7 QC Review — deep quality audit of the daily intelligence brief.
 
 Calls Claude Opus 4.7 via OpenRouter to review the generated brief across

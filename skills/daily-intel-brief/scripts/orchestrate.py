@@ -192,8 +192,14 @@ def main() -> int:
                         help="Tier-1 model for exec summary + red-team (default: DeepSeek V4 Pro)")
     parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro",
                         help="Tier-2 model for regional analysis (default: DeepSeek V4 Pro)")
-    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
-                        help="API provider for tier-1 (default: openrouter). Tier-2 always uses deepseek.")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
+                        help="API provider for tier-1 (default: deepseek).")
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek",
+                        help="API provider for tier-2 regional analysis (default: deepseek).")
+    parser.add_argument("--redteam-model", default=None,
+                        help="Model for red-team pass (default: same as tier-2)")
+    parser.add_argument("--redteam-provider", choices=["deepseek", "openrouter"], default=None,
+                        help="Provider for red-team pass (default: deepseek)")
     parser.add_argument("--strict-env", action="store_true", default=True,
                         help="fail at start if required env vars are missing")
     parser.add_argument("--scope-topic", default="Geopolitical intelligence brief",
@@ -409,6 +415,11 @@ def main() -> int:
     if sa_file.exists():
         analyst_cmd.extend(["--self-assessment", str(sa_file)])
     analyst_cmd.extend(["--tier2-model", args.tier2_model])
+    analyst_cmd.extend(["--tier2-provider", args.tier2_provider])
+    if args.redteam_model:
+        analyst_cmd.extend(["--redteam-model", args.redteam_model])
+    if args.redteam_provider:
+        analyst_cmd.extend(["--redteam-provider", args.redteam_provider])
     if args.dry_run:
         analyst_cmd.append("--mock")
     # [DISABLED] no visual assets — principal directive 2026-05-22

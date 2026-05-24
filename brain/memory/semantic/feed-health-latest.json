@@ -1,209 +1,209 @@
 {
-  "timestamp": "2026-05-23T11:54:51Z",
-  "total": 416,
-  "working": 215,
-  "dead": 190,
-  "health_pct": 51.7,
+  "timestamp": "2026-05-24T18:33:35Z",
+  "total": 360,
+  "working": 209,
+  "dead": 140,
+  "health_pct": 58.1,
   "dead_list": [
     {
-      "name": "ABC News (AU)",
-      "error": "HTTP 500"
-    },
-    {
-      "name": "Iran International",
-      "error": "not well-formed (invalid token): line 1, column 26646"
-    },
-    {
-      "name": "Gulf News",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "The National (UAE)",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Kommersant (Russian)",
-      "error": "HTTP 406"
-    },
-    {
-      "name": "CGTN (English)",
-      "error": "syntax error: line 5, column 0"
-    },
-    {
-      "name": "i24 News (English)",
-      "error": "not well-formed (invalid token): line 1, column 2214"
-    },
-    {
-      "name": "El Pa\u00eds (English)",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Nikkei Asia",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "The Hindu",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The Japan Times",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Korea Herald",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "allAfrica",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Daily Maverick (SA)",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The East African",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Bangkok Post",
-      "error": "HTTP 451"
-    },
-    {
-      "name": "The Irrawaddy (Myanmar)",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The Phnom Penh Post",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Philippine Daily Inquirer",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The Star (Malaysia)",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "RFE/RL Central Asia",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "The Hindu",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The Third Pole (Asia water/climate)",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "AKIpress (Kyrgyzstan)",
-      "error": "not well-formed (invalid token): line 295, column 117"
-    },
-    {
-      "name": "Central Asia-Caucasus Analyst",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "EurasiaNet",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "ORF India (security/geopolitics)",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Nepali Times",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Brookings India/Asia",
-      "error": "undefined entity: line 35, column 0"
-    },
-    {
-      "name": "Lowy Interpreter",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "The Australian",
-      "error": "no element found: line 1, column 0"
-    },
-    {
-      "name": "NZ Herald",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "ABC News (AU) Pacific",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Pacific Islands Forum",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Reforma (Mexico)",
-      "error": "HTTP 406"
-    },
-    {
-      "name": "Jamaica Gleaner",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "Trinidad Express",
-      "error": "HTTP 429"
-    },
-    {
-      "name": "Caribbean Investigative Journalist Network",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Central America Politics RISK Report",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "La Prensa Gr\u00e1fica (El Salvador)",
-      "error": "HTTP 403"
+      "name": "Mehr News (English)",
+      "error": "The read operation timed out"
     },
     {
       "name": "N\u00f3mada (Guatemala)",
       "error": "mismatched tag: line 107, column 123"
     },
     {
-      "name": "Confidencial (Nicaragua)",
-      "error": "<urlopen error [Errno -2] Name or service not known>"
-    },
-    {
-      "name": "Caribbean News Now",
-      "error": "HTTP 404"
-    },
-    {
-      "name": "St. Lucia Times",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "ISS Africa Today",
-      "error": "mismatched tag: line 15, column 2"
-    },
-    {
       "name": "The Continent (African journalism)",
       "error": "HTTP 404"
     },
     {
-      "name": "The Sentry (Africa conflict finance)",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "The New Humanitarian",
+      "name": "Africa Confidential",
       "error": "HTTP 404"
     },
     {
-      "name": "The Africa Report",
+      "name": "Crisis Group Africa",
+      "error": "not well-formed (invalid token): line 78, column 46"
+    },
+    {
+      "name": "ACLED Africa data",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Somalia Report",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+    },
+    {
+      "name": "Chatham House Africa",
       "error": "HTTP 403"
     },
     {
-      "name": "Garowe Online (Somalia)",
+      "name": "African Defence Review",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "name": "Reuters Financial",
       "error": "HTTP 404"
+    },
+    {
+      "name": "WSJ Markets",
+      "error": "not well-formed (invalid token): line 194, column 388"
+    },
+    {
+      "name": "The Hill",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "El Heraldo (Honduras)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "La Prensa (Honduras)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "El Nuevo Diario (Nicaragua)",
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "name": "La Estrella de Panam\u00e1",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Haiti Libre",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Le Nouvelliste (Haiti)",
+      "error": "not well-formed (invalid token): line 6, column 67"
+    },
+    {
+      "name": "Listin Diario (Dominican Republic)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Hoy Digital (Dominican Republic)",
+      "error": "HTTP 301"
+    },
+    {
+      "name": "Granma (Cuba)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Cubanet (Independent Cuba)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "El Nuevo D\u00eda (Puerto Rico)",
+      "error": "not well-formed (invalid token): line 1, column 3177"
+    },
+    {
+      "name": "Barbados Today",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "The Nassau Guardian (Bahamas)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Daily Nation (Kenya)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "The Standard (Kenya)",
+      "error": "not well-formed (invalid token): line 14, column 36"
+    },
+    {
+      "name": "The Guardian (Nigeria)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Citizen (Tanzania)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Daily Monitor (Uganda)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "New Vision (Uganda)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Ghana Web",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Graphic Online (Ghana)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Ethiopian Herald",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "name": "Zimbabwe Herald",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Mozambique News Agency",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+    },
+    {
+      "name": "Cameroon Tribune",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "The New Times (Rwanda)",
+      "error": "not well-formed (invalid token): line 2, column 17"
+    },
+    {
+      "name": "Ahram Online (Egypt)",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Morocco World News",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Algeria Press Service",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "name": "Tunis Afrique Presse",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+    },
+    {
+      "name": "Sudan Tribune",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Thai PBS World",
+      "error": "not well-formed (invalid token): line 4, column 14"
+    },
+    {
+      "name": "The Nation Thailand",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Tuoi Tre News (Vietnam)",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+    },
+    {
+      "name": "VietnamNet",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Kompas (Indonesia)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Detik (Indonesia)",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Jakarta Globe",
+      "error": "HTTP 403"
     }
   ]
 }

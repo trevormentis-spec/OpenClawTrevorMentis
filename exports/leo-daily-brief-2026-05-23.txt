@@ -1,0 +1,42 @@
+========================================================================
+  LEO GROUND STATION DAILY — May 23, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+Starship Flight 12’s successful suborbital test on 22 May transitions the vehicle from experimental to near-operational status, cutting the timeline to Starlink v2 deployment by months. Two Falcon 9 Starlink missions (Groups 10-47 and 17-37) are set for this week, sustaining a cadence that has already populated LEO with 9,400+ satellites and 10M+ subscribers. Simultaneously, FCC earth station records now include Denali 20020, LLC—an Amazon subsidiary—signaling that Kuiper’s long-gestating ground segment is moving from ITU filings to licensed US infrastructure. This marks the first tangible FCC footprint for Kuiper in our monitoring cycle.
+
+The ground architecture race is rapidly becoming asymmetric: Starlink commands 38 registered sites to Kuiper’s 5, a ratio that will only worsen as Starship unlocks mass deployment. With six high-risk sites still on the register (no criticals), none of which are Kuiper, the immediate risk lies in site congestion in underserved regions—Asia (8 sites), South America (6)—where co-location pressure from multiple operators could trigger interference disputes. The Starship milestone transforms the landscape; Roderick should recalibrate forecasts for Starlink ground capacity demand and watch for Kuiper’s next FCC filings to see if they can close the infrastructure gap.
+
+═══ FCC LICENSES ═══
+
+The 100-record FCC snapshot is anchored by legacy GEO operators (SES, Intelsat, Inmarsat, Sprint/Cogent), but two entrants stand out. Denali 20020, LLC—Amazon’s Kuiper earth station vehicle—appears for the first time, confirming the start of US licensing for Gateway and TT&C sites. Goonhilly Inc., the UK-based teleport operator, surfaces as well, likely tied to its multi-constellation partnerships (OneWeb, Lunar Pathfinder). No SpaceX or Starlink entity filings this period, indicating their extensive ground permissions are already saturated; the new action is on the Kuiper side. Notable by absence: Telesat Lightspeed and Canadian operator Calian Pacific Teleports appear but without new site indications. Trend: Kuiper’s licensing push is the main event; Roderick should task the FCC feed to flag any Denali coordinates that co-locate with existing Starlink or OneWeb sites.
+
+═══ CONSTELLATION SIGNALS ═══
+
+The upcoming launch queue holds 353 missions, 7 tagged Starlink. This week’s back-to-back Starlink launches will insert ~44 more spacecraft, maintaining the orbital density that drives ground segment expansion. The real signal, however, is Starship Flight 12: a full-profile suborbital success clears a path for the next orbital attempt, likely within Q3 2026. Once orbital, Starship can deliver Starlink v2 satellites (estimated 1.25 tons each) in batches of 100+, sharply increasing the pace of Gen2 deployment and demanding commensurate gateway upgrades. Chinese activity is ambiguous—the Long March 7A with unknown payload could be a Guowang demo or an electronic intelligence bird; if the former, it would add pressure to establish Asian ground stations, where our register shows only 8 sites. For now, all indicators point to a step-change in Starlink ground capacity requirements by Q4 2026.
+
+═══ SITE & IMAGERY ═══
+
+Register totals: 240 sites tracked, risk distribution unchanged—Negligible (13), Low (27), Moderate (34), High (6), Critical (0). Operator break: Starlink 38, KSAT 15, OneWeb 10, Leaf Space 9, Kuiper 5, Telesat 3. The six High-risk sites are concentrated in N. America (2), Europe (2), Asia (1), and Africa (1), all tied to multi-tenant colocations or geopolitical flashpoints. No new risks elevated this week. Sentinel-2 checks across 10 prioritized sites returned zero usable scenes—consistent with persistent cloud cover or revisit gaps. No construction, site expansion, or anomaly visible. Roderick should authorize a manual tasking request for the High-risk African site (likely Mombasa or Accra) given its single-threaded nature in our network, as imagery blackout leaves it unmonitored.
+
+═══ MARKET SIGNALS ═══
+
+ITU coordination filings and job postings both returned empty feeds this cycle—likely a data pipeline outage, as neither field is normally dead. This erodes our near-term visibility on constellation filings (e.g., Kuiper’s latest WRC-27 stance) and ground segment hiring trends. Market metrics are static: LEO GSaaS sub-market projects $1.72B (2024) to $5.33B (2033), a CAGR of ~12%, while Starlink’s $11.8B 2025 revenue and 10M+ subscriber base underscore its role as the primary demand driver. No deviations from forecast; the metrics serve as a steady backdrop. Until the feeds restore, we have a blind spot on competitive moves.
+
+═══ BOTTOM LINE ═══
+
+Roderick should treat the Starship success as a probabilistic advance for Starlink’s ground needs and direct the analytic line to model the licensing surge required to handle v2 deployments. On Kuiper, task the FCC feed to capture every Denali 20020 application—coordinates, antenna specs, backhaul providers—and cross-reference against Starlink’s site register to anticipate co-location flashpoints. Immediately resolve the ITU and jobs feed outages; without them, we cannot track the non-SpaceX LEO ground market. Finally, push for imagery of that High-risk African site by the next cycle; its status is critical.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | May 23, 2026

@@ -1,0 +1,1245 @@
+{
+  "https://www.tiempoar.com.ar/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Tiempo Argentino"
+  },
+  "https://www.lostiempos.com/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Los Tiempos"
+  },
+  "https://www.conectas.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Conectas Direitos Humanos"
+  },
+  "https://pazciudadana.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Paz Ciudadana"
+  },
+  "https://convoca.pe/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Convoca"
+  },
+  "https://iep.org.pe/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "IEP"
+  },
+  "https://www.revistaideele.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Revista Ideele"
+  },
+  "https://elsurti.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Surti (El Surtidor)"
+  },
+  "https://prodavinci.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Prodavinci"
+  },
+  "https://transparencia.org.ve/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Transparencia Venezuela"
+  },
+  "https://www.airedesantafe.com.ar/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Aire de Santa Fe"
+  },
+  "https://www.baenegocios.com/rss.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "BAE Negocios"
+  },
+  "https://www.c5n.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "C5N"
+  },
+  "https://www.cari.org.ar/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "CARI"
+  },
+  "https://www.canal26.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Canal 26"
+  },
+  "https://www.diariodecuyo.com.ar/rss.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Diario de Cuyo"
+  },
+  "https://www.cronista.com/files/rss/ultimas.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Cronista"
+  },
+  "https://www.eldestapeweb.com/rss/lo-ultimo.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Destape"
+  },
+  "https://www.ellitoral.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Litoral"
+  },
+  "https://www.infobae.com/argentina/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Infobae Argentina"
+  },
+  "https://www.infobae.com/seguridad/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Infobae \u2014 Seguridad"
+  },
+  "https://www.lacapital.com.ar/rss.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Capital (Rosario)"
+  },
+  "https://www.lagaceta.com.ar/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Gaceta (Tucum\u00e1n)"
+  },
+  "https://www.laprensa.com.ar/rss.aspx": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Prensa"
+  },
+  "https://www.lavoz.com.ar/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Voz del Interior (C\u00f3rdoba)"
+  },
+  "https://www.letrap.com.ar/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Letra P"
+  },
+  "https://www.losandes.com.ar/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Los Andes (Mendoza)"
+  },
+  "https://www.perfil.com/rss/ultimomomento.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Perfil"
+  },
+  "https://www.pagina12.com.ar/rss/portada": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "P\u00e1gina/12 (portada)"
+  },
+  "https://www.pagina12.com.ar/rss/secciones/el-pais/notas": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "P\u00e1gina/12 \u2014 El Pa\u00eds"
+  },
+  "https://www.pagina12.com.ar/rss/secciones/sociedad/notas": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "P\u00e1gina/12 \u2014 Sociedad"
+  },
+  "https://radiomitre.cienradios.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Radio Mitre"
+  },
+  "https://www.noticiasfides.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "ANF Noticias Fides"
+  },
+  "https://www.bolpress.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Bolpress"
+  },
+  "https://brujuladigital.net/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Br\u00fajula Digital"
+  },
+  "https://correodelsur.com/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Correo del Sur"
+  },
+  "https://eldeber.com.bo/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Deber"
+  },
+  "https://www.eldiario.net/noticias/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Diario"
+  },
+  "https://eldia.com.bo/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El D\u00eda (Santa Cruz)"
+  },
+  "https://elpotosi.net/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Potos\u00ed"
+  },
+  "https://erbol.com.bo/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Erbol"
+  },
+  "https://www.ftierra.org/index.php?option=com_obrss&task=feed&id=1": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Fundaci\u00f3n Tierra"
+  },
+  "https://www.lapatriaenlinea.com/?do=rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Patria (Oruro)"
+  },
+  "https://www.opinion.com.bo/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Opini\u00f3n (Cochabamba)"
+  },
+  "https://www.radiofides.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Radio Fides"
+  },
+  "https://www.aosfatos.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Aos Fatos"
+  },
+  "https://www.cebri.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "CEBRI"
+  },
+  "https://www.cartacapital.com.br/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Carta Capital"
+  },
+  "https://www.correiobraziliense.com.br/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Correio Braziliense"
+  },
+  "https://www.em.com.br/rss/feeds/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Estado de Minas"
+  },
+  "https://www.estadao.com.br/rss/brasil.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Estad\u00e3o \u2014 Brasil"
+  },
+  "https://www.estadao.com.br/rss/politica.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Estad\u00e3o \u2014 Pol\u00edtica"
+  },
+  "https://forumseguranca.org.br/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "F\u00f3rum Brasileiro de Seguran\u00e7a P\u00fablica"
+  },
+  "https://www.ipea.gov.br/portal/rss/recente.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "IPEA"
+  },
+  "https://www.nexojornal.com.br/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Nexo Jornal"
+  },
+  "https://www.estadao.com.br/rss/ultimas.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "O Estado de S.Paulo (Estad\u00e3o) \u2014 \u00faltimas"
+  },
+  "https://www.opovo.com.br/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "O Povo (Cear\u00e1)"
+  },
+  "https://gauchazh.clicrbs.com.br/feed.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Zero Hora (RBS/Ga\u00facha)"
+  },
+  "https://www.biobiochile.cl/rss/noticias.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "B\u00edo B\u00edo Chile"
+  },
+  "https://www.cooperativa.cl/noticias/site/tax/port/all/rss_portada_n3047_1.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Cooperativa Radio"
+  },
+  "https://www.df.cl/rss/portada": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Diario Financiero"
+  },
+  "https://www.eldesconcierto.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Desconcierto"
+  },
+  "https://www.eldinamo.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El D\u00ednamo"
+  },
+  "https://ellibero.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El L\u00edbero"
+  },
+  "https://www.elmostrador.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Mostrador"
+  },
+  "https://www.elmostrador.cl/noticias/pais/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Mostrador \u2014 Pa\u00eds"
+  },
+  "https://www.latercera.com/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Tercera"
+  },
+  "https://www.latercera.com/arc/outboundfeeds/rss/category/nacional/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Tercera \u2014 Nacional"
+  },
+  "https://www.lun.com/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Las \u00daltimas Noticias (LUN)"
+  },
+  "https://www.publimetro.cl/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Publ\u00edmetro"
+  },
+  "https://resumen.cl/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Resumen.cl"
+  },
+  "https://www.t13.cl/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "T13 (Canal 13)"
+  },
+  "https://www.24horas.cl/rss/feed.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "TVN \u2014 24 Horas"
+  },
+  "https://www.bluradio.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Blu Radio"
+  },
+  "https://www.cerac.org.co/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "CERAC"
+  },
+  "https://www.cinep.org.co/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "CINEP / Programa por la Paz"
+  },
+  "https://cambiocolombia.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Cambio (revista)"
+  },
+  "https://canal1.com.co/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Canal 1"
+  },
+  "https://caracol.com.co/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Caracol Radio"
+  },
+  "https://www.caracoltv.com/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Caracol TV"
+  },
+  "https://colombiacheck.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Colombia Check"
+  },
+  "https://www.coljuristas.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Comisi\u00f3n Colombiana de Juristas"
+  },
+  "https://www.comisiondelaverdad.co/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Comisi\u00f3n de la Verdad (archive)"
+  },
+  "https://www.elespectador.com/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Espectador (portada)"
+  },
+  "https://www.elespectador.com/arc/outboundfeeds/rss/category/judicial/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Espectador \u2014 Judicial"
+  },
+  "https://www.elheraldo.co/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Heraldo (Barranquilla)"
+  },
+  "https://www.elpais.com.co/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Pa\u00eds Cali"
+  },
+  "https://www.eltiempo.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Tiempo (portada)"
+  },
+  "https://www.eluniversal.com.co/rss/portada.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Universal (Cartagena)"
+  },
+  "https://ideaspaz.org/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Fundaci\u00f3n Ideas para la Paz (FIP)"
+  },
+  "https://www.jep.gov.co/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "JEP"
+  },
+  "https://www.portafolio.co/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Portafolio"
+  },
+  "https://www.rcnradio.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "RCN Radio"
+  },
+  "https://rutasdelconflicto.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Rutas del Conflicto"
+  },
+  "https://www.semana.com/rss-nuestros-feeds/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Semana"
+  },
+  "https://www.vanguardia.com/rss/feed/portada": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Vanguardia (Bucaramanga)"
+  },
+  "https://www.wradio.com.co/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "W Radio"
+  },
+  "https://pacifista.tv/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "\u00a1Pacifista!"
+  },
+  "https://4pelagatos.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "4Pelagatos"
+  },
+  "https://www.diariocorreo.com.ec/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Diario Correo"
+  },
+  "https://www.ecuavisa.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Ecuavisa"
+  },
+  "https://www.eltelegrafo.com.ec/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Tel\u00e9grafo"
+  },
+  "https://www.eluniverso.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Universo"
+  },
+  "https://www.expreso.ec/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Expreso (Guayaquil)"
+  },
+  "https://www.extra.ec/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Extra"
+  },
+  "https://gk.city/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "GK (gk.city)"
+  },
+  "https://lafuente.ec/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Fuente"
+  },
+  "https://www.lahora.com.ec/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Hora"
+  },
+  "https://laposta.ec/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Posta"
+  },
+  "https://www.metroecuador.com.ec/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Metro Ecuador"
+  },
+  "https://www.milhojas.is/feed.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Mil Hojas"
+  },
+  "https://www.primicias.ec/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Primicias"
+  },
+  "https://www.teleamazonas.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Teleamazonas"
+  },
+  "https://wambra.ec/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Wambra"
+  },
+  "https://www.franceguyane.fr/rss.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "France-Guyane"
+  },
+  "https://la1ere.francetvinfo.fr/guyane/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Guyane la 1\u00e8re"
+  },
+  "https://newssourcegy.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "News Source Guyana"
+  },
+  "https://www.stabroeknews.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Stabroek News"
+  },
+  "https://www.cries.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "CRIES"
+  },
+  "https://elfaro.net/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Faro"
+  },
+  "https://www.infobae.com/america/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Infobae Am\u00e9rica (all sections)"
+  },
+  "https://nuso.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Nueva Sociedad (FES)"
+  },
+  "https://www.occrp.org/en/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "OCCRP"
+  },
+  "https://www.resdal.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "RESDAL"
+  },
+  "https://noticiaslatam.lat/export/rss2/article/index.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Sputnik Mundo"
+  },
+  "https://www.telesurtv.net/rss/index/index.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Telesur"
+  },
+  "https://www.vozdeamerica.com/api/zmgqoe$mqi": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "VOA Voz de Am\u00e9rica"
+  },
+  "https://www.wola.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "WOLA"
+  },
+  "https://andina.pe/edicion/rss-anglo.aspx": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Andina (state wire)"
+  },
+  "https://diariocorreo.pe/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Correo"
+  },
+  "https://elperuano.pe/rss.aspx": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Peruano (gazette)"
+  },
+  "https://epicentro.tv/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Epicentro.tv"
+  },
+  "https://www.expreso.com.pe/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Expreso"
+  },
+  "https://gestion.pe/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Gesti\u00f3n"
+  },
+  "https://hildebrandtensustrece.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Hildebrandt en sus Trece"
+  },
+  "https://idehpucp.pucp.edu.pe/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "IDEHPUCP"
+  },
+  "https://larepublica.pe/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Rep\u00fablica"
+  },
+  "https://ojo-publico.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Ojo P\u00fablico"
+  },
+  "https://peru21.pe/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Per\u00fa21"
+  },
+  "https://saludconlupa.com/feed.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Salud con Lupa"
+  },
+  "https://trome.com/arc/outboundfeeds/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Trome"
+  },
+  "https://www.5dias.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "5dias"
+  },
+  "https://www.abc.com.py/rss/nacionales.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "ABC Color"
+  },
+  "https://conexiones.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "ConexionesPy"
+  },
+  "https://www.cronica.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Cr\u00f3nica"
+  },
+  "https://www.elindependiente.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Independiente"
+  },
+  "https://www.hoy.com.py/rss/portada": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Hoy"
+  },
+  "https://www.lanacion.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Naci\u00f3n"
+  },
+  "https://www.telefuturo.com.py/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Telefuturo"
+  },
+  "https://www.ultimahora.com/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "\u00daltima Hora"
+  },
+  "https://www.starnieuws.com/index.php/welcome/get_rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Starnieuws"
+  },
+  "https://www.dwtonline.com/laatste-nieuws/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "de Ware Tijd"
+  },
+  "https://www.busqueda.com.uy/rss.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "B\u00fasqueda"
+  },
+  "https://www.elobservador.com.uy/rss/portada.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Observador"
+  },
+  "https://www.elpais.com.uy/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Pa\u00eds"
+  },
+  "https://ladiaria.com.uy/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Diaria"
+  },
+  "https://www.republica.com.uy/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "La Rep\u00fablica"
+  },
+  "https://www.montevideo.com.uy/rss/anchor.aspx": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Montevideo Portal"
+  },
+  "https://sudestada.com.uy/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Sudestada"
+  },
+  "https://www.180.com.uy/rss.php": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "com.uy"
+  },
+  "https://www.aporrea.org/rss/rss.php": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Aporrea"
+  },
+  "https://www.diariolasamericas.com/rss-venezuela.html": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Diario Las Am\u00e9ricas \u2014 Venezuela"
+  },
+  "https://es.insightcrime.org/venezuela-crimen-organizado/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "InSight Crime Venezuela tag"
+  },
+  "https://www.ntn24.com/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "NTN24"
+  },
+  "https://observatoriodeviolencia.org.ve/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "OVV (Observatorio Venezolano de Violencia)"
+  },
+  "https://provea.org/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Provea"
+  },
+  "https://puntodecorte.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Punto de Corte"
+  },
+  "https://talcualdigital.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "TalCual"
+  },
+  "https://www.vtv.gob.ve/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "VTV (state)"
+  },
+  "https://www.venezuelaaldia.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "Venezuela al D\u00eda"
+  },
+  "https://www.emol.com/sitios/RSS/noticias.xml": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T05:59:16.674132+00:00",
+    "source": "El Mercurio / Emol"
+  },
+  "https://www.arabnews.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:23:14.696774+00:00"
+  },
+  "https://www.newarab.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:23:14.854022+00:00"
+  },
+  "https://www.thecontinent.co.za/feed": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:24:22.160377+00:00"
+  },
+  "https://www.africa-confidential.com/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:24:41.674532+00:00"
+  },
+  "https://acleddata.com/feed": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:24:44.872177+00:00"
+  },
+  "https://somaliareport.com/feed": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:24:45.856022+00:00"
+  },
+  "https://www.chathamhouse.org/rss/africa": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:24:46.036090+00:00"
+  },
+  "https://www.africandefencereview.com/feed": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:10.164112+00:00"
+  },
+  "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=financial-services": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:11.332984+00:00"
+  },
+  "https://thehill.com/rss/syndicator/191": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:15.406929+00:00"
+  },
+  "https://www.cbc.ca/cmlink/rss-world": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:39.815291+00:00"
+  },
+  "https://www.elheraldo.hn/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:55.114381+00:00"
+  },
+  "https://www.laprensa.hn/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:56.377719+00:00"
+  },
+  "https://www.elnuevodiario.com.ni/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:25:57.296048+00:00"
+  },
+  "https://www.laestrella.com.pa/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:01.940431+00:00"
+  },
+  "https://www.haitilibre.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:05.825764+00:00"
+  },
+  "https://listindiario.com/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:07.679850+00:00"
+  },
+  "https://hoy.com.do/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:08.799073+00:00"
+  },
+  "http://www.granma.cu/feed.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:36.567515+00:00"
+  },
+  "https://www.cubanet.org/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:37.115089+00:00"
+  },
+  "https://thenassauguardian.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:39.560753+00:00"
+  },
+  "https://www.nation.co.ke/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:41.725594+00:00"
+  },
+  "https://guardian.ng/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:26:45.011912+00:00"
+  },
+  "https://www.newvision.co.ug/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:13.029548+00:00"
+  },
+  "https://www.ghanaweb.com/GhanaHomePage/rss/news.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:14.137112+00:00"
+  },
+  "https://www.graphic.com.gh/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:16.053622+00:00"
+  },
+  "https://www.ethiopianherald.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:40.230070+00:00"
+  },
+  "https://www.herald.co.zw/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:41.520743+00:00"
+  },
+  "https://www.poptel.org.uk/mozambique-news/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:46.655899+00:00"
+  },
+  "https://www.cameroon-tribune.cm/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:48.733224+00:00"
+  },
+  "https://english.ahram.org.eg/rss.aspx": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:52.023281+00:00"
+  },
+  "https://www.moroccoworldnews.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:27:57.407568+00:00"
+  },
+  "https://www.aps.dz/en/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:24.284787+00:00"
+  },
+  "https://www.tap.info.tn/en/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:27.763816+00:00"
+  },
+  "https://www.sudantribune.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:28.464738+00:00"
+  },
+  "https://www.nationthailand.com/rss/feed": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:29.507218+00:00"
+  },
+  "https://tuoitrenews.vn/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:32.319110+00:00"
+  },
+  "https://vietnamnet.vn/en/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:35.219381+00:00"
+  },
+  "https://www.kompas.com/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T12:28:36.089569+00:00"
+  },
+  "https://www.detik.com/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T12:28:40.071747+00:00"
+  },
+  "https://jakartaglobe.id/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:40.827629+00:00"
+  },
+  "https://www.tempo.co/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-05-24T12:28:41.118006+00:00"
+  },
+  "https://www.khmertimeskh.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:42.716345+00:00"
+  },
+  "https://www.vientianetimes.org.la/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:52.297288+00:00"
+  },
+  "https://tribune.com.pk/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:28:53.588354+00:00"
+  },
+  "https://tashkenttimes.uz/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:03.186381+00:00"
+  },
+  "https://www.inform.kz/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:05.668390+00:00"
+  },
+  "https://en.trend.az/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:09.504690+00:00"
+  },
+  "https://www.fijivillage.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:15.178340+00:00"
+  },
+  "https://www.solomonstarnews.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:15.711579+00:00"
+  },
+  "https://www.dailypost.vu/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:16.178797+00:00"
+  },
+  "https://www.samoaobserver.ws/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:17.578313+00:00"
+  },
+  "https://www.omanobserver.om/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:26.625747+00:00"
+  },
+  "https://www.jordantimes.com/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:27.320482+00:00"
+  },
+  "https://www.sabanew.net/rss/en.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:36.085673+00:00"
+  },
+  "https://www.aljazeera.net/xml/rss/all.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:29:57.483819+00:00"
+  },
+  "https://www3.nhk.or.jp/nhkworld/en/news/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:00.203810+00:00"
+  },
+  "https://www3.nhk.or.jp/news/rss/news/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:02.063660+00:00"
+  },
+  "https://french.cgtn.com/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:05.046256+00:00"
+  },
+  "https://efe.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:12.290539+00:00"
+  },
+  "https://english.kyodonews.net/rss/news.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:13.715768+00:00"
+  },
+  "https://www.liberation.fr/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:15.767002+00:00"
+  },
+  "http://www.xinhuanet.com/politics/xhll.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:28.858370+00:00"
+  },
+  "https://rss.caixin.com/caixin.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:32.277065+00:00"
+  },
+  "https://www.nikkei.com/rss/index.do": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:34.903979+00:00"
+  },
+  "https://www.yomiuri.co.jp/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:36.164823+00:00"
+  },
+  "https://www.yna.co.kr/RSS/news.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:41.158660+00:00"
+  },
+  "https://www.chosun.com/arc/outboundfeeds/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:42.075124+00:00"
+  },
+  "https://news.kbs.co.kr/rss/rss.jsp?ch=ko": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:43.673597+00:00"
+  },
+  "https://www.alarabiya.net/.mrss/ar.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:43.968765+00:00"
+  },
+  "https://www.elkhabar.com/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:50.611698+00:00"
+  },
+  "https://www.almasryalyoum.com/rss/RssFeeds.aspx": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:30:50.830710+00:00"
+  },
+  "https://static.rbc.ru/rbc/internal/rss.rbc.ru/rbc.ru/mainnews.rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:25.192729+00:00"
+  },
+  "https://novayagazeta.eu/rss/all": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:28.197667+00:00"
+  },
+  "https://www.eluniversal.com.mx/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:32.319691+00:00"
+  },
+  "https://oglobo.globo.com/rss/ultimas/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:40.884711+00:00"
+  },
+  "https://www.estadao.com.br/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:42.020713+00:00"
+  },
+  "https://www.publico.pt/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:43.984324+00:00"
+  },
+  "https://www.ilsole24ore.com/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:31:50.075144+00:00"
+  },
+  "https://www.tasnimnews.com/en/rss/feed/0/8/0": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:30.266252+00:00"
+  },
+  "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederRSS": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:33.812905+00:00"
+  },
+  "https://www.timesofisrael.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:34.066675+00:00"
+  },
+  "https://www.rp.pl/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:36.941385+00:00"
+  },
+  "https://wiadomosci.onet.pl/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:37.928007+00:00"
+  },
+  "https://hromadske.ua/rss.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:40.891329+00:00"
+  },
+  "https://kyivindependent.com/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:42.318892+00:00"
+  },
+  "https://ndtv.in/rss/feeds": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:42.723906+00:00"
+  },
+  "https://www.jagran.com/rss/news.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:43.406250+00:00"
+  },
+  "https://tamil.thehindu.com/feeder/default.rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:44.482290+00:00"
+  },
+  "https://www.dawnnews.tv/rss/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:44.950852+00:00"
+  },
+  "https://www.bangkokpost.com/rss/data/topstories.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:32:49.409489+00:00"
+  },
+  "http://en.people.cn/rss/politics.xml": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:33:00.094389+00:00"
+  },
+  "https://www.osw.waw.pl/pl/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:33:00.169612+00:00"
+  },
+  "https://www.trtworld.com/rss": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:33:00.507862+00:00"
+  },
+  "https://www.cbc.ca/cmlink/rss-topstories": {
+    "failures": 2,
+    "last_failed_at": "2026-05-24T12:33:37.833999+00:00"
+  },
+  "https://www.aspistrategist.org.au/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-05-24T12:23:45.691829+00:00"
+  },
+  "https://www.annahar.com/rss": {
+    "failures": 1,
+    "last_failed_at": "2026-05-24T12:31:15.006291+00:00"
+  }
+}

@@ -1,16 +1,46 @@
 {
   "current_phase": "A",
-  "phase_label": "Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)",
-  "last_phase_completed": null,
-  "last_cycle_completed_at": null,
+  "phase_label": "Phase A — RSS feed health audit (test all feeds, flag dead/slow)",
+  "last_phase_completed": "D",
+  "last_phase_completed_at": "2026-05-23T16:49:45Z",
+  "last_cycle_completed_at": "2026-05-23T16:49:45Z",
   "created_at": "2026-05-22T18:37:00Z",
-  "updated_at": "2026-05-22T23:49:00Z",
-  "update_reason": "System audit 2026-05-22: aligned phases with HEARTBEAT.md (v2 phases: feed health → discovery → pruning → reindex+cost)",
+  "updated_at": "2026-05-23T16:49:45Z",
+  "update_reason": "Phase D completed: brain reindexed, collection state=360 feeds, OpenRouter cost snapshot recorded. DeepSeek monitor returned 401 (API key issue, non-blocking). Full cycle complete — reset to Phase A.",
   "phases": {
-    "A": "Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)",
+    "A": "Phase A — RSS feed health audit (test all feeds, flag dead/slow)",
     "B": "Phase B — Source discovery (find new RSS/Substack feeds for gap regions)",
     "C": "Phase C — Source pruning (remove dead feeds, add replacements from discovery)",
     "D": "Phase D — Collection state + cost snapshot + brain reindex"
   },
-  "notes": "Recreated 2026-05-22. Previous state file was missing. Starting at Phase A per heartbeat recovery procedure. Updated 2026-05-22 23:49 UTC to match HEARTBEAT.md v2 phases."
+  "phase_a_results": {
+    "timestamp": "2026-05-23T15:19:00Z",
+    "total": 416,
+    "working": 215,
+    "dead": 190,
+    "empty": 11,
+    "health_pct": 51.7
+  },
+  "phase_b_results": {
+    "timestamp": "2026-05-23T15:49:23Z",
+    "regions_searched": 7,
+    "new_sources": 0,
+    "note": "BRAVE_API_KEY not set — all web searches skipped"
+  },
+  "phase_c_results": {
+    "timestamp": "2026-05-23T16:22:42Z",
+    "dead_feeds_pruned": 49,
+    "feeds_before": 416,
+    "feeds_after": 360,
+    "prune_method": "Used Phase A audit results (dead_list[:50]) — 49/50 matched. Full --prune via feed_health_audit.py timed out."
+  },
+  "phase_d_results": {
+    "timestamp": "2026-05-23T16:49:45Z",
+    "brain_reindex": "completed",
+    "collection_state": "360 active feeds",
+    "cost_snapshot": {
+      "openrouter": "snapshot recorded, 21 historical sessions (all pre-May 2026), no active usage",
+      "deepseek": "API 401 — key may need rotation"
+    }
+  }
 }

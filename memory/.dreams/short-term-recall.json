@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-23T09:33:37.838Z",
+  "updatedAt": "2026-05-24T14:09:54.294Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -9,26 +9,28 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-04-25 - Confirmed Telegram channel was connected. - Switched to a balanced model configuration. - Configured local git identity and established GitHub SSH backup. - User defined Trevor as: Threat Research and Evaluation Virtual Operations Resource. - Began building a file-backed brain architecture with episodic, semantic, procedural, and meta-memory layers.",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.8060951349074736,
-      "maxScore": 0.6343492334578176,
+      "totalScore": 4.806095134907474,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-26T06:15:14.500Z",
-      "lastRecalledAt": "2026-05-02T12:00:16.230Z",
+      "lastRecalledAt": "2026-05-24T14:09:54.294Z",
       "queryHashes": [
         "4d30fa9e2fff",
         "e6f3be8e47a7",
         "0b7e24068149",
         "326adb9da76c",
         "7b4024f16d8d",
-        "b69bb4b76f7e"
+        "b69bb4b76f7e",
+        "ab6db427d54b"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-28",
         "2026-04-29",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-24"
       ],
       "conceptTags": [
         "backup",
@@ -95,13 +97,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.50553129149435,
+      "totalScore": 20.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "lastRecalledAt": "2026-05-24T03:07:07.040Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -122,7 +124,8 @@
         "b84acb705a0f",
         "d76260b5998d",
         "b2960036661c",
-        "cb0e9de10fbc"
+        "cb0e9de10fbc",
+        "d273c1eeb6e6"
       ],
       "recallDays": [
         "2026-04-28",
@@ -137,7 +140,8 @@
         "2026-05-12",
         "2026-05-13",
         "2026-05-15",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-24"
       ],
       "conceptTags": [
         "gateway",
@@ -583,13 +587,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13.751788668739627,
+      "totalScore": 14.751788668739627,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
+      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -604,7 +608,8 @@
         "b62b199ec189",
         "f6d1fca16aa8",
         "50d95fe6b691",
-        "f8d5cf7b3c91"
+        "f8d5cf7b3c91",
+        "0a8ae9598584"
       ],
       "recallDays": [
         "2026-05-04",
@@ -616,7 +621,8 @@
         "2026-05-11",
         "2026-05-15",
         "2026-05-21",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -1313,26 +1319,29 @@
       "endLine": 98,
       "source": "memory",
       "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
       "queryHashes": [
         "35087ae309b1",
         "b2960036661c",
         "d47a29803ed1",
         "13584e1c3564",
         "df855bba4611",
-        "69aac40b64bc"
+        "69aac40b64bc",
+        "b29c1c6a8236",
+        "6c65929eab81"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "gateway",
@@ -1708,21 +1717,23 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
+      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
-        "f8d5cf7b3c91"
+        "f8d5cf7b3c91",
+        "0a8ae9598584"
       ],
       "recallDays": [
         "2026-05-21",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "second-guess",
@@ -1742,21 +1753,24 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "2026-05-16 08:04 UTC — Hourly market check (improvement_daemon.py --hourly): completed clean 2026-05-16 19:05 UTC — Gmail Intel Digest: processed 7 intelligence-labelled emails into news_raw.md 2026-05-16 19:27 UTC — Heartbeat: promoted Mexico analysis framework to MEMORY.md, committed news_raw.md",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-22T20:38:32.958Z",
-      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
       "queryHashes": [
         "d47a29803ed1",
         "df855bba4611",
-        "69aac40b64bc"
+        "69aac40b64bc",
+        "b29c1c6a8236",
+        "6c65929eab81"
       ],
       "recallDays": [
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "improvement-daemon.py",
@@ -1776,21 +1790,24 @@
       "endLine": 200,
       "source": "memory",
       "snippet": "- [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Phase A — RSS Feed Health Audit (19:00 UTC) **Results:** 290 feeds tested (280 real + 10 region labels) - ✅ **Working:** 137 (48.9% effective health",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-22T20:38:32.958Z",
-      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
       "queryHashes": [
         "d47a29803ed1",
         "df855bba4611",
-        "69aac40b64bc"
+        "69aac40b64bc",
+        "b29c1c6a8236",
+        "6c65929eab81"
       ],
       "recallDays": [
         "2026-05-22",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "north-america",
@@ -1810,19 +1827,21 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# Memory — 11 May 2026 ## Daily Briefings Pipeline — Major Lesson ### What went wrong - Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lesson",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T04:46:23.407Z",
-      "lastRecalledAt": "2026-05-23T04:46:31.879Z",
+      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
       "queryHashes": [
         "50d95fe6b691",
-        "f8d5cf7b3c91"
+        "f8d5cf7b3c91",
+        "0a8ae9598584"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "render-brief-magazine.py",
@@ -1842,18 +1861,20 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Autonomy boundaries in ORCHESTRATION.md: self-detected, clean diagnosis, contained fix, regression-testable = autonomous. Principal review for architectural/guard/identity changes. - Default-non-executing rule: new automated executors default to dry-run; explicit --live flag required. - Preflight data rule: tracking data changes must confirm prior state is recoverable before commit. ### Key Technical Debts 1. Entity deepening task module scaffolds-only — needs actual Haiku/Opus call wired 2. Framework stress test module scaffolds-only — needs actual framework analysis call 3. Self_question_generation hardcodes 4 questions — needs LLM call for novel gaps 4. Cross_source_correlation dormant",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T05:05:55.974Z",
-      "lastRecalledAt": "2026-05-23T05:05:55.974Z",
+      "lastRecalledAt": "2026-05-24T03:07:07.040Z",
       "queryHashes": [
-        "5bf81ea520aa"
+        "5bf81ea520aa",
+        "d273c1eeb6e6"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "orchestration.md",
@@ -1864,6 +1885,223 @@
         "dry-run",
         "scaffolds-only",
         "haiku/opus"
+      ]
+    },
+    "memory:memory/2026-05-22.md:161:182": {
+      "key": "memory:memory/2026-05-22.md:161:182",
+      "path": "memory/2026-05-22.md",
+      "startLine": 161,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "- [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Report: leo_daily_brief — 2026-05-22 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-22.txt **Words:** 846 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "queryHashes": [
+        "baada38f647c"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "central-america-caribbean",
+        "forward-looking",
+        "south-america",
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "mock",
+        "judgment"
+      ]
+    },
+    "memory:memory/2026-05-22.md:121:139": {
+      "key": "memory:memory/2026-05-22.md:121:139",
+      "path": "memory/2026-05-22.md",
+      "startLine": 121,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "- [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (unlikely; 30% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (unlikely; 30% / 7d) ## Daily brief — 2026-05-22 BLUF: Mock BLUF: a calibrated one-sentence headline judgment covering the most decision-relevant overnight development. - [europe] Mock judgment 1 for Europe: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [north_america] Mock judg",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "queryHashes": [
+        "baada38f647c"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "central-america-caribbean",
+        "forward-looking",
+        "south-america",
+        "one-sentence",
+        "decision-relevant",
+        "north-america",
+        "mock",
+        "judgment"
+      ]
+    },
+    "memory:memory/2026-05-22.md:81:99": {
+      "key": "memory:memory/2026-05-22.md:81:99",
+      "path": "memory/2026-05-22.md",
+      "startLine": 81,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "- [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (unlikely; 30% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (likely; 60% / 7d) ## Daily brief — 2026-05-22 BLUF: Mock BLUF: a calibrated one-sentence headline judgment covering the most decision-relevant overnight development. - [europe] Mock judgment 1 for Europe: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [north_america] M",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "queryHashes": [
+        "baada38f647c"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "central-america-caribbean",
+        "forward-looking",
+        "south-america",
+        "one-sentence",
+        "decision-relevant",
+        "north-america",
+        "mock",
+        "judgment"
+      ]
+    },
+    "memory:memory/2026-05-22.md:109:126": {
+      "key": "memory:memory/2026-05-22.md:109:126",
+      "path": "memory/2026-05-22.md",
+      "startLine": 109,
+      "endLine": 126,
+      "source": "memory",
+      "snippet": "- [europe] Mock judgment 1 for Europe: an observable forward-looking event would be stated here. (unlikely; 30% / 7d) - [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (unlikely; 30% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Daily brief — 2026-05-22 B",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "queryHashes": [
+        "baada38f647c"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "forward-looking",
+        "north-america",
+        "central-america-caribbean",
+        "south-america",
+        "europe",
+        "mock",
+        "judgment",
+        "observable"
+      ]
+    },
+    "memory:memory/2026-05-22.md:149:165": {
+      "key": "memory:memory/2026-05-22.md:149:165",
+      "path": "memory/2026-05-22.md",
+      "startLine": 149,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "- [europe] Mock judgment 1 for Europe: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Daily brief — 2026-05-22 BLUF:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "queryHashes": [
+        "baada38f647c"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "forward-looking",
+        "north-america",
+        "central-america-caribbean",
+        "south-america",
+        "europe",
+        "mock",
+        "judgment",
+        "observable"
+      ]
+    },
+    "memory:memory/2026-05-23.md:1:23": {
+      "key": "memory:memory/2026-05-23.md:1:23",
+      "path": "memory/2026-05-23.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T14:08:59.640Z",
+      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
+      "queryHashes": [
+        "0a8ae9598584"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "large-scale",
+        "brief",
+        "bluf",
+        "latvia's",
+        "government",
+        "collapse",
+        "opens",
+        "baltic"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:20": {
+      "key": "memory:memory/2026-05-08.md:1:20",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "# Daily Memory — 2026-05-08 ## Cron Delivery Fix - Fixed 4 cron jobs that had `announce -> last` with no route: - Daily Intel Brief (`250765ae`) → `telegram:8039230885` - forward-intel-brief (`af14ce60`) → `telegram:8039230885` - Landing page deploy (`8f3c63de`) → `telegram:8039230885` - Social engagement tracker (`0eab30cc`) → `telegram:8039230885` - Root cause: missing `--to <chatId>` on delivery config ## Daily brief — 2026-05-08 BLUF: The week ahead features a likely US-Iran diplomatic memorandum alongside ongoing American and Russian military operations, and a highly likely deepening of Cuba's fuel crisis. - [europe] Russia will continue to launch missile and drone strikes a",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-24T14:09:54.294Z",
+      "lastRecalledAt": "2026-05-24T14:09:54.294Z",
+      "queryHashes": [
+        "ab6db427d54b"
+      ],
+      "recallDays": [
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "forward-intel-brief",
+        "us-iran",
+        "cron",
+        "delivery",
+        "fix",
+        "fixed",
+        "jobs",
+        "had"
       ]
     }
   }

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-23T17:30:11.070775+00:00",
+  "data_feeds": {
+    "gdelt-sweep": {
+      "status": "ok",
+      "collected_at": "2026-05-23T17:00:10.783151+00:00",
+      "articles_found": 2,
+      "articles": [
+        {
+          "keyword": "cyclonite",
+          "title": "19 missing after blast rocked Tennessee military explosives plant - The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPc0tvUFNIOGFYTTVEQV9VOXAyRkt2NHR3cjJoV3RBbW1JcGR5SGZJcHpSYjdZVHV3UUt4ajFfY085dlliczZ5SkExZ1FlS09BZnh5RXgwS3VDT0RtbnZhWmRGUlBHcTJvVUJrMHlPaUJiUzh4a2p5ZVpsOGcyUVJUS1NBSnJqbHZyVHRsNXIwazNTc1pobUpJU09xVFI?oc=5",
+          "published": "Fri, 10 Oct 2025 07:00:00 GMT",
+          "source": "The Washington Post",
+          "collected_at": "2026-05-23T17:00:08.417265+00:00"
+        },
+        {
+          "keyword": "IMX-101",
+          "title": "Years of U.S., NATO miscalculations left Ukraine massively outgunned - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbVI2NmF3SjVBS1VZUWIyMXp1Ukl1ZzJyQzBjeExUVUx1UnprYnRDOEpwYk0wVVBIODhLQWRvU3pEdnNHMXlWbkxqbnNfVW56VlJiUFA2bHd6ZW8yTGdwQlNBYW03Q1hOcXp6eExGTkdCQTkyTG5fYWZob1FfcVpTRmJ6UQ?oc=5",
+          "published": "Fri, 19 Jul 2024 07:00:00 GMT",
+          "source": "Reuters",
+          "collected_at": "2026-05-23T17:00:10.782630+00:00"
+        }
+      ]
+    },
+    "osint-events": {
+      "status": "ok",
+      "collected_at": "2026-05-23T17:30:11.070491+00:00",
+      "channels_checked": 5,
+      "events_found": 0,
+      "events": []
+    }
+  },
+  "russian_plant_alerts": 0,
+  "russian_plant_counts": {}
+}

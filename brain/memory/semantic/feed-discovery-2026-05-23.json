@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-05-23T19:29:00Z",
+  "phase": "B",
+  "gap_regions": {
+    "southeast_asia": {
+      "dead_count": 7,
+      "dead_feeds": ["Thai PBS World", "The Nation Thailand", "Tuoi Tre News (Vietnam)", "VietnamNet", "Kompas (Indonesia)", "Detik (Indonesia)", "Jakarta Globe", "Tempo (Indonesia)", "Khmer Times (Cambodia)"],
+      "candidates": [
+        {"name": "Bangkok Post", "url": "https://www.bangkokpost.com/rss/", "region": "southeast_asia", "country": "Thailand", "language": "en"},
+        {"name": "Thai PBS World", "url": "https://world.thaipbs.or.th/feed/", "region": "southeast_asia", "country": "Thailand", "language": "en"},
+        {"name": "ASEAN News Today", "url": "https://aseannewstoday.com/feed/", "region": "southeast_asia", "country": "regional", "language": "en"},
+        {"name": "Global Voices East Asia", "url": "https://globalvoices.org/-/world/east-asia/feed/", "region": "east_asia", "country": "regional", "language": "en"},
+        {"name": "UCA News", "url": "https://www.ucanews.com/rss", "region": "east_asia", "country": "regional", "language": "en"}
+      ]
+    },
+    "caribbean": {
+      "dead_count": 9,
+      "dead_feeds": ["Haiti Libre", "Le Nouvelliste (Haiti)", "Listin Diario (DR)", "Hoy Digital (DR)", "Granma (Cuba)", "Cubanet", "El Nuevo Dia (Puerto Rico)", "Barbados Today", "Nassau Guardian (Bahamas)"],
+      "candidates": [
+        {"name": "Global Voices Caribbean", "url": "https://globalvoices.org/-/world/caribbean/feed/", "region": "caribbean", "country": "regional", "language": "en"},
+        {"name": "Global Voices Cuba", "url": "https://globalvoices.org/-/world/caribbean/cuba/feed/", "region": "caribbean", "country": "Cuba", "language": "en"},
+        {"name": "Global Voices Haiti", "url": "https://globalvoices.org/-/world/caribbean/haiti/feed/", "region": "caribbean", "country": "Haiti", "language": "en"},
+        {"name": "Global Voices Dominican Republic", "url": "https://globalvoices.org/-/world/caribbean/dominican-republic/feed/", "region": "caribbean", "country": "Dominican Republic", "language": "en"},
+        {"name": "News Americas Now", "url": "https://newsamericasnow.com/feed/", "region": "caribbean", "country": "regional", "language": "en"},
+        {"name": "Jamaica Observer", "url": "https://www.jamaicaobserver.com/rssfeeds/", "region": "caribbean", "country": "Jamaica", "language": "en"},
+        {"name": "Caribbean Today", "url": "https://caribbeantoday.com/feed/", "region": "caribbean", "country": "regional", "language": "en"}
+      ]
+    },
+    "central_america": {
+      "dead_count": 5,
+      "dead_feeds": ["Nomada (Guatemala)", "El Heraldo (Honduras)", "La Prensa (Honduras)", "El Nuevo Diario (Nicaragua)", "La Estrella de Panama"],
+      "candidates": [
+        {"name": "Global Voices Latin America", "url": "https://globalvoices.org/-/world/latin-america/feed/", "region": "latin_america", "country": "regional", "language": "en"},
+        {"name": "Global Voices Guatemala", "url": "https://globalvoices.org/-/world/latin-america/guatemala/feed/", "region": "central_america", "country": "Guatemala", "language": "en"},
+        {"name": "Global Voices Honduras", "url": "https://globalvoices.org/-/world/latin-america/honduras/feed/", "region": "central_america", "country": "Honduras", "language": "en"},
+        {"name": "Global Voices Nicaragua", "url": "https://globalvoices.org/-/world/latin-america/nicaragua/feed/", "region": "central_america", "country": "Nicaragua", "language": "en"},
+        {"name": "Global Voices Panama", "url": "https://globalvoices.org/-/world/latin-america/panama/feed/", "region": "central_america", "country": "Panama", "language": "en"},
+        {"name": "Crisis Group Latin America & Caribbean", "url": "https://www.crisisgroup.org/rss-0", "region": "latin_america", "country": "regional", "language": "en"}
+      ]
+    },
+    "africa": {
+      "dead_count": 15,
+      "dead_feeds": ["The Continent", "Africa Confidential", "Crisis Group Africa", "ACLED Africa", "Somalia Report", "Chatham House Africa", "African Defence Review", "Daily Nation (Kenya)", "The Standard (Kenya)", "The Guardian (Nigeria)", "New Vision (Uganda)", "Ghana Web", "Graphic Online (Ghana)", "Ethiopian Herald", "Sudan Tribune"],
+      "candidates": [
+        {"name": "allAfrica.com", "url": "https://allafrica.com/misc/tools/rss.html", "region": "africa", "country": "regional", "language": "en"},
+        {"name": "Africanews", "url": "https://www.africanews.com/feed/rss", "region": "africa", "country": "regional", "language": "en", "note": "Euronews affiliate, Pan-African coverage"},
+        {"name": "Global Voices Sub-Saharan Africa", "url": "https://globalvoices.org/-/world/sub-saharan-africa/feed/", "region": "africa", "country": "regional", "language": "en"},
+        {"name": "Africa Intelligence", "url": "https://www.africaintelligence.com/info/rss", "region": "africa", "country": "regional", "language": "en", "note": "Paywalled — RSS may have limited content"}
+      ]
+    },
+    "north_africa": {
+      "dead_count": 4,
+      "dead_feeds": ["Ahram Online (Egypt)", "Morocco World News", "Algeria Press Service", "Tunis Afrique Presse"],
+      "candidates": [
+        {"name": "Global Voices MENA", "url": "https://globalvoices.org/-/world/middle-east-north-africa/feed/", "region": "mena", "country": "regional", "language": "en"}
+      ]
+    }
+  },
+  "total_candidates": 23,
+  "notes": "Global Voices provides per-country RSS feeds for most of the dead country sources — viable stopgap pending direct news outlet replacements. Bangkok Post has official RSS feeds. allAfrica.com is the premier aggregator for African news. Recommended priority for Phase C pruning: swap dead feeds for Global Voices counterparts first, then add regional aggregators."
+}

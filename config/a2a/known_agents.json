@@ -1,0 +1,41 @@
+{
+  "agents": {
+    "http://localhost:19999": {
+      "name": "Trevor \u2014 Threat Research and Evaluation Virtual Operations Resource",
+      "description": "Autonomous intelligence analyst producing calibrated geopolitical briefs, OSINT research, and prediction market analysis. Trevor processes 286 validated RSS sources across 10 global regions with DeepSeek V4 Pro analysis, Sherman Kent calibration, NATO Admiralty source ratings, and forced dissent met",
+      "version": "2.0.0",
+      "url": "http://localhost:19999",
+      "skills": [
+        {
+          "id": "daily_brief",
+          "name": "Daily Geopolitical Intelligence Brief",
+          "description": "Produces a calibrated daily intelligence brief covering 10 global regions. Includes BLUF, key judgments with Sherman Kent confidence bands, forced dissent, and source attribution per NATO Admiralty ra"
+        },
+        {
+          "id": "market_scan",
+          "name": "Prediction Market Scanner",
+          "description": "Scans Kalshi and Polymarket (via Simmer) for geopolitically-relevant prediction markets. Returns probabilities, volumes, and signal strength for conflict, sanction, election, and economic event market"
+        },
+        {
+          "id": "osint_query",
+          "name": "OSINT Research Query",
+          "description": "Researches a specific geopolitical topic, region, or event using Trevor's 286-validated-source OSINT collection pipeline. Returns sourced analysis with Admiralty ratings."
+        },
+        {
+          "id": "source_discovery",
+          "name": "OSINT Source Discovery",
+          "description": "Discovers and validates new OSINT sources for a given region or topic. Trevor maintains 286 working RSS feeds across 10 regions and can find additional sources via web search and RSS pattern detection"
+        }
+      ],
+      "interfaces": [
+        {
+          "url": "http://0.0.0.0:19999",
+          "protocolBinding": "JSONRPC"
+        }
+      ],
+      "label": "Trevor (self)",
+      "added_at": "2026-05-24T16:49:37.273619+00:00"
+    }
+  },
+  "updated_at": "2026-05-24T16:49:37.273631+00:00"
+}

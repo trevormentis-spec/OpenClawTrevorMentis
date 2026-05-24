@@ -1,0 +1,44 @@
+========================================================================
+  LEO GROUND STATION DAILY — May 24, 2026
+========================================================================
+
+═══ 1. EXECUTIVE SUMMARY ═══
+
+The ground segment landscape remains in a holding pattern, with no disruptive filings or imagery alerts this cycle. The dominant signal continues to be Starlink’s launch cadence—three Falcon 9 missions in the next five days alone—pushing the active fleet toward the 10,000 mark. This relentless expansion will inevitably strain existing gateway backhaul and require new ground sites, yet the FCC earth-station license feed shows no new SpaceX or Kuiper applications; the big constellations appear to be building out under existing authorizations or in international jurisdictions.
+
+Market metrics reinforce the asymmetry: Starlink revenue hit an estimated $11.8B in 2025, fueling self-provisioned gateways, while the third-party LEO GSaaS sub-market (projected $5.33B by 2033) remains crowded with competitors like KSAT, Leaf Space, and OneWeb’s captive network. The site risk register holds steady at 240 total locations, with six high-risk assets requiring attention. For Roderick, the lead indicator to watch is not the FCC routine filings but the appearance of new international coordination (ITU) or experimental licenses that would betray gateway expansion before it appears in imagery.
+
+═══ 2. FCC LICENSES ═══
+
+The 100-record sample from the FCC database is unusually quiet. Notable licensees—INMARSAT, MX1, SES Americom, Intelsat, AT&T, Cogent, Goonhilly—represent legacy GEO operators and terrestrial backhaul providers. None correspond to the major LEO constellations. Starlink, Kuiper, and OneWeb typically operate under blanket U.S. authorizations or special temporary authorities that do not surface in standard earth-station license searches. The absence of new LEO-centric licensees suggests that ground expansion for these networks is either paused, being executed abroad, or proceeding under previously granted filings. No fresh trends to extract; this feed is a non-event for LEO ground-station market intelligence today.
+
+═══ 3. CONSTELLATION SIGNALS ═══
+
+Upcoming launch manifests tell a story of unbroken Starlink momentum. Seven Starlink-dedicated Falcon 9 flights appear in the database, with three imminent: Group 10-47 (25 May), Group 17-37 (26 May), and Group 10-53 (29 May). Each likely delivers ~22 satellites, adding roughly 150–200 spacecraft by month-end. This pace—approximately two launches per week—will push the constellation past 9,600 spacecraft, within striking distance of the 12,000-satellite Phase 1 target for initial operational capability. For ground capacity, each new orbital shell demands additional gateway diversity, especially in underserved latitude bands. However, SpaceX’s integrated model means that most of this buildout will be internal; the company’s 38 ground sites in our register already constitute the largest single-operator footprint. The Chinese Long March 7A and crewed Shenzhou missions are peripheral to ground-station demand unless they herald a new LEO broadband system, which remains unconfirmed.
+
+OneWeb’s 10 sites and Telesat’s 3 sites show no momentum; their launch schedules are quiet. Kuiper, with only 5 registered sites, is still in early deployment but will need a rapid buildout once Project Kuiper satellite launches begin in earnest. The launch data therefore signals a widening gap between the Starlink behemoth and its pursuers, with direct consequences for the addressable third-party ground-station market.
+
+═══ 4. SITE & IMAGERY ═══
+
+The site risk register totals 240 operational or planned locations. Risk distribution is concentrated in the low–moderate range (Negligible: 13, Low: 27, Moderate: 34, High: 6, Critical: 0). The six high-risk sites—spread across an undisclosed geographic/operator mix—warrant continuous monitoring; any escalation could disrupt feeder links for the relevant constellation. No site moved into Critical status, indicating no acute geopolitical, environmental, or security deterioration this cycle. Sentinel-2 imagery checks on 10 select sites returned zero usable observations, likely due to cloud cover or revisit gaps. Without imagery change detection, we cannot verify construction progress or equipment upgrades at these locations. Risk levels remain static until the next clear pass.
+
+═══ 5. MARKET SIGNALS ═══
+
+Job postings and ITU coordination data are both empty in this cycle, offering no new personnel or international filing intelligence. The curated market metrics, however, frame the opportunity: The overall ground-station market is projected to double from $41.0B (2025) to $82.7B by 2030, driven heavily by LEO constellations. The LEO GSaaS sub-market is forecast to grow from $1.72B (2024) to $5.33B by 2033, a ~13.4% CAGR, while the broader multi-orbit GSaaS market jumps from $520M to $2.49B. Starlink’s subscriber base surpassed 10 million in February 2026, validating the demand for user terminals but also implying a proportional need for gateway capacity—each subscriber contributes to aggregate backhaul throughput. The revenue figure ($11.8B estimated for 2025) gives SpaceX overwhelming capital to vertically integrate its ground segment, potentially capping the third-party opportunity. Absent new ITU filings or job requisitions from the likes of KSAT, Leaf Space, or AWS Ground Station, the competitive dynamics appear stable.
+
+═══ 6. BOTTOM LINE ═══
+
+Roderick should monitor three triggers: (1) the next ITU weekly batch for Advanced Publication Information (API) filings that would signal new gateway sites for Starlink, Kuiper, or an emerging Chinese constellation; (2) the six high-risk ground sites for any change in status—especially if they belong to a single operator—using all-source risk feeds; and (3) any uptick in job postings from third-party ground-station-as-a-service providers, which would indicate contract wins or network expansion. The launch cadence alone suggests a looming gateway capacity crunch; the first organization to file for new sites will gain a time-on-target advantage in the LEO downlink land grab.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | May 24, 2026

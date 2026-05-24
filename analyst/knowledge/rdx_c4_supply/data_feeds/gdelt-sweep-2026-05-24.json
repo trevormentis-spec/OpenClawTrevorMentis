@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-24T17:00:12.603933+00:00",
+  "articles_found": 2,
+  "articles": [
+    {
+      "keyword": "hexogen",
+      "title": "Russian Force Generation and Technological Adaptations Update May 14, 2025 - Institute for the Study of War",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPU0liVWp6OThCWGtRYjVvRzVscnJVUDFGOGZ0QXlTZ3lBMU1YazRZUHJWZlI1NXdXbGxaRndOYWloUFM3X1cxVnhWT0VQMHdTVGFGcVdzR2RFWl9sb3QzLVVqd2hkQXI0eHNOTGwyTzhsYVZFLTFYUnU2aDJnLVR2NHdRT0xILUxicnExVUVEUkNLRHdYYnNRZXU0aklrTDAxOThFS2o3UlpoMnpfMG52NUozOTVsTlNLQ1NKNFY2NlZjZC14Qnc?oc=5",
+      "published": "Wed, 14 May 2025 07:00:00 GMT",
+      "source": "Institute for the Study of War",
+      "collected_at": "2026-05-24T17:00:09.908712+00:00"
+    },
+    {
+      "keyword": "C-4",
+      "title": "Chinese man arrested with military arsenal, C-4 explosives in Pattaya - Thai PBS World",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBUejM4R2gtVzlXd2RZdDZNaF9iV0d3emRGS0ljU0c0bk51a04wQ3F3YzB6VDRCaWtuZ0syVFpYXy1tTGJ1X0tQM255ZzVMOWZSSEE?oc=5",
+      "published": "Thu, 21 May 2026 21:42:00 GMT",
+      "source": "Thai PBS World",
+      "collected_at": "2026-05-24T17:00:10.594032+00:00"
+    }
+  ]
+}
