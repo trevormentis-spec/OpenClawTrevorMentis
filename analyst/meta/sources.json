@@ -5276,6 +5276,33 @@
       "discovered": "2026-05-24",
       "signal_level": "Medium",
       "region": "central_america_caribbean"
+    },
+    {
+      "name": "Security Challenges in the Caribbean Amid the U.S. Military Deployment | CSIS",
+      "type": "Blog/Website",
+      "focus": "In the case of Saint Lucia, <strong>the contribution of the Regional Security System (RSS) was highlighted as a factor in helping to get crime under c",
+      "url": "https://www.csis.org/analysis/security-challenges-caribbean-amid-us-military-deployment",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "The Caribbean: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Please join CSIS Americas and the Institute of International Education (IIE) for a conversation on the role of educational exchanges in strengthening ",
+      "url": "https://www.csis.org/regions/americas/caribbean",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "The Caribbean under pressure: What role for Europe? | European Union Institute for Security Studies",
+      "type": "Blog/Website",
+      "focus": "<strong>The Caribbean region is experiencing its most severe geopolitical turmoil in decades</strong>. The second Trump administration has proclaimed ",
+      "url": "https://www.iss.europa.eu/publications/briefs/caribbean-under-pressure-what-role-europe",
+      "discovered": "2026-05-24",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
     }
   ],
   "moltbook_sources": [

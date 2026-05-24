@@ -385,7 +385,7 @@ def fix_log_rotation(state: dict) -> None:
     try:
         stat = os.statvfs(REPO)
         used_pct = (1 - stat.f_bavail / stat.f_blocks) * 100
-        if used_pct > 80:
+        if used_pct > 95:
             alert(f"💾 Disk {used_pct:.0f}% full — rotate logs soon")
     except Exception:
         pass
