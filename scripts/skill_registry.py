@@ -96,7 +96,7 @@ def build_registry():
     
     registry = {
         "schema": "https://trevormentis.spec/skill-registry/v1",
-        "generated": __import__("datetime").datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "skill_count": len(skills),
         "categories": sorted(set(
             t for s in skills for t in (s.get("tags", []) if isinstance(s.get("tags"), list) else [s.get("tags", "")])
