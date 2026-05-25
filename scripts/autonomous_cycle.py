@@ -182,17 +182,47 @@ def check_pipeline(state: dict) -> list[str]:
     else:
         findings.append(f"🔴 No brief found for {today}")
 
-    # Check AgentMail delivery
-    # (can't easily check — but log file has delivery status)
+    # Check delivery — try log file first, then AgentMail inbox
+    delivery_confirmed = False
     log_file = REPO / "logs" / f"daily-brief-{today}.log"
     if log_file.exists():
         log_text = log_file.read_text()
         if "Delivery successful" in log_text or "Sent via AgentMail" in log_text:
             findings.append("Delivery: ✅ confirmed in logs")
-        elif "DELIVERY ABORTED" in log_text or "FAILED" in log_text:
+            delivery_confirmed = True
+        elif "DELIVERY ABORTED" in log_text:
+            findings.append("🔴 Delivery aborted — check logs")
+        elif "delivery FAILED" in log_text or "Delivery FAILED" in log_text:
             findings.append("🔴 Delivery failed — check logs")
-        else:
-            findings.append("⚠️ Delivery status unclear from logs")
+
+    # If log file didn't confirm delivery, check AgentMail inbox directly
+    if not delivery_confirmed:
+        try:
+            from agentmail import AgentMail
+            api_key = os.environ.get("AGENTMAIL_API_KEY", "")
+            if not api_key:
+                env_file = REPO / ".env"
+                if env_file.exists():
+                    for line in env_file.read_text().splitlines():
+                        if line.startswith("AGENTMAIL_API_KEY="):
+                            api_key = line.split("=", 1)[1].strip().strip("'\"")
+                            break
+            if api_key:
+                client = AgentMail(api_key=api_key)
+                inboxes = client.inboxes.list()
+                trevor_inbox = inboxes.inboxes[0].inbox_id
+                msgs = client.inboxes.messages.list(trevor_inbox, limit=20)
+                for m in msgs.messages:
+                    created = str(m.created_at)[:10]
+                    subj = str(m.subject or "")
+                    if created == today and ("Daily Brief" in subj or "TREVOR Daily" in subj):
+                        findings.append("Delivery: ✅ confirmed via AgentMail")
+                        delivery_confirmed = True
+                        break
+                if not delivery_confirmed:
+                    findings.append("⚠️ Delivery status unclear — not found in logs or AgentMail")
+        except Exception as e:
+            findings.append(f"⚠️ Could not check AgentMail delivery: {e}")
 
     state.setdefault("findings", []).append(f"[pipeline] {NOW.strftime('%Y-%m-%d %H:%M')}: checked")
     return findings

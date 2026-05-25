@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-05-24 21:01 UTC
+# Gmail Intel Digest — 2026-05-24 23:01 UTC
+
+## トランプ氏、イランとの合意「急がず」と指示　和平期待に水差す【【5月 25日】
+**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
+**Date:** Sun, 24 May 2026 18:31:04 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+
+---
 
 ## Nvidia says its forecast for $200 billion CPU market includes China
 **From:** Reuters Technology Roundup <newsletters@email.reuters.com>
@@ -36,27 +45,36 @@ Email from Institute for the Study of War Iran’s latest counterproposal front-
 
 ---
 
-## Iran Update Evening Special Report: May 23, 2026, 02:00 PM ET
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Sat, 23 May 2026 15:39:34 -0400
-**Type:** unknown | **Importance:** low
 
-A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+## AgentMail Intel — 2026-05-24 23:01 UTC
 
-Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VWGMRH69lSQBVTzwyn8n1jw8W8XrjSc5PqgdcMtGxmH3pyd0W8wLKSR6lZ3mbW36lJPT58FjL1N5Hb5l9mVQJ4W60JmbW4D3QV4VpRsHk6DCKY2W7tS1r32cNJCmW7xdfjc4K3T_FW88BxzD4nZjr5W7PhZSs1NJNhLW6H7Y-56yP3dTW8gZ-h_53l9hrW1xrbTq12Q6JGW2bVNHM6Hhz-zW3PkSc61dKnQfW76_LRh8HrT_1W61GM4r3XYJ1RW5Q1q4G2l-l10W6GK9Yx6YhPF5W35v3_f7
+### Amplify Your Voice with Seatrade Maritime Podcast Powered by Posidonia!
+**From:** Seatrade Maritime News <sender@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134558&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=4ce1493107e54e379
 
----
+### Jardine eyes medical imaging bet, Iran deal inches closer
+**From:** Bloomberg Australia <noreply@news.bloomberg.com>  
+Jardine Eyes Medical Imaging Bet Get caught up ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
+### Webinar Tomorrow | US–Iran: Closer to Peace or Another Impasse?
+**From:** Middle East Institute <events@mei.edu>  
+Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients. Email not displaying correctly? View it in yo
 
-## AgentMail Intel — 2026-05-24 21:01 UTC
+### [Watch the video] Our values and what we do
+**From:** The Atlantic Council Team <marketingops@atlanticcouncil.org>  
+AC logo_donor button_sm logo (https://d598K304.na1.hubspotlinks.com/Ctc/W5+113/d598K304/VW5ZvJ3YcqXqW6xgf_p150bhGW8cYYgJ5PsBNXN5JQGlT3pyd0W7Y8-PT6lZ3ngW1XPtsL4kX6gVN5k3Cvlvxr-4W7wHkp98n8FtHW4S2Pbb1TQ7
+
+### 1日を始める前に読んでおきたいニュース5本
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Five Things to Start Your Day: Japanese Edition 日本語版 週末に話題になったニュースをお届けします。一日を始めるにあたって押さえておきたい5本はこちら。最新ニュースやマーケット情報はブルームバーグ日本語サイト（https://www.bloomberg.com/jp）でもご覧いただけます。米国とイランがホルムズ海峡再開に向けた合意に近づ
+
+### No hurry
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Trump Says He Won’t Rush a Deal With Iran Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### Get insights in your pocket
+**From:** Bloomberg <subscriptions@message.bloomberg.com>  
+No matter where you are, get up to the minute perspectives and analysis that keep you in the know. With the Bloomberg app
 
 ### Global Update: Inside the British Lab Hunting for Dangers Lurking in A.I.
 **From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
-
-### By The Numbers: China's Fourth Aircraft Carrier, How Trade Reduces War, China's Agricultural Coercion, and More
-**From:** CSIS External Relations <externalrelations@csis.org>  
-Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4192074161/14c107f32e527e3224c46d9264dcd09ecb62fae60d1bf9f80ec5a7d524b7df87 Each week, we'll share wi
-
-### A turning point in the war?
-**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
-Presented by Vapor Technology Association: The unofficial guide to official Washington. May 24, 2026 View in browser By Eli Okun Presented by
