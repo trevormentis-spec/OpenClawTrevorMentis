@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-25T15:00:55.289232+00:00",
+  "data_feeds": {
+    "gdelt-sweep": {
+      "status": "ok",
+      "collected_at": "2026-05-25T15:00:25.644050+00:00",
+      "articles_found": 0,
+      "articles": []
+    },
+    "osint-events": {
+      "status": "ok",
+      "collected_at": "2026-05-25T15:00:28.764935+00:00",
+      "channels_checked": 5,
+      "events_found": 0,
+      "events": []
+    }
+  },
+  "russian_plant_alerts": 0,
+  "russian_plant_counts": {}
+}

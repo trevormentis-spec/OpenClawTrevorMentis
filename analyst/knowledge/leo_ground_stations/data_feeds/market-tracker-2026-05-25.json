@@ -1,0 +1,708 @@
+{
+  "generated_at": "2026-05-25T15:30:09.624226+00:00",
+  "data_feeds": {
+    "fcc-earth-stations": {
+      "status": "ok",
+      "feeds_checked": [
+        "fcc"
+      ],
+      "collected_at": "2026-05-25T15:00:09.659937+00:00",
+      "total_records": 100,
+      "licensees_found": [
+        "GOONHILLY INC.",
+        "Fordham University",
+        "MCI Communications Services, LLC",
+        "MX1 Inc",
+        "Cogent Fiber LLC f/k/a Sprint Communications Co LP",
+        "ANTWANWILLIAMS.US",
+        "Denali 20020, LLC",
+        "INMARSAT INC.",
+        "SES Americom Inc.",
+        "AT&T Corp.",
+        "Sprint Communications Co., LP",
+        "Mx1 Inc",
+        "Calian Pacific Teleports Ltd.",
+        "Intelsat License LLC",
+        "SES Americom Inc"
+      ],
+      "matched_known_sites": 0,
+      "matches": [],
+      "recent_filings": [
+        {
+          "number": "FSS0002161",
+          "licensee": "ANTWANWILLIAMS.US",
+          "call_sign": "KA11",
+          "lat": "-89.999997",
+          "lon": "-179.016944",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "3,700.1",
+          "antenna_gain": "0",
+          "cert_date": "2025-12-17T00:00:00.000",
+          "updated": "2025-12-17T13:24:18.000"
+        },
+        {
+          "number": "FSS0001475",
+          "licensee": "INMARSAT INC.",
+          "call_sign": "E080059",
+          "lat": "21.669556",
+          "lon": "-158.033167",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "3,955",
+          "antenna_gain": "55.10",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T21:49:41.000"
+        },
+        {
+          "number": "FSS0001477",
+          "licensee": "INMARSAT INC.",
+          "call_sign": "E080059",
+          "lat": "21.669556",
+          "lon": "-158.033167",
+          "status": "Active",
+          "lower_freq": "3,600",
+          "upper_freq": "3,700",
+          "antenna_gain": "55.10",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T21:49:41.000"
+        },
+        {
+          "number": "FSS0001479",
+          "licensee": "INMARSAT INC.",
+          "call_sign": "E080059",
+          "lat": "21.669806",
+          "lon": "-158.033222",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "3,955",
+          "antenna_gain": "55.10",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T21:49:41.000"
+        },
+        {
+          "number": "FSS0001481",
+          "licensee": "INMARSAT INC.",
+          "call_sign": "E080059",
+          "lat": "21.669806",
+          "lon": "-158.033222",
+          "status": "Active",
+          "lower_freq": "3,600",
+          "upper_freq": "3,700",
+          "antenna_gain": "55.10",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T21:49:41.000"
+        },
+        {
+          "number": "FSS0001488",
+          "licensee": "AT&T Corp.",
+          "call_sign": "E980066",
+          "lat": "34.081278",
+          "lon": "-118.898028",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "49.90",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:57:06.000"
+        },
+        {
+          "number": "FSS0001498",
+          "licensee": "AT&T Corp.",
+          "call_sign": "KA444",
+          "lat": "40.893306",
+          "lon": "-76.439611",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "60.80",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:52:35.000"
+        },
+        {
+          "number": "FSS0001490",
+          "licensee": "AT&T Corp.",
+          "call_sign": "E980493",
+          "lat": "40.89425",
+          "lon": "-76.438833",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "56.30",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:46:44.000"
+        },
+        {
+          "number": "FSS0001492",
+          "licensee": "AT&T Corp.",
+          "call_sign": "E980493",
+          "lat": "40.89425",
+          "lon": "-76.438833",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "55.10",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:46:44.000"
+        },
+        {
+          "number": "FSS0001500",
+          "licensee": "AT&T Corp.",
+          "call_sign": "KB32",
+          "lat": "34.080833",
+          "lon": "-118.895556",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "61.00",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:46:01.000"
+        },
+        {
+          "number": "FSS0001494",
+          "licensee": "AT&T Corp.",
+          "call_sign": "KA91",
+          "lat": "34.080472",
+          "lon": "-118.895528",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "61.00",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:45:10.000"
+        },
+        {
+          "number": "FSS0001502",
+          "licensee": "AT&T Corp.",
+          "call_sign": "WA33",
+          "lat": "40.89375",
+          "lon": "-76.439389",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "60.30",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:44:13.000"
+        },
+        {
+          "number": "FSS0001496",
+          "licensee": "AT&T Corp.",
+          "call_sign": "KA273",
+          "lat": "34.080639",
+          "lon": "-118.896222",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "61.40",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:41:12.000"
+        },
+        {
+          "number": "FSS0001684",
+          "licensee": "SES Americom Inc",
+          "call_sign": "KB27",
+          "lat": "34.325278",
+          "lon": "-118.995667",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "53.50",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:28:07.000"
+        },
+        {
+          "number": "FSS0001655",
+          "licensee": "SES Americom Inc",
+          "call_sign": "KA318",
+          "lat": "34.325278",
+          "lon": "-118.994722",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "50.00",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:27:53.000"
+        },
+        {
+          "number": "FSS0001563",
+          "licensee": "SES Americom Inc",
+          "call_sign": "E960207",
+          "lat": "21.674167",
+          "lon": "-158.034722",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "4,200",
+          "antenna_gain": "51.90",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:27:12.000"
+        },
+        {
+          "number": "FSS0001651",
+          "licensee": "SES Americom Inc",
+          "call_sign": "E930289",
+          "lat": "34.325278",
+          "lon": "-118.994722",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "53.50",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:26:55.000"
+        },
+        {
+          "number": "FSS0001554",
+          "licensee": "SES Americom Inc",
+          "call_sign": "E090134",
+          "lat": "21.670778",
+          "lon": "-158.031944",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "4,200",
+          "antenna_gain": "50.70",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:25:28.000"
+        },
+        {
+          "number": "FSS0001561",
+          "licensee": "SES Americom Inc",
+          "call_sign": "E090060",
+          "lat": "21.670556",
+          "lon": "-158.032222",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "4,200",
+          "antenna_gain": "50.50",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:24:59.000"
+        },
+        {
+          "number": "FSS0001559",
+          "licensee": "SES Americom Inc",
+          "call_sign": "E020287",
+          "lat": "21.67125",
+          "lon": "-158.031722",
+          "status": "Active",
+          "lower_freq": "3,700",
+          "upper_freq": "4,200",
+          "antenna_gain": "51.90",
+          "cert_date": "2025-11-26T00:00:00.000",
+          "updated": "2025-11-26T09:24:30.000"
+        }
+      ]
+    },
+    "launch-schedule": {
+      "status": "ok",
+      "collected_at": "2026-05-25T15:30:09.622981+00:00",
+      "feeds": {
+        "spaceflight_now": [
+          {
+            "title": "SpaceX launches 29 Starlink satellites on Memorial Day",
+            "link": "https://spaceflightnow.com/2026/05/24/live-coverage-spacex-to-launch-29-starlink-satellites-on-a-falcon-9-rocket-from-cape-canaveral/",
+            "published": "Sun, 24 May 2026 17:54:29 +0000"
+          },
+          {
+            "title": "Musk praises \u201cepic\u201d Super Heavy-Starship launch",
+            "link": "https://spaceflightnow.com/2026/05/23/musk-praises-epic-super-heavy-starship-launch/",
+            "published": "Sat, 23 May 2026 02:47:56 +0000"
+          },
+          {
+            "title": "Launch preview: SpaceX tries again for first launch of its Starship Version 3 rocket",
+            "link": "https://spaceflightnow.com/2026/05/21/live-coverage-spacex-to-launch-first-starship-version-3-rocket/",
+            "published": "Thu, 21 May 2026 13:13:17 +0000"
+          },
+          {
+            "title": "SpaceX\u2019s sunrise Starlink launch adds 29 satellites to low Earth orbit megaconstellation",
+            "link": "https://spaceflightnow.com/2026/05/20/live-coverage-spacex-to-launch-29-starlink-satellites-on-falcon-9-rocket-from-cape-canaveral-13/",
+            "published": "Wed, 20 May 2026 15:42:11 +0000"
+          },
+          {
+            "title": "SpaceX launches 24 Starlink satellites on Falcon 9 rocket launch from Vandenberg SFB",
+            "link": "https://spaceflightnow.com/2026/05/20/live-coverage-spacex-to-launch-24-starlink-satellites-on-falcon-9-rocket-launch-from-vandenberg-sfb/",
+            "published": "Wed, 20 May 2026 00:28:12 +0000"
+          },
+          {
+            "title": "NASA, SpaceX launch Dragon mission with 6,500 pounds of science and supplies to the space station",
+            "link": "https://spaceflightnow.com/2026/05/15/live-coverage-spacex-makes-another-attempt-to-launch-space-station-cargo-mission/",
+            "published": "Fri, 15 May 2026 17:36:05 +0000"
+          },
+          {
+            "title": "ULA confirms successful solid rocket booster test as Vulcan anomaly investigation continues",
+            "link": "https://spaceflightnow.com/2026/05/14/ula-confirms-successful-solid-rocket-booster-test-as-vulcan-anomaly-investigation-continues/",
+            "published": "Thu, 14 May 2026 21:20:57 +0000"
+          },
+          {
+            "title": "SpaceX targets May 19 for debut of Starship Version 3, Launch Pad 2",
+            "link": "https://spaceflightnow.com/2026/05/12/spacex-targets-may-19-for-debut-of-starship-super-heavy-version-3-launch-pad-2/",
+            "published": "Tue, 12 May 2026 23:15:22 +0000"
+          },
+          {
+            "title": "For a second time, poor weather scrubs Cargo Dragon mission launch to the space station",
+            "link": "https://spaceflightnow.com/2026/05/12/live-coverage-nasa-spacex-to-launch-34th-cargo-dragon-mission-to-the-space-station/",
+            "published": "Tue, 12 May 2026 12:20:19 +0000"
+          },
+          {
+            "title": "SpaceX launches intelligence-gathering satellites for the National Reconnaissance Office",
+            "link": "https://spaceflightnow.com/2026/05/11/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office/",
+            "published": "Mon, 11 May 2026 19:50:46 +0000"
+          }
+        ],
+        "launch_library": {
+          "total_upcoming": 351,
+          "leo_launches": 0,
+          "starlink_launches": 7,
+          "launches": [
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 10-47",
+              "net": "2026-05-25T11:48:04Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "Launch Successful"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 17-37",
+              "net": "2026-05-26T14:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Long March 7A | Unknown Payload",
+              "net": "2026-05-26T16:15:00Z",
+              "mission_type": "Unknown",
+              "orbit": "Unknown",
+              "rocket": "Long March 7A",
+              "location": "Wenchang Space Launch Site, People's Republic of China",
+              "country": "CHN",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 10-53",
+              "net": "2026-05-29T11:52:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Atlas V 551 | Amazon Leo (LA-07)",
+              "net": "2026-05-29T23:33:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Atlas V 551",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 17-41",
+              "net": "2026-05-30T14:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
+              "net": "2026-06-01T05:00:00Z",
+              "mission_type": "Test Flight",
+              "orbit": "Low Earth Orbit",
+              "rocket": "South Korean ADD Solid-Fuel SLV",
+              "location": "Sea Launch",
+              "country": "???",
+              "status": "To Be Confirmed"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 17-47",
+              "net": "2026-06-02T14:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 10-43",
+              "net": "2026-06-03T08:02:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "GSLV Mk II | GISAT-1A (EOS-05)",
+              "net": "2026-06-10T00:00:00Z",
+              "mission_type": "Earth Science",
+              "orbit": "Geostationary Transfer Orbit",
+              "rocket": "GSLV Mk II",
+              "location": "Satish Dhawan Space Centre, India",
+              "country": "IND",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "H3-30 | H3-30 Test Flight",
+              "net": "2026-06-10T00:53:59Z",
+              "mission_type": "Test Flight",
+              "orbit": "Sun-Synchronous Orbit",
+              "rocket": "H3-30",
+              "location": "Tanegashima Space Center, Japan",
+              "country": "JPN",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Starlink Group 17-44",
+              "net": "2026-06-10T14:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
+              "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Earth Science",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Electron",
+              "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+              "country": "NZL",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | BlueBird Block 2 #3",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Pegasus XL | Swift Rescue Mission",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Mission Extension",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Pegasus XL",
+              "location": "Air launch to orbit",
+              "country": "???",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Spectrum | Onward and Upward",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Test Flight",
+              "orbit": "Sun-Synchronous Orbit",
+              "rocket": "Spectrum",
+              "location": "And\u00f8ya Spaceport",
+              "country": "NOR",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Ariane 64 Block 2 | Amazon Leo (LE-03)",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Ariane 64",
+              "location": "Guiana Space Centre, French Guiana",
+              "country": "GUF",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Atlas V 551 | Amazon Leo (LA-08)",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Atlas V 551",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            },
+            {
+              "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
+              "net": "2026-06-30T00:00:00Z",
+              "mission_type": "Government/Top Secret",
+              "orbit": "Polar Orbit",
+              "rocket": "Falcon 9",
+              "location": "Vandenberg SFB, CA, USA",
+              "country": "USA",
+              "status": "To Be Determined"
+            }
+          ]
+        }
+      }
+    },
+    "sentinel-imagery": {
+      "status": "ok",
+      "collected_at": "2026-05-21T22:16:24.342064+00:00",
+      "sentinel_api_configured": true,
+      "sites_checked": 10,
+      "sites": [
+        {
+          "site": "Ushuaia Region",
+          "operator": "Starlink",
+          "lat": -54.802,
+          "lon": -68.303,
+          "composite_risk": 2.95,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Marica, Rio de Janeiro",
+          "operator": "OneWeb",
+          "lat": -22.919,
+          "lon": -42.818,
+          "composite_risk": 2.8,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Puerto Rico",
+          "operator": "Starlink",
+          "lat": 18.22,
+          "lon": -66.59,
+          "composite_risk": 2.7,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Boca Chica, TX",
+          "operator": "Starlink",
+          "lat": 25.997,
+          "lon": -97.155,
+          "composite_risk": 2.5,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Broken Hill, NSW",
+          "operator": "Starlink",
+          "lat": -31.957,
+          "lon": 141.468,
+          "composite_risk": 2.4,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Abuja",
+          "operator": "Starlink",
+          "lat": 9.058,
+          "lon": 7.489,
+          "composite_risk": 2.4,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Santiago (Colina)",
+          "operator": "Starlink",
+          "lat": -33.198,
+          "lon": -70.677,
+          "composite_risk": 2.35,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Merrillan, WI",
+          "operator": "Starlink",
+          "lat": 44.449,
+          "lon": -90.833,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Conrad, MT",
+          "operator": "Starlink",
+          "lat": 48.17,
+          "lon": -111.946,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        },
+        {
+          "site": "Sanya, Hainan",
+          "operator": "OneWeb",
+          "lat": 18.253,
+          "lon": 109.504,
+          "composite_risk": 2.3,
+          "imagery_available": false,
+          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+        }
+      ],
+      "action_needed": "Credentials validated against Copernicus Data Space. Monthly run will query all sites via Process API."
+    }
+  }
+}

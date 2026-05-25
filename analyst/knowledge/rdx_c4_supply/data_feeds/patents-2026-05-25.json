@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-25T15:00:52.284330+00:00",
+  "patents_found": 5,
+  "patents": [
+    {
+      "title": "US8778104B1 - Insensitive gun propellant, ammunition round assembly, armament system, and related methods - Google Patents",
+      "url": "https://patents.google.com/patent/US8778104B1/en"
+    },
+    {
+      "title": "US8256350B2 - Insensitive munition - Google Patents",
+      "url": "https://patents.google.com/patent/US8256350"
+    },
+    {
+      "title": "ES2423495T3 - Propulsor para la aceleraci\u00f3n de proyectiles - Google Patents",
+      "url": "https://patents.google.com/patent/ES2423495T3/es"
+    },
+    {
+      "title": "US8277584B2 - Extremely insensitive detonating substance and method for its manufacture - Google Patents",
+      "url": "https://patents.google.com/patent/US8277584B2/en"
+    },
+    {
+      "title": "US5268469A - Process of making impact insensitive Alpha-HMX - Google Patents",
+      "url": "https://patents.google.com/patent/US5268469A/en"
+    }
+  ]
+}

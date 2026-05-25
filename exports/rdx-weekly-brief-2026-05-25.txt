@@ -1,0 +1,64 @@
+Weekly Market Briefing: Global RDX and C4 Explosives Market
+Reporting period: 18 May 2026 to 25 May 2026
+
+=== EXECUTIVE SUMMARY ===
+
+This week's data shows a Western explosives industry in coordinated expansion mode while Russian production capacity remains under sustained physical pressure. Every major non-Russian producer we track, from the United States to South Korea to India, is actively hiring. This is the clearest signal in our dataset: companies do not staff up unless they expect sustained order flow.
+
+The most important development is the convergence of three trends. First, all six Western and allied producers we monitor are simultaneously expanding workforces. Second, three Russian production sites have been struck in roughly two months, with the most recent strike on Bryansk Chemical earlier this month. Third, the United States International Trade Commission is moving forward with antidumping action on hexamine, a key precursor chemical for RDX, which suggests the US is trying to secure domestic precursor supply rather than rely on imports.
+
+What it means: the market is shifting from short-term surge response toward a longer multi-year buildout. Buyers should expect tight supply of RDX, which stands for Research Department Explosive, and C4, the plastic explosive built around RDX, through at least 2027.
+
+=== PRODUCER ACTIVITY ===
+
+Holston Army Ammunition Plant in Tennessee, the only US producer of RDX and its more powerful cousin HMX, which stands for High Melting Explosive, continues active hiring. The plant operates under a government-owned, contractor-operated arrangement with BAE Systems running through 2033. Modernization work continues.
+
+Eurenco Bergerac in France, the main European RDX producer, is hiring. The company restarted a production line specifically to meet Ukrainian artillery demand and that line appears to be ramping further.
+
+Nitro-Chem in Poland, the only North Atlantic Treaty Organization producer of TNT, which stands for Trinitrotoluene, holds a $310 million US contract for 18,000 metric tons running through 2029. No new events this week.
+
+Chemring Nobel in Norway, which produces RDX, HMX, and PETN, which stands for Pentaerythritol Tetranitrate, is hiring.
+
+Rheinmetall's new plant at Varpalota, Hungary is in commissioning phase with active hiring.
+
+Hanwha in South Korea and Solar Industries in India are both hiring, indicating the demand picture extends well beyond the European theater.
+
+On the Russian side, three plants have been struck in recent months: JSC Promsintez on 28 March 2026, the Sverdlov Plant on 30 April 2026, and Bryansk Chemical in May 2026. No new strike events were recorded this week, but recovery timelines for the prior strikes remain unclear.
+
+=== SIGNALS & INDICATORS ===
+
+News coverage was quiet this week with no significant articles captured in the Global Database of Events, Language, and Tone, known as GDELT. Quiet news weeks are common and do not change the underlying picture.
+
+Hiring signals are uniformly positive across all six Western and allied producers tracked. This is the strongest single indicator in this week's dataset.
+
+Patent activity continues to cluster around insensitive munitions, meaning explosives designed not to detonate accidentally from fire, impact, or nearby blasts. Five relevant patents surfaced this week, including work on insensitive HMX manufacturing and insensitive detonating substances. This confirms the long-running industry migration away from traditional Composition B toward insensitive formulations such as IMX-101 and PAX-21.
+
+Trade remedy activity is notable. The US International Trade Commission has issued final affirmative determinations in an antidumping case on hexamine, the precursor chemical used to make RDX. Bakelite LLC is the petitioner. A separate ammonium nitrate case involving Russian and Trinidadian product resulted in a no-injury finding. The hexamine ruling matters more for explosives: it raises input costs for any US RDX producer reliant on imported hexamine and incentivizes domestic precursor production.
+
+Environmental Protection Agency Toxics Release Inventory data for Holston and Radford Army Ammunition Plants remains unavailable this cycle, so we cannot use chemical release volumes as a production proxy.
+
+Conflict Armament Research, an organization that physically traces weapons recovered from conflict zones, published nothing new of direct relevance this week.
+
+=== WHAT TO WATCH ===
+
+1. Hexamine antidumping duty implementation. Highly likely (75-85%) that final duties take effect within 30 days, raising RDX precursor costs for any US buyer not sourcing from the new domestic supplier base. Watch for price pass-through to C4 contracts.
+
+2. Russian recovery activity at Sverdlov, Bryansk Chemical, and JSC Promsintez. Likely (55-70%) that satellite-visible reconstruction begins at one or more sites within 30 days. The pace will indicate how much Russian domestic explosives output has actually been degraded.
+
+3. Rheinmetall Varpalota commissioning milestones. Likely (55-70%) that a first-output announcement or formal opening occurs in the next 30 days given the active hiring pattern.
+
+4. New Ukraine aid tranches that specify 155 millimeter artillery shell quantities. Highly likely (75-85%) that at least one Western government announces a shell package within 30 days, which would lock in further RDX demand through 2027.
+
+5. Eurenco capacity announcements. Likely (55-70%) of a public statement on Bergerac output levels or a second-site expansion within 30 days, based on the hiring tempo and prior restart announcements.
+
+=== SOURCES ===
+
+Global Database of Events, Language, and Tone, known as GDELT, news monitoring feed
+Public job posting boards for Holston Army Ammunition Plant, Eurenco, Chemring Nobel, Rheinmetall, Hanwha, and Solar Industries
+Google Patents database for insensitive munitions and related explosive chemistry filings
+United States International Trade Commission case filings on hexamine and ammonium nitrate
+Conflict Armament Research publications and reports
+United States Environmental Protection Agency Toxics Release Inventory, queried for Holston and Radford Army Ammunition Plants, data unavailable this cycle
+Open-source intelligence reporting on Russian production facilities, including reported strikes on JSC Promsintez, Sverdlov Plant, and Bryansk Chemical
+Internal producer tracker covering Holston, Eurenco Bergerac, Nitro-Chem, Chemring Nobel, Rheinmetall Varpalota, Hanwha, Solar Industries, and the three Russian sites listed above
+Market sizing reference: projected global RDX market of $13.77 billion by 2029 at a 5.7 percent compound annual growth rate, with annual production above 60,000 metric tons

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T14:05:11.712Z",
+  "updatedAt": "2026-05-25T15:20:29.105Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -9,13 +9,13 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-04-25 - Confirmed Telegram channel was connected. - Switched to a balanced model configuration. - Configured local git identity and established GitHub SSH backup. - User defined Trevor as: Threat Research and Evaluation Virtual Operations Resource. - Began building a file-backed brain architecture with episodic, semantic, procedural, and meta-memory layers.",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.806095134907474,
+      "totalScore": 5.806095134907474,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-26T06:15:14.500Z",
-      "lastRecalledAt": "2026-05-24T14:09:54.294Z",
+      "lastRecalledAt": "2026-05-25T15:20:29.105Z",
       "queryHashes": [
         "4d30fa9e2fff",
         "e6f3be8e47a7",
@@ -23,14 +23,16 @@
         "326adb9da76c",
         "7b4024f16d8d",
         "b69bb4b76f7e",
-        "ab6db427d54b"
+        "ab6db427d54b",
+        "766555fc1ad7"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-28",
         "2026-04-29",
         "2026-05-02",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "backup",
@@ -918,13 +920,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-19T17:18:03.263Z",
+      "lastRecalledAt": "2026-05-25T15:20:29.105Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -938,7 +940,8 @@
         "f3aa65b3123e",
         "1c8dc30ba712",
         "2de51dfe8bc5",
-        "b64dfec040d6"
+        "b64dfec040d6",
+        "766555fc1ad7"
       ],
       "recallDays": [
         "2026-05-07",
@@ -949,7 +952,8 @@
         "2026-05-13",
         "2026-05-14",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-25"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -1515,21 +1519,23 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- `scripts/priority_triage.py` Sonar queries had: no retry, 30s timeout, no fallback - Fixed: added 1 retry with 45s → 60s timeout escalation - Added `_brave_search()` fallback using BRAVE_API_KEY when Sonar fails - Both keys checked independently — if Sonar down, Brave-only mode works - Also fixed `collect.py fetch()`: added 2 retries with exponential backoff (15s → 30s) - Roderick rightly flagged I should have done this myself under the autonomy framework ## Dream — Memory consolidation added - Installed from https://github.com/grandamenium/dream-skill adapted for OpenClaw - Script: `scripts/dream.py` — 4-phase consolidation (orient → gather → consolidate → prune) - Cron: `9124f2df` — ru",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T13:36:26.577Z",
-      "lastRecalledAt": "2026-05-15T14:49:01.999Z",
+      "lastRecalledAt": "2026-05-25T15:20:29.105Z",
       "queryHashes": [
         "0052d7c183bd",
         "b62b199ec189",
         "1b9064ffbf19",
-        "37203b1dd7cb"
+        "37203b1dd7cb",
+        "766555fc1ad7"
       ],
       "recallDays": [
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-25"
       ],
       "conceptTags": [
         "scripts/priority-triage.py",

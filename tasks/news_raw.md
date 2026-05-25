@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-05-25 13:01 UTC
+# Gmail Intel Digest — 2026-05-25 15:02 UTC
+
+## Anthropic's Olah says AI must be guided from outside Big Tech
+**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
+**Date:** Mon, 25 May 2026 11:02:15 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## US Treasury rout tests Washington's tolerance for higher borrowing costs
+**From:** Reuters Global Investor <newsletters@email.reuters.com>
+**Date:** Mon, 25 May 2026 10:05:55 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## SPECIAL REPORT | Ukraine’s Intermediate-Range Strike Campaign and New Mechanized Attacks Herald the Start of a New Phase of the War
 **From:** ISW Publications <publications@understandingwar.org>
@@ -63,17 +81,16 @@ Email from Institute for the Study of War Ukraine is actively challenging the po
 
 ---
 
-## Russian Offensive Campaign Assessment, May 24, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sun, 24 May 2026 21:15:33 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War Russia conducted a devastating missile and drone strike, including with an Oreshnik intermediate-range ballistic missile (IRBM), against Ukraine, heavily targeting Kyiv City. May 24, 2026 Data Cutoff: 12:00 PM ET Jakub Kostka, Samuel Shafiro, Jennie Olmsted, and George Barros TOPLINES Russia conducted a devastating missile and drone strike, including with an Oreshnik intermediate-range ballistic missile (IRBM), against Ukraine, heavily targeting Kyiv Cit
+## AgentMail Intel — 2026-05-25 15:02 UTC
 
----
+### Watch this Week: The future of US-Mexico relations
+**From:** Brookings Events Update <events@brookings.edu>  
+Brookings Events Update | May 25, 2026 High wire: The Sheinbaum administration and the future of US-Mexico relations https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VX1jYt4ktCr0W3m09vY7GTTbnW4Tq
 
-
-## AgentMail Intel — 2026-05-25 13:01 UTC
+### Next Africa: Ancient icons and celebrities
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Boxing at the Foot of the Pyramids to Lure Tourists: Next Africa Egypt is finding new ways to lure tourists ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### Final reminder: 60% off ends soon
 **From:** Bloomberg <subscriptions@message.bloomberg.com>  
@@ -101,11 +118,3 @@ Bloomberg News Alert Italian Stocks Hit First Record in 26 Years Led by Energ
 ### Cinco cosas que debe saber para comenzar el día
 **From:** Bloomberg <noreply@news.bloomberg.com>  
 Five Things to Start Your Day: Spanish Edition Cinco cosas que debe saber para empezar el día. Los detalles principales con un solo clic <https://sli.bloomberg.co
-
-### Webinar Today | US–Iran: Closer to Peace or Another Impasse?
-**From:** Middle East Institute <events@mei.edu>  
-Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients. Email not displaying correctly? View it in y
-
-### Washington Edition: Closing in on an Iran deal?
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Trump Pushes to Quiet GOP Critics of Iranian Dealmaking The president is pressing for a deal even as he tries to quiet the critics in his party ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌

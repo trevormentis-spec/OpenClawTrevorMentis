@@ -1,6 +1,6 @@
 # Trevor — Status
 
-*Generated: 2026-05-25 13:19 UTC (heartbeat)*
+*Generated: 2026-05-25 15:50 UTC (heartbeat)*
 
 ## Heartbeat — 2026-05-25 13:19 UTC
 
@@ -23,6 +23,22 @@
 - Calibration: ⚠️ Running accuracy 5.3% (5 evaluated, 0 correct, 5 unresolved); brief gate BLOCKED on band mismatch then manually corrected
 - Cost: ✅ ~$0.37/day DeepSeek; balance API 401 (stale snapshot May 17); ~$84 remaining / ~277 days
 - QC watchdog: ⚠️ Opus QC returned PARSE_ERROR (no action taken)
+
+## Heartbeat — 2026-05-25 15:50 UTC
+
+**Cost:** 💰 $84.45 balance, $0.43/day burn ($0.30 avg), 277 days runway — deep green
+**Brief quality:** May 25 brief — V4 Pro (tier-2, correct) + Opus 4.7 (tier-1, correct). Gate BLOCKED→fixed→7/7. ✅
+**QC alert:** None active. ✅
+**AgentMail (since pipeline):** 4 new — 3 noise, 1 intel-relevant (Breaking Defense Military Space weekly — LEO ground station relevance)
+**Source freshness:** STATUS reports 11 fresh, 0 warning, 0 critical (stale snapshot — no feed_health.py script found)
+**Active assignments:** All 3 running (leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain) ✅
+
+**Unchanged from 13:19:**
+- 🔴 Landing page deploy: GitHub PAT rejected — needs Roderick token rotation
+- ⚠️ Feed rot: ~60+ RSS/feed failures ongoing
+- ⚠️ Calibration: 0/5 correct, 5.3% accuracy
+- ⚠️ Postdiction: analyst module import failing
+- ⚠️ QC: Opus QC PARSE_ERROR on last run
 
 ## In-Flight Directives
 
