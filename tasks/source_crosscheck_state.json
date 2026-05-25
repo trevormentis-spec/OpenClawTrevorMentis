@@ -301,7 +301,31 @@
         "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
         "'Six eggs used to be £1' - why everyday essentials cost so much more now"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-25T03:02:58.948003+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 35,
+      "checked_at": "2026-05-25T03:02:59.340153+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Starmer 'appalled' by case of boys spared jail after raping teenage girls",
+        "Trump tells US negotiators 'not to rush' into deal with Iran",
+        "UK braces for hottest May day on record as 30C heat continues"
+      ]
     }
   ],
-  "last_updated": "2026-05-24T16:04:19.817545+00:00"
+  "last_updated": "2026-05-25T03:02:59.340344+00:00"
 }
