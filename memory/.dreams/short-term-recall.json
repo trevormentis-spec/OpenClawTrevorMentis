@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T17:50:05.821Z",
+  "updatedAt": "2026-05-25T19:00:11.328Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -540,13 +540,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 21,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20.611906618286376,
+      "totalScore": 21.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -568,7 +568,8 @@
         "1b9064ffbf19",
         "b2960036661c",
         "2de51dfe8bc5",
-        "cc764312eb50"
+        "cc764312eb50",
+        "1493103d7969"
       ],
       "recallDays": [
         "2026-05-04",
@@ -581,7 +582,8 @@
         "2026-05-14",
         "2026-05-15",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-25"
       ],
       "conceptTags": [
         "gateway",
@@ -710,13 +712,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14,
+      "totalScore": 15,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T16:01:51.278Z",
-      "lastRecalledAt": "2026-05-25T17:50:05.821Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
         "92a6782d6fa7",
         "50bca59fec26",
@@ -731,7 +733,8 @@
         "2de51dfe8bc5",
         "33046e596a0d",
         "998fb1f86453",
-        "b5f2e0ca550c"
+        "b5f2e0ca550c",
+        "1493103d7969"
       ],
       "recallDays": [
         "2026-05-05",
@@ -1086,20 +1089,22 @@
       "endLine": 121,
       "source": "memory",
       "snippet": "## 4 Daily Briefings — First Creation ### What was built - 4 email-only briefings: UK News, Trump Leadership, Financial Markets + Prediction Bets, Global Sports - Sent via Gmail Maton API from trevor.mentis@gmail.com to roderick.jones@gmail.com - Opus 4.7 graded first draft C+ (oil inconsistencies, no Top 3 summary, sports odds math) - Cron set for 8am PT daily delivery (confirmed user preferred time) ## Hermes Agent Architecture Audit ### What was done - Studied Hermes Agent docs from Nous Research - Audited Trevor against 10 Hermes dimensions - Full audit saved to analyst/audits/hermes-audit-2026-05-11.md ### Key findings - Two CRITICAL gaps: procedural memory (skills) and self-improvi",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T04:02:30.258Z",
-      "lastRecalledAt": "2026-05-12T04:02:33.827Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
         "4fdd6eb8041e",
         "b5deefa4bb81",
-        "b84acb705a0f"
+        "b84acb705a0f",
+        "1493103d7969"
       ],
       "recallDays": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-25"
       ],
       "conceptTags": [
         "email-only",
@@ -1311,25 +1316,27 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-23T04:46:23.458Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
         "b2960036661c",
         "cc764312eb50",
-        "13584e1c3564"
+        "13584e1c3564",
+        "1493103d7969"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
         "2026-05-19",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-25"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -1349,13 +1356,13 @@
       "endLine": 98,
       "source": "memory",
       "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
         "35087ae309b1",
         "b2960036661c",
@@ -1364,14 +1371,16 @@
         "df855bba4611",
         "69aac40b64bc",
         "b29c1c6a8236",
-        "6c65929eab81"
+        "6c65929eab81",
+        "1493103d7969"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
         "2026-05-22",
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "gateway",
@@ -1623,18 +1632,20 @@
       "endLine": 96,
       "source": "memory",
       "snippet": "- v5-v6: Mapbox dark-v11/light-v11 with GeoJSON (user: \"no change in this version!\") - v7-v8: Mapbox hybrid + PIL overlays with Economist style (user: \"no change!\") - v9: Pure PIL with cream bg, no Mapbox dependency — lat/lon swap bug found, markers rendered off-screen at negative coords ### Root cause of map failures - **Projection math was wrong** for at least 3 versions. `cfg[\"center\"]` stored as `(lat, lon)` but projection code treated it as `(lon, lat)`, putting all markers off-screen - Static GeoJSON data (same cities/routes every day) didn't adapt to daily content - Mapbox Static API had no typography control (GeoJSON labels rendered at fixed small sizes) - User wanted Economis",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-18T12:32:18.555Z",
-      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
       "queryHashes": [
-        "cb0e9de10fbc"
+        "cb0e9de10fbc",
+        "1493103d7969"
       ],
       "recallDays": [
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-25"
       ],
       "conceptTags": [
         "v5-v6",

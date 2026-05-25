@@ -5843,6 +5843,60 @@
       "discovered": "2026-05-25",
       "signal_level": "Medium",
       "region": "oceania"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "U.S. Markets ... <strong>House Oversight and Government Reform Committee Chair James Comer, R-Ky., on Friday announced investigations into insider tra",
+      "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Indian government set to block Polymarket, Kalshi to crack down on prediction markets - India Today",
+      "type": "Blog/Website",
+      "focus": "A prediction market platform like Kalshi <strong>allows you to make bets on various kinds of predictions, that can range from sports results to electi",
+      "url": "https://www.indiatoday.in/technology/news/story/indian-government-set-to-block-polymarket-kalshi-to-crack-down-on-prediction-markets-2915339-2026-05-22",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "europe"
     }
   ],
   "moltbook_sources": [

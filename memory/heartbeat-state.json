@@ -8,19 +8,19 @@
     "calendar": 1779216600,
     "memory_hygiene": 1779216600,
     "openrouter_usage": 1779216600,
-    "brain_index": 1779216600,
+    "brain_index": 1779737272,
     "social_monitor": 1777660000,
-    "phase_d": 1779195720,
-    "cost_snapshot": 1779195720,
-    "memory_maintenance": 1779195720,
+    "phase_d": 1779737272,
+    "cost_snapshot": 1779737272,
+    "memory_maintenance": 1779737272,
     "phase_a": 1779219440,
     "feed_audit": 1779219440,
     "phase_c": 1779650985
   },
-  "lastHeartbeat": 1779650985,
-  "rotationCursor": 3,
+  "lastHeartbeat": 1779737272,
+  "rotationCursor": 0,
   "previousPhase": "C",
-  "currentPhase": "C",
+  "currentPhase": "D",
   "phaseAStatus": "completed",
   "phaseANotes": {
     "feedsTested": 290,
@@ -32,7 +32,7 @@
     "topFailingErrors": "HTTP 404 (20), HTTP 403 (17), PARSE (9)",
     "reportSaved": "brain/memory/semantic/feed-health-latest.json"
   },
-  "nextPhase": "D",
+  "nextPhase": "A",
   "alerts": [
     {
       "id": "deepseek_401",
@@ -89,5 +89,17 @@
     "collectLinesBefore": 1534,
     "collectLinesAfter": 1495,
     "sourcesJsonUpdated": true
+  },
+  "phaseDStatus": "completed",
+  "phaseDNotes": {
+    "costSnapshot": "DeepSeek 401 (known \u2014 API key rotation needed, flagged in alerts). OpenRouter: no usage. Total weekly burn ~$0.47",
+    "brainReindex": "completed",
+    "collectionState": {
+      "recordsFile": "tasks/collection_records.jsonl (29KB)",
+      "crosscheckState": "tasks/source_crosscheck_state.json (10KB)",
+      "newsRaw": "tasks/news_raw.md (7.6KB)"
+    },
+    "cycleComplete": true,
+    "cycleSummary": "All 4 phases completed. Phase A: 290 feeds tested, 48.9% health. Phase B: 23 candidates found across 5 gap regions. Phase C: 50 dead pruned, 11 replacements added. Phase D: reindex done, cost snapshot blocked on API key issue."
   }
 }

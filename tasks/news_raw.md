@@ -1,4 +1,16 @@
-# Gmail Intel Digest — 2026-05-25 17:01 UTC
+# Gmail Intel Digest — 2026-05-25 19:03 UTC
+
+## National Security Nightcap for this Memorial Day Monday
+**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
+**Date:** Mon, 25 May 2026 18:59:09 +0000
+**Type:** alert | **Importance:** high
+
+View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-this-memorial-day-monday?e=829f311d89)
+https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=ba80aec51c-EMAIL_CAMPAIGN_2026_05_25_06_56&utm_medium=email&utm_term=0_-ba80aec51c-547824188&mc_cid=ba80aec51c&mc_eid=UNIQID
+
+X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=ba80aec51c-EMAIL_CAMPAIGN_2026_05_25_06_56&
+
+---
 
 ## Trump and Warsh's fates now tied
 **From:** Reuters One Essential Read <dailybriefing@thomsonreuters.com>
@@ -63,17 +75,18 @@ Email from Institute for the Study of War Ukraine is actively challenging the po
 
 ---
 
-## Iran and US play down hopes for imminent breakthrough in war
-**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
-**Date:** Mon, 25 May 2026 06:30:15 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+## AgentMail Intel — 2026-05-25 19:04 UTC
 
----
+### Global Update: Even After a Strait of Hormuz Deal, Moving 1,500 Ships Won’t Be Easy
+**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
 
+### Recording Global Warning Live With Ryan McBeth
+**From:** Ryan McBeth from The official Ryan McBeth Substack <ryanmcbeth@substack.com>  
+View this post on the web at https://ryanmcbeth.substack.com/p/recording-global-warning-live-with Unsubscribe https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9yeWFubWNiZXRoLnN1YnN0YWNrLmNvbS9hY3R
 
-## AgentMail Intel — 2026-05-25 17:01 UTC
+### Excellent ice cream sandwiches
+**From:** NYT Wirecutter <nytdirect@nytimes.com>  
 
 ### Space Minds: Open Cosmos’ Rafel Jorda Siquier on finding a niche in space
 **From:** SpaceNews <spacenewseletter@spacenews.com>  
@@ -89,18 +102,3 @@ Latest news and analysis from Breaking Defense. ________________________________
 ### Watch this Week: The future of US-Mexico relations
 **From:** Brookings Events Update <events@brookings.edu>  
 Brookings Events Update | May 25, 2026 High wire: The Sheinbaum administration and the future of US-Mexico relations https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VX1jYt4ktCr0W3m09vY7GTTbnW4Tq
-
-### Next Africa: Ancient icons and celebrities
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Boxing at the Foot of the Pyramids to Lure Tourists: Next Africa Egypt is finding new ways to lure tourists ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Final reminder: 60% off ends soon
-**From:** Bloomberg <subscriptions@message.bloomberg.com>  
-Procrastination is expensive. Get actionable business news now. ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏ ‌ ͏
-
-### The anti-gerrymanderers’ future
-**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
-Presented by Nike: The unofficial guide to official Washington. May 25, 2026 View in browser By Eli Okun Presented by With help from Ali Bia
-
-### What’s up with extended warranties?
-**From:** NYT Wirecutter <nytdirect@nytimes.com>  
