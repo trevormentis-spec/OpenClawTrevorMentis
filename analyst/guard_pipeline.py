@@ -278,7 +278,7 @@ BANDS = {
     "almost certain":      (93, 99),
     "highly likely":       (75, 85),
     "likely":              (55, 70),
-    "probable":            (55, 70),
+    "probable":            (70, 85),
     "even chance":         (45, 55),
     "chances about even":  (45, 55),
     "unlikely":            (25, 35),

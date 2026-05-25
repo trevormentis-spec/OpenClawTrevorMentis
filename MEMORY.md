@@ -128,3 +128,24 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 
 ### Collection Gaps (Tracked)
 - Pemex operational data not yet ingested for pipeline tap counts
+
+## 2026-05-25 — Daily Text Brief
+
+### Pipeline completed (with manual intervention)
+- **Delivered:** ✅ Text brief sent to roderick.jones@gmail.com via AgentMail (12:45 UTC)
+- **Quality gate:** ALL CLEAR 7/7 after fixing calibration band bug
+- **Message ID:** `<0100019e5f2ba5df-fd807b8b-0187-40da-a30a-06ba6f4252e0-000000@email.amazonses.com>`
+- **Models used:** DeepSeek V4 Pro (10 regions + prediction_markets + red-team), Claude Opus 4.7 (exec summary)
+
+### Issues encountered & fixed:
+1. **Exec timeout kills pipeline:** OpenClaw exec sessions SIGTERM long-running processes. Solution: use `nohup` background for pipeline.
+2. **Calibration band bug in guard_pipeline.py:** "probable" was mapped to (55, 70) — same range as "likely". Should be (70, 85). Fixed in `analyst/guard_pipeline.py` line 281.
+3. **GitHub Pages auth:** Push still failing with "Invalid username or token" — needs new PAT.
+4. **BRAVE_API_KEY not set:** Source discovery skipped — non-fatal but means no new sources found.
+
+### Postdiction results (yesterday's 5 predictions):
+- 1 confirmed, 4 not yet testable, 0 incorrect
+
+### Lessons:
+- Pipeline ~25 minutes end-to-end (5min collect + 20min analyze). Must run backgrounded.
+- guard_pipeline.py band definitions need periodic audit — duplicated ranges cause false quality blocks.

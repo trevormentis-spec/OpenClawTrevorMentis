@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-05-25 09:04 UTC
+# Gmail Intel Digest — 2026-05-25 11:01 UTC
+
+## Iran-US talks continue, no breakthrough yet on war
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Mon, 25 May 2026 06:59:16 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Iran and US play down hopes for imminent breakthrough in war
+**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
+**Date:** Mon, 25 May 2026 06:30:15 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## ترامب: لا عجلة في التوصل لاتفاق مع إيران والحصار مستمر
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -47,17 +65,30 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## トランプ氏、イランとの合意「急がず」と指示　和平期待に水差す【【5月 25日】
-**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
-**Date:** Sun, 24 May 2026 18:31:04 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+## AgentMail Intel — 2026-05-25 11:01 UTC
 
----
+### The Morning: A poem for Memorial Day
+**From:** The New York Times <nytdirect@nytimes.com>  
 
+### Latvia's Political Flux Caused by Drones || May 18, 2026
+**From:** Peter Zeihan <peterzeihan@creator.patreon.com>  
 
-## AgentMail Intel — 2026-05-25 09:05 UTC
+### Iran’s big decision
+**From:** Bloomberg Politics <noreply@news.bloomberg.com>  
+Iran’s Supreme Leader Faces Toughest Test Yet US and Iran must decide on the direction of war ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### ISS Today: Dear Mr President – to succeed, SA needs an excellent social development minister
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+25 May 2026 [1] Dear Mr President: to succeed, SA needs an excellent social development minister The department can no longer be treated as peripheral – its new minister must hav
+
+### Deal optimism
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+US, Iran Inch Toward a Deal as Some Gaps Remain Bloomberg Morning Briefing Americas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### AI caution, fleet strain and force modernization converge across DoD
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+The defense industry’s most important stories, curated for your Monday morning. ____________________________________________________________________________________ Breaking Defense: Monday Morning B
 
 ### Markets choose optimism on Iran
 **From:** Bloomberg <noreply@news.bloomberg.com>  
@@ -74,10 +105,3 @@ Bloomberg News Alert SoftBank Shares Hit Record High With Lift From OpenAI IP
 ### Crude tanker trades rebalance, Time for owners to evacuate crew stranded in Hormuz stalemate
 **From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
 If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134564&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=98592d4050204523b
-
-### The Middle East Defense Dispatch
-**From:** Breaking Defense <newsletters@breakingdefense.com>  
-This week's news and analysis from Breaking Defense. ___________________________________________________________________________________________________________________________ Gambit 6 | CCA: The ne
-
-### The World: The Oscars start at Cannes
-**From:** The New York Times <nytdirect@nytimes.com>  
