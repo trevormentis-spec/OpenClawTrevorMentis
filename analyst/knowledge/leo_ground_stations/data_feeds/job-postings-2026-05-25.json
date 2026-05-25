@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-25T17:30:32.058017+00:00",
+  "target_companies": [
+    "KSAT",
+    "Kongsberg Satellite",
+    "Space Norway",
+    "Leaf Space",
+    "Skynopy",
+    "Atlas Space Operations",
+    "RBC Signals",
+    "Infostellar",
+    "Sfera Technologies",
+    "AWS Ground Station",
+    "Amazon Kuiper",
+    "Viasat",
+    "Eutelsat",
+    "OneWeb",
+    "Telesat",
+    "SpaceX",
+    "Starlink"
+  ],
+  "search_results": [
+    {
+      "query": "ground station engineer hiring 2026",
+      "hits": 1,
+      "signal": "recent"
+    },
+    {
+      "query": "satellite gateway site manager job",
+      "hits": 0,
+      "signal": "none"
+    },
+    {
+      "query": "RF engineer ground terminal",
+      "hits": 0,
+      "signal": "none"
+    },
+    {
+      "query": "satellite earth station technician",
+      "hits": 0,
+      "signal": "none"
+    }
+  ],
+  "note": "Job posting data is noisy. Better signal from paid LinkedIn API or TheirStack."
+}

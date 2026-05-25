@@ -235,31 +235,55 @@ def collect_contracts_weekly() -> dict:
     
     contracts = []
     
-    # Search USAspending API for explosives contracts
-    # NAICS 325920 = Explosives Manufacturing
-    # NAICS 332993 = Ammunition Manufacturing
+    # Search USAspending API for explosives contracts via POST
     for naics in ["325920", "332993"]:
         try:
-            url = f"https://api.usaspending.gov/api/v2/search/spending_by_category/ awarding_agency/?filters={{'naics_codes':['{naics}'],'time_period':[{{'start_date':'2026-01-01','end_date':'2026-12-31'}}]}}"
-            # Simpler: search by keyword
-            url = f"https://api.usaspending.gov/api/v2/search/spending_by_transaction/?filters={{'keywords':['RDX','HMX','explosives','propellant'],'time_period':[{{'start_date':'2026-01-01','end_date':'2026-12-31'}}]}}&limit=20"
+            url = "https://api.usaspending.gov/api/v2/search/spending_by_transaction/"
+            payload = {
+                "filters": {
+                    "naics_codes": [naics],
+                    "keywords": ["RDX", "HMX", "explosives", "propellant", "TNT", "ammonium nitrate", "nitroglycerin"],
+                    "time_period": [{"start_date": "2025-01-01", "end_date": "2026-12-31"}],
+                    "award_type_codes": ["A", "B", "C", "D", "IDV_A", "IDV_B", "IDV_C", "IDV_D", "IDV_E"]
+                },
+                "limit": 30,
+                "sort": "Transaction Amount",
+                "order": "desc",
+                "fields": [
+                    "Award ID", "Recipient Name", "Transaction Amount",
+                    "Transaction Description", "Action Date",
+                    "Awarding Agency", "Awarding Sub Agency",
+                    "NAICS", "naics_description", "Award Type",
+                    "Recipient UEI", "Mod"
+                ]
+            }
+            data_bytes = json.dumps(payload).encode("utf-8")
             req = urllib.request.Request(
                 url,
+                data=data_bytes,
                 headers={"User-Agent": "TrevorIntel/1.0", "Content-Type": "application/json"},
+                method="POST",
             )
-            with urllib.request.urlopen(req, timeout=20) as resp:
+            with urllib.request.urlopen(req, timeout=30) as resp:
                 data = json.loads(resp.read())
                 for r in data.get("results", []):
                     contracts.append({
-                        "award_id": r.get("generated_unique_award_id", ""),
-                        "recipient": r.get("recipient_name", ""),
-                        "amount": r.get("federal_action_obligation", 0),
-                        "description": (r.get("description", "") or "")[:200],
-                        "date": r.get("period_of_performance_current_end_date", ""),
-                        "agency": r.get("awarding_agency_name", ""),
+                        "award_id": r.get("Award ID", ""),
+                        "recipient": r.get("Recipient Name", ""),
+                        "amount": r.get("Transaction Amount", 0),
+                        "description": (r.get("Description", "") or "")[:250],
+                        "action_date": r.get("Action Date", ""),
+                        "period_end": r.get("Period of Performance Current End Date", ""),
+                        "agency": r.get("Awarding Agency", ""),
+                        "sub_agency": r.get("Awarding Sub Agency", ""),
+                        "naics": r.get("NAICS Code", ""),
+                        "naics_desc": r.get("NAICS Description", ""),
+                        "award_type": r.get("Award Type", ""),
                     })
+                log(f"  NAICS {naics}: {len(data.get('results', []))} results")
+            posted = True
         except Exception as e:
-            log(f"  USAspending query failed: {e}")
+            log(f"  USAspending query (NAICS {naics}) failed: {e}")
     
     output = {
         "status": "ok",

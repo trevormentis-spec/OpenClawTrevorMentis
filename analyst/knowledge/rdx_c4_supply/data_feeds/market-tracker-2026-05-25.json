@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-05-25T15:00:55.289232+00:00",
+  "generated_at": "2026-05-25T18:01:40.047098+00:00",
   "data_feeds": {
     "gdelt-sweep": {
       "status": "ok",
-      "collected_at": "2026-05-25T15:00:25.644050+00:00",
+      "collected_at": "2026-05-25T17:00:38.065034+00:00",
       "articles_found": 0,
       "articles": []
     },
     "osint-events": {
       "status": "ok",
-      "collected_at": "2026-05-25T15:00:28.764935+00:00",
+      "collected_at": "2026-05-25T17:31:12.813487+00:00",
       "channels_checked": 5,
       "events_found": 0,
       "events": []
+    },
+    "contracts": {
+      "status": "ok",
+      "collected_at": "2026-05-25T18:01:40.045888+00:00",
+      "contracts_found": 0,
+      "contracts": [],
+      "total_value": 0
     }
   },
   "russian_plant_alerts": 0,

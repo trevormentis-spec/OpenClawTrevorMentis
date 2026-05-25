@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T15:20:29.105Z",
+  "updatedAt": "2026-05-25T17:50:05.821Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -463,13 +463,13 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-05-03 — Sunday ## Overnight (01:08 UTC / 18:08 PT May 2) - AgentMail: checked, 5 most recent are outbound only (briefing/audit emails), no incoming external messages. Inbox clean. - DeepSeek balance: **$98.30** (down $0.27 from last check, burn ~$0.95/day, ~103 days runway) - Polymarket monitor ran with 129 errors / 0 successful queries — price-state.json empty (0 markets). Needs investigation. - Brain runtime: normal. Daily file started for May 3.",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:05:31.168Z",
-      "lastRecalledAt": "2026-05-18T01:00:41.861Z",
+      "lastRecalledAt": "2026-05-25T17:50:05.821Z",
       "queryHashes": [
         "69ecdd2685e7",
         "29314a1ed0f7",
@@ -478,7 +478,8 @@
         "577729f1e069",
         "196f8419e846",
         "1c8dc30ba712",
-        "2de51dfe8bc5"
+        "2de51dfe8bc5",
+        "b5f2e0ca550c"
       ],
       "recallDays": [
         "2026-05-04",
@@ -486,7 +487,8 @@
         "2026-05-07",
         "2026-05-10",
         "2026-05-13",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-25"
       ],
       "conceptTags": [
         "briefing/audit",
@@ -708,13 +710,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T16:01:51.278Z",
-      "lastRecalledAt": "2026-05-25T01:44:37.483Z",
+      "lastRecalledAt": "2026-05-25T17:50:05.821Z",
       "queryHashes": [
         "92a6782d6fa7",
         "50bca59fec26",
@@ -728,7 +730,8 @@
         "f7d1f8923a5d",
         "2de51dfe8bc5",
         "33046e596a0d",
-        "998fb1f86453"
+        "998fb1f86453",
+        "b5f2e0ca550c"
       ],
       "recallDays": [
         "2026-05-05",
@@ -2345,6 +2348,68 @@
         "framework-general",
         "analyst/config/scope.yaml",
         "primary-scope"
+      ]
+    },
+    "memory:memory/2026-05-25.md:128:163": {
+      "key": "memory:memory/2026-05-25.md:128:163",
+      "path": "memory/2026-05-25.md",
+      "startLine": 128,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "Reuters (Arabic/English), Bloomberg, ISW/CTP all saying the same thing as earlier digests: deal inching forward, gaps remain, Trump not rushing. The new Bloomberg Politics framing (Khamenei under pressure) adds useful context but doesn't change the probability assessment. 45-55% 7-day assessment holds. ### Action - Hormuz crew evacuation → flag as indicator for Iran deal tracking (humanitarian evacuation = industry signaling prolonged standoff) - Latvia drone politics → add to Baltic/NATO monitoring track - DoD fleet strain → note for LEO/defense supply chain context --- ## Heartbeat 10:43 UTC ### Autonomous Cycle - All phases ran quiet (crons, feeds, collection, pipeline, costs, brain)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T16:50:07.292Z",
+      "lastRecalledAt": "2026-05-25T16:50:07.292Z",
+      "queryHashes": [
+        "b4583674ecea"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "arabic/english",
+        "isw/ctp",
+        "45-55",
+        "7-day",
+        "baltic/nato",
+        "leo/defense",
+        "reuters",
+        "arabic"
+      ]
+    },
+    "memory:memory/2026-05-13.md:26:53": {
+      "key": "memory:memory/2026-05-13.md:26:53",
+      "path": "memory/2026-05-13.md",
+      "startLine": 26,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "## Phase 14 — Behavioral Adaptation & Operational Learning (2026-05-13 04:55 UTC) ### Three loops closed **1. Calibration-conditioned forecasting:** - Created `scripts/behavioral_state.py` — reads calibration history + collection state + episodic events → behavioral directives - Modified `analyze.py` — `--behavioral-state` flag injects HARD CONSTRAINTS into system prompt - Middle East: only 'even chance'/'likely' available (max 75%, forecasting = cautious) — overconfidence flag triggers real band restriction - Global: 'almost certain' banned (24/25 judgments unresolved) - Asia: linguistic gap flagged for Chinese/Japanese - Behavioral constraints are structural, not descriptive — the model",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T16:50:07.292Z",
+      "lastRecalledAt": "2026-05-25T16:50:07.292Z",
+      "queryHashes": [
+        "b4583674ecea"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "calibration-conditioned",
+        "scripts/behavioral-state.py",
+        "analyze.py",
+        "behavioral-state",
+        "24/25",
+        "chinese/japanese",
+        "phase",
+        "behavioral"
       ]
     }
   }
