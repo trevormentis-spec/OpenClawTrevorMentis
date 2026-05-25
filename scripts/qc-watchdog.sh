@@ -29,16 +29,14 @@ if [ ! -f "$WORKING_DIR/analysis/exec_summary.json" ]; then
     exit 0
 fi
 
-# Run Opus QC
+# Run Opus QC (separate stderr to avoid JSON parse corruption)
 echo "Running Opus QC..." | tee -a "$LOG"
 QC_OUTPUT=$(python3 "$REPO/scripts/opus_qc_review.py" \
     --brief-dir "$WORKING_DIR" \
-    --json 2>&1)
+    --json 2>>"$LOG")
 QC_RC=$?
 
-# Check for API failure (exit 0 on API errors, not 1)
-if [ $QC_RC -ne 0 ]; then
-    OVERALL=$(echo "$QC_OUTPUT" | python3 -c "
+OVERALL=$(echo "$QC_OUTPUT" | python3 -c "
 import sys, json
 try:
     r = json.load(sys.stdin)
@@ -46,16 +44,6 @@ try:
 except:
     print('PARSE_ERROR')
 " 2>/dev/null || echo "PARSE_ERROR")
-else
-    OVERALL=$(echo "$QC_OUTPUT" | python3 -c "
-import sys, json
-try:
-    r = json.load(sys.stdin)
-    print(r.get('overall', 'UNKNOWN'))
-except:
-    print('PARSE_ERROR')
-" 2>/dev/null || echo "PARSE_ERROR")
-fi
 
 echo "QC overall: $OVERALL" | tee -a "$LOG"
 

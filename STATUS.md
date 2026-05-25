@@ -1,20 +1,28 @@
 # Trevor — Status
 
-*Generated: 2026-05-25 08:44 UTC (heartbeat)*
+*Generated: 2026-05-25 13:19 UTC (heartbeat)*
 
-## Heartbeat — 2026-05-25 08:44 UTC
+## Heartbeat — 2026-05-25 13:19 UTC
 
 **Pipeline:**
-- May 24 brief: ✅ Delivered retroactively 01:16 UTC (pipeline crashed during collection, analysis completed, quality gate 6/7, AgentMail)
-- May 23 brief: ✅ Delivered 22:14 UTC (quality gate 7/7, AgentMail)
-- May 25 brief: ⏳ Scheduled for 05:00 PT / 12:00 UTC (pipeline not yet triggered)
+- May 25 brief: ✅ Delivered 12:46 UTC (quality gate initially BLOCKED on calibration band, manually fixed, final 7/7, AgentMail)
+- Models: V4 Pro (tier-2 analysis) + Opus 4.7 (red team) — correct tier routing
+- Region coverage: all 12 regions, 2-3 KJs each, 33 total KJs
+- May 24 brief: ✅ Delivered retroactively 01:16 UTC
+- May 23 brief: ✅ Delivered 22:14 UTC
+- LEO daily brief: ❌ Not generated today (separate pipeline, not triggered)
+- Visuals: ❌ None generated (visuals/ directory empty)
+- Landing page deploy: ❌ GitHub auth failed (PAT rejected)
 
 **Issues:**
-- Brave Search: ✅ FIXED 08:44 UTC — gzip decompression bug in 4 scripts (source_discovery, priority_triage, rdx_collectors, daily_newsletter_finder)
-- Feed rot: ⚠️ ~60+ RSS/feed failures (403/404/SSL/timeout) — ongoing source URL staleness, not blocking
+- Brave Search: ✅ FIXED 08:44 UTC — gzip decompression bug in 4 scripts
+- Disk: ✅ RESOLVED 10:43 UTC — 100% → 87% (removed unused ML venv 5.3GB, truncated Kalshi log)
+- Landing page deploy: 🔴 GitHub PAT rejected — authentication failed, needs token rotation
+- Feed rot: ⚠️ ~60+ RSS/feed failures (403/404/SSL/timeout) — ongoing source URL staleness
 - Postdiction: ⚠️ `analyst` module not importable — using fallback gate
-- Calibration: ⚠️ Running accuracy 5.3% (5 evaluated, 0 correct, 5 unresolved)
-- Cost: ✅ $0.37 May 24, est. ~$5/mo DeepSeek; DeepSeek balance API 401 (stale snapshot May 17)
+- Calibration: ⚠️ Running accuracy 5.3% (5 evaluated, 0 correct, 5 unresolved); brief gate BLOCKED on band mismatch then manually corrected
+- Cost: ✅ ~$0.37/day DeepSeek; balance API 401 (stale snapshot May 17); ~$84 remaining / ~277 days
+- QC watchdog: ⚠️ Opus QC returned PARSE_ERROR (no action taken)
 
 ## In-Flight Directives
 
@@ -33,8 +41,9 @@ None.
 ## Cost Summary (May 2026)
 
 **DeepSeek (week of May 18-24):** $1.26 (586 sessions, 4.1M tokens)
-**Today (May 24):** $0.37 (90 sessions)
+**Today (May 25):** brief pipeline ran — cost not yet tallied
 **Estimated monthly:** ~$5.00
+**Balance remaining:** ~$84.45 (~277 days runway at current burn rate)
 
 
 ## Provider Health
@@ -82,4 +91,4 @@ f59b4bd Copernicus Data Space integration for LEO imagery checks
 
 ---
 
-*Updated by heartbeat rotation at 2026-05-24 22:02 UTC*
+*Updated by heartbeat rotation at 2026-05-25 13:19 UTC*
