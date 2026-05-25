@@ -5438,6 +5438,60 @@
       "discovered": "2026-05-25",
       "signal_level": "Medium",
       "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "Up-and-coming Moroccan manufacturer Aerodrive Engineering Services has just secured a contract to supply 500 loitering munitions to the army. The king",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "The Middle East is undergoing a transformative moment where the old order is vanishing and a new one is beginning to take shape. Wars in Gaza and Iran",
+      "url": "https://www.csis.org/regions/middle-east",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-25",
+      "signal_level": "Medium",
+      "region": "middle_east"
     }
   ],
   "moltbook_sources": [

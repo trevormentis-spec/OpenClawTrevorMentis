@@ -1,0 +1,18 @@
+{
+  "thesis": "One falsifiable sentence describing your prediction.",
+  "max_total_cents": 5000,
+  "invalidation": "What would prove the thesis wrong, e.g. 'If tariff negotiations conclude without >5% rates by June 15'",
+  "exit_criteria": "Target price, stop loss, or hold-to-resolution. E.g. 'Sell at 75¢ or cut loss at 15¢'",
+  "orders": [
+    {
+      "ticker": "KXTARIFFRATEPRC-25JUL01",
+      "action": "buy",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 35,
+      "time_in_force": "good_till_canceled",
+      "client_order_id": "my-ref-001",
+      "rationale": "Market at 32¢ bid/35¢ ask. Thesis implies >50% probability — 15-20¢ edge."
+    }
+  ]
+}

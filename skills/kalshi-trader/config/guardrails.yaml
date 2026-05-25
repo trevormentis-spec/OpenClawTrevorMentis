@@ -1,0 +1,56 @@
+# Kalshi Trading Guardrails — Master Configuration
+# All values configurable. Changes take effect on next monitor cycle.
+# 
+# Sizing methodology:
+#   Kelly fraction = edge / odds
+#   For binary: f = (p*b - q) / b where p=win%, b=odds, q=1-p
+#   Fractional Kelly: multiply by kelly_fraction (0.25 = quarter-Kelly)
+#
+# Trevor (thesis-driven) vs Market-Agnostic strategies:
+#   Thesis: Trevor's intelligence assessment drives edge calculation
+#   Market-Agnostic: pure price-action or arbitrage signals
+
+# ── Position Sizing ──────────────────────────────────────────────────
+position_sizing:
+  kelly_fraction: 0.25          # Quarter-Kelly (conservative)
+  max_position_pct: 5.0         # Max 5% of portfolio per position
+  max_total_exposure_pct: 30.0  # Max 30% of portfolio in all open positions
+  max_concurrent_positions: 10  # Hard cap on number of open positions
+  min_edge_to_trade: 5          # Minimum edge in percentage points
+
+# ── Risk Circuit Breakers ────────────────────────────────────────────
+circuit_breakers:
+  daily_loss_pct: 10.0          # Halt all new trades if daily P&L < -10%
+  max_drawdown_pct: 20.0        # Halt if portfolio draws down 20% from peak
+  position_stop_loss_pct: 50.0  # Auto-exit at -50% from entry
+  position_take_profit_pct: 100.0 # Auto-exit at +100% from entry
+  trailing_stop_pct: 25.0       # Trailing stop from highest mark (0 = disabled)
+
+# ── Market Filters ───────────────────────────────────────────────────
+market_filters:
+  min_volume_24h: 500           # Minimum 24h volume in USD
+  max_time_to_resolution_days: 30  # Avoid tying capital in distant resolutions
+  skip_categories: []           # Categories to exclude (e.g. ["entertainment"])
+  only_categories: []           # If set, only trade these (e.g. ["politics", "economics"])
+
+# ── Thesis-Driven Specific ───────────────────────────────────────────
+thesis:
+  min_confidence: 45            # Minimum Trevor confidence % to generate signal
+  max_signal_age_hours: 24      # How long a signal stays actionable
+  require_event_catalysts: true # Only trade if upcoming catalyst within horizon
+
+# ── Execution Rules ──────────────────────────────────────────────────
+execution:
+  default_time_in_force: good_till_canceled
+  cancel_resting_after_minutes: 120  # Cancel resting limit orders after 2 hours
+  max_order_retries: 3          # Retry on fill failures
+  slippage_tolerance_pct: 2.0   # Accept up to 2% slippage on market orders
+  fee_buffer_pct: 1.0           # Set 1% aside for fees in cost estimates
+
+# ── Monitoring Cadence ───────────────────────────────────────────────
+monitoring:
+  poll_interval_seconds: 60     # How often to poll when not using WebSocket
+  alert_on_position_change: true  # Notify on fill/exit
+  alert_on_circuit_breaker: true  # Notify on risk halt
+  alert_on_edge_detected: true    # Notify when a thesis trade is found
+  daily_summary_utc: "14:00"      # Send daily P&L summary at this time

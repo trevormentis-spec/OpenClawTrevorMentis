@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T01:44:37.483Z",
+  "updatedAt": "2026-05-25T05:02:10.353Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -161,13 +161,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 13,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.656900329817407,
+      "totalScore": 14.656900329817407,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
+      "lastRecalledAt": "2026-05-25T05:02:10.353Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -181,7 +181,9 @@
         "754a5e2df3c2",
         "bfb778309dbc",
         "3c68673febfe",
-        "859f13d9e78f"
+        "859f13d9e78f",
+        "f24e9c8723c1",
+        "a7caaf53a02e"
       ],
       "recallDays": [
         "2026-04-28",
@@ -192,7 +194,8 @@
         "2026-05-05",
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-25"
       ],
       "conceptTags": [
         "date/time",
@@ -212,13 +215,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 22,
+      "recallCount": 24,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 21.042409226740567,
+      "totalScore": 23.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-23T09:33:37.838Z",
+      "lastRecalledAt": "2026-05-25T05:02:10.353Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -241,7 +244,9 @@
         "bfb778309dbc",
         "3c68673febfe",
         "859f13d9e78f",
-        "69aac40b64bc"
+        "69aac40b64bc",
+        "f24e9c8723c1",
+        "a7caaf53a02e"
       ],
       "recallDays": [
         "2026-04-28",
@@ -256,7 +261,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-25"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -321,22 +327,24 @@
       "endLine": 56,
       "source": "memory",
       "snippet": "- Strait of Hormuz effectively hard-closed (P&I insurance removed from 5 March) **Hypothesis Probabilities:** - H3 (Regional War): 30–40% - H2 (Sustained Campaign): 35–45% - H1 (De-escalation): <20% --- ### Key Judgments **KJ-1:** US-Israeli campaign approaching air supremacy (>93% confidence). Iran's naval capacity \"effectively neutralised\" per JCS Chairman Caine. **KJ-2:** Strait of Hormuz closed minimum 10–14 days, likely (70–85%) longer. Brent at $82+; analysts projecting $100+ if sustained. **KJ-3:** Lebanon now an active war within a war. Hezbollah declares open war; Lebanese government banned Hezbollah military activities. **KJ-4:** Mojtaba Khamenei selected as Supreme Leader u",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.956792000254735,
+      "totalScore": 3.956792000254735,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T08:02:41.160Z",
-      "lastRecalledAt": "2026-05-08T08:55:26.386Z",
+      "lastRecalledAt": "2026-05-25T04:14:50.036Z",
       "queryHashes": [
         "77ed4c792413",
         "46ce8791f426",
-        "ebd4298379f6"
+        "ebd4298379f6",
+        "f24e9c8723c1"
       ],
       "recallDays": [
         "2026-04-29",
         "2026-05-04",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-25"
       ],
       "conceptTags": [
         "hard-closed",
@@ -1630,18 +1638,20 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "## Perplexity Benchmark — Set up - Perplexity produces a GSIB daily that lands in trevor.mentis@gmail.com with label \"Important MyClaw Use this\" - Roderick flagged it as the quality benchmark — my output should converge toward it - Created `scripts/benchmark_compare.py` — scores both briefs across 5 dimensions (persona, signal density, trade integration, framework reframes, prioritization) - Wired as Step 10 in `daily-brief-cron.sh` (runs after self-assessment) - Updated system prompt in `deepseek-prompts.md` for: analyst-to-analyst voice, direct address, trade-inline style - Updated regional prompt template with `{prediction_market_data}` and `{standing_assessment}` fields - Updated `regi",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T05:40:21.809Z",
-      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
+      "lastRecalledAt": "2026-05-25T04:14:13.109Z",
       "queryHashes": [
-        "cc764312eb50"
+        "cc764312eb50",
+        "612560959a2b"
       ],
       "recallDays": [
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-25"
       ],
       "conceptTags": [
         "trevor.mentis",
@@ -2212,6 +2222,99 @@
         "v1.0",
         "forward-looking",
         "skills"
+      ]
+    },
+    "memory:memory/2026-05-24.md:78:90": {
+      "key": "memory:memory/2026-05-24.md:78:90",
+      "path": "memory/2026-05-24.md",
+      "startLine": 78,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "BLUF: Russia's Kyiv missile strike validates the retaliatory cycle while Trump declares a US-Iran deal 'largely negotiated' — two simultaneous escalation/de-escalation tests dominate the week. - [europe] Russia will conduct additional ballistic missile or drone strikes targeting Ukrainian critical infrastructure within the next 7 days. (likely; 67% / 7d) - [middle_east] The US and Iran will announce a formal ceasefire or nuclear deal framework within the next 7 days. (likely; 64% / 7d) - [middle_east] Hezbollah will not conduct a large-scale retaliatory rocket attack (more than 100 munitions) into northern Israel in the next 7 days. (likely; 63% / 7d) - [north_america] The Congressional Res",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T04:14:50.036Z",
+      "lastRecalledAt": "2026-05-25T04:14:50.036Z",
+      "queryHashes": [
+        "f24e9c8723c1"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "us-iran",
+        "escalation/de-escalation",
+        "middle-east",
+        "large-scale",
+        "north-america",
+        "bluf",
+        "russia's",
+        "kyiv"
+      ]
+    },
+    "memory:memory/2026-05-24.md:189:210": {
+      "key": "memory:memory/2026-05-24.md:189:210",
+      "path": "memory/2026-05-24.md",
+      "startLine": 189,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "1. Load .env (DEEPSEEK_API_KEY, AGENTMAIL_API_KEY, OPENROUTER_API_KEY) 2. Pre-collection: calibration directives + Kalshi scan 3. Collector: ~96 feeds (50 catalog + ~46 hardcoded), dead feeds skipped 4. Email intel: Gmail + AgentMail injection 5. Analysis: 10 regions × DeepSeek V4 Pro + exec summary + red team 6. Quality gate: 7 gates 7. Delivery: AgentMail to roderick.jones@gmail.com 8. Postdiction: calibration tracking Estimated runtime: 17-22 minutes (vs 9+ minutes for collection alone before fixes) ## Daily brief — 2026-05-24 BLUF: Russia's 700-drone Oreshnik-led barrage on Ukraine and Trump's claim of a 'largely negotiated' US-Iran deal create simultaneous escalation and de-escalatio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T05:02:10.340Z",
+      "lastRecalledAt": "2026-05-25T05:02:10.340Z",
+      "queryHashes": [
+        "55c206f8cce9"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "router",
+        "deepseek-api-key",
+        "agentmail-api-key",
+        "openrouter-api-key",
+        "pre-collection",
+        "roderick.jones",
+        "gmail.com",
+        "17-22"
+      ]
+    },
+    "memory:memory/2026-05-17.md:22:39": {
+      "key": "memory:memory/2026-05-17.md:22:39",
+      "path": "memory/2026-05-17.md",
+      "startLine": 22,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "**Architecture note:** The LLM slow path fails in ad-hoc shell environments because `DEEPSEEK_API_KEY` is injected by OpenClaw at runtime, not present in subprocess shells. The keyword fast path handles all common cases. On API failure, defaults permissively to `in_scope`. Pipeline workers (analyze.py, orchestrate.py) have the key available in cron environment. ### Framework Generalization Note The scope gate is framework-general. Only `analyst/config/scope.yaml` needs to change for redirection: update `primary_scope`, `scope_descriptor`, `themes`, `adjacency_vectors`, and keyword lists. The `scope_check.py` module, `build_decline()`, and three-branch flow are topic-agnostic. This closes",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T05:02:10.340Z",
+      "lastRecalledAt": "2026-05-25T05:02:10.340Z",
+      "queryHashes": [
+        "55c206f8cce9"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "ad-hoc",
+        "deepseek-api-key",
+        "in-scope",
+        "analyze.py",
+        "orchestrate.py",
+        "framework-general",
+        "analyst/config/scope.yaml",
+        "primary-scope"
       ]
     }
   }

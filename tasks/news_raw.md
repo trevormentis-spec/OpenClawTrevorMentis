@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-05-25 03:01 UTC
+# Gmail Intel Digest — 2026-05-25 05:01 UTC
+
+## ترامب: لا عجلة في التوصل لاتفاق مع إيران والحصار مستمر
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Mon, 25 May 2026 01:01:08 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Will they or won't they?
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Mon, 25 May 2026 01:00:12 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Russian Offensive Campaign Assessment, May 24, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -38,26 +56,11 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## Nvidia says its forecast for $200 billion CPU market includes China
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Sun, 24 May 2026 11:00:51 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+## AgentMail Intel — 2026-05-25 05:01 UTC
 
----
-
-## Trump says Iran deal 'largely negotiated', would reopen Strait of Hormuz
-**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
-**Date:** Sun, 24 May 2026 06:31:06 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-
-## AgentMail Intel — 2026-05-25 03:01 UTC
+### The World: The Oscars start at Cannes
+**From:** The New York Times <nytdirect@nytimes.com>  
 
 ### Power On：Apple Watchに変革必要、画面なし健康デバイス台頭で
 **From:** Mark Gurman at Bloomberg <noreply@news.bloomberg.com>  
@@ -66,27 +69,3 @@ Apple Watchに変革を、Whoopやオーラ台頭でヘルスケアアプリに�
 ### 彭博财经早茶：美伊协议料指日可待；中国严打非法跨境证券交易
 **From:** Bloomberg <noreply@news.bloomberg.com>  
 Markets Daily China 中文版 Market Snapshot 标普500指数 7,473.47 +0.37% 安硕中国大盘股ETF 35.52 -1.03% 彭博美元指数 1,200.07 -0.23% 比特币 76,708.46 +0.19% Market data as of 06:58 pm EST.
-
-### Amplify Your Voice with Seatrade Maritime Podcast Powered by Posidonia!
-**From:** Seatrade Maritime News <sender@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134558&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=4ce1493107e54e379
-
-### Jardine eyes medical imaging bet, Iran deal inches closer
-**From:** Bloomberg Australia <noreply@news.bloomberg.com>  
-Jardine Eyes Medical Imaging Bet Get caught up ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Webinar Tomorrow | US–Iran: Closer to Peace or Another Impasse?
-**From:** Middle East Institute <events@mei.edu>  
-Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients. Email not displaying correctly? View it in yo
-
-### [Watch the video] Our values and what we do
-**From:** The Atlantic Council Team <marketingops@atlanticcouncil.org>  
-AC logo_donor button_sm logo (https://d598K304.na1.hubspotlinks.com/Ctc/W5+113/d598K304/VW5ZvJ3YcqXqW6xgf_p150bhGW8cYYgJ5PsBNXN5JQGlT3pyd0W7Y8-PT6lZ3ngW1XPtsL4kX6gVN5k3Cvlvxr-4W7wHkp98n8FtHW4S2Pbb1TQ7
-
-### 1日を始める前に読んでおきたいニュース5本
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Five Things to Start Your Day: Japanese Edition 日本語版 週末に話題になったニュースをお届けします。一日を始めるにあたって押さえておきたい5本はこちら。最新ニュースやマーケット情報はブルームバーグ日本語サイト（https://www.bloomberg.com/jp）でもご覧いただけます。米国とイランがホルムズ海峡再開に向けた合意に近づ
-
-### No hurry
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Trump Says He Won’t Rush a Deal With Iran Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
