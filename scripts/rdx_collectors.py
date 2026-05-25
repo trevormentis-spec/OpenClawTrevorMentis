@@ -17,6 +17,7 @@ Usage:
 from __future__ import annotations
 
 import datetime as dt
+import gzip
 import json
 import os
 import pathlib
@@ -413,7 +414,10 @@ def _brave_search(query: str, count: int = 5) -> list:
         url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count={count}"
         req = urllib.request.Request(url, headers={"Accept": "application/json", "X-Subscription-Token": key})
         with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())
+            raw = resp.read()
+            if raw[:2] == b'\x1f\x8b':
+                raw = gzip.decompress(raw)
+            data = json.loads(raw)
         return data.get("web", {}).get("results", [])
     except Exception as e:
         log(f"  Brave search failed: {e}")

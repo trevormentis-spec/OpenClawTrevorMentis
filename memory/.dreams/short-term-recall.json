@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T05:02:10.353Z",
+  "updatedAt": "2026-05-25T09:00:18.820Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -161,13 +161,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.656900329817407,
+      "totalScore": 15.656900329817407,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-25T05:02:10.353Z",
+      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -183,7 +183,8 @@
         "3c68673febfe",
         "859f13d9e78f",
         "f24e9c8723c1",
-        "a7caaf53a02e"
+        "a7caaf53a02e",
+        "b40e808eaeb3"
       ],
       "recallDays": [
         "2026-04-28",
@@ -215,13 +216,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 24,
+      "recallCount": 25,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 23.042409226740567,
+      "totalScore": 24.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-25T05:02:10.353Z",
+      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -246,7 +247,8 @@
         "859f13d9e78f",
         "69aac40b64bc",
         "f24e9c8723c1",
-        "a7caaf53a02e"
+        "a7caaf53a02e",
+        "b40e808eaeb3"
       ],
       "recallDays": [
         "2026-04-28",
@@ -595,13 +597,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.751788668739627,
+      "totalScore": 16.75178866873963,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-25T00:43:45.969Z",
+      "lastRecalledAt": "2026-05-25T06:44:29.306Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -618,7 +620,8 @@
         "50d95fe6b691",
         "f8d5cf7b3c91",
         "0a8ae9598584",
-        "1a26325ac2fd"
+        "1a26325ac2fd",
+        "dd22c622813d"
       ],
       "recallDays": [
         "2026-05-04",
@@ -652,13 +655,13 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "- **Marketing graphics generated:** Hero image (16:9 globe/intel overlay), Social square (1:1 6-region map) - **Content sourced from:** 3 May 2026 edition — covers Ukraine Urals strikes, Sahel JNIM-FLA, India-Pak nuclear, Iran War Day 65, Mexico cartels, Venezuela post-Maduro ## Moltbook Promotion — Global Security & Intelligence Brief Posted 3 promotional posts: 1. **builds** — \"Launched: Global Security & Intelligence Brief\" — product launch with pipeline overview and signup link → https://www.moltbook.com/p/acd22887-69ba-4d06-8e64-60df7f6c87e7 2. **agents** — \"Running a daily intelligence pipeline\" — methodology deep-dive (flagged as spam but still accruing engagement) → https://w",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.988748454529418,
+      "totalScore": 12.988748454529418,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:59:11.937Z",
-      "lastRecalledAt": "2026-05-12T09:00:06.507Z",
+      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
       "queryHashes": [
         "46ce8791f426",
         "29314a1ed0f7",
@@ -671,7 +674,8 @@
         "ebd4298379f6",
         "577729f1e069",
         "bfb778309dbc",
-        "859f13d9e78f"
+        "859f13d9e78f",
+        "b40e808eaeb3"
       ],
       "recallDays": [
         "2026-05-04",
@@ -679,7 +683,8 @@
         "2026-05-07",
         "2026-05-08",
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-25"
       ],
       "conceptTags": [
         "globe/intel",
@@ -1735,20 +1740,23 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 6,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-25T00:43:45.969Z",
+      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
         "f8d5cf7b3c91",
         "0a8ae9598584",
         "33046e596a0d",
-        "1a26325ac2fd"
+        "1a26325ac2fd",
+        "1e296c81b008",
+        "dd22c622813d",
+        "a83968718a46"
       ],
       "recallDays": [
         "2026-05-21",
@@ -1774,24 +1782,26 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "2026-05-16 08:04 UTC — Hourly market check (improvement_daemon.py --hourly): completed clean 2026-05-16 19:05 UTC — Gmail Intel Digest: processed 7 intelligence-labelled emails into news_raw.md 2026-05-16 19:27 UTC — Heartbeat: promoted Mexico analysis framework to MEMORY.md, committed news_raw.md",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-22T20:38:32.958Z",
-      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
+      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
       "queryHashes": [
         "d47a29803ed1",
         "df855bba4611",
         "69aac40b64bc",
         "b29c1c6a8236",
-        "6c65929eab81"
+        "6c65929eab81",
+        "b40e808eaeb3"
       ],
       "recallDays": [
         "2026-05-22",
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "improvement-daemon.py",
@@ -2070,16 +2080,19 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T14:08:59.640Z",
-      "lastRecalledAt": "2026-05-25T00:43:45.969Z",
+      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
       "queryHashes": [
         "0a8ae9598584",
-        "1a26325ac2fd"
+        "1a26325ac2fd",
+        "1e296c81b008",
+        "dd22c622813d",
+        "a83968718a46"
       ],
       "recallDays": [
         "2026-05-24",
@@ -2167,16 +2180,19 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-05-25T00:43:45.969Z",
+      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
       "queryHashes": [
         "33046e596a0d",
-        "1a26325ac2fd"
+        "1a26325ac2fd",
+        "1e296c81b008",
+        "dd22c622813d",
+        "a83968718a46"
       ],
       "recallDays": [
         "2026-05-24",

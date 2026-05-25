@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-25 05:01 UTC
+# Gmail Intel Digest — 2026-05-25 09:04 UTC
 
 ## ترامب: لا عجلة في التوصل لاتفاق مع إيران والحصار مستمر
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -57,15 +57,27 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 ---
 
 
-## AgentMail Intel — 2026-05-25 05:01 UTC
+## AgentMail Intel — 2026-05-25 09:05 UTC
+
+### Markets choose optimism on Iran
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Markets React With Optimism on US-Iran Deal Signals Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### Market Moves: Delivery Hero Jumps as Investors Bet on Sweetened Takeover Offer
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert Delivery Hero Jumps as Investors Bet on Sweetened Takeo
+
+### Market Moves: SoftBank Shares Hit Record High With Lift From OpenAI IPO Hopes
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert SoftBank Shares Hit Record High With Lift From OpenAI IP
+
+### Crude tanker trades rebalance, Time for owners to evacuate crew stranded in Hormuz stalemate
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134564&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=98592d4050204523b
+
+### The Middle East Defense Dispatch
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+This week's news and analysis from Breaking Defense. ___________________________________________________________________________________________________________________________ Gambit 6 | CCA: The ne
 
 ### The World: The Oscars start at Cannes
 **From:** The New York Times <nytdirect@nytimes.com>  
-
-### Power On：Apple Watchに変革必要、画面なし健康デバイス台頭で
-**From:** Mark Gurman at Bloomberg <noreply@news.bloomberg.com>  
-Apple Watchに変革を、Whoopやオーラ台頭でヘルスケアアプリに課題－Power On 登場から10年以上が経過したApple Watchは健康・フィットネス向けウエアラブル端末市場の競争激化で大きな転換を迫られている。 ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### 彭博财经早茶：美伊协议料指日可待；中国严打非法跨境证券交易
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Markets Daily China 中文版 Market Snapshot 标普500指数 7,473.47 +0.37% 安硕中国大盘股ETF 35.52 -1.03% 彭博美元指数 1,200.07 -0.23% 比特币 76,708.46 +0.19% Market data as of 06:58 pm EST.

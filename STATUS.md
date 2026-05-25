@@ -1,20 +1,20 @@
 # Trevor — Status
 
-*Generated: 2026-05-25 04:43 UTC (heartbeat)*
+*Generated: 2026-05-25 08:44 UTC (heartbeat)*
 
-## Heartbeat — 2026-05-25 04:43 UTC
+## Heartbeat — 2026-05-25 08:44 UTC
 
 **Pipeline:**
 - May 24 brief: ✅ Delivered retroactively 01:16 UTC (pipeline crashed during collection, analysis completed, quality gate 6/7, AgentMail)
 - May 23 brief: ✅ Delivered 22:14 UTC (quality gate 7/7, AgentMail)
-- May 25 brief: Not yet produced (early morning — expected later today)
+- May 25 brief: ⏳ Scheduled for 05:00 PT / 12:00 UTC (pipeline not yet triggered)
 
 **Issues:**
-- Brave Search: ⚠️ Broken May 23 (utf-8 decode 0x8b on all 12 queries), unavailable May 24
-- Feed rot: ⚠️ ~60+ RSS/feed failures (403/404/SSL/timeout) across both May 23-24 runs
+- Brave Search: ✅ FIXED 08:44 UTC — gzip decompression bug in 4 scripts (source_discovery, priority_triage, rdx_collectors, daily_newsletter_finder)
+- Feed rot: ⚠️ ~60+ RSS/feed failures (403/404/SSL/timeout) — ongoing source URL staleness, not blocking
 - Postdiction: ⚠️ `analyst` module not importable — using fallback gate
 - Calibration: ⚠️ Running accuracy 5.3% (5 evaluated, 0 correct, 5 unresolved)
-- Cost: ✅ $0.37 May 24, est. ~$5/mo DeepSeek
+- Cost: ✅ $0.37 May 24, est. ~$5/mo DeepSeek; DeepSeek balance API 401 (stale snapshot May 17)
 
 ## In-Flight Directives
 

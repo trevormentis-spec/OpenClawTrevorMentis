@@ -16,6 +16,7 @@ Output:
 from __future__ import annotations
 
 import datetime as dt
+import gzip
 import json
 import os
 import pathlib
@@ -93,7 +94,10 @@ def web_search(query: str, count: int = 5) -> list[dict]:
 
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read())
+            raw = resp.read()
+            if raw[:2] == b'\x1f\x8b':
+                raw = gzip.decompress(raw)
+            data = json.loads(raw)
             results = []
             for r in data.get("web", {}).get("results", []):
                 url_lower = r.get("url", "").lower()

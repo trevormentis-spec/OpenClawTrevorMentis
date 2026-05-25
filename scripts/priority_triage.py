@@ -238,7 +238,7 @@ def _brave_search(query: str, brave_key: str, timeout: int = 15) -> str | None:
     """Fallback Brave Search via API when Sonar fails.
     Returns concatenated title+snippet+url from the top results.
     """
-    import urllib.parse
+    import gzip, urllib.parse
 
     encoded = urllib.parse.quote(query)
     url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count=5"
@@ -247,7 +247,10 @@ def _brave_search(query: str, brave_key: str, timeout: int = 15) -> str | None:
         "Accept-Encoding": "gzip",
         "X-Subscription-Token": brave_key,
     })
-    resp = json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+    raw = urllib.request.urlopen(req, timeout=timeout).read()
+    if raw[:2] == b'\x1f\x8b':
+        raw = gzip.decompress(raw)
+    resp = json.loads(raw)
     results = resp.get("web", {}).get("results", [])
     if not results:
         return None
