@@ -5,3 +5,4 @@
 - [2026-05-12] - Running accuracy tracked: 0/20 correct, 0 incorrect, 20 unresolved (all ≤24h old) (source: 2026-05-12.md, confidence: medium)
 - [2026-05-20] - ❌ `stage2_cover.py` — **still needs refactoring** (was restored from git, has direct Opus API calls + wrong `__future__` import order) (source: 2026-05-20.md, confidence: medium)
 - [2026-05-22] {"type": "brain_maintenance", "timestamp": "2026-05-22T02:00:00Z", "findings": {"doctor": "ALL OK (1 warn: tiny chunks in TOOLS.md examples)", "index_freshness": "OK \u2014 built 2026-05-22T02:00:19,  (source: 2026-05-22.jsonl, confidence: medium)
+- [2026-05-24] **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication (source: 2026-05-24.md, confidence: medium)

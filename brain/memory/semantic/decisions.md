@@ -48,3 +48,4 @@
 - **[2026-05-21]** Sources list every day with provenance.
 - **[2026-05-21]** Newsletter recommendations at bottom of brief.
 - [2026-05-22] BLUF: Mock BLUF: a calibrated one-sentence headline judgment covering the most decision-relevant overnight development. (source: 2026-05-22.md, confidence: medium)
+- [2026-05-25] {"type": "brain_maintenance", "timestamp": "2026-05-25T02:02:06.364748+00:00", "findings": {"doctor": "ALL OK \u2014 1 minor warn (2 tiny chunks in TOOLS.md examples)", "index": "fresh \u2014 built 20 (source: 2026-05-25.jsonl, confidence: medium)

@@ -1,15 +1,15 @@
 {
-  "last_dream": "2026-05-24T10:00:13.424016+00:00",
-  "last_memory_md_lines": 129,
+  "last_dream": "2026-05-25T10:00:14.772326+00:00",
+  "last_memory_md_lines": 130,
   "last_results": {
-    "files_scanned": 13,
-    "total_signals": 16,
-    "entries_promoted": 0,
-    "contradictions_resolved": 0,
+    "files_scanned": 15,
+    "total_signals": 18,
+    "entries_promoted": 3,
+    "contradictions_resolved": 3,
     "relative_dates_normalized": 0,
     "duplicates_removed": 0,
-    "memory_md_before": 129,
-    "memory_md_after": 129,
+    "memory_md_before": 130,
+    "memory_md_after": 130,
     "entries_archived": 0,
     "index_rebuilt": true
   }

@@ -180,7 +180,12 @@ def check_pipeline(state: dict) -> list[str]:
         except Exception as e:
             findings.append(f"⚠️ Brief exists but couldn't parse: {e}")
     else:
-        findings.append(f"🔴 No brief found for {today}")
+        now_utc = datetime.now(timezone.utc)
+        brief_deadline = datetime(now_utc.year, now_utc.month, now_utc.day, 12, 0, 0, tzinfo=timezone.utc)
+        if now_utc < brief_deadline:
+            findings.append(f"ℹ️ No brief found for {today} (scheduled for 12:00 UTC)")
+        else:
+            findings.append(f"🔴 No brief found for {today} — past 12:00 UTC deadline")
 
     # Check delivery — try log file first, then AgentMail inbox
     delivery_confirmed = False

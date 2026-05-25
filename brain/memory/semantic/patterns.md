@@ -11,3 +11,4 @@
 - [2026-05-21] Copernicus Data Space: auth at identity.dataspace.copernicus.eu (not services.sentinel-hub.com).
 - [2026-05-21] Sources in .env are gitignored. Cron scripts source .env.
 - [2026-05-21] Reports are logged to memory/YYYY-MM-DD.md for search. Key judgments and summaries included.
+- [2026-05-24] - API key still valid (same as before) (source: 2026-05-24.md, confidence: medium)

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T09:00:18.820Z",
+  "updatedAt": "2026-05-25T09:43:46.019Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -597,13 +597,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.75178866873963,
+      "totalScore": 17.75178866873963,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-25T06:44:29.306Z",
+      "lastRecalledAt": "2026-05-25T09:43:46.019Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -621,7 +621,8 @@
         "f8d5cf7b3c91",
         "0a8ae9598584",
         "1a26325ac2fd",
-        "dd22c622813d"
+        "dd22c622813d",
+        "3d62a3a5d314"
       ],
       "recallDays": [
         "2026-05-04",
@@ -1740,13 +1741,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
+      "lastRecalledAt": "2026-05-25T09:43:46.019Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1756,7 +1757,8 @@
         "1a26325ac2fd",
         "1e296c81b008",
         "dd22c622813d",
-        "a83968718a46"
+        "a83968718a46",
+        "3d62a3a5d314"
       ],
       "recallDays": [
         "2026-05-21",
@@ -2080,19 +2082,20 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T14:08:59.640Z",
-      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
+      "lastRecalledAt": "2026-05-25T09:43:46.019Z",
       "queryHashes": [
         "0a8ae9598584",
         "1a26325ac2fd",
         "1e296c81b008",
         "dd22c622813d",
-        "a83968718a46"
+        "a83968718a46",
+        "3d62a3a5d314"
       ],
       "recallDays": [
         "2026-05-24",
@@ -2180,19 +2183,20 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-05-25T07:14:06.784Z",
+      "lastRecalledAt": "2026-05-25T09:43:46.019Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
         "1e296c81b008",
         "dd22c622813d",
-        "a83968718a46"
+        "a83968718a46",
+        "3d62a3a5d314"
       ],
       "recallDays": [
         "2026-05-24",
