@@ -5897,6 +5897,141 @@
       "discovered": "2026-05-25",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "News: U.S. and World News Headlines : NPR",
+      "type": "Blog/Website",
+      "focus": "Photo courtesy of the Jewish Federations of North America hide caption toggle caption Photo courtesy of the Jewish Federations of North America \u00b7 May ",
+      "url": "https://www.npr.org/sections/news",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Security Challenges in the Caribbean Amid the U.S. Military Deployment | CSIS",
+      "type": "Blog/Website",
+      "focus": "In the case of Saint Lucia, <strong>the contribution of the Regional Security System (RSS) was highlighted as a factor in helping to get crime under c",
+      "url": "https://www.csis.org/analysis/security-challenges-caribbean-amid-us-military-deployment",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "The Caribbean: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Please join CSIS Americas and the Institute of International Education (IIE) for a conversation on the role of educational exchanges in strengthening ",
+      "url": "https://www.csis.org/regions/americas/caribbean",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "The Caribbean under pressure: What role for Europe? | European Union Institute for Security Studies",
+      "type": "Blog/Website",
+      "focus": "<strong>The Caribbean region is experiencing its most severe geopolitical turmoil in decades</strong>. The second Trump administration has proclaimed ",
+      "url": "https://www.iss.europa.eu/publications/briefs/caribbean-under-pressure-what-role-europe",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "south_america"
     }
   ],
   "moltbook_sources": [

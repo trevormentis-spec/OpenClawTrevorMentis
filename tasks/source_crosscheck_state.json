@@ -325,7 +325,31 @@
         "Trump tells US negotiators 'not to rush' into deal with Iran",
         "UK braces for hottest May day on record as 30C heat continues"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-26T03:02:56.383802+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 34,
+      "checked_at": "2026-05-26T03:02:56.676063+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "US military says it has launched new strikes on southern Iran",
+        "Hottest May day on record in UK as temperatures pass 34C",
+        "Social media as bad for young people as smoking, top doctors say"
+      ]
     }
   ],
-  "last_updated": "2026-05-25T03:02:59.340344+00:00"
+  "last_updated": "2026-05-26T03:02:56.676259+00:00"
 }
