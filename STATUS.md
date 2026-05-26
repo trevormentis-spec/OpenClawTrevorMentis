@@ -1,28 +1,24 @@
 # Trevor — Status
 
-*Generated: 2026-05-25 20:19 UTC (heartbeat)*
+*Generated: 2026-05-26 03:42 UTC (heartbeat)*
 
-## Heartbeat — 2026-05-25 20:19 UTC
+## Heartbeat — 2026-05-26 03:42 UTC
 
-**Cycle:** ✅ Autonomous cycle + fixes ran successfully (11 files auto-committed)
+**Cycle:** ✅ Autonomous cycle + fixes ran successfully (14 files auto-committed)
 
-**AgentMail (since 15:50):**
-- Breaking Defense Military Space weekly — 2 intel stories:
-  - "Boots on the moon needed to beat 'belligerent' China: Mitchell Institute" — China's military-led human space flight positioning PLA for lunar advantage (LEO ground station relevance)
-  - "How drones can navigate without GPS" — GPS-denied navigation
-- NYT Global Update: Strait of Hormuz deal — 1,500 ships backlogged after ~3 months of closure, complicated reopening process
-- NYT Global Update: UK first heat wave — temps could reach 35°C, potential May record
-- SpaceNews: Open Cosmos CEO interview on finding a space niche
-- Brookings: US-Mexico relations event
-- LEO brief: Sent to Roderick 16:01 UTC ✅
+**Fixes applied:**
+- ✅ DeepSeek API key rotated in `.bashrc` (was stale `sk-a42a...` → current `sk-43a...`)
+- ✅ DeepSeek fallback key updated in `scripts/deepseek_monitor.py`
+- ✅ Stale key in `openclaw.json` `models.providers.deepseek.apiKey` updated
+- Balance API now working: $70.56 ✅
 
-**Cost:** $84.45 balance, $0.43/day, 277 days runway ✅
+**Cost:** $70.56 balance, ~$0.26/day (7d avg), ~271 days runway ✅
 **QC:** No active alert ✅
 **Brief quality:** May 25 — V4 Pro (tier-2) + Opus 4.7 (tier-1), gate BLOCKED→fixed→7/7 ✅
 
-**Unchanged from 15:50:**
-- 🔴 Landing page deploy: GitHub PAT rejected — needs Roderick token rotation (landing page deploy broken since May 25 pipeline)
-- ⚠️ Feed rot: ~60+ RSS/feed failures ongoing (403/404/SSL/timeout) — feed_health_audit.py available but runs slow
+**Unchanged:**
+- 🔴 Landing page deploy: GitHub PAT rejected — needs Roderick token rotation
+- ⚠️ Feed rot: ~60+ RSS/feed failures ongoing (403/404/SSL/timeout)
 - ⚠️ Calibration: 0/5 correct, 5.3% accuracy — 5 postdictions unresolved
 - ⚠️ Postdiction: analyst module import failing, using fallback gate
 - ⚠️ QC: Opus QC PARSE_ERROR on last run (no action taken)
