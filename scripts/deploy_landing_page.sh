@@ -53,7 +53,7 @@ echo "Issue: $ISSUE" | tee -a "$LOG"
 echo "PDF: ${PDF_PATH:-none}" | tee -a "$LOG"
 
 # ── Extract BLUF summaries to temp files ──
-THEATRES=("europe" "middle_east" "africa" "asia" "north_america" "south_america" "global_finance")
+THEATRES=("europe" "middle_east" "north_africa" "sub_saharan_africa" "east_asia" "south_asia" "north_america" "south_america" "oceania")
 THEATRE_LABELS=("Europe" "Middle East" "Africa" "Asia" "North America" "South America" "Global Finance")
 THEATRE_ICONS=("🇪🇺" "🌍" "🌍" "🌏" "🌎" "🌎" "💰")
 

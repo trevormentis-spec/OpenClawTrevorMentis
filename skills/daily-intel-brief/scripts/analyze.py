@@ -40,7 +40,7 @@ OPENROUTER_PATH = "/v1/chat/completions"
 
 REGIONS_ORDER = [
     "europe", "north_america", "central_america_caribbean", "south_america",
-    "africa", "middle_east", "central_asia", "south_east_asia", "east_asia", "south_asia",
+    "north_africa", "sub_saharan_africa", "middle_east", "central_asia", "south_east_asia", "east_asia", "south_asia",
     "oceania",
     "prediction_markets",
 ]
@@ -50,7 +50,8 @@ REGION_LABEL = {
     "north_america": "North America",
     "central_america_caribbean": "Central America & Caribbean",
     "south_america": "South America",
-    "africa": "Africa",
+    "north_africa": "North Africa",
+    "sub_saharan_africa": "Sub-Saharan Africa",
     "middle_east": "Middle East",
     "central_asia": "Central Asia",
     "south_east_asia": "South East Asia",
@@ -63,7 +64,7 @@ REGION_LABEL = {
 REGION_SHORT = {
     "europe": "EU", "north_america": "NA",
     "central_america_caribbean": "CAC", "south_america": "SA",
-    "africa": "AF", "middle_east": "ME",
+    "north_africa": "NAF", "sub_saharan_africa": "SSA", "middle_east": "ME",
     "central_asia": "CAS", "south_east_asia": "SEA",
     "east_asia": "EAS", "south_asia": "SAS",
     "oceania": "OC",

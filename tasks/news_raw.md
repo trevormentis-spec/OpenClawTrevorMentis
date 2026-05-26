@@ -1,4 +1,56 @@
-# Gmail Intel Digest — 2026-05-26 21:01 UTC
+# Gmail Intel Digest — 2026-05-26 23:01 UTC
+
+## REGISTRATION IS OPEN
+**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
+**Date:** Tue, 26 May 2026 23:00:11 +0000
+**Type:** newsletter | **Importance:** medium
+
+View this email in your browser (https://mailchi.mp/thecipherbrief/registration-is-open?e=829f311d89)
+https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=24e1aa883e-EMAIL_CAMPAIGN_2026_05_26_07_20&utm_medium=email&utm_term=0_-24e1aa883e-547824188&mc_cid=24e1aa883e&mc_eid=UNIQID
+
+THE CIPHER BRIEF THREAT CONFERENCE
+October 25-28, 2026
+www.tcbconference.com (http://thecipherbrief.com/?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=24e1aa883
+
+---
+
+## イスラエル、ヒズボラ攻撃強化　レバノンで空爆120回【【5月 27日】
+**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
+**Date:** Tue, 26 May 2026 18:31:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+
+---
+
+## Editors’ Picks: Xi ascendant
+**From:** Foreign Policy <newsletters@foreignpolicy.com>
+**Date:** Tue, 26 May 2026 18:00:21 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+
+---
+
+## Apply for up to 1 million free geocoding API requests for testing and evaluation
+**From:** Team Mapbox <hello@mail.mapbox.com>
+**Date:** Tue, 26 May 2026 17:09:32 -0400
+**Type:** unknown | **Importance:** low
+
+email_banner (https://d60YtG04.na1.hubspotlinks.com/Ctc/GK+113/d60YtG04/MVnHSWGQBZZW7BX0cc1_f_bRW3trWRD5PxRH7N3JhCFP3lcq-W69sMD-6lZ3mjW40sC0h4pZ5vPW2m-KV07QGD_1W3vh1f17QtGHmN1qbmrQ_bmzsW5L2Njg8vQm-BW5NH_Rj3x_7DjMXNsjWjtXScW7j3RNn5dZw_YN2sJMTThCtPrN55MZhHGQqdqW3n_FrL3gD0N_W3_TWz-40lslRVq3jS53MbZHPW918_1_13LkP5W1xGS5d7xthv1W48_FJc3ng6QpW3CjG5S7vCLRbW1kdLT43h2X3rW39n_d05qB9GZW7j_h1T7SwjYMf7B-_Zv04 )
+
+EML-Geocoding-asset-tracking-05-21-2026 (https://d60YtG04.na1.hubspotlinks.com/Ctc/GK+113/d60YtG0
+
+---
+
+## The AI train rolls on
+**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 17:02:04 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Skipping chemo in high-risk breast cancer
 **From:** Reuters Health Rounds <healthrounds@thomsonreuters.com>
@@ -40,32 +92,42 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 ---
 
 
-## AgentMail Intel — 2026-05-26 21:01 UTC
+## AgentMail Intel — 2026-05-26 23:01 UTC
 
-### Washington Edition: Texas makes a choice
+### Fresh Hormuz tensions, CBA boss on AI
+**From:** Bloomberg Australia <noreply@news.bloomberg.com>  
+CBA Chief Comyn Reckons Firms Need to Be Straight With Staff on AI Comyn urges honesty on AI,; two wars rage on ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### The Evening: Republican showdown in Texas
+**From:** The New York Times <nytdirect@nytimes.com>  
+
+### More ways to connect with us
+**From:** The Brookings Institution <info@brookings.edu>  
+The Brookings Institution (https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VWyP3n8V-QYLW4q9Vr-3Dwqh2W7qxXbD5PxV83N8fXWzY3pr48W69sMD-6lZ3pkW4gycVQ8FN_KKW2K2XVx1_Qv9QW2HNjSL8bbvSdW8tqxhp79BbHyW46wN
+
+### Hope and hostility
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Texas Republicans Make Their Choice in Bitter Senate Contest GOP Senate primary runoff ends today ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+US Touts Iran Deal Prospects Even as Tensions Fester Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Trump’s Iran talks put defense hawks in a jam
-**From:** POLITICO's National Security Daily <nationalsecuritydaily@email.politico.com>  
-From the SitRoom to the E-Ring, the inside scoop on defense, national security and foreign policy. May 26, 2026 View in browser By Connor O'Brien and Giselle Ruhiyyih Ew
+### Canada Daily: Berlin calling
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Germany Calls for Energy and This Time, Canada Has an Answer Plus: Worried about the job market ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Happening Now | Who Will Make Money on AI?
-**From:** Center for a New American Security <contact@cnas.org>  
-Virtual Event Happening Now Tuesday, May 26, from 3:30 p.m.-4:30 p.m. ET WATCH LIVE [https://events.cnas.org/whowillmakemoneyonai] Watch Live [https://events.cnas.org/whowillmakemoneyonai] About
+### Sandals with “French-girl-cool vibes”
+**From:** NYT Wirecutter <nytdirect@nytimes.com>  
 
-### The Asia/Pacific Defense Dispatch
-**From:** Breaking Defense Asia / Pacific <newsletters@breakingdefense.com>  
-This week's news and analysis from Breaking Defense. ______________________________________________________________________________________________________________________________ Breaking Defense (h
+### For you: Today’s news, curated just for you
+**From:** Bloomberg <subscriptions@message.bloomberg.com>  
+See what everyone's reading today. <https://www.bloomberg
 
-### TNSR Newsletter: Tackling Misconceptions About AI Use in the Military
-**From:** Texas National Security Review <accounts@tnsr.org>  
-https://tnsr.org ** 5.26.2026 ------------------------------------------------------------ ** What’s New in the Review? ------------------------------------------------------------ https://tnsr.or
+### AI has a lot of people yearning for the 1990s
+**From:** Bloomberg Opinion <noreply@news.bloomberg.com>  
+Opinion Today Pope Leo is not about the robot life. View in browser <https://sli.bloomberg.com/click?s=1149039&li=18290573&m=758937c56ee
 
-### An Investment in Our Future
-**From:** Lawfare <lawfare@substack.com>  
-View this post on the web at https://lawfare.substack.com/p/an-investment-in-our-future Dear Lawfare Readers and Listeners, My journey to our masthead was more circuitous than most. Less than a year
+### The space race in stocks
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Investors Are All-In On Space Stocks After SpaceX IPO Evening Briefing Americas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Money Stuff: Index Funds Can’t Say No to SpaceX
-**From:** Matt Levine <noreply@news.bloomberg.com>  
-Money Stuff Carbon, Survivor, Tatis, lists, books. View in browser <https://sli.bloomberg.com/click?s=1149004&li=18287068&m=758937c56eef
+### New Trade Guys Episode: How to Win a Trade War with Chad Bown and Soumaya Keynes
+**From:** CSIS Trade Guys <econ@csis.org>  
+96 Bill and Scott welcome Chad Bown (Reginald Jones Senior Fellow, Peterson Institute for International Economics) and Soumaya Keynes (Economics Columnist, Financial Times) to discuss the issues rais

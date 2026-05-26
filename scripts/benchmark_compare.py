@@ -135,7 +135,8 @@ def extract_region_coverage(text: str) -> dict[str, bool]:
         "middle_east": ["middle east", "iran", "israel", "gaza", "hormuz", "lebanon", "hezbollah"],
         "asia": ["asia", "china", "xi", "taiwan", "india", "modi", "south china", "sindoor"],
         "south_america": ["south america", "venezuela", "maduro", "machado", "brazil", "argentina"],
-        "africa": ["africa", "sahel", "mali", "sudan", "niger", "bamako"],
+        "north_africa": ["north africa", "maghreb", "sahel", "mali", "libya", "algiers"],
+        "sub_saharan_africa": ["sub-saharan africa", "west africa", "nigeria", "kenya", "south africa"],
         "global_finance": ["market", "trade", "oil", "price", "polymarket", "kalshi", "ceasefire"],
     }
     t = text.lower()

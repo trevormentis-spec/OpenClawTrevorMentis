@@ -113,7 +113,7 @@ def get_target_regions() -> list[dict]:
             return []
         # Fall back to regions with lowest coverage
         targets = []
-        for region in ["south_central_america", "africa", "asia", "europe"]:
+        for region in ["south_central_america", "north_africa", "sub_saharan_africa", "asia", "europe"]:
             activity = coll.get("region_activity", {}).get(region, {})
             score = activity.get("smoothed_score", 0)
             if score < 5:
@@ -239,8 +239,12 @@ def launch_campaign(region: str, priority: int, reason: str,
             "south_central_america": [
                 ("MercoPress", "https://en.mercopress.com/rss/news", "south_central_america"),
             ],
-            "africa": [
-                ("AllAfrica", "https://allafrica.com/tools/headlines/rss/latest/headlines.xml", "africa"),
+            "north_africa": [
+                ("North Africa Post", "https://northafricapost.com/feed", "north_africa"),
+                ("Morocco World News", "https://www.moroccoworldnews.com/feed", "north_africa"),
+            ],
+            "sub_saharan_africa": [
+                ("AllAfrica", "https://allafrica.com/tools/headlines/rss/latest/headlines.xml", "sub_saharan_africa"),
             ],
         }
         campaign_feeds = default_feeds.get(region, [])

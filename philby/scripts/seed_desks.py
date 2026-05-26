@@ -27,6 +27,79 @@ PHILBY_CONFIG = REPO / "philby" / "desks" / "philby-config.json"
 # Seed narratives by desk
 # Each narrative: {id, confidence, trend, evidence_for, evidence_against, catalysts, reasoning, resolution_date}
 SEED_NARRATIVES = {
+    "north_africa": [
+        {
+            "id": "north_africa_sahel_insurgency",
+            "confidence": 68,
+            "trend": "upward",
+            "evidence": {
+                "for": [
+                    {"source": "Crisis Group Sahel", "detail": "Jihadi expansion into coastal West Africa accelerating"},
+                    {"source": "ACLED data", "detail": "Violent events up 22% YoY in Sahel region"},
+                ],
+                "against": [
+                    {"source": "French drawdown", "detail": "Reduced Western presence creating intelligence gaps"},
+                ],
+            },
+            "catalysts": ["JNIM attacks", "Burkina Faso junta", "Mali-Russia ties"],
+            "last_reasoning": "Sahel jihadi groups expand southward into coastal states. French withdrawal reduces ISR coverage. Wagner/RAF presence in Mali/Sahel sustains juntas but does not reduce insurgent capability.",
+            "resolution_date": "2026-12-31T14:00:00Z",
+        },
+        {
+            "id": "north_africa_energy_leverage",
+            "confidence": 72,
+            "trend": "upward",
+            "evidence": {
+                "for": [
+                    {"source": "Algeria Sonatrach", "detail": "Gas exports to Southern Europe up 18% in 2026"},
+                    {"source": "Egypt LNG", "detail": "Damietta and Idku LNG terminals operating at capacity"},
+                ],
+                "against": [
+                    {"source": "EU diversification", "detail": "Renewables and Norwegian gas reduce dependence on North African supply"},
+                ],
+            },
+            "catalysts": ["EU winter demand", "Algerian production", "Libyan instability"],
+            "last_reasoning": "North Africa's role as Europe's alternative gas supplier has structurally increased since 2022. Algeria and Egypt are the key beneficiaries. This gives them diplomatic leverage that persists beyond the immediate energy crisis.",
+            "resolution_date": "2026-12-31T14:00:00Z",
+        },
+    ],
+    "sub_saharan_africa": [
+        {
+            "id": "sub_saharan_africa_great_power_competition",
+            "confidence": 65,
+            "trend": "upward",
+            "evidence": {
+                "for": [
+                    {"source": "Russia Africa Corps", "detail": "Russian military deployments expanding across Sahel and Central Africa"},
+                    {"source": "China BRI", "detail": "Chinese infrastructure lending to Africa reached new highs in 2025-26"},
+                ],
+                "against": [
+                    {"source": "US strategy", "detail": "US AFRICOM repositioning to counter Russian/Chinese influence"},
+                ],
+            },
+            "catalysts": ["Russia Africa Corps", "China FOCAC", "US counterterrorism"],
+            "last_reasoning": "Great-power competition in Sub-Saharan Africa is intensifying as Russia expands military footprint and China deepens economic engagement. The US is repositioning but has lost ground in Sahel states.",
+            "resolution_date": "2026-12-31T14:00:00Z",
+        },
+        {
+            "id": "sub_saharan_africa_democratic_backsliding",
+            "confidence": 70,
+            "trend": "upward",
+            "evidence": {
+                "for": [
+                    {"source": "Marshall Center", "detail": "Multiple coup states show no timeline for civilian transition"},
+                    {"source": "Election watch", "detail": "Electoral integrity declining in Kenya, Nigeria, DRC"},
+                ],
+                "against": [
+                    {"source": "Regional pushback", "detail": "ECOWAS and AU sanctions regimes maintain pressure on coup juntas"},
+                ],
+            },
+            "catalysts": ["Coup transitions", "Election cycles", "ECOWAS policy"],
+            "last_reasoning": "The coup belt across West and Central Africa shows no reversal trend. Juntas consolidate power while ECOWAS sanctions fatigue sets in. Democratic backsliding in previously stable states (Kenya) adds a second vector.",
+            "resolution_date": "2026-12-31T14:00:00Z",
+        },
+    ],
+
     "ukraine": [
         {
             "id": "ukraine_ceasefire_prospects",

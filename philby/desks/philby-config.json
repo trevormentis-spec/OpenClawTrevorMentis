@@ -1,18 +1,32 @@
 {
   "philby_version": 1,
   "system_name": "Philby",
-  "system_description": "Agent-readable intelligence platform — structured KJ feed with topic desk scoping",
+  "system_description": "Agent-readable intelligence platform \u2014 structured KJ feed with topic desk scoping",
   "components": [
-    {"name": "KJ Feed", "phase": 1, "status": "active"},
-    {"name": "I&W Triggers", "phase": 2, "status": "active"},
-    {"name": "Topic Desks", "phase": 3, "status": "active"}
+    {
+      "name": "KJ Feed",
+      "phase": 1,
+      "status": "active"
+    },
+    {
+      "name": "I&W Triggers",
+      "phase": 2,
+      "status": "active"
+    },
+    {
+      "name": "Topic Desks",
+      "phase": 3,
+      "status": "active"
+    }
   ],
   "desks": {
     "iran": {
       "id": "iran",
       "name": "Iran Desk",
       "description": "Nuclear deal, regional posture, Strait of Hormuz, IRGC activities",
-      "narrative_patterns": ["iran_"],
+      "narrative_patterns": [
+        "iran_"
+      ],
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
@@ -22,7 +36,9 @@
       "id": "ukraine",
       "name": "Ukraine Desk",
       "description": "Conflict dynamics, ceasefire prospects, European security, energy impacts",
-      "narrative_patterns": ["ukraine_"],
+      "narrative_patterns": [
+        "ukraine_"
+      ],
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
@@ -32,7 +48,9 @@
       "id": "us_china",
       "name": "US-China Desk",
       "description": "Taiwan, tech decoupling, trade tensions, South China Sea",
-      "narrative_patterns": ["us_china_"],
+      "narrative_patterns": [
+        "us_china_"
+      ],
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
@@ -42,7 +60,11 @@
       "id": "cartel",
       "name": "Cartel Security Desk",
       "description": "Mexico cartel dynamics, fentanyl trafficking, border security",
-      "narrative_patterns": ["cartel_", "mexico_", "fentanyl_"],
+      "narrative_patterns": [
+        "cartel_",
+        "mexico_",
+        "fentanyl_"
+      ],
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
@@ -52,7 +74,41 @@
       "id": "energy",
       "name": "Energy Security Desk",
       "description": "Oil markets, supply disruptions, energy transition, strategic resources",
-      "narrative_patterns": ["energy_", "oil_", "brent_", "critical_"],
+      "narrative_patterns": [
+        "energy_",
+        "oil_",
+        "brent_",
+        "critical_"
+      ],
+      "keyword_filters": [],
+      "model_tier": "flash",
+      "delivery_target": "trevor_mentis@agentmail.to",
+      "seeded": true
+    },
+    "north_africa": {
+      "id": "north_africa",
+      "name": "North Africa Desk",
+      "description": "Maghreb, Sahel, Egypt, Libya, Tunisia \u2014 jihadi insurgencies, state collapse, migration, energy transit",
+      "narrative_patterns": [
+        "north_africa_",
+        "sahel_",
+        "maghreb_"
+      ],
+      "keyword_filters": [],
+      "model_tier": "flash",
+      "delivery_target": "trevor_mentis@agentmail.to",
+      "seeded": true
+    },
+    "sub_saharan_africa": {
+      "id": "sub_saharan_africa",
+      "name": "Sub-Saharan Africa Desk",
+      "description": "West, East, Central, Southern Africa \u2014 governance, insurgency, great-power competition, resource politics",
+      "narrative_patterns": [
+        "sub_saharan_africa_",
+        "west_africa_",
+        "east_africa_",
+        "southern_africa_"
+      ],
       "keyword_filters": [],
       "model_tier": "flash",
       "delivery_target": "trevor_mentis@agentmail.to",

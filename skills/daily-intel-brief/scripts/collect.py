@@ -1314,10 +1314,15 @@ SOCIAL_MEDIA_QUERIES = {
         "site:reddit.com Iran war geopolitics discussion",
         "site:x.com strait of hormuz tanker traffic",
     ],
-    "africa": [
-        "site:twitter.com Africa security conflict latest",
+    "north_africa": [
+        "site:twitter.com North Africa security latest",
+        "site:reddit.com North Africa geopolitics",
+        "site:x.com Maghreb Sahel security",
+    ],
+    "sub_saharan_africa": [
+        "site:twitter.com Sub-Saharan Africa security conflict",
         "site:reddit.com Africa geopolitics",
-        "site:x.com Sahel coup OR terrorism",
+        "site:x.com West Africa coup OR terrorism",
     ],
     "south_america": [
         "site:twitter.com Latin America politics security latest",

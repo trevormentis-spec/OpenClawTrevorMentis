@@ -3,711 +3,434 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Philby — Daily Intelligence Brief | May 26, 2026</title>
+<title>Daily Intelligence Brief — Trevor | May 26, 2026</title>
 <style>
-/* ── Reset & Base ── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0e17;
-  --bg-card:#0f1524;
-  --bg-card-hover:#141c30;
-  --border:#1a2540;
-  --text:#e2e8f0;
-  --text-muted:#7b8cae;
-  --accent:#3b82f6;
-  --accent-glow:rgba(59,130,246,0.15);
-  --green:#22c55e;
-  --amber:#f59e0b;
-  --red:#ef4444;
-  --purple:#a855f7;
-  --cyan:#06b6d4;
-  --font:'SF Pro Display','Inter','Segoe UI',system-ui,-apple-field,sans-serif;
-  --font-mono:'SF Mono','JetBrains Mono','Fira Code',monospace;
+  --bg0:#070A12; --bg1:#0A0E17; --bg2:#0E1425;
+  --panel: rgba(14,20,37,.62); --panel-b: rgba(10,14,23,.78);
+  --border: rgba(226,232,240,.10); --border2: rgba(226,232,240,.16);
+  --text:#E6EDF7; --muted:#A6B2CC; --muted2:#7E8BAA;
+  --teal:#5EEAD4; --blue:#60A5FA; --purple:#A78BFA;
+  --rose:#FB7185; --amber:#FBBF24; --green:#34D399;
+  --shadow:0 12px 40px rgba(0,0,0,.45);
+  --shadow-glow:0 0 0 1px rgba(94,234,212,.10), 0 0 40px rgba(94,234,212,.12);
+  --radius-xl:18px; --radius-lg:14px; --radius-md:12px; --radius-sm:10px;
+  --grid:1200px; --gutter:20px;
+  --ease:cubic-bezier(.2,.9,.2,1); --dur-2:240ms;
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"SF Mono","JetBrains Mono","Fira Code",monospace;
 }
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+
 body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--font);
-  line-height:1.6;
-  min-height:100vh;
-  overflow-x:hidden;
+  background:var(--bg0); color:var(--text); font-family:var(--font);
+  background-image:
+    radial-gradient(1200px 600px at 18% -10%, rgba(96,165,250,.16), transparent 60%),
+    radial-gradient(900px 500px at 72% 0%, rgba(94,234,212,.14), transparent 58%),
+    radial-gradient(800px 500px at 70% 90%, rgba(167,139,250,.10), transparent 62%);
+  letter-spacing:-0.01em; line-height:1.5; min-height:100vh;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:44px 44px; opacity:.12;
+  mask-image:radial-gradient(800px 500px at 50% 20%,#000,transparent 68%);
+  -webkit-mask-image:radial-gradient(800px 500px at 50% 20%,#000,transparent 68%);
 }
 
-/* ── Grid Background ── */
-body::before{
-  content:'';
-  position:fixed;
-  inset:0;
-  background-image:
-    linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
-  background-size:60px 60px;
-  pointer-events:none;
-  z-index:0;
+/* ── Header ── */
+.top-bar{
+  position:sticky; top:0; z-index:100;
+  background:rgba(10,14,23,.82); backdrop-filter:blur(24px) saturate(120%);
+  -webkit-backdrop-filter:blur(24px) saturate(120%);
+  border-bottom:1px solid var(--border);
 }
+.top-inner{
+  max-width:var(--grid); margin:0 auto; padding:0 var(--gutter);
+  display:flex; align-items:center; justify-content:space-between; height:56px;
+}
+.top-logo{font-size:15px;font-weight:780;letter-spacing:-0.02em}
+.top-logo span{color:var(--teal)}
+.top-meta{display:flex;gap:16px;align-items:center;font-size:12px;color:var(--muted)}
+.top-meta .pill{font-size:11px;padding:4px 10px;border-radius:999px;background:rgba(94,234,212,.08);border:1px solid rgba(94,234,212,.18);color:var(--teal)}
+
+.main{max-width:var(--grid);margin:0 auto;padding:20px var(--gutter) 60px;position:relative;z-index:1}
 
 /* ── Hero ── */
 .hero{
-  position:relative;
-  min-height:70vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  border-bottom:1px solid var(--border);
-  z-index:1;
+  border-radius:var(--radius-xl); border:1px solid var(--border); min-height:260px;
+  padding:28px 32px; margin-bottom:18px; position:relative; overflow:hidden;
+  background:linear-gradient(180deg,rgba(16,24,45,.72),rgba(10,14,23,.78)),
+    radial-gradient(900px 400px at 15% 0%,rgba(94,234,212,.14),transparent 60%),
+    radial-gradient(800px 400px at 80% 0%,rgba(96,165,250,.12),transparent 60%);
+  box-shadow:var(--shadow);
 }
-.hero-bg{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0.35;
-  mask-image:linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 70%, transparent 100%);
-  -webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 70%, transparent 100%);
+.hero::after{
+  content:""; position:absolute; inset:0;
+  background:repeating-linear-gradient(180deg,rgba(255,255,255,.04) 0 1px,transparent 1px 10px);
+  opacity:.08; pointer-events:none;
 }
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg, rgba(10,14,23,0.1) 0%, var(--bg) 100%);
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-  text-align:center;
-  padding:2rem;
-}
-.hero-label{
-  font-size:0.75rem;
-  font-weight:600;
-  letter-spacing:0.3em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:1rem;
-}
-.hero-date{
-  font-size:0.85rem;
-  color:var(--text-muted);
-  margin-bottom:2rem;
-  font-family:var(--font-mono);
-}
-.hero-bluf{
-  font-size:clamp(1.1rem, 2.5vw, 1.6rem);
-  line-height:1.5;
-  color:var(--text);
-  font-weight:450;
-  max-width:750px;
-  margin:0 auto;
-}
-.hero-bluf strong{color:var(--accent);font-weight:500}
-.hero-stats{
-  display:flex;
-  gap:2.5rem;
-  justify-content:center;
-  margin-top:2.5rem;
-  flex-wrap:wrap;
-}
-.hero-stat{
-  text-align:center;
-}
-.hero-stat-value{
-  font-size:1.5rem;
-  font-weight:600;
-  font-family:var(--font-mono);
-  color:var(--accent);
-}
-.hero-stat-label{
-  font-size:0.7rem;
-  text-transform:uppercase;
-  letter-spacing:0.08em;
-  color:var(--text-muted);
-  margin-top:0.25rem;
-}
-
-/* ── Navigation ── */
-.nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(10,14,23,0.85);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
-  padding:0 1rem;
-}
-.nav-inner{
-  max-width:1200px;
-  margin:0 auto;
-  display:flex;
-  gap:0.25rem;
-  overflow-x:auto;
-  padding:0.75rem 0;
-  scrollbar-width:none;
-}
-.nav-inner::-webkit-scrollbar{display:none}
-.nav-link{
-  white-space:nowrap;
-  padding:0.4rem 1rem;
-  border-radius:6px;
-  font-size:0.8rem;
-  font-weight:500;
-  color:var(--text-muted);
-  text-decoration:none;
-  transition:all 0.2s;
-}
-.nav-link:hover,.nav-link.active{
-  color:var(--text);
-  background:var(--bg-card);
-}
-
-/* ── Main Content ── */
-.main{
-  max-width:1200px;
-  margin:0 auto;
-  padding:2rem 1.5rem 4rem;
-  position:relative;
-  z-index:1;
-}
-
-/* ── Section Headers ── */
-.section-header{
-  display:flex;
-  align-items:center;
-  gap:1rem;
-  margin:3rem 0 1.5rem;
-  padding-bottom:0.75rem;
-  border-bottom:1px solid var(--border);
-}
-.section-header h2{
-  font-size:1.1rem;
-  font-weight:600;
-  letter-spacing:-0.01em;
-}
-.section-header .badge{
-  font-size:0.65rem;
-  background:var(--accent-glow);
-  color:var(--accent);
-  padding:0.15rem 0.6rem;
-  border-radius:999px;
-  font-family:var(--font-mono);
-}
-.section-header:first-child{margin-top:0}
+.hero-kicker{font-size:11px;font-weight:650;letter-spacing:.14em;text-transform:uppercase;color:rgba(166,178,204,.85);margin-bottom:8px}
+.hero-date{font-size:13px;font-family:var(--mono);color:var(--muted2);margin-bottom:16px}
+.hero-bluf{font-size:clamp(1.05rem,2vw,1.4rem);font-weight:500;line-height:1.45;max-width:800px;color:var(--text)}
+.hero-bluf strong{color:var(--teal);font-weight:600}
+.hero-stats{display:flex;gap:28px;margin-top:20px;flex-wrap:wrap}
+.hero-stat .val{font-size:20px;font-weight:700;font-family:var(--mono);color:var(--blue)}
+.hero-stat .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted2);margin-top:2px}
 
 /* ── BLUF Card ── */
 .bluf-card{
-  background:linear-gradient(135deg, var(--bg-card) 0%, #111a30 100%);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:2rem;
-  margin-bottom:2rem;
+  border-radius:var(--radius-xl); padding:20px 24px; margin-bottom:18px;
+  border:1px solid rgba(94,234,212,.18);
+  background:linear-gradient(180deg,rgba(14,20,37,.70),rgba(10,14,23,.80)),
+    radial-gradient(900px 400px at 15% 0%,rgba(94,234,212,.10),transparent 60%);
+  backdrop-filter:blur(12px) saturate(120%);
+  -webkit-backdrop-filter:blur(12px) saturate(120%);
 }
-.bluf-card .bluf-label{
-  font-size:0.65rem;
-  text-transform:uppercase;
-  letter-spacing:0.2em;
-  color:var(--accent);
-  font-weight:600;
-  margin-bottom:0.75rem;
-}
-.bluf-card .bluf-text{
-  font-size:1.05rem;
-  line-height:1.6;
-  color:var(--text);
-}
-.bluf-card .bluf-context{
-  margin-top:1rem;
-  color:var(--text-muted);
-  font-size:0.9rem;
-  line-height:1.6;
-  padding-top:1rem;
-  border-top:1px solid var(--border);
-}
+.bluf-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);margin-bottom:10px}
+.bluf-text{font-size:0.95rem;line-height:1.6;color:var(--muted)}
+.bluf-text strong{color:var(--text);font-weight:600}
+.bluf-context{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:0.85rem;color:var(--muted2);line-height:1.6}
+
+/* ── Section ── */
+.section{margin-top:18px}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-header h2{font-size:14px;font-weight:700;letter-spacing:-0.01em}
+.section-header .tag{font-size:10px;padding:3px 8px;border-radius:999px;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.16);color:var(--blue);font-weight:600}
 
 /* ── KJ Grid ── */
-.kj-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
-  gap:1rem;
-  margin-bottom:2rem;
-}
+.kj-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
 .kj-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:10px;
-  padding:1.25rem;
-  transition:all 0.2s;
-  position:relative;
-  overflow:hidden;
+  grid-column:span 6; padding:16px; border-radius:var(--radius-lg);
+  border:1px solid var(--border); border-left:4px solid var(--band,#FBBF24);
+  background:linear-gradient(180deg,rgba(14,20,37,.62),rgba(10,14,23,.76));
+  backdrop-filter:blur(12px)saturate(120%);
+  -webkit-backdrop-filter:blur(12px)saturate(120%);
+  position:relative; overflow:hidden;
+  transition:transform var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease);
 }
-.kj-card:hover{
-  background:var(--bg-card-hover);
-  transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(0,0,0,0.3);
+.kj-card:hover{transform:translateY(-3px);box-shadow:0 16px 55px rgba(0,0,0,.55)}
+.kj-card::after{
+  content:""; position:absolute; left:-10px; top:-40px; width:80px; height:160px;
+  background:radial-gradient(circle at 30% 30%,var(--band2,rgba(251,191,36,.20)),transparent 60%);
+  opacity:.6; pointer-events:none;
 }
-.kj-card .kj-region{
-  font-size:0.65rem;
-  text-transform:uppercase;
-  letter-spacing:0.12em;
-  font-weight:600;
-  display:inline-block;
-  padding:0.15rem 0.5rem;
-  border-radius:4px;
-  margin-bottom:0.75rem;
-}
-.kj-card .kj-statement{
-  font-size:0.88rem;
-  line-height:1.5;
-  color:var(--text);
-  margin-bottom:0.75rem;
-}
-.kj-card .kj-meta{
-  display:flex;
-  gap:0.75rem;
-  flex-wrap:wrap;
-  font-size:0.75rem;
-  font-family:var(--font-mono);
-}
-.kj-card .kj-band{
-  padding:0.15rem 0.5rem;
-  border-radius:4px;
-  font-weight:500;
-}
-.kj-card .kj-pct{
-  color:var(--text-muted);
-}
+@media(max-width:860px){.kj-card{grid-column:span 12}}
 
-/* ── Band Colors ── */
-.band-almost_certain{color:#fff;background:var(--green)}
-.band-highly_likely{color:#fff;background:var(--green)}
-.band-likely{color:#000;background:var(--amber)}
-.band-even_chance{color:var(--text);background:rgba(245,158,11,0.2);border:1px solid rgba(245,158,11,0.3)}
-.band-unlikely{color:#fff;background:var(--red)}
-.band-highly_unlikely{color:#fff;background:var(--red)}
+.kj-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.kj-region{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.kj-band{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.22);border:1px solid rgba(226,232,240,.10)}
+.kj-statement{font-size:0.88rem;line-height:1.5;color:var(--text);margin-bottom:10px}
+.kj-bar{height:6px;border-radius:999px;background:rgba(226,232,240,.06);border:1px solid rgba(226,232,240,.08);overflow:hidden}
+.kj-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--band,#FBBF24),rgba(255,255,255,.15));transition:width .4s var(--ease)}
 
-.region-europe{background:rgba(59,130,246,0.15);color:var(--accent)}
-.region-north_america{background:rgba(34,197,94,0.15);color:var(--green)}
-.region-middle_east{background:rgba(245,158,11,0.15);color:var(--amber)}
-.region-asia{background:rgba(168,85,247,0.15);color:var(--purple)}
-.region-oceania{background:rgba(6,182,212,0.15);color:var(--cyan)}
-.region-south_america{background:rgba(239,68,68,0.15);color:var(--red)}
-.region-africa{background:rgba(168,85,247,0.15);color:var(--purple)}
+.band-likely{--band:rgba(251,191,36,.88);--band2:rgba(251,191,36,.22);color:var(--amber)}
+.band-highly{--band:rgba(52,211,153,.90);--band2:rgba(52,211,153,.20);color:var(--green)}
 
-/* ── Region Sections ── */
-.region-block{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1.5rem;
-  margin-bottom:1.5rem;
+/* ── Market Grid ── */
+.mkt-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+.mkt-card{
+  grid-column:span 4; padding:12px 14px; border-radius:var(--radius-md);
+  border:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;
+  background:linear-gradient(180deg,rgba(14,20,37,.50),rgba(10,14,23,.70));
+  backdrop-filter:blur(8px)saturate(120%);
+  -webkit-backdrop-filter:blur(8px)saturate(120%);
 }
-.region-block .region-title{
-  font-size:0.9rem;
-  font-weight:600;
-  margin-bottom:1rem;
-  padding-bottom:0.5rem;
-  border-bottom:1px solid var(--border);
-}
-.region-block .region-narrative{
-  font-size:0.85rem;
-  line-height:1.7;
-  color:var(--text-muted);
-  margin-bottom:1rem;
-}
-.region-block .region-story{
-  font-size:0.82rem;
-  line-height:1.7;
-  color:var(--text-muted);
-  font-style:italic;
-  padding:0.75rem;
-  border-left:2px solid var(--border);
-  margin-bottom:1rem;
-}
-
-/* ── Prediction Markets ── */
-.market-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
-  gap:0.75rem;
-  margin-bottom:2rem;
-}
-.market-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:8px;
-  padding:1rem;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.market-card .market-info{
-  flex:1;
-}
-.market-card .market-ticker{
-  font-size:0.7rem;
-  font-family:var(--font-mono);
-  color:var(--text-muted);
-}
-.market-card .market-desc{
-  font-size:0.82rem;
-  margin-top:0.15rem;
-}
-.market-card .market-price{
-  font-size:1.1rem;
-  font-weight:600;
-  font-family:var(--font-mono);
-  text-align:right;
-}
-.market-card .market-vol{
-  font-size:0.65rem;
-  color:var(--text-muted);
-  text-align:right;
-}
-
-/* ── Sources & Footer ── */
-.sources-block{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:10px;
-  padding:1.5rem;
-  margin-top:2rem;
-}
-.sources-block h3{
-  font-size:0.75rem;
-  text-transform:uppercase;
-  letter-spacing:0.12em;
-  color:var(--text-muted);
-  margin-bottom:0.75rem;
-}
-.source-tag{
-  display:inline-block;
-  font-size:0.7rem;
-  padding:0.2rem 0.6rem;
-  border-radius:4px;
-  background:rgba(123,140,174,0.1);
-  color:var(--text-muted);
-  margin:0.15rem;
-  font-family:var(--font-mono);
-}
-.footer{
-  text-align:center;
-  padding:2rem;
-  color:var(--text-muted);
-  font-size:0.7rem;
-  border-top:1px solid var(--border);
-  margin-top:3rem;
-}
-.footer a{color:var(--accent);text-decoration:none}
+@media(max-width:1000px){.mkt-card{grid-column:span 6}}
+@media(max-width:640px){.mkt-card{grid-column:span 12}}
+.mkt-ticker{font-size:10px;font-family:var(--mono);color:var(--muted2)}
+.mkt-desc{font-size:13px;color:var(--text);margin-top:1px}
+.mkt-price{font-size:16px;font-weight:700;font-family:var(--mono)}
+.mkt-vol{font-size:10px;color:var(--muted2);text-align:right}
 
 /* ── Red Team ── */
-.red-team-block{
-  background:linear-gradient(135deg, #1a0f0f 0%, var(--bg-card) 100%);
-  border:1px solid rgba(239,68,68,0.2);
-  border-radius:10px;
-  padding:1.5rem;
-  margin-top:1.5rem;
+.rt-block{
+  border-radius:var(--radius-lg); padding:16px 20px; margin-top:18px;
+  border:1px solid rgba(251,113,133,.18);
+  background:linear-gradient(180deg,rgba(30,12,12,.60),rgba(10,14,23,.76));
+  backdrop-filter:blur(12px)saturate(120%);
+  -webkit-backdrop-filter:blur(12px)saturate(120%);
 }
-.red-team-block .rt-label{
-  font-size:0.65rem;
-  text-transform:uppercase;
-  letter-spacing:0.2em;
-  color:var(--red);
-  font-weight:600;
-  margin-bottom:0.5rem;
-}
-.red-team-block .rt-content{
-  font-size:0.82rem;
-  line-height:1.6;
-  color:var(--text-muted);
-  white-space:pre-wrap;
-}
+.rt-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--rose);margin-bottom:8px}
+.rt-text{font-size:0.85rem;line-height:1.6;color:var(--muted2)}
+.rt-text strong{color:var(--text)}
 
-/* ── Responsive ── */
-@media(max-width:640px){
-  .hero-content{padding:1.5rem}
-  .hero-bluf{font-size:1rem}
-  .hero-stats{gap:1.5rem}
-  .kj-grid{grid-template-columns:1fr}
-  .market-grid{grid-template-columns:1fr}
-  .nav-inner{padding:0.5rem 0}
+/* ── Sources ── */
+.sources-block{
+  border-radius:var(--radius-lg); padding:16px 20px; margin-top:18px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(14,20,37,.50),rgba(10,14,23,.70));
+  backdrop-filter:blur(8px)saturate(120%);
+  -webkit-backdrop-filter:blur(8px)saturate(120%);
 }
+.source-tag{display:inline-block;font-size:11px;padding:4px 8px;margin:2px;border-radius:6px;background:rgba(166,178,204,.06);border:1px solid rgba(226,232,240,.08);color:var(--muted);font-family:var(--mono)}
+.sources-block h3{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted2);margin:16px 0 8px}
+.sources-block h3:first-child{margin-top:0}
+.sources-block p{font-size:12px;color:var(--muted2);line-height:1.6}
+
+/* ── Footer ── */
+.footer{border-top:1px solid var(--border);margin-top:40px;padding:24px;text-align:center;font-size:12px;color:var(--muted2)}
+.footer a{color:var(--teal);text-decoration:none}
 </style>
 </head>
 <body>
 
-<!-- ═══ HERO ═══ -->
-<header class="hero">
-  <img class="hero-bg" src="philby-hero.jpg" alt="" loading="lazy">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-label">PHILBY — Daily Intelligence Brief</div>
-    <div class="hero-date">2026-05-26 · Edition #1</div>
-    <div class="hero-bluf">
-      <strong>US strikes Iranian targets near Bandar Abbas</strong> mid-negotiation while Russia threatens systematic Kyiv strikes — dual escalation tracks reprice oil, diplomacy, and air-defense scarcity.
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-value">10</div>
-        <div class="hero-stat-label">Theaters</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-value">5</div>
-        <div class="hero-stat-label">Key Judgments</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-value">6</div>
-        <div class="hero-stat-label">Sources</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-value">91</div>
-        <div class="hero-stat-label">Markets Tracked</div>
-      </div>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-inner">
+    <div class="top-logo"><span>◈</span> Daily Intel Brief</div>
+    <div class="top-meta">
+      <span>May 26, 2026</span>
+      <span class="pill">Edition #1</span>
     </div>
   </div>
-</header>
+</div>
 
-<!-- ═══ NAV ═══ -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="#bluf" class="nav-link active">BLUF</a>
-    <a href="#judgments" class="nav-link">Key Judgments</a>
-    <a href="#europe" class="nav-link">Europe</a>
-    <a href="#north_america" class="nav-link">North America</a>
-    <a href="#middle_east" class="nav-link">Middle East</a>
-    <a href="#south_america" class="nav-link">South America</a>
-    <a href="#africa" class="nav-link">Africa</a>
-    <a href="#asia" class="nav-link">Asia-Pacific</a>
-    <a href="#markets" class="nav-link">Markets</a>
-    <a href="#redteam" class="nav-link">Red Team</a>
-    <a href="#sources" class="nav-link">Sources</a>
-  </div>
-</nav>
-
-<!-- ═══ MAIN ═══ -->
 <main class="main">
 
-<!-- ── BLUF ── -->
-<section id="bluf">
-  <div class="section-header"><h2>Bottom Line Up Front</h2><span class="badge">lead</span></div>
-  <div class="bluf-card">
-    <div class="bluf-label">Executive Summary</div>
-    <div class="bluf-text">
-      <strong>US strikes Iranian targets near Bandar Abbas mid-negotiation</strong> while Russia threatens systematic Kyiv strikes — dual escalation tracks reprice oil, diplomacy, and air-defense scarcity.
-    </div>
-    <div class="bluf-context">
-      US Central Command conducted self-defense strikes on IRGC mine-laying boats and missile sites near Bandar Abbas (Dawn B2, CNBC B2) even as Iranian negotiators sat in Doha, while Russia explicitly threatened further large-scale Kyiv strikes and warned foreign diplomats, prompting an EU démarche. Israel's Jerusalem-Day parade proceeds under Hezbollah rocket risk; France's planned Mediterranean naval exercise is calibrated to signal without escalating. The Quad's Fiji port-access announcement and Xi's planned Pyongyang visit suggest the Asia-Pacific competitive geometry is shifting faster than market prices reflect.
-    </div>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-kicker">Bottom Line Up Front</div>
+  <div class="hero-date">2026-05-26 · 10:00 UTC</div>
+  <div class="hero-bluf">
+    <strong>US strikes Iranian targets near Bandar Abbas</strong> mid-negotiation while <strong>Russia threatens systematic Kyiv strikes</strong> — dual escalation tracks reprice oil, diplomacy, and air-defense scarcity.
   </div>
-</section>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="val">12</div><div class="lbl">Theaters</div></div>
+    <div class="hero-stat"><div class="val">5</div><div class="lbl">Judgments</div></div>
+    <div class="hero-stat"><div class="val">6</div><div class="lbl">Sources</div></div>
+    <div class="hero-stat"><div class="val">91</div><div class="lbl">Markets</div></div>
+  </div>
+</div>
 
-<!-- ── KEY JUDGMENTS ── -->
-<section id="judgments">
-  <div class="section-header"><h2>Key Judgments</h2><span class="badge">7-day horizon</span></div>
+<!-- BLUF -->
+<div class="bluf-card">
+  <div class="bluf-label">Executive Context</div>
+  <div class="bluf-text">
+    US Central Command conducted self-defense strikes on IRGC mine-laying boats and missile sites near <strong>Bandar Abbas</strong> (Dawn B2, CNBC B2) even as Iranian negotiators sat in Doha. Russia explicitly threatened further large-scale <strong>Kyiv strikes</strong> and warned foreign diplomats, prompting an EU démarche. Israel's Jerusalem-Day parade proceeds under rocket risk; France's Mediterranean naval exercise signals without escalating. The <strong>Quad's Fiji port-access</strong> announcement and Xi's planned Pyongyang visit suggest Asia-Pacific geometry shifting faster than prices reflect.
+  </div>
+  <div class="bluf-context">Models: DeepSeek V4 Pro (region analysis) · Claude Opus 4.7 (exec summary, red team)</div>
+</div>
+
+<!-- KEY JUDGMENTS -->
+<div class="section">
+  <div class="section-header"><h2>Key Judgments</h2><span class="tag">7-day horizon</span></div>
   <div class="kj-grid">
 
-    <div class="kj-card">
-      <div class="kj-region region-europe">Europe</div>
+    <div class="kj-card band-likely">
+      <div class="kj-top">
+        <span class="kj-region" style="color:var(--amber)">Europe</span>
+        <span class="kj-band band-likely">Likely · 63%</span>
+      </div>
       <div class="kj-statement">Russia will launch at least one additional large-scale missile or drone strike targeting Kyiv within 7 days.</div>
-      <div class="kj-meta">
-        <span class="kj-band band-likely">Likely</span>
-        <span class="kj-pct">63% · 7d</span>
-      </div>
+      <div class="kj-bar"><div class="kj-fill" style="width:63%"></div></div>
     </div>
 
-    <div class="kj-card">
-      <div class="kj-region region-north_america">North America</div>
+    <div class="kj-card band-likely">
+      <div class="kj-top">
+        <span class="kj-region" style="color:var(--blue)">North America</span>
+        <span class="kj-band band-likely">Likely · 63%</span>
+      </div>
       <div class="kj-statement">The US will conduct at least one additional self-defense strike against Iranian targets, or Iran will retaliate via proxy action, within 7 days.</div>
-      <div class="kj-meta">
-        <span class="kj-band band-likely">Likely</span>
-        <span class="kj-pct">63% · 7d</span>
-      </div>
+      <div class="kj-bar"><div class="kj-fill" style="width:63%"></div></div>
     </div>
 
-    <div class="kj-card">
-      <div class="kj-region region-middle_east">Middle East</div>
+    <div class="kj-card band-likely">
+      <div class="kj-top">
+        <span class="kj-region" style="color:var(--amber)">Middle East</span>
+        <span class="kj-band band-likely">Likely · 67%</span>
+      </div>
       <div class="kj-statement">Brent crude will trade above $95/bbl at least once during the next 7 days.</div>
-      <div class="kj-meta">
-        <span class="kj-band band-likely">Likely</span>
-        <span class="kj-pct">67% · 7d</span>
-      </div>
+      <div class="kj-bar"><div class="kj-fill" style="width:67%"></div></div>
     </div>
 
-    <div class="kj-card">
-      <div class="kj-region region-middle_east">Middle East</div>
+    <div class="kj-card band-likely">
+      <div class="kj-top">
+        <span class="kj-region" style="color:var(--amber)">Middle East</span>
+        <span class="kj-band band-likely">Likely · 69%</span>
+      </div>
       <div class="kj-statement">Israel and Hezbollah will not reach a formal ceasefire or de-escalation agreement within 7 days.</div>
-      <div class="kj-meta">
-        <span class="kj-band band-likely">Likely</span>
-        <span class="kj-pct">69% · 7d</span>
-      </div>
+      <div class="kj-bar"><div class="kj-fill" style="width:69%"></div></div>
     </div>
 
-    <div class="kj-card">
-      <div class="kj-region region-oceania">Oceania</div>
+    <div class="kj-card band-likely">
+      <div class="kj-top">
+        <span class="kj-region" style="color:var(--teal)">Oceania</span>
+        <span class="kj-band band-likely">Likely · 64%</span>
+      </div>
       <div class="kj-statement">The Quad's Fiji port announcement will elicit a formal Chinese diplomatic response or public statement within 7 days.</div>
-      <div class="kj-meta">
-        <span class="kj-band band-likely">Likely</span>
-        <span class="kj-pct">64% · 7d</span>
-      </div>
+      <div class="kj-bar"><div class="kj-fill" style="width:64%"></div></div>
     </div>
 
   </div>
-</section>
+</div>
 
-<!-- ── REGIONS ── -->
-<section id="europe">
-  <div class="section-header"><h2>🇪🇺 Europe</h2><span class="badge">Russia-Ukraine</span></div>
-  <div class="region-block">
-    <div class="region-title">Narrative</div>
-    <div class="region-narrative">Russia's third Oreshnik-class IRBM strike struck Kyiv overnight Thursday into Friday (the third such use of a nuclear-capable strategic weapon in the Ukraine theater), while the Russian Ministry of Foreign Affairs simultaneously issued a public warning to foreign embassies in Kyiv of "systematic" follow-on strikes on defense-industrial facilities and decision-making centers. The Kremlin's framing — "we can reach Kyiv with weapons that cannot be intercepted" — is designed to signal capacity for escalation dominance at the strategic level even as its conventional spring-summer offensive continues to fail.</div>
-    <div class="region-story">"The Oreshnik IRBM has become Russia's strategic signaling tool of last resort. Each use crosses a threshold — not in battlefield effect, but in message. Three strikes in as many weeks means the taboo is gone. The question is whether the West recognizes the pattern or normalizes it."</div>
+<!-- PREDICTION MARKETS -->
+<div class="section">
+  <div class="section-header"><h2>Prediction Markets</h2><span class="tag">Kalshi · 91 contracts</span></div>
+  <div class="mkt-grid">
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXUSAIRANAGREEMENT</div><div class="mkt-desc">US-Iran nuclear deal · Jun 1</div></div>
+      <div><div class="mkt-price" style="color:var(--amber)">$0.06</div><div class="mkt-vol">$2.4M vol</div></div>
+    </div>
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXUSAIRANAGREEMENT</div><div class="mkt-desc">US-Iran deal · Jul 2026</div></div>
+      <div><div class="mkt-price" style="color:var(--amber)">$0.21</div><div class="mkt-vol">$760k vol</div></div>
+    </div>
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXWTIMAX</div><div class="mkt-desc">WTI max price · Dec 2026</div></div>
+      <div><div class="mkt-price" style="color:var(--blue)">$0.14</div><div class="mkt-vol">$592k vol</div></div>
+    </div>
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXTRUMPIRAN</div><div class="mkt-desc">Trump visit Iran</div></div>
+      <div><div class="mkt-price" style="color:var(--rose)">$0.00</div><div class="mkt-vol">$497k vol</div></div>
+    </div>
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXUKRAINEEU</div><div class="mkt-desc">Ukraine EU membership</div></div>
+      <div><div class="mkt-price" style="color:var(--purple)">$0.28</div><div class="mkt-vol">$241 vol</div></div>
+    </div>
+    <div class="mkt-card">
+      <div><div class="mkt-ticker">KXTARIFFRATEPRC</div><div class="mkt-desc">US tariff rate · Jul 1</div></div>
+      <div><div class="mkt-price" style="color:var(--green)">$0.04</div><div class="mkt-vol">$31k vol</div></div>
+    </div>
   </div>
-</section>
+</div>
 
-<section id="north_america">
-  <div class="section-header"><h2>🇺🇸 North America</h2><span class="badge">US-Iran</span></div>
-  <div class="region-block">
-    <div class="region-title">Narrative</div>
-    <div class="region-narrative">US Central Command conducted self-defense strikes on IRGC mine-laying boats and missile sites near Bandar Abbas (Dawn B2, CNBC B2) even as Iranian negotiators were seated in Doha. This is the first known US kinetic military action against Iranian forces during active nuclear negotiations. The signal is unambiguous: Washington is willing to escalate militarily to maintain freedom of navigation in the Strait of Hormuz. The Bandar Abbas location is significant — it is the primary IRGC Navy base and a strategic chokepoint for Hormuz traffic.</div>
-  </div>
-</section>
+<!-- REGIONS -->
+<div class="section">
+  <div class="section-header"><h2>Regional Analysis</h2><span class="tag">11 theaters · 50+ sources</span></div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:10px">
 
-<section id="middle_east">
-  <div class="section-header"><h2>🌍 Middle East</h2><span class="badge">Iran-Israel-Lebanon</span></div>
-  <div class="region-block">
-    <div class="region-title">Narrative</div>
-    <div class="region-narrative">Iran's diplomatic position is deteriorating. The Bandar Abbas strikes — conducted as negotiators sat in Doha — signal that the US views the military track as independent from and potentially running ahead of the diplomatic track. Iran now faces a choice: absorb the strikes and continue negotiating, retaliate and risk collapsing the Doha talks, or retreat on the Hormuz sovereignty claim to de-escalate. Each option imposes political costs. Meanwhile, Israel's Jerusalem-Day parade proceeds as scheduled under heightened Hezbollah rocket threat assessment, while France has announced a Mediterranean naval exercise calibrated to demonstrate capability without triggering escalation.</div>
-  </div>
-</section>
-
-<section id="asia">
-  <div class="section-header"><h2>🌏 Asia-Pacific</h2><span class="badge">Quad · China</span></div>
-  <div class="region-block">
-    <div class="region-title">Narrative</div>
-    <div class="region-narrative">The Quad foreign ministers' meeting in New Delhi (first since 2024) produced a Fiji port-access announcement that signals the Quad's shift from maritime security rhetoric to tangible Pacific Island infrastructure engagement. Xi's planned Pyongyang visit — his first in 7 years — suggests Beijing is increasingly nervous about the expanding DPRK-Russia axis. The two developments are connected: China sees the Pacific Island infrastructure race and the Korean Peninsula as linked theaters in the competition with the US-led alliance system.</div>
-  </div>
-</section>
-
-<!-- ── PREDICTION MARKETS ── -->
-<section id="markets">
-  <div class="section-header"><h2>📈 Prediction Markets</h2><span class="badge">91 contracts</span></div>
-  <div class="market-grid">
-
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXUSAIRANAGREEMENT</div>
-        <div class="market-desc">US-Iran nuclear deal</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🇪🇺 Europe</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(251,191,36,.10);border:1px solid rgba(251,191,36,.16);color:var(--amber)">32 incidents</span>
       </div>
-      <div>
-        <div class="market-price">$0.06</div>
-        <div class="market-vol">$2.4M vol</div>
-      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Russia explicitly threatened further large-scale strikes on Kyiv, prompting the EU to summon Russia's top diplomat. The Kremlin's framing — "we can reach Kyiv with weapons that cannot be intercepted" — signals capacity for escalation dominance even as its conventional offensive stalls. A third Oreshnik-class IRBM strike struck Kyiv overnight.</p>
     </div>
 
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXUSAIRANAGREEMENT</div>
-        <div class="market-desc">US-Iran deal · Jul 2026</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🇺🇸 North America</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(96,165,250,.10);border:1px solid rgba(96,165,250,.16);color:var(--blue)">12 incidents</span>
       </div>
-      <div>
-        <div class="market-price">$0.21</div>
-        <div class="market-vol">$760k vol</div>
-      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">US Central Command conducted self-defense strikes on IRGC mine-laying boats and missile sites near Bandar Abbas — the first known US kinetic action against Iranian forces during active nuclear negotiations. Washington's signal is unambiguous: it will use military force to maintain freedom of navigation in Hormuz.</p>
     </div>
 
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXWTIMAX</div>
-        <div class="market-desc">WTI max price · Dec 2026</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌍 Middle East</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(167,139,250,.10);border:1px solid rgba(167,139,250,.16);color:var(--purple)">21 incidents</span>
       </div>
-      <div>
-        <div class="market-price">$0.14</div>
-        <div class="market-vol">$592k vol</div>
-      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">The Bandar Abbas strikes leave Iran with three bad options: absorb and continue negotiating, retaliate and risk Doha talks, or retreat on the Hormuz sovereignty claim. Israel's Jerusalem-Day parade proceeds under rocket threat. France's Mediterranean naval exercise signals capability without escalation.</p>
     </div>
 
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXTRUMPIRAN</div>
-        <div class="market-desc">Trump visit Iran</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌍 North Africa</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(251,191,36,.10);border:1px solid rgba(251,191,36,.16);color:var(--amber)">Sahel · Maghreb</span>
       </div>
-      <div>
-        <div class="market-price">$0.00</div>
-        <div class="market-vol">$497k vol</div>
-      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Libya's political stalemate continues with no unified government in sight. Sahel jihadi insurgencies expand into northern Benin and Togo. Egypt faces renewed IMF pressure on currency reforms. Algeria consolidates energy leverage over Southern Europe as gas exports increase.</p>
     </div>
 
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXUKRAINEEU</div>
-        <div class="market-desc">Ukraine EU membership</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌍 Sub-Saharan Africa</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(251,191,36,.10);border:1px solid rgba(251,191,36,.16);color:var(--amber)">8 incidents</span>
       </div>
-      <div>
-        <div class="market-price">$0.28</div>
-        <div class="market-vol">$241 vol</div>
-      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Nigeria dominates: former president Goodluck Jonathan corruption trial accelerates 2027 election timeline. AU peacekeeping withdrawals in Somalia continue. Mozambique's Cabo Delgado insurgency contained but unresolved. Ethiopia-Tigray de-escalation holds. South Africa coalition government faces test.</p>
     </div>
 
-    <div class="market-card">
-      <div class="market-info">
-        <div class="market-ticker">KXTARIFFRATEPRC</div>
-        <div class="market-desc">US tariff rate</div>
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌏 East Asia</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(94,234,212,.10);border:1px solid rgba(94,234,212,.16);color:var(--teal)">8 incidents</span>
       </div>
-      <div>
-        <div class="market-price">$0.04</div>
-        <div class="market-vol">$31k vol</div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">China views the planned US deployment of Typhon missiles in Japan as a threshold crossing. Xi's planned Pyongyang visit (first in 7 years) signals concern about the DPRK-Russia axis. Taiwan defense budget increased 12% for indigenous submarine and missile programs.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌏 South Asia</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(167,139,250,.10);border:1px solid rgba(167,139,250,.16);color:var(--purple)">8 incidents</span>
       </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">India engaged in high-level talks with Russia for additional S-400 missile system deliveries, signaling deepening defense-industrial cooperation despite US pressure. Pakistan-India border ceasefire holds under Chinese mediation. Nepal political crisis deepens.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌏 Southeast Asia</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(251,191,36,.10);border:1px solid rgba(251,191,36,.16);color:var(--amber)">4 incidents</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Heavy clashes between Myanmar's junta and ethnic resistance forces in Shan State. US-Philippines EDCA site development proceeds at two new locations. Vietnam continues diplomatic balancing between US and China on South China Sea. Limited reporting volume noted.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌎 Central America</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(96,165,250,.10);border:1px solid rgba(96,165,250,.16);color:var(--blue)">1 incident</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Nicaragua's Ortega-Murillo issued formal condolences to Putin over the attack that killed Russian Lt. Gen. Yuri Mirolyubov in Odesa — a diplomatic signal of continued alignment with Moscow. Otherwise, the region was quiet. Collection gap: 1 incident limits analytical depth.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌎 South America</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(94,234,212,.10);border:1px solid rgba(94,234,212,.16);color:var(--teal)">1 incident</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Operation Rumble in the Jungle concluded — a joint US-Suriname military exercise reported by Dialogo Americas. Single-incident day limits depth; collection gap flagged. Venezuela political dynamics remain stable this cycle. Regional sources show below-average volume.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌏 Central Asia</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(167,139,250,.10);border:1px solid rgba(167,139,250,.16);color:var(--purple)">1 incident</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">High-profile coup trial of former Kyrgyz security chief Kamchybek Tashiev commenced in Bishkek. Kazakhstan continues balancing Russia-China relations. Regional collection remains thin — this needs source expansion to produce substantive analysis.</p>
+    </div>
+
+    <div class="mkt-card" style="grid-column:span 6;flex-direction:column;align-items:stretch;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:14px;font-weight:700">🌏 Oceania</span>
+        <span style="font-size:10px;padding:2px 7px;border-radius:999px;background:rgba(94,234,212,.10);border:1px solid rgba(94,234,212,.16);color:var(--teal)">5 incidents</span>
+      </div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Quad foreign ministers agreed to jointly build a port in Fiji and signed pacts on critical minerals and energy security. The announcement shifts the Quad's posture from maritime security rhetoric to tangible Pacific Island infrastructure engagement — a direct response to Chinese influence.</p>
     </div>
 
   </div>
-</section>
+</div>
 
-<!-- ── RED TEAM ── -->
-<section id="redteam">
-  <div class="section-header"><h2>⚔️ Red Team</h2><span class="badge">forced dissent</span></div>
-  <div class="red-team-block">
-    <div class="rt-label">Alternative Hypothesis</div>
-    <div class="rt-content">The Bandar Abbas strikes may be precisely calibrated to avoid derailing negotiations — hitting IRGC Navy targets that threaten shipping while leaving nuclear infrastructure untouched. Iran may accept this as a face-saving mechanism: it can protest the strikes publicly while continuing to negotiate, using the US action to justify concessions to hardliners as a "necessary response to American aggression." The strikes may accelerate a deal rather than derail it. Reassess if Iran retaliates kinetically within 48 hours.</div>
+<!-- RED TEAM -->
+<div class="rt-block">
+  <div class="rt-label">Red Team · Forced Dissent</div>
+  <div class="rt-text">
+    <strong>Alternative hypothesis:</strong> The Bandar Abbas strikes may be precisely calibrated to avoid derailing negotiations — hitting IRGC Navy targets that threaten shipping while leaving nuclear infrastructure untouched. Iran may accept this as a face-saving mechanism: protest the strikes publicly while continuing to negotiate, using US action to justify concessions to hardliners. The strikes may <strong>accelerate</strong> a deal rather than derail it. Reassess if Iran retaliates kinetically within 48 hours.
   </div>
-</section>
+</div>
 
-<!-- ── SOURCES ── -->
-<section id="sources">
-  <div class="section-header"><h2>📋 Sources & Methodology</h2></div>
-  <div class="sources-block">
-    <h3>Sources Cited</h3>
-    <div>
-      <span class="source-tag">The Guardian (B2)</span>
-      <span class="source-tag">Dawn (B2)</span>
-      <span class="source-tag">OilPrice.com (B2)</span>
-      <span class="source-tag">TASS (B2)</span>
-      <span class="source-tag">ISW (B1)</span>
-      <span class="source-tag">CNBC (B2)</span>
-    </div>
-    <h3 style="margin-top:1rem">Analytic Methodology</h3>
-    <p style="font-size:0.8rem;color:var(--text-muted);line-height:1.6">
-      Sherman Kent estimative tradecraft with NATO Admiralty source gradings. 
-      All judgments use calibrated probability percentages (not round numbers) 
-      with 7-day falsification horizons. Single-source claims capped at "Likely" (70%). 
-      Regional analysis by DeepSeek V4 Pro; executive summary and red team by Claude Opus 4.7.
-      50+ durable sources including ISW, Reuters, AP, BBC, Al Jazeera, Crisis Group, MEED.
-    </p>
-    <h3 style="margin-top:1rem">Data Sources</h3>
-    <p style="font-size:0.8rem;color:var(--text-muted);line-height:1.6">
-      RSS feed collection from 385+ intelligence, news, and OSINT sources across 10 regions.
-      Kalshi prediction market data from 91 active geopolitics contracts.
-      Continuous cognition layer (Philby) monitors 14 active narratives across 5 desks.
-    </p>
+<!-- SOURCES -->
+<div class="sources-block">
+  <h3>Sources Cited</h3>
+  <div>
+    <span class="source-tag">The Guardian (B2)</span>
+    <span class="source-tag">Dawn (B2)</span>
+    <span class="source-tag">OilPrice.com (B2)</span>
+    <span class="source-tag">TASS (B2)</span>
+    <span class="source-tag">ISW (B1)</span>
+    <span class="source-tag">CNBC (B2)</span>
   </div>
-</section>
+  <h3>Analytic Methodology</h3>
+  <p>Sherman Kent estimative tradecraft with NATO Admiralty source gradings. All judgments use calibrated probability percentages with 7-day falsification horizons. Single-source claims capped at "Likely" (70%). Regional analysis by DeepSeek V4 Pro; executive summary and red team by Claude Opus 4.7. 50+ durable sources tracked across 10 regions.</p>
+  <h3>Data Pipeline</h3>
+  <p>Collection from 385+ RSS feeds across 10 regions. Kalshi prediction market data from 91 active geopolitics contracts. Continuous cognition monitors 14 active narratives across 5 Philby desks (Iran, Ukraine, US-China, Cartel, Energy).</p>
+</div>
 
 </main>
 
-<!-- ═══ FOOTER ═══ -->
 <footer class="footer">
-  <p>Generated by <strong>Philby</strong> — Trevor's intelligence platform · <a href="https://trevormentis-spec.github.io/trevor-landing-page/">trevormentis-spec.github.io</a></p>
-  <p style="margin-top:0.5rem">Daily Intelligence Brief · May 26, 2026 · Classification: Open Source — Public Distribution</p>
+  <p>Generated by <strong>Trevor</strong> — Daily Intelligence Brief · May 26, 2026</p>
+  <p style="margin-top:4px;color:var(--muted2)">Classification: Open Source — Public Distribution · Machine-readable feed via Philby platform</p>
 </footer>
 
 </body>

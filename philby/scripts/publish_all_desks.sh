@@ -17,7 +17,7 @@ cd "$WORKSPACE"
 
 echo "[$NOW] Philby: Publishing all 5 desk feeds..."
 
-for desk in iran ukraine us_china cartel energy; do
+for desk in iran ukraine us_china cartel energy north_africa sub_saharan_africa; do
     # 1. Generate desk-scoped KJ feed
     python3 analyst/scripts/kj_feed.py --desk "$desk" \
         > "$LOG_DIR/philby-${desk}-${TODAY}.log" 2>&1 && \

@@ -81,7 +81,12 @@ REGION_PROMPT_THEMES = {
             "shipping containers at a major port, aerial view, logistics infrastructure",
         ],
     },
-    "africa": {
+    "north_africa": {
+        "title": "North Africa",
+        "color": (0, 180, 216),
+        "incidents": ["Algeria", "Egypt", "Libya", "Morocco", "Tunisia", "Sahel"]
+    },
+    "sub_saharan_africa": {
         "style": "photorealistic documentary photography, warm golden hour light, professional",
         "subjects": [
             "Sahel landscape, desert outpost, military vehicle, documentary style",

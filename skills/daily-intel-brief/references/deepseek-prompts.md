@@ -245,8 +245,11 @@ CENTRAL AMERICA & CARIBBEAN:
 SOUTH AMERICA:
 {south_america_json}
 
-AFRICA:
-{africa_json}
+NORTH AFRICA:
+{north_africa_json}
+
+SUB-SAHARAN AFRICA:
+{sub_saharan_africa_json}
 
 MIDDLE EAST:
 {middle_east_json}

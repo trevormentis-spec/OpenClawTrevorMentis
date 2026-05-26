@@ -99,7 +99,8 @@ REGION_KEYWORDS = {
     "south_america": ["brazil", "argentina", "colombia", "chile", "peru",
                       "venezuela", "ecuador", "latin america", "amazon",
                       "lula", "maduro", "bolivia", "paraguay", "uruguay"],
-    "africa": ["africa", "nigeria", "kenya", "ethiopia", "south africa", "egypt",
+    "north_africa": ["north africa", "maghreb", "egypt", "libya", "algeria", "morocco", "tunisia", "sahel"],
+    "sub_saharan_africa": ["sub-saharan africa", "west africa", "east africa", "nigeria", "kenya", "ethiopia", "south africa"]}
                "libya", "algeria", "morocco", "tunisia", "sudan", "somalia",
                "ethiopia", "ghana", "angola", "mozambique", "au", "african union",
                "nile", "sahel", "maghreb"],

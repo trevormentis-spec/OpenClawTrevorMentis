@@ -239,17 +239,17 @@ def main():
             print(f"\nPhilby Desk Status — Cycle {state.get('cycle', 0)} — {dt.date.today()}")
             print(f"{'─' * 60}")
             total = 0
-            for did in ["iran", "ukraine", "us_china", "cartel", "energy"]:
+            for did in ["iran", "ukraine", "us_china", "cartel", "energy", "north_africa", "sub_saharan_africa"]:
                 if did in statuses:
                     print(statuses[did].to_table())
                     total += statuses[did].total
             print(f"\n{'─' * 60}")
-            print(f"Total: {total} narratives, {len(state.get('source_trust', {}))} sources across 5 desks")
+            print(f"Total: {total} narratives, {len(state.get('source_trust', {}))} sources across {len(statuses)} desks")
 
     # Moltbook
     if args.moltbook:
         lines = []
-        for did in ["iran", "ukraine", "us_china", "cartel", "energy"]:
+        for did in ["iran", "ukraine", "us_china", "cartel", "energy", "north_africa", "sub_saharan_africa"]:
             if did in statuses:
                 s = statuses[did]
                 narr_lines = []

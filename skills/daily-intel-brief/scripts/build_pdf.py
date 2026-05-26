@@ -33,7 +33,7 @@ PDF_VENV = pathlib.Path("~/.openclaw/workspace/.venv_pdf/bin/python").expanduser
 
 REGIONS_ORDER = [
     "europe", "north_america", "central_america_caribbean",
-    "south_america", "africa", "middle_east",
+    "south_america", "north_africa", "sub_saharan_africa", "middle_east",
     "central_asia", "south_east_asia", "east_asia", "south_asia",
     "oceania",
     "prediction_markets",
@@ -43,7 +43,8 @@ REGION_LABEL = {
     "north_america": "North America",
     "central_america_caribbean": "Central America & Caribbean",
     "south_america": "South America",
-    "africa": "Africa",
+    "north_africa": "North Africa",
+    "sub_saharan_africa": "Sub-Saharan Africa",
     "middle_east": "Middle East",
     "central_asia": "Central Asia",
     "south_east_asia": "South East Asia",

@@ -53,7 +53,7 @@ CATEGORY_COLOR = {
 }
 
 REGION_ORDER = ["europe", "north_america", "central_america_caribbean", "south_america",
-                "africa", "middle_east", "central_asia", "south_east_asia", "oceania"]
+                "north_africa", "sub_saharan_africa", "middle_east", "central_asia", "south_east_asia", "oceania"]
 
 
 def log(msg: str) -> None:

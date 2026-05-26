@@ -112,7 +112,7 @@ def main() -> int:
     region_label = {
         "europe": "Europe", "north_america": "North America",
         "central_america_caribbean": "Central America & Caribbean",
-        "south_america": "South America", "africa": "Africa",
+        "south_america": "South America", "north_africa": "North Africa", "sub_saharan_africa": "Sub-Saharan Africa",
         "middle_east": "Middle East", "central_asia": "Central Asia",
         "south_east_asia": "Southeast Asia", "east_asia": "East Asia",
         "south_asia": "South Asia", "oceania": "Oceania",
@@ -121,7 +121,7 @@ def main() -> int:
     region_emoji = {
         "europe": "🇪🇺", "north_america": "🇺🇸",
         "central_america_caribbean": "🌴", "south_america": "🌎",
-        "africa": "🌍", "middle_east": "🕌",
+        "north_africa": "🌍", "sub_saharan_africa": "🌍", "middle_east": "🕌",
         "central_asia": "🏔️", "south_east_asia": "🌏",
         "east_asia": "🏯", "south_asia": "🕌",
         "oceania": "🏝️", "prediction_markets": "📊",
@@ -151,7 +151,7 @@ def main() -> int:
     regions_order = [
         "europe", "middle_east", "north_america", "east_asia",
         "south_asia", "central_asia", "south_east_asia",
-        "africa", "south_america", "central_america_caribbean",
+        "north_africa", "sub_saharan_africa", "south_america", "central_america_caribbean",
         "oceania", "prediction_markets",
     ]
 

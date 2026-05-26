@@ -255,7 +255,7 @@ if [ "$COG_N" -ge 3 ] && [ ! -f "$DEGRADED_FLAG" ]; then
         > "$LOG_DIR/philby-trade-${TODAY}.log" 2>&1 && \
     echo "  Philby Trader: cycle complete" >> "$HEALTH_LOG" || \
     echo "  Philby Trader: cycle failed" >> "$HEALTH_LOG"
-    # Publish all 5 Philby desk feeds + status + Moltbook
+    # Publish all Philby desk feeds + status + Moltbook
     cd "$WORKSPACE" && timeout 120 bash philby/scripts/publish_all_desks.sh \
         > "$LOG_DIR/philby-all-${TODAY}.log" 2>&1 && \
     echo "  Philby: all 5 desks published" >> "$HEALTH_LOG" || \
