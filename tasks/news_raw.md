@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-05-26 03:01 UTC
+# Gmail Intel Digest — 2026-05-26 05:01 UTC
+
+## روبيو: يجب فتح مضيق هرمز "بأي شكل من الأشكال"
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Tue, 26 May 2026 01:01:03 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## In the AI age, firms chase growth but with fewer workers
+**From:** Reuters India File <indiafile@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 00:46:05 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Iran Update Evening Special Report: May 25, 2026, 02:00 PM ET
 **From:** CTP Publications <criticalthreats@aei.org>
@@ -50,26 +68,19 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 
 ---
 
-## Trump and Warsh's fates now tied
-**From:** Reuters One Essential Read <dailybriefing@thomsonreuters.com>
-**Date:** Mon, 25 May 2026 12:00:16 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.row-content{width:100%!important}.stack .column{width:100%;display:block}.mobile_hide{min-height:0;max-
+## AgentMail Intel — 2026-05-26 05:01 UTC
 
----
+### The pope speaks up for humans, not humanoids
+**From:** John Authers <noreply@news.bloomberg.com>  
+Points of Return To get John Authers’ newsletter delivered directly to your inbox, sign up here. It looks like peace — or surrender — in the Strait or Hormuz View in browser <https://bloom.bg/4wP
 
-## Anthropic's Olah says AI must be guided from outside Big Tech
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Mon, 25 May 2026 11:02:15 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### The World: Are we pandemic ready?
+**From:** The New York Times <nytdirect@nytimes.com>  
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-
-## AgentMail Intel — 2026-05-26 03:01 UTC
+### Market Moves: ASX Drops Most Since 2012 After Revising Up Costs on Tech Revamp
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert ASX Drops Most Since 2012 After Revising Up Costs on Tech Re
 
 ### Why we investigate organized crime
 **From:** InSight Crime <info@insightcrime.org>  
@@ -78,15 +89,3 @@ https://insightcrime.org/?mc_cid=ba64925699&mc_eid=UNIQID https://www.linkedin.c
 ### 彭博财经早茶：美伊和谈顺利推进；宇树科技扭亏为盈
 **From:** Bloomberg <noreply@news.bloomberg.com>  
 Markets Daily China 中文版 Market Snapshot 彭博美元指数 1,199.65 +0.01% 比特币 77,182.79 -0.04% 布伦特原油期货 96.14 -7.15% Market data as of 06:50 pm EST. Market data may be delayed
-
-### What Australia can learn from NZ’s burst housing bubble
-**From:** Bloomberg Australia <noreply@news.bloomberg.com>  
-Why New Zealand’s Housing Bubble Burst Get caught up. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Within reach
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Trump Says Iran Talks ‘Proceeding Nicely’ as Deal Appears Closer Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### 1日を始める前に読んでおきたいニュース5本
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Five Things to Start Your Day: Japanese Edition 日本語版 マーケットで話題になったニュースをお届けします。一日を始めるにあたって押さえておきたい5本はこちら。最新ニュースやマーケット情報はブルームバーグ日本語サイトでもご覧いただけます。トランプ米大統領は、停戦延長とホルムズ海峡の再開を巡るイランとの暫定合意に向けた交渉について、「順調に
