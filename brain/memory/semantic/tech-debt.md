@@ -51,7 +51,13 @@
 3. Each entry has a unique ID (CD = critical, HD = high, MD = medium)
 4. When a fix is deployed, update the status, add resolution date, and link to the commit/PR
 
-*Last updated: 2026-05-24*
+*Last updated: 2026-05-26*
+
+## Fresh Items
+
+| # | Debt | Discovered | Impact | Status |
+|---|---|---|---|---|
+| HD-17 | **DeepSeek API 401 unauthorized** — `deepseek_monitor.py --snapshot` returns `HTTP 401 Unauthorized` since May 21. DEEPSEEK_API_KEY env var or OpenClaw auth profile may need rotation. Cost monitoring, balance tracking, and budget guardrails all depend on this working. | 2026-05-21 | Cost tracking blind. Budget cap enforcement is relying on stale data — balance last successfully checked May 21 ($96.36). Weekly ~$0.47 burn continues unmonitored. | **OPEN** — needs API key rotation |
 
 ## May 23-24 Fix Cycle (15 items resolved)
 
