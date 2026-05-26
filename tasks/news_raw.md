@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-05-26 11:02 UTC
+# Gmail Intel Digest — 2026-05-26 13:01 UTC
+
+## 🧢 The final batch
+**From:** Foreign Policy <reply@foreignpolicy.com>
+**Date:** Tue, 26 May 2026 08:26:09 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.row-content{width:100%!important}.stack .column{width:100%;display:block}.mobile_hide{min-height:0;max-
+
+---
+
+## Pentagon spars with SpaceX over Starlink price hike during Iran war
+**From:** Reuters Business <newsletters@email.reuters.com>
+**Date:** Tue, 26 May 2026 08:03:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## What’s next at SCOTUS?
+**From:** The Daily Docket <thedailydocket@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 08:02:35 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## US-Iran talks stalls as US launch new strikes
 **From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
@@ -45,73 +72,41 @@
 
 ---
 
-## In the AI age, firms chase growth but with fewer workers
-**From:** Reuters India File <indiafile@thomsonreuters.com>
-**Date:** Tue, 26 May 2026 00:46:05 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-05-26 13:01 UTC
 
----
-
-## Iran Update Evening Special Report: May 25, 2026, 02:00 PM ET
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Mon, 25 May 2026 20:51:19 -0400
-**Type:** unknown | **Importance:** low
-
-A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
-
-Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VW3sNV6P9nkTW2V4xF45X5qtgW2qd3df5Pw0MXN8hWs5j3pyd0W8wLKSR6lZ3lnW3Gc55p8TdRQ2W4_dlK37t_SQ7N8n_7NjvnbbMVFJh1j6wVRBZW6Hvh0G4YNKnzW6D-Vkl91CD1qW7C9D9q939bB2W2Nv_RB4rwvfwW85VYW26yhlFnW4bMy3q2bgF-LW7GlCm_1B2_2-W1r6pV29m3lkjW2n66gZ2WBM59W4ltXrP8PxGZzN4z5btcHq9SRW5lY73m6gYMbkW9dZDWR88p_p4W5X4_YY
-
----
-
-## Russian Offensive Campaign Assessment, May 25, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Mon, 25 May 2026 20:39:37 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Russia threatened systematic strikes on Kyiv City in violation of the spirit of the Victory Day ceasefire, likely to posture strength after the humiliation of the ceasefire itself. May 25, 2026 Data Cutoff: 12:15 PM ET Samuel Shafiro, Grace Mappes, Christina Harward, Jennie Olmsted, Anjou Kang-Stryker, and George Barros  TOPLINES Russia threatened systematic strikes on Kyiv City in violation of the spirit of the Victory Day ceasefire, likely to posture s
-
----
-
-
-## AgentMail Intel — 2026-05-26 11:02 UTC
-
-### Preserving America's immigrant talent pipeline
-**From:** Brookings Brief <info@brookings.edu>  
-Plus, what Beijing got from the Trump-Xi summit and America's standing in the Iran war. View in browser (https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VWzqcg63q0HNW21FFcT7Lr41ZW1WCq9G5PwXK-N8J
-
-### US and Iran clash
+### Brussels Edition: Fertilizer squeeze
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-US and Iran Clash Near Hormuz Despite Reports of Progress Bloomberg Morning Briefing Americas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Europe Confronts the Cost of the Iran War’s Fertilizer Squeeze EU is trying to respond to a surge in fertilizer prices ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Gefälschte Klimazertifikate in Europa: Fünf Themen des Tages
+### India vs Taiwan
+**From:** Menaka Doshi at Bloomberg <noreply@news.bloomberg.com>  
+India Loses Market Rank to Taiwan Even Before Iran War Hits Earnings Absence of AI-led stocks is hurting India. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### Early Edition for May 26, 2026
+**From:** Just Security <no-reply@justsecurity.org>  
+The Early Edition Tuesday, May 26, 2026 Be sure to visit www.justsecurity.org (https://justsecurity.us7.list-manage.com/track/click?u=96b766fb1c8a55bbe9b0cdc21&id=9d47110f4e&e=21e62dded7) throughou
+
+### Cinco assuntos: Flávio busca reunião com Donald Trump nos EUA
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Five Things: Germany Petra Sorge über Klima-Luftschlösser — Abonnieren Sie unseren Newsletter Fünf Themen des Tages und erhalten Sie samstags das Hauptstadtgeflü
+Five Things to Start Your Day: Portuguese Edition Os desdobramentos da articulação de Flávio Bolsonaro nos EUA concentram atenções nesta manhã, em meio à expectativa por um encontro com Dona <h
 
-### The Morning: Your questions, answered
-**From:** The New York Times <nytdirect@nytimes.com>  
-
-### ISS Today: Guinea’s May elections end its transition – but will they bring stability?
-**From:** The Institute for Security Studies <webmaster@issafrica.org>  
-26 May 2026 [1] Guinea’s May elections end its transition – but will they bring stability? Although authorities adhered to the ECOWAS timeline, Guinea’s return to democracy is mi
-
-### Trump Is Making the Same Mistake That Doomed Biden
-**From:** American Enterprise Institute <aei_today@aei.org>  
-Today's top commentary and scholarship on the issues that matter most AEI Today AEI's daily collection of independent research and analysis Trump Is Making the Same Mistake That Doomed Biden (https
-
-### Front-row seat
-**From:** Bloomberg Politics <noreply@news.bloomberg.com>  
-China Plays Quiet Role in US-Iran Talks China’s long-running ties with Pakistan help it influence negotiations to end the Iran war ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Trump’s tricky path to peace
+### Market Moves: What to watch before the open
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-US Air Strikes on Iran Show Trump’s Challenging Path to Peace Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Bloomberg News Alert US Premarket Movers for May 26, 2026 <https://www.bloomb
 
-### Market Moves: Ferrari Shares Drop After It Unveils Fully Electric Car
+### Cinco cosas que debe saber para comenzar el día
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Bloomberg News Alert Ferrari Rolls Out 5-Seat Fully Electric Car in Brand First
+Five Things to Start Your Day: Spanish Edition Cinco cosas que debe saber para empezar el día. Los detalles principales con un solo clic <https://sli.bloomberg.co
 
-### Worse box line service equals higher rates, Crucial week ahead for tanker market
-**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134569&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=32a24a5f37934c198
+### Breaking News: BP Removes Manifold as Chair on ‘Serious’ Governance Concerns
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert BP Removes Manifold as Chair on ‘Serious’ Governanc
+
+### Washington Edition: Lone Star duel
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Texas Senate Showdown Latest Test of Trump’s Sway An astronomically expensive Senate GOP primary comes to a head today in Texas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### Five Reforms for New Fed Chair Kevin Warsh
+**From:** Cato Today <newsletters@cato.org>  
+The latest research from the Cato Institute. View in Browser: https://go.cato.org/webmail/1067542/1520540744/dae03b2ecfb3726926cb90ea6753a24ff9c5fac97b2a0cb72f4820164380a4c1 May 26, 2026 --- A Ref

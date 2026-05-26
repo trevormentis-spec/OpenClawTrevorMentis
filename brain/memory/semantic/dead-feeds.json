@@ -1234,8 +1234,12 @@
     "failures": 3,
     "last_failed_at": "2026-05-25T12:12:34.309335+00:00"
   },
-  "https://www.annahar.com/rss": {
+  "https://www.fpri.org/feed/": {
+    "failures": 2,
+    "last_failed_at": "2026-05-26T12:16:48.309074+00:00"
+  },
+  "https://en.irna.ir/rss": {
     "failures": 1,
-    "last_failed_at": "2026-05-25T12:19:49.295323+00:00"
+    "last_failed_at": "2026-05-26T12:16:26.519298+00:00"
   }
 }
