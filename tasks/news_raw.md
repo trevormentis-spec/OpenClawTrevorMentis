@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-05-26 05:01 UTC
+# Gmail Intel Digest — 2026-05-26 07:03 UTC
+
+## Peace talks hit turbulence
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 01:02:03 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## روبيو: يجب فتح مضيق هرمز "بأي شكل من الأشكال"
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -56,20 +65,12 @@ Email from Institute for the Study of War The United States and Iran continue to
 
 ---
 
-## National Security Nightcap for this Memorial Day Monday
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Mon, 25 May 2026 18:59:09 +0000
-**Type:** alert | **Importance:** high
 
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-this-memorial-day-monday?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=ba80aec51c-EMAIL_CAMPAIGN_2026_05_25_06_56&utm_medium=email&utm_term=0_-ba80aec51c-547824188&mc_cid=ba80aec51c&mc_eid=UNIQID
+## AgentMail Intel — 2026-05-26 07:05 UTC
 
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=ba80aec51c-EMAIL_CAMPAIGN_2026_05_25_06_56&
-
----
-
-
-## AgentMail Intel — 2026-05-26 05:01 UTC
+### RIAT reversal, a NATO nuclear reminder and a new F-35 missile
+**From:** Breaking Defense Europe <newsletters@breakingdefense.com>  
+A weekly roundup of top developments from across the region. _____________________________________________ Breaking Defense: Europe (https://info.breakingdefense.com/e3t/Ctc/GA+113/cfk9804/VVyFwj5Pjl
 
 ### The pope speaks up for humans, not humanoids
 **From:** John Authers <noreply@news.bloomberg.com>  
@@ -85,7 +86,3 @@ Bloomberg News Alert ASX Drops Most Since 2012 After Revising Up Costs on Tech R
 ### Why we investigate organized crime
 **From:** InSight Crime <info@insightcrime.org>  
 https://insightcrime.org/?mc_cid=ba64925699&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=ba64925699&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=ba64925699&mc_eid=UNIQID
-
-### 彭博财经早茶：美伊和谈顺利推进；宇树科技扭亏为盈
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Markets Daily China 中文版 Market Snapshot 彭博美元指数 1,199.65 +0.01% 比特币 77,182.79 -0.04% 布伦特原油期货 96.14 -7.15% Market data as of 06:50 pm EST. Market data may be delayed

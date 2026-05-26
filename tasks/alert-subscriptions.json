@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "subscribers": [
+    {
+      "id": "trevor-self",
+      "created": "2026-05-26T00:00:00Z",
+      "email": "trevor_mentis@agentmail.to",
+      "webhook_url": null,
+      "narratives": [
+        "all"
+      ],
+      "signal_types": [
+        "all"
+      ],
+      "active": true,
+      "notes": "Default self-subscriber \u2014 Trevor's own inbox receives all alerts"
+    }
+  ],
+  "created": "2026-05-26T00:00:00Z",
+  "last_updated": "2026-05-26T06:06:24Z"
+}

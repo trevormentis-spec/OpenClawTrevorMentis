@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T19:00:11.328Z",
+  "updatedAt": "2026-05-26T06:02:53.151Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -218,13 +218,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 25,
+      "recallCount": 26,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 24.042409226740567,
+      "totalScore": 25.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -250,7 +250,8 @@
         "69aac40b64bc",
         "f24e9c8723c1",
         "a7caaf53a02e",
-        "b40e808eaeb3"
+        "b40e808eaeb3",
+        "b9bf26d73c0d"
       ],
       "recallDays": [
         "2026-04-28",
@@ -266,7 +267,8 @@
         "2026-05-11",
         "2026-05-12",
         "2026-05-23",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -603,13 +605,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 19,
+      "recallCount": 20,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 18.75178866873963,
+      "totalScore": 19.75178866873963,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-25T14:05:11.712Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -629,7 +631,8 @@
         "1a26325ac2fd",
         "dd22c622813d",
         "3d62a3a5d314",
-        "7615a05f8cc3"
+        "7615a05f8cc3",
+        "9bb6a767054a"
       ],
       "recallDays": [
         "2026-05-04",
@@ -643,7 +646,8 @@
         "2026-05-21",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -764,13 +768,13 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Script can take local PDF (--pdf) or fetch from Gmail by label (--gmail) - Added Step 4 to daily-brief-cron.sh — runs after email delivery - Tested successfully with magazine-briefing-2026-05-04.pdf (3 pages, all 3 platforms) ## Landing Page — Built & Deployed - Created osint-brief-landing.html — dark theme, 6-theater coverage grid, method section, pricing tiers - Deployed to production at https://quiet-kangaroo-c0b94c.netlify.app/ - Roast completed — score 7/10, top 5 blockers identified - Quick fixes applied: email capture (Netlify Forms), Stripe checkout links, subscriber counter - Created thank-you.html post-submission page ## Agent Intelligence API — Built & Deployed - Created",
-      "recallCount": 11,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.888387271860296,
+      "totalScore": 15.888387271860296,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T08:13:34.521Z",
-      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
       "queryHashes": [
         "50bca59fec26",
         "cceef388ed2a",
@@ -782,7 +786,12 @@
         "f7d1f8923a5d",
         "088d05594874",
         "b84acb705a0f",
-        "cb0e9de10fbc"
+        "cb0e9de10fbc",
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88",
+        "ac056aa0d70c",
+        "0997ca51db2d"
       ],
       "recallDays": [
         "2026-05-06",
@@ -790,7 +799,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-26"
       ],
       "conceptTags": [
         "daily-brief-cron.sh",
@@ -926,13 +936,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14,
+      "totalScore": 15,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-25T15:20:29.105Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -947,7 +957,8 @@
         "1c8dc30ba712",
         "2de51dfe8bc5",
         "b64dfec040d6",
-        "766555fc1ad7"
+        "766555fc1ad7",
+        "9bb6a767054a"
       ],
       "recallDays": [
         "2026-05-07",
@@ -959,7 +970,8 @@
         "2026-05-14",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -1089,22 +1101,29 @@
       "endLine": 121,
       "source": "memory",
       "snippet": "## 4 Daily Briefings — First Creation ### What was built - 4 email-only briefings: UK News, Trump Leadership, Financial Markets + Prediction Bets, Global Sports - Sent via Gmail Maton API from trevor.mentis@gmail.com to roderick.jones@gmail.com - Opus 4.7 graded first draft C+ (oil inconsistencies, no Top 3 summary, sports odds math) - Cron set for 8am PT daily delivery (confirmed user preferred time) ## Hermes Agent Architecture Audit ### What was done - Studied Hermes Agent docs from Nous Research - Audited Trevor against 10 Hermes dimensions - Full audit saved to analyst/audits/hermes-audit-2026-05-11.md ### Key findings - Two CRITICAL gaps: procedural memory (skills) and self-improvi",
-      "recallCount": 4,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T04:02:30.258Z",
-      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
+      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
       "queryHashes": [
         "4fdd6eb8041e",
         "b5deefa4bb81",
         "b84acb705a0f",
-        "1493103d7969"
+        "1493103d7969",
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88",
+        "9bb6a767054a",
+        "ac056aa0d70c",
+        "0997ca51db2d"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "email-only",
@@ -1316,27 +1335,29 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
         "b2960036661c",
         "cc764312eb50",
         "13584e1c3564",
-        "1493103d7969"
+        "1493103d7969",
+        "b9bf26d73c0d"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
         "2026-05-19",
         "2026-05-23",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -1698,19 +1719,21 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "# 2026-05-18 — Phase 1 Closure + Phase 2 Launch + Presentation Stack ## Durable Decisions ### Phase 1 Closed - Scope gate (scope_check.py + scope.yaml) verified at 4/4 regression probes. Blocklist trimmed from 23→11 entries (removed 12 overreaching keywords). Blocklist = precision tool, not filter. - Fabrication detector (analyst/fabrication_check.py) blocks briefs with unsourced contracts, prices, percentage ranges, dollar cost estimates. Hard rule: no named instruments without verification. - Themes preflight (analyst/themes_preflight.py) validates all required themes have substantive coverage pre-delivery. - Three guards (scope_check, fabrication_check, themes_preflight) are principal-r",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-20T15:45:37.520Z",
-      "lastRecalledAt": "2026-05-20T15:46:20.456Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
       "queryHashes": [
         "6dd049397237",
-        "5405747e965c"
+        "5405747e965c",
+        "b9bf26d73c0d"
       ],
       "recallDays": [
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-26"
       ],
       "conceptTags": [
         "scope-check.py",
@@ -1845,24 +1868,26 @@
       "endLine": 200,
       "source": "memory",
       "snippet": "- [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Phase A — RSS Feed Health Audit (19:00 UTC) **Results:** 290 feeds tested (280 real + 10 region labels) - ✅ **Working:** 137 (48.9% effective health",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-22T20:38:32.958Z",
-      "lastRecalledAt": "2026-05-24T01:49:24.951Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
       "queryHashes": [
         "d47a29803ed1",
         "df855bba4611",
         "69aac40b64bc",
         "b29c1c6a8236",
-        "6c65929eab81"
+        "6c65929eab81",
+        "b9bf26d73c0d"
       ],
       "recallDays": [
         "2026-05-22",
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-26"
       ],
       "conceptTags": [
         "north-america",
@@ -2173,20 +2198,22 @@
       "endLine": 152,
       "source": "memory",
       "snippet": "5. Updated ORCHESTRATION.md with three-branch flow and discipline note ### Adjacency Fix Test — Four Probes (2026-05-17 02:55 UTC) **Probe A** — \"Brief me on the Saudi-Russia oil production talks this week.\" Gate: in_scope (permissive default, LLM unavailable). Behavior: adjacent brief produced. Vectors: brent-pemex, Hacienda hedge, MXN carry trade, US gasoline politics. ✅ **Probe B** — \"Brief me on the ECB rate decision this week.\" Gate: in_scope (permissive default). Behavior: adjacent brief through MXN/capital-flows lens. ✅ **Probe C** — \"Brief me on the Russia-Ukraine front for today.\" Gate: out_of_scope (blocklist). ✅ **Probe D** — \"What's happening with Pemex Cadereyta refinery th",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-05-25T01:44:37.483Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
       "queryHashes": [
         "33046e596a0d",
-        "998fb1f86453"
+        "998fb1f86453",
+        "9bb6a767054a"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "orchestration.md",
@@ -2244,18 +2271,24 @@
       "endLine": 308,
       "source": "memory",
       "snippet": "- `skills/a2a/client.py` — discovers and tasks other A2A agents (discovery confirmed working) - Agent Card serves at `/.well-known/agent-card.json` with JSON-RPC 2.0 endpoint - `config/a2a/known_agents.json` — agent registry - Limitation: SDK v1.0 protobuf types still maturing — client uses direct httpx calls. Task execution needs async tuning. - Practical value: forward-looking infrastructure. Ecosystem still nascent (150 orgs). ## Moltbook reconnected — 2026-05-24 - Status changed from DISABLED to ENABLED (Roderick directive supersedes 2026-05-23 kill order) - Account: `trevormentis` — 34 karma, 11 followers, 18 following, claimed + active - API key still valid (same as before) - New po",
-      "recallCount": 1,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T01:44:37.483Z",
-      "lastRecalledAt": "2026-05-25T01:44:37.483Z",
+      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
       "queryHashes": [
-        "998fb1f86453"
+        "998fb1f86453",
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88",
+        "ac056aa0d70c",
+        "0997ca51db2d"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "skills/a2a/client.py",
@@ -2421,6 +2454,203 @@
         "chinese/japanese",
         "phase",
         "behavioral"
+      ]
+    },
+    "memory:memory/2026-05-24.md:253:280": {
+      "key": "memory:memory/2026-05-24.md:253:280",
+      "path": "memory/2026-05-24.md",
+      "startLine": 253,
+      "endLine": 280,
+      "source": "memory",
+      "snippet": "**Fix:** Added `REPLY IN ENGLISH ONLY.` to all 17 cron task prompts that deliver to Telegram. Root cause: DeepSeek V4 Pro defaults to Chinese for structured reports when no language specified. ## Simmer connected — 2026-05-24 - Agent registered via `npx clawhub@latest install simmer` → agent ID `e54807b5` - API key `sk_live_6e7e4bfc...` saved to `.env` - SDK `simmer-sdk` installed - Paper trading mode, 10,000 $SIM virtual balance - Real trading blocked until wallet linked - `scripts/simmer_scanner.py` built and wired into pre-collection (Step 1d of daily-text-brief.sh) - Limitation: Simmer's market discovery is thin — 0 geopolitics markets found. Kalshi scanner (88 markets) remains primar",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:27.480Z",
+      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
+      "queryHashes": [
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88",
+        "ac056aa0d70c",
+        "0997ca51db2d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sk-live-6e7e4bfc",
+        "simmer-sdk",
+        "scripts/simmer-scanner.py",
+        "pre-collection",
+        "daily-text-brief.sh",
+        "fix",
+        "added",
+        "reply"
+      ]
+    },
+    "memory:memory/2026-05-11.md:115:140": {
+      "key": "memory:memory/2026-05-11.md:115:140",
+      "path": "memory/2026-05-11.md",
+      "startLine": 115,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "- analyst/audits/hermes-audit-2026-05-11.md — full audit document ## Agent-First GSIB Product ### What was built - build_agent_brief.py — reads analysis JSONs, produces structured JSON with typed fields - Schema includes: bluf, key_judgments (typed array), theatre_analyses (nested), prediction_markets, watch_items, indicators_dashboard - Each judgment has: statement, confidence_band, probability_lower/upper, falsification, source_grading - Published to Moltbook agents submolt: https://www.moltbook.com/posts/2099c975-a192-4668-bebf-64e37cbf673c - JSON at exports/agent-api/latest.json (55 KB) - Wired into daily-brief-cron.sh as post-pipeline step ### Business model implications - Human-firs",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:27.480Z",
+      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
+      "queryHashes": [
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88",
+        "9bb6a767054a",
+        "ac056aa0d70c",
+        "0997ca51db2d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "agent-first",
+        "build-agent-brief.py",
+        "key-judgments",
+        "theatre-analyses",
+        "prediction-markets",
+        "watch-items",
+        "indicators-dashboard",
+        "confidence-band"
+      ]
+    },
+    "memory:memory/2026-05-24.md:231:262": {
+      "key": "memory:memory/2026-05-24.md:231:262",
+      "path": "memory/2026-05-24.md",
+      "startLine": 231,
+      "endLine": 262,
+      "source": "memory",
+      "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1099 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 ======================================================================== ═══ EXECUTI ## Delivery pipe fix — 2026-05-24 **Root cause:** `daily-text-brief.sh` used `| tee -a \"$LOG\"` for long-running orchestrator command. OpenClaw cron session stdout buffer filled, pipe broke, tee died, killing shell pipeline before quality gate + delivery steps. **Fix:** Changed orchestrator, delivery, and postdiction steps to use `>> \"$LOG\" 2>&1` (direct",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:27.480Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.814Z",
+      "queryHashes": [
+        "27d057b1d1c5",
+        "b53ef245a31e",
+        "748b955e8b88"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "daily-text-brief.sh",
+        "long-running",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports"
+      ]
+    },
+    "memory:memory/2026-05-17.md:58:88": {
+      "key": "memory:memory/2026-05-17.md:58:88",
+      "path": "memory/2026-05-17.md",
+      "startLine": 58,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "**Gate result:** `in_scope` (keyword match: \"trump tariff\" in allowlist) **Assessment:** Correctly classified. US-Mexico trade is a core Mexico desk theme. Multiple live developments today. **Pass criteria met:** Standard thematic brief on us_mexico theme (see below). --- ### Remediation Directive — Adjacency Path Fix (2026-05-17 02:50 UTC) Principal pointed out two errors in original implementation: 1. **Collapsed adjacency into out_of_scope** — Added \"Saudi\" and \"OPEC\" to blocklist, which would block legitimate Mexico queries touching those topics. Fix: reverted blocklist edits, strengthened LLM classifier with explicit adjacency examples and hard rule (adjacency is DEFAULT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:30.849Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
+      "queryHashes": [
+        "9bb6a767054a"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "in-scope",
+        "us-mexico",
+        "out-of-scope",
+        "gate",
+        "result",
+        "keyword",
+        "match",
+        "trump"
+      ]
+    },
+    "memory:memory/2026-05-17.md:84:114": {
+      "key": "memory:memory/2026-05-17.md:84:114",
+      "path": "memory/2026-05-17.md",
+      "startLine": 84,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "- `analyst/config/scope.yaml` — reverted blocklist (removed saudi/opec) - `analyst/scope_check.py` — updated LLM classifier with adjacency examples and hard rule; renamed build_decline to only handle out_of_scope; added build_adjacency_preamble(); --format and --json CLI options - `analyst/templates/adjacent_brief.md` — new adjacency output template - `skills/daily-intel-brief/scripts/analyze.py` — adjacency path wiring - `skills/daily-intel-brief/scripts/orchestrate.py` — adjacency path wiring ### Phase 1 Closure — Fix (2026-05-17 03:24 UTC) Five-probe regression test results (`python3 analyst/scope_check.py --regression-test --verbose`): ``` [PASS] Probe A: scope=adjacent (expected",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:30.849Z",
+      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
+      "queryHashes": [
+        "9bb6a767054a"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "analyst/config/scope.yaml",
+        "saudi/opec",
+        "analyst/scope-check.py",
+        "build-decline",
+        "out-of-scope",
+        "build-adjacency-preamble",
+        "five-probe",
+        "regression-test"
+      ]
+    },
+    "memory:memory/2026-05-25.md:51:68": {
+      "key": "memory:memory/2026-05-25.md:51:68",
+      "path": "memory/2026-05-25.md",
+      "startLine": 51,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "- Russia conducted a \"devastating missile and drone strike\" against Ukraine, heavily targeting Kyiv City - Strike included an **Oreshnik intermediate-range ballistic missile (IRBM)** — a nuclear-capable strategic weapon system - This is the first confirmed combat use of the Oreshnik IRBM - Combined with yesterday's 700-drone barrage, this marks a significant escalation in both scale and weapon type **Assessment:** - Oreshnik is a nuclear-capable strategic delivery system. Its use in conventional strikes crosses a threshold — it signals that Russia is willing to deploy strategic-range weapons in the Ukraine theater - This may be intended to signal to NATO/the West that Russia's strategic ars",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:02:35.174Z",
+      "lastRecalledAt": "2026-05-26T06:02:35.174Z",
+      "queryHashes": [
+        "fdbd6cf362a5"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "intermediate-range",
+        "nuclear-capable",
+        "700-drone",
+        "strategic-range",
+        "nato/the",
+        "russia",
+        "conducted",
+        "devastating"
       ]
     }
   }

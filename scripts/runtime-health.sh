@@ -235,11 +235,21 @@ if [ "$COG_N" -ge 3 ] && [ ! -f "$DEGRADED_FLAG" ]; then
         > "$LOG_DIR/kj-feed-${TODAY}.log" 2>&1 && \
     echo "  KJ feed generated" >> "$HEALTH_LOG" || \
     echo "  KJ feed generation failed" >> "$HEALTH_LOG"
-    # Publish KJ feed
-    cd "$WORKSPACE" && timeout 30 python3 analyst/scripts/publish_feed.py --validate \
+    # Publish KJ feed to subscribers
+    cd "$WORKSPACE" && timeout 30 python3 analyst/scripts/publish_feed.py \
         > "$LOG_DIR/kj-publish-${TODAY}.log" 2>&1 && \
     echo "  KJ feed published" >> "$HEALTH_LOG" || \
     echo "  KJ feed publish skipped" >> "$HEALTH_LOG"
+    # I&W alert engine — check for threshold-crossing events
+    cd "$WORKSPACE" && timeout 30 python3 analyst/scripts/alert_engine.py \
+        > "$LOG_DIR/alert-engine-${TODAY}.log" 2>&1 && \
+    echo "  I&W alert check complete" >> "$HEALTH_LOG" || \
+    echo "  I&W alert engine failed" >> "$HEALTH_LOG"
+    # Publish all 5 Philby desk feeds + status + Moltbook
+    cd "$WORKSPACE" && timeout 120 bash philby/scripts/publish_all_desks.sh \
+        > "$LOG_DIR/philby-all-${TODAY}.log" 2>&1 && \
+    echo "  Philby: all 5 desks published" >> "$HEALTH_LOG" || \
+    echo "  Philby: desk publication failed" >> "$HEALTH_LOG"
     echo 0 > "$COG_COUNTER"
 fi
 

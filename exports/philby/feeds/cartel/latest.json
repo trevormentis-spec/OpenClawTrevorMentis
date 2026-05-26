@@ -1,0 +1,429 @@
+{
+  "feed_version": 1,
+  "cycle": 17,
+  "timestamp": "2026-05-26T06:39:30Z",
+  "desk": "cartel",
+  "previous_timestamp": "2026-05-26T06:38:41Z",
+  "narratives": [
+    {
+      "id": "fentanyl_trafficking_disruption",
+      "confidence": 32,
+      "trend": "stable",
+      "kent_band": "unlikely",
+      "reasoning": "Fentanyl supply chains have proven extraordinarily resilient to enforcement. Production methods decentralize faster than interdiction adapts.",
+      "evidence_for": 2,
+      "evidence_against": 1,
+      "catalysts": [
+        "Precursor chemical controls",
+        "US-Mexico security coordination",
+        "Fentanyl overdose data"
+      ],
+      "created": "2026-05-26T06:19:51Z",
+      "last_updated": "2026-05-26T06:19:51Z",
+      "hours_to_resolution": 5263.3,
+      "resolution_date": "2026-12-31T14:00:00Z"
+    },
+    {
+      "id": "mexico_cartel_violence_trend",
+      "confidence": 72,
+      "trend": "stable",
+      "kent_band": "likely",
+      "reasoning": "Violence is structural and self-reinforcing. Government capacity to suppress is limited. Harfuch may temporarily reduce strategic violence but not underlying drivers.",
+      "evidence_for": 2,
+      "evidence_against": 1,
+      "catalysts": [
+        "CJNG leadership targeting",
+        "Chapitos extradition",
+        "Sheinbaum policy review"
+      ],
+      "created": "2026-05-26T06:19:51Z",
+      "last_updated": "2026-05-26T06:19:51Z",
+      "hours_to_resolution": 5263.3,
+      "resolution_date": "2026-12-31T14:00:00Z"
+    },
+    {
+      "id": "mexico_us_security_cooperation",
+      "confidence": 50,
+      "trend": "erratic",
+      "kent_band": "even_chance",
+      "reasoning": "Cooperation exists but is fragile. Each US pressure move triggers Mexican nationalist backlash. Pattern is two steps forward, one step back.",
+      "evidence_for": 2,
+      "evidence_against": 2,
+      "catalysts": [
+        "Harfuch-LA meetings",
+        "US designation decisions",
+        "Mexican sovereignty debates"
+      ],
+      "created": "2026-05-26T06:19:51Z",
+      "last_updated": "2026-05-26T06:19:51Z",
+      "hours_to_resolution": 5263.3,
+      "resolution_date": "2026-12-31T14:00:00Z"
+    }
+  ],
+  "source_trust": [
+    {
+      "source_id": "108-drone strike package",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Campaign rhetoric",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "China response",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "DEA assessments",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Demand destruction risk",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Economic costs",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "European defense spending",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Export controls",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Global demand",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Harfuch-US relationship",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Homicide data (INEGI)",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Hormuz chokepoint risk",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Implementation gaps",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "LNG capacity growth",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Merida Initiative legacy",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Multiple chokepoints",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Mutual economic dependency",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "NATO force posture",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "OPEC+ discipline",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Oreshnik IRBM deployment",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "PRC military posture",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Pattern analysis",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Phase 1 deal structure",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Political friction",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Political sovereignty concerns",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Prior negotiation patterns",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Processing concentration",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Production decentralization",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Renewables growth",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Russian doctrine",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Semiconductor export controls",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Sheinbaum security strategy",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Tech alliance building",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Territorial conflict",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Trump tariff track record",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US IRA implementation",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US deterrence posture",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US policy unpredictability",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US strategic release",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US troop drawdown reversal",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "US-Mexico cooperation",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Ukraine air defense",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Ukraine signal flexibility",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Underinvestment",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "War fatigue in NATO capitals",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "Xi warning at summit",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T06:19:51Z"
+    },
+    {
+      "source_id": "intel_assessment_trevor",
+      "admiralty": "B2",
+      "track_record": 0.6,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T01:21:18.847316+00:00"
+    },
+    {
+      "source_id": "kalshi_market",
+      "admiralty": "A1",
+      "track_record": 0.85,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T01:21:18.847305+00:00"
+    },
+    {
+      "source_id": "simmer_market_aggregator",
+      "admiralty": "A2",
+      "track_record": 0.8,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T01:21:18.847313+00:00"
+    },
+    {
+      "source_id": "trump_public_statement",
+      "admiralty": "A1",
+      "track_record": 0.7,
+      "total_assessments": 1,
+      "last_updated": "2026-05-26T01:21:18.847310+00:00"
+    }
+  ],
+  "weak_signals": [],
+  "escalations": [],
+  "delta": {
+    "changed_narratives": [],
+    "new_narratives": [],
+    "new_signals": [],
+    "new_escalations": []
+  },
+  "system": {
+    "disk_usage_pct": 81,
+    "cognition_healthy": true,
+    "total_cycles": 17,
+    "total_spent_usd": 0.0029
+  }
+}

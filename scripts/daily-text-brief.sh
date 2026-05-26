@@ -41,8 +41,10 @@ fi
 echo "=== Daily Text Brief — ${DATE_UTC} ===" | tee -a "$LOG"
 echo "Started at $(date -u)" | tee -a "$LOG"
 
-# Source environment
+# Source environment with export (cron doesn't inherit shell env)
+set -a
 source "$REPO/.env" 2>/dev/null || true
+set +a
 export DEEPSEEK_API_KEY="${DEEPSEEK_API_KEY:-}"
 export AGENTMAIL_API_KEY="${AGENTMAIL_API_KEY:-}"
 export OPENROUTER_API_KEY="${OPENROUTER_API_KEY:-}"

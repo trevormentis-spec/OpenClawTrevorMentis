@@ -132,6 +132,31 @@ def collect_recent_context() -> Dict[str, Any]:
             for f in recent_mem
         ]
 
+    # Email OSINT — read AgentMail/Gmail intel from news_raw.md
+    news_raw = BASE_DIR / "tasks" / "news_raw.md"
+    if news_raw.exists():
+        age_min = int((time.time() - news_raw.stat().st_mtime) / 60)
+        if age_min < 1440:  # Only if updated in last 24h
+            try:
+                text = news_raw.read_text()
+                # Extract subject lines (## headers in the markdown)
+                import re
+                subjects = re.findall(r"^## (.+)$", text, re.MULTILINE)
+                context["email_intel"] = {
+                    "file": "news_raw.md",
+                    "age_min": age_min,
+                    "size": len(text),
+                    "subjects": subjects[:5],  # Top 5 for prompt brevity
+                    "has_useful_intel": any(
+                        kw in text.lower()
+                        for kw in ["iran", "ukraine", "china", "cartel", "fentanyl",
+                                  "hormuz", "nuclear", "oil", "tariff", "drone",
+                                  "missile", "ceasefire", "sanctions"]
+                    ),
+                }
+            except Exception:
+                context["email_intel"] = {"error": "read_failed"}
+
     return context
 
 
@@ -205,6 +230,23 @@ def build_flash_input(state: dict, context: dict) -> str:
         f"Monitor: {context.get('runtime_health', {}).get('processes', {}).get('monitor', '?')}\n"
         f"Risk: {context.get('runtime_health', {}).get('risk', '?')}\n"
     )
+
+    # Add email OSINT intel if available
+    email_intel = context.get("email_intel", {})
+    if email_intel and not email_intel.get("error"):
+        subjects = email_intel.get("subjects", [])
+        input_text += (
+            f"\n## EMAIL_OSINT\n\n"
+            f"Source: {email_intel.get('file', 'news_raw.md')} "
+            f"({email_intel.get('age_min', '?')}m old, "
+            f"{email_intel.get('size', 0)} bytes)\n"
+        )
+        if subjects:
+            input_text += "Recent intel subjects:\n"
+            for s in subjects:
+                input_text += f"  - {s}\n"
+        if email_intel.get("has_useful_intel"):
+            input_text += "Contains desk-relevant intel — consider updating narrative confidence.\n"
 
     return prompt + "\n\n" + input_text
 
@@ -321,6 +363,8 @@ def apply_flash_output(state: dict, flash_output: dict):
 
     # Confidence updates
     for update in flash_output.get("confidence_updates", []):
+        if not isinstance(update, dict):
+            continue
         narrative_id = update.get("narrative")
         if not narrative_id:
             continue
