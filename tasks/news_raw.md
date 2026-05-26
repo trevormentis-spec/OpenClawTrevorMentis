@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-05-26 13:01 UTC
+# Gmail Intel Digest — 2026-05-26 15:01 UTC
+
+## Germany open to compromise on EU capital markets union, finance minister says
+**From:** Reuters Global Investor <newsletters@email.reuters.com>
+**Date:** Tue, 26 May 2026 10:01:49 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## 🧢 The final batch
 **From:** Foreign Policy <reply@foreignpolicy.com>
@@ -63,17 +72,28 @@
 
 ---
 
-## روبيو: يجب فتح مضيق هرمز "بأي شكل من الأشكال"
-**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
-**Date:** Tue, 26 May 2026 01:01:03 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+## AgentMail Intel — 2026-05-26 15:01 UTC
 
----
+### This Week | Who Will Make Money on AI?
+**From:** Center for a New American Security <contact@cnas.org>  
+Virtual Event Who Will Make Money on AI? Tuesday, May 26, from 3:30 p.m.-4:30 p.m. ET REGISTER [https://events.cnas.org/whowillmakemoneyonai] Join [https://events.cnas.org/whowillmakemoneyonai] th
 
+### Europe and India bake in May heat
+**From:** Bloomberg Green <noreply@news.bloomberg.com>  
+UK and France Break May Records as Heat Scorches Europe UK and France broke monthly records ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-## AgentMail Intel — 2026-05-26 13:01 UTC
+### Explore the agenda: One week left to register for NSSA’s Space Threats & Acquisition Forum! [From our sponsor]
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+_____________________________________________________________________________________ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ *|MC_PREVIEW_TEXT|* View this email in your browser ONLY
+
+### The Space Force picks SES and Viasat
+**From:** SpaceNews FIRST UP <spacenewseletter@spacenews.com>  
+Plus: Starship's test flight05/26/2026 READ IN BROWSER http://spacenews.bluelena.io/p_v.php?c=2725&m=1600&s=03dcdd84f7212aa2b9fc195de9a839f5&d=15791&v=2&l=8 https://spacenews.com https://spacenews
+
+### Next Africa: Breaking up
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Friends Turn to Foes in a Very Public African Breakup Senegal’s top leaders end power partnership ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### Brussels Edition: Fertilizer squeeze
 **From:** Bloomberg <noreply@news.bloomberg.com>  
@@ -90,23 +110,3 @@ The Early Edition Tuesday, May 26, 2026 Be sure to visit www.justsecurity.org (h
 ### Cinco assuntos: Flávio busca reunião com Donald Trump nos EUA
 **From:** Bloomberg <noreply@news.bloomberg.com>  
 Five Things to Start Your Day: Portuguese Edition Os desdobramentos da articulação de Flávio Bolsonaro nos EUA concentram atenções nesta manhã, em meio à expectativa por um encontro com Dona <h
-
-### Market Moves: What to watch before the open
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Bloomberg News Alert US Premarket Movers for May 26, 2026 <https://www.bloomb
-
-### Cinco cosas que debe saber para comenzar el día
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Five Things to Start Your Day: Spanish Edition Cinco cosas que debe saber para empezar el día. Los detalles principales con un solo clic <https://sli.bloomberg.co
-
-### Breaking News: BP Removes Manifold as Chair on ‘Serious’ Governance Concerns
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Bloomberg News Alert BP Removes Manifold as Chair on ‘Serious’ Governanc
-
-### Washington Edition: Lone Star duel
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Texas Senate Showdown Latest Test of Trump’s Sway An astronomically expensive Senate GOP primary comes to a head today in Texas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Five Reforms for New Fed Chair Kevin Warsh
-**From:** Cato Today <newsletters@cato.org>  
-The latest research from the Cato Institute. View in Browser: https://go.cato.org/webmail/1067542/1520540744/dae03b2ecfb3726926cb90ea6753a24ff9c5fac97b2a0cb72f4820164380a4c1 May 26, 2026 --- A Ref
