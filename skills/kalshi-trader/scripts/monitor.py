@@ -263,6 +263,7 @@ class PositionMonitor:
             return {
                 "timestamp": datetime.datetime.now(datetime.UTC).isoformat(),
                 "balance_cents": state["balance_cents"],
+                "positions": state["positions"],
                 "position_count": len(state["positions"]),
                 "open_order_count": len(state["open_orders"]),
                 "actions": actions,
@@ -307,9 +308,21 @@ class PositionMonitor:
                     if not result["can_trade"]:
                         logger.warning(f"🛑 TRADING HALTED: {result['trade_reason']}")
 
+                    # Build position detail string
+                    pos_details = "unknown"
+                    pos_list = result.get("positions", [])
+                    if pos_list:
+                        pos_strs = []
+                        for p in pos_list:
+                            t = getattr(p, "ticker", "?")
+                            c = getattr(p, "count", 0)
+                            e = getattr(p, "entry_price_cents", 0)
+                            pos_strs.append(f"{t}x{c}@${e/100:.2f}")
+                        pos_details = ", ".join(pos_strs)
+
                     logger.info(
                         f"Balance: ${result['balance_cents']/100:.2f} | "
-                        f"Positions: {result['position_count']} | "
+                        f"Positions: {result['position_count']} [{pos_details}] | "
                         f"Orders: {result['open_order_count']} | "
                         f"Can trade: {result['can_trade']}"
                     )

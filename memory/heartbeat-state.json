@@ -17,20 +17,26 @@
     "feed_audit": 1779219440,
     "phase_c": 1779650985
   },
-  "lastHeartbeat": 1779737272,
+  "lastHeartbeat": 1779824215,
   "rotationCursor": 0,
-  "previousPhase": "C",
-  "currentPhase": "D",
+  "previousPhase": "A",
+  "currentPhase": "B",
   "phaseAStatus": "completed",
   "phaseANotes": {
-    "feedsTested": 290,
-    "working": 137,
-    "empty": 7,
-    "failed": 50,
-    "regionLabelsExcluded": 10,
-    "healthPct": 48.9,
-    "topFailingErrors": "HTTP 404 (20), HTTP 403 (17), PARSE (9)",
-    "reportSaved": "brain/memory/semantic/feed-health-latest.json"
+    "feedsTested": 309,
+    "working": 208,
+    "emptyOrSlow": 11,
+    "dead": 90,
+    "healthPct": 67.0,
+    "catalogError": "sources_tested.json is a list, expected dict - catalog audit skipped",
+    "collectParseErrors": "10 'unknown url type' errors for regional labels in collect.py",
+    "reportSaved": "brain/memory/semantic/feed-health-latest.json",
+    "deadExamples": [
+      "Caixin, Tasnim, CGTN (Fran\u00e7ais), RBC (Russian), Yonhap (English)",
+      "NHK News (401), Tempo (403), Jordan Times (403), Times of Israel (403)",
+      "Kyodo News (404), Xinhua (404), Nikkei (404), Yomiuri (404)",
+      "Kyiv Independent (404), El Universal (404), NDTV India (404)"
+    ]
   },
   "nextPhase": "A",
   "alerts": [
@@ -101,5 +107,6 @@
     },
     "cycleComplete": true,
     "cycleSummary": "All 4 phases completed. Phase A: 290 feeds tested, 48.9% health. Phase B: 23 candidates found across 5 gap regions. Phase C: 50 dead pruned, 11 replacements added. Phase D: reindex done, cost snapshot blocked on API key issue."
-  }
+  },
+  "cycleComplete": false
 }

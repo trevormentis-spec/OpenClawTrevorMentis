@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T15:30:14.524246+00:00",
+  "generated_at": "2026-05-26T20:36:06.610433+00:00",
   "data_feeds": {
     "fcc-earth-stations": {
       "status": "ok",
@@ -653,9 +653,10 @@
     },
     "sentinel-imagery": {
       "status": "ok",
-      "collected_at": "2026-05-21T22:16:24.342064+00:00",
+      "collected_at": "2026-05-26T20:36:06.609944+00:00",
       "sentinel_api_configured": true,
       "sites_checked": 10,
+      "sites_with_recent_imagery": 5,
       "sites": [
         {
           "site": "Ushuaia Region",
@@ -663,8 +664,10 @@
           "lat": -54.802,
           "lon": -68.303,
           "composite_risk": 2.95,
-          "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "imagery_available": true,
+          "note": "Recent imagery retrieved",
+          "image_size_bytes": 165,
+          "saved_image": "/home/ubuntu/.openclaw/workspace/analyst/knowledge/leo_ground_stations/data_feeds/satellite_imagery/ushuaia_region-2026-05-26.png"
         },
         {
           "site": "Marica, Rio de Janeiro",
@@ -672,8 +675,10 @@
           "lat": -22.919,
           "lon": -42.818,
           "composite_risk": 2.8,
-          "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "imagery_available": true,
+          "note": "Recent imagery retrieved",
+          "image_size_bytes": 218,
+          "saved_image": "/home/ubuntu/.openclaw/workspace/analyst/knowledge/leo_ground_stations/data_feeds/satellite_imagery/marica,_rio_de_janeiro-2026-05-26.png"
         },
         {
           "site": "Puerto Rico",
@@ -681,8 +686,10 @@
           "lat": 18.22,
           "lon": -66.59,
           "composite_risk": 2.7,
-          "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "imagery_available": true,
+          "note": "Recent imagery retrieved",
+          "image_size_bytes": 589,
+          "saved_image": "/home/ubuntu/.openclaw/workspace/analyst/knowledge/leo_ground_stations/data_feeds/satellite_imagery/puerto_rico-2026-05-26.png"
         },
         {
           "site": "Boca Chica, TX",
@@ -691,7 +698,7 @@
           "lon": -97.155,
           "composite_risk": 2.5,
           "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "note": "No suitable imagery found (cloud cover or no recent pass)"
         },
         {
           "site": "Broken Hill, NSW",
@@ -700,7 +707,7 @@
           "lon": 141.468,
           "composite_risk": 2.4,
           "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "note": "No suitable imagery found (cloud cover or no recent pass)"
         },
         {
           "site": "Abuja",
@@ -709,7 +716,7 @@
           "lon": 7.489,
           "composite_risk": 2.4,
           "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "note": "No suitable imagery found (cloud cover or no recent pass)"
         },
         {
           "site": "Santiago (Colina)",
@@ -717,8 +724,10 @@
           "lat": -33.198,
           "lon": -70.677,
           "composite_risk": 2.35,
-          "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "imagery_available": true,
+          "note": "Recent imagery retrieved",
+          "image_size_bytes": 122,
+          "saved_image": "/home/ubuntu/.openclaw/workspace/analyst/knowledge/leo_ground_stations/data_feeds/satellite_imagery/santiago_(colina)-2026-05-26.png"
         },
         {
           "site": "Merrillan, WI",
@@ -726,8 +735,10 @@
           "lat": 44.449,
           "lon": -90.833,
           "composite_risk": 2.3,
-          "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "imagery_available": true,
+          "note": "Recent imagery retrieved",
+          "image_size_bytes": 171,
+          "saved_image": "/home/ubuntu/.openclaw/workspace/analyst/knowledge/leo_ground_stations/data_feeds/satellite_imagery/merrillan,_wi-2026-05-26.png"
         },
         {
           "site": "Conrad, MT",
@@ -736,7 +747,7 @@
           "lon": -111.946,
           "composite_risk": 2.3,
           "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "note": "No suitable imagery found (cloud cover or no recent pass)"
         },
         {
           "site": "Sanya, Hainan",
@@ -745,10 +756,9 @@
           "lon": 109.504,
           "composite_risk": 2.3,
           "imagery_available": false,
-          "note": "API key configured but Sentinel-2 query requires OAuth token exchange"
+          "note": "No suitable imagery found (cloud cover or no recent pass)"
         }
-      ],
-      "action_needed": "Credentials validated against Copernicus Data Space. Monthly run will query all sites via Process API."
+      ]
     }
   }
 }

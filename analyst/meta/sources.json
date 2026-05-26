@@ -8552,6 +8552,87 @@
       "discovered": "2026-05-26",
       "signal_level": "Medium",
       "region": "prediction_markets"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "U.S. News and National Top Stories : NPR",
+      "type": "Blog/Website",
+      "focus": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS ",
+      "url": "https://www.npr.org/sections/national/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "north_america"
     }
   ],
   "moltbook_sources": [

@@ -105,7 +105,42 @@ def compute_kelly(trevor_pct: float, market_price: float) -> float:
 
 def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | None:
     """Execute a trade based on an edge signal."""
-    ticker = signal["ticker"]
+    ticker_raw = signal["ticker"]
+    expiry = signal.get("expiry", "")
+    
+    # Resolve event ticker to actual market via scanner API
+    ticker = ticker_raw
+    if "-" not in ticker_raw and expiry:
+        import urllib.request, urllib.parse
+        try:
+            api_key = os.environ.get("KALSHI_API_KEY", "")
+            params = urllib.parse.urlencode({"limit": 20, "status": "open", "series_ticker": ticker_raw})
+            url = f"https://api.elections.kalshi.com/trade-api/v2/markets?{params}"
+            req = urllib.request.Request(url, headers={"Authorization": f"Bearer {api_key}"})
+            resp = urllib.request.urlopen(req, timeout=10)
+            data = json.loads(resp.read())
+            markets = data.get("markets", [])
+            if markets:
+                from datetime import datetime
+                target = datetime.strptime(expiry, "%Y-%m-%d")
+                best, best_delta = None, None
+                for m in markets:
+                    mt = m.get("ticker", "")
+                    ct = m.get("close_time", "")
+                    if ct and len(ct) >= 10:
+                        try:
+                            md = datetime.strptime(ct[:10], "%Y-%m-%d")
+                            d = abs((md - target).total_seconds())
+                            if best_delta is None or d < best_delta:
+                                best_delta, best = d, mt
+                        except:
+                            pass
+                if best:
+                    ticker = best
+                    log(f"Resolved {ticker_raw} → {ticker}")
+        except Exception as e:
+            log(f"Ticker resolution failed: {e}")
+    
     trevor_conf = signal["trevor_confidence"]
     market_prob = signal["market_confidence"]
     edge = signal["edge_pts"]
@@ -125,6 +160,20 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
     position_size = balance * kelly_frac * (GUARDRAILS["max_position_pct"] / 100.0)
     position_size = min(position_size, balance * GUARDRAILS["max_position_pct"] / 100.0)
     position_size = max(position_size, 1.0)  # Minimum $1
+
+    # Skip if we already hold this ticker
+    try:
+        existing = client.get_positions()
+        held_markets = existing.get("market_positions", existing.get("positions", []))
+        held_tickers = {
+            p.get("ticker", "") for p in held_markets
+            if float(p.get("count_fp", p.get("count", 0))) > 0
+        }
+        if ticker in held_tickers:
+            log(f"  Already holding {ticker} — skipping")
+            return None
+    except Exception:
+        pass
 
     log(f"Trade signal: {signal['action']} {ticker}")
     log(f"  Trevor: {trevor_conf}%  Market: {market_prob}%  Edge: {edge:+.0f}pts")
@@ -148,20 +197,31 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
     # Execute via Kalshi API
     try:
         if "BUY Yes" in signal["action"]:
+            # market_prob is a percentage (e.g. 6.5 = 6.5% = 6.5 cents per contract)
+            yes_price_cents = max(1, int(market_prob))  # Price in cents per contract
+            contract_cost_dollars = yes_price_cents / 100.0  # Each contract costs this much
+            contract_count = max(1, int(position_size / contract_cost_dollars))
+            log(f"  yes_price={yes_price_cents}c, count={contract_count}, cost=${contract_count * contract_cost_dollars:.2f}")
             order = client.create_order(
                 ticker=ticker,
-                side="buy",
-                type="market",
-                yes_price=int(market_prob),  # Price in cents
-                count=int(position_size / (market_price * 100)),  # Number of contracts
+                action="buy",
+                side="yes",
+                yes_price=yes_price_cents,
+                count=contract_count,
+                time_in_force="good_till_canceled",
             )
         else:
+            no_price_cents = max(1, int(100 - market_prob))
+            contract_cost_dollars = no_price_cents / 100.0
+            contract_count = max(1, int(position_size / contract_cost_dollars))
+            log(f"  no_price={no_price_cents}c, count={contract_count}, cost=${contract_count * contract_cost_dollars:.2f}")
             order = client.create_order(
                 ticker=ticker,
-                side="buy",
-                type="market",
-                no_price=int(100 - market_prob),
-                count=int(position_size / ((1 - market_price) * 100)),
+                action="buy",
+                side="no",
+                no_price=no_price_cents,
+                count=contract_count,
+                time_in_force="good_till_canceled",
             )
 
         trade_entry = {
