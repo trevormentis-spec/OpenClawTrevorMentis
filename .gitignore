@@ -32,6 +32,26 @@ skills/genviral/workspace/
 tmp/
 venv/
 tmp_review/
+
+# Runtime state & locks (regenerated every cycle)
+tasks/lock-*
+tasks/runtime-state.json
+tasks/runtime-state.json.tmp
+tasks/cron-setup.txt
+tasks/.cog-counter
+
+# Cognition state (regenerated every cycle)
+skills/continuous-cognition/state/
+
+# Monitor state (regenerated every cycle)
+skills/kalshi-trader/state/
+
+# Kalshi WS event log (regenerated on restart)
+logs/kalshi/ws-events.jsonl
+
+# KJ feed exports (regenerated on next deploy)
+exports/kj-feeds/*.json
+exports/kj-feeds/*.jsonl
 # SQLite databases (regenerated from JSONL on import)
 data/collection_records.db
 data/collection_records.db-*

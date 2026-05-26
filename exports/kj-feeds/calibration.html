@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trevor — Calibration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 15px; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: #090b14; color: #e4e6f0; line-height: 1.5; -webkit-font-smoothing: antialiased;
+}
+:root {
+  --bg: #090b14; --surface: #11131f; --surface-2: #181b2a; --surface-3: #1e2235;
+  --border: #252a40; --border-light: #303560;
+  --text: #e4e6f0; --text-secondary: #888ea8; --text-tertiary: #5c6080;
+  --accent: #4f7cff; --green: #22c55e; --red: #ef4444; --amber: #f59e0b; --purple: #8b5cf6;
+  --green-bg: rgba(34,197,94,0.08); --red-bg: rgba(239,68,68,0.08);
+  --amber-bg: rgba(245,158,11,0.08); --blue-bg: rgba(59,130,246,0.08);
+}
+.container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+.header {
+  padding: 24px 0 16px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.header-left { display: flex; align-items: center; gap: 16px; }
+.logo {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; color: #fff; flex-shrink: 0;
+}
+.brand h1 { font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
+.brand .subtitle { font-size: 0.72rem; color: var(--text-tertiary); letter-spacing: 0.3px; }
+.header-right { font-size: 0.78rem; color: var(--text-secondary); }
+
+.nav { display: flex; gap: 4px; margin-bottom: 28px; background: var(--surface); border-radius: 10px; padding: 4px; }
+.nav a {
+  padding: 8px 18px; border-radius: 7px; font-size: 0.82rem; font-weight: 500;
+  color: var(--text-secondary); text-decoration: none; transition: all 0.15s;
+}
+.nav a:hover { color: var(--text); background: var(--surface-2); }
+.nav a.active { color: #fff; background: var(--accent); box-shadow: 0 2px 8px rgba(79,124,255,0.25); }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 28px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.stat .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-tertiary); margin-bottom: 6px; }
+.stat .value { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+.stat .value.green { color: var(--green); }
+.stat .value.red { color: var(--red); }
+.stat .value.amber { color: var(--amber); }
+.stat .value.accent { color: var(--accent); }
+
+.section-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 16px; margin-top: 32px;
+}
+.section-header h2 { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-secondary); }
+.section-header .count { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; background: var(--surface-2); color: var(--text-tertiary); }
+
+/* Band rows */
+.band-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.band-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px;
+}
+.band-card .name { font-size: 0.78rem; font-weight: 500; margin-bottom: 4px; }
+.band-card .stat-row { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--text-secondary); }
+.band-bar { height: 4px; border-radius: 2px; background: var(--surface-3); margin-top: 8px; overflow: hidden; }
+.band-bar .fill { height: 100%; border-radius: 2px; }
+.band-bar .fill.green { background: var(--green); }
+.band-bar .fill.red { background: var(--red); }
+
+/* Daily chart */
+.chart { margin-top: 8px; }
+.chart-day { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; font-size: 0.78rem; }
+.chart-day .date { width: 70px; flex-shrink: 0; color: var(--text-tertiary); }
+.chart-bars { display: flex; height: 18px; border-radius: 4px; overflow: hidden; flex: 1; }
+.chart-bar-green { background: var(--green); transition: width 0.3s; }
+.chart-bar-red { background: var(--red); transition: width 0.3s; }
+.chart-bar-gray { background: var(--border); transition: width 0.3s; }
+.chart-label { width: 70px; flex-shrink: 0; text-align: right; font-size: 0.72rem; color: var(--text-tertiary); }
+
+/* Region grid */
+.region-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.region-card {
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 14px; font-size: 0.8rem;
+}
+.region-card .name { font-weight: 500; color: var(--text); margin-bottom: 2px; text-transform: capitalize; }
+.region-card .detail { font-size: 0.72rem; color: var(--text-tertiary); }
+.region-mini-bar { height: 3px; border-radius: 2px; margin-top: 6px; display: flex; overflow: hidden; }
+.region-mini-bar .green { background: var(--green); }
+.region-mini-bar .red { background: var(--red); }
+.region-mini-bar .gray { background: var(--border); }
+
+/* Flags */
+.flag { background: var(--surface); border: 1px solid var(--red); border-radius: 8px; padding: 12px 16px; margin-bottom: 6px; font-size: 0.82rem; }
+.flag .flag-header { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+.flag .flag-date { font-size: 0.72rem; color: var(--text-tertiary); }
+.flag .flag-body { color: var(--text-secondary); }
+
+.system-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.72rem; color: var(--text-tertiary); text-align: center; }
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text-tertiary); }
+.loading { text-align: center; padding: 80px 20px; color: var(--text-tertiary); }
+.loading .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.error { text-align: center; padding: 60px 20px; color: var(--red); }
+
+@media (max-width: 640px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .band-grid { grid-template-columns: 1fr; }
+  .region-grid { grid-template-columns: 1fr 1fr; }
+  .container { padding: 0 14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">T</div>
+      <div class="brand">
+        <h1>Trevor — Calibration</h1>
+        <div class="subtitle">Tracking prediction accuracy over time</div>
+      </div>
+    </div>
+    <div class="header-right" id="calMeta">Loading...</div>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="brief.html">Assessments</a>
+    <a href="calibration.html" class="active">Calibration</a>
+  </nav>
+
+  <div id="content"><div class="loading"><div class="spinner"></div><div>Loading calibration data...</div></div></div>
+
+  <div class="system-footer">
+    <p>Calibration data updates daily after brief postdiction run</p>
+  </div>
+
+</div>
+
+<script>
+async function load() {
+  try {
+    const resp = await fetch('data/calibration.json?' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const cal = await resp.json();
+    render(cal);
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<div class="error">Could not load calibration data: ' + e.message + '</div>';
+    document.getElementById('calMeta').textContent = 'Offline';
+  }
+}
+
+function render(cal) {
+  const ts = (cal.last_updated || '?').slice(0, 19).replace('T', ' ');
+  document.getElementById('calMeta').textContent = 'Updated ' + ts + ' UTC';
+
+  const total = cal.total_judgments || 0;
+  const correct = cal.confirmed || 0;
+  const incorrect = cal.disconfirmed || 0;
+  const unresolved = cal.unresolved || 0;
+  const expired = cal.expired_no_resolution || 0;
+  const resolved = correct + incorrect;
+  const accuracy = resolved > 0 ? (correct / resolved * 100) : 0;
+
+  let html = '';
+
+  // Top stats
+  html += '<div class="stats">';
+  html += '<div class="stat"><div class="label">Total Judgments</div><div class="value accent">' + total + '</div></div>';
+  html += '<div class="stat"><div class="label">Confirmed</div><div class="value green">' + correct + '</div></div>';
+  html += '<div class="stat"><div class="label">Disconfirmed</div><div class="value red">' + incorrect + '</div></div>';
+  html += '<div class="stat"><div class="label">Accuracy</div><div class="value ' + (accuracy >= 50 ? 'green' : accuracy > 0 ? 'amber' : '') + '">' + accuracy.toFixed(1) + '%</div></div>';
+  html += '<div class="stat"><div class="label">Unresolved</div><div class="value">' + unresolved + '</div></div>';
+  html += '<div class="stat"><div class="label">Expired</div><div class="value">' + expired + '</div></div>';
+  html += '</div>';
+
+  // By confidence band
+  const bands = cal.by_confidence_band || {};
+  if (Object.keys(bands).length) {
+    html += '<div class="section-header"><h2>By Confidence Band</h2><span class="count">' + Object.keys(bands).length + '</span></div>';
+    html += '<div class="band-grid">';
+    const bandLabels = {
+      'highly likely': 'Highly Likely (85-94%)',
+      'likely': 'Likely (70-84%)',
+      'even chance': 'Even Chance (50-69%)',
+      'unlikely': 'Unlikely (30-49%)',
+      'highly unlikely': 'Highly Unlikely (15-29%)'
+    };
+    for (const [key, data] of Object.entries(bands)) {
+      const label = bandLabels[key] || key;
+      const totalB = (data.correct || 0) + (data.incorrect || 0);
+      if (totalB === 0) continue;
+      const acc = (data.correct || 0) / totalB * 100;
+      const pct = Math.round(acc);
+      const cls = acc >= 50 ? 'green' : 'red';
+      html += '<div class="band-card"><div class="name">' + label + '</div>';
+      html += '<div class="stat-row"><span>' + data.correct + '/' + totalB + ' correct</span><span style="color:var(--' + cls + ')">' + pct + '%</span></div>';
+      html += '<div class="band-bar"><div class="fill ' + cls + '" style="width:' + pct + '%"></div></div></div>';
+    }
+    html += '</div>';
+  }
+
+  // Daily accuracy chart
+  const scores = cal.daily_scores || [];
+  if (scores.length) {
+    html += '<div class="section-header"><h2>Daily Accuracy</h2><span class="count">' + scores.length + ' days</span></div>';
+    html += '<div class="chart">';
+    const recent = scores.slice(-20);
+    for (const s of recent) {
+      const date = (s.date || '?').slice(0, 10);
+      const confirmed = s.confirmed || 0;
+      const disconfirmed = s.disconfirmed || 0;
+      const unrslvd = s.unresolved || 0;
+      const totalD = confirmed + disconfirmed + unrslvd;
+      if (totalD === 0) {
+        html += '<div class="chart-day"><span class="date">' + date + '</span><div style="color:var(--text-tertiary);font-size:0.72rem;">No data</div></div>';
+        continue;
+      }
+      const greenPct = totalD > 0 ? confirmed / totalD * 100 : 0;
+      const redPct = totalD > 0 ? disconfirmed / totalD * 100 : 0;
+      const grayPct = totalD > 0 ? unrslvd / totalD * 100 : 0;
+      html += '<div class="chart-day"><span class="date">' + date + '</span>';
+      html += '<div class="chart-bars"><div class="chart-bar-green" style="width:' + greenPct + '%"></div>';
+      if (redPct > 0) html += '<div class="chart-bar-red" style="width:' + redPct + '%"></div>';
+      if (grayPct > 0) html += '<div class="chart-bar-gray" style="width:' + grayPct + '%"></div>';
+      html += '</div><span class="chart-label">' + confirmed + '/' + totalD + '</span></div>';
+    }
+    html += '</div>';
+  }
+
+  // By region
+  const regions = cal.by_region || {};
+  if (Object.keys(regions).length) {
+    html += '<div class="section-header"><h2>By Region</h2><span class="count">' + Object.keys(regions).length + '</span></div>';
+    html += '<div class="region-grid">';
+    for (const [region, data] of Object.entries(regions)) {
+      const totalR = data.total || 0;
+      const correctR = data.confirmed || 0;
+      const incorrectR = data.disconfirmed || 0;
+      const unresolvedR = Math.max(0, totalR - correctR - incorrectR);
+      if (totalR === 0) continue;
+      const greenPct = correctR / totalR * 100;
+      const redPct = incorrectR / totalR * 100;
+      const grayPct = unresolvedR / totalR * 100;
+      html += '<div class="region-card"><div class="name">' + region.replace(/_/g, ' ') + '</div>';
+      html += '<div class="detail">' + correctR + ' conf · ' + incorrectR + ' disconf · ' + unresolvedR + ' pending</div>';
+      html += '<div class="region-mini-bar"><div class="green" style="width:' + greenPct + '%"></div><div class="red" style="width:' + redPct + '%"></div><div class="gray" style="width:' + grayPct + '%"></div></div></div>';
+    }
+    html += '</div>';
+  }
+
+  // Overconfidence flags
+  const flags = cal.overconfidence_flags || [];
+  if (flags.length) {
+    html += '<div class="section-header"><h2>Overconfidence Flags</h2><span class="count">' + flags.length + '</span></div>';
+    for (const f of flags) {
+      html += '<div class="flag"><div class="flag-header"><span style="color:var(--red);font-weight:600;">⚠</span><span>' + f.band + '</span><span class="flag-date">' + f.date + ' · ' + f.region + '</span></div>';
+      html += '<div class="flag-body">' + f.pct + '% confidence with only ' + f.sources + ' sources — insufficient evidential basis for this confidence level.</div></div>';
+    }
+  }
+
+  if (!resolved && !unresolved) {
+    html += '<div class="empty-state">No resolution data yet.</div>';
+  }
+
+  document.getElementById('content').innerHTML = html;
+}
+
+load();
+</script>
+</body>
+</html>

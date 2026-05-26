@@ -229,11 +229,10 @@ class KalshiWebSocket:
 
                 # Subscribe to base channels on (re)connect
                 try:
-                    await self.subscribe(["ticker"])  # All-market price feed
-                    await self.subscribe(["fill"])     # Your own fills
+                    await self.subscribe(["fill"])     # Your own fills (private, no market filter needed)
                     if self._subscribed_markets:
                         await self.subscribe(
-                            ["trade", "orderbook_delta"],
+                            ["ticker", "trade", "orderbook_delta"],
                             list(self._subscribed_markets),
                         )
                 except Exception as e:

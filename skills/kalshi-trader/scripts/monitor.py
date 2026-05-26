@@ -24,9 +24,11 @@ from typing import Optional, Dict, Any, List
 
 # Add parent to path
 sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / "scripts"))
 
 from client import KalshiClient, KalshiAPIError, KalshiAuthError
 from guard import RiskGuard, PositionState
+from runtime_lock import RuntimeLock
 
 logger = logging.getLogger("kalshi-monitor")
 logger.setLevel(logging.INFO)
@@ -245,75 +247,92 @@ class PositionMonitor:
         return can, reason
 
     def run_once(self) -> Dict[str, Any]:
-        """Single monitoring cycle."""
-        state = self.fetch_state()
+        """Single monitoring cycle with 30s hard timeout."""
+        signal.alarm(30)
+        try:
+            state = self.fetch_state()
 
-        if state["error"]:
-            logger.error(state["error"])
-            return {"error": state["error"]}
+            if state["error"]:
+                logger.error(state["error"])
+                return {"error": state["error"]}
 
-        # Update peak and save
-        self._save_state(state["balance_cents"])
+            self._save_state(state["balance_cents"])
+            actions = self.check_and_exit(state)
+            can_trade, trade_reason = self.can_trade(state)
 
-        # Check positions for exits
-        actions = self.check_and_exit(state)
-
-        # Can we take new trades?
-        can_trade, trade_reason = self.can_trade(state)
-
-        result = {
-            "timestamp": datetime.datetime.now(datetime.UTC).isoformat(),
-            "balance_cents": state["balance_cents"],
-            "position_count": len(state["positions"]),
-            "open_order_count": len(state["open_orders"]),
-            "actions": actions,
-            "can_trade": can_trade,
-            "trade_reason": trade_reason,
-            "guardrail_status": self.guard.status_report(
-                state["balance_cents"], state["positions"]
-            ),
-        }
-
-        return result
-
+            return {
+                "timestamp": datetime.datetime.now(datetime.UTC).isoformat(),
+                "balance_cents": state["balance_cents"],
+                "position_count": len(state["positions"]),
+                "open_order_count": len(state["open_orders"]),
+                "actions": actions,
+                "can_trade": can_trade,
+                "trade_reason": trade_reason,
+                "guardrail_status": self.guard.status_report(
+                    state["balance_cents"], state["positions"]
+                ),
+            }
+        finally:
+            signal.alarm(0)
     def run_loop(self, interval: int = 60):
         """Continuous monitoring loop with graceful shutdown."""
         signal.signal(signal.SIGINT, self._handle_shutdown)
         signal.signal(signal.SIGTERM, self._handle_shutdown)
 
-        logger.info(f"Monitor started (interval={interval}s, auto_exit={self.auto_exit})")
+        with RuntimeLock(f"monitor-{interval}", timeout=86400) as lock:
+            if not lock.acquired:
+                logger.error("Another monitor instance is running — exiting")
+                return
 
-        while self._running:
-            try:
-                result = self.run_once()
-                
-                if result.get("actions"):
-                    for action in result["actions"]:
-                        if action["action"] == "exit":
-                            logger.warning(
-                                f"🔥 AUTO-EXIT: {action['ticker']} "
-                                f"({action['reason']}, PnL: {action.get('pnl_pct', '?')}%)"
-                            )
-                        elif action["action"] == "alert":
-                            logger.warning(
-                                f"⚠️  EXIT SIGNAL: {action['ticker']} "
-                                f"({action['reason']}, PnL: {action.get('pnl_pct', '?')}%) "
-                                f"— auto_exit disabled"
-                            )
+            logger.info(f"Monitor started (interval={interval}s, auto_exit={self.auto_exit})")
 
-                if not result["can_trade"]:
-                    logger.warning(f"🛑 TRADING HALTED: {result['trade_reason']}")
+            while self._running:
+                try:
+                    result = self.run_once()
 
-                # Log balances periodically
-                logger.info(
-                    f"Balance: ${result['balance_cents']/100:.2f} | "
-                    f"Positions: {result['position_count']} | "
-                    f"Orders: {result['open_order_count']} | "
-                    f"Can trade: {result['can_trade']}"
-                )
+                    if result.get("actions"):
+                        for action in result["actions"]:
+                            if action["action"] == "exit":
+                                logger.warning(
+                                    f"🔥 AUTO-EXIT: {action['ticker']} "
+                                    f"({action['reason']}, PnL: {action.get('pnl_pct', '?')}%)"
+                                )
+                            elif action["action"] == "alert":
+                                logger.warning(
+                                    f"⚠️  EXIT SIGNAL: {action['ticker']} "
+                                    f"({action['reason']}, PnL: {action.get('pnl_pct', '?')}%) "
+                                    f"— auto_exit disabled"
+                                )
 
-            except Exception as e:
-                logger.error(f"Cycle error: {e}")
+                    if not result["can_trade"]:
+                        logger.warning(f"🛑 TRADING HALTED: {result['trade_reason']}")
+
+                    logger.info(
+                        f"Balance: ${result['balance_cents']/100:.2f} | "
+                        f"Positions: {result['position_count']} | "
+                        f"Orders: {result['open_order_count']} | "
+                        f"Can trade: {result['can_trade']}"
+                    )
+
+                except Exception as e:
+                    logger.error(f"Cycle error: {e}")
+
+            # Run runtime health check every 5 cycles (~10 min at 120s interval)
+            if not hasattr(self, '_health_cycle'):
+                self._health_cycle = 0
+            self._health_cycle += 1
+            if self._health_cycle >= 5:
+                self._health_cycle = 0
+                try:
+                    import subprocess
+                    subprocess.run(
+                        ["bash", "scripts/runtime-health.sh"],
+                        cwd="/home/ubuntu/.openclaw/workspace",
+                        timeout=60,
+                        capture_output=True
+                    )
+                except Exception:
+                    pass
 
             # Sleep with interruptible check
             for _ in range(interval):

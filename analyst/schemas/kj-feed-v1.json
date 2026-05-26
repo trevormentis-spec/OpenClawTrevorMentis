@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Trevor KJ Feed v1",
+  "description": "Structured Key Judgment feed — machine-consumable geopolitical intelligence.",
+  "type": "object",
+  "required": ["feed_version", "cycle", "timestamp", "narratives", "delta"],
+  "properties": {
+    "feed_version": {"type": "integer", "const": 1},
+    "cycle": {"type": "integer", "description": "Cognition cycle number"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "previous_timestamp": {"type": ["string", "null"], "format": "date-time"},
+    "narratives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "confidence", "trend", "kent_band", "last_updated"],
+        "properties": {
+          "id": {"type": "string", "description": "Narrative identifier, e.g. iran_nuclear_deal_before_june"},
+          "confidence": {"type": "integer", "minimum": 0, "maximum": 100},
+          "trend": {"type": "string", "enum": ["upward", "downward", "stable", "divergent"]},
+          "kent_band": {
+            "type": "string",
+            "enum": [
+              "almost_certain", "highly_likely", "likely",
+              "even_chance", "unlikely", "highly_unlikely",
+              "almost_certainly_not", "no_judgment"
+            ]
+          },
+          "reasoning": {"type": "string"},
+          "evidence_for": {"type": "integer"},
+          "evidence_against": {"type": "integer"},
+          "catalysts": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "created": {"type": "string", "format": "date-time"},
+          "last_updated": {"type": "string", "format": "date-time"},
+          "hours_to_resolution": {"type": ["number", "null"]},
+          "resolution_date": {"type": ["string", "null"], "format": "date-time"}
+        }
+      }
+    },
+    "source_trust": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "admiralty", "track_record"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "admiralty": {"type": "string", "pattern": "^[ABCD][1-4]$"},
+          "track_record": {"type": "number", "minimum": 0, "maximum": 1},
+          "total_assessments": {"type": "integer"},
+          "last_updated": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "weak_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "strength"],
+        "properties": {
+          "signal": {"type": "string"},
+          "strength": {"type": "number", "minimum": 0, "maximum": 1},
+          "related_narratives": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "first_seen": {"type": "string", "format": "date-time"},
+          "sightings": {"type": "integer"}
+        }
+      }
+    },
+    "escalations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "narrative", "reason", "detected_at"],
+        "properties": {
+          "level": {"type": "string", "enum": ["flash", "pro", "opus"]},
+          "narrative": {"type": "string"},
+          "reason": {"type": "string"},
+          "detected_at": {"type": "string", "format": "date-time"},
+          "resolved": {"type": "boolean"}
+        }
+      }
+    },
+    "delta": {
+      "type": "object",
+      "properties": {
+        "changed_narratives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "previous_confidence": {"type": "integer"},
+              "new_confidence": {"type": "integer"},
+              "swing": {"type": "integer"}
+            }
+          }
+        },
+        "new_narratives": {"type": "array", "items": {"type": "string"}},
+        "new_signals": {"type": "array", "items": {"type": "string"}},
+        "new_escalations": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "system": {
+      "type": "object",
+      "properties": {
+        "disk_usage_pct": {"type": "integer"},
+        "cognition_healthy": {"type": "boolean"},
+        "total_cycles": {"type": "integer"},
+        "total_spent_usd": {"type": "number"}
+      }
+    }
+  }
+}

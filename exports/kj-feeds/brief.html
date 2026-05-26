@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trevor — Current Assessments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 15px; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: #090b14;
+  color: #e4e6f0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Colors ── */
+:root {
+  --bg: #090b14;
+  --surface: #11131f;
+  --surface-2: #181b2a;
+  --surface-3: #1e2235;
+  --border: #252a40;
+  --border-light: #303560;
+  --text: #e4e6f0;
+  --text-secondary: #888ea8;
+  --text-tertiary: #5c6080;
+  --accent: #4f7cff;
+  --accent-dim: #2a4a9e;
+  --green: #22c55e;
+  --green-bg: rgba(34, 197, 94, 0.08);
+  --red: #ef4444;
+  --red-bg: rgba(239, 68, 68, 0.08);
+  --amber: #f59e0b;
+  --amber-bg: rgba(245, 158, 11, 0.08);
+  --blue: #3b82f6;
+  --blue-bg: rgba(59, 130, 246, 0.08);
+  --purple: #8b5cf6;
+  --purple-bg: rgba(139, 92, 246, 0.08);
+}
+
+/* ── Layout ── */
+.container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+/* ── Header ── */
+.header {
+  padding: 24px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.header-left { display: flex; align-items: center; gap: 16px; }
+.logo {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; color: #fff;
+  flex-shrink: 0;
+}
+.brand h1 { font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
+.brand .subtitle { font-size: 0.72rem; color: var(--text-tertiary); letter-spacing: 0.3px; }
+.header-right { display: flex; align-items: center; gap: 16px; font-size: 0.78rem; color: var(--text-secondary); }
+.status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; }
+.status-dot.green { background: var(--green); box-shadow: 0 0 6px rgba(34,197,94,0.4); }
+.status-dot.red { background: var(--red); box-shadow: 0 0 6px rgba(239,68,68,0.4); }
+
+/* ── Navigation ── */
+.nav { display: flex; gap: 4px; margin-bottom: 28px; background: var(--surface); border-radius: 10px; padding: 4px; }
+.nav a {
+  padding: 8px 18px; border-radius: 7px; font-size: 0.82rem; font-weight: 500;
+  color: var(--text-secondary); text-decoration: none; transition: all 0.15s;
+}
+.nav a:hover { color: var(--text); background: var(--surface-2); }
+.nav a.active { color: #fff; background: var(--accent); box-shadow: 0 2px 8px rgba(79,124,255,0.25); }
+
+/* ── Stats Bar ── */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 28px; }
+.stat {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; transition: border-color 0.2s;
+}
+.stat:hover { border-color: var(--border-light); }
+.stat .label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-tertiary); margin-bottom: 6px; }
+.stat .value { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+.stat .value.green { color: var(--green); }
+.stat .value.red { color: var(--red); }
+.stat .value.amber { color: var(--amber); }
+.stat .value.accent { color: var(--accent); }
+
+/* ── Section Headers ── */
+.section-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 16px; margin-top: 32px;
+}
+.section-header h2 { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-secondary); }
+.section-header .count {
+  font-size: 0.7rem; padding: 2px 8px; border-radius: 4px;
+  background: var(--surface-2); color: var(--text-tertiary);
+}
+
+/* ── Narrative Card ── */
+.narrative {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 12px; transition: border-color 0.2s;
+}
+.narrative:hover { border-color: var(--border-light); }
+.narrative-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.narrative-title { font-size: 0.95rem; font-weight: 600; color: var(--text); }
+.narrative-meta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.narrative-band {
+  font-size: 0.7rem; padding: 3px 10px; border-radius: 5px;
+  font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.narrative-band.highly-likely { background: var(--green-bg); color: var(--green); }
+.narrative-band.likely { background: var(--blue-bg); color: var(--blue); }
+.narrative-band.even-chance { background: var(--amber-bg); color: var(--amber); }
+.narrative-band.unlikely { background: var(--red-bg); color: var(--red); }
+.narrative-band.highly-unlikely { background: var(--red-bg); color: var(--red); }
+.narrative-trend {
+  font-size: 0.78rem; padding: 3px 8px; border-radius: 5px; font-weight: 500;
+}
+.narrative-trend.upward { background: var(--green-bg); color: var(--green); }
+.narrative-trend.downward { background: var(--red-bg); color: var(--red); }
+.narrative-trend.stable { background: var(--surface-3); color: var(--text-secondary); }
+.narrative-trend.divergent { background: var(--purple-bg); color: var(--purple); }
+
+/* Confidence Meter */
+.conf-meter { position: relative; height: 8px; background: var(--surface-3); border-radius: 4px; margin-bottom: 6px; overflow: hidden; }
+.conf-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease-out; }
+.conf-fill.critical { background: linear-gradient(90deg, var(--red), #ef6b6b); }
+.conf-fill.warning { background: linear-gradient(90deg, var(--amber), #f7b52d); }
+.conf-fill.normal { background: linear-gradient(90deg, var(--blue), #6b9aff); }
+.conf-fill.confident { background: linear-gradient(90deg, var(--green), #4ada7a); }
+.conf-labels { display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-tertiary); margin-bottom: 14px; }
+.conf-value { font-weight: 600; font-size: 0.82rem; color: var(--text-secondary); }
+
+/* Evidence */
+.evidence-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 10px; }
+.evidence-col { padding: 0; }
+.evidence-col h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+.evidence-col h4.for { color: var(--green); }
+.evidence-col h4.against { color: var(--red); }
+.evidence-item { font-size: 0.78rem; color: var(--text-secondary); padding: 3px 0; border-bottom: 1px solid var(--border); }
+.evidence-item:last-child { border-bottom: none; }
+.evidence-count { display: inline-flex; align-items: center; gap: 4px; }
+.evidence-count .num { font-weight: 600; font-size: 0.85rem; }
+
+/* Reasoning */
+.reasoning { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; padding: 10px 14px; background: var(--surface-2); border-radius: 8px; margin-bottom: 10px; }
+
+/* Catalysts */
+.catalysts { display: flex; gap: 6px; flex-wrap: wrap; }
+.catalyst {
+  background: var(--surface-3); border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 6px; font-size: 0.72rem; color: var(--text-tertiary);
+}
+.resolution-info {
+  display: flex; gap: 16px; align-items: center; font-size: 0.75rem;
+  color: var(--text-tertiary); padding-top: 10px; border-top: 1px solid var(--border); margin-top: 10px;
+}
+
+/* ── Weak Signals ── */
+.signal-row {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 14px; margin-bottom: 4px; font-size: 0.82rem; transition: border-color 0.15s;
+}
+.signal-row:hover { border-color: var(--border-light); }
+.signal-label { color: var(--text-secondary); }
+.signal-strength { display: flex; align-items: center; gap: 8px; color: var(--text-tertiary); font-size: 0.78rem; }
+.signal-bar { width: 50px; height: 4px; background: var(--surface-3); border-radius: 2px; overflow: hidden; }
+.signal-fill { height: 100%; border-radius: 2px; background: var(--amber); transition: width 0.3s; }
+
+/* ── Source Trust ── */
+.trust-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.trust-item {
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 14px; font-size: 0.8rem;
+}
+.trust-item .name { font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.trust-item .detail { display: flex; gap: 10px; color: var(--text-tertiary); font-size: 0.75rem; }
+
+/* ── Delta Notice ── */
+.delta-notice {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;
+}
+.delta-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; padding: 6px 12px; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+.delta-chip .arrow { font-weight: 600; }
+.delta-chip .arrow.up { color: var(--green); }
+.delta-chip .arrow.down { color: var(--red); }
+
+/* ── System Footer ── */
+.system-footer {
+  margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  font-size: 0.72rem; color: var(--text-tertiary);
+}
+
+/* ── Empty / Loading / Error ── */
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text-tertiary); }
+.empty-state .icon { font-size: 2rem; margin-bottom: 12px; opacity: 0.5; }
+.loading { text-align: center; padding: 80px 20px; color: var(--text-tertiary); }
+.loading .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.error { text-align: center; padding: 60px 20px; color: var(--red); }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .evidence-grid { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .narrative-header { flex-direction: column; }
+  .container { padding: 0 14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">T</div>
+      <div class="brand">
+        <h1>Trevor</h1>
+        <div class="subtitle">Persistent Adaptive Intelligence</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <span id="statusIndicator"><span class="status-dot green"></span> Active</span>
+      <span id="feedMeta">Loading...</span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="brief.html" class="active">Assessments</a>
+    <a href="calibration.html">Calibration</a>
+  </nav>
+
+  <!-- Content -->
+  <div id="content"><div class="loading"><div class="spinner"></div><div>Loading KJ feed...</div></div></div>
+
+  <!-- Footer -->
+  <div class="system-footer">
+    <span id="systemInfo">—</span>
+    <span>Feed updates every ~15 min</span>
+  </div>
+
+</div>
+
+<script>
+async function loadFeed() {
+  try {
+    const resp = await fetch('data/kj-feed-latest.json?' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const feed = await resp.json();
+    render(feed);
+  } catch(e) {
+    document.getElementById('content').innerHTML = '<div class="error"><div class="icon">⚠</div><div>Could not load KJ feed</div><div style="font-size:0.8rem;margin-top:4px;opacity:0.7;">' + e.message + '</div></div>';
+    document.getElementById('feedMeta').textContent = 'Offline';
+    document.getElementById('statusIndicator').innerHTML = '<span class="status-dot red"></span> Offline';
+  }
+}
+
+function confClass(confidence) {
+  if (confidence >= 85) return 'confident';
+  if (confidence >= 70) return 'normal';
+  if (confidence >= 50) return 'warning';
+  return 'critical';
+}
+
+function bandClass(band) {
+  return (band || '').replace(/_/g, '-');
+}
+
+function trendSymbol(trend) {
+  if (trend === 'upward') return '↑';
+  if (trend === 'downward') return '↓';
+  if (trend === 'divergent') return '↔';
+  return '→';
+}
+
+function render(feed) {
+  const ts = feed.timestamp ? feed.timestamp.slice(0, 19).replace('T', ' ') : '?';
+  document.getElementById('feedMeta').textContent = 'Cycle ' + (feed.cycle || '—') + ' · ' + ts + ' UTC';
+
+  const narratives = feed.narratives || [];
+  const signals = feed.weak_signals || [];
+  const trust = feed.source_trust || [];
+  const system = feed.system || {};
+  const delta = feed.delta || {};
+
+  let html = '';
+
+  // Stats
+  const highConf = narratives.filter(n => (n.confidence || 0) >= 70).length;
+  const medConf = narratives.filter(n => (n.confidence || 0) >= 50 && n.confidence < 70).length;
+  html += '<div class="stats">';
+  html += '<div class="stat"><div class="label">Active KJs</div><div class="value accent">' + narratives.length + '</div></div>';
+  html += '<div class="stat"><div class="label">High Confidence</div><div class="value green">' + highConf + '</div></div>';
+  html += '<div class="stat"><div class="label">Medium / Low</div><div class="value ' + (medConf > 0 ? 'amber' : '') + '">' + medConf + '</div></div>';
+  html += '<div class="stat"><div class="label">Sources Tracked</div><div class="value">' + trust.length + '</div></div>';
+  html += '<div class="stat"><div class="label">Disk Usage</div><div class="value ' + (system.disk_usage_pct >= 80 ? 'red' : 'green') + '">' + (system.disk_usage_pct || '—') + '%</div></div>';
+  html += '</div>';
+
+  // Delta changes
+  const changed = delta.changed_narratives || [];
+  const news = delta.new_narratives || [];
+  const newSignals = delta.new_signals || [];
+  if (changed.length || news.length || newSignals.length) {
+    html += '<div class="delta-notice">';
+    for (const c of changed) {
+      const cls = c.swing > 0 ? 'up' : 'down';
+      html += '<span class="delta-chip"><span class="arrow ' + cls + '">' + (c.swing > 0 ? '↑' : '↓') + '</span> ' + c.id.slice(0, 28) + ' (' + c.swing + 'pt)</span>';
+    }
+    for (const n of news) html += '<span class="delta-chip"><span style="color:var(--green)">✦</span> New: ' + n.slice(0, 28) + '</span>';
+    for (const s of newSignals) html += '<span class="delta-chip"><span style="color:var(--amber)">⚡</span> New signal</span>';
+    html += '</div>';
+  }
+
+  // Narratives
+  if (narratives.length) {
+    html += '<div class="section-header"><h2>Active Assessments</h2><span class="count">' + narratives.length + '</span></div>';
+    for (const n of narratives) {
+      const conf = n.confidence || 50;
+      const band = (n.kent_band || '').replace(/_/g, ' ');
+      const trendCls = confClass(conf);
+      html += '<div class="narrative">';
+      html += '<div class="narrative-header">';
+      html += '<div class="narrative-title">' + n.id.replace(/_/g, ' ') + '</div>';
+      html += '<div class="narrative-meta">';
+      html += '<span class="narrative-band ' + bandClass(n.kent_band) + '">' + band + '</span>';
+      html += '<span class="narrative-trend ' + (n.trend || 'stable') + '">' + trendSymbol(n.trend) + ' ' + (n.trend || 'stable') + '</span>';
+      html += '</div></div>';
+
+      // Confidence meter
+      html += '<div class="conf-meter"><div class="conf-fill ' + trendCls + '" style="width:' + conf + '%"></div></div>';
+      html += '<div class="conf-labels"><span>0%</span><span class="conf-value">' + conf + '% confidence</span><span>100%</span></div>';
+
+      // Evidence
+      html += '<div class="evidence-grid">';
+      html += '<div class="evidence-col"><h4 class="for">← Supporting (' + (n.evidence_for || 0) + ')</h4>';
+      html += '<div class="evidence-item">Market pricing: ' + (100 - conf) + '% implied vs ' + conf + '% assessment</div>';
+      html += '<div class="evidence-item">' + (n.evidence_for || 0) + ' data points favoring</div></div>';
+      html += '<div class="evidence-col"><h4 class="against">→ Contradicting (' + (n.evidence_against || 0) + ')</h4>';
+      html += '<div class="evidence-item">' + (n.evidence_against || 0) + ' risk factors identified</div></div>';
+      html += '</div>';
+
+      // Reasoning
+      if (n.reasoning) html += '<div class="reasoning">' + n.reasoning + '</div>';
+
+      // Catalysts
+      if (n.catalysts && n.catalysts.length) {
+        html += '<div class="catalysts">';
+        const seen = new Set();
+        for (const c of n.catalysts) {
+          const key = c.toLowerCase().trim();
+          if (!seen.has(key)) { seen.add(key); html += '<span class="catalyst">' + c + '</span>'; }
+        }
+        html += '</div>';
+      }
+
+      // Resolution
+      if (n.hours_to_resolution || n.resolution_date) {
+        html += '<div class="resolution-info">';
+        if (n.hours_to_resolution) html += '<span>⏱ ' + Math.round(n.hours_to_resolution) + 'h until resolution</span>';
+        if (n.resolution_date) html += '<span>📅 Resolves ' + n.resolution_date.slice(0, 10) + '</span>';
+        html += '</div>';
+      }
+
+      html += '</div>';
+    }
+  } else {
+    html += '<div class="empty-state"><div class="icon">📡</div><div>No active assessments</div><div style="font-size:0.82rem;margin-top:6px;">Cognition layer is running but no narratives are being tracked yet.</div></div>';
+  }
+
+  // Weak signals
+  if (signals.length) {
+    html += '<div class="section-header" style="margin-top:32px;"><h2>Weak Signals</h2><span class="count">' + signals.length + '</span></div>';
+    for (const s of signals) {
+      const str = Math.round((s.strength || 0) * 100);
+      html += '<div class="signal-row"><span class="signal-label">' + s.signal + '</span><span class="signal-strength"><span class="signal-bar"><span class="signal-fill" style="width:' + str + '%"></span></span>' + str + '%</span></div>';
+    }
+  }
+
+  // Source trust
+  if (trust.length) {
+    html += '<div class="section-header" style="margin-top:32px;"><h2>Source Trust</h2><span class="count">' + trust.length + '</span></div>';
+    html += '<div class="trust-grid">';
+    for (const s of trust) {
+      html += '<div class="trust-item"><div class="name">' + s.source_id + '</div><div class="detail"><span>' + s.admiralty + '</span><span>' + Math.round((s.track_record || 0) * 100) + '% reliability</span><span>' + (s.total_assessments || 0) + ' assessments</span></div></div>';
+    }
+    html += '</div>';
+  }
+
+  // System info
+  document.getElementById('systemInfo').textContent = 'Cognition: ' + (system.cognition_healthy ? 'Running' : 'Degraded') + ' · Total spent: $' + (system.total_spent_usd || 0).toFixed(4);
+
+  document.getElementById('content').innerHTML = html;
+}
+
+loadFeed();
+</script>
+</body>
+</html>

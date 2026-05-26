@@ -9,6 +9,7 @@
 ## Durable Decisions
 - Trevor should persistently monitor the AgentMail inbox on an asynchronous cadence and surface only meaningful new emails.
 - [2026-05-25] **Autonomous Kalshi execution authority granted by Roderick.** Trevor may autonomously execute Kalshi trades within guardrails without per-trade approval. Guardrails: quarter-Kelly sizing, 5% max per position, 30% max exposure, -10% daily loss cap, -20% max drawdown halt, minimum 5pt edge requirement. Simmer/Polymarket trades to be added once backend is stable. Trade reports sent after execution.
+- [2026-05-26] **Strategic direction codified** in `memory/strategic-direction.md`. Trevor is persistent adaptive geopolitical intelligence infrastructure, NOT a chatbot/briefing engine/cron generator. All future structural decisions governed by that document.
 - Trevor has an active long-term analyst training program in `analyst/` covering structured analytic tradecraft, source evaluation, security studies, and analytic writing.
 - For future integrations, Trevor should check existing skills/integrations before building custom alternatives.
 

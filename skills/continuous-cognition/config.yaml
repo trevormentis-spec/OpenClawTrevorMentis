@@ -1,0 +1,43 @@
+# Continuous Cognition — Configuration
+#
+# Flash runs every 10-15 minutes for low-cost continuous awareness.
+# Escalates to Pro when clarity/complexity thresholds are crossed.
+# Escalates to Opus only for high-stakes strategic synthesis.
+
+cognition:
+  cadence_seconds: 900  # 15 minutes
+  max_input_tokens: 4000
+  max_output_tokens: 800
+  model_flash: "deepseek/deepseek-v4-flash"
+  model_pro: "deepseek/deepseek-v4-pro"
+  model_opus: "anthropic/claude-opus-4.7"
+
+escalation:
+  # Thresholds that trigger Pro escalation
+  confidence_swing: 15      # points — if KJ confidence shifts by >15
+  ambiguity_threshold: 30   # % — if KJ confidence drops below 30%
+  weak_signal_strength: 0.7 # — if a weak signal reaches 70% probability
+  anomaly_score: 0.8        # — event contradicts all active narratives
+  max_escalations_per_cycle: 2  # Prevent escalation spam
+
+  # Thresholds that trigger Opus (rare)
+  multi_narrative_shift: 3  # — if 3+ KJs shift simultaneously
+  strategic_crossroads: true # — if escalation chain reaches Opus level
+
+state_management:
+  max_active_narratives: 20   # Purge oldest if exceeded
+  max_weak_signals: 50        # Drop lowest-strength if exceeded
+  max_source_trust_entries: 100
+  signal_decay_days: 7        # Weak signals decay to zero after 7 days
+  narrative_stale_days: 14    # Archive narratives with no updates for 14d
+  drift_window: 3             # Number of cycles to compute drift over
+
+token_budget:
+  max_daily_cents: 20         # ~$0.20/day max Flash spend (~140 cycles)
+  alert_on_exceed: true
+
+operational:
+  skip_if_running: true       # Don't overlap — RuntimeLock
+  degrade_if_disk_critical: true  # Skip cycles at >90% disk
+  degrade_if_no_env: true     # Skip if DeepSeek API key missing
+  health_report_cycles: 24    # Log full state every 24 cycles (6h)
