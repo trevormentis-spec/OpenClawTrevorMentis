@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-05-26 09:05 UTC
+# Gmail Intel Digest — 2026-05-26 11:02 UTC
+
+## US-Iran talks stalls as US launch new strikes
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 06:59:27 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Rubio says Iran deal could take days as US launches fresh strikes
+**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
+**Date:** Tue, 26 May 2026 06:31:12 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Wrong sort of 'boom' to start the week
+**From:** "Morning Bid U.S." <morningbid@thomsonreuters.com>
+**Date:** Tue, 26 May 2026 06:31:11 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Peace talks hit turbulence
 **From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
@@ -47,26 +74,39 @@ Email from Institute for the Study of War Russia threatened systematic strikes o
 
 ---
 
-## Iran Update Special Report, May 25, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Mon, 25 May 2026 18:53:16 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War The United States and Iran continue to hold fundamentally different positions on most major issues within the US-Iran “agreement.” May 25, 2026 Data Cutoff: 2:00 PM ET Katherine Wells, Carolyn Moorman, Will Doran, Nidal Morrison, Avery Borens, and Brian Carter DONATE As the Middle East crisis evolves, ISW urgently needs your support. Help us stay independent and impactful. TOPLINES The United States and Iran continue to hold fundamentally different posit
+## AgentMail Intel — 2026-05-26 11:02 UTC
 
----
+### Preserving America's immigrant talent pipeline
+**From:** Brookings Brief <info@brookings.edu>  
+Plus, what Beijing got from the Trump-Xi summit and America's standing in the Iran war. View in browser (https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VWzqcg63q0HNW21FFcT7Lr41ZW1WCq9G5PwXK-N8J
 
-## ロシア、キーウ軍事施設「組織的攻撃」開始を米に伝達　退避勧告も【【5月 26日】
-**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
-**Date:** Mon, 25 May 2026 18:31:08 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### US and Iran clash
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+US and Iran Clash Near Hormuz Despite Reports of Progress Bloomberg Morning Briefing Americas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+### Gefälschte Klimazertifikate in Europa: Fünf Themen des Tages
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Five Things: Germany Petra Sorge über Klima-Luftschlösser — Abonnieren Sie unseren Newsletter Fünf Themen des Tages und erhalten Sie samstags das Hauptstadtgeflü
 
----
+### The Morning: Your questions, answered
+**From:** The New York Times <nytdirect@nytimes.com>  
 
+### ISS Today: Guinea’s May elections end its transition – but will they bring stability?
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+26 May 2026 [1] Guinea’s May elections end its transition – but will they bring stability? Although authorities adhered to the ECOWAS timeline, Guinea’s return to democracy is mi
 
-## AgentMail Intel — 2026-05-26 09:06 UTC
+### Trump Is Making the Same Mistake That Doomed Biden
+**From:** American Enterprise Institute <aei_today@aei.org>  
+Today's top commentary and scholarship on the issues that matter most AEI Today AEI's daily collection of independent research and analysis Trump Is Making the Same Mistake That Doomed Biden (https
+
+### Front-row seat
+**From:** Bloomberg Politics <noreply@news.bloomberg.com>  
+China Plays Quiet Role in US-Iran Talks China’s long-running ties with Pakistan help it influence negotiations to end the Iran war ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+### Trump’s tricky path to peace
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+US Air Strikes on Iran Show Trump’s Challenging Path to Peace Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### Market Moves: Ferrari Shares Drop After It Unveils Fully Electric Car
 **From:** Bloomberg <noreply@news.bloomberg.com>  
@@ -75,18 +115,3 @@ Bloomberg News Alert Ferrari Rolls Out 5-Seat Fully Electric Car in Brand First
 ### Worse box line service equals higher rates, Crucial week ahead for tanker market
 **From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
 If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134569&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=32a24a5f37934c198
-
-### RIAT reversal, a NATO nuclear reminder and a new F-35 missile
-**From:** Breaking Defense Europe <newsletters@breakingdefense.com>  
-A weekly roundup of top developments from across the region. _____________________________________________ Breaking Defense: Europe (https://info.breakingdefense.com/e3t/Ctc/GA+113/cfk9804/VVyFwj5Pjl
-
-### The pope speaks up for humans, not humanoids
-**From:** John Authers <noreply@news.bloomberg.com>  
-Points of Return To get John Authers’ newsletter delivered directly to your inbox, sign up here. It looks like peace — or surrender — in the Strait or Hormuz View in browser <https://bloom.bg/4wP
-
-### The World: Are we pandemic ready?
-**From:** The New York Times <nytdirect@nytimes.com>  
-
-### Market Moves: ASX Drops Most Since 2012 After Revising Up Costs on Tech Revamp
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Bloomberg News Alert ASX Drops Most Since 2012 After Revising Up Costs on Tech Re
