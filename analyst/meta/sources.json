@@ -6194,6 +6194,87 @@
       "discovered": "2026-05-26",
       "signal_level": "Medium",
       "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Prediction Markets Cross $5.6B Week, Kalshi Takes 71% of Volume",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi processed 25.8 million transactions, up 7.3% week over week, while Polymarket processed 17.4 million, up 0.9%</strong>. That means Poly",
+      "url": "https://defirate.com/news/prediction-markets-cross-5-6b-week-kalshi-takes-71-of-volume/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+      "type": "Blog/Website",
+      "focus": "Prediction markets <strong>allow users to bet on the outcomes of future events by placing wagers on &quot;yes&quot; or &quot;no&quot; questions called",
+      "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Prediction Markets Cross $5.6B Week, Kalshi Takes 71% of Volume",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi processed 25.8 million transactions, up 7.3% week over week, while Polymarket processed 17.4 million, up 0.9%</strong>. That means Poly",
+      "url": "https://defirate.com/news/prediction-markets-cross-5-6b-week-kalshi-takes-71-of-volume/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [

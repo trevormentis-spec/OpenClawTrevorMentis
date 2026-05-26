@@ -196,6 +196,10 @@
     "translational-gap-analyzer": {
       "version": "1.0.0",
       "installedAt": 1779699788560
+    },
+    "ionsec-threat-intel": {
+      "version": "1.0.1",
+      "installedAt": 1779786271050
     }
   }
 }

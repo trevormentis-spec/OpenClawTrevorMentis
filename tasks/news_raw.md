@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-26 07:03 UTC
+# Gmail Intel Digest — 2026-05-26 09:05 UTC
 
 ## Peace talks hit turbulence
 **From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
@@ -66,7 +66,15 @@ Email from Institute for the Study of War The United States and Iran continue to
 ---
 
 
-## AgentMail Intel — 2026-05-26 07:05 UTC
+## AgentMail Intel — 2026-05-26 09:06 UTC
+
+### Market Moves: Ferrari Shares Drop After It Unveils Fully Electric Car
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert Ferrari Rolls Out 5-Seat Fully Electric Car in Brand First
+
+### Worse box line service equals higher rates, Crucial week ahead for tanker market
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134569&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=32a24a5f37934c198
 
 ### RIAT reversal, a NATO nuclear reminder and a new F-35 missile
 **From:** Breaking Defense Europe <newsletters@breakingdefense.com>  
@@ -82,7 +90,3 @@ Points of Return To get John Authers’ newsletter delivered directly to your in
 ### Market Moves: ASX Drops Most Since 2012 After Revising Up Costs on Tech Revamp
 **From:** Bloomberg <noreply@news.bloomberg.com>  
 Bloomberg News Alert ASX Drops Most Since 2012 After Revising Up Costs on Tech Re
-
-### Why we investigate organized crime
-**From:** InSight Crime <info@insightcrime.org>  
-https://insightcrime.org/?mc_cid=ba64925699&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=ba64925699&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=ba64925699&mc_eid=UNIQID
