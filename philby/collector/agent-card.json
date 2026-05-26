@@ -1,0 +1,27 @@
+{
+  "agent_name": "Philby-Collector",
+  "agent_description": "Autonomous source collection and health monitoring sub-agent. Continuously tests RSS/feed sources, discovers new intelligence feeds, prunes dead ones, and integrates validated sources into the Philby intelligence registry.",
+  "version": "1.0.0",
+  "parent": "Trevor (Philby)",
+  "cadence_seconds": 1800,
+  "capabilities": [
+    "rss_feed_health_testing",
+    "source_discovery_via_web_search",
+    "dead_source_pruning",
+    "source_registry_integration",
+    "regional_gap_analysis"
+  ],
+  "state_file": "skills/philby-collector/state/collector_state.json",
+  "outputs": {
+    "feed_health_report": "brain/memory/semantic/feed-health-latest.json",
+    "source_registry_updates": "analyst/meta/sources.json",
+    "tested_sources": "analyst/meta/sources_tested.json",
+    "discovery_candidates": "brain/memory/semantic/feed-discovery-latest.json"
+  },
+  "data_sources": [
+    "analyst/meta/sources.json (966 durable sources)",
+    "analysis/meta/south-america-feeds/ (201 integrated)",
+    "Web search (Brave API for source discovery)"
+  ],
+  "trigger": "Called by runtime-health.sh every ~30min after cognition cycle, or by heartbeat system Phase A/B/C"
+}

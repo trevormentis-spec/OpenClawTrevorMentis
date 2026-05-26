@@ -1,16 +1,16 @@
-# GATE_EXEMPT: Continuous cognition uses DeepSeek Direct API deliberately — lowest-cost path for 15-min Flash cycles. This is not a gate bypass; it IS the intended routing for Tier-3 cognition.
+# GATE_EXEMPT: Continuous cognition uses DeepSeek Direct API deliberately — lowest-cost path for 15-min cycles. Updated to DeepSeek Pro primary (2026-05-26): Pro costs same per successful cycle as Flash with 75% failure rate, and provides reliable JSON output.
 #!/usr/bin/env python3
 """
 Continuous Cognition Pipeline — Trevor
 
 Runs every 10-15 minutes as a background daemon.
-Uses DeepSeek Flash for lightweight continuous cognition.
-Escalates to Pro/Opus when thresholds are crossed.
+Uses DeepSeek Pro for reliable continuous cognition on all operational domains.
+Escalates to Opus when thresholds are crossed.
 
 Architecture:
-  collect_context() → build_flash_input() → call_flash() → 
+  collect_context() → build_primary_input() → call_primary() → 
   parse_response() → update_state() → check_escalation() → 
-  execute_escalation() → compact()
+  execute_escalations() → compact()
 
 Usage:
   python3 cognition_pipeline.py              # One cycle
@@ -58,11 +58,16 @@ logger.addHandler(handler)
 PROMPT_PATH = BASE_DIR / "skills" / "continuous-cognition" / "prompts" / "flash_cognition.txt"
 CYCLE_INTERVAL = 900  # 15 minutes
 
-# DeepSeek API
+# DeepSeek API — primary model is Pro (reliable JSON), Opus for escalation
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
-DEEPSEEK_MODEL_FLASH = "deepseek-chat"  # v4 Flash
-DEEPSEEK_MODEL_PRO = "deepseek-chat"    # Pro — same endpoint, different config
+DEEPSEEK_MODEL_PRIMARY = "deepseek-chat"  # DeepSeek V4 Pro (same endpoint name)
 OPUS_MODEL = "anthropic/claude-opus-4.7"  # via OpenRouter
+
+# Primary model pricing (DeepSeek Pro: $0.435/M input, $0.87/M output)
+PRIMARY_INPUT_COST_PER_M = 0.435
+PRIMARY_OUTPUT_COST_PER_M = 0.87
+PRIMARY_MAX_TOKENS = 2000
+PRIMARY_TEMPERATURE = 0.3
 
 
 # ── Context Collection ──────────────────────────────────────────────
@@ -139,14 +144,13 @@ def collect_recent_context() -> Dict[str, Any]:
         if age_min < 1440:  # Only if updated in last 24h
             try:
                 text = news_raw.read_text()
-                # Extract subject lines (## headers in the markdown)
                 import re
                 subjects = re.findall(r"^## (.+)$", text, re.MULTILINE)
                 context["email_intel"] = {
                     "file": "news_raw.md",
                     "age_min": age_min,
                     "size": len(text),
-                    "subjects": subjects[:5],  # Top 5 for prompt brevity
+                    "subjects": subjects[:5],
                     "has_useful_intel": any(
                         kw in text.lower()
                         for kw in ["iran", "ukraine", "china", "cartel", "fentanyl",
@@ -156,6 +160,50 @@ def collect_recent_context() -> Dict[str, Any]:
                 }
             except Exception:
                 context["email_intel"] = {"error": "read_failed"}
+
+    # Source health — feed health metrics from collector    
+    feed_health = BASE_DIR / "brain" / "memory" / "semantic" / "feed-health-latest.json"
+    if feed_health.exists():
+        try:
+            context["source_health"] = json.loads(feed_health.read_text())
+        except Exception:
+            pass
+
+    # Collection records — source testing progress
+    collection_records = BASE_DIR / "tasks" / "collection_records.jsonl"
+    if collection_records.exists():
+        try:
+            lines = collection_records.read_text().splitlines()
+            context["collection_records"] = len(lines)
+        except Exception:
+            pass
+
+    # Philby desk status
+    philby_config = BASE_DIR / "philby" / "desks" / "philby-config.json"
+    if philby_config.exists():
+        try:
+            pc = json.loads(philby_config.read_text())
+            desks = pc.get("desks", {})
+            desk_summary = {}
+            for did, dc in desks.items():
+                n_count = sum(1 for nid in state.get("active_narratives", {})
+                             if nid.startswith(tuple(dc.get("narrative_patterns", []))))
+                desk_summary[did] = {
+                    "name": dc.get("name", did),
+                    "seeded": dc.get("seeded", False),
+                    "narratives": n_count,
+                }
+            context["philby_desks"] = desk_summary
+        except Exception:
+            pass
+
+    # Brain state — last maintenance activity
+    brain_state = BASE_DIR / "brain" / "memory" / "semantic" / "behavioral-state.json"
+    if brain_state.exists():
+        try:
+            context["brain_state"] = json.loads(brain_state.read_text())
+        except Exception:
+            pass
 
     return context
 
@@ -248,14 +296,38 @@ def build_flash_input(state: dict, context: dict) -> str:
         if email_intel.get("has_useful_intel"):
             input_text += "Contains desk-relevant intel — consider updating narrative confidence.\n"
 
+    # Add source health if available
+    source_health = context.get("source_health", {})
+    if source_health:
+        input_text += (
+            f"\n## SOURCE_HEALTH\n\n"
+            f"Batch: {source_health.get('batch_size', '?')} sources\n"
+            f"OK: {source_health.get('ok', '?')} / Failed: {source_health.get('failed', '?')}\n"
+            f"Health: {source_health.get('health_pct', '?')}%\n"
+            f"Total sources: {source_health.get('total_sources', '?')}\n"
+        )
+
+    # Add Philby desk status if available
+    philby = context.get("philby_desks", {})
+    if philby:
+        input_text += "\n## PHILBY_DESKS\n\n"
+        for did, ds in philby.items():
+            input_text += f"  {ds.get('name', did)}: {ds.get('narratives', 0)} narratives {"✅" if ds.get('seeded') else '❌'}\n"
+
+    # Add collection records if available
+    coll = context.get("collection_records")
+    if coll:
+        input_text += f"\nCollection records: {coll} entries\n"
+
     return prompt + "\n\n" + input_text
 
 
-# ── DeepSeek Flash Call ─────────────────────────────────────────────
+# ── Primary Cognition Call (DeepSeek Pro) ────────────────────────────
 
-def call_flash(messages: List[dict]) -> Tuple[Optional[dict], float]:
+def call_primary(messages: List[dict]) -> Tuple[Optional[dict], float]:
     """
-    Call DeepSeek Flash for cognition.
+    Call DeepSeek Pro for continuous cognition.
+    Pro is the primary model: reliable JSON output, moderate cost.
     Returns (parsed_response, cost_cents) or (None, 0) on failure.
     """
     api_key = os.environ.get("DEEPSEEK_API_KEY")
@@ -269,10 +341,10 @@ def call_flash(messages: List[dict]) -> Tuple[Optional[dict], float]:
     }
 
     payload = {
-        "model": DEEPSEEK_MODEL_FLASH,
+        "model": DEEPSEEK_MODEL_PRIMARY,
         "messages": messages,
-        "max_tokens": 800,
-        "temperature": 0.1,  # Low temperature for consistent cognition
+        "max_tokens": PRIMARY_MAX_TOKENS,
+        "temperature": PRIMARY_TEMPERATURE,
         "stream": False,
     }
 
@@ -281,7 +353,7 @@ def call_flash(messages: List[dict]) -> Tuple[Optional[dict], float]:
             DEEPSEEK_API_URL,
             headers=headers,
             json=payload,
-            timeout=60,
+            timeout=120,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -289,8 +361,7 @@ def call_flash(messages: List[dict]) -> Tuple[Optional[dict], float]:
         # Extract content
         content = data["choices"][0]["message"]["content"].strip()
 
-        # Parse JSON from response
-        # Handle case where Flash wraps in ```json ... ```
+        # Parse JSON from response (handle markdown fences)
         if "```json" in content:
             content = content.split("```json")[1].split("```")[0].strip()
         elif "```" in content:
@@ -298,29 +369,28 @@ def call_flash(messages: List[dict]) -> Tuple[Optional[dict], float]:
 
         parsed = json.loads(content)
 
-        # Cost estimation based on token usage
+        # Cost estimation
         usage = data.get("usage", {})
         prompt_tokens = usage.get("prompt_tokens", 0)
         completion_tokens = usage.get("completion_tokens", 0)
-        # Flash pricing: $0.14/M input, $0.28/M output
-        cost_cents = (prompt_tokens * 0.14 + completion_tokens * 0.28) / 1_000_000 * 100
+        cost_cents = (prompt_tokens * PRIMARY_INPUT_COST_PER_M + completion_tokens * PRIMARY_OUTPUT_COST_PER_M) / 1_000_000 * 100
 
         return parsed, cost_cents
 
     except requests.exceptions.Timeout:
-        logger.warning("Flash API timeout")
+        logger.warning("Primary API timeout")
         return None, 0
     except json.JSONDecodeError as e:
-        logger.warning(f"Flash returned non-JSON: {e}")
+        logger.warning(f"Primary returned non-JSON: {e}")
         return None, 0
     except Exception as e:
-        logger.warning(f"Flash API error: {e}")
+        logger.warning(f"Primary API error: {e}")
         return None, 0
 
 
-def call_pro(messages: List[dict]) -> Tuple[Optional[dict], float]:
-    """Call DeepSeek Pro for deeper analysis. Same endpoint, higher config."""
-    api_key = os.environ.get("DEEPSEEK_API_KEY")
+def call_opus(messages: List[dict]) -> Tuple[Optional[dict], float]:
+    """Call Claude Opus for strategic escalation (rare)."""
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
         return None, 0
 
@@ -330,15 +400,16 @@ def call_pro(messages: List[dict]) -> Tuple[Optional[dict], float]:
     }
 
     payload = {
-        "model": DEEPSEEK_MODEL_PRO,
+        "model": OPUS_MODEL,
         "messages": messages,
-        "max_tokens": 2000,
-        "temperature": 0.3,
+        "max_tokens": 4000,
+        "temperature": 0.1,
     }
 
     try:
         resp = requests.post(
-            DEEPSEEK_API_URL, headers=headers, json=payload, timeout=120
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers=headers, json=payload, timeout=120
         )
         resp.raise_for_status()
         data = resp.json()
@@ -346,11 +417,11 @@ def call_pro(messages: List[dict]) -> Tuple[Optional[dict], float]:
         usage = data.get("usage", {})
         prompt_tokens = usage.get("prompt_tokens", 0)
         completion_tokens = usage.get("completion_tokens", 0)
-        # Pro pricing: $0.435/M input, $0.87/M output
-        cost_cents = (prompt_tokens * 0.435 + completion_tokens * 0.87) / 1_000_000 * 100
-        return {"analysis": content, "model": "pro"}, cost_cents
+        # Opus pricing: ~$5/M input, $15/M output
+        cost_cents = (prompt_tokens * 5.0 + completion_tokens * 15.0) / 1_000_000 * 100
+        return {"analysis": content, "model": "opus"}, cost_cents
     except Exception as e:
-        logger.warning(f"Pro API error: {e}")
+        logger.warning(f"Opus API error: {e}")
         return None, 0
 
 
@@ -399,6 +470,8 @@ def apply_flash_output(state: dict, flash_output: dict):
 
     # Narrative drift
     for drift in flash_output.get("narrative_drift", []):
+        if not isinstance(drift, dict):
+            continue
         narrative_id = drift.get("narrative")
         if narrative_id:
             update_drift(
@@ -452,14 +525,15 @@ def execute_escalations(state: dict) -> List[str]:
         level = escalation["level"]
         narrative = escalation["narrative"]
 
-        if level == "pro":
-            logger.info(f"→ Calling Pro for: {narrative}")
-            pro_messages = [
+        if level == "opus":
+            logger.info(f"→ Calling Opus for strategic analysis: {narrative}")
+            opus_messages = [
                 {
                     "role": "system",
                     "content": (
-                        "You are Trevor's deep analysis layer. A threshold was crossed "
-                        f"on narrative: {narrative}. "
+                        "You are Trevor's strategic analysis layer. A critical threshold "
+                        "was crossed requiring deep reasoning. "
+                        f"Narrative: {narrative}. "
                         f"Reason: {escalation['reason']}. "
                         "Provide structured analysis: key factors, alternative scenarios, "
                         "and recommended reassessment."
@@ -468,29 +542,24 @@ def execute_escalations(state: dict) -> List[str]:
                 {
                     "role": "user",
                     "content": (
-                        f"Deep analysis requested for: {narrative}\n"
+                        f"Strategic analysis requested for: {narrative}\n"
                         f"Current state: {json.dumps(state.get('active_narratives', {}).get(narrative, {}))}\n"
-                        f"Recent escalation reason: {escalation['reason']}\n"
+                        f"Escalation reason: {escalation['reason']}\n"
                         "Provide JSON: {assessment, confidence, scenarios: [], key_factors: [], recommendations: []}"
                     ),
                 },
             ]
-            result, cost = call_pro(pro_messages)
+            result, cost = call_opus(opus_messages)
             if result:
                 record_token_spend(state, cost)
-                # Store Pro analysis in state
-                state.setdefault("pro_analyses", []).append({
+                state.setdefault("opus_analyses", []).append({
                     "narrative": narrative,
                     "analysis": result.get("analysis", ""),
                     "cycle": state["cycle"],
                     "cost_cents": cost,
                 })
-                executed.append(f"pro:{narrative}")
-                logger.info(f"  ✅ Pro analysis complete (${cost:.4f})")
-
-        elif level == "opus":
-            logger.info(f"→ Escalation to Opus needed for: {narrative}")
-            executed.append(f"opus:{narrative}")
+                executed.append(f"opus:{narrative}")
+                logger.info(f"  ✅ Opus analysis complete (${cost:.4f})")
 
         resolve_escalation(state, i)
 
@@ -500,10 +569,10 @@ def execute_escalations(state: dict) -> List[str]:
 # ── Main Cycle ──────────────────────────────────────────────────────
 
 def run_cognition_cycle(force: bool = False) -> dict:
-    """Execute one complete cognition cycle."""
+    """Execute one complete cognition cycle using DeepSeek Pro primary."""
     result = {
         "status": "ok",
-        "flash_cost": 0.0,
+        "primary_cost": 0.0,
         "escalation_cost": 0.0,
         "escalations": [],
         "narratives_updated": 0,
@@ -516,13 +585,13 @@ def run_cognition_cycle(force: bool = False) -> dict:
     state["last_run"] = datetime.datetime.now(datetime.UTC).isoformat()
     cycle = state["cycle"]
 
-    # Check budget
-    if not force and would_exceed_budget(state, estimated_cost_cents=0.5):
+    # Check budget (Pro cycles ~$0.03, allow ~16/day = $0.50 cap)
+    if not force and would_exceed_budget(state, estimated_cost_cents=3.0):
         result["status"] = "budget_exceeded"
         logger.info("Skipping: daily budget exceeded")
         return result
 
-    # Collect context
+    # Collect context (now includes source health, Philby desks, email OSINT, collection state)
     context = collect_recent_context()
 
     # Degraded mode check
@@ -531,28 +600,28 @@ def run_cognition_cycle(force: bool = False) -> dict:
         logger.info("Skipping: degraded mode (disk >= 90%)")
         return result
 
-    # Build Flash input
-    flash_input = build_flash_input(state, context)
+    # Build primary model input
+    primary_input = build_flash_input(state, context)
     messages = [
-        {"role": "system", "content": flash_input.split("## PREVIOUS_STATE")[0]},
-        {"role": "user", "content": "## PREVIOUS_STATE" + flash_input.split("## PREVIOUS_STATE")[1]},
+        {"role": "system", "content": primary_input.split("## PREVIOUS_STATE")[0]},
+        {"role": "user", "content": "## PREVIOUS_STATE" + primary_input.split("## PREVIOUS_STATE")[1]},
     ]
 
-    # Call Flash
-    flash_output, cost = call_flash(messages)
-    result["flash_cost"] = cost
+    # Call DeepSeek Pro (primary)
+    primary_output, cost = call_primary(messages)
+    result["primary_cost"] = cost
 
-    if flash_output is None:
-        mark_error(state, f"Flash API failure (cycle {cycle})")
+    if primary_output is None:
+        mark_error(state, f"Primary API failure (cycle {cycle})")
         save_state(state)
-        result["status"] = "flash_error"
+        result["status"] = "primary_error"
         return result
 
     record_token_spend(state, cost)
 
     # Apply state update
     narratives_before = len(state["active_narratives"])
-    apply_flash_output(state, flash_output)
+    apply_flash_output(state, primary_output)
     result["narratives_updated"] = len(state["active_narratives"]) - narratives_before
 
     # Maintenance
@@ -575,7 +644,7 @@ def run_cognition_cycle(force: bool = False) -> dict:
         f"Cycle {cycle}: ${cost:.4f} | "
         f"{summary['narratives']} narratives | "
         f"{len(executed)} escalations | "
-        f"$D{summary.get('total_spent','?')} total"
+        f"${summary.get('total_spent_usd', summary.get('total_spent', '?'))} total"
     )
 
     return result

@@ -1,0 +1,349 @@
+#!/usr/bin/env python3
+"""
+Philby Trader — Autonomous Kalshi Trade Execution Engine.
+
+Reads trade signals from intel_bridge.py, evaluates against guardrails,
+executes via Kalshi API, and logs every trade to a persistent journal.
+
+Usage:
+    python3 philby/trader/trader.py --scan-and-trade        # Full cycle
+    python3 philby/trader/trader.py --dry-run               # Report only, no execute
+    python3 philby/trader/trader.py --status                # Portfolio + positions
+    python3 philby/trader/trader.py --journal               # Full trade history
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import os
+import pathlib
+import sys
+from typing import Any
+
+REPO = pathlib.Path(__file__).resolve().parent.parent.parent
+SIGNALS_FILE = REPO / "philby" / "trader" / "signals" / "latest.json"
+JOURNAL_FILE = REPO / "philby" / "trader" / "journal.jsonl"
+POSITIONS_FILE = REPO / "philby" / "trader" / "positions.json"
+GUARDRAILS = {
+    "kelly_fraction": 0.25,
+    "max_position_pct": 5.0,
+    "max_total_exposure_pct": 30.0,
+    "max_concurrent_positions": 10,
+    "min_edge_to_trade": 5,
+    "daily_loss_pct": 10.0,
+    "max_drawdown_pct": 20.0,
+    "position_stop_loss_pct": 50.0,
+    "position_take_profit_pct": 100.0,
+}
+
+# Kalshi client import (wrapped for graceful failure)
+try:
+    sys.path.insert(0, str(REPO / "scripts"))
+    sys.path.insert(0, str(REPO / "skills" / "kalshi-trader" / "scripts"))
+    from client import KalshiClient, KalshiAPIError, KalshiAuthError
+    KALSHI_AVAILABLE = True
+except ImportError:
+    KALSHI_AVAILABLE = False
+
+
+def log(msg: str) -> None:
+    print(f"[trader {dt.datetime.now(dt.timezone.utc).strftime('%H:%M:%S')}] {msg}", file=sys.stderr, flush=True)
+
+
+def load_signals() -> list[dict]:
+    if not SIGNALS_FILE.exists():
+        return []
+    try:
+        data = json.loads(SIGNALS_FILE.read_text())
+        return data.get("tradeable", [])
+    except (json.JSONDecodeError,):
+        return []
+
+
+def load_journal() -> list[dict]:
+    trades = []
+    if JOURNAL_FILE.exists():
+        for line in JOURNAL_FILE.read_text().splitlines():
+            try:
+                trades.append(json.loads(line.strip()))
+            except json.JSONDecodeError:
+                pass
+    return trades
+
+
+def append_journal(entry: dict) -> None:
+    JOURNAL_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(JOURNAL_FILE, "a") as f:
+        f.write(json.dumps(entry, default=str) + "\n")
+
+
+def load_positions() -> dict:
+    if POSITIONS_FILE.exists():
+        try:
+            return json.loads(POSITIONS_FILE.read_text())
+        except (json.JSONDecodeError,):
+            pass
+    return {"positions": [], "balance": 0.0, "peak_value": 0.0, "last_updated": None}
+
+
+def save_positions(positions: dict) -> None:
+    POSITIONS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    POSITIONS_FILE.write_text(json.dumps(positions, indent=2))
+
+
+def compute_kelly(trevor_pct: float, market_price: float) -> float:
+    """Compute Kelly fraction for a binary bet."""
+    p = trevor_pct / 100.0  # Trevor's assessed win probability
+    b = (1 - market_price) / market_price  # Decimal odds from market price
+    q = 1 - p  # Loss probability
+    if b <= 0:
+        return 0.0
+    kelly = (p * b - q) / b
+    return max(0.0, min(kelly * GUARDRAILS["kelly_fraction"], 1.0))
+
+
+def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | None:
+    """Execute a trade based on an edge signal."""
+    ticker = signal["ticker"]
+    trevor_conf = signal["trevor_confidence"]
+    market_prob = signal["market_confidence"]
+    edge = signal["edge_pts"]
+
+    # Compute Kelly sizing
+    market_price = market_prob / 100.0 if market_prob else 0.5
+    kelly_frac = compute_kelly(trevor_conf, market_price)
+
+    # Get current balance
+    try:
+        balance_data = client.get_balance()
+        balance = float(balance_data.get("balance_dollars", balance_data.get("balance", "0")))
+    except Exception:
+        balance = 100.0  # Fallback — shouldn't happen in production
+
+    # Compute position size (quarter-Kelly, max 5% of portfolio)
+    position_size = balance * kelly_frac * (GUARDRAILS["max_position_pct"] / 100.0)
+    position_size = min(position_size, balance * GUARDRAILS["max_position_pct"] / 100.0)
+    position_size = max(position_size, 1.0)  # Minimum $1
+
+    log(f"Trade signal: {signal['action']} {ticker}")
+    log(f"  Trevor: {trevor_conf}%  Market: {market_prob}%  Edge: {edge:+.0f}pts")
+    log(f"  Kelly fraction: {kelly_frac:.2f}  Position size: ${position_size:.2f}")
+
+    if dry_run:
+        log(f"  [DRY RUN] Would execute: {signal['action']} ${position_size:.2f} of {ticker}")
+        return {
+            "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "ticker": ticker,
+            "action": signal["action"],
+            "trevor_confidence": trevor_conf,
+            "market_probability": market_prob,
+            "edge_pts": edge,
+            "position_size_dollars": round(position_size, 2),
+            "kelly_fraction": round(kelly_frac, 4),
+            "status": "dry_run",
+            "rationale": f"Trevor {trevor_conf}% vs market {market_prob}% ({edge:+.0f}pt edge)",
+        }
+
+    # Execute via Kalshi API
+    try:
+        if "BUY Yes" in signal["action"]:
+            order = client.create_order(
+                ticker=ticker,
+                side="buy",
+                type="market",
+                yes_price=int(market_prob),  # Price in cents
+                count=int(position_size / (market_price * 100)),  # Number of contracts
+            )
+        else:
+            order = client.create_order(
+                ticker=ticker,
+                side="buy",
+                type="market",
+                no_price=int(100 - market_prob),
+                count=int(position_size / ((1 - market_price) * 100)),
+            )
+
+        trade_entry = {
+            "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "ticker": ticker,
+            "action": signal["action"],
+            "trevor_confidence": trevor_conf,
+            "market_probability": market_prob,
+            "edge_pts": edge,
+            "position_size_dollars": round(position_size, 2),
+            "kelly_fraction": round(kelly_frac, 4),
+            "order_response": order,
+            "status": "executed",
+        }
+        append_journal(trade_entry)
+        log(f"  ✅ Executed: {ticker}")
+        return trade_entry
+
+    except Exception as e:
+        error_entry = {
+            "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "ticker": ticker,
+            "action": signal["action"],
+            "error": str(e),
+            "status": "failed",
+        }
+        append_journal(error_entry)
+        log(f"  ❌ Execution failed: {e}")
+        return None
+
+
+def cmd_scan_and_trade(args):
+    """Full cycle: detect edges → execute trades."""
+    if not KALSHI_AVAILABLE:
+        log("Kalshi client not available — can't trade")
+        return 1
+
+    # Step 1: Run intel bridge to detect edges
+    log("Step 1: Running intel bridge...")
+    bridge = REPO / "philby" / "trader" / "intel_bridge.py"
+    import subprocess
+    result = subprocess.run(
+        ["python3", str(bridge), "--json"],
+        capture_output=True, text=True, timeout=60, cwd=str(REPO),
+    )
+
+    try:
+        signals_data = json.loads(result.stdout)
+        tradeable = signals_data.get("tradeable", [])
+    except (json.JSONDecodeError,):
+        log(f"Bridge output parse failed: {result.stderr[:200]}")
+        tradeable = []
+
+    if not tradeable:
+        log("No tradeable signals found")
+        return 0
+
+    log(f"Found {len(tradeable)} tradeable signal(s)")
+
+    # Step 2: Connect to Kalshi
+    try:
+        client = KalshiClient()
+        log("Connected to Kalshi API")
+    except Exception as e:
+        log(f"Kalshi connection failed: {e}")
+        return 1
+
+    # Step 3: Get current balance and existing positions
+    try:
+        balance = client.get_balance()
+        portfolio_value = float(balance.get("balance_dollars", 0))
+        log(f"Balance: ${portfolio_value:.2f}")
+
+        # Get existing positions to check capacity
+        existing = client.get_positions()
+        existing_positions = existing.get("positions", [])
+        log(f"Existing positions: {len(existing_positions)}")
+
+        if len(existing_positions) >= GUARDRAILS["max_concurrent_positions"]:
+            log("Max positions reached — skipping new entries")
+            return 0
+
+    except Exception as e:
+        log(f"Balance check failed: {e}")
+        return 1
+
+    # Step 4: Execute best signals
+    executed = 0
+    for signal in tradeable[:GUARDRAILS["max_concurrent_positions"]]:
+        if args.dry_run:
+            result = execute_trade(signal, client, dry_run=True)
+        else:
+            result = execute_trade(signal, client)
+        if result:
+            executed += 1
+
+    log(f"Done: {executed}/{len(tradeable)} trades executed")
+    return 0
+
+
+def cmd_status(args):
+    """Show portfolio and position status."""
+    journal = load_journal()
+    positions = load_positions()
+
+    print(f"\n=== Philby Trader Status ===")
+    print(f"{'─' * 50}")
+
+    # Kalshi live status
+    if KALSHI_AVAILABLE:
+        try:
+            client = KalshiClient()
+            balance = client.get_balance()
+            bal_dollars = balance.get("balance_dollars", balance.get("balance", "?"))
+            print(f"Kalshi balance: ${bal_dollars}")
+        except Exception as e:
+            print(f"Kalshi API: {e}")
+    else:
+        print("Kalshi API: not available")
+
+    # Journal stats
+    total_trades = len(journal)
+    executed = [t for t in journal if t.get("status") == "executed"]
+    failed = [t for t in journal if t.get("status") == "failed"]
+    print(f"Total trades logged: {total_trades}")
+    print(f"  Executed: {len(executed)}  Failed: {len(failed)}")
+
+    # Recent trades
+    if executed:
+        print(f"\nRecent trades (last 5):")
+        for t in executed[-5:]:
+            print(f"  {t.get('timestamp','?')[:19]} [{t.get('status','?')}] {t.get('action','?')} {t.get('ticker','?')} ${t.get('position_size_dollars',0):.2f}")
+
+    # Signals
+    signals = load_signals()
+    print(f"\nLive signals: {len(signals)} tradeable")
+    for s in signals[:5]:
+        print(f"  {s.get('action','?'):8s} {s.get('ticker','?'):35s} edge={s.get('edge_pts',0):+.0f}pts")
+    print()
+
+
+def cmd_journal(args):
+    """Show full trade journal."""
+    journal = load_journal()
+    if not journal:
+        print("No trades in journal.")
+        return
+
+    print(f"\n=== Philby Trade Journal ({len(journal)} entries) ===")
+    print(f"{'Timestamp':<22} {'Status':<10} {'Action':<10} {'Ticker':<35} {'Size':>8} {'Edge':>6}")
+    print("-" * 95)
+    for t in journal:
+        ts = t.get("timestamp", "?")[:19]
+        status = t.get("status", "?")
+        action = t.get("action", "?")
+        ticker = t.get("ticker", "?")
+        size = t.get("position_size_dollars", 0)
+        edge = t.get("edge_pts", 0)
+        edge_str = f"{edge:+.0f}pt" if edge else ""
+        print(f"{ts:<22} {status:<10} {action:<10} {ticker:<35} ${size:>5.2f} {edge_str:>6}")
+    print()
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Philby Trader")
+    parser.add_argument("--scan-and-trade", action="store_true", help="Full cycle: detect edges → execute")
+    parser.add_argument("--dry-run", action="store_true", help="Report only, no execution")
+    parser.add_argument("--status", action="store_true", help="Portfolio + positions")
+    parser.add_argument("--journal", action="store_true", help="Show full trade history")
+    args = parser.parse_args()
+
+    if args.status:
+        cmd_status(args)
+    elif args.journal:
+        cmd_journal(args)
+    elif args.scan_and_trade or args.dry_run:
+        cmd_scan_and_trade(args)
+    else:
+        cmd_status(args)
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

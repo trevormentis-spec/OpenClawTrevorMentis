@@ -31,18 +31,86 @@ CRITICAL — SOURCE CITATION RULES:
 - Named individuals, specific dollar amounts, specific dates —
   ALL require immediate inline source citation.
 
+SOURCE DIVERSITY RULES:
+- Any factual claim sourced solely to a state outlet of a party to the
+  conflict it describes (TASS, RT, Press TV, Xinhua, Anadolu on Turkey-
+  adjacent stories, Geo on Pakistan-India) must be EITHER corroborated
+  by a non-aligned source before being stated as fact, OR explicitly
+  framed as a claim by that outlet. Downgrade the Admiralty rating when
+  uncorroborated — typically B3 or C3, not B2.
+- At the bottom of each regional section, list the distinct outlets that
+  contributed. If the count is below three for a region with more than
+  two incidents, flag "LOW SOURCE DIVERSITY" and treat the section's
+  confidence accordingly.
+
 CALIBRATION DISCIPLINE:
 - Sherman Kent bands (verbal → numeric):
-  almost certain: 93–99%, highly likely: 75–85%, likely: 55–70%,
+  almost certain: 93–99%, highly likely: 80–90%, likely: 55–70%,
   even chance: 45–55%, unlikely: 25–35%, highly unlikely: 10–20%,
   almost no chance: 1–5%
 - The verbal anchor and numeric prediction MUST be consistent.
+- "Likely" = 55-70%. If a prediction's base rate is 80%+, the only
+  honest rating is Highly Likely or Almost Certain. Do not use
+  "Likely" as a verbal hedge for high-confidence claims.
 - Single-source key judgments capped at "likely" (max 70%).
 - Predictions must be falsifiable within 7-day horizon.
 - AVOID ROUND-NUMBER BIAS: use calibrated values like 62%, 67%, 73%.
   Do NOT default to 60%, 65%, 70%, 75%, 80%. Vary your percentages.
   Using only values ending in 0 or 5 signals anchoring, not calibration.
 - Spread your bands — don't pile every KJ into "highly likely."
+
+KEY JUDGMENT QUALITY RULES:
+- Max 2 KJs per region. If you cannot generate two non-trivial ones,
+  ship one and explain why.
+- Every KJ must predict a specific, falsifiable event within the stated
+  window. "Unlikely Iran attacks US bases" is weak; "Likely Iran
+  responds via Houthi maritime harassment in Bab el-Mandeb within 7
+  days" is useful.
+- Frame KJs as predictions of what WILL happen, not enumerations of
+  what won't.
+- Would a reader who knows nothing about the region find this prediction
+  informative? If the base rate for the predicted outcome is above 85%
+  (e.g. "LNG continues flowing," "no coup this week in a non-coup-prone
+  state," "exercise leads to another exercise"), drop it or replace it.
+- Do NOT restate the same incident from two angles as separate KJs.
+
+VERIFICATION RULES:
+- Named officeholders — particularly heads of state and supreme leaders —
+  must be cross-checked against known reality before publication. Do NOT
+  guess names. If uncertain, refer to "the [country] supreme leader" or
+  "[title]" rather than fabricating a name.
+- Price moves in the BLUF (oil, currencies, equities) must have two
+  independent sources before being anchored in the lead paragraph.
+
+COLLECTION TAGGING:
+- Randomly audit 5% of incidents sampled for tag accuracy. If the error
+  rate exceeds 5%, escalate in the methodology block.
+- If an incident's region tag seems incorrect based on content, flag it.
+  Do not propagate mis-tagged incidents into the wrong region's analysis.
+
+PREDICTION MARKETS:
+- The Prediction Markets section exists to tell the reader what financial
+  markets BELIEVE will happen geopolitically and where those beliefs have
+  moved in the last 24 hours.
+- Include the 5-10 contracts most relevant to the day's top stories
+  (Russia-Ukraine, US-Iran, US politics, major elections, Fed actions,
+  named-conflict outcomes).
+- For each: current implied probability, 24-hour move in percentage
+  points, and 1-2 sentence interpretation: what does this price imply,
+  and does it agree or disagree with the analytical judgments elsewhere?
+- Where market belief contradicts the regional analysts' KJs, flag it
+  explicitly. Disagreement between markets and analysts is one of the
+  most valuable signals this brief can carry.
+- If WebSocket feed fails or no relevant contracts exist, say so in one
+  line and omit the section. Do not pad it with unrelated incidents.
+
+FORCED DISSENT:
+- For each region with 2+ KJs, include one line under the KJs titled
+  "Dissenting view:" giving the strongest case against the primary
+  judgment in 15-30 words.
+- If forced dissent didn't materially change anything, say
+  "Dissent considered, no material revision."
+- Silent dissent is not dissent. Every KJ must have a recorded dissent.
 
 QUALITY DISCIPLINE:
 - Every quantitative claim must be sourced from a named source.
@@ -101,6 +169,8 @@ Produce a single JSON object about {region_label} ONLY:
   "region": "{region_snake}",
   "as_of_utc": "{date_utc}T06:00:00Z",
   "incident_count": <int>,
+  "sources_used": ["<list of distinct outlets that contributed, at least 3 required>"],
+  "source_diversity_flag": "<true if sources_used < 3 and incidents > 2>",
   "narrative": "<3-5 paragraph analytical synthesis, ~400-600 words.
     Structure: (1) what happened overnight WITH SOURCE CITATIONS,
     (2) why it matters — reframe standing assessment if evidence supports,
@@ -122,7 +192,7 @@ Produce a single JSON object about {region_label} ONLY:
   "key_judgments": [
     {{
       "id": "KJ-{region_short}-1",
-      "statement": "<one sentence, specific, forward-looking, about {region_label}>",
+      "statement": "<one sentence, specific, forward-looking, falsifiable event prediction about {region_label} — what WILL happen, not what won't>",
       "sherman_kent_band": "<verbal anchor matching the number below>",
       "prediction_pct": <integer in the band's range — use calibrated value, NOT round number>,
       "horizon_days": 7,
@@ -132,24 +202,29 @@ Produce a single JSON object about {region_label} ONLY:
       "what_would_change_it": [
         "<concrete SOFTENER — observable that would move judgment DOWN one band>",
         "<concrete TIGHTENER — observable that would move judgment UP one band>"
-      ]
-    }},
-    ... 2 to 3 total KJs ...
+      ],
+      "dissenting_view": "<15-30 word strongest counter-argument to this judgment>"
+    }}
   ],
   "scenarios": null,
   "red_team_target_kj": "KJ-{region_short}-<n>"
 }}
 
 RULES I WILL CHECK:
-- 2-3 key judgments. Not 1, not 4.
+- MAX 2 key judgments. If you can't make 2 non-trivial ones, ship 1.
+  Do NOT write a trivial KJ just to reach 2.
+- Every KJ must predict a SPECIFIC falsifiable event — not a continuation
+  of the status quo.
+- Frame as what WILL happen, not what won't.
 - Verbal anchor and numeric prediction agree.
 - Every KJ has at least one evidence_incident_id.
 - single_source_basis: true ⇒ prediction_pct ≤ 70.
-- Every KJ has BOTH a softener and tightener.
+- Every KJ has BOTH a softener and tightener AND a dissenting_view.
 - Narrative is synthesis, not an incident list.
 - ALL specific claims cite a source with name + rating.
 - Predictions use CALIBRATED percentages (avoid 60, 65, 70, 75, 80).
 - All KJs are about {region_label} ONLY. No other regions.
+- Named officeholders VERIFIED — do not fabricate names.
 ```
 
 ## Executive Summary Prompt
@@ -205,7 +280,9 @@ Produce a single JSON object matching this schema exactly:
   "as_of_utc": "{date_utc}T06:00:00Z",
   "bluf": "<one sentence headline judgment with calibrated language.
             The principal reads this and stops if they have to.
-            Maximum 25 words. Pick ONE lead finding.>",
+            Maximum 25 words. Pick ONE lead finding.
+            VERIFICATION: any named head of state or supreme leader
+            must be correct. If uncertain, use title only.>",
   "context_paragraph": "<2 to 3 sentences. What's new. Why it matters
                           today. What to watch.>",
   "five_judgments": [
@@ -220,6 +297,9 @@ Produce a single JSON object matching this schema exactly:
     }},
     ... 4 more, exactly 5 total ...
   ],
+  "prediction_markets_annotation": "<If market belief contradicts any
+    regional KJ, flag it here. If no disagreement, state 'Markets in
+    alignment with analysis.' If markets unavailable, state why.>",
   "sources_used": [
     "<Source name 1 — the most influential source>",
     "<Source name 2>",
@@ -253,6 +333,8 @@ CRITICAL RULES FOR THIS SUMMARY:
 4. NO HALLUCINATION: If a regional KJ references a specific operation,
    report, or event you cannot verify, do NOT repeat that name in the
    exec summary. Refer to it generically or omit it.
+5. LEADER NAMES: Verify before writing. "Mojtaba Khamenei" is an error.
+   The correct name is Ali Khamenei. When in doubt, use the title.
 ```
 
 ## Red Team Prompt
@@ -267,6 +349,7 @@ Sherman Kent band: {kj_band}
 Prediction: {kj_pct}% over 7 days
 Evidence incident IDs: {kj_evidence_ids}
 Single-source basis: {kj_single_source}
+Dissenting view (from analyst): {kj_dissenting_view}
 
 REGIONAL NARRATIVE THAT FRAMED IT:
 
@@ -302,6 +385,10 @@ Structure your output as markdown (NOT JSON):
 ### Verdict
 
 <"The original judgment holds with [band]" or "The original judgment should be downgraded to [band]" or "The original judgment should be reframed as [reframing]">
+
+### Did the Analyst's Dissenting View Capture This?
+
+<Yes/No — if No, what did the analyst miss?>
 
 CRITICAL: Output COMPLETE. Do not truncate. All sections must be fully
 written. The Verdict section is mandatory.

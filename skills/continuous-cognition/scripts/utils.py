@@ -349,7 +349,7 @@ def record_token_spend(state: dict, cost_cents: float):
 
 def would_exceed_budget(state: dict, estimated_cost_cents: float) -> bool:
     """Check if this cycle would exceed the daily budget."""
-    daily_max = _get_config("token_budget.max_daily_cents", 20)
+    daily_max = _get_config("token_budget.max_daily_cents", 50)  # Increased for Pro: ~16 cycles/day
     current = state["token_economics"].get("daily_spent_cents", 0)
     return (current + estimated_cost_cents) > daily_max
 

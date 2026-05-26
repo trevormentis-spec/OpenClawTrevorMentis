@@ -245,6 +245,16 @@ if [ "$COG_N" -ge 3 ] && [ ! -f "$DEGRADED_FLAG" ]; then
         > "$LOG_DIR/alert-engine-${TODAY}.log" 2>&1 && \
     echo "  I&W alert check complete" >> "$HEALTH_LOG" || \
     echo "  I&W alert engine failed" >> "$HEALTH_LOG"
+    # Philby Collector — continuous source health testing (quick batch)
+    cd "$WORKSPACE" && timeout 120 python3 philby/collector/collector.py --quick \
+        > "$LOG_DIR/philby-collector-${TODAY}.log" 2>&1 && \
+    echo "  Philby Collector: source batch tested" >> "$HEALTH_LOG" || \
+    echo "  Philby Collector: batch test failed" >> "$HEALTH_LOG"
+    # Philby Trader — intel bridge + trade evaluation (dry-run mode for now)
+    cd "$WORKSPACE" && timeout 60 bash philby/trader/philby-trade.sh \
+        > "$LOG_DIR/philby-trade-${TODAY}.log" 2>&1 && \
+    echo "  Philby Trader: cycle complete" >> "$HEALTH_LOG" || \
+    echo "  Philby Trader: cycle failed" >> "$HEALTH_LOG"
     # Publish all 5 Philby desk feeds + status + Moltbook
     cd "$WORKSPACE" && timeout 120 bash philby/scripts/publish_all_desks.sh \
         > "$LOG_DIR/philby-all-${TODAY}.log" 2>&1 && \

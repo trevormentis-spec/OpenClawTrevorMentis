@@ -6662,6 +6662,1896 @@
       "discovered": "2026-05-26",
       "signal_level": "Medium",
       "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "South America: CELS",
+      "url": "https://www.cels.org.ar/web/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CELS",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CIPPEC",
+      "url": "https://www.cippec.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CIPPEC",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cenital",
+      "url": "https://cenital.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cenital",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Chequeado",
+      "url": "https://chequeado.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Chequeado",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Clar\u00edn (general)",
+      "url": "https://www.clarin.com/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Clar\u00edn (general)",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Clar\u00edn \u2014 Policiales",
+      "url": "https://www.clarin.com/rss/policiales/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Clar\u00edn \u2014 Policiales",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Clar\u00edn \u2014 Pol\u00edtica",
+      "url": "https://www.clarin.com/rss/politica/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Clar\u00edn \u2014 Pol\u00edtica",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Diario R\u00edo Negro",
+      "url": "https://www.rionegro.com.ar/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Diario R\u00edo Negro",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Ciudadano Web (Rosario)",
+      "url": "https://www.elciudadanoweb.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Ciudadano Web (Rosario)",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Cohete a la Luna",
+      "url": "https://www.elcohetealaluna.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Cohete a la Luna",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Indymedia Argentina",
+      "url": "https://argentina.indymedia.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Indymedia Argentina",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Naci\u00f3n (\u00faltimas noticias)",
+      "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Naci\u00f3n (\u00faltimas noticias)",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Naci\u00f3n \u2014 Pol\u00edtica",
+      "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/politica/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Naci\u00f3n \u2014 Pol\u00edtica",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Naci\u00f3n \u2014 Seguridad",
+      "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/seguridad/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Naci\u00f3n \u2014 Seguridad",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Vaca",
+      "url": "https://www.lavaca.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Vaca",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Revista Anfibia",
+      "url": "https://www.revistaanfibia.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Revista Anfibia",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Revista Mate",
+      "url": "https://revistamate.com.ar/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Revista Mate",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: TN (Todo Noticias)",
+      "url": "https://tn.com.ar/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "TN (Todo Noticias)",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: elDiarioAR",
+      "url": "https://www.eldiarioar.com/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "elDiarioAR",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: \u00c1mbito Financiero",
+      "url": "https://www.ambito.com/rss/pages/economia.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "\u00c1mbito Financiero",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CEDLA",
+      "url": "https://cedla.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CEDLA",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Raz\u00f3n",
+      "url": "https://www.la-razon.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Raz\u00f3n",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ox\u00edgeno Bolivia",
+      "url": "https://www.oxigeno.bo/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ox\u00edgeno Bolivia",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ag\u00eancia Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ag\u00eancia Brasil",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ag\u00eancia P\u00fablica",
+      "url": "https://apublica.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ag\u00eancia P\u00fablica",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Extra (O Globo)",
+      "url": "https://extra.globo.com/rss/extra",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Extra (O Globo)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Folha de S.Paulo (Cotidiano)",
+      "url": "https://feeds.folha.uol.com.br/cotidiano/rss091.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Folha de S.Paulo (Cotidiano)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Folha de S.Paulo (Mundo)",
+      "url": "https://feeds.folha.uol.com.br/mundo/rss091.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Folha de S.Paulo (Mundo)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Folha de S.Paulo (Poder)",
+      "url": "https://feeds.folha.uol.com.br/poder/rss091.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Folha de S.Paulo (Poder)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: G1 (Globo)",
+      "url": "https://g1.globo.com/rss/g1/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "G1 (Globo)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Instituto Sou da Paz",
+      "url": "https://soudapaz.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Instituto Sou da Paz",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Isto\u00c9",
+      "url": "https://istoe.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Isto\u00c9",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Lupa",
+      "url": "https://lupa.uol.com.br/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Lupa",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Metr\u00f3poles",
+      "url": "https://www.metropoles.com/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Metr\u00f3poles",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: M\u00eddia Ninja",
+      "url": "https://midianinja.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "M\u00eddia Ninja",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: N\u00facleo de Estudos da Viol\u00eancia (USP)",
+      "url": "https://nev.prp.usp.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "N\u00facleo de Estudos da Viol\u00eancia (USP)",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: O Globo \u2014 Pa\u00eds",
+      "url": "https://oglobo.globo.com/rss/oglobo",
+      "type": "rss",
+      "region": "south_america",
+      "source": "O Globo \u2014 Pa\u00eds",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: O Globo \u2014 Rio",
+      "url": "https://oglobo.globo.com/rss/oglobo/rio",
+      "type": "rss",
+      "region": "south_america",
+      "source": "O Globo \u2014 Rio",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Piau\u00ed",
+      "url": "https://piaui.folha.uol.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Piau\u00ed",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Poder360",
+      "url": "https://www.poder360.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Poder360",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ponte Jornalismo",
+      "url": "https://ponte.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ponte Jornalismo",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Rep\u00f3rter Brasil",
+      "url": "https://reporterbrasil.org.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Rep\u00f3rter Brasil",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Suma\u00fama",
+      "url": "https://sumauma.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Suma\u00fama",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: The Intercept Brasil",
+      "url": "https://www.intercept.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "The Intercept Brasil",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: UOL \u2014 Not\u00edcias",
+      "url": "https://rss.uol.com.br/feed/noticias.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "UOL \u2014 Not\u00edcias",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Valor Econ\u00f4mico",
+      "url": "https://valor.globo.com/rss/valor/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Valor Econ\u00f4mico",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Veja",
+      "url": "https://veja.abril.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Veja",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: AthenaLab",
+      "url": "https://www.athenalab.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "AthenaLab",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CESC U. de Chile",
+      "url": "https://cesc.uchile.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CESC U. de Chile",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CIPER Chile",
+      "url": "https://www.ciperchile.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CIPER Chile",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Centro de Estudios P\u00fablicos (CEP)",
+      "url": "https://www.cepchile.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Centro de Estudios P\u00fablicos (CEP)",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Diario U. de Chile",
+      "url": "https://radio.uchile.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Diario U. de Chile",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Espacio P\u00fablico",
+      "url": "https://espaciopublico.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Espacio P\u00fablico",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ex-Ante",
+      "url": "https://www.ex-ante.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ex-Ante",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: FLACSO Chile",
+      "url": "https://www.flacsochile.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "FLACSO Chile",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Interferencia",
+      "url": "https://interferencia.cl/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Interferencia",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Libertad y Desarrollo",
+      "url": "https://lyd.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Libertad y Desarrollo",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: The Clinic",
+      "url": "https://www.theclinic.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "The Clinic",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Baud\u00f3 AP",
+      "url": "https://www.baudoap.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Baud\u00f3 AP",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cerosetenta (070)",
+      "url": "https://cerosetenta.uniandes.edu.co/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cerosetenta (070)",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cuesti\u00f3n P\u00fablica",
+      "url": "https://cuestionpublica.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cuesti\u00f3n P\u00fablica",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Colombiano (Medell\u00edn)",
+      "url": "https://www.elcolombiano.com/rss/portada.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Colombiano (Medell\u00edn)",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Nuevo Siglo",
+      "url": "https://www.elnuevosiglo.com.co/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Nuevo Siglo",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Tiempo \u2014 Colombia",
+      "url": "https://www.eltiempo.com/rss/colombia.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Tiempo \u2014 Colombia",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Tiempo \u2014 Justicia",
+      "url": "https://www.eltiempo.com/rss/justicia.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Tiempo \u2014 Justicia",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Tiempo \u2014 Mundo",
+      "url": "https://www.eltiempo.com/rss/mundo.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Tiempo \u2014 Mundo",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Indepaz",
+      "url": "https://indepaz.org.co/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Indepaz",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Kien y Ke",
+      "url": "https://www.kienyke.com/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Kien y Ke",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Rep\u00fablica",
+      "url": "https://www.larepublica.co/rss",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Rep\u00fablica",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Silla Vac\u00eda",
+      "url": "https://www.lasillavacia.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Silla Vac\u00eda",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Mutante",
+      "url": "https://www.mutante.org/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Mutante",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Noticias Uno",
+      "url": "https://www.noticiasuno.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Noticias Uno",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Pares (Fundaci\u00f3n Paz y Reconciliaci\u00f3n)",
+      "url": "https://www.pares.com.co/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Pares (Fundaci\u00f3n Paz y Reconciliaci\u00f3n)",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Raz\u00f3n P\u00fablica",
+      "url": "https://razonpublica.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Raz\u00f3n P\u00fablica",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Verdad Abierta",
+      "url": "https://verdadabierta.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Verdad Abierta",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Vor\u00e1gine",
+      "url": "https://voragine.co/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Vor\u00e1gine",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Comercio (Quito)",
+      "url": "https://www.elcomercio.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Comercio (Quito)",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Barra Espaciadora",
+      "url": "https://labarraespaciadora.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Barra Espaciadora",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Mongabay Latam",
+      "url": "https://es.mongabay.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Mongabay Latam",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Plan V",
+      "url": "https://planv.com.ec/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Plan V",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Demerara Waves",
+      "url": "https://demerarawaves.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Demerara Waves",
+      "country": "GUYANA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Guyana Chronicle",
+      "url": "https://guyanachronicle.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Guyana Chronicle",
+      "country": "GUYANA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Kaieteur News",
+      "url": "https://www.kaieteurnewsonline.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Kaieteur News",
+      "country": "GUYANA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: BBC News Mundo",
+      "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "BBC News Mundo",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CONNECTAS",
+      "url": "https://www.connectas.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CONNECTAS",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: DW Espa\u00f1ol",
+      "url": "https://rss.dw.com/rdf/rss-sp-all",
+      "type": "rss",
+      "region": "south_america",
+      "source": "DW Espa\u00f1ol",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Distintas Latitudes",
+      "url": "https://distintaslatitudes.net/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Distintas Latitudes",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Di\u00e1logo Pol\u00edtico (KAS)",
+      "url": "https://dialogopolitico.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Di\u00e1logo Pol\u00edtico (KAS)",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: France 24 Espa\u00f1ol",
+      "url": "https://www.france24.com/es/rss",
+      "type": "rss",
+      "region": "south_america",
+      "source": "France 24 Espa\u00f1ol",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Igarap\u00e9 Institute",
+      "url": "https://igarape.org.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Igarap\u00e9 Institute",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: InSight Crime (English)",
+      "url": "https://insightcrime.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "InSight Crime (English)",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: InSight Crime Espa\u00f1ol",
+      "url": "https://es.insightcrime.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "InSight Crime Espa\u00f1ol",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Inter-American Dialogue",
+      "url": "https://www.thedialogue.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Inter-American Dialogue",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Latin American Reports",
+      "url": "https://latinamericareports.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Latin American Reports",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Nodal",
+      "url": "https://www.nodal.am/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Nodal",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: RFI en espa\u00f1ol",
+      "url": "https://www.rfi.fr/es/rss",
+      "type": "rss",
+      "region": "south_america",
+      "source": "RFI en espa\u00f1ol",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Caretas",
+      "url": "https://caretas.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Caretas",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Comercio",
+      "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Comercio",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Comercio \u2014 Lima",
+      "url": "https://elcomercio.pe/arc/outboundfeeds/rss/category/lima/?outputType=xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Comercio \u2014 Lima",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Comercio \u2014 Pol\u00edtica",
+      "url": "https://elcomercio.pe/arc/outboundfeeds/rss/category/politica/?outputType=xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Comercio \u2014 Pol\u00edtica",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: IDL-Reporteros",
+      "url": "https://www.idl-reporteros.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "IDL-Reporteros",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Mula",
+      "url": "https://lamula.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Mula",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Sudaca",
+      "url": "https://sudaca.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Sudaca",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Wayka",
+      "url": "https://wayka.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Wayka",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: IP Agencia (state)",
+      "url": "https://www.ip.gov.py/ip/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "IP Agencia (state)",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Dagblad Suriname",
+      "url": "https://www.dbsuriname.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Dagblad Suriname",
+      "country": "SURINAME",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Suriname Herald",
+      "url": "https://www.srherald.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Suriname Herald",
+      "country": "SURINAME",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Brecha",
+      "url": "https://brecha.com.uy/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Brecha",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Tel\u00e9grafo (Paysand\u00fa)",
+      "url": "https://www.eltelegrafo.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Tel\u00e9grafo (Paysand\u00fa)",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: LARED21",
+      "url": "https://www.lr21.com.uy/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "LARED21",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Ma\u00f1ana",
+      "url": "https://www.xn--lamaana-7za.uy/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Ma\u00f1ana",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: MercoPress",
+      "url": "https://en.mercopress.com/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "MercoPress",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Teledoce (Canal 12)",
+      "url": "https://www.teledoce.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Teledoce (Canal 12)",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Acceso a la Justicia",
+      "url": "https://accesoalajusticia.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Acceso a la Justicia",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Armando.Info",
+      "url": "https://armando.info/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Armando.Info",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Caraota Digital",
+      "url": "https://caraotadigital.net/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Caraota Digital",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cr\u00f3nica.Uno",
+      "url": "https://cronica.uno/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cr\u00f3nica.Uno",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Efecto Cocuyo",
+      "url": "https://efectococuyo.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Efecto Cocuyo",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Est\u00edmulo",
+      "url": "https://elestimulo.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Est\u00edmulo",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Pitazo",
+      "url": "https://elpitazo.net/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Pitazo",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Espacio P\u00fablico",
+      "url": "https://espaciopublico.ong/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Espacio P\u00fablico",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Foro Penal",
+      "url": "https://foropenal.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Foro Penal",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: IPYS Venezuela",
+      "url": "https://ipysvenezuela.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "IPYS Venezuela",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Patilla",
+      "url": "https://www.lapatilla.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Patilla",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Runrun.es",
+      "url": "https://runrun.es/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Runrun.es",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Tiempo Argentino",
+      "url": "https://www.tiempoar.com.ar/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Tiempo Argentino",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Los Tiempos",
+      "url": "https://www.lostiempos.com/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Los Tiempos",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Conectas Direitos Humanos",
+      "url": "https://www.conectas.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Conectas Direitos Humanos",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: IEP",
+      "url": "https://iep.org.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "IEP",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Revista Ideele",
+      "url": "https://www.revistaideele.com/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Revista Ideele",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Surti (El Surtidor)",
+      "url": "https://elsurti.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Surti (El Surtidor)",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Prodavinci",
+      "url": "https://prodavinci.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Prodavinci",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Transparencia Venezuela",
+      "url": "https://transparencia.org.ve/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Transparencia Venezuela",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Aire de Santa Fe",
+      "url": "https://www.airedesantafe.com.ar/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Aire de Santa Fe",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Cronista",
+      "url": "https://www.cronista.com/files/rss/ultimas.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Cronista",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Infobae Argentina",
+      "url": "https://www.infobae.com/argentina/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Infobae Argentina",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Voz del Interior (C\u00f3rdoba)",
+      "url": "https://www.lavoz.com.ar/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Voz del Interior (C\u00f3rdoba)",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Perfil",
+      "url": "https://www.perfil.com/rss/ultimomomento.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Perfil",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Radio Mitre",
+      "url": "https://radiomitre.cienradios.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Radio Mitre",
+      "country": "ARGENTINA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Br\u00fajula Digital",
+      "url": "https://brujuladigital.net/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Br\u00fajula Digital",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Deber",
+      "url": "https://eldeber.com.bo/rss.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Deber",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Erbol",
+      "url": "https://erbol.com.bo/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Erbol",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Radio Fides",
+      "url": "https://www.radiofides.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Radio Fides",
+      "country": "BOLIVIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Aos Fatos",
+      "url": "https://www.aosfatos.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Aos Fatos",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: CEBRI",
+      "url": "https://www.cebri.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "CEBRI",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Carta Capital",
+      "url": "https://www.cartacapital.com.br/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Carta Capital",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: F\u00f3rum Brasileiro de Seguran\u00e7a P\u00fablica",
+      "url": "https://forumseguranca.org.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "F\u00f3rum Brasileiro de Seguran\u00e7a P\u00fablica",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Nexo Jornal",
+      "url": "https://www.nexojornal.com.br/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Nexo Jornal",
+      "country": "BRAZIL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: B\u00edo B\u00edo Chile",
+      "url": "https://www.biobiochile.cl/rss/noticias.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "B\u00edo B\u00edo Chile",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Desconcierto",
+      "url": "https://www.eldesconcierto.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Desconcierto",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El D\u00ednamo",
+      "url": "https://www.eldinamo.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El D\u00ednamo",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El L\u00edbero",
+      "url": "https://ellibero.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El L\u00edbero",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Mostrador",
+      "url": "https://www.elmostrador.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Mostrador",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Mostrador \u2014 Pa\u00eds",
+      "url": "https://www.elmostrador.cl/noticias/pais/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Mostrador \u2014 Pa\u00eds",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Tercera",
+      "url": "https://www.latercera.com/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Tercera",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Tercera \u2014 Nacional",
+      "url": "https://www.latercera.com/arc/outboundfeeds/rss/category/nacional/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Tercera \u2014 Nacional",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Resumen.cl",
+      "url": "https://resumen.cl/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Resumen.cl",
+      "country": "CHILE",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cambio (revista)",
+      "url": "https://cambiocolombia.com/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cambio (revista)",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Canal 1",
+      "url": "https://canal1.com.co/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Canal 1",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Espectador (portada)",
+      "url": "https://www.elespectador.com/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Espectador (portada)",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Espectador \u2014 Judicial",
+      "url": "https://www.elespectador.com/arc/outboundfeeds/rss/category/judicial/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Espectador \u2014 Judicial",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Rutas del Conflicto",
+      "url": "https://rutasdelconflicto.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Rutas del Conflicto",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: \u00a1Pacifista!",
+      "url": "https://pacifista.tv/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "\u00a1Pacifista!",
+      "country": "COLOMBIA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: 4Pelagatos",
+      "url": "https://4pelagatos.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "4Pelagatos",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Universo",
+      "url": "https://www.eluniverso.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Universo",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Expreso (Guayaquil)",
+      "url": "https://www.expreso.ec/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Expreso (Guayaquil)",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: GK (gk.city)",
+      "url": "https://gk.city/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "GK (gk.city)",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Hora",
+      "url": "https://www.lahora.com.ec/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Hora",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Posta",
+      "url": "https://laposta.ec/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Posta",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Primicias",
+      "url": "https://www.primicias.ec/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Primicias",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Wambra",
+      "url": "https://wambra.ec/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Wambra",
+      "country": "ECUADOR",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: News Source Guyana",
+      "url": "https://newssourcegy.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "News Source Guyana",
+      "country": "GUYANA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Stabroek News",
+      "url": "https://www.stabroeknews.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Stabroek News",
+      "country": "GUYANA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Faro",
+      "url": "https://elfaro.net/rss",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Faro",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Infobae Am\u00e9rica (all sections)",
+      "url": "https://www.infobae.com/america/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Infobae Am\u00e9rica (all sections)",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Nueva Sociedad (FES)",
+      "url": "https://nuso.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Nueva Sociedad (FES)",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Telesur",
+      "url": "https://www.telesurtv.net/rss/index/index.xml",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Telesur",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: VOA Voz de Am\u00e9rica",
+      "url": "https://www.vozdeamerica.com/api/zmgqoe$mqi",
+      "type": "rss",
+      "region": "south_america",
+      "source": "VOA Voz de Am\u00e9rica",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: WOLA",
+      "url": "https://www.wola.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "WOLA",
+      "country": "PAN-REGIONAL",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Correo",
+      "url": "https://diariocorreo.pe/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Correo",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Epicentro.tv",
+      "url": "https://epicentro.tv/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Epicentro.tv",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Expreso",
+      "url": "https://www.expreso.com.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Expreso",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Hildebrandt en sus Trece",
+      "url": "https://hildebrandtensustrece.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Hildebrandt en sus Trece",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: IDEHPUCP",
+      "url": "https://idehpucp.pucp.edu.pe/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "IDEHPUCP",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Rep\u00fablica",
+      "url": "https://larepublica.pe/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Rep\u00fablica",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Ojo P\u00fablico",
+      "url": "https://ojo-publico.com/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Ojo P\u00fablico",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Trome",
+      "url": "https://trome.com/arc/outboundfeeds/rss/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Trome",
+      "country": "PERU",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: 5dias",
+      "url": "https://www.5dias.com.py/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "5dias",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: ConexionesPy",
+      "url": "https://conexiones.com.py/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "ConexionesPy",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Cr\u00f3nica",
+      "url": "https://www.cronica.com.py/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Cr\u00f3nica",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: El Independiente",
+      "url": "https://www.elindependiente.com.py/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "El Independiente",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Naci\u00f3n",
+      "url": "https://www.lanacion.com.py/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Naci\u00f3n",
+      "country": "PARAGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Diaria",
+      "url": "https://ladiaria.com.uy/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Diaria",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: La Rep\u00fablica",
+      "url": "https://www.republica.com.uy/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "La Rep\u00fablica",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Sudestada",
+      "url": "https://sudestada.com.uy/feed",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Sudestada",
+      "country": "URUGUAY",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: InSight Crime Venezuela tag",
+      "url": "https://es.insightcrime.org/venezuela-crimen-organizado/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "InSight Crime Venezuela tag",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: OVV (Observatorio Venezolano de Violencia)",
+      "url": "https://observatoriodeviolencia.org.ve/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "OVV (Observatorio Venezolano de Violencia)",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Provea",
+      "url": "https://provea.org/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Provea",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Punto de Corte",
+      "url": "https://puntodecorte.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Punto de Corte",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: TalCual",
+      "url": "https://talcualdigital.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "TalCual",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "South America: Venezuela al D\u00eda",
+      "url": "https://www.venezuelaaldia.com/feed/",
+      "type": "rss",
+      "region": "south_america",
+      "source": "Venezuela al D\u00eda",
+      "country": "VENEZUELA",
+      "added": "2026-05-26 (SA validated feed integration)"
+    },
+    {
+      "name": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licences | Reuters",
+      "type": "Blog/Website",
+      "focus": "<strong>Spain&#x27;s Consumer Rights Ministry temporarily banned so-called prediction markets Polymarket and Kalshi \u200bfor operating in the country with",
+      "url": "https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+      "type": "Blog/Website",
+      "focus": "U.S. Markets ... <strong>House Oversight and Government Reform Committee Chair James Comer, R-Ky., on Friday announced investigations into insider tra",
+      "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+      "discovered": "2026-05-26",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [
@@ -7687,5 +9577,5 @@
       "note": "Global Voices MENA regional feed. Fills North Africa coverage gap. Phase C addition."
     }
   ],
-  "last_updated": "2026-05-24T19:29:37.503107+00:00"
+  "last_updated": "2026-05-26T06:45:00Z"
 }
