@@ -20,7 +20,7 @@
   "lastHeartbeat": 1779824215,
   "rotationCursor": 0,
   "previousPhase": "A",
-  "currentPhase": "B",
+  "currentPhase": "A",
   "phaseAStatus": "completed",
   "phaseANotes": {
     "feedsTested": 309,
@@ -108,5 +108,5 @@
     "cycleComplete": true,
     "cycleSummary": "All 4 phases completed. Phase A: 290 feeds tested, 48.9% health. Phase B: 23 candidates found across 5 gap regions. Phase C: 50 dead pruned, 11 replacements added. Phase D: reindex done, cost snapshot blocked on API key issue."
   },
-  "cycleComplete": false
+  "cycleComplete": true
 }

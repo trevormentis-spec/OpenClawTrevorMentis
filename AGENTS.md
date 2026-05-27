@@ -56,6 +56,14 @@ Memory is limited. If you want to remember something, WRITE IT TO A FILE.
 - Cron schedule is source of truth for delivery times. Don't manually send things early.
 - When a platform-specific integration is already available and eligible, implement that path first.
 
+### Documentation Discipline
+
+- **Write it down in real time.** Every significant discovery, auth mechanism, trade decision, or operational detail MUST be written to `docs/ops/` during the session that produced it. Do not assume future-you will remember.
+- **Auth mechanisms are the most fragile knowledge.** When you figure out how to authenticate to any service, write the exact method (not just "use the API key") to `docs/ops/` and add a pointer in MEMORY.md under Standing Knowledge.
+- **Trade plans and executions** go in `docs/ops/trade-journal-YYYY-MM-DD.md` with exact tickers, prices, rationales, and outcomes.
+- **Portfolio state** is always live-queryable (Kalshi API), but strategy rationales, edge assessments, and P&L context need to be written down.
+- At end of every task-producing session: verify at least one `docs/ops/` file was updated.
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

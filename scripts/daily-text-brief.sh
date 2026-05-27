@@ -207,8 +207,6 @@ python3 "$REPO/scripts/postdict.py" \
     >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
-echo "=== Daily Text Brief complete — $(date -u) ===" | tee -a "$LOG"
-
 # =========================================================================
 # STEP 6: MOLTBOOK — post brief to agent social network
 # =========================================================================
@@ -216,3 +214,13 @@ echo "--- Posting to Moltbook ---" | tee -a "$LOG"
 set +e
 python3 "$REPO/scripts/moltbook_post.py" >> "$LOG" 2>&1
 set -e 2>/dev/null || true
+
+# =========================================================================
+# STEP 7: DEPLOY LANDING PAGE — update GitHub Pages with latest brief content
+# =========================================================================
+echo "--- Deploying landing page ---" | tee -a "$LOG"
+set +e
+bash "$REPO/scripts/deploy_landing_page.sh" >> "$LOG" 2>&1
+set -e 2>/dev/null || true
+
+echo "=== Daily Text Brief complete — $(date -u) ===" | tee -a "$LOG"

@@ -1,5 +1,17 @@
 # MEMORY.md
 
+## Standing Knowledge
+
+Operational documentation lives in `docs/ops/`. Always check there first before building from scratch.
+
+Current docs:
+- `docs/ops/portfolio-overview.md` — All positions, strategies, guardrails across Kalshi/Polymarket/Simmer
+- `docs/ops/pipeline-operations.md` — Cron schedules, delivery, known pipeline issues
+- `docs/ops/trade-journal-YYYY-MM-DD.md` — Session-by-session trade decisions and outcomes
+- `brain/memory/procedural/kalshi-trading.md` — Kalshi API auth, client usage, trade scripts
+
+**Rule: document as you go.** Every session that produces analytical work, trades, or structural changes gets an entry in the appropriate `docs/ops/` file. Do not let knowledge die with the session.
+
 ## Core Identity
 
 - Assistant name: Trevor
@@ -115,6 +127,14 @@
 - [2026-05-14] **Perplexity GSIB is the quality benchmark.** A Perplexity-produced Global
   voice, direct address, and trade-inline style. Regional prompt template updated with
   `{prediction_market_data}` and `{standing_assessment}` fields.
+
+## Durable Decisions — Kalshi Trading Auth (2026-05-27)
+
+- **DO NOT use JWT bearer tokens.** Kalshi uses **RSA PSS request signing** (timestamp + method + path, signed with RSA private key).
+- Client at `skills/kalshi-trader/scripts/client.py` (class `KalshiClient`), trade executor at `skills/kalshi-trader/scripts/trade.py`.
+- Env vars: `KALSHI_API_KEY`, `KALSHI_RSA_KEY_PATH` (points to `.kalshi_rsa_key.pem`), `KALSHI_BASE_URL`.
+- Full operational doc: `brain/memory/procedural/kalshi-trading.md`
+- Active strategy: Daedalus — scaled WTI hedge from 17→48 contracts, added to counter Iran concentration.
 
 ## Durable Decisions — Mexico Analysis Framework (2026-05-15)
 

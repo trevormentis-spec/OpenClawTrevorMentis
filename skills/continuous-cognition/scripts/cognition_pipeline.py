@@ -38,6 +38,21 @@ BASE_DIR = Path(__file__).parent.parent.parent.parent  # workspace root
 sys.path.insert(0, str(BASE_DIR / "scripts"))
 sys.path.insert(0, str(BASE_DIR / "skills" / "continuous-cognition" / "scripts"))
 
+# ── Load .env for cron/daemon context (no shell inheritance) ──
+def _load_env():
+    """Load .env file into os.environ so API keys are available."""
+    env_path = BASE_DIR / ".env"
+    if env_path.exists():
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    if k not in os.environ:
+                        os.environ[k] = v
+
+_load_env()
+
 from utils import (
     load_state, save_state, snapshot_summary,
     upsert_narrative, update_source_trust, add_weak_signal,
@@ -204,6 +219,46 @@ def collect_recent_context() -> Dict[str, Any]:
             context["brain_state"] = json.loads(brain_state.read_text())
         except Exception:
             pass
+
+    # ── Ops Health Monitoring ────────────────────────────────────
+    # Check recent pipeline execution for failures
+    log_dir = BASE_DIR / "logs"
+    if log_dir.exists():
+        recent_logs = sorted(log_dir.glob("daily-brief-*.log"), reverse=True)[:3]
+        for lf in recent_logs:
+            try:
+                content = lf.read_text()
+                if "FATAL" in content or "FAILED" in content:
+                    error_lines = [l for l in content.split("\n") if "FATAL" in l or "FAILED" in l][-3:]
+                    if "pipeline_errors" not in context:
+                        context["pipeline_errors"] = []
+                    context["pipeline_errors"].append({
+                        "log": lf.name,
+                        "errors": error_lines,
+                    })
+            except Exception:
+                pass
+
+    # Check cron health by examining cron run logs if available
+    cron_log_dir = BASE_DIR / ".openclaw" / "gateway" / "cron"
+    if cron_log_dir.exists():
+        try:
+            recent_runs = sorted(cron_log_dir.glob("*.jsonl"), reverse=True)[:3]
+            context["cron_runs_available"] = len(recent_runs)
+        except Exception:
+            pass
+
+    # Auth key presence check (critical keys)
+    critical_keys = ["AGENTMAIL_API_KEY", "KALSHI_API_KEY", "DEEPSEEK_API_KEY"]
+    auth_issues = []
+    for key in critical_keys:
+        val = os.environ.get(key, "")
+        if not val:
+            auth_issues.append(f"{key}: MISSING")
+        elif len(val) < 10:
+            auth_issues.append(f"{key}: suspiciously short ({len(val)} chars)")
+    if auth_issues:
+        context["auth_warnings"] = auth_issues
 
     return context
 
@@ -449,6 +504,8 @@ def apply_flash_output(state: dict, flash_output: dict):
 
     # Source trust updates
     for trust in flash_output.get("source_trust_updates", []):
+        if not isinstance(trust, dict):
+            continue
         source_id = trust.get("source_id")
         if not source_id:
             continue
