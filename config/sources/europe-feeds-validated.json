@@ -1,0 +1,6538 @@
+{
+  "generated_at": "2026-05-27T06:29:03Z",
+  "total_sources": 450,
+  "processed": 450,
+  "validated_feeds": 212,
+  "sources": [
+    {
+      "name": "Politico Brussels Playbook",
+      "url": "https://www.politico.eu/newsletter/brussels-playbook",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:46Z"
+    },
+    {
+      "name": "Politico Europe",
+      "url": "https://www.politico.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:46Z"
+    },
+    {
+      "name": "VoxEurop",
+      "url": "https://voxeurop.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:46Z"
+    },
+    {
+      "name": "Bruegel Blueprint",
+      "url": "https://www.bruegel.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:46Z"
+    },
+    {
+      "name": "Eurointelligence",
+      "url": "https://www.eurointelligence.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:46Z"
+    },
+    {
+      "name": "Euronews",
+      "url": "https://www.euronews.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.euronews.com/rss",
+          "title": "Latest News From Euronews | Euronews RSS",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:48Z"
+    },
+    {
+      "name": "EU Reporter",
+      "url": "https://www.eureporter.co",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.eureporter.co/feed",
+          "title": "EU Reporter",
+          "entry_count": 7,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:49Z"
+    },
+    {
+      "name": "Euractiv",
+      "url": "https://www.euractiv.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.euractiv.com/feed",
+          "title": "Euractiv",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:50Z"
+    },
+    {
+      "name": "EIC",
+      "url": "https://eic.network",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:50Z"
+    },
+    {
+      "name": "ICIJ",
+      "url": "https://www.icij.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.icij.org/feed",
+          "title": "ICIJ",
+          "entry_count": 11,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.icij.org/en/feed",
+          "title": "ICIJ",
+          "entry_count": 1,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:50Z"
+    },
+    {
+      "name": "CER",
+      "url": "https://www.cer.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.cer.eu/rss.xml",
+          "title": "Centre for European Reform",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:50Z"
+    },
+    {
+      "name": "Brussels Times",
+      "url": "https://www.brusselstimes.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:51Z"
+    },
+    {
+      "name": "OCCRP",
+      "url": "https://www.occrp.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.occrp.org/en/feed",
+          "title": "OCCRP",
+          "entry_count": 60,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:52Z"
+    },
+    {
+      "name": "EUbusiness",
+      "url": "https://www.eubusiness.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.eubusiness.com/feed",
+          "title": "EUbusiness.com | EU news, business and politics",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:55Z"
+    },
+    {
+      "name": "Forensic Architecture",
+      "url": "https://forensic-architecture.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:56Z"
+    },
+    {
+      "name": "The Parliament Magazine",
+      "url": "https://www.theparliamentmagazine.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:56Z"
+    },
+    {
+      "name": "BIRN / Balkan Insight",
+      "url": "https://birn.eu.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://birn.eu.com/feed",
+          "title": "BIRN",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:57Z"
+    },
+    {
+      "name": "The Reckoning Project",
+      "url": "https://www.thereckoningproject.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:16:57Z"
+    },
+    {
+      "name": "VSquare",
+      "url": "https://vsquare.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://vsquare.org/feed",
+          "title": "VSquare.org",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:58Z"
+    },
+    {
+      "name": "EUobserver",
+      "url": "https://euobserver.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://euobserver.com/feed",
+          "title": "EUobserver",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:16:59Z"
+    },
+    {
+      "name": "Bellingcat",
+      "url": "https://www.bellingcat.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.bellingcat.com/feed",
+          "title": "bellingcat",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:00Z"
+    },
+    {
+      "name": "IISS",
+      "url": "https://www.iiss.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:01Z"
+    },
+    {
+      "name": "Chatham House",
+      "url": "https://www.chathamhouse.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:01Z"
+    },
+    {
+      "name": "Disclose (France)",
+      "url": "https://disclose.ngo",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://disclose.ngo/feed",
+          "title": "Disclose.ngo",
+          "entry_count": 22,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:05Z"
+    },
+    {
+      "name": "Carnegie Europe",
+      "url": "https://carnegieendowment.org/europe",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:05Z"
+    },
+    {
+      "name": "Journalismfund Europe",
+      "url": "https://www.journalismfund.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.journalismfund.eu/news/rss.xml",
+          "title": "Nieuws",
+          "entry_count": 522,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:06Z"
+    },
+    {
+      "name": "IJ4EU",
+      "url": "https://www.journalismfund.eu/ij4eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.journalismfund.eu/news/rss.xml",
+          "title": "Nieuws",
+          "entry_count": 522,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:06Z"
+    },
+    {
+      "name": "Investigate Europe",
+      "url": "https://www.investigate-europe.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:06Z"
+    },
+    {
+      "name": "GMF",
+      "url": "https://www.gmfus.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.gmfus.org/rss.xml",
+          "title": "German Marshall Fund of the United States",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:06Z"
+    },
+    {
+      "name": "NATO Defense College",
+      "url": "https://www.ndc.nato.int",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:07Z"
+    },
+    {
+      "name": "BIRN / Balkan Insight",
+      "url": "https://balkaninsight.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://balkaninsight.com/feed",
+          "title": "Balkan Insight",
+          "entry_count": 90,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:07Z"
+    },
+    {
+      "name": "FRS",
+      "url": "https://www.frstrategie.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:12Z"
+    },
+    {
+      "name": "Lighthouse Reports",
+      "url": "https://www.lighthousereports.com",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.lighthousereports.com/feed",
+          "title": "Lighthouse Reports",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:13Z"
+    },
+    {
+      "name": "ECFR",
+      "url": "https://ecfr.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://ecfr.eu/feed",
+          "title": "European Council on Foreign Relations",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:14Z"
+    },
+    {
+      "name": "EUISS",
+      "url": "https://www.iss.europa.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.iss.europa.eu/rss.xml",
+          "title": "European Union Institute for Security Studies",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:16Z"
+    },
+    {
+      "name": "Modern Diplomacy",
+      "url": "https://moderndiplomacy.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://moderndiplomacy.eu/feed",
+          "title": "Modern Diplomacy",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:17Z"
+    },
+    {
+      "name": "CEPA",
+      "url": "https://cepa.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://cepa.org/feed",
+          "title": "CEPA",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:20Z"
+    },
+    {
+      "name": "IFRI",
+      "url": "https://www.ifri.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.ifri.org/rss.xml",
+          "title": "Ifri",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:23Z"
+    },
+    {
+      "name": "OSW (Centre for Eastern Studies)",
+      "url": "https://www.osw.waw.pl",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.osw.waw.pl/rss.xml",
+          "title": "osw.waw.pl",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:23Z"
+    },
+    {
+      "name": "Clingendael",
+      "url": "https://www.clingendael.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.clingendael.org/rss.xml",
+          "title": "Clingendael - International Affairs Think Tank and Academy",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:23Z"
+    },
+    {
+      "name": "IAI",
+      "url": "https://www.iai.it",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:24Z"
+    },
+    {
+      "name": "GLOBSEC",
+      "url": "https://www.globsec.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:24Z"
+    },
+    {
+      "name": "DGAP",
+      "url": "https://dgap.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:25Z"
+    },
+    {
+      "name": "IRIS",
+      "url": "https://www.iris-france.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.iris-france.org/feed",
+          "title": "IRIS",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:25Z"
+    },
+    {
+      "name": "Real Instituto Elcano",
+      "url": "https://www.realinstitutoelcano.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:25Z"
+    },
+    {
+      "name": "SWP",
+      "url": "https://www.swp-berlin.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.swp-berlin.org/rss.xml",
+          "title": "Stiftung Wissenschaft und Politik",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:26Z"
+    },
+    {
+      "name": "PISM",
+      "url": "https://pism.pl",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:29Z"
+    },
+    {
+      "name": "CEPS",
+      "url": "https://www.ceps.eu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:39Z"
+    },
+    {
+      "name": "RUSI",
+      "url": "https://www.rusi.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:43Z"
+    },
+    {
+      "name": "ISPI",
+      "url": "https://www.ispionline.it",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.ispionline.it/feed",
+          "title": "ISPI",
+          "entry_count": 2,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:43Z"
+    },
+    {
+      "name": "DIIS",
+      "url": "https://www.diis.dk",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:53Z"
+    },
+    {
+      "name": "NUPI",
+      "url": "https://www.nupi.no",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:54Z"
+    },
+    {
+      "name": "FFI",
+      "url": "https://www.ffi.no",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:56Z"
+    },
+    {
+      "name": "FOI",
+      "url": "https://www.foi.se",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.foi.se/en/rss",
+          "title": "News from FOI.se",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:57Z"
+    },
+    {
+      "name": "UI",
+      "url": "https://www.ui.se",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:57Z"
+    },
+    {
+      "name": "LIIA",
+      "url": "https://liia.lv",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:58Z"
+    },
+    {
+      "name": "ICDS",
+      "url": "https://icds.ee",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://icds.ee/en/feed",
+          "title": "International Centre for Defence and Security",
+          "entry_count": 9,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:17:58Z"
+    },
+    {
+      "name": "Egmont Institute",
+      "url": "https://www.egmontinstitute.be",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:17:59Z"
+    },
+    {
+      "name": "HCSS",
+      "url": "https://hcss.nl",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://hcss.nl/feed",
+          "title": "HCSS",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:01Z"
+    },
+    {
+      "name": "CIDOB",
+      "url": "https://www.cidob.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:02Z"
+    },
+    {
+      "name": "FIIA",
+      "url": "https://www.fiia.fi",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.fiia.fi/feed",
+          "title": "FIIA – Finnish Institute of International Affairs",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:03Z"
+    },
+    {
+      "name": "Council on Geostrategy",
+      "url": "https://www.geostrategy.org.uk",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.geostrategy.org.uk/feed",
+          "title": "Council on Geostrategy",
+          "entry_count": 1,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:04Z"
+    },
+    {
+      "name": "ELIAMEP",
+      "url": "https://www.eliamep.gr",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.eliamep.gr/feed",
+          "title": "",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:06Z"
+    },
+    {
+      "name": "Jamestown Foundation",
+      "url": "https://jamestown.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://jamestown.org/feed",
+          "title": "Jamestown",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:07Z"
+    },
+    {
+      "name": "Oryx",
+      "url": "https://www.oryxspioenkop.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://www.oryxspioenkop.com/rss.xml",
+          "title": "Oryx",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:09Z"
+    },
+    {
+      "name": "EESC",
+      "url": "https://www.eesc.lt",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:09Z"
+    },
+    {
+      "name": "Conflict Intelligence Team (CIT)",
+      "url": "https://citeam.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://citeam.org/feed",
+          "title": "Conflict Intelligence Team",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:09Z"
+    },
+    {
+      "name": "The Insider",
+      "url": "https://theins.ru",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://theins.ru/feed",
+          "title": "THE INSIDER",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:11Z"
+    },
+    {
+      "name": "Critical Threats Russia File",
+      "url": "https://www.criticalthreats.org/program/russia-file",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:11Z"
+    },
+    {
+      "name": "Important Stories (iStories)",
+      "url": "https://istories.media",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://istories.media/rss/all.xml",
+          "title": "Важные истории",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:12Z"
+    },
+    {
+      "name": "DeepState Map",
+      "url": "https://deepstatemap.live",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:13Z"
+    },
+    {
+      "name": "ISW Ukraine Project",
+      "url": "https://www.understandingwar.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:13Z"
+    },
+    {
+      "name": "DFRLab",
+      "url": "https://dfrlab.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://dfrlab.org/feed",
+          "title": "DFRLab",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:14Z"
+    },
+    {
+      "name": "Henry Jackson Society",
+      "url": "https://henryjacksonsociety.org",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://henryjacksonsociety.org/feed",
+          "title": "Henry Jackson Society",
+          "entry_count": 1,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:14Z"
+    },
+    {
+      "name": "War Translated",
+      "url": "https://www.wartranslated.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:15Z"
+    },
+    {
+      "name": "Dossier Center",
+      "url": "https://dossier.center",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:16Z"
+    },
+    {
+      "name": "Liveuamap",
+      "url": "https://liveuamap.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:17Z"
+    },
+    {
+      "name": "Russia Matters (Harvard Belfer)",
+      "url": "https://www.russiamatters.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:17Z"
+    },
+    {
+      "name": "Russian Asset Tracker (OCCRP)",
+      "url": "https://www.occrp.org/en/russian-asset-tracker",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.occrp.org/en/feed",
+          "title": "OCCRP",
+          "entry_count": 60,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:17Z"
+    },
+    {
+      "name": "SHAPE",
+      "url": "https://shape.nato.int",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:18Z"
+    },
+    {
+      "name": "Meduza English",
+      "url": "https://meduza.io/en",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:18Z"
+    },
+    {
+      "name": "EUvsDisinfo",
+      "url": "https://euvsdisinfo.eu",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:21Z"
+    },
+    {
+      "name": "HIIA",
+      "url": "https://hiia.hu",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://hiia.hu/feed",
+          "title": "Hungarian Institute of International Affairs",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://hiia.hu/rss.xml",
+          "title": "Hungarian Institute of International Affairs",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:21Z"
+    },
+    {
+      "name": "Kyiv Independent",
+      "url": "https://kyivindependent.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:21Z"
+    },
+    {
+      "name": "AMO",
+      "url": "https://www.amo.cz",
+      "country": "pan-european",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:22Z"
+    },
+    {
+      "name": "Hybrid CoE (Helsinki)",
+      "url": "https://www.hybridcoe.fi",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:24Z"
+    },
+    {
+      "name": "NATO StratCom CoE (Riga)",
+      "url": "https://stratcomcoe.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:24Z"
+    },
+    {
+      "name": "NATO HQ",
+      "url": "https://www.nato.int",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:25Z"
+    },
+    {
+      "name": "Council of Europe / ECHR",
+      "url": "https://www.coe.int",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:26Z"
+    },
+    {
+      "name": "European Defence Agency",
+      "url": "https://eda.europa.eu",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:27Z"
+    },
+    {
+      "name": "NATO CCDCOE (Tallinn)",
+      "url": "https://ccdcoe.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:28Z"
+    },
+    {
+      "name": "Riddle Russia",
+      "url": "https://ridl.io",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://ridl.io/feed",
+          "title": "Riddle Russia",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:28Z"
+    },
+    {
+      "name": "Centre for Information Resilience",
+      "url": "https://www.info-res.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:30Z"
+    },
+    {
+      "name": "European External Action Service",
+      "url": "https://www.eeas.europa.eu",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:31Z"
+    },
+    {
+      "name": "AFP",
+      "url": "https://www.afp.com/en",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.afp.com/rss.xml",
+          "title": "AFP.com",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:31Z"
+    },
+    {
+      "name": "Europol",
+      "url": "https://www.europol.europa.eu",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.europol.europa.eu/rss",
+          "title": "News",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:32Z"
+    },
+    {
+      "name": "Frontex",
+      "url": "https://www.frontex.europa.eu",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:33Z"
+    },
+    {
+      "name": "DPA (Germany)",
+      "url": "https://www.dpa.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:33Z"
+    },
+    {
+      "name": "AP Europe",
+      "url": "https://apnews.com/hub/europe",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:35Z"
+    },
+    {
+      "name": "OSCE",
+      "url": "https://www.osce.org",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:35Z"
+    },
+    {
+      "name": "France 24",
+      "url": "https://www.france24.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.france24.com/rss",
+          "title": "France 24 - International breaking news, top stories and headlines",
+          "entry_count": 24,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:38Z"
+    },
+    {
+      "name": "BBC News Europe",
+      "url": "https://www.bbc.com/news/world/europe",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.bbc.com/news/rss.xml",
+          "title": "BBC News",
+          "entry_count": 34,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:42Z"
+    },
+    {
+      "name": "PAP (Poland)",
+      "url": "https://www.pap.pl",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:43Z"
+    },
+    {
+      "name": "DW",
+      "url": "https://www.dw.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:44Z"
+    },
+    {
+      "name": "TV5 Monde",
+      "url": "https://www.tv5monde.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:44Z"
+    },
+    {
+      "name": "BBC News",
+      "url": "https://www.bbc.com/news",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.bbc.com/news/rss.xml",
+          "title": "BBC News",
+          "entry_count": 34,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:44Z"
+    },
+    {
+      "name": "NTB (Norway)",
+      "url": "https://www.ntb.no",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:45Z"
+    },
+    {
+      "name": "EFE (Spain)",
+      "url": "https://efe.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:46Z"
+    },
+    {
+      "name": "ANSA (Italy)",
+      "url": "https://www.ansa.it",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://www.ansa.it/rss.xml",
+          "title": "Primo piano ANSA - ANSA.it",
+          "entry_count": 28,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:47Z"
+    },
+    {
+      "name": "The Times",
+      "url": "https://www.thetimes.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:47Z"
+    },
+    {
+      "name": "The Economist",
+      "url": "https://www.economist.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:49Z"
+    },
+    {
+      "name": "Financial Times",
+      "url": "https://www.ft.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.ft.com/news/rss.xml",
+          "title": "News Feed",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:49Z"
+    },
+    {
+      "name": "STT (Finland)",
+      "url": "https://stt.fi",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://stt.fi/feed",
+          "title": "STT",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:49Z"
+    },
+    {
+      "name": "The Telegraph",
+      "url": "https://www.telegraph.co.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.telegraph.co.uk/rss",
+          "title": "www.telegraph.co.uk for the latest news from the UK and around the world.",
+          "entry_count": 120,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.telegraph.co.uk/news/rss.xml",
+          "title": "News",
+          "entry_count": 120,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:49Z"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.theguardian.com/rss",
+          "title": "The Guardian",
+          "entry_count": 139,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:50Z"
+    },
+    {
+      "name": "Sky News",
+      "url": "https://news.sky.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:51Z"
+    },
+    {
+      "name": "Channel 4 News",
+      "url": "https://www.channel4.com/news",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:51Z"
+    },
+    {
+      "name": "The Independent",
+      "url": "https://www.independent.co.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.independent.co.uk/rss",
+          "title": "The Independent",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:52Z"
+    },
+    {
+      "name": "openDemocracy",
+      "url": "https://www.opendemocracy.net/en",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.opendemocracy.net/feed",
+          "title": "openDemocracy",
+          "entry_count": 15,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:53Z"
+    },
+    {
+      "name": "New Statesman",
+      "url": "https://www.newstatesman.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.newstatesman.com/feed",
+          "title": "New Statesman",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:18:55Z"
+    },
+    {
+      "name": "The Spectator",
+      "url": "https://www.spectator.co.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:55Z"
+    },
+    {
+      "name": "Janes (paid)",
+      "url": "https://www.janes.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:58Z"
+    },
+    {
+      "name": "TT (Sweden)",
+      "url": "https://www.tt.se",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:59Z"
+    },
+    {
+      "name": "Ritzau (Denmark)",
+      "url": "https://www.ritzau.dk",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:18:59Z"
+    },
+    {
+      "name": "Forces News",
+      "url": "https://www.forcesnews.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.forcesnews.com/rss.xml",
+          "title": "BFBS Forces News",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:00Z"
+    },
+    {
+      "name": "Private Eye",
+      "url": "https://www.private-eye.co.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.private-eye.co.uk/rss",
+          "title": "Private Eye RSS",
+          "entry_count": 24,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:01Z"
+    },
+    {
+      "name": "Byline Times",
+      "url": "https://bylinetimes.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://bylinetimes.com/feed",
+          "title": "Byline Times",
+          "entry_count": 15,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:02Z"
+    },
+    {
+      "name": "Tortoise Media",
+      "url": "https://www.tortoisemedia.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:03Z"
+    },
+    {
+      "name": "The Ferret (Scotland)",
+      "url": "https://theferret.scot",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:04Z"
+    },
+    {
+      "name": "Declassified UK",
+      "url": "https://www.declassifieduk.org",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.declassifieduk.org/feed",
+          "title": "Declassified UK",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:07Z"
+    },
+    {
+      "name": "GCHQ / NCSC",
+      "url": "https://www.gchq.gov.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:08Z"
+    },
+    {
+      "name": "MI5",
+      "url": "https://www.mi5.gov.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.mi5.gov.uk/rss.xml",
+          "title": "The Authority - The Authority",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:08Z"
+    },
+    {
+      "name": "TBIJ",
+      "url": "https://www.thebureauinvestigates.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:08Z"
+    },
+    {
+      "name": "MI6 (SIS)",
+      "url": "https://www.sis.gov.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:09Z"
+    },
+    {
+      "name": "UK Defence Journal",
+      "url": "https://ukdefencejournal.org.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://ukdefencejournal.org.uk/feed",
+          "title": "UK Defence Journal",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:09Z"
+    },
+    {
+      "name": "Ministry of Defence",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:13Z"
+    },
+    {
+      "name": "National Crime Agency",
+      "url": "https://www.nationalcrimeagency.gov.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:13Z"
+    },
+    {
+      "name": "FCDO",
+      "url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
+      "country": "uk",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:14Z"
+    },
+    {
+      "name": "Le Figaro",
+      "url": "https://www.lefigaro.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:15Z"
+    },
+    {
+      "name": "GCHQ / NCSC",
+      "url": "https://www.ncsc.gov.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "gov",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:15Z"
+    },
+    {
+      "name": "Tony Blair Institute",
+      "url": "https://www.institute.global",
+      "country": "uk",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:16Z"
+    },
+    {
+      "name": "British Foreign Policy Group",
+      "url": "https://bfpg.co.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://bfpg.co.uk/feed",
+          "title": "British Foreign Policy Group",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:16Z"
+    },
+    {
+      "name": "Le Monde",
+      "url": "https://www.lemonde.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:17Z"
+    },
+    {
+      "name": "Marianne",
+      "url": "https://www.marianne.net",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:17Z"
+    },
+    {
+      "name": "Institute for Government",
+      "url": "https://www.instituteforgovernment.org.uk",
+      "country": "uk",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.instituteforgovernment.org.uk/rss",
+          "title": "Institute for Government",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:19Z"
+    },
+    {
+      "name": "Libération",
+      "url": "https://www.liberation.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:23Z"
+    },
+    {
+      "name": "Mediapart",
+      "url": "https://www.mediapart.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:24Z"
+    },
+    {
+      "name": "L'Opinion",
+      "url": "https://www.lopinion.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:19:26Z"
+    },
+    {
+      "name": "Wavell Room",
+      "url": "https://wavellroom.com",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://wavellroom.com/feed",
+          "title": "Wavell Room",
+          "entry_count": 300,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:19:34Z"
+    },
+    {
+      "name": "ITV News",
+      "url": "https://www.itv.com/news",
+      "country": "uk",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:19Z"
+    },
+    {
+      "name": "BFM TV",
+      "url": "https://www.bfmtv.com",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:23Z"
+    },
+    {
+      "name": "France 24",
+      "url": "https://www.france24.com/fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.france24.com/rss",
+          "title": "France 24 - International breaking news, top stories and headlines",
+          "entry_count": 24,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:23Z"
+    },
+    {
+      "name": "AFP",
+      "url": "https://www.afp.com/fr",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.afp.com/rss.xml",
+          "title": "AFP.com",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:25Z"
+    },
+    {
+      "name": "DGSI",
+      "url": "https://www.dgsi.interieur.gouv.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "gov",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:28Z"
+    },
+    {
+      "name": "Gendarmerie nationale",
+      "url": "https://www.gendarmerie.interieur.gouv.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "gov",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:29Z"
+    },
+    {
+      "name": "Le Rubicon",
+      "url": "https://lerubicon.org",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://lerubicon.org/feed",
+          "title": "Le Rubicon",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:35Z"
+    },
+    {
+      "name": "DGSE",
+      "url": "https://www.dgse.gouv.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "gov",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.dgse.gouv.fr/rss.xml",
+          "title": "DGSE",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.dgse.gouv.fr/en/rss.xml",
+          "title": "DGSE",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:36Z"
+    },
+    {
+      "name": "Ministère des Armées",
+      "url": "https://www.defense.gouv.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "gov",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.defense.gouv.fr/rss.xml",
+          "title": "Ministère des Armées et des Anciens combattants",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:36Z"
+    },
+    {
+      "name": "FAZ",
+      "url": "https://www.faz.net",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:37Z"
+    },
+    {
+      "name": "IRSEM (MoD research)",
+      "url": "https://www.irsem.fr",
+      "country": "france",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:37Z"
+    },
+    {
+      "name": "Der Spiegel",
+      "url": "https://www.spiegel.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:38Z"
+    },
+    {
+      "name": "Die Zeit",
+      "url": "https://www.zeit.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:38Z"
+    },
+    {
+      "name": "Süddeutsche Zeitung",
+      "url": "https://www.sueddeutsche.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:43Z"
+    },
+    {
+      "name": "Welt",
+      "url": "https://www.welt.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:45Z"
+    },
+    {
+      "name": "Zone Militaire/Opex360",
+      "url": "https://www.opex360.com",
+      "country": "france",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.opex360.com/feed",
+          "title": "Zone Militaire",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:47Z"
+    },
+    {
+      "name": "netzpolitik.org",
+      "url": "https://netzpolitik.org",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://netzpolitik.org/feed",
+          "title": "netzpolitik.org",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:49Z"
+    },
+    {
+      "name": "taz",
+      "url": "https://taz.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://taz.de",
+          "title": "taz.de - taz.de",
+          "entry_count": 50,
+          "feed_type": "atom10"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:50Z"
+    },
+    {
+      "name": "Correctiv",
+      "url": "https://correctiv.org",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://correctiv.org/en/feed",
+          "title": "correctiv.org",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:52Z"
+    },
+    {
+      "name": "Handelsblatt",
+      "url": "https://www.handelsblatt.com",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:53Z"
+    },
+    {
+      "name": "Tagesspiegel",
+      "url": "https://www.tagesspiegel.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:55Z"
+    },
+    {
+      "name": "Augen geradeaus!",
+      "url": "https://augengeradeaus.net",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://augengeradeaus.net/feed",
+          "title": "Augen geradeaus!",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:20:56Z"
+    },
+    {
+      "name": "DW (German)",
+      "url": "https://www.dw.com/de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:58Z"
+    },
+    {
+      "name": "Frag den Staat",
+      "url": "https://fragdenstaat.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:20:58Z"
+    },
+    {
+      "name": "Tagesschau (ARD)",
+      "url": "https://www.tagesschau.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:01Z"
+    },
+    {
+      "name": "Hartpunkt",
+      "url": "https://hartpunkt.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://hartpunkt.de/feed",
+          "title": "hartpunkt",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:02Z"
+    },
+    {
+      "name": "La Repubblica",
+      "url": "https://www.repubblica.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:04Z"
+    },
+    {
+      "name": "Corriere della Sera",
+      "url": "https://www.corriere.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:06Z"
+    },
+    {
+      "name": "La Stampa",
+      "url": "https://www.lastampa.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://www.lastampa.it/rss",
+          "title": "La Stampa - News, inchieste e approfondimenti La Stampa",
+          "entry_count": 56,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:06Z"
+    },
+    {
+      "name": "BND (foreign intel)",
+      "url": "https://www.bnd.bund.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "gov",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:07Z"
+    },
+    {
+      "name": "ESUT",
+      "url": "https://esut.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://esut.de/feed",
+          "title": "ESUT – Europäische Sicherheit & Technik",
+          "entry_count": 6,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:07Z"
+    },
+    {
+      "name": "BSI (Info Security)",
+      "url": "https://www.bsi.bund.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "gov",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:08Z"
+    },
+    {
+      "name": "Il Fatto Quotidiano",
+      "url": "https://www.ilfattoquotidiano.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://www.ilfattoquotidiano.it/feed",
+          "title": "Il Fatto Quotidiano",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:09Z"
+    },
+    {
+      "name": "RAI News",
+      "url": "https://www.rainews.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:12Z"
+    },
+    {
+      "name": "Il Sole 24 Ore",
+      "url": "https://www.ilsole24ore.com",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:14Z"
+    },
+    {
+      "name": "Ministero della Difesa",
+      "url": "https://www.difesa.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "gov",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:17Z"
+    },
+    {
+      "name": "Limes",
+      "url": "https://www.limesonline.com",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://www.limesonline.com/rss",
+          "title": "Limes - rivista italiana di geopolitica limes",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.limesonline.com/en/rss",
+          "title": "Limes - rivista italiana di geopolitica English",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:18Z"
+    },
+    {
+      "name": "IrpiMedia",
+      "url": "https://irpimedia.irpi.eu",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://irpimedia.irpi.eu/feed",
+          "title": "IrpiMedia",
+          "entry_count": 40,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:19Z"
+    },
+    {
+      "name": "Libera (Don Ciotti)",
+      "url": "https://www.libera.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:20Z"
+    },
+    {
+      "name": "BKA (Federal Police)",
+      "url": "https://www.bka.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "gov",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:22Z"
+    },
+    {
+      "name": "El Mundo",
+      "url": "https://www.elmundo.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:25Z"
+    },
+    {
+      "name": "Fondazione Falcone",
+      "url": "https://www.fondazionefalcone.org",
+      "country": "italy",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://www.fondazionefalcone.org/feed",
+          "title": "Fondazione Falcone",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:26Z"
+    },
+    {
+      "name": "ABC",
+      "url": "https://www.abc.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:26Z"
+    },
+    {
+      "name": "La Vanguardia",
+      "url": "https://www.lavanguardia.com",
+      "country": "spain",
+      "region": "europe",
+      "type": "gov",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:26Z"
+    },
+    {
+      "name": "Carabinieri",
+      "url": "https://www.carabinieri.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "gov",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:28Z"
+    },
+    {
+      "name": "El Confidencial",
+      "url": "https://www.elconfidencial.com",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:31Z"
+    },
+    {
+      "name": "Direzione Investigativa Antimafia (DIA)",
+      "url": "https://direzioneinvestigativaantimafia.interno.gov.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "gov",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://direzioneinvestigativaantimafia.interno.gov.it/feed",
+          "title": "DIREZIONE INVESTIGATIVA ANTIMAFIA",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:33Z"
+    },
+    {
+      "name": "El País",
+      "url": "https://elpais.com",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:34Z"
+    },
+    {
+      "name": "Ministero dell'Interno",
+      "url": "https://www.interno.gov.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "gov",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:34Z"
+    },
+    {
+      "name": "BfV (internal security)",
+      "url": "https://www.verfassungsschutz.de",
+      "country": "germany",
+      "region": "europe",
+      "type": "gov",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:35Z"
+    },
+    {
+      "name": "Guardia di Finanza",
+      "url": "https://www.gdf.gov.it",
+      "country": "italy",
+      "region": "europe",
+      "type": "gov",
+      "language": "it",
+      "feeds": [
+        {
+          "feed_url": "https://www.gdf.gov.it/rss.xml",
+          "title": "Benvenuto in Volto!",
+          "entry_count": 1000,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.gdf.gov.it/en/rss.xml",
+          "title": "English",
+          "entry_count": 8,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:36Z"
+    },
+    {
+      "name": "De Telegraaf",
+      "url": "https://www.telegraaf.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.telegraaf.nl/rss",
+          "title": "De Telegraaf",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:38Z"
+    },
+    {
+      "name": "De Volkskrant",
+      "url": "https://www.volkskrant.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.volkskrant.nl/rss.xml",
+          "title": "VK: homepage",
+          "entry_count": 49,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.volkskrant.nl/news/rss.xml",
+          "title": "VK: Topverhalen",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:41Z"
+    },
+    {
+      "name": "RTVE (state)",
+      "url": "https://www.rtve.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:41Z"
+    },
+    {
+      "name": "Expansión",
+      "url": "https://www.expansion.com",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:42Z"
+    },
+    {
+      "name": "ARA",
+      "url": "https://www.ara.cat",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [
+        {
+          "feed_url": "https://www.ara.cat/rss",
+          "title": "Ara.cat - Portada",
+          "entry_count": 135,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:42Z"
+    },
+    {
+      "name": "CNI (intelligence)",
+      "url": "https://www.cni.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:43Z"
+    },
+    {
+      "name": "eldiario.es",
+      "url": "https://www.eldiario.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "news",
+      "language": "es",
+      "feeds": [
+        {
+          "feed_url": "https://www.eldiario.es/rss",
+          "title": "elDiario.es - elDiario.es",
+          "entry_count": 96,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:44Z"
+    },
+    {
+      "name": "Ministerio de Defensa",
+      "url": "https://www.defensa.gob.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "gov",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:45Z"
+    },
+    {
+      "name": "Het Financieele Dagblad",
+      "url": "https://fd.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:46Z"
+    },
+    {
+      "name": "Guardia Civil",
+      "url": "https://www.guardiacivil.es",
+      "country": "spain",
+      "region": "europe",
+      "type": "gov",
+      "language": "es",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:47Z"
+    },
+    {
+      "name": "Follow the Money (FTM)",
+      "url": "https://www.ftm.eu",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:47Z"
+    },
+    {
+      "name": "NOS (public broadcaster)",
+      "url": "https://nos.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://nos.nl/rss.xml",
+          "title": "NOS Nieuws",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:47Z"
+    },
+    {
+      "name": "Le Soir",
+      "url": "https://www.lesoir.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:48Z"
+    },
+    {
+      "name": "AIVD",
+      "url": "https://www.aivd.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "gov",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:50Z"
+    },
+    {
+      "name": "Ministerie van Defensie",
+      "url": "https://www.defensie.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "gov",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:50Z"
+    },
+    {
+      "name": "MIVD",
+      "url": "https://www.defensie.nl/onderwerpen/mivd",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "gov",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:50Z"
+    },
+    {
+      "name": "NRC Handelsblad",
+      "url": "https://www.nrc.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.nrc.nl/feed",
+          "title": "Nieuws, achtergronden en onderzoeksjournalistiek - NRC",
+          "entry_count": 157,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:50Z"
+    },
+    {
+      "name": "De Standaard",
+      "url": "https://www.standaard.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.standaard.be/rss",
+          "title": "De Standaard",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:51Z"
+    },
+    {
+      "name": "De Tijd",
+      "url": "https://www.tijd.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:51Z"
+    },
+    {
+      "name": "De Groene Amsterdammer",
+      "url": "https://www.groene.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.groene.nl/rss",
+          "title": "De Groene Amsterdammer",
+          "entry_count": 50,
+          "feed_type": "atom10"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:52Z"
+    },
+    {
+      "name": "Nationale Politie",
+      "url": "https://www.politie.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:53Z"
+    },
+    {
+      "name": "NCTV",
+      "url": "https://www.nctv.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "gov",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:53Z"
+    },
+    {
+      "name": "De Morgen",
+      "url": "https://www.demorgen.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.demorgen.be/rss.xml",
+          "title": "DM: homepage",
+          "entry_count": 93,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:54Z"
+    },
+    {
+      "name": "Investico",
+      "url": "https://www.platform-investico.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [
+        {
+          "feed_url": "https://www.platform-investico.nl/feed",
+          "title": "Investico Onderzoeksjournalisten: nieuwste onderzoeken",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:21:57Z"
+    },
+    {
+      "name": "NCSC NL",
+      "url": "https://www.ncsc.nl",
+      "country": "netherlands",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:57Z"
+    },
+    {
+      "name": "VRT NWS (Flemish public)",
+      "url": "https://www.vrt.be/vrtnws",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:21:57Z"
+    },
+    {
+      "name": "Corriere del Ticino",
+      "url": "https://www.cdt.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:01Z"
+    },
+    {
+      "name": "Republik",
+      "url": "https://www.republik.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.republik.ch/feed.xml",
+          "title": "Republik Magazin",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:02Z"
+    },
+    {
+      "name": "Neue Zürcher Zeitung (NZZ)",
+      "url": "https://www.nzz.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:02Z"
+    },
+    {
+      "name": "Le Temps",
+      "url": "https://www.letemps.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.letemps.ch/feed",
+          "title": "Le Temps",
+          "entry_count": 21,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:02Z"
+    },
+    {
+      "name": "Knack",
+      "url": "https://www.knack.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:02Z"
+    },
+    {
+      "name": "Médor",
+      "url": "https://medor.coop",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://medor.coop/rss.xml",
+          "title": "Derniers articles",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:06Z"
+    },
+    {
+      "name": "La Libre Belgique",
+      "url": "https://www.lalibre.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [
+        {
+          "feed_url": "https://www.lalibre.be/rss",
+          "title": "Lalibre.be - Les derniers articles",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:06Z"
+    },
+    {
+      "name": "RTBF (Francophone public)",
+      "url": "https://www.rtbf.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:10Z"
+    },
+    {
+      "name": "Der Standard",
+      "url": "https://www.derstandard.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.derstandard.at/rss",
+          "title": "derStandard.at | Nachrichten, Kommentare & Community",
+          "entry_count": 156,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:10Z"
+    },
+    {
+      "name": "RTS (French Swiss)",
+      "url": "https://www.rts.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "fr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:10Z"
+    },
+    {
+      "name": "WOZ",
+      "url": "https://www.woz.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:11Z"
+    },
+    {
+      "name": "Apache",
+      "url": "https://www.apache.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:12Z"
+    },
+    {
+      "name": "SRF (German Swiss)",
+      "url": "https://www.srf.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:14Z"
+    },
+    {
+      "name": "Belga (wire)",
+      "url": "https://www.belga.be",
+      "country": "belgium",
+      "region": "europe",
+      "type": "news",
+      "language": "nl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:16Z"
+    },
+    {
+      "name": "Die Presse",
+      "url": "https://www.diepresse.com",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.diepresse.com/rss",
+          "title": "DiePresse.com - Home",
+          "entry_count": 67,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:17Z"
+    },
+    {
+      "name": "swissinfo",
+      "url": "https://www.swissinfo.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:21Z"
+    },
+    {
+      "name": "Expresso",
+      "url": "https://expresso.pt",
+      "country": "portugal",
+      "region": "europe",
+      "type": "news",
+      "language": "pt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:22Z"
+    },
+    {
+      "name": "ORF (state broadcaster)",
+      "url": "https://orf.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:23Z"
+    },
+    {
+      "name": "Dossier",
+      "url": "https://www.dossier.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:23Z"
+    },
+    {
+      "name": "RSI (Italian Swiss)",
+      "url": "https://www.rsi.ch",
+      "country": "switzerland",
+      "region": "europe",
+      "type": "news",
+      "language": "it",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:26Z"
+    },
+    {
+      "name": "Público",
+      "url": "https://www.publico.pt",
+      "country": "portugal",
+      "region": "europe",
+      "type": "news",
+      "language": "pt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:27Z"
+    },
+    {
+      "name": "Falter",
+      "url": "https://www.falter.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.falter.at/rss",
+          "title": "FALTER.at",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:32Z"
+    },
+    {
+      "name": "APA (press agency)",
+      "url": "https://www.apa.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.apa.at/feed",
+          "title": "APA",
+          "entry_count": 2,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:37Z"
+    },
+    {
+      "name": "Profil",
+      "url": "https://www.profil.at",
+      "country": "austria",
+      "region": "europe",
+      "type": "news",
+      "language": "de",
+      "feeds": [
+        {
+          "feed_url": "https://www.profil.at/rss.xml",
+          "title": "profil.at",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:40Z"
+    },
+    {
+      "name": "Irish Independent",
+      "url": "https://www.independent.ie",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.independent.ie/rss",
+          "title": "Irish Independent",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:43Z"
+    },
+    {
+      "name": "Rzeczpospolita",
+      "url": "https://www.rp.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:44Z"
+    },
+    {
+      "name": "RTÉ News",
+      "url": "https://www.rte.ie/news",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:45Z"
+    },
+    {
+      "name": "TVN24",
+      "url": "https://tvn24.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:46Z"
+    },
+    {
+      "name": "IIEA",
+      "url": "https://www.iiea.com",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:46Z"
+    },
+    {
+      "name": "Onet",
+      "url": "https://www.onet.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:48Z"
+    },
+    {
+      "name": "The Currency",
+      "url": "https://thecurrency.news",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://thecurrency.news/feed",
+          "title": "The Currency",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:48Z"
+    },
+    {
+      "name": "RTP (state broadcaster)",
+      "url": "https://www.rtp.pt",
+      "country": "portugal",
+      "region": "europe",
+      "type": "news",
+      "language": "pt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:49Z"
+    },
+    {
+      "name": "Lusa (state wire)",
+      "url": "https://www.lusa.pt",
+      "country": "portugal",
+      "region": "europe",
+      "type": "news",
+      "language": "pt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:52Z"
+    },
+    {
+      "name": "Oko.press",
+      "url": "https://oko.press",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [
+        {
+          "feed_url": "https://oko.press/feed",
+          "title": "oko.press",
+          "entry_count": 106,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:52Z"
+    },
+    {
+      "name": "The Irish Times",
+      "url": "https://www.irishtimes.com",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:54Z"
+    },
+    {
+      "name": "Gazeta Wyborcza",
+      "url": "https://wyborcza.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:54Z"
+    },
+    {
+      "name": "Newsweek Polska",
+      "url": "https://www.newsweek.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [
+        {
+          "feed_url": "https://www.newsweek.pl/rss.xml",
+          "title": "Newsweek Polska",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:55Z"
+    },
+    {
+      "name": "Polityka",
+      "url": "https://www.polityka.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:57Z"
+    },
+    {
+      "name": "TVP Info (state, partisan)",
+      "url": "https://www.tvp.info",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:22:57Z"
+    },
+    {
+      "name": "The Journal",
+      "url": "https://www.thejournal.ie",
+      "country": "ireland",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [
+        {
+          "feed_url": "https://www.thejournal.ie/feed",
+          "title": "TheJournal.ie",
+          "entry_count": 40,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:22:59Z"
+    },
+    {
+      "name": "Frontstory.pl",
+      "url": "https://frontstory.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "news",
+      "language": "pl",
+      "feeds": [
+        {
+          "feed_url": "https://frontstory.pl/feed",
+          "title": "FRONTSTORY.PL",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:00Z"
+    },
+    {
+      "name": "Observador",
+      "url": "https://observador.pt",
+      "country": "portugal",
+      "region": "europe",
+      "type": "news",
+      "language": "pt",
+      "feeds": [
+        {
+          "feed_url": "https://observador.pt/feed",
+          "title": "Observador - Últimas",
+          "entry_count": 51,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:00Z"
+    },
+    {
+      "name": "AW (foreign intel)",
+      "url": "https://www.aw.gov.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "gov",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:03Z"
+    },
+    {
+      "name": "Defence24",
+      "url": "https://defence24.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "gov",
+      "language": "pl",
+      "feeds": [
+        {
+          "feed_url": "https://defence24.pl/feed",
+          "title": "Defence24",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:03Z"
+    },
+    {
+      "name": "ABW (internal security)",
+      "url": "https://www.abw.gov.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "gov",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:05Z"
+    },
+    {
+      "name": "Policja",
+      "url": "https://www.policja.pl",
+      "country": "poland",
+      "region": "europe",
+      "type": "gov",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:08Z"
+    },
+    {
+      "name": "Hospodářské Noviny",
+      "url": "https://hn.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:09Z"
+    },
+    {
+      "name": "Mladá fronta DNES",
+      "url": "https://www.idnes.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:09Z"
+    },
+    {
+      "name": "Lidové Noviny",
+      "url": "https://www.lidovky.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:10Z"
+    },
+    {
+      "name": "European Values Center",
+      "url": "https://europeanvalues.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:12Z"
+    },
+    {
+      "name": "SME",
+      "url": "https://www.sme.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [
+        {
+          "feed_url": "https://www.sme.sk/rss",
+          "title": "SME.sk | SME.sk | články",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:12Z"
+    },
+    {
+      "name": "MON (Defence Min)",
+      "url": "https://www.gov.pl/web/obrona-narodowa",
+      "country": "poland",
+      "region": "europe",
+      "type": "gov",
+      "language": "pl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:14Z"
+    },
+    {
+      "name": "Respekt",
+      "url": "https://www.respekt.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [
+        {
+          "feed_url": "https://www.respekt.cz/rss.xml",
+          "title": "Články • Respekt",
+          "entry_count": 2000,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:15Z"
+    },
+    {
+      "name": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [
+        {
+          "feed_url": "https://www.seznamzpravy.cz/rss",
+          "title": "Seznam Zprávy - nejnovější články",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:17Z"
+    },
+    {
+      "name": "The Slovak Spectator (EN)",
+      "url": "https://spectator.sme.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [
+        {
+          "feed_url": "https://spectator.sme.sk/rss",
+          "title": "Slovak Spectator | The Slovak Spectator | articles",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:17Z"
+    },
+    {
+      "name": "Telex",
+      "url": "https://telex.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:18Z"
+    },
+    {
+      "name": "Deník N",
+      "url": "https://denikn.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [
+        {
+          "feed_url": "https://denikn.cz/feed",
+          "title": "Deník N",
+          "entry_count": 40,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:19Z"
+    },
+    {
+      "name": "Investigace.cz",
+      "url": "https://www.investigace.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [
+        {
+          "feed_url": "https://www.investigace.cz/feed",
+          "title": "investigace.cz",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:20Z"
+    },
+    {
+      "name": "HVG",
+      "url": "https://hvg.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [
+        {
+          "feed_url": "https://hvg.hu/rss",
+          "title": "HVG",
+          "entry_count": 60,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:20Z"
+    },
+    {
+      "name": "Denník N",
+      "url": "https://dennikn.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [
+        {
+          "feed_url": "https://dennikn.sk/feed",
+          "title": "Denník N",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:20Z"
+    },
+    {
+      "name": "CTK (state wire)",
+      "url": "https://www.ctk.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:22Z"
+    },
+    {
+      "name": "Pravda",
+      "url": "https://www.pravda.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:25Z"
+    },
+    {
+      "name": "ICJK (Kuciak Investigative Center)",
+      "url": "https://www.icjk.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [
+        {
+          "feed_url": "https://www.icjk.sk/rss",
+          "title": "ICJK.sk | RSS",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:26Z"
+    },
+    {
+      "name": "Átlátszó (Atlatszo)",
+      "url": "https://atlatszo.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [
+        {
+          "feed_url": "https://atlatszo.hu/feed",
+          "title": "atlatszo.hu",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:28Z"
+    },
+    {
+      "name": "Origo",
+      "url": "https://www.origo.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:28Z"
+    },
+    {
+      "name": "Adevărul",
+      "url": "https://adevarul.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://adevarul.ro/rss",
+          "title": "adevarul.ro",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:28Z"
+    },
+    {
+      "name": "HungaryToday (EN, pro-gov)",
+      "url": "https://hungarytoday.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [
+        {
+          "feed_url": "https://hungarytoday.hu/feed",
+          "title": "Hungary Today",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:29Z"
+    },
+    {
+      "name": "TASR (state wire)",
+      "url": "https://www.tasr.sk",
+      "country": "slovakia",
+      "region": "europe",
+      "type": "news",
+      "language": "sk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:34Z"
+    },
+    {
+      "name": "PressOne",
+      "url": "https://pressone.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://pressone.ro/feed",
+          "title": "PressOne.ro",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:34Z"
+    },
+    {
+      "name": "G4Media",
+      "url": "https://www.g4media.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.g4media.ro/feed",
+          "title": "G4Media.ro",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:34Z"
+    },
+    {
+      "name": "Hotnews",
+      "url": "https://www.hotnews.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.hotnews.ro/feed",
+          "title": "HotNews.ro",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:23:36Z"
+    },
+    {
+      "name": "MTI (state wire)",
+      "url": "https://www.mti.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:23:52Z"
+    },
+    {
+      "name": "ČT24 (Czech TV)",
+      "url": "https://ct24.ceskatelevize.cz",
+      "country": "czech-republic",
+      "region": "europe",
+      "type": "news",
+      "language": "cs",
+      "feeds": [
+        {
+          "feed_url": "https://ct24.ceskatelevize.cz/rss",
+          "title": "ČT24",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:02Z"
+    },
+    {
+      "name": "Direkt36",
+      "url": "https://www.direkt36.hu",
+      "country": "hungary",
+      "region": "europe",
+      "type": "news",
+      "language": "hu",
+      "feeds": [
+        {
+          "feed_url": "https://www.direkt36.hu/rss",
+          "title": "Direkt36",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:12Z"
+    },
+    {
+      "name": "Mediapool",
+      "url": "https://www.mediapool.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [
+        {
+          "feed_url": "https://www.mediapool.bg/rss",
+          "title": "mediapool.bg - последни 15 новини",
+          "entry_count": 15,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:17Z"
+    },
+    {
+      "name": "Dnevnik",
+      "url": "https://www.dnevnik.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [
+        {
+          "feed_url": "https://www.dnevnik.bg/rss",
+          "title": "Dnevnik.bg",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:19Z"
+    },
+    {
+      "name": "Capital",
+      "url": "https://www.capital.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [
+        {
+          "feed_url": "https://www.capital.bg/rss",
+          "title": "Капитал - статии",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:20Z"
+    },
+    {
+      "name": "Recorder",
+      "url": "https://recorder.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://recorder.ro/feed",
+          "title": "Recorder",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:23Z"
+    },
+    {
+      "name": "Dela0.ro",
+      "url": "https://dela0.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:25Z"
+    },
+    {
+      "name": "BNT (state TV)",
+      "url": "https://bntnews.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:30Z"
+    },
+    {
+      "name": "Digi24",
+      "url": "https://www.digi24.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.digi24.ro/rss",
+          "title": "Digi24",
+          "entry_count": 239,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:30Z"
+    },
+    {
+      "name": "RISE Project Romania",
+      "url": "https://www.riseproject.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.riseproject.ro/feed",
+          "title": "Rise Project",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.riseproject.ro/en/feed",
+          "title": "Rise Project",
+          "entry_count": 8,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:32Z"
+    },
+    {
+      "name": "Mladina",
+      "url": "https://www.mladina.si",
+      "country": "slovenia",
+      "region": "europe",
+      "type": "news",
+      "language": "sl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:32Z"
+    },
+    {
+      "name": "STA (state wire)",
+      "url": "https://www.sta.si",
+      "country": "slovenia",
+      "region": "europe",
+      "type": "news",
+      "language": "sl",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:32Z"
+    },
+    {
+      "name": "N1 Slovenija",
+      "url": "https://n1info.si",
+      "country": "slovenia",
+      "region": "europe",
+      "type": "news",
+      "language": "sl",
+      "feeds": [
+        {
+          "feed_url": "https://n1info.si/feed",
+          "title": "N1 - Feed",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:32Z"
+    },
+    {
+      "name": "BTA (state wire)",
+      "url": "https://www.bta.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:34Z"
+    },
+    {
+      "name": "Index.hr",
+      "url": "https://www.index.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "news",
+      "language": "hr",
+      "feeds": [
+        {
+          "feed_url": "https://www.index.hr/rss",
+          "title": "Index.hr RSS Feed",
+          "entry_count": 150,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:37Z"
+    },
+    {
+      "name": "N1 Croatia",
+      "url": "https://n1info.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "news",
+      "language": "hr",
+      "feeds": [
+        {
+          "feed_url": "https://n1info.hr/feed",
+          "title": "N1 - Feed",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:40Z"
+    },
+    {
+      "name": "Delo",
+      "url": "https://www.delo.si",
+      "country": "slovenia",
+      "region": "europe",
+      "type": "news",
+      "language": "sl",
+      "feeds": [
+        {
+          "feed_url": "https://www.delo.si/rss",
+          "title": "Delo",
+          "entry_count": 60,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:40Z"
+    },
+    {
+      "name": "Politika",
+      "url": "https://www.politika.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.politika.rs/rss",
+          "title": "ПОЛИТИКА Онлајн",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:42Z"
+    },
+    {
+      "name": "HRT (state)",
+      "url": "https://www.hrt.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "news",
+      "language": "hr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:24:44Z"
+    },
+    {
+      "name": "Jutarnji List",
+      "url": "https://www.jutarnji.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "news",
+      "language": "hr",
+      "feeds": [
+        {
+          "feed_url": "https://www.jutarnji.hr/feed",
+          "title": "Najnovije vijesti iz Hrvatske i svijeta",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.jutarnji.hr/en/feed",
+          "title": "Croatia by Locals",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:45Z"
+    },
+    {
+      "name": "Večernji List",
+      "url": "https://www.vecernji.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "hr",
+      "feeds": [
+        {
+          "feed_url": "https://www.vecernji.hr/feed",
+          "title": "Latest - Večernji.hr",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:45Z"
+    },
+    {
+      "name": "Bivol",
+      "url": "https://bivol.bg",
+      "country": "bulgaria",
+      "region": "europe",
+      "type": "news",
+      "language": "bg",
+      "feeds": [
+        {
+          "feed_url": "https://bivol.bg/feed",
+          "title": "Bivol!",
+          "entry_count": 300,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:47Z"
+    },
+    {
+      "name": "N1 Serbia",
+      "url": "https://n1info.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://n1info.rs/feed",
+          "title": "N1 Info RS - Feed",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:49Z"
+    },
+    {
+      "name": "Danas",
+      "url": "https://www.danas.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.danas.rs/feed",
+          "title": "Dnevni list Danas",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:50Z"
+    },
+    {
+      "name": "Agerpres (state wire)",
+      "url": "https://www.agerpres.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.agerpres.ro/en/rss",
+          "title": "• AGERPRES • Actualizează lumea.",
+          "entry_count": 21,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:51Z"
+    },
+    {
+      "name": "Klix.ba",
+      "url": "https://www.klix.ba",
+      "country": "bosnia-herzegovina",
+      "region": "europe",
+      "type": "news",
+      "language": "bs",
+      "feeds": [
+        {
+          "feed_url": "https://www.klix.ba/rss",
+          "title": "Klix.ba - RSS",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:51Z"
+    },
+    {
+      "name": "Vreme",
+      "url": "https://www.vreme.com",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.vreme.com/feed",
+          "title": "Vreme",
+          "entry_count": 12,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:56Z"
+    },
+    {
+      "name": "Al Jazeera Balkans (Sarajevo HQ)",
+      "url": "https://www.aljazeera.com/balkans",
+      "country": "bosnia-herzegovina",
+      "region": "europe",
+      "type": "news",
+      "language": "bs",
+      "feeds": [
+        {
+          "feed_url": "https://www.aljazeera.com/rss",
+          "title": "Al Jazeera – Breaking News, World News and Video from Al Jazeera",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:57Z"
+    },
+    {
+      "name": "FENA (state wire)",
+      "url": "https://fena.ba",
+      "country": "bosnia-herzegovina",
+      "region": "europe",
+      "type": "news",
+      "language": "bs",
+      "feeds": [
+        {
+          "feed_url": "https://fena.ba/rss",
+          "title": "FENA RSS",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:24:58Z"
+    },
+    {
+      "name": "CINS",
+      "url": "https://www.cins.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.cins.rs/feed",
+          "title": "Centar za istraživačko novinarstvo Srbije",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.cins.rs/en/feed",
+          "title": "Center for Investigative Journalism  of Serbia",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:00Z"
+    },
+    {
+      "name": "HINA (state wire)",
+      "url": "https://www.hina.hr",
+      "country": "croatia",
+      "region": "europe",
+      "type": "news",
+      "language": "hr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:01Z"
+    },
+    {
+      "name": "RTS (state)",
+      "url": "https://www.rts.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:01Z"
+    },
+    {
+      "name": "Koha Ditore",
+      "url": "https://www.koha.net",
+      "country": "kosovo",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [
+        {
+          "feed_url": "https://www.koha.net/rss",
+          "title": "KOHA.net",
+          "entry_count": 20,
+          "feed_type": "atom10"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:01Z"
+    },
+    {
+      "name": "RTK (public)",
+      "url": "https://www.rtklive.com",
+      "country": "kosovo",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:02Z"
+    },
+    {
+      "name": "KRIK",
+      "url": "https://www.krik.rs",
+      "country": "serbia",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.krik.rs/feed",
+          "title": "KRIK",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:02Z"
+    },
+    {
+      "name": "MINA (state wire)",
+      "url": "https://mn.mina.news",
+      "country": "montenegro",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:03Z"
+    },
+    {
+      "name": "BIRN Bosnia (Detektor)",
+      "url": "https://detektor.ba",
+      "country": "bosnia-herzegovina",
+      "region": "europe",
+      "type": "news",
+      "language": "bs",
+      "feeds": [
+        {
+          "feed_url": "https://detektor.ba/feed",
+          "title": "Detektor",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:03Z"
+    },
+    {
+      "name": "BIRN Kosovo (Prishtina Insight)",
+      "url": "https://prishtinainsight.com",
+      "country": "kosovo",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [
+        {
+          "feed_url": "https://prishtinainsight.com/feed",
+          "title": "Prishtina Insight",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:05Z"
+    },
+    {
+      "name": "Exit News",
+      "url": "https://exit.al",
+      "country": "albania",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:06Z"
+    },
+    {
+      "name": "ATA (state wire)",
+      "url": "https://ata.gov.al",
+      "country": "albania",
+      "region": "europe",
+      "type": "gov",
+      "language": "sq",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:06Z"
+    },
+    {
+      "name": "CIN (Center for Investigative Reporting)",
+      "url": "https://www.cin.ba",
+      "country": "bosnia-herzegovina",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "bs",
+      "feeds": [
+        {
+          "feed_url": "https://www.cin.ba/feed",
+          "title": "CIN",
+          "entry_count": 9,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:06Z"
+    },
+    {
+      "name": "Top Channel",
+      "url": "https://top-channel.tv",
+      "country": "albania",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:07Z"
+    },
+    {
+      "name": "Gazeta Express",
+      "url": "https://www.gazetaexpress.com",
+      "country": "kosovo",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [
+        {
+          "feed_url": "https://www.gazetaexpress.com/feed",
+          "title": "Gazeta Express",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:08Z"
+    },
+    {
+      "name": "CIN-CG",
+      "url": "https://www.cin-cg.me",
+      "country": "montenegro",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.cin-cg.me/feed",
+          "title": "Centar za istraživačko novinarstvo Crne Gore",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:09Z"
+    },
+    {
+      "name": "Delfi.ee",
+      "url": "https://www.delfi.ee",
+      "country": "estonia",
+      "region": "europe",
+      "type": "news",
+      "language": "et",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:13Z"
+    },
+    {
+      "name": "Vijesti",
+      "url": "https://www.vijesti.me",
+      "country": "montenegro",
+      "region": "europe",
+      "type": "news",
+      "language": "sr",
+      "feeds": [
+        {
+          "feed_url": "https://www.vijesti.me/rss",
+          "title": "Vijesti",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:16Z"
+    },
+    {
+      "name": "Diena",
+      "url": "https://www.diena.lv",
+      "country": "latvia",
+      "region": "europe",
+      "type": "news",
+      "language": "lv",
+      "feeds": [
+        {
+          "feed_url": "https://www.diena.lv/rss",
+          "title": "Diena.lv",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:18Z"
+    },
+    {
+      "name": "Reporter.al (BIRN Albania)",
+      "url": "https://www.reporter.al",
+      "country": "albania",
+      "region": "europe",
+      "type": "news",
+      "language": "sq",
+      "feeds": [
+        {
+          "feed_url": "https://www.reporter.al/feed",
+          "title": "Reporter.al",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:18Z"
+    },
+    {
+      "name": "Postimees",
+      "url": "https://www.postimees.ee",
+      "country": "estonia",
+      "region": "europe",
+      "type": "news",
+      "language": "et",
+      "feeds": [
+        {
+          "feed_url": "https://www.postimees.ee/rss",
+          "title": "Postimees",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:21Z"
+    },
+    {
+      "name": "ERR (state broadcaster) — EN",
+      "url": "https://news.err.ee",
+      "country": "estonia",
+      "region": "europe",
+      "type": "news",
+      "language": "et",
+      "feeds": [
+        {
+          "feed_url": "https://news.err.ee/rss",
+          "title": "news | ERR",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:25:22Z"
+    },
+    {
+      "name": "TVR (state TV)",
+      "url": "https://www.tvr.ro",
+      "country": "romania",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:25:46Z"
+    },
+    {
+      "name": "MIA (state wire)",
+      "url": "https://mia.mk",
+      "country": "north-macedonia",
+      "region": "europe",
+      "type": "news",
+      "language": "mk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:28Z"
+    },
+    {
+      "name": "LSM (public)",
+      "url": "https://www.lsm.lv",
+      "country": "latvia",
+      "region": "europe",
+      "type": "news",
+      "language": "lv",
+      "feeds": [
+        {
+          "feed_url": "https://www.lsm.lv/rss",
+          "title": "LSM",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:33Z"
+    },
+    {
+      "name": "Delfi.lv",
+      "url": "https://www.delfi.lv",
+      "country": "latvia",
+      "region": "europe",
+      "type": "news",
+      "language": "lv",
+      "feeds": [
+        {
+          "feed_url": "https://www.delfi.lv/rss.xml",
+          "title": "Delfi  ziņas",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:33Z"
+    },
+    {
+      "name": "BNS (Baltic News Service)",
+      "url": "https://www.bns.lt",
+      "country": "lithuania",
+      "region": "europe",
+      "type": "news",
+      "language": "lt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:36Z"
+    },
+    {
+      "name": "LRT (public broadcaster)",
+      "url": "https://www.lrt.lt",
+      "country": "lithuania",
+      "region": "europe",
+      "type": "news",
+      "language": "lt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:37Z"
+    },
+    {
+      "name": "SR (Sveriges Radio)",
+      "url": "https://www.sverigesradio.se",
+      "country": "sweden",
+      "region": "europe",
+      "type": "news",
+      "language": "sv",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:37Z"
+    },
+    {
+      "name": "Svenska Dagbladet (SvD)",
+      "url": "https://www.svd.se",
+      "country": "sweden",
+      "region": "europe",
+      "type": "news",
+      "language": "sv",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:39Z"
+    },
+    {
+      "name": "SVT Nyheter (public TV)",
+      "url": "https://www.svt.se/nyheter",
+      "country": "sweden",
+      "region": "europe",
+      "type": "news",
+      "language": "sv",
+      "feeds": [
+        {
+          "feed_url": "https://www.svt.se/rss.xml",
+          "title": "SVT Nyheter",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:39Z"
+    },
+    {
+      "name": "15min",
+      "url": "https://www.15min.lt",
+      "country": "lithuania",
+      "region": "europe",
+      "type": "news",
+      "language": "lt",
+      "feeds": [
+        {
+          "feed_url": "https://www.15min.lt/rss",
+          "title": "15min.lt RSS - suprasti akimirksniu | RSS",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.15min.lt/en/rss",
+          "title": "EN RSS",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:39Z"
+    },
+    {
+      "name": "Delfi.lt",
+      "url": "https://www.delfi.lt",
+      "country": "lithuania",
+      "region": "europe",
+      "type": "news",
+      "language": "lt",
+      "feeds": [
+        {
+          "feed_url": "https://www.delfi.lt/rss.xml",
+          "title": "Index",
+          "entry_count": 47,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:40Z"
+    },
+    {
+      "name": "Aftenposten",
+      "url": "https://www.aftenposten.no",
+      "country": "norway",
+      "region": "europe",
+      "type": "news",
+      "language": "no",
+      "feeds": [
+        {
+          "feed_url": "https://www.aftenposten.no/rss",
+          "title": "Aftenposten Title",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:41Z"
+    },
+    {
+      "name": "VG",
+      "url": "https://www.vg.no",
+      "country": "norway",
+      "region": "europe",
+      "type": "news",
+      "language": "no",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:43Z"
+    },
+    {
+      "name": "DR (public broadcaster)",
+      "url": "https://www.dr.dk/nyheder",
+      "country": "denmark",
+      "region": "europe",
+      "type": "news",
+      "language": "da",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:44Z"
+    },
+    {
+      "name": "Dagens Nyheter (DN)",
+      "url": "https://www.dn.se",
+      "country": "sweden",
+      "region": "europe",
+      "type": "news",
+      "language": "sv",
+      "feeds": [
+        {
+          "feed_url": "https://www.dn.se/feed",
+          "title": "DN.se - Dagens Nyheter",
+          "entry_count": 126,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:45Z"
+    },
+    {
+      "name": "Re:Baltica",
+      "url": "https://en.rebaltica.lv",
+      "country": "latvia",
+      "region": "europe",
+      "type": "news",
+      "language": "lv",
+      "feeds": [
+        {
+          "feed_url": "https://en.rebaltica.lv/feed",
+          "title": "Re:Baltica",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:46Z"
+    },
+    {
+      "name": "NRK (public broadcaster)",
+      "url": "https://www.nrk.no",
+      "country": "norway",
+      "region": "europe",
+      "type": "news",
+      "language": "no",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:46Z"
+    },
+    {
+      "name": "Zetland",
+      "url": "https://www.zetland.dk",
+      "country": "denmark",
+      "region": "europe",
+      "type": "news",
+      "language": "da",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:46Z"
+    },
+    {
+      "name": "Berlingske",
+      "url": "https://www.berlingske.dk",
+      "country": "denmark",
+      "region": "europe",
+      "type": "news",
+      "language": "da",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:48Z"
+    },
+    {
+      "name": "RÚV (public broadcaster)",
+      "url": "https://www.ruv.is",
+      "country": "iceland",
+      "region": "europe",
+      "type": "news",
+      "language": "is",
+      "feeds": [
+        {
+          "feed_url": "https://www.ruv.is/rss/all.xml",
+          "title": "RÚV-RSS",
+          "entry_count": 1,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:49Z"
+    },
+    {
+      "name": "YLE (public broadcaster)",
+      "url": "https://yle.fi/uutiset",
+      "country": "finland",
+      "region": "europe",
+      "type": "news",
+      "language": "fi",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:49Z"
+    },
+    {
+      "name": "Helsingin Sanomat (HS)",
+      "url": "https://www.hs.fi",
+      "country": "finland",
+      "region": "europe",
+      "type": "news",
+      "language": "fi",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:49Z"
+    },
+    {
+      "name": "Ukrainska Pravda",
+      "url": "https://www.pravda.com.ua",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://www.pravda.com.ua/rss",
+          "title": "Українська правда",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.pravda.com.ua/en/rss",
+          "title": "Ukrainska Pravda",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:52Z"
+    },
+    {
+      "name": "Politiken",
+      "url": "https://politiken.dk",
+      "country": "denmark",
+      "region": "europe",
+      "type": "news",
+      "language": "da",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:52Z"
+    },
+    {
+      "name": "Suspilne",
+      "url": "https://suspilne.media",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:53Z"
+    },
+    {
+      "name": "Babel",
+      "url": "https://babel.ua",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://babel.ua/rss.xml",
+          "title": "Бабель",
+          "entry_count": 181,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:54Z"
+    },
+    {
+      "name": "Hromadske",
+      "url": "https://hromadske.ua",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:54Z"
+    },
+    {
+      "name": "Dzerkalo Tyzhnia (ZN.UA)",
+      "url": "https://zn.ua",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:55Z"
+    },
+    {
+      "name": "Censor.NET",
+      "url": "https://censor.net",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:55Z"
+    },
+    {
+      "name": "Liga.net",
+      "url": "https://www.liga.net",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:56Z"
+    },
+    {
+      "name": "Zerkalo (exile)",
+      "url": "https://news.zerkalo.io",
+      "country": "belarus",
+      "region": "europe",
+      "type": "news",
+      "language": "be",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:57Z"
+    },
+    {
+      "name": "Charter97 (exile)",
+      "url": "https://charter97.org",
+      "country": "belarus",
+      "region": "europe",
+      "type": "news",
+      "language": "be",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:26:57Z"
+    },
+    {
+      "name": "Heimildin",
+      "url": "https://heimildin.is",
+      "country": "iceland",
+      "region": "europe",
+      "type": "news",
+      "language": "is",
+      "feeds": [
+        {
+          "feed_url": "https://heimildin.is/rss",
+          "title": "Heimildin",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:26:59Z"
+    },
+    {
+      "name": "Morgunblaðið",
+      "url": "https://www.mbl.is",
+      "country": "iceland",
+      "region": "europe",
+      "type": "news",
+      "language": "is",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:27:00Z"
+    },
+    {
+      "name": "Nasha Niva",
+      "url": "https://nashaniva.com",
+      "country": "belarus",
+      "region": "europe",
+      "type": "news",
+      "language": "be",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:27:00Z"
+    },
+    {
+      "name": "Kyiv Post",
+      "url": "https://www.kyivpost.com",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://www.kyivpost.com/feed",
+          "title": "Kyiv Post",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:00Z"
+    },
+    {
+      "name": "Meduza",
+      "url": "https://meduza.io",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:27:04Z"
+    },
+    {
+      "name": "Bihus.Info",
+      "url": "https://bihus.info",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://bihus.info/feed",
+          "title": "Bihus.Info",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://bihus.info/news/rss.xml",
+          "title": "Bihus.Info - Новини",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:04Z"
+    },
+    {
+      "name": "Novaya Gazeta Europe",
+      "url": "https://novayagazeta.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "en",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:27:06Z"
+    },
+    {
+      "name": "Ziarul de Gardă (ZdG)",
+      "url": "https://www.zdg.md",
+      "country": "moldova",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.zdg.md/feed",
+          "title": "Ziarul de Gardă",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:08Z"
+    },
+    {
+      "name": "Slidstvo.info",
+      "url": "https://www.slidstvo.info",
+      "country": "ukraine",
+      "region": "europe",
+      "type": "news",
+      "language": "uk",
+      "feeds": [
+        {
+          "feed_url": "https://www.slidstvo.info/feed",
+          "title": "Слідство.Інфо",
+          "entry_count": 12,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.slidstvo.info/en/feed",
+          "title": "Slidstvo.Info",
+          "entry_count": 12,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:10Z"
+    },
+    {
+      "name": "Belsat TV",
+      "url": "https://belsat.eu",
+      "country": "belarus",
+      "region": "europe",
+      "type": "news",
+      "language": "be",
+      "feeds": [
+        {
+          "feed_url": "https://belsat.eu/rss",
+          "title": "belsat.eu",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:10Z"
+    },
+    {
+      "name": "Mediazona",
+      "url": "https://zona.media",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://zona.media/rss",
+          "title": "Медиазона",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:11Z"
+    },
+    {
+      "name": "NewsMaker",
+      "url": "https://newsmaker.md",
+      "country": "moldova",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://newsmaker.md/feed",
+          "title": "NewsMaker",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:13Z"
+    },
+    {
+      "name": "RISE Moldova",
+      "url": "https://www.rise.md",
+      "country": "moldova",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.rise.md/feed",
+          "title": "Rise Moldova",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:14Z"
+    },
+    {
+      "name": "OC Media",
+      "url": "https://oc-media.org",
+      "country": "georgia",
+      "region": "europe",
+      "type": "news",
+      "language": "ka",
+      "feeds": [
+        {
+          "feed_url": "https://oc-media.org/feed",
+          "title": "OC Media",
+          "entry_count": 16,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://oc-media.org/rss",
+          "title": "OC Media",
+          "entry_count": 15,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:17Z"
+    },
+    {
+      "name": "Civil.ge",
+      "url": "https://civil.ge",
+      "country": "georgia",
+      "region": "europe",
+      "type": "news",
+      "language": "ka",
+      "feeds": [
+        {
+          "feed_url": "https://civil.ge/feed",
+          "title": "Civil Georgia",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:20Z"
+    },
+    {
+      "name": "JAM News",
+      "url": "https://jam-news.net",
+      "country": "georgia",
+      "region": "europe",
+      "type": "news",
+      "language": "ka",
+      "feeds": [
+        {
+          "feed_url": "https://jam-news.net/feed",
+          "title": "Jamnews in English",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:20Z"
+    },
+    {
+      "name": "OVD-Info",
+      "url": "https://ovd.info",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://ovd.info/rss.xml",
+          "title": "",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:22Z"
+    },
+    {
+      "name": "Moldpres (state wire)",
+      "url": "https://www.moldpres.md",
+      "country": "moldova",
+      "region": "europe",
+      "type": "news",
+      "language": "ro",
+      "feeds": [
+        {
+          "feed_url": "https://www.moldpres.md/news/rss.xml",
+          "title": "Moldpres Agenția Informațională de Stat",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:26Z"
+    },
+    {
+      "name": "EVN Report",
+      "url": "https://www.evnreport.com",
+      "country": "armenia",
+      "region": "europe",
+      "type": "news",
+      "language": "hy",
+      "feeds": [
+        {
+          "feed_url": "https://www.evnreport.com/feed",
+          "title": "EVN Report",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:27:45Z"
+    },
+    {
+      "name": "LETA (state wire)",
+      "url": "https://www.leta.lv",
+      "country": "latvia",
+      "region": "europe",
+      "type": "news",
+      "language": "lv",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:01Z"
+    },
+    {
+      "name": "Times of Malta",
+      "url": "https://timesofmalta.com",
+      "country": "malta",
+      "region": "europe",
+      "type": "news",
+      "language": "mt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:02Z"
+    },
+    {
+      "name": "Malta Today",
+      "url": "https://www.maltatoday.com.mt",
+      "country": "malta",
+      "region": "europe",
+      "type": "news",
+      "language": "mt",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:02Z"
+    },
+    {
+      "name": "Armenpress (state wire)",
+      "url": "https://armenpress.am",
+      "country": "armenia",
+      "region": "europe",
+      "type": "news",
+      "language": "hy",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:02Z"
+    },
+    {
+      "name": "Abzas Media",
+      "url": "https://abzas.org",
+      "country": "azerbaijan",
+      "region": "europe",
+      "type": "news",
+      "language": "az",
+      "feeds": [
+        {
+          "feed_url": "https://abzas.org/rss",
+          "title": "Abzas Media Sonuncu Xəbərlər",
+          "entry_count": 30,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:04Z"
+    },
+    {
+      "name": "CivilNet",
+      "url": "https://www.civilnet.am",
+      "country": "armenia",
+      "region": "europe",
+      "type": "news",
+      "language": "hy",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:07Z"
+    },
+    {
+      "name": "Kathimerini",
+      "url": "https://www.kathimerini.gr",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:07Z"
+    },
+    {
+      "name": "The Shift News",
+      "url": "https://theshiftnews.com",
+      "country": "malta",
+      "region": "europe",
+      "type": "news",
+      "language": "mt",
+      "feeds": [
+        {
+          "feed_url": "https://theshiftnews.com/feed",
+          "title": "The Shift News",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:11Z"
+    },
+    {
+      "name": "Hetq",
+      "url": "https://hetq.am",
+      "country": "armenia",
+      "region": "europe",
+      "type": "news",
+      "language": "hy",
+      "feeds": [
+        {
+          "feed_url": "https://hetq.am/en/rss",
+          "title": "Hetq - News, Articles, Investigations - RSS",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:11Z"
+    },
+    {
+      "name": "Cyprus Mail",
+      "url": "https://cyprus-mail.com",
+      "country": "cyprus",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [
+        {
+          "feed_url": "https://cyprus-mail.com/feed",
+          "title": "Cyprus Mail",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:11Z"
+    },
+    {
+      "name": "iMEdD",
+      "url": "https://www.imedd.org",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [
+        {
+          "feed_url": "https://www.imedd.org/feed",
+          "title": "iMEdD",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:12Z"
+    },
+    {
+      "name": "Trend News Agency",
+      "url": "https://en.trend.az",
+      "country": "azerbaijan",
+      "region": "europe",
+      "type": "news",
+      "language": "az",
+      "feeds": [
+        {
+          "feed_url": "https://en.trend.az/rss",
+          "title": "Trend – News from Azerbaijan, Georgia, Kazakhstan, Turkmenistan, Uzbekistan, Iran and Turkey.",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:13Z"
+    },
+    {
+      "name": "InCyprus",
+      "url": "https://in-cyprus.philenews.com",
+      "country": "cyprus",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [
+        {
+          "feed_url": "https://in-cyprus.philenews.com/feed",
+          "title": "en.philenews.com",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:13Z"
+    },
+    {
+      "name": "APA (state-aligned wire)",
+      "url": "https://en.apa.az",
+      "country": "azerbaijan",
+      "region": "europe",
+      "type": "news",
+      "language": "az",
+      "feeds": [
+        {
+          "feed_url": "https://en.apa.az/rss",
+          "title": "APA.AZ- Latest news from Azerbaijan and the world",
+          "entry_count": 50,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:14Z"
+    },
+    {
+      "name": "www.osservatoreromano.va",
+      "url": "https://www.osservatoreromano.va",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:18Z"
+    },
+    {
+      "name": "www.vaticannews.va",
+      "url": "https://www.vaticannews.va",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:18Z"
+    },
+    {
+      "name": "All Eyes on Wagner",
+      "url": "https://alleyesonwagner.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://alleyesonwagner.org/feed",
+          "title": "Investigations with Impact",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:18Z"
+    },
+    {
+      "name": "ERT (public)",
+      "url": "https://www.ert.gr",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [
+        {
+          "feed_url": "https://www.ert.gr/feed",
+          "title": "ert.gr",
+          "entry_count": 2,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:19Z"
+    },
+    {
+      "name": "Meydan TV",
+      "url": "https://www.meydan.tv",
+      "country": "azerbaijan",
+      "region": "europe",
+      "type": "news",
+      "language": "az",
+      "feeds": [
+        {
+          "feed_url": "https://www.meydan.tv/feed",
+          "title": "MEYDAN.TV",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:22Z"
+    },
+    {
+      "name": "ANA-MPA (state wire)",
+      "url": "https://www.amna.gr",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:24Z"
+    },
+    {
+      "name": "Solomon",
+      "url": "https://wearesolomon.com",
+      "country": "greece",
+      "region": "europe",
+      "type": "news",
+      "language": "el",
+      "feeds": [
+        {
+          "feed_url": "https://wearesolomon.com/feed",
+          "title": "Solomon",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:25Z"
+    },
+    {
+      "name": "Border Forensics",
+      "url": "https://www.borderforensics.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.borderforensics.org/feed",
+          "title": "Border Forensics",
+          "entry_count": 4,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:26Z"
+    },
+    {
+      "name": "The Record",
+      "url": "https://therecord.media",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://therecord.media/feed",
+          "title": "The Record from Recorded Future News",
+          "entry_count": 5,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:26Z"
+    },
+    {
+      "name": "MarineTraffic",
+      "url": "https://www.marinetraffic.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:27Z"
+    },
+    {
+      "name": "Global Initiative Against TOC Europe",
+      "url": "https://globalinitiative.net",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://globalinitiative.net/feed",
+          "title": "Global Initiative",
+          "entry_count": 12,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:27Z"
+    },
+    {
+      "name": "Alarm Phone",
+      "url": "https://alarmphone.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://alarmphone.org/en/feed",
+          "title": "Alarm Phone",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:30Z"
+    },
+    {
+      "name": "Lloyd's List (paid)",
+      "url": "https://www.lloydslist.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:32Z"
+    },
+    {
+      "name": "gCaptain",
+      "url": "https://gcaptain.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://gcaptain.com/feed",
+          "title": "gCaptain",
+          "entry_count": 12,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:32Z"
+    },
+    {
+      "name": "MMC Europe",
+      "url": "https://mixedmigration.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:33Z"
+    },
+    {
+      "name": "OIES (Oxford Institute)",
+      "url": "https://www.oxfordenergy.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:33Z"
+    },
+    {
+      "name": "Sea-Watch",
+      "url": "https://sea-watch.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://sea-watch.org/feed",
+          "title": "Sea-Watch e.V.",
+          "entry_count": 7,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:33Z"
+    },
+    {
+      "name": "IEA (Paris)",
+      "url": "https://www.iea.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:33Z"
+    },
+    {
+      "name": "HOPE not hate (UK)",
+      "url": "https://hopenothate.org.uk",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:34Z"
+    },
+    {
+      "name": "Counter Extremism Project Europe",
+      "url": "https://www.counterextremism.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.counterextremism.com/rss.xml",
+          "title": "Counter Extremism Project",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:37Z"
+    },
+    {
+      "name": "Atlantic Council Global Energy Center",
+      "url": "https://www.atlanticcouncil.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.atlanticcouncil.org/feed",
+          "title": "Atlantic Council",
+          "entry_count": 100,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:39Z"
+    },
+    {
+      "name": "ENISA",
+      "url": "https://www.enisa.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:39Z"
+    },
+    {
+      "name": "ANSSI France",
+      "url": "https://www.ssi.gouv.fr",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:40Z"
+    },
+    {
+      "name": "European Council",
+      "url": "https://www.consilium.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:42Z"
+    },
+    {
+      "name": "High North News (Bodø)",
+      "url": "https://www.highnorthnews.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:42Z"
+    },
+    {
+      "name": "ISD (Institute for Strategic Dialogue)",
+      "url": "https://www.isdglobal.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:42Z"
+    },
+    {
+      "name": "Arctic Council",
+      "url": "https://arctic-council.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:46Z"
+    },
+    {
+      "name": "Belltower News (Germany)",
+      "url": "https://www.belltower.news",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.belltower.news/feed",
+          "title": "Belltower.News",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:46Z"
+    },
+    {
+      "name": "EUDA (EU Drugs Agency)",
+      "url": "https://www.euda.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.euda.europa.eu/news/rss.xml",
+          "title": "EUDA News",
+          "entry_count": 20,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:47Z"
+    },
+    {
+      "name": "Eye on the Arctic (Radio Canada)",
+      "url": "https://www.rcinet.ca/eye-on-the-arctic",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.rcinet.ca/feed",
+          "title": "Radio Canada International",
+          "entry_count": 2,
+          "feed_type": "rss20"
+        },
+        {
+          "feed_url": "https://www.rcinet.ca/en/feed",
+          "title": "RCI | English",
+          "entry_count": 25,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:47Z"
+    },
+    {
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:49Z"
+    },
+    {
+      "name": "NATO ENSEC CoE (Vilnius)",
+      "url": "https://www.enseccoe.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "ru",
+      "feeds": [
+        {
+          "feed_url": "https://www.enseccoe.org/feed",
+          "title": "NATO ENSEC COE",
+          "entry_count": 10,
+          "feed_type": "rss20"
+        }
+      ],
+      "status": "ok",
+      "tested_at": "2026-05-27T06:28:50Z"
+    },
+    {
+      "name": "The Independent Barents Observer",
+      "url": "https://thebarentsobserver.com",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:51Z"
+    },
+    {
+      "name": "NATO COE CSW (Kiel)",
+      "url": "https://www.coecsw.org",
+      "country": "russia",
+      "region": "europe",
+      "type": "think_tank",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:56Z"
+    },
+    {
+      "name": "EU SatCen",
+      "url": "https://www.satcen.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:56Z"
+    },
+    {
+      "name": "European Commission",
+      "url": "https://commission.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:28:59Z"
+    },
+    {
+      "name": "Eurojust",
+      "url": "https://www.eurojust.europa.eu",
+      "country": "russia",
+      "region": "europe",
+      "type": "news",
+      "language": "ru",
+      "feeds": [],
+      "status": "no_feed",
+      "tested_at": "2026-05-27T06:29:03Z"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-27T05:08:17.429Z",
+  "updatedAt": "2026-05-27T05:25:31.754Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -166,13 +166,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15.656900329817407,
+      "totalScore": 16.656900329817407,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-25T09:00:18.820Z",
+      "lastRecalledAt": "2026-05-27T05:25:31.754Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -189,7 +189,8 @@
         "859f13d9e78f",
         "f24e9c8723c1",
         "a7caaf53a02e",
-        "b40e808eaeb3"
+        "b40e808eaeb3",
+        "db415fb43a05"
       ],
       "recallDays": [
         "2026-04-28",
@@ -201,7 +202,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-27"
       ],
       "conceptTags": [
         "date/time",
@@ -221,13 +223,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 26,
+      "recallCount": 27,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 25.042409226740567,
+      "totalScore": 26.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
+      "lastRecalledAt": "2026-05-27T05:25:31.754Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -254,7 +256,8 @@
         "f24e9c8723c1",
         "a7caaf53a02e",
         "b40e808eaeb3",
-        "b9bf26d73c0d"
+        "b9bf26d73c0d",
+        "db415fb43a05"
       ],
       "recallDays": [
         "2026-04-28",
@@ -271,7 +274,8 @@
         "2026-05-12",
         "2026-05-23",
         "2026-05-25",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-05-27"
       ],
       "conceptTags": [
         "us-israel-iran",

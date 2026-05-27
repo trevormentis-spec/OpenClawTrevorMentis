@@ -1,0 +1,17 @@
+{
+  "board": "ukraine",
+  "title": "Ukraine Desk — Indicators & Warnings",
+  "version": 1,
+  "linked_desk": "ukraine",
+  "hypotheses": [
+    {"id":"h1","label":"Russia escalates with Oreshnik IRBM or strategic weapons","base_probability":65,"trend":"upward"},
+    {"id":"h2","label":"Ceasefire or freeze talks gain momentum","base_probability":25,"trend":"stable"}
+  ],
+  "indicators": [
+    {"id":"UA-IW-001","indicator":"Russia launches additional Oreshnik IRBM strikes on Ukrainian cities","hypothesis":"h1","direction":"confirming","observability":"ISW, Reuters, Ukrainian Air Force","time_bounds":"7 days","weight":"very_strong","status":"active","triggered":false},
+    {"id":"UA-IW-002","indicator":"Russian missile/drone strike exceeds 100 munitions in single wave","hypothesis":"h1","direction":"confirming","observability":"Ukrainian AF, ISW","time_bounds":"7 days","weight":"strong","status":"active","triggered":false},
+    {"id":"UA-IW-003","indicator":"Ukraine strikes Russian strategic bomber base or nuclear-capable asset","hypothesis":"h1","direction":"confirming","observability":"Ukrainian media, Russian MOD, satellite imagery","time_bounds":"14 days","weight":"strong","status":"active","triggered":false},
+    {"id":"UA-IW-004","indicator":"EU announces new tranche of military aid exceeding €5B","hypothesis":"h2","direction":"confirming","observability":"EU Council press release, Reuters","time_bounds":"14 days","weight":"moderate","status":"active","triggered":false}
+  ],
+  "postdiction_feedback": {"total_predictions_from_board":0,"correct":0,"incorrect":0,"unresolved":0}
+}

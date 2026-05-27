@@ -56,6 +56,14 @@ Memory is limited. If you want to remember something, WRITE IT TO A FILE.
 - Cron schedule is source of truth for delivery times. Don't manually send things early.
 - When a platform-specific integration is already available and eligible, implement that path first.
 
+### Cognition Memory Bridge (2026-05-27)
+
+Continuous cognition now promotes findings to durable memory:
+- **Episodic:** `brain/memory/episodic/YYYY-MM-DD.jsonl` — per-cycle notes (pipeline failures, auth issues, escalations, drift). Check at session startup for what happened overnight.
+- **Semantic:** `brain/memory/semantic/cognition-promotions.json` — durable learnings that should influence multiple sessions (auth failures, infrastructure issues).
+- **What gets promoted:** Pipeline FATAL/FAILED errors, auth key warnings, escalation events, narrative drift detections.
+- **What doesn't:** Routine cycle completions, no-change narratives, normal weak signals.
+
 ### Documentation Discipline
 
 - **Write it down in real time.** Every significant discovery, auth mechanism, trade decision, or operational detail MUST be written to `docs/ops/` during the session that produced it. Do not assume future-you will remember.

@@ -1,0 +1,163 @@
+{
+  "board": "iran",
+  "title": "Iran Desk — Indicators & Warnings",
+  "version": 1,
+  "created": "2026-05-27T05:35:00Z",
+  "last_updated": "2026-05-27T05:35:00Z",
+  "linked_desk": "iran",
+  "hypotheses": [
+    {
+      "id": "h1",
+      "label": "US-Iran nuclear deal within 90 days",
+      "base_probability": 62,
+      "trend": "stable",
+      "desk_assessment": "Philby Iran Desk: 62% across Jun/Jul/Aug. Bandar Abbas strikes + Doha talks create binary event."
+    },
+    {
+      "id": "h2",
+      "label": "No deal — continued sanctions + tension",
+      "base_probability": 38,
+      "trend": "stable",
+      "desk_assessment": "Complement to H1. Trump 'no hurry' signals + ISW MOU-unresolved assessment."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "IR-IW-001",
+      "indicator": "Doha/ Oman talks produce a joint communiqué or framework document",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "Reuters, Bloomberg, AP — searchable news event",
+      "time_bounds": "7 days",
+      "weight": "strong",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Would signal deal framework is finalized; MOU format means no Congressional entanglement."
+    },
+    {
+      "id": "IR-IW-002",
+      "indicator": "Trump publicly sets a deadline for Iran deal",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "Trump Truth Social, press conference, Reuters interview",
+      "time_bounds": "14 days",
+      "weight": "strong",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Trump's 'no hurry' statement currently weights against near-term deal"
+    },
+    {
+      "id": "IR-IW-003",
+      "indicator": "Strait of Hormuz shipping resumes (tanker crews evacuating)",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "Seatrade Maritime, Lloyd's List, TankerTrackers",
+      "time_bounds": "14 days",
+      "weight": "strong",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "NYT reporting backlog of 1,500 ships — actual clearance would be strong deal signal"
+    },
+    {
+      "id": "IR-IW-004",
+      "indicator": "IAEA reports increased inspector access to Iranian nuclear sites",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "IAEA quarterly report, Reuters, ISW/CTP Iran Update",
+      "time_bounds": "30 days",
+      "weight": "moderate",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Precursor to nuclear constraints verification"
+    },
+    {
+      "id": "IR-IW-005",
+      "indicator": "Trump states 'no hurry' or 'not rushing' into deal (repeat signal)",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "observability": "Reuters, Bloomberg, direct quote across 3+ language editions",
+      "time_bounds": "7 days",
+      "weight": "strong",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Repeated 'no hurry' language strengthens H2. Signal already triggered once (May 25)."
+    },
+    {
+      "id": "IR-IW-006",
+      "indicator": "IRGC conducts new military exercise or test in Strait of Hormuz",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "observability": "IRGC-affiliated media, ISW/CTP, Reuters, Gulf state intelligence",
+      "time_bounds": "14 days",
+      "weight": "moderate",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Escalation signal — IRGC reconstituting capabilities per ISW (B2)"
+    },
+    {
+      "id": "IR-IW-007",
+      "indicator": "Israeli airstrikes on Iranian or IRGC targets in Syria increase",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "observability": "Syrian state media, Israeli defense sources, SOHR",
+      "time_bounds": "14 days",
+      "weight": "moderate",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Israel operating with maximalist threat tolerance during negotiation window"
+    },
+    {
+      "id": "IR-IW-008",
+      "indicator": "Khamenei publicly endorses or authorizes nuclear negotiations",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "IRIB, state media, Reuters, Bloomberg Politics",
+      "time_bounds": "14 days",
+      "weight": "very_strong",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Supreme leader endorsement would be strongest single H1 signal. Bloomberg (May 25) framed Khamenei under pressure."
+    },
+    {
+      "id": "IR-IW-009",
+      "indicator": "KXUSAIRANAGREEMENT June contract moves above $0.15 (15%)",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "observability": "Kalshi API — daily check",
+      "time_bounds": "7 days",
+      "weight": "moderate",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Current price: $0.045 (4.5%). A move to $0.15 would signal market repricing toward desk assessment."
+    },
+    {
+      "id": "IR-IW-010",
+      "indicator": "KXUSAIRANAGREEMENT June contract drops below $0.02 (2%)",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "observability": "Kalshi API — daily check",
+      "time_bounds": "7 days",
+      "weight": "moderate",
+      "status": "active",
+      "last_checked": null,
+      "triggered": false,
+      "notes": "Would indicate market pricing for no-deal as the base case."
+    }
+  ],
+  "postdiction_feedback": {
+    "last_calibration_sync": null,
+    "total_predictions_from_board": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "unresolved": 0
+  }
+}

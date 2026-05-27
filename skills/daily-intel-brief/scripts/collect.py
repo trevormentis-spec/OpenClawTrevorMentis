@@ -84,12 +84,49 @@ LOCAL_LANGUAGE_FEEDS = [
 
     ("El País (Spanish)", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", "es", ("B", 2)),
     ("Corriere della Sera (Italian)", "https://xml2.corriereobjects.it/rss/esteri.xml", "it", ("B", 2)),
+
+    # --- EUROPE LOCAL-LANGUAGE / REGIONAL FEEDS (added 2026-05-27) ---
+    # 20 key multilingual Europe sources. Validated via Europe RSS feed scanner.
+    ("Politico Europe", "https://www.politico.eu/feed", "en", ("B", 2)),
+    ("EUobserver", "https://euobserver.com/feed", "en", ("B", 2)),
+    ("Euractiv", "https://www.euractiv.com/feed", "en", ("B", 2)),
+    ("Euronews", "https://www.euronews.com/rss", "en", ("B", 2)),
+    ("Balkan Insight", "https://balkaninsight.com/feed", "en", ("B", 2)),
+    ("VSquare", "https://vsquare.org/feed", "en", ("B", 2)),
+    ("OCCRP", "https://www.occrp.org/en/feed", "en", ("B", 2)),
+    ("Bellingcat", "https://www.bellingcat.com/feed", "en", ("B", 2)),
+    ("OSW", "https://www.osw.waw.pl/en/rss.xml", "en", ("A", 2)),
+    ("Gazeta Wyborcza", "https://wyborcza.pl", "pl", ("B", 2)),
+    ("Denník N", "https://dennikn.sk/feed", "sk", ("B", 2)),
+    ("Telex", "https://telex.hu", "hu", ("B", 2)),
+    ("Postimees", "https://www.postimees.ee/rss", "et", ("B", 2)),
+    ("ERR News", "https://news.err.ee/rss", "en", ("B", 2)),
+    ("Dagens Nyheter", "https://www.dn.se/rss", "sv", ("B", 2)),
+    ("Aftenposten", "https://www.aftenposten.no/rss", "no", ("B", 2)),
+    ("Politiken", "https://politiken.dk", "da", ("B", 2)),
+    ("Helsingin Sanomat", "https://www.hs.fi", "fi", ("B", 2)),
+    ("Kyiv Independent", "https://kyivindependent.com", "en", ("B", 2)),
+    ("Meduza", "https://meduza.io/rss/all", "ru", ("B", 2)),
     # Asian
 
     ("Channel News Asia", "https://www.channelnewsasia.com/rssfeeds/8395986", "en", ("B", 2)),
-    # Africa
-
+    # Africa — Tier-1 daily baseline (included every brief, never rotated out)
     ("Africanews", "https://www.africanews.com/feed/", "en", ("B", 2)),
+    ("ISS Africa", "https://issafrica.org/rss.xml", "en", ("A", 2)),
+    ("The Africa Report", "https://www.theafricareport.com/feed/", "en", ("B", 2)),
+    ("Premium Times (Nigeria)", "https://www.premiumtimesng.com/feed", "en", ("B", 2)),
+    ("Daily Maverick (SA)", "https://www.dailymaverick.co.za/feed/", "en", ("B", 2)),
+    ("Daily Nation (Kenya)", "https://nation.africa/feed/", "en", ("B", 2)),
+    ("Mada Masr (Egypt)", "https://www.madamasr.com/en/feed/", "en", ("B", 2)),
+    ("Hespress (Morocco)", "https://en.hespress.com/feed/", "en", ("B", 2)),
+    ("Radio Dabanga (Sudan)", "https://www.dabangasudan.org/en/feed", "en", ("B", 2)),
+    ("Addis Standard (Ethiopia)", "https://addisstandard.com/feed/", "en", ("B", 2)),
+    ("Actualité.cd (DRC)", "https://actualite.cd/feed/", "fr", ("B", 2)),
+    ("Radio Okapi (DRC)", "https://www.radiookapi.net/rss.xml", "fr", ("B", 2)),
+    ("Cabo Ligado (Mozambique)", "https://www.caboligado.com/feed/", "en", ("B", 2)),
+    ("Garowe Online (Somalia)", "https://www.garoweonline.com/feed/", "en", ("B", 2)),
+    ("HumAngle (Nigeria/Sahel)", "https://humanglemedia.com/feed/", "en", ("A", 2)),
+    ("Jeune Afrique", "https://www.jeuneafrique.com/feed/", "fr", ("B", 2)),
 
     # South America
     ("MercoPress", "https://en.mercopress.com/rss/latin-america", "en", ("B", 2)),

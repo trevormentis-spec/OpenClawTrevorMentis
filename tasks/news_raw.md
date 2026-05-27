@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-27 05:01 UTC
+# Gmail Intel Digest — 2026-05-27 07:01 UTC
 
 ## إسرائيل تقصف لبنان وتوسع عمليتها البرية خلف الخط الأصفر
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -38,31 +38,16 @@ Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/
 
 ---
 
-## Russian Offensive Campaign Assessment, May 26, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Tue, 26 May 2026 20:31:04 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War Russia and Belarus appear to be setting conditions to justify Russia launching drone strikes at Ukraine from Belarus. May 26, 2026 Assessment as of: 5:45 PM ET ﻿Data Cutoff: 12:45 PM ET Kateryna Shymkiv, Jennie Olmsted, Grace Mappes, Jakub Kostka, Diana Nasreddine, Anjou Kang-Stryker, and Karolina Hird TOPLINES Russia and Belarus appear to be setting conditions to justify Russia launching drone strikes at Ukraine from Belarus. Belarusian Security Council
+## AgentMail Intel — 2026-05-27 07:02 UTC
 
----
+### Greek VLCC hit explosion off Oman, Wartsila upping tech production capacity by 30%
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134583&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=e3debff256d54b23a
 
-## REGISTRATION IS OPEN
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Tue, 26 May 2026 23:00:11 +0000
-**Type:** newsletter | **Importance:** medium
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/registration-is-open?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=24e1aa883e-EMAIL_CAMPAIGN_2026_05_26_07_20&utm_medium=email&utm_term=0_-24e1aa883e-547824188&mc_cid=24e1aa883e&mc_eid=UNIQID
-
-THE CIPHER BRIEF THREAT CONFERENCE
-October 25-28, 2026
-www.tcbconference.com (http://thecipherbrief.com/?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=24e1aa883
-
----
-
-
-## AgentMail Intel — 2026-05-27 05:01 UTC
+### Are YOU at risk of the OnlyFans Hack?
+**From:** Ryan McBeth from The official Ryan McBeth Substack <ryanmcbeth@substack.com>  
+View this post on the web at https://ryanmcbeth.substack.com/p/are-you-at-risk-of-the-onlyfans-hack The OnlyFans "Hack" wasn't a hack. It was a "Correlation attack." The bad actor took screen scraped
 
 ### The World: Iceland warms to Europe
 **From:** The New York Times <nytdirect@nytimes.com>  
@@ -70,14 +55,3 @@ www.tcbconference.com (http://thecipherbrief.com/?utm_source=The+Cipher+Brief+Ni
 ### The chips are all-in for the trillion-dollar club
 **From:** John Authers <noreply@news.bloomberg.com>  
 Points of Return To get John Authers’ newsletter delivered directly to your inbox, sign up here. Thanks to the chips mania, Micron and SK Hynix join the tril View in browser <https://bloom.bg/4aa
-
-### Market Moves: SK Hynix Joins $1 Trillion Club on AI Memory Chip Dominance
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Bloomberg News Alert SK Hynix Joins $1 Trillion Club on AI Memory Chip Dominance
-
-### On Politics: Is Cornyn cooked?
-**From:** The New York Times <nytdirect@nytimes.com>  
-
-### 彭博财经早茶：中国或限制顶尖AI人才出境；美伊谈判拉锯
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Markets Daily China 中文版 <https://sli.bloomberg.com/click?s=1149264&li=18291386&m=758937c56eef1afe85b27e319f520191&p=05262026232821&lctg=e789e568-5d16-49a6-9961-e843

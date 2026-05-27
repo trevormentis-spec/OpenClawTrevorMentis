@@ -1,0 +1,95 @@
+{
+  "predictions": [
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-001",
+      "indicator": "Doha/ Oman talks produce a joint communiqu\u00e9 or framework document",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-002",
+      "indicator": "Trump publicly sets a deadline for Iran deal",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-003",
+      "indicator": "Strait of Hormuz shipping resumes (tanker crews evacuating)",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-004",
+      "indicator": "IAEA reports increased inspector access to Iranian nuclear sites",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 30,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-005",
+      "indicator": "Trump states 'no hurry' or 'not rushing' into deal (repeat signal)",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-006",
+      "indicator": "IRGC conducts new military exercise or test in Strait of Hormuz",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-007",
+      "indicator": "Israeli airstrikes on Iranian or IRGC targets in Syria increase",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-008",
+      "indicator": "Khamenei publicly endorses or authorizes nuclear negotiations",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-009",
+      "indicator": "KXUSAIRANAGREEMENT June contract moves above $0.15 (15%)",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "iran",
+      "indicator_id": "IR-IW-010",
+      "indicator": "KXUSAIRANAGREEMENT June contract drops below $0.02 (2%)",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    }
+  ],
+  "generated": "2026-05-27T05:33:43.015147+00:00"
+}

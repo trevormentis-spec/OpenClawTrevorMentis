@@ -10,6 +10,8 @@ Current docs:
 - `docs/ops/trade-journal-YYYY-MM-DD.md` — Session-by-session trade decisions and outcomes
 - `brain/memory/procedural/kalshi-trading.md` — Kalshi API auth, client usage, trade scripts
 
+**Cognition memory bridge (live):** continuous cognition writes detected issues to `brain/memory/episodic/YYYY-MM-DD.jsonl` and `brain/memory/semantic/cognition-promotions.json`. Check these at startup for overnight pipeline failures, auth issues, or drift alerts. See AGENTS.md for details.
+
 **Rule: document as you go.** Every session that produces analytical work, trades, or structural changes gets an entry in the appropriate `docs/ops/` file. Do not let knowledge die with the session.
 
 ## Core Identity

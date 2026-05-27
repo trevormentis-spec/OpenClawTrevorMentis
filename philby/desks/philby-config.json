@@ -30,7 +30,9 @@
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "ukraine": {
       "id": "ukraine",
@@ -42,7 +44,9 @@
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "us_china": {
       "id": "us_china",
@@ -54,7 +58,9 @@
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "cartel": {
       "id": "cartel",
@@ -68,7 +74,9 @@
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "energy": {
       "id": "energy",
@@ -83,7 +91,9 @@
       "keyword_filters": [],
       "model_tier": "flash",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "north_africa": {
       "id": "north_africa",
@@ -97,7 +107,9 @@
       "keyword_filters": [],
       "model_tier": "flash",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "sub_saharan_africa": {
       "id": "sub_saharan_africa",
@@ -112,7 +124,9 @@
       "keyword_filters": [],
       "model_tier": "flash",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": true
+      "seeded": true,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     },
     "dc_security": {
       "id": "dc_security",
@@ -124,7 +138,9 @@
       "keyword_filters": [],
       "model_tier": "pro",
       "delivery_target": "trevor_mentis@agentmail.to",
-      "seeded": false
+      "seeded": false,
+      "calibration_adjustment": 5,
+      "calibration_accuracy_pct": 7.5
     }
   }
 }

@@ -1,0 +1,24 @@
+
+    # --- EUROPE LOCAL-LANGUAGE / REGIONAL FEEDS (added 2026-05-27) ---
+    # 20 key multilingual Europe sources. Validated via Europe RSS feed scanner.
+
+    ("Politico Europe", "https://www.politico.eu/feed", "en", ("B", 2)),
+    ("EUobserver", "https://euobserver.com/feed", "en", ("B", 2)),
+    ("Euractiv", "https://www.euractiv.com/feed", "en", ("B", 2)),
+    ("Euronews", "https://www.euronews.com/rss", "en", ("B", 2)),
+    ("Balkan Insight", "https://balkaninsight.com/feed", "en", ("B", 2)),
+    ("VSquare", "https://vsquare.org/feed", "en", ("B", 2)),
+    ("OCCRP", "https://www.occrp.org/en/feed", "en", ("B", 2)),
+    ("Bellingcat", "https://www.bellingcat.com/feed", "en", ("B", 2)),
+    ("OSW", "https://www.osw.waw.pl/en/rss.xml", "en", ("A", 2)),
+    ("Gazeta Wyborcza", "https://wyborcza.pl", "pl", ("B", 2)),
+    ("Denník N", "https://dennikn.sk/feed", "sk", ("B", 2)),
+    ("Telex", "https://telex.hu", "hu", ("B", 2)),
+    ("Postimees", "https://www.postimees.ee/rss", "et", ("B", 2)),
+    ("ERR News", "https://news.err.ee/rss", "en", ("B", 2)),
+    ("Dagens Nyheter", "https://www.dn.se/rss", "sv", ("B", 2)),
+    ("Aftenposten", "https://www.aftenposten.no/rss", "no", ("B", 2)),
+    ("Politiken", "https://politiken.dk", "da", ("B", 2)),
+    ("Helsingin Sanomat", "https://www.hs.fi", "fi", ("B", 2)),
+    ("Kyiv Independent", "https://kyivindependent.com", "en", ("B", 2)),
+    ("Meduza", "https://meduza.io/rss/all", "ru", ("B", 2)),

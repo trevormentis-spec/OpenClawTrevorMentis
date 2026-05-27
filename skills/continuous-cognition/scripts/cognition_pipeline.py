@@ -623,6 +623,86 @@ def execute_escalations(state: dict) -> List[str]:
     return executed
 
 
+# ── Memory Promotion ───────────────────────────────────────────────
+
+def _promote_to_memory(state: dict, context: dict, summary: dict, result: dict):
+    """Promote cognition findings to durable memory files.
+    
+    Writes to brain/memory/episodic/ (daily session continuity)
+    and brain/memory/semantic/ (long-term learning).
+    """
+    import datetime as dt
+    today = dt.datetime.now(dt.UTC).strftime("%Y-%m-%d")
+    episodic_dir = BASE_DIR / "brain" / "memory" / "episodic"
+    semantic_file = BASE_DIR / "brain" / "memory" / "semantic" / "cognition-promotions.json"
+    episodic_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Collect notable events from this cycle
+    notes = []
+    
+    # Pipeline errors
+    for err in context.get("pipeline_errors", []):
+        notes.append(f"🔴 Pipeline failure: {err.get('log','?')} — {err.get('errors',['?'])[0]}")
+    
+    # Auth warnings
+    for warn in context.get("auth_warnings", []):
+        notes.append(f"⚡ Auth issue: {warn}")
+    
+    # Escalations
+    for esc in result.get("escalations", []):
+        if isinstance(esc, dict):
+            details = esc.get("detail", esc.get("reason", "?"))
+            notes.append(f"🔺 Escalation: {esc.get('level','?')} — {details}")
+    
+    # New weak signals
+    old_signal_count = context.get("_prev_weak_signals", 0)
+    new_signal_count = len(state.get("weak_signals", []))
+    if new_signal_count > old_signal_count and old_signal_count > 0:
+        notes.append(f"📡 {new_signal_count - old_signal_count} new weak signals detected (now {new_signal_count} total)")
+    
+    # Narrative shifts
+    drift_count = len(context.get("runtime_health", {}).get("drift", state.get("narrative_drift", {})))
+    if drift_count > 0:
+        notes.append(f"🔄 {drift_count} narratives showing drift")
+    
+    if not notes:
+        return  # Nothing noteworthy — skip writing
+    
+    # Write episodic entry (for daily session continuity)
+    episodic_path = episodic_dir / f"{today}.jsonl"
+    entry = {
+        "timestamp": dt.datetime.now(dt.UTC).isoformat(),
+        "cycle": state.get("cycle", 0),
+        "notes": notes,
+    }
+    try:
+        with open(episodic_path, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+    except Exception:
+        pass
+    
+    # Write/update semantic promotions (key learnings that cross sessions)
+    promotions = {}
+    if semantic_file.exists():
+        try:
+            promotions = json.loads(semantic_file.read_text())
+        except Exception:
+            promotions = {}
+    
+    # Only promote auth issues and pipeline failures to semantic (durable) memory
+    durable_notes = [n for n in notes if "🔴" in n or "⚡" in n]
+    if durable_notes:
+        promotions[today] = promotions.get(today, []) + durable_notes
+        # Deduplicate
+        promotions[today] = list(dict.fromkeys(promotions[today]))
+        try:
+            semantic_file.write_text(json.dumps(promotions, indent=2))
+        except Exception:
+            pass
+    
+    logger.info(f"Memory: {len(notes)} events promoted to episodic")
+
+
 # ── Main Cycle ──────────────────────────────────────────────────────
 
 def run_cognition_cycle(force: bool = False) -> dict:
@@ -696,6 +776,9 @@ def run_cognition_cycle(force: bool = False) -> dict:
     summary = snapshot_summary(state)
     result["summary"] = summary
     result["cycle"] = cycle
+
+    # ── Promote findings to durable memory ──
+    _promote_to_memory(state, context, summary, result)
 
     logger.info(
         f"Cycle {cycle}: ${cost:.4f} | "

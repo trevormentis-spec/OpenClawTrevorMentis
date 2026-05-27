@@ -1,0 +1,17 @@
+{
+  "board": "us_china",
+  "title": "US-China Desk — Indicators & Warnings",
+  "version": 1,
+  "linked_desk": "us_china",
+  "hypotheses": [
+    {"id":"h1","label":"Tariff escalation — PRC tariff rate exceeds 25%","base_probability":45,"trend":"upward"},
+    {"id":"h2","label":"Taiwan contingency — PLA exercises increase","base_probability":30,"trend":"stable"}
+  ],
+  "indicators": [
+    {"id":"CN-IW-001","indicator":"KXTARIFFRATEPRC >25% strike trades above $0.10 (10%)","hypothesis":"h1","direction":"confirming","observability":"Kalshi API","time_bounds":"7 days","weight":"moderate","status":"active","triggered":false},
+    {"id":"CN-IW-002","indicator":"US announces new export controls on semiconductor equipment to China","hypothesis":"h1","direction":"confirming","observability":"BIS press release, Reuters, Bloomberg","time_bounds":"14 days","weight":"strong","status":"active","triggered":false},
+    {"id":"CN-IW-003","indicator":"China conducts large-scale military exercise near Taiwan (50+ aircraft/ vessels)","hypothesis":"h2","direction":"confirming","observability":"Taiwan MOD, U.S. IndoPACOM, Reuters","time_bounds":"14 days","weight":"very_strong","status":"active","triggered":false},
+    {"id":"CN-IW-004","indicator":"US Treasury labels China a 'currency manipulator'","hypothesis":"h1","direction":"confirming","observability":"Treasury press release, Reuters, Bloomberg","time_bounds":"30 days","weight":"moderate","status":"active","triggered":false}
+  ],
+  "postdiction_feedback": {"total_predictions_from_board":0,"correct":0,"incorrect":0,"unresolved":0}
+}

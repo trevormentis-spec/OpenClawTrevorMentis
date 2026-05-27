@@ -1,0 +1,7 @@
+{
+  "2026-05-27": [
+    "\ud83d\udd34 Pipeline failure: daily-brief-2026-05-26.log \u2014 [2026-05-26T12:01:18Z] FATAL: collector exited with rc=1",
+    "\ud83d\udd34 Pipeline failure: daily-brief-2026-05-25.log \u2014 [2026-05-25T12:44:10Z] FATAL: Quality gates BLOCKED delivery: 1/7 gates blocking (BLOCKED \u2014 1/7 gates blocking delivery). Fix failures before re-running.",
+    "\ud83d\udd34 Pipeline failure: daily-brief-2026-05-24.log \u2014 [collect 12:06:50] fetch failed for https://www.tap.info.tn/en/rss.xml: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+  ]
+}

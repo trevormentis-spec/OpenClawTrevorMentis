@@ -28,7 +28,7 @@ if [ -d "$LANDING_REPO/.git" ]; then
     cd "$LANDING_REPO" && git pull origin main 2>&1 | tee -a "$LOG"
 else
     rm -rf "$LANDING_REPO"
-    git clone git@github.com:trevormentis-spec/trevor-landing-page.git "$LANDING_REPO" 2>&1 | tee -a "$LOG"
+    git clone git@github.com-trevormentis:trevormentis-spec/trevor-landing-page.git "$LANDING_REPO" 2>&1 | tee -a "$LOG"
 fi
 
 # ── Get latest brief data ──

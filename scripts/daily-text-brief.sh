@@ -208,6 +208,22 @@ python3 "$REPO/scripts/postdict.py" \
 set -e 2>/dev/null || true
 
 # =========================================================================
+# STEP 5b: I&W FEEDBACK LOOP — connect calibration to Philby desks
+# =========================================================================
+echo "--- Running I&W feedback loop ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/iw_feedback_loop.py" --all >> "$LOG" 2>&1
+set -e 2>/dev/null || true
+
+# =========================================================================
+# STEP 5c: RECHECK EXPIRED PREDICTIONS — force-resolve expired judgments
+# =========================================================================
+echo "--- Rechecking expired predictions ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/postdict.py" --recheck >> "$LOG" 2>&1
+set -e 2>/dev/null || true
+
+# =========================================================================
 # STEP 6: MOLTBOOK — post brief to agent social network
 # =========================================================================
 echo "--- Posting to Moltbook ---" | tee -a "$LOG"
