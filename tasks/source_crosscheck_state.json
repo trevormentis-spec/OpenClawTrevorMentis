@@ -349,7 +349,31 @@
         "Hottest May day on record in UK as temperatures pass 34C",
         "Social media as bad for young people as smoking, top doctors say"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-27T03:02:55.731821+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 32,
+      "checked_at": "2026-05-27T03:02:55.891356+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Labour has 'no coherent plan' for country, says Blair",
+        "UK's hottest May day record broken for second day in a row",
+        "Body found in search for boy, 12, missing in river"
+      ]
     }
   ],
-  "last_updated": "2026-05-26T03:02:56.676259+00:00"
+  "last_updated": "2026-05-27T03:02:55.891584+00:00"
 }

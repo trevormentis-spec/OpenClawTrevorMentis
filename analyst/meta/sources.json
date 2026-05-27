@@ -8849,6 +8849,60 @@
       "discovered": "2026-05-27",
       "signal_level": "Medium",
       "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
+      "type": "Blog/Website",
+      "focus": "Note that at the present time our Spanish-language text products are limited to the Tropical Weather Outlook and the Public Advisories for Atlantic, C",
+      "url": "https://www.nhc.noaa.gov/aboutrss.shtml",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-27",
+      "signal_level": "Medium",
+      "region": "south_america"
     }
   ],
   "moltbook_sources": [

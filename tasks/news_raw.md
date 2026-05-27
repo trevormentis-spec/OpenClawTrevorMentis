@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-05-27 01:01 UTC
+# Gmail Intel Digest — 2026-05-27 03:01 UTC
+
+## Iran Update Special Report, May 26, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Tue, 26 May 2026 21:45:48 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Iran and the United States have not bridged key differences on all the major demands in the US-Iran talks. May 26, 2026 Data Cutoff: 2:00 PM ET Katherine Wells, Adham Fattah, Parker Hempel, Carolyn Moorman, and Brian Carter TOPLINES Iran and the United States have not bridged key differences on all the major demands in the US-Iran talks. Iranian officials said that they are unwilling to discuss their nuclear program on May 25, and Iranian regime media on
+
+---
 
 ## Iran Update Evening Special Report: May 26, 2026, 02:00 PM ET
 **From:** CTP Publications <criticalthreats@aei.org>
@@ -72,29 +81,8 @@ EML-Geocoding-asset-tracking-05-21-2026 (https://d60YtG04.na1.hubspotlinks.com/C
 
 ---
 
-## Skipping chemo in high-risk breast cancer
-**From:** Reuters Health Rounds <healthrounds@thomsonreuters.com>
-**Date:** Tue, 26 May 2026 16:31:08 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-## National Security Nightcap for Tuesday, May 26
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Tue, 26 May 2026 19:56:17 +0000
-**Type:** alert | **Importance:** high
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-tuesday-may-26?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=db21ba8af4-EMAIL_CAMPAIGN_2026_05_26_07_53&utm_medium=email&utm_term=0_-db21ba8af4-547824188&mc_cid=db21ba8af4&mc_eid=UNIQID
-
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=db21ba8af4-EMAIL_CAMPAIGN_2026_05_26_07_53&utm_medium
-
----
-
-
-## AgentMail Intel — 2026-05-27 01:01 UTC
+## AgentMail Intel — 2026-05-27 03:01 UTC
 
 ### Market Moves: SK Hynix Joins $1 Trillion Club on AI Memory Chip Dominance
 **From:** Bloomberg <noreply@news.bloomberg.com>  
