@@ -754,6 +754,13 @@ def run_cognition_cycle(force: bool = False) -> dict:
         result["status"] = "primary_error"
         return result
 
+    if not isinstance(primary_output, dict):
+        logger.warning(f"Primary returned non-dict ({type(primary_output).__name__}) — JSON was a string, not object")
+        mark_error(state, f"Primary returned non-dict (cycle {cycle})")
+        save_state(state)
+        result["status"] = "primary_error"
+        return result
+
     record_token_spend(state, cost)
 
     # Apply state update

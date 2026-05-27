@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-27 07:01 UTC
+# Gmail Intel Digest — 2026-05-27 09:13 UTC
 
 ## إسرائيل تقصف لبنان وتوسع عمليتها البرية خلف الخط الأصفر
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -27,19 +27,20 @@ Email from Institute for the Study of War Iran and the United States have not br
 
 ---
 
-## Iran Update Evening Special Report: May 26, 2026, 02:00 PM ET
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Tue, 26 May 2026 20:45:58 -0400
-**Type:** unknown | **Importance:** low
 
-A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+## AgentMail Intel — 2026-05-27 09:14 UTC
 
-Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVDXvS4kcynzW8m0GcM2qdnSnW48Yhp75Py83pN8hWs5j3pyd0W8wLKSR6lZ3nWW11v-nN4-2zXzW5vtj3913CKzNW1JTmbN691SzrN7XvkYKYxssLW3pmwCq63zBGdW28s9Xd14mMKyMcqn4fZQYl4W3xddy96JZJN8W8FKWPf7mp_jTW7SDZG-654pDLVdKF3b5CQbVTW6mCytJ3VswCWW6k0kWs1F8PJgW8Nz-0_87B3CnVx_jZx4-dcV4W8Gg3kz1_XV1yW8tcsmP5ZfPcsW5VRJ8C19
+### Hong Kong tops Switzerland
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Hong Kong Surpasses Switzerland as Top Offshore Wealth Hub Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
----
+### What's inside HASC's $1.15T defense policy bill
+**From:** Breaking Defense Daily <newsletters@breakingdefense.com>  
+Today's top news. __________________________________________________________________________________________________________________________________ Advanced autonomy. Unlimited potential. (https://
 
-
-## AgentMail Intel — 2026-05-27 07:02 UTC
+### Event: How elections weaponise East and Southern Africa's informal settlements
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+27 MAY 2026 [1] How elections weaponise East and Southern Africa's informal settlements Date: 3 June 2026 Time: 09h00 – 10h30 (GMT+2) Venue: Online via[2] Zoom E
 
 ### Greek VLCC hit explosion off Oman, Wartsila upping tech production capacity by 30%
 **From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  

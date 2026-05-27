@@ -200,6 +200,14 @@
     "ionsec-threat-intel": {
       "version": "1.0.1",
       "installedAt": 1779786271050
+    },
+    "threat-actor-osint": {
+      "version": "1.0.0",
+      "installedAt": 1779873183306
+    },
+    "causal-graph": {
+      "version": "1.0.0",
+      "installedAt": 1779873183666
     }
   }
 }

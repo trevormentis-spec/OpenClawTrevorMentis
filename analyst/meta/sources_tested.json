@@ -1,1805 +1,5 @@
 [
   {
-    "name": "Egyptindependent",
-    "url": "https://egyptindependent.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Eiti",
-    "url": "https://eiti.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Elwatan-Dz",
-    "url": "https://elwatan-dz.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "En",
-    "url": "https://en.hespress.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "En",
-    "url": "https://en.igihe.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Enactafrica",
-    "url": "https://enactafrica.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "English",
-    "url": "https://english.ahram.org.eg",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ethioinsight",
-    "url": "https://ethioinsight.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Expansao",
-    "url": "https://expansao.co.ao",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Expressodasilhas",
-    "url": "https://expressodasilhas.cv",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Eyeradio",
-    "url": "https://eyeradio.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Faso7",
-    "url": "https://faso7.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Fij",
-    "url": "https://fij.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Foroyaa",
-    "url": "https://foroyaa.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Fr",
-    "url": "https://fr.hespress.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Fr",
-    "url": "https://fr.le360.ma",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Fr",
-    "url": "https://fr.saharamedias.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Frontpageafricaonline",
-    "url": "https://frontpageafricaonline.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Gabonmediatime",
-    "url": "https://gabonmediatime.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Gate",
-    "url": "https://gate.ahram.org.eg",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Gga",
-    "url": "https://gga.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Globalinitiative",
-    "url": "https://globalinitiative.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Gna",
-    "url": "https://gna.org.gh",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Guardian",
-    "url": "https://guardian.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Guineenews",
-    "url": "https://guineenews.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Habarileo",
-    "url": "https://habarileo.co.tz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Halqabsi",
-    "url": "https://halqabsi.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Horseedmedia",
-    "url": "https://horseedmedia.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Hsf",
-    "url": "https://hsf.org.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Iafrikan",
-    "url": "https://iafrikan.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Igad",
-    "url": "https://igad.int",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Igarape",
-    "url": "https://igarape.org.br",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Igfm",
-    "url": "https://igfm.sn",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Inkyfada",
-    "url": "https://inkyfada.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Investigativecenters",
-    "url": "https://investigativecenters.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ipisresearch",
-    "url": "https://ipisresearch.be",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ipss-Addis",
-    "url": "https://ipss-addis.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Irr",
-    "url": "https://irr.org.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Issafrica",
-    "url": "https://issafrica.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Issafrica",
-    "url": "https://issafrica.org/crimehub",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Kapitalis",
-    "url": "https://kapitalis.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lana",
-    "url": "https://lana.gov.ly",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lapresse",
-    "url": "https://lapresse.tn",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Laprosperiteonline",
-    "url": "https://laprosperiteonline.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Leadership",
-    "url": "https://leadership.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lefaso",
-    "url": "https://lefaso.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lematin",
-    "url": "https://lematin.ma",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lepotentiel",
-    "url": "https://lepotentiel.cd",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lestimes",
-    "url": "https://lestimes.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Lexpress",
-    "url": "https://lexpress.mg",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Libya24",
-    "url": "https://libya24.tv",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Libyaupdate",
-    "url": "https://libyaupdate.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Malawi24",
-    "url": "https://malawi24.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Maliactu",
-    "url": "https://maliactu.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Medias24",
-    "url": "https://medias24.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Miningindaba",
-    "url": "https://miningindaba.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Mixedmigration",
-    "url": "https://mixedmigration.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Mo",
-    "url": "https://mo.ibrahim.foundation",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Mod",
-    "url": "https://mod.go.ke",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Monusco",
-    "url": "https://monusco.unmissions.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Mosaiqueguinee",
-    "url": "https://mosaiqueguinee.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Mwnation",
-    "url": "https://mwnation.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nannews",
-    "url": "https://nannews.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nation",
-    "url": "https://nation.africa/kenya",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nawaat",
-    "url": "https://nawaat.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nbs",
-    "url": "https://nbs.ug",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "New",
-    "url": "https://new.observer.org.sz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Neweralive",
-    "url": "https://neweralive.na",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "News",
-    "url": "https://news.abidjan.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "News",
-    "url": "https://news.mongabay.com/africa",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nilepost",
-    "url": "https://nilepost.co.ug",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Npf",
-    "url": "https://npf.gov.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Nsa",
-    "url": "https://nsa.gov.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ntvkenya",
-    "url": "https://ntvkenya.co.ke",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Odemocratagb",
-    "url": "https://odemocratagb.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Opais",
-    "url": "https://opais.co.mz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Panapress",
-    "url": "https://panapress.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Pesacheck",
-    "url": "https://pesacheck.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Publiceyenews",
-    "url": "https://publiceyenews.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Radiodalsan",
-    "url": "https://radiodalsan.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Reliefweb",
-    "url": "https://reliefweb.int/countries",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Republic",
-    "url": "https://republic.com.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Resourcegovernance",
-    "url": "https://resourcegovernance.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Rwandatoday",
-    "url": "https://rwandatoday.africa",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Saharareporters",
-    "url": "https://saharareporters.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Saiia",
-    "url": "https://saiia.org.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Sea-Watch",
-    "url": "https://sea-watch.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Shabait",
-    "url": "https://shabait.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Shabellemedia",
-    "url": "https://shabellemedia.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Somaliguardian",
-    "url": "https://somaliguardian.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Somalilandstandard",
-    "url": "https://somalilandstandard.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Sonna",
-    "url": "https://sonna.so",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Sosmediasburundi",
-    "url": "https://sosmediasburundi.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Standard",
-    "url": "https://standard.gm",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Stv",
-    "url": "https://stv.co.mz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Sudantribune",
-    "url": "https://sudantribune.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Sudanwarmonitor",
-    "url": "https://sudanwarmonitor.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Suna-Sd",
-    "url": "https://suna-sd.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Tchadinfos",
-    "url": "https://tchadinfos.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Telquel",
-    "url": "https://telquel.ma",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Thecjid",
-    "url": "https://thecjid.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Thefourthestategh",
-    "url": "https://thefourthestategh.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Themusebaproject",
-    "url": "https://themusebaproject.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Thenationonlineng",
-    "url": "https://thenationonlineng.net",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Theniche",
-    "url": "https://theniche.ng",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Thepoint",
-    "url": "https://thepoint.gm",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Thesentry",
-    "url": "https://thesentry.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Timep",
-    "url": "https://timep.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Tmh",
-    "url": "https://tmh.media",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Verdade",
-    "url": "https://verdade.co.mz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Viewfinder",
-    "url": "https://viewfinder.org.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Waltainfo",
-    "url": "https://waltainfo.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "24Haubenin",
-    "url": "https://www.24haubenin.info",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "3Ayin",
-    "url": "https://www.3ayin.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "702",
-    "url": "https://www.702.co.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Acaps",
-    "url": "https://www.acaps.org",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Accord",
-    "url": "https://www.accord.org.za",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Actuniger",
-    "url": "https://www.actuniger.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Adelphi",
-    "url": "https://www.adelphi.de/en",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Adiac-Congo",
-    "url": "https://www.adiac-congo.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Afp",
-    "url": "https://www.afp.com/fr/agence/presence-dans-le-monde/afrique",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Africa-Confidential",
-    "url": "https://www.africa-confidential.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Africaintelligence",
-    "url": "https://www.africaintelligence.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Africanews",
-    "url": "https://www.africanews.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Africom",
-    "url": "https://www.africom.mil",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Afro",
-    "url": "https://www.afro.who.int",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Agenceecofin",
-    "url": "https://www.agenceecofin.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ahoraeg",
-    "url": "https://www.ahoraeg.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Aib",
-    "url": "https://www.aib.media",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Aim",
-    "url": "https://www.aim.org.mz",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Aip",
-    "url": "https://www.aip.ci",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Akhbarona",
-    "url": "https://www.akhbarona.com",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Algerie360",
-    "url": "https://www.algerie360.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Almasryalyoum",
-    "url": "https://www.almasryalyoum.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Alwihdainfo",
-    "url": "https://www.alwihdainfo.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Amap",
-    "url": "https://www.amap.ml",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Ami",
-    "url": "https://www.ami.mr",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Angop",
-    "url": "https://www.angop.ao",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Anp",
-    "url": "https://www.anp.ne",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Aps",
-    "url": "https://www.aps.dz",
-    "region": "north_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Arise",
-    "url": "https://www.arise.tv",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Asemana",
-    "url": "https://www.asemana.publ.cv",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Banouto",
-    "url": "https://www.banouto.bj",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Beamreports",
-    "url": "https://www.beamreports.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Businessdailyafrica",
-    "url": "https://www.businessdailyafrica.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Businesslive",
-    "url": "https://www.businesslive.co.za/bd",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Businessnews",
-    "url": "https://www.businessnews.com.tn",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Caboligado",
-    "url": "https://www.caboligado.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Camer",
-    "url": "https://www.camer.be",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
-    "name": "Cameroon-Concord",
-    "url": "https://www.cameroon-concord.com",
-    "region": "sub_saharan_africa",
-    "language": "en",
-    "admiralty": [
-      "B",
-      2
-    ],
-    "type": "news",
-    "notes": "from africa-osint-sources.md"
-  },
-  {
     "name": "Cameroon-Tribune",
     "url": "https://www.cameroon-tribune.cm",
     "region": "sub_saharan_africa",
@@ -11438,5 +9638,1055 @@
     "status": "ok",
     "code": 200,
     "tested_at": "2026-05-27T06:59:48Z"
+  },
+  {
+    "name": "Samoa Observer",
+    "url": "https://www.samoaobserver.ws",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:20Z"
+  },
+  {
+    "name": "Vanuatu Daily Post",
+    "url": "https://www.dailypost.vu",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:20Z"
+  },
+  {
+    "name": "Morocco World News",
+    "url": "https://www.moroccoworldnews.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:20Z"
+  },
+  {
+    "name": "Vanguard (Nigeria)",
+    "url": "https://www.vanguardngr.com",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:20Z"
+  },
+  {
+    "name": "El Comercio (Peru)",
+    "url": "https://elcomercio.pe",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:20Z"
+  },
+  {
+    "name": "La Tercera (Chile)",
+    "url": "https://www.latercera.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:21Z"
+  },
+  {
+    "name": "Tashkent Times (Uzbekistan)",
+    "url": "https://tashkenttimes.uz",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:22Z"
+  },
+  {
+    "name": "Sudan Tribune",
+    "url": "https://www.sudantribune.com",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:23Z"
+  },
+  {
+    "name": "El Nuevo D\u00eda (Puerto Rico)",
+    "url": "https://www.elnuevodia.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:23Z"
+  },
+  {
+    "name": "The Nassau Guardian (Bahamas)",
+    "url": "https://thenassauguardian.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:23Z"
+  },
+  {
+    "name": "Top Telegram Channels for Geopolitics & Live War News (2026)",
+    "url": "https://www.soamjena.com/blog/telegram-channels-geopolitics-news",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:24Z"
+  },
+  {
+    "name": "Software for Telegram Monitoring and Telegram OSINT",
+    "url": "https://www.osavul.cloud/solutions/nebula/telegram-osavul",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:24Z"
+  },
+  {
+    "name": "r/OSINT on Reddit: Looking for OSINT channels that provide real-time breaking news alerts",
+    "url": "https://www.reddit.com/r/OSINT/comments/1qnb8m4/looking_for_osint_channels_that_provide_realtime/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "The Go1ano Case: OSINT in Brazil\u2019s Malware Ground Zero | OSINT Case Study",
+    "url": "https://www.osint.industries/project/the-go1ano-case-osint-in-brazils-malware-ground-zero",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "r/OSINT on Reddit: Venezuela telegram groups",
+    "url": "https://www.reddit.com/r/OSINT/comments/186rbor/venezuela_telegram_groups/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "Telegram-OSINT download | SourceForge.net",
+    "url": "https://sourceforge.net/projects/telegram-osint.mirror/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "OSINT in Africa: SOCMINT Strategies Across the Continent",
+    "url": "https://www.osint.industries/post/osint-in-africa-socmint-strategies-across-the-continent",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "Exposing Extremism Networks in Sub-Saharan Africa Using Open Source Tools \u2013 Global Investigative Journalism Network",
+    "url": "https://gijn.org/stories/expose-extremism-networks-africa-open-source/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:25Z"
+  },
+  {
+    "name": "Top Telegram Channels for Geopolitics & Live War News (2026)",
+    "url": "https://www.soamjena.com/blog/telegram-channels-geopolitics-news",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:26Z"
+  },
+  {
+    "name": "Tracking the U.S.-Israel-Iran War with OSINT Tools: A Practical Guide",
+    "url": "https://socradar.io/blog/us-israel-iran-war-osint-track/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:26Z"
+  },
+  {
+    "name": "4 OSINT Tools for Monitoring Iran and the Middle East",
+    "url": "https://www.specialeurasia.com/2026/03/03/4-osint-tools-middle-east-iran/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:27Z"
+  },
+  {
+    "name": "Fog, Proxies and Uncertainty: Cyber in US-Israeli Operations in Iran | Royal United Services Institute",
+    "url": "https://www.rusi.org/explore-our-research/publications/commentary/fog-proxies-and-uncertainty-cyber-us-israeli-operations-iran",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:29Z"
+  },
+  {
+    "name": "r/OSINT on Reddit: Any OSINT enthusiast in Southeast Asia or Asia?",
+    "url": "https://www.reddit.com/r/OSINT/comments/1f00thf/any_osint_enthusiast_in_southeast_asia_or_asia/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:29Z"
+  },
+  {
+    "name": "Myanmar\u2019s Silent Digital Crisis",
+    "url": "https://thediplomat.com/2024/09/myanmars-silent-digital-crisis/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:29Z"
+  },
+  {
+    "name": "Philippines, China to set up new channels to handle South China Sea rows, source and document say | The Straits Times",
+    "url": "https://www.straitstimes.com/asia/philippines-china-to-set-up-new-channels-to-handle-south-china-sea-rows-source-and-document-say",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:30Z"
+  },
+  {
+    "name": "Pacific Islands News Roundup \u2013 April 2 \u2013 9, 2026",
+    "url": "https://pireport.org/2026/04/09/pacific-islands-news-roundup-april-2-9-2026/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:30Z"
+  },
+  {
+    "name": "Pacific Islands News Roundup \u2013 May 7 \u2013 13, 2026",
+    "url": "https://pireport.org/2026/05/14/pacific-islands-news-roundup-may-7-13-2026/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:30Z"
+  },
+  {
+    "name": "PINA | Pacific Islands News Association",
+    "url": "https://pina.com.fj/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:31Z"
+  },
+  {
+    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+    "status": "error",
+    "code": null,
+    "tested_at": "2026-05-27T07:29:41Z"
+  },
+  {
+    "name": "Regional Security Architecture Programme - RSIS",
+    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:41Z"
+  },
+  {
+    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+    "url": "https://bookshop.iseas.edu.sg/publication/1547",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:42Z"
+  },
+  {
+    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:50Z"
+  },
+  {
+    "name": "Regional Security Architecture Programme - RSIS",
+    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:50Z"
+  },
+  {
+    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+    "url": "https://bookshop.iseas.edu.sg/publication/1547",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:51Z"
+  },
+  {
+    "name": "Oceania | Council on Foreign Relations",
+    "url": "https://www.cfr.org/oceania",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:52Z"
+  },
+  {
+    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:53Z"
+  },
+  {
+    "name": "Great Power Geopolitics and the Scramble for Oceania | Geopolitical Monitor",
+    "url": "https://www.geopoliticalmonitor.com/great-power-geopolitics-and-the-scramble-for-oceania/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:53Z"
+  },
+  {
+    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:54Z"
+  },
+  {
+    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
+    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:54Z"
+  },
+  {
+    "name": "Indian government set to block Polymarket, Kalshi to crack down on prediction markets - India Today",
+    "url": "https://www.indiatoday.in/technology/news/story/indian-government-set-to-block-polymarket-kalshi-to-crack-down-on-prediction-markets-2915339-2026-05-22",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:54Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:54Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:54Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:55Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:29:55Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:55Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:56Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:56Z"
+  },
+  {
+    "name": "60 Best Political News RSS Feeds",
+    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:56Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:56Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:29:56Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:19Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-27T07:59:19Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:19Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:19Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:20Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:20Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:21Z"
+  },
+  {
+    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
+    "url": "https://www.afro.who.int/rss-feeds",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:22Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:22Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:22Z"
+  },
+  {
+    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
+    "url": "https://www.afro.who.int/rss-feeds",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:23Z"
+  },
+  {
+    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:28Z"
+  },
+  {
+    "name": "Middle East: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:28Z"
+  },
+  {
+    "name": "Middle East Conflict Monitor | ACLED",
+    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:29Z"
+  },
+  {
+    "name": "Central Asia: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:31Z"
+  },
+  {
+    "name": "Russia-China Relations in Central Asia - CEPA",
+    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:32Z"
+  },
+  {
+    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:32Z"
+  },
+  {
+    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:40Z"
+  },
+  {
+    "name": "Regional Security Architecture Programme - RSIS",
+    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:40Z"
+  },
+  {
+    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+    "url": "https://bookshop.iseas.edu.sg/publication/1547",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:41Z"
+  },
+  {
+    "name": "Oceania | Council on Foreign Relations",
+    "url": "https://www.cfr.org/oceania",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:42Z"
+  },
+  {
+    "name": "The global contest for the Pacific | Lowy Institute",
+    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:45Z"
+  },
+  {
+    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:47Z"
+  },
+  {
+    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:47Z"
+  },
+  {
+    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:48Z"
+  },
+  {
+    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
+    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:48Z"
+  },
+  {
+    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:48Z"
+  },
+  {
+    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:48Z"
+  },
+  {
+    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
+    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:48Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:49Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:49Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:49Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:49Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:49Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "U.S. News and National Top Stories : NPR",
+    "url": "https://www.npr.org/sections/national/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:50Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:51Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:51Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T07:59:51Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:52Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:52Z"
+  },
+  {
+    "name": "U.S. News and National Top Stories : NPR",
+    "url": "https://www.npr.org/sections/national/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:52Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:52Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T07:59:52Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:01Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:01Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-27T09:00:01Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:01Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:01Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:02Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:03Z"
+  },
+  {
+    "name": "Africa Intelligence: exclusive news on Africa",
+    "url": "https://www.africaintelligence.com/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:03Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:03Z"
+  },
+  {
+    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:08Z"
+  },
+  {
+    "name": "Middle East: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:08Z"
+  },
+  {
+    "name": "Middle East Conflict Monitor | ACLED",
+    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:09Z"
+  },
+  {
+    "name": "Central Asia: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:11Z"
+  },
+  {
+    "name": "Russia-China Relations in Central Asia - CEPA",
+    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:12Z"
+  },
+  {
+    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:12Z"
+  },
+  {
+    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:20Z"
+  },
+  {
+    "name": "Regional Security Architecture Programme - RSIS",
+    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:20Z"
+  },
+  {
+    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+    "url": "https://bookshop.iseas.edu.sg/publication/1547",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:21Z"
+  },
+  {
+    "name": "Oceania | Council on Foreign Relations",
+    "url": "https://www.cfr.org/oceania",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:22Z"
+  },
+  {
+    "name": "The global contest for the Pacific | Lowy Institute",
+    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:22Z"
+  },
+  {
+    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:24Z"
+  },
+  {
+    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
+    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:24Z"
+  },
+  {
+    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
+    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:24Z"
+  },
+  {
+    "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
+    "url": "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:25Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:25Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:25Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:25Z"
+  },
+  {
+    "name": "U.S. News and National Top Stories : NPR",
+    "url": "https://www.npr.org/sections/national/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:26Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:26Z"
+  },
+  {
+    "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+    "url": "https://www.nbcnews.com/politics/national-security",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:27Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:27Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:27Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:27Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:28Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:28Z"
+  },
+  {
+    "name": "Africa Intelligence: exclusive news on Africa",
+    "url": "https://www.africaintelligence.com/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:28Z"
+  },
+  {
+    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:28Z"
+  },
+  {
+    "name": "Middle East Conflict Monitor | ACLED",
+    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:29Z"
+  },
+  {
+    "name": "Middle East: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:29Z"
+  },
+  {
+    "name": "Central Asia: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:29Z"
+  },
+  {
+    "name": "Russia-China Relations in Central Asia - CEPA",
+    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:29Z"
+  },
+  {
+    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:29Z"
+  },
+  {
+    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
+    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
+    "status": "error",
+    "code": null,
+    "tested_at": "2026-05-27T09:00:38Z"
+  },
+  {
+    "name": "Regional Security Architecture Programme - RSIS",
+    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-27T09:00:38Z"
+  },
+  {
+    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
+    "url": "https://bookshop.iseas.edu.sg/publication/1547",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:39Z"
+  },
+  {
+    "name": "Oceania | Council on Foreign Relations",
+    "url": "https://www.cfr.org/oceania",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:40Z"
+  },
+  {
+    "name": "The global contest for the Pacific | Lowy Institute",
+    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:40Z"
+  },
+  {
+    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:41Z"
+  },
+  {
+    "name": "Middle East Politics Newsletter | Substack",
+    "url": "https://mideastpolitics.substack.com/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:41Z"
+  },
+  {
+    "name": "\ud83d\udcaa\ud83c\uddfa\ud83c\udde6 The War Comes Home: Ukraine Strikes the Heart of Moscow",
+    "url": "https://brentmolnar.substack.com/p/the-war-comes-home-ukraine-strikes",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-27T09:00:42Z"
   }
 ]
