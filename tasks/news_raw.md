@@ -1,4 +1,24 @@
-# Gmail Intel Digest — 2026-05-26 23:01 UTC
+# Gmail Intel Digest — 2026-05-27 01:01 UTC
+
+## Iran Update Evening Special Report: May 26, 2026, 02:00 PM ET
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Tue, 26 May 2026 20:45:58 -0400
+**Type:** unknown | **Importance:** low
+
+A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+
+Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVDXvS4kcynzW8m0GcM2qdnSnW48Yhp75Py83pN8hWs5j3pyd0W8wLKSR6lZ3nWW11v-nN4-2zXzW5vtj3913CKzNW1JTmbN691SzrN7XvkYKYxssLW3pmwCq63zBGdW28s9Xd14mMKyMcqn4fZQYl4W3xddy96JZJN8W8FKWPf7mp_jTW7SDZG-654pDLVdKF3b5CQbVTW6mCytJ3VswCWW6k0kWs1F8PJgW8Nz-0_87B3CnVx_jZx4-dcV4W8Gg3kz1_XV1yW8tcsmP5ZfPcsW5VRJ8C19
+
+---
+
+## Russian Offensive Campaign Assessment, May 26, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Tue, 26 May 2026 20:31:04 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Russia and Belarus appear to be setting conditions to justify Russia launching drone strikes at Ukraine from Belarus. May 26, 2026 Assessment as of: 5:45 PM ET ﻿Data Cutoff: 12:45 PM ET Kateryna Shymkiv, Jennie Olmsted, Grace Mappes, Jakub Kostka, Diana Nasreddine, Anjou Kang-Stryker, and Karolina Hird TOPLINES Russia and Belarus appear to be setting conditions to justify Russia launching drone strikes at Ukraine from Belarus. Belarusian Security Council
+
+---
 
 ## REGISTRATION IS OPEN
 **From:** The Cipher Brief <dailybrief@thecipherbrief.com>
@@ -73,26 +93,19 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 
 ---
 
-## Stellantis’ new era of alliances
-**From:** Reuters Auto File <autofile@thomsonreuters.com>
-**Date:** Tue, 26 May 2026 14:58:08 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-05-27 01:01 UTC
 
----
+### Market Moves: SK Hynix Joins $1 Trillion Club on AI Memory Chip Dominance
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert SK Hynix Joins $1 Trillion Club on AI Memory Chip Dominance
 
-## This Week: The sticking point in a potential U.S.-Iran deal
-**From:** "FP’s Amelia Lester" <newsletters@foreignpolicy.com>
-**Date:** Tue, 26 May 2026 14:21:12 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
+### On Politics: Is Cornyn cooked?
+**From:** The New York Times <nytdirect@nytimes.com>  
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-05-26 23:01 UTC
+### 彭博财经早茶：中国或限制顶尖AI人才出境；美伊谈判拉锯
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Markets Daily China 中文版 <https://sli.bloomberg.com/click?s=1149264&li=18291386&m=758937c56eef1afe85b27e319f520191&p=05262026232821&lctg=e789e568-5d16-49a6-9961-e843
 
 ### Fresh Hormuz tensions, CBA boss on AI
 **From:** Bloomberg Australia <noreply@news.bloomberg.com>  
@@ -100,34 +113,3 @@ CBA Chief Comyn Reckons Firms Need to Be Straight With Staff on AI Comyn urges h
 
 ### The Evening: Republican showdown in Texas
 **From:** The New York Times <nytdirect@nytimes.com>  
-
-### More ways to connect with us
-**From:** The Brookings Institution <info@brookings.edu>  
-The Brookings Institution (https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VWyP3n8V-QYLW4q9Vr-3Dwqh2W7qxXbD5PxV83N8fXWzY3pr48W69sMD-6lZ3pkW4gycVQ8FN_KKW2K2XVx1_Qv9QW2HNjSL8bbvSdW8tqxhp79BbHyW46wN
-
-### Hope and hostility
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-US Touts Iran Deal Prospects Even as Tensions Fester Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Canada Daily: Berlin calling
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Germany Calls for Energy and This Time, Canada Has an Answer Plus: Worried about the job market ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Sandals with “French-girl-cool vibes”
-**From:** NYT Wirecutter <nytdirect@nytimes.com>  
-
-### For you: Today’s news, curated just for you
-**From:** Bloomberg <subscriptions@message.bloomberg.com>  
-See what everyone's reading today. <https://www.bloomberg
-
-### AI has a lot of people yearning for the 1990s
-**From:** Bloomberg Opinion <noreply@news.bloomberg.com>  
-Opinion Today Pope Leo is not about the robot life. View in browser <https://sli.bloomberg.com/click?s=1149039&li=18290573&m=758937c56ee
-
-### The space race in stocks
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Investors Are All-In On Space Stocks After SpaceX IPO Evening Briefing Americas ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### New Trade Guys Episode: How to Win a Trade War with Chad Bown and Soumaya Keynes
-**From:** CSIS Trade Guys <econ@csis.org>  
-96 Bill and Scott welcome Chad Bown (Reginald Jones Senior Fellow, Peterson Institute for International Economics) and Soumaya Keynes (Economics Columnist, Financial Times) to discuss the issues rais

@@ -1,0 +1,75 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-05-26
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single most pressing operational risk for US hyperscale hubs today. The Northern Virginia cluster (Equinix Ashburn) and five other Equinix metros all hit 56/100 composite risk scores, driven entirely by grid constraints. Transformer lead times remain stuck at 18-24 months, and the PJM interconnection queue is at 122 GW — meaning any new build in that region is looking at 4-6 year delays. If you have capacity in Ashburn or Dallas, hold it. If you're planning a new build, look at Ohio (AWS us-east-3) or Houston (CyrusOne HOU2) where the grid has more headroom.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported in the last 24 hours. The 694-cable global inventory is stable. Key cables serving the highest-risk US clusters:
+- Ashburn/NoVa: Served by MAREA, Dunant, and multiple transatlantic cables landing in Virginia Beach and New Jersey. No congestion reported.
+- Dallas: Primarily terrestrial fiber; subsea dependency is low.
+- San Jose: Served by transpacific cables (Faster, SEA-ME-WE 3) landing in California. No issues.
+- New York/Newark: Served by multiple transatlantic cables (Havfrue, AEConnect, etc.). No disruptions.
+- Miami: Served by AMX-1, Taino-Carib, and other Latin American cables. No issues.
+- Toronto: Served by terrestrial fiber to US hubs; no subsea dependency.
+
+No new cable landing station activity or repair vessels detected in satellite imagery. Monitor for any cable cuts near Virginia Beach or New Jersey landing points — those are single points of failure for Ashburn's transatlantic connectivity.
+
+═══ POWER & GRID ═══
+- **PJM Interconnection Queue:** 122 GW. New DC builds in PJM territory (NoVa, Chicago, Ohio) face 4-6 year interconnection delays. This is the biggest bottleneck in the US market.
+- **ERCOT (Texas):** Dallas (Infomart) is on ERCOT grid. ERCOT has more headroom than PJM but faces summer peak demand risk. Monitor for heat waves.
+- **CAISO (California):** San Jose and LA are on CAISO. Grid constraints are moderate but improving with new solar/storage. No immediate alerts.
+- **NYISO (New York):** New York City and Newark are on NYISO. Grid is tight but stable. No new congestion reports.
+- **IESO (Ontario):** Toronto is on IESO. Grid is stable with surplus capacity.
+- **Transformer lead times:** 18-24 months for >50 MVA units. This is the single biggest supply chain constraint. If you're planning a new build, order transformers now.
+- **Energy prices:** No significant spikes in the last 24 hours. PJM day-ahead prices stable at $35-45/MWh. ERCOT at $30-40/MWh.
+
+**Action:** If you have capacity in Ashburn, Dallas, San Jose, Chicago, LA, or New York, do not assume you can expand. Grid constraints are the primary risk driver for these clusters.
+
+═══ NATURAL HAZARD WATCH ═══
+- **Hurricane Season (Atlantic):** No active storms. Season starts June 1. Monitor for early-season development. High-risk clusters: Miami (Equinix MI1), New York/Newark, Virginia Beach (subsea cable landings).
+- **Earthquake:** No significant seismic activity near major DC clusters in the last 24 hours. California clusters (San Jose, LA) are in moderate seismic zones. No alerts.
+- **Wildfire:** No active wildfires near major DC clusters. California fire season typically peaks July-October. Monitor for dry conditions.
+- **Flooding:** No active flood warnings near major DC clusters. Monitor for heavy rain events in Houston (CyrusOne HOU2) and Miami.
+
+**Action:** No immediate natural hazard threats. Prepare for Atlantic hurricane season starting next week.
+
+═══ PHYSICAL SECURITY ═══
+No physical security incidents reported in the last 24 hours. No protests, construction disruptions, or access incidents near major DC corridors. Satellite imagery of all 25 Tier 1 sites shows no anomalies — no new construction, ground disturbance, flooding, or activity changes.
+
+**Action:** Standard vigilance. No elevated threat.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours. AWS, Azure, GCP, OCI, and Alibaba all green. No fiber route disruptions reported. Internet exchange status: all 900 IXes operational.
+
+**Action:** No network or cloud issues to report.
+
+═══ ASSET WATCH ═══
+- **AirTrunk SYD2 (Sydney, Australia):** 150 MW announced. This is a significant build in a market with limited grid capacity. Monitor for grid interconnection delays.
+- **AWS us-east-3 (Ohio, USA):** 1200 MW permit filed. This is the largest single DC announcement in the pipeline. Ohio is on PJM grid — expect 4-6 year interconnection delays. AWS likely has dedicated transmission agreements.
+- **Digital Realty FRA14 (Frankfurt, Germany):** 35 MW under construction. Frankfurt is a major European hub. Grid constraints are moderate. Monitor for energy price spikes.
+- **Equinix NY9 (New York, USA):** 25 MW operational. New capacity in a constrained market. Good for Equinix.
+- **CyrusOne HOU2 (Houston, USA):** 40 MW under construction. Houston is on ERCOT grid with more headroom than PJM. Good location for new build.
+
+**Risk Rating Changes:** No changes in the last 24 hours. All 23 NEGLIGIBLE, 190 MODERATE, and 92 LOW facilities remain at their current ratings.
+
+**Action:** Watch the AirTrunk SYD2 and AWS us-east-3 builds for grid interconnection delays. These are bellwethers for the broader market.
+
+═══ MARKET SIGNALS ═══
+- **Colo pricing:** Stable in most markets. Ashburn and Dallas pricing is elevated due to grid constraints. Expect further increases as supply tightens.
+- **Capacity availability:** Tight in Ashburn, Dallas, San Jose, Chicago, LA, and New York. Available in Houston, Ohio, and secondary markets.
+- **Supply chain:** Transformer lead times worsening. Switchgear and generator lead times stable but extended. Lithium-ion UPS battery supply stable. Lead-acid still constrained.
+- **Construction pipeline:** 1450 MW active. Majority in US (AWS Ohio 1200 MW). This will exacerbate grid constraints in PJM.
+
+**Action:** If you need capacity in a constrained market, act now. Pricing will only increase. If you can build in a secondary market (Houston, Ohio, etc.), do it.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-05-26

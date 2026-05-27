@@ -1,0 +1,393 @@
+{
+  "cables": {
+    "generated": "2026-05-26T23:46:25.984132+00:00",
+    "total_entries": 60,
+    "disruptions": [
+      {
+        "title": "Huawei touts chip design breakthrough as answer to US sanctions",
+        "url": "https://www.lightreading.com/semiconductors/huawei-touts-chip-design-breakthrough-as-answer-to-us-sanctions",
+        "description": "China's Huawei is feeling chipper about a new way of designing semiconductors that could free it from the constraints imposed by US restrictions.",
+        "published": "Tue, 26 May 2026 11:03:56 GMT",
+        "source": "Light Reading"
+      },
+      {
+        "title": "BT plans mass layoffs after cutting 8,500 jobs in last year",
+        "url": "https://www.lightreading.com/fttx/bt-plans-mass-layoffs-after-cutting-8-500-jobs-in-last-year",
+        "description": "BT expects to cut at least another 27,500 jobs, more than a quarter of its headcount, by 2030 as it works to slash costs in the absence of sales growth.",
+        "published": "Thu, 21 May 2026 13:11:10 GMT",
+        "source": "Light Reading"
+      }
+    ],
+    "recent_headlines": [
+      "WFN Strategies Expands APTelecom Technical Support",
+      "Sparkle, Entel Bolivia Partner on Digital Corridor",
+      "Geosonic Completes Survey Scope for Farasan Cable Project",
+      "SubTel Forum Magazine #148 \u2013 Global Capacity \u2013 OUT NOW!",
+      "TelkomGroup Launches Pukpuk Submarine Cable",
+      "Guinea Advances MEDUSA Cable Landing",
+      "Bezeq Telecom Deploys Subsea Internet Cable",
+      "China Telecom Advances ALC Landing in Hong Kong"
+    ]
+  },
+  "grid": {
+    "generated": "2026-05-26T23:46:35.712464+00:00",
+    "total_entries": 58,
+    "grid_relevant": [
+      {
+        "title": "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67707",
+        "description": "Developers plan to bring approximately 44.9 billion cubic feet per day (Bcf/d) of new pipeline capacity online in the United States in 2026 and 2027, according to our latest Natural Gas Pipeline Projects Tracker. Approximately 70% (31.6 Bcf/d) of this new capacity is already under construction. More",
+        "published": "Tue, 26 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Coal remains competitive for power generation in the central United States",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67705",
+        "description": "In the first four months of 2026, electricity, natural gas, and coal prices suggested continued favorable economics for coal generation in MISO. The dark spread of coal, the difference between the fuel costs for coal-fired generation and the wholesale electricity price, in the Midcontinent Independe",
+        "published": "Wed, 20 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Data center server energy use grows across the commercial building stock",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67704",
+        "description": "In the Annual Energy Outlook 2026 (AEO2026), our long-term outlook, we project electricity consumed by data center servers will increase across the commercial building stock, increasing more in standalone data centers than in all other data center rooms combined. By 2050, server consumption alone re",
+        "published": "Tue, 19 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67685",
+        "description": "In our most recent Short-Term Energy Outlook (STEO), we forecast that annual electric power generation from utility-scale solar will surpass that from coal for the first time in 2026 within the electricity grid that covers most of Texas. Solar generation is expected to reach 78 billion kilowatthours",
+        "published": "Wed, 13 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "The United States set record energy production in 2025, again",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+        "description": "Total energy production in the United States increased to a new record of 107 quadrillion British thermal units (quads) in 2025, a 3.4% increase from the previous record set in 2024, according to new data in our Monthly Energy Review. Total production was driven by record-high production in natural",
+        "published": "Mon, 11 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Commercial electricity sales have soared in Virginia, driven by data centers",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67664",
+        "description": "Commercial electricity sales in Virginia increased by nearly 30.0 million megawatthours (MWh) between 2019 and 2025, much faster growth than in any other state except Texas, a much larger state, according to our Annual Electric Power Industry Report. The growth in sales of electricity in Virginia is",
+        "published": "Tue, 05 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Coal distributions for non-electric power use decline in the South",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67644",
+        "description": "The volume of coal delivered in the United States for uses other than power generation\u2014primarily, for manufacturing\u2014decreased by about half in the last 15 years. Coal delivered for these purposes in the South decreased the most in percentage terms between 2010 and 2025, falling 75%, or 14.7 million",
+        "published": "Mon, 04 May 2026 09:00:00 EST",
+        "source": "EIA Today"
+      },
+      {
+        "title": "Hydropower generation expected to recover despite snow drought in the West",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=67444",
+        "description": "In our April Short-Term Energy Outlook (STEO), we expect U.S. hydropower generation will increase by 5% in 2026 but remain 1.8% below the 10-year average following snow drought conditions in some states. Hydropower generation in 2025 increased to 245 billion kilowatthours (BkWh), about 4 BkWh more t",
+        "published": "Tue, 14 Apr 2026 15:00:00 EST",
+        "source": "EIA Today"
+      }
+    ],
+    "recent_headlines": [
+      "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
+      "Coal remains competitive for power generation in the central United States",
+      "Data center server energy use grows across the commercial building stock",
+      "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
+      "The United States set record energy production in 2025, again",
+      "Commercial electricity sales have soared in Virginia, driven by data centers",
+      "Coal distributions for non-electric power use decline in the South",
+      "Hydropower generation expected to recover despite snow drought in the West"
+    ]
+  },
+  "cloud": {
+    "generated": "2026-05-26T23:46:36.025347+00:00",
+    "providers": {
+      "AWS": {
+        "total_entries": 0,
+        "active_issues": [],
+        "status": "all_clear"
+      },
+      "GCP": {
+        "total_entries": 0,
+        "active_issues": [],
+        "status": "all_clear"
+      }
+    }
+  },
+  "hazards": {
+    "generated": "2026-05-26T23:46:36.683269+00:00",
+    "hazards": {
+      "earthquakes": [
+        {
+          "magnitude": 2.6,
+          "place": "161 km WSW of Adak, Alaska",
+          "time": "2026-05-26T21:56:36.963000+00:00",
+          "lat": 51.592,
+          "lon": -178.929
+        },
+        {
+          "magnitude": 4.9,
+          "place": "212 km ENE of Levuka, Fiji",
+          "time": "2026-05-26T20:35:10.456000+00:00",
+          "lat": -17.5166,
+          "lon": -178.7628
+        },
+        {
+          "magnitude": 4.5,
+          "place": "31 km SE of \u014cfunato, Japan",
+          "time": "2026-05-26T20:21:01.985000+00:00",
+          "lat": 38.8774,
+          "lon": 141.9779
+        },
+        {
+          "magnitude": 4.3,
+          "place": "Owen Fracture Zone region",
+          "time": "2026-05-26T20:04:55.636000+00:00",
+          "lat": 13.3048,
+          "lon": 57.3541
+        },
+        {
+          "magnitude": 4.5,
+          "place": "59 km SW of Langsa, Indonesia",
+          "time": "2026-05-26T19:49:07.929000+00:00",
+          "lat": 4.1454,
+          "lon": 97.5369
+        },
+        {
+          "magnitude": 2.6,
+          "place": "38 km SW of Skwentna, Alaska",
+          "time": "2026-05-26T19:37:16.072000+00:00",
+          "lat": 61.783,
+          "lon": -151.972
+        },
+        {
+          "magnitude": 5,
+          "place": "152 km SSW of Hihifo, Tonga",
+          "time": "2026-05-26T19:25:11.739000+00:00",
+          "lat": -17.2705,
+          "lon": -174.2097
+        },
+        {
+          "magnitude": 3.1,
+          "place": "114 km ESE of Akutan, Alaska",
+          "time": "2026-05-26T19:17:37.304000+00:00",
+          "lat": 53.777,
+          "lon": -164.132
+        },
+        {
+          "magnitude": 5.4,
+          "place": "180 km NE of Neiafu, Tonga",
+          "time": "2026-05-26T19:12:31.037000+00:00",
+          "lat": -17.6654,
+          "lon": -172.621
+        },
+        {
+          "magnitude": 5.1,
+          "place": "Owen Fracture Zone region",
+          "time": "2026-05-26T18:56:36.969000+00:00",
+          "lat": 13.0008,
+          "lon": 57.6465
+        },
+        {
+          "magnitude": 4.6,
+          "place": "59 km E of Huara, Chile",
+          "time": "2026-05-26T16:42:41.637000+00:00",
+          "lat": -19.9753,
+          "lon": -69.2025
+        },
+        {
+          "magnitude": 3.1,
+          "place": "63 km NW of Tatitlek, Alaska",
+          "time": "2026-05-26T16:34:16.470000+00:00",
+          "lat": 61.234,
+          "lon": -147.582
+        },
+        {
+          "magnitude": 4,
+          "place": "11 km NNE of Calama, Chile",
+          "time": "2026-05-26T16:03:52.578000+00:00",
+          "lat": -22.3541,
+          "lon": -68.8972
+        },
+        {
+          "magnitude": 3.7,
+          "place": "84 km SSW of Sand Point, Alaska",
+          "time": "2026-05-26T15:46:03.460000+00:00",
+          "lat": 54.6466,
+          "lon": -161.0689
+        },
+        {
+          "magnitude": 4.5,
+          "place": "46 km ENE of Mawlaik, Burma (Myanmar)",
+          "time": "2026-05-26T14:07:51.354000+00:00",
+          "lat": 23.7982,
+          "lon": 94.8304
+        },
+        {
+          "magnitude": 4.6,
+          "place": "12 km NE of Malakwal City, Pakistan",
+          "time": "2026-05-26T14:05:54.556000+00:00",
+          "lat": 32.6454,
+          "lon": 73.2947
+        },
+        {
+          "magnitude": 3.5,
+          "place": "31 km SSW of Manley Hot Springs, Alaska",
+          "time": "2026-05-26T13:43:57.793000+00:00",
+          "lat": 64.728,
+          "lon": -150.812
+        },
+        {
+          "magnitude": 3,
+          "place": "19 km S of Nixon, Texas",
+          "time": "2026-05-26T13:22:53.704000+00:00",
+          "lat": 29.092,
+          "lon": -97.772
+        },
+        {
+          "magnitude": 2.8,
+          "place": "35 km NE of Chase, Alaska",
+          "time": "2026-05-26T11:45:22.433000+00:00",
+          "lat": 62.658,
+          "lon": -149.593
+        },
+        {
+          "magnitude": 4.4,
+          "place": "15 km NNW of Tamuning-Tumon-Harmon Village, Guam",
+          "time": "2026-05-26T11:10:25.462000+00:00",
+          "lat": 13.6167,
+          "lon": 144.7187
+        },
+        {
+          "magnitude": 4.9,
+          "place": "66 km SW of Gambiran Satu, Indonesia",
+          "time": "2026-05-26T08:39:11.658000+00:00",
+          "lat": -8.8676,
+          "lon": 113.772
+        },
+        {
+          "magnitude": 2.68,
+          "place": "26 km NE of Viola, CA",
+          "time": "2026-05-26T07:12:03.610000+00:00",
+          "lat": 40.6744995117188,
+          "lon": -121.448501586914
+        },
+        {
+          "magnitude": 4.5,
+          "place": "15 km SSE of Ekibastuz, Kazakhstan",
+          "time": "2026-05-26T06:27:45.435000+00:00",
+          "lat": 51.6034,
+          "lon": 75.4212
+        },
+        {
+          "magnitude": 3.42,
+          "place": "26 km NE of Viola, CA",
+          "time": "2026-05-26T05:11:52.440000+00:00",
+          "lat": 40.6756666666667,
+          "lon": -121.4475
+        },
+        {
+          "magnitude": 2.9,
+          "place": "25 km WNW of Whites City, New Mexico",
+          "time": "2026-05-26T04:26:58.447000+00:00",
+          "lat": 32.2793,
+          "lon": -104.6134
+        },
+        {
+          "magnitude": 2.93,
+          "place": "8 km S of Malibu Beach, CA",
+          "time": "2026-05-26T03:11:58.350000+00:00",
+          "lat": 33.9576666666667,
+          "lon": -118.678166666667
+        },
+        {
+          "magnitude": 4.1,
+          "place": "23 km NE of Calama, Chile",
+          "time": "2026-05-26T03:11:00.383000+00:00",
+          "lat": -22.3134,
+          "lon": -68.7517
+        },
+        {
+          "magnitude": 3.8,
+          "place": "58 km SSW of Unalaska, Alaska",
+          "time": "2026-05-26T03:07:56.831000+00:00",
+          "lat": 53.419,
+          "lon": -166.988
+        },
+        {
+          "magnitude": 3,
+          "place": "59 km SSW of Unalaska, Alaska",
+          "time": "2026-05-26T03:07:49.766000+00:00",
+          "lat": 53.412,
+          "lon": -166.996
+        },
+        {
+          "magnitude": 3.6,
+          "place": "60 km SSW of Unalaska, Alaska",
+          "time": "2026-05-26T03:03:34.180000+00:00",
+          "lat": 53.397,
+          "lon": -166.984
+        },
+        {
+          "magnitude": 2.9,
+          "place": "61 km SSW of Nanwalek, Alaska",
+          "time": "2026-05-26T02:49:21.739000+00:00",
+          "lat": 58.83,
+          "lon": -152.258
+        },
+        {
+          "magnitude": 4.3,
+          "place": "24 km N of Calama, Chile",
+          "time": "2026-05-26T02:47:00.462000+00:00",
+          "lat": -22.2404,
+          "lon": -68.9082
+        },
+        {
+          "magnitude": 4.2,
+          "place": "21 km N of Calama, Chile",
+          "time": "2026-05-26T02:26:00.823000+00:00",
+          "lat": -22.2623,
+          "lon": -68.8934
+        },
+        {
+          "magnitude": 2.5,
+          "place": "7 km NW of Avenal, CA",
+          "time": "2026-05-26T02:13:32.080000+00:00",
+          "lat": 36.0460014343262,
+          "lon": -120.193168640137
+        },
+        {
+          "magnitude": 5.3,
+          "place": "Kermadec Islands region",
+          "time": "2026-05-26T02:08:03.420000+00:00",
+          "lat": -28.3135,
+          "lon": -176.5972
+        },
+        {
+          "magnitude": 4.1,
+          "place": "239 km WSW of Ambon, Indonesia",
+          "time": "2026-05-26T01:35:37.065000+00:00",
+          "lat": -4.24,
+          "lon": 126.0995
+        },
+        {
+          "magnitude": 4.2,
+          "place": "21 km NE of Calama, Chile",
+          "time": "2026-05-26T00:20:57.882000+00:00",
+          "lat": -22.3305,
+          "lon": -68.7694
+        }
+      ],
+      "hurricanes": [],
+      "dc_clusters_threatened": []
+    }
+  },
+  "physical": {
+    "generated": "2026-05-26T23:46:36.887625+00:00",
+    "total_entries": 0,
+    "dc_relevant": []
+  },
+  "generated": "2026-05-26T23:46:36.887989+00:00"
+}

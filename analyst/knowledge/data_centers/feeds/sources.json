@@ -1,0 +1,111 @@
+{
+  "headers": [
+    "",
+    "Source",
+    "URL",
+    "Used for"
+  ],
+  "count": 20,
+  "records": [
+    {
+      "Source": "PeeringDB",
+      "URL": "https://www.peeringdb.com",
+      "Used for": "Tier 1\u20132 facilities, carriers per facility, IXP directory"
+    },
+    {
+      "Source": "Data Center Map",
+      "URL": "https://www.datacentermap.com",
+      "Used for": "Tier 3 global facility census (8,500+ facilities)"
+    },
+    {
+      "Source": "TeleGeography Submarine Cable Map",
+      "URL": "https://www.submarinecablemap.com",
+      "Used for": "All subsea cables and landing stations"
+    },
+    {
+      "Source": "SubmarineNetworks.com",
+      "URL": "https://www.submarinenetworks.com",
+      "Used for": "Subsea cable capacity and technical detail"
+    },
+    {
+      "Source": "AWS Regions",
+      "URL": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+      "Used for": "AWS data center regions"
+    },
+    {
+      "Source": "Azure Regions",
+      "URL": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+      "Used for": "Microsoft Azure regions"
+    },
+    {
+      "Source": "Google Cloud Locations",
+      "URL": "https://cloud.google.com/about/locations",
+      "Used for": "GCP regions"
+    },
+    {
+      "Source": "Equinix IBX Directory",
+      "URL": "https://www.equinix.com/data-centers/",
+      "Used for": "Equinix facility detail"
+    },
+    {
+      "Source": "Digital Realty Locations",
+      "URL": "https://www.digitalrealty.com/data-centers",
+      "Used for": "Digital Realty / Interxion facilities"
+    },
+    {
+      "Source": "Zayo Network Map",
+      "URL": "https://www.zayo.com/global-network-map/",
+      "Used for": "Zayo terrestrial fiber routes"
+    },
+    {
+      "Source": "Lumen Network Map",
+      "URL": "https://www.lumen.com/en-us/network-map.html",
+      "Used for": "Lumen (Level 3) backbone"
+    },
+    {
+      "Source": "Cogent Network",
+      "URL": "https://www.cogentco.com/en/network/network-map",
+      "Used for": "Cogent backbone"
+    },
+    {
+      "Source": "Arelion (Telia Carrier)",
+      "URL": "https://www.arelion.com/our-network/network-map.html",
+      "Used for": "Arelion backbone"
+    },
+    {
+      "Source": "euNetworks",
+      "URL": "https://eunetworks.com/network/",
+      "Used for": "European long-haul fiber"
+    },
+    {
+      "Source": "NTT GIN",
+      "URL": "https://www.gin.ntt.net/",
+      "Used for": "NTT Global IP Network"
+    },
+    {
+      "Source": "DE-CIX",
+      "URL": "https://www.de-cix.net",
+      "Used for": "Frankfurt IX traffic data"
+    },
+    {
+      "Source": "AMS-IX",
+      "URL": "https://www.ams-ix.net",
+      "Used for": "Amsterdam IX traffic data"
+    },
+    {
+      "Source": "LINX",
+      "URL": "https://www.linx.net",
+      "Used for": "London IX traffic data"
+    },
+    {
+      "Source": "IX.br",
+      "URL": "https://ix.br",
+      "Used for": "S\u00e3o Paulo IX traffic data"
+    },
+    {
+      "Source": "Wikipedia: List of submarine cables",
+      "URL": "https://en.wikipedia.org/wiki/List_of_international_submarine_communications_cables",
+      "Used for": "Cross-reference for subsea cables"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "generated": "2026-05-26",
+  "recent_announcements": [
+    {
+      "company": "AirTrunk",
+      "project": "SYD2",
+      "location": "Sydney, Australia",
+      "capacity_mw": 150,
+      "status": "announced",
+      "estimated_q": 2026
+    },
+    {
+      "company": "AWS",
+      "project": "us-east-3",
+      "location": "Ohio, USA",
+      "capacity_mw": 1200,
+      "status": "permit_filed",
+      "estimated_q": 2027
+    },
+    {
+      "company": "Digital Realty",
+      "project": "FRA14",
+      "location": "Frankfurt, Germany",
+      "capacity_mw": 35,
+      "status": "under_construction",
+      "estimated_q": 2026,
+      "delay": "Strike delayed foundation work 2-3 weeks"
+    },
+    {
+      "company": "Equinix",
+      "project": "NY9",
+      "location": "New York, USA",
+      "capacity_mw": 25,
+      "status": "operational",
+      "estimated_q": 2026
+    },
+    {
+      "company": "CyrusOne",
+      "project": "HOU2",
+      "location": "Houston, USA",
+      "capacity_mw": 40,
+      "status": "under_construction",
+      "estimated_q": 2027
+    }
+  ],
+  "total_mw_in_pipeline": 1450
+}

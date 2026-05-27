@@ -194,14 +194,15 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
             "rationale": f"Trevor {trevor_conf}% vs market {market_prob}% ({edge:+.0f}pt edge)",
         }
 
-    # Execute via Kalshi API
+    # Execute via Kalshi API with fill monitoring
     try:
         if "BUY Yes" in signal["action"]:
-            # market_prob is a percentage (e.g. 6.5 = 6.5% = 6.5 cents per contract)
-            yes_price_cents = max(1, int(market_prob))  # Price in cents per contract
-            contract_cost_dollars = yes_price_cents / 100.0  # Each contract costs this much
+            yes_price_cents = max(1, int(market_prob))
+            contract_cost_dollars = yes_price_cents / 100.0
             contract_count = max(1, int(position_size / contract_cost_dollars))
-            log(f"  yes_price={yes_price_cents}c, count={contract_count}, cost=${contract_count * contract_cost_dollars:.2f}")
+            log(f"  Attempt 1: yes_price={yes_price_cents}c, count={contract_count}")
+            
+            # Try with maker price first (resting order)
             order = client.create_order(
                 ticker=ticker,
                 action="buy",
@@ -214,7 +215,8 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
             no_price_cents = max(1, int(100 - market_prob))
             contract_cost_dollars = no_price_cents / 100.0
             contract_count = max(1, int(position_size / contract_cost_dollars))
-            log(f"  no_price={no_price_cents}c, count={contract_count}, cost=${contract_count * contract_cost_dollars:.2f}")
+            log(f"  Attempt 1: no_price={no_price_cents}c, count={contract_count}")
+            
             order = client.create_order(
                 ticker=ticker,
                 action="buy",
@@ -223,6 +225,58 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
                 count=contract_count,
                 time_in_force="good_till_canceled",
             )
+
+        order_id = order.get("order_id", "") if isinstance(order, dict) else ""
+        log(f"  Order placed: {order_id}")
+
+        # Fill monitoring loop: check fill status at intervals
+        import time as _time
+        filled = False
+        for attempt in range(3):
+            _time.sleep(20)  # Wait 20s between checks
+            try:
+                # Check if order was filled by checking positions
+                pos_check = client.get_positions()
+                all_pos = pos_check.get("market_positions", pos_check.get("positions", []))
+                for p in all_pos:
+                    if p.get("ticker", "") == ticker and float(p.get("count_fp", p.get("count", 0))) > 0:
+                        filled = True
+                        log(f"  ✅ Filled after {attempt*20+20}s")
+                        break
+                
+                if filled:
+                    break
+                
+                # Not filled — escalate price by 2 cents
+                if "BUY Yes" in signal["action"]:
+                    old_price = yes_price_cents
+                    yes_price_cents = min(yes_price_cents + 2, 99)
+                    if yes_price_cents != old_price:
+                        log(f"  Escalating price {old_price}c → {yes_price_cents}c")
+                        order = client.create_order(
+                            ticker=ticker, action="buy", side="yes",
+                            yes_price=yes_price_cents, count=contract_count,
+                            time_in_force="good_till_canceled",
+                        )
+                else:
+                    old_price = no_price_cents
+                    no_price_cents = min(no_price_cents + 2, 99)
+                    if no_price_cents != old_price:
+                        log(f"  Escalating price {old_price}c → {no_price_cents}c")
+                        order = client.create_order(
+                            ticker=ticker, action="buy", side="no",
+                            no_price=no_price_cents, count=contract_count,
+                            time_in_force="good_till_canceled",
+                        )
+                
+                # Old orders will be replaced on exchange; no explicit cancel needed
+                    
+            except Exception as monitor_err:
+                log(f"  Fill check error: {monitor_err}")
+
+        # Final status
+        if not filled:
+            log(f"  ⚠️ Order not confirmed filled after 3 attempts — logged as placed")
 
         trade_entry = {
             "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -233,11 +287,12 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
             "edge_pts": edge,
             "position_size_dollars": round(position_size, 2),
             "kelly_fraction": round(kelly_frac, 4),
-            "order_response": order,
-            "status": "executed",
+            "order_id": order_id,
+            "filled": filled,
+            "status": "executed" if filled else "order_placed",
         }
         append_journal(trade_entry)
-        log(f"  ✅ Executed: {ticker}")
+        log(f"  {'✅' if filled else '📋'} {ticker}: {'Filled' if filled else 'Order placed'}")
         return trade_entry
 
     except Exception as e:

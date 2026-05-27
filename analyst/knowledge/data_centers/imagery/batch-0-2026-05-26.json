@@ -1,0 +1,455 @@
+{
+  "batch_start": 0,
+  "results": [
+    {
+      "queried": "2026-05-26T23:28:13.737540+00:00",
+      "data_size_bytes": 138,
+      "has_imagery": true,
+      "bbox": [
+        -77.5025,
+        39.0287,
+        -77.4725,
+        39.0587
+      ],
+      "site": {
+        "name": "Equinix DC1-DC15 - Ashburn",
+        "operator": "Equinix",
+        "lat": 39.0437,
+        "lon": -77.4875,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:14.830411+00:00",
+      "data_size_bytes": 134,
+      "has_imagery": true,
+      "bbox": [
+        -96.8295,
+        32.7823,
+        -96.7995,
+        32.8123
+      ],
+      "site": {
+        "name": "Equinix DA1 - Dallas (Infomart)",
+        "operator": "Equinix",
+        "lat": 32.7973,
+        "lon": -96.8145,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:15.796327+00:00",
+      "data_size_bytes": 225,
+      "has_imagery": true,
+      "bbox": [
+        -121.7981,
+        37.2208,
+        -121.7681,
+        37.2508
+      ],
+      "site": {
+        "name": "Equinix SV1/SV5/SV10 - San Jose",
+        "operator": "Equinix",
+        "lat": 37.2358,
+        "lon": -121.7831,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:16.802820+00:00",
+      "data_size_bytes": 180,
+      "has_imagery": true,
+      "bbox": [
+        -87.6316,
+        41.8349,
+        -87.6016,
+        41.8649
+      ],
+      "site": {
+        "name": "Equinix CH1/CH2/CH4 - Chicago",
+        "operator": "Equinix",
+        "lat": 41.8499,
+        "lon": -87.6166,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:17.510576+00:00",
+      "data_size_bytes": 126,
+      "has_imagery": true,
+      "bbox": [
+        -118.2715,
+        34.0326,
+        -118.2415,
+        34.0626
+      ],
+      "site": {
+        "name": "Equinix LA1 - Los Angeles",
+        "operator": "Equinix",
+        "lat": 34.0476,
+        "lon": -118.2565,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:18.216374+00:00",
+      "data_size_bytes": 136,
+      "has_imagery": true,
+      "bbox": [
+        -74.18430000000001,
+        40.7198,
+        -74.1543,
+        40.7498
+      ],
+      "site": {
+        "name": "Equinix NY1 - Newark NJ",
+        "operator": "Equinix",
+        "lat": 40.7348,
+        "lon": -74.1693,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:19.256230+00:00",
+      "data_size_bytes": 150,
+      "has_imagery": true,
+      "bbox": [
+        -74.0195,
+        40.7271,
+        -73.98949999999999,
+        40.7571
+      ],
+      "site": {
+        "name": "Equinix NY9 - New York (111 8th Ave)",
+        "operator": "Equinix",
+        "lat": 40.7421,
+        "lon": -74.0045,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:19.935632+00:00",
+      "data_size_bytes": 184,
+      "has_imagery": true,
+      "bbox": [
+        -74.0233,
+        40.7035,
+        -73.9933,
+        40.7335
+      ],
+      "site": {
+        "name": "Equinix NY8 - New York (60 Hudson St)",
+        "operator": "Equinix",
+        "lat": 40.7185,
+        "lon": -74.0083,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:21.029642+00:00",
+      "data_size_bytes": 115,
+      "has_imagery": true,
+      "bbox": [
+        -79.398,
+        43.6309,
+        -79.368,
+        43.6609
+      ],
+      "site": {
+        "name": "Equinix TR1 - Toronto (151 Front St)",
+        "operator": "Equinix",
+        "lat": 43.6459,
+        "lon": -79.383,
+        "country": "CA"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:22.138066+00:00",
+      "data_size_bytes": 122,
+      "has_imagery": true,
+      "bbox": [
+        -80.2099,
+        25.764699999999998,
+        -80.1799,
+        25.7947
+      ],
+      "site": {
+        "name": "Equinix MI1 - Miami NOTA",
+        "operator": "Equinix",
+        "lat": 25.7797,
+        "lon": -80.1949,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:22.955388+00:00",
+      "data_size_bytes": 136,
+      "has_imagery": true,
+      "bbox": [
+        -0.0309,
+        51.4853,
+        -0.0009000000000000015,
+        51.5153
+      ],
+      "site": {
+        "name": "Equinix LD8 - London Docklands",
+        "operator": "Equinix",
+        "lat": 51.5003,
+        "lon": -0.0159,
+        "country": "GB"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:23.721359+00:00",
+      "data_size_bytes": 139,
+      "has_imagery": true,
+      "bbox": [
+        8.6282,
+        50.0882,
+        8.6582,
+        50.1182
+      ],
+      "site": {
+        "name": "Equinix FR5 - Frankfurt Kleyer",
+        "operator": "Equinix",
+        "lat": 50.1032,
+        "lon": 8.6432,
+        "country": "DE"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:24.778258+00:00",
+      "data_size_bytes": 276,
+      "has_imagery": true,
+      "bbox": [
+        4.946000000000001,
+        52.3135,
+        4.976,
+        52.3435
+      ],
+      "site": {
+        "name": "Equinix AM7 - Amsterdam Kuiperberweg",
+        "operator": "Equinix",
+        "lat": 52.3285,
+        "lon": 4.961,
+        "country": "NL"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:25.537712+00:00",
+      "data_size_bytes": 112,
+      "has_imagery": true,
+      "bbox": [
+        2.2897,
+        48.891799999999996,
+        2.3197,
+        48.9218
+      ],
+      "site": {
+        "name": "Equinix PA7 - Paris Energy Park",
+        "operator": "Equinix",
+        "lat": 48.9068,
+        "lon": 2.3047,
+        "country": "FR"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:26.652174+00:00",
+      "data_size_bytes": 112,
+      "has_imagery": true,
+      "bbox": [
+        103.7718,
+        1.2810000000000001,
+        103.8018,
+        1.311
+      ],
+      "site": {
+        "name": "Equinix SG1/SG2 - Singapore",
+        "operator": "Equinix",
+        "lat": 1.296,
+        "lon": 103.7868,
+        "country": "SG"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:27.417609+00:00",
+      "data_size_bytes": 116,
+      "has_imagery": true,
+      "bbox": [
+        139.7467,
+        35.5652,
+        139.77669999999998,
+        35.5952
+      ],
+      "site": {
+        "name": "Equinix TY1/TY2 - Tokyo Heiwajima",
+        "operator": "Equinix",
+        "lat": 35.5802,
+        "lon": 139.7617,
+        "country": "JP"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:28.280183+00:00",
+      "data_size_bytes": 112,
+      "has_imagery": true,
+      "bbox": [
+        114.0938,
+        22.3542,
+        114.1238,
+        22.3842
+      ],
+      "site": {
+        "name": "Equinix HK1/HK2 - Hong Kong Tsuen Wan",
+        "operator": "Equinix",
+        "lat": 22.3692,
+        "lon": 114.1088,
+        "country": "HK"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:29.040747+00:00",
+      "data_size_bytes": 177,
+      "has_imagery": true,
+      "bbox": [
+        151.1824,
+        -33.9432,
+        151.21239999999997,
+        -33.913199999999996
+      ],
+      "site": {
+        "name": "Equinix SY1/SY2 - Sydney Mascot",
+        "operator": "Equinix",
+        "lat": -33.9282,
+        "lon": 151.1974,
+        "country": "AU"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:29.834598+00:00",
+      "data_size_bytes": 112,
+      "has_imagery": true,
+      "bbox": [
+        144.93550000000002,
+        -37.8402,
+        144.9655,
+        -37.8102
+      ],
+      "site": {
+        "name": "Equinix ME1/ME2 - Melbourne Lorimer St",
+        "operator": "Equinix",
+        "lat": -37.8252,
+        "lon": 144.9505,
+        "country": "AU"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:30.580633+00:00",
+      "data_size_bytes": 117,
+      "has_imagery": true,
+      "bbox": [
+        -46.6504,
+        -23.5608,
+        -46.6204,
+        -23.5308
+      ],
+      "site": {
+        "name": "Equinix SP1 - Sao Paulo Centro",
+        "operator": "Equinix",
+        "lat": -23.5458,
+        "lon": -46.6354,
+        "country": "BR"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:31.476447+00:00",
+      "data_size_bytes": 112,
+      "has_imagery": true,
+      "bbox": [
+        -122.3514,
+        47.6013,
+        -122.3214,
+        47.6313
+      ],
+      "site": {
+        "name": "Equinix SE2/SE3 - Seattle 6th Ave",
+        "operator": "Equinix",
+        "lat": 47.6163,
+        "lon": -122.3364,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:32.190974+00:00",
+      "data_size_bytes": 175,
+      "has_imagery": true,
+      "bbox": [
+        -77.2838,
+        38.8834,
+        -77.2538,
+        38.9134
+      ],
+      "site": {
+        "name": "Equinix DC7 - Ashburn Vienna VA",
+        "operator": "Equinix",
+        "lat": 38.8984,
+        "lon": -77.2688,
+        "country": "US"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:32.936348+00:00",
+      "data_size_bytes": 187,
+      "has_imagery": true,
+      "bbox": [
+        -6.4147,
+        53.2733,
+        -6.3847000000000005,
+        53.3033
+      ],
+      "site": {
+        "name": "Equinix DB1 - Dublin CityWest",
+        "operator": "Equinix",
+        "lat": 53.2883,
+        "lon": -6.3997,
+        "country": "IE"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:33.722290+00:00",
+      "data_size_bytes": 127,
+      "has_imagery": true,
+      "bbox": [
+        17.988799999999998,
+        59.3414,
+        18.0188,
+        59.3714
+      ],
+      "site": {
+        "name": "Equinix SK1/SK2 - Stockholm Bromma",
+        "operator": "Equinix",
+        "lat": 59.3564,
+        "lon": 18.0038,
+        "country": "SE"
+      }
+    },
+    {
+      "queried": "2026-05-26T23:28:34.450736+00:00",
+      "data_size_bytes": 142,
+      "has_imagery": true,
+      "bbox": [
+        8.503599999999999,
+        47.3693,
+        8.5336,
+        47.399300000000004
+      ],
+      "site": {
+        "name": "Equinix ZH2/ZH4 - Zurich Josefstrasse",
+        "operator": "Equinix",
+        "lat": 47.3843,
+        "lon": 8.5186,
+        "country": "CH"
+      }
+    }
+  ]
+}

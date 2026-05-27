@@ -1,0 +1,4891 @@
+{
+  "generated": "2026-05-26",
+  "facilities_scored": 305,
+  "distribution": {
+    "MODERATE": 190,
+    "NEGLIGIBLE": 23,
+    "LOW": 92
+  },
+  "facilities": [
+    {
+      "name": "Equinix DC1-DC15 - Ashburn",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix DA1 - Dallas (Infomart)",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SV1/SV5/SV10 - San Jose",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix CH1/CH2/CH4 - Chicago",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix LA1 - Los Angeles",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix NY1 - Newark NJ",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix NY9 - New York (111 8th Ave)",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix NY8 - New York (60 Hudson St)",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix TR1 - Toronto (151 Front St)",
+      "operator": "Equinix",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix MI1 - Miami NOTA",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix LD8 - London Docklands",
+      "operator": "Equinix",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix FR5 - Frankfurt Kleyer",
+      "operator": "Equinix",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix AM7 - Amsterdam Kuiperberweg",
+      "operator": "Equinix",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix PA7 - Paris Energy Park",
+      "operator": "Equinix",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SG1/SG2 - Singapore",
+      "operator": "Equinix",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix TY1/TY2 - Tokyo Heiwajima",
+      "operator": "Equinix",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix HK1/HK2 - Hong Kong Tsuen Wan",
+      "operator": "Equinix",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Equinix SY1/SY2 - Sydney Mascot",
+      "operator": "Equinix",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix ME1/ME2 - Melbourne Lorimer St",
+      "operator": "Equinix",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SP1 - Sao Paulo Centro",
+      "operator": "Equinix",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SE2/SE3 - Seattle 6th Ave",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix DC7 - Ashburn Vienna VA",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix DB1 - Dublin CityWest",
+      "operator": "Equinix",
+      "country": "IE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 62,
+        "band": "MODERATE",
+        "grid": 80,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SK1/SK2 - Stockholm Bromma",
+      "operator": "Equinix",
+      "country": "SE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 18,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix ZH2/ZH4 - Zurich Josefstrasse",
+      "operator": "Equinix",
+      "country": "CH",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 51,
+        "band": "MODERATE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix LD4/LD5 - London Slough",
+      "operator": "Equinix",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix FR2 - Frankfurt North Krupp",
+      "operator": "Equinix",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix AM1/AM2 - Amsterdam Luttenbergweg",
+      "operator": "Equinix",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix PA1/PA2 - Paris Saint-Denis",
+      "operator": "Equinix",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix OS1 - Osaka Shinmachi",
+      "operator": "Equinix",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix MB1/MB2 - Mumbai Andheri East",
+      "operator": "Equinix",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SP4 - Sao Paulo Barueri",
+      "operator": "Equinix",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix ML2/ML3 - Milan",
+      "operator": "Equinix",
+      "country": "IT",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix MX1/MX2 - Mexico City Queretaro",
+      "operator": "Equinix",
+      "country": "MX",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 45,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix WA1/WA2 - Warsaw",
+      "operator": "Equinix",
+      "country": "PL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 47,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 60,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix DX1/DX2 - Dubai IMPZ",
+      "operator": "Equinix",
+      "country": "AE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix HE3/HE4/HE5 - Helsinki",
+      "operator": "Equinix",
+      "country": "FI",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 32,
+        "band": "LOW",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix AT1/AT2 - Atlanta Peachtree",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SL1/SL4 - Seoul",
+      "operator": "Equinix",
+      "country": "KR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 35,
+        "connectivity": 40,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix IL2 - Istanbul Dudullu",
+      "operator": "Equinix",
+      "country": "TR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 36,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 40,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix JK1 - Jakarta",
+      "operator": "Equinix",
+      "country": "ID",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 50,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Equinix PE1 - Perth East",
+      "operator": "Equinix",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix JN1 - Johannesburg Germiston",
+      "operator": "Equinix",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix KL1 - Kuala Lumpur Cyberjaya",
+      "operator": "Equinix",
+      "country": "MY",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix SH1/SH3 - Shanghai",
+      "operator": "Equinix",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Equinix BO1 - Boston Waltham",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix DE1 - Denver Englewood",
+      "operator": "Equinix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix RJ1/RJ2 - Rio de Janeiro",
+      "operator": "Equinix",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix GV1/GV2 - Geneva",
+      "operator": "Equinix",
+      "country": "CH",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 51,
+        "band": "MODERATE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix LG1/LG2 - Lagos Lekki",
+      "operator": "Equinix",
+      "country": "NG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 47,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 60,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Equinix DU1 - Dusseldorf",
+      "operator": "Equinix",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix MU1/MU3 - Munich Seidlstrasse",
+      "operator": "Equinix",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix BA1 - Barcelona",
+      "operator": "Equinix",
+      "country": "ES",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix MD1/MD2 - Madrid",
+      "operator": "Equinix",
+      "country": "ES",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Equinix ST1/ST2 - Santiago Chile",
+      "operator": "Equinix",
+      "country": "CL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 47,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 60,
+        "connectivity": 20,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Digital Realty FRA1 (Interxion)",
+      "operator": "Digital Realty",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty FRA2 (Interxion)",
+      "operator": "Digital Realty",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty FRA8 (Interxion)",
+      "operator": "Digital Realty",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty AMS1 (Interxion)",
+      "operator": "Digital Realty",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty LON1 - London Goswell Rd",
+      "operator": "Digital Realty",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty PAR7 - Paris Saint-Denis",
+      "operator": "Digital Realty",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty MAD1 - Madrid Alcobendas",
+      "operator": "Digital Realty",
+      "country": "ES",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty STO1 - Stockholm Kista",
+      "operator": "Digital Realty",
+      "country": "SE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 18,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Digital Realty DUB1 - Dublin Blanchardstown",
+      "operator": "Digital Realty",
+      "country": "IE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 62,
+        "band": "MODERATE",
+        "grid": 80,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty JNB1 - Johannesburg",
+      "operator": "Digital Realty",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Digital Realty SIN1 - Singapore",
+      "operator": "Digital Realty",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty TYO1 - Tokyo Konan",
+      "operator": "Digital Realty",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Digital Realty SYD1 - Sydney Erskine Park",
+      "operator": "Digital Realty",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty IAD1 - Northern Virginia Ashbu",
+      "operator": "Digital Realty",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty CHI1 - Chicago Wabash",
+      "operator": "Digital Realty",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty JFK10 - NYC 111 8th Ave",
+      "operator": "Digital Realty",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty MRS1 - Marseille",
+      "operator": "Digital Realty",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Digital Realty CPT1 - Cape Town",
+      "operator": "Digital Realty",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Digital Realty VIE1 - Vienna",
+      "operator": "Digital Realty",
+      "country": "AT",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Digital Realty CPH1 - Copenhagen Glostrup",
+      "operator": "Digital Realty",
+      "country": "DK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "AWS US East 1 - Northern Virginia",
+      "operator": "Amazon Web Services",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS US East 2 - Ohio",
+      "operator": "Amazon Web Services",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS US West 1 - N. California",
+      "operator": "Amazon Web Services",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS US West 2 - Oregon",
+      "operator": "Amazon Web Services",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS EU West 1 - Ireland",
+      "operator": "Amazon Web Services",
+      "country": "IE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 62,
+        "band": "MODERATE",
+        "grid": 80,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS EU West 2 - London",
+      "operator": "Amazon Web Services",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS EU West 3 - Paris",
+      "operator": "Amazon Web Services",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS EU Central 1 - Frankfurt",
+      "operator": "Amazon Web Services",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS EU North 1 - Stockholm",
+      "operator": "Amazon Web Services",
+      "country": "SE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 18,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "AWS EU South 1 - Milan",
+      "operator": "Amazon Web Services",
+      "country": "IT",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS AP Southeast 1 - Singapore",
+      "operator": "Amazon Web Services",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS AP Southeast 2 - Sydney",
+      "operator": "Amazon Web Services",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS AP Northeast 1 - Tokyo",
+      "operator": "Amazon Web Services",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "AWS AP Northeast 2 - Seoul",
+      "operator": "Amazon Web Services",
+      "country": "KR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 35,
+        "connectivity": 40,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "AWS AP South 1 - Mumbai",
+      "operator": "Amazon Web Services",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS SA East 1 - Sao Paulo",
+      "operator": "Amazon Web Services",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AWS AP East 1 - Hong Kong",
+      "operator": "Amazon Web Services",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "AWS ME South 1 - Bahrain",
+      "operator": "Amazon Web Services",
+      "country": "BH",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "AWS AF South 1 - Cape Town",
+      "operator": "Amazon Web Services",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "AWS CA Central 1 - Canada",
+      "operator": "Amazon Web Services",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure East US - Northern Virginia",
+      "operator": "Microsoft Azure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure West US 2 - Washington State",
+      "operator": "Microsoft Azure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure North Europe - Ireland",
+      "operator": "Microsoft Azure",
+      "country": "IE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 62,
+        "band": "MODERATE",
+        "grid": 80,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure West Europe - Netherlands",
+      "operator": "Microsoft Azure",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Southeast Asia - Singapore",
+      "operator": "Microsoft Azure",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Japan East - Tokyo",
+      "operator": "Microsoft Azure",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Azure Australia East - Sydney",
+      "operator": "Microsoft Azure",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure South Africa North - Johannesburg",
+      "operator": "Microsoft Azure",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Azure Germany West Central - Frankfurt",
+      "operator": "Microsoft Azure",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure UK South - London",
+      "operator": "Microsoft Azure",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Canada Central - Toronto",
+      "operator": "Microsoft Azure",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Brazil South - Sao Paulo",
+      "operator": "Microsoft Azure",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Korea Central - Seoul",
+      "operator": "Microsoft Azure",
+      "country": "KR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 35,
+        "connectivity": 40,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Azure UAE North - Dubai",
+      "operator": "Microsoft Azure",
+      "country": "AE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Azure Central US - Iowa",
+      "operator": "Microsoft Azure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure East Asia - Hong Kong",
+      "operator": "Microsoft Azure",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Azure India Central - Pune",
+      "operator": "Microsoft Azure",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Azure Sweden Central",
+      "operator": "Microsoft Azure",
+      "country": "SE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 18,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "GCP us-central1 - Council Bluffs Iowa",
+      "operator": "Google Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP us-east1 - South Carolina",
+      "operator": "Google Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP us-east4 - Northern Virginia",
+      "operator": "Google Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP us-west1 - The Dalles Oregon",
+      "operator": "Google Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP us-west2 - Los Angeles",
+      "operator": "Google Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP europe-west1 - Belgium",
+      "operator": "Google Cloud",
+      "country": "BE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "GCP europe-west2 - London",
+      "operator": "Google Cloud",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP europe-west3 - Frankfurt",
+      "operator": "Google Cloud",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP europe-west4 - Eemshaven Netherlands",
+      "operator": "Google Cloud",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP asia-east1 - Taiwan",
+      "operator": "Google Cloud",
+      "country": "TW",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 63,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 75,
+        "connectivity": 20,
+        "geo": 55,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "GCP asia-southeast1 - Singapore",
+      "operator": "Google Cloud",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP asia-northeast1 - Tokyo",
+      "operator": "Google Cloud",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "GCP australia-southeast1 - Sydney",
+      "operator": "Google Cloud",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP asia-south1 - Mumbai",
+      "operator": "Google Cloud",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GCP southamerica-east1 - Sao Paulo",
+      "operator": "Google Cloud",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud us-ashburn-1 - Virginia",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud us-phoenix-1 - Phoenix",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud us-chicago-1 - Chicago",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud eu-frankfurt-1 - Frankfurt",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud uk-london-1 - London",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud ap-tokyo-1 - Tokyo",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Oracle Cloud ap-singapore-1 - Singapore",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud ap-sydney-1 - Sydney",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud ap-mumbai-1 - Mumbai",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Oracle Cloud sa-saopaulo-1 - Sao Paulo",
+      "operator": "Oracle Cloud Infrastructure",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud DAL10 - Dallas",
+      "operator": "IBM Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud WDC04 - Washington DC",
+      "operator": "IBM Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud FRA02 - Frankfurt",
+      "operator": "IBM Cloud",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud LON06 - London",
+      "operator": "IBM Cloud",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud TOK02 - Tokyo",
+      "operator": "IBM Cloud",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "IBM Cloud SYD01 - Sydney",
+      "operator": "IBM Cloud",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "IBM Cloud TOR01 - Toronto",
+      "operator": "IBM Cloud",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud China - Hangzhou",
+      "operator": "Alibaba Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Alibaba Cloud China - Shanghai",
+      "operator": "Alibaba Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Alibaba Cloud China - Beijing",
+      "operator": "Alibaba Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Alibaba Cloud China - Shenzhen",
+      "operator": "Alibaba Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Alibaba Cloud Singapore",
+      "operator": "Alibaba Cloud",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud Japan - Tokyo",
+      "operator": "Alibaba Cloud",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Alibaba Cloud Germany - Frankfurt",
+      "operator": "Alibaba Cloud",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud US - Silicon Valley",
+      "operator": "Alibaba Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud Australia - Sydney",
+      "operator": "Alibaba Cloud",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud India - Mumbai",
+      "operator": "Alibaba Cloud",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Alibaba Cloud Indonesia - Jakarta",
+      "operator": "Alibaba Cloud",
+      "country": "ID",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 50,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Tencent Cloud Singapore",
+      "operator": "Tencent Cloud",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Tencent Cloud US East - Virginia",
+      "operator": "Tencent Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Tencent Cloud Silicon Valley",
+      "operator": "Tencent Cloud",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Tencent Cloud Tokyo",
+      "operator": "Tencent Cloud",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Tencent Cloud Frankfurt",
+      "operator": "Tencent Cloud",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Tencent Cloud Sao Paulo",
+      "operator": "Tencent Cloud",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Huawei Cloud CN North - Beijing",
+      "operator": "Huawei Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Huawei Cloud CN East - Shanghai",
+      "operator": "Huawei Cloud",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Huawei Cloud AP - Singapore",
+      "operator": "Huawei Cloud",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Huawei Cloud CN-Hong Kong",
+      "operator": "Huawei Cloud",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Huawei Cloud AF - Johannesburg",
+      "operator": "Huawei Cloud",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Huawei Cloud LA - Sao Paulo",
+      "operator": "Huawei Cloud",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Ashburn VA1/VA2/VA3 - Virginia",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "224",
+      "risk": {
+        "score": 58,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 28,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Chicago CH1/CH2/CH3 - Illinois",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "200",
+      "risk": {
+        "score": 58,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 25,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Santa Clara SV1 - Silicon Valley",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "68",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 8,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Dallas TX1/TX4 - Texas",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "160",
+      "risk": {
+        "score": 58,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 20,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Hillsboro HI1 - Oregon",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "126",
+      "risk": {
+        "score": 57,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 16,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NTT Phoenix PH1/PH4 - Arizona",
+      "operator": "NTT Global Data Centers",
+      "country": "US",
+      "power_mw": "240",
+      "risk": {
+        "score": 58,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 30,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne FRA1 - Frankfurt Sossenheim",
+      "operator": "CyrusOne",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne FRA3 - Frankfurt",
+      "operator": "CyrusOne",
+      "country": "DE",
+      "power_mw": "22",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 3,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne LON1 - London",
+      "operator": "CyrusOne",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne AMS1 - Amsterdam",
+      "operator": "CyrusOne",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne DUB1 - Dublin",
+      "operator": "CyrusOne",
+      "country": "IE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 62,
+        "band": "MODERATE",
+        "grid": 80,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne MIL1/MIL2 - Milan",
+      "operator": "CyrusOne",
+      "country": "IT",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CyrusOne MAD1 - Madrid",
+      "operator": "CyrusOne",
+      "country": "ES",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite One Wilshire LA1 - Los Angeles",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite SV1/SV2 - Silicon Valley",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite NY1 - New York 32 Ave Americas",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite DE1/DE2 - Denver",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite CH1/CH2 - Chicago Cermak",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "CoreSite VA1/VA2 - Northern Virginia Reston",
+      "operator": "CoreSite",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Richmond NAP - Virginia",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Chicago Mega - Illinois",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Dallas Mega - Texas",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Ashburn-Broderick - Virginia",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Atlanta Metro Mega - Georgia",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "QTS Piscataway - New Jersey",
+      "operator": "QTS Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain IAD01 - Northern Virginia",
+      "operator": "Iron Mountain Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain BOS01 - Boston",
+      "operator": "Iron Mountain Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain PHX01 - Phoenix",
+      "operator": "Iron Mountain Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain FRA01/FRA02 - Frankfurt",
+      "operator": "Iron Mountain Data Centers",
+      "country": "DE",
+      "power_mw": "10.6",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 1,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain SIN01 - Singapore",
+      "operator": "Iron Mountain Data Centers",
+      "country": "SG",
+      "power_mw": "7.3",
+      "risk": {
+        "score": 59,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 1,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Iron Mountain MUM01 - Mumbai",
+      "operator": "Iron Mountain Data Centers",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Switch SUPERNAP Las Vegas - The Core",
+      "operator": "Switch",
+      "country": "US",
+      "power_mw": "495",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 50,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Switch SUPERNAP Reno - The Citadel",
+      "operator": "Switch",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Switch SUPERNAP Michigan",
+      "operator": "Switch",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse North - London Docklands",
+      "operator": "Telehouse",
+      "country": "GB",
+      "power_mw": "73",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 9,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse East - London Docklands",
+      "operator": "Telehouse",
+      "country": "GB",
+      "power_mw": "73",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 9,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse West - London Docklands",
+      "operator": "Telehouse",
+      "country": "GB",
+      "power_mw": "73",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 9,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse North Two - London Docklands",
+      "operator": "Telehouse",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse Paris Voltaire",
+      "operator": "Telehouse",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse Frankfurt",
+      "operator": "Telehouse",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telehouse Tokyo",
+      "operator": "Telehouse",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Global Switch London East",
+      "operator": "Global Switch",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Amsterdam",
+      "operator": "Global Switch",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Frankfurt",
+      "operator": "Global Switch",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Paris Clichy",
+      "operator": "Global Switch",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Singapore Woodlands",
+      "operator": "Global Switch",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Sydney Ultimo",
+      "operator": "Global Switch",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Global Switch Hong Kong Tsuen Wan",
+      "operator": "Global Switch",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "NextDC S1 - Sydney Macquarie Park",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "16",
+      "risk": {
+        "score": 45,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 2,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC S2 - Sydney Macquarie Park",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "30",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 4,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC S3 - Sydney Artarmon",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "80",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 10,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC M1 - Melbourne Port",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC B1 - Brisbane Eight Mile Plains",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC P1 - Perth Osborne Park",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "NextDC C1 - Canberra Mitchell",
+      "operator": "NextDC",
+      "country": "AU",
+      "power_mw": "4.4",
+      "risk": {
+        "score": 45,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 1,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk SYD1 - Sydney West",
+      "operator": "AirTrunk",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk SYD2 - Sydney North",
+      "operator": "AirTrunk",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk MEL1 - Melbourne",
+      "operator": "AirTrunk",
+      "country": "AU",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 60,
+        "hazard": 25,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk SGP1 - Singapore",
+      "operator": "AirTrunk",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk HKG1 - Hong Kong",
+      "operator": "AirTrunk",
+      "country": "HK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 30,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 35,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "AirTrunk TOK1 - Tokyo East",
+      "operator": "AirTrunk",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "AirTrunk BOM1 - Mumbai",
+      "operator": "AirTrunk",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AirTrunk JHB1 - Johor Bahru Malaysia",
+      "operator": "AirTrunk",
+      "country": "MY",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "GDS BJ1 - Beijing Daxing",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS BJ10/BJ11 - Beijing Shunyi",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS SH4 - Shanghai Pudong",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS SH10/SH11 - Shanghai Fute Road",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS SZ1 - Shenzhen Futian",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS GZ1 - Guangzhou",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "GDS ZB2 - Zhangjiakou Zhangbei",
+      "operator": "GDS Services",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Cologix TOR1/TOR3 - Toronto 151 Front",
+      "operator": "Cologix",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix MTL1/MTL3 - Montreal",
+      "operator": "Cologix",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix VAN1 - Vancouver 555 Hastings",
+      "operator": "Cologix",
+      "country": "CA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 20,
+        "hazard": 15,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix MIN1/MIN2 - Minneapolis",
+      "operator": "Cologix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix COL3 - Columbus Ohio 50MW",
+      "operator": "Cologix",
+      "country": "US",
+      "power_mw": "50",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 6,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix NNJ1/NNJ4 - Northern New Jersey",
+      "operator": "Cologix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Cologix DAL1/DAL2 - Dallas",
+      "operator": "Cologix",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Vantage Frankfurt I",
+      "operator": "Vantage Data Centers",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Vantage Berlin I - Ludwigsfelde",
+      "operator": "Vantage Data Centers",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Vantage Cardiff Wales",
+      "operator": "Vantage Data Centers",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Vantage Warsaw Poland",
+      "operator": "Vantage Data Centers",
+      "country": "PL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 47,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 60,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Vantage Milan I - Melegnano",
+      "operator": "Vantage Data Centers",
+      "country": "IT",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Vantage Zurich I - Winterthur",
+      "operator": "Vantage Data Centers",
+      "country": "CH",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 51,
+        "band": "MODERATE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Vantage Johannesburg I",
+      "operator": "Vantage Data Centers",
+      "country": "ZA",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 34,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Vantage Cyberjaya I Malaysia",
+      "operator": "Vantage Data Centers",
+      "country": "MY",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "atNorth ICE01 - Reykjavik Iceland",
+      "operator": "atNorth",
+      "country": "IS",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "atNorth ICE02 - Keflavik Iceland",
+      "operator": "atNorth",
+      "country": "IS",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 70,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "atNorth SWE01/SWE02 - Stockholm",
+      "operator": "atNorth",
+      "country": "SE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 18,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "atNorth DEN01 - Copenhagen Denmark",
+      "operator": "atNorth",
+      "country": "DK",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 17,
+        "band": "NEGLIGIBLE",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "atNorth FIN01/FIN02 - Helsinki Finland",
+      "operator": "atNorth",
+      "country": "FI",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 32,
+        "band": "LOW",
+        "grid": 15,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 5,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "Ascenty SP1 - Sao Paulo Barueri",
+      "operator": "Ascenty",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Ascenty SP2 - Sao Paulo Hortolandia",
+      "operator": "Ascenty",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Ascenty RJ01 - Rio de Janeiro",
+      "operator": "Ascenty",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Ascenty Fortaleza CE",
+      "operator": "Ascenty",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "ODATA SP01 - Sao Paulo Santana de Parnaiba",
+      "operator": "ODATA",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "ODATA RJ01 - Rio de Janeiro Meriti",
+      "operator": "ODATA",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Scala Data Centers SP1 - Sao Paulo",
+      "operator": "Scala Data Centers",
+      "country": "BR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 44,
+        "band": "LOW",
+        "grid": 55,
+        "hazard": 30,
+        "connectivity": 10,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "KIO Networks Mexico City DC1",
+      "operator": "KIO Networks",
+      "country": "MX",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 45,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "KIO Networks Queretaro DC",
+      "operator": "KIO Networks",
+      "country": "MX",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 45,
+        "connectivity": 40,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Princeton Digital SG1 - Singapore Central",
+      "operator": "Princeton Digital Group",
+      "country": "SG",
+      "power_mw": "20",
+      "risk": {
+        "score": 59,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 2,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Princeton Digital SG3 - Singapore West",
+      "operator": "Princeton Digital Group",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Princeton Digital BJ1 - Beijing",
+      "operator": "Princeton Digital Group",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Princeton Digital JAK1 - Jakarta",
+      "operator": "Princeton Digital Group",
+      "country": "ID",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 50,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Princeton Digital MUM1 - Mumbai",
+      "operator": "Princeton Digital Group",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Chindata BJ1 - Beijing Laiguangying",
+      "operator": "Chindata Group",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Chindata ZJK - Zhangjiakou Inner Mongolia",
+      "operator": "Chindata Group",
+      "country": "CN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 50,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 65,
+        "criticality": 5,
+        "driver": "geo"
+      }
+    },
+    {
+      "name": "Bridge Data Centres MY1 - Cyberjaya",
+      "operator": "Bridge Data Centres",
+      "country": "MY",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC Singapore 1 - Ang Mo Kio",
+      "operator": "ST Telemedia GDC",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC Singapore 2 - Tai Seng",
+      "operator": "ST Telemedia GDC",
+      "country": "SG",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 60,
+        "band": "MODERATE",
+        "grid": 85,
+        "hazard": 10,
+        "connectivity": 15,
+        "geo": 15,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC London",
+      "operator": "ST Telemedia GDC",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC Frankfurt",
+      "operator": "ST Telemedia GDC",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC India Mumbai Chandivali",
+      "operator": "ST Telemedia GDC",
+      "country": "IN",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 40,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 30,
+        "connectivity": 20,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "STT GDC Korea - Seoul",
+      "operator": "ST Telemedia GDC",
+      "country": "KR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 25,
+        "hazard": 35,
+        "connectivity": 40,
+        "geo": 30,
+        "criticality": 5,
+        "driver": "connectivity"
+      }
+    },
+    {
+      "name": "60 Hudson Street New York City",
+      "operator": "DataGryd / Digital Realty / Equinix NY8",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "111 8th Avenue New York City",
+      "operator": "Google / Digital Realty JFK10",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "One Wilshire Los Angeles",
+      "operator": "CoreSite (major tenant)",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "DE-CIX Frankfurt - Interxion FRA Campus",
+      "operator": "Digital Realty (Interxion)",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "AMS-IX Campus Amsterdam",
+      "operator": "Multiple operators",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Maincubes ONE Frankfurt",
+      "operator": "Maincubes",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Maincubes ONE Amsterdam",
+      "operator": "Maincubes",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Data4 Group MRS1 - Paris Marcoussis",
+      "operator": "Data4 Group",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Etix Everywhere Paris",
+      "operator": "Etix Everywhere",
+      "country": "FR",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 22,
+        "band": "NEGLIGIBLE",
+        "grid": 25,
+        "hazard": 20,
+        "connectivity": 20,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Colt DCS Frankfurt City",
+      "operator": "Colt DCS",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Colt DCS Tokyo Shiohama",
+      "operator": "Colt DCS",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "Colt DCS Tokyo Inzai",
+      "operator": "Colt DCS",
+      "country": "JP",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 54,
+        "band": "MODERATE",
+        "grid": 30,
+        "hazard": 70,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "hazard"
+      }
+    },
+    {
+      "name": "EdgeConneX Portland PDX01",
+      "operator": "EdgeConneX",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "EdgeConneX Amsterdam AMS01",
+      "operator": "EdgeConneX",
+      "country": "NL",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 38,
+        "band": "LOW",
+        "grid": 50,
+        "hazard": 20,
+        "connectivity": 15,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "EdgeConneX Frankfurt FRA01",
+      "operator": "EdgeConneX",
+      "country": "DE",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 46,
+        "band": "MODERATE",
+        "grid": 55,
+        "hazard": 20,
+        "connectivity": 40,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Stack Infrastructure IAD1 - Northern Virginia",
+      "operator": "Stack Infrastructure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Stack Infrastructure PHX1 - Phoenix",
+      "operator": "Stack Infrastructure",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Aligned Data Centers PHX1 - Phoenix",
+      "operator": "Aligned Data Centers",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telxius Madrid TIWS",
+      "operator": "Telxius",
+      "country": "ES",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 26,
+        "band": "LOW",
+        "grid": 30,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 25,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Telxius Miami RNAP - NAP of Americas",
+      "operator": "Telxius",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Compass Datacenters PHX1 - Phoenix",
+      "operator": "Compass Datacenters",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Compass Datacenters DFW1 - Dallas",
+      "operator": "Compass Datacenters",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Yondr Group London",
+      "operator": "Yondr Group",
+      "country": "GB",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 35,
+        "band": "LOW",
+        "grid": 45,
+        "hazard": 20,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    },
+    {
+      "name": "Yondr Group Atlanta",
+      "operator": "Yondr Group",
+      "country": "US",
+      "power_mw": "N/A",
+      "risk": {
+        "score": 56,
+        "band": "MODERATE",
+        "grid": 70,
+        "hazard": 40,
+        "connectivity": 10,
+        "geo": 10,
+        "criticality": 5,
+        "driver": "grid"
+      }
+    }
+  ]
+}

@@ -113,6 +113,18 @@
       "model_tier": "flash",
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true
+    },
+    "dc_security": {
+      "id": "dc_security",
+      "name": "Data Center Security Desk",
+      "description": "Grid strain, subsea cable disruptions, natural hazards, supply chain constraints affecting data center operations",
+      "narrative_patterns": [
+        "dc_"
+      ],
+      "keyword_filters": [],
+      "model_tier": "pro",
+      "delivery_target": "trevor_mentis@agentmail.to",
+      "seeded": false
     }
   }
 }

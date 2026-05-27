@@ -260,6 +260,11 @@ if [ "$COG_N" -ge 3 ] && [ ! -f "$DEGRADED_FLAG" ]; then
         > "$LOG_DIR/philby-all-${TODAY}.log" 2>&1 && \
     echo "  Philby: all 5 desks published" >> "$HEALTH_LOG" || \
     echo "  Philby: desk publication failed" >> "$HEALTH_LOG"
+    # Data Center Security — registry update + threat collector
+    cd "$WORKSPACE" && timeout 60 python3 scripts/dc_collectors.py --registry \
+        > "$LOG_DIR/dc-collect-${TODAY}.log" 2>&1 && \
+    echo "  DC Security: registry updated" >> "$HEALTH_LOG" || \
+    echo "  DC Security: registry update failed" >> "$HEALTH_LOG"
     echo 0 > "$COG_COUNTER"
 fi
 

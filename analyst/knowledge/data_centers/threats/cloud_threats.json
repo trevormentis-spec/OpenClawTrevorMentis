@@ -1,0 +1,15 @@
+{
+  "generated": "2026-05-26T23:46:36.025347+00:00",
+  "providers": {
+    "AWS": {
+      "total_entries": 0,
+      "active_issues": [],
+      "status": "all_clear"
+    },
+    "GCP": {
+      "total_entries": 0,
+      "active_issues": [],
+      "status": "all_clear"
+    }
+  }
+}

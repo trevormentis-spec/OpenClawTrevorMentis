@@ -1,0 +1,11 @@
+{
+  "escalation_thresholds": {
+    "default_swing": 15,
+    "swing_for_categories": {
+      "dc_security": 10,
+      "energy": 12
+    },
+    "weak_signal_min_strength": 0.05,
+    "weak_signal_max_count": 50
+  }
+}

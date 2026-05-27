@@ -1,0 +1,15 @@
+{
+  "generated": "2026-05-26",
+  "transformer_lead_time_months": "18-24",
+  "transformer_lead_time_trend": "worsening",
+  "switchgear_lead_time_months": "12-18",
+  "generator_lead_time_months": "8-12",
+  "ups_battery_lead_time_months": "4-6",
+  "key_notes": [
+    "Transformer lead times 18-24 months for >50 MVA units \u2014 single biggest constraint",
+    "PJM interconnection queue at 122 GW \u2014 new DC builds face 4-6 year delays",
+    "Schneider Electric and Eaton both reporting extended switchgear delivery",
+    "Caterpillar generator deliveries extending to 12 months on high-volume orders",
+    "Lithium-ion UPS battery supply stable, but lead-acid still constrained"
+  ]
+}

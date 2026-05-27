@@ -1,0 +1,72 @@
+{
+  "generated": "2026-05-26T23:46:35.712464+00:00",
+  "total_entries": 58,
+  "grid_relevant": [
+    {
+      "title": "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67707",
+      "description": "Developers plan to bring approximately 44.9 billion cubic feet per day (Bcf/d) of new pipeline capacity online in the United States in 2026 and 2027, according to our latest Natural Gas Pipeline Projects Tracker. Approximately 70% (31.6 Bcf/d) of this new capacity is already under construction. More",
+      "published": "Tue, 26 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Coal remains competitive for power generation in the central United States",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67705",
+      "description": "In the first four months of 2026, electricity, natural gas, and coal prices suggested continued favorable economics for coal generation in MISO. The dark spread of coal, the difference between the fuel costs for coal-fired generation and the wholesale electricity price, in the Midcontinent Independe",
+      "published": "Wed, 20 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Data center server energy use grows across the commercial building stock",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67704",
+      "description": "In the Annual Energy Outlook 2026 (AEO2026), our long-term outlook, we project electricity consumed by data center servers will increase across the commercial building stock, increasing more in standalone data centers than in all other data center rooms combined. By 2050, server consumption alone re",
+      "published": "Tue, 19 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67685",
+      "description": "In our most recent Short-Term Energy Outlook (STEO), we forecast that annual electric power generation from utility-scale solar will surpass that from coal for the first time in 2026 within the electricity grid that covers most of Texas. Solar generation is expected to reach 78 billion kilowatthours",
+      "published": "Wed, 13 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "The United States set record energy production in 2025, again",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+      "description": "Total energy production in the United States increased to a new record of 107 quadrillion British thermal units (quads) in 2025, a 3.4% increase from the previous record set in 2024, according to new data in our Monthly Energy Review. Total production was driven by record-high production in natural",
+      "published": "Mon, 11 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Commercial electricity sales have soared in Virginia, driven by data centers",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67664",
+      "description": "Commercial electricity sales in Virginia increased by nearly 30.0 million megawatthours (MWh) between 2019 and 2025, much faster growth than in any other state except Texas, a much larger state, according to our Annual Electric Power Industry Report. The growth in sales of electricity in Virginia is",
+      "published": "Tue, 05 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Coal distributions for non-electric power use decline in the South",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67644",
+      "description": "The volume of coal delivered in the United States for uses other than power generation\u2014primarily, for manufacturing\u2014decreased by about half in the last 15 years. Coal delivered for these purposes in the South decreased the most in percentage terms between 2010 and 2025, falling 75%, or 14.7 million",
+      "published": "Mon, 04 May 2026 09:00:00 EST",
+      "source": "EIA Today"
+    },
+    {
+      "title": "Hydropower generation expected to recover despite snow drought in the West",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67444",
+      "description": "In our April Short-Term Energy Outlook (STEO), we expect U.S. hydropower generation will increase by 5% in 2026 but remain 1.8% below the 10-year average following snow drought conditions in some states. Hydropower generation in 2025 increased to 245 billion kilowatthours (BkWh), about 4 BkWh more t",
+      "published": "Tue, 14 Apr 2026 15:00:00 EST",
+      "source": "EIA Today"
+    }
+  ],
+  "recent_headlines": [
+    "Most planned natural gas pipeline capacity additions in 2026 and 2027 originate in Texas",
+    "Coal remains competitive for power generation in the central United States",
+    "Data center server energy use grows across the commercial building stock",
+    "Electricity generation from solar could exceed coal in ERCOT for the first time in 2026",
+    "The United States set record energy production in 2025, again",
+    "Commercial electricity sales have soared in Virginia, driven by data centers",
+    "Coal distributions for non-electric power use decline in the South",
+    "Hydropower generation expected to recover despite snow drought in the West"
+  ]
+}

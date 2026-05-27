@@ -1,0 +1,72 @@
+[
+  {
+    "id": "less-001",
+    "timestamp": "2026-05-26T23:00:00Z",
+    "category": "brief",
+    "severity": "high",
+    "situation": "Daily brief QC gate blocked delivery on May 26. One of 7 gates failed.",
+    "root_cause": "Model downgrade risk: if session default is Flash, the brief pipeline produces Flash-quality output that fails calibration gates.",
+    "action_taken": "Created brief-auto-recovery.sh that retries with forced Pro model selection.",
+    "prevention": "Before running brief pipeline, verify model selection is V4 Pro minimum. Add auto-recovery cron at 07:15 PT.",
+    "applied": true,
+    "applied_count": 1,
+    "last_applied": "2026-05-27T00:00:00Z",
+    "expires": null
+  },
+  {
+    "id": "less-002",
+    "timestamp": "2026-05-26T23:00:00Z",
+    "category": "trade",
+    "severity": "high",
+    "situation": "88% of trade attempts failed. Resting orders placed but never filled. Pricing logic produced maker prices that didn't execute.",
+    "root_cause": "Orders placed at conservative maker prices without fill monitoring or price escalation. 80 of 90 orders sat unfilled.",
+    "action_taken": "Added fill monitoring loop with price escalation: check fill at 20s intervals, bump price by 2 cents if unfilled.",
+    "prevention": "All trades must include fill monitoring with price escalation. Orders should not rest unfilled for more than 60s.",
+    "applied": true,
+    "applied_count": 1,
+    "last_applied": "2026-05-27T00:00:00Z",
+    "expires": null
+  },
+  {
+    "id": "less-003",
+    "timestamp": "2026-05-26T23:00:00Z",
+    "category": "cognition",
+    "severity": "medium",
+    "situation": "Zero weak signals, anomalies, or narrative drift detected across 77 cognition cycles on Flash model.",
+    "root_cause": "Flash model (Tier-3) is not capable of reliable pattern detection. Pro model (Tier-2) detected 28 weak signals in first cycle.",
+    "action_taken": "Switched primary cognition model from Flash to Pro. Flash is now reserved for triage/ingestion only.",
+    "prevention": "Cognition must run on Pro minimum. Flash is excluded from narrative-level analysis. Verify model tier in cognition daemon config.",
+    "applied": true,
+    "applied_count": 1,
+    "last_applied": "2026-05-27T00:00:00Z",
+    "expires": null
+  },
+  {
+    "id": "less-004",
+    "timestamp": "2026-05-27T00:00:00Z",
+    "category": "collection",
+    "severity": "medium",
+    "situation": "Only 30 of 996 durable sources tested. Cloud status and physical security RSS feeds returning 403/404 errors silently.",
+    "root_cause": "Source health sweep was never completed after the SA source integration. Defunct feeds degrade collection silently.",
+    "action_taken": "Implemented batch health testing at 50 sources per cycle via Philby Collector. Auto-disable 3x failed sources.",
+    "prevention": "Source health must be tested continuously. Dead feeds must be quarantined and replaced within one cycle.",
+    "applied": false,
+    "applied_count": 0,
+    "last_applied": null,
+    "expires": null
+  },
+  {
+    "id": "less-005",
+    "timestamp": "2026-05-27T00:00:00Z",
+    "category": "trade",
+    "severity": "low",
+    "situation": "Ticker resolution failed for KXUSAIRANAGREEMENT because event ticker != series ticker.",
+    "root_cause": "Scanner outputs event tickers (KXUSAIRANAGREEMENT) but Kalshi API requires series tickers (KXUSAIRANAGREEMENT-27-26JUN).",
+    "action_taken": "Added scanner-style API resolution to convert event \u2192 series tickers using get_active_markets().",
+    "prevention": "Always resolve event tickers to series tickers via the Kalshi API before placing orders.",
+    "applied": true,
+    "applied_count": 1,
+    "last_applied": "2026-05-27T00:00:00Z",
+    "expires": null
+  }
+]
