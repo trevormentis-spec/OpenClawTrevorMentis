@@ -1,4 +1,25 @@
-# Gmail Intel Digest — 2026-05-28 19:07 UTC
+# Gmail Intel Digest — 2026-05-28 21:03 UTC
+
+## Stocks sizzle on ceasefire extension
+**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
+**Date:** Thu, 28 May 2026 17:02:40 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## National Security Nightcap for Thursday, May 28
+**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
+**Date:** Thu, 28 May 2026 20:04:35 +0000
+**Type:** alert | **Importance:** high
+
+View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-thursday-may-28?e=829f311d89)
+https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=72ed83379c-EMAIL_CAMPAIGN_2026_05_28_07_59&utm_medium=email&utm_term=0_-72ed83379c-547824188&mc_cid=72ed83379c&mc_eid=UNIQID
+
+X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=72ed83379c-EMAIL_CAMPAIGN_2026_05_28_07_59&utm_mediu
+
+---
 
 ## DOJ antitrust exits fuel Big Law hiring
 **From:** The Afternoon Docket <thedailydocket@thomsonreuters.com>
@@ -27,35 +48,16 @@
 
 ---
 
-## Oil up again on fresh strikes in Iran
-**From:** Reuters Power Up <powerup@thomsonreuters.com>
-**Date:** Thu, 28 May 2026 12:00:33 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-05-28 21:04 UTC
 
----
+### How Rubio is passing the Iran test
+**From:** POLITICO's National Security Daily <nationalsecuritydaily@email.politico.com>  
+From the SitRoom to the E-Ring, the inside scoop on defense, national security and foreign policy. May 28, 2026 View in browser By Giselle Ruhiyyih Ewing and Liset Cruz
 
-## Temu fined $232 million for breaching EU rules on sale of illegal products
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Thu, 28 May 2026 11:01:22 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-## Crypto companies without EU licences face prosecution, French regulator warns
-**From:** Reuters Global Investor <newsletters@email.reuters.com>
-**Date:** Thu, 28 May 2026 10:02:05 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-
-## AgentMail Intel — 2026-05-28 19:08 UTC
+### Washington Edition: Zipping lips
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Trump’s Bid for Federal Employee NDAs Comes With a Long History NDAs proposed for federal workers ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### This Week in Congress
 **From:** Breaking Defense - Congress <newsletters@breakingdefense.com>  
@@ -87,11 +89,3 @@ Your daily briefing of the nuclear policy news and analysis. Email not displayin
 ### Middle East Notes and Comment
 **From:** Mona Yacoubian <middleeaststudies@csis.org>  
 How Gulf states view the potential U.S.-Iran deal, regional responses to the Iran war's reverberations, and more from the CSIS Middle East Program. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Money Stuff: The Bitcoin Lost-and-Found
-**From:** Matt Levine <noreply@news.bloomberg.com>  
-Money Stuff Paramount, Polymarket, AI hiring. View in browser <https://sli.bloomberg.com/click?s=1149004&li=18321849&m=758937c56eef1afe8
-
-### The progressive playbook for November
-**From:** POLITICO Playbook PM <politicoplaybook@email.politico.com>  
-Presented by Nike: POLITICO's must-read briefing on what's driving the afternoon in Washington. May 28, 2026 View in browser By Ali Bianco Presented by

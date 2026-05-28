@@ -1,1405 +1,5 @@
 [
   {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:15Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-28T08:31:15Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:15Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:15Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:15Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:16Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:16Z"
-  },
-  {
-    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
-    "url": "https://www.afro.who.int/rss-feeds",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:17Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:18Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:18Z"
-  },
-  {
-    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
-    "url": "https://www.afro.who.int/rss-feeds",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:19Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:21Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:21Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:22Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:22Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:22Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:22Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:30Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:31Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:32Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:32Z"
-  },
-  {
-    "name": "The global contest for the Pacific | Lowy Institute",
-    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:34Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:35Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:35Z"
-  },
-  {
-    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
-    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:36Z"
-  },
-  {
-    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
-    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:36Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:37Z"
-  },
-  {
-    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
-    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:37Z"
-  },
-  {
-    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
-    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:37Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:37Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:37Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
-    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:38Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-28T08:31:39Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:39Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:39Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:39Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
-    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T08:31:40Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:06Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:06Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-28T09:27:06Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:07Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:07Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:08Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:09Z"
-  },
-  {
-    "name": "Africa Intelligence: exclusive news on Africa",
-    "url": "https://www.africaintelligence.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:09Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:09Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:09Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:10Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:10Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:10Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:10Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:11Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:18Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:18Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:19Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:20Z"
-  },
-  {
-    "name": "The global contest for the Pacific | Lowy Institute",
-    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:20Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:21Z"
-  },
-  {
-    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
-    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:22Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:22Z"
-  },
-  {
-    "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
-    "url": "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:24Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:24Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:24Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:24Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:25Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:25Z"
-  },
-  {
-    "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
-    "url": "https://www.nbcnews.com/politics/national-security",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:26Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:26Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:26Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:26Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:27Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:27Z"
-  },
-  {
-    "name": "Africa Intelligence: exclusive news on Africa",
-    "url": "https://www.africaintelligence.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:27Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:28Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:29Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:29Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:29Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:29Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:30Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:37Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:27:37Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:38Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:38Z"
-  },
-  {
-    "name": "The global contest for the Pacific | Lowy Institute",
-    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:39Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:40Z"
-  },
-  {
-    "name": "Middle East Politics Newsletter | Substack",
-    "url": "https://mideastpolitics.substack.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:40Z"
-  },
-  {
-    "name": "\ud83d\udcaa\ud83c\uddfa\ud83c\udde6 The War Comes Home: Ukraine Strikes the Heart of Moscow",
-    "url": "https://brentmolnar.substack.com/p/the-war-comes-home-ukraine-strikes",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:27:41Z"
-  },
-  {
-    "name": "Russian Offensive Campaign Update | Product Line | ISW",
-    "url": "https://understandingwar.org/analysis/russia-ukraine/russian-offensive-campaign-assessment/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:06Z"
-  },
-  {
-    "name": "Understanding the Russian Military Today | Russia and Eurasia | CSIS",
-    "url": "https://www.csis.org/programs/europe-russia-and-eurasia-program/archives/russia-and-eurasia/understanding-russian",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:07Z"
-  },
-  {
-    "name": "NATO Agrees to New Defense Spending Target | Council on Foreign Relations",
-    "url": "https://www.cfr.org/articles/nato-agrees-new-defense-spending-target",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:07Z"
-  },
-  {
-    "name": "Geopolitical Europe | Gesine Weber | Substack",
-    "url": "https://geopoliticaleurope.substack.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:07Z"
-  },
-  {
-    "name": "Policy Brief - Towards a European Security Council",
-    "url": "https://iepbu.substack.com/p/policy-brief-towards-a-european-security",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:08Z"
-  },
-  {
-    "name": "About ECFR \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/about/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:08Z"
-  },
-  {
-    "name": "China & Taiwan Coverage | Institute for the Study of War",
-    "url": "https://understandingwar.org/analysis/china-taiwan/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:08Z"
-  },
-  {
-    "name": "Home | Asia Maritime Transparency Initiative",
-    "url": "https://amti.csis.org/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:09Z"
-  },
-  {
-    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
-    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:10Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:10Z"
-  },
-  {
-    "name": "Kalshi and Polymarket Are Spoiling Reality TV Shows \u2014 and Studios Don\u2019t Know What to Do About It",
-    "url": "https://variety.com/2026/tv/news/kalshi-polymarket-spoilers-reality-studios-1236756590/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:10Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:10Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:10Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:11Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:11Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:11Z"
-  },
-  {
-    "name": "60 Best Political News RSS Feeds",
-    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:11Z"
-  },
-  {
-    "name": "China & Taiwan Update, January 2, 2026 | ISW",
-    "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-january-2-2026/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:11Z"
-  },
-  {
-    "name": "Mexico\u2019s Long War: Drugs, Crime, and the Cartels | Council on Foreign Relations",
-    "url": "https://www.cfr.org/backgrounders/mexicos-long-war-drugs-crime-and-cartels",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:12Z"
-  },
-  {
-    "name": "US Oil Industry Data Analysis | Substack",
-    "url": "https://pauldial.substack.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:12Z"
-  },
-  {
-    "name": "US Oil Industry Data Analysis | Substack",
-    "url": "https://substack.com/@usoilindustry",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:12Z"
-  },
-  {
-    "name": "Substacks recommended by The Crude Chronicles",
-    "url": "https://thecrudechronicles.substack.com/recommendations",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:12Z"
-  },
-  {
-    "name": "Markets, Pipelines & Beyond | Substack",
-    "url": "https://oilmarkets.substack.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "Global Conflict Awareness \u2014 Live Strike Map: US\u00b7Israel vs Iran\u00b7Axis | OSINT Tracker 2026-03-10",
-    "url": "https://globalconflictawareness.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "Middle East AI News | Carrington Malin | Substack",
-    "url": "https://www.middleeastainews.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "Middle East Uncovered | Substack",
-    "url": "https://www.themiddleeastuncovered.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "Monitoring the Strait of Hormuz: Real-Time Maritime Risk & Transit Data",
-    "url": "https://www.seavantage.com/blog/strait-of-hormuz-maritime-risk-intelligence",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:13Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:14Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-28T09:57:14Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:14Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:14Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:15Z"
-  },
-  {
-    "name": "60 Best Political News RSS Feeds",
-    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
-    "url": "https://www.nhc.noaa.gov/aboutrss.shtml",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:16Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:17Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:17Z"
-  },
-  {
-    "name": "Africa Intelligence: exclusive news on Africa",
-    "url": "https://www.africaintelligence.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:18Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T09:57:18Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:18Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T09:57:18Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:06Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:07Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:08Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:08Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:15Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:16Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:17Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:17Z"
-  },
-  {
-    "name": "The global contest for the Pacific | Lowy Institute",
-    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:19Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:22Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:23Z"
-  },
-  {
-    "name": "Oversight Chairman Comer launches congressional probe into insider trading on Kalshi, Polymarket",
-    "url": "https://www.cnbc.com/2026/05/22/kalshi-polymarket-comer-insider-trading-probe-congress.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "Minnesota to ban prediction markets like Kalshi, Polymarket : NPR",
-    "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:24Z"
-  },
-  {
-    "name": "U.S. News and National Top Stories : NPR",
-    "url": "https://www.npr.org/sections/national/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:25Z"
-  },
-  {
-    "name": "60 Best Political News RSS Feeds",
-    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:25Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:25Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:25Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-28T10:27:25Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:26Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:27Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:27Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:28Z"
-  },
-  {
-    "name": "Africa Intelligence: exclusive news on Africa",
-    "url": "https://www.africaintelligence.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:28Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:29Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:38Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:38Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:39Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:39Z"
-  },
-  {
-    "name": "The global contest for the Pacific | Lowy Institute",
-    "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:39Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:40Z"
-  },
-  {
-    "name": "These states are fighting prediction markets. The Trump admin is furious - Salon.com",
-    "url": "https://www.salon.com/2026/05/24/these-states-are-fighting-prediction-markets-the-trump-admin-is-furious/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
-    "url": "https://www.cbsnews.com/news/polymarket-prediction-market-private-company-performance-kalshi/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
-    "url": "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:41Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-28T10:27:42Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:42Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:42Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-28T10:27:42Z"
-  },
-  {
     "name": "60 Best Political News RSS Feeds",
     "url": "https://rss.feedspot.com/political_news_rss_feeds/",
     "status": "ok",
@@ -6998,5 +5598,1405 @@
     "status": "ok",
     "code": 200,
     "tested_at": "2026-05-28T20:43:13Z"
+  },
+  {
+    "name": "CyberWarrior76",
+    "url": "https://cyberwarrior76.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:12:49Z"
+  },
+  {
+    "name": "Savageminds - Epic Interruptus",
+    "url": "https://savageminds.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:12:50Z"
+  },
+  {
+    "name": "Rachel Blevins (Independent Journalism)",
+    "url": "https://rachelblevins.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:12:50Z"
+  },
+  {
+    "name": "OsintRep - Daily OSINT",
+    "url": "https://www.osintrep.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:12:56Z"
+  },
+  {
+    "name": "SpecialEurasia OSINT",
+    "url": "https://www.specialeurasia.com/tag/osint/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:12:59Z"
+  },
+  {
+    "name": "GeopoliticalMatters",
+    "url": "https://geopoliticalmatters.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:01Z"
+  },
+  {
+    "name": "HISutton Covert Shores",
+    "url": "https://www.hisutton.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:01Z"
+  },
+  {
+    "name": "The DeepDraft",
+    "url": "https://thedeepdraft.com",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-28T21:13:02Z"
+  },
+  {
+    "name": "helenarbrt (Sayranith Blog)",
+    "url": "https://helenarbrt.wordpress.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:02Z"
+  },
+  {
+    "name": "Maritime OSINT Hub (YouTube)",
+    "url": "https://www.youtube.com/@MaritimeOSINTHub",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T21:13:02Z"
+  },
+  {
+    "name": "Energy News Beat (Podcast/YouTube)",
+    "url": "https://podcasts.apple.com/ca/podcast/iran-war-has-brought-the-energy-crisis-to-the/id1564334366?i=1000765649628",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:02Z"
+  },
+  {
+    "name": "African Arguments",
+    "url": "https://africanarguments.org",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:03Z"
+  },
+  {
+    "name": "The Africa Report",
+    "url": "https://www.theafricareport.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:03Z"
+  },
+  {
+    "name": "GZERO Daily",
+    "url": "https://www.gzeromedia.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:03Z"
+  },
+  {
+    "name": "Conflicts Forum (Alastair Crooke)",
+    "url": "https://conflictsforum.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:03Z"
+  },
+  {
+    "name": "Palaemon Maritime",
+    "url": "https://www.palaemonmaritime.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:04Z"
+  },
+  {
+    "name": "Dryad Global / Channel 16",
+    "url": "https://channel16.dryadglobal.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:04Z"
+  },
+  {
+    "name": "OAF Nation",
+    "url": "https://oafnation.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:04Z"
+  },
+  {
+    "name": "HSToday (Homeland Security Today)",
+    "url": "https://www.hstoday.us",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:04Z"
+  },
+  {
+    "name": "Markham Hislop Substack",
+    "url": "https://markhamhislop.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:05Z"
+  },
+  {
+    "name": "Defence Security Asia",
+    "url": "https://defencesecurityasia.com",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:05Z"
+  },
+  {
+    "name": "Discovery Alert Australia",
+    "url": "https://discoveryalert.com.au",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:05Z"
+  },
+  {
+    "name": "The Energy Newsbeat (Stu Turley)",
+    "url": "https://theenergynewsbeat.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:05Z"
+  },
+  {
+    "name": "Samuel E. Roberson Jr.",
+    "url": "https://samuelerobersonjr.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:06Z"
+  },
+  {
+    "name": "Carra Globe",
+    "url": "https://carraglobe.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:06Z"
+  },
+  {
+    "name": "MEPEI (Middle East Political & Economic Institute)",
+    "url": "https://mepei.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:08Z"
+  },
+  {
+    "name": "Al-Monitor",
+    "url": "https://www.al-monitor.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:08Z"
+  },
+  {
+    "name": "AGBI (Arabian Gulf Business Insight)",
+    "url": "https://www.agbi.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:09Z"
+  },
+  {
+    "name": "Wichita Liberty",
+    "url": "https://www.wichitaliberty.org",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:10Z"
+  },
+  {
+    "name": "Ru4People (Mike Simpson)",
+    "url": "https://ru4people.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:10Z"
+  },
+  {
+    "name": "The Prekend",
+    "url": "https://theprekend.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:11Z"
+  },
+  {
+    "name": "IEA Oil Market Report - May 2026",
+    "url": "https://www.iea.org/reports/oil-market-report-may-2026",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:11Z"
+  },
+  {
+    "name": "EIA Short-Term Energy Outlook - May 2026",
+    "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+    "status": "error",
+    "code": null,
+    "tested_at": "2026-05-28T21:13:19Z"
+  },
+  {
+    "name": "OSINTdefender (Telegram)",
+    "url": "https://t.me/s/OSINTdefender",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:20Z"
+  },
+  {
+    "name": "Liveuamap Iran (iran.liveuamap.com)",
+    "url": "https://iran.liveuamap.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:20Z"
+  },
+  {
+    "name": "Defense Forum (Substack)",
+    "url": "https://defenseforum.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:20Z"
+  },
+  {
+    "name": "hejon07 (Substack)",
+    "url": "https://hejon07.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:21Z"
+  },
+  {
+    "name": "Defenders of Democracy (Substack)",
+    "url": "https://defendersofdemocracy.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:21Z"
+  },
+  {
+    "name": "RA Economics (Substack)",
+    "url": "https://raeconomics.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:22Z"
+  },
+  {
+    "name": "Peter Lewis Money Talk (Substack)",
+    "url": "https://peterlewismoneytalk.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:22Z"
+  },
+  {
+    "name": "Italia Mil Radar",
+    "url": "https://www.itamilradar.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:23Z"
+  },
+  {
+    "name": "The Automatic Earth",
+    "url": "https://www.theautomaticearth.com",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:23Z"
+  },
+  {
+    "name": "UK House of Commons Library",
+    "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10636/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:13:23Z"
+  },
+  {
+    "name": "@RapidResponse47 (X/Twitter)",
+    "url": "https://x.com/RapidResponse47",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:23Z"
+  },
+  {
+    "name": "The Kingston Crow (Substack)",
+    "url": "https://thekingstoncrow.substack.com",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:24Z"
+  },
+  {
+    "name": "Theregister.com",
+    "url": "https://www.theregister.com/systems/2026/05/16/europe-built-sovereign-clouds-to-escape-us-control-then-forgot-about-the-processors/5237735",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:24Z"
+  },
+  {
+    "name": "Al Jazeera English",
+    "url": "https://www.aljazeera.com/news/2026/5/11/former-qatar-pm-netanyahu-using-iran-war-to-reshape-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:25Z"
+  },
+  {
+    "name": "Al Jazeera English",
+    "url": "https://www.aljazeera.com/opinions/2026/5/13/trump-needs-xi-much-more-than-xi-needs-trump",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:26Z"
+  },
+  {
+    "name": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-05-15-iran-resilience-costing-america-war.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:26Z"
+  },
+  {
+    "name": "Forbes",
+    "url": "https://www.forbes.com/sites/davidkirichenko/2026/05/15/the-pentagon-is-learning-drone-warfare-from-ukraine/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:13:26Z"
+  },
+  {
+    "name": "CBC News",
+    "url": "https://www.cbc.ca/news/canada/sudbury/northern-ontario-transmission-lines-environment-9.7183141",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:49Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:49Z"
+  },
+  {
+    "name": "60 Best Political News RSS Feeds",
+    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:49Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-28T21:42:50Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:51Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:53Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:53Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:54Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:54Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:54Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:54Z"
+  },
+  {
+    "name": "Bruegel releases enhanced RSS feeds",
+    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:54Z"
+  },
+  {
+    "name": "Top 15 Europe Defense RSS Feeds",
+    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:55Z"
+  },
+  {
+    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+    "url": "https://ecfr.eu/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:55Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:55Z"
+  },
+  {
+    "name": "60 Best Political News RSS Feeds",
+    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:55Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:55Z"
+  },
+  {
+    "name": "Top 45 Homeland Security RSS Feeds",
+    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "60 Best Political News RSS Feeds",
+    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "35 Best Caribbean News RSS Feeds",
+    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "Central America Newswire - World News Report - EIN Presswire",
+    "url": "https://world.einnews.com/region/central-america",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+    "url": "https://www.reuters.com/world/americas/",
+    "status": "http_401",
+    "code": 401,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "South America: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/americas/south-america",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:56Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:57Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:57Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:57Z"
+  },
+  {
+    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
+    "url": "https://www.afro.who.int/rss-feeds",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:58Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:42:59Z"
+  },
+  {
+    "name": "Security : latest news | The Africa Report",
+    "url": "https://www.theafricareport.com/sections/security/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:42:59Z"
+  },
+  {
+    "name": "RSS Feeds - WHO Regional Office for Africa | WHO | Regional Office for Africa",
+    "url": "https://www.afro.who.int/rss-feeds",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:00Z"
+  },
+  {
+    "name": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/rss/data/top10.xml",
+    "status": "http_451",
+    "code": 451,
+    "tested_at": "2026-05-28T21:43:01Z"
+  },
+  {
+    "name": "The Irrawaddy (Myanmar)",
+    "url": "https://www.irrawaddy.com/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:43:01Z"
+  },
+  {
+    "name": "Vietnam Express",
+    "url": "https://e.vnexpress.net/rss/world.rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:02Z"
+  },
+  {
+    "name": "The Phnom Penh Post",
+    "url": "https://www.phnompenhpost.com/rss",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:43:02Z"
+  },
+  {
+    "name": "Jakarta Post",
+    "url": "https://www.thejakartapost.com/rss/news.xml",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T21:43:03Z"
+  },
+  {
+    "name": "Rappler (Philippines)",
+    "url": "https://www.rappler.com/world/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:04Z"
+  },
+  {
+    "name": "Philippine Daily Inquirer",
+    "url": "https://www.inquirer.net/fullfeed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T21:43:04Z"
+  },
+  {
+    "name": "The Star (Malaysia)",
+    "url": "https://www.thestar.com.my/rss/news/nation",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T21:43:05Z"
+  },
+  {
+    "name": "Malay Mail",
+    "url": "https://www.malaymail.com/feed/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:06Z"
+  },
+  {
+    "name": "ASEAN Secretariat News",
+    "url": "https://asean.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:09Z"
+  },
+  {
+    "name": "Fulcrum ISEAS (SE Asia)",
+    "url": "https://fulcrum.sg/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:11Z"
+  },
+  {
+    "name": "The Diplomat SE Asia",
+    "url": "https://thediplomat.com/regions/southeast-asia/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:12Z"
+  },
+  {
+    "name": "RFE/RL Central Asia",
+    "url": "https://www.rferl.org/rss/central-asia",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T21:43:13Z"
+  },
+  {
+    "name": "The Diplomat China/Asia",
+    "url": "https://thediplomat.com/regions/china/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:49Z"
+  },
+  {
+    "name": "Dawn (Pakistan)",
+    "url": "https://www.dawn.com/feeds/home",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:49Z"
+  },
+  {
+    "name": "The Hindu",
+    "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:12:49Z"
+  },
+  {
+    "name": "Times of India",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:49Z"
+  },
+  {
+    "name": "The Third Pole (Asia water/climate)",
+    "url": "https://www.thethirdpole.net/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:12:49Z"
+  },
+  {
+    "name": "AKIpress (Kyrgyzstan)",
+    "url": "https://akipress.com/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:51Z"
+  },
+  {
+    "name": "Asia Times",
+    "url": "https://asiatimes.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:51Z"
+  },
+  {
+    "name": "Carnegie India",
+    "url": "https://carnegieindia.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:51Z"
+  },
+  {
+    "name": "Central Asia-Caucasus Analyst",
+    "url": "https://www.cacianalyst.org/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:12:53Z"
+  },
+  {
+    "name": "EurasiaNet",
+    "url": "https://eurasianet.org/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:12:53Z"
+  },
+  {
+    "name": "The News International (Pakistan)",
+    "url": "https://www.thenews.com.pk/rss/1/1",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:53Z"
+  },
+  {
+    "name": "The Kathmandu Post",
+    "url": "https://kathmandupost.com/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:54Z"
+  },
+  {
+    "name": "Carnegie China",
+    "url": "https://carnegiechina.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:54Z"
+  },
+  {
+    "name": "Global Voices Central Asia",
+    "url": "https://globalvoices.org/-/world/central-asia-caucasus/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:56Z"
+  },
+  {
+    "name": "Himal Southasian",
+    "url": "https://www.himalmag.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:56Z"
+  },
+  {
+    "name": "ORF India (security/geopolitics)",
+    "url": "https://www.orfonline.org/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:12:57Z"
+  },
+  {
+    "name": "Nepali Times",
+    "url": "https://www.nepalitimes.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:12:58Z"
+  },
+  {
+    "name": "Brookings India/Asia",
+    "url": "https://www.brookings.edu/feed/asia-pacific",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:58Z"
+  },
+  {
+    "name": "StratNews Global India",
+    "url": "https://stratnewsglobal.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:12:59Z"
+  },
+  {
+    "name": "ASPI The Strategist",
+    "url": "https://www.aspistrategist.org.au/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:02Z"
+  },
+  {
+    "name": "Lowy Institute The Interpreter",
+    "url": "https://www.lowyinstitute.org/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:02Z"
+  },
+  {
+    "name": "Sydney Morning Herald",
+    "url": "https://www.smh.com.au/rss/national.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:02Z"
+  },
+  {
+    "name": "The Australian",
+    "url": "https://www.theaustralian.com.au/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:13:02Z"
+  },
+  {
+    "name": "NZ Herald",
+    "url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:03Z"
+  },
+  {
+    "name": "Radio NZ",
+    "url": "https://www.rnz.co.nz/rss/news/national.rss",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:03Z"
+  },
+  {
+    "name": "ABC News (AU) Pacific",
+    "url": "https://www.abc.net.au/news/feed/2942480/pacific/rss.xml",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:03Z"
+  },
+  {
+    "name": "Pacific Islands Forum",
+    "url": "https://www.forumsec.org/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:04Z"
+  },
+  {
+    "name": "Devpolicy Blog (ANU)",
+    "url": "https://devpolicy.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:06Z"
+  },
+  {
+    "name": "Island Business (Pacific)",
+    "url": "https://islandsbusiness.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:09Z"
+  },
+  {
+    "name": "InSight Crime",
+    "url": "https://insightcrime.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:09Z"
+  },
+  {
+    "name": "The Brazilian Report",
+    "url": "https://brazilian.report/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:09Z"
+  },
+  {
+    "name": "Dialogo Americas",
+    "url": "https://dialogo-americas.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:11Z"
+  },
+  {
+    "name": "Americas Quarterly",
+    "url": "https://americasquarterly.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:11Z"
+  },
+  {
+    "name": "WOLA Latin America",
+    "url": "https://www.wola.org/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:13:11Z"
+  },
+  {
+    "name": "Latin America Risk Report",
+    "url": "https://latinamericariskreport.substack.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:11Z"
+  },
+  {
+    "name": "Ag\u00eancia Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/en/rss",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:12Z"
+  },
+  {
+    "name": "La Prensa Latina",
+    "url": "https://www.laprensalatina.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:12Z"
+  },
+  {
+    "name": "Global Americans",
+    "url": "https://globalamericans.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:14Z"
+  },
+  {
+    "name": "Wilson Center Latin America",
+    "url": "https://www.wilsoncenter.org/feed/latin-america",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:14Z"
+  },
+  {
+    "name": "Caribbean News Global",
+    "url": "https://www.caribbeannewsglobal.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:18Z"
+  },
+  {
+    "name": "Jamaica Gleaner",
+    "url": "https://jamaica-gleaner.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:18Z"
+  },
+  {
+    "name": "Trinidad Express",
+    "url": "https://trinidadexpress.com/rss",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-28T22:13:19Z"
+  },
+  {
+    "name": "Caribbean Investigative Journalist Network",
+    "url": "https://www.cijn.org/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:13:19Z"
+  },
+  {
+    "name": "Central America Politics RISK Report",
+    "url": "https://centralamericapolitics.substack.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:19Z"
+  },
+  {
+    "name": "La Prensa Gr\u00e1fica (El Salvador)",
+    "url": "https://www.laprensagrafica.com/rss",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:13:19Z"
+  },
+  {
+    "name": "N\u00f3mada (Guatemala)",
+    "url": "https://nomada.gt/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:21Z"
+  },
+  {
+    "name": "Confidencial (Nicaragua)",
+    "url": "https://confidencial.com.ni/feed",
+    "status": "dns_fail",
+    "code": null,
+    "tested_at": "2026-05-28T22:13:24Z"
+  },
+  {
+    "name": "Caribbean News Now",
+    "url": "https://www.caribbeannewsnow.com/rss.xml",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:13:24Z"
+  },
+  {
+    "name": "St. Lucia Times",
+    "url": "https://stluciatimes.com/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:13:24Z"
+  },
+  {
+    "name": "ISS Africa Today",
+    "url": "https://issafrica.org/rss/iss-today.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:13:24Z"
+  },
+  {
+    "name": "The Continent (African journalism)",
+    "url": "https://www.thecontinent.co.za/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:42:50Z"
+  },
+  {
+    "name": "DefenceWeb (Africa)",
+    "url": "https://www.defenceweb.co.za/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:42:54Z"
+  },
+  {
+    "name": "HumAngle (Sahel/West Africa)",
+    "url": "https://humanglemedia.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:42:57Z"
+  },
+  {
+    "name": "The Sentry (Africa conflict finance)",
+    "url": "https://thesentry.org/feed",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:42:57Z"
+  },
+  {
+    "name": "Zitamar News (Mozambique)",
+    "url": "https://zitamar.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:42:58Z"
+  },
+  {
+    "name": "The New Humanitarian",
+    "url": "https://www.thenewhumanitarian.org/rss/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:42:59Z"
+  },
+  {
+    "name": "Mail & Guardian (SA)",
+    "url": "https://mg.co.za/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:02Z"
+  },
+  {
+    "name": "Premium Times (Nigeria)",
+    "url": "https://www.premiumtimesng.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:02Z"
+  },
+  {
+    "name": "Sahara Reporters (Nigeria)",
+    "url": "https://saharareporters.com/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:03Z"
+  },
+  {
+    "name": "Garowe Online (Somalia)",
+    "url": "https://www.garoweonline.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:03Z"
+  },
+  {
+    "name": "Ethiopia Insight",
+    "url": "https://www.ethiopia-insight.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:06Z"
+  },
+  {
+    "name": "Africa Confidential",
+    "url": "https://www.africa-confidential.com/rss",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:07Z"
+  },
+  {
+    "name": "Crisis Group Africa",
+    "url": "https://www.crisisgroup.org/rss/africa",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:08Z"
+  },
+  {
+    "name": "Amwani (African security/East Africa)",
+    "url": "https://amwani.substack.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:09Z"
+  },
+  {
+    "name": "ACLED Africa data",
+    "url": "https://acleddata.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:10Z"
+  },
+  {
+    "name": "Somalia Report",
+    "url": "https://somaliareport.com/feed",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:10Z"
+  },
+  {
+    "name": "Chatham House Africa",
+    "url": "https://www.chathamhouse.org/rss/africa",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:43:10Z"
+  },
+  {
+    "name": "African Defence Review",
+    "url": "https://www.africandefencereview.com/feed",
+    "status": "timeout",
+    "code": null,
+    "tested_at": "2026-05-28T22:43:19Z"
+  },
+  {
+    "name": "Bloomberg Markets",
+    "url": "https://feeds.bloomberg.com/markets/news.rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:19Z"
+  },
+  {
+    "name": "Reuters Financial",
+    "url": "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best&best-sectors=financial-services",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-28T22:43:20Z"
+  },
+  {
+    "name": "Financial Times Markets",
+    "url": "https://www.ft.com/markets?format=rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:20Z"
+  },
+  {
+    "name": "WSJ Markets",
+    "url": "https://feeds.wsjonline.com/wsj/xml/rss/3_7031",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:21Z"
+  },
+  {
+    "name": "OilPrice.com",
+    "url": "https://oilprice.com/rss/main",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Middle East: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Middle East Conflict Monitor | ACLED",
+    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Middle East: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/middle-east",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Middle East Conflict Monitor | ACLED",
+    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:22Z"
+  },
+  {
+    "name": "Central Asia: Analysis, Research, & Events | CSIS",
+    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:25Z"
+  },
+  {
+    "name": "Russia-China Relations in Central Asia - CEPA",
+    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:25Z"
+  },
+  {
+    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:25Z"
+  },
+  {
+    "name": "Caribbean National Weekly - CNW Network",
+    "url": "https://www.caribbeannationalweekly.com/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:26Z"
+  },
+  {
+    "name": "Caribbean News | Latest News - NewsNow",
+    "url": "https://www.newsnow.com/us/World/Caribbean",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:27Z"
+  },
+  {
+    "name": "Caribbean News Global - Caribbean News And Beyond",
+    "url": "https://caribbeannewsglobal.com/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:27Z"
+  },
+  {
+    "name": "Latinvex | RSS",
+    "url": "https://latinvex.com/latinvex-rss/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:28Z"
+  },
+  {
+    "name": "RSS Feeds \u00b7 Global Voices",
+    "url": "https://globalvoices.org/feeds/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:29Z"
+  },
+  {
+    "name": "GitHub - yavuz/news-feed-list-of-countries: News feed list of countries \u00b7 GitHub",
+    "url": "https://github.com/yavuz/news-feed-list-of-countries",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:29Z"
+  },
+  {
+    "name": "Subscribe to AllAfrica via RSS - allAfrica.com",
+    "url": "https://allafrica.com/misc/tools/rss.html",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:30Z"
+  },
+  {
+    "name": "RSS feeds - Africa Intelligence",
+    "url": "https://www.africaintelligence.com/info/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:30Z"
+  },
+  {
+    "name": "Africa | Latest News & Updates | BBC News",
+    "url": "https://www.bbc.com/news/world/africa",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:31Z"
+  },
+  {
+    "name": "Central America Newspapers | Newspapers Land",
+    "url": "https://www.newspapersland.com/central-america/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:32Z"
+  },
+  {
+    "name": "Central America | Countries, History, Geography, Language, Culture, & Maps | Britannica",
+    "url": "https://www.britannica.com/place/Central-America",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:32Z"
+  },
+  {
+    "name": "8.1 Identifying the Boundaries \u2013 Introduction to World Regional Geography",
+    "url": "https://slcc.pressbooks.pub/worldgeography/chapter/8-1/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:33Z"
+  },
+  {
+    "name": "Pacific Island Countries | World Bank Group",
+    "url": "https://www.worldbank.org/ext/en/region/eap/pacific-islands",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:33Z"
+  },
+  {
+    "name": "Pacific Small Island Developing States (PSIDS) | Department of Economic and Social Affairs",
+    "url": "https://sdgs.un.org/statements/pacific-small-island-developing-states-psids-11535",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:34Z"
+  },
+  {
+    "name": "List of islands in the Pacific Ocean - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_islands_in_the_Pacific_Ocean",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:34Z"
+  },
+  {
+    "name": "RSS | International Crisis Group",
+    "url": "https://www.crisisgroup.org/rss-0",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-28T22:43:35Z"
+  },
+  {
+    "name": "Central Asia \u2013 Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan - RSIS",
+    "url": "https://rsis.edu.sg/ctta-newsarticle/central-asia-kazakhstan-kyrgyzstan-tajikistan-turkmenistan-uzbekistan/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:43:35Z"
+  },
+  {
+    "name": "RSS Feeds | Asian Development Bank",
+    "url": "https://www.adb.org/rss",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-28T22:43:35Z"
   }
 ]
