@@ -3,11 +3,11 @@
   "generated_at": "2026-05-13T05:28:11Z",
   "calibration_directives": {
     "overall": {
-      "total_judgments": 140,
-      "correct": 5,
-      "incorrect": 50,
-      "unresolved": 83,
-      "accuracy_pct": 9.1,
+      "total_judgments": 105,
+      "correct": 3,
+      "incorrect": 37,
+      "unresolved": 65,
+      "accuracy_pct": 7.5,
       "posture": "widen_two_notches",
       "overconfidence_regions": []
     },
@@ -72,12 +72,21 @@
     "restricted_bands_globally": [
       "almost certain"
     ],
-    "band_directives": [],
+    "band_directives": [
+      {
+        "band": "likely",
+        "accuracy": 0.167,
+        "samples": 115,
+        "action": "downshift",
+        "use_instead": "even chance",
+        "rationale": "'likely' is 16% accurate over 115 judgments \u2014 below 60% floor. Use 'even chance' instead until band-level accuracy recovers."
+      }
+    ],
     "region_table": [
       {
         "region": "europe",
         "accuracy": 1.0,
-        "samples": 30
+        "samples": 33
       },
       {
         "region": "asia",
@@ -85,7 +94,7 @@
         "samples": 14
       }
     ],
-    "compiled_at": "2026-05-26T12:00:32.343296+00:00Z"
+    "compiled_at": "2026-05-28T14:38:22.699838+00:00Z"
   },
   "collection_directives": {
     "by_region": {
@@ -349,5 +358,5 @@
       "reasons": []
     }
   },
-  "updated_at": "2026-05-26T12:00:32.343296+00:00Z"
+  "updated_at": "2026-05-28T14:38:22.699838+00:00Z"
 }

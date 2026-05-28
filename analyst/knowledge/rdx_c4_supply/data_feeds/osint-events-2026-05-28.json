@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "collected_at": "2026-05-28T17:30:09.367643+00:00",
+  "channels_checked": 5,
+  "events_found": 2,
+  "events": [
+    {
+      "channel": "Defence-Blog",
+      "producer": "BAE Systems",
+      "context": "tect-tanks-from-missiles-and-drones/\"  rel=\"bookmark\" class=\"td-image-wrap \" title=\"U.S. Army picks BAE Systems to protect tanks from missiles and drones\" ><span class=\"entry-thumb td-thumb-css \" styl",
+      "detected_at": "2026-05-28T17:30:08.905016+00:00"
+    },
+    {
+      "channel": "Defence-Blog",
+      "producer": "BAE Systems",
+      "context": "icks-bae-systems-to-protect-tanks-from-missiles-and-drones/\"  rel=\"bookmark\" title=\"U.S. Army picks BAE Systems to protect tanks from missiles and drones\">U.S. Army picks BAE Systems to protect tanks ",
+      "detected_at": "2026-05-28T17:30:08.905038+00:00"
+    }
+  ]
+}

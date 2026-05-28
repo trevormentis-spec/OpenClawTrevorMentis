@@ -133,13 +133,14 @@ def sanitize_prompt(text: str) -> str:
 def call_deepseek(model: str, system: str, user: str,
                   temperature: float = 0.3, max_tokens: int = 16384,
                   json_mode: bool = True,
-                  provider: str = "deepseek") -> str:
-    """Call DeepSeek/OpenRouter via curl subprocess (avoids Python SSL hangs).
+                  provider: str = "deepseek",
+                  max_input_chars: int = 18000) -> str:
+    """Call DeepSeek/OpenRouter via OpenAI client library.
     
     Routes through llm_gate for model selection logging.
     """
-    import subprocess, tempfile, json as _json, os as _os
-    import datetime as _dt
+    import json as _json, os as _os, datetime as _dt
+    from openai import OpenAI
     
     # Route through gate for logging (don't override caller's model choice)
     try:
@@ -163,27 +164,34 @@ def call_deepseek(model: str, system: str, user: str,
     except Exception:
         pass
     
-    # Get API key
+    # Get API key and base URL
     if provider == "openrouter":
         api_key = _os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
             raise RuntimeError("OPENROUTER_API_KEY not set")
-        base_url = "https://openrouter.ai/api"
+        base_url = "https://openrouter.ai/api/v1"
         api_model = model
-        extra_headers = [
-            "-H", "HTTP-Referer: https://github.com/trevormentis-spec",
-            "-H", "X-Title: TREVOR Intel Brief",
-        ]
+        extra_headers = {
+            "HTTP-Referer": "https://github.com/trevormentis-spec",
+            "X-Title": "TREVOR Intel Brief",
+        }
     else:
         api_key = _os.environ.get("DEEPSEEK_API_KEY")
         if not api_key:
             raise RuntimeError("DEEPSEEK_API_KEY not set")
         base_url = "https://api.deepseek.com"
         api_model = model.split("/", 1)[-1] if "/" in model else model
-        extra_headers = []
+        extra_headers = {}
     
-    # Build payload dict
-    payload = {
+    # Truncate user content if total prompt is too large (DeepSeek V4 Pro slow above ~20KB total)
+    # Regional analysis: 18KB is fine. Exec summary (all 10+ regions): needs 60K+
+    if len(user) > max_input_chars:
+        truncated_user = user[:max_input_chars] + f"\n\n[INCIDENTS TRUNCATED — {len(user) - max_input_chars} chars omitted]"
+        log(f"truncated user content: {len(user)} → {len(truncated_user)} chars")
+        user = truncated_user
+    
+    # Build payload
+    kwargs = {
         "model": api_model,
         "messages": [
             {"role": "system", "content": system},
@@ -191,57 +199,18 @@ def call_deepseek(model: str, system: str, user: str,
         ],
         "temperature": temperature,
         "max_tokens": max_tokens,
+        "timeout": 120,
     }
-    if json_mode:
-        payload["response_format"] = {"type": "json_object"}
+    # NOTE: json_object mode disabled — DeepSeek V4 Pro hangs on structured output with long prompts
+    # if json_mode:
+    #     kwargs["response_format"] = {"type": "json_object"}
     
-    # Write payload to temp file (avoids shell escaping issues)
-    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False)
-    tmp.write(_json.dumps(payload))
-    tmp.close()
-    
+    client = OpenAI(api_key=api_key, base_url=base_url, default_headers=extra_headers or None)
     try:
-        # Build curl command
-        cmd = [
-            "curl", "-s", "-w", "\n%{http_code}",
-            "-X", "POST", f"{base_url}/v1/chat/completions",
-            "-H", "Content-Type: application/json",
-            "-H", "Authorization: Bearer " + api_key,
-        ] + extra_headers + [
-            "--data-binary", "@" + tmp.name,
-            "--connect-timeout", "60",
-            "--max-time", "300",
-        ]
-        
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=310)
-        
-        stdout = result.stdout
-        # Split on newline - last line is HTTP status code
-        idx = stdout.rfind("\n")
-        if idx >= 0:
-            http_code = stdout[idx+1:].strip()
-            body = stdout[:idx]
-        else:
-            http_code = "000"
-            body = stdout
-        
-        if not http_code.startswith("2"):
-            err = result.stderr[:300] if result.stderr else body[:300]
-            raise RuntimeError(f"HTTP {http_code}: {err}")
-        
-        response_data = _json.loads(body)
-        return response_data["choices"][0]["message"]["content"]
-    except subprocess.TimeoutExpired:
-        raise RuntimeError("curl timed out after 310s")
+        response = client.chat.completions.create(**kwargs)
+        return response.choices[0].message.content
     except Exception as e:
-        if "HTTP" in str(e):
-            raise
         raise RuntimeError(f"API call failed: {e}")
-    finally:
-        try:
-            _os.unlink(tmp.name)
-        except:
-            pass
 def build_collection_quality(region_snake: str, incidents: list[dict],
                                collection_state: dict | None = None,
                                behavioral_state: dict | None = None) -> str:
@@ -565,8 +534,8 @@ def main() -> int:
     parser.add_argument("--model", default="deepseek/deepseek-v4-pro",
                         help="Tier-1 model for executive summary (default: V4 Pro)")
     parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 model for regional analysis")
-    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek", help="API provider for tier-2")
-    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="openrouter", help="API provider for tier-2")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
                         help="API provider for tier-1 exec summary")
     parser.add_argument("--redteam-model", default=None,
                         help="Model for red-team pass (default: same as --model)")
@@ -869,8 +838,18 @@ def main() -> int:
                                behavioral_state=behavioral_state,
                                region_model=args.tier2_model or "deepseek/deepseek-v4-pro",
                                exec_model=args.model or "deepseek/deepseek-v4-pro")
-        content = call_deepseek(tier1_model, system, user, provider=args.provider)
-        exec_payload = parse_json_strict(content)
+        # Exec summary needs all 10+ regions; use higher char limit so truncation doesn't destroy context
+        content = call_deepseek(tier1_model, system, user, provider=args.provider, max_input_chars=60000)
+        try:
+            exec_payload = parse_json_strict(content)
+        except Exception as exc:
+            log(f"tier-1 exec summary failed: {exc}; retrying with strict prompt")
+            strict_system = system + (
+                "\n\nIMPORTANT: respond ONLY with a valid JSON object. "
+                "No prose, no markdown fences."
+            )
+            content = call_deepseek(tier1_model, strict_system, user, provider=args.provider, max_input_chars=60000)
+            exec_payload = parse_json_strict(content)
     # Enforce correct model metadata (override any LLM hallucination)
     exec_payload["models_used"] = [tier2_model, tier1_model]
     exec_payload["tier2_provider"] = tier2_provider

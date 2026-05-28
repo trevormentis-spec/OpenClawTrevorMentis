@@ -18,6 +18,16 @@ Current docs:
 
 - Assistant name: Trevor
 - Trevor stands for: Threat Research and Evaluation Virtual Operations Resource
+
+## Lessons Learned
+
+### 2026-05-28: QC Watchdog Data Model Mismatch
+
+**Issue:** The brief's `exec_summary.json` lacked `bluf`, `context_paragraph`, and `five_judgments` fields that `opus_qc_review.py` and `deliver_text_brief.py` expect. Orchestrator produces a flat `regions` array. Also, regional KJ files had `prediction`/`confidence` fields but the QC builder expected `statement`/`sherman_kent_band`/`prediction_pct`. Some KJs had `sherman_kent_band` as a Python dict `{'verbal': 'likely', 'numeric': 63}` instead of a flat string.
+
+**Fix:** Enriched `exec_summary.json` with synthesized BLUF, context paragraph, and top-5 KJs drawn from all regions. Normalized all 13 regional JSON files to have `statement`, `sherman_kent_band`, `prediction_pct` fields. Added `exchange` (platform name) to prediction markets.
+
+**Lesson:** The data model between orchestrate.py output and delivery/QC consumer scripts is fragile. A normalization layer or shared schema validation should run after orchestration completes but before QC runs.
 - User name: Roderick
 
 ## Durable Decisions
@@ -26,6 +36,9 @@ Current docs:
 - [2026-05-26] **Strategic direction codified** in `memory/strategic-direction.md`. Trevor is persistent adaptive geopolitical intelligence infrastructure, NOT a chatbot/briefing engine/cron generator. All future structural decisions governed by that document.
 - Trevor has an active long-term analyst training program in `analyst/` covering structured analytic tradecraft, source evaluation, security studies, and analytic writing.
 - For future integrations, Trevor should check existing skills/integrations before building custom alternatives.
+
+## Durable Decisions — Pipeline Reliability
+- [2026-05-27] **DeepSeek V4 Pro direct API hangs on payloads >20KB.** Tier-1 exec summary calls must use OpenRouter, not DeepSeek direct. Changed both default providers from `deepseek` to `openrouter` in `analyze.py` and `orchestrate.py`. If a direct DeepSeek call is needed, keep payloads under 16KB and avoid `json_object` response_format. Regional analysis via OpenRouter has been reliable.
 
 ## Durable Decisions — Social Posting
 - **STATUS: ENABLED (2026-05-24)** — Moltbook reconnected per Roderick directive.
@@ -172,3 +185,17 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 ### Lessons:
 - Pipeline ~25 minutes end-to-end (5min collect + 20min analyze). Must run backgrounded.
 - guard_pipeline.py band definitions need periodic audit — duplicated ranges cause false quality blocks.
+
+### 2026-05-28: QC Watchdog False Alarm — Pre-Final Assembly Timing
+
+**Issue:** QC watchdog flagged CRITICAL (missing BLUF, CONTEXT, KJs, truncation) at 14:14 UTC. However, the final brief hadn't been assembled yet — `final/brief.md` was generated at 14:25 UTC, 11 minutes later.
+
+**Root cause:** QC watchdog runs at a fixed time (13:10 UTC default window, but this instance ran at 14:14) against intermediate pipeline state. No completion-marker file exists to gate the QC check.
+
+**Final brief state (14:25 UTC):** 259 lines, 26,910 bytes. Full BLUF, Context, 5 Exec Summary KJs with calibrated probabilities, all 12 regional sections with predictions/dissents, prediction markets section, red-team/forced dissent, methodology. Deployed to GitHub Pages at 15:14 UTC.
+
+**Also noted:** GitHub Pages deploy succeeded today (GitHub PAT worked) — earlier reports of "PAT rejected" may have been a transient issue or resolved.
+
+**Fix:** Before investigating CRITICAL QC alerts, verify (1) final brief exists at `final/brief.md`, (2) its timestamp post-dates QC timestamp, (3) substantive content (lines + bytes). If QC is stale, clear the alert.
+
+**Recommendation:** Add a completion-flag file (e.g., `.brief_complete`) written by the pipeline after assembly. QC watchdog checks for this file before running.

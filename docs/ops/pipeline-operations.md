@@ -22,6 +22,7 @@
 - **Feed rot:** ~60+ dead feeds accumulating in the catalog
 - **Calibration:** 0/5 resolution rate on recent predictions
 - **QC PARSE_ERROR:** Intermittent quality gate parse failures
+- **[2026-05-27] DeepSeek V4 Pro direct API hangs on payloads >20KB:** Tier-1 exec summary call (DeepSeek direct API) timed out with json_object mode on large prompts. Regional analysis via OpenRouter worked fine. **Fix:** Route tier-1 exec summary through OpenRouter just like tier-2. Orchestrator should set `--provider openrouter` when passing large exec prompts, or implement payload-size-based routing in `call_deepseek()`.
 
 ### Delivery
 - GSIB arrives ~07:00 PT

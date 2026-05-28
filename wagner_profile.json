@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-05-27T19:50:41.683463",
+  "threat_actor_profile": {
+    "name": "Wagner Group / Africa Corps",
+    "aliases": [
+      "Wagner Group",
+      "ChVK Wagner",
+      "PMC Wagner",
+      "Africa Corps",
+      "Wagner PMC",
+      "RSB Group",
+      "Moscow's Mercenaries"
+    ],
+    "description": "Russian state-linked private military company (PMC) operating across Africa since ~2017. Rebranded as 'Africa Corps' in late 2023 after the Prigozhin rebellion and subsequent restructuring under Russian MOD control. Operates in at least 20 African countries providing security, training, mining concessions, and political influence in exchange for resource access (gold, diamonds, timber, uranium). Core operating model: deploy ex-Spetsnaz/MOD personnel as 'advisors' and 'security contractors' parallel to Russian diplomatic and trade missions.",
+    "attribution": "Russian Federation \u2014 GRU-linked, now directly under Ministry of Defence control post-2023 restructuring",
+    "origin": "Russia",
+    "motivation": [
+      "financial",
+      "geopolitical-influence",
+      "resource-extraction"
+    ],
+    "active_regions": [
+      "Sub-Saharan Africa",
+      "Sahel",
+      "Central Africa",
+      "North Africa"
+    ],
+    "known_countries": [
+      "Mali",
+      "Central African Republic",
+      "Libya",
+      "Sudan",
+      "Mozambique",
+      "Madagascar",
+      "Burkina Faso",
+      "Niger",
+      "Zimbabwe",
+      "Angola",
+      "DRC",
+      "Congo-Brazzaville",
+      "Chad",
+      "Mauritania",
+      "Algeria"
+    ],
+    "estimated_strength": "~5,000-8,000 personnel across Africa (2026 est.)",
+    "founded": 2014,
+    "rebranded": 2023,
+    "status": "active",
+    "stix_id": "intrusion-set--wagner-africa-corps",
+    "created": "2017-01-01T00:00:00Z",
+    "modified": "2026-05-27T19:50:41Z",
+    "external_references": [
+      {
+        "source": "All Eyes on Wagner",
+        "url": "https://alleyesonwagner.org/"
+      },
+      {
+        "source": "The Sentry",
+        "url": "https://thesentry.org/"
+      },
+      {
+        "source": "Africa Center for Strategic Studies \u2014 Russia tracker",
+        "url": "https://africacenter.org/"
+      },
+      {
+        "source": "CSIS Africa \u2014 Russia in Africa",
+        "url": "https://www.csis.org/programs/africa-program"
+      },
+      {
+        "source": "GLOBSEC Africa-Russia",
+        "url": "https://www.globsec.org/"
+      }
+    ]
+  },
+  "capabilities": {
+    "kinetic_operations": [
+      "Counter-insurgency support (Mali, CAR, Mozambique)"
+    ],
+    "information_operations": [
+      "Pro-Russian narrative amplification via local media",
+      "Anti-French / anti-Western messaging in Francophone Africa",
+      "Disinformation campaigns targeting UN peacekeeping missions"
+    ],
+    "resource_extraction": [
+      "Gold mining concessions (Sudan, CAR, Mali, Zimbabwe)",
+      "Diamond operations (CAR)",
+      "Timber and wildlife trafficking (CAR, Cameroon)",
+      "Uranium and rare earth prospecting (Niger, DRC)"
+    ],
+    "political_influence": [
+      "Regime security guarantees (CAR, Mali, Burkina Faso)",
+      "Election security manipulation (Madagascar, Zimbabwe)",
+      "Anti-coup protection for allied regimes"
+    ]
+  },
+  "known_operations": [
+    {
+      "country": "Mali",
+      "since": 2022,
+      "role": "Junta security, anti-Tuareg operations, JNIM counter-insurgency"
+    },
+    {
+      "country": "CAR",
+      "since": 2018,
+      "role": "Touad\u00e9ra regime protection, mining security, anti-rebel operations"
+    },
+    {
+      "country": "Libya",
+      "since": 2019,
+      "role": "Haftar LNA support, oil infrastructure protection"
+    },
+    {
+      "country": "Sudan",
+      "since": 2020,
+      "role": "Gold mining operations, RSF support (pre-civil war)"
+    },
+    {
+      "country": "Mozambique",
+      "since": 2019,
+      "role": "Cabo Delgado counter-insurgency (withdrawn 2024)"
+    },
+    {
+      "country": "Burkina Faso",
+      "since": 2023,
+      "role": "Security support to junta post-rebrand"
+    }
+  ],
+  "financial_model": {
+    "primary_revenue": "Mining concessions (gold, diamonds)",
+    "estimated_annual_revenue": "$300M-1B (various estimates)",
+    "money_laundering_channels": [
+      "UAE gold trade",
+      "Dubai real estate",
+      "Crypto (Tether/BTC)"
+    ]
+  },
+  "source_quality_notes": {
+    "primary": "All Eyes on Wagner (crowd-sourced OSINT, high reliability for operations tracking)",
+    "secondary": "The Sentry (investigative, strong on financial flows)",
+    "tertiary": "ACSS, CSIS, DGAP/IFRI/RUSI (analytical)",
+    "warning": "Russia state media coverage is disinformation \u2014 cross-reference with open-source trackers",
+    "tracking_difficulty": "Wagner operates through front companies and local subcontractors making real-time attribution difficult"
+  },
+  "osint_intelligence": [],
+  "summary": {
+    "countries_active": 15,
+    "continent": "Africa",
+    "primary_role": "Proxy warfare + resource extraction",
+    "rebranded_to": "Africa Corps (2023)",
+    "osint_reports": 0,
+    "key_sources": [
+      "All Eyes on Wagner",
+      "The Sentry",
+      "CSIS Africa",
+      "ACSS Russia Tracker"
+    ]
+  }
+}

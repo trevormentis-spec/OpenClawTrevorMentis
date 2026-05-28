@@ -89,7 +89,79 @@
       "direction": "confirming",
       "time_bounds_days": 7,
       "status": "pending"
+    },
+    {
+      "source_board": "ukraine",
+      "indicator_id": "UA-IW-001",
+      "indicator": "Russia launches additional Oreshnik IRBM strikes on Ukrainian cities",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "ukraine",
+      "indicator_id": "UA-IW-002",
+      "indicator": "Russian missile/drone strike exceeds 100 munitions in single wave",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "ukraine",
+      "indicator_id": "UA-IW-003",
+      "indicator": "Ukraine strikes Russian strategic bomber base or nuclear-capable asset",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "ukraine",
+      "indicator_id": "UA-IW-004",
+      "indicator": "EU announces new tranche of military aid exceeding \u20ac5B",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "us_china",
+      "indicator_id": "CN-IW-001",
+      "indicator": "KXTARIFFRATEPRC >25% strike trades above $0.10 (10%)",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 7,
+      "status": "pending"
+    },
+    {
+      "source_board": "us_china",
+      "indicator_id": "CN-IW-002",
+      "indicator": "US announces new export controls on semiconductor equipment to China",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "us_china",
+      "indicator_id": "CN-IW-003",
+      "indicator": "China conducts large-scale military exercise near Taiwan (50+ aircraft/ vessels)",
+      "hypothesis": "h2",
+      "direction": "confirming",
+      "time_bounds_days": 14,
+      "status": "pending"
+    },
+    {
+      "source_board": "us_china",
+      "indicator_id": "CN-IW-004",
+      "indicator": "US Treasury labels China a 'currency manipulator'",
+      "hypothesis": "h1",
+      "direction": "confirming",
+      "time_bounds_days": 30,
+      "status": "pending"
     }
   ],
-  "generated": "2026-05-27T05:33:43.015147+00:00"
+  "generated": "2026-05-28T15:11:13.756393+00:00"
 }

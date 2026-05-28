@@ -92,9 +92,9 @@ set -e 2>/dev/null || true
 
 echo "--- Running orchestrator (collect → analyze) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
-    --model "anthropic/claude-opus-4.7" \
+    --model "deepseek/deepseek-v4-pro" \
     --tier2-model "deepseek/deepseek-v4-pro" \
-    --provider openrouter \
+    --provider deepseek \
     --tier2-provider deepseek \
     --redteam-model "deepseek/deepseek-v4-pro" \
     --redteam-provider deepseek \
@@ -106,6 +106,20 @@ if [ $ORCH_RC -ne 0 ]; then
     echo "FATAL: Orchestrator failed with rc=$ORCH_RC" | tee -a "$LOG"
     echo "DELIVERY ABORTED — orchestrator must succeed before quality gate can run." | tee -a "$LOG"
     echo "=== Daily Text Brief FAILED — $(date -u) ===" | tee -a "$LOG"
+# =========================================================================
+# STEP 2b: GDELT COLLECTION FLOOR — fills gaps for thin regions
+# =========================================================================
+echo "--- Running GDELT collection floor ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/gdelt_collector.py" 
+    --incidents "$WORKING_DIR/raw/incidents.json" 
+    >> "$LOG" 2>&1
+GDELT_RC=$?
+if [ $GDELT_RC -ne 0 ]; then
+    echo "WARNING: GDELT collection floor failed with rc=$GDELT_RC (non-fatal)" | tee -a "$LOG"
+fi
+set -e 2>/dev/null || true
+
     exit $ORCH_RC
 fi
 
@@ -194,6 +208,20 @@ if [ -n "${AGENTMAIL_API_KEY:-}" ]; then
     fi
 else
     echo "AGENTMAIL_API_KEY not set — text brief saved to $WORKING_DIR/analysis/exec_summary.json" | tee -a "$LOG"
+# =========================================================================
+# STEP 4b: POST-DELIVERY QUALITY VALIDATION
+# =========================================================================
+echo "--- Validating delivery quality ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/validate_delivery.py" 
+    --brief-dir "$WORKING_DIR" 
+    >> "$LOG" 2>&1
+VALIDATE_RC=$?
+if [ $VALIDATE_RC -ne 0 ]; then
+    echo "WARNING: Delivery quality check found issues (see log)" | tee -a "$LOG"
+fi
+set -e 2>/dev/null || true
+
 fi
 
 # =========================================================================

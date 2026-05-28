@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-27T19:50:23.582486",
+  "threat_actor_profile": null,
+  "mitre_techniques": [],
+  "malware_and_tools": [],
+  "tactic_coverage": {},
+  "osint_intelligence": [],
+  "summary": {
+    "technique_count": 0,
+    "tool_count": 0,
+    "tactics_covered": 0,
+    "osint_reports": 0
+  }
+}

@@ -1,64 +1,48 @@
 {
-  "version": 2,
+  "version": 3,
   "created": "2026-05-12T04:55:36.571819+00:00",
-  "last_updated": "2026-05-26T12:41:47.952176+00:00",
+  "last_updated": "2026-05-28T15:10:20.681021+00:00",
   "source_utilization": {
     "Reuters World": {
-      "fetched_count": 39,
+      "fetched_count": 43,
       "cited_count": 0,
       "last_cited": null,
-      "consecutive_zero_runs": 38
+      "consecutive_zero_runs": 42
     },
     "AP World": {
-      "fetched_count": 39,
+      "fetched_count": 43,
       "cited_count": 0,
       "last_cited": null,
-      "consecutive_zero_runs": 38
+      "consecutive_zero_runs": 42
     },
     "BBC World": {
-      "fetched_count": 39,
-      "cited_count": 2,
-      "last_cited": "2026-05-25T12:44:04.244698+00:00",
+      "fetched_count": 43,
+      "cited_count": 4,
+      "last_cited": "2026-05-28T14:08:52.857515+00:00",
       "consecutive_zero_runs": 1
     },
     "Al Jazeera": {
-      "fetched_count": 39,
-      "cited_count": 10,
-      "last_cited": "2026-05-25T12:44:04.244698+00:00",
+      "fetched_count": 43,
+      "cited_count": 11,
+      "last_cited": "2026-05-28T14:08:52.857515+00:00",
       "consecutive_zero_runs": 1
     },
     "Reuters Business": {
-      "fetched_count": 39,
+      "fetched_count": 43,
       "cited_count": 0,
       "last_cited": null,
-      "consecutive_zero_runs": 38
+      "consecutive_zero_runs": 42
     },
     "FT World": {
-      "fetched_count": 39,
+      "fetched_count": 43,
       "cited_count": 1,
       "last_cited": "2026-05-22T12:39:57.642475+00:00",
-      "consecutive_zero_runs": 16
+      "consecutive_zero_runs": 20
     }
   },
   "region_activity": {
     "europe": {
       "incidents_history": [
-        {
-          "date": "2026-05-21",
-          "count": 2
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 2
-        },
-        {
-          "date": "2026-05-22",
-          "count": 3
-        },
         {
           "date": "2026-05-22",
           "count": 3
@@ -162,20 +146,28 @@
         {
           "date": "2026-05-26",
           "count": 33
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
         }
       ],
-      "smoothed_score": 170.2
+      "smoothed_score": 103.3
     },
     "asia": {
       "incidents_history": [
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
         {
           "date": "2026-05-21",
           "count": 3
@@ -287,28 +279,20 @@
         {
           "date": "2026-05-26",
           "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
         }
       ],
-      "smoothed_score": 0.9
+      "smoothed_score": 0.3
     },
     "middle_east": {
       "incidents_history": [
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-22",
-          "count": 2
-        },
         {
           "date": "2026-05-22",
           "count": 2
@@ -412,28 +396,28 @@
         {
           "date": "2026-05-26",
           "count": 23
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
         }
       ],
-      "smoothed_score": 119.8
+      "smoothed_score": 71.8
     },
     "north_america": {
       "incidents_history": [
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-22",
-          "count": 3
-        },
         {
           "date": "2026-05-22",
           "count": 3
@@ -537,9 +521,25 @@
         {
           "date": "2026-05-26",
           "count": 13
+        },
+        {
+          "date": "2026-05-27",
+          "count": 10
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
         }
       ],
-      "smoothed_score": 74.9
+      "smoothed_score": 51.2
     },
     "south_central_america": {
       "incidents_history": [
@@ -548,14 +548,6 @@
           "count": 3
         },
         {
-          "date": "2026-05-21",
-          "count": 2
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
           "date": "2026-05-22",
           "count": 0
         },
@@ -662,9 +654,17 @@
         {
           "date": "2026-05-26",
           "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
         }
       ],
-      "smoothed_score": 0.8
+      "smoothed_score": 0.3
     },
     "global_finance": {
       "incidents_history": [
@@ -673,14 +673,6 @@
           "count": 3
         },
         {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
-          "date": "2026-05-21",
-          "count": 3
-        },
-        {
           "date": "2026-05-22",
           "count": 0
         },
@@ -787,55 +779,236 @@
         {
           "date": "2026-05-26",
           "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
+        },
+        {
+          "date": "2026-05-27",
+          "count": 0
         }
       ],
-      "smoothed_score": 0.9
+      "smoothed_score": 0.3
+    },
+    "central_america_caribbean": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 2
+        },
+        {
+          "date": "2026-05-28",
+          "count": 2
+        }
+      ],
+      "smoothed_score": 3.5
+    },
+    "south_america": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 2
+        },
+        {
+          "date": "2026-05-28",
+          "count": 2
+        }
+      ],
+      "smoothed_score": 3.5
+    },
+    "north_africa": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 1
+        },
+        {
+          "date": "2026-05-28",
+          "count": 1
+        }
+      ],
+      "smoothed_score": 1.8
+    },
+    "sub_saharan_africa": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 8
+        },
+        {
+          "date": "2026-05-28",
+          "count": 8
+        }
+      ],
+      "smoothed_score": 14.0
+    },
+    "central_asia": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 0
+        }
+      ],
+      "smoothed_score": 0.0
+    },
+    "south_east_asia": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 4
+        },
+        {
+          "date": "2026-05-28",
+          "count": 3
+        }
+      ],
+      "smoothed_score": 6.0
+    },
+    "east_asia": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 7
+        },
+        {
+          "date": "2026-05-28",
+          "count": 4
+        }
+      ],
+      "smoothed_score": 9.2
+    },
+    "south_asia": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 8
+        },
+        {
+          "date": "2026-05-28",
+          "count": 4
+        }
+      ],
+      "smoothed_score": 10.0
+    },
+    "oceania": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 3
+        },
+        {
+          "date": "2026-05-28",
+          "count": 3
+        }
+      ],
+      "smoothed_score": 5.2
+    },
+    "prediction_markets": {
+      "incidents_history": [
+        {
+          "date": "2026-05-28",
+          "count": 0
+        },
+        {
+          "date": "2026-05-28",
+          "count": 3
+        }
+      ],
+      "smoothed_score": 3.0
     }
   },
   "per_region_cap": {
     "europe": 20,
-    "asia": 3,
+    "north_america": 11,
+    "central_america_caribbean": 3,
+    "south_america": 3,
+    "north_africa": 3,
+    "sub_saharan_africa": 5,
     "middle_east": 14,
-    "north_america": 10,
-    "south_central_america": 3,
-    "global_finance": 3
+    "central_asia": 3,
+    "south_east_asia": 3,
+    "east_asia": 4,
+    "south_asia": 4,
+    "oceania": 3,
+    "prediction_markets": 3
   },
   "region_metadata": {
     "europe": {
-      "total_incidents": 537,
-      "days_with_data": 39,
-      "last_incident_date": "2026-05-26"
-    },
-    "asia": {
-      "total_incidents": 103,
-      "days_with_data": 12,
-      "last_incident_date": "2026-05-21"
-    },
-    "middle_east": {
-      "total_incidents": 386,
-      "days_with_data": 37,
-      "last_incident_date": "2026-05-26"
+      "total_incidents": 0,
+      "days_with_data": 0,
+      "last_incident_date": null
     },
     "north_america": {
-      "total_incidents": 250,
-      "days_with_data": 37,
-      "last_incident_date": "2026-05-26"
+      "total_incidents": 0,
+      "days_with_data": 0,
+      "last_incident_date": null
     },
-    "south_central_america": {
-      "total_incidents": 33,
-      "days_with_data": 11,
-      "last_incident_date": "2026-05-21"
+    "central_america_caribbean": {
+      "total_incidents": 4,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
     },
-    "global_finance": {
-      "total_incidents": 41,
-      "days_with_data": 9,
-      "last_incident_date": "2026-05-21"
+    "south_america": {
+      "total_incidents": 4,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "north_africa": {
+      "total_incidents": 2,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "sub_saharan_africa": {
+      "total_incidents": 16,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "middle_east": {
+      "total_incidents": 0,
+      "days_with_data": 0,
+      "last_incident_date": null
+    },
+    "central_asia": {
+      "total_incidents": 0,
+      "days_with_data": 0,
+      "last_incident_date": null
+    },
+    "south_east_asia": {
+      "total_incidents": 7,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "east_asia": {
+      "total_incidents": 11,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "south_asia": {
+      "total_incidents": 12,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "oceania": {
+      "total_incidents": 6,
+      "days_with_data": 2,
+      "last_incident_date": "2026-05-28"
+    },
+    "prediction_markets": {
+      "total_incidents": 3,
+      "days_with_data": 1,
+      "last_incident_date": "2026-05-28"
     }
   },
   "identified_gaps": [
-    "asia: no data today (last: 2026-05-21)",
-    "south_central_america: no data today (last: 2026-05-21)",
-    "global_finance: no data today (last: 2026-05-21)"
+    "europe: never had incident data",
+    "north_america: never had incident data",
+    "middle_east: never had incident data",
+    "central_asia: never had incident data"
   ],
   "collection_history": [
     {
@@ -1615,6 +1788,110 @@
         "north_america": 10,
         "south_central_america": 3,
         "global_finance": 3
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "region_counts": {
+        "europe": 0,
+        "middle_east": 0,
+        "north_america": 10
+      },
+      "source_citations": {
+        "BBC World": 1
+      },
+      "caps": {
+        "europe": 20,
+        "asia": 3,
+        "middle_east": 14,
+        "north_america": 11,
+        "south_central_america": 3,
+        "global_finance": 3
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "region_counts": {
+        "europe": 0,
+        "middle_east": 0
+      },
+      "source_citations": {},
+      "caps": {
+        "europe": 20,
+        "asia": 3,
+        "middle_east": 14,
+        "north_america": 11,
+        "south_central_america": 3,
+        "global_finance": 3
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "region_counts": {
+        "central_america_caribbean": 2,
+        "central_asia": 0,
+        "east_asia": 7,
+        "middle_east": 0,
+        "north_africa": 1,
+        "north_america": 0,
+        "oceania": 3,
+        "prediction_markets": 0,
+        "south_america": 2,
+        "south_asia": 8,
+        "south_east_asia": 4,
+        "sub_saharan_africa": 8
+      },
+      "source_citations": {
+        "BBC World": 1,
+        "Al Jazeera": 2
+      },
+      "caps": {
+        "europe": 20,
+        "north_america": 11,
+        "central_america_caribbean": 3,
+        "south_america": 3,
+        "north_africa": 3,
+        "sub_saharan_africa": 4,
+        "middle_east": 14,
+        "central_asia": 3,
+        "south_east_asia": 3,
+        "east_asia": 4,
+        "south_asia": 4,
+        "oceania": 3,
+        "prediction_markets": 3
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "region_counts": {
+        "central_america_caribbean": 2,
+        "central_asia": 0,
+        "east_asia": 4,
+        "europe": 0,
+        "north_africa": 1,
+        "north_america": 0,
+        "oceania": 3,
+        "prediction_markets": 3,
+        "south_america": 2,
+        "south_asia": 4,
+        "south_east_asia": 3,
+        "sub_saharan_africa": 8
+      },
+      "source_citations": {},
+      "caps": {
+        "europe": 20,
+        "north_america": 11,
+        "central_america_caribbean": 3,
+        "south_america": 3,
+        "north_africa": 3,
+        "sub_saharan_africa": 5,
+        "middle_east": 14,
+        "central_asia": 3,
+        "south_east_asia": 3,
+        "east_asia": 4,
+        "south_asia": 4,
+        "oceania": 3,
+        "prediction_markets": 3
       }
     }
   ],

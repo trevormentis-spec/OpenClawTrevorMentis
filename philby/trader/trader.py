@@ -21,7 +21,28 @@ import pathlib
 import sys
 from typing import Any
 
+# ── Load .env for standalone/cron runs (no shell inheritance) ──
+_env_loaded = False
+def _load_env():
+    """Load .env file into os.environ so API keys are available."""
+    global _env_loaded
+    if _env_loaded:
+        return
+    env_path = REPO / ".env"
+    if env_path.exists():
+        with open(env_path) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    if k not in os.environ:
+                        os.environ[k] = v
+    _env_loaded = True
+
 REPO = pathlib.Path(__file__).resolve().parent.parent.parent
+
+# Load .env for standalone/cron runs
+_load_env()
 SIGNALS_FILE = REPO / "philby" / "trader" / "signals" / "latest.json"
 JOURNAL_FILE = REPO / "philby" / "trader" / "journal.jsonl"
 POSITIONS_FILE = REPO / "philby" / "trader" / "positions.json"

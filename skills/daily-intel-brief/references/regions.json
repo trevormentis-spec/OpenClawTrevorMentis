@@ -41,9 +41,6 @@
         "Estonia",
         "Latvia",
         "Lithuania",
-        "Belarus",
-        "Ukraine",
-        "Moldova",
         "Serbia",
         "Croatia",
         "Slovenia",
@@ -353,6 +350,29 @@
         "Uganda",
         "Zambia",
         "Zimbabwe"
+      ]
+    },
+    "russia_eurasia": {
+      "label": "Russia & Eurasia",
+      "bbox_caps": {
+        "min_lon": 20,
+        "min_lat": 40,
+        "max_lon": 180,
+        "max_lat": 82
+      },
+      "countries": [
+        "Russia",
+        "Ukraine",
+        "Belarus",
+        "Moldova",
+        "Georgia",
+        "Armenia",
+        "Azerbaijan",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
       ]
     }
   },

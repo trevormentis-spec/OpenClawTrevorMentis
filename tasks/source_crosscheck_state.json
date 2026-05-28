@@ -373,7 +373,31 @@
         "UK's hottest May day record broken for second day in a row",
         "Body found in search for boy, 12, missing in river"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-28T03:02:54.339418+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 35,
+      "checked_at": "2026-05-28T03:02:54.709048+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "'We are at risk of a lost generation': One in six young people will not be in work or training in five years without action, report warns",
+        "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed",
+        "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
+      ]
     }
   ],
-  "last_updated": "2026-05-27T03:02:55.891584+00:00"
+  "last_updated": "2026-05-28T03:02:54.709278+00:00"
 }

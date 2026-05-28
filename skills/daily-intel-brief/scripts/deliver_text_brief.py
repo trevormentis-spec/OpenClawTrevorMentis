@@ -85,10 +85,15 @@ def main() -> int:
     incident_url_map = build_incident_url_map(wd)
     log(f"loaded {len(incident_url_map)} incident URLs for hyperlinking")
 
-    # Build HTML body
-    bluf = exec_data.get("bluf", "No BLUF available.")
-    context = exec_data.get("context_paragraph", "")
-    judgments = exec_data.get("five_judgments", [])
+    # Build HTML body — handle nested executive_summary.{bluf} or flat {bluf}
+    exec_summary = exec_data.get("executive_summary", {})
+    bluf = exec_summary.get("bluf", exec_data.get("bluf", "No BLUF available."))
+    context = exec_summary.get("context_paragraph", exec_data.get("context_paragraph", ""))
+    
+    # Aggregated key judgments — handles both regional_assessments and regional_sections formats
+    judgments = []
+    for ra in exec_data.get("regional_assessments", exec_data.get("regional_sections", [])):
+        judgments.extend(ra.get("key_judgments", []))
     sources_used = exec_data.get("sources_used", [])
     models_used = exec_data.get("models_used", [])
 
@@ -110,7 +115,7 @@ def main() -> int:
             models_used = [models_used]
 
     region_label = {
-        "europe": "Europe", "north_america": "North America",
+        "europe": "Europe", "russia_eurasia": "Russia & Eurasia", "north_america": "North America",
         "central_america_caribbean": "Central America & Caribbean",
         "south_america": "South America", "north_africa": "North Africa", "sub_saharan_africa": "Sub-Saharan Africa",
         "middle_east": "Middle East", "central_asia": "Central Asia",
@@ -119,7 +124,7 @@ def main() -> int:
         "prediction_markets": "Prediction Markets",
     }
     region_emoji = {
-        "europe": "🇪🇺", "north_america": "🇺🇸",
+        "europe": "🇪🇺", "russia_eurasia": "🇷🇺", "north_america": "🇺🇸",
         "central_america_caribbean": "🌴", "south_america": "🌎",
         "north_africa": "🌍", "sub_saharan_africa": "🌍", "middle_east": "🕌",
         "central_asia": "🏔️", "south_east_asia": "🌏",
@@ -149,7 +154,7 @@ def main() -> int:
     import re as _re  # for sentence splitting — imported once, used in loop
 
     regions_order = [
-        "europe", "middle_east", "north_america", "east_asia",
+        "europe", "russia_eurasia", "middle_east", "north_america", "east_asia",
         "south_asia", "central_asia", "south_east_asia",
         "north_africa", "sub_saharan_africa", "south_america", "central_america_caribbean",
         "oceania", "prediction_markets",
@@ -172,6 +177,35 @@ def main() -> int:
 
         narrative = rdata.get("narrative", rdata.get("bluf", ""))
         kjs = rdata.get("key_judgments", [])
+        # Normalize KJ field names (analyze.py direct vs orchestrator produce different formats)
+        valid_kjs = []
+        for kj in kjs:
+            # Normalize prediction → judgment → statement
+            if "prediction" in kj and not kj.get("statement"):
+                kj["statement"] = kj["prediction"]
+            if "judgment" in kj and not kj.get("statement"):
+                kj["statement"] = kj["judgment"]
+            # Normalize confidence bands
+            if not kj.get("sherman_kent_band"):
+                if "probability_verbal" in kj:
+                    kj["sherman_kent_band"] = kj["probability_verbal"]
+                elif "confidence_verbal" in kj:
+                    kj["sherman_kent_band"] = kj["confidence_verbal"]
+                elif "confidence" in kj:
+                    import re
+                    conf = str(kj["confidence"])
+                    cm = re.match(r'([A-Za-z]+)', conf)
+                    if cm:
+                        kj["sherman_kent_band"] = cm.group(1).title()
+            
+            # Render-time validation: skip broken KJs
+            stmt = kj.get("statement", "").strip()
+            if len(stmt) < 20:
+                log(f"    Skipping broken KJ (no statement): {kj.get('statement','')[:40]}")
+                continue
+            valid_kjs.append(kj)
+        
+        kjs = valid_kjs
         count = rdata.get("incident_count", 0)
         story = rdata.get("story", "")
         total_incidents += count

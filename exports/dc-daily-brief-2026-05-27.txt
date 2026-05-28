@@ -1,0 +1,70 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-05-27
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single most pressing operational risk for US hyperscale clusters today. Transformer lead times have blown past 18 months, the interconnection queue sits at 122 GW, and our composite risk model flags eight Equinix facilities across Ashburn, Dallas, San Jose, Chicago, LA, and New York at 56/100 — all grid-driven. If you have capacity in Northern Virginia or any PJM-ISO footprint, lock in firm power contracts now; the secondary market is about to get ugly.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repair events reported in the last 24 hours. Key routes serving the highest-density DC clusters remain stable:
+- Ashburn/NoVa: served by MAREA, Dunant, and the transatlantic family — all nominal.
+- New York/Newark: served by TAT-14, Apollo, and HAVFRUE — no degradation.
+- Los Angeles: served by Southern Cross, FASTER, and the transpacific cables — no alerts.
+- Miami: served by AMX-1, Tikal, and the South American routes — no issues.
+- Singapore: served by SEA-ME-WE 5, SEA-ME-WE 6, and BtoBE — nominal.
+No new cable landing station construction or repair vessel activity detected in satellite imagery.
+
+═══ POWER & GRID ═══
+Grid constraints remain the dominant risk driver across US Tier 1 markets.
+- PJM (Northern Virginia, Chicago, Ohio): interconnection queue at 122 GW. New builds face 4-6 year delays. Secondary capacity pricing up 12% QoQ.
+- ERCOT (Dallas): no interconnection queue data, but winterization concerns persist. Spot prices volatile.
+- CAISO (San Jose, LA): solar duck curve causing evening ramp stress. Battery storage helping but not enough for hyperscale load.
+- NYISO (New York/Newark): transmission congestion into NYC is chronic. 111 8th Ave and 60 Hudson St both at 56/100 risk.
+- No new energy price spikes reported today, but watch PJM capacity auction results due next week.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hurricane or earthquake threats to major DC clusters in the next 72 hours.
+- Atlantic basin: quiet. No tropical cyclones forecast.
+- Pacific basin: quiet. No typhoon threats to Japan, Taiwan, or Philippines.
+- California: no significant seismic activity near San Jose or LA clusters.
+- Wildfire season: early season fires in New Mexico and Arizona, but no threat to major DC hubs. Monitor California as summer approaches.
+- Flood risk: no active flood warnings near any Tier 1 facilities.
+
+═══ PHYSICAL SECURITY ═══
+No physical security incidents reported at any Tier 1 or Tier 2 facilities in the last 24 hours.
+- No protests, access disruptions, or construction incidents.
+- No suspicious activity near cable landing stations or fiber POPs.
+- Standard vigilance maintained at all Equinix, Digital Realty, and hyperscale campuses.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours.
+- AWS us-east-1 (Ashburn): nominal.
+- Azure eastus (Ashburn): nominal.
+- GCP us-east4 (Ashburn): nominal.
+- No fiber cuts reported on any backbone routes serving major DC clusters.
+- Internet exchange traffic volumes at normal levels across all 900 monitored IXes.
+
+═══ ASSET WATCH ═══
+- AWS us-east-3 (Ohio): 1200 MW permit filed. This is a massive buildout in a PJM-constrained region. Expect grid interconnection delays. Monitor for secondary capacity procurement.
+- AirTrunk SYD2 (Sydney): 150 MW announced. Australia's hyperscale market is heating up. Grid capacity in NSW is tight; watch for transformer lead time impacts.
+- Digital Realty FRA14 (Frankfurt): 35 MW under construction. Frankfurt power is constrained by grid capacity and green energy mandates. Monitor.
+- Equinix NY9 (New York): 25 MW now operational. This adds load to an already strained NYC grid. Expect congestion pricing.
+- CyrusOne HOU2 (Houston): 40 MW under construction. ERCOT grid is a wildcard; monitor winterization compliance.
+- No risk rating changes today. All 23 facilities remain at NEGLIGIBLE, 190 at MODERATE, 92 at LOW.
+
+═══ MARKET SIGNALS ═══
+- Colo pricing: Northern Virginia wholesale colo pricing up 8% YoY. Secondary capacity premiums widening.
+- Capacity availability: tight in Ashburn, Dallas, and Silicon Valley. Some availability in Chicago and New York but at premium pricing.
+- Supply chain: transformer lead times 18-24 months for >50 MVA units — single biggest constraint. Switchgear 12-18 months. Generators 8-12 months. Lithium-ion UPS stable.
+- Schneider Electric and Eaton both reporting extended switchgear delivery. Caterpillar generator deliveries extending to 12 months on high-volume orders.
+- Recommendation: if you are planning a new build or expansion, order transformers and switchgear now. Do not wait for permitting.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-05-27

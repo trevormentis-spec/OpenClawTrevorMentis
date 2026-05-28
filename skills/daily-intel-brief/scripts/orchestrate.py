@@ -192,10 +192,10 @@ def main() -> int:
                         help="Tier-1 model for exec summary + red-team (default: DeepSeek V4 Pro)")
     parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro",
                         help="Tier-2 model for regional analysis (default: DeepSeek V4 Pro)")
-    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="deepseek",
-                        help="API provider for tier-1 (default: deepseek).")
-    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="deepseek",
-                        help="API provider for tier-2 regional analysis (default: deepseek).")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
+                        help="API provider for tier-1 (default: openrouter — deepseek direct API hangs on large payloads).")
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="openrouter",
+                        help="API provider for tier-2 regional analysis (default: openrouter).")
     parser.add_argument("--redteam-model", default=None,
                         help="Model for red-team pass (default: same as tier-2)")
     parser.add_argument("--redteam-provider", choices=["deepseek", "openrouter"], default=None,

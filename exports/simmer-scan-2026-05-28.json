@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-28T14:38:45.734281+00:00",
+  "markets_found": 2,
+  "markets": [
+    {
+      "query": "iran",
+      "market_id": "79eec02f-8100-41b0-9cf7-50ac2b60b79e",
+      "question": "US announces new Iran agreement/ceasefire extension by May 29?",
+      "probability_yes": 0.1199,
+      "source": "polymarket",
+      "resolves_at": "2026-05-29 00:00:00Z",
+      "status": "active"
+    },
+    {
+      "query": "russia",
+      "market_id": "b719d796-6b1e-4559-9ef5-0d5e8b3feee3",
+      "question": "Will Russia win on 2026-05-28?",
+      "probability_yes": 0.305,
+      "source": "polymarket",
+      "resolves_at": "2026-05-28 18:00:00Z",
+      "status": "active"
+    }
+  ],
+  "briefing": {
+    "risk_alerts": 0,
+    "total_pnl": -22.54,
+    "pnl_percent": -0.23,
+    "win_rate": 0
+  },
+  "note": "Simmer provides trading-focused data. For broad market discovery, see Kalshi scanner output."
+}

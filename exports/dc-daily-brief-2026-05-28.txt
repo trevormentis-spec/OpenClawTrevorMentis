@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-05-28
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single highest systemic risk to US DC operations today. The entire Northern Virginia cluster (Equinix DC1-DC15, Ashburn) and five other Equinix metro hubs are pegged at 56/100 risk — all grid-driven. Transformer lead times are worsening (18-24 months), and the PJM interconnection queue sits at 122 GW, meaning new builds face 4-6 year delays. No new cable outages or physical security incidents to report, but the supply chain bottleneck is now the dominant constraint on capacity growth.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported in the last 24 hours. The 694-cable global inventory is stable. Key routes serving the largest DC clusters — transatlantic (Ashburn/London), transpacific (California/Japan), and intra-Asia (Singapore/Hong Kong) — remain operational. No congestion alerts from major IXes (900 monitored). Watch for: any disruption on the MAREA or Dunant cables (Ashburn connectivity) or the SEA-ME-WE 5/6 routes serving Singapore and India. No new cable landing announcements.
+
+═══ POWER & GRID ═══
+Grid constraints remain the #1 risk driver. The US hyperscale power capacity (1563 MW) dwarfs all other countries combined (GB: 219 MW, AU: 130 MW, DE: 32 MW). PJM interconnection queue at 122 GW — new DC builds face 4-6 year delays. Transformer lead times worsening to 18-24 months for >50 MVA units; switchgear 12-18 months; generators 8-12 months. Schneider Electric and Eaton both reporting extended switchgear delivery. Caterpillar generator deliveries extending to 12 months on high-volume orders. Lithium-ion UPS battery supply stable, but lead-acid still constrained. No energy price spikes reported in last 24 hours, but the structural bottleneck is tightening.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hurricane, earthquake, flood, or wildfire threats to major DC clusters in the last 24 hours. Sentinel-2 imagery shows no ground disturbance or flooding at any of the 25 Tier 1 sites checked. Seasonal risk: Atlantic hurricane season starts June 1 — Northern Virginia and Miami clusters should be on watch. California wildfire season is ongoing but no active fires near SV1/SV5/SV10 (San Jose) or LA1 (Los Angeles) per latest satellite pass.
+
+═══ PHYSICAL SECURITY ═══
+No protests, construction disruptions, or access incidents reported near major DC corridors in the last 24 hours. All 25 Tier 1 sites checked via satellite imagery show no anomalies. Physical security posture is nominal.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours. AWS, Azure, Google Cloud, Oracle, Alibaba — all nominal. No fiber route disruptions reported on backbone routes serving Ashburn, Dallas, San Jose, Chicago, Los Angeles, or New York. Internet Exchange status: 900 IXes monitored, no congestion or routing anomalies.
+
+═══ ASSET WATCH ═══
+Construction pipeline: 1450 MW active. AWS us-east-3 (Ohio, 1200 MW) is the largest — permit filed. AirTrunk SYD2 (Sydney, 150 MW) announced. Digital Realty FRA14 (Frankfurt, 35 MW) under construction. Equinix NY9 (New York, 25 MW) now operational. CyrusOne HOU2 (Houston, 40 MW) under construction. No risk rating changes today. All 8 highest-risk facilities remain at 56/100 (grid-driven). No new facilities added to the high-risk list.
+
+═══ MARKET SIGNALS ═══
+Colo pricing: Expect upward pressure in US markets due to grid constraints and supply chain bottlenecks. Capacity availability tightening in Northern Virginia, Dallas, San Jose, Chicago, Los Angeles, and New York. Transformer lead times worsening — this will delay new builds and drive up colo rates for existing capacity. No new colo pricing data points today, but the trend is clear: supply-constrained, demand-pull inflation.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-05-28

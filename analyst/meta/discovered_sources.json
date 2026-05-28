@@ -184,5 +184,59 @@
     "url": "https://www.cbc.ca/news/canada/sudbury/northern-ontario-transmission-lines-environment-9.7183141",
     "signal_level": "Medium",
     "discovered": "2026-05-18"
+  },
+  {
+    "name": "Al Jazeera English",
+    "url": "https://www.aljazeera.com/economy/2026/5/19/flight-to-argentina-how-significant-is-it-for-israels-latam-outreach",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "The New York Review of Books",
+    "url": "https://www.nybooks.com/articles/2026/06/11/damming-the-big-ocean-chokepoints-edward-fishman/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "The Times of India",
+    "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/oil-shock-fears-ease-but-80-90-crude-may-be-the-new-normal-arvind-sanger/articleshow/131342742.cms",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-05-19-drone-threat-from-cuba-pretext-for-military-action.html",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Skift",
+    "url": "https://skift.com/2026/05/21/air-indias-outgoing-ceo-successor-will-have-their-hands-full/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Americanthinker.com",
+    "url": "https://www.americanthinker.com/articles/2026/05/artificial_intelligence_and_raw_materials.html",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Smallwarsjournal.com",
+    "url": "https://smallwarsjournal.com/2026/05/22/rethinking-artificial-intelligence-at-the-strategic-frontier/",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Barchart.com",
+    "url": "https://www.barchart.com/story/news/1984660/nvda-earnings-alphabet-conference-and-other-can-t-miss-items-this-week",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
+  },
+  {
+    "name": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-05-18-pentagon-warns-iran-handing-china-global-power.html",
+    "signal_level": "Medium",
+    "discovered": "2026-05-28"
   }
 ]

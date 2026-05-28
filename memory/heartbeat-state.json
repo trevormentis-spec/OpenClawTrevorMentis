@@ -13,89 +13,58 @@
     "phase_d": 1779737272,
     "cost_snapshot": 1779737272,
     "memory_maintenance": 1779737272,
-    "phase_a": 1779219440,
-    "feed_audit": 1779219440,
+    "phase_a": 1779824215,
+    "feed_audit": 1779824215,
     "phase_c": 1779650985
   },
   "lastHeartbeat": 1779824215,
   "rotationCursor": 0,
-  "previousPhase": "A",
-  "currentPhase": "A",
+  "previousPhase": "B",
+  "currentPhase": "C",
+  "nextPhase": "C",
   "phaseAStatus": "completed",
   "phaseANotes": {
-    "feedsTested": 309,
-    "working": 208,
-    "emptyOrSlow": 11,
-    "dead": 90,
-    "healthPct": 67.0,
-    "catalogError": "sources_tested.json is a list, expected dict - catalog audit skipped",
-    "collectParseErrors": "10 'unknown url type' errors for regional labels in collect.py",
+    "feedsTested": 723,
+    "working": 298,
+    "workingPct": 41.2,
+    "dead": 425,
+    "deadByStatus": {
+      "403 (WAF/Cloudflare)": 342,
+      "404 (truly dead)": 47,
+      "timeout": 6,
+      "429 (rate limited)": 4,
+      "DNS failure": 5,
+      "SSL errors": 4,
+      "other (405/401/406/451/500/503/407)": 17
+    },
+    "slow": 9,
+    "timeouts": 6,
+    "healthPct": 41.2,
     "reportSaved": "brain/memory/semantic/feed-health-latest.json",
+    "collectedBy": "standalone feed_health_check.py (--audit-only flag not available in collect.py)",
+    "note403": "342/425 dead feeds returned 403 - likely Cloudflare/WAF blocking generic urllib requests. Most of these are likely still valid RSS feeds, just blocked from automated access without browser User-Agent.",
     "deadExamples": [
-      "Caixin, Tasnim, CGTN (Fran\u00e7ais), RBC (Russian), Yonhap (English)",
-      "NHK News (401), Tempo (403), Jordan Times (403), Times of Israel (403)",
-      "Kyodo News (404), Xinhua (404), Nikkei (404), Yomiuri (404)",
-      "Kyiv Independent (404), El Universal (404), NDTV India (404)"
+      "343 feeds blocked by WAF (403) - systemic client issue, not feed death",
+      "Joint Maritime Information Center (JMIC) (403)",
+      "UK Maritime Trade Operations (UKMTO) (403)",
+      "Windward Maritime Intelligence (403)",
+      "The Star (Malaysia) (404) - truly dead",
+      "NZ Herald (404)",
+      "Radio NZ (404)",
+      "Jamaica Gleaner (404)",
+      "Trinidad Express (404)",
+      "Africa Confidential (404)",
+      "Lowy Institute The Interpreter (404)"
     ]
   },
-  "nextPhase": "A",
-  "alerts": [
-    {
-      "id": "deepseek_401",
-      "date": "2026-05-21",
-      "phase": "D",
-      "msg": "DeepSeek balance monitor returned 401 - API key may need rotation"
-    }
-  ],
   "phaseBStatus": "completed",
   "phaseBNotes": {
-    "gapRegions": [
-      "southeast_asia",
-      "caribbean",
-      "central_america",
-      "africa",
-      "north_africa"
-    ],
-    "candidatesFound": 23,
-    "topSources": [
-      "Global Voices (per-country feeds)",
-      "Bangkok Post",
-      "allAfrica.com",
-      "Africanews",
-      "News Americas Now",
-      "Jamaica Observer"
-    ],
-    "reportSaved": "brain/memory/semantic/feed-discovery-2026-05-23.json",
-    "recommendation": "Phase C should prioritize Global Voices per-country feeds as drop-in replacements for dead sources, then add regional aggregators"
+    "sourcesFound": 9,
+    "from": "NewsAPI",
+    "time": "2026-05-28T14:57:38Z"
   },
-  "phaseCStatus": "completed",
-  "phaseCNotes": {
-    "deadFeedsPruned": 50,
-    "replacementSourcesAdded": 11,
-    "gapRegionsCovered": [
-      "southeast_asia",
-      "caribbean",
-      "central_america",
-      "africa",
-      "north_africa"
-    ],
-    "sourcesAdded": [
-      "Thai PBS World",
-      "ASEAN News Today",
-      "Global Voices Caribbean",
-      "Global Voices Cuba",
-      "Global Voices Haiti",
-      "Global Voices Latin America",
-      "Global Voices Guatemala",
-      "Global Voices Honduras",
-      "Africanews",
-      "Global Voices Sub-Saharan Africa",
-      "Global Voices MENA"
-    ],
-    "collectLinesBefore": 1534,
-    "collectLinesAfter": 1495,
-    "sourcesJsonUpdated": true
-  },
+  "phaseCStatus": "pending",
+  "phaseCNotes": {},
   "phaseDStatus": "completed",
   "phaseDNotes": {
     "costSnapshot": "DeepSeek 401 (known \u2014 API key rotation needed, flagged in alerts). OpenRouter: no usage. Total weekly burn ~$0.47",
@@ -108,5 +77,5 @@
     "cycleComplete": true,
     "cycleSummary": "All 4 phases completed. Phase A: 290 feeds tested, 48.9% health. Phase B: 23 candidates found across 5 gap regions. Phase C: 50 dead pruned, 11 replacements added. Phase D: reindex done, cost snapshot blocked on API key issue."
   },
-  "cycleComplete": true
+  "cycleComplete": false
 }

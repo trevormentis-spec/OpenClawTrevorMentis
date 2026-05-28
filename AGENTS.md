@@ -11,6 +11,10 @@ That context may already include:
 - Recent daily memory such as `memory/YYYY-MM-DD.md`
 - `MEMORY.md` when this is the main session
 
+**Always read KNOWN_ISSUES.md at startup.** This is the single source of truth
+for persistent problems. Do not re-discover or re-fix issues already tracked there.
+Mark items VERIFIED_CLOSED only after production verification, not dev testing.
+
 Do not manually reread startup files unless:
 1. The user explicitly asks
 2. The provided context is missing something you need

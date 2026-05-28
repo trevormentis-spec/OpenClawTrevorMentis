@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-27T05:25:31.754Z",
+  "updatedAt": "2026-05-28T16:49:14.101Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1804,13 +1804,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-25T14:05:11.712Z",
+      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1822,13 +1822,15 @@
         "dd22c622813d",
         "a83968718a46",
         "3d62a3a5d314",
-        "7615a05f8cc3"
+        "7615a05f8cc3",
+        "2ec68133263a"
       ],
       "recallDays": [
         "2026-05-21",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-28"
       ],
       "conceptTags": [
         "second-guess",
@@ -1960,22 +1962,24 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Autonomy boundaries in ORCHESTRATION.md: self-detected, clean diagnosis, contained fix, regression-testable = autonomous. Principal review for architectural/guard/identity changes. - Default-non-executing rule: new automated executors default to dry-run; explicit --live flag required. - Preflight data rule: tracking data changes must confirm prior state is recoverable before commit. ### Key Technical Debts 1. Entity deepening task module scaffolds-only — needs actual Haiku/Opus call wired 2. Framework stress test module scaffolds-only — needs actual framework analysis call 3. Self_question_generation hardcodes 4 questions — needs LLM call for novel gaps 4. Cross_source_correlation dormant",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T05:05:55.974Z",
-      "lastRecalledAt": "2026-05-27T05:08:17.429Z",
+      "lastRecalledAt": "2026-05-28T16:49:14.101Z",
       "queryHashes": [
         "5bf81ea520aa",
         "d273c1eeb6e6",
-        "6c0fb35a93f8"
+        "6c0fb35a93f8",
+        "7ccb341e4318"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-28"
       ],
       "conceptTags": [
         "orchestration.md",
@@ -2150,13 +2154,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T14:08:59.640Z",
-      "lastRecalledAt": "2026-05-25T14:05:11.712Z",
+      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
       "queryHashes": [
         "0a8ae9598584",
         "1a26325ac2fd",
@@ -2164,11 +2168,13 @@
         "dd22c622813d",
         "a83968718a46",
         "3d62a3a5d314",
-        "7615a05f8cc3"
+        "7615a05f8cc3",
+        "2ec68133263a"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-28"
       ],
       "conceptTags": [
         "large-scale",
@@ -2254,13 +2260,13 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-05-25T14:05:11.712Z",
+      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
@@ -2268,11 +2274,13 @@
         "dd22c622813d",
         "a83968718a46",
         "3d62a3a5d314",
-        "7615a05f8cc3"
+        "7615a05f8cc3",
+        "2ec68133263a"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-28"
       ],
       "conceptTags": [
         "north-america",
@@ -2558,24 +2566,26 @@
       "endLine": 262,
       "source": "memory",
       "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1099 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 ======================================================================== ═══ EXECUTI ## Delivery pipe fix — 2026-05-24 **Root cause:** `daily-text-brief.sh` used `| tee -a \"$LOG\"` for long-running orchestrator command. OpenClaw cron session stdout buffer filled, pipe broke, tee died, killing shell pipeline before quality gate + delivery steps. **Fix:** Changed orchestrator, delivery, and postdiction steps to use `>> \"$LOG\" 2>&1` (direct",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T06:02:27.480Z",
-      "lastRecalledAt": "2026-05-27T04:13:38.297Z",
+      "lastRecalledAt": "2026-05-28T02:22:08.753Z",
       "queryHashes": [
         "27d057b1d1c5",
         "b53ef245a31e",
         "748b955e8b88",
         "87c4b8205f41",
         "d007fade7a5f",
-        "ad8c1cd4fc53"
+        "ad8c1cd4fc53",
+        "896393cca831"
       ],
       "recallDays": [
         "2026-05-26",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-28"
       ],
       "conceptTags": [
         "home/ubuntu",
@@ -2781,18 +2791,21 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-05-27T05:08:17.429Z",
+      "lastRecalledAt": "2026-05-28T16:49:14.101Z",
       "queryHashes": [
-        "6c0fb35a93f8"
+        "6c0fb35a93f8",
+        "2ec68133263a",
+        "7ccb341e4318"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-28"
       ],
       "conceptTags": [
         "parse-error",
@@ -2927,6 +2940,37 @@
         "skill-scanner.py",
         "node-modules",
         "roderick.jones"
+      ]
+    },
+    "memory:memory/2026-05-24.md:301:341": {
+      "key": "memory:memory/2026-05-24.md:301:341",
+      "path": "memory/2026-05-24.md",
+      "startLine": 301,
+      "endLine": 341,
+      "source": "memory",
+      "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-28T02:22:08.753Z",
+      "lastRecalledAt": "2026-05-28T02:22:08.753Z",
+      "queryHashes": [
+        "896393cca831"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "scripts/leo-daily-brief.py",
+        "scripts/preflight-qc.py",
+        "empty/short",
+        "source-only",
+        "copy-paste",
+        "deliver-text-brief.py",
+        "leo-daily-brief.py",
+        "scripts"
       ]
     }
   }

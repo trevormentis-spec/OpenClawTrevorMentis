@@ -1,0 +1,36 @@
+========================================================================
+  LEO GROUND STATION DAILY — May 27, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+A quiet day on the surface, but the launch schedule tells a different story. Tomorrow Amazon’s long-awaited Kuiper prototype mission (LA-07) lifts off on an Atlas V 551 from the Cape, sandwiched between two Starlink flights. This is the first LEO broadband competitor to put operational hardware on orbit since OneWeb’s restart. If successful, the floodgates on ground station deployment for Kuiper will open — our site register currently shows only 5 Kuiper-tagged locations, all low-risk, but that’s about to change rapidly. The absence of critical-risk sites (0 of 240) is masking geopolitical creep: six sites sit at High risk, all in regions where spectrum or physical access could become contested. Meanwhile, Goonhilly Inc. popping up in the FCC licensee list signals a European teleport player planting a US flag — likely a GSaaS push aimed at multi-constellation hosting. The market metrics remain buoyant, but job signals are whisper-thin; the industry is building capacity with fewer warm bodies, leaning on automation.
+
+What to watch: Kuiper’s first light; sudden surge in FCC experimental or gateway licenses under Denali 20020, LLC; and any movement on the 6 high-risk sites. If LA-07 scrubs, the window for Kuiper to catch Starlink’s 9400-satellite head start narrows further.
+
+═══ FCC LICENSES ═══
+Total records held steady at 100. The notable list is a mix of legacy incumbents (AT&T, MCI, Sprint, Intelsat, SES, Inmarsat) and two names worth flagging. Goonhilly Inc. is the US-facing entity of the UK’s Goonhilly Earth Station, which already operates the deep-space and LEO tracking site in Cornwall. This filing likely underpins a stateside teleport presence or a GSaaS node to serve US-licensed constellations — possibly OneWeb or Kuiper, as Goonhilly has existing relationships. Denali 20020, LLC is almost certainly Amazon’s in-house license vehicle for Kuiper gateway sites (Denali is a well-known Kuiper code name). No new applications were detected today, so license volume remains flat. The presence of two SES Americom entries is likely clerical duplication. Otherwise, the list is as expected; nothing signals a land rush yet.
+
+═══ CONSTELLATION SIGNALS ═══
+The next 72 hours pack a punch. Falcon 9 Block 5 launches Starlink Group 10-53 from Canaveral on May 29, followed hours later by the Atlas V 551 carrying Amazon Leo (LA-07) from the same range. This is the first dedicated LEO payload from Kuiper’s development phase; earlier test satellites flew on ABL’s RS1. The Atlas V 551 configuration can loft a sizable stack, likely two prototype birds or pathfinders. Starlink then follows with Group 17-41 from Vandenberg on May 30. Total upcoming launches across all programs stand at 351, but the Kuiper event is the needle-mover. If LA-07 is successful, Amazon will need to accelerate gateway construction fast — our register’s 5 Kuiper sites are not enough; expect a wave of new earth station applications in the US, South America, and Oceania once orbital validation is achieved. The two Chinese launches (TJSW-24, and an unknown payload on a Long March 2D) are irrelevant to commercial ground except as a reminder that Guowang’s LEO broadband constellation remains opaque, with no ground station coordination visible in our ITU feed.
+
+═══ SITE & IMAGERY ═══
+The site risk register totals 240 monitored locations. Distribution remains stable: 6 High, 34 Moderate, 27 Low, 13 Negligible, zero Critical. None of the High-risk sites moved into crisis, but they deserve a hard look — all are in regions where regulatory overreach, spectrum interference, or physical security could spike quickly (think Middle East, parts of Asia, and one in the Caribbean; detailed breakdown is in your dashboard). Starlink dominates the operator count with 38 sites, then KSAT with 15, OneWeb 10, Leaf Space 9, Kuiper 5, Telesat 3. Geography skews North America (26) and Europe (18). Sentinel-2 imagery covered 10 sites today, with 5 returning usable data; no new construction signatures, no visible antenna foundation work or shelter expansions. That’s consistent with a pause before potential Kuiper-driven activity. The imagery checks will be far more interesting after LA-07’s outcome.
+
+═══ MARKET SIGNALS ═══
+ITU coordination filings showed zero activity — possibly a data feed glitch, but more likely a lull. The single job hit for “ground station engineer hiring 2026” with a ‘recent’ signal is laughably small and confirms a broader trend: operators are scaling ground capacity with software-defined radios, remote operations, and lean teams rather than hiring engineers in volume. The market metrics paint a bright future: LEO GSaaS projected to jump from $1.72B (2024) to $5.33B (2033); the broader GSaaS market from $520M to $2.49B. Starlink’s 10M+ subs and estimated $11.8B revenue (2025) give it enormous capital to densify its own ground layer, which in turn keeps pressure on commercial GSaaS pricing. For now, the hiring signal is not a leading indicator; we need to track Amazon’s job postings and Kuiper-dedicated ground station RFPs to get a real pulse.
+
+═══ BOTTOM LINE ═══
+Ignore the quiet numbers and zero in on Kuiper. Tomorrow’s LA-07 launch is the first domino. Immediately watch FCC for a flurry of Denali 20020 applications and any Special Temporary Authority requests for telemetry sites beyond the ATLAS V launch head. Revisit the high-risk site list next week — if any move to Critical because of a geopolitical flare-up, ground station operators will scramble for alternate ocean-crossing links. Flag Telesat’s mere 3 registered sites; with Lightspeed allegedly on track for 2027 service, they’re in a deeper ground deficit than Kuiper. Scan for any Amazon GSaaS partnership announcements; Goonhilly’s US license might be a prelude. Finally, keep an eye on that solo job posting — if it multiplies, it means hardware procurement is accelerating, and we’ll need to update the site registry before Sentinel-2 catches the dirt moving.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | May 27, 2026

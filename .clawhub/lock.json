@@ -208,6 +208,14 @@
     "causal-graph": {
       "version": "1.0.0",
       "installedAt": 1779873183666
+    },
+    "dellight-strategic-intelligence": {
+      "version": "1.0.0",
+      "installedAt": 1779959891066
+    },
+    "rss-feed-digest": {
+      "version": "1.0.0",
+      "installedAt": 1779959911424
     }
   }
 }

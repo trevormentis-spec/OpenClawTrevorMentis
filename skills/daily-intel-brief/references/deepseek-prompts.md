@@ -171,6 +171,12 @@ Produce a single JSON object about {region_label} ONLY:
   "incident_count": <int>,
   "sources_used": ["<list of distinct outlets that contributed, at least 3 required>"],
   "source_diversity_flag": "<true if sources_used < 3 and incidents > 2>",
+  "assessment_level": "<one of: ELEVATED | WATCH | STABLE — based on volume and severity of incidents. ELEVATED = active crisis or significant escalation, WATCH = notable developments requiring monitoring, STABLE = routine conditions>",
+  "top_developments_24h": [
+    "<what happened — specific, sourced, single sentence>",
+    "<what happened — specific, sourced, single sentence>",
+    "<up to 5, minimum 2 if incidents > 0>"
+  ],
   "narrative": "<3-5 paragraph analytical synthesis, ~400-600 words.
     Structure: (1) what happened overnight WITH SOURCE CITATIONS,
     (2) why it matters — reframe standing assessment if evidence supports,
@@ -178,6 +184,11 @@ Produce a single JSON object about {region_label} ONLY:
     Cite incident IDs for specific claims. Synthesise, don't list.
     If incident count ≤ 3: be explicit about the collection gap and
     produce the best analysis possible from limited data.>",
+  "watch_items": [
+    "<specific event or development to monitor in next 24-48h with rationale>",
+    "<specific event or development to monitor in next 24-48h>",
+    "<up to 3, minimum 0>"
+  ],
   "standing_reframe": "<If yesterday's assessment needs updating, state
     new framing. If unchanged, say 'Standing assessment holds.'>",
   "story": "<2-3 paragraph narrative essay, ~250 words. Tell the story
@@ -235,6 +246,9 @@ TEN REGIONAL ASSESSMENTS (in fixed order):
 
 EUROPE:
 {europe_json}
+
+RUSSIA & EURASIA:
+{russia_eurasia_json}
 
 NORTH AMERICA:
 {north_america_json}

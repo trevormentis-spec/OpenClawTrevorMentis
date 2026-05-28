@@ -1,0 +1,28 @@
+# Trevor Geopolitics RSS Digest — manually curated working feeds
+# Lines starting with # are comments. One URL per line.
+# Last updated: 2026-05-28
+
+# Global news wires
+https://feeds.bbci.co.uk/news/world/rss.xml
+https://www.aljazeera.com/xml/rss/all.xml
+https://www.theguardian.com/world/rss
+https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+https://www.france24.com/en/rss
+https://rss.dw.com/rdf/rss-en-world
+https://www.npr.org/rss/rss.php?id=1004
+
+# Asia-Pacific
+https://thediplomat.com/feed/
+https://www.scmp.com/rss/4/feed
+https://www.aspistrategist.org.au/feed/
+
+# Middle East & Africa
+https://www.middleeasteye.net/rss
+https://www.dawn.com/feeds/world
+
+# Think tanks & analysis
+https://www.foreignaffairs.com/rss.xml
+https://www.csis.org/rss.xml
+https://warontherocks.com/feed/
+https://www.atlanticcouncil.org/feed/
+https://jamestown.org/feed/

@@ -96,15 +96,15 @@ LOCAL_LANGUAGE_FEEDS = [
     ("OCCRP", "https://www.occrp.org/en/feed", "en", ("B", 2)),
     ("Bellingcat", "https://www.bellingcat.com/feed", "en", ("B", 2)),
     ("OSW", "https://www.osw.waw.pl/en/rss.xml", "en", ("A", 2)),
-    ("Gazeta Wyborcza", "https://wyborcza.pl", "pl", ("B", 2)),
+    # Gazeta Wyborcza: no working RSS feed (base URL returns 0 entries) — removed
     ("Denník N", "https://dennikn.sk/feed", "sk", ("B", 2)),
-    ("Telex", "https://telex.hu", "hu", ("B", 2)),
+    # Telex: no working RSS feed — removed
     ("Postimees", "https://www.postimees.ee/rss", "et", ("B", 2)),
     ("ERR News", "https://news.err.ee/rss", "en", ("B", 2)),
     ("Dagens Nyheter", "https://www.dn.se/rss", "sv", ("B", 2)),
     ("Aftenposten", "https://www.aftenposten.no/rss", "no", ("B", 2)),
-    ("Politiken", "https://politiken.dk", "da", ("B", 2)),
-    ("Helsingin Sanomat", "https://www.hs.fi", "fi", ("B", 2)),
+    # Politiken: no working RSS feed — removed
+    # Helsingin Sanomat: no working RSS feed — removed
     ("Kyiv Independent", "https://kyivindependent.com", "en", ("B", 2)),
     ("Meduza", "https://meduza.io/rss/all", "ru", ("B", 2)),
     # Asian
@@ -112,19 +112,19 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Channel News Asia", "https://www.channelnewsasia.com/rssfeeds/8395986", "en", ("B", 2)),
     # Africa — Tier-1 daily baseline (included every brief, never rotated out)
     ("Africanews", "https://www.africanews.com/feed/", "en", ("B", 2)),
-    ("ISS Africa", "https://issafrica.org/rss.xml", "en", ("A", 2)),
+    # ISS Africa: RSS feed returns 0 entries — removed (use catalog rotation instead)
     ("The Africa Report", "https://www.theafricareport.com/feed/", "en", ("B", 2)),
     ("Premium Times (Nigeria)", "https://www.premiumtimesng.com/feed", "en", ("B", 2)),
-    ("Daily Maverick (SA)", "https://www.dailymaverick.co.za/feed/", "en", ("B", 2)),
-    ("Daily Nation (Kenya)", "https://nation.africa/feed/", "en", ("B", 2)),
+    ("Daily Maverick (SA)", "https://www.dailymaverick.co.za/rss/", "en", ("B", 2)),
+    # Daily Nation: 403 Forbidden — removed (use catalog rotation instead)
     ("Mada Masr (Egypt)", "https://www.madamasr.com/en/feed/", "en", ("B", 2)),
     ("Hespress (Morocco)", "https://en.hespress.com/feed/", "en", ("B", 2)),
     ("Radio Dabanga (Sudan)", "https://www.dabangasudan.org/en/feed", "en", ("B", 2)),
-    ("Addis Standard (Ethiopia)", "https://addisstandard.com/feed/", "en", ("B", 2)),
+    # Addis Standard: 403 Forbidden — removed (use catalog rotation instead)
     ("Actualité.cd (DRC)", "https://actualite.cd/feed/", "fr", ("B", 2)),
     ("Radio Okapi (DRC)", "https://www.radiookapi.net/rss.xml", "fr", ("B", 2)),
-    ("Cabo Ligado (Mozambique)", "https://www.caboligado.com/feed/", "en", ("B", 2)),
-    ("Garowe Online (Somalia)", "https://www.garoweonline.com/feed/", "en", ("B", 2)),
+    # Cabo Ligado: RSS feed returns 0 entries — removed (use catalog rotation)
+    # Garowe Online: 404 Not Found — removed (use catalog rotation instead)
     ("HumAngle (Nigeria/Sahel)", "https://humanglemedia.com/feed/", "en", ("A", 2)),
     ("Jeune Afrique", "https://www.jeuneafrique.com/feed/", "fr", ("B", 2)),
 
@@ -478,7 +478,7 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Ynet (Hebrew)", "https://www.ynet.co.il/Integration/StoryRss2.xml", "he", ("B", 2)),
     ("Globes (Hebrew)", "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederRSS", "he", ("B", 2)),
     ("Times of Israel", "https://www.timesofisrael.com/feed/", "en", ("B", 2)),
-    ("Gazeta Wyborcza (PL)", "https://wyborcza.pl/0,0.html", "pl", ("B", 2)),
+    # Gazeta Wyborcza (PL): no working RSS feed — removed
     ("Rzeczpospolita (PL)", "https://www.rp.pl/rss/", "pl", ("B", 2)),
     ("Onet (PL)", "https://wiadomosci.onet.pl/rss.xml", "pl", ("B", 2)),
     ("PAP (Polish wire)", "https://www.pap.pl/rss.xml", "pl", ("B", 2)),
@@ -539,15 +539,25 @@ def load_catalog_feeds(catalog_path: pathlib.Path | None = None,
         log(f"catalog load failed: {exc}")
         return []
 
+    # Handle both dict {sources: [...]} and flat list [...] formats
+    source_list: list[dict]
+    if isinstance(catalog, dict):
+        source_list = catalog.get("sources", [])
+    elif isinstance(catalog, list):
+        source_list = catalog
+    else:
+        source_list = []
+
     # Group working feeds by region
     working: dict[str, list[dict]] = {}
-    for s in catalog.get("sources", []):
-        if s.get("status") != "working":
+    for s in source_list:
+        if s.get("status") not in ("working", "ok"):
             continue
-        rss = s.get("rss", "").strip()
-        if not rss or not rss.startswith("http"):
+        # Handle both 'rss' and 'url' field names
+        feed_url = s.get("rss", s.get("feed_url", s.get("url", ""))).strip()
+        if not feed_url or not feed_url.startswith("http"):
             continue
-        region = s.get("region", "global")
+        region = s.get("region", s.get("source_region", "global"))
         working.setdefault(region, []).append(s)
 
     # Rotate: pick up to max_per_region feeds per region
@@ -556,8 +566,10 @@ def load_catalog_feeds(catalog_path: pathlib.Path | None = None,
     dead_skipped = 0
     for region, feeds in sorted(working.items()):
         feeds_sorted = sorted(feeds, key=lambda s: s.get("name", ""))
-        # Filter out known-dead feeds
-        live_feeds = [s for s in feeds_sorted if not is_dead(s.get("rss", ""), dead_cache)]
+        # Filter out known-dead feeds — handle both 'rss' and 'url' field names
+        def _get_feed_url(s):
+            return s.get("rss", s.get("feed_url", s.get("url", "")))
+        live_feeds = [s for s in feeds_sorted if not is_dead(_get_feed_url(s), dead_cache)]
         dead_skipped += len(feeds_sorted) - len(live_feeds)
         offset = (run_count * max_per_region) % max(1, len(live_feeds)) if live_feeds else 0
         rotated = live_feeds[offset:] + live_feeds[:offset]
@@ -565,7 +577,7 @@ def load_catalog_feeds(catalog_path: pathlib.Path | None = None,
         for s in picked:
             selected.append((
                 s["name"],
-                s["rss"],
+                s.get("rss", s.get("feed_url", s.get("url", ""))),
                 s.get("admiralty_source", "C"),
                 s.get("admiralty_info", "3"),
                 region,
@@ -1240,27 +1252,18 @@ WEB_SEARCH_REGIONS = {
 }
 
 def _brave_search(query: str, brave_key: str, timeout: int = 10) -> list[dict]:
-    """Search Brave Web Search API and return results."""
-    import urllib.parse as up
-    encoded = up.quote(query)
-    url = f"https://api.search.brave.com/res/v1/web/search?q={encoded}&count=5&freshness=pd"
-    req = urllib.request.Request(url, headers={
-        "Accept": "application/json",
-        "Accept-Encoding": "gzip",
-        "X-Subscription-Token": brave_key,
-    })
-    resp = json.loads(urllib.request.urlopen(req, timeout=timeout).read())
-    results = resp.get("web", {}).get("results", [])
+    """Search Brave Web Search API — delegates to shared utility."""
+    from scripts.shared_brave import brave_search
+    results = brave_search(query)
     out = []
     for r in results[:5]:
         title = r.get("title", "")
-        snippet = r.get("snippet", "")
         url_out = r.get("url", "")
         age = r.get("age", "")
-        if title and snippet:
+        if title:
             out.append({
                 "title": title,
-                "summary": snippet,
+                "summary": title,
                 "link": url_out,
                 "source": "Brave Search",
                 "pub": age,

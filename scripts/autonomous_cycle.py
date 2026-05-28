@@ -35,7 +35,7 @@ DEAD_FEEDS = REPO / "brain" / "memory" / "semantic" / "dead-feeds.json"
 CATALOG = REPO / "analyst" / "meta" / "sources_tested.json"
 CRON_JOBS = pathlib.Path(os.path.expanduser("~/.openclaw/cron/jobs.json"))
 
-PHASES = ["crons", "feeds", "collection", "pipeline", "costs", "brain"]
+PHASES = ["crons", "feeds", "collection", "pipeline", "costs", "brain", "digest"]
 NOW = datetime.now(timezone.utc)
 
 
@@ -234,23 +234,33 @@ def check_pipeline(state: dict) -> list[str]:
 
 
 def check_costs(state: dict) -> list[str]:
-    """Check DeepSeek balance and usage."""
+    """Check all infrastructure: DeepSeek, OpenRouter, disk."""
+    import subprocess
     findings = []
-    usage_file = REPO / "brain" / "memory" / "semantic" / "deepseek-usage.json"
-    if usage_file.exists():
-        try:
-            usage = json.loads(usage_file.read_text())
-            balance = usage.get("balance", {}).get("USD", 0)
-            if balance:
-                findings.append(f"DeepSeek balance: ${balance:.2f}")
-                if balance < 1.0:
-                    findings.append("⚠️ Low balance — top up soon")
-        except Exception:
-            pass
-    else:
-        findings.append("No DeepSeek usage data")
+    try:
+        result = subprocess.run(
+            ["python3", str(REPO / "scripts" / "infra_alert.py"), "--quiet"],
+            capture_output=True, text=True, timeout=20,
+        )
+        output = result.stdout.strip()
+        if output:
+            findings.extend(output.split("\n"))
+        if result.returncode != 0:
+            findings.append("⚠️ Some infra metrics triggered alerts — check tasks/infra-alert-state.json")
+    except Exception as e:
+        findings.append(f"⚠️ infra_alert.py failed: {e}")
+        findings.append("⚠️ Falls back to manual DeepSeek balance check")
+        usage_file = REPO / "brain" / "memory" / "semantic" / "deepseek-usage.json"
+        if usage_file.exists():
+            try:
+                usage = json.loads(usage_file.read_text())
+                balance = usage.get("balance", {}).get("USD", 0)
+                if balance:
+                    findings.append(f"DeepSeek balance: ${balance:.2f}")
+            except Exception:
+                pass
 
-    return findings or ["✅ Costs nominal"]
+    return findings or ["✅ Infrastructure nominal"]
 
 
 def check_brain(state: dict) -> list[str]:
@@ -294,6 +304,31 @@ def check_collection(state: dict) -> list[str]:
     return findings or ["✅ Collection state nominal"]
 
 
+# ── Geopolitics RSS Digest ─────────────────────────────────────────
+
+def check_digest(state: dict) -> list[str]:
+    """Run geopolitics RSS digest. Lightweight keyword-filtered sweep."""
+    import subprocess
+    digest_script = REPO / "scripts" / "rss-digest-heartbeat.sh"
+    if not digest_script.exists():
+        return ["❌ rss-digest heartbeat script not found"]
+    try:
+        result = subprocess.run(
+            [str(digest_script)],
+            capture_output=True, text=True, timeout=45,
+        )
+        if result.returncode == 0:
+            lines = [l.strip() for l in result.stdout.split("\n") if l.strip()]
+            digest_path = lines[-1] if lines else "?"
+            return [f"✅ Geopolitics digest complete: {digest_path}"]
+        else:
+            return [f"❌ digest failed (rc={result.returncode}): {result.stderr[:200]}"]
+    except subprocess.TimeoutExpired:
+        return ["⚠️ digest timed out after 45s"]
+    except Exception as e:
+        return [f"⚠️ digest exception: {e}"]
+
+
 # ── Main ───────────────────────────────────────────────────────────
 
 PHASE_MAP = {
@@ -303,6 +338,7 @@ PHASE_MAP = {
     "pipeline": check_pipeline,
     "costs": check_costs,
     "brain": check_brain,
+    "digest": check_digest,
 }
 
 
@@ -310,6 +346,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Trevor autonomous operations cycle")
     parser.add_argument("--all", action="store_true", help="Run all phases")
     parser.add_argument("--crons", action="store_true", help="Cron health only")
+    parser.add_argument("--digest", action="store_true", help="Geopolitics RSS digest only")
     parser.add_argument("--feeds", action="store_true", help="Feed health only")
     parser.add_argument("--pipeline", action="store_true", help="Pipeline health only")
     parser.add_argument("--json", action="store_true", help="Output JSON")

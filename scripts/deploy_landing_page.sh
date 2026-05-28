@@ -69,8 +69,24 @@ for region in europe north_america central_america_caribbean south_america middl
 import json
 with open('$file') as f:
     d = json.load(f)
-print(d.get('bluf', d.get('summary', d.get('key_judgments', ['']))[0] if isinstance(d.get('key_judgments'), list) else ''))
-" 2>/dev/null | cut -c1-300 || true)
+    # Try narrative, detail.situation, first KJ statement, then fallback
+    narrative = d.get('narrative', '')
+    if narrative:
+        print(narrative[:300])
+    else:
+        detail = d.get('detail', {})
+        if isinstance(detail, dict):
+            situation = detail.get('situation', '')
+            if situation:
+                print(situation[:300])
+    if not narrative and not (isinstance(detail, dict) and detail.get('situation')):
+        kjs = d.get('key_judgments', [])
+        if kjs:
+            kj = kjs[0]
+            print(kj.get('statement', kj.get('prediction', ''))[:300])
+        else:
+            print('')
+" 2>/dev/null || true)
     fi
     
     # Escape for JSON
@@ -114,5 +130,17 @@ else
     echo "✅ Pushed to GitHub Pages" | tee -a "$LOG"
 fi
 
-echo "Live: https://trevormentis-spec.github.io/trevor-landing-page/" | tee -a "$LOG"
+# ── VERIFICATION ── Verify deploy actually landed ──
+echo "--- Verifying deploy ---" | tee -a "$LOG"
+VERIFY_URL="https://trevormentis-spec.github.io/trevor-landing-page/"
+sleep 5  # Allow GitHub Pages CDN a moment
+LIVE_ISSUE=$(curl -s "$VERIFY_URL" | grep -oP 'Issue #[0-9-]+' | head -1)
+THEATRE_COUNT=$(curl -s "$VERIFY_URL" | grep -c 'theatre-card' 2>/dev/null || echo 0)
+if echo "$LIVE_ISSUE" | grep -q "$DATE_PT"; then
+    echo "✅ VERIFIED: Live page shows issue $LIVE_ISSUE with $THEATRE_COUNT theatre cards" | tee -a "$LOG"
+    echo "✅ Deploy succeeded: https://trevormentis-spec.github.io/trevor-landing-page/" | tee -a "$LOG"
+else
+    echo "⚠️  VERIFY WARNING: Live page shows '$LIVE_ISSUE' (expected '$DATE_PT')" | tee -a "$LOG"
+    echo "⚠️  Page may be cached. Check manually: $VERIFY_URL" | tee -a "$LOG"
+fi
 echo "=== Deploy complete ===" | tee -a "$LOG"

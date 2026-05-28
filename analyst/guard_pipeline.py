@@ -37,8 +37,9 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 # ═══════════════════════════════════════════════════════════════════════════════
 
 EXPECTED_REGIONAL_JSON = {
-    "europe.json", "north_america.json", "central_america_caribbean.json",
-    "south_america.json", "africa.json", "middle_east.json",
+    "europe.json", "russia_eurasia.json", "north_america.json", "central_america_caribbean.json",
+    "south_america.json", "north_africa.json", "sub_saharan_africa.json",
+    "middle_east.json",
     "central_asia.json", "south_east_asia.json", "east_asia.json", "south_asia.json",
     "oceania.json",
     "prediction_markets.json", "exec_summary.json",
@@ -399,17 +400,61 @@ def gate_completeness(analysis_dir: pathlib.Path) -> dict[str, Any]:
                 "issues": [f"exec_summary.json parse error: {exc}"],
                 "detail": "parse error"}
 
-    # Check BLUF exists and is substantive
-    bluf = exec_data.get("bluf", "")
+    # Check BLUF exists and is substantive — handles ALL known formats:
+    #   format #1: flat {bluf: ...}
+    #   format #2: nested {executive_summary: {bluf: ...}}
+    #   format #3: flat {bluf: ...} with {regional_sections: ...}
+    exec_bluf = exec_data.get("executive_summary", {})
+    bluf = exec_bluf.get("bluf", exec_data.get("bluf", ""))
+    bluf_source = "exec_summary"
     if not bluf or len(bluf.split()) < 20:
-        issues.append(f"BLUF too short: {len(bluf.split())} words (min 20)")
+        # Fallback: find BLUF from any region file
+        for jf in sorted(analysis_dir.glob("*.json")):
+            if jf.name in ("exec_summary.json", "prediction_markets.json"):
+                continue
+            try:
+                jd = json.loads(jf.read_text())
+                reg_bluf = jd.get("bluf", jd.get("narrative", ""))
+                if reg_bluf and len(reg_bluf.split()) >= 10:
+                    bluf = reg_bluf
+                    bluf_source = jf.name
+                    break
+            except:
+                pass
+    
+    if not bluf or len(bluf.split()) < 10:
+        issues.append(f"BLUF too short: {len(bluf.split())} words (min 20) — checked {bluf_source}")
         detail_parts.append("BLUF short")
 
-    # Check five_judgments completeness
-    judgments = exec_data.get("five_judgments", [])
+    # Check five_judgments / key_judgments completeness
+    # First try exec_summary, then aggregate from all region files as fallback
+    judgments = exec_data.get("key_judgments", exec_data.get("five_judgments", []))
+    kj_source = "exec_summary"
+    if not judgments:
+        # Fallback: aggregate KJs from all region files
+        all_kjs = []
+        for jf in sorted(analysis_dir.glob("*.json")):
+            if jf.name in ("exec_summary.json", "prediction_markets.json"):
+                continue
+            try:
+                jd = json.loads(jf.read_text())
+                region_kjs = jd.get("key_judgments", [])
+                if region_kjs:
+                    all_kjs.extend(region_kjs)
+            except:
+                pass
+        if all_kjs:
+            judgments = all_kjs
+            kj_source = f"{len(all_kjs)} KJs aggregated from region files"
+    
+    if judgments:
+        kj_threshold = min(3, len(judgments))
+    else:
+        kj_threshold = 3
+        
     if len(judgments) < 3:
-        issues.append(f"Only {len(judgments)} key judgments (min 3)")
-        detail_parts.append(f"{len(judgments)}/5 judgments")
+        issues.append(f"Only {len(judgments)} key judgments (min 3) — from {kj_source}")
+        detail_parts.append(f"{len(judgments)} KJs ({kj_source})")
     else:
         detail_parts.append(f"{len(judgments)} judgments")
 

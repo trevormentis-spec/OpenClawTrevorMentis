@@ -40,8 +40,11 @@ KNOWN_SOURCES = ["Reuters World", "AP World", "BBC World", "Al Jazeera",
                  "Reuters Business", "FT World"]
 
 ALL_REGIONS = [
-    "europe", "asia", "middle_east",
-    "north_america", "south_central_america", "global_finance",
+    "europe", "north_america", "central_america_caribbean",
+    "south_america", "north_africa", "sub_saharan_africa",
+    "middle_east", "central_asia", "south_east_asia",
+    "east_asia", "south_asia", "oceania",
+    "prediction_markets",
 ]
 
 DEFAULT_CAP = 8

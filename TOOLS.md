@@ -150,3 +150,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### Google Maps
+- **API key:** AIzaSyBExJVs-IKJ1zagZ-6WskhlHoMeUn4VnIs (in .env as GOOGLE_MAPS_API_KEY)
+- Use for: geospatial queries, location data, place search, mapping visualizations

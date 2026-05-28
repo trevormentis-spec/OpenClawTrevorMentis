@@ -90,15 +90,23 @@ def main():
         html
     )
 
-    # 2. Build the theatre grid
+    # 2. Build the theatre grid — inject before pricing section
     theatre_html = build_theatre_grid(summaries)
     if theatre_html:
-        html = replace_between(
-            html,
-            '<div class="theatre-grid">',
-            '</div><!-- end theatres -->',
-            f'<div class="theatre-grid">\n{theatre_html}\n        </div><!-- end theatres -->'
-        )
+        theatre_section = f'''    <section class="section" style="padding: 60px 24px; background: var(--bg-secondary); border-bottom: 1px solid var(--border);">
+        <div class="container" style="text-align: center;">
+            <div class="section-label">TODAY\'S THEATRES</div>
+            <h2 class="section-title">Regional Intelligence Assessments</h2>
+            <p class="section-subtitle">Bottom-line assessments from each theatre, extracted from today\'s full intelligence brief.</p>
+        </div>
+        <div class="theatre-grid">
+{theatre_html}
+        </div>
+    </section>'''
+        # Insert before the first subscribe section or pricing grid
+        insert_marker = '<div class="pricing-grid">'
+        if insert_marker in html:
+            html = html.replace(insert_marker, theatre_section + '\n\n' + insert_marker, 1)
 
     # 3. Add "Latest Brief" CTA section before pricing
     cta = ""

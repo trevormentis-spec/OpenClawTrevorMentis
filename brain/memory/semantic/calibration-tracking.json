@@ -1,14 +1,14 @@
 {
   "version": 3,
   "created": "2026-05-12T05:10:00Z",
-  "last_updated": "2026-05-26T12:43:17.492542+00:00Z",
-  "total_judgments": 96,
+  "last_updated": "2026-05-27T23:14:34.645046+00:00Z",
+  "total_judgments": 105,
   "correct": 3,
   "incorrect": 37,
-  "unresolved": 56,
+  "unresolved": 65,
   "by_confidence_band": {
     "likely": {
-      "total": 105,
+      "total": 115,
       "correct": 3,
       "incorrect": 15,
       "unresolved": 22
@@ -16,7 +16,7 @@
   },
   "by_region": {
     "europe": {
-      "total": 31,
+      "total": 33,
       "correct": 2,
       "incorrect": 0,
       "confirmed": 2,
@@ -34,7 +34,7 @@
       "not_yet_testable": 0
     },
     "middle_east": {
-      "total": 32,
+      "total": 36,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -43,7 +43,7 @@
       "not_yet_testable": 0
     },
     "north_america": {
-      "total": 26,
+      "total": 28,
       "correct": 0,
       "incorrect": 0,
       "confirmed": 0,
@@ -75,7 +75,7 @@
       "incorrect": 0
     },
     "oceania": {
-      "total": 6,
+      "total": 8,
       "correct": 0,
       "incorrect": 0
     },
@@ -387,6 +387,28 @@
       "accuracy_pct": 0.0,
       "running_accuracy_pct": 3.4,
       "horizon_expiry": "2026-06-02T12:43:17.492562+00:00",
+      "rechecked": false
+    },
+    {
+      "date": "2026-05-27",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 5,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 3.0,
+      "horizon_expiry": "2026-06-03T13:50:10.597574+00:00",
+      "rechecked": false
+    },
+    {
+      "date": "2026-05-27",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 4,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 2.8,
+      "horizon_expiry": "2026-06-03T23:14:34.645070+00:00",
       "rechecked": false
     }
   ],

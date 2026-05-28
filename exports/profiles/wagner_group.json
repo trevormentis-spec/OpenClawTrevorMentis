@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-27T19:59:19.110477",
+  "threat_actor_profile": {
+    "name": "Wagner Group",
+    "source_hits": [],
+    "web_mentions": [
+      {
+        "title": "Action Alert: Cosponsor the Bipartisan Holding Accountable Russian Mercenaries (HARM) Act 2.0",
+        "url": "https://www.fddaction.org/action-alert/2026/02/20/action-alert-cosponsor-the-bipartisan-holding-accountable-russian-mercenaries-harm-act-2-0/",
+        "age": "February 24, 2026"
+      },
+      {
+        "title": "Russia\u2019s Wagner Group Is Back in the News\u2014This Time in Europe - The National Interest",
+        "url": "https://nationalinterest.org/blog/buzz/russias-wagner-group-back-in-news-this-time-in-europe-sa-021826",
+        "age": "February 18, 2026"
+      },
+      {
+        "title": "Wagner Group recruiters reportedly orchestrate sabotage across Europe | Ukrainska Pravda",
+        "url": "https://www.pravda.com.ua/eng/news/2026/02/16/8021218/",
+        "age": "February 16, 2026"
+      },
+      {
+        "title": "Wagner Group | Financial Times",
+        "url": "https://www.ft.com/wagner-group",
+        "age": ""
+      },
+      {
+        "title": "Wagner Group - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Wagner_Group",
+        "age": "4 days ago"
+      }
+    ]
+  },
+  "generated_by": "Philby Threat Actor Profiler",
+  "generated_at": "2026-05-27T19:59:19.110501"
+}

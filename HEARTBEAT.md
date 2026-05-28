@@ -10,6 +10,7 @@ Goal: every source pulled at least once per day.
 - [ ] Phase B — Source discovery (find new RSS/Substack feeds for gap regions)
 - [ ] Phase C — Source pruning (remove dead feeds, add replacements from discovery)
 - [ ] Phase D — Collection state + cost snapshot + brain reindex
+- [ ] Phase E — Geopolitics RSS digest (keyword-filtered, 6h window, saves to exports/rss-digest/)
 
 After all phases complete, cycle resets. Each phase contributes to a continuous improvement loop:
 test → discover → add → prune, keeping the feed list healthy and coverage balanced.
@@ -30,3 +31,10 @@ Do not stop the cycle on non-critical failures.
 ## Full cycle override
 
 bash scripts/collection-cycle.sh  # runs ALL phases immediately
+
+## Phase E — Geopolitics RSS Digest
+
+```bash
+bash scripts/rss-digest-heartbeat.sh
+# Output: exports/rss-digest/YYYY-MM-DD.md
+```

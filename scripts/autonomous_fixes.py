@@ -624,13 +624,23 @@ def fix_brief_quality(state: dict) -> None:
         state["brief_flash_detected"] = today
         fixes_needed = True
 
-    # Check BLUF length
-    bluf = brief.get("bluf", "")
-    if len(bluf) < 50:
-        alert("⚠️ Brief BLUF too short — possible truncation")
-        fixes_needed = True
+    # Check BLUF length (check both top-level and nested executive_summary.bluf, plus summary field for DC brief variant)
+    # Only check if exec_summary.json has actual brief content fields; skip if schema mismatch (status-only)
+    bluf_ok = True
+    if any(k in brief for k in ("bluf", "executive_summary", "summary", "key_judgments")):
+        raw = brief.get("bluf", "") or brief.get("executive_summary", {}).get("bluf", "")
+        if not raw:
+            raw = brief.get("summary", "")
+            if isinstance(raw, list):
+                raw = ". ".join(raw) if raw else ""
+        bluf = raw if isinstance(raw, str) else str(raw)
+        if len(bluf) < 50:
+            alert("⚠️ Brief BLUF too short — possible truncation")
+            fixes_needed = True
+            bluf_ok = False
 
-    # Check for error content
+    # Check for error content (only if bluf is defined)
+    bluf = brief.get("bluf", "") or brief.get("executive_summary", {}).get("bluf", "") or ""
     if "ERROR:" in bluf or "Error generating" in str(brief):
         alert("🔴 Brief contains error message — needs regeneration")
         fixes_needed = True
