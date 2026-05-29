@@ -1,0 +1,1 @@
+{"timestamp":"2026-05-29T07:03:00Z","source":"kalshi-trader-cron","type":"signal_scan","account_balance":0.24,"signals_found":22,"executed":0,"failed":22,"reason":"insufficient_balance","note":"Account needs funding — all trades blocked at $0.24. 207 total trades logged (10 executed lifetime, 160 failed)."}
