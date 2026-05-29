@@ -1,46 +1,27 @@
 # Trade Journal — 2026-05-29
 
-**Cycle:** Cron signal scan + execute (01:00 UTC)
-**Scanner:** `philby/trader/trader.py --scan-and-trade`
-**Account balance:** $2.26
-**Existing positions before run:** 0
+## Cron: Kalshi Trader Signal Scan + Execute
 
----
+**Time:** 06:03 UTC
+**Balance:** $0.24
+**Result:** 0/10 trades executed — insufficient balance
 
-## Scan Results
+## Signals Identified (top 10 by edge)
 
-- **22 tradeable signals** from intel bridge
-- All signals are Iran/Iran-agreement themed (Trump/Iran contracts dominate)
-
-## Trades Attempted
-
-### 1. KXTRUMPIRAN-26JUN01 — BUY Yes
-- **Trevor confidence:** 63% | **Market:** 0% | **Edge:** +63pts
-- **Kelly fraction:** 0.07 → **$1.00** (100 × 1¢)
-- **Order lifecycle:** 1¢ → 3¢ → 5¢ → 7¢ escalation
-- **Outcome:** Order placed but fill not confirmed after 3 escalation attempts (logged as placed)
-
-### 2. KXUSAIRANAGREEMENT-27-26JUN — BUY Yes
-- **Trevor confidence:** 61.5% | **Market:** 5.5% | **Edge:** +56pts
-- **Kelly fraction:** 0.15 → **$1.00** (20 × 5¢)
-- **Outcome:** ❌ Failed — insufficient_balance (cash tied up in pending order #1)
-
-### 3. KXTRUMPIRAN-27JAN01 — BUY Yes
-- **Trevor confidence:** 63% | **Market:** 8% | **Edge:** +55pts
-- **Kelly fraction:** 0.15 → **$1.00** (12 × 8¢)
-- **Order lifecycle:** 8¢ → 10¢ → 12¢ escalation
-- **Outcome:** Order placed but fill checks failing with insufficient_balance errors
-
----
-
-## Issues
-
-1. **Low account balance ($2.26)** — insufficient funds to trade multiple signals simultaneously. First order of $1.00 (implied cash hold) blocks subsequent trades.
-2. **Pending order cash lockup** — Kalshi holds the $1.00 commitment for order #1, leaving only ~$1.26 available. This blocks trades 2 and 3.
-3. **No fills confirmed** — market at 0¢ for KXTRUMPIRAN-26JUN01 suggests no liquidity at any level; the order may never fill until the market develops.
+1. **KXTRUMPIRAN-26JUN01** — BUY Yes @ 1¢ (63% vs 0%, +63pt edge)
+2. **KXUSAIRANAGREEMENT-27-26JUN** — BUY Yes @ 5¢ (61.5% vs 5.5%, +56pt edge)
+3. **KXTRUMPIRAN-27JAN01** — BUY Yes @ 8¢ (63% vs 8%, +55pt edge)
+4. **KXTARIFFRATEPRC-26JUL01-55** — BUY Yes @ 3¢ (50% vs 3.5%, +46pt edge)
+5. **KXTARIFFRATEPRC-26JUL01-55** — BUY Yes @ 5¢ (50% vs 5.5%, +44pt edge)
+6. **KXUSAIRANAGREEMENT-27-26JUL** — BUY Yes @ 17¢ (61.5% vs 17.5%, +44pt edge)
+7. **KXUKRAINEEU-27JAN01** — BUY Yes @ 31¢ (72% vs 31%, +41pt edge)
+8. **KXWTIMAX-26DEC31-T200** — BUY Yes @ 12¢ (50% vs 12%, +38pt edge)
+9. **KXWTIMAX-26DEC31-T200** — BUY Yes @ 15¢ (50% vs 15%, +35pt edge)
+10. **KXWTIMAX-26DEC31-T200** — BUY Yes @ 17¢ (50% vs 17.5%, +32pt edge)
 
 ## Notes
 
-- All signals today center on Iran-related contracts (Trump/Iran, US-Iran agreement), indicating the intel bridge sees elevated Iran geopolitical signals.
-- The Iran cluster makes sense for a $2 balance — these are cheap contracts with long-tailed upside.
-- Consider a `--dry-run` cadence for low-balance periods to avoid burning API rate limits on unfillable orders.
+- All trades blocked by `insufficient_balance` — account needs at minimum $10+ to deploy across multiple signals
+- Highest edge: Trump/Iran contracts (market near 0%, Trevor at 63%)
+- Duplicate KXTARIFFRATEPRC signals: same market resolved to slightly different prices (3.5¢ and 5.5¢), likely spread from different order book levels
+- Duplicate KXWTIMAX signals: same market across 12¢, 15¢, 17¢ prices — likely multiple edge thresholds in scanner logic

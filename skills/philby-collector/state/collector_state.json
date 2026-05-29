@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "last_batch_index": 850,
-  "total_tested": 3350,
-  "total_ok": 2571,
-  "total_failed": 779,
+  "last_batch_index": 1050,
+  "total_tested": 3550,
+  "total_ok": 2682,
+  "total_failed": 868,
   "discovery_cycles": 0,
   "last_full_cycle": "2026-05-28T19:43:34Z"
 }

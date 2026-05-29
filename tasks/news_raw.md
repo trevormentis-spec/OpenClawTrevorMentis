@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-05-29 03:01 UTC
+# Gmail Intel Digest — 2026-05-29 05:01 UTC
+
+## Another day, another Iran deal moment
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Fri, 29 May 2026 01:00:11 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## اتفاق لتمديد وقف إطلاق النار مع إيران بانتظار موافقة ترامب
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Fri, 29 May 2026 01:00:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Russian Offensive Campaign Assessment, May 28, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Fri, 29 May 2026 00:01:03 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Putin has likely developed a false perception of the Russian military’s successes in Ukraine based on heavily exaggerated maps from the Russian high military command. May 28, 2026 Data Cutoff: 12:15 PM ET Kateryna Shymkiv, Jakub Kostka, Christina Harward, Samuel Shafiro, Grace Mappes, and Kateryna Stepanenko TOPLINES Russian President Vladimir Putin has likely developed a false perception of the Russian military’s successes in Ukraine based on heavily ex
+
+---
 
 ## Iran Update Special Report, May 28, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -29,26 +56,12 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## Editors’ Picks: Cubans abandon the American dream
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Thu, 28 May 2026 18:00:34 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+## AgentMail Intel — 2026-05-29 05:02 UTC
 
----
-
-## When to start GLP-1 in type 2 diabetes
-**From:** Reuters Health Rounds <healthrounds@thomsonreuters.com>
-**Date:** Thu, 28 May 2026 17:04:07 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-05-29 03:01 UTC
+### Eastern Europe Edition: Diverging currency paths
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+The Biggest Economies Dig In Against Euro Membership Croatia is raising its profile in the euro region, but others are not so keen. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### 彭博财经早茶：美伊料延长停火60天；中国在港发主权绿债
 **From:** Bloomberg <noreply@news.bloomberg.com>  
@@ -61,18 +74,3 @@ Billionaire Steyer Drops Millions Every Week to Win California Race Plus: The wo
 ### Lessons from Guzman y Gomez’s US retreat, fresh ceasefire hope
 **From:** Bloomberg Australia <noreply@news.bloomberg.com>  
 Lessons From Guzman y Gomez’s Retreat From The US Get caught up. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Did Putin Return from China Empty-Handed?
-**From:** Carnegie This Week <thisweek@carnegieendowment.org>  
-Plus, nuclear proliferation and battlefield lines in Ukraine. 28 May 2026 Putin Didn’t Seem to Get the One Thing He Wanted from Xi <https://go.carnegieendowment.org/ODEzLVhZVS00MjIAAAGiD6_WYi7qihTJRHR
-
-### The Evening: U.S. and Iran draft cease-fire extension
-**From:** The New York Times <nytdirect@nytimes.com>  
-
-### Canada Daily: Apotex apogee
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Apotex IPO Signals a Thaw in Canada’s Public Markets Plus: World Cup = Petri dish ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### New Publication: The Return of the Alien Tort Statute
-**From:** CSIS Economics Program and Scholl Chair <econ@csis.org>  
-96 ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
