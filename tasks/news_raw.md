@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-05-28 21:03 UTC
+# Gmail Intel Digest — 2026-05-28 23:03 UTC
+
+## 米イラン停戦協議巡り情報錯綜、戦闘下でも協議継続【【5月 29日】
+**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
+**Date:** Thu, 28 May 2026 18:31:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+
+---
+
+## Editors’ Picks: Cubans abandon the American dream
+**From:** Foreign Policy <newsletters@foreignpolicy.com>
+**Date:** Thu, 28 May 2026 18:00:34 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+
+---
+
+## When to start GLP-1 in type 2 diabetes
+**From:** Reuters Health Rounds <healthrounds@thomsonreuters.com>
+**Date:** Thu, 28 May 2026 17:04:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Stocks sizzle on ceasefire extension
 **From:** Reuters Trading Day <tradingday@thomsonreuters.com>
@@ -30,62 +57,31 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 
 ---
 
-## Trump renovates DC as Iran deal lags
-**From:** "Reuters Politics U.S." <campaigntrail@thomsonreuters.com>
-**Date:** Thu, 28 May 2026 14:15:27 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-05-28 23:03 UTC
 
----
+### Lessons from Guzman y Gomez’s US retreat, fresh ceasefire hope
+**From:** Bloomberg Australia <noreply@news.bloomberg.com>  
+Lessons From Guzman y Gomez’s Retreat From The US Get caught up. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-## Feeling the affordability squeeze? You're not alone
-**From:** Reuters On the Money <onthemoney@thomsonreuters.com>
-**Date:** Thu, 28 May 2026 12:30:12 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### Did Putin Return from China Empty-Handed?
+**From:** Carnegie This Week <thisweek@carnegieendowment.org>  
+Plus, nuclear proliferation and battlefield lines in Ukraine. 28 May 2026 Putin Didn’t Seem to Get the One Thing He Wanted from Xi <https://go.carnegieendowment.org/ODEzLVhZVS00MjIAAAGiD6_WYi7qihTJRHR
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+### The Evening: U.S. and Iran draft cease-fire extension
+**From:** The New York Times <nytdirect@nytimes.com>  
 
----
-
-
-## AgentMail Intel — 2026-05-28 21:04 UTC
-
-### How Rubio is passing the Iran test
-**From:** POLITICO's National Security Daily <nationalsecuritydaily@email.politico.com>  
-From the SitRoom to the E-Ring, the inside scoop on defense, national security and foreign policy. May 28, 2026 View in browser By Giselle Ruhiyyih Ewing and Liset Cruz
-
-### Washington Edition: Zipping lips
+### Canada Daily: Apotex apogee
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Trump’s Bid for Federal Employee NDAs Comes With a Long History NDAs proposed for federal workers ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Apotex IPO Signals a Thaw in Canada’s Public Markets Plus: World Cup = Petri dish ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### This Week in Congress
-**From:** Breaking Defense - Congress <newsletters@breakingdefense.com>  
-Inside HASC's new $1.15 trillion defense policy bill __________________________________________________________ Breaking Defense logo (https://info.breakingdefense.com/e3t/Ctc/GA+113/cfk9804/VVv7n93M
+### New Publication: The Return of the Alien Tort Statute
+**From:** CSIS Economics Program and Scholl Chair <econ@csis.org>  
+96 ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### New Pekingology Episode - Can China Control North Korea?
-**From:** CSIS Freeman Chair in China Studies <freemanchair@csis.org>  
-96 This should be a teaser for the podcast. DO NOT repeat the subject line or podcast title here. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+### Another extension
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+US, Iran Reach Tentative 60-Day Truce Extension Bloomberg Morning Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Explore Critical Minerals Security with CSIS Executive Education
-**From:** CSIS Executive Education <aila@csis.org>  
-Understand the economic, geopolitical, and social considerations of securing critical minerals. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Global Update: The Mideast Is Baffled by Trump’s Call to Expand Abraham Accords
-**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
-
-### Germany pushes European military space command - SmallSat Europe 2026
-**From:** SpaceNews <spacenewseletter@spacenews.com>  
-Plus: Space companies criticize the EU Space Acthttps://spacenews.com/smallsat-europe-2026/ https://spacenews.com/smallsat-europe-2026/ 05/28/2026 | READ IN BROWSER http://spacenews.bluelena.io/
-
-### CNAS Technology & National Security Newsletter | CISA Reauthorization, Open-Weight Models, AI Biosecurity Threats, Quantum Entanglement, AI Labor Displacement, and more
-**From:** Center for a New American Security <info@cnas.org>  
-No images? Click here https://marketing.cnas.org/t/d-e-guukkkt-hjttljxty-b/ Center for a New American Security Technology and National Security Program New from CNAS The Entanglement Edge [https:
-
-### Nuclear Policy News - May 28, 2026
-**From:** Project on Nuclear Issues <poni@csis.org>  
-Your daily briefing of the nuclear policy news and analysis. Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4200170600/14c
-
-### Middle East Notes and Comment
-**From:** Mona Yacoubian <middleeaststudies@csis.org>  
-How Gulf states view the potential U.S.-Iran deal, regional responses to the Iran war's reverberations, and more from the CSIS Middle East Program. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+### 6 excellent eye creams
+**From:** NYT Wirecutter <nytdirect@nytimes.com>  
