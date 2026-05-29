@@ -164,6 +164,7 @@ def main() -> int:
     region_cards = ""
     total_incidents = 0
     total_kjs = 0
+    region_count = 0
 
     for region in regions_order:
         region_file = wd / "analysis" / f"{region}.json"
@@ -180,6 +181,9 @@ def main() -> int:
         # Normalize KJ field names (analyze.py direct vs orchestrator produce different formats)
         valid_kjs = []
         for kj in kjs:
+            # Normalize event → statement (alternate field name from some analysis models)
+            if "event" in kj and not kj.get("statement"):
+                kj["statement"] = kj["event"]
             # Normalize prediction → judgment → statement
             if "prediction" in kj and not kj.get("statement"):
                 kj["statement"] = kj["prediction"]
@@ -187,7 +191,9 @@ def main() -> int:
                 kj["statement"] = kj["judgment"]
             # Normalize confidence bands
             if not kj.get("sherman_kent_band"):
-                if "probability_verbal" in kj:
+                if "probability_band" in kj:
+                    kj["sherman_kent_band"] = kj["probability_band"]
+                elif "probability_verbal" in kj:
                     kj["sherman_kent_band"] = kj["probability_verbal"]
                 elif "confidence_verbal" in kj:
                     kj["sherman_kent_band"] = kj["confidence_verbal"]
@@ -213,6 +219,12 @@ def main() -> int:
 
         label = region_label.get(region, region)
         emoji = region_emoji.get(region, "•")
+
+        # SKIP prediction markets section when it has no usable data
+        if region == "prediction_markets" and count == 0 and len(kjs) == 0:
+            log(f"Suppressing prediction_markets section — no usable data (count={count}, KJs={len(kjs)})")
+            total_incidents -= count  # don't count 0 towards total
+            continue
 
         # Extract bullet points from narrative — natural sentence breaks, no truncation
         bullets = []
@@ -252,12 +264,13 @@ def main() -> int:
                 kj_html += '</div>\n'
             kj_html += '</div>\n'
 
+        region_count += 1
         region_cards += f"""
 <div style="background:#fff;border-radius:8px;padding:16px 18px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,0.05)">
   <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
     <span style="font-size:16px">{emoji}</span>
     <span style="font-size:15px;font-weight:700;color:#1a2a3a">{h(label)}</span>
-    <span style="font-size:11px;color:#999;margin-left:auto">{count} signals</span>
+    <span style="font-size:11px;color:#999;margin-left:auto">{count if count else ""}</span>
   </div>
   {bullet_html}
   {kj_html}
@@ -272,7 +285,7 @@ def main() -> int:
 <div style="background:linear-gradient(135deg,#0f1923,#1a2a3a);padding:28px 24px 20px">
   <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#5a8aaa;margin-bottom:6px">Trevor Intelligence</div>
   <h1 style="font-size:26px;margin:0 0 6px;color:#ffffff;font-weight:700;letter-spacing:-0.5px">Daily Intelligence Brief</h1>
-  <div style="font-size:13px;color:#7f9ab0">{date_utc} · {total_incidents} incidents · {total_kjs} judgments · 11 regions</div>
+  <div style="font-size:13px;color:#7f9ab0">{date_utc} · {total_incidents} incidents · {total_kjs} judgments · {region_count} regions</div>
 </div>
 
 <div style="margin:24px 20px 8px">

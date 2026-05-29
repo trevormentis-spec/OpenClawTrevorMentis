@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T14:27:24.475Z",
+  "updatedAt": "2026-05-29T17:15:45.451Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1568,25 +1568,27 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- `scripts/priority_triage.py` Sonar queries had: no retry, 30s timeout, no fallback - Fixed: added 1 retry with 45s → 60s timeout escalation - Added `_brave_search()` fallback using BRAVE_API_KEY when Sonar fails - Both keys checked independently — if Sonar down, Brave-only mode works - Also fixed `collect.py fetch()`: added 2 retries with exponential backoff (15s → 30s) - Roderick rightly flagged I should have done this myself under the autonomy framework ## Dream — Memory consolidation added - Installed from https://github.com/grandamenium/dream-skill adapted for OpenClaw - Script: `scripts/dream.py` — 4-phase consolidation (orient → gather → consolidate → prune) - Cron: `9124f2df` — ru",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-15T13:36:26.577Z",
-      "lastRecalledAt": "2026-05-27T05:08:17.429Z",
+      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
       "queryHashes": [
         "0052d7c183bd",
         "b62b199ec189",
         "1b9064ffbf19",
         "37203b1dd7cb",
         "766555fc1ad7",
-        "6c0fb35a93f8"
+        "6c0fb35a93f8",
+        "b8c199fe7dc5"
       ],
       "recallDays": [
         "2026-05-15",
         "2026-05-25",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ],
       "conceptTags": [
         "scripts/priority-triage.py",
@@ -1967,24 +1969,26 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Autonomy boundaries in ORCHESTRATION.md: self-detected, clean diagnosis, contained fix, regression-testable = autonomous. Principal review for architectural/guard/identity changes. - Default-non-executing rule: new automated executors default to dry-run; explicit --live flag required. - Preflight data rule: tracking data changes must confirm prior state is recoverable before commit. ### Key Technical Debts 1. Entity deepening task module scaffolds-only — needs actual Haiku/Opus call wired 2. Framework stress test module scaffolds-only — needs actual framework analysis call 3. Self_question_generation hardcodes 4 questions — needs LLM call for novel gaps 4. Cross_source_correlation dormant",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T05:05:55.974Z",
-      "lastRecalledAt": "2026-05-28T16:49:14.101Z",
+      "lastRecalledAt": "2026-05-29T16:53:25.825Z",
       "queryHashes": [
         "5bf81ea520aa",
         "d273c1eeb6e6",
         "6c0fb35a93f8",
-        "7ccb341e4318"
+        "7ccb341e4318",
+        "dad41c64a83e"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
         "2026-05-27",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "orchestration.md",
@@ -2796,21 +2800,23 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-05-28T16:49:14.101Z",
+      "lastRecalledAt": "2026-05-29T16:53:25.825Z",
       "queryHashes": [
         "6c0fb35a93f8",
         "2ec68133263a",
-        "7ccb341e4318"
+        "7ccb341e4318",
+        "dad41c64a83e"
       ],
       "recallDays": [
         "2026-05-27",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-29"
       ],
       "conceptTags": [
         "parse-error",
@@ -2976,6 +2982,194 @@
         "deliver-text-brief.py",
         "leo-daily-brief.py",
         "scripts"
+      ]
+    },
+    "memory:memory/2026-05-28.md:1:12": {
+      "key": "memory:memory/2026-05-28.md:1:12",
+      "path": "memory/2026-05-28.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## 16:48 UTC — Heartbeat - **Autonomous cycle:** All phases (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Fixed false-positive \"Brief BLUF too short\" alert - Root cause: `exec_summary.json` is a status metadata file (not brief content), missing `bluf` field - Fix: Skip BLUF length check when file has no content fields; handle `summary` as list - Status: Now exit 0 ✅ - **QC alert:** Resolved earlier today (14:14 UTC false alarm — watchdog hit intermediate brief) - **DC daily brief 2026-05-28:** Delivered with full BLUF (4854 bytes), all sections populated ✅",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T16:53:25.825Z",
+      "lastRecalledAt": "2026-05-29T16:53:25.825Z",
+      "queryHashes": [
+        "dad41c64a83e"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "false-positive",
+        "exec-summary.json",
+        "utc",
+        "heartbeat",
+        "autonomous",
+        "cycle",
+        "all",
+        "phases"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1:24": {
+      "key": "memory:memory/2026-05-29.md:1:24",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-05-29 Daily Memory ## Kalshi Trader — 03:00 UTC Scan - **Balance:** $0.24 - **Existing positions:** 0 - **Signals found:** 22 tradeable - **Trades executed:** 0 - **Cause:** Insufficient balance for minimum position sizes ($1.00 each) ## Heartbeat — 07:21 UTC - **autonomous_cycle.py --all --quiet:** ✅ All phases passed (crons, feeds, collection, pipeline, costs, brain, digest) - **autonomous_fixes.py --quiet:** ✅ No issues found - **Digest delivery:** Not dispatched (no digest to deliver — routine) - **Overall:** Clean cycle, no escalations needed - **Top signals (by edge):** KXTRUMPIRAN-26JUN01 (+63pts), KXUSAIRANAGREEMENT-27-26JUN (+56pts), KXTRUMPIRAN-27JAN01 (+55pts) ## Daily",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T16:53:25.825Z",
+      "lastRecalledAt": "2026-05-29T16:53:25.825Z",
+      "queryHashes": [
+        "dad41c64a83e"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "0.24",
+        "1.00",
+        "autonomous-cycle.py",
+        "autonomous-fixes.py",
+        "kxtrumpiran-26jun01",
+        "kxusairanagreement-27-26jun",
+        "kxtrumpiran-27jan01",
+        "kalshi"
+      ]
+    },
+    "memory:memory/2026-05-27.md:72:84": {
+      "key": "memory:memory/2026-05-27.md:72:84",
+      "path": "memory/2026-05-27.md",
+      "startLine": 72,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "3. `skills/daily-intel-brief/scripts/collect.py`: add Brave Search gzip decompression fix 4. `scripts/collect_email_intel.py` line 104: fix indentation error 5. Re-run daily brief after fixes ## Memo Writes Completed This Session - `docs/ops/portfolio-overview.md` — all positions, guardrails - `docs/ops/pipeline-operations.md` — cron schedules, known issues - `docs/ops/daily-intel-process.md` — full 13-step pipeline - `docs/ops/trade-journal-2026-05-27.md` — trades executed - `docs/ops/philby-desk-architecture-plan.md` — hybrid architecture plan - `brain/memory/procedural/kalshi-trading.md` — Kalshi auth + ops doc - `MEMORY.md` — Standing Knowledge + Kalshi auth pointer + cognition bridge +",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T17:15:37.720Z",
+      "lastRecalledAt": "2026-05-29T17:15:45.451Z",
+      "queryHashes": [
+        "4342f031ac3b",
+        "b8c199fe7dc5",
+        "2e2a9a369da3"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "scripts/collect-email-intel.py",
+        "re-run",
+        "docs/ops/portfolio-overview.md",
+        "docs/ops/pipeline-operations.md",
+        "docs/ops/daily-intel-process.md",
+        "13-step",
+        "memory.md",
+        "skills"
+      ]
+    },
+    "memory:memory/2026-05-27.md:32:58": {
+      "key": "memory:memory/2026-05-27.md:32:58",
+      "path": "memory/2026-05-27.md",
+      "startLine": 32,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "- Saved: `config/sources/africa-osint-sources.md` - Integrated: 397 sources added to catalog (26 north_africa, 397 sub_saharan_africa) - Hardcoded in collect.py: 16 tier-1 Africa feeds - Philby collector: cycling every 30 min ### Europe (903 lines, 44 countries + EU/NATO) - Saved: `config/sources/europe-osint-sources.md` - Integrated: 450 sources extracted, 212 validated RSS feeds added to catalog - Hardcoded in collect.py: 20 multilingual Europe feeds - Philby collector: cycling every 30 min ## Continuous Cognition Bridge Wired (2026-05-27) - Before fix: cognition ran but never promoted findings to durable memory - After fix: every 15 min cycle promotes pipeline FATAL/FAILED, auth key war",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T17:15:37.779Z",
+      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
+      "queryHashes": [
+        "b8c199fe7dc5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "north-africa",
+        "sub-saharan-africa",
+        "collect.py",
+        "tier-1",
+        "eu/nato",
+        "fatal/failed",
+        "saved",
+        "config"
+      ]
+    },
+    "memory:memory/2026-05-27.md:1:38": {
+      "key": "memory:memory/2026-05-27.md:1:38",
+      "path": "memory/2026-05-27.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-05-27 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-27.txt **Words:** 1034 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 27, 2026 ======================================================================== ═══ EXECUTI ## Daedalus Strategy — 2026-05-27 - **Kalshi auth fixed:** RSA PSS request signing (not JWT). Client at `skills/kalshi-trader/scripts/client.py`. Full ops doc at `brain/memory/procedural/kalshi-trading.md` - **Executed:** Bought 31 WTI contracts KXWTIMAX-26DEC31-T200 at $0.13 (crossing spread). Total: 48 contracts",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T17:15:37.779Z",
+      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
+      "queryHashes": [
+        "b8c199fe7dc5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "kxwtimax-26dec31-t200",
+        "0.13",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1:34": {
+      "key": "memory:memory/2026-05-29.md:1:34",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-05-29 Daily Memory ## Kalshi Trader — 03:00 UTC Scan - **Balance:** $0.24 - **Existing positions:** 0 - **Signals found:** 22 tradeable - **Trades executed:** 0 - **Cause:** Insufficient balance for minimum position sizes ($1.00 each) ## Heartbeat — 07:21 UTC - **autonomous_cycle.py --all --quiet:** ✅ All phases passed (crons, feeds, collection, pipeline, costs, brain, digest) - **autonomous_fixes.py --quiet:** ✅ No issues found - **Digest delivery:** Not dispatched (no digest to deliver — routine) - **Overall:** Clean cycle, no escalations needed - **Top signals (by edge):** KXTRUMPIRAN-26JUN01 (+63pts), KXUSAIRANAGREEMENT-27-26JUN (+56pts), KXTRUMPIRAN-27JAN01 (+55pts) ## Heart",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T17:15:37.779Z",
+      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
+      "queryHashes": [
+        "b8c199fe7dc5"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "0.24",
+        "1.00",
+        "autonomous-cycle.py",
+        "autonomous-fixes.py",
+        "kxtrumpiran-26jun01",
+        "kxusairanagreement-27-26jun",
+        "kxtrumpiran-27jan01",
+        "kalshi"
       ]
     }
   }
