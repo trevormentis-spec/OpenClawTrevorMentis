@@ -123,8 +123,10 @@ def call_oracle(system: str, user: str) -> str:
     Routes through llm_gate for model selection."""
     import time
 
-    # Route through gate
+    # Route through gate — ensure path for cron-based execution
     try:
+        if str(REPO_ROOT) not in sys.path:
+            sys.path.insert(0, str(REPO_ROOT))
         from analyst.llm_gate import route
         metadata = {'target_words': len(user.split()), 'flagship_tag': True}
         gating = route('postdiction_analysis', metadata)

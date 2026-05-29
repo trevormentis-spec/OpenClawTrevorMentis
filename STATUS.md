@@ -22,6 +22,6 @@
 - 🔴 **DeepSeek balance** — $29.70 remaining (~1.4 days runway). May need top-up soon.
 - ⚠️ Feed rot: ~60+ RSS/feed failures ongoing — part of recent brief failures
 - ⚠️ Calibration: 0/5 correct — 5 postdictions unresolved
-- ⚠️ Postdiction: analyst module import failing, fallback gate active
+- ✅ Postdiction: analyst.llm_gate import fixed — REPO_ROOT added to sys.path. Fallback gate was a PYTHONPATH issue from cron execution.
 - ⚠️ Kalshi account: $0.24 — all 22 tradeable signals blocked by min position size
 - ⚠️ Digest delivery: status cannot be verified (not in logs or AgentMail)
