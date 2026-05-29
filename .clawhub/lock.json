@@ -216,6 +216,14 @@
     "rss-feed-digest": {
       "version": "1.0.0",
       "installedAt": 1779959911424
+    },
+    "shodan-skill": {
+      "version": "0.1.0",
+      "installedAt": 1780046172068
+    },
+    "dns": {
+      "version": "1.0.0",
+      "installedAt": 1780046180241
     }
   }
 }

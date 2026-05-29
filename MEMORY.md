@@ -2,18 +2,6 @@
 
 ## Standing Knowledge
 
-Operational documentation lives in `docs/ops/`. Always check there first before building from scratch.
-
-Current docs:
-- `docs/ops/portfolio-overview.md` — All positions, strategies, guardrails across Kalshi/Polymarket/Simmer
-- `docs/ops/pipeline-operations.md` — Cron schedules, delivery, known pipeline issues
-- `docs/ops/trade-journal-YYYY-MM-DD.md` — Session-by-session trade decisions and outcomes
-- `brain/memory/procedural/kalshi-trading.md` — Kalshi API auth, client usage, trade scripts
-
-**Cognition memory bridge (live):** continuous cognition writes detected issues to `brain/memory/episodic/YYYY-MM-DD.jsonl` and `brain/memory/semantic/cognition-promotions.json`. Check these at startup for overnight pipeline failures, auth issues, or drift alerts. See AGENTS.md for details.
-
-**Rule: document as you go.** Every session that produces analytical work, trades, or structural changes gets an entry in the appropriate `docs/ops/` file. Do not let knowledge die with the session.
-
 ## Core Identity
 
 - Assistant name: Trevor
@@ -22,13 +10,6 @@ Current docs:
 ## Lessons Learned
 
 ### 2026-05-28: QC Watchdog Data Model Mismatch
-
-**Issue:** The brief's `exec_summary.json` lacked `bluf`, `context_paragraph`, and `five_judgments` fields that `opus_qc_review.py` and `deliver_text_brief.py` expect. Orchestrator produces a flat `regions` array. Also, regional KJ files had `prediction`/`confidence` fields but the QC builder expected `statement`/`sherman_kent_band`/`prediction_pct`. Some KJs had `sherman_kent_band` as a Python dict `{'verbal': 'likely', 'numeric': 63}` instead of a flat string.
-
-**Fix:** Enriched `exec_summary.json` with synthesized BLUF, context paragraph, and top-5 KJs drawn from all regions. Normalized all 13 regional JSON files to have `statement`, `sherman_kent_band`, `prediction_pct` fields. Added `exchange` (platform name) to prediction markets.
-
-**Lesson:** The data model between orchestrate.py output and delivery/QC consumer scripts is fragile. A normalization layer or shared schema validation should run after orchestration completes but before QC runs.
-- User name: Roderick
 
 ## Durable Decisions
 - Trevor should persistently monitor the AgentMail inbox on an asynchronous cadence and surface only meaningful new emails.
@@ -41,10 +22,6 @@ Current docs:
 - [2026-05-27] **DeepSeek V4 Pro direct API hangs on payloads >20KB.** Tier-1 exec summary calls must use OpenRouter, not DeepSeek direct. Changed both default providers from `deepseek` to `openrouter` in `analyze.py` and `orchestrate.py`. If a direct DeepSeek call is needed, keep payloads under 16KB and avoid `json_object` response_format. Regional analysis via OpenRouter has been reliable.
 
 ## Durable Decisions — Social Posting
-- **STATUS: ENABLED (2026-05-24)** — Moltbook reconnected per Roderick directive.
-  Agent: trevormentis, 34 karma, 11 followers, 18 following, claimed + active.
-  Posts daily brief to r/builds via scripts/moltbook_post.py in pipeline Step 6.
-  GenViral + other platforms remain disabled unless explicitly requested.
 
 ## Durable Decisions - Orchestration
 - [2026-05-01] **Canonical routing is DeepSeek Direct API.** OpenRouter is disabled.
@@ -87,18 +64,6 @@ Current docs:
 ### Technical Debt Ledger
 
 ### Unified Quality Gate Pipeline (2026-05-23)
-- **analyst/guard_pipeline.py** — rebuilt as the single unified quality gate composing ALL 7 guards:
-  0. STRUCTURAL — files present and valid JSON
-  1. FABRICATION — unverified contracts/prices/tickers/pct claims (via fabrication_check.py)
-  2. THEMES — required theme coverage (via themes_preflight.py, scanning ALL regional files)
-  3. CALIBRATION — Sherman Kent band ↔ numeric prediction agreement + single-source cap
-  4. COMPLETENESS — no truncation, adequate word count, all sections present
-  5. SCOPE — topic within assignment scope (via scope_check.py)
-  6. RED_TEAM — forced dissent note exists and is substantive
-- **Wired into orchestrate.py** — runs post-analysis, pre-delivery. BLOCK gates stop delivery.
-  WARN gates log but proceed. `--block-on-warn` flag available for stricter gating.
-- **Theme system broadened** — global keywords added to political_risk, economy_markets, cartel_security.
-  New query category "geopolitical_intelligence_brief" for daily brief pipeline.
 - **Status:** ✅ Operational — closes self-assessment gap (Principal Review item 7).
 
 ### Adaptive Collection (2026-05-12)
@@ -130,10 +95,6 @@ Current docs:
   Trevor only pings for genuine anomalies, interesting intel finds, or things that need
   human judgment.
 - [2026-05-23] **Autonomous brief-quality authority granted.** Trevor may self-initiate
-  diagnosis and fixes for daily brief quality failures (model downgrade, regional
-  cross-contamination, truncation, quality gate BLOCK, Opus QC FAIL/CRITICAL).
-  QC Watchdog cron fires 5 min after delivery (13:10 UTC daily). Alert written to
-  tasks/qc-alert.md triggers autonomous fix cycle. Principal surfaced only for
   architectural changes, budget impact, or uncertain fixes.
 - [2026-05-23] **AGENTS.md updated** — Brief Quality autonomous fix authority
   codified. Analyst rotation now includes QC alert check and brief self-review.
@@ -144,11 +105,6 @@ Current docs:
   `{prediction_market_data}` and `{standing_assessment}` fields.
 
 ## Durable Decisions — Kalshi Trading Auth (2026-05-27)
-
-- **DO NOT use JWT bearer tokens.** Kalshi uses **RSA PSS request signing** (timestamp + method + path, signed with RSA private key).
-- Client at `skills/kalshi-trader/scripts/client.py` (class `KalshiClient`), trade executor at `skills/kalshi-trader/scripts/trade.py`.
-- Env vars: `KALSHI_API_KEY`, `KALSHI_RSA_KEY_PATH` (points to `.kalshi_rsa_key.pem`), `KALSHI_BASE_URL`.
-- Full operational doc: `brain/memory/procedural/kalshi-trading.md`
 - Active strategy: Daedalus — scaled WTI hedge from 17→48 contracts, added to counter Iran concentration.
 
 ## Durable Decisions — Mexico Analysis Framework (2026-05-15)
@@ -168,16 +124,8 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 ## 2026-05-25 — Daily Text Brief
 
 ### Pipeline completed (with manual intervention)
-- **Delivered:** ✅ Text brief sent to roderick.jones@gmail.com via AgentMail (12:45 UTC)
-- **Quality gate:** ALL CLEAR 7/7 after fixing calibration band bug
-- **Message ID:** `<0100019e5f2ba5df-fd807b8b-0187-40da-a30a-06ba6f4252e0-000000@email.amazonses.com>`
-- **Models used:** DeepSeek V4 Pro (10 regions + prediction_markets + red-team), Claude Opus 4.7 (exec summary)
 
 ### Issues encountered & fixed:
-1. **Exec timeout kills pipeline:** OpenClaw exec sessions SIGTERM long-running processes. Solution: use `nohup` background for pipeline.
-2. **Calibration band bug in guard_pipeline.py:** "probable" was mapped to (55, 70) — same range as "likely". Should be (70, 85). Fixed in `analyst/guard_pipeline.py` line 281.
-3. **GitHub Pages auth:** Push still failing with "Invalid username or token" — needs new PAT.
-4. **BRAVE_API_KEY not set:** Source discovery skipped — non-fatal but means no new sources found.
 
 ### Postdiction results (yesterday's 5 predictions):
 - 1 confirmed, 4 not yet testable, 0 incorrect
@@ -187,14 +135,6 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 - guard_pipeline.py band definitions need periodic audit — duplicated ranges cause false quality blocks.
 
 ### 2026-05-28: QC Watchdog False Alarm — Pre-Final Assembly Timing
-
-**Issue:** QC watchdog flagged CRITICAL (missing BLUF, CONTEXT, KJs, truncation) at 14:14 UTC. However, the final brief hadn't been assembled yet — `final/brief.md` was generated at 14:25 UTC, 11 minutes later.
-
-**Root cause:** QC watchdog runs at a fixed time (13:10 UTC default window, but this instance ran at 14:14) against intermediate pipeline state. No completion-marker file exists to gate the QC check.
-
-**Final brief state (14:25 UTC):** 259 lines, 26,910 bytes. Full BLUF, Context, 5 Exec Summary KJs with calibrated probabilities, all 12 regional sections with predictions/dissents, prediction markets section, red-team/forced dissent, methodology. Deployed to GitHub Pages at 15:14 UTC.
-
-**Also noted:** GitHub Pages deploy succeeded today (GitHub PAT worked) — earlier reports of "PAT rejected" may have been a transient issue or resolved.
 
 **Fix:** Before investigating CRITICAL QC alerts, verify (1) final brief exists at `final/brief.md`, (2) its timestamp post-dates QC timestamp, (3) substantive content (lines + bytes). If QC is stale, clear the alert.
 
