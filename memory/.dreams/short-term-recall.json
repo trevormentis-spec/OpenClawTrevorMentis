@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T18:21:54.466Z",
+  "updatedAt": "2026-05-29T20:01:04.688Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -3059,17 +3059,18 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "3. `skills/daily-intel-brief/scripts/collect.py`: add Brave Search gzip decompression fix 4. `scripts/collect_email_intel.py` line 104: fix indentation error 5. Re-run daily brief after fixes ## Memo Writes Completed This Session - `docs/ops/portfolio-overview.md` — all positions, guardrails - `docs/ops/pipeline-operations.md` — cron schedules, known issues - `docs/ops/daily-intel-process.md` — full 13-step pipeline - `docs/ops/trade-journal-2026-05-27.md` — trades executed - `docs/ops/philby-desk-architecture-plan.md` — hybrid architecture plan - `brain/memory/procedural/kalshi-trading.md` — Kalshi auth + ops doc - `MEMORY.md` — Standing Knowledge + Kalshi auth pointer + cognition bridge +",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.720Z",
-      "lastRecalledAt": "2026-05-29T17:15:45.451Z",
+      "lastRecalledAt": "2026-05-29T20:01:04.688Z",
       "queryHashes": [
         "4342f031ac3b",
         "b8c199fe7dc5",
-        "2e2a9a369da3"
+        "2e2a9a369da3",
+        "f95bd0e2cbe4"
       ],
       "recallDays": [
         "2026-05-29"
@@ -3238,6 +3239,37 @@
         "rss",
         "integration",
         "completed"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1:36": {
+      "key": "memory:memory/2026-05-29.md:1:36",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-05-29 Daily Memory ## Kalshi Trader — 03:00 UTC Scan - **Balance:** $0.24 - **Existing positions:** 0 - **Signals found:** 22 tradeable - **Trades executed:** 0 - **Cause:** Insufficient balance for minimum position sizes ($1.00 each) ## Heartbeat — 07:21 UTC - **autonomous_cycle.py --all --quiet:** ✅ All phases passed (crons, feeds, collection, pipeline, costs, brain, digest) - **autonomous_fixes.py --quiet:** ✅ No issues found - **Digest delivery:** Not dispatched (no digest to deliver — routine) - **Overall:** Clean cycle, no escalations needed - **Top signals (by edge):** KXTRUMPIRAN-26JUN01 (+63pts), KXUSAIRANAGREEMENT-27-26JUN (+56pts), KXTRUMPIRAN-27JAN01 (+55pts) ## Heart",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T20:01:04.688Z",
+      "lastRecalledAt": "2026-05-29T20:01:04.688Z",
+      "queryHashes": [
+        "f95bd0e2cbe4"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "0.24",
+        "1.00",
+        "autonomous-cycle.py",
+        "autonomous-fixes.py",
+        "kxtrumpiran-26jun01",
+        "kxusairanagreement-27-26jun",
+        "kxtrumpiran-27jan01",
+        "kalshi"
       ]
     }
   }
