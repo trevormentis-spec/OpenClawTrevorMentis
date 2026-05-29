@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-29 01:10 UTC
+# Gmail Intel Digest — 2026-05-29 03:01 UTC
 
 ## Iran Update Special Report, May 28, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -47,17 +47,8 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## Stocks sizzle on ceasefire extension
-**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
-**Date:** Thu, 28 May 2026 17:02:40 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-05-29 01:20 UTC
+## AgentMail Intel — 2026-05-29 03:01 UTC
 
 ### 彭博财经早茶：美伊料延长停火60天；中国在港发主权绿债
 **From:** Bloomberg <noreply@news.bloomberg.com>  

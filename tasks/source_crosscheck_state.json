@@ -397,7 +397,55 @@
         "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed",
         "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-29T03:02:54.163927+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-05-29T03:02:54.524825+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "US and Iran 'very close' to deal but 'not there yet', Vance says",
+        "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears",
+        "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-29T03:02:56.807729+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-05-29T03:02:57.123008+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "US and Iran 'very close' to deal but 'not there yet', Vance says",
+        "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears",
+        "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
+      ]
     }
   ],
-  "last_updated": "2026-05-28T03:02:54.709278+00:00"
+  "last_updated": "2026-05-29T03:02:57.123208+00:00"
 }
