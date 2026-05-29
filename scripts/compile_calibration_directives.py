@@ -135,7 +135,7 @@ def compile_directives(cal: dict) -> dict:
     return directives
 
 
-def merge_into_behavioral_state(directives: dict) -> None:
+def merge_into_behavioral_state(directives: dict, cal: dict | None = None) -> None:
     if BEHAVIORAL_FILE.exists():
         try:
             state = json.loads(BEHAVIORAL_FILE.read_text())
@@ -150,6 +150,58 @@ def merge_into_behavioral_state(directives: dict) -> None:
     cal_block["region_table"] = directives["region_table"]
     cal_block["compiled_at"] = directives["compiled_at"]
     state["updated_at"] = directives["compiled_at"]
+
+    # Generate per_region_constraints — this is what analyze.py reads
+    per_region = {}
+    for r in directives.get("region_table", []):
+        region = r["region"]
+        acc = r.get("accuracy", 1.0) or 1.0
+        
+        # Determine available bands based on accuracy
+        if acc < 0.30:
+            bands = ["even chance"]
+            aggression = "cautious"
+        elif acc < 0.60:
+            bands = ["even chance", "likely"]
+            aggression = "cautious"
+        elif acc < 0.80:
+            bands = ["even chance", "likely", "highly likely"]
+            aggression = "standard"
+        else:
+            bands = ["even chance", "likely", "highly likely", "almost certain"]
+            aggression = "standard"
+        
+        # Override with overall posture if accuracy is especially bad
+        overall_pct = directives.get("overall", {}).get("accuracy_pct", 100)
+        if overall_pct < 20:
+            bands = ["even chance"]
+            aggression = "cautious"
+        
+        per_region[region] = {
+            "available_bands": bands,
+            "max_confidence_pct": 50 if len(bands) <= 1 else 75 if len(bands) <= 2 else 90,
+            "max_single_source_pct": 50,
+            "forecasting_aggression": aggression,
+            "mandatory_caveats": [
+                f"Historical accuracy for {region}: {acc*100:.0f}%" if acc < 0.80 else ""
+            ],
+        }
+    
+    # Also include regions not in the table with default settings
+    if cal:
+        for region, stats in cal.get("by_region", {}).items():
+            if region not in per_region:
+                r_acc = band_accuracy(stats)[1] or 1.0
+                per_region[region] = {
+                    "available_bands": ["even chance", "likely"] if r_acc < 0.60
+                        else ["even chance", "likely", "highly likely"],
+                    "max_confidence_pct": 75,
+                    "max_single_source_pct": 50,
+                    "forecasting_aggression": "cautious" if r_acc < 0.60 else "standard",
+                    "mandatory_caveats": [],
+                }
+    
+    state["per_region_constraints"] = per_region
 
     BEHAVIORAL_FILE.write_text(json.dumps(state, indent=2))
 
@@ -173,7 +225,8 @@ def main() -> int:
 
     DIRECTIVES_FILE.parent.mkdir(parents=True, exist_ok=True)
     DIRECTIVES_FILE.write_text(json.dumps(directives, indent=2))
-    merge_into_behavioral_state(directives)
+    cal = json.loads(CAL_FILE.read_text())
+    merge_into_behavioral_state(directives, cal=cal)
 
     overall = directives["overall"]
     log(

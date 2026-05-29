@@ -410,6 +410,10 @@ def main() -> int:
     cal_file = REPO_ROOT / "brain" / "memory" / "semantic" / "calibration-tracking.json"
     if cal_file.exists():
         analyst_cmd.extend(["--calibration", str(cal_file)])
+    # Pass behavioral state for hard constraints (band downshifts, per-region limits)
+    bs_file = REPO_ROOT / "brain" / "memory" / "semantic" / "behavioral-state.json"
+    if bs_file.exists():
+        analyst_cmd.extend(["--behavioral-state", str(bs_file)])
     # Pass self-assessment injection (written by self_assessment.py if critical issues found)
     sa_file = REPO_ROOT / "tasks" / "self-assessment-injection.md"
     if sa_file.exists():
