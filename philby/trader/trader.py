@@ -46,6 +46,79 @@ _load_env()
 SIGNALS_FILE = REPO / "philby" / "trader" / "signals" / "latest.json"
 JOURNAL_FILE = REPO / "philby" / "trader" / "journal.jsonl"
 POSITIONS_FILE = REPO / "philby" / "trader" / "positions.json"
+CIRCUIT_BREAKER_FILE = REPO / "philby" / "trader" / "circuit_breaker.json"
+MAX_TRADE_ATTEMPTS_PER_DAY = 10
+MAX_CONSECUTIVE_FAILURES = 3
+
+# ── Circuit Breaker ─────────────────────────────────────────────────
+_TRADER_PAUSED = False
+_TRADER_PAUSE_REASON = ""
+_TRADER_PAUSE_SENT = False
+
+
+def _send_agentmail_pause(reason: str):
+    """Send AgentMail alert when philby is paused."""
+    try:
+        from agentmail import AgentMail
+        api_key = os.environ.get("AGENTMAIL_API_KEY", "")
+        if api_key:
+            client = AgentMail(api_key=api_key)
+            resp = client.inboxes.messages.send(
+                inbox_id="trevor_mentis@agentmail.to",
+                to=["roderick.jones@gmail.com"],
+                subject="philby paused",
+                text=f"Philby trader paused.\n\nReason: {reason}\n\nNo further trade attempts will be made until circuit resets (next UTC day or manual intervention).\n\n-- Trevor",
+            )
+            log(f"AgentMail sent: {resp.message_id}")
+    except Exception as e:
+        log(f"AgentMail failed: {e}")
+
+def _load_circuit_breaker() -> dict:
+    if CIRCUIT_BREAKER_FILE.exists():
+        try:
+            return json.loads(CIRCUIT_BREAKER_FILE.read_text())
+        except (json.JSONDecodeError,):
+            pass
+    return {"paused": False, "reason": "", "paused_at": None, "consecutive_failures": 0, "today_attempts": 0, "date": ""}
+
+def _save_circuit_breaker(cb: dict):
+    CIRCUIT_BREAKER_FILE.parent.mkdir(parents=True, exist_ok=True)
+    CIRCUIT_BREAKER_FILE.write_text(json.dumps(cb, indent=2))
+
+def _check_circuit_breaker() -> str:
+    """Check if circuit is open. Returns empty string if ok, pause reason if blocked."""
+    cb = _load_circuit_breaker()
+    if cb.get("paused"):
+        return cb.get("reason", "circuit breaker active")
+    # Reset counters if day changed
+    today = dt.date.today().isoformat()
+    if cb.get("date") != today:
+        cb["date"] = today
+        cb["today_attempts"] = 0
+        cb["consecutive_failures"] = 0
+        _save_circuit_breaker(cb)
+    # Check daily limit
+    if cb.get("today_attempts", 0) >= MAX_TRADE_ATTEMPTS_PER_DAY:
+        return f"daily max attempts reached ({MAX_TRADE_ATTEMPTS_PER_DAY})"
+    return ""
+
+def _record_trade_outcome(success: bool):
+    """Record trade outcome into circuit breaker state."""
+    cb = _load_circuit_breaker()
+    cb["today_attempts"] = cb.get("today_attempts", 0) + 1
+    if success:
+        cb["consecutive_failures"] = 0
+    else:
+        cb["consecutive_failures"] = cb.get("consecutive_failures", 0) + 1
+        if cb["consecutive_failures"] >= MAX_CONSECUTIVE_FAILURES:
+            cb["paused"] = True
+            cb["reason"] = f"{MAX_CONSECUTIVE_FAILURES} consecutive trade failures — circuit opened"
+            cb["paused_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+            global _TRADER_PAUSED, _TRADER_PAUSE_REASON
+            _TRADER_PAUSED = True
+            _TRADER_PAUSE_REASON = cb["reason"]
+    _save_circuit_breaker(cb)
+
 GUARDRAILS = {
     "kelly_fraction": 0.25,
     "max_position_pct": 5.0,
@@ -170,12 +243,34 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
     market_price = market_prob / 100.0 if market_prob else 0.5
     kelly_frac = compute_kelly(trevor_conf, market_price)
 
-    # Get current balance
+    # Get current balance — must succeed, no fallback
     try:
         balance_data = client.get_balance()
         balance = float(balance_data.get("balance_dollars", balance_data.get("balance", "0")))
-    except Exception:
-        balance = 100.0  # Fallback — shouldn't happen in production
+        if balance < 1.0:
+            pause_reason = f"Balance too low: ${balance:.2f} — minimum $1 needed"
+            log(f"  ⛔ HALT: {pause_reason}")
+            append_journal({
+                "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+                "ticker": ticker,
+                "action": "PAUSED",
+                "reason": pause_reason,
+                "status": "paused",
+            })
+            _record_trade_outcome(False)
+            return {"ticker": ticker, "status": "paused", "reason": pause_reason}
+    except Exception as e:
+        pause_reason = f"Balance fetch failed: {e}"
+        log(f"  ⛔ HALT: {pause_reason}")
+        append_journal({
+            "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "ticker": ticker,
+            "action": "PAUSED",
+            "reason": pause_reason,
+            "status": "paused",
+        })
+        _record_trade_outcome(False)
+        return {"ticker": ticker, "status": "paused", "reason": pause_reason}
 
     # Compute position size (quarter-Kelly, max 5% of portfolio)
     position_size = balance * kelly_frac * (GUARDRAILS["max_position_pct"] / 100.0)
@@ -357,12 +452,22 @@ def cmd_scan_and_trade(args):
 
     log(f"Found {len(tradeable)} tradeable signal(s)")
 
+    # Check circuit breaker before proceeding
+    cb_reason = _check_circuit_breaker()
+    if cb_reason:
+        log(f"⛔ CIRCUIT OPEN: {cb_reason}")
+        if _TRADER_PAUSED and not _TRADER_PAUSE_SENT:
+            _send_agentmail_pause(cb_reason)
+            _TRADER_PAUSE_SENT = True
+        return 0
+
     # Step 2: Connect to Kalshi
     try:
         client = KalshiClient()
         log("Connected to Kalshi API")
     except Exception as e:
         log(f"Kalshi connection failed: {e}")
+        _record_trade_outcome(False)
         return 1
 
     # Step 3: Get current balance and existing positions
@@ -370,6 +475,17 @@ def cmd_scan_and_trade(args):
         balance = client.get_balance()
         portfolio_value = float(balance.get("balance_dollars", 0))
         log(f"Balance: ${portfolio_value:.2f}")
+
+        if portfolio_value < 1.0:
+            pause_reason = f"Balance too low: ${portfolio_value:.2f}"
+            log(f"⛔ HALT: {pause_reason}")
+            append_journal({"timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+                           "action": "PAUSED", "reason": pause_reason, "status": "paused"})
+            _record_trade_outcome(False)
+            if not _TRADER_PAUSE_SENT:
+                _send_agentmail_pause(pause_reason)
+                _TRADER_PAUSE_SENT = True
+            return 0
 
         # Get existing positions to check capacity
         existing = client.get_positions()
@@ -382,6 +498,7 @@ def cmd_scan_and_trade(args):
 
     except Exception as e:
         log(f"Balance check failed: {e}")
+        _record_trade_outcome(False)
         return 1
 
     # Step 4: Execute best signals

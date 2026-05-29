@@ -289,7 +289,7 @@ def check_brain(state: dict) -> list[str]:
 
 
 def check_collection(state: dict) -> list[str]:
-    """Check collection state — source utilization, gaps."""
+    """Check collection state — source utilization, gaps. Also runs topic collector."""
     findings = []
     coll_state = REPO / "brain" / "memory" / "semantic" / "collection-state.json"
     if coll_state.exists():
@@ -301,6 +301,28 @@ def check_collection(state: dict) -> list[str]:
             findings.append(f"Collection state: {len(cs)} keys tracked")
         except Exception:
             pass
+
+    # Topic collection — one pass per active topic per day
+    collector_script = REPO / "philby" / "collectors" / "topic_collector.py"
+    if collector_script.exists():
+        try:
+            result = subprocess.run(
+                ["python3", str(collector_script), "--all", "--no-save"],
+                capture_output=True, text=True, timeout=120,
+            )
+            if result.returncode == 0:
+                lines = [l.strip() for l in result.stdout.split("\n") if l.strip()]
+                findings.append(f"Topic collector: ✅ {len(lines)} topics processed")
+            else:
+                stderr = result.stderr.strip()[:200]
+                findings.append(f"Topic collector: ⚠️ failed: {stderr}")
+        except subprocess.TimeoutExpired:
+            findings.append("Topic collector: timed out after 120s")
+        except Exception as e:
+            findings.append(f"Topic collector: exception: {e}")
+    else:
+        findings.append("Topic collector: script not found")
+
     return findings or ["✅ Collection state nominal"]
 
 
