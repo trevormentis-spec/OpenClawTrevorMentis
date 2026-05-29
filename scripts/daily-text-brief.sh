@@ -257,7 +257,7 @@ set -e 2>/dev/null || true
 # =========================================================================
 echo "--- Rechecking expired predictions ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/postdict.py" --sweep >> "$LOG" 2>&1
+python3 "$REPO/scripts/postdict.py" --recheck >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 echo "--- Recompiling calibration directives from fresh postdiction data ---" | tee -a "$LOG"
