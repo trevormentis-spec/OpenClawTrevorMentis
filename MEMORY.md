@@ -9,7 +9,23 @@
 
 ## Lessons Learned
 
-### 2026-05-28: QC Watchdog Data Model Mismatch
+### 2026-05-29: Exec Summary Prompt Template Drift — Dead Placeholder Caused CRITICAL QC Failure
+
+**Problem:** The exec summary prompt template (`deepseek-prompts.md`) had a dead `{russia_eurasia_json}` placeholder referencing "RUSSIA & EURASIA" but `analyze.py`'s `REGIONS_ORDER` does not include `russia_eurasia`. The placeholder was never replaced, leaving literal text in the prompt. The model interpreted the dead placeholder as instructions and produced a Russia & Eurasia analysis instead of an executive summary, leaving BLUF, context, and top-level KJs as N/A.
+
+**Secondary issue:** The template was also missing `{east_asia_json}` and `{south_asia_json}` placeholders despite both being in `REGIONS_ORDER`, meaning East Asia and South Asia data was never passed to the exec summary model.
+
+**Tertiary issue:** Different regional analysis models produce KJs with inconsistent field names (`statement` vs `prediction` vs `judgment` vs `event`; `prediction_pct` vs `numeric_probability` vs `probability_numeric` vs embedded in `confidence` string). The `opus_qc_review.py` QC script only checked `kj.get('statement', 'N/A')` and `kj.get('prediction_pct', '?')`, causing false N/A detection for well-populated regions.
+
+**Fix applied:**
+1. Removed `{russia_eurasia_json}` section from exec summary template
+2. Added `{east_asia_json}` and `{south_asia_json}` sections
+3. Updated section count from "TEN" to "13 REGIONAL ASSESSMENTS"
+4. Regenerated `exec_summary.json` with corrected prompt
+5. Added KJ field name normalization to `opus_qc_review.py` (handles `prediction`, `judgment`, `event`, `numeric_probability`, `probability_numeric`, and `confidence` string parsing)
+6. Re-delivered corrected brief to Roderick
+
+**Lesson:** Template files with hardcoded region lists must be kept in sync with code-level `REGIONS_ORDER`. Every prompt placeholder must have a corresponding replacement in code. Deploy a smoke test that verifies all prompt placeholders can be replaced at pipeline startup.
 
 ## Durable Decisions
 - Trevor should persistently monitor the AgentMail inbox on an asynchronous cadence and surface only meaningful new emails.

@@ -1,5 +1,5 @@
 # Source Discovery Report — 2026-W22
-Generated: 2026-05-28T13:35:56.279234+00:00
+Generated: 2026-05-29T12:50:45.000362+00:00
 
 **New sources found:** 1
 **Added to registry:** 1
@@ -7,9 +7,9 @@ Generated: 2026-05-28T13:35:56.279234+00:00
 ---
 ## Discovered Sources (by quality score)
 
-### [EU Foreign Policy | European Union Institute for Security Studies](https://www.iss.europa.eu/topics/eu-foreign-policy)
-- **Region:** europe
-- **Type:** Blog/Website
+### [Update from Ukraine | Awesome News from Frontline! Gripen Jets are Coming Soon! - YouTube](https://www.youtube.com/watch?v=2_nsvUAGlj8)
+- **Region:** ukraine_russia
+- **Type:** YouTube
 - **Quality Score:** 4/10
-- **Description:** <strong>Our experts deliver clear insights on how global developments are affecting EU interests</strong>. We identify the main geopolitical and security trends and challenges in key regions around th
+- **Description:** 🔥 Support Pilot Blog on Patreon! https://www.patreon.com/PilotBlog❤️ Buy me a coffee: https://www.buymeacoffee.com/davydoff ✈️ Find me on PayPal :aviatorss...
 - **Status:** ⏭️  Skipped (low quality or duplicate)

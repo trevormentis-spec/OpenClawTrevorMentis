@@ -12134,6 +12134,51 @@
       "discovered": "2026-05-29",
       "signal_level": "Medium",
       "region": "north_america"
+    },
+    {
+      "name": "Russia-Ukraine War: Military News, Maps & Frontline Updates \u2014 UNITED24 Media",
+      "type": "Blog/Website",
+      "focus": "Follow Russia\u2019s war in Ukraine with daily news updates and warfare analysis. View live maps of the battlefield, track weapons supplies, and get exclus",
+      "url": "https://united24media.com/war-in-ukraine",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Update from Ukraine | Awesome News from Frontline! Gripen Jets are Coming Soon! - YouTube",
+      "type": "YouTube",
+      "focus": "\ud83d\udd25 Support Pilot Blog on Patreon! https://www.patreon.com/PilotBlog\u2764\ufe0f Buy me a coffee: https://www.buymeacoffee.com/davydoff \u2708\ufe0f Find me on PayPal :avia",
+      "url": "https://www.youtube.com/watch?v=2_nsvUAGlj8",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
     }
   ],
   "moltbook_sources": [

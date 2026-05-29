@@ -110,11 +110,14 @@ def build_brief_text(brief_dir: pathlib.Path) -> str:
             text_parts.append(f"CONTEXT: {data.get('context_paragraph', 'N/A')}\n\n")
             text_parts.append("KEY JUDGMENTS:\n")
             for i, kj in enumerate(data.get("five_judgments", []), 1):
+                stmt = kj.get('statement', '') or kj.get('prediction', '') or kj.get('judgment', '') or kj.get('event', '') or 'N/A'
+                band = kj.get('sherman_kent_band', '') or kj.get('probability_band', '') or kj.get('probability_verbal', '') or '?'
+                pct = kj.get('prediction_pct', '') or kj.get('numeric_probability', '') or '?'
                 text_parts.append(
                     f"  {i}. [{kj.get('drawn_from_region', '?')}] "
-                    f"{kj.get('statement', 'N/A')}\n"
-                    f"     Confidence: {kj.get('sherman_kent_band', '?')} "
-                    f"({kj.get('prediction_pct', '?')}% / 7d)\n"
+                    f"{stmt}\n"
+                    f"     Confidence: {band} "
+                    f"({pct}% / 7d)\n"
                 )
             text_parts.append("\n")
         except Exception:
@@ -132,9 +135,26 @@ def build_brief_text(brief_dir: pathlib.Path) -> str:
             kjs = data.get("key_judgments", [])
             text_parts.append(f"\n--- {region.upper()} ({len(kjs)} KJs) ---\n")
             for kj in kjs:
+                # Normalize KJ field names (different analysis models use different schemas)
+                stmt = kj.get('statement', '') or kj.get('prediction', '') or kj.get('judgment', '') or kj.get('event', '') or 'N/A'
+                band = kj.get('sherman_kent_band', '') or kj.get('probability_band', '') or kj.get('probability_verbal', '') or kj.get('confidence_verbal', '')
+                pct = kj.get('prediction_pct', '') or kj.get('numeric_probability', '') or kj.get('probability_numeric', '') or ''
+                if not band and 'confidence' in kj:
+                    import re as _re
+                    cm = _re.match(r'([A-Za-z]+)', str(kj['confidence']))
+                    if cm:
+                        band = cm.group(1).title()
+                # Extract numeric % from confidence string like 'likely (58%)'
+                if not pct and 'confidence' in kj:
+                    import re as _re
+                    pm = _re.search(r'(\d+)%', str(kj['confidence']))
+                    if pm:
+                        pct = pm.group(1)
+                band_str = band or '?'
+                pct_str = str(pct) if pct else '?'
                 text_parts.append(
-                    f"  • {kj.get('statement', 'N/A')}\n"
-                    f"    [{kj.get('sherman_kent_band', '?')} / {kj.get('prediction_pct', '?')}%]\n"
+                    f"  • {stmt}\n"
+                    f"    [{band_str} / {pct_str}%]\n"
                 )
             regions_seen += 1
             if regions_seen >= 11:

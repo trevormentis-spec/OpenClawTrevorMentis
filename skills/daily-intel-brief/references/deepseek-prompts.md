@@ -242,13 +242,10 @@ RULES I WILL CHECK:
 
 ```
 DATE: {date_utc}
-TEN REGIONAL ASSESSMENTS (in fixed order):
+13 REGIONAL ASSESSMENTS (in fixed order):
 
 EUROPE:
 {europe_json}
-
-RUSSIA & EURASIA:
-{russia_eurasia_json}
 
 NORTH AMERICA:
 {north_america_json}
@@ -273,6 +270,12 @@ CENTRAL ASIA:
 
 SOUTH EAST ASIA:
 {south_east_asia_json}
+
+EAST ASIA:
+{east_asia_json}
+
+SOUTH ASIA:
+{south_asia_json}
 
 OCEANIA:
 {oceania_json}

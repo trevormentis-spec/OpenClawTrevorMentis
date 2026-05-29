@@ -1,4 +1,4 @@
-# Daily Intelligence Briefing — 2026-05-28
+# Daily Intelligence Briefing — 2026-05-29
 
 
 ## BLUF (Bottom Line Up Front)
@@ -10,4 +10,4 @@ No BLUF available.
 
 
 ---
-*Analysis prepared by TREVOR — 2026-05-28*
+*Analysis prepared by TREVOR — 2026-05-29*

@@ -1,4 +1,58 @@
-# Gmail Intel Digest — 2026-05-29 11:01 UTC
+# Gmail Intel Digest — 2026-05-29 13:22 UTC
+
+## ⏳ Extra $50 off ends at midnight
+**From:** Foreign Policy <reply@foreignpolicy.com>
+**Date:** Fri, 29 May 2026 08:10:31 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+
+---
+
+## PSG v Arsenal clash in Budapest
+**From:** Reuters Inside Track <reutersinsidetrack@thomsonreuters.com>
+**Date:** Fri, 29 May 2026 08:03:23 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## India alleges Pernod withheld Scotch composition, age in effort to pay lower tariffs
+**From:** Reuters Tariff Watch <newsletters@email.reuters.com>
+**Date:** Fri, 29 May 2026 08:02:45 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Blue Origin rocket explodes on launchpad in a setback for bid to catch Musk's SpaceX
+**From:** Reuters Business <newsletters@email.reuters.com>
+**Date:** Fri, 29 May 2026 08:02:37 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Lawyers, meet your AI "twin"
+**From:** The Daily Docket <thedailydocket@thomsonreuters.com>
+**Date:** Fri, 29 May 2026 08:00:35 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## China builds launch pads near nuclear missile silos
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Fri, 29 May 2026 07:00:51 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Deal or no deal
 **From:** Reuters Morning Bid <morningbid@thomsonreuters.com>
@@ -18,71 +72,37 @@
 
 ---
 
-## Another day, another Iran deal moment
-**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
-**Date:** Fri, 29 May 2026 01:00:11 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-05-29 13:30 UTC
 
----
+### EXCLUSIVE: OMB could use $1.9B in reconciliation to buy foreign-made ships
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+“The fact is, no one spends $1.85 billion studying something. That money is there for procurement of assets,” an OMB official told Breaking Defense. Breaking Defense (https://info.breakingdefense.com
 
-## اتفاق لتمديد وقف إطلاق النار مع إيران بانتظار موافقة ترامب
-**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
-**Date:** Fri, 29 May 2026 01:00:07 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-## Russian Offensive Campaign Assessment, May 28, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Fri, 29 May 2026 00:01:03 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Putin has likely developed a false perception of the Russian military’s successes in Ukraine based on heavily exaggerated maps from the Russian high military command. May 28, 2026 Data Cutoff: 12:15 PM ET Kateryna Shymkiv, Jakub Kostka, Christina Harward, Samuel Shafiro, Grace Mappes, and Kateryna Stepanenko TOPLINES Russian President Vladimir Putin has likely developed a false perception of the Russian military’s successes in Ukraine based on heavily ex
-
----
-
-
-## AgentMail Intel — 2026-05-29 11:01 UTC
-
-### The Morning: Pool problems
-**From:** The New York Times <nytdirect@nytimes.com>  
-
-### US-Kritik zu deutschen Streaming-Regeln: Fünf Themen des Tages
+### Next Africa: Reshaping health funding
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Five Things: Germany Jenny Leonard über unerwarteten Gegenwind — Abonnieren Sie unseren Newsletter Fünf Themen des Tages und erhalten Sie samstags das Hauptstadt
+America First’s New Health Deals Face Key Tests New US approach to aid tests Africa health systems ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### The 2026 race that’s a presidential proxy
-**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
-Presented by Nike: The unofficial guide to official Washington. May 29, 2026 View in browser By Adam Wren with Dasha Burns Presented by With
-
-### Nordic Edition: Denmark’s Novo Shadow
+### Brussels Edition: Taking on China
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-The Novo Shadow Hanging Over Denmark’s Economy Economic push and pull from obesity drugs ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Brussels Risks Chinese Ire as EU Rethinks Policy Commission officials discussed ties with Beijing today ahead of June’s G-7 and EU summits ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Warm embrace
-**From:** Bloomberg Politics <noreply@news.bloomberg.com>  
-China’s Deepening Embrace of Canada China’s Embrace of Canada ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+### New Glenn explodes during static-fire test
+**From:** SpaceNews FIRST UP <spacenewseletter@spacenews.com>  
+Plus: The German military proposes a European space command05/29/2026 READ IN BROWSER http://spacenews.bluelena.io/p_v.php?c=2749&m=1614&s=03dcdd84f7212aa2b9fc195de9a839f5&d=16156&v=2&l=8 https://sp
 
-### ISS Today: The Gambia’s first Special Prosecutor – a non-Gambian?
-**From:** The Institute for Security Studies <webmaster@issafrica.org>  
-29 May 2026 [1] The Gambia’s first Special Prosecutor: a non-Gambian? To achieve justice and reconciliation, the Special Prosecutor must ensure that accountability appears neithe
+### Weather downgrade
+**From:** Menaka Doshi at Bloomberg <noreply@news.bloomberg.com>  
+Hot, Dry Spell in India Will Make Economy and Central Bank Sweat More pain for the economy. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-### Why CYBERCOM isn't shaken by China's 10:1 overmatch
-**From:** Breaking Defense Daily <newsletters@breakingdefense.com>  
-Today's top news. __________________________________________________________________________________________________________________________________ Advanced autonomy. Unlimited potential. (https://
-
-### Defending Taiwan
+### Cinco assuntos: Flávio celebra decisão dos EUA sobre PCC e CV
 **From:** Bloomberg <noreply@news.bloomberg.com>  
-Pentagon Seeks New Weapons to Deter China Over Taiwan Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Five Things to Start Your Day: Portuguese Edition Em vitória para Flávio Bolsonaro, a classificação do Primeiro Comando da Capital (PCC) e do Comando Vermelho (CV) como organizações terroris <h
 
-### Rerouting Middle East trade, Dynacom $3.8 bn tanker newbuilding spree
-**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134597&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=c48086021d494e15a
+### Cinco cosas que debe saber para comenzar el día
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Five Things to Start Your Day: Spanish Edition Cinco cosas que debe saber para empezar el día. Los detalles principales con un solo clic <https://sli.bloomberg.co
 
-### News alert: New Glenn rocket explodes on Cape Canaveral pad
-**From:** SpaceNews <spacenewseletter@spacenews.com>  
-https://spacenews.com https://spacenews.com 05/29/2026 **NEWS ALERT** New Glenn rocket explodes on Cape Canaveral pad https://spacenews.com/new-glenn-rocket-explodes-on-cape-canaveral-pad/ A B
+### Market Moves: What to watch before the open
+**From:** Bloomberg <noreply@news.bloomberg.com>  
+Bloomberg News Alert US Premarket Movers for May 29, 2026 <https://www.bloombe

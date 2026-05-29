@@ -4,8 +4,8 @@
   "last_updated": "2026-05-27T23:14:34.645046+00:00Z",
   "total_judgments": 105,
   "correct": 3,
-  "incorrect": 37,
-  "unresolved": 65,
+  "incorrect": 42,
+  "unresolved": 60,
   "by_confidence_band": {
     "likely": {
       "total": 115,
@@ -250,12 +250,14 @@
       "date": "2026-05-22",
       "total": 5,
       "correct": 0,
-      "incorrect": 0,
-      "unresolved": 5,
+      "incorrect": 5,
+      "unresolved": 0,
       "accuracy_pct": 0.0,
       "running_accuracy_pct": 8.3,
       "horizon_expiry": "2026-05-29T06:51:48.776696+00:00",
-      "rechecked": false
+      "rechecked": true,
+      "rechecked_at": "2026-05-29T13:21:22.016415+00:00",
+      "forced_resolved": true
     },
     {
       "date": "2026-05-23-test",

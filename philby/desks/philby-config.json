@@ -32,7 +32,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "ukraine": {
       "id": "ukraine",
@@ -46,7 +46,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "us_china": {
       "id": "us_china",
@@ -60,7 +60,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "cartel": {
       "id": "cartel",
@@ -76,7 +76,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "energy": {
       "id": "energy",
@@ -93,7 +93,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "north_africa": {
       "id": "north_africa",
@@ -109,7 +109,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "sub_saharan_africa": {
       "id": "sub_saharan_africa",
@@ -126,7 +126,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": true,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     },
     "dc_security": {
       "id": "dc_security",
@@ -140,7 +140,7 @@
       "delivery_target": "trevor_mentis@agentmail.to",
       "seeded": false,
       "calibration_adjustment": 5,
-      "calibration_accuracy_pct": 7.5
+      "calibration_accuracy_pct": 6.7
     }
   }
 }
