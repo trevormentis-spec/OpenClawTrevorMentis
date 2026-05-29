@@ -102,25 +102,34 @@ python3 skills/daily-intel-brief/scripts/orchestrate.py \
     >> "$LOG" 2>&1
 ORCH_RC=${PIPESTATUS[0]}
 
-if [ $ORCH_RC -ne 0 ]; then
-    echo "FATAL: Orchestrator failed with rc=$ORCH_RC" | tee -a "$LOG"
-    echo "DELIVERY ABORTED — orchestrator must succeed before quality gate can run." | tee -a "$LOG"
-    echo "=== Daily Text Brief FAILED — $(date -u) ===" | tee -a "$LOG"
+if [  -ne 0 ]; then
+    echo "FATAL: Orchestrator failed with rc=" | tee -a ""
+    echo "DELIVERY ABORTED â orchestrator must succeed before quality gate can run." | tee -a ""
+    echo "=== Daily Text Brief FAILED â Fri May 29 18:28:51 UTC 2026 ===" | tee -a ""
+    exit 
+fi
+
 # =========================================================================
-# STEP 2b: GDELT COLLECTION FLOOR — fills gaps for thin regions
+# STEP 2b: GDELT COLLECTION FLOOR â fills gaps for thin regions
+# Uses GDELT 2.0 CSV exports (no API key needed). Non-fatal if unavailable.
 # =========================================================================
 echo "--- Running GDELT collection floor ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/gdelt_collector.py" 
-    --incidents "$WORKING_DIR/raw/incidents.json" 
-    >> "$LOG" 2>&1
-GDELT_RC=$?
-if [ $GDELT_RC -ne 0 ]; then
-    echo "WARNING: GDELT collection floor failed with rc=$GDELT_RC (non-fatal)" | tee -a "$LOG"
+if [ -f "$WORKING_DIR/raw/incidents.json" ]; then
+    python3 "$REPO/scripts/gdelt_collector_v2.py" \
+        --incidents "$WORKING_DIR/raw/incidents.json" \
+        --max 15 \
+        >> "$LOG" 2>&1
+    GDELT_RC=$?
+    if [ $GDELT_RC -ne 0 ]; then
+        echo "WARNING: GDELT v2 collection floor failed with rc=$GDELT_RC (non-fatal)" | tee -a "$LOG"
+    fi
+else
+    echo "WARNING: No incidents.json found yet â skipping GDELT floor" | tee -a "$LOG"
 fi
 set -e 2>/dev/null || true
 
-    exit $ORCH_RC
+ORCH_RC
 fi
 
 # =========================================================================
