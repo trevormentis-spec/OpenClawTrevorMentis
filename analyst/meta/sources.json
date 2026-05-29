@@ -12503,6 +12503,33 @@
       "discovered": "2026-05-29",
       "signal_level": "Medium",
       "region": "central_america_caribbean"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-05-29",
+      "signal_level": "Medium",
+      "region": "south_america"
     }
   ],
   "moltbook_sources": [
