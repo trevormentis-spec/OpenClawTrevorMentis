@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-29 17:02 UTC
+# Gmail Intel Digest — 2026-05-29 19:01 UTC
 
 ## Texas Big Oil vs New York City Police
 **From:** Reuters Sustainable Switch <sustainableswitch@thomsonreuters.com>
@@ -64,7 +64,25 @@ Email from Institute for the Study of War Russia continues to pursue a policy of
 ---
 
 
-## AgentMail Intel — 2026-05-29 17:02 UTC
+## AgentMail Intel — 2026-05-29 19:01 UTC
+
+### Are landlines back?
+**From:** NYT Wirecutter <nytdirect@nytimes.com>  
+
+### Global Update: British Museum Postpones Jewish Cultural Event, Citing Threat of Disruption
+**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
+
+### The Security Challenges Colombia’s Next President Will Face
+**From:** InSight Crime <info@insightcrime.org>  
+View this email in your browser (https://mailchi.mp/insightcrime.org/httpsinsightcrimeorgelections-and-organized-crime?e=3579085fdf) https://insightcrime.org?mc_cid=c3aa577031&mc_eid=UNIQID https://l
+
+### Trump’s fund hits a roadblock
+**From:** POLITICO Playbook PM <politicoplaybook@email.politico.com>  
+Presented by Nike: POLITICO's must-read briefing on what's driving the afternoon in Washington. May 29, 2026 View in browser By Eli Okun Presented by
+
+### Weekend cookout sticker shock
+**From:** Bloomberg Businessweek <noreply@news.bloomberg.com>  
+The Iran War’s Effect on Groceries Isn’t Over Why grocery prices keep on rising ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
 ### CSIS DSD Brief: May 2026
 **From:** CSIS Defense and Security Department <dsdoutreach@csis.org>  
@@ -81,27 +99,3 @@ Inside China’s Plan to Fuse Cities Together Into Economic Powerhouses Also thi
 ### Lawfare Live: The Trials of the Trump Administration, May 29
 **From:** Lawfare <lawfare+lawfare-live@substack.com>  
 View this post on the web at https://lawfare.substack.com/p/lawfare-live-the-trials-of-the-trump-a3f On May 29 at 4 pm ET, Lawfare Editor in Chief Benjamin Wittes will sit down with Lawfare Senior Ed
-
-### Top Stories: New Glenn explodes on the launch pad
-**From:** SpaceNews <spacenewseletter@spacenews.com>  
-Plus: NASA awards first moon base contracts05/29/2026 READ IN BROWSER http://spacenews.bluelena.io/p_v.php?c=2743&m=1611&s=03dcdd84f7212aa2b9fc195de9a839f5&d=16163&v=2&l=7 https://spacenews.com ht
-
-### Industrial Controls Are a Hacker’s Dream
-**From:** Ryan McBeth from The official Ryan McBeth Substack <ryanmcbeth@substack.com>  
-View this post on the web at https://ryanmcbeth.substack.com/p/industrial-controls-are-a-hackers Zero Trust sounds like another cybersecurity buzzword a vendor uses before trying to sell you a dashbo
-
-### Bonus Points: Pointed Players tanked the tank question
-**From:** Bloomberg <noreply@news.bloomberg.com>  
-Pointed Players Tanked the Tank Question Gotta stay current on all the global Starbucks promotions ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### The War Above the War: How Chinese Satellites Support Iran
-**From:** MENA Defense Intelligence Digest <news@hudson.org>  
-No images? Click here https://hudsoninstitute.cmail19.com/t/i-e-zkifx-idhldidtkk-c/ The War Above the War: How Chinese Satellites Support Iran In this special report, Hudson Senior Fellow Can Kasa
-
-### Money Stuff: The Podcast: Shameful Secret Heart
-**From:** Matt Levine <noreply@news.bloomberg.com>  
-Money Stuff This week’s episode of the Money Stuff podcast is out now, in which Katie and I discuss the SpaceX IPO, enterprise AI, Mars colonies, the El Podcast
-
-### Competing concepts of order and the Indo-Pacific waterways
-**From:** Brookings Center for Asia Policy Studies <caps@brookings.edu>  
-Plus, Taiwan public opinion, North Korean diplomacy, and more. View in browser (https://connect.brookings.edu/e3t/Ctc/DF+113/c1x-m04/VVLPXh40YK1jW871RXR4X66g6W3kyKQV5PFNRxN4gTlKl5m-BlW7lCGcx6lZ3nJVF4

@@ -1,705 +1,5 @@
 [
   {
-    "name": "News & Analysis | Africa Confidential",
-    "url": "https://www.africa-confidential.com/news",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:53Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:22:54Z"
-  },
-  {
-    "name": "Strait of Hormuz Live Shipping Data: Tanker Traffic, Heatmap Analysis & Maritime Supply Chain Risk",
-    "url": "https://www.seavantage.com/blog/strait-of-hormuz-live-shipping-data-maritime-supply-chain-risk",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:54Z"
-  },
-  {
-    "name": "Key Changes in the Russian Military since the Start of the War | List of Articles | International Information Network Analysis | SPF",
-    "url": "https://www.spf.org/iina/en/articles/koizumi_02.html",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:22:55Z"
-  },
-  {
-    "name": "Foreign and security policy \u2013 EU action | European Union",
-    "url": "https://european-union.europa.eu/priorities-and-actions/actions-topic/foreign-and-security-policy_en",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:55Z"
-  },
-  {
-    "name": "How a mathematician is cracking open Mexico\u2019s powerful drug cartels",
-    "url": "https://www.nature.com/articles/d41586-026-00299-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:57Z"
-  },
-  {
-    "name": "Shifting Realities at the U.S.-Mexico Border: Immigration Enforcement and Control in a Fast-Evolving Landscape",
-    "url": "https://www.migrationpolicy.org/research/shifting-realities-us-mexico-border",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:22:57Z"
-  },
-  {
-    "name": "Commodity Context | Rory Johnston | Substack",
-    "url": "https://www.commoditycontext.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:58Z"
-  },
-  {
-    "name": "What leaders are saying about the new geopolitics of energy | World Economic Forum",
-    "url": "https://www.weforum.org/stories/2026/04/geopolitics-of-energy-what-leaders-are-saying/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:22:58Z"
-  },
-  {
-    "name": "Global Energy Outlook 2026: How the World Lost the Goal of 1.5\u00b0C",
-    "url": "https://www.rff.org/publications/reports/global-energy-outlook-2026/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:58Z"
-  },
-  {
-    "name": "Montel | Geopolitical Report \u2013 March 2026",
-    "url": "https://montel.energy/resources/reports/geopolitical-report-march-2026",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:22:59Z"
-  },
-  {
-    "name": "Geopolitical shocks roil energy markets at the start of 2026",
-    "url": "https://www.energyaspects.com/resources/insights/marketer-in-chief-geopolitical-shocks-roil-energy-markets-at-the-start-of-2026",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:00Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:00Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:00Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:01Z"
-  },
-  {
-    "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
-    "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:02Z"
-  },
-  {
-    "name": "Southeast Asia Regional Security Outlook in 2025: A Perspective",
-    "url": "https://rsdi.ae/en/publications/southeast-asia-regional-security-outlook-in-2025-a-perspective",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:09Z"
-  },
-  {
-    "name": "Regional Security in Southeast Asia: Beyond the ASEAN Way | ISEAS Publishing",
-    "url": "https://bookshop.iseas.edu.sg/publication/1547",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:10Z"
-  },
-  {
-    "name": "Regional Security Architecture Programme - RSIS",
-    "url": "https://rsis.edu.sg/research/idss/research-programmes/regional-security-architecture-programme/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:10Z"
-  },
-  {
-    "name": "Oceania | Council on Foreign Relations",
-    "url": "https://www.cfr.org/oceania",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:11Z"
-  },
-  {
-    "name": "The new geopolitics of the Pacific Island nations - FES Asia",
-    "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:12Z"
-  },
-  {
-    "name": "Great Power Geopolitics and the Scramble for Oceania | Geopolitical Monitor",
-    "url": "https://www.geopoliticalmonitor.com/great-power-geopolitics-and-the-scramble-for-oceania/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:12Z"
-  },
-  {
-    "name": "CEPS \u2013 Leading Independent Think Tank on European Policies",
-    "url": "https://www.ceps.eu/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:13Z"
-  },
-  {
-    "name": "Border Security | Homeland Security",
-    "url": "https://www.dhs.gov/topics/border-security",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:13Z"
-  },
-  {
-    "name": "Smart Shipping, Artificial Intelligence & the Maritime Industry",
-    "url": "https://www.martide.com/en/blog/smart-shipping-ai-in-the-maritime-industry",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:13Z"
-  },
-  {
-    "name": "The Future of Maritime Intelligence & Analytics | OrbitMI",
-    "url": "https://www.orbitmi.com/blog/the-future-of-maritime-analytics-an-uber-for-shipping",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:14Z"
-  },
-  {
-    "name": "Best OSINT Newsletters: Staying Current in Open Source Intelligence | OSINTBench",
-    "url": "https://osintbench.com/guides/osint-newsletters/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:14Z"
-  },
-  {
-    "name": "OpenSSF Newsletter \u2013 April 2026 \u2013 Open Source Security Foundation",
-    "url": "https://openssf.org/newsletter/2026/04/21/openssf-newsletter-april-2026/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:14Z"
-  },
-  {
-    "name": "Top 7 Open Source Threat Intelligence Platforms in 2026",
-    "url": "https://heimdalsecurity.com/blog/open-source-threat-intelligence-platform-tip/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:15Z"
-  },
-  {
-    "name": "Top 12 AI Newsletters to Follow in 2026 | GenAI.Works",
-    "url": "https://genai.works/insights/top-12-ai-newsletters-to-follow-in-2026",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:23:16Z"
-  },
-  {
-    "name": "Geopolitical risk perceptions - ScienceDirect",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0022199624001326",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:23:17Z"
-  },
-  {
-    "name": "Measuring Geopolitical Risk - American Economic Association",
-    "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20191823",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:47Z"
-  },
-  {
-    "name": "The Average Guys Outsmarting Wall Street on Prediction Markets - The New York Times",
-    "url": "https://www.nytimes.com/2026/05/26/magazine/polymarket-prediction-wall-street.html",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:52:48Z"
-  },
-  {
-    "name": "Billions are traded each week on Kalshi and Polymarket. There is a push to bring prediction markets to Australia - ABC News",
-    "url": "https://www.abc.net.au/news/2026-05-27/effort-to-make-prediction-markets-available-to-australians/106671606",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:48Z"
-  },
-  {
-    "name": "The Average Guys Outsmarting Wall Street on Prediction Markets - The New York Times",
-    "url": "https://www.nytimes.com/2026/05/26/magazine/polymarket-prediction-wall-street.html",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:52:48Z"
-  },
-  {
-    "name": "Billions are traded each week on Kalshi and Polymarket. There is a push to bring prediction markets to Australia - ABC News",
-    "url": "https://www.abc.net.au/news/2026-05-27/effort-to-make-prediction-markets-available-to-australians/106671606",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:48Z"
-  },
-  {
-    "name": "Montel | Geopolitical report: April 2026",
-    "url": "https://montel.energy/resources/reports/geopolitical-report-april-2026",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:50Z"
-  },
-  {
-    "name": "Why Is Open Source Collection Critical in Intelligence Work? | American Public University",
-    "url": "https://www.apu.apus.edu/area-of-study/intelligence/resources/why-is-open-source-collection-critical-in-intelligence-work/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:51Z"
-  },
-  {
-    "name": "Key Resources - Intelligence Analysis - Guides at Johns Hopkins University",
-    "url": "https://guides.library.jhu.edu/c.php?g=1180837&p=8634162",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:52Z"
-  },
-  {
-    "name": "IC\u2019s new OSINT standards cover open source data, AI services | Federal News Network",
-    "url": "https://federalnewsnetwork.com/intelligence-community/2024/12/ics-new-osint-standards-cover-open-source-data-ai-services/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:57Z"
-  },
-  {
-    "name": "II. Intelligence Community Management",
-    "url": "https://www.govinfo.gov/content/pkg/GPO-IC21/html/GPO-IC21-2.html",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:57Z"
-  },
-  {
-    "name": "OSINT Sources for Following the US-Israel-Iran Conflict | by Erkan Saka | Feb, 2026 | Medium",
-    "url": "https://medium.com/@sakaerka/osint-sources-for-following-the-us-israel-iran-conflict-4e5398c8a31b",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:52:57Z"
-  },
-  {
-    "name": "OSINT For Ukraine",
-    "url": "https://osintforukraine.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:57Z"
-  },
-  {
-    "name": "Russian military News, Research and Analysis - The Conversation",
-    "url": "https://theconversation.com/topics/russian-military-45186",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:58Z"
-  },
-  {
-    "name": "Russia Military Analysis \u2013 A blog on the Russian military",
-    "url": "https://russianmilitaryanalysis.wordpress.com/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:58Z"
-  },
-  {
-    "name": "NATO Secretary General\u2019s Annual Report shows significant increase in defence investment from Europe and Canada | NATO News",
-    "url": "https://www.nato.int/en/news-and-events/articles/news/2026/03/26/nato-secretary-generals-annual-report-shows-significant-increase-in-defence-investment-from-europe-and-canada",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:58Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:52:59Z"
-  },
-  {
-    "name": "60 Best Political News RSS Feeds",
-    "url": "https://rss.feedspot.com/political_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:00Z"
-  },
-  {
-    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
-    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:00Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:00Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:53:00Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-29T07:53:00Z"
-  },
-  {
-    "name": "Europe and NATO| Defense News",
-    "url": "https://www.defensenews.com/global/europe/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:01Z"
-  },
-  {
-    "name": "EXPLORING EU FOREIGN POLICY",
-    "url": "https://www.eufp.eu/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:01Z"
-  },
-  {
-    "name": "South China Sea Tracker - ICAS",
-    "url": "https://chinaus-icas.org/icas-maritime-affairs-program/map-maritime-issue-trackers/maritime-tracker-south-sea/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:03Z"
-  },
-  {
-    "name": "Asia - Intelligence Online",
-    "url": "https://www.intelligenceonline.com/region/asia",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:53:03Z"
-  },
-  {
-    "name": "IT Brief Asia - Technology news for CIOs & IT decision-makers",
-    "url": "https://itbrief.asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:04Z"
-  },
-  {
-    "name": "OpenAI News | OpenAI",
-    "url": "https://openai.com/news/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:53:04Z"
-  },
-  {
-    "name": "Geopolitical Risk Dashboard | BlackRock Investment Institute",
-    "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/interactive-charts/geopolitical-risk-dashboard",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:53:04Z"
-  },
-  {
-    "name": "Geopolitical Risk (GPR) Index",
-    "url": "https://www.matteoiacoviello.com/gpr.htm",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:04Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:06Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:06Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "Bruegel releases enhanced RSS feeds",
-    "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "Top 15 Europe Defense RSS Feeds",
-    "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
-    "url": "https://ecfr.eu/feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
-    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:07Z"
-  },
-  {
-    "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
-    "url": "https://www.nbcnews.com/politics/national-security",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:08Z"
-  },
-  {
-    "name": "Top 45 Homeland Security RSS Feeds",
-    "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:08Z"
-  },
-  {
-    "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
-    "url": "https://rss.feedspot.com/thenation_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:08Z"
-  },
-  {
-    "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
-    "url": "https://www.nbcnews.com/politics/national-security",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T07:53:10Z"
-  },
-  {
-    "name": "35 Best Caribbean News RSS Feeds",
-    "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "Central America Newswire - World News Report - EIN Presswire",
-    "url": "https://world.einnews.com/region/central-america",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
-    "url": "https://www.reuters.com/world/americas/",
-    "status": "http_401",
-    "code": 401,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "South America: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/americas/south-america",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "RSS | International Crisis Group",
-    "url": "https://www.crisisgroup.org/rss-0",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
-    "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:47Z"
-  },
-  {
-    "name": "RSS feeds - Africa Intelligence",
-    "url": "https://www.africaintelligence.com/info/rss",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:48Z"
-  },
-  {
-    "name": "Security : latest news | The Africa Report",
-    "url": "https://www.theafricareport.com/sections/security/",
-    "status": "forbidden",
-    "code": 403,
-    "tested_at": "2026-05-29T08:22:48Z"
-  },
-  {
-    "name": "News & Analysis | Africa Confidential",
-    "url": "https://www.africa-confidential.com/news",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:49Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:49Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:49Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
-    "name": "Latest Analysis: Conflict in the Middle East | CSIS",
-    "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
-    "name": "Middle East: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/middle-east",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
-    "name": "Middle East Conflict Monitor | ACLED",
-    "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
-    "name": "Central Asia: Analysis, Research, & Events | CSIS",
-    "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
-    "name": "Russia-China Relations in Central Asia - CEPA",
-    "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
-    "status": "ok",
-    "code": 200,
-    "tested_at": "2026-05-29T08:22:50Z"
-  },
-  {
     "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
     "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
     "status": "ok",
@@ -6998,5 +6298,705 @@
     "status": "ok",
     "code": 200,
     "tested_at": "2026-05-29T18:35:52Z"
+  },
+  {
+    "name": "South America: N\u00facleo de Estudos da Viol\u00eancia (USP)",
+    "url": "https://nev.prp.usp.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:27Z"
+  },
+  {
+    "name": "South America: O Globo \u2014 Pa\u00eds",
+    "url": "https://oglobo.globo.com/rss/oglobo",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:28Z"
+  },
+  {
+    "name": "South America: O Globo \u2014 Rio",
+    "url": "https://oglobo.globo.com/rss/oglobo/rio",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:30Z"
+  },
+  {
+    "name": "South America: Piau\u00ed",
+    "url": "https://piaui.folha.uol.com.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:34Z"
+  },
+  {
+    "name": "South America: Poder360",
+    "url": "https://www.poder360.com.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:38Z"
+  },
+  {
+    "name": "South America: Ponte Jornalismo",
+    "url": "https://ponte.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:40Z"
+  },
+  {
+    "name": "South America: Rep\u00f3rter Brasil",
+    "url": "https://reporterbrasil.org.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:41Z"
+  },
+  {
+    "name": "South America: Suma\u00fama",
+    "url": "https://sumauma.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:42Z"
+  },
+  {
+    "name": "South America: The Intercept Brasil",
+    "url": "https://www.intercept.com.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:42Z"
+  },
+  {
+    "name": "South America: UOL \u2014 Not\u00edcias",
+    "url": "https://rss.uol.com.br/feed/noticias.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:43Z"
+  },
+  {
+    "name": "South America: Valor Econ\u00f4mico",
+    "url": "https://valor.globo.com/rss/valor/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:44Z"
+  },
+  {
+    "name": "South America: Veja",
+    "url": "https://veja.abril.com.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:46Z"
+  },
+  {
+    "name": "South America: AthenaLab",
+    "url": "https://www.athenalab.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:47Z"
+  },
+  {
+    "name": "South America: CESC U. de Chile",
+    "url": "https://cesc.uchile.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:50Z"
+  },
+  {
+    "name": "South America: CIPER Chile",
+    "url": "https://www.ciperchile.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:52Z"
+  },
+  {
+    "name": "South America: Centro de Estudios P\u00fablicos (CEP)",
+    "url": "https://www.cepchile.cl/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:05:52Z"
+  },
+  {
+    "name": "South America: Diario U. de Chile",
+    "url": "https://radio.uchile.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:53Z"
+  },
+  {
+    "name": "South America: Espacio P\u00fablico",
+    "url": "https://espaciopublico.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:55Z"
+  },
+  {
+    "name": "South America: Ex-Ante",
+    "url": "https://www.ex-ante.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:55Z"
+  },
+  {
+    "name": "South America: FLACSO Chile",
+    "url": "https://www.flacsochile.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:58Z"
+  },
+  {
+    "name": "South America: Interferencia",
+    "url": "https://interferencia.cl/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:58Z"
+  },
+  {
+    "name": "South America: Libertad y Desarrollo",
+    "url": "https://lyd.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:05:59Z"
+  },
+  {
+    "name": "South America: The Clinic",
+    "url": "https://www.theclinic.cl/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:01Z"
+  },
+  {
+    "name": "South America: Baud\u00f3 AP",
+    "url": "https://www.baudoap.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:07Z"
+  },
+  {
+    "name": "South America: Cerosetenta (070)",
+    "url": "https://cerosetenta.uniandes.edu.co/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:08Z"
+  },
+  {
+    "name": "South America: Cuesti\u00f3n P\u00fablica",
+    "url": "https://cuestionpublica.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:09Z"
+  },
+  {
+    "name": "South America: El Colombiano (Medell\u00edn)",
+    "url": "https://www.elcolombiano.com/rss/portada.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:10Z"
+  },
+  {
+    "name": "South America: El Nuevo Siglo",
+    "url": "https://www.elnuevosiglo.com.co/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:10Z"
+  },
+  {
+    "name": "South America: El Tiempo \u2014 Colombia",
+    "url": "https://www.eltiempo.com/rss/colombia.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:11Z"
+  },
+  {
+    "name": "South America: El Tiempo \u2014 Justicia",
+    "url": "https://www.eltiempo.com/rss/justicia.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:11Z"
+  },
+  {
+    "name": "South America: El Tiempo \u2014 Mundo",
+    "url": "https://www.eltiempo.com/rss/mundo.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:11Z"
+  },
+  {
+    "name": "South America: Indepaz",
+    "url": "https://indepaz.org.co/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:11Z"
+  },
+  {
+    "name": "South America: Kien y Ke",
+    "url": "https://www.kienyke.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:12Z"
+  },
+  {
+    "name": "South America: La Rep\u00fablica",
+    "url": "https://www.larepublica.co/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:13Z"
+  },
+  {
+    "name": "South America: La Silla Vac\u00eda",
+    "url": "https://www.lasillavacia.com/feed/",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-29T19:06:13Z"
+  },
+  {
+    "name": "South America: Mutante",
+    "url": "https://www.mutante.org/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:14Z"
+  },
+  {
+    "name": "South America: Noticias Uno",
+    "url": "https://www.noticiasuno.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:15Z"
+  },
+  {
+    "name": "South America: Pares (Fundaci\u00f3n Paz y Reconciliaci\u00f3n)",
+    "url": "https://www.pares.com.co/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:17Z"
+  },
+  {
+    "name": "South America: Raz\u00f3n P\u00fablica",
+    "url": "https://razonpublica.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:19Z"
+  },
+  {
+    "name": "South America: Verdad Abierta",
+    "url": "https://verdadabierta.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:19Z"
+  },
+  {
+    "name": "South America: Vor\u00e1gine",
+    "url": "https://voragine.co/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:20Z"
+  },
+  {
+    "name": "South America: El Comercio (Quito)",
+    "url": "https://www.elcomercio.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:20Z"
+  },
+  {
+    "name": "South America: La Barra Espaciadora",
+    "url": "https://labarraespaciadora.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:20Z"
+  },
+  {
+    "name": "South America: Mongabay Latam",
+    "url": "https://es.mongabay.com/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:06:21Z"
+  },
+  {
+    "name": "South America: Plan V",
+    "url": "https://planv.com.ec/feed",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-29T19:06:22Z"
+  },
+  {
+    "name": "South America: Demerara Waves",
+    "url": "https://demerarawaves.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:22Z"
+  },
+  {
+    "name": "South America: Guyana Chronicle",
+    "url": "https://guyanachronicle.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:23Z"
+  },
+  {
+    "name": "South America: Kaieteur News",
+    "url": "https://www.kaieteurnewsonline.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:23Z"
+  },
+  {
+    "name": "South America: BBC News Mundo",
+    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:06:23Z"
+  },
+  {
+    "name": "South America: CONNECTAS",
+    "url": "https://www.connectas.org/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:06:23Z"
+  },
+  {
+    "name": "South America: DW Espa\u00f1ol",
+    "url": "https://rss.dw.com/rdf/rss-sp-all",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:26Z"
+  },
+  {
+    "name": "South America: Distintas Latitudes",
+    "url": "https://distintaslatitudes.net/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:27Z"
+  },
+  {
+    "name": "South America: Di\u00e1logo Pol\u00edtico (KAS)",
+    "url": "https://dialogopolitico.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:27Z"
+  },
+  {
+    "name": "South America: France 24 Espa\u00f1ol",
+    "url": "https://www.france24.com/es/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:28Z"
+  },
+  {
+    "name": "South America: Igarap\u00e9 Institute",
+    "url": "https://igarape.org.br/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:29Z"
+  },
+  {
+    "name": "South America: InSight Crime (English)",
+    "url": "https://insightcrime.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:29Z"
+  },
+  {
+    "name": "South America: InSight Crime Espa\u00f1ol",
+    "url": "https://es.insightcrime.org/feed/",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-29T19:35:29Z"
+  },
+  {
+    "name": "South America: Inter-American Dialogue",
+    "url": "https://www.thedialogue.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:31Z"
+  },
+  {
+    "name": "South America: Latin American Reports",
+    "url": "https://latinamericareports.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:31Z"
+  },
+  {
+    "name": "South America: Nodal",
+    "url": "https://www.nodal.am/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:32Z"
+  },
+  {
+    "name": "South America: RFI en espa\u00f1ol",
+    "url": "https://www.rfi.fr/es/rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:32Z"
+  },
+  {
+    "name": "South America: Caretas",
+    "url": "https://caretas.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:33Z"
+  },
+  {
+    "name": "South America: El Comercio",
+    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-29T19:35:33Z"
+  },
+  {
+    "name": "South America: El Comercio \u2014 Lima",
+    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/category/lima/?outputType=xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:34Z"
+  },
+  {
+    "name": "South America: El Comercio \u2014 Pol\u00edtica",
+    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/category/politica/?outputType=xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:34Z"
+  },
+  {
+    "name": "South America: IDL-Reporteros",
+    "url": "https://www.idl-reporteros.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:35Z"
+  },
+  {
+    "name": "South America: La Mula",
+    "url": "https://lamula.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:36Z"
+  },
+  {
+    "name": "South America: Sudaca",
+    "url": "https://sudaca.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:36Z"
+  },
+  {
+    "name": "South America: Wayka",
+    "url": "https://wayka.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:37Z"
+  },
+  {
+    "name": "South America: IP Agencia (state)",
+    "url": "https://www.ip.gov.py/ip/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:40Z"
+  },
+  {
+    "name": "South America: Dagblad Suriname",
+    "url": "https://www.dbsuriname.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:41Z"
+  },
+  {
+    "name": "South America: Suriname Herald",
+    "url": "https://www.srherald.com/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:35:41Z"
+  },
+  {
+    "name": "South America: Brecha",
+    "url": "https://brecha.com.uy/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:42Z"
+  },
+  {
+    "name": "South America: El Tel\u00e9grafo (Paysand\u00fa)",
+    "url": "https://www.eltelegrafo.com/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:35:43Z"
+  },
+  {
+    "name": "South America: LARED21",
+    "url": "https://www.lr21.com.uy/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:35:43Z"
+  },
+  {
+    "name": "South America: La Ma\u00f1ana",
+    "url": "https://www.xn--lamaana-7za.uy/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:45Z"
+  },
+  {
+    "name": "South America: MercoPress",
+    "url": "https://en.mercopress.com/rss/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:45Z"
+  },
+  {
+    "name": "South America: Teledoce (Canal 12)",
+    "url": "https://www.teledoce.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:46Z"
+  },
+  {
+    "name": "South America: Acceso a la Justicia",
+    "url": "https://accesoalajusticia.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:46Z"
+  },
+  {
+    "name": "South America: Armando.Info",
+    "url": "https://armando.info/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:47Z"
+  },
+  {
+    "name": "South America: Caraota Digital",
+    "url": "https://caraotadigital.net/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:47Z"
+  },
+  {
+    "name": "South America: Cr\u00f3nica.Uno",
+    "url": "https://cronica.uno/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:47Z"
+  },
+  {
+    "name": "South America: Efecto Cocuyo",
+    "url": "https://efectococuyo.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:47Z"
+  },
+  {
+    "name": "South America: El Est\u00edmulo",
+    "url": "https://elestimulo.com/feed/",
+    "status": "http_429",
+    "code": 429,
+    "tested_at": "2026-05-29T19:35:47Z"
+  },
+  {
+    "name": "South America: El Pitazo",
+    "url": "https://elpitazo.net/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:48Z"
+  },
+  {
+    "name": "South America: Espacio P\u00fablico",
+    "url": "https://espaciopublico.ong/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:49Z"
+  },
+  {
+    "name": "South America: Foro Penal",
+    "url": "https://foropenal.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:50Z"
+  },
+  {
+    "name": "South America: IPYS Venezuela",
+    "url": "https://ipysvenezuela.org/feed/",
+    "status": "http_520",
+    "code": 520,
+    "tested_at": "2026-05-29T19:35:50Z"
+  },
+  {
+    "name": "South America: La Patilla",
+    "url": "https://www.lapatilla.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:50Z"
+  },
+  {
+    "name": "South America: Runrun.es",
+    "url": "https://runrun.es/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:51Z"
+  },
+  {
+    "name": "South America: Tiempo Argentino",
+    "url": "https://www.tiempoar.com.ar/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:55Z"
+  },
+  {
+    "name": "South America: Los Tiempos",
+    "url": "https://www.lostiempos.com/rss.xml",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:55Z"
+  },
+  {
+    "name": "South America: Conectas Direitos Humanos",
+    "url": "https://www.conectas.org/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:56Z"
+  },
+  {
+    "name": "South America: IEP",
+    "url": "https://iep.org.pe/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:57Z"
+  },
+  {
+    "name": "South America: Revista Ideele",
+    "url": "https://www.revistaideele.com/feed",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:35:58Z"
+  },
+  {
+    "name": "South America: El Surti (El Surtidor)",
+    "url": "https://elsurti.com/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:36:02Z"
+  },
+  {
+    "name": "South America: Prodavinci",
+    "url": "https://prodavinci.com/feed/",
+    "status": "forbidden",
+    "code": 403,
+    "tested_at": "2026-05-29T19:36:02Z"
+  },
+  {
+    "name": "South America: Transparencia Venezuela",
+    "url": "https://transparencia.org.ve/feed/",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-29T19:36:04Z"
+  },
+  {
+    "name": "South America: Aire de Santa Fe",
+    "url": "https://www.airedesantafe.com.ar/feed/",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-29T19:36:04Z"
+  },
+  {
+    "name": "South America: El Cronista",
+    "url": "https://www.cronista.com/files/rss/ultimas.xml",
+    "status": "not_found",
+    "code": 404,
+    "tested_at": "2026-05-29T19:36:05Z"
   }
 ]

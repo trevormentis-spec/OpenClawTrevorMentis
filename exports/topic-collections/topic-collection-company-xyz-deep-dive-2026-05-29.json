@@ -1,0 +1,13 @@
+{
+  "topic": "company-xyz-deep-dive",
+  "collected_at": "2026-05-29T19:45:29Z",
+  "source_count": 0,
+  "sources_fetched": 0,
+  "sources_skipped": 0,
+  "sources_watch": 0,
+  "sources_error": 0,
+  "items": [],
+  "errors": [
+    "no_sources: No sources found for this topic"
+  ]
+}

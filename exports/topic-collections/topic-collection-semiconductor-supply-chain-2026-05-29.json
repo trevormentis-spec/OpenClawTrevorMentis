@@ -1,0 +1,34 @@
+{
+  "topic": "semiconductor-supply-chain",
+  "collected_at": "2026-05-29T19:45:29Z",
+  "source_count": 2,
+  "sources_fetched": 2,
+  "sources_skipped": 0,
+  "sources_watch": 0,
+  "sources_error": 0,
+  "items": [
+    {
+      "title": "SIA Reports",
+      "url": "https://www.semiconductors.org",
+      "source_name": "SIA Reports",
+      "source_type": "industry_body",
+      "classification": "try_rss",
+      "published": "",
+      "summary": "",
+      "content": "",
+      "fetch_status": "dry_run"
+    },
+    {
+      "title": "TrendForce",
+      "url": "https://www.trendforce.com",
+      "source_name": "TrendForce",
+      "source_type": "market_research",
+      "classification": "try_rss",
+      "published": "",
+      "summary": "",
+      "content": "",
+      "fetch_status": "dry_run"
+    }
+  ],
+  "errors": []
+}

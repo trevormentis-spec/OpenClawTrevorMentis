@@ -3,7 +3,7 @@
   "generated_at": "2026-05-13T05:28:11Z",
   "calibration_directives": {
     "overall": {
-      "total_judgments": 105,
+      "total_judgments": 115,
       "correct": 3,
       "incorrect": 42,
       "unresolved": 60,
@@ -94,7 +94,7 @@
         "samples": 14
       }
     ],
-    "compiled_at": "2026-05-29T14:15:05.649062+00:00Z"
+    "compiled_at": "2026-05-29T19:40:28.740082+00:00Z"
   },
   "collection_directives": {
     "by_region": {
@@ -245,41 +245,36 @@
   "per_region_constraints": {
     "europe": {
       "available_bands": [
-        "even chance",
-        "likely",
-        "highly likely"
+        "even chance"
       ],
-      "max_confidence_pct": 95,
-      "max_single_source_pct": 70,
-      "mandatory_caveats": [],
-      "forecasting_aggression": "standard"
+      "max_confidence_pct": 50,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "cautious",
+      "mandatory_caveats": [
+        ""
+      ]
     },
     "asia": {
       "available_bands": [
-        "even chance",
-        "likely",
-        "highly likely"
+        "even chance"
       ],
-      "max_confidence_pct": 95,
-      "max_single_source_pct": 70,
+      "max_confidence_pct": 50,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "cautious",
       "mandatory_caveats": [
-        "No Chinese or Japanese source citations detected",
-        "No errors yet \u2014 standard bands available"
-      ],
-      "forecasting_aggression": "standard"
+        ""
+      ]
     },
     "middle_east": {
       "available_bands": [
         "even chance",
-        "likely"
+        "likely",
+        "highly likely"
       ],
       "max_confidence_pct": 75,
-      "max_single_source_pct": 70,
-      "mandatory_caveats": [
-        "No Arabic or Persian source citations detected",
-        " | Overconfidence flag: overconfident given source diversity"
-      ],
-      "forecasting_aggression": "cautious"
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
     },
     "north_america": {
       "available_bands": [
@@ -287,22 +282,21 @@
         "likely",
         "highly likely"
       ],
-      "max_confidence_pct": 95,
-      "max_single_source_pct": 70,
-      "mandatory_caveats": [],
-      "forecasting_aggression": "standard"
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
     },
     "south_central_america": {
       "available_bands": [
         "even chance",
-        "likely"
+        "likely",
+        "highly likely"
       ],
-      "max_confidence_pct": 85,
-      "max_single_source_pct": 65,
-      "mandatory_caveats": [
-        "Low collection intensity cap limits coverage confidence"
-      ],
-      "forecasting_aggression": "standard"
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
     },
     "global_finance": {
       "available_bands": [
@@ -310,12 +304,54 @@
         "likely",
         "highly likely"
       ],
-      "max_confidence_pct": 95,
-      "max_single_source_pct": 70,
-      "mandatory_caveats": [
-        "Insufficient calibration data \u2014 be cautious with high bands"
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
+    },
+    "south_east_asia": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
       ],
-      "forecasting_aggression": "standard"
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
+    },
+    "oceania": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
+    },
+    "africa": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
+    },
+    "prediction_markets": {
+      "available_bands": [
+        "even chance",
+        "likely",
+        "highly likely"
+      ],
+      "max_confidence_pct": 75,
+      "max_single_source_pct": 50,
+      "forecasting_aggression": "standard",
+      "mandatory_caveats": []
     }
   },
   "autonomous_prioritization": {
@@ -358,5 +394,5 @@
       "reasons": []
     }
   },
-  "updated_at": "2026-05-29T14:15:05.649062+00:00Z"
+  "updated_at": "2026-05-29T19:40:28.740082+00:00Z"
 }

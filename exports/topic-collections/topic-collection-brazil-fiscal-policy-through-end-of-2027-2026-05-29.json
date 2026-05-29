@@ -1,0 +1,23 @@
+{
+  "topic": "brazil-fiscal-policy-through-end-of-2027",
+  "collected_at": "2026-05-29T19:45:29Z",
+  "source_count": 1,
+  "sources_fetched": 1,
+  "sources_skipped": 0,
+  "sources_watch": 0,
+  "sources_error": 0,
+  "items": [
+    {
+      "title": "BCB Reports",
+      "url": "https://www.bcb.gov.br",
+      "source_name": "BCB Reports",
+      "source_type": "central_bank",
+      "classification": "try_rss",
+      "published": "",
+      "summary": "",
+      "content": "",
+      "fetch_status": "dry_run"
+    }
+  ],
+  "errors": []
+}
