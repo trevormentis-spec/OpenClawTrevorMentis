@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T17:15:45.451Z",
+  "updatedAt": "2026-05-29T18:21:54.466Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -102,13 +102,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 21,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20.50553129149435,
+      "totalScore": 21.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-24T03:07:07.040Z",
+      "lastRecalledAt": "2026-05-29T18:21:10.629Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -130,7 +130,8 @@
         "d76260b5998d",
         "b2960036661c",
         "cb0e9de10fbc",
-        "d273c1eeb6e6"
+        "d273c1eeb6e6",
+        "06af7cc38b34"
       ],
       "recallDays": [
         "2026-04-28",
@@ -146,7 +147,8 @@
         "2026-05-13",
         "2026-05-15",
         "2026-05-18",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-29"
       ],
       "conceptTags": [
         "gateway",
@@ -378,13 +380,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.690475928211749,
+      "totalScore": 12.690475928211749,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-18T12:32:18.555Z",
+      "lastRecalledAt": "2026-05-29T18:21:10.629Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
@@ -397,7 +399,8 @@
         "b84acb705a0f",
         "b62b199ec189",
         "b2960036661c",
-        "cb0e9de10fbc"
+        "cb0e9de10fbc",
+        "06af7cc38b34"
       ],
       "recallDays": [
         "2026-04-29",
@@ -406,7 +409,8 @@
         "2026-05-05",
         "2026-05-12",
         "2026-05-15",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-29"
       ],
       "conceptTags": [
         "gateway",
@@ -1777,19 +1781,21 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "- Mexico pipeline converged: planner reads from `exports/mexico-news-scan-*.json`, not global incidents.json - Worker live mode authorized. Daily budget: $20. First live cycle: $0.011 of $20. ### Presentation Stack — Authorized Builds - JSON schema v1.0.0 at `docs/brief-schema-v1.md` — Sherman Kent enums, Admiralty grades, stable UUIDs, public API contract - PDF renderer at `scripts/render_pdf.py` — weasyprint, branded HTML/CSS template, zero new dependencies. Bajío v3 round-trip tested (28KB, 5 pages). - Audio renderer at `scripts/render_audio.py` — ElevenLabs integration, pronunciation dictionary (80+ entries). Dry-run verified. Blocked: ELEVENLABS_API_KEY not in environment (all Maton co",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-20T15:45:37.520Z",
-      "lastRecalledAt": "2026-05-20T15:46:20.456Z",
+      "lastRecalledAt": "2026-05-29T18:21:54.466Z",
       "queryHashes": [
         "6dd049397237",
-        "5405747e965c"
+        "5405747e965c",
+        "be034bc345d3"
       ],
       "recallDays": [
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-29"
       ],
       "conceptTags": [
         "exports/mexico-news-scan",
@@ -3170,6 +3176,68 @@
         "kxusairanagreement-27-26jun",
         "kxtrumpiran-27jan01",
         "kalshi"
+      ]
+    },
+    "memory:memory/2026-05-19.md:1:21": {
+      "key": "memory:memory/2026-05-19.md:1:21",
+      "path": "memory/2026-05-19.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "## Collection Capability Expansion (2026-05-19) ### What changed - Installed `openweb` (94 site API specs) and `reverse-api-engineer` (HAR→spec generator) - Both MIT-licensed, both pinned as git submodules - Prior collection: ~15 RSS feeds + HTTP DOM scraping - Post-install: 94 structured API endpoints + custom spec generation pipeline ### Coverage estimate grade Prior assessment: **PARTIALLY CONFIRMED** — RSS+DOM was accurate for what existed, but materially underestimated the availability of programmatic API access. Openweb alone adds 79 more structured data endpoints than prior collection had total sources (94 vs 15). ### Key findings - ANTHROPIC_API_KEY present but invalid — blocks C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T18:21:10.629Z",
+      "lastRecalledAt": "2026-05-29T18:21:10.629Z",
+      "queryHashes": [
+        "06af7cc38b34"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "reverse-api-engineer",
+        "mit-licensed",
+        "post-install",
+        "anthropic-api-key",
+        "collection",
+        "capability",
+        "expansion",
+        "what"
+      ]
+    },
+    "memory:memory/2026-05-24.md:96:125": {
+      "key": "memory:memory/2026-05-24.md:96:125",
+      "path": "memory/2026-05-24.md",
+      "startLine": 96,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "## South America RSS Integration — 2026-05-24 ### Completed: Full 4-step pipeline 1. **Parse** — 296 unique feed URLs extracted from `config/sources/southamerica-osint-rss.md` → `config/sources/southamerica-feeds.csv` 2. **Validate** — All 296 tested with feedparser; 125 OK, 10 STALE, 160 FAIL, 1 ERROR → `config/sources/southamerica-feeds-validated.json` 3. **Integrate** — 135 usable feeds mapped to `sources_tested.json` format with Admiralty ratings, theme tags, poll intervals, CMS detection 4. **Wire** — Merged into live `analyst/meta/sources_tested.json` (257→392 total, 3→138 SA region) ### Key stats - **138 South America feeds** in catalog (127 working, 10 STALE, 1 MercoPress still fa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T18:21:54.466Z",
+      "lastRecalledAt": "2026-05-29T18:21:54.466Z",
+      "queryHashes": [
+        "be034bc345d3"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "4-step",
+        "sources-tested.json",
+        "analyst/meta/sources-tested.json",
+        "south",
+        "america",
+        "rss",
+        "integration",
+        "completed"
       ]
     }
   }

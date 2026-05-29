@@ -55,3 +55,7 @@ exports/kj-feeds/*.jsonl
 # SQLite databases (regenerated from JSONL on import)
 data/collection_records.db
 data/collection_records.db-*
+
+# Philby Daemon — runtime state
+philby/trader/daemon.pid
+philby/trader/positions_live.json
