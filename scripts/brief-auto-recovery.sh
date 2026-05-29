@@ -39,7 +39,7 @@ cd "$REPO"
 
 # Step 1: Check if today's brief already exists and was delivered
 BRIEF_LOG="$LOG_DIR/daily-brief-${DATE_UTC}.log"
-DELIVERED_MARKER="Delivery successful"
+DELIVERED_MARKER="Delivered"  # matches both 'Delivered to ...' and 'Delivery successful'
 QC_BLOCK_MARKER="QUALITY GATES BLOCKED DELIVERY"
 
 if [ -f "$BRIEF_LOG" ]; then

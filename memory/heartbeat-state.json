@@ -15,13 +15,14 @@
     "memory_maintenance": 1779737272,
     "phase_a": 1779824215,
     "feed_audit": 1779824215,
-    "phase_c": 1779650985
+    "phase_c": 1779650985,
+    "prune_cycle": 1780064949
   },
-  "lastHeartbeat": 1779824215,
+  "lastHeartbeat": 1780064949,
   "rotationCursor": 0,
-  "previousPhase": "B",
-  "currentPhase": "C",
-  "nextPhase": "C",
+  "previousPhase": "C",
+  "currentPhase": null,
+  "nextPhase": "A",
   "phaseAStatus": "completed",
   "phaseANotes": {
     "feedsTested": 723,
@@ -63,8 +64,27 @@
     "from": "NewsAPI",
     "time": "2026-05-28T14:57:38Z"
   },
-  "phaseCStatus": "pending",
-  "phaseCNotes": {},
+  "phaseCStatus": "completed",
+  "phaseCNotes": {
+    "pruned": 88,
+    "catalogBefore": 1000,
+    "catalogAfter": 912,
+    "prunedByStatus": {
+      "not_found_404": 69,
+      "error_generic": 5,
+      "dns_fail": 4,
+      "timeout": 3,
+      "http_500": 2,
+      "http_451": 2,
+      "http_520": 1,
+      "http_410": 1,
+      "http_406": 1
+    },
+    "replacements_added": 0,
+    "reason": "Brave discovery returned no new RSS feeds; South America hardest hit (49/88 pruned)",
+    "backupSaved": "sources_tested.json.bak",
+    "cycleComplete": true
+  },
   "phaseDStatus": "completed",
   "phaseDNotes": {
     "costSnapshot": "DeepSeek 401 (known \u2014 API key rotation needed, flagged in alerts). OpenRouter: no usage. Total weekly burn ~$0.47",
@@ -77,5 +97,5 @@
     "cycleComplete": true,
     "cycleSummary": "All 4 phases completed. Phase A: 290 feeds tested, 48.9% health. Phase B: 23 candidates found across 5 gap regions. Phase C: 50 dead pruned, 11 replacements added. Phase D: reindex done, cost snapshot blocked on API key issue."
   },
-  "cycleComplete": false
+  "cycleComplete": true
 }

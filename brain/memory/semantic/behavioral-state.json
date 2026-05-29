@@ -5,9 +5,9 @@
     "overall": {
       "total_judgments": 105,
       "correct": 3,
-      "incorrect": 37,
-      "unresolved": 65,
-      "accuracy_pct": 7.5,
+      "incorrect": 42,
+      "unresolved": 60,
+      "accuracy_pct": 6.7,
       "posture": "widen_two_notches",
       "overconfidence_regions": []
     },
@@ -94,7 +94,7 @@
         "samples": 14
       }
     ],
-    "compiled_at": "2026-05-29T12:50:32.888976+00:00Z"
+    "compiled_at": "2026-05-29T14:15:05.649062+00:00Z"
   },
   "collection_directives": {
     "by_region": {
@@ -358,5 +358,5 @@
       "reasons": []
     }
   },
-  "updated_at": "2026-05-29T12:50:32.888976+00:00Z"
+  "updated_at": "2026-05-29T14:15:05.649062+00:00Z"
 }

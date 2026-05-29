@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-29T13:32:43Z",
+  "timestamp": "2026-05-29T16:35:34Z",
   "batch_size": 50,
-  "ok": 37,
-  "failed": 13,
-  "health_pct": 74.0,
-  "total_sources": 1360,
-  "test_completed_pct": 22.1
+  "ok": 42,
+  "failed": 8,
+  "health_pct": 84.0,
+  "total_sources": 1369,
+  "test_completed_pct": 43.8
 }

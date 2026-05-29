@@ -1,6 +1,6 @@
 {
   "phase": 0,
-  "last_run": "2026-05-29T13:52:26.813337+00:00",
+  "last_run": "2026-05-29T16:52:26.176102+00:00",
   "findings": [
     "[feeds] 2026-05-24 22:09: checked",
     "[pipeline] 2026-05-24 22:09: checked",
@@ -681,7 +681,25 @@
     "[brain] 2026-05-29 13:31: reindexed",
     "[feeds] 2026-05-29 13:52: checked",
     "[pipeline] 2026-05-29 13:52: checked",
-    "[brain] 2026-05-29 13:52: reindexed"
+    "[brain] 2026-05-29 13:52: reindexed",
+    "[feeds] 2026-05-29 14:22: checked",
+    "[pipeline] 2026-05-29 14:22: checked",
+    "[brain] 2026-05-29 14:22: reindexed",
+    "[feeds] 2026-05-29 14:52: checked",
+    "[pipeline] 2026-05-29 14:52: checked",
+    "[brain] 2026-05-29 14:52: reindexed",
+    "[feeds] 2026-05-29 15:22: checked",
+    "[pipeline] 2026-05-29 15:22: checked",
+    "[brain] 2026-05-29 15:22: reindexed",
+    "[feeds] 2026-05-29 15:52: checked",
+    "[pipeline] 2026-05-29 15:52: checked",
+    "[brain] 2026-05-29 15:52: reindexed",
+    "[feeds] 2026-05-29 16:22: checked",
+    "[pipeline] 2026-05-29 16:22: checked",
+    "[brain] 2026-05-29 16:22: reindexed",
+    "[feeds] 2026-05-29 16:52: checked",
+    "[pipeline] 2026-05-29 16:52: checked",
+    "[brain] 2026-05-29 16:52: reindexed"
   ],
   "fixes_applied": [],
   "delivery_retry": {

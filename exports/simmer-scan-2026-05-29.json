@@ -1,11 +1,21 @@
 {
-  "generated_at": "2026-05-29T12:50:57.974257+00:00",
-  "markets_found": 0,
-  "markets": [],
+  "generated_at": "2026-05-29T14:15:31.083325+00:00",
+  "markets_found": 1,
+  "markets": [
+    {
+      "query": "iran",
+      "market_id": "03cb4784-a5d8-4175-965d-cf864c925e66",
+      "question": "Will Trump agree to Iranian transit fees in the Strait of Hormuz by June 30?",
+      "probability_yes": 0.06,
+      "source": "polymarket",
+      "resolves_at": "2026-06-30 00:00:00Z",
+      "status": "active"
+    }
+  ],
   "briefing": {
     "risk_alerts": 0,
-    "total_pnl": -13.95,
-    "pnl_percent": -0.14,
+    "total_pnl": -12.4,
+    "pnl_percent": -0.12,
     "win_rate": 0
   },
   "note": "Simmer provides trading-focused data. For broad market discovery, see Kalshi scanner output."

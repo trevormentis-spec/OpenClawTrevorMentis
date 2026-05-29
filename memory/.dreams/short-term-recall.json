@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-28T16:49:14.101Z",
+  "updatedAt": "2026-05-29T14:27:24.475Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -223,13 +223,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 27,
+      "recallCount": 28,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 26.042409226740567,
+      "totalScore": 27.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-27T05:25:31.754Z",
+      "lastRecalledAt": "2026-05-29T14:27:24.475Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -257,10 +257,10 @@
         "a7caaf53a02e",
         "b40e808eaeb3",
         "b9bf26d73c0d",
-        "db415fb43a05"
+        "db415fb43a05",
+        "fc47a33fc731"
       ],
       "recallDays": [
-        "2026-04-28",
         "2026-04-29",
         "2026-04-30",
         "2026-05-01",
@@ -275,7 +275,8 @@
         "2026-05-23",
         "2026-05-25",
         "2026-05-26",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ],
       "conceptTags": [
         "us-israel-iran",
@@ -1738,21 +1739,23 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "# 2026-05-18 — Phase 1 Closure + Phase 2 Launch + Presentation Stack ## Durable Decisions ### Phase 1 Closed - Scope gate (scope_check.py + scope.yaml) verified at 4/4 regression probes. Blocklist trimmed from 23→11 entries (removed 12 overreaching keywords). Blocklist = precision tool, not filter. - Fabrication detector (analyst/fabrication_check.py) blocks briefs with unsourced contracts, prices, percentage ranges, dollar cost estimates. Hard rule: no named instruments without verification. - Themes preflight (analyst/themes_preflight.py) validates all required themes have substantive coverage pre-delivery. - Three guards (scope_check, fabrication_check, themes_preflight) are principal-r",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-20T15:45:37.520Z",
-      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
+      "lastRecalledAt": "2026-05-29T14:27:24.475Z",
       "queryHashes": [
         "6dd049397237",
         "5405747e965c",
-        "b9bf26d73c0d"
+        "b9bf26d73c0d",
+        "fc47a33fc731"
       ],
       "recallDays": [
         "2026-05-20",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-05-29"
       ],
       "conceptTags": [
         "scope-check.py",
@@ -1889,26 +1892,28 @@
       "endLine": 200,
       "source": "memory",
       "snippet": "- [north_america] Mock judgment 1 for North America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Phase A — RSS Feed Health Audit (19:00 UTC) **Results:** 290 feeds tested (280 real + 10 region labels) - ✅ **Working:** 137 (48.9% effective health",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-22T20:38:32.958Z",
-      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
+      "lastRecalledAt": "2026-05-29T14:27:24.475Z",
       "queryHashes": [
         "d47a29803ed1",
         "df855bba4611",
         "69aac40b64bc",
         "b29c1c6a8236",
         "6c65929eab81",
-        "b9bf26d73c0d"
+        "b9bf26d73c0d",
+        "fc47a33fc731"
       ],
       "recallDays": [
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-05-29"
       ],
       "conceptTags": [
         "north-america",
