@@ -184,15 +184,24 @@ def get_required_themes(category: str | None, requirements: dict[str, Any]) -> d
 def check_theme_coverage(brief_text: str, theme: str, min_mentions: int = 3) -> tuple[bool, int]:
     """Check if a theme has substantive coverage in a brief (not just keyword mention).
     
+    A theme is "covered" only if:
+    1. At least min_mentions keyword hits from the theme's signature set, AND
+    2. The theme appears in at least 2 paragraph headings (## or bolded section titles).
+    
     Returns (has_coverage, evidence_count).
-    Evidence = keyword mentions in the theme's signature set.
     """
     keywords = THEME_SIGNATURES.get(theme, [])
     count = 0
     for kw in keywords:
         count += len(re.findall(re.escape(kw), brief_text, re.IGNORECASE))
     
-    return (count >= min_mentions, count)
+    # Check heading depth: theme keywords appearing in ## headings or bolded section headers
+    heading_lines = re.findall(r'^##\s+.+$|^.{0,10}KEY JUDGMENTS|^.{0,10}ASSESSMENT', brief_text, re.MULTILINE)
+    heading_text = ' '.join(heading_lines)
+    heading_hits = sum(1 for kw in keywords if re.search(re.escape(kw), heading_text, re.IGNORECASE))
+    
+    has_coverage = (count >= min_mentions) and (heading_hits >= 2)
+    return (has_coverage, count)
 
 
 def generate_prompt_instruction(category: str | None, required: list[str], recommended: list[str], 

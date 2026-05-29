@@ -85,10 +85,12 @@ LAST_TRADED_PATTERN = re.compile(
 # Ticker pattern: 1-5 uppercase letters/numbers
 TICKER_PATTERN = re.compile(r'\b[A-Z]{1,5}\b')
 
-# Source citation pattern
-SOURCE_CITATION = re.compile(r'\[[^\]]*\]')
+# Source citation pattern — must contain a URL or known source name, not just anything in brackets
+# Matches [url], [Source: name], [B2], [name (B2)], but not arbitrary text
+SOURCE_CITATION = re.compile(r'\[(?:https?://[^\]]+|GAP(?:-[A-Za-z0-9]+)?|(?:source|Source)\s*[:\s]+[A-Za-z0-9/]{3,50}|[A-Z][A-Za-z]{2,50}(?:\s+\([A-Z][0-9]\))?)\]')
 
-# "GAP:" or "GAP" marker
+
+# GAP marker
 GAP_MARKER = re.compile(r'\bGAP\b', re.IGNORECASE)
 
 # "synthetic" or "proxy" marker — indicates the brief itself flagged the gap

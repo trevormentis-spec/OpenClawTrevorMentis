@@ -265,16 +265,19 @@ def recheck_expired(cal: dict) -> dict:
     the calibration data is systematically biased toward overconfidence.
     """
     now = dt.datetime.now(dt.timezone.utc)
-    rechecked = 0
-    forced_incorrect = 0
+    recheck_count = 0
+    forced_incorrect_total = 0
 
     for score_entry in cal.get("daily_scores", []):
-        horizon_expiry = score_entry.get("horizon_expiry", "")
-        rechecked = score_entry.get("rechecked", False)
+        # Force-resolve if there are still unresolved judgments and horizon has expired
+        current_unresolved = score_entry.get("unresolved", 0)
+        entry_rechecked = score_entry.get("rechecked", False)
         
-        # Skip already resolved
-        if rechecked:
+        # Skip if already fully resolved or nothing to resolve
+        if current_unresolved == 0:
             continue
+        
+        horizon_expiry = score_entry.get("horizon_expiry", "")
         
         # If no horizon expiry exists (legacy data), default to 7 days from the entry date
         if not horizon_expiry:
@@ -324,10 +327,10 @@ def recheck_expired(cal: dict) -> dict:
                             "Scored as expired_no_resolution per five-category system."
                         )
                         ev["postdict"]["forced_at"] = now.isoformat()
-                    forced_incorrect += 1
+                    forced_incorrect_total += 1
         else:
             # Legacy path — no individual evaluations, resolve counts directly
-            forced_incorrect = current_unresolved
+            forced_incorrect_total = current_unresolved
         
         # Recalculate: everything unresolved becomes incorrect
         new_correct = current_correct
@@ -343,10 +346,10 @@ def recheck_expired(cal: dict) -> dict:
         score_entry["rechecked"] = True
         score_entry["rechecked_at"] = now.isoformat()
         score_entry["forced_resolved"] = True
-        rechecked += 1
+        recheck_count += 1
 
-    if rechecked:
-        log(f"Rechecked {rechecked} expired set(s), forced {forced_incorrect} unresolved to 'incorrect'")
+    if recheck_count:
+        log(f"Rechecked {recheck_count} expired set(s), forced {forced_incorrect_total} unresolved to 'incorrect'")
     else:
         log(f"No new expired sets to resolve (found {sum(1 for s in cal.get('daily_scores',[]) if s.get('rechecked'))} already resolved)")
     
@@ -373,7 +376,33 @@ def main() -> int:
     parser.add_argument("--yesterday", help="yesterday's working directory")
     parser.add_argument("--recheck", action="store_true",
                         help="Re-check expired predictions (horizon passed, forced resolution)")
+    parser.add_argument("--sweep", action="store_true",
+                        help="Force-resolve ALL unresolved judgments regardless of prior recheck status")
     args = parser.parse_args()
+
+    # Handle sweep mode — force-resolve ALL unresolved
+    if args.sweep:
+        log("Running full sweep — force-resolving ALL unresolved judgments")
+        cal = load_calibration_history()
+        # Clear rechecked flag so recheck_expired won't skip them
+        for se in cal.get("daily_scores", []):
+            if se.get("unresolved", 0) > 0:
+                se["rechecked"] = False
+        cal = recheck_expired(cal)
+        # Recompute totals inline
+        total_judgments = sum(s.get("total", 0) for s in cal.get("daily_scores", []))
+        total_correct = sum(s.get("correct", 0) for s in cal.get("daily_scores", []))
+        total_incorrect = sum(s.get("incorrect", 0) for s in cal.get("daily_scores", []))
+        total_unresolved = sum(s.get("unresolved", 0) for s in cal.get("daily_scores", []))
+        cal["total_judgments"] = total_judgments
+        cal["correct"] = total_correct
+        cal["incorrect"] = total_incorrect
+        cal["unresolved"] = total_unresolved
+        cal["last_updated"] = dt.datetime.now(dt.timezone.utc).isoformat() + "Z"
+        CALIBRATION_FILE.parent.mkdir(parents=True, exist_ok=True)
+        CALIBRATION_FILE.write_text(json.dumps(cal, indent=2))
+        log(f"Sweep complete: {total_correct} correct, {total_incorrect} incorrect, {total_unresolved} unresolved")
+        return 0
 
     # Handle recheck mode — standalone, requires no dir args
     if args.recheck:

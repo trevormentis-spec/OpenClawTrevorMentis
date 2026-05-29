@@ -512,6 +512,10 @@ def gate_scope(analysis_dir: pathlib.Path, scope_topic: str = "geopolitical inte
             return {"gate": "scope", "status": "BLOCK",
                     "issues": [f"Topic '{scope_topic}' classified as OUT_OF_SCOPE: {result.get('rationale', '')}"],
                     "detail": "out_of_scope"}
+        elif status_code == "needs_human_review":
+            return {"gate": "scope", "status": "BLOCK",
+                    "issues": [f"Scope check failed closed — needs principal review: {result.get('rationale', '')}"],
+                    "detail": "needs_human_review"}
         elif status_code == "adjacent":
             vectors = result.get("topic_vectors", [])
             detail = f"adjacent — {len(vectors)} vectors found"

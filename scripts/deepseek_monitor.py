@@ -29,7 +29,9 @@ from urllib.error import URLError
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-API_KEY = os.environ.get("DEEPSEEK_API_KEY", "") or "sk-43a1775e4299496e97e96e8cab064e4e"
+API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
+if not API_KEY:
+    raise RuntimeError("DEEPSEEK_API_KEY not set — cannot query DeepSeek balance")
 BALANCE_URL = "https://api.deepseek.com/user/balance"
 
 WORKSPACE = Path.home() / ".openclaw" / "workspace"

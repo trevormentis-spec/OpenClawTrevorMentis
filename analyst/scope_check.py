@@ -234,8 +234,8 @@ HARD RULE: When in doubt, prefer adjacent over out_of_scope."""
 
     api_key = os.environ.get("DEEPSEEK_API_KEY", "")
     if not api_key:
-        return {"scope_status": "in_scope",
-                "rationale": "LLM unavailable. Defaulting to in_scope."}
+        return {"scope_status": "needs_human_review",
+                "rationale": "LLM unavailable. Fails closed — needs principal review."}
 
     payload = {
         "model": _model.split("/")[-1] if "/" in _model else _model,
@@ -266,19 +266,19 @@ HARD RULE: When in doubt, prefer adjacent over out_of_scope."""
         body = stdout[:idx] if idx >= 0 else stdout
         http_code = stdout[idx+1:].strip() if idx >= 0 else "000"
         if not http_code.startswith("2"):
-            return {"scope_status": "in_scope",
-                    "rationale": f"HTTP {http_code}. Defaulting to in_scope."}
+            return {"scope_status": "needs_human_review",
+                    "rationale": f"HTTP {http_code}. Fails closed — needs principal review."}
         resp = json.loads(body)
         content = resp["choices"][0]["message"]["content"].strip()
         if content.startswith("```"):
             content = re.sub(r"^```(?:json)?\n", "", content)
             content = re.sub(r"\n```$", "", content)
         parsed = json.loads(content)
-        return {"scope_status": parsed.get("scope_status", "in_scope"),
+        return {"scope_status": parsed.get("scope_status", "needs_human_review"),
                 "rationale": parsed.get("rationale", "")}
     except Exception as exc:
-        return {"scope_status": "in_scope",
-                "rationale": f"LLM failed ({exc}). Defaulting to in_scope."}
+        return {"scope_status": "needs_human_review",
+                "rationale": f"LLM failed ({exc}). Fails closed — needs principal review."}
 
 
 # ── Main check function ────────────────────────────────────────────────────

@@ -19,6 +19,8 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any, Optional
 
+from analyst.cost_ledger import CostLedger, BudgetExceededError
+
 # ── Configuration paths ──────────────────────────────────────────────────────
 WORKSPACE = Path(__file__).resolve().parent.parent
 CONFIG_PATH = WORKSPACE / "config" / "llm-routing.yaml"
@@ -50,14 +52,14 @@ MODEL_PROVIDER = {
 }
 
 # ── Task type routing rules ──────────────────────────────────────────────────
-# Each rule: default model, escalation triggers, downgrade triggers, budget cap
+# Each rule: default model, escalation triggers, downgrade triggers
+# Budget caps come from config/budget.yaml (single source of truth)
 TASK_RULES: dict[str, dict] = {
     "flagship_document": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,  # Already at top
         "downgrade_to": "anthropic/claude-sonnet-4.5",
         "downgrade_if": {"target_words_lt": 2000, "routine": True},
-        "budget_cap": 15.00,
         "quality_gates": ["scope_check", "fabrication_check", "themes_preflight", "completeness"],
     },
     "subscriber_brief": {
@@ -72,7 +74,6 @@ TASK_RULES: dict[str, dict] = {
         ],
         "downgrade_to": "deepseek/deepseek-v4-flash",
         "downgrade_if": {"target_words_lt": 1500, "routine": True},
-        "budget_cap": 5.00,
         "quality_gates": ["scope_check", "fabrication_check", "themes_preflight"],
     },
     "daily_ingestion": {
@@ -80,7 +81,6 @@ TASK_RULES: dict[str, dict] = {
         "escalate_to": "deepseek/deepseek-v4-pro",
         "escalate_if_any": ["complexity_high:true", "critical_source:true"],
         "downgrade_to": None,
-        "budget_cap": 2.00,
         "quality_gates": ["scope_check"],
     },
     "entity_deepening": {
@@ -89,14 +89,12 @@ TASK_RULES: dict[str, dict] = {
         "escalate_if_any": ["critical_entity:true", "target_words_gte:3000"],
         "downgrade_to": "deepseek/deepseek-v4-flash",
         "downgrade_if": {"routine": True},
-        "budget_cap": 5.00,
         "quality_gates": ["fabrication_check"],
     },
     "source_classification": {
         "default": "deepseek/deepseek-v4-flash",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 0.50,
         "quality_gates": [],
     },
     "translation": {
@@ -104,7 +102,6 @@ TASK_RULES: dict[str, dict] = {
         "escalate_to": "deepseek/deepseek-v4-pro",
         "escalate_if_any": ["formal_document:true", "legal_text:true"],
         "downgrade_to": None,
-        "budget_cap": 1.00,
         "quality_gates": [],
     },
     "calibration_review": {
@@ -112,7 +109,6 @@ TASK_RULES: dict[str, dict] = {
         "escalate_to": "anthropic/claude-opus-4.7",
         "escalate_if_any": ["high_stakes:true"],
         "downgrade_to": None,
-        "budget_cap": 3.00,
         "quality_gates": [],
     },
     "postdiction_analysis": {
@@ -121,14 +117,12 @@ TASK_RULES: dict[str, dict] = {
         "escalate_if_any": ["flagship_tag:true"],
         "downgrade_to": "deepseek/deepseek-v4-pro",
         "downgrade_if": {"routine": True},
-        "budget_cap": 5.00,
         "quality_gates": ["fabrication_check"],
     },
     "red_team_analysis": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 10.00,
         "quality_gates": ["scope_check", "fabrication_check"],
     },
     "framework_refinement": {
@@ -136,14 +130,12 @@ TASK_RULES: dict[str, dict] = {
         "escalate_to": None,
         "downgrade_to": "anthropic/claude-sonnet-4.5",
         "downgrade_if": {"incremental": True},
-        "budget_cap": 10.00,
         "quality_gates": [],
     },
     "source_brainstorm": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 5.00,
         "quality_gates": [],
     },
     "cross_source_correlation": {
@@ -152,7 +144,6 @@ TASK_RULES: dict[str, dict] = {
         "escalate_if_any": ["sources_gte:5", "critical_finding:true"],
         "downgrade_to": "deepseek/deepseek-v4-flash",
         "downgrade_if": {"sources_lt": 3},
-        "budget_cap": 3.00,
         "quality_gates": ["fabrication_check"],
     },
     "scope_classifier": {
@@ -160,91 +151,78 @@ TASK_RULES: dict[str, dict] = {
         "escalate_to": "deepseek/deepseek-v4-pro",
         "escalate_if_any": ["slow_path:true"],
         "downgrade_to": None,
-        "budget_cap": 0.50,
         "quality_gates": [],
     },
     "topic_onboarding_strategic": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 10.00,
         "quality_gates": [],
     },
     "topic_onboarding_tactical": {
         "default": "deepseek/deepseek-v4-pro",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 5.00,
         "quality_gates": [],
     },
     "topic_onboarding_operational": {
         "default": "deepseek/deepseek-v4-flash",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 2.00,
         "quality_gates": [],
     },
     "image_analysis": {
         "default": "anthropic/claude-vision",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 3.00,
         "quality_gates": [],
     },
     "image_generation": {
         "default": "nanobanana/image-gen",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 2.00,
         "quality_gates": [],
     },
     "audio_transcription": {
         "default": "openai/whisper-large-v3",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 2.00,
         "quality_gates": [],
     },
     "audio_generation": {
         "default": "elevenlabs/tts",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 3.00,
         "quality_gates": [],
     },
     "status_report": {
         "default": "deepseek/deepseek-v4-flash",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 0.50,
         "quality_gates": [],
     },
     "skill_discovery": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 5.00,
         "quality_gates": [],
     },
     "forum_synthesis": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 5.00,
         "quality_gates": [],
     },
     "capability_gap_review": {
         "default": "deepseek/deepseek-v4-pro",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 3.00,
         "quality_gates": [],
     },
     "custom_skill_proposal": {
         "default": "anthropic/claude-opus-4.7",
         "escalate_to": None,
         "downgrade_to": None,
-        "budget_cap": 5.00,
         "quality_gates": [],
     },
     "section_generation": {
@@ -253,7 +231,6 @@ TASK_RULES: dict[str, dict] = {
         "escalate_if_any": ["final_coherence_pass:true", "flagship_tag:true"],
         "downgrade_to": "deepseek/deepseek-v4-pro",
         "downgrade_if": {"routine": True, "target_words_lt": 500},
-        "budget_cap": 3.00,
         "quality_gates": ["fabrication_check"],
     },
 }
@@ -403,6 +380,7 @@ def route(
 ) -> GatingDecision:
     """
     Select appropriate model for task.
+    Checks budget envelope before proceeding.
 
     Args:
         task_type: One of the TASK_RULES keys
@@ -411,7 +389,21 @@ def route(
 
     Returns:
         GatingDecision with model, provider, cost estimate, and justification.
+
+    Raises:
+        BudgetExceededError if daily or monthly cap is exceeded.
     """
+    # Check budget before proceeding — fail-closed on cap breach
+    try:
+        ledger = CostLedger()
+        budget_status = ledger.check_budget()
+        if not budget_status["ok"]:
+            raise BudgetExceededError(
+                f"Budget check failed: {budget_status.get('errors', ['unknown'])}"
+            )
+    except BudgetExceededError:
+        raise  # Let callers handle budget halt gracefully
+
     if metadata is None:
         metadata = {}
 
