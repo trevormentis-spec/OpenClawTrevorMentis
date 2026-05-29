@@ -332,3 +332,4 @@
 {"timestamp": "2026-05-29T19:04:32.906949+00:00", "ticker": "KXWTIMAX-26DEC31-T200", "action": "BUY Yes", "error": "400 Bad Request: {'code': 'insufficient_balance', 'message': 'insufficient balance', 'service': 'exchange'}", "status": "failed"}
 {"timestamp": "2026-05-29T19:04:33.225401+00:00", "ticker": "KXWTIMAX-26DEC31-T200", "action": "BUY Yes", "error": "400 Bad Request: {'code': 'insufficient_balance', 'message': 'insufficient balance', 'service': 'exchange'}", "status": "failed"}
 {"timestamp": "2026-05-29T20:00:58.185505+00:00", "action": "PAUSED", "reason": "Balance too low: $0.24", "status": "paused"}
+{"timestamp": "2026-05-29T21:00:57.675871+00:00", "action": "PAUSED", "reason": "Balance too low: $0.24", "status": "paused"}

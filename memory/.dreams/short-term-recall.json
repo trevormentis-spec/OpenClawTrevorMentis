@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T20:01:04.688Z",
+  "updatedAt": "2026-05-29T21:19:26.644Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -225,13 +225,13 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 27 April 2026 ## US-Israel-Iran Conflict Intelligence Assessment Completed the full multi-phase intelligence workflow: ### Phase 1 — News Collection ✅ - Collected news from BBC, Gulf News, Iran International, AP, Al Jazeera (headlines) - Coverage: military ops, diplomacy, economics, political dynamics, humanitarian - File: `tmp/iran_war_news_data.md` ### Phase 2 — Gap Analysis ✅ - Identified 10 intelligence gaps (G1-G10) - Priority: social media intel, Iran civilian casualties, Houthi activity, Putin-Araghchi meeting results - File: `tmp/gap_analysis.md` ### Phase 3 — Social Media Collection ❌ (Gap) - xurl CLI installed but not authenticated (no X API tokens configured) - X/Twitter an",
-      "recallCount": 28,
+      "recallCount": 29,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 27.042409226740567,
+      "totalScore": 28.042409226740567,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-29T14:27:24.475Z",
+      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -260,7 +260,8 @@
         "b40e808eaeb3",
         "b9bf26d73c0d",
         "db415fb43a05",
-        "fc47a33fc731"
+        "fc47a33fc731",
+        "ff5340f29559"
       ],
       "recallDays": [
         "2026-04-29",
@@ -554,13 +555,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 22,
+      "recallCount": 23,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 21.611906618286376,
+      "totalScore": 22.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
+      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -583,7 +584,8 @@
         "b2960036661c",
         "2de51dfe8bc5",
         "cc764312eb50",
-        "1493103d7969"
+        "1493103d7969",
+        "ff5340f29559"
       ],
       "recallDays": [
         "2026-05-04",
@@ -597,7 +599,8 @@
         "2026-05-15",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-29"
       ],
       "conceptTags": [
         "gateway",
@@ -834,13 +837,13 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-05 — Tuesday ## GenViral Integration — OSINT Launch Plan - GenViral API key configured and verified: `gva_live_...` (Small tier, yearly, 2400 credits/mo) - Skill already installed at `workspace/skills/genviral/` — fully functional - Verified: 0 accounts connected (needs manual setup in GenViral dashboard) - Subscription: active, no credits used yet, reset May 5 2027 - defaults.yaml updated: timezone → America/Los_Angeles, posting times → 07:00/12:00/17:00 PT - GENVIRAL_API_KEY saved to .env + TOOLS.md - Updated `plans/osint-product-launch.md`: - Replaced fragmented posting tools (VibePost, Twitter API, browser automation) with GenViral - Added TikTok, Instagram, YouTube, Pint",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T08:13:34.521Z",
-      "lastRecalledAt": "2026-05-27T02:24:30.802Z",
+      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
       "queryHashes": [
         "50bca59fec26",
         "945ebcfdc68d",
@@ -850,7 +853,8 @@
         "29111942a45c",
         "0052d7c183bd",
         "1b9064ffbf19",
-        "87c4b8205f41"
+        "87c4b8205f41",
+        "ff5340f29559"
       ],
       "recallDays": [
         "2026-05-06",
@@ -858,7 +862,8 @@
         "2026-05-08",
         "2026-05-09",
         "2026-05-15",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-29"
       ],
       "conceptTags": [
         "gva-live",
@@ -3270,6 +3275,68 @@
         "kxusairanagreement-27-26jun",
         "kxtrumpiran-27jan01",
         "kalshi"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:32": {
+      "key": "memory:memory/2026-05-13.md:1:32",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-13 — Wednesday ## Pipeline Improvements (Phase 10 continuation — from tech-debt ledger) ### MD-06: GenViral aggregate stats (CLOSED) - Created `scripts/genviral_stats.py` — aggregates 52 GenViral posts by platform, date, hook_type - Generated `exports/social/genviral-stats-2026-05-13.md` - Results: LinkedIn 18, Twitter 18, TikTok 16. All 0 views — GenViral doesn't push engagement metrics back ### MD-01: Local-language sources (CLOSED) - Added 21 non-English/local-language sources to `analyst/meta/sources.json`: - Persian/Farsi: Mehr News, Tasnim News (IRGC-aligned) - Arabic: Al Arabiya (EN+AR), Asharq Al-Awsat (EN+AR) - Russian: TASS, Meduza (EN+RU), Moscow Times, Kommersa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T21:19:26.644Z",
+      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
+      "queryHashes": [
+        "ff5340f29559"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "tech-debt",
+        "md-06",
+        "scripts/genviral-stats.py",
+        "hook-type",
+        "md-01",
+        "local-language",
+        "non-english/local-language",
+        "analyst/meta/sources.json"
+      ]
+    },
+    "memory:memory/2026-05-10.md:1:24": {
+      "key": "memory:memory/2026-05-10.md:1:24",
+      "path": "memory/2026-05-10.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-05-10 ## Cron: Improvement Daemon — Hourly Market Check - 04:04 UTC — improvement_daemon.py --hourly completed cleanly. No output beyond completion. ## Social Tracker Fix (16:00 UTC) **Issue:** Cron-run `social-tracker.py` couldn't read `MOLTBOOK_API_KEY` or `GENVIRAL_API_KEY` from `.env` — they were only available when `source .env` was run first. Cron jobs don't source `.env` automatically. **Fix:** Added `.env` auto-loader to `scripts/social-tracker.py` (lines 4-11) using `pathlib` + `os.environ.setdefault()`. This reads the `.env` file at startup regardless of execution context. **Result after fix:** - **Moltbook:** ✅ Working — karma 26, 4 posts, 5 upvotes, no spam flags - **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-29T21:19:26.644Z",
+      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
+      "queryHashes": [
+        "ff5340f29559"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "improvement-daemon.py",
+        "cron-run",
+        "social-tracker.py",
+        "moltbook-api-key",
+        "genviral-api-key",
+        "auto-loader",
+        "scripts/social-tracker.py",
+        "4-11"
       ]
     }
   }

@@ -439,7 +439,7 @@ class PositionManager:
                 "cash_balance": self.cash_balance,
                 "peak_value": self.peak_value,
                 "starting_value": self.starting_value,
-                "daily_pnl": self.daily_pnl,
+                "daily_pnl": round(self.portfolio_value - self.starting_value, 2),
                 "today_str": self.today_str,
                 "last_updated": dt.datetime.now(dt.timezone.utc).isoformat(),
             }
@@ -512,10 +512,20 @@ class PositionManager:
             return ticker in self.positions
 
     async def get_daily_pnl_pct(self) -> float:
+        """Daily P&L as percentage. Computed as (current - start) / start.
+        
+        Handles losses correctly — no accumulator, just pure difference
+        from the starting value at beginning of day.
+        """
         async with self._lock:
             if self.starting_value <= 0:
                 return 0.0
-            return (self.daily_pnl / self.starting_value) * 100.0
+            return ((self.portfolio_value - self.starting_value) / self.starting_value) * 100.0
+
+    async def get_daily_pnl_dollars(self) -> float:
+        """Daily P&L in dollars. Pure current - starting."""
+        async with self._lock:
+            return self.portfolio_value - self.starting_value
 
     async def get_drawdown_pct(self) -> float:
         async with self._lock:
