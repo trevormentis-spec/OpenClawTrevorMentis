@@ -88,15 +88,20 @@ def _save_circuit_breaker(cb: dict):
 def _check_circuit_breaker() -> str:
     """Check if circuit is open. Returns empty string if ok, pause reason if blocked."""
     cb = _load_circuit_breaker()
+    today = dt.date.today().isoformat()
+    # Auto-reset when a new UTC day starts (paused or not)
+    if cb.get("date") != today:
+        _save_circuit_breaker({
+            "paused": False,
+            "reason": "",
+            "paused_at": None,
+            "consecutive_failures": 0,
+            "today_attempts": 0,
+            "date": today,
+        })
+        return ""
     if cb.get("paused"):
         return cb.get("reason", "circuit breaker active")
-    # Reset counters if day changed
-    today = dt.date.today().isoformat()
-    if cb.get("date") != today:
-        cb["date"] = today
-        cb["today_attempts"] = 0
-        cb["consecutive_failures"] = 0
-        _save_circuit_breaker(cb)
     # Check daily limit
     if cb.get("today_attempts", 0) >= MAX_TRADE_ATTEMPTS_PER_DAY:
         return f"daily max attempts reached ({MAX_TRADE_ATTEMPTS_PER_DAY})"
@@ -426,6 +431,7 @@ def execute_trade(signal: dict, client: Any, dry_run: bool = False) -> dict | No
 
 def cmd_scan_and_trade(args):
     """Full cycle: detect edges → execute trades."""
+    global _TRADER_PAUSED, _TRADER_PAUSE_REASON, _TRADER_PAUSE_SENT
     if not KALSHI_AVAILABLE:
         log("Kalshi client not available — can't trade")
         return 1
