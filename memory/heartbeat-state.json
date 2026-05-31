@@ -18,12 +18,12 @@
     "phase_c": 1779650985,
     "prune_cycle": 1780064949
   },
-  "lastHeartbeat": 1780064949,
+  "lastHeartbeat": 1780243147,
   "rotationCursor": 0,
   "previousPhase": "C",
-  "currentPhase": null,
+  "currentPhase": "A",
   "nextPhase": "A",
-  "phaseAStatus": "completed",
+  "phaseAStatus": "in_progress",
   "phaseANotes": {
     "feedsTested": 723,
     "working": 298,
