@@ -52,6 +52,26 @@ NEWSLETTER_SENDERS = [
     "cipherbrief", "foreignpolicy", "defenseone",
 ]
 
+# Noise senders — these are NOT intelligence content and should be filtered out
+# before writing to news_raw.md
+NOISE_SENDERS = [
+    "wirecutter@nytimes.com",           # Product recommendations
+    "nytdirect@nytimes.com",            # NYT newsletters (Morning, etc.)
+    "noreply@news.bloomberg.com",       # Bloomberg newsletters
+    "bloomberg.com",                    # Any Bloomberg newsletter
+    "citylab@bloomberg.com",            # CityLab
+    "substack.com",                     # Substack promotions (keep actual content)
+    "medium.com",                       # Medium digest
+]
+
+# Subject-line patterns that indicate non-intel content
+NOISE_SUBJECT_PATTERNS = [
+    r"Your (daily|weekly|morning) (briefing|digest|roundup|newsletter)",
+    r"Deal[s]? of the (day|week)",
+    r"Sponsored",
+    r"Advertisement",
+]
+
 USER_AGENT = "TrevorGmailReader/1.0"
 
 
@@ -160,6 +180,22 @@ def classify_email(msg_data: dict) -> dict:
         "importance": "low",
     }
 
+    # Check against noise sender blocklist FIRST
+    for noise_sender in NOISE_SENDERS:
+        if noise_sender in sender:
+            classification["type"] = "noise"
+            classification["is_intel"] = False
+            classification["importance"] = "low"
+            return classification  # Short-circuit: noise is never intel
+
+    # Check subject against noise patterns
+    for pattern in NOISE_SUBJECT_PATTERNS:
+        if re.search(pattern, subject, re.IGNORECASE):
+            classification["type"] = "noise"
+            classification["is_intel"] = False
+            classification["importance"] = "low"
+            return classification  # Short-circuit
+
     # Check sender against known intel sources
     for src in KNOWN_INTEL_SOURCES:
         if src in sender:
@@ -207,6 +243,13 @@ def fetch_and_classify(query: str = "", max_results: int = 20) -> list[dict]:
         classification = classify_email(msg_data)
         headers = parse_headers(msg_data.get("payload", {}))
         text = extract_text_from_parts(msg_data.get("payload", {}))
+
+        # Log noise skips for visibility
+        if classification.get("type") == "noise":
+            subject_short = (headers.get("subject", "") or "")[:60]
+            sender_short = (headers.get("from", "") or "")[:40]
+            log(f"Noise filter: skipping '{subject_short}' from {sender_short}")
+            continue  # Don't add noise to results at all
 
         results.append({
             "id": msg_id,

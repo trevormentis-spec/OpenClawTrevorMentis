@@ -1,0 +1,48 @@
+# config/provider-routing.yaml
+# Provider fallback chain for daily intel pipeline
+# Tier 1 = primary, Tier 2 = first fallback, Tier 3 = last resort
+#
+# The supervisor (daily-brief-supervisor.py and daily-text-brief.sh) uses this
+# to determine which provider to call for each model role. The fallback chain
+# is tried in order until a provider responds successfully.
+
+version: 1
+
+providers:
+  openrouter:
+    priority: 1
+    models:
+      exec_summary: "deepseek/deepseek-v4-pro"
+      regional_analysis: "deepseek/deepseek-v4-pro"
+      red_team: "deepseek/deepseek-v4-pro"
+    circuit_breaker:
+      consecutive_failures: 3
+      recovery_interval_sec: 1800
+
+  anthropic_direct:
+    priority: 2
+    api_key_env: "ANTHROPIC_API_KEY"
+    models:
+      exec_summary: "claude-opus-4.7"
+      regional_analysis: "claude-sonnet-4.5"
+      red_team: "claude-sonnet-4.5"
+    circuit_breaker:
+      consecutive_failures: 3
+      recovery_interval_sec: 1800
+
+  deepseek_direct:
+    priority: 3
+    models:
+      exec_summary: "deepseek/deepseek-v4-pro"
+      regional_analysis: "deepseek/deepseek-v4-flash"
+      red_team: "deepseek/deepseek-v4-flash"
+    circuit_breaker:
+      consecutive_failures: 3
+      recovery_interval_sec: 1800
+
+routing:
+  default_model: "deepseek/deepseek-v4-pro"
+  fallback_chain:
+    - openrouter
+    - anthropic_direct
+    - deepseek_direct

@@ -18,6 +18,26 @@ import sys
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW_NEWS_FILE = REPO_ROOT / "tasks" / "news_raw.md"
 
+# Noise senders — these are NOT intelligence content and should be filtered out
+# before writing to news_raw.md
+NOISE_SENDERS = [
+    "wirecutter@nytimes.com",           # Product recommendations
+    "nytdirect@nytimes.com",            # NYT newsletters (Morning, etc.)
+    "noreply@news.bloomberg.com",       # Bloomberg newsletters
+    "bloomberg.com",                    # Any Bloomberg newsletter
+    "citylab@bloomberg.com",            # CityLab
+    "substack.com",                     # Substack promotions (keep actual content)
+    "medium.com",                       # Medium digest
+]
+
+# Subject-line patterns that indicate non-intel content
+NOISE_SUBJECT_PATTERNS = [
+    r"Your (daily|weekly|morning) (briefing|digest|roundup|newsletter)",
+    r"Deal[s]? of the (day|week)",
+    r"Sponsored",
+    r"Advertisement",
+]
+
 def log(msg: str) -> None:
     ts = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S")
     print(f"[agentmail-read {ts}] {msg}", file=sys.stderr, flush=True)
@@ -57,9 +77,30 @@ def fetch_messages(api_key: str, max_msgs: int = 10) -> list[dict]:
             from_addr = str(m.from_ or "")
             if "trevor" in from_addr.lower():
                 continue
+
+            # Skip noise senders
+            subject = (m.subject or "(no subject)")
+            is_noise = False
+            for noise_sender in NOISE_SENDERS:
+                if noise_sender in from_addr.lower():
+                    log(f"Noise filter: skipping '{subject[:60]}' from {from_addr[:40]}")
+                    is_noise = True
+                    break
+            if is_noise:
+                continue
+
+            # Skip noise subject patterns
+            for pattern in NOISE_SUBJECT_PATTERNS:
+                if re.search(pattern, subject, re.IGNORECASE):
+                    log(f"Noise filter: skipping '{subject[:60]}' (subject pattern)")
+                    is_noise = True
+                    break
+            if is_noise:
+                continue
+
             results.append({
                 "from": from_addr,
-                "subject": m.subject or "(no subject)",
+                "subject": subject,
                 "body": (m.preview or "")[:500],
                 "created_at": str(m.created_at)[:19],
             })

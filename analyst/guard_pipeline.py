@@ -8,6 +8,7 @@ Gate 3: CALIBRATION   — Sherman Kent band ↔ numeric prediction agreement?
 Gate 4: COMPLETENESS   — Truncation? Word count in range? Missing sections?
 Gate 5: SCOPE         — Content within assignment scope? (via scope_check)
 Gate 6: RED_TEAM      — Forced dissent note exists?
+Gate 7: BAND_DIVERSITY — At least 3 distinct Sherman Kent bands used across all KJs?
 
 Each gate returns: {status: PASS|WARN|BLOCK, issues: [...], detail: str}
 BLOCK = stop delivery. WARN = log but proceed.
@@ -561,6 +562,81 @@ def gate_red_team(analysis_dir: pathlib.Path) -> dict[str, Any]:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# Gate 7: BAND_DIVERSITY — check that KJs use at least 3 distinct Sherman Kent bands
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def gate_band_diversity(analysis_dir: pathlib.Path) -> dict[str, Any]:
+    """Check that KJs use at least 3 different Sherman Kent bands.
+
+    Bands: almost no chance, unlikely, roughly even chance,
+           probable/likely, highly likely, almost certain
+
+    Returns: PASS if =3 bands used, WARN if 2 bands, BLOCK if 1 band
+    """
+    issues: list[str] = []
+    detail_parts: list[str] = []
+
+    bands_found: set[str] = set()
+    total_kjs = 0
+
+    # Normalized band groups — different phrasings that mean the same band
+    BAND_GROUPS: dict[str, set[str]] = {
+        "almost no chance": {"almost no chance", "remote"},
+        "unlikely": {"unlikely", "probably not", "improbable"},
+        "roughly even chance": {"roughly even chance", "even chance", "chances about even",
+                                "about even", "even odds"},
+        "likely": {"likely", "probable", "probably"},
+        "highly likely": {"highly likely", "very likely"},
+        "almost certain": {"almost certain", "near certain", "virtually certain"},
+    }
+
+    # Build reverse lookup: lowercase phrase -> canonical band name
+    phrase_to_canonical: dict[str, str] = {}
+    for canon, phrases in BAND_GROUPS.items():
+        for p in phrases:
+            phrase_to_canonical[p] = canon
+
+    for region_file in sorted(analysis_dir.glob("*.json")):
+        if region_file.name == "exec_summary.json":
+            continue
+        try:
+            payload = json.loads(region_file.read_text())
+        except Exception:
+            continue
+
+        for kj in payload.get("key_judgments", []) or []:
+            total_kjs += 1
+            band = (kj.get("sherman_kent_band") or "").lower().strip()
+            if band:
+                # Map to canonical band
+                canonical = phrase_to_canonical.get(band, band)
+                bands_found.add(canonical)
+
+    unique_bands = len(bands_found)
+    detail_parts.append(f"{unique_bands} unique bands across {total_kjs} KJs: {', '.join(sorted(bands_found))}")
+
+    if unique_bands <= 1:
+        status = "BLOCK"
+        issues.append(
+            f"BAND DIVERSITY FAILURE: Only {unique_bands} Sherman Kent band(s) used "
+            f"across {total_kjs} KJs. Need at least 3 for sound methodology."
+        )
+        if bands_found:
+            issues.append(f"Band(s) used: {', '.join(sorted(bands_found))}")
+    elif unique_bands == 2:
+        status = "WARN"
+        issues.append(
+            f"BAND DIVERSITY WARNING: Only {unique_bands} bands used "
+            f"({', '.join(sorted(bands_found))}). Consider adding a third for better calibration."
+        )
+    else:
+        status = "PASS"
+
+    return {"gate": "band_diversity", "status": status, "issues": issues,
+            "detail": "; ".join(detail_parts)}
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # PIPELINE RUNNER
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -570,7 +646,7 @@ def run_pipeline(
     verbose: bool = False,
     block_on_warn: bool = False,
 ) -> dict[str, Any]:
-    """Run all 7 quality gates on a brief directory. Returns aggregated report."""
+    """Run all 8 quality gates on a brief directory. Returns aggregated report."""
     wd = pathlib.Path(brief_dir).expanduser().resolve()
     analysis_dir = wd / "analysis"
 
@@ -594,6 +670,7 @@ def run_pipeline(
         gate_completeness(analysis_dir),
         gate_scope(analysis_dir, scope_topic=query, verbose=verbose),
         gate_red_team(analysis_dir),
+        gate_band_diversity(analysis_dir),
     ]
 
     # Apply block_on_warn — escalate WARN to BLOCK

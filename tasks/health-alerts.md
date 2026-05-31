@@ -1,12 +1,8 @@
 # Trevor Health Alerts
 
-**Generated:** 2026-05-31T17:13:29.393482+00:00
+**Generated:** 2026-05-31T17:58:29.394438+00:00
 **Health Score:** CRITICAL (0/100)
-**Total Alerts:** 6
-
-⚠️ **[WARNING]** cron_health: Correlated error across 3 jobs: cron: job interrupted by gateway restart
-   Affected jobs: 0eb2de56, a1d90107, 82c2e29c
-   Root cause: unknown
+**Total Alerts:** 5
 
 ⚠️ **[WARNING]** cron_health: Correlated error across 7 jobs: FailoverError: ⚠️ deepseek (deepseek-v4-flash) returned a bi
    Affected jobs: ae0d522f, cb039bf5, f10da54a, 1976bd12, 7ca66311
@@ -20,7 +16,7 @@
    Affected jobs: 5026ed81, a20962e6, ce4cb113
    Root cause: unknown
 
-🔴 **[CRITICAL]** cron_health: 18/34 enabled jobs failing (52.9%)
+🔴 **[CRITICAL]** cron_health: 17/34 enabled jobs failing (50.0%)
    Root cause: >50% of enabled cron jobs failing
 
 🔴 **[CRITICAL]** cron_health: Systemic billing error affecting 12 jobs

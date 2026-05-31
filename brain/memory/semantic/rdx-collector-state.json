@@ -1,6 +1,6 @@
 {
   "last_gdelt": "2026-05-31T17:00:08.375652+00:00",
-  "last_osint": "2026-05-29T17:30:08.709938+00:00",
+  "last_osint": "2026-05-31T17:30:07.707037+00:00",
   "last_contracts": null,
   "seen_articles": [
     "The fatal blast at a military munitions factory was a chain reaction of up to 28|https://news.google.com/rss/articles/CBMiugFBVV95cUxNbHVhejlGekdCQl9zOVhvZGhTeFp",
@@ -64,10 +64,10 @@
     "16 people presumed dead after explosion at Middle TN explosives company, sheriff|https://news.google.com/rss/articles/CBMivgFBVV95cUxOLUZjQjZKeHN3aWxGRWlKUlZBQVl"
   ],
   "seen_events": [
-    "Defence-Blog|BAE Systems|tect-tanks-from-missiles-and-drones/\"  rel=\"bookmark\" class=",
-    "Defence-Blog|BAE Systems|icks-bae-systems-to-protect-tanks-from-missiles-and-drones/\"",
-    "Defence-Blog|BAE Systems|                    <div class=\"td-excerpt\">BAE Systems buil",
     "Defence-Blog|BAE Systems|ivers-its-self-funded-ampv-drone-killer-to-the-army/\"  rel=\"",
+    "Defence-Blog|BAE Systems|                    <div class=\"td-excerpt\">BAE Systems buil",
+    "Defence-Blog|BAE Systems|icks-bae-systems-to-protect-tanks-from-missiles-and-drones/\"",
+    "Defence-Blog|BAE Systems|tect-tanks-from-missiles-and-drones/\"  rel=\"bookmark\" class=",
     "Defence-Blog|BAE Systems|log.com/bae-systems-delivers-its-self-funded-ampv-drone-kill"
   ]
 }

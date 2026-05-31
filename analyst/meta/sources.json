@@ -13106,6 +13106,60 @@
       "discovered": "2026-05-31",
       "signal_level": "Medium",
       "region": "south_east_asia"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The global contest for the Pacific | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "There is a danger that the heat of competition will increase domestic discord in Pacific countries, especially if aid is channelled directly through p",
+      "url": "https://www.lowyinstitute.org/the-interpreter/global-contest-pacific",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "oceania"
     }
   ],
   "moltbook_sources": [

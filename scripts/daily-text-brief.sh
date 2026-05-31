@@ -49,6 +49,8 @@ set +a
 export DEEPSEEK_API_KEY="${DEEPSEEK_API_KEY:-}"
 export AGENTMAIL_API_KEY="${AGENTMAIL_API_KEY:-}"
 export OPENROUTER_API_KEY="${OPENROUTER_API_KEY:-}"
+export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-}"
+export AVAILABLE_PROVIDER="${AVAILABLE_PROVIDER:-}"
 cd "$REPO"
 
 # =========================================================================
@@ -77,6 +79,63 @@ set -e 2>/dev/null || true
 # Commented rather than removed to preserve line numbering for any external references.
 
 # =========================================================================
+# STEP 1e: PROVIDER HEALTH CHECK — pre-flight probe
+# =========================================================================
+# Tests all three providers before spending time on collection.
+# Exits gracefully: aborts only if ALL providers fail.
+# Exports AVAILABLE_PROVIDER for orchestrator consumption.
+# =========================================================================
+
+echo "--- Provider health check (pre-flight) ---" | tee -a "$LOG"
+set +e
+HEALTH_CHECK=$(python3 "$REPO/scripts/provider_health_check.py" --json 2>&1)
+HEALTH_RC=$?
+set -e 2>/dev/null || true
+
+# Log the health check results
+echo "$HEALTH_CHECK" | python3 -c "
+import sys, json
+try:
+    data = json.load(sys.stdin)
+    providers = data.get('providers', [])
+    for p in providers:
+        icon = {'ok': '✅', 'degraded': '⚠️', 'failed': '❌'}.get(p['status'], '❓')
+        bill = ' [BILLING]' if p.get('billing_issue') else ''
+        lat = f\"{p['latency_ms']}ms\" if p['latency_ms'] >= 0 else 'N/A'
+        print(f\"  {icon} {p['provider']}: {p['status']}{bill} ({lat})\")
+        if p.get('reason'):
+            print(f\"     Reason: {p['reason']}\")
+    print(f\"Exit code: {data.get('exit_code')}\")
+except Exception as e:
+    print(f\"Health check parse error: {e}\")
+" >> "$LOG"
+
+if [ "$HEALTH_RC" -eq 1 ]; then
+    echo "FATAL: ALL providers failed health check. Aborting pipeline." | tee -a "$LOG"
+    echo "=== Daily Text Brief FAILED — ${DATE_UTC} ===" | tee -a "$LOG"
+    exit 1
+fi
+
+# Export the best available provider for orchestrator use
+export AVAILABLE_PROVIDER=$(echo "$HEALTH_CHECK" | python3 -c "
+import sys, json
+try:
+    data = json.load(sys.stdin)
+    providers = data.get('providers', [])
+    # Prefer openrouter > anthropic > deepseek
+    for name in ['openrouter', 'anthropic_direct', 'deepseek_direct']:
+        for p in providers:
+            if p['provider'] == name and p['status'] == 'ok':
+                print(name)
+                sys.exit(0)
+    print('none')
+except:
+    print('none')
+" 2>/dev/null)
+
+echo "Available provider: ${AVAILABLE_PROVIDER:-none}" | tee -a "$LOG"
+
+# =========================================================================
 # STEP 2: ORCHESTRATOR — collect + analyze
 # =========================================================================
 #
@@ -100,8 +159,38 @@ python3 skills/daily-intel-brief/scripts/orchestrate.py \
     >> "$LOG" 2>&1
 ORCH_RC=${PIPESTATUS[0]}
 
+# Fallback: if OpenRouter fails, try Anthropic Direct
+if [ "${ORCH_RC}" -ne 0 ] && [ -n "${ANTHROPIC_API_KEY:-}" ]; then
+    echo "OpenRouter failed (rc=${ORCH_RC}), retrying with Anthropic Direct..." | tee -a "$LOG"
+    python3 skills/daily-intel-brief/scripts/orchestrate.py \
+        --model "anthropic/claude-opus-4.7" \
+        --tier2-model "anthropic/claude-sonnet-4.5" \
+        --provider openrouter \
+        --tier2-provider openrouter \
+        --redteam-model "anthropic/claude-sonnet-4.5" \
+        --redteam-provider openrouter \
+        --no-deliver \
+        >> "$LOG" 2>&1
+    ORCH_RC=${PIPESTATUS[0]}
+fi
+
+# If both failed, try DeepSeek Direct as last resort
+if [ "${ORCH_RC}" -ne 0 ] && [ -n "${DEEPSEEK_API_KEY:-}" ]; then
+    echo "Anthropic fallback failed (or skipped), retrying with DeepSeek Direct..." | tee -a "$LOG"
+    python3 skills/daily-intel-brief/scripts/orchestrate.py \
+        --model "deepseek/deepseek-v4-pro" \
+        --tier2-model "deepseek/deepseek-v4-flash" \
+        --provider openrouter \
+        --tier2-provider openrouter \
+        --redteam-model "deepseek/deepseek-v4-flash" \
+        --redteam-provider openrouter \
+        --no-deliver \
+        >> "$LOG" 2>&1
+    ORCH_RC=${PIPESTATUS[0]}
+fi
+
 if [ "${ORCH_RC}" -ne 0 ]; then
-    echo "FATAL: Orchestrator failed with rc=${ORCH_RC}" | tee -a "${LOG}"
+    echo "FATAL: Orchestrator failed with rc=${ORCH_RC} after all fallback attempts." | tee -a "${LOG}"
     echo "DELIVERY ABORTED — orchestrator must succeed before quality gate can run." | tee -a "${LOG}"
     echo "=== Daily Text Brief FAILED — ${DATE_UTC} ===" | tee -a "${LOG}"
     exit 1
@@ -130,7 +219,7 @@ set -e 2>/dev/null || true
 # =========================================================================
 # STEP 3: QUALITY GATE (standalone — runs OUTSIDE orchestrator)
 # =========================================================================
-# The unified quality gate (analyst/guard_pipeline.py) runs ALL 7 gates:
+# The unified quality gate (analyst/guard_pipeline.py) runs ALL 8 gates:
 # 0. STRUCTURAL — files present and valid JSON
 # 1. FABRICATION — unverified contracts/prices/tickers/pct claims
 # 2. THEMES — required theme coverage
@@ -138,6 +227,7 @@ set -e 2>/dev/null || true
 # 4. COMPLETENESS — no truncation, adequate word count, all sections
 # 5. SCOPE — topic within assignment scope
 # 6. RED_TEAM — forced dissent note exists and is substantive
+# 7. BAND_DIVERSITY — at least 3 distinct Sherman Kent bands across all KJs
 #
 # Model enforcement: also checks that V4 Pro was used (not Flash)
 # =========================================================================
@@ -205,7 +295,65 @@ if [ $QG_RC -ne 0 ] || [ $MODEL_CHECK_RC -ne 0 ]; then
 fi
 
 # =========================================================================
-# STEP 4: DELIVERY — only if ALL gates pass + model is correct
+# STEP 3b: OPUS QC REVIEW (pre-delivery — runs BEFORE delivery, blocks if FAIL/CRITICAL)
+# =========================================================================
+# Runs Claude Opus 4.7 deep quality audit via opus_qc_review.py.
+# This was originally a post-delivery watchdog (qc-watchdog.sh). Moving it here
+# ensures no flawed brief reaches the principal.
+# =========================================================================
+
+echo "--- Running Opus QC review (pre-delivery) ---" | tee -a "$LOG"
+
+set +e
+OPUS_QC_OUTPUT=$(python3 "$REPO/scripts/opus_qc_review.py" \
+    --brief-dir "$WORKING_DIR" \
+    --json 2>>"$LOG")
+OPUS_QC_RC=$?
+set -e 2>/dev/null || true
+
+OPUS_QC_OVERALL=$(echo "$OPUS_QC_OUTPUT" | python3 -c "
+import sys, json
+try:
+    r = json.load(sys.stdin)
+    print(r.get('overall', 'UNKNOWN'))
+except:
+    print('PARSE_ERROR')
+" 2>/dev/null || echo "PARSE_ERROR")
+
+echo "Opus QC result: $OPUS_QC_OVERALL" | tee -a "$LOG"
+
+# Log detailed findings
+echo "$OPUS_QC_OUTPUT" | python3 -c "
+import sys, json
+try:
+    r = json.load(sys.stdin)
+    print('Opus QC dimensions:')
+    for dim, data in r.get('dimensions', {}).items():
+        rating = data.get('rating', '?')
+        icon = {'PASS': '✅', 'WARN': '⚠️', 'FAIL': '❌', 'CRITICAL': '🚨'}.get(rating, '?')
+        print(f'  {icon} {dim}: {rating}')
+        for finding in data.get('findings', [])[:3]:
+            print(f'     → {finding}')
+    overall = r.get('overall_note', '')
+    if overall:
+        print(f'Overall note: {overall}')
+except Exception as e:
+    print(f'Opus QC parse error: {e}')
+" >> "$LOG" 2>&1
+
+if [ "$OPUS_QC_OVERALL" = "FAIL" ] || [ "$OPUS_QC_OVERALL" = "CRITICAL" ]; then
+    echo "FATAL: Opus QC returned ${OPUS_QC_OVERALL} — brief does not pass quality audit." | tee -a "$LOG"
+    echo "DELIVERY ABORTED — fix quality issues and re-run." | tee -a "$LOG"
+    echo "=== Daily Text Brief FAILED — $(date -u) ===" | tee -a "$LOG"
+    exit 1
+elif [ "$OPUS_QC_OVERALL" = "WARN" ] || [ "$OPUS_QC_OVERALL" = "PASS" ]; then
+    echo "Opus QC ${OPUS_QC_OVERALL} — delivery proceeds with confidence." | tee -a "$LOG"
+else
+    echo "WARNING: Opus QC returned '${OPUS_QC_OVERALL}' (unknown) — proceeding cautiously." | tee -a "$LOG"
+fi
+
+# =========================================================================
+# STEP 4: DELIVERY — only if ALL gates pass + model is correct + Opus QC passes
 # =========================================================================
 
 if [ -n "${AGENTMAIL_API_KEY:-}" ]; then
