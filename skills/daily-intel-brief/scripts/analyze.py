@@ -655,25 +655,28 @@ def main() -> int:
             except Exception as exc:
                 log(f"collection state load failed ({exc}) — confidence conditioning disabled")
 
-    # Step 0e — inject calibration feedback into system prompt
-    # If behavioral state is loaded, use its calibration directives (they are the compiled version)
+    # Step 0e — inject calibration feedback into ALL prompt templates
+    # Build calibration directives text, then replace {calibration_directives} placeholders
+    # in system prompt, regional template, exec template, and red team template.
+    cal_block = "No calibration data available. Proceed with default bands."
+    
     if behavioral_state:
         # Behavioral state already contains compiled calibration + collection + event directives
         cal_dirs = behavioral_state.get("calibration_directives", {})
-        cal_parts = ["\n\n### === CALIBRATION FEEDBACK (from behavioral state) ==="]
+        cal_parts = ["CALIBRATION FEEDBACK FROM YESTERDAY (behavioral state):"]
 
         overall = cal_dirs.get("overall", {})
         total = overall.get("total_judgments", 0)
         if total > 0:
             cal_parts.append(
-                f"\nOverall: {overall.get('correct', 0)}/{total} correct "
+                f"Overall: {overall.get('correct', 0)}/{total} correct "
                 f"({overall.get('accuracy_pct', 0)}%). Posture: {overall.get('posture', 'hold_bands')}."
             )
 
-        # Concrete per-band downshift directives (from compile_calibration_directives.py)
+        # Concrete per-band downshift directives
         band_directives = cal_dirs.get("band_directives", [])
         if band_directives:
-            cal_parts.append("\nBand-level adjustments (mandatory):")
+            cal_parts.append("Band-level adjustments (mandatory):")
             for bd in band_directives:
                 cal_parts.append(
                     f"  • '{bd['band']}' is {int(bd['accuracy']*100)}% accurate over "
@@ -682,36 +685,29 @@ def main() -> int:
 
         if overall.get("unresolved", 0) > 10:
             cal_parts.append(
-                f"\n⚠ {overall['unresolved']}/{total} judgments unresolved. "
+                f"⚠ {overall['unresolved']}/{total} judgments unresolved. "
                 "High uncertainty environment — restrict top confidence bands."
             )
 
         if overall.get("overconfidence_regions"):
             cal_parts.append(
-                f"\n⚠ Overconfidence detected in: "
+                f"⚠ Overconfidence detected in: "
                 f"{', '.join(overall['overconfidence_regions'])}. "
                 "Widen bands by one notch for these regions/themes."
             )
 
-        cal_parts.append("\n\n=== END CALIBRATION FEEDBACK ===")
         cal_block = "\n".join(cal_parts)
+        log(f"built behavioral calibration directives ({len(cal_block)} chars)")
         
-        insert_point = system.find("Discipline:")
-        if insert_point >= 0:
-            system = system[:insert_point] + cal_block + "\n\n" + system[insert_point:]
-            log(f"injected behavioral calibration feedback ({len(cal_block)} chars)")
-        else:
-            system = system + cal_block
-            log(f"injected behavioral calibration feedback at end")
     elif args.calibration and os.path.exists(args.calibration):
         try:
             cal_data = json.loads(pathlib.Path(args.calibration).read_text())
-            cal_parts = ["\n\n### === CALIBRATION FEEDBACK ==="]
+            cal_parts = ["CALIBRATION FEEDBACK FROM YESTERDAY:"]
             
-            # Check for overconfidence flags
+            # Overconfidence flags
             flags = cal_data.get("overconfidence_flags", [])
             if flags:
-                cal_parts.append("\nOverconfidence signals detected in recent assessments:")
+                cal_parts.append("Overconfidence signals detected in recent assessments:")
                 for f in flags:
                     cal_parts.append(
                         f"  • {f.get('region','?')}: {f.get('band','?')} at {f.get('pct','?')}% "
@@ -719,17 +715,17 @@ def main() -> int:
                         f"{f.get('flag','widen bands')}"
                     )
                 cal_parts.append(
-                    "\nAction: Widen confidence bands by one level for the flagged regions. "
+                    "Action: Widen confidence bands by one level for the flagged regions. "
                     "Instead of 'highly likely', use 'likely'. Instead of 'likely', use 'even chance'. "
                     "Narrow bands require diverse, multi-source confirmation."
                 )
             
-            # Check per-band calibration
+            # Per-band calibration
             bands = cal_data.get("by_confidence_band", {})
             for band_name, stats in bands.items():
                 if stats.get("total", 0) >= 3 and stats.get("correct", 0) == 0:
                     cal_parts.append(
-                        f"\n  ⚠ Band '{band_name}' has {stats['total']} judgments with zero confirmed correct. "
+                        f"  ⚠ Band '{band_name}' has {stats['total']} judgments with zero confirmed correct. "
                         f"Avoid this band until calibration improves."
                     )
             
@@ -740,22 +736,17 @@ def main() -> int:
                 incorrect = cal_data.get("incorrect", 0)
                 pct = round(correct / max(total, 1) * 100, 1)
                 cal_parts.append(
-                    f"\nRunning calibration: {correct}/{total} correct ({pct}%). "
+                    f"Running calibration: {correct}/{total} correct ({pct}%). "
                     f"{incorrect} incorrect, {total - correct - incorrect} unresolved."
                 )
             
-            cal_parts.append("\n\n=== END CALIBRATION FEEDBACK ===")
             cal_block = "\n".join(cal_parts)
-            
-            insert_point = system.find("Discipline:")
-            if insert_point >= 0:
-                system = system[:insert_point] + cal_block + "\n\n" + system[insert_point:]
-                log(f"injected calibration feedback ({len(cal_block)} chars) into system prompt")
-            else:
-                system = system + cal_block
-                log(f"injected calibration feedback at end ({len(cal_block)} chars)")
+            log(f"built calibration directives from tracking data ({len(cal_block)} chars)")
         except Exception as exc:
-            log(f"calibration feedback failed to load ({exc}) — continuing without")
+            log(f"calibration feedback failed to load ({exc}) — using default")
+
+    # Replace {calibration_directives} placeholder in system prompt
+    system = system.replace("{calibration_directives}", cal_block)
 
     # Step 0e — inject self-assessment feedback (if critical issues found)
     if args.self_assessment and os.path.exists(args.self_assessment):
@@ -779,6 +770,13 @@ def main() -> int:
     regional_template = prompts.get("Regional Analyst Prompt", "")
     exec_template = prompts.get("Executive Summary Prompt", "")
     red_team_template = prompts.get("Red Team Prompt", "")
+
+    # Replace calibration directives placeholder in all templates
+    # cal_block is built above in Step 0e
+    regional_template = regional_template.replace("{calibration_directives}", cal_block)
+    exec_template = exec_template.replace("{calibration_directives}", cal_block)
+    red_team_template = red_team_template.replace("{calibration_directives}", cal_block)
+
     if not (system and regional_template and exec_template and red_team_template):
         log("FATAL: prompt templates missing in deepseek-prompts.md")
         return 2

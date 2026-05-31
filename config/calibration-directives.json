@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-31T18:10:16.960940+00:00",
+  "total_judgments": 115,
+  "correct": 3,
+  "unresolved": 60,
+  "overall_accuracy_pct": 5.5,
+  "posture": "tighten_all",
+  "band_directives": [
+    {
+      "band": "likely",
+      "accuracy": 0.167,
+      "samples": 115,
+      "use_instead": "roughly even chance",
+      "reason": "Only 16.7% accurate over 115 samples — use 'roughly even chance' instead."
+    }
+  ],
+  "per_region_directives": [],
+  "warnings": [
+    "CRITICAL: Overall accuracy 5.5% is below 10%. Auto-adjustment triggered."
+  ],
+  "auto_adjustments": [
+    {
+      "setting": "max_kjs_per_region",
+      "old_value": 5,
+      "new_value": 3,
+      "reason": "Accuracy critically low (<10%); reducing KJs forces selectivity and improves calibration."
+    },
+    {
+      "setting": "min_bands_per_brief",
+      "old_value": 0,
+      "new_value": 2,
+      "reason": "Enforcing minimum 2 different confidence bands per brief to increase diversity."
+    }
+  ]
+}

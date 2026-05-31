@@ -54,6 +54,18 @@ export AVAILABLE_PROVIDER="${AVAILABLE_PROVIDER:-}"
 cd "$REPO"
 
 # =========================================================================
+# STEP 0b: CALIBRATION ACCURACY CHECK — pre-flight calibration audit
+# =========================================================================
+# Runs before collection to check whether calibration has drifted.
+# Non-fatal — reports findings but doesn't block the pipeline.
+# =========================================================================
+
+echo "--- Calibration accuracy check ---" | tee -a "$LOG"
+set +e
+python3 "$REPO/scripts/calibration_loop.py" --check >> "$LOG" 2>&1
+set -e 2>/dev/null || true
+
+# =========================================================================
 # STEP 1: PRE-COLLECTION
 # =========================================================================
 

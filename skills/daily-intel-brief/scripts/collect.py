@@ -505,6 +505,36 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Tempo (Indonesian)", "https://www.tempo.co/rss/", "en", ("C", 3)),
     ("TRT World (Turkish state)", "https://www.trtworld.com/rss", "en", ("C", 3)),
 ]
+
+# Thematic cross-cutting feeds — added 2026-05-31 per collection audit
+# These fill gaps in the regional coverage model with topic-specific sources.
+# Tuple: (name, url, language_code, admiralty_rank)
+THEMATIC_FEEDS = [
+    # Arctic / Northern Sea Route
+    ("The Arctic Institute", "https://www.thearcticinstitute.org/feed/", "en", ("B", 2)),
+    ("High North News", "https://www.highnorthnews.com/rss.xml", "en", ("B", 2)),
+
+    # Space / Satellite
+    ("SpaceNews", "https://spacenews.com/feed/", "en", ("B", 2)),
+    ("SpaceWatch.Global", "https://spacewatch.global/feed/", "en", ("B", 2)),
+
+    # Cyber Threat Intelligence
+    ("The Record by Recorded Future", "https://therecord.media/feed/", "en", ("B", 2)),
+    ("Krebs on Security", "https://krebsonsecurity.com/feed/", "en", ("B", 2)),
+    ("BleepingComputer", "https://www.bleepingcomputer.com/feed/", "en", ("B", 2)),
+
+    # Supply Chain / Trade
+    ("Supply Chain Dive", "https://www.supplychaindive.com/feeds/news/", "en", ("B", 2)),
+    ("The Loadstar", "https://theloadstar.com/feed/", "en", ("B", 2)),
+
+    # Bio/Health Security
+    ("CIDRAP (UMN)", "https://www.cidrap.umn.edu/rss.xml", "en", ("B", 2)),
+    ("GISAID Updates", "https://gisaid.org/feed/", "en", ("B", 2)),
+
+    # Disinformation / Information Warfare
+    ("EU DisinfoLab", "https://www.disinfo.eu/feed/", "en", ("B", 2)),
+    ("DFRLab", "https://medium.com/feed/dfrlab", "en", ("B", 2)),
+]
 # Gmail intel digest — newsletters from Cipher Brief, Foreign Policy, etc.
 NEWS_RAW_PATH = pathlib.Path("/home/ubuntu/.openclaw/workspace/tasks/news_raw.md")
 
@@ -1142,6 +1172,10 @@ def main() -> int:
     # These use tuple format (name, url, language, admiralty) — extra fields ignored by collect_live
     local_feeds = [(f[0], f[1]) for f in LOCAL_LANGUAGE_FEEDS]
     feeds_to_try = feeds_to_try + local_feeds
+
+    # Add thematic cross-cutting feeds (topic-specific sources covering Arctic, Space, Cyber, Supply Chain, Bio, Disinfo)
+    thematic_feeds = [(f[0], f[1]) for f in THEMATIC_FEEDS]
+    feeds_to_try = feeds_to_try + thematic_feeds
 
     # --- Dynamic catalog feeds (sources_tested.json) ---
     # Load working feeds from the heartbeat-maintained catalog.
