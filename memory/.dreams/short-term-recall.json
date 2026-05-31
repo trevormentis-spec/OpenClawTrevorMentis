@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-31T01:48:17.753Z",
+  "updatedAt": "2026-05-31T07:50:45.526Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -102,13 +102,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 22,
+      "recallCount": 23,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 21.50553129149435,
+      "totalScore": 22.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-29T18:21:10.629Z",
+      "lastRecalledAt": "2026-05-31T07:50:45.526Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -131,7 +131,8 @@
         "b2960036661c",
         "cb0e9de10fbc",
         "d273c1eeb6e6",
-        "06af7cc38b34"
+        "06af7cc38b34",
+        "9f9311b31b2a"
       ],
       "recallDays": [
         "2026-04-28",
@@ -148,7 +149,8 @@
         "2026-05-15",
         "2026-05-18",
         "2026-05-24",
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "gateway",

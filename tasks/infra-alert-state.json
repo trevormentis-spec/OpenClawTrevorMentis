@@ -6,10 +6,10 @@
     {
       "severity": "warn",
       "key": "deepseek_balance_warn",
-      "msg": "\u26a0\ufe0f DeepSeek balance low: $4.04"
+      "msg": "\u26a0\ufe0f DeepSeek balance low: $2.21"
     }
   ],
-  "last_check": "2026-05-31T06:44:33.704200+00:00",
+  "last_check": "2026-05-31T08:14:34.231541+00:00",
   "alert_count": 1,
   "new_alert_count": 0
 }

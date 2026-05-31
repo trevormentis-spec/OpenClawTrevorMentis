@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 05:01 UTC
+# Gmail Intel Digest — 2026-05-31 07:01 UTC
 
 ## Iran Update Special Report, May 30, 2026
 **From:** ISW Publications <publications@understandingwar.org>
