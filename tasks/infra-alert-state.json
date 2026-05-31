@@ -1,15 +1,10 @@
 {
   "last_alerts": {
-    "deepseek_balance_warn": 1780208074.3089316
+    "deepseek_balance_warn": 1780208074.3089316,
+    "deepseek_balance_critical": 1780218874.8112655
   },
-  "active_alerts": [
-    {
-      "severity": "warn",
-      "key": "deepseek_balance_warn",
-      "msg": "\u26a0\ufe0f DeepSeek balance low: $2.21"
-    }
-  ],
-  "last_check": "2026-05-31T08:14:34.231541+00:00",
-  "alert_count": 1,
+  "active_alerts": [],
+  "last_check": "2026-05-31T15:44:50.036748+00:00",
+  "alert_count": 0,
   "new_alert_count": 0
 }

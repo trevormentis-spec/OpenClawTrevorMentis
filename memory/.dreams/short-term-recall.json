@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-31T07:50:45.526Z",
+  "updatedAt": "2026-05-31T09:00:12.263Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -2592,13 +2592,13 @@
       "endLine": 262,
       "source": "memory",
       "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1099 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 ======================================================================== ═══ EXECUTI ## Delivery pipe fix — 2026-05-24 **Root cause:** `daily-text-brief.sh` used `| tee -a \"$LOG\"` for long-running orchestrator command. OpenClaw cron session stdout buffer filled, pipe broke, tee died, killing shell pipeline before quality gate + delivery steps. **Fix:** Changed orchestrator, delivery, and postdiction steps to use `>> \"$LOG\" 2>&1` (direct",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T06:02:27.480Z",
-      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
+      "lastRecalledAt": "2026-05-31T09:00:12.263Z",
       "queryHashes": [
         "27d057b1d1c5",
         "b53ef245a31e",
@@ -2607,7 +2607,8 @@
         "d007fade7a5f",
         "ad8c1cd4fc53",
         "896393cca831",
-        "08feda2a6640"
+        "08feda2a6640",
+        "6698c9c92dec"
       ],
       "recallDays": [
         "2026-05-26",

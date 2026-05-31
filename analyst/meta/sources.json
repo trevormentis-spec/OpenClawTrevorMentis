@@ -12971,6 +12971,33 @@
       "discovered": "2026-05-31",
       "signal_level": "Medium",
       "region": "oceania"
+    },
+    {
+      "name": "The Average Guys Outsmarting Wall Street on Prediction Markets - The New York Times",
+      "type": "Blog/Website",
+      "focus": "<strong>Polymarket and its main rival, Kalshi, are the two largest prediction markets in the world</strong>. My wagers were a drop in the bucket; toge",
+      "url": "https://www.nytimes.com/2026/05/26/magazine/polymarket-prediction-wall-street.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "How Accurate Are Polymarket and Kalshi at Predicting Election Outcomes? - Bloomberg",
+      "type": "Blog/Website",
+      "focus": "Websites like Kalshi and Polymarket can outperform opinion polls \u2014 but they do better on bigger races and stumble down ballot. A Polymarket ad in a su",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-27/how-accurate-are-polymarket-and-kalshi-at-predicting-election-outcomes",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Polymarket Vs. Kalshi: Two Bets On What Prediction Markets Become | Seeking Alpha",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi&#x27;s (KALSHI) May 2026 Series F closed at a $22B valuation, days after reports that Polymarket (POLYMARKET) entered talks for a $15B ",
+      "url": "https://seekingalpha.com/article/4909474-polymarket-vs-kalshi-two-bets-on-what-prediction-markets-become",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [

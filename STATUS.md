@@ -1,34 +1,34 @@
 # Trevor — Status
 
-*Generated: 2026-05-29 23:22 UTC (heartbeat)*
+*Generated: 2026-05-31 09:16 UTC (heartbeat)*
 
-## Heartbeat — 2026-05-29 22:54 UTC
+## Heartbeat — 2026-05-31 09:14 UTC
 
-**Cycle:** ✅ Autonomous fixes ran (22:54 UTC, 17 files committed)
-✅ Autonomous cycle completed (23:22 UTC, --all --quiet, exit 0)
-✅ Autonomous fixes ran cleanly
+**Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0)
+✅ Autonomous fixes ran (--quiet, no output)
+⚠️ Infra alert: DeepSeek balance hit critical ($0.61) — but already topped up to $7.25
 
 **Daily Brief Status:**
-- 📋 May 29 brief: delivered ✅
-  - Live: https://trevormentis-spec.github.io/trevor-landing-page/
+- 📋 May 30 brief: delivery unclear from logs
+- 📋 May 31 brief: pending (morning pipeline)
 
-**Cost:** 💰 $13.13 DeepSeek balance — dropped from $29.70 since 18:22 UTC (~$88/day implied burn)
+**Cost:** 💰 $7.25 DeepSeek balance (topped up from $0.61 critical)
+- Burn rate: ~$5.51/day
+- Runway: ~1.3 days
+
 **QC:** No active alerts ✅
-**Active assignments:** All 3 running (leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain) ✅
+**Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — all running
 
-**Digest Delivery:** ⚠️ Status unclear — not found in logs or AgentMail
-**Kalshi:** $0.24 balance — 22 signals found, all blocked (insufficient funds)
+**Kalshi:** $0.24 balance — cannot trade
 
 **⚠️ Watch Items:**
-- 🔴 **DeepSeek balance** — $13.13 remaining. Rapid drop from $29.70 in ~4.5h. Balance tracking discrepancy noted between STATUS.md and actual snapshots.
-- ⚠️ Autonomous cycle — `--all` timed out during collection phase. May need investigation.
-- ⚠️ Feed rot: ~60+ RSS/feed failures ongoing — part of recent brief failures
-- ⚠️ Calibration: 0/5 correct — 5 postdictions unresolved
-- ⚠️ Kalshi account: $0.24 — all 22 tradeable signals blocked by min position size
-- ⚠️ Digest delivery: status cannot be verified (not in logs or AgentMail)
+- 🔴 **DeepSeek balance** — $7.25, ~1.3 days runway. Was critically low ($0.61) but topped up. Watch for next critical.
+- ⚠️ Feed rot: ~60+ RSS/feed failures ongoing
+- ⚠️ Kalshi account: $0.24 — all signals blocked by min position size
+- ⚠️ Digest delivery: status unclear
 
-**Known Issues (from KNOWN_ISSUES.md):**
+**Known Issues (current):**
 - Landing page deploy verification: FIX_APPLIED — needs 3 consecutive passes
-- Exec summary truncation: FIX_APPLIED — needs full pipeline run verification
-- Feed rot (342 dead feeds): OPEN — 298 working feeds remain
-- OpenRouter credits: OPEN — auto-monitored via infra_alert.py cron
+- Feed rot: OPEN — 298 working feeds remain
+- OpenRouter credits: OPEN — auto-monitored
+- DeepSeek balance critical alert triggered 2026-05-31 09:14 UTC — auto-resolved (top-up)

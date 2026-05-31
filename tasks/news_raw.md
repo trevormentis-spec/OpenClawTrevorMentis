@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 07:01 UTC
+# Gmail Intel Digest — 2026-05-31 09:04 UTC
 
 ## Iran Update Special Report, May 30, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -38,3 +38,9 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
+
+## AgentMail Intel — 2026-05-31 09:04 UTC
+
+### ‘Lost’ Villages in Rakhine and Russian Submunitions in Mali
+**From:** Bellingcat <newsletter@bellingcat.com>  
+Bellingcat Bi-Weekly Newsletter: May 31, 2026. View this email in your browser (https://mailchi.mp/bellingcat.com/newsletter-9177712?e=4429950b22) http://bellingcat.com A new investigation by Belling
