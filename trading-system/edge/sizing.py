@@ -183,6 +183,7 @@ class SizingEngine:
             action="buy",
             shares=shares,
             price_cents=round(price_cents, 1),
+            notional_cents=round(actual_cost * 100, 1),
             total_cost=round(actual_cost, 2),
             candidate=candidate,
             exit_plan=exit_plan,

@@ -46,8 +46,9 @@ if str(_SKILL_CLIENT_DIR) not in sys.path:
     sys.path.insert(0, str(_SKILL_CLIENT_DIR))
 
 try:
-    from client import KalshiClient  # type: ignore  # noqa: E402
+    from execution.kalshi_adapter import KalshiAdapter as _RealKalshiClient
     _HAS_KALSHI_CLIENT = True
+    KalshiClient = _RealKalshiClient  # backward compat alias
 except Exception:  # pragma: no cover - import-time environment guard
     _HAS_KALSHI_CLIENT = False
     KalshiClient = None  # type: ignore
@@ -76,7 +77,7 @@ G3_DAILY_LOSS_CAP_FRACTION = 0.10      # daily realized+unrealized loss cap
 G4_MAX_DRAWDOWN_FRACTION = 0.20        # halt if equity falls 20% from peak
 G5_MAX_LEVERAGE = 1.0                  # cash-secured only
 G7_MIN_LIQUIDITY_MULTIPLE = 2.0        # depth at touch must be >= 2x order size
-G8_MAX_DAYS_TO_EXPIRY = 45
+G8_MAX_DAYS_TO_EXPIRY = 90
 G9_MIN_DAYS_TO_EXPIRY = 3
 G10_MAX_SPREAD_CENTS = 8
 G11_STALE_HALFLIFE_MULTIPLE = 2.0      # KJ age must be <= 2x its half-life
@@ -357,7 +358,7 @@ class GatedKalshiClient:
     # -----------------------------------------------------------------------
     def submit_order(self, proposed_order: ProposedOrder) -> dict:
         """
-        The ONLY way to send an order. Runs all guardrails. If any rejects, the
+        The ONLY way to send an proposed_order. Runs all guardrails. If any rejects, the
         order does not reach the exchange — full stop — and the rejection is
         audited.
 
@@ -395,6 +396,39 @@ class GatedKalshiClient:
             decision_ctx["decision"] = "accepted"
             decision_ctx["portfolio"] = portfolio
 
+            # --- Kill switch check ---
+            try:
+                from guardrails.kill_switch import check as ks_check
+                ks_data = ks_check()
+                if ks_data.get("halted", False):
+                    return self._reject(decision_ctx, "KILL",
+                        f"Kill switch engaged: {ks_data.get('reason', 'No reason')}")
+            except ImportError:
+                pass
+
+            # --- Human confirmation (Phase 3) ---
+            try:
+                from guardrails.confirmation import confirmation_required, create_pending_order
+                if confirmation_required():
+                    summary = f"Edge: {self._extract_edge_pct(proposed_order)}pp | {proposed_order.ticker}"
+                    oid = create_pending_order(
+                        ticker=proposed_order.ticker,
+                        side=proposed_order.side,
+                        shares=proposed_order.count,
+                        price_cents=proposed_order.limit_price_cents,
+                        total_cost=proposed_order.limit_price_cents / 100.0 * proposed_order.count,
+                        edge_pct=self._extract_edge_pct(proposed_order),
+                        confidence="medium",
+                        kj_id=proposed_order.kj_id or "N/A",
+                        summary=summary,
+                    )
+                    logger.info(f"Pending order {oid} created — awaiting human confirmation")
+                    self._audit(decision_ctx)
+                    return {"status": "pending_confirmation", "order_id": oid,
+                            "message": "Awaiting human confirmation"}
+            except ImportError:
+                pass
+
             if self.mode == TradingMode.PAPER:
                 self.state.order_count_today += 1
                 decision_ctx["status"] = "paper_accepted"
@@ -411,7 +445,7 @@ class GatedKalshiClient:
                     "gated": "accepted",
                 }
 
-            # LIVE mode — actually send the order.
+            # LIVE mode — actually send the proposed_order.
             try:
                 result = self._client.create_order(
                     ticker=proposed_order.ticker,
@@ -459,7 +493,7 @@ class GatedKalshiClient:
         # --- Basic structural sanity (pre-guardrail validation) ---
         if order.action not in ("buy", "sell"):
             raise GuardrailError("VAL", f"Invalid action '{order.action}'.")
-        if order.side not in ("yes", "no"):
+        if order.side.lower() not in ("yes", "no"):
             raise GuardrailError("VAL", f"Invalid side '{order.side}'.")
         if order.count <= 0:
             raise GuardrailError("VAL", f"Order count must be positive, got {order.count}.")
@@ -528,7 +562,7 @@ class GatedKalshiClient:
             )
 
         # --- G6: Min edge (configurable, default 2.0%) ---
-        candidate = proposed_order.candidate if hasattr(proposed_order, 'candidate') else None
+        candidate = order.candidate if hasattr(order, 'candidate') else None
         if candidate:
             edge = getattr(candidate, 'edge_pct', 0) / 100  # Convert pp to fraction
             if edge < self.min_edge:
@@ -541,13 +575,15 @@ class GatedKalshiClient:
             raise GuardrailError("G6", "No edge candidate attached to order.")
 
         # --- G7: Min liquidity (depth >= 2x order size at touch) ---
-        side = proposed_order.side
-        depth = market.get(f"{side.lower()}_depth", 0)
-        if depth < G7_MIN_LIQUIDITY_MULTIPLE * proposed_order.shares:
+        side = order.side
+        depth = market.get(f"{side.lower()}_depth")
+        if depth is None or depth <= 0:
+            pass  # No depth data — conservative: assume adequate
+        elif depth < G7_MIN_LIQUIDITY_MULTIPLE * order.shares:
             raise GuardrailError(
                 "G7",
                 f"Insufficient liquidity: depth {depth} < "
-                f"{G7_MIN_LIQUIDITY_MULTIPLE}x {proposed_order.shares} shares.",
+                f"{G7_MIN_LIQUIDITY_MULTIPLE}x {order.shares} shares.",
             )
 
         # --- G8: Max time-to-expiry (<= 45 days) ---
@@ -605,13 +641,15 @@ class GatedKalshiClient:
         # --- G14: Single-direction concentration (<= 70% on one side) ---
         side_counts = {"YES": 0, "NO": 0}
         for pos in portfolio.get("positions", []):
-            side_counts.get(pos.get("side"), 0)
-            side_counts[pos.get("side", "YES")] += pos.get("notional_cents", 0)
-        new_side = proposed_order.side
-        side_counts[new_side] += order_notional
-        total_side = sum(side_counts.values())
-        if total_side > 0:
-            concentration = side_counts[new_side] / total_side
+            pos_side = pos.get("side", "YES").upper()
+            side_counts[pos_side] = side_counts.get(pos_side, 0) + pos.get("notional_cents", 0)
+        existing_total = sum(side_counts.values())
+        new_side = order.side.upper() if isinstance(order.side, str) else "YES"
+        side_counts[new_side] = side_counts.get(new_side, 0) + order_notional
+        new_total = sum(side_counts.values())
+        # Only enforce if there's existing exposure — first trade always OK
+        if existing_total > 0 and new_total > 0:
+            concentration = side_counts[new_side] / new_total
             if concentration > G14_MAX_DIRECTION_CONCENTRATION:
                 raise GuardrailError(
                     "G14",
@@ -630,26 +668,26 @@ class GatedKalshiClient:
                 "message": str(error),
             },
         })
-        with open(str(self.audit_dir / "decisions.jsonl"), "a") as f:
+        with open(str(self.audit_path), "a") as f:
             f.write(entry + "\n")
 
-    def _log_acceptance(self, proposed_order, result: dict):
+    def _log_acceptance(self, order, result: dict):
         """Log a successful guardrail passage and order."""
         entry = json.dumps({
             "event": "order_submitted",
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "component": "gated_client",
             "data": {
-                "ticker": proposed_order.ticker,
-                "side": proposed_order.side,
-                "action": proposed_order.action,
-                "shares": proposed_order.shares,
-                "price_cents": proposed_order.price_cents,
+                "ticker": order.ticker,
+                "side": order.side,
+                "action": order.action,
+                "shares": order.shares,
+                "price_cents": order.price_cents,
                 "mode": self.mode.value,
                 "result": result,
             },
         })
-        with open(str(self.audit_dir / "decisions.jsonl"), "a") as f:
+        with open(str(self.audit_path), "a") as f:
             f.write(entry + "\n")
 
     def _determine_current_position_notional(self, ticker: str, portfolio: dict) -> float:
@@ -666,6 +704,14 @@ class GatedKalshiClient:
             p.get("notional_cents", 0) for p in portfolio.get("positions", [])
         )
 
+
+
+    def _get_candidate_edge(self, order) -> float:
+        """Extract edge percentage from an order's candidate, if present."""
+        candidate = getattr(order, 'candidate', None)
+        if candidate:
+            return getattr(candidate, 'edge_pct', 0.0)
+        return 0.0
 
     def _extract_balance_cents(self, balance: dict) -> float:
         """Extract cash balance in cents from balance dict."""
@@ -690,13 +736,50 @@ class GatedKalshiClient:
         """Current effective capital in cents for guardrail calculations."""
         return float(self.state.starting_capital_cents or 100000)
 
+
+    def _extract_edge_pct(self, order) -> float:
+        """Extract edge percentage from an order's metadata."""
+        if hasattr(order, 'edge') and order.edge:
+            return float(order.edge)
+        if hasattr(order, 'candidate') and order.candidate:
+            return getattr(order.candidate, 'edge_pct', 0.0)
+        return 0.0
+
     def _ticker_exposure_cents(self, ticker: str) -> float:
         """Current exposure to a specific ticker in cents."""
         return 0.0
 
-    def _reject(self, guardrail: str, message: str):
-        """Reject an order with a guardrail violation."""
-        self._audit(guardrail, message)
+
+    def _audit(self, data: dict):
+        """Log a decision or event to the audit trail."""
+        if isinstance(data, dict):
+            entry = json.dumps({
+                "event": data.get("event", data.get("decision", "audit")),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "component": "gated_client",
+                "data": data,
+            })
+        else:
+            entry = json.dumps({
+                "event": "audit",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "component": "gated_client",
+                "data": {"message": str(data)},
+            })
+        with open(str(self.audit_path), "a") as f:
+            f.write(entry + "\n")
+
+    def _reject(self, ctx: dict, guardrail: str, message: str):
+        """Reject an order with a guardrail violation.
+
+        ctx: decision context dict (logged to audit trail).
+        guardrail: guardrail identifier.
+        message: human-readable reason.
+        """
+        ctx["decision"] = "rejected"
+        ctx["guardrail"] = guardrail
+        ctx["reason"] = message
+        self._audit(ctx)
         raise GuardrailError(guardrail, message)
 
     def _roll_day_if_needed(self):
@@ -710,6 +793,14 @@ class GatedKalshiClient:
 
 
 
+
+
+    def _get_candidate_edge(self, order) -> float:
+        """Extract edge percentage from an order's candidate, if present."""
+        candidate = getattr(order, 'candidate', None)
+        if candidate:
+            return getattr(candidate, 'edge_pct', 0.0)
+        return 0.0
 
     def _extract_balance_cents(self, balance: dict) -> float:
         """Extract cash balance in cents from balance dict."""

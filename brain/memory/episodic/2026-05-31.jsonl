@@ -1,0 +1,1 @@
+{"ts": "2026-05-31T03:20:22Z", "source": "control-plane-health", "event": "health_check", "status": "all_green", "detail": "Gateway alive, supervisord alive, Telegram connected. Crash storm at 01:05-01:08 UTC (32 crashes, exit status 1) resolved. 15+ consecutive healthy uptime samples since ~01:22 UTC. No recovery action needed."}

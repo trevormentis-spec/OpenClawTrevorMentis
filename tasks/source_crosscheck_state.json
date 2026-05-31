@@ -445,7 +445,55 @@
         "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears",
         "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-31T03:02:53.780316+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 35,
+      "checked_at": "2026-05-31T03:02:54.144558+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Hundreds arrested in France after wild Champions League celebrations",
+        "How Putin became master of the image",
+        "'No-one feels safe now': Residents of Romanian city hit by drone share fears"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-05-31T03:02:56.846680+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 35,
+      "checked_at": "2026-05-31T03:02:57.067470+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Hundreds arrested in France after wild Champions League celebrations",
+        "How Putin became master of the image",
+        "'No-one feels safe now': Residents of Romanian city hit by drone share fears"
+      ]
     }
   ],
-  "last_updated": "2026-05-29T03:02:57.123208+00:00"
+  "last_updated": "2026-05-31T03:02:57.067695+00:00"
 }

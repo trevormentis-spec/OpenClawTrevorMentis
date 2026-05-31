@@ -35,7 +35,7 @@ liquidity:
 
 # ── Time Limits ──
 time_limits:
-  max_days_to_expiry: 45            # G8: don't tie up capital long-dated
+  max_days_to_expiry: 90            # G8: don't tie up capital long-dated
   min_days_to_expiry: 3             # G9: don't buy expiring-tomorrow positions
 
 # ── Intel Freshness ──

@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 01:11 UTC
+# Gmail Intel Digest — 2026-05-31 03:01 UTC
 
 ## Iran Update Special Report, May 30, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -38,22 +38,9 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## Trump fund puts Republican senators in a bind
-**From:** Reuters Weekend Briefing <dailybriefing@thomsonreuters.com>
-**Date:** Sat, 30 May 2026 07:00:56 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-05-31 01:11 UTC
+## AgentMail Intel — 2026-05-31 03:01 UTC
 
 ### Think you know the news? Think again
 **From:** Bloomberg <subscriptions@message.bloomberg.com>  
 Play the news quiz for risk-takers. Play Pointed, the news quiz for risk-takers. Starting every Thursday at 6 p.m. ET,
-
-### Upcoming Events at Cato
-**From:** Cato Institute <newsletters@cato.org>  
-Got it. Here's the cleaned-up version: --- Upcoming events from the Cato Institute --- **LIVE ONLINE POLICY FORUM** ## Compulsion, Speech, and Blasphemy Laws in Pakistan and Beyond June 1, 2026,

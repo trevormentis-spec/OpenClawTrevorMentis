@@ -375,9 +375,10 @@ class ProposedOrder:
     action: str                     # "buy" or "sell"
     shares: int
     price_cents: float              # Limit price
-    total_cost: float               # shares * price / 100
     candidate: Candidate
     exit_plan: ExitPlan
+    notional_cents: float = 0       # shares * price_cents
+    total_cost: float = 0.0         # shares * price / 100
     created_at: str = ""
 
     def __post_init__(self):
