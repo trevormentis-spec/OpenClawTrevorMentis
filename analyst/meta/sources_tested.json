@@ -755,7 +755,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "prediction_markets"
   },
   {
     "name": "Polymarket to let users make prediction market bets on private companies - CBS News",
@@ -1118,7 +1119,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "north_america"
   },
   {
     "name": "60 Best Political News RSS Feeds",
@@ -1181,7 +1183,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
@@ -1716,7 +1719,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "military_osint"
   },
   {
     "name": "Regional Security Architecture Programme - RSIS",
@@ -1740,7 +1744,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "southeast_asia"
   },
   {
     "name": "Oceania | Council on Foreign Relations",
@@ -1915,7 +1920,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "U.S. News and National Top Stories : NPR",
@@ -2053,7 +2059,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "think_tanks"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -2188,7 +2195,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "RSS feeds - Africa Intelligence",
@@ -2239,7 +2247,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Middle East: Analysis, Research, & Events | CSIS",
@@ -2251,7 +2260,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "israel_lebanon"
   },
   {
     "name": "Middle East Conflict Monitor | ACLED",
@@ -2263,7 +2273,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Central Asia: Analysis, Research, & Events | CSIS",
@@ -2425,7 +2436,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "europe"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -2561,7 +2573,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "RSS feeds - Africa Intelligence",
@@ -2612,7 +2625,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Middle East: Analysis, Research, & Events | CSIS",
@@ -2624,7 +2638,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "middle_east"
   },
   {
     "name": "Middle East Conflict Monitor | ACLED",
@@ -3648,7 +3663,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
@@ -6553,7 +6569,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -6591,7 +6608,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -6774,7 +6792,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "60 Best Political News RSS Feeds",
@@ -10625,7 +10644,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Central America Newswire - World News Report - EIN Presswire",
@@ -11665,7 +11685,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "35 Best Caribbean News RSS Feeds",
@@ -11702,7 +11723,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Analysis, Research, & Events | CSIS",
@@ -11861,7 +11883,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_asia_india"
   },
   {
     "name": "Top 45 Homeland Security RSS Feeds",
@@ -12380,5 +12403,428 @@
     "score_relevance": 0,
     "score_diversity": 2,
     "region": "think_tanks"
+  },
+  {
+    "name": "Jamaica Gleaner",
+    "url": "https://www.jamaica-gleaner.com/rss",
+    "region": "central_america_caribbean",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Jamaica Observer",
+    "url": "https://www.jamaicaobserver.com/rss",
+    "region": "central_america_caribbean",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Trinidad Express",
+    "url": "https://trinidadexpress.com/rss",
+    "region": "central_america_caribbean",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Nation News Barbados",
+    "url": "https://www.nationnews.com/rss",
+    "region": "central_america_caribbean",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "AKIpress",
+    "url": "https://akipress.com/rss",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Carnegie China",
+    "url": "https://carnegiechina.org/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Carnegie India",
+    "url": "https://carnegieindia.org/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Global Voices Central Asia",
+    "url": "https://globalvoices.org/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Himal Southasian",
+    "url": "https://www.himalmag.com/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Nepali Times",
+    "url": "https://www.nepalitimes.com/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "ORF India",
+    "url": "https://www.orfonline.org/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "RFE/RL Central Asia",
+    "url": "https://www.rferl.org/rss",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "The Third Pole",
+    "url": "https://www.thethirdpole.net/feed",
+    "region": "central_asia_india",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "CGTN",
+    "url": "https://www.cgtn.com/rss",
+    "region": "china_asia",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Global Times",
+    "url": "https://www.globaltimes.cn/rss",
+    "region": "china_asia",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Korea Herald",
+    "url": "https://www.koreaherald.com/rss",
+    "region": "china_asia",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Nikkei Asia",
+    "url": "https://www.nikkei.com/rss",
+    "region": "china_asia",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Flashpoint Blog",
+    "url": "https://flashpoint.io/blog/feed",
+    "region": "cyber_threat",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Help Net Security",
+    "url": "https://www.helpnetsecurity.com/feed",
+    "region": "cyber_threat",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Unit 42 Palo Alto",
+    "url": "https://unit42.paloaltonetworks.com/feed",
+    "region": "cyber_threat",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Recorded Future Blog",
+    "url": "https://www.recordedfuture.com/feed",
+    "region": "cyber_threat",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "ECFR",
+    "url": "https://ecfr.eu/feed",
+    "region": "europe",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "HTSF (Iran)",
+    "url": "https://htsf.substack.com/feed",
+    "region": "iran",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Napoleon's Corporal",
+    "url": "https://napoleonscorporal.substack.com/feed",
+    "region": "iran",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Richard Haass Iran",
+    "url": "https://richardhaass.substack.com/feed",
+    "region": "iran",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Haaretz",
+    "url": "https://www.haaretz.com/rss",
+    "region": "israel_lebanon",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Safety4Sea",
+    "url": "https://safety4sea.com/feed",
+    "region": "maritime",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Middle East Monitor",
+    "url": "https://www.middleeastmonitor.com/feed",
+    "region": "middle_east",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Asharq Al-Awsat",
+    "url": "https://english.aawsat.com/rss",
+    "region": "middle_east",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Al-Monitor",
+    "url": "https://www.al-monitor.com/feed",
+    "region": "middle_east",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Janes Defence",
+    "url": "https://www.janes.com/feed",
+    "region": "military_osint",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "War on the Rocks",
+    "url": "https://warontherocks.com/feed",
+    "region": "military_osint",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "CSIS",
+    "url": "https://www.csis.org/feed",
+    "region": "north_america",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "RAND Corporation",
+    "url": "https://www.rand.org/rss",
+    "region": "north_america",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "CNAS",
+    "url": "https://www.cnas.org/feed",
+    "region": "north_america",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Lowy Institute",
+    "url": "https://www.lowyinstitute.org/feed",
+    "region": "oceania_pacific",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "The Interpreter (Lowy)",
+    "url": "https://www.lowyinstitute.org/the-interpreter/feed",
+    "region": "oceania_pacific",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Kyiv Post",
+    "url": "https://www.kyivpost.com/rss",
+    "region": "russia_ukraine",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Africa Confidential",
+    "url": "https://www.africa-confidential.com/rss",
+    "region": "sub_saharan_africa",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Africa Intelligence",
+    "url": "https://www.africaintelligence.com/rss",
+    "region": "sub_saharan_africa",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Zitamar News",
+    "url": "https://zitamar.com/feed",
+    "region": "sub_saharan_africa",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Atlantic Council",
+    "url": "https://www.atlanticcouncil.org/feed",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "CEPA",
+    "url": "https://cepa.org/feed",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Stimson Center",
+    "url": "https://www.stimson.org/feed",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Chatham House",
+    "url": "https://www.chathamhouse.org/rss",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Hudson Institute",
+    "url": "https://www.hudson.org/feed",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
+  },
+  {
+    "name": "Wilson Center",
+    "url": "https://www.wilsoncenter.org/rss",
+    "region": "think_tanks",
+    "source_type": "rss",
+    "status": "ok",
+    "code": 200,
+    "tested_at": "2026-05-31T18:45:00Z"
   }
 ]

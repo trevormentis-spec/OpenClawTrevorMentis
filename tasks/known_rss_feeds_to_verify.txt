@@ -1,0 +1,76 @@
+Jamaica Gleaner|https://www.jamaica-gleaner.com/rss|central_america_caribbean
+Jamaica Observer|https://www.jamaicaobserver.com/rss|central_america_caribbean
+Trinidad Express|https://trinidadexpress.com/rss|central_america_caribbean
+St. Lucia Times|https://stluciatimes.com/feed|central_america_caribbean
+Nation News Barbados|https://www.nationnews.com/rss|central_america_caribbean
+AKIpress|https://akipress.com/rss|central_asia_india
+Brookings India/Asia|https://www.brookings.edu/feed|central_asia_india
+Carnegie China|https://carnegiechina.org/feed|central_asia_india
+Carnegie India|https://carnegieindia.org/feed|central_asia_india
+Central Asia-Caucasus Analyst|https://www.cacianalyst.org/rss|central_asia_india
+Dawn Pakistan|https://www.dawn.com/feeds/home|central_asia_india
+Global Voices Central Asia|https://globalvoices.org/feed|central_asia_india
+Himal Southasian|https://www.himalmag.com/feed|central_asia_india
+Nepali Times|https://www.nepalitimes.com/feed|central_asia_india
+ORF India|https://www.orfonline.org/feed|central_asia_india
+RFE/RL Central Asia|https://www.rferl.org/rss|central_asia_india
+The Hindu|https://www.thehindu.com/rss|central_asia_india
+The Kathmandu Post|https://kathmandupost.com/rss|central_asia_india
+The Third Pole|https://www.thethirdpole.net/feed|central_asia_india
+CGTN|https://www.cgtn.com/rss|china_asia
+Global Times|https://www.globaltimes.cn/rss|china_asia
+Korea Herald|https://www.koreaherald.com/rss|china_asia
+Nikkei Asia|https://www.nikkei.com/rss|china_asia
+Flashpoint Blog|https://flashpoint.io/blog/feed|cyber_threat
+Help Net Security|https://www.helpnetsecurity.com/feed|cyber_threat
+Unit 42 Palo Alto|https://unit42.paloaltonetworks.com/feed|cyber_threat
+Recorded Future Iran|https://www.recordedfuture.com/feed|cyber_threat
+SOC Radar|https://socradar.io/feed|cyber_threat
+EIA Today in Energy|https://www.eia.gov/rss/todayinenergy.xml|energy
+OilPrice.com|https://oilprice.com/rss/main|energy
+Energy Intelligence|https://www.energyintel.com/rss|energy
+Gelber & Associates|https://gelber.com/feed|energy
+Hellenic Shipping News|https://www.hellenicshippingnews.com/feed|energy
+Natural Gas World|https://www.naturalgasworld.com/rss|energy
+S&P Global Commodity Insights|https://www.spglobal.com/commodityinsights/en/rss|energy
+ECFR|https://ecfr.eu/feed|europe
+HTSF|https://htsf.substack.com/feed|iran
+Napoleon's Corporal|https://napoleonscorporal.substack.com/feed|iran
+Richard Haass|https://richardhaass.substack.com/feed|iran
+Omid SoureSrafil|https://omidsouresrafil.substack.com/feed|iran
+Haaretz|https://www.haaretz.com/rss|israel_lebanon
+Ynet English|https://www.ynetnews.com/rss|israel_lebanon
+Safety4Sea|https://safety4sea.com/feed|maritime
+MaritimeNews|https://www.maritimenews.com/feed|maritime
+Al-Monitor|https://www.al-monitor.com/feed|middle_east
+Middle East Monitor|https://www.middleeastmonitor.com/feed|middle_east
+Asharq Al-Awsat|https://english.aawsat.com/rss|middle_east
+Al Jazeera English|https://www.aljazeera.com/xml/rss/all.xml|middle_east
+Janes Defence|https://www.janes.com/feed|military_osint
+War on the Rocks|https://warontherocks.com/feed|military_osint
+CSIS|https://www.csis.org/feed|north_america
+RAND Corporation|https://www.rand.org/rss|north_america
+CNAS|https://www.cnas.org/feed|north_america
+ASPI Strategist|https://www.aspistrategist.org.au/feed|oceania_pacific
+Lowy Institute|https://www.lowyinstitute.org/feed|oceania_pacific
+The Interpreter (Lowy)|https://www.lowyinstitute.org/the-interpreter/feed|oceania_pacific
+Meduza English|https://meduza.io/rss/en/all|russia_ukraine
+Kyiv Post|https://www.kyivpost.com/rss|russia_ukraine
+Ukrainska Pravda|https://www.ukrinform.ua/rss|russia_ukraine
+InSight Crime|https://insightcrime.org/feed|south_america
+MercoPress|https://en.mercopress.com/rss|south_america
+Buenos Aires Times|https://www.batimes.com.ar/feed|south_america
+ASEAN Secretariat|https://asean.org/feed|southeast_asia
+Fulcrum ISEAS|https://fulcrum.sg/feed|southeast_asia
+The Diplomat SE Asia|https://thediplomat.com/feed|southeast_asia
+Africa Confidential|https://www.africa-confidential.com/rss|sub_saharan_africa
+Africa Intelligence|https://www.africaintelligence.com/rss|sub_saharan_africa
+Premium Times|https://www.premiumtimesng.com/feed|sub_saharan_africa
+Zitamar News|https://zitamar.com/feed|sub_saharan_africa
+Jeune Afrique|https://www.jeuneafrique.com/feed|sub_saharan_africa
+Atlantic Council|https://www.atlanticcouncil.org/feed|think_tanks
+CEPA|https://cepa.org/feed|think_tanks
+Stimson Center|https://www.stimson.org/feed|think_tanks
+Chatham House|https://www.chathamhouse.org/rss|think_tanks
+Hudson Institute|https://www.hudson.org/feed|think_tanks
+Wilson Center|https://www.wilsoncenter.org/rss|think_tanks

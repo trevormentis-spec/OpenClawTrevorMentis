@@ -5,8 +5,8 @@
 ## Summary
 
 - Source names parsed from registry: 295
-- Catalog entries tagged with region: 29
-- Unmatched source names: 266
+- Catalog entries tagged with region: 23
+- Unmatched source names: 272
 
 ## Region-by-Region
 
@@ -44,7 +44,7 @@ Sources listed: 20 | Catalog entries tagged: -
 
 ### israel_lebanon
 
-Sources listed: 10 | Catalog entries tagged: 2
+Sources listed: 10 | Catalog entries tagged: 1
 
 ### maritime
 
@@ -52,7 +52,7 @@ Sources listed: 10 | Catalog entries tagged: -
 
 ### middle_east
 
-Sources listed: 17 | Catalog entries tagged: 2
+Sources listed: 17 | Catalog entries tagged: 1
 
 ### military_osint
 
@@ -76,7 +76,7 @@ Sources listed: 6 | Catalog entries tagged: -
 
 ### south_america
 
-Sources listed: 16 | Catalog entries tagged: 6
+Sources listed: 16 | Catalog entries tagged: 3
 
 ### southeast_asia
 
@@ -84,7 +84,7 @@ Sources listed: 14 | Catalog entries tagged: 1
 
 ### sub_saharan_africa
 
-Sources listed: 30 | Catalog entries tagged: 3
+Sources listed: 30 | Catalog entries tagged: 2
 
 ### think_tanks
 
@@ -205,6 +205,7 @@ These source names from the registry could not be matched to any catalog entry:
 | iran | TheBoardWorld |
 | iran | Thotharis |
 | iran | Wajeeh Lion |
+| israel_lebanon | Alma Research Center |
 | israel_lebanon | Haaretz |
 | israel_lebanon | Marc Schulman/Tel Aviv Diary |
 | israel_lebanon | Mick Ryan/The Learning Curve |
@@ -235,6 +236,7 @@ These source names from the registry could not be matched to any catalog entry:
 | middle_east | Mehr News |
 | middle_east | Tasnim News |
 | middle_east | The National (UAE |
+| middle_east | The New Arab |
 | middle_east | Times of Israel |
 | middle_east | Ynet |
 | middle_east | i24 News |
@@ -304,9 +306,12 @@ These source names from the registry could not be matched to any catalog entry:
 | south_america | Buenos Aires Times |
 | south_america | Dialogo Americas |
 | south_america | Global Americans |
+| south_america | InSight Crime |
 | south_america | La Prensa Latina |
+| south_america | Latin America Weekly Brief |
 | south_america | MercoPress |
 | south_america | Peru Reports |
+| south_america | Steep in Latin America |
 | south_america | The Brazilian Report |
 | southeast_asia | Bangkok Post |
 | southeast_asia | Defense & Geopolitics SE Asia |
@@ -343,6 +348,7 @@ These source names from the registry could not be matched to any catalog entry:
 | sub_saharan_africa | Strategic Insight Africa |
 | sub_saharan_africa | The Africa Report |
 | sub_saharan_africa | The Continent |
+| sub_saharan_africa | The New Humanitarian |
 | sub_saharan_africa | The Sentry |
 | sub_saharan_africa | This Week in Africa |
 | sub_saharan_africa | Yaws Brief Africa |
