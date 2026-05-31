@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 19:04 UTC
+# Gmail Intel Digest — 2026-05-31 21:01 UTC
 
 ## Blue Origin faces months of delays after rocket explosion damages launch pad
 **From:** Reuters Technology Roundup <newsletters@email.reuters.com>
@@ -48,7 +48,7 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 ---
 
 
-## AgentMail Intel — 2026-05-31 19:04 UTC
+## AgentMail Intel — 2026-05-31 21:01 UTC
 
 ### Global Update: A Festival of Black Culture With a ’90s Vibe
 **From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
@@ -56,11 +56,3 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 ### Tech Update: May 29th
 **From:** CSIS Strategic Technologies Program <strategictech@csis.org>  
 CSIS Strategic Technologies Program Newsletter Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4204224803/14c107f32e527e322
-
-### 3 groups to watch on the Hill
-**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
-Presented by Nike: The unofficial guide to official Washington. May 31, 2026 View in browser By Ali Bianco Presented by With help from Eli O
-
-### By The Numbers: Rebuilding U.S. Missile Inventory, Threats to World Cup, Global Terrorism Threat Assessment, and More
-**From:** CSIS External Relations <externalrelations@csis.org>  
-Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4204162058/14c107f32e527e3224c46d9264dcd09ecb62fae60d1bf9f80ec5a7d524b7df87 Each week, we'll share wi
