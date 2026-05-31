@@ -45,6 +45,7 @@ RUNTIME_STATE_PATH = REPO_ROOT / "tasks" / "runtime-state.json"
 BUDGET_CONFIG_PATH = REPO_ROOT / "config" / "budget.yaml"
 INFRA_ALERT_PATH = REPO_ROOT / "tasks" / "infra-alert-state.json"
 QC_ALERT_PATH = REPO_ROOT / "tasks" / "qc-alert.md"
+CONTROL_PLANE_METRICS_PATH = REPO_ROOT / "brain" / "memory" / "semantic" / "control-plane-metrics.json"
 FINAL_BRIEF_PATH = REPO_ROOT / "final" / "brief.md"
 EXPORTS_PDFS_DIR = REPO_ROOT / "exports" / "pdfs"
 EPISODIC_DIR = REPO_ROOT / "brain" / "memory" / "episodic"
@@ -288,10 +289,11 @@ def check_github_backup(dashboard: Dict[str, Any]) -> None:
 # ─── Layer 1: Infrastructure ─────────────────────────────────────────
 
 def check_infrastructure(dashboard: Dict[str, Any]) -> None:
-    """Layer 1 — Gateway, supervisord, disk, DeepSeek, OpenRouter."""
+    """Layer 1 — Gateway, supervisord, disk, DeepSeek, OpenRouter, system stats."""
     layer: Dict[str, Any] = {
         "status": "ok", "gateway": False, "disk_pct": 0,
         "deepseek_balance": 0.0, "openrouter_ok": False, "supervisord": False,
+        "uptime": "", "load_avg": [], "memory_used_gb": 0, "memory_available_gb": 0,
     }
     alerts: List[Dict[str, Any]] = []
 
@@ -315,6 +317,34 @@ def check_infrastructure(dashboard: Dict[str, Any]) -> None:
                     disk_pct = int(m.group(1))
                     break
         layer["disk_pct"] = disk_pct
+
+        # System stats: uptime, load, memory
+        rc_upt, out_upt, _ = _run_cmd(["uptime"])
+        if rc_upt == 0:
+            # Extract load avg
+            uptime_parts = out_upt.split("load average:")
+            if len(uptime_parts) > 1:
+                loads = uptime_parts[1].strip().split(", ")
+                layer["load_avg"] = [float(x) for x in loads]
+            # Extract uptime duration
+            m = re.search(r"up\s+(.+?),\s+\d+ user", out_upt)
+            if m:
+                layer["uptime"] = m.group(1).strip()
+
+        rc_mem, out_mem, _ = _run_cmd(["free", "-g"])
+        if rc_mem == 0:
+            lines = out_mem.split("\n")
+            for line in lines:
+                parts = line.split()
+                if parts and parts[0] == "Mem:":
+                    try:
+                        total = float(parts[1])
+                        used = float(parts[2])
+                        avail = float(parts[6]) if len(parts) > 6 else total - used
+                        layer["memory_used_gb"] = used
+                        layer["memory_available_gb"] = avail
+                    except (ValueError, IndexError):
+                        pass
         if disk_pct >= 95:
             alerts.append(_alert("EMERGENCY", "infrastructure",
                                  f"Disk at {disk_pct}% (>95% threshold)"))
@@ -364,6 +394,74 @@ def check_infrastructure(dashboard: Dict[str, Any]) -> None:
     layer["alerts"] = alerts
     dashboard["layers"]["infrastructure"] = layer
     dashboard["alerts"].extend(alerts)
+
+    # Absorb crash tracking from old control-plane metrics
+    _absorb_crash_tracking(dashboard)
+
+
+# ─── Crash Tracking ──────────────────────────────────────────────────
+
+def _absorb_crash_tracking(dashboard: Dict[str, Any]) -> None:
+    """Read the old control-plane-metrics.json for crash data."""
+    try:
+        cp = _safe_read_json(CONTROL_PLANE_METRICS_PATH)
+        if not cp:
+            return
+
+        layer = dashboard["layers"].get("infrastructure", {})
+
+        # Count SIGABRT crash entries
+        sigabrt_count = 0
+        crash_count_24h = 0
+        last_crash_ts = None
+
+        # Check for crash_samples list
+        crashes = cp.get("crash_samples", cp.get("crashes", []))
+        if crashes:
+            now = _now_ts()
+            cutoff_24h = now - 86400
+            for crash in crashes:
+                ts_str = crash.get("ts", crash.get("timestamp", ""))
+                crash_ts = _parse_ts(ts_str)
+                if crash_ts > cutoff_24h:
+                    crash_count_24h += 1
+                if crash_ts > last_crash_ts if last_crash_ts else True:
+                    last_crash_ts = crash_ts
+                reason = (crash.get("reason", "") + " " + crash.get("signal", "")).lower()
+                if "sigabrt" in reason or "sigabrt" in crash.get("exit_status", ""):
+                    sigabrt_count += 1
+
+        # Check uptime samples
+        uptime = cp.get("uptime_samples", cp.get("uptime", []))
+        message_reliability = getattr(cp, "get", lambda k, d=None: d)("message_reliability", None)
+        if message_reliability is None and uptime:
+            recent = [s for s in uptime if _parse_ts(s.get("ts", "")) > _now_ts() - 3600]
+            down = sum(1 for s in recent if not s.get("telegram_up", True))
+            message_reliability = (len(recent) - down) / max(len(recent), 1) * 100 if recent else 100.0
+
+        layer["crash_tracking"] = {
+            "crashes_24h": crash_count_24h,
+            "sigabrt_24h": sigabrt_count,
+            "last_crash_ts": last_crash_ts,
+            "message_reliability_pct": round(message_reliability, 1) if message_reliability is not None else 100.0,
+        }
+
+        # Alert on high crash rate
+        alerts = layer.get("alerts", [])
+        if crash_count_24h > 10:
+            alerts.append(_alert(
+                "WARNING", "infrastructure",
+                f"High crash rate: {crash_count_24h} crashes in 24h ({sigabrt_count} SIGABRTs)",
+            ))
+        if crash_count_24h > 30:
+            alerts.append(_alert(
+                "CRITICAL", "infrastructure",
+                f"Extreme crash rate: {crash_count_24h} crashes in 24h — investigate gateway stability",
+            ))
+        layer["alerts"] = alerts
+
+    except Exception as exc:
+        LOG.warning("Crash tracking absorb failed (non-fatal): %s", exc)
 
 
 # ─── Layer 2: Cron Health + Correlation ─────────────────────────────

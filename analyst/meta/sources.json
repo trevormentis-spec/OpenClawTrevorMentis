@@ -12998,6 +12998,60 @@
       "discovered": "2026-05-31",
       "signal_level": "Medium",
       "region": "prediction_markets"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
     }
   ],
   "moltbook_sources": [

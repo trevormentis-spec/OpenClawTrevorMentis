@@ -485,22 +485,40 @@
         "total_tokens": 509107655,
         "total_cost_usd": 4.223744
       }
+    },
+    {
+      "timestamp": "2026-05-31T16:04:04.824287+00:00",
+      "balance": {
+        "total_balance": 99.73,
+        "topped_up_balance": 99.73,
+        "granted_balance": 0.0,
+        "is_available": true,
+        "fetched_at": "2026-05-31T16:04:04.824266+00:00"
+      },
+      "total_sessions_tracked": 2630,
+      "cumulative": {
+        "total_sessions": 2630,
+        "total_input_tokens": 19970628,
+        "total_output_tokens": 3536176,
+        "total_tokens": 512436852,
+        "total_cost_usd": 4.245917
+      }
     }
   ],
   "daily_summaries": {
     "2026-05-31": {
-      "sessions": 184,
-      "input_tokens": 415500,
-      "output_tokens": 112411,
-      "total_tokens": 12538279,
-      "cache_read": 12010368,
+      "sessions": 191,
+      "input_tokens": 472508,
+      "output_tokens": 163096,
+      "total_tokens": 15867476,
+      "cache_read": 15231872,
       "cache_write": 0,
-      "cost_usd": 0.08964507999999993,
+      "cost_usd": 0.11181799999999993,
       "by_model": {
         "deepseek-v4-flash": {
-          "sessions": 184,
-          "tokens": 12538279,
-          "cost": 0.08964507999999993
+          "sessions": 191,
+          "tokens": 15867476,
+          "cost": 0.11181799999999993
         }
       }
     },
@@ -32586,7 +32604,91 @@
       "estimated_cost": 0.0010185,
       "model": "deepseek-v4-flash",
       "provider": "deepseek"
+    },
+    {
+      "session_id": "e80730fe-c6d3-4f94-81d7-94ef59424f0b",
+      "timestamp": "2026-05-31T15:38:46.203Z",
+      "input_tokens": 154,
+      "output_tokens": 154,
+      "total_tokens": 38452,
+      "cache_read": 38144,
+      "cache_write": 0,
+      "estimated_cost": 6.468e-05,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "6ee4dfc9-3047-42c1-a7cd-c12d2ca1ace7",
+      "timestamp": "2026-05-31T15:45:28.313Z",
+      "input_tokens": 514,
+      "output_tokens": 387,
+      "total_tokens": 57733,
+      "cache_read": 56832,
+      "cache_write": 0,
+      "estimated_cost": 0.00018032,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "0fc5a3cc-a909-41a2-bb6a-c1f76ef995ec",
+      "timestamp": "2026-05-31T15:53:46.962Z",
+      "input_tokens": 278,
+      "output_tokens": 177,
+      "total_tokens": 38471,
+      "cache_read": 38016,
+      "cache_write": 0,
+      "estimated_cost": 8.848e-05,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "6a00f736-8dbf-4e44-aca9-31ae8a4270a7",
+      "timestamp": "2026-05-31T15:57:48.226Z",
+      "input_tokens": 37706,
+      "output_tokens": 43779,
+      "total_tokens": 2539469,
+      "cache_read": 2457984,
+      "cache_write": 0,
+      "estimated_cost": 0.01753696,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "480fb04c-5acb-43d0-83c7-b4c54d9b940e",
+      "timestamp": "2026-05-31T16:02:25.232Z",
+      "input_tokens": 17074,
+      "output_tokens": 5472,
+      "total_tokens": 539282,
+      "cache_read": 516736,
+      "cache_write": 0,
+      "estimated_cost": 0.00392252,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "5bee2206-e627-4586-8a39-4f5f4b7f2f92",
+      "timestamp": "2026-05-31T16:03:14.976Z",
+      "input_tokens": 938,
+      "output_tokens": 497,
+      "total_tokens": 77467,
+      "cache_read": 76032,
+      "cache_write": 0,
+      "estimated_cost": 0.00027048,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    {
+      "session_id": "8eb6a7f3-e73f-4c1d-a3b4-2d70fdf7b30d",
+      "timestamp": "2026-05-31T16:03:22.399Z",
+      "input_tokens": 344,
+      "output_tokens": 219,
+      "total_tokens": 38323,
+      "cache_read": 37760,
+      "cache_write": 0,
+      "estimated_cost": 0.00010948,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
     }
   ],
-  "last_scan_time": "2026-05-31T15:35:31.496308+00:00"
+  "last_scan_time": "2026-05-31T16:04:04.477018+00:00"
 }
