@@ -13160,6 +13160,69 @@
       "discovered": "2026-05-31",
       "signal_level": "Medium",
       "region": "oceania"
+    },
+    {
+      "name": "How a New York Times Journalist Reports on the Iran War Without Being There - The New York Times",
+      "type": "Blog/Website",
+      "focus": "But part of my job is finding ways to report the truth and reflect the humanity of Iranians despite the immense obstacles we as journalists face. That",
+      "url": "https://www.nytimes.com/2026/04/04/insider/iran-war-reporting-israel-us.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Kalshi vs Polymarket: Which Prediction Market Platform Is Best? (June 2026)",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi and Polymarket are the two biggest names in prediction markets, and between them they control somewhere north of 85% of all U.S.-access",
+      "url": "https://chiefswire.usatoday.com/story/sports/review/2026/05/31/kalshi-vs-polymarket-june-2026/90285409007/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "The Average Guys Outsmarting Wall Street on Prediction Markets - The New York Times",
+      "type": "Blog/Website",
+      "focus": "<strong>Polymarket and its main rival, Kalshi, are the two largest prediction markets in the world</strong>. My wagers were a drop in the bucket; toge",
+      "url": "https://www.nytimes.com/2026/05/26/magazine/polymarket-prediction-wall-street.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "How Accurate Are Polymarket and Kalshi at Predicting Election Outcomes? - Bloomberg",
+      "type": "Blog/Website",
+      "focus": "Websites like Kalshi and Polymarket can outperform opinion polls \u2014 but they do better on bigger races and stumble down ballot. A Polymarket ad in a su",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-27/how-accurate-are-polymarket-and-kalshi-at-predicting-election-outcomes",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi vs Polymarket: Which Prediction Market Platform Is Best? (June 2026)",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi and Polymarket are the two biggest names in prediction markets, and between them they control somewhere north of 85% of all U.S.-access",
+      "url": "https://chiefswire.usatoday.com/story/sports/review/2026/05/31/kalshi-vs-polymarket-june-2026/90285409007/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "The Average Guys Outsmarting Wall Street on Prediction Markets - The New York Times",
+      "type": "Blog/Website",
+      "focus": "<strong>Polymarket and its main rival, Kalshi, are the two largest prediction markets in the world</strong>. My wagers were a drop in the bucket; toge",
+      "url": "https://www.nytimes.com/2026/05/26/magazine/polymarket-prediction-wall-street.html",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "How Accurate Are Polymarket and Kalshi at Predicting Election Outcomes? - Bloomberg",
+      "type": "Blog/Website",
+      "focus": "Websites like Kalshi and Polymarket can outperform opinion polls \u2014 but they do better on bigger races and stumble down ballot. A Polymarket ad in a su",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-27/how-accurate-are-polymarket-and-kalshi-at-predicting-election-outcomes",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [

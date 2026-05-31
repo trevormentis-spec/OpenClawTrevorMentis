@@ -84,7 +84,11 @@ set -e 2>/dev/null || true
 # Step 1c: Kalshi prediction market scan
 echo "--- Scanning prediction markets ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/kalshi_scanner.py" --save >> "$LOG" 2>&1
+if [ -f "$REPO/scripts/kalshi_scanner.py" ]; then
+    python3 "$REPO/scripts/kalshi_scanner.py" --save >> "$LOG" 2>&1
+else
+    echo "Kalshi scanner not found (trading desk archived) — skipping" | tee -a "$LOG"
+fi
 set -e 2>/dev/null || true
 
 # Step 1d: [REMOVED] Simmer market signal overlay — trading desk archived 2026-05-31

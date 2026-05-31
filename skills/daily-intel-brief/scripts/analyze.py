@@ -836,8 +836,8 @@ def main() -> int:
                                behavioral_state=behavioral_state,
                                region_model=args.tier2_model or "deepseek/deepseek-v4-pro",
                                exec_model=args.model or "deepseek/deepseek-v4-pro")
-        # Exec summary needs all 10+ regions; use higher char limit so truncation doesn't destroy context
-        content = call_deepseek(tier1_model, system, user, provider=args.provider, max_input_chars=60000)
+        # Exec summary needs all 10+ regions; use moderate char limit to avoid DeepSeek hang on large payloads
+        content = call_deepseek(tier1_model, system, user, provider=args.provider, max_input_chars=16000)
         try:
             exec_payload = parse_json_strict(content)
         except Exception as exc:
@@ -846,7 +846,7 @@ def main() -> int:
                 "\n\nIMPORTANT: respond ONLY with a valid JSON object. "
                 "No prose, no markdown fences."
             )
-            content = call_deepseek(tier1_model, strict_system, user, provider=args.provider, max_input_chars=60000)
+            content = call_deepseek(tier1_model, strict_system, user, provider=args.provider, max_input_chars=16000)
             exec_payload = parse_json_strict(content)
     # Enforce correct model metadata (override any LLM hallucination)
     exec_payload["models_used"] = [tier2_model, tier1_model]

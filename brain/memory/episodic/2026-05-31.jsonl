@@ -4,3 +4,5 @@
 {"ts": "2026-05-31T18:10:06.775424+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 5.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}
 {"ts": "2026-05-31T18:10:16.960966+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 5.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}
 {"ts": "2026-05-31T18:10:45.456487+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 5.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}
+{"ts": "2026-05-31T18:52:48.903745+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 5.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}
+{"ts": "2026-05-31T18:53:12.101169+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 5.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}

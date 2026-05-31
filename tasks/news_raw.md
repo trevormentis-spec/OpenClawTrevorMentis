@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 17:02 UTC
+# Gmail Intel Digest — 2026-05-31 19:04 UTC
 
 ## Blue Origin faces months of delays after rocket explosion damages launch pad
 **From:** Reuters Technology Roundup <newsletters@email.reuters.com>
@@ -48,15 +48,14 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 ---
 
 
-## AgentMail Intel — 2026-05-31 17:04 UTC
+## AgentMail Intel — 2026-05-31 19:04 UTC
+
+### Global Update: A Festival of Black Culture With a ’90s Vibe
+**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
 
 ### Tech Update: May 29th
 **From:** CSIS Strategic Technologies Program <strategictech@csis.org>  
 CSIS Strategic Technologies Program Newsletter Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4204224803/14c107f32e527e322
-
-### Why Can't We "Just drop" AR-15s to Iranian Rebels
-**From:** Ryan McBeth from The official Ryan McBeth Substack <ryanmcbeth@substack.com>  
-View this post on the web at https://ryanmcbeth.substack.com/p/why-cant-we-just-drop-ar-15s-to-iranian I've gotten a few of these questions phrased in different ways. This video is free for all membe
 
 ### 3 groups to watch on the Hill
 **From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
@@ -65,21 +64,3 @@ Presented by Nike: The unofficial guide to official Washington. May 31, 2026 Vie
 ### By The Numbers: Rebuilding U.S. Missile Inventory, Threats to World Cup, Global Terrorism Threat Assessment, and More
 **From:** CSIS External Relations <externalrelations@csis.org>  
 Email not displaying correctly? View it in your browser https://pardot.csis.org/webmail/906722/4204162058/14c107f32e527e3224c46d9264dcd09ecb62fae60d1bf9f80ec5a7d524b7df87 Each week, we'll share wi
-
-### A Stronger Lawfare, Thanks to You
-**From:** Lawfare <lawfare@substack.com>  
-View this post on the web at https://lawfare.substack.com/p/a-stronger-lawfare-thanks-to-you Dear Lawfare community, I want to thank each and every person who donated to Lawfare during our May 2026 c
-
-### A jack-of-all-trades stain remover
-**From:** NYT Wirecutter <nytdirect@nytimes.com>  
-
-### China’s plans are going up in smoke
-**From:** Bloomberg Opinion <noreply@news.bloomberg.com>  
-Opinion Today Some wins aren't worth bragging about. View in browser <https://sli.bloomberg.com/click?s=1149039&li=18356188&m=758937c56e
-
-### Reusing old buildings is big business
-**From:** Bloomberg CityLab <noreply@news.bloomberg.com>  
-Architecture Firms Do More Work Adapting Old Buildings Than Designing New Ones Plus: Tracking China’s mega-regions ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### The Morning: Scene stealer
-**From:** The New York Times <nytdirect@nytimes.com>  
