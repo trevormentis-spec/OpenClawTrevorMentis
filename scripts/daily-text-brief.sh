@@ -73,11 +73,8 @@ set +e
 python3 "$REPO/scripts/kalshi_scanner.py" --save >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
-# Step 1d: Simmer market signal overlay (trading context, risk alerts, PnL)
-echo "--- Simmer signal overlay ---" | tee -a "$LOG"
-set +e
-python3 "$REPO/scripts/simmer_scanner.py" --save >> "$LOG" 2>&1
-set -e 2>/dev/null || true
+# Step 1d: [REMOVED] Simmer market signal overlay — trading desk archived 2026-05-31
+# Commented rather than removed to preserve line numbering for any external references.
 
 # =========================================================================
 # STEP 2: ORCHESTRATOR — collect + analyze
@@ -252,12 +249,8 @@ python3 "$REPO/scripts/postdict.py" \
 set -e 2>/dev/null || true
 
 # =========================================================================
-# STEP 5b: I&W FEEDBACK LOOP — connect calibration to Philby desks
+# STEP 5b: [REMOVED] I&W FEEDBACK LOOP — referenced Philby desk config, archived 2026-05-31
 # =========================================================================
-echo "--- Running I&W feedback loop ---" | tee -a "$LOG"
-set +e
-python3 "$REPO/scripts/iw_feedback_loop.py" --all >> "$LOG" 2>&1
-set -e 2>/dev/null || true
 
 # =========================================================================
 # STEP 5c: RECHECK EXPIRED PREDICTIONS — force-resolve expired judgments

@@ -1,30 +1,28 @@
 # Trevor Health Alerts
 
-**Generated:** 2026-05-31T16:17:20.273307+00:00
+**Generated:** 2026-05-31T17:13:29.393482+00:00
 **Health Score:** CRITICAL (0/100)
-**Total Alerts:** 7
+**Total Alerts:** 6
 
-⚠️ **[WARNING]** cron_health: Correlated error across 5 jobs: cron: job interrupted by gateway restart
-   Affected jobs: 0eb2de56, a1d90107, a20962e6, 82c2e29c, 511d14b2
+⚠️ **[WARNING]** cron_health: Correlated error across 3 jobs: cron: job interrupted by gateway restart
+   Affected jobs: 0eb2de56, a1d90107, 82c2e29c
    Root cause: unknown
 
-⚠️ **[WARNING]** cron_health: Correlated error across 8 jobs: FailoverError: ⚠️ deepseek (deepseek-v4-flash) returned a bi
-   Affected jobs: ae0d522f, e9f62049, cb039bf5, f10da54a, 1976bd12
+⚠️ **[WARNING]** cron_health: Correlated error across 7 jobs: FailoverError: ⚠️ deepseek (deepseek-v4-flash) returned a bi
+   Affected jobs: ae0d522f, cb039bf5, f10da54a, 1976bd12, 7ca66311
    Root cause: unknown
 
-⚠️ **[WARNING]** cron_health: Correlated error across 6 jobs: FallbackSummaryError: All models failed (1): deepseek/deepse
-   Affected jobs: 69d9d778, e0647d21, f082ad3a, f5fe6ef6, 02104a0d
+⚠️ **[WARNING]** cron_health: Correlated error across 5 jobs: FallbackSummaryError: All models failed (1): deepseek/deepse
+   Affected jobs: 69d9d778, e0647d21, f5fe6ef6, 02104a0d, 54fa00f7
    Root cause: unknown
 
-🔴 **[CRITICAL]** cron_health: 21/34 enabled jobs failing (61.8%)
+⚠️ **[WARNING]** cron_health: Correlated error across 3 jobs: cron: job execution timed out
+   Affected jobs: 5026ed81, a20962e6, ce4cb113
+   Root cause: unknown
+
+🔴 **[CRITICAL]** cron_health: 18/34 enabled jobs failing (52.9%)
    Root cause: >50% of enabled cron jobs failing
 
-🔴 **[CRITICAL]** cron_health: Systemic billing error affecting 14 jobs
-   Affected jobs: ae0d522f, e9f62049, 69d9d778, cb039bf5, f10da54a
+🔴 **[CRITICAL]** cron_health: Systemic billing error affecting 12 jobs
+   Affected jobs: ae0d522f, 69d9d778, cb039bf5, f10da54a, 1976bd12
    Root cause: DeepSeek billing exhausted
-
-🔴 **[CRITICAL]** pipeline: final/brief.md missing or doesn't contain today (2026-05-31)
-   Root cause: Daily brief pipeline may not have run
-
-⚠️ **[WARNING]** heartbeat: Stale phases: agentmail_inbox (291h), deepseek_balance (291h), nudge_check (291h), repo_state (291h), calendar (285h), memory_hygiene (285h), openrouter_usage (285h), brain_index (141h), social_monitor (718h), phase_d (141h), cost_snapshot (141h), memory_maintenance (141h), phase_a (117h), feed_audit (117h), phase_c (165h), prune_cycle (50h)
-   Root cause: Some heartbeat phases haven't run in >48h
