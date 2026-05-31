@@ -27,6 +27,7 @@ REPO="/home/ubuntu/.openclaw/workspace"
 DATE_UTC=$(date -u +%Y-%m-%d)
 LOG="$REPO/logs/daily-brief-${DATE_UTC}.log"
 LOCKFILE="/var/lock/daily-brief.lock"
+WORKING_DIR="$HOME/trevor-briefings/${DATE_UTC}"
 mkdir -p "$REPO/logs"
 
 # =========================================================================
@@ -94,19 +95,19 @@ echo "--- Running orchestrator (collect → analyze) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
     --model "deepseek/deepseek-v4-pro" \
     --tier2-model "deepseek/deepseek-v4-pro" \
-    --provider deepseek \
-    --tier2-provider deepseek \
+    --provider openrouter \
+    --tier2-provider openrouter \
     --redteam-model "deepseek/deepseek-v4-pro" \
-    --redteam-provider deepseek \
+    --redteam-provider openrouter \
     --no-deliver \
     >> "$LOG" 2>&1
 ORCH_RC=${PIPESTATUS[0]}
 
-if [  -ne 0 ]; then
-    echo "FATAL: Orchestrator failed with rc=" | tee -a ""
-    echo "DELIVERY ABORTED â orchestrator must succeed before quality gate can run." | tee -a ""
-    echo "=== Daily Text Brief FAILED â Fri May 29 18:28:51 UTC 2026 ===" | tee -a ""
-    exit 
+if [ "${ORCH_RC}" -ne 0 ]; then
+    echo "FATAL: Orchestrator failed with rc=${ORCH_RC}" | tee -a "${LOG}"
+    echo "DELIVERY ABORTED — orchestrator must succeed before quality gate can run." | tee -a "${LOG}"
+    echo "=== Daily Text Brief FAILED — ${DATE_UTC} ===" | tee -a "${LOG}"
+    exit 1
 fi
 
 # =========================================================================
@@ -129,9 +130,6 @@ else
 fi
 set -e 2>/dev/null || true
 
-ORCH_RC
-fi
-
 # =========================================================================
 # STEP 3: QUALITY GATE (standalone — runs OUTSIDE orchestrator)
 # =========================================================================
@@ -149,7 +147,16 @@ fi
 
 echo "--- Running quality gate ---" | tee -a "$LOG"
 
-WORKING_DIR="$HOME/trevor-briefings/${DATE_UTC}"
+mkdir -p "$WORKING_DIR"
+
+# Wait for completion sentinel — ensures orchestrator has flushed all files
+COMPLETE_FLAG="$WORKING_DIR/.brief_complete"
+if [ ! -f "$COMPLETE_FLAG" ]; then
+    echo "WARNING: .brief_complete not found — assembly may not be finished. Continuing with caution." | tee -a "$LOG"
+else
+    echo "Found .brief_complete sentinel: $(cat "$COMPLETE_FLAG")" | tee -a "$LOG"
+fi
+
 QG_REPORT=$(python3 "$REPO/analyst/guard_pipeline.py" \
     --brief-dir "$WORKING_DIR" \
     --query "geopolitical intelligence brief" \
@@ -216,22 +223,22 @@ if [ -n "${AGENTMAIL_API_KEY:-}" ]; then
         echo "WARNING: AgentMail delivery failed with rc=$DELIVER_RC" | tee -a "$LOG"
     fi
 else
-    echo "AGENTMAIL_API_KEY not set — text brief saved to $WORKING_DIR/analysis/exec_summary.json" | tee -a "$LOG"
+    echo "AGENTMAIL_API_KEY not set — brief saved to $WORKING_DIR/analysis/exec_summary.json" | tee -a "$LOG"
+fi
+
 # =========================================================================
-# STEP 4b: POST-DELIVERY QUALITY VALIDATION
+# STEP 4b: POST-DELIVERY QUALITY VALIDATION (always runs)
 # =========================================================================
 echo "--- Validating delivery quality ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/validate_delivery.py" 
-    --brief-dir "$WORKING_DIR" 
+python3 "$REPO/scripts/validate_delivery.py" \
+    --brief-dir "$WORKING_DIR" \
     >> "$LOG" 2>&1
 VALIDATE_RC=$?
 if [ $VALIDATE_RC -ne 0 ]; then
     echo "WARNING: Delivery quality check found issues (see log)" | tee -a "$LOG"
 fi
 set -e 2>/dev/null || true
-
-fi
 
 # =========================================================================
 # STEP 5: POSTDICTION
@@ -266,15 +273,16 @@ python3 "$REPO/scripts/compile_calibration_directives.py" >> "$LOG" 2>&1
 set -e 2>/dev/null || true
 
 # =========================================================================
-# STEP 6: MOLTBOOK — post brief to agent social network
+# STEP 6: DEPLOY LANDING PAGE — update GitHub Pages with latest brief content
 # =========================================================================
-echo "--- Posting to Moltbook ---" | tee -a "$LOG"
+echo "--- Deploying landing page ---" | tee -a "$LOG"
 set +e
-python3 "$REPO/scripts/moltbook_post.py" >> "$LOG" 2>&1
-set -e 2>/dev/null || true
-
-# =========================================================================
-# STEP 7: DEPLOY LANDING PAGE — update GitHub Pages with latest brief content
+if [ -f "$REPO/scripts/deploy_landing_page.sh" ]; then
+    bash "$REPO/scripts/deploy_landing_page.sh" >> "$LOG" 2>&1
+else
+    echo "Landing page deploy script not found — skipping" | tee -a "$LOG"
+fi
+set -e 2>/dev/null || true — update GitHub Pages with latest brief content
 # =========================================================================
 echo "--- Deploying landing page ---" | tee -a "$LOG"
 set +e

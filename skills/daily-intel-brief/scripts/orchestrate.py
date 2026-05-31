@@ -556,6 +556,11 @@ def main() -> int:
     if brain_script.exists():
         run_step("brain-reindex", ["python3", str(brain_script), "reindex"], wd)
 
+    # Write completion sentinel — signals to quality gate watchdog that assembly is done
+    completion_flag = wd / ".brief_complete"
+    completion_flag.write_text(date_utc)
+    log(f"wrote .brief_complete sentinel at {completion_flag}")
+
     if args.no_deliver or args.dry_run:
         log(f"delivery skipped; product at {pdf_path}")
         return 0
