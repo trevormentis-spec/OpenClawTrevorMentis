@@ -65,6 +65,24 @@ LOCAL_LANGUAGE_FEEDS = [
     ("Arab News", "https://www.arabnews.com/rss.xml", "en", ("B", 2)),
 
     ("The New Arab", "https://www.newarab.com/rss.xml", "en", ("B", 2)),
+
+    # --- MIDDLE EAST EXPANSION (added 2026-06-01 per collection audit) ---
+    # Critical gap: Middle East had zero systematic collection outside Israel.
+    # These feeds cover Gulf, Levant, Iraq, Yemen, and pan-ME perspectives.
+    ("Al Monitor", "https://www.al-monitor.com/feed", "en", ("B", 2)),
+    ("Middle East Eye", "https://www.middleeasteye.net/rss", "en", ("B", 2)),
+    ("Syria Direct", "https://syriadirect.org/feed/", "en", ("B", 2)),
+    ("Iraq Oil Report", "https://www.iraqoilreport.com/feed/", "en", ("B", 2)),
+    ("Yemen News Agency (SABA)", "https://www.sabanews.net/en/rss.xml", "en", ("C", 3)),
+    ("Gulf News", "https://gulfnews.com/feed", "en", ("B", 2)),
+    # The National (UAE): Arc XP platform — no public RSS URL found. Replaced with Khaleej Times (UAE's other major English daily).
+    ("Khaleej Times (UAE)", "https://www.khaleejtimes.com/rss/feed", "en", ("B", 2)),
+    # Al Arabiya English: all known feed URLs return 403. Use Al Jazeera Arabic as alternative Gulf perspective.
+
+    ("Amwaj.media (ME)", "https://amwaj.media/feed", "en", ("A", 2)),
+    ("L'Orient Today (Lebanon)", "https://today.lorientlejour.com/rss", "en", ("B", 2)),
+    ("Iran International", "https://www.iranintl.com/rss.xml", "en", ("B", 2)),
+    ("Tehran Times", "https://www.tehrantimes.com/rss/", "en", ("C", 3)),
     # Russian
     ("TASS (English)", "https://tass.com/rss/v2.xml", "en", ("C", 3)),
     ("Meduza (English)", "https://meduza.io/rss/en/all", "en", ("B", 2)),
@@ -107,6 +125,13 @@ LOCAL_LANGUAGE_FEEDS = [
     # Helsingin Sanomat: no working RSS feed — removed
     ("Kyiv Independent", "https://kyivindependent.com", "en", ("B", 2)),
     ("Meduza", "https://meduza.io/rss/all", "ru", ("B", 2)),
+
+    # --- EUROPE EXPANSION (added 2026-06-01) ---
+    ("EU Disinfo Review (EEAS)", "https://euvsdisinfo.eu/feed/", "en", ("A", 2)),
+    ("European Council on Foreign Relations", "https://ecfr.eu/feed/", "en", ("A", 2)),
+    ("Chatham House", "https://www.chathamhouse.org/rss.xml", "en", ("A", 2)),
+    ("Carnegie Europe", "https://carnegieeurope.eu/feed", "en", ("A", 2)),
+    ("International Crisis Group", "https://www.crisisgroup.org/rss.xml", "en", ("A", 2)),
     # Asian
 
     ("Channel News Asia", "https://www.channelnewsasia.com/rssfeeds/8395986", "en", ("B", 2)),

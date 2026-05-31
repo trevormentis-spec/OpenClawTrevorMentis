@@ -293,7 +293,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "prediction_markets"
   },
   {
     "name": "House Oversight Chair James Comer launches probe into Kalshi, Polymarket",
@@ -305,7 +306,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "prediction_markets"
   },
   {
     "name": "Bruegel releases enhanced RSS feeds",
@@ -380,7 +382,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "north_america"
   },
   {
     "name": "South America: Analysis, Research, & Events | CSIS",
@@ -392,7 +395,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
@@ -494,7 +498,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "israel_lebanon"
   },
   {
     "name": "Central Asia: Analysis, Research, & Events | CSIS",
@@ -545,7 +550,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "military_osint"
   },
   {
     "name": "Regional Security Architecture Programme - RSIS",
@@ -569,7 +575,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "southeast_asia"
   },
   {
     "name": "Oceania | Council on Foreign Relations",
@@ -620,7 +627,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "think_tanks"
   },
   {
     "name": "💪🇺🇦 The War Comes Home: Ukraine Strikes the Heart of Moscow",
@@ -821,7 +829,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "north_america"
   },
   {
     "name": "U.S. News and National Top Stories : NPR",
@@ -944,7 +953,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "middle_east"
   },
   {
     "name": "Middle East Uncovered | Substack",
@@ -956,7 +966,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "israel_lebanon"
   },
   {
     "name": "Monitoring the Strait of Hormuz: Real-Time Maritime Risk & Transit Data",
@@ -1019,7 +1030,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
@@ -1043,7 +1055,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Bruegel releases enhanced RSS feeds",
@@ -1055,7 +1068,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "think_tanks"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -1116,7 +1130,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "35 Best Caribbean News RSS Feeds",
@@ -1190,7 +1205,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "RSS feeds - Africa Intelligence",
@@ -1241,7 +1257,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Middle East: Analysis, Research, & Events | CSIS",
@@ -1253,7 +1270,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Middle East Conflict Monitor | ACLED",
@@ -1265,7 +1283,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Central Asia: Analysis, Research, & Events | CSIS",
@@ -1316,7 +1335,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "military_osint"
   },
   {
     "name": "Regional Security Architecture Programme - RSIS",
@@ -1340,7 +1360,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "southeast_asia"
   },
   {
     "name": "Oceania | Council on Foreign Relations",
@@ -1427,7 +1448,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "europe"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -1488,7 +1510,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "35 Best Caribbean News RSS Feeds",
@@ -1513,7 +1536,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -1550,7 +1574,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
@@ -1613,7 +1638,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Middle East: Analysis, Research, & Events | CSIS",
@@ -1625,7 +1651,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "middle_east"
   },
   {
     "name": "Middle East Conflict Monitor | ACLED",
@@ -1637,7 +1664,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Central Asia: Analysis, Research, & Events | CSIS",
@@ -1799,7 +1827,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "think_tanks"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -1836,7 +1865,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "europe"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -1922,7 +1952,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
@@ -2009,7 +2040,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Bruegel releases enhanced RSS feeds",
@@ -2107,7 +2139,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
@@ -2478,7 +2511,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -2890,7 +2924,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -2928,7 +2963,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
@@ -2940,7 +2976,8 @@
     "score_reliability": 1,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "South America: Analysis, Research, & Events | CSIS",
@@ -3459,7 +3496,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "Communicating European security and defence policy",
@@ -3484,7 +3522,8 @@
     "score_reliability": 3,
     "score_freshness": 2,
     "score_relevance": 2,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Iran: The Latest - Podcast - Apple Podcasts",
@@ -4222,7 +4261,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Extra (O Globo)",
@@ -5027,7 +5067,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Inter-American Dialogue",
@@ -5051,7 +5092,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Nodal",
@@ -6073,7 +6115,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Correo",
@@ -6277,7 +6320,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: OVV (Observatorio Venezolano de Violencia)",
@@ -6483,7 +6527,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "north_america"
   },
   {
     "name": "35 Best Caribbean News RSS Feeds",
@@ -6520,7 +6565,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "35 Best Caribbean News RSS Feeds",
@@ -6557,7 +6603,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Analysis, Research, & Events | CSIS",
@@ -7126,7 +7173,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Mail & Guardian",
@@ -7138,7 +7186,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "amaBhungane",
@@ -7813,7 +7862,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   },
   {
     "name": "Targeting Taiwan Under Xi: China’s Military Forest Flourishing Despite Toppling Trees – Fairbank Center for Chinese Studies",
@@ -7964,7 +8014,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "israel_lebanon"
   },
   {
     "name": "Latin America's Cybersecurity Turning Point: From Reactive Defense to Threat Intelligence",
@@ -7976,7 +8027,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "south_america"
   },
   {
     "name": "Securing Latin America in 2025: How AI and Cyber Threat Intelligence Are Reshaping the Cyber Security Landscape - Check Point Blog",
@@ -7988,7 +8040,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "south_america"
   },
   {
     "name": "Deep Dive: 2025 LATAM Threat Landscape Report | CrowdStrike",
@@ -8211,7 +8264,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "central_asia_india"
   },
   {
     "name": "Foreign and security policy – EU action | European Union",
@@ -8272,7 +8326,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Global Energy Outlook 2026: How the World Lost the Goal of 1.5°C",
@@ -8680,7 +8735,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "china_asia"
   },
   {
     "name": "Billions are traded each week on Kalshi and Polymarket. There is a push to bring prediction markets to Australia - ABC News",
@@ -8692,7 +8748,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "oceania_pacific"
   },
   {
     "name": "Montel | Geopolitical report: April 2026",
@@ -8963,7 +9020,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "central_america_caribbean"
   },
   {
     "name": "Europe and NATO| Defense News",
@@ -9025,7 +9083,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "china_asia"
   },
   {
     "name": "Once Again, Energy Is Power",
@@ -9256,7 +9315,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "South America: Analysis, Research, & Events | CSIS",
@@ -9541,7 +9601,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "middle_east"
   },
   {
     "name": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licences | Reuters",
@@ -9577,7 +9638,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "sub_saharan_africa"
   },
   {
     "name": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licences | Reuters",
@@ -9747,7 +9809,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "north_america"
   },
   {
     "name": "OSINT — Latest News, Reports & Analysis | The Hacker News",
@@ -9759,7 +9822,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "central_asia_india"
   },
   {
     "name": "War",
@@ -9898,7 +9962,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "middle_east"
   },
   {
     "name": "The Times of India",
@@ -10341,7 +10406,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 1,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "south_america"
   },
   {
     "name": "Central America Newswire - World News Report - EIN Presswire",
@@ -10982,7 +11048,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "israel_lebanon"
   },
   {
     "name": "Bruegel releases enhanced RSS feeds",
@@ -11414,7 +11481,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "israel_lebanon"
   },
   {
     "name": "Top 15 Europe Defense RSS Feeds",
@@ -11903,7 +11971,8 @@
     "score_reliability": 1,
     "score_freshness": 3,
     "score_relevance": 2,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "dashboards"
   },
   {
     "name": "Skuld Maritime Security Updates",
@@ -12260,7 +12329,8 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 1
+    "score_diversity": 1,
+    "region": "military_osint"
   },
   {
     "name": "TankerTrackers.com (@TankerTrackers)",
@@ -12308,6 +12378,7 @@
     "score_reliability": 3,
     "score_freshness": 3,
     "score_relevance": 0,
-    "score_diversity": 2
+    "score_diversity": 2,
+    "region": "think_tanks"
   }
 ]
