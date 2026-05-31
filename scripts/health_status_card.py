@@ -65,7 +65,8 @@ def print_card(d: dict) -> None:
     # Cron
     cron = ls("cron_health")
     e = cron.get("enabled", 0)
-    f = cron.get("failing", 0)
+    # Use active_failing if available (excludes resolved historical failures)
+    f = cron.get("active_failing", cron.get("failing", 0))
     ok = e - f
     if f:
         lines.append(bl(f"Cron jobs: {ok}/{e} ok ({f} failing)"))

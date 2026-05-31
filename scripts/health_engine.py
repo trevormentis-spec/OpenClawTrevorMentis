@@ -567,29 +567,60 @@ def check_cron_health(dashboard: Dict[str, Any]) -> None:
         layer["total_jobs"] = len(jobs)
         layer["failing_jobs"] = failing_jobs
 
-        if layer["failing_pct"] >= 50:
-            layer["status"] = "critical"
-            alerts.append(_alert("CRITICAL", "cron_health",
-                                 f"{len(failing_jobs)}/{enabled_count} enabled jobs "
-                                 f"failing ({layer['failing_pct']}%)",
-                                 root_cause=">50% of enabled cron jobs failing"))
-        elif layer["failing_pct"] >= 20:
-            layer["status"] = "degraded"
-            alerts.append(_alert("WARNING", "cron_health",
-                                 f"{len(failing_jobs)}/{enabled_count} enabled jobs "
-                                 f"failing ({layer['failing_pct']}%)",
-                                 root_cause=">20% of enabled cron jobs failing"))
+        # Check if billing root cause has been RESOLVED since the failures
+        # Read current DeepSeek balance from infrastructure layer
+        billing_resolved = False
+        infra = dashboard.get("layers", {}).get("infrastructure", {})
+        ds_balance = infra.get("deepseek_balance", 0.0)
+        if ds_balance > 5.0:
+            billing_resolved = True
 
         if "billing" in layer["systemic_errors"]:
             billing_jobs = [j for j in failing_jobs
                             if j.get("reason") == "billing error"]
             if billing_jobs:
-                alerts.append(_alert(
-                    "CRITICAL", "cron_health",
-                    f"Systemic billing error affecting {len(billing_jobs)} jobs",
-                    affected_jobs=[j["id"] for j in billing_jobs],
-                    root_cause="DeepSeek billing exhausted",
-                ))
+                if billing_resolved:
+                    # Billing was resolved — these are historical failures
+                    # Exclude them from the active failing count
+                    layer["resolved_billing_jobs"] = len(billing_jobs)
+                    layer["active_failing"] = layer["failing"] - len(billing_jobs)
+                    layer["active_failing_pct"] = round(
+                        layer["active_failing"] / max(enabled_count, 1) * 100, 1)
+                    alerts.append(_alert(
+                        "WARNING", "cron_health",
+                        f"{len(billing_jobs)} historical billing failures (resolved — "
+                        f"DeepSeek balance ${ds_balance:.2f}). "
+                        f"{layer['active_failing']} active failures remaining.",
+                        affected_jobs=[j["id"] for j in billing_jobs],
+                        root_cause="DeepSeek billing has been RESOLVED since these failures",
+                    ))
+                else:
+                    # Billing is STILL a problem — CRITICAL
+                    alerts.append(_alert(
+                        "CRITICAL", "cron_health",
+                        f"Systemic billing error affecting {len(billing_jobs)} jobs "
+                        f"(balance ${ds_balance:.2f})",
+                        affected_jobs=[j["id"] for j in billing_jobs],
+                        root_cause="DeepSeek billing exhausted",
+                    ))
+
+
+        active_failing_pct = layer.get("active_failing_pct")
+        display_pct = active_failing_pct if active_failing_pct is not None else layer["failing_pct"]
+        display_failing = layer.get("active_failing", layer["failing"])
+
+        if display_pct >= 50:
+            layer["status"] = "critical"
+            alerts.append(_alert("CRITICAL", "cron_health",
+                                 f"{display_failing}/{enabled_count} enabled jobs "
+                                 f"failing ({display_pct}%)",
+                                 root_cause=">50% of enabled cron jobs failing"))
+        elif display_pct >= 20:
+            layer["status"] = "degraded"
+            alerts.append(_alert("WARNING", "cron_health",
+                                 f"{display_failing}/{enabled_count} enabled jobs "
+                                 f"failing ({display_pct}%)",
+                                 root_cause=">20% of enabled cron jobs failing"))
 
     except Exception as exc:
         LOG.exception("Cron health check failed")
@@ -935,7 +966,8 @@ def compute_health_score(dashboard: Dict[str, Any]) -> None:
         score -= 5
 
     cron = layers.get("cron_health", {})
-    failing_pct = cron.get("failing_pct", 0)
+    # Use active_failing_pct if available (excludes resolved historical failures)
+    failing_pct = cron.get("active_failing_pct", cron.get("failing_pct", 0))
     score -= int(failing_pct / 10) * 5
 
     score = max(0, min(100, score))
