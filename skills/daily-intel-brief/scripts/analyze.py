@@ -175,6 +175,26 @@ def call_deepseek(model: str, system: str, user: str,
             "HTTP-Referer": "https://github.com/trevormentis-spec",
             "X-Title": "TREVOR Intel Brief",
         }
+        client_class = OpenAI
+    elif provider == "anthropic":
+        api_key = _os.environ.get("ANTHROPIC_API_KEY", "")
+        # Fallback to .env reading
+        if not api_key or "sk-43a" in api_key:
+            try:
+                _env_path = pathlib.Path(__file__).resolve().parent.parent.parent.parent / ".env"
+                if _env_path.exists():
+                    for _env_line in _env_path.read_text().split("\n"):
+                        if "ANTHROPIC_API_KEY" in _env_line and "sk-ant-" in _env_line:
+                            api_key = _env_line.split("=", 1)[1].strip().strip('"').strip("'")
+                            break
+            except Exception:
+                pass
+        if not api_key or "sk-43a" in api_key:
+            raise RuntimeError("Valid ANTHROPIC_API_KEY (sk-ant-...) not found")
+        base_url = "https://api.anthropic.com/v1"
+        api_model = model
+        extra_headers = {}
+        client_class = None  # Will use direct API
     else:
         api_key = _os.environ.get("DEEPSEEK_API_KEY")
         if not api_key:
@@ -182,6 +202,7 @@ def call_deepseek(model: str, system: str, user: str,
         base_url = "https://api.deepseek.com"
         api_model = model.split("/", 1)[-1] if "/" in model else model
         extra_headers = {}
+        client_class = OpenAI
     
     # Truncate user content if total prompt is too large (DeepSeek V4 Pro slow above ~20KB total)
     # Regional analysis: 18KB is fine. Exec summary (all 10+ regions): needs 60K+
@@ -201,10 +222,33 @@ def call_deepseek(model: str, system: str, user: str,
         "max_tokens": max_tokens,
         "timeout": 120,
     }
-    # NOTE: json_object mode disabled — DeepSeek V4 Pro hangs on structured output with long prompts
-    # if json_mode:
-    #     kwargs["response_format"] = {"type": "json_object"}
     
+    if provider == "anthropic":
+        # Use Anthropic API directly (not OpenAI-compatible)
+        import urllib.request as _urllib
+        anthropic_payload = _json.dumps({
+            "model": api_model,
+            "max_tokens": max_tokens,
+            "system": system,
+            "messages": [{"role": "user", "content": user}]
+        }).encode()
+        _req = _urllib.Request(
+            f"{base_url}/messages",
+            data=anthropic_payload,
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01"
+            }
+        )
+        try:
+            with _urllib.urlopen(_req, timeout=120) as _resp:
+                _result = _json.loads(_resp.read())
+                return _result["content"][0]["text"]
+        except Exception as e:
+            raise RuntimeError(f"Anthropic API call failed: {e}")
+    
+    # OpenAI-compatible providers (DeepSeek, OpenRouter)
     client = OpenAI(api_key=api_key, base_url=base_url, default_headers=extra_headers or None)
     try:
         response = client.chat.completions.create(**kwargs)
@@ -534,12 +578,12 @@ def main() -> int:
     parser.add_argument("--model", default="deepseek/deepseek-v4-pro",
                         help="Tier-1 model for executive summary (default: V4 Pro)")
     parser.add_argument("--tier2-model", default="deepseek/deepseek-v4-pro", help="Tier-2 model for regional analysis")
-    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter"], default="openrouter", help="API provider for tier-2")
-    parser.add_argument("--provider", choices=["deepseek", "openrouter"], default="openrouter",
+    parser.add_argument("--tier2-provider", choices=["deepseek", "openrouter", "anthropic"], default="openrouter", help="API provider for tier-2")
+    parser.add_argument("--provider", choices=["deepseek", "openrouter", "anthropic"], default="openrouter",
                         help="API provider for tier-1 exec summary")
     parser.add_argument("--redteam-model", default=None,
                         help="Model for red-team pass (default: same as --model)")
-    parser.add_argument("--redteam-provider", choices=["deepseek", "openrouter"], default=None,
+    parser.add_argument("--redteam-provider", choices=["deepseek", "openrouter", "anthropic"], default=None,
                         help="Provider for red-team pass (default: same as --provider)")
     parser.add_argument("--recall", default="",
                         help="path to brain-recall.md with prior memory context")

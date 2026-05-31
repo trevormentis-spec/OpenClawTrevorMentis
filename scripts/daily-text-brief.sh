@@ -165,9 +165,9 @@ echo "Available provider: ${AVAILABLE_PROVIDER:-none}" | tee -a "$LOG"
 
 echo "--- Running orchestrator (collect → analyze) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
-    --model "deepseek/deepseek-v4-pro" \
+    --model "claude-4-opus-20250514" \
     --tier2-model "deepseek/deepseek-v4-pro" \
-    --provider openrouter \
+    --provider anthropic \
     --tier2-provider openrouter \
     --redteam-model "deepseek/deepseek-v4-pro" \
     --redteam-provider openrouter \

@@ -9,29 +9,26 @@
 version: 1
 
 providers:
+  anthropic_direct:
+    priority: 1
+    api_key_env: "ANTHROPIC_API_KEY"
+    models:
+      exec_summary: "claude-4-opus-20250514"
+    circuit_breaker:
+      consecutive_failures: 3
+      recovery_interval_sec: 1800
+
   openrouter:
     priority: 1
     models:
-      exec_summary: "deepseek/deepseek-v4-pro"
       regional_analysis: "deepseek/deepseek-v4-pro"
       red_team: "deepseek/deepseek-v4-pro"
     circuit_breaker:
       consecutive_failures: 3
       recovery_interval_sec: 1800
 
-  anthropic_direct:
-    priority: 2
-    api_key_env: "ANTHROPIC_API_KEY"
-    models:
-      exec_summary: "claude-opus-4.7"
-      regional_analysis: "claude-sonnet-4.5"
-      red_team: "claude-sonnet-4.5"
-    circuit_breaker:
-      consecutive_failures: 3
-      recovery_interval_sec: 1800
-
   deepseek_direct:
-    priority: 3
+    priority: 2
     models:
       exec_summary: "deepseek/deepseek-v4-pro"
       regional_analysis: "deepseek/deepseek-v4-flash"
@@ -41,8 +38,16 @@ providers:
       recovery_interval_sec: 1800
 
 routing:
-  default_model: "deepseek/deepseek-v4-pro"
+  default_regional: "deepseek/deepseek-v4-pro"
+  default_exec: "claude-4-opus-20250514"
   fallback_chain:
-    - openrouter
     - anthropic_direct
+    - openrouter
     - deepseek_direct
+
+notes: |
+  Exec summary uses Anthropic Claude Opus 4 as PRIMARY because:
+  1. Handles large payloads (no 20KB hang issue like DeepSeek)
+  2. Produces more specific, calibrated judgments with better band diversity
+  3. Regional analysis uses DeepSeek V4 Pro via OpenRouter (cheaper, adequate for regionals)
+  4. Red team on OpenRouter for cost efficiency
