@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-05-31T19:43:48.911924+00:00",
-  "health_score": 50,
+  "timestamp": "2026-05-31T20:13:48.368591+00:00",
+  "health_score": 55,
   "health_label": "SICK",
   "layers": {
     "github_backup": {
       "status": "ok",
-      "details": "0 uncommitted, 0 unpushed, last push 0.1h ago",
-      "uncommitted": 0,
+      "details": "3 uncommitted, 0 unpushed, last push 0.5h ago",
+      "uncommitted": 3,
       "unpushed": 0,
-      "last_backup_age_hours": 0.1,
+      "last_backup_age_hours": 0.5,
       "backup_status": "ok",
       "alerts": []
     },
@@ -19,14 +19,14 @@
       "deepseek_balance": 98.33,
       "openrouter_ok": true,
       "supervisord": true,
-      "uptime": "5 days, 19:35",
+      "uptime": "5 days, 20:05",
       "load_avg": [
-        2.88,
-        2.64,
-        2.84
+        1.8,
+        2.31,
+        2.58
       ],
-      "memory_used_gb": 0.0,
-      "memory_available_gb": 15.0,
+      "memory_used_gb": 1.0,
+      "memory_available_gb": 14.0,
       "alerts": [],
       "crash_tracking": {
         "crashes_24h": 0,
@@ -38,8 +38,8 @@
     "cron_health": {
       "status": "ok",
       "enabled": 34,
-      "failing": 17,
-      "failing_pct": 50.0,
+      "failing": 15,
+      "failing_pct": 44.1,
       "total_jobs": 70,
       "systemic_errors": [
         "billing"
@@ -47,24 +47,13 @@
       "correlated_alerts": [],
       "failing_jobs": [
         {
-          "id": "0eb2de56",
-          "status": "error",
-          "consecutive_errors": 1,
-          "last_error": "cron: job interrupted by gateway restart",
-          "last_error_reason": "",
-          "reasons": [
-            "interrupted by gateway restart"
-          ],
-          "age_hours": 19.0
-        },
-        {
           "id": "ae0d522f",
           "status": "error",
           "consecutive_errors": 1,
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 7.7
+          "age_hours": 8.2
         },
         {
           "id": "69d9d778",
@@ -76,7 +65,7 @@
           "reasons": [
             "all models failed (DeepSeek?)"
           ],
-          "age_hours": 7.7
+          "age_hours": 8.2
         },
         {
           "id": "cb039bf5",
@@ -85,7 +74,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 4.7
+          "age_hours": 5.2
         },
         {
           "id": "f10da54a",
@@ -94,7 +83,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 4.2
+          "age_hours": 4.7
         },
         {
           "id": "5026ed81",
@@ -103,7 +92,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 3.7
+          "age_hours": 4.2
         },
         {
           "id": "1976bd12",
@@ -112,7 +101,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 9.7
+          "age_hours": 10.2
         },
         {
           "id": "a20962e6",
@@ -121,7 +110,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 2.7
+          "age_hours": 3.2
         },
         {
           "id": "ce4cb113",
@@ -130,7 +119,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 145.7
+          "age_hours": 146.2
         },
         {
           "id": "e0647d21",
@@ -142,7 +131,7 @@
           "reasons": [
             "all models failed (DeepSeek?)"
           ],
-          "age_hours": 5.6
+          "age_hours": 6.1
         },
         {
           "id": "7ca66311",
@@ -151,7 +140,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 6.6
+          "age_hours": 7.1
         },
         {
           "id": "f5fe6ef6",
@@ -163,7 +152,7 @@
           "reasons": [
             "all models failed (DeepSeek?)"
           ],
-          "age_hours": 4.7
+          "age_hours": 5.2
         },
         {
           "id": "6c54d13f",
@@ -172,7 +161,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 5.5
+          "age_hours": 6.0
         },
         {
           "id": "67e2713e",
@@ -181,7 +170,7 @@
           "last_error": "FailoverError: \u26a0\ufe0f deepseek (deepseek-v4-flash) returned a billing error \u2014 your A",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 6.2
+          "age_hours": 6.7
         },
         {
           "id": "02104a0d",
@@ -193,7 +182,7 @@
           "reasons": [
             "all models failed (DeepSeek?)"
           ],
-          "age_hours": 9.7
+          "age_hours": 10.2
         },
         {
           "id": "54fa00f7",
@@ -205,21 +194,12 @@
           "reasons": [
             "all models failed (DeepSeek?)"
           ],
-          "age_hours": 9.7
-        },
-        {
-          "id": "8e99f4ac",
-          "status": "error",
-          "consecutive_errors": 1,
-          "last_error": "cron: job execution timed out",
-          "last_error_reason": "timeout",
-          "reason": "timeout",
-          "age_hours": 0.8
+          "age_hours": 10.2
         }
       ],
       "resolved_billing_jobs": 12,
-      "active_failing": 5,
-      "active_failing_pct": 14.7,
+      "active_failing": 3,
+      "active_failing_pct": 8.8,
       "alerts": [
         {
           "level": "WARNING",
@@ -235,7 +215,7 @@
             "67e2713e"
           ],
           "root_cause": "unknown",
-          "timestamp": "2026-05-31T19:43:48.964009+00:00"
+          "timestamp": "2026-05-31T20:13:48.422911+00:00"
         },
         {
           "level": "WARNING",
@@ -249,25 +229,24 @@
             "54fa00f7"
           ],
           "root_cause": "unknown",
-          "timestamp": "2026-05-31T19:43:48.964016+00:00"
+          "timestamp": "2026-05-31T20:13:48.422919+00:00"
         },
         {
           "level": "WARNING",
           "layer": "cron_health",
-          "message": "Correlated error across 4 jobs: cron: job execution timed out",
+          "message": "Correlated error across 3 jobs: cron: job execution timed out",
           "affected_jobs": [
             "5026ed81",
             "a20962e6",
-            "ce4cb113",
-            "8e99f4ac"
+            "ce4cb113"
           ],
           "root_cause": "unknown",
-          "timestamp": "2026-05-31T19:43:48.964019+00:00"
+          "timestamp": "2026-05-31T20:13:48.422922+00:00"
         },
         {
           "level": "WARNING",
           "layer": "cron_health",
-          "message": "12 historical billing failures (resolved \u2014 DeepSeek balance $98.33). 5 active failures remaining.",
+          "message": "12 historical billing failures (resolved \u2014 DeepSeek balance $98.33). 3 active failures remaining.",
           "affected_jobs": [
             "ae0d522f",
             "69d9d778",
@@ -283,7 +262,7 @@
             "54fa00f7"
           ],
           "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-          "timestamp": "2026-05-31T19:43:48.964031+00:00"
+          "timestamp": "2026-05-31T20:13:48.422934+00:00"
         }
       ]
     }
@@ -303,7 +282,7 @@
         "67e2713e"
       ],
       "root_cause": "unknown",
-      "timestamp": "2026-05-31T19:43:48.964009+00:00"
+      "timestamp": "2026-05-31T20:13:48.422911+00:00"
     },
     {
       "level": "WARNING",
@@ -317,25 +296,24 @@
         "54fa00f7"
       ],
       "root_cause": "unknown",
-      "timestamp": "2026-05-31T19:43:48.964016+00:00"
+      "timestamp": "2026-05-31T20:13:48.422919+00:00"
     },
     {
       "level": "WARNING",
       "layer": "cron_health",
-      "message": "Correlated error across 4 jobs: cron: job execution timed out",
+      "message": "Correlated error across 3 jobs: cron: job execution timed out",
       "affected_jobs": [
         "5026ed81",
         "a20962e6",
-        "ce4cb113",
-        "8e99f4ac"
+        "ce4cb113"
       ],
       "root_cause": "unknown",
-      "timestamp": "2026-05-31T19:43:48.964019+00:00"
+      "timestamp": "2026-05-31T20:13:48.422922+00:00"
     },
     {
       "level": "WARNING",
       "layer": "cron_health",
-      "message": "12 historical billing failures (resolved \u2014 DeepSeek balance $98.33). 5 active failures remaining.",
+      "message": "12 historical billing failures (resolved \u2014 DeepSeek balance $98.33). 3 active failures remaining.",
       "affected_jobs": [
         "ae0d522f",
         "69d9d778",
@@ -351,7 +329,7 @@
         "54fa00f7"
       ],
       "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-      "timestamp": "2026-05-31T19:43:48.964031+00:00"
+      "timestamp": "2026-05-31T20:13:48.422934+00:00"
     }
   ],
   "emergency": false
