@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-05-31 03:01 UTC
+# Gmail Intel Digest — 2026-05-31 05:01 UTC
 
 ## Iran Update Special Report, May 30, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -38,9 +38,3 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-
-## AgentMail Intel — 2026-05-31 03:01 UTC
-
-### Think you know the news? Think again
-**From:** Bloomberg <subscriptions@message.bloomberg.com>  
-Play the news quiz for risk-takers. Play Pointed, the news quiz for risk-takers. Starting every Thursday at 6 p.m. ET,

@@ -12809,6 +12809,114 @@
       "discovered": "2026-05-31",
       "signal_level": "Medium",
       "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "The Impact of the Middle East Conflict on Asia and the Pacific: An Updated Analysis | Asian Development Bank",
+      "type": "Blog/Website",
+      "focus": "<strong>This brief sets out updated estimates of the potential impact of the 2026 Middle East conflict on developing Asia and the Pacific</strong>, ba",
+      "url": "https://www.adb.org/publications/middle-east-conflict-updated-analysis",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "The Impact of the Middle East Conflict on Asia and the Pacific: An Updated Analysis | Asian Development Bank",
+      "type": "Blog/Website",
+      "focus": "<strong>This brief sets out updated estimates of the potential impact of the 2026 Middle East conflict on developing Asia and the Pacific</strong>, ba",
+      "url": "https://www.adb.org/publications/middle-east-conflict-updated-analysis",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "What Russia\u2019s war on Ukraine means for Central Asia - Atlantic Council",
+      "type": "Blog/Think Tank",
+      "focus": "Central Asia\u2019s geopolitical importance stems from its position as a trade crossroads, its vast energy reserves, and its role in China\u2019s Belt and Road ",
+      "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/what-russias-war-on-ukraine-means-for-central-asia/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_asia"
     }
   ],
   "moltbook_sources": [
