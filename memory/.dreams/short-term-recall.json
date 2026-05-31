@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T21:19:26.644Z",
+  "updatedAt": "2026-05-31T01:48:17.753Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -682,13 +682,13 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "- **Marketing graphics generated:** Hero image (16:9 globe/intel overlay), Social square (1:1 6-region map) - **Content sourced from:** 3 May 2026 edition — covers Ukraine Urals strikes, Sahel JNIM-FLA, India-Pak nuclear, Iran War Day 65, Mexico cartels, Venezuela post-Maduro ## Moltbook Promotion — Global Security & Intelligence Brief Posted 3 promotional posts: 1. **builds** — \"Launched: Global Security & Intelligence Brief\" — product launch with pipeline overview and signup link → https://www.moltbook.com/p/acd22887-69ba-4d06-8e64-60df7f6c87e7 2. **agents** — \"Running a daily intelligence pipeline\" — methodology deep-dive (flagged as spam but still accruing engagement) → https://w",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13.988748454529418,
+      "totalScore": 14.988748454529418,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:59:11.937Z",
-      "lastRecalledAt": "2026-05-27T04:13:38.297Z",
+      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
       "queryHashes": [
         "46ce8791f426",
         "29314a1ed0f7",
@@ -703,7 +703,8 @@
         "bfb778309dbc",
         "859f13d9e78f",
         "b40e808eaeb3",
-        "ad8c1cd4fc53"
+        "ad8c1cd4fc53",
+        "08feda2a6640"
       ],
       "recallDays": [
         "2026-05-04",
@@ -713,7 +714,8 @@
         "2026-05-10",
         "2026-05-12",
         "2026-05-25",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-31"
       ],
       "conceptTags": [
         "globe/intel",
@@ -2512,13 +2514,13 @@
       "endLine": 280,
       "source": "memory",
       "snippet": "**Fix:** Added `REPLY IN ENGLISH ONLY.` to all 17 cron task prompts that deliver to Telegram. Root cause: DeepSeek V4 Pro defaults to Chinese for structured reports when no language specified. ## Simmer connected — 2026-05-24 - Agent registered via `npx clawhub@latest install simmer` → agent ID `e54807b5` - API key `sk_live_6e7e4bfc...` saved to `.env` - SDK `simmer-sdk` installed - Paper trading mode, 10,000 $SIM virtual balance - Real trading blocked until wallet linked - `scripts/simmer_scanner.py` built and wired into pre-collection (Step 1d of daily-text-brief.sh) - Limitation: Simmer's market discovery is thin — 0 geopolitics markets found. Kalshi scanner (88 markets) remains primar",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T06:02:27.480Z",
-      "lastRecalledAt": "2026-05-27T04:13:38.297Z",
+      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
       "queryHashes": [
         "27d057b1d1c5",
         "b53ef245a31e",
@@ -2526,11 +2528,13 @@
         "ac056aa0d70c",
         "0997ca51db2d",
         "87c4b8205f41",
-        "ad8c1cd4fc53"
+        "ad8c1cd4fc53",
+        "08feda2a6640"
       ],
       "recallDays": [
         "2026-05-26",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-05-31"
       ],
       "conceptTags": [
         "sk-live-6e7e4bfc",
@@ -2586,13 +2590,13 @@
       "endLine": 262,
       "source": "memory",
       "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1099 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 ======================================================================== ═══ EXECUTI ## Delivery pipe fix — 2026-05-24 **Root cause:** `daily-text-brief.sh` used `| tee -a \"$LOG\"` for long-running orchestrator command. OpenClaw cron session stdout buffer filled, pipe broke, tee died, killing shell pipeline before quality gate + delivery steps. **Fix:** Changed orchestrator, delivery, and postdiction steps to use `>> \"$LOG\" 2>&1` (direct",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T06:02:27.480Z",
-      "lastRecalledAt": "2026-05-28T02:22:08.753Z",
+      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
       "queryHashes": [
         "27d057b1d1c5",
         "b53ef245a31e",
@@ -2600,12 +2604,14 @@
         "87c4b8205f41",
         "d007fade7a5f",
         "ad8c1cd4fc53",
-        "896393cca831"
+        "896393cca831",
+        "08feda2a6640"
       ],
       "recallDays": [
         "2026-05-26",
         "2026-05-27",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-05-31"
       ],
       "conceptTags": [
         "home/ubuntu",
@@ -3064,21 +3070,25 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "3. `skills/daily-intel-brief/scripts/collect.py`: add Brave Search gzip decompression fix 4. `scripts/collect_email_intel.py` line 104: fix indentation error 5. Re-run daily brief after fixes ## Memo Writes Completed This Session - `docs/ops/portfolio-overview.md` — all positions, guardrails - `docs/ops/pipeline-operations.md` — cron schedules, known issues - `docs/ops/daily-intel-process.md` — full 13-step pipeline - `docs/ops/trade-journal-2026-05-27.md` — trades executed - `docs/ops/philby-desk-architecture-plan.md` — hybrid architecture plan - `brain/memory/procedural/kalshi-trading.md` — Kalshi auth + ops doc - `MEMORY.md` — Standing Knowledge + Kalshi auth pointer + cognition bridge +",
-      "recallCount": 4,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.720Z",
-      "lastRecalledAt": "2026-05-29T20:01:04.688Z",
+      "lastRecalledAt": "2026-05-31T01:48:17.753Z",
       "queryHashes": [
         "4342f031ac3b",
         "b8c199fe7dc5",
         "2e2a9a369da3",
-        "f95bd0e2cbe4"
+        "f95bd0e2cbe4",
+        "08feda2a6640",
+        "aed1f43f2023",
+        "08ee5783f701"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "scripts/collect-email-intel.py",
@@ -3098,18 +3108,21 @@
       "endLine": 58,
       "source": "memory",
       "snippet": "- Saved: `config/sources/africa-osint-sources.md` - Integrated: 397 sources added to catalog (26 north_africa, 397 sub_saharan_africa) - Hardcoded in collect.py: 16 tier-1 Africa feeds - Philby collector: cycling every 30 min ### Europe (903 lines, 44 countries + EU/NATO) - Saved: `config/sources/europe-osint-sources.md` - Integrated: 450 sources extracted, 212 validated RSS feeds added to catalog - Hardcoded in collect.py: 20 multilingual Europe feeds - Philby collector: cycling every 30 min ## Continuous Cognition Bridge Wired (2026-05-27) - Before fix: cognition ran but never promoted findings to durable memory - After fix: every 15 min cycle promotes pipeline FATAL/FAILED, auth key war",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.779Z",
-      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
+      "lastRecalledAt": "2026-05-31T01:48:17.753Z",
       "queryHashes": [
-        "b8c199fe7dc5"
+        "b8c199fe7dc5",
+        "aed1f43f2023",
+        "08ee5783f701"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "north-africa",
@@ -3129,18 +3142,21 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "## Report: leo_daily_brief — 2026-05-27 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-27.txt **Words:** 1034 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 27, 2026 ======================================================================== ═══ EXECUTI ## Daedalus Strategy — 2026-05-27 - **Kalshi auth fixed:** RSA PSS request signing (not JWT). Client at `skills/kalshi-trader/scripts/client.py`. Full ops doc at `brain/memory/procedural/kalshi-trading.md` - **Executed:** Bought 31 WTI contracts KXWTIMAX-26DEC31-T200 at $0.13 (crossing spread). Total: 48 contracts",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.779Z",
-      "lastRecalledAt": "2026-05-29T17:15:37.779Z",
+      "lastRecalledAt": "2026-05-31T01:48:17.753Z",
       "queryHashes": [
-        "b8c199fe7dc5"
+        "b8c199fe7dc5",
+        "aed1f43f2023",
+        "08ee5783f701"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "leo-daily-brief",
@@ -3337,6 +3353,37 @@
         "auto-loader",
         "scripts/social-tracker.py",
         "4-11"
+      ]
+    },
+    "memory:memory/2026-05-30.md:1:13": {
+      "key": "memory:memory/2026-05-30.md:1:13",
+      "path": "memory/2026-05-30.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "## Kalshi Trader — Cron Run (00:00 UTC) **Result:** HALT — balance too low ($0.24 < $1.00 min) **Signals detected:** 23 tradeable **Circuit breaker:** Opened after 3 low-balance failures per design **Fixes applied this session:** 1. **Circuit breaker auto-reset bug** — `_check_circuit_breaker()` checked `if cb.get(\"paused\")` before the day-change reset, so a tripped circuit never auto-recovered on new UTC day. Fixed: date check now runs before the `paused` check, resetting the breaker when a new day starts. 2. **UnboundLocalError on `_TRADER_PAUSE_SENT`** — `cmd_scan_and_trade()` used `_TRADER_PAUSE_SENT` (read + write) without `global` declaration. When the circuit was auto-reset and bal",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-31T00:31:32.357Z",
+      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
+      "queryHashes": [
+        "08feda2a6640"
+      ],
+      "recallDays": [
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "0.24",
+        "1.00",
+        "low-balance",
+        "auto-reset",
+        "check-circuit-breaker",
+        "cb.get",
+        "day-change",
+        "auto-recovered"
       ]
     }
   }

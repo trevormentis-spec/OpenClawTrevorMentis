@@ -1,0 +1,119 @@
+{
+  "positions": [
+    {
+      "ticker": "KXTRUMPIRAN-27JAN01",
+      "side": "yes",
+      "count": 392.15,
+      "entry_price": 8.208432997577457,
+      "entry_cost": 32.18937,
+      "entry_time": "2026-05-29T01:45:46.235239Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXTRUMPIRAN-26JUN01",
+      "side": "yes",
+      "count": 9500.0,
+      "entry_price": 0.3,
+      "entry_cost": 28.5,
+      "entry_time": "2026-05-29T02:06:55.370172Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXUSAIRANAGREEMENT-27-26AUG",
+      "side": "yes",
+      "count": 25.0,
+      "entry_price": 35.0,
+      "entry_cost": 8.75,
+      "entry_time": "2026-05-25T05:50:48.294357Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXUSAIRANAGREEMENT-27-26JUN",
+      "side": "yes",
+      "count": 785.0,
+      "entry_price": 7.026750318471338,
+      "entry_cost": 55.15999,
+      "entry_time": "2026-05-28T23:39:49.033179Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXUSAIRANAGREEMENT-27-26JUL",
+      "side": "yes",
+      "count": 83.0,
+      "entry_price": 25.421686746987955,
+      "entry_cost": 21.1,
+      "entry_time": "2026-05-28T06:22:38.99097Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXTARIFFRATEPRC-26JUL01-55",
+      "side": "yes",
+      "count": 271.0,
+      "entry_price": 5.7140221402214015,
+      "entry_cost": 15.485,
+      "entry_time": "2026-05-28T18:09:01.68265Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXELECTIRAN-26JUL01",
+      "side": "yes",
+      "count": 80.0,
+      "entry_price": 3.0,
+      "entry_cost": 2.4,
+      "entry_time": "2026-05-28T12:01:14.841846Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXWTIMAX-26DEC31-T200",
+      "side": "yes",
+      "count": 129.0,
+      "entry_price": 12.854527131782945,
+      "entry_cost": 16.58234,
+      "entry_time": "2026-05-28T06:24:20.605281Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    },
+    {
+      "ticker": "KXUKRAINEEU-27JAN01",
+      "side": "yes",
+      "count": 9.0,
+      "entry_price": 32.0,
+      "entry_cost": 2.88,
+      "entry_time": "2026-05-28T06:20:37.260826Z",
+      "status": "open",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl": 0.0
+    }
+  ],
+  "portfolio_value": 98.8,
+  "cash_balance": 335.5829,
+  "peak_value": 415.42,
+  "starting_value": 157.45,
+  "daily_pnl": -58.65,
+  "today_str": "2026-05-31",
+  "last_updated": "2026-05-31T01:19:19.013058+00:00"
+}

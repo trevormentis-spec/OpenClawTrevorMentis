@@ -155,3 +155,8 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 **Fix:** Before investigating CRITICAL QC alerts, verify (1) final brief exists at `final/brief.md`, (2) its timestamp post-dates QC timestamp, (3) substantive content (lines + bytes). If QC is stale, clear the alert.
 
 **Recommendation:** Add a completion-flag file (e.g., `.brief_complete`) written by the pipeline after assembly. QC watchdog checks for this file before running.
+
+## 2026-05-31 — Philby/Kalshi Trading System — TEARDOWN
+All trading code archived to /home/ubuntu/.openclaw/workspace/archive/philby-trading-2026-05-31
+Trading crons disabled. Auth keys preserved in .env.
+See archive//home/ubuntu/.openclaw/workspace/archive/philby-trading-2026-05-31 for full code + audit trail.

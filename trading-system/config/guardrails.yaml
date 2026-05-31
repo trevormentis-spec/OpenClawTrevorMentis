@@ -1,0 +1,60 @@
+# Guardrails Configuration
+# Edit this file to change risk limits. Changes take effect on next guardrail check.
+# All values in dollars or fractions of capital unless noted.
+
+# ── Capital Reference ──
+# capital is current equity, peak_equity is monotonic high-water mark
+# Both computed daily from Kalshi API
+
+# ── Per-Position Limits ──
+per_position:
+  max_fraction_of_capital: 0.20     # G1: 20% max single position
+  min_edge_cents: 5                 # G6: min edge in cents (floor)
+  min_edge_sigma_multiple: 1.5      # G6: edge must exceed κσ uncertainty
+
+# ── Total Exposure ──
+total_exposure:
+  max_fraction_of_capital: 0.50     # G2: 50% max total exposure at launch
+
+# ── Loss Limits ──
+loss_limits:
+  daily_loss_cap_fraction: 0.10     # G3: 10% daily loss cap → halt new entries
+  drawdown_halt_fraction: 0.20      # G4: 20% from peak → full halt
+  drawdown_warn_fraction: 0.08      # 8% → warn (not halt)
+  drawdown_5day_halt_fraction: 0.08 # 12. Risk Disclosure: 8% in 5 days → halt
+
+# ── Leverage & Direction ──
+leverage:
+  max_leverage: 1.0                 # G5: cash-secured only
+  max_single_direction_fraction: 0.70  # G14: max 70% on one side (YES/NO)
+
+# ── Liquidity ──
+liquidity:
+  min_depth_multiple: 2.0           # G7: depth must be 2× order size at touch
+  max_spread_cents: 8               # G10: max bid-ask spread in cents
+
+# ── Time Limits ──
+time_limits:
+  max_days_to_expiry: 45            # G8: don't tie up capital long-dated
+  min_days_to_expiry: 3             # G9: don't buy expiring-tomorrow positions
+
+# ── Intel Freshness ──
+intel:
+  max_kj_age_multiple: 2.0          # G11: max age = 2× half-life
+  
+# ── Order Rate ──
+order_rate:
+  max_entries_per_day: 5            # G13: at launch
+
+# ── Portfolio Construction ──
+portfolio:
+  max_single_risk_factor: 0.35      # 35% max on any one risk factor
+  max_single_region: 0.40           # 40% max on any one region
+  min_risk_factors_when_active: 3   # min 3 distinct factors when >2 positions
+  max_factor_skew: 0.60             # max 60% of factor budget on one side
+
+# ── Kelly ──
+kelly:
+  default_fraction: 0.25            # quarter-Kelly default
+  max_fraction: 0.5                 # half-Kelly at highest autonomy
+  correlation_penalty_gamma: 2.0    # γ in crowding penalty: 1/(1+γ·crowding)

@@ -12584,6 +12584,150 @@
       "discovered": "2026-05-30",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "OSINT of Ukraine - by UNISHKA Research Service",
+      "type": "Substack",
+      "focus": "Ukraine War Data Hub - Aggregates maps, datasets, and analytical resources. GeoConfirmed - Volunteer OSINT verification project focused on geolocating",
+      "url": "https://unishka.substack.com/p/osint-of-ukraine",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Update from Ukraine | Huge Success of Ukraine on Frontline! Russians Pushed Away! - YouTube",
+      "type": "YouTube",
+      "focus": "\ud83d\udd25 Support Pilot Blog on Patreon! https://www.patreon.com/PilotBlog\u2764\ufe0f Buy me a coffee: https://www.buymeacoffee.com/davydoff \u2708\ufe0f Find me on PayPal :avia",
+      "url": "https://www.youtube.com/watch?v=iVI5z30f_Lw",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Full article: Party ideologies and European foreign policy. Examining the transnational foreign policy space",
+      "type": "Blog/Website",
+      "focus": "We contribute to the debate on ... that <strong>differences over the use of force, in addition to the well-known left/right-dimension, have an indepen",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13501763.2022.2096103",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "The Strait of Hormuz Closure and the Reshaping of Energy Geopolitics - Gulf International Forum",
+      "type": "Blog/Website",
+      "focus": "<strong>The Saudi-Egypt Electricity Interconnection Project also reflects growing interest in cross-border power trade</strong>. These initiatives und",
+      "url": "https://gulfif.org/the-strait-of-hormuz-closure-and-the-reshaping-of-energy-geopolitics/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "energy_markets"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "Top 80 The Nation RSS Feeds | Create The Nation RSS Feed",
+      "type": "Blog/Website",
+      "focus": "The Nation \u00bb Political Figures RSS Feed \u00b7 The Nation \u00bb Police and Law Enforcement RSS Feed \u00b7 The Nation \u00bb Poetry RSS Feed \u00b7 The Nation \u00bb Photography R",
+      "url": "https://rss.feedspot.com/thenation_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Reuters Americas | Latest News in Central & Latin America | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Americas news stories and current events, ensuring our readers up to date with any breaking news deve",
+      "url": "https://www.reuters.com/world/americas/",
+      "discovered": "2026-05-31",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
     }
   ],
   "moltbook_sources": [

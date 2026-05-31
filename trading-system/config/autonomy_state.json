@@ -1,0 +1,19 @@
+{
+  "level": 0,
+  "level_name": "paper",
+  "description": "Paper trading only — no real orders",
+  "max_exposure_per_contract": 0,
+  "max_total_exposure": 0,
+  "requires_human_confirmation": false,
+  "gate_progress": {
+    "forecasts_logged": 0,
+    "paper_resolutions": 0,
+    "brier_skill": null,
+    "gate_50_forecasts": false,
+    "gate_50_resolutions": false,
+    "gate_brier_skill_positive": false,
+    "gate_calibration_error_under_threshold": false
+  },
+  "created_at": "2026-05-31T02:00:00Z",
+  "updated_at": "2026-05-31T02:00:00Z"
+}

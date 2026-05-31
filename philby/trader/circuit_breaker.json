@@ -1,8 +1,0 @@
-{
-  "paused": true,
-  "reason": "3 consecutive trade failures \u2014 circuit opened",
-  "paused_at": "2026-05-30T00:05:17.031828+00:00",
-  "consecutive_failures": 3,
-  "today_attempts": 3,
-  "date": "2026-05-30"
-}

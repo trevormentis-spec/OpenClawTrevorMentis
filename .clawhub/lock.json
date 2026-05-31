@@ -224,6 +224,14 @@
     "dns": {
       "version": "1.0.0",
       "installedAt": 1780046180241
+    },
+    "cyber-kev-triage": {
+      "version": "0.1.0",
+      "installedAt": 1780188209456
+    },
+    "data-pipeline-builder": {
+      "version": "1.0.0",
+      "installedAt": 1780188224779
     }
   }
 }

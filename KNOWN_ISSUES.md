@@ -38,6 +38,10 @@ Status: FIX_APPLIED — verified live (26 theatre cards on page)
 Fix: Systemic issue — urllib blocked by Cloudflare. Catalog trimmed to working feeds only.
 Status: OPEN — 298 working feeds tracked in sources_tested.json
 
+[2026-05-31] **Philby Collector cron still enabled after trading system teardown** | cron/jobs.json id=25e1c622
+Fix: Disabled cron job — collector.py was archived at archive/philby-trading-2026-05-31/philby/collector/collector.py
+Status: FIX_APPLIED
+
 ## Memory & Process
 
 [2026-05-28] **No startup-known-issues read** | AGENTS.md / session startup

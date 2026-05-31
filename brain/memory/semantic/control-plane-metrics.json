@@ -1,0 +1,163 @@
+{
+  "uptime_samples": [
+    {
+      "ts": "2026-05-31T01:22:59.282545+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:27:59.135107+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:32:59.214074+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:37:59.097258+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:42:59.356808+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:48:40.144840+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:53:40.291410+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T01:58:40.308869+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:04:36.008654+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:09:36.043962+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:15:22.261267+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:20:22.206313+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:25:22.538782+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:30:22.587325+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:35:22.578920+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    },
+    {
+      "ts": "2026-05-31T02:40:22.593399+00:00",
+      "gateway_up": true,
+      "telegram_up": true
+    }
+  ],
+  "crash_timestamps": [
+    "2026-05-31T01:22:59.282621+00:00",
+    "2026-05-31T01:22:59.282625+00:00",
+    "2026-05-31T01:22:59.282628+00:00",
+    "2026-05-31T01:22:59.282629+00:00",
+    "2026-05-31T01:22:59.282631+00:00",
+    "2026-05-31T01:22:59.282632+00:00",
+    "2026-05-31T01:22:59.282634+00:00",
+    "2026-05-31T01:22:59.282636+00:00",
+    "2026-05-31T01:22:59.282638+00:00",
+    "2026-05-31T01:22:59.282639+00:00",
+    "2026-05-31T01:22:59.282641+00:00",
+    "2026-05-31T01:22:59.282642+00:00",
+    "2026-05-31T01:22:59.282644+00:00",
+    "2026-05-31T01:22:59.282645+00:00",
+    "2026-05-31T01:22:59.282649+00:00",
+    "2026-05-31T01:22:59.282651+00:00",
+    "2026-05-31T01:22:59.282652+00:00",
+    "2026-05-31T01:22:59.282653+00:00",
+    "2026-05-31T01:22:59.282655+00:00",
+    "2026-05-31T01:22:59.282656+00:00",
+    "2026-05-31T01:22:59.282658+00:00",
+    "2026-05-31T01:22:59.282659+00:00",
+    "2026-05-31T01:22:59.282661+00:00",
+    "2026-05-31T01:22:59.282662+00:00",
+    "2026-05-31T01:22:59.282664+00:00",
+    "2026-05-31T01:22:59.282665+00:00",
+    "2026-05-31T01:22:59.282667+00:00",
+    "2026-05-31T01:22:59.282669+00:00",
+    "2026-05-31T01:22:59.282670+00:00",
+    "2026-05-31T01:22:59.282672+00:00",
+    "2026-05-31T01:22:59.282673+00:00",
+    "2026-05-31T01:22:59.282675+00:00"
+  ],
+  "known_crash_lines": [
+    "2026-05-31 01:05:31,424 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:08:32,070 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-25 17:27:31,252 WARN exited: openclaw-gateway (terminated by SIGABRT (core dumped); not expected)",
+    "2026-05-14 09:05:03,483 WARN exited: openclaw-gateway (terminated by SIGHUP; not expected)",
+    "2026-05-14 00:02:06,333 WARN exited: openclaw-gateway (terminated by SIGABRT (core dumped); not expected)",
+    "2026-05-31 01:08:04,761 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:51,543 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:41,418 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:22,155 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:35,896 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:00,888 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:48,443 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:14,042 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:52,545 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:05:43,906 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:14,575 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-04-25 18:49:52,482 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:05:34,560 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-04-25 21:02:07,294 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:05,409 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:08:47,125 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:55,683 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:06:24,713 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:05:50,070 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:05:57,300 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-19 18:27:02,286 WARN exited: openclaw-gateway (terminated by SIGABRT (core dumped); not expected)",
+    "2026-05-31 01:07:06,948 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:05:38,726 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:07:31,274 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-31 01:08:17,913 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-04-26 03:00:29,344 WARN exited: openclaw-gateway (exit status 1; not expected)",
+    "2026-05-22 20:31:42,847 WARN exited: openclaw-gateway (terminated by SIGABRT (core dumped); not expected)"
+  ],
+  "telegram_stats": {
+    "total_ok": 0,
+    "total_fail": 0,
+    "last_5m_ok": 0,
+    "last_5m_fail": 0
+  },
+  "restart_count": 0,
+  "mtbf_hours": null,
+  "mttr_seconds": null,
+  "messaging_reliability_pct": 0.0,
+  "last_updated": "2026-05-31T02:40:22.593516+00:00"
+}

@@ -1243,9 +1243,5 @@
   "https://www.garoweonline.com/feed/": {
     "failures": 1,
     "last_failed_at": "2026-05-27T12:09:09.851920+00:00"
-  },
-  "https://www.caribbeannewsglobal.com/feed": {
-    "failures": 3,
-    "last_failed_at": "2026-05-28T13:39:05.718477+00:00"
   }
 }

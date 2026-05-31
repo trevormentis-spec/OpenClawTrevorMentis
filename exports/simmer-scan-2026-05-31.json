@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-05-31T00:46:00.123525+00:00",
+  "markets_found": 0,
+  "markets": [],
+  "briefing": {
+    "risk_alerts": 0,
+    "total_pnl": -21.44,
+    "pnl_percent": -0.21,
+    "win_rate": 0
+  },
+  "note": "Simmer provides trading-focused data. For broad market discovery, see Kalshi scanner output."
+}

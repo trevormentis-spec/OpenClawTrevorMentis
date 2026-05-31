@@ -1,0 +1,79 @@
+# Markets Watchlist
+# Each entry maps a risk factor / KJ topic to potential Kalshi tickers.
+# Markets are discovered at runtime; this file is the seed list.
+
+markets:
+  # ── Iran Nuclear Deal ──
+  - kj_topic: iran_nuclear_deal
+    ticker_keywords: ["USAIRANAGREEMENT"]
+    risk_factors: ["iran_escalation", "oil_supply", "middle_east_diplomacy"]
+    region: MENA
+    notes: "US-Iran nuclear framework agreement — multi-expiry chain"
+
+  # ── Iran Political Change ──
+  - kj_topic: iran_political_change
+    ticker_keywords: ["ELECTIRAN", "PAHLAVIVISITA", "NEXTIRANLEADER", "IRANEMBASSY"]
+    risk_factors: ["iran_political", "middle_east_regime"]
+    region: MENA
+    notes: "Iran elections, leadership transition, diplomatic normalization"
+
+  # ── Trump-Iran ──
+  - kj_topic: us_iran_engagement
+    ticker_keywords: ["TRUMPIRAN", "IRANVISITUSA", "IRANMEET"]
+    risk_factors: ["iran_escalation", "us_foreign_policy"]
+    region: MENA
+    notes: "US-Iran high-level engagement; handle with care — very low base rates"
+
+  # ── Oil / Energy ──
+  - kj_topic: oil_price
+    ticker_keywords: ["WTIMAX", "WTIMIN", "BRENTD", "KXOILW", "OPECCUTS"]
+    risk_factors: ["oil_supply", "global_growth", "inflation"]
+    region: GLOBAL
+    notes: "Oil price caps and floors — multiple strikes per series"
+
+  # ── Russia-Ukraine ──
+  - kj_topic: ukraine_eu_integration
+    ticker_keywords: ["UKRAINEEU"]
+    risk_factors: ["european_security", "russia_nato"]
+    region: EURASIA
+    notes: "Ukraine EU pre-accession — long-dated"
+
+  - kj_topic: russia_sanctions
+    ticker_keywords: ["SANCTIONRUSSIA", "SANC"]
+    risk_factors: ["european_security", "global_trade"]
+    region: EURASIA
+    notes: "Russia sanctions — EU and US"
+
+  # ── China / Tariffs ──
+  - kj_topic: china_trade
+    ticker_keywords: ["TARIFFRATEPRC", "CHINATARIFF"]
+    risk_factors: ["global_trade", "us_china_relations"]
+    region: EAST_ASIA
+    notes: "China tariff rate thresholds"
+
+  # ── Taiwan ──
+  - kj_topic: taiwan_status
+    ticker_keywords: ["TAIWAN"]
+    risk_factors: ["taiwan_strait", "us_china_relations", "global_semiconductors"]
+    region: EAST_ASIA
+    notes: "Taiwan referendum, double taxation, presidential election"
+
+  # ── Military / Sanctions ──
+  - kj_topic: military_spending
+    ticker_keywords: ["MILSPEND"]
+    risk_factors: ["global_security", "fiscal_policy"]
+    region: GLOBAL
+    notes: "Global military expenditure"
+
+  - kj_topic: venezuela
+    ticker_keywords: ["VEN"]
+    risk_factors: ["latin_america_political", "oil_supply"]
+    region: AMERICAS
+    notes: "Venezuela sanctions, military deployment"
+
+  # ── Nuclear / Energy ──
+  - kj_topic: nuclear_energy
+    ticker_keywords: ["REACTOR", "LICENSENUCLEAR"]
+    risk_factors: ["energy_policy", "climate"]
+    region: GLOBAL
+    notes: "Nuclear reactor licensing"
