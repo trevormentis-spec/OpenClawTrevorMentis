@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "collected_at": "2026-06-01T15:30:19.056331+00:00",
+  "collected_at": "2026-06-01T19:44:12.095964+00:00",
   "feeds": {
     "spaceflight_now": [
       {
@@ -110,6 +110,16 @@
           "status": "To Be Confirmed"
         },
         {
+          "name": "Falcon 9 Block 5 | Starlink Group 10-35",
+          "net": "2026-06-07T10:30:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "Go for Launch"
+        },
+        {
           "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
           "net": "2026-06-08T05:00:00Z",
           "mission_type": "Test Flight",
@@ -117,16 +127,6 @@
           "rocket": "South Korean ADD Solid-Fuel SLV",
           "location": "Sea Launch",
           "country": "???",
-          "status": "Go for Launch"
-        },
-        {
-          "name": "Falcon 9 Block 5 | Starlink Group 10-35",
-          "net": "2026-06-08T10:07:00Z",
-          "mission_type": "Communications",
-          "orbit": "Low Earth Orbit",
-          "rocket": "Falcon 9",
-          "location": "Cape Canaveral SFS, FL, USA",
-          "country": "USA",
           "status": "Go for Launch"
         },
         {

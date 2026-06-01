@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-01T18:00:04.834262+00:00",
+  "generated_at": "2026-06-01T19:44:13.158945+00:00",
   "data_feeds": {
     "fcc-earth-stations": {
       "status": "ok",
       "feeds_checked": [
         "fcc"
       ],
-      "collected_at": "2026-06-01T15:00:05.706522+00:00",
+      "collected_at": "2026-06-01T19:44:06.228288+00:00",
       "total_records": 100,
       "licensees_found": [
-        "MCI Communications Services, LLC",
-        "Cogent Fiber LLC f/k/a Sprint Communications Co LP",
+        "AT&T Corp.",
+        "Sprint Communications Co., LP",
+        "MX1 Inc",
+        "GOONHILLY INC.",
+        "SES Americom Inc.",
+        "Denali 20020, LLC",
+        "ANTWANWILLIAMS.US",
+        "Intelsat License LLC",
+        "SES Americom Inc",
         "Calian Pacific Teleports Ltd.",
         "Fordham University",
-        "MX1 Inc",
-        "Denali 20020, LLC",
-        "INMARSAT INC.",
-        "Intelsat License LLC",
-        "SES Americom Inc.",
-        "AT&T Corp.",
+        "MCI Communications Services, LLC",
         "Mx1 Inc",
-        "Sprint Communications Co., LP",
-        "GOONHILLY INC.",
-        "ANTWANWILLIAMS.US",
-        "SES Americom Inc"
+        "Cogent Fiber LLC f/k/a Sprint Communications Co LP",
+        "INMARSAT INC."
       ],
       "matched_known_sites": 0,
       "matches": [],
@@ -120,19 +120,6 @@
           "updated": "2025-12-01T15:52:35.000"
         },
         {
-          "number": "FSS0001492",
-          "licensee": "AT&T Corp.",
-          "call_sign": "E980493",
-          "lat": "40.89425",
-          "lon": "-76.438833",
-          "status": "Active",
-          "lower_freq": "3,625",
-          "upper_freq": "4,200",
-          "antenna_gain": "55.10",
-          "cert_date": "2025-12-01T00:00:00.000",
-          "updated": "2025-12-01T15:46:44.000"
-        },
-        {
           "number": "FSS0001490",
           "licensee": "AT&T Corp.",
           "call_sign": "E980493",
@@ -142,6 +129,19 @@
           "lower_freq": "3,625",
           "upper_freq": "4,200",
           "antenna_gain": "56.30",
+          "cert_date": "2025-12-01T00:00:00.000",
+          "updated": "2025-12-01T15:46:44.000"
+        },
+        {
+          "number": "FSS0001492",
+          "licensee": "AT&T Corp.",
+          "call_sign": "E980493",
+          "lat": "40.89425",
+          "lon": "-76.438833",
+          "status": "Active",
+          "lower_freq": "3,625",
+          "upper_freq": "4,200",
+          "antenna_gain": "55.10",
           "cert_date": "2025-12-01T00:00:00.000",
           "updated": "2025-12-01T15:46:44.000"
         },
@@ -292,7 +292,7 @@
     },
     "launch-schedule": {
       "status": "ok",
-      "collected_at": "2026-06-01T15:30:19.056331+00:00",
+      "collected_at": "2026-06-01T19:44:12.095964+00:00",
       "feeds": {
         "spaceflight_now": [
           {
@@ -402,6 +402,16 @@
               "status": "To Be Confirmed"
             },
             {
+              "name": "Falcon 9 Block 5 | Starlink Group 10-35",
+              "net": "2026-06-07T10:30:00Z",
+              "mission_type": "Communications",
+              "orbit": "Low Earth Orbit",
+              "rocket": "Falcon 9",
+              "location": "Cape Canaveral SFS, FL, USA",
+              "country": "USA",
+              "status": "Go for Launch"
+            },
+            {
               "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
               "net": "2026-06-08T05:00:00Z",
               "mission_type": "Test Flight",
@@ -409,16 +419,6 @@
               "rocket": "South Korean ADD Solid-Fuel SLV",
               "location": "Sea Launch",
               "country": "???",
-              "status": "Go for Launch"
-            },
-            {
-              "name": "Falcon 9 Block 5 | Starlink Group 10-35",
-              "net": "2026-06-08T10:07:00Z",
-              "mission_type": "Communications",
-              "orbit": "Low Earth Orbit",
-              "rocket": "Falcon 9",
-              "location": "Cape Canaveral SFS, FL, USA",
-              "country": "USA",
               "status": "Go for Launch"
             },
             {

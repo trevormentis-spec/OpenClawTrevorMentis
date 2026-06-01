@@ -1,0 +1,738 @@
+{
+  "date": "2026-06-01",
+  "timestamp": "2026-06-01T19:58:00Z",
+  "timespan": "24h",
+  "total_articles": 250,
+  "themes": {
+    "iran_israel_hormuz": {
+      "article_count": 85,
+      "analysis": {
+        "article_count": 85,
+        "volume": "very_high",
+        "top_sources": [
+          [
+            "nytimes.com",
+            8
+          ],
+          [
+            "reuters.com",
+            6
+          ],
+          [
+            "theguardian.com",
+            5
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            60
+          ],
+          [
+            "Arabic",
+            12
+          ],
+          [
+            "Hebrew",
+            8
+          ]
+        ],
+        "top_keywords": [
+          [
+            "ceasefire",
+            10
+          ],
+          [
+            "hezbollah",
+            10
+          ],
+          [
+            "hormuz",
+            10
+          ],
+          [
+            "trump",
+            10
+          ],
+          [
+            "iran",
+            10
+          ],
+          [
+            "israel",
+            10
+          ],
+          [
+            "lebanon",
+            10
+          ],
+          [
+            "negotiations",
+            10
+          ],
+          [
+            "strike",
+            10
+          ],
+          [
+            "talks",
+            10
+          ]
+        ]
+      }
+    },
+    "ukraine_russia": {
+      "article_count": 55,
+      "analysis": {
+        "article_count": 55,
+        "volume": "high",
+        "top_sources": [
+          [
+            "bloomberg.com",
+            7
+          ],
+          [
+            "reuters.com",
+            5
+          ],
+          [
+            "apnews.com",
+            4
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            30
+          ],
+          [
+            "Russian",
+            12
+          ],
+          [
+            "Ukrainian",
+            8
+          ]
+        ],
+        "top_keywords": [
+          [
+            "ukraine",
+            10
+          ],
+          [
+            "russia",
+            10
+          ],
+          [
+            "drone",
+            10
+          ],
+          [
+            "kremlin",
+            10
+          ],
+          [
+            "tanker",
+            10
+          ],
+          [
+            "shadow",
+            10
+          ],
+          [
+            "fleet",
+            10
+          ],
+          [
+            "romania",
+            10
+          ],
+          [
+            "nato",
+            10
+          ],
+          [
+            "spending",
+            10
+          ]
+        ]
+      }
+    },
+    "taiwan_china_scs": {
+      "article_count": 35,
+      "analysis": {
+        "article_count": 35,
+        "volume": "high",
+        "top_sources": [
+          [
+            "reuters.com",
+            5
+          ],
+          [
+            "taipeitimes.com",
+            4
+          ],
+          [
+            "scmp.com",
+            3
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            25
+          ],
+          [
+            "Chinese",
+            6
+          ],
+          [
+            "Japanese",
+            3
+          ]
+        ],
+        "top_keywords": [
+          [
+            "taiwan",
+            10
+          ],
+          [
+            "china",
+            10
+          ],
+          [
+            "south china sea",
+            10
+          ],
+          [
+            "patrol",
+            10
+          ],
+          [
+            "philippines",
+            10
+          ],
+          [
+            "strait",
+            10
+          ],
+          [
+            "navy",
+            10
+          ],
+          [
+            "maritime",
+            10
+          ],
+          [
+            "japan",
+            10
+          ],
+          [
+            "warship",
+            10
+          ]
+        ]
+      }
+    },
+    "africa_sahel": {
+      "article_count": 20,
+      "analysis": {
+        "article_count": 20,
+        "volume": "medium",
+        "top_sources": [
+          [
+            "aljazeera.com",
+            4
+          ],
+          [
+            "apnews.com",
+            3
+          ],
+          [
+            "mondediplo.com",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            12
+          ],
+          [
+            "French",
+            5
+          ],
+          [
+            "Arabic",
+            3
+          ]
+        ],
+        "top_keywords": [
+          [
+            "sudan",
+            10
+          ],
+          [
+            "ebola",
+            10
+          ],
+          [
+            "drc",
+            10
+          ],
+          [
+            "civil war",
+            10
+          ],
+          [
+            "refugees",
+            10
+          ],
+          [
+            "sahel",
+            10
+          ],
+          [
+            "mali",
+            10
+          ],
+          [
+            "hunger",
+            10
+          ],
+          [
+            "humanitarian",
+            10
+          ],
+          [
+            "algeria",
+            10
+          ]
+        ]
+      }
+    },
+    "latin_america": {
+      "article_count": 15,
+      "analysis": {
+        "article_count": 15,
+        "volume": "medium",
+        "top_sources": [
+          [
+            "reuters.com",
+            3
+          ],
+          [
+            "bloomberg.com",
+            2
+          ],
+          [
+            "apnews.com",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "Spanish",
+            8
+          ],
+          [
+            "English",
+            5
+          ],
+          [
+            "Portuguese",
+            2
+          ]
+        ],
+        "top_keywords": [
+          [
+            "colombia",
+            10
+          ],
+          [
+            "venezuela",
+            10
+          ],
+          [
+            "mexico",
+            10
+          ],
+          [
+            "argentina",
+            10
+          ],
+          [
+            "el tigre",
+            10
+          ],
+          [
+            "economy",
+            10
+          ],
+          [
+            "brazil",
+            10
+          ],
+          [
+            "cartel",
+            10
+          ],
+          [
+            "election",
+            10
+          ],
+          [
+            "crime",
+            10
+          ]
+        ]
+      }
+    },
+    "cyber_intel": {
+      "article_count": 18,
+      "analysis": {
+        "article_count": 18,
+        "volume": "medium",
+        "top_sources": [
+          [
+            "thehackernews.com",
+            4
+          ],
+          [
+            "cybernews.com",
+            3
+          ],
+          [
+            "techradar.com",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            17
+          ]
+        ],
+        "top_keywords": [
+          [
+            "ransomware",
+            10
+          ],
+          [
+            "data breach",
+            10
+          ],
+          [
+            "vulnerability",
+            10
+          ],
+          [
+            "cve",
+            10
+          ],
+          [
+            "hackers",
+            10
+          ],
+          [
+            "ai",
+            10
+          ],
+          [
+            "supply chain",
+            10
+          ],
+          [
+            "state-backed",
+            10
+          ],
+          [
+            "malware",
+            10
+          ],
+          [
+            "palo alto",
+            10
+          ]
+        ]
+      }
+    },
+    "energy_commodities": {
+      "article_count": 30,
+      "analysis": {
+        "article_count": 30,
+        "volume": "high",
+        "top_sources": [
+          [
+            "tradingeconomics.com",
+            4
+          ],
+          [
+            "reuters.com",
+            3
+          ],
+          [
+            "eia.gov",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            28
+          ]
+        ],
+        "top_keywords": [
+          [
+            "oil",
+            10
+          ],
+          [
+            "brent",
+            10
+          ],
+          [
+            "crude",
+            10
+          ],
+          [
+            "price",
+            10
+          ],
+          [
+            "energy",
+            10
+          ],
+          [
+            "lng",
+            10
+          ],
+          [
+            "gas",
+            10
+          ],
+          [
+            "hormuz",
+            10
+          ],
+          [
+            "supply",
+            10
+          ],
+          [
+            "market",
+            10
+          ]
+        ]
+      }
+    },
+    "great_power": {
+      "article_count": 22,
+      "analysis": {
+        "article_count": 22,
+        "volume": "medium",
+        "top_sources": [
+          [
+            "reuters.com",
+            4
+          ],
+          [
+            "bloomberg.com",
+            3
+          ],
+          [
+            "theguardian.com",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            18
+          ],
+          [
+            "German",
+            2
+          ]
+        ],
+        "top_keywords": [
+          [
+            "nato",
+            10
+          ],
+          [
+            "defense",
+            10
+          ],
+          [
+            "europe",
+            10
+          ],
+          [
+            "alliance",
+            10
+          ],
+          [
+            "troops",
+            10
+          ],
+          [
+            "gotland",
+            10
+          ],
+          [
+            "germany",
+            10
+          ],
+          [
+            "pentagon",
+            10
+          ],
+          [
+            "sweden",
+            10
+          ],
+          [
+            "baltic",
+            10
+          ]
+        ]
+      }
+    },
+    "india_pakistan": {
+      "article_count": 8,
+      "analysis": {
+        "article_count": 8,
+        "volume": "low",
+        "top_sources": [
+          [
+            "timesofindia.com",
+            2
+          ],
+          [
+            "thehindu.com",
+            2
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            6
+          ],
+          [
+            "Hindi",
+            2
+          ]
+        ],
+        "top_keywords": [
+          [
+            "india",
+            10
+          ],
+          [
+            "china",
+            10
+          ],
+          [
+            "border",
+            10
+          ],
+          [
+            "modi",
+            10
+          ],
+          [
+            "defense",
+            10
+          ],
+          [
+            "maritime",
+            10
+          ],
+          [
+            "pakistan",
+            10
+          ],
+          [
+            "trade",
+            10
+          ]
+        ]
+      }
+    },
+    "korea": {
+      "article_count": 12,
+      "analysis": {
+        "article_count": 12,
+        "volume": "low",
+        "top_sources": [
+          [
+            "apnews.com",
+            3
+          ],
+          [
+            "theguardian.com",
+            2
+          ],
+          [
+            "cbsnews.com",
+            1
+          ]
+        ],
+        "top_languages": [
+          [
+            "English",
+            8
+          ],
+          [
+            "Korean",
+            3
+          ]
+        ],
+        "top_keywords": [
+          [
+            "north korea",
+            10
+          ],
+          [
+            "missile",
+            10
+          ],
+          [
+            "kim jong un",
+            10
+          ],
+          [
+            "nuclear",
+            10
+          ],
+          [
+            "cruise missile",
+            10
+          ],
+          [
+            "south korea",
+            10
+          ],
+          [
+            "border",
+            10
+          ],
+          [
+            "drone",
+            10
+          ],
+          [
+            "sanctions",
+            10
+          ],
+          [
+            "pyongyang",
+            10
+          ]
+        ]
+      }
+    }
+  }
+}

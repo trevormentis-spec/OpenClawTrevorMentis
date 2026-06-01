@@ -1,11 +1,11 @@
 {
-  "compiled_at": "2026-06-01T13:47:12.351638+00:00Z",
+  "compiled_at": "2026-06-01T19:44:46.594514+00:00Z",
   "overall": {
-    "total_judgments": 115,
+    "total_judgments": 127,
     "correct": 3,
-    "incorrect": 42,
-    "unresolved": 60,
-    "accuracy_pct": 6.7,
+    "incorrect": 90,
+    "unresolved": 12,
+    "accuracy_pct": 3.2,
     "posture": "widen_two_notches",
     "overconfidence_regions": []
   },

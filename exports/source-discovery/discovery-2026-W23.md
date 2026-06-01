@@ -1,5 +1,5 @@
 # Source Discovery Report — 2026-W23
-Generated: 2026-06-01T13:16:10.199987+00:00
+Generated: 2026-06-01T19:44:58.766105+00:00
 
 **New sources found:** 2
 **Added to registry:** 2
@@ -7,16 +7,16 @@ Generated: 2026-06-01T13:16:10.199987+00:00
 ---
 ## Discovered Sources (by quality score)
 
-### [Russian Offensive Campaign Assessment, May 23, 2026 | ISW](https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-may-23-2026/)
+### [Interactive Map: Russia's Invasion of Ukraine](https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375)
 - **Region:** ukraine_russia
 - **Type:** Blog/Website
-- **Quality Score:** 5/10
-- **Description:** The Ukrainian General Staff reported May 23 that Ukrainian forces struck a Russian ammunition depot in occupied Prechystivka (roughly 40 kilometers from the frontline).[28] Geolocated footage publishe
+- **Quality Score:** 4/10
+- **Description:** This interactive map complements the static control-of-terrain maps that ISW daily produces with high-fidelity and, where possible, street level assessments of the war in Ukraine. ISW’s daily campaign
 - **Status:** ⏭️  Skipped (low quality or duplicate)
 
-### [Center for the Study of Intelligence - CSI](https://www.cia.gov/resources/csi/)
+### [OSINT is transforming the intelligence battlespace | Federal News Network](https://federalnewsnetwork.com/commentary/2026/04/osint-is-transforming-the-intelligence-battlespace/)
 - **Region:** general_intel
 - **Type:** Blog/Website
 - **Quality Score:** 4/10
-- **Description:** <strong>The Center for the Study of Intelligence (CSI)</strong> serves as a producer and repository of unclassified intelligence articles, publications, and scholarship. ... Studies in Intelligence Vo
+- **Description:** I serve on the House Permanent Select Committee on Intelligence, and work on the Open-Source Intelligence Subcommittee to help put those guardrails in place. The encouraging news is that while agentic
 - **Status:** ⏭️  Skipped (low quality or duplicate)

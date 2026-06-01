@@ -14141,6 +14141,78 @@
       "discovered": "2026-06-01",
       "signal_level": "Medium",
       "region": "oceania"
+    },
+    {
+      "name": "Kalshi vs Polymarket: Which Prediction Market Platform Is Best? (June 2026)",
+      "type": "Blog/Website",
+      "focus": "<strong>Kalshi and Polymarket are the two biggest names in prediction markets, and between them they control somewhere north of 85% of all U.S.-access",
+      "url": "https://chiefswire.usatoday.com/story/sports/review/2026/05/31/kalshi-vs-polymarket-june-2026/90285409007/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "How Accurate Are Polymarket and Kalshi at Predicting Election Outcomes? - Bloomberg",
+      "type": "Blog/Website",
+      "focus": "Websites like Kalshi and Polymarket can outperform opinion polls \u2014 but they do better on bigger races and stumble down ballot. A Polymarket ad in a su",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-05-27/how-accurate-are-polymarket-and-kalshi-at-predicting-election-outcomes",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Interactive Map: Russia's Invasion of Ukraine",
+      "type": "Blog/Website",
+      "focus": "This interactive map complements the static control-of-terrain maps that ISW daily produces with high-fidelity and, where possible, street level asses",
+      "url": "https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "OSINT is transforming the intelligence battlespace | Federal News Network",
+      "type": "Blog/Website",
+      "focus": "I serve on the House Permanent Select Committee on Intelligence, and work on the Open-Source Intelligence Subcommittee to help put those guardrails in",
+      "url": "https://federalnewsnetwork.com/commentary/2026/04/osint-is-transforming-the-intelligence-battlespace/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "general_intel"
+    },
+    {
+      "name": "Top 15 Europe Defense RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Our News section takes a deep look ... defensenews.com/global/europe This column from Defense News <strong>covers premier news and analysis of defense",
+      "url": "https://rss.feedspot.com/europe_defense_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Bruegel releases enhanced RSS feeds",
+      "type": "Blog/Think Tank",
+      "focus": "In addition to the RSS feeds above, you can subscribe to our &#x27;Bruegel Update&#x27; weekly newsletter, to our &#x27;BruegelTV&#x27; Youtube channe",
+      "url": "https://www.bruegel.org/blog-post/bruegel-releases-enhanced-rss-feeds",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Subscribe via RSS feed \u2013 European Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "You can subscribe to all our content or to specific formats.",
+      "url": "https://ecfr.eu/feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "europe"
     }
   ],
   "moltbook_sources": [

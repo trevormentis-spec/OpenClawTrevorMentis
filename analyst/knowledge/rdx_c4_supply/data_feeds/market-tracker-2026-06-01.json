@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T18:03:06.150130+00:00",
+  "generated_at": "2026-06-01T18:30:06.421203+00:00",
   "data_feeds": {
     "gdelt-sweep": {
       "status": "ok",
@@ -414,9 +414,9 @@
     },
     "corporate-filings": {
       "status": "ok",
-      "collected_at": "2026-05-25T18:30:09.727436+00:00",
+      "collected_at": "2026-06-01T18:30:06.420759+00:00",
       "companies_checked": 6,
-      "news_items": 13,
+      "news_items": 11,
       "items": [
         {
           "company": "BAE Systems",
@@ -429,18 +429,18 @@
         {
           "company": "BAE Systems",
           "ticker": "BAES",
-          "title": "Astor Defence and BAE Systems agree TNT deal for munitions programmes - Army Technology",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUhFWGhkUjVCTl9kdHByME13WGVieDIxYnQ2clBsbzlHM1Zmcl81YW9UUmtXaWhWb2hlUkRHRTcwMllJZGh6cGlla0RCMTRqNzN0TWpVRnV4RVlEbXh2VjNyUmRZa2VwV1g4ODhJNlA3NjVIVlBGQWdiSHJuTDdrYjdFT0lUd21XZDZjbE1GM003YzBHVURHaWN4U1FLQ21Kc3dDYVJ4eEVnN2c?oc=5",
-          "published": "Fri, 27 Jun 2025 07:00:00 GMT",
-          "source": "Army Technology"
-        },
-        {
-          "company": "BAE Systems",
-          "ticker": "BAES",
           "title": "BAE Systems says it's nailed a way to meet the UK's need for a lot of ammunition \u2014 and fast - Business Insider",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUnVuRTBVVFhmTHM2UlJqUUNpUkI3XzVDaW9CdnplQUtGUUFGWm02cWdWazVtdFJHZ1JXVU9OOVhFRTFWeE50cnBoWXZwZnpGajhmWU04YjVYcU9nWW9iaFliZTNvOVRpdV9rQ2VScGpqRU1uUGsxenZEZmhQdW5NaDdZa2NyWndIVUx0aE1CdHczSEYxaXgxUEFaMzI?oc=5",
           "published": "Wed, 23 Apr 2025 07:00:00 GMT",
           "source": "Business Insider"
+        },
+        {
+          "company": "BAE Systems",
+          "ticker": "BAES",
+          "title": "Astor Defence and BAE Systems agree TNT deal for munitions programmes - Army Technology",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUhFWGhkUjVCTl9kdHByME13WGVieDIxYnQ2clBsbzlHM1Zmcl81YW9UUmtXaWhWb2hlUkRHRTcwMllJZGh6cGlla0RCMTRqNzN0TWpVRnV4RVlEbXh2VjNyUmRZa2VwV1g4ODhJNlA3NjVIVlBGQWdiSHJuTDdrYjdFT0lUd21XZDZjbE1GM003YzBHVURHaWN4U1FLQ21Kc3dDYVJ4eEVnN2c?oc=5",
+          "published": "Fri, 27 Jun 2025 07:00:00 GMT",
+          "source": "Army Technology"
         },
         {
           "company": "Rheinmetall",
@@ -475,22 +475,6 @@
           "source": "Northrop Grumman"
         },
         {
-          "company": "Chemring Group",
-          "ticker": "CHG",
-          "title": "3. Explosives and Pyrotechnics Market Trends - Market Growth Reports",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTngwZE5iZDVNR0NBU21PVTNKaW42MDl5NUxUN1VKQll5R2pPeXFlVDJOVVRBWmJyTFM5dFp4eXMzYm1wczZTaVJnT1RYVzFmLUprRDRZUUg3cEVzNm1yVjJZNmdzWXo3UEdMeXdIV2NWSnFuX3Z5alBqME02OHV0ajI5QnBaWDRScjhickhvMFZjYlNjMXRr?oc=5",
-          "published": "Mon, 12 Jan 2026 08:00:00 GMT",
-          "source": "Market Growth Reports"
-        },
-        {
-          "company": "Chemring Group",
-          "ticker": "CHG",
-          "title": "Chemring Nobel and Norwegian government to study new explosives production facility - Defence Industry Europe",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYmluUEVZN0NFZUhHME9qczAxTDJKamlQV1BXSXFVTGNSLU1aTElfR2RENTJqS0hDeWwxTTNZMjR3ZGVKZ1NfUGMzNm1CU2FzT0VSVkVqT0ZpMjVJNTEyWlJIQVFkX2NqMjg2X0ZQVFBUTHJtREhUSm1fb2pJbkotbTJpd0FyRVBKc0E1T0JtSktKS21YSDJoTVI3UTkzZ0RJSy1ucFRQQTZ2N094MnZOS2Rn?oc=5",
-          "published": "Thu, 10 Oct 2024 07:00:00 GMT",
-          "source": "Defence Industry Europe"
-        },
-        {
           "company": "Hanwha Corporation",
           "ticker": "000880",
           "title": "South Korea's defense industry localizes production amid EU's increased shell output - CHOSUNBIZ - Chosunbiz",
@@ -509,18 +493,18 @@
         {
           "company": "Solar Industries",
           "ticker": "SOLARINDS",
-          "title": "Solar blast: Another worker succumbs, toll touches 2 - The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMW1HZmEzWllSRmZDeVpsNk9yZ25KcGxHUkdDcG1fWDZ5Qm5lZ3FWVWVKcENhNmZKV1BweXRDd2ZqZC1QeHRrSTBoa1ZpNnZ1UVp2UkplMXFINjA1ZnEyTVdDRjFMNzlnVUlUVGFWTkdLamZxOEl6ekduY0pfenRyYmVpTEZUSlJNdXFFMHhTLXB4Zl9rY2JOOVE2ZU5QX3FfM0RKVkphWWFwSnItRG5ySWQtd3d3S09HVF9DY1R5NW55d9IBxwFBVV95cUxON0tCWFUxMWJ2RGJBX2tqc29fck9keDljQ3B4TnJrSEtKaU9nZ2ZXRnk0R3dQWFdlMGNuUFFrVnpFVGhfRjB1YzdtMDZJcEd6emN6dzRURlp4NmsybXlsN3ZOa3BBSi1CM1lPaTQxZS1IaWhVZTlzMnVqckRscTRUZlZjWUNaQVFBTmhoRXJEWGZrQkwxS0Z3NXRVR3hhVVJFMkNrTVhMNGZfcGxoV3g4N01WYkhhTTk0SVE2U0otYlozdG44a3JB?oc=5",
-          "published": "Sat, 06 Sep 2025 07:00:00 GMT",
-          "source": "The Times of India"
-        },
-        {
-          "company": "Solar Industries",
-          "ticker": "SOLARINDS",
           "title": "Solar Industries' Rs 18,000-Crore Bet: Why This Indian Player Could Be NATO's Secret Weapon - NDTV Profit",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcUV3WkFMNVJ0RmlzOTZlNUVlSjR3amhQeWltSnFBYUhqLWZ6QjJleHRna2QyN0pRN3kyUzJ3OWdjYlUzLWVteC1iekVqVjRMQ19wSUs1dmlad2Z5a2xtUFhUUXUtX3VGVzFFdGw2VmlkWFZtSC1aNzFMSmNtREl4N1BGZm1qOGh1cUhRYWppNWxTY1BReEg1OG54Qk5fMlFhNEtUZmhqQUhGaVVPdVhERkY1STNFN1daU0lBeUg0RVc4Q1ozZ3JiUFBQcVlZUdIB1gFBVV95cUxOR2lzM3dHYmFsNGF0aGVIekZ4QTZZOThwVGxSMkpLUmduNjVvOXEtSDRaZlhHQWFoUGlVTHhNRWZ2eTNncHRJZ3lNTDB2eF83QldrUTZsa1o5Tmh4R3pfb01Lb2lhX0FKT1FUR0p1WDgtUmpuZG4wbUxLREV2Nno3YlNXUktpR2dtdzJFdl9LbGhTTE1Rb2k1S05qZUZHVllVM2hnc2NXNTA2ZXRvUlUtb1E1OXNrTlJQSUdiYWMyVm9TX0h4NFRxeEwydDNNMHJxZnBYbG9B?oc=5",
           "published": "Thu, 26 Feb 2026 08:00:00 GMT",
           "source": "NDTV Profit"
+        },
+        {
+          "company": "Solar Industries",
+          "ticker": "SOLARINDS",
+          "title": "Solar blast: Another worker succumbs, toll touches 2 - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMW1HZmEzWllSRmZDeVpsNk9yZ25KcGxHUkdDcG1fWDZ5Qm5lZ3FWVWVKcENhNmZKV1BweXRDd2ZqZC1QeHRrSTBoa1ZpNnZ1UVp2UkplMXFINjA1ZnEyTVdDRjFMNzlnVUlUVGFWTkdLamZxOEl6ekduY0pfenRyYmVpTEZUSlJNdXFFMHhTLXB4Zl9rY2JOOVE2ZU5QX3FfM0RKVkphWWFwSnItRG5ySWQtd3d3S09HVF9DY1R5NW55d9IBxwFBVV95cUxON0tCWFUxMWJ2RGJBX2tqc29fck9keDljQ3B4TnJrSEtKaU9nZ2ZXRnk0R3dQWFdlMGNuUFFrVnpFVGhfRjB1YzdtMDZJcEd6emN6dzRURlp4NmsybXlsN3ZOa3BBSi1CM1lPaTQxZS1IaWhVZTlzMnVqckRscTRUZlZjWUNaQVFBTmhoRXJEWGZrQkwxS0Z3NXRVR3hhVVJFMkNrTVhMNGZfcGxoV3g4N01WYkhhTTk0SVE2U0otYlozdG44a3JB?oc=5",
+          "published": "Sat, 06 Sep 2025 07:00:00 GMT",
+          "source": "The Times of India"
         }
       ]
     }
