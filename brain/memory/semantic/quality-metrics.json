@@ -113,6 +113,63 @@
         "runway_days": 45.7,
         "daily_cap_used_pct": 7.3
       }
+    },
+    {
+      "generated_at": "2026-06-01T01:13:46.578607+00:00",
+      "calibration": {
+        "total_judgments": 115,
+        "correct": 3,
+        "incorrect": 42,
+        "unresolved": 60,
+        "accuracy_pct": 2.6,
+        "bands_used": [
+          "likely"
+        ],
+        "band_diversity": 1
+      },
+      "feed_health": {
+        "total": 1047,
+        "working": 802,
+        "dead_403": 176,
+        "health_pct": 76.6,
+        "trend": "improving"
+      },
+      "provider_reliability": {
+        "deepseek": {
+          "status": "ok",
+          "last_failure": null,
+          "failures_24h": 0
+        },
+        "openrouter": {
+          "status": "ok",
+          "last_failure": null,
+          "failures_24h": 0
+        },
+        "anthropic": {
+          "status": "untested",
+          "last_failure": null,
+          "failures_24h": 0
+        }
+      },
+      "collection_activity": {
+        "total_regions": 6,
+        "active_regions": 0,
+        "stalled_regions": [
+          "Reuters World",
+          "AP World",
+          "BBC World",
+          "Al Jazeera",
+          "Reuters Business",
+          "FT World"
+        ],
+        "total_items_24h": 0
+      },
+      "costs": {
+        "deepseek_balance": 98.33,
+        "burn_rate_daily": 14.82,
+        "runway_days": 6.6,
+        "daily_cap_used_pct": 49.4
+      }
     }
   ]
 }

@@ -197,6 +197,14 @@ def main() -> int:
                     kj["sherman_kent_band"] = kj["probability_verbal"]
                 elif "confidence_verbal" in kj:
                     kj["sherman_kent_band"] = kj["confidence_verbal"]
+                elif "confidence" in kj and isinstance(kj["confidence"], str):
+                    kj["sherman_kent_band"] = kj["confidence"]
+            # Normalize prediction percentages
+            if not kj.get("prediction_pct"):
+                if "numeric_probability" in kj:
+                    kj["prediction_pct"] = kj["numeric_probability"]
+                elif "probability_numeric" in kj:
+                    kj["prediction_pct"] = kj["probability_numeric"]
                 elif "confidence" in kj:
                     import re
                     conf = str(kj["confidence"])

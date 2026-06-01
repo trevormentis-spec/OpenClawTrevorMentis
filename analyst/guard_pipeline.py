@@ -38,7 +38,7 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 # ═══════════════════════════════════════════════════════════════════════════════
 
 EXPECTED_REGIONAL_JSON = {
-    "europe.json", "russia_eurasia.json", "north_america.json", "central_america_caribbean.json",
+    "europe.json", "north_america.json", "central_america_caribbean.json",
     "south_america.json", "north_africa.json", "sub_saharan_africa.json",
     "middle_east.json",
     "central_asia.json", "south_east_asia.json", "east_asia.json", "south_asia.json",

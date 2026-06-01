@@ -1,4 +1,24 @@
-# Gmail Intel Digest — 2026-05-31 23:01 UTC
+# Gmail Intel Digest — 2026-06-01 01:01 UTC
+
+## Iran Update Evening Special Report: May 31, 2026, 02:00 PM ET
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Sun, 31 May 2026 20:29:53 -0400
+**Type:** unknown | **Importance:** low
+
+A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+
+Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VWzdGr8JZM7rW1CjPnh7TLxGfW15bp5B5PLSthN4bXfKz3pyd0W8wLKSR6lZ3kPW2BcT2W612f-1W25q-Zl32QC55N18B1DxD7p0rW8gSm6924vDTrN8NP_d5nS4kmW723BPM6M4SZyW4zX1sx6qfpBpW5dfyp75K5cHlW8tyrb43VfwfvW5lDNGT88cXH7W880Kl34kTcqjW7HHNDH39JvhxW8MTyz35VlhBQVTYkkk7gC9CQW4M1Fzz4vDBlYW71gJBj7KBYqNW5McwL655CygrV4GLMW8
+
+---
+
+## Iran Update Special Report, May 31, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Sun, 31 May 2026 19:22:51 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War US President Donald Trump has requested several amendments to the draft US-Iran memorandum of understanding (MoU) as the United States and Iran remain at odds over key issues. May 31, 2026 Data Cutoff: 2:00 PM ET  Parker Hempel, Ben Schmida, Will Doran, Nidal Morrison, Avery Borens, and Annika Ganzeveld TOPLINES US President Donald Trump has requested several amendments to the draft US-Iran memorandum of understanding (MoU) as the United States and Iran 
+
+---
 
 ## Russian Offensive Campaign Assessment, May 31, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -36,26 +56,3 @@ Email from Institute for the Study of War Ukraine’s mid-range strike campaign 
 
 ---
 
-## Iran Update Special Report, May 30, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sat, 30 May 2026 19:58:04 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Iran continues to try to frame the Islamic Revolutionary Guards Corps (IRGC) “management” of transit through the Strait of Hormuz as the new status quo. May 30, 2026 Data Cutoff: 2:00 PM ET Ben Rezaei, Adham Fattah, Benjamin Schmida, Katherine Wells, Kelly Campa, and Annika Ganzeveld TOPLINES Iran continues to try to frame the Islamic Revolutionary Guards Corps (IRGC) “management” of transit through the Strait of Hormuz as the new status quo. The United 
-
----
-
-## Russian Offensive Campaign Assessment, May 30, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Sat, 30 May 2026 19:01:32 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-Email from Institute for the Study of War Russia is reportedly preparing to conduct another massive strike against Ukraine. May 30, 2026 Data Cutoff: 12:30 PM ET Samuel Shafiro, Christina Harward, Jennie Olmsted, Diana Nasreddine, and George Barros TOPLINES Russia is reportedly preparing to conduct another massive strike against Ukraine. Ukrainian President Volodymyr Zelensky warned on May 29 that Ukrainian intelligence indicates that Russia is preparing a new massive strike package against Ukra
-
----
-
-
-## AgentMail Intel — 2026-05-31 23:01 UTC
-
-### Global Update: A Festival of Black Culture With a ’90s Vibe
-**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
