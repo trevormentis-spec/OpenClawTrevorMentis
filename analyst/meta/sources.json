@@ -14213,6 +14213,87 @@
       "discovered": "2026-06-01",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
+      "type": "Blog/Website",
+      "focus": "Note that at the present time our Spanish-language text products are limited to the Tropical Weather Outlook and the Public Advisories for Atlantic, C",
+      "url": "https://www.nhc.noaa.gov/aboutrss.shtml",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "35 Best Caribbean News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "Subscribe in one place on FeedSpot Reader. RSS Feed newsamericasnow.com/feed Follow RSS Website newsamericasnow.com <strong>News Americas Now</strong>",
+      "url": "https://rss.feedspot.com/caribbean_news_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "Central America Newswire - World News Report - EIN Presswire",
+      "type": "Blog/Website",
+      "focus": "New Snacks Plant and Industry-Leading Traceability Systems Highlight Progress TEGUCIGALPA, HONDURAS, June 5, 2025 /\u2068EINPresswire.com\u2069/ -- To mark Worl",
+      "url": "https://world.einnews.com/region/central-america",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
+    },
+    {
+      "name": "NHC and CPHC RSS Feeds - National Hurricane Center",
+      "type": "Blog/Website",
+      "focus": "Note that at the present time our Spanish-language text products are limited to the Tropical Weather Outlook and the Public Advisories for Atlantic, C",
+      "url": "https://www.nhc.noaa.gov/aboutrss.shtml",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "central_america_caribbean"
     }
   ],
   "moltbook_sources": [
