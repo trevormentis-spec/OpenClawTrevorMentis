@@ -1235,59 +1235,83 @@
     "last_failed_at": "2026-05-27T12:09:09.851920+00:00"
   },
   "https://www.sabanews.net/en/rss.xml": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T18:54:03.102164+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:13:55.153132+00:00"
   },
   "https://www.khaleejtimes.com/rss/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T18:54:03.987077+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:13:55.897024+00:00"
   },
   "https://amwaj.media/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T18:54:05.760701+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:13:58.095415+00:00"
   },
   "https://today.lorientlejour.com/rss": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T18:54:06.076694+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:13:58.410818+00:00"
   },
   "https://www.chathamhouse.org/rss.xml": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T18:54:34.123285+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:15:06.842129+00:00"
   },
   "https://www.thearcticinstitute.org/feed/": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:00:36.270995+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:19:32.412479+00:00"
   },
   "https://www.highnorthnews.com/rss.xml": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:00:37.283358+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:19:33.403691+00:00"
   },
   "https://gisaid.org/feed/": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:00:41.804916+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:19:36.351629+00:00"
   },
   "https://www.nikkei.com/rss": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:00:49.929758+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:19:41.779581+00:00"
   },
   "https://www.haaretz.com/rss": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:01:16.528103+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:20:10.669718+00:00"
   },
   "https://english.aawsat.com/rss": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:01:20.148517+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:20:15.312009+00:00"
   },
   "https://www.cnas.org/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:01:37.732302+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:20:28.993930+00:00"
   },
   "https://www.csis.org/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:01:37.902537+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:20:29.037348+00:00"
   },
   "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/": {
-    "failures": 1,
-    "last_failed_at": "2026-05-31T19:01:40.046304+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:20:31.001661+00:00"
+  },
+  "https://www.tehrantimes.com/rss/": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:25:39.988895+00:00"
+  },
+  "https://perureports.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:26:44.620903+00:00"
+  },
+  "https://www.mehrnews.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:29:37.226153+00:00"
+  },
+  "https://en.irna.ir/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:29:47.542704+00:00"
+  },
+  "https://www.cgtn.com/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T12:49:18.431184+00:00"
+  },
+  "https://www.globaltimes.cn/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-06-01T13:11:48.209196+00:00"
   }
 }

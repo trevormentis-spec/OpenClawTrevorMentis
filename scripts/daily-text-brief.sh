@@ -165,41 +165,26 @@ echo "Available provider: ${AVAILABLE_PROVIDER:-none}" | tee -a "$LOG"
 
 echo "--- Running orchestrator (collect → analyze) ---" | tee -a "$LOG"
 python3 skills/daily-intel-brief/scripts/orchestrate.py \
-    --model "claude-4-opus-20250514" \
+    --model "deepseek/deepseek-v4-pro" \
     --tier2-model "deepseek/deepseek-v4-pro" \
-    --provider anthropic \
-    --tier2-provider openrouter \
+    --provider deepseek \
+    --tier2-provider deepseek \
     --redteam-model "deepseek/deepseek-v4-pro" \
-    --redteam-provider openrouter \
+    --redteam-provider deepseek \
     --no-deliver \
     >> "$LOG" 2>&1
 ORCH_RC=${PIPESTATUS[0]}
 
-# Fallback: if OpenRouter fails, try Anthropic Direct
-if [ "${ORCH_RC}" -ne 0 ] && [ -n "${ANTHROPIC_API_KEY:-}" ]; then
-    echo "OpenRouter failed (rc=${ORCH_RC}), retrying with Anthropic Direct..." | tee -a "$LOG"
+# Fallback: if DeepSeek V4 Pro fails, try V4 Flash
+if [ "${ORCH_RC}" -ne 0 ]; then
+    echo "DeepSeek V4 Pro failed (rc=${ORCH_RC}), retrying with V4 Flash..." | tee -a "$LOG"
     python3 skills/daily-intel-brief/scripts/orchestrate.py \
-        --model "anthropic/claude-opus-4.7" \
-        --tier2-model "anthropic/claude-sonnet-4.5" \
-        --provider openrouter \
-        --tier2-provider openrouter \
-        --redteam-model "anthropic/claude-sonnet-4.5" \
-        --redteam-provider openrouter \
-        --no-deliver \
-        >> "$LOG" 2>&1
-    ORCH_RC=${PIPESTATUS[0]}
-fi
-
-# If both failed, try DeepSeek Direct as last resort
-if [ "${ORCH_RC}" -ne 0 ] && [ -n "${DEEPSEEK_API_KEY:-}" ]; then
-    echo "Anthropic fallback failed (or skipped), retrying with DeepSeek Direct..." | tee -a "$LOG"
-    python3 skills/daily-intel-brief/scripts/orchestrate.py \
-        --model "deepseek/deepseek-v4-pro" \
+        --model "deepseek/deepseek-v4-flash" \
         --tier2-model "deepseek/deepseek-v4-flash" \
-        --provider openrouter \
-        --tier2-provider openrouter \
+        --provider deepseek \
+        --tier2-provider deepseek \
         --redteam-model "deepseek/deepseek-v4-flash" \
-        --redteam-provider openrouter \
+        --redteam-provider deepseek \
         --no-deliver \
         >> "$LOG" 2>&1
     ORCH_RC=${PIPESTATUS[0]}

@@ -242,17 +242,36 @@ def call_deepseek(model: str, system: str, user: str,
             }
         )
         try:
-            with _urllib.urlopen(_req, timeout=120) as _resp:
+            with _urllib.urlopen(_req, timeout=300) as _resp:
                 _result = _json.loads(_resp.read())
                 return _result["content"][0]["text"]
         except Exception as e:
             raise RuntimeError(f"Anthropic API call failed: {e}")
     
-    # OpenAI-compatible providers (DeepSeek, OpenRouter)
-    client = OpenAI(api_key=api_key, base_url=base_url, default_headers=extra_headers or None)
+    # OpenAI-compatible providers (DeepSeek, OpenRouter) — subprocess with hard kill timeout
+    import subprocess as _sp, json as _json2
+    API_TIMEOUT = 240  # hard timeout seconds (4 min per region call)
+    
+    _helper = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "scripts" / "_api_call.py"
+    _cmd = [
+        "python3", str(_helper),
+        model, system, user,
+        str(temperature), str(max_tokens), provider, str(max_input_chars),
+    ]
     try:
-        response = client.chat.completions.create(**kwargs)
-        return response.choices[0].message.content
+        _proc = _sp.run(_cmd, capture_output=True, text=True, timeout=API_TIMEOUT,
+                        env={**dict(_os.environ)})
+        if _proc.returncode != 0:
+            _err = _proc.stderr.strip() or _proc.stdout.strip()
+            raise RuntimeError(f"API subprocess failed: {_err[:500]}")
+        _result = _json2.loads(_proc.stdout)
+        if not _result.get("success"):
+            raise RuntimeError(f"API error: {_result.get('error', 'unknown')}")
+        return _result["content"]
+    except _sp.TimeoutExpired:
+        raise RuntimeError(f"API call timed out after {API_TIMEOUT}s")
+    except RuntimeError:
+        raise
     except Exception as e:
         raise RuntimeError(f"API call failed: {e}")
 def build_collection_quality(region_snake: str, incidents: list[dict],

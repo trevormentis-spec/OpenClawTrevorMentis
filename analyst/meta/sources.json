@@ -13871,6 +13871,141 @@
       "discovered": "2026-06-01",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "About - Middle East Space Monitor by AzurX",
+      "type": "Substack",
+      "focus": "Also follow Middle East Space Monitor on X at: @MidEast_Space \u00b7 Be part of a community of people who share your interests. To find out more about the ",
+      "url": "https://middleeastspacemonitor.substack.com/about",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Deterrence and defence | NATO Topic",
+      "type": "Blog/Website",
+      "focus": "<strong>NATO faces the most dangerous security environment since the end of the Cold War</strong>. Russia&#x27;s war of aggression against Ukraine has",
+      "url": "https://www.nato.int/en/what-we-do/deterrence-and-defence/deterrence-and-defence",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "europe"
+    },
+    {
+      "name": "Home of Cybersecurity News | Cybersecurity Magazine",
+      "type": "Blog/Website",
+      "focus": "... Cybertech Europe 2026 in Rome (13\u201314 Oct) brings global leaders to discuss AI, cyber defense, and resilience at La Nuvola Convention Center.\u2026 ... ",
+      "url": "https://cybermagazine.com/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "asia_pacific"
+    },
+    {
+      "name": "U.S.-Mexico Border Update: Border data, reconciliation bill, DHS transition, ICE detention, wall, migration route - WOLA",
+      "type": "Blog/Website",
+      "focus": "<strong>Republicans may seek to fund ICE and Border Patrol for 3+ years on a simple-majority vote</strong>. DHS organizational culture, abuses in ICE ",
+      "url": "https://www.wola.org/2026/04/u-s-mexico-border-update-border-data-reconciliation-bill-dhs-transition-ice-detention-wall-migration-route/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "mexico_americas"
+    },
+    {
+      "name": "K.7 Measuring Geopolitical Risk Caldara, Dario and Matteo Iacoviello",
+      "type": "Blog/Website",
+      "focus": "exploit this independent variation between the GPA and GPT indexes to disentangle the e\ufb00ects of \u00b7 geopolitical acts and threats in the VAR analysis pr",
+      "url": "https://www.federalreserve.gov/econres/ifdp/files/ifdp1222.pdf",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "general_intel"
+    },
+    {
+      "name": "SeaLight | Resources",
+      "type": "Blog/Website",
+      "focus": "Interactive map made by the Institute for China-America Studies (ICAS), covering the various maritime claims in the South China Sea, as well as US leg",
+      "url": "https://www.sealight.live/resources",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "asia_pacific"
+    },
+    {
+      "name": "Best International Newsletters on Substack",
+      "type": "Substack",
+      "focus": "A full list of the top 25 international newsletters and podcasts on Substack. Breaking news, commentary and analysis on international relations, confl",
+      "url": "https://substack.com/top/international",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Russian Offensive Campaign Assessment, May 23, 2026 | ISW",
+      "type": "Blog/Website",
+      "focus": "The Ukrainian General Staff reported May 23 that Ukrainian forces struck a Russian ammunition depot in occupied Prechystivka (roughly 40 kilometers fr",
+      "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-may-23-2026/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "ukraine_russia"
+    },
+    {
+      "name": "Center for the Study of Intelligence - CSI",
+      "type": "Blog/Website",
+      "focus": "<strong>The Center for the Study of Intelligence (CSI)</strong> serves as a producer and repository of unclassified intelligence articles, publication",
+      "url": "https://www.cia.gov/resources/csi/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "general_intel"
+    },
+    {
+      "name": "South America: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "This event reveals what task force members found, and why Global South powers have a critical stake in Taiwan\u2019s future. ... 12 CSIS experts join Will ",
+      "url": "https://www.csis.org/regions/americas/south-america",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "Top 60 Geopolitics RSS Feeds - RSS Database",
+      "type": "Blog/Website",
+      "focus": "Follow RSS Website wasanchez.blogspot.com W. Alejandro Alex Sanchez Nieto is an international security analyst who focuses on geopolitics, military an",
+      "url": "https://rss.feedspot.com/geopolitics_rss_feeds/",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "south_america"
+    },
+    {
+      "name": "RSS | International Crisis Group",
+      "type": "Blog/Website",
+      "focus": "We recommend the following news readers, but there are many others to choose from: ... We offer the following content via RSS, including feeds for our",
+      "url": "https://www.crisisgroup.org/rss-0",
+      "discovered": "2026-06-01",
+      "signal_level": "Medium",
+      "region": "south_america"
     }
   ],
   "moltbook_sources": [
