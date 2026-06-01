@@ -176,22 +176,11 @@ python3 skills/daily-intel-brief/scripts/orchestrate.py \
 ORCH_RC=${PIPESTATUS[0]}
 
 # Fallback: if DeepSeek V4 Pro fails, try V4 Flash
+# (NOTE: analyze.py rejects Flash for production briefs, so this fallback
+# will also fail. It's kept as a safety net for non-production use.)
 if [ "${ORCH_RC}" -ne 0 ]; then
-    echo "DeepSeek V4 Pro failed (rc=${ORCH_RC}), retrying with V4 Flash..." | tee -a "$LOG"
-    python3 skills/daily-intel-brief/scripts/orchestrate.py \
-        --model "deepseek/deepseek-v4-flash" \
-        --tier2-model "deepseek/deepseek-v4-flash" \
-        --provider deepseek \
-        --tier2-provider deepseek \
-        --redteam-model "deepseek/deepseek-v4-flash" \
-        --redteam-provider deepseek \
-        --no-deliver \
-        >> "$LOG" 2>&1
-    ORCH_RC=${PIPESTATUS[0]}
-fi
-
-if [ "${ORCH_RC}" -ne 0 ]; then
-    echo "FATAL: Orchestrator failed with rc=${ORCH_RC} after all fallback attempts." | tee -a "${LOG}"
+    echo "DeepSeek V4 Pro failed (rc=${ORCH_RC}). V4 Flash fallback not available — quality gate rejects Flash." | tee -a "$LOG"
+    echo "FATAL: Orchestrator failed — V4 Pro must succeed." | tee -a "${LOG}"
     echo "DELIVERY ABORTED — orchestrator must succeed before quality gate can run." | tee -a "${LOG}"
     echo "=== Daily Text Brief FAILED — ${DATE_UTC} ===" | tee -a "${LOG}"
     exit 1

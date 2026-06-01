@@ -434,7 +434,7 @@ def exec_prompt(template: str, regional_payloads: dict[str, dict],
             for caveat in c.get("mandatory_caveats", []):
                 quality_lines.append(f"    CAVEAT: {caveat}")
         coll_summary = "\n".join(quality_lines)
-        user = template.replace("{collection_quality_summary}", coll_summary)
+        user = user.replace("{collection_quality_summary}", coll_summary)
     elif collection_state:
         caps = collection_state.get("per_region_cap", {})
         quality_lines = ["COLLECTION QUALITY BY REGION:"]
@@ -442,10 +442,9 @@ def exec_prompt(template: str, regional_payloads: dict[str, dict],
             label = REGION_LABEL.get(r, r)
             quality_lines.append(f"  {label}: intensity_cap={cap}")
         coll_summary = "\n".join(quality_lines)
-        user = template.replace("{collection_quality_summary}", coll_summary)
+        user = user.replace("{collection_quality_summary}", coll_summary)
     else:
-        # Remove placeholder if no state
-        user = template.replace("{collection_quality_summary}", "")
+        user = user.replace("{collection_quality_summary}", "")
     
     for snake, payload in regional_payloads.items():
         user = user.replace(
@@ -915,6 +914,46 @@ def main() -> int:
     exec_payload["models_used"] = [tier2_model, tier1_model]
     exec_payload["tier2_provider"] = tier2_provider
     exec_payload["tier1_provider"] = args.provider
+
+    # STRIP old-schema keys that confuse downstream (Opus QC stumbles on dual-schema)
+    old_schema_keys = ["title", "date_utc", "executive_summary", "key_judgments",
+                       "regional_assessments", "prediction_markets", "methodology", "model_used"]
+    for k in old_schema_keys:
+        exec_payload.pop(k, None)
+
+    # FALLBACK: if five_judgments is empty or missing, promote top regional KJs
+    five_kjs = exec_payload.get("five_judgments", [])
+    if not five_kjs:
+        log("WARNING: exec summary has empty five_judgments — promoting top regional KJs")
+        fallback_kjs = []
+        for snake in REGIONS_ORDER:
+            if snake not in regional_payloads:
+                continue
+            payload = regional_payloads[snake]
+            rkjs = payload.get("key_judgments") or []
+            for kj in rkjs[:1]:  # Take at most 1 per region
+                statement = kj.get("statement") or kj.get("judgment") or ""
+                band = kj.get("sherman_kent_band") or kj.get("band") or "even chance"
+                pct = kj.get("prediction_pct") or kj.get("numeric") or 50
+                kj_id = kj.get("id", "")
+                if isinstance(kj_id, int):
+                    kj_id = f"KJ-{REGION_SHORT.get(snake, snake.upper())}-{kj_id}"
+                fallback_kjs.append({
+                    "id": f"EXEC-{len(fallback_kjs)+1}",
+                    "statement": statement,
+                    "sherman_kent_band": band,
+                    "prediction_pct": pct,
+                    "horizon_days": 7,
+                    "drawn_from_region": snake,
+                    "drawn_from_kj_id": kj_id,
+                })
+                if len(fallback_kjs) >= 5:
+                    break
+            if len(fallback_kjs) >= 5:
+                break
+        exec_payload["five_judgments"] = fallback_kjs
+        log(f"FALLBACK: promoted {len(fallback_kjs)} KJs from regional analyses")
+
     (analysis_dir / "exec_summary.json").write_text(
         json.dumps(exec_payload, indent=2))
 

@@ -565,7 +565,7 @@ NEWS_RAW_PATH = pathlib.Path("/home/ubuntu/.openclaw/workspace/tasks/news_raw.md
 
 DEFAULT_ADMIRALTY = ("B", 2)  # major wires default; downgrade for state media
 
-USER_AGENT = "TrevorDailyBrief/1.0 (+https://github.com/trevormentis-spec/OpenClawTrevorMentis)"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
 CATALOG_PATH = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "analyst" / "meta" / "sources_tested.json"
 
@@ -736,7 +736,7 @@ def fetch(url: str, timeout: int = FETCH_TIMEOUT, max_retries: int = FETCH_RETRI
     """Fetch a URL with retry. Short timeout — dead feeds waste pipeline time."""
     for attempt in range(max_retries + 1):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.5"})
             t = timeout * (attempt + 1)  # 8s first, 16s retry
             with urllib.request.urlopen(req, timeout=t) as resp:
                 data = resp.read()

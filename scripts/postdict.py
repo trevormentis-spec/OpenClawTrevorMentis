@@ -334,17 +334,22 @@ def recheck_expired(cal: dict) -> dict:
             # Legacy path — no individual evaluations, resolve counts directly
             forced_incorrect_total = current_unresolved
         
-        # Recalculate: everything unresolved becomes incorrect
+        # Recalculate: expired predictions are NOT counted as incorrect.
+        # They lacked sufficient evidence to verify — neither right nor wrong.
         new_correct = current_correct
-        new_incorrect = score_entry.get("incorrect", 0) + current_unresolved
+        existing_incorrect = score_entry.get("incorrect", 0)
+        new_expired = current_unresolved  # these were unresolved, now expired
         new_unresolved = 0
-        new_total = new_correct + new_incorrect or total_entries
+        new_total = new_correct + existing_incorrect + new_expired or total_entries
         
         score_entry["correct"] = new_correct
-        score_entry["incorrect"] = new_incorrect
+        score_entry["incorrect"] = existing_incorrect  # don't add expired to incorrect
+        score_entry["expired_no_resolution"] = score_entry.get("expired_no_resolution", 0) + new_expired
         score_entry["unresolved"] = new_unresolved
-        score_entry["total"] = new_correct + new_incorrect
-        score_entry["accuracy_pct"] = round(new_correct / max(new_correct + new_incorrect, 1) * 100, 1)
+        score_entry["total"] = new_correct + existing_incorrect + new_expired
+        # Accuracy = correct / (correct + incorrect) — exclude expired
+        resolved = new_correct + existing_incorrect
+        score_entry["accuracy_pct"] = round(new_correct / max(resolved, 1) * 100, 1)
         score_entry["rechecked"] = True
         score_entry["rechecked_at"] = now.isoformat()
         score_entry["forced_resolved"] = True
@@ -357,17 +362,21 @@ def recheck_expired(cal: dict) -> dict:
     
     # Recompute running totals from ALL daily scores — always run, even if no new
     # entries were rechecked this cycle, so stale top-level totals get fixed
+    # expired_no_resolution is tracked separately and NOT counted as incorrect
     total_correct = 0
     total_incorrect = 0
     total_unresolved = 0
+    total_expired = 0
     for se in cal.get("daily_scores", []):
         total_correct += se.get("correct", 0)
         total_incorrect += se.get("incorrect", 0)
         total_unresolved += se.get("unresolved", 0)
+        total_expired += se.get("expired_no_resolution", 0)
     cal["correct"] = total_correct
     cal["incorrect"] = total_incorrect
     cal["unresolved"] = total_unresolved
-    cal["total_judgments"] = total_correct + total_incorrect + total_unresolved
+    cal["expired_no_resolution"] = total_expired
+    cal["total_judgments"] = total_correct + total_incorrect + total_unresolved + total_expired
 
     return cal
 
@@ -512,10 +521,12 @@ def main() -> int:
     log(f"Calibration report saved to {cal_path}")
 
     # Update running calibration tracker
+    # expired_no_resolution is tracked separately — not counted as incorrect
     history = load_calibration_history()
     history["total_judgments"] += total
     history["correct"] += correct
-    history["incorrect"] += disconfirmed + expired
+    history["incorrect"] += disconfirmed  # only truly disconfirmed
+    history["expired_no_resolution"] = history.get("expired_no_resolution", 0) + expired
     history["unresolved"] += not_yet_testable
     history["last_updated"] = dt.datetime.now(dt.timezone.utc).isoformat() + "Z"
 

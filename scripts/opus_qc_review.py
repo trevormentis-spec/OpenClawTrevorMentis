@@ -307,7 +307,7 @@ def format_report(review: dict[str, Any], verbose: bool = False) -> str:
             cost = u.get("cost", 0)
             lines.append(f"  Tokens: {u.get('prompt_tokens', '?')} in / {u.get('completion_tokens', '?')} out")
             if cost:
-                lines.append(f"  Cost: \${cost:.4f}")
+                lines.append(f"  Cost: ${cost:.4f}")
 
     lines.append("")
 

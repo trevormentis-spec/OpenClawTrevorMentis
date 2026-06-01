@@ -48,11 +48,10 @@ SOURCE DIVERSITY RULES:
 
 CALIBRATION DISCIPLINE:
 - Sherman Kent bands (verbal → numeric):
-  almost certain: 93–99%, highly likely: 80–90%, likely: 55–70%,
-  even chance: 45–55%, unlikely: 25–35%, highly unlikely: 10–20%,
-  almost no chance: 1–5%
+  almost no chance: ≤15%, unlikely: 15-35%, roughly even chance: 35-55%,
+  likely / probable: 55-75%, highly likely: 75-90%, almost certain: ≥90%
 - The verbal anchor and numeric prediction MUST be consistent.
-- "Likely" = 55-70%. If a prediction's base rate is 80%+, the only
+- "Likely" = 55-75%. If a prediction's base rate is 80%+, the only
   honest rating is Highly Likely or Almost Certain. Do not use
   "Likely" as a verbal hedge for high-confidence claims.
 - Single-source key judgments capped at "likely" (max 70%).
@@ -73,8 +72,10 @@ CALIBRATION DISCIPLINE:
   Do NOT use "likely" for more than 2 of your 5 judgments.
 
 KEY JUDGMENT QUALITY RULES:
-- Max 2 KJs per region. If you cannot generate two non-trivial ones,
-  ship one and explain why.
+- Max 2 KJs per region (in the JSON field "key_judgments"). If you
+  cannot generate two non-trivial ones, ship one and explain why.
+- For the exec summary, produce exactly 5 KJs in the JSON field
+  "five_judgments" — do NOT add a separate "key_judgments" field.
 - Every KJ must predict a specific, falsifiable event within the stated
   window. "Unlikely Iran attacks US bases" is weak; "Likely Iran
   responds via Houthi maritime harassment in Bab el-Mandeb within 7
@@ -314,7 +315,10 @@ the source names are embedded in each region's incident items.
 
 YOUR TASK
 
-Produce a single JSON object matching this schema exactly:
+Produce a single JSON object matching THIS EXACT schema. Do NOT add any
+additional fields. Do NOT produce a "key_judgments" field, "executive_summary"
+field, "title" field, or any other field not shown below. Use ONLY the fields
+listed below:
 
 {{
   "as_of_utc": "{date_utc}T06:00:00Z",

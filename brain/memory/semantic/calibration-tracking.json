@@ -2,7 +2,7 @@
   "version": 3,
   "created": "2026-05-12T05:10:00Z",
   "last_updated": "2026-05-29T19:35:59.431604+00:00Z",
-  "total_judgments": 105,
+  "total_judgments": 127,
   "correct": 3,
   "incorrect": 90,
   "unresolved": 12,
@@ -452,7 +452,7 @@
   "verdict_schema_caveat": "Pre-May-18 'unresolved' mapped to expired_no_resolution \u2014 no forced-resolution data available for pre-migration judgments",
   "confirmed": 5,
   "disconfirmed": 15,
-  "expired_no_resolution": 35,
+  "expired_no_resolution": 22,
   "partially_confirmed": 0,
   "not_yet_testable": 0
 }

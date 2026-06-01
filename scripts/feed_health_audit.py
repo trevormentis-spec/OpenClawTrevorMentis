@@ -21,7 +21,7 @@ ctx = ssl.create_default_context()
 def test_feed(name: str, url: str) -> dict:
     t0 = time.monotonic()
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "TrevorHealthCheck/1.0", "Accept": "application/rss+xml"})
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.5"})
         resp = urllib.request.urlopen(req, timeout=10, context=ctx)
         raw = resp.read()
         elapsed = time.monotonic() - t0

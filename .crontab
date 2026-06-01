@@ -1,0 +1,36 @@
+# ========================================================================
+# Trevor Crontab — reconstructed 2026-06-01
+# Sources: scripts/cron.conf, tasks/cron-setup.txt, skills/kalshi-trader/scripts/cron-monitor.sh,
+#          AGENTS.md, daily-text-brief.sh, autonomous_cycle.py
+# ========================================================================
+
+# ── Runtime health (every 10 min) ──
+*/10 * * * * /home/ubuntu/.openclaw/workspace/scripts/runtime-health.sh
+
+# ── Kalshi position monitor (every 5 min) ──
+# Monitors open positions for stop-loss/take-profit/time-decay exits
+*/5 * * * * /home/ubuntu/.openclaw/workspace/skills/kalshi-trader/scripts/cron-monitor.sh --alert-only
+
+# ── Autonomous operations cycle (every 4 hours at :30) ──
+# Checks: cron health, feed health, collection state, pipeline health, costs, brain
+30 */4 * * * cd /home/ubuntu/.openclaw/workspace && python3 scripts/autonomous_cycle.py --all --quiet
+
+# ── Daily brief pipeline (05:00 PT = 12:00 UTC) ──
+# Full pipeline: pre-collection → orchestrator → quality gate → delivery → postdict → landing page
+0 12 * * * /home/ubuntu/.openclaw/workspace/scripts/daily-text-brief.sh
+
+# ── Health report (every 6 hours at :15 past) ──
+15 */6 * * * /home/ubuntu/.openclaw/workspace/scripts/runtime-report.sh
+
+# ── RSS digest (every 6 hours at :45 past) ──
+# Staggered from health report to avoid load spikes
+45 */6 * * * cd /home/ubuntu/.openclaw/workspace && python3 skills/rss-feed-digest/scripts/rss_digest.py --quiet 2>&1
+
+# ── Trading reconciliation (daily at 02:00 UTC after markets settle) ──
+0 2 * * * cd /home/ubuntu/.openclaw/workspace/trading-system && python3 -m execution.daily_reconciliation
+
+# ── Brain reindex (daily at 03:00 UTC) ──
+0 3 * * * cd /home/ubuntu/.openclaw/workspace && python3 brain/scripts/brain.py reindex
+
+# ── Startup (on reboot) ──
+@reboot /home/ubuntu/.openclaw/workspace/scripts/startup.sh

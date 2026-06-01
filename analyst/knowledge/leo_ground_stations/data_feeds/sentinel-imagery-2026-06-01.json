@@ -1,0 +1,99 @@
+{
+  "status": "ok",
+  "collected_at": "2026-06-01T18:00:04.833875+00:00",
+  "sentinel_api_configured": false,
+  "sites_checked": 10,
+  "sites_with_recent_imagery": 0,
+  "sites": [
+    {
+      "site": "Ushuaia Region",
+      "operator": "Starlink",
+      "lat": -54.802,
+      "lon": -68.303,
+      "composite_risk": 2.95,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Marica, Rio de Janeiro",
+      "operator": "OneWeb",
+      "lat": -22.919,
+      "lon": -42.818,
+      "composite_risk": 2.8,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Puerto Rico",
+      "operator": "Starlink",
+      "lat": 18.22,
+      "lon": -66.59,
+      "composite_risk": 2.7,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Boca Chica, TX",
+      "operator": "Starlink",
+      "lat": 25.997,
+      "lon": -97.155,
+      "composite_risk": 2.5,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Broken Hill, NSW",
+      "operator": "Starlink",
+      "lat": -31.957,
+      "lon": 141.468,
+      "composite_risk": 2.4,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Abuja",
+      "operator": "Starlink",
+      "lat": 9.058,
+      "lon": 7.489,
+      "composite_risk": 2.4,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Santiago (Colina)",
+      "operator": "Starlink",
+      "lat": -33.198,
+      "lon": -70.677,
+      "composite_risk": 2.35,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Merrillan, WI",
+      "operator": "Starlink",
+      "lat": 44.449,
+      "lon": -90.833,
+      "composite_risk": 2.3,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Conrad, MT",
+      "operator": "Starlink",
+      "lat": 48.17,
+      "lon": -111.946,
+      "composite_risk": 2.3,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    },
+    {
+      "site": "Sanya, Hainan",
+      "operator": "OneWeb",
+      "lat": 18.253,
+      "lon": 109.504,
+      "composite_risk": 2.3,
+      "imagery_available": false,
+      "note": "Copernicus Data Space credentials available \u2014 will query on monthly run"
+    }
+  ]
+}

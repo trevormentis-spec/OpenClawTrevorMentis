@@ -19,9 +19,10 @@ def fetch_feeds(feed_urls, hours=24, keywords=None, exclude=None, limit=50):
     seen = set()
     items = []
 
+    USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
     for url in feed_urls:
         try:
-            feed = feedparser.parse(url)
+            feed = feedparser.parse(url, agent=USER_AGENT)
             source = feed.feed.get("title", url)
             for entry in feed.entries:
                 # Parse date

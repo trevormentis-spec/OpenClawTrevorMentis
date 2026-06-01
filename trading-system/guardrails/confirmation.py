@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """
-Human Confirmation System — Pending Order Queue
+Human Confirmation System — Entry Approval, Automated Management
 
-When the gated client needs human confirmation, it writes the proposed order
-to `pending/orders/` as a JSON file. The confirmation supervisor checks for
-pending orders, formats a Telegram message, and waits for a response.
+Entry orders (buying to open a position) → human approval required.
+Exit/management orders (selling to close) → fully automated.
 
-Phase 3: All trades require human confirmation.
-Phase 4+: Only trades above threshold require confirmation.
+Level 0-3: Entry orders require human confirmation.
+Level 4+:  Entry orders auto-execute (full autonomy).
+Management (exit/sell) orders always auto-execute.
 """
 
 from __future__ import annotations
 
 import json
-import os
-import sys
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -35,7 +33,16 @@ def ensure_dirs():
     RESPONSES_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def create_pending_order(
+def is_entry_order(action: str) -> bool:
+    """Is this a position-opening order?
+
+    In Kalshi: action="buy" opens a position (entry),
+    action="sell" closes a position (exit/management).
+    """
+    return action == "buy"
+
+
+def create_pending_entry(
     ticker: str,
     side: str,
     shares: int,
@@ -44,9 +51,10 @@ def create_pending_order(
     edge_pct: float,
     confidence: str,
     kj_id: str,
-    summary: str,
+    rationale: str,
+    portfolio_summary: str = "",
 ) -> str:
-    """Create a pending order awaiting human confirmation.
+    """Create a pending entry order awaiting human approval.
 
     Returns the order ID.
     """
@@ -62,7 +70,8 @@ def create_pending_order(
         "edge_pct": round(edge_pct, 2),
         "confidence": confidence,
         "kj_id": kj_id,
-        "summary": summary,
+        "rationale": rationale,
+        "portfolio_summary": portfolio_summary,
         "created_at": now_iso(),
         "status": "pending",
     }
@@ -73,19 +82,19 @@ def create_pending_order(
     return order_id
 
 
-def get_pending_orders() -> list[dict]:
-    """Get all pending (unconfirmed) orders."""
+def get_pending_entries() -> list[dict]:
+    """Get all pending (unapproved) entry orders."""
     ensure_dirs()
     orders = []
     for f in sorted(PENDING_DIR.glob("*.json")):
         try:
             order = json.loads(f.read_text())
             if order.get("status") == "pending":
-                # Check if expired (older than 1 hour)
+                # Check if expired (older than 30 minutes)
                 try:
                     created = datetime.fromisoformat(order["created_at"].replace("Z", "+00:00"))
                     age_minutes = (datetime.now(timezone.utc) - created).total_seconds() / 60
-                    if age_minutes > 60:
+                    if age_minutes > 30:
                         order["status"] = "expired"
                         f.write_text(json.dumps(order, indent=2))
                         continue
@@ -97,28 +106,37 @@ def get_pending_orders() -> list[dict]:
     return orders
 
 
-def format_confirmation_message(order: dict) -> str:
-    """Format a pending order as a Telegram confirmation message."""
-    return (
-        f"📋 **Trade Confirmation Required**\n\n"
-        f"**{order['side']}** {order['shares']} shares **{order['ticker']}**\n"
-        f"Price: {order['price_cents']}¢ | Cost: ${order['total_cost_dollars']}\n"
-        f"Edge: {order['edge_pct']}pp | Confidence: {order['confidence']}\n"
-        f"Intel: {order.get('kj_id', 'N/A')}\n\n"
-        f"_{order.get('summary', '')}_\n\n"
-        f"Reply with:\n"
-        f"  `/confirm {order['order_id']}` to execute\n"
-        f"  `/reject {order['order_id']}` to cancel\n"
-        f"  Order auto-expires in 60 minutes"
-    )
+def format_entry_approval_message(order: dict) -> str:
+    """Format a pending entry as a Telegram approval request."""
+    direction_arrow = "🟢" if order.get("side") == "yes" else "🔴"
+    lines = [
+        f"📈 **Entry Approval Needed**",
+        "",
+        f"{direction_arrow} BUY {order['side'].upper()} {order['ticker']} x{order['shares']}",
+        f"   Price: {order['price_cents']}¢ | Cost: ${order['total_cost_dollars']}",
+        f"   Edge: {order['edge_pct']}pp | Confidence: {order['confidence']}",
+        f"   Intel: {order.get('kj_id', 'N/A')}",
+        "",
+        f"_{order.get('rationale', '')}_",
+        "",
+    ]
+    if order.get("portfolio_summary"):
+        lines.append(f"Portfolio: {order['portfolio_summary']}")
+        lines.append("")
+    lines.extend([
+        f"Reply `/enter {order['order_id']}` to execute",
+        f"Reply `/skip {order['order_id']}` to pass",
+        "Auto-expires in 30 min",
+    ])
+    return "\n".join(lines)
 
 
-def respond_to_order(order_id: str, decision: str, notes: str = "") -> bool:
-    """Record a human decision on a pending order.
+def respond_to_entry(order_id: str, decision: str, notes: str = "") -> bool:
+    """Record a human decision on a pending entry order.
 
     Args:
         order_id: The order ID
-        decision: "confirmed" or "rejected"
+        decision: "approved" or "skipped"
         notes: Optional human notes
 
     Returns:
@@ -139,7 +157,6 @@ def respond_to_order(order_id: str, decision: str, notes: str = "") -> bool:
     order["response_notes"] = notes
     order_path.write_text(json.dumps(order, indent=2))
 
-    # Also save response separately
     response = {
         "order_id": order_id,
         "decision": decision,
@@ -165,7 +182,11 @@ def check_autonomy_level() -> int:
     return 0
 
 
-def confirmation_required() -> bool:
-    """Check if human confirmation is required at current autonomy level."""
+def entry_confirmation_required() -> bool:
+    """Check if entry orders need human approval.
+
+    Management/exit orders never require confirmation — they auto-execute.
+    Entry orders require approval at current autonomy level.
+    """
     level = check_autonomy_level()
-    return level < 3  # Levels 0-2 require confirmation
+    return level < 4  # Entries approved by human below level 4

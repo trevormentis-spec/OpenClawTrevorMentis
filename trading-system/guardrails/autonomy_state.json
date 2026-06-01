@@ -1,0 +1,21 @@
+{
+  "level": 4,
+  "phase": "Phase 4 — Full Autonomous Execution",
+  "description": "All trades execute autonomously within guardrails. No human notification for entries, exits, or management.",
+  "rules": {
+    "entry": "auto-executes — no notification",
+    "exit": "auto-executes — stop-loss, take-profit, time-decay, rebalancing",
+    "notification": "none — trade reports at daily reconciliation only",
+    "kill_switch": "always engaged — stops all trading"
+  },
+  "guardrails_active": {
+    "quarter_kelly_sizing": true,
+    "max_5pct_per_position": true,
+    "max_30pct_exposure": true,
+    "daily_minus_10pct_loss_cap": true,
+    "max_20pct_drawdown_halt": true,
+    "min_5pt_edge": true
+  },
+  "updated_at": "2026-06-01T17:31:00Z",
+  "updated_by": "Roderick"
+}

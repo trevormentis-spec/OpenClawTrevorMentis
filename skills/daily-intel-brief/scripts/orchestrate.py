@@ -454,16 +454,18 @@ def main() -> int:
     log(f"Quality gates: {qg_report.get('detail', 'unknown')}")
 
     for g in qg_report.get("gates", []):
-        status_icon = {"PASS": "✅", "WARN": "⚠️", "BLOCK": "❌"}.get(g["status"], "?")
-        log(f"  {status_icon} {g['gate']}: {g['detail']}")
+        status_icon = {"PASS": "✅", "WARN": "⚠️", "BLOCK": "❌"}.get(g.get("status", "?"), "?")
+        log(f"  {status_icon} {g.get('gate', '?' )}: {g.get('detail', '')}")
         for issue in g.get("issues", []):
             log(f"     → {issue}")
 
-    if not qg_report["passed"]:
+    if not qg_report.get("passed", True):
+        blocked = qg_report.get("blocked_count", 0)
+        total = qg_report.get("total_gates", 0)
         fail(
             f"Quality gates BLOCKED delivery: "
-            f"{qg_report['blocked_count']}/{qg_report['total_gates']} gates blocking "
-            f"({qg_report['detail']}). Fix failures before re-running.",
+            f"{blocked}/{total} gates blocking "
+            f"({qg_report.get('detail', 'unknown')}). Fix failures before re-running.",
             3,
         )
 

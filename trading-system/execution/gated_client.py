@@ -406,26 +406,46 @@ class GatedKalshiClient:
             except ImportError:
                 pass
 
-            # --- Human confirmation (Phase 3) ---
+            # --- Entry approval or auto-execute management ---
             try:
-                from guardrails.confirmation import confirmation_required, create_pending_order
-                if confirmation_required():
-                    summary = f"Edge: {self._extract_edge_pct(proposed_order)}pp | {proposed_order.ticker}"
-                    oid = create_pending_order(
+                from guardrails.confirmation import (
+                    entry_confirmation_required, create_pending_entry, is_entry_order,
+                )
+                action = proposed_order.action
+                if is_entry_order(action) and entry_confirmation_required():
+                    # Build a rich entry request — rationale from available fields
+                    edge_pct = self._extract_edge_pct(proposed_order)
+                    side_label = "YES" if proposed_order.side == "yes" else "NO"
+                    rationale = (
+                        f"Buy {side_label} {proposed_order.ticker} — "
+                        f"{edge_pct:+.0f}pp edge vs market at {proposed_order.limit_price_cents}¢"
+                    )
+                    portfolio_lines = []
+                    cash = portfolio.get("cash_cents", 0) / 100.0 if portfolio else 0
+                    positions = portfolio.get("positions", []) if portfolio else []
+                    if positions:
+                        open_ps = [p for p in positions if p.get("status") == "open"]
+                        if open_ps:
+                            exposure = sum(p.get("notional_cents", 0) for p in open_ps) / 100.0
+                            portfolio_lines.append(
+                                f"{len(open_ps)} open | ${exposure:.0f} exposure | ${cash:.0f} cash")
+                    portfolio_summary = " | ".join(portfolio_lines)
+                    oid = create_pending_entry(
                         ticker=proposed_order.ticker,
                         side=proposed_order.side,
                         shares=proposed_order.count,
                         price_cents=proposed_order.limit_price_cents,
                         total_cost=proposed_order.limit_price_cents / 100.0 * proposed_order.count,
-                        edge_pct=self._extract_edge_pct(proposed_order),
+                        edge_pct=edge_pct,
                         confidence="medium",
                         kj_id=proposed_order.kj_id or "N/A",
-                        summary=summary,
+                        rationale=rationale,
+                        portfolio_summary=portfolio_summary,
                     )
-                    logger.info(f"Pending order {oid} created — awaiting human confirmation")
+                    logger.info(f"Entry order {oid} created — awaiting human approval")
                     self._audit(decision_ctx)
-                    return {"status": "pending_confirmation", "order_id": oid,
-                            "message": "Awaiting human confirmation"}
+                    return {"status": "pending_entry_approval", "order_id": oid,
+                            "message": "Awaiting human entry approval — exits auto-managed"}
             except ImportError:
                 pass
 

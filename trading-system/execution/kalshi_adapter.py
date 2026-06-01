@@ -29,8 +29,15 @@ def _load_kalshi_client():
 
     # Fall back to loading the module directly from its file path.
     here = Path(__file__).resolve()
-    repo_root = here.parent.parent
+    # __file__ is trading-system/execution/kalshi_adapter.py
+    # repo_root is the workspace root (one more level up than trading-system/)
+    repo_root = here.parent.parent.parent
     client_path = repo_root / "skills" / "kalshi-trader" / "scripts" / "client.py"
+
+    if not client_path.exists():
+        # Try one level up (for non-standard layouts)
+        repo_root = here.parent.parent
+        client_path = repo_root / "skills" / "kalshi-trader" / "scripts" / "client.py"
 
     if not client_path.exists():
         # Allow override via env var for non-standard layouts.

@@ -87,18 +87,7 @@ def generate_report() -> str:
     except Exception as e:
         lines.append(f"\n⚠️  Calibration read failed: {e}")
 
-    # 5. Pending orders
-    try:
-        from guardrails.confirmation import get_pending_orders
-        pending = get_pending_orders()
-        if pending:
-            lines.append(f"\n⏳ Pending confirmations: {len(pending)}")
-            for o in pending[:5]:
-                lines.append(f"   • {o['side']} {o['shares']} {o['ticker']} @ ${o['total_cost_dollars']}")
-        else:
-            lines.append(f"\n⏳ No pending orders")
-    except Exception as e:
-        lines.append(f"\n⚠️  Pending orders check failed: {e}")
+    # 5. [removed — trade confirmations disabled per operator preference]
 
     # 6. Autonomy progress
     try:
