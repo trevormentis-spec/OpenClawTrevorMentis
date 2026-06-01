@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-06-01 01:01 UTC
+# Gmail Intel Digest — 2026-06-01 03:01 UTC
 
 ## Iran Update Evening Special Report: May 31, 2026, 02:00 PM ET
 **From:** CTP Publications <criticalthreats@aei.org>

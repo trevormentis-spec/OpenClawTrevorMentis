@@ -493,7 +493,55 @@
         "How Putin became master of the image",
         "'No-one feels safe now': Residents of Romanian city hit by drone share fears"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-06-01T03:02:53.714621+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-06-01T03:02:53.860412+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Second batch of Mandelson files to be published on Monday",
+        "Israel seizes castle in Lebanon as it expands ground offensive",
+        "Arsenal fans turn streets red for victory parade"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-06-01T03:02:56.454779+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-06-01T03:02:56.795788+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Second batch of Mandelson files to be published on Monday",
+        "Israel seizes castle in Lebanon as it expands ground offensive",
+        "Arsenal fans turn streets red for victory parade"
+      ]
     }
   ],
-  "last_updated": "2026-05-31T03:02:57.067695+00:00"
+  "last_updated": "2026-06-01T03:02:56.796028+00:00"
 }

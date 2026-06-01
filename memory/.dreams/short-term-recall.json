@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-31T09:00:12.263Z",
+  "updatedAt": "2026-06-01T02:45:46.198Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1364,13 +1364,13 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-26T06:02:30.835Z",
+      "lastRecalledAt": "2026-06-01T02:45:46.198Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
@@ -1378,7 +1378,8 @@
         "cc764312eb50",
         "13584e1c3564",
         "1493103d7969",
-        "b9bf26d73c0d"
+        "b9bf26d73c0d",
+        "343486efe044"
       ],
       "recallDays": [
         "2026-05-14",
@@ -1386,7 +1387,8 @@
         "2026-05-19",
         "2026-05-23",
         "2026-05-25",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-06-01"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -2485,18 +2487,20 @@
       "endLine": 53,
       "source": "memory",
       "snippet": "## Phase 14 — Behavioral Adaptation & Operational Learning (2026-05-13 04:55 UTC) ### Three loops closed **1. Calibration-conditioned forecasting:** - Created `scripts/behavioral_state.py` — reads calibration history + collection state + episodic events → behavioral directives - Modified `analyze.py` — `--behavioral-state` flag injects HARD CONSTRAINTS into system prompt - Middle East: only 'even chance'/'likely' available (max 75%, forecasting = cautious) — overconfidence flag triggers real band restriction - Global: 'almost certain' banned (24/25 judgments unresolved) - Asia: linguistic gap flagged for Chinese/Japanese - Behavioral constraints are structural, not descriptive — the model",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T16:50:07.292Z",
-      "lastRecalledAt": "2026-05-25T16:50:07.292Z",
+      "lastRecalledAt": "2026-06-01T02:45:46.198Z",
       "queryHashes": [
-        "b4583674ecea"
+        "b4583674ecea",
+        "343486efe044"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-01"
       ],
       "conceptTags": [
         "calibration-conditioned",
@@ -3111,21 +3115,23 @@
       "endLine": 58,
       "source": "memory",
       "snippet": "- Saved: `config/sources/africa-osint-sources.md` - Integrated: 397 sources added to catalog (26 north_africa, 397 sub_saharan_africa) - Hardcoded in collect.py: 16 tier-1 Africa feeds - Philby collector: cycling every 30 min ### Europe (903 lines, 44 countries + EU/NATO) - Saved: `config/sources/europe-osint-sources.md` - Integrated: 450 sources extracted, 212 validated RSS feeds added to catalog - Hardcoded in collect.py: 20 multilingual Europe feeds - Philby collector: cycling every 30 min ## Continuous Cognition Bridge Wired (2026-05-27) - Before fix: cognition ran but never promoted findings to durable memory - After fix: every 15 min cycle promotes pipeline FATAL/FAILED, auth key war",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.779Z",
-      "lastRecalledAt": "2026-05-31T01:48:17.753Z",
+      "lastRecalledAt": "2026-06-01T02:45:46.198Z",
       "queryHashes": [
         "b8c199fe7dc5",
         "aed1f43f2023",
-        "08ee5783f701"
+        "08ee5783f701",
+        "343486efe044"
       ],
       "recallDays": [
         "2026-05-29",
-        "2026-05-31"
+        "2026-05-31",
+        "2026-06-01"
       ],
       "conceptTags": [
         "north-africa",
