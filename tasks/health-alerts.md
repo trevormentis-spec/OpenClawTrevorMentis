@@ -1,21 +1,16 @@
 # Trevor Health Alerts
 
-**Generated:** 2026-06-01T11:58:49.271300+00:00
+**Generated:** 2026-06-01T16:24:16.607621+00:00
 **Health Score:** SICK (55/100)
-**Total Alerts:** 4
+**Total Alerts:** 3
 
-⚠️ **[WARNING]** cron_health: Correlated error across 6 jobs: FailoverError: ⚠️ deepseek (deepseek-v4-flash) returned a bi
-   Affected jobs: ae0d522f, cb039bf5, f10da54a, 7ca66311, 6c54d13f
+⚠️ **[WARNING]** cron_health: Correlated error across 10 jobs: cron: job execution timed out
+   Affected jobs: ac010c62, cb039bf5, f10da54a, 5026ed81, a20962e6
    Root cause: unknown
 
-⚠️ **[WARNING]** cron_health: Correlated error across 3 jobs: FallbackSummaryError: All models failed (1): deepseek/deepse
-   Affected jobs: 69d9d778, e0647d21, f5fe6ef6
-   Root cause: unknown
-
-⚠️ **[WARNING]** cron_health: Correlated error across 3 jobs: cron: job execution timed out
-   Affected jobs: 5026ed81, a20962e6, ce4cb113
-   Root cause: unknown
-
-⚠️ **[WARNING]** cron_health: 9 historical billing failures (resolved — DeepSeek balance $98.33). 3 active failures remaining.
-   Affected jobs: ae0d522f, 69d9d778, cb039bf5, f10da54a, e0647d21
+⚠️ **[WARNING]** cron_health: 1 historical billing failures (resolved — DeepSeek balance $96.22). 10 active failures remaining.
+   Affected jobs: ae0d522f
    Root cause: DeepSeek billing has been RESOLVED since these failures
+
+⚠️ **[WARNING]** cron_health: 10/34 enabled jobs failing (29.4%)
+   Root cause: >20% of enabled cron jobs failing

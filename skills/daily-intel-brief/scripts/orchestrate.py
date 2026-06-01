@@ -177,6 +177,7 @@ def quality_gates(wd: pathlib.Path, query: str = "geopolitical intelligence brie
                 "detail": "guard_pipeline not importable — skipping (permissive)"}
     except Exception as exc:
         return {"passed": False, "gates": [], "total_issues": 1,
+                "blocked_count": 0, "total_gates": 0,
                 "detail": f"guard_pipeline crashed: {exc}"}
 
 

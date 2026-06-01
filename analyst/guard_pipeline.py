@@ -416,7 +416,11 @@ def gate_completeness(analysis_dir: pathlib.Path) -> dict[str, Any]:
     #   format #2: nested {executive_summary: {bluf: ...}}
     #   format #3: flat {bluf: ...} with {regional_sections: ...}
     exec_bluf = exec_data.get("executive_summary", {})
-    bluf = exec_bluf.get("bluf", exec_data.get("bluf", ""))
+    # Handle both string (new format: LLM dumps raw text) and dict (old format: {bluf: ...})
+    if isinstance(exec_bluf, str):
+        bluf = exec_bluf
+    else:
+        bluf = exec_bluf.get("bluf", exec_data.get("bluf", ""))
     bluf_source = "exec_summary"
     if not bluf or len(bluf.split()) < 20:
         # Fallback: find BLUF from any region file

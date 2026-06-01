@@ -628,7 +628,12 @@ def fix_brief_quality(state: dict) -> None:
     # Only check if exec_summary.json has actual brief content fields; skip if schema mismatch (status-only)
     bluf_ok = True
     if any(k in brief for k in ("bluf", "executive_summary", "summary", "key_judgments")):
-        raw = brief.get("bluf", "") or brief.get("executive_summary", {}).get("bluf", "")
+        es = brief.get("executive_summary", {})
+        raw = brief.get("bluf", "")
+        if isinstance(es, str):
+            raw = raw or es
+        else:
+            raw = raw or es.get("bluf", "")
         if not raw:
             raw = brief.get("summary", "")
             if isinstance(raw, list):
@@ -640,7 +645,8 @@ def fix_brief_quality(state: dict) -> None:
             bluf_ok = False
 
     # Check for error content (only if bluf is defined)
-    bluf = brief.get("bluf", "") or brief.get("executive_summary", {}).get("bluf", "") or ""
+    es = brief.get("executive_summary", {})
+    bluf = brief.get("bluf", "") or (es if isinstance(es, str) else es.get("bluf", "")) or ""
     if "ERROR:" in bluf or "Error generating" in str(brief):
         alert("🔴 Brief contains error message — needs regeneration")
         fixes_needed = True

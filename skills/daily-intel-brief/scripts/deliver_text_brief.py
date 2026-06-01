@@ -85,10 +85,14 @@ def main() -> int:
     incident_url_map = build_incident_url_map(wd)
     log(f"loaded {len(incident_url_map)} incident URLs for hyperlinking")
 
-    # Build HTML body — handle nested executive_summary.{bluf} or flat {bluf}
-    exec_summary = exec_data.get("executive_summary", {})
-    bluf = exec_summary.get("bluf", exec_data.get("bluf", "No BLUF available."))
-    context = exec_summary.get("context_paragraph", exec_data.get("context_paragraph", ""))
+    # Build HTML body — handle nested executive_summary.{bluf}, flat {bluf}, or string executive_summary
+    exec_summary_raw = exec_data.get("executive_summary", {})
+    if isinstance(exec_summary_raw, str):
+        bluf = exec_summary_raw
+        context = exec_data.get("context_paragraph", "")
+    else:
+        bluf = exec_summary_raw.get("bluf", exec_data.get("bluf", "No BLUF available."))
+        context = exec_summary_raw.get("context_paragraph", exec_data.get("context_paragraph", ""))
     
     # Aggregated key judgments — handles both regional_assessments and regional_sections formats
     judgments = []
@@ -181,14 +185,10 @@ def main() -> int:
         # Normalize KJ field names (analyze.py direct vs orchestrator produce different formats)
         valid_kjs = []
         for kj in kjs:
-            # Normalize event → statement (alternate field name from some analysis models)
-            if "event" in kj and not kj.get("statement"):
-                kj["statement"] = kj["event"]
-            # Normalize prediction → judgment → statement
-            if "prediction" in kj and not kj.get("statement"):
-                kj["statement"] = kj["prediction"]
-            if "judgment" in kj and not kj.get("statement"):
-                kj["statement"] = kj["judgment"]
+            # Normalize field names for statement (any of these match)
+            for alt_field in ("event", "prediction", "judgment", "text"):
+                if alt_field in kj and not kj.get("statement"):
+                    kj["statement"] = kj[alt_field]
             # Normalize confidence bands
             if not kj.get("sherman_kent_band"):
                 if "probability_band" in kj:

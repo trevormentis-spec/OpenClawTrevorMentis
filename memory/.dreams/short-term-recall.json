@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-01T02:45:46.198Z",
+  "updatedAt": "2026-06-01T16:26:06.216Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1268,18 +1268,20 @@
       "endLine": 76,
       "source": "memory",
       "snippet": "- Writes calibration report to trevor-briefings/{yesterday}/calibration.json - Updates brain/memory/semantic/calibration-tracking.json — running accuracy by band and region - Wired as Step 8 in daily-brief-cron.sh between PDF delivery and Moltbook posts ### Fix 3: Stale analysis file (CLOSED) - orchestrate.py Step 4b syncs exec summary to tasks/news_analysis.md after each run - Written as formatted markdown with BLUF, context, and key judgments ### Fix 4: Tiered cognition routing (CLOSED) - analyze.py accepts --tier2-model flag (default: deepseek/deepseek-v4-flash) - 6 regional analyses use tier-2 (cheap/fast model via DeepSeek Direct) - Executive summary + red-team use tier-1 (Opus 4.7 vi",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-13T04:34:02.356Z",
-      "lastRecalledAt": "2026-05-13T04:34:02.356Z",
+      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
       "queryHashes": [
-        "d76260b5998d"
+        "d76260b5998d",
+        "70f4b0e41af9"
       ],
       "recallDays": [
-        "2026-05-13"
+        "2026-05-13",
+        "2026-06-01"
       ],
       "conceptTags": [
         "trevor-briefings",
@@ -1721,22 +1723,24 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "## Perplexity Benchmark — Set up - Perplexity produces a GSIB daily that lands in trevor.mentis@gmail.com with label \"Important MyClaw Use this\" - Roderick flagged it as the quality benchmark — my output should converge toward it - Created `scripts/benchmark_compare.py` — scores both briefs across 5 dimensions (persona, signal density, trade integration, framework reframes, prioritization) - Wired as Step 10 in `daily-brief-cron.sh` (runs after self-assessment) - Updated system prompt in `deepseek-prompts.md` for: analyst-to-analyst voice, direct address, trade-inline style - Updated regional prompt template with `{prediction_market_data}` and `{standing_assessment}` fields - Updated `regi",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T05:40:21.809Z",
-      "lastRecalledAt": "2026-05-27T04:02:59.457Z",
+      "lastRecalledAt": "2026-06-01T16:26:06.216Z",
       "queryHashes": [
         "cc764312eb50",
         "612560959a2b",
-        "273476f7a63c"
+        "273476f7a63c",
+        "f2e70eb49850"
       ],
       "recallDays": [
         "2026-05-19",
         "2026-05-25",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-06-01"
       ],
       "conceptTags": [
         "trevor.mentis",
@@ -2326,24 +2330,26 @@
       "endLine": 308,
       "source": "memory",
       "snippet": "- `skills/a2a/client.py` — discovers and tasks other A2A agents (discovery confirmed working) - Agent Card serves at `/.well-known/agent-card.json` with JSON-RPC 2.0 endpoint - `config/a2a/known_agents.json` — agent registry - Limitation: SDK v1.0 protobuf types still maturing — client uses direct httpx calls. Task execution needs async tuning. - Practical value: forward-looking infrastructure. Ecosystem still nascent (150 orgs). ## Moltbook reconnected — 2026-05-24 - Status changed from DISABLED to ENABLED (Roderick directive supersedes 2026-05-23 kill order) - Account: `trevormentis` — 34 karma, 11 followers, 18 following, claimed + active - API key still valid (same as before) - New po",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T01:44:37.483Z",
-      "lastRecalledAt": "2026-05-26T06:02:53.151Z",
+      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
       "queryHashes": [
         "998fb1f86453",
         "27d057b1d1c5",
         "b53ef245a31e",
         "748b955e8b88",
         "ac056aa0d70c",
-        "0997ca51db2d"
+        "0997ca51db2d",
+        "70f4b0e41af9"
       ],
       "recallDays": [
         "2026-05-25",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-06-01"
       ],
       "conceptTags": [
         "skills/a2a/client.py",
@@ -2984,18 +2990,20 @@
       "endLine": 341,
       "source": "memory",
       "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-28T02:22:08.753Z",
-      "lastRecalledAt": "2026-05-28T02:22:08.753Z",
+      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
       "queryHashes": [
-        "896393cca831"
+        "896393cca831",
+        "70f4b0e41af9"
       ],
       "recallDays": [
-        "2026-05-28"
+        "2026-05-28",
+        "2026-06-01"
       ],
       "conceptTags": [
         "scripts/leo-daily-brief.py",
@@ -3393,6 +3401,37 @@
         "cb.get",
         "day-change",
         "auto-recovered"
+      ]
+    },
+    "memory:memory/2026-05-24.md:333:354": {
+      "key": "memory:memory/2026-05-24.md:333:354",
+      "path": "memory/2026-05-24.md",
+      "startLine": 333,
+      "endLine": 354,
+      "source": "memory",
+      "snippet": "`scripts/agentmail_reader.py` — mirrors Gmail Intel Reader behavior for AgentMail inbox. - Fetches last 10 messages, appends inbound intel to `tasks/news_raw.md` - Filters out Trevor's own outbound messages - 6-hour recency window - Cron registered: every 2 hours (staggered 5 min from Gmail reader) - Both inboxes now feed into incident pipeline at same cadence ## Git commit — 2026-05-24 `05c4330` → `main`. 96 files, ~32K additions. All changes from 2026-05-24 session committed. -e ## Heartbeat — 2026-05-24 23:43 UTC - Daily geopolitical brief: **DELIVERY FAILED** (QC PARSE_ERROR, empty final/ dir, no export file) - Collection + analysis completed; compilation/delivery broke - LEO daily",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-01T14:05:05.297Z",
+      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
+      "queryHashes": [
+        "70f4b0e41af9"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "scripts/agentmail-reader.py",
+        "tasks/news-raw.md",
+        "6-hour",
+        "parse-error",
+        "compilation/delivery",
+        "scripts",
+        "agentmail-reader.py",
+        "mirrors"
       ]
     }
   }

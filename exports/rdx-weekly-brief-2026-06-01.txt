@@ -1,0 +1,59 @@
+=== EXECUTIVE SUMMARY ===
+
+This week's most important signal is the Reuters report that an Indian company shipped explosives to Russia despite warnings from the United States government. This is the first clear public evidence that South Asian commercial explosives may be backfilling Russian military demand at a time when three Russian explosives plants have been struck by Ukrainian forces in the past sixty days. The Indian firm says the material was for civilian mining use. That defense is plausible on its face because RDX, which stands for Research Department Explosive, and its civilian cousins move through the same supply chains as mining explosives. But the timing matters. Russian domestic production capacity has been degraded, and any imported tonnage frees up Russian military output for the front.
+
+On the Western side, hiring remains broad across every major North Atlantic Treaty Organization, or NATO, producer we track. No facility is pulling back. The United States International Trade Commission, known as the USITC, is moving forward on antidumping cases for two key precursor chemicals: hexamine, which is used to make RDX, and ammonium nitrate, which is used in both military and mining explosives. If duties are imposed, input costs for US explosives makers will rise.
+
+The bottom line: supply is tightening on the Western side because of precursor trade actions, demand remains strong, and Russia appears to be sourcing around its damaged plants through third countries.
+
+=== PRODUCER ACTIVITY ===
+
+Holston Army Ammunition Plant in Tennessee, the only US producer of RDX and HMX (High Melting Explosive), is actively hiring. The BAE Systems government-owned contractor-operated arrangement runs through 2033, and modernization continues. Environmental Protection Agency Toxics Release Inventory data, which we use as a rough proxy for production volume, is unavailable this cycle for both Holston and the Radford Army Ammunition Plant in Virginia.
+
+Eurenco Bergerac in France, the European RDX anchor, is hiring. The line restarted for Ukraine demand remains the key European supply story.
+
+Nitro-Chem in Poland, the only NATO producer of trinitrotoluene, known as TNT, continues to deliver against its $310 million US contract for 18,000 metric tons through 2029. No change this week.
+
+Chemring Nobel in Norway, which makes RDX, HMX, and PETN (Pentaerythritol Tetranitrate), is hiring.
+
+Rheinmetall's new plant at Varpalota in Hungary is in commissioning. The company is hiring.
+
+Hanwha in South Korea and Solar Industries in India, the major Asian producers, are both hiring. Solar Industries is the same country, though not necessarily the same firm, named in the Reuters report on shipments to Russia.
+
+On the Russian side: Sverdlov Plant was damaged April 30, Bryansk Chemical was struck in May, and JSC Promsintez was struck March 28. No new open-source events this week, but the cumulative damage is significant.
+
+=== SIGNALS AND INDICATORS ===
+
+News flow this week was dominated by two themes: sanctions leakage through India, and a broader Reuters analysis arguing that the United States and NATO miscalculated for years and left Ukraine outgunned on artillery. That second story matters because it reinforces the political case for sustained Western explosives expansion.
+
+Hiring across six major Western and allied producers is uniformly active. When producers hire in unison, it signals capacity expansion rather than a single-firm story.
+
+Patent activity continues to cluster around insensitive munitions, meaning explosives that are harder to set off by accident. Two of the five patents this cycle deal directly with insensitive formulations. This confirms the multi-year migration away from older Composition B and toward insensitive high explosive fills.
+
+The USITC trade remedy docket is the quiet but important story. Hexamine antidumping investigations have reached final affirmative determinations, and the urea ammonium nitrate solution case against Russia and Trinidad continues. Both chemicals feed the explosives supply chain. Duties raise input costs for US makers but also reduce dependence on adversary suppliers.
+
+Conflict Armament Research, the field investigation group that traces weapons in conflict zones, had routine publication activity this week with no new specific tracing report on RDX or C4.
+
+=== WHAT TO WATCH ===
+
+First, follow-on US government action on the Indian explosives shipment to Russia. Highly likely (75 to 85 percent) that the State Department or Treasury issues a public statement or designation within thirty days.
+
+Second, additional Ukrainian strikes on Russian explosives or precursor plants. Likely (55 to 70 percent) given the established pattern of one strike roughly every four to six weeks since March.
+
+Third, final duty rates in the hexamine antidumping case translating into price increases for US RDX inputs. Likely (55 to 70 percent) within the thirty-day window.
+
+Fourth, a public announcement of expanded output or a new contract at Eurenco Bergerac or Rheinmetall Varpalota. Likely (55 to 70 percent) given hiring patterns and the European push to close the nitrocellulose gap, where current output of 4,500 to 10,000 metric tons per year falls well short of the 20,000-ton target.
+
+Fifth, additional reporting on third-country backfilling to Russia from suppliers in India, Turkey, or the Gulf. Likely (55 to 70 percent) that at least one more such report surfaces in the next thirty days.
+
+=== SOURCES ===
+
+GDELT, the Global Database of Events, Language, and Tone, for news monitoring.
+Public job postings from Holston Army Ammunition Plant, Eurenco, Chemring Nobel, Rheinmetall, Hanwha, and Solar Industries.
+Google Patents for research and development direction.
+United States International Trade Commission docket filings on hexamine and urea ammonium nitrate solution.
+Conflict Armament Research publications.
+Environmental Protection Agency Toxics Release Inventory, unavailable this cycle for Holston and Radford.
+Open-source intelligence reporting on Russian plant events at Sverdlov, Bryansk Chemical, and JSC Promsintez.
+Reuters news service for the India shipment story and the NATO artillery analysis.
+Internal producer tracker covering ten facilities across the United States, Europe, Asia, and Russia.

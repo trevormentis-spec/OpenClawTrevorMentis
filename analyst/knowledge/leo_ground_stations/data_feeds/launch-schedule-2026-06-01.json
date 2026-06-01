@@ -1,0 +1,315 @@
+{
+  "status": "ok",
+  "collected_at": "2026-06-01T15:30:19.056331+00:00",
+  "feeds": {
+    "spaceflight_now": [
+      {
+        "title": "SpaceX launches 50th Starlink mission of 2026",
+        "link": "https://spaceflightnow.com/2026/05/30/live-coverage-spacex-to-launch-50th-starlink-mission-of-2026/",
+        "published": "Sat, 30 May 2026 13:46:18 +0000"
+      },
+      {
+        "title": "ULA launches 29 Amazon Leo satellites on Atlas 5 rocket from Cape Canaveral",
+        "link": "https://spaceflightnow.com/2026/05/29/live-coverage-ula-to-launch-29-amazon-leo-satellites-on-atlas-5-rocket-from-cape-canaveral-2/",
+        "published": "Fri, 29 May 2026 21:52:15 +0000"
+      },
+      {
+        "title": "Blue Origin\u2019s New Glenn rocket explodes during prelaunch testing at Cape Canaveral",
+        "link": "https://spaceflightnow.com/2026/05/29/blue-origins-new-glenn-rocket-explodes-during-prelaunch-testing-at-cape-canaveral/",
+        "published": "Fri, 29 May 2026 05:03:45 +0000"
+      },
+      {
+        "title": "SpaceX launches 29 Starlink satellites on Falcon 9 rocket from Cape Canaveral",
+        "link": "https://spaceflightnow.com/2026/05/29/live-coverage-spacex-to-launch-29-starlink-satellites-on-falcon-9-rocket-from-cape-canaveral-14/",
+        "published": "Fri, 29 May 2026 00:33:17 +0000"
+      },
+      {
+        "title": "FAA requires SpaceX-led mishap investigation before resumption of Starship launches",
+        "link": "https://spaceflightnow.com/2026/05/27/faa-requires-spacex-led-mishap-investigation-before-resumption-of-starship-launches/",
+        "published": "Wed, 27 May 2026 19:13:35 +0000"
+      },
+      {
+        "title": "NASA outlines nearly $1 billion investment into initial Moon Base missions",
+        "link": "https://spaceflightnow.com/2026/05/27/nasa-outlines-nearly-1-billion-investment-into-initial-moon-base-missions/",
+        "published": "Wed, 27 May 2026 01:18:19 +0000"
+      },
+      {
+        "title": "Preview: NASA updates progress towards established a Moon Base, Artemis 3 mission",
+        "link": "https://spaceflightnow.com/2026/05/26/live-coverage-nasa-updates-progress-towards-established-a-moon-base-artemis-3-mission/",
+        "published": "Tue, 26 May 2026 17:34:08 +0000"
+      },
+      {
+        "title": "SpaceX launches 24 Starlink satellites on Falcon 9 rocket from Vandenberg SFB",
+        "link": "https://spaceflightnow.com/2026/05/26/live-coverage-spacex-to-launch-24-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-8/",
+        "published": "Tue, 26 May 2026 12:48:17 +0000"
+      },
+      {
+        "title": "SpaceX launches 29 Starlink satellites on Memorial Day",
+        "link": "https://spaceflightnow.com/2026/05/24/live-coverage-spacex-to-launch-29-starlink-satellites-on-a-falcon-9-rocket-from-cape-canaveral/",
+        "published": "Sun, 24 May 2026 17:54:29 +0000"
+      },
+      {
+        "title": "Musk praises \u201cepic\u201d Super Heavy-Starship launch",
+        "link": "https://spaceflightnow.com/2026/05/23/musk-praises-epic-super-heavy-starship-launch/",
+        "published": "Sat, 23 May 2026 02:47:56 +0000"
+      }
+    ],
+    "launch_library": {
+      "total_upcoming": 354,
+      "leo_launches": 0,
+      "starlink_launches": 4,
+      "launches": [
+        {
+          "name": "Long March 12B | Demo Flight (SpaceSail Polar Group #10)",
+          "net": "2026-06-01T08:40:00Z",
+          "mission_type": "Test Flight",
+          "orbit": "Polar Orbit",
+          "rocket": "Long March 12B",
+          "location": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country": "CHN",
+          "status": "Launch Successful"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Starlink Group 10-43",
+          "net": "2026-06-03T08:02:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Starlink Group 17-47",
+          "net": "2026-06-03T14:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Long March 6A | Unknown Payload",
+          "net": "2026-06-04T11:41:00Z",
+          "mission_type": "Unknown",
+          "orbit": "Unknown",
+          "rocket": "Long March 6A",
+          "location": "Taiyuan Satellite Launch Center, People's Republic of China",
+          "country": "CHN",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Long March 8 | Unknown Payload",
+          "net": "2026-06-05T05:00:00Z",
+          "mission_type": "Unknown",
+          "orbit": "Unknown",
+          "rocket": "Long March 8",
+          "location": "Wenchang Space Launch Site, People's Republic of China",
+          "country": "CHN",
+          "status": "To Be Confirmed"
+        },
+        {
+          "name": "South Korean ADD Solid-Fuel SLV | Demo Flight",
+          "net": "2026-06-08T05:00:00Z",
+          "mission_type": "Test Flight",
+          "orbit": "Low Earth Orbit",
+          "rocket": "South Korean ADD Solid-Fuel SLV",
+          "location": "Sea Launch",
+          "country": "???",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Starlink Group 10-35",
+          "net": "2026-06-08T10:07:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "GSLV Mk II | GISAT-1A (EOS-05)",
+          "net": "2026-06-10T00:00:00Z",
+          "mission_type": "Earth Science",
+          "orbit": "Geostationary Transfer Orbit",
+          "rocket": "GSLV Mk II",
+          "location": "Satish Dhawan Space Centre, India",
+          "country": "IND",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Smart Dragon 3 | Unknown Payload",
+          "net": "2026-06-10T00:30:00Z",
+          "mission_type": "Unknown",
+          "orbit": "Unknown",
+          "rocket": "Smart Dragon 3",
+          "location": "Haiyang Oriental Spaceport",
+          "country": "CHN",
+          "status": "To Be Confirmed"
+        },
+        {
+          "name": "H3-30 | H3-30 Test Flight",
+          "net": "2026-06-10T00:53:59Z",
+          "mission_type": "Test Flight",
+          "orbit": "Sun-Synchronous Orbit",
+          "rocket": "H3-30",
+          "location": "Tanegashima Space Center, Japan",
+          "country": "JPN",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Starlink Group 17-44",
+          "net": "2026-06-10T14:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "Go for Launch"
+        },
+        {
+          "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Earth Science",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Electron",
+          "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country": "NZL",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | BlueBird Block 2 #3-5",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Pegasus XL | Swift Rescue Mission",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Mission Extension",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Pegasus XL",
+          "location": "Air launch to orbit",
+          "country": "???",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Spectrum | Onward and Upward",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Test Flight",
+          "orbit": "Sun-Synchronous Orbit",
+          "rocket": "Spectrum",
+          "location": "And\u00f8ya Spaceport",
+          "country": "NOR",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Ariane 64 Block 2 | Amazon Leo (LE-03)",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Low Earth Orbit",
+          "rocket": "Ariane 64",
+          "location": "Guiana Space Centre, French Guiana",
+          "country": "GUF",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer A",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer C",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer D",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer F",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Government/Top Secret",
+          "orbit": "Polar Orbit",
+          "rocket": "Falcon 9",
+          "location": "Vandenberg SFB, CA, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        },
+        {
+          "name": "Falcon 9 Block 5 | Sirius SXM-11",
+          "net": "2026-06-30T00:00:00Z",
+          "mission_type": "Communications",
+          "orbit": "Geostationary Transfer Orbit",
+          "rocket": "Falcon 9",
+          "location": "Cape Canaveral SFS, FL, USA",
+          "country": "USA",
+          "status": "To Be Determined"
+        }
+      ]
+    }
+  }
+}

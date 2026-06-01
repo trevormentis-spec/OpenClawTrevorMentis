@@ -1,0 +1,57 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-01
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single most impactful risk to US DC operations today, driving all eight highest-risk facilities (56/100) and threatening 1,200 MW of new build in Ohio (AWS us-east-3). Transformer lead times remain the critical bottleneck at 18-24 months for >50 MVA units, and the PJM interconnection queue at 122 GW means new builds face 4-6 year delays. No new cable outages or physical security incidents to report, but the grid constraint is systemic and worsening.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported. Key cables serving top DC clusters:
+- US East Coast (Ashburn, NY, NJ): Dunant, MAREA, SAm-1, TAT-14 — all operational.
+- US West Coast (San Jose, LA): FASTER, SEA-ME-WE 3, Southern Cross — no disruptions.
+- Europe (Frankfurt, London): SEA-ME-WE 5, Atlas Offshore, TAT-14 — stable.
+- Asia (Singapore, Tokyo): SEA-ME-WE 5, APCN-2, JUS — no issues.
+No congestion or capacity alerts. Monitor for any cable ship activity near Ashburn or NY landing points.
+
+═══ POWER & GRID ═══
+- PJM interconnection queue: 122 GW — new DC builds face 4-6 year delays. AWS us-east-3 (1,200 MW) in Ohio is permit-filed but will hit this wall.
+- Northern Virginia (Ashburn) cluster: MODERATE risk due to PJM grid strain. All eight Equinix facilities at 56/100 are grid-driven.
+- US hyperscale power capacity: 1,563 MW — but this is dwarfed by pipeline demand (1,450 MW active).
+- Transformer lead times: 18-24 months for >50 MVA units — single biggest constraint. Switchgear 12-18 months, generators 8-12 months.
+- No energy price spikes reported today, but PJM capacity auction results due next week could tighten.
+
+═══ NATURAL HAZARD WATCH ═══
+- Atlantic hurricane season: Active. Monitor for storms tracking toward US East Coast (Ashburn, NY, NJ) and Gulf (Houston). No immediate threats.
+- California (San Jose, LA): Wildfire season ongoing. No active fires near DC clusters. Sentinel-2 imagery shows no smoke or burn scars at SV1/SV5/SV10 or LA1.
+- Japan (Tokyo): Earthquake risk elevated. No recent seismic activity near DC hubs.
+- Australia (Sydney): AirTrunk SYD2 (150 MW) under construction — monitor for bushfire risk in summer months.
+
+═══ PHYSICAL SECURITY ═══
+No protests, construction disruptions, or access incidents reported at any Tier 1 sites. Sentinel-2 imagery of all 25 monitored sites shows no anomalies — no ground disturbance, flooding, or unauthorized activity. Equinix DC1-DC15 (Ashburn) and NY9 (111 8th Ave) both clear.
+
+═══ CLOUD & NETWORK ═══
+- No major cloud provider outages reported today. AWS, Azure, GCP all nominal.
+- No fiber route disruptions reported. Terrestrial routes serving Ashburn, NY, and San Jose are stable.
+- Internet exchanges: 900 IXes globally — no congestion alerts.
+
+═══ ASSET WATCH ═══
+- New announcements: AirTrunk SYD2 (150 MW, Sydney) — announced, not yet under construction.
+- Construction starts: Digital Realty FRA14 (35 MW, Frankfurt) — under construction. CyrusOne HOU2 (40 MW, Houston) — under construction.
+- Operational: Equinix NY9 (25 MW, New York) — now operational.
+- Risk rating changes: None. All eight Equinix facilities remain at 56/100 (MODERATE). No facilities moved to HIGH or CRITICAL.
+
+═══ MARKET SIGNALS ═══
+- Colo pricing: Tight in Northern Virginia and NY/NJ due to grid constraints. Expect upward pressure as new supply lags demand.
+- Capacity availability: Limited in Ashburn and Dallas. Frankfurt and Sydney have more headroom.
+- Supply chain: Transformer lead times worsening. Switchgear and generator lead times stable but extended. Lithium-ion UPS supply stable; lead-acid still constrained.
+- Pipeline: 1,450 MW active — but PJM delays will push most US builds beyond 2030.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-01
