@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-01 05:01 UTC
+# Gmail Intel Digest — 2026-06-01 07:01 UTC
+
+## Who needs oil when there's AI to buy?
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Mon, 1 Jun 2026 01:01:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## أمريكا: استهدفنا مواقع قيادة إيرانية للمسيرات مطلع الأسبوع
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -47,21 +56,13 @@ Email from Institute for the Study of War Ukraine’s mid-range strike campaign 
 
 ---
 
-## Blue Origin faces months of delays after rocket explosion damages launch pad
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Sun, 31 May 2026 11:01:44 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+## AgentMail Intel — 2026-06-01 07:01 UTC
 
----
+### SeaLead box ship makes third Hormuz crossing, Maritime in Minutes
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134614&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=1e530a72418544c5a
 
-## Israel troops capture Beaufort Castle in southern Lebanon push against Hezbollah
-**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
-**Date:** Sun, 31 May 2026 06:31:15 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
+### The Middle East Defense Dispatch
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+This week's news and analysis from Breaking Defense. ___________________________________________________________________________________________________________________________ Gambit 6 | CCA: The ne
