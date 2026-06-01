@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-01 03:01 UTC
+# Gmail Intel Digest — 2026-06-01 05:01 UTC
+
+## أمريكا: استهدفنا مواقع قيادة إيرانية للمسيرات مطلع الأسبوع
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Mon, 1 Jun 2026 01:01:03 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## Iran Update Evening Special Report: May 31, 2026, 02:00 PM ET
 **From:** CTP Publications <criticalthreats@aei.org>
