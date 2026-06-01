@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-06-01 07:01 UTC
+# Gmail Intel Digest — 2026-06-01 09:01 UTC
 
 ## Who needs oil when there's AI to buy?
 **From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
@@ -57,7 +57,11 @@ Email from Institute for the Study of War Ukraine’s mid-range strike campaign 
 ---
 
 
-## AgentMail Intel — 2026-06-01 07:01 UTC
+## AgentMail Intel — 2026-06-01 09:01 UTC
+
+### DoD seeks more shipbuilding, cyber talent as drone wingmen take flight
+**From:** Breaking Defense <newsletters@breakingdefense.com>  
+The defense industry’s most important stories, curated for your Monday morning. ____________________________________________________________________________________ Breaking Defense: Monday Morning B
 
 ### SeaLead box ship makes third Hormuz crossing, Maritime in Minutes
 **From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  

@@ -28,7 +28,7 @@ cp "$WORKSPACE/.kalshi_rsa_key.pem" "$SNAPSHOT/config/" 2>/dev/null
 
 # Active config files
 for f in config/active-assignments.yaml config/scope.yaml config/budget.yaml config/topic_themes/; do
-  [ -e "$WORKSPACE/$f" ] && cp -r "$WORKSPACE/$f" "$SNAPSHOT/config/" 2>/dev/null
+  [ -e "$WORKSPACE/$f" ] && cp -r "$WORKSPACE/$f" "$SNAPSHOT/config/" 2>/dev/null || true
 done
 
 # Neurotag brain (compact)
@@ -40,7 +40,7 @@ mkdir -p "$SNAPSHOT/exports"
 find "$WORKSPACE/exports" -name "*.md" -type f -mtime -7 -exec cp {} "$SNAPSHOT/exports/" \; 2>/dev/null
 
 # Trade journal
-cp "$WORKSPACE/docs/ops/portfolio-overview.md" "$SNAPSHOT/state/" 2>/dev/null
+cp "$WORKSPACE/docs/ops/portfolio-overview.md" "$SNAPSHOT/state/" 2>/dev/null || true
 for f in "$WORKSPACE/docs/ops/trade-journal-"*.md; do
   [ -f "$f" ] && cp "$f" "$SNAPSHOT/state/"
 done
