@@ -8,3 +8,4 @@
 - [2026-05-24] **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication (source: 2026-05-24.md, confidence: medium)
 - [2026-05-26] **Retrieval feedback loop underutilized** — only 3 `mark-retrieval` signals logged since brain.py deployed (all May 11, all "useful"). No "not-useful" marks ever recorded. Future sessions should run `brain.py mark-retrieval <key> useful|not-useful` after every brain recall usage. (source: retrieval-signals.jsonl, confidence: high)
 - [2026-05-27] - **Root cause 1:** 9 broken RSS feeds using wrong URLs (Gazeta Wyborcza, Telex, Politiken, Helsingin Sanomat, ISS Africa, Daily Nation, Addis Standard, Cabo Ligado, Garowe Online) — crawler burned th... (source: 2026-05-27.md, confidence: medium)
+- [2026-06-01] 4. **Calibration metric: expired ≠ incorrect** — code fixed to track expired separately (source: 2026-06-01.md, confidence: medium)

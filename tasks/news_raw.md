@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-06-02 09:01 UTC
+# Gmail Intel Digest — 2026-06-02 11:01 UTC
+
+## Thousands take shelter in Ukraine
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Tue, 2 Jun 2026 06:58:24 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Lebanon announces partial ceasefire between Israel, Hezbollah but attacks continue
+**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
+**Date:** Tue, 2 Jun 2026 06:31:10 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## Equity supply shock?
+**From:** "Morning Bid U.S." <morningbid@thomsonreuters.com>
+**Date:** Tue, 2 Jun 2026 06:30:10 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## لبنان يعلن وقف إطلاق نار جزئيا بين إسرائيل وحزب الله لكن الهجمات مستمرة
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -36,46 +63,24 @@ Email from Institute for the Study of War The Iranian regime, which ISW-CTP cont
 
 ---
 
-## Russian Offensive Campaign Assessment, June 1, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Mon, 1 Jun 2026 21:30:57 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War Ukrainian forces have largely halted the Russian Spring-Summer 2026 offensive so far, and Russian forces in May 2026 have gained a presence in only a fraction of the territory they did in May 2026. June 1, 2026 Data Cutoff: 7:15 PM ET Christina Harward, Samuel Shafiro, Anna Thacker, Grace Mappes, Anjou Kang-Stryker, and Frederick W. Kagan TOPLINES Ukrainian forces have largely halted the Russian Spring-Summer 2026 offensive so far, and Russian forces in 
+## AgentMail Intel — 2026-06-02 11:01 UTC
 
----
+### How Spencer Pratt could shake up 2028
+**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
+Presented by Vapor Technology Association: The unofficial guide to official Washington. Jun 02, 2026 View in browser By Jack Blanchard with Dasha Burns Pres
 
-## Iran Update Special Report: June 1, 2026, 02:00 PM ET
-**From:** CTP Publications <criticalthreats@aei.org>
-**Date:** Mon, 1 Jun 2026 20:46:55 -0400
-**Type:** unknown | **Importance:** low
+### Magyar Tries to Rebuild the Visegrád Group  || May 26, 2026
+**From:** Peter Zeihan <peterzeihan@creator.patreon.com>  
 
-A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+### Why Doesn't the Education Market Reward What Works?
+**From:** American Enterprise Institute <aei_today@aei.org>  
+Today's top commentary and scholarship on the issues that matter most AEI Today AEI's daily collection of independent research and analysis Why Doesn't the Education Market Reward What Works? (http
 
-Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVyghH7ZP5vwW6Mk92Q47Nwj_W37H_hZ5PP0z9N412xbF3pyd0W8wLKSR6lZ3mxW47llw05K-5x6W3JTWq08yQ_5GW6t_Dg08m_h30W3HfYPL2lF0C_N2YWM0NZSH31W2YfXwT2c0sDfW1BCtKp1QPtB-W3x67rf75rJL4W463bFh6-j1qZN5wDq2fbtW3yW3-6zsg65yRHfW4wfDtM9lzDlTN7k5vZCyT7bwW6l97b-5Rm0rSW8WpzPb2HqgKPW18p2ty7F4WHLW2jc0Kj2Ry2HDW87l7Q2
-
----
-
-## トランプ氏、ヒズボラ・イスラエル双方と協議　停戦維持に期待【【6月 2日】
-**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
-**Date:** Mon, 1 Jun 2026 18:31:06 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
-
----
-
-
-## AgentMail Intel — 2026-06-02 09:01 UTC
+### ISS Today: Can South Africa afford to keep Starlink out?
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+2 June 2026 [1] Can South Africa afford to keep Starlink out? Achieving the country’s ambitious goal of 100% broadband access by 2030 could require a trade-off between politics a
 
 ### Israeli defense giants press ahead with Eurosatory despite French restrictions
 **From:** Breaking Defense Daily <newsletters@breakingdefense.com>  
 Today's top news. __________________________________________________________________________________________________________________________________ Command the battlespace (https://info.breakingdef
-
-### Security of shipping a strategic imperative, Large explosion on MSC vessel in the Gulf
-**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134624&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=4feba4415dec40aea
-
-### From Gripens to GlobalEye to Polish drones, Euro firms field diversifying demand
-**From:** Breaking Defense Europe <newsletters@breakingdefense.com>  
-A weekly roundup of top developments from across the region. _____________________________________________ Breaking Defense: Europe (https://info.breakingdefense.com/e3t/Ctc/GA+113/cfk9804/VWS4rG6kY
