@@ -58,6 +58,8 @@ def get_kalshi_data():
         os.environ["KALSHI_CLIENT_PATH"] = str(
             WORKSPACE_DIR / "skills" / "kalshi-trader" / "scripts" / "client.py"
         )
+        # Ensure .env is loaded before importing adapter (it checks env vars at import)
+        load_env()
         from execution.kalshi_adapter import KalshiAdapter
         client = KalshiAdapter()
         bal = client.get_balance()
@@ -88,6 +90,7 @@ def get_newsletters():
 
 def get_gdelt_data(date_str: str) -> dict:
     """Load GDELT data from exports, or try to collect if not available"""
+    load_env()
     gdelt_path = GDELT_EXPORT_DIR / f"{date_str}.json"
     if gdelt_path.exists():
         return json.loads(gdelt_path.read_text())
@@ -95,16 +98,14 @@ def get_gdelt_data(date_str: str) -> dict:
     print("  GDELT data not cached — running collector...", file=sys.stderr)
     sys.path.insert(0, str(SCRIPT_DIR))
     import gdelt_collector
-    results = gdelt_collector.collect(timespan="24h", maxrecords=50)
+    result = gdelt_collector.collect(timespan="24h", maxrecords=250)
     output = {
         "date": date_str,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": result.get("timestamp", datetime.now(timezone.utc).isoformat()),
         "timespan": "24h",
-        "queries_run": len(results),
-        "total_articles": sum(
-            r.get("raw_count", r.get("article_count", 0)) for r in results.values()
-        ),
-        "themes": results,
+        "queries_run": 1,
+        "total_articles": result.get("total_articles", 0),
+        "themes": result.get("themes", {}),
     }
     # Cache it
     GDELT_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -162,7 +163,6 @@ def build_board(date_str: str) -> str:
     if isinstance(kalshi, dict) and "error" not in kalshi:
         bal = kalshi
         L(f"- [Kalshi] Balance: ${bal['total']:.2f} (${bal['cash']:.2f} cash, ${bal['portfolio']:.2f} portfolio)")
-        L("  - Note: Kalshi no longer lists geopolitics markets (per exchange policy — no war/death contracts)")
     else:
         L(f"- [Kalshi] Error: {kalshi.get('error', 'unknown')}")
 
@@ -171,15 +171,21 @@ def build_board(date_str: str) -> str:
     total_art = gdelt.get("total_articles", 0)
     L(f"- [GDELT] {total_art} articles across {len(themes)} query themes (24h window)")
 
+    # Helper to extract GDELT theme data (handles old and new formats)
+    def _gdelt_theme(data):
+        if "analysis" in data:
+            return data["analysis"]
+        return data
+
     # Top shift items (highest volume)
     sorted_themes = sorted(
         themes.items(),
-        key=lambda x: x[1].get("analysis", {}).get("article_count", 0),
+        key=lambda x: _gdelt_theme(x[1]).get("article_count", 0),
         reverse=True,
     )
     vol_seen = set()
     for theme_key, data in sorted_themes[:6]:
-        ana = data.get("analysis", {})
+        ana = _gdelt_theme(data)
         count = ana.get("article_count", 0)
         vol = ana.get("volume", "none")
         top_src = ana.get("top_sources", [])
@@ -198,7 +204,7 @@ def build_board(date_str: str) -> str:
     L("| Theme | Articles (24h) | Volume |")
     L("|---|---|---|")
     for theme_key, data in sorted_themes[:10]:
-        ana = data.get("analysis", {})
+        ana = _gdelt_theme(data)
         count = ana.get("article_count", 0)
         vol = ana.get("volume", "none")
         vol_icon = {
@@ -227,16 +233,11 @@ def build_board(date_str: str) -> str:
         L(f"**Kalshi:** Error — {kalshi.get('error', 'unknown')}")
 
     L("")
-    L("**Kalshi Geopolitics Markets:** Not available")
-    L("Kalshi does not list war/death/conflict contracts per exchange policy.")
-    L("Geopolitics prediction market data is carried on Polymarket.")
-    L("")
-    L("**Polymarket Context (via web, June 1):**")
-    L("- US-Iran permanent peace deal by Dec 31, 2026: ~74% (down from high-70s)")
-    L("- US-Iran peace deal by Jun 30: ~40-45% range")
-    L("- Trump announced indefinite extension of Apr 7 Iran ceasefire")
-    L("- Lebanon-Israel direct diplomatic talks in Washington, D.C.")
-    L("(Ref: Polymarket event pages)")
+    pm_data = get_polymarket_data()
+    if pm_data:
+        L("**Polymarket Context:**")
+        for item in pm_data:
+            L(f"- {item}")
     L("")
 
     # ── 🔍 One Deep Dive ──
@@ -245,13 +246,13 @@ def build_board(date_str: str) -> str:
 
     # Build analysis based on actual data
     iran_data = themes.get("iran_israel_hormuz", {})
-    iran_count = iran_data.get("analysis", {}).get("article_count", 0)
+    iran_count = _gdelt_theme(iran_data).get("article_count", 0)
 
     # Try to get the most data-rich theme
     best_theme_key = sorted_themes[0][0] if sorted_themes else "iran_israel_hormuz"
     best_data = sorted_themes[0][1] if sorted_themes else iran_data
-    best_ana = best_data.get("analysis", {})
-    best_count = best_data.get("analysis", {}).get("article_count", 0)
+    best_ana = _gdelt_theme(best_data)
+    best_count = best_ana.get("article_count", 0)
     best_sources = best_ana.get("top_sources", [])
     best_keywords = best_ana.get("top_keywords", [])
     best_langs = best_ana.get("top_languages", [])
@@ -318,7 +319,7 @@ def build_board(date_str: str) -> str:
     gdelt_errors = sum(1 for d in themes.values() if d.get("error"))
     gdelt_total = len(themes)
     gdelt_status = "OK" if gdelt_errors == 0 else f"Partial ({gdelt_errors}/{gdelt_total} errors)"
-    L(f"- **GDELT:** {gdelt_status} ({gdelt_total - gdelt_errors}/{gdelt_total} queries OK, "
+    L(f"- **GDELT:** {gdelt_status} ({gdelt_total - gdelt_errors}/{gdelt_total} categories, "
       f"{total_art} total articles)")
 
     # Kalshi
@@ -334,6 +335,12 @@ def build_board(date_str: str) -> str:
     L("")
 
     return "\n".join(lines)
+
+
+def get_polymarket_data() -> list:
+    """Indicate Polymarket availability — web scraping JS sites is unreliable."""
+    return ["Geopolitics prediction markets active on Polymarket — see polymarket.com/events for pricing"]
+
 
 
 def main():

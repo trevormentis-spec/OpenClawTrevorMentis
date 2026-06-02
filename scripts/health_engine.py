@@ -46,7 +46,8 @@ BUDGET_CONFIG_PATH = REPO_ROOT / "config" / "budget.yaml"
 INFRA_ALERT_PATH = REPO_ROOT / "tasks" / "infra-alert-state.json"
 QC_ALERT_PATH = REPO_ROOT / "tasks" / "qc-alert.md"
 CONTROL_PLANE_METRICS_PATH = REPO_ROOT / "brain" / "memory" / "semantic" / "control-plane-metrics.json"
-FINAL_BRIEF_PATH = REPO_ROOT / "final" / "brief.md"
+FINAL_BRIEF_PATH = REPO_ROOT / "final" / "brief.md"  # legacy — kept for backwards compat
+SIGNAL_BOARD_DIR = REPO_ROOT / "exports" / "signal-board"
 EXPORTS_PDFS_DIR = REPO_ROOT / "exports" / "pdfs"
 EPISODIC_DIR = REPO_ROOT / "brain" / "memory" / "episodic"
 LOGS_DIR = REPO_ROOT / "logs"
@@ -645,14 +646,20 @@ def check_pipeline_completion(dashboard: Dict[str, Any]) -> None:
     today = _today_str()
 
     try:
-        brief_text = _safe_read_text(FINAL_BRIEF_PATH)
-        if brief_text:
-            layer["brief_today"] = today in brief_text
+        # Check for today's Signal Board (new primary format)
+        sb_path = SIGNAL_BOARD_DIR / f"{today}.md"
+        if sb_path.exists():
+            layer["brief_today"] = True
+        else:
+            # Legacy fallback: check old brief.md
+            brief_text = _safe_read_text(FINAL_BRIEF_PATH)
+            if brief_text:
+                layer["brief_today"] = today in brief_text
         if not layer["brief_today"]:
             alerts.append(_alert(
-                "CRITICAL", "pipeline",
-                f"final/brief.md missing or doesn't contain today ({today})",
-                root_cause="Daily brief pipeline may not have run",
+                "WARNING", "pipeline",
+                f"Signal Board not yet generated for today ({today}) — check daily cron at 6:00 AM PT",
+                root_cause="Daily Signal Board pipeline may not have run yet (scheduled 6:00 AM PT)",
             ))
 
         if EXPORTS_PDFS_DIR.exists():

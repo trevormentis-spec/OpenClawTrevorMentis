@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-06-01 21:01 UTC
+# Gmail Intel Digest — 2026-06-01 23:01 UTC
+
+## トランプ氏、ヒズボラ・イスラエル双方と協議　停戦維持に期待【【6月 2日】
+**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
+**Date:** Mon, 1 Jun 2026 18:31:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+
+---
+
+## Editors’ Picks: Pakistan’s diplomatic pivot makes it a Trump-era power player
+**From:** Foreign Policy <newsletters@foreignpolicy.com>
+**Date:** Mon, 1 Jun 2026 18:00:28 -0400 (EDT)
+**Type:** newsletter | **Importance:** medium
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+
+---
+
+## Talks + tech = boom!
+**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
+**Date:** Mon, 1 Jun 2026 17:02:05 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## National Security Nightcap for Monday, June 1
 **From:** The Cipher Brief <dailybrief@thecipherbrief.com>
@@ -26,51 +53,9 @@ www.tcbconference.com (http://thecipherbrief.com/?utm_source=The+Cipher+Brief+Ni
 
 ---
 
-## Oil up again on fresh fighting
-**From:** Reuters Power Up <powerup@thomsonreuters.com>
-**Date:** Mon, 1 Jun 2026 12:00:27 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-06-01 23:01 UTC
 
----
-
-## Schools of rock
-**From:** Reuters One Essential Read <dailybriefing@thomsonreuters.com>
-**Date:** Mon, 1 Jun 2026 12:00:13 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.row-content{width:100%!important}.stack .column{width:100%;display:block}.mobile_hide{min-height:0;max-
-
----
-
-## Nvidia launches new chip to bring AI directly to personal computers
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Mon, 1 Jun 2026 11:01:25 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-
-## AgentMail Intel — 2026-06-01 21:01 UTC
-
-### China’s rare earth squeeze
-**From:** POLITICO's National Security Daily <nationalsecuritydaily@email.politico.com>  
-From the SitRoom to the E-Ring, the inside scoop on defense, national security and foreign policy. Jun 01, 2026 View in browser By Phelim Kine and Daniella Cheslow
-
-### Check Out the Agenda! | CNAS 2026 National Security Conference: New Rules
-**From:** Center for a New American Security <contact@cnas.org>  
-J [https://events.cnas.org/cnas2026conferencevirtual]ust Released! CNAS 2026 National Security Conference Agenda All times are Eastern Daylight Time (EDT) The View from the Hill: Congress’s Role in
-
-### MEI Webinar Invitation | The Iran War: Where Do We Stand? | June 4th 11:00 AM
-**From:** Middle East Institute <events@mei.edu>  
-Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients. Email not displaying correctly? View it in y
-
-### Russian Drone Hits Residential Building in Romania, Worrying NATO Allies
-**From:** AEI's Rundown <aeifdp@aei.org>  
-News and analysis from AEI's Foreign and Defense Policy team. The Rundown News and analysis from AEI's Foreign and Defense Policy team. Scholar Insight The Ebola outbreak in Central Africa is the
-
-### Global Update: Dua Lipa and Callum Turner Got Married in a London Municipal Building
-**From:** The New York Times <yourplaces-globalupdate-noreply@nytimes.com>  
+### New regulations on outbound investment; Qiushi on future industries; Chip export control dysfunction; Shangri-La D…
+**From:** Bill Bishop at Sinocism <bill@sinocism.com>  
+View this post on the web at https://sinocism.com/p/new-regulations-on-outbound-investment There was no publicized May Politburo meeting, or any sign of Xi visiting North Korea last week. Today’s to
