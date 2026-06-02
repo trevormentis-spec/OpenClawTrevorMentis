@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-01T17:26:17.834Z",
+  "updatedAt": "2026-06-02T02:26:17.382Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -480,13 +480,13 @@
       "endLine": 8,
       "source": "memory",
       "snippet": "# 2026-05-03 — Sunday ## Overnight (01:08 UTC / 18:08 PT May 2) - AgentMail: checked, 5 most recent are outbound only (briefing/audit emails), no incoming external messages. Inbox clean. - DeepSeek balance: **$98.30** (down $0.27 from last check, burn ~$0.95/day, ~103 days runway) - Polymarket monitor ran with 129 errors / 0 successful queries — price-state.json empty (0 markets). Needs investigation. - Brain runtime: normal. Daily file started for May 3.",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:05:31.168Z",
-      "lastRecalledAt": "2026-05-25T17:50:05.821Z",
+      "lastRecalledAt": "2026-06-02T02:26:17.382Z",
       "queryHashes": [
         "69ecdd2685e7",
         "29314a1ed0f7",
@@ -496,7 +496,8 @@
         "196f8419e846",
         "1c8dc30ba712",
         "2de51dfe8bc5",
-        "b5f2e0ca550c"
+        "b5f2e0ca550c",
+        "25b094663cbf"
       ],
       "recallDays": [
         "2026-05-04",
@@ -505,7 +506,8 @@
         "2026-05-10",
         "2026-05-13",
         "2026-05-18",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-02"
       ],
       "conceptTags": [
         "briefing/audit",
@@ -737,13 +739,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15,
+      "totalScore": 16,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-05T16:01:51.278Z",
-      "lastRecalledAt": "2026-05-25T19:00:11.328Z",
+      "lastRecalledAt": "2026-06-02T02:26:17.382Z",
       "queryHashes": [
         "92a6782d6fa7",
         "50bca59fec26",
@@ -759,7 +761,8 @@
         "33046e596a0d",
         "998fb1f86453",
         "b5f2e0ca550c",
-        "1493103d7969"
+        "1493103d7969",
+        "25b094663cbf"
       ],
       "recallDays": [
         "2026-05-05",
@@ -769,7 +772,8 @@
         "2026-05-11",
         "2026-05-18",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-02"
       ],
       "conceptTags": [
         "end-to-end",

@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-06-02 01:01 UTC
+# Gmail Intel Digest — 2026-06-02 03:01 UTC
+
+## Iran Update Special Report, June 1, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Mon, 1 Jun 2026 22:15:47 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War The Iranian regime, which ISW-CTP continues to assess is dominated by Islamic Revolutionary Guards Corps (IRGC) Commander Major General Ahmad Vahidi and his inner circle, suspended US-Iran negotiation June 1, 2026 Data Cutoff: 2:00 PM ET Ria Reddy, Parker Hempel, Will Doran, Avery Borens, and Annika Ganzeveld TOPLINES The Iranian regime, which ISW-CTP continues to assess is dominated by Islamic Revolutionary Guards Corps (IRGC) Commander Major General Ah
+
+---
+
+## Russian Offensive Campaign Assessment, June 1, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Mon, 1 Jun 2026 21:30:57 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Ukrainian forces have largely halted the Russian Spring-Summer 2026 offensive so far, and Russian forces in May 2026 have gained a presence in only a fraction of the territory they did in May 2026. June 1, 2026 Data Cutoff: 7:15 PM ET Christina Harward, Samuel Shafiro, Anna Thacker, Grace Mappes, Anjou Kang-Stryker, and Frederick W. Kagan TOPLINES Ukrainian forces have largely halted the Russian Spring-Summer 2026 offensive so far, and Russian forces in 
+
+---
 
 ## Iran Update Special Report: June 1, 2026, 02:00 PM ET
 **From:** CTP Publications <criticalthreats@aei.org>
@@ -35,18 +53,6 @@ Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/
 **Type:** unknown | **Importance:** low
 
 96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-## National Security Nightcap for Monday, June 1
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Mon,  1 Jun 2026 19:48:23 +0000
-**Type:** alert | **Importance:** high
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-monday-june-1?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=e401d64704-EMAIL_CAMPAIGN_2026_06_01_07_45&utm_medium=email&utm_term=0_-e401d64704-547824188&mc_cid=e401d64704&mc_eid=UNIQID
-
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=e401d64704-EMAIL_CAMPAIGN_2026_06_01_07_45&utm_medium=
 
 ---
 
