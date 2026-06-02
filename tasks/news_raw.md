@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-06-02 07:01 UTC
+# Gmail Intel Digest — 2026-06-02 09:01 UTC
 
 ## لبنان يعلن وقف إطلاق نار جزئيا بين إسرائيل وحزب الله لكن الهجمات مستمرة
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -65,3 +65,17 @@ Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/
 
 ---
 
+
+## AgentMail Intel — 2026-06-02 09:01 UTC
+
+### Israeli defense giants press ahead with Eurosatory despite French restrictions
+**From:** Breaking Defense Daily <newsletters@breakingdefense.com>  
+Today's top news. __________________________________________________________________________________________________________________________________ Command the battlespace (https://info.breakingdef
+
+### Security of shipping a strategic imperative, Large explosion on MSC vessel in the Gulf
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134624&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=4feba4415dec40aea
+
+### From Gripens to GlobalEye to Polish drones, Euro firms field diversifying demand
+**From:** Breaking Defense Europe <newsletters@breakingdefense.com>  
+A weekly roundup of top developments from across the region. _____________________________________________ Breaking Defense: Europe (https://info.breakingdefense.com/e3t/Ctc/GA+113/cfk9804/VWS4rG6kY

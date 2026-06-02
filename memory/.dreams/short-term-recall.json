@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T06:26:18.814Z",
+  "updatedAt": "2026-06-02T08:04:01.202Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -922,13 +922,13 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Added \"For Agents & Bots\" section between Methodology and Pricing - Analytics note: GH Pages has no built-in analytics (would need Plausible/GA added) ## Daily Brief Pipeline — Missing Cron - Main `daily-brief-cron.sh` (05:00 PT trigger) is NOT registered in OpenClaw cron jobs - Previously had cron ID `250765ae-d951-490c-b3d0-109fca300053` (from 2026-05-04 memory) - Downstream cron jobs (magazine PDF 05:30, forward-brief 06:30, social 13:30) exist but depend on the brief being produced - Magazine PDF builder has hardcoded date \"04 May 2026\" in its cron message - Buttondown newsletter cron (05:45) is enabled but no API key set - Asked Roderick if he wants me to re-register the missed cron",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.808350458818029,
+      "totalScore": 8.80835045881803,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T20:30:27.523Z",
-      "lastRecalledAt": "2026-05-14T15:41:49.683Z",
+      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
       "queryHashes": [
         "945ebcfdc68d",
         "0b07f259823a",
@@ -937,7 +937,8 @@
         "577729f1e069",
         "f7d1f8923a5d",
         "b84acb705a0f",
-        "f3aa65b3123e"
+        "f3aa65b3123e",
+        "af9c2a182f0d"
       ],
       "recallDays": [
         "2026-05-06",
@@ -945,7 +946,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-06-02"
       ],
       "conceptTags": [
         "built-in",
@@ -1834,13 +1836,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 13,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
+      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1853,14 +1855,16 @@
         "a83968718a46",
         "3d62a3a5d314",
         "7615a05f8cc3",
-        "2ec68133263a"
+        "2ec68133263a",
+        "af9c2a182f0d"
       ],
       "recallDays": [
         "2026-05-21",
         "2026-05-23",
         "2026-05-24",
         "2026-05-25",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-06-02"
       ],
       "conceptTags": [
         "second-guess",
@@ -1962,18 +1966,19 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# Memory — 11 May 2026 ## Daily Briefings Pipeline — Major Lesson ### What went wrong - Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lesson",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T04:46:23.407Z",
-      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
+      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
       "queryHashes": [
         "50d95fe6b691",
         "f8d5cf7b3c91",
         "0a8ae9598584",
-        "8f19cc6aa0eb"
+        "8f19cc6aa0eb",
+        "af9c2a182f0d"
       ],
       "recallDays": [
         "2026-05-23",
@@ -3486,15 +3491,16 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lessons - **Always check the cron pipeline script** before assuming fixes will take effect. Th",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-02T06:26:18.814Z",
-      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
+      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
       "queryHashes": [
-        "8f19cc6aa0eb"
+        "8f19cc6aa0eb",
+        "af9c2a182f0d"
       ],
       "recallDays": [
         "2026-06-02"
