@@ -1,4 +1,15 @@
-# Gmail Intel Digest — 2026-06-01 23:01 UTC
+# Gmail Intel Digest — 2026-06-02 01:01 UTC
+
+## Iran Update Special Report: June 1, 2026, 02:00 PM ET
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Mon, 1 Jun 2026 20:46:55 -0400
+**Type:** unknown | **Importance:** low
+
+A breaking update on the war in Iran. CTP and ISW will provide regular updates as information becomes available.
+
+Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVyghH7ZP5vwW6Mk92Q47Nwj_W37H_hZ5PP0z9N412xbF3pyd0W8wLKSR6lZ3mxW47llw05K-5x6W3JTWq08yQ_5GW6t_Dg08m_h30W3HfYPL2lF0C_N2YWM0NZSH31W2YfXwT2c0sDfW1BCtKp1QPtB-W3x67rf75rJL4W463bFh6-j1qZN5wDq2fbtW3yW3-6zsg65yRHfW4wfDtM9lzDlTN7k5vZCyT7bwW6l97b-5Rm0rSW8WpzPb2HqgKPW18p2ty7F4WHLW2jc0Kj2Ry2HDW87l7Q2
+
+---
 
 ## トランプ氏、ヒズボラ・イスラエル双方と協議　停戦維持に期待【【6月 2日】
 **From:** "Reuters.co.jp" <newsletters@email.reuters.com>
@@ -39,23 +50,3 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 
 ---
 
-## The room is taking shape.  Will you be there?
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Mon,  1 Jun 2026 18:18:13 +0000
-**Type:** newsletter | **Importance:** medium
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/the-room-is-taking-shape-will-you-be-there?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=ad9295805a-EMAIL_CAMPAIGN_2026_06_01_06_15&utm_medium=email&utm_term=0_-ad9295805a-547824188&mc_cid=ad9295805a&mc_eid=UNIQID
-
-THE CIPHER BRIEF THREAT CONFERENCE
-October 25-28, 2026
-www.tcbconference.com (http://thecipherbrief.com/?utm_source=The+Cipher+Brief+Nightcap+Newsletter&
-
----
-
-
-## AgentMail Intel — 2026-06-01 23:01 UTC
-
-### New regulations on outbound investment; Qiushi on future industries; Chip export control dysfunction; Shangri-La D…
-**From:** Bill Bishop at Sinocism <bill@sinocism.com>  
-View this post on the web at https://sinocism.com/p/new-regulations-on-outbound-investment There was no publicized May Politburo meeting, or any sign of Xi visiting North Korea last week. Today’s to

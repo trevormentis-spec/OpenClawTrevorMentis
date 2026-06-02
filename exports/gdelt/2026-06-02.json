@@ -1,9 +1,294 @@
 {
   "date": "2026-06-02",
-  "timestamp": "2026-06-02T00:15:43.490863+00:00",
-  "timespan": "24h",
-  "queries_run": 1,
-  "total_articles": 0,
-  "themes": {},
-  "error": "Expecting value: line 1 column 1 (char 0)"
+  "timestamp": "2026-06-02T00:50:15.461646+00:00",
+  "total_articles": 20,
+  "themes": {
+    "iran_israel_hormuz": {
+      "article_count": 16,
+      "volume": "very_high",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "ukraine_russia": {
+      "article_count": 4,
+      "volume": "medium",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "taiwan_china_scs": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "africa_sahel": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "latin_america": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "cyber_intel": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "energy_commodities": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "great_power": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "india_pakistan": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "korea": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    },
+    "uncategorized": {
+      "article_count": 0,
+      "volume": "none",
+      "top_sources": [
+        [
+          "https://www.cfr.org/report/conflicts-watch-2026",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/",
+          1
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2026_Iran_war",
+          1
+        ],
+        [
+          "https://www.geopoliticalmonitor.com/geopolitics-weekly-iran-war-food-prices-ukraine-ceasefire/",
+          1
+        ],
+        [
+          "https://www.russiamatters.org/news/russia-analytical-report/russia-analytical-report-june-16-23-2025",
+          1
+        ]
+      ]
+    }
+  },
+  "error": null
 }

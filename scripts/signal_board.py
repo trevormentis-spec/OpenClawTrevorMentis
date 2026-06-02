@@ -2,8 +2,8 @@
 """
 Signal Board Pipeline — Daily intelligence summary production.
 
-Assembles data from GDELT, Kalshi, AgentMail newsletters, and web sources
-into a single scannable markdown board.
+Assembles data from GDELT (or Brave Search fallback), Kalshi, AgentMail
+newsletters into a single scannable markdown board.
 
 Usage:
     python3 signal_board.py                                    # today
@@ -18,7 +18,6 @@ import pathlib
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone
-from collections.abc import Mapping
 
 SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
 WORKSPACE_DIR = SCRIPT_DIR.parent
@@ -28,21 +27,12 @@ ENV_FILE = WORKSPACE_DIR / ".env"
 
 
 def _safe_item(item):
-    """Extract name from an item that could be (name, count) tuple or a plain string."""
     if isinstance(item, (list, tuple)):
         return str(item[0])
     return str(item)
 
 
-def _safe_item_with_count(item):
-    """Format an item that could be (name, count) tuple or a plain string."""
-    if isinstance(item, (list, tuple)) and len(item) >= 2:
-        return f"{item[0]} ({item[1]})"
-    return str(item)
-
-
 def load_env():
-    """Load .env file"""
     if ENV_FILE.exists():
         for line in ENV_FILE.read_text().splitlines():
             line = line.strip()
@@ -52,13 +42,11 @@ def load_env():
 
 
 def get_kalshi_data():
-    """Get Kalshi balance"""
     try:
         sys.path.insert(0, str(WORKSPACE_DIR / "trading-system"))
         os.environ["KALSHI_CLIENT_PATH"] = str(
             WORKSPACE_DIR / "skills" / "kalshi-trader" / "scripts" / "client.py"
         )
-        # Ensure .env is loaded before importing adapter (it checks env vars at import)
         load_env()
         from execution.kalshi_adapter import KalshiAdapter
         client = KalshiAdapter()
@@ -73,7 +61,6 @@ def get_kalshi_data():
 
 
 def get_newsletters():
-    """Fetch recent AgentMail messages"""
     api_key = os.environ.get("AGENTMAIL_API_KEY", "")
     if not api_key:
         return {"messages": [], "error": "no API key"}
@@ -88,33 +75,49 @@ def get_newsletters():
         return {"messages": [], "error": str(e)}
 
 
-def get_gdelt_data(date_str: str) -> dict:
-    """Load GDELT data from exports, or try to collect if not available"""
-    load_env()
+def get_gdelt_data(date_str):
     gdelt_path = GDELT_EXPORT_DIR / f"{date_str}.json"
     if gdelt_path.exists():
         return json.loads(gdelt_path.read_text())
-    # Try to collect on the fly
+
     print("  GDELT data not cached — running collector...", file=sys.stderr)
-    sys.path.insert(0, str(SCRIPT_DIR))
-    import gdelt_collector
-    result = gdelt_collector.collect(timespan="24h", maxrecords=250)
+    try:
+        import gdelt_collector
+        result = gdelt_collector.collect(timespan="24h", maxrecords=250)
+        if result.get("error") or result.get("total_articles", 0) == 0:
+            raise RuntimeError(f"GDELT failed: {result.get('error', 'no data')}")
+    except Exception:
+        print("  GDELT unavailable — trying Brave Search fallback...", file=sys.stderr)
+        try:
+            import gdelt_fallback
+            result = gdelt_fallback.collect()
+        except Exception as e2:
+            result = {"error": str(e2), "themes": {}, "total_articles": 0}
+        if result.get("error"):
+            print(f"  Fallback also failed: {result['error']}", file=sys.stderr)
+
     output = {
         "date": date_str,
         "timestamp": result.get("timestamp", datetime.now(timezone.utc).isoformat()),
-        "timespan": "24h",
-        "queries_run": 1,
         "total_articles": result.get("total_articles", 0),
         "themes": result.get("themes", {}),
     }
-    # Cache it
     GDELT_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     gdelt_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
     return output
 
 
-def build_board(date_str: str) -> str:
-    """Assemble the full Signal Board markdown."""
+def _gdelt_theme(data):
+    if "analysis" in data:
+        return data["analysis"]
+    return data
+
+
+def get_polymarket_data():
+    return ["Geopolitics prediction markets active on Polymarket — see polymarket.com/events for pricing"]
+
+
+def build_board(date_str):
     now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = []
     L = lines.append
@@ -125,7 +128,6 @@ def build_board(date_str: str) -> str:
     L("---")
     L("")
 
-    # ── Gather data ──
     print("  Loading GDELT data...", file=sys.stderr)
     gdelt = get_gdelt_data(date_str)
     print("  Loading Kalshi data...", file=sys.stderr)
@@ -135,11 +137,6 @@ def build_board(date_str: str) -> str:
 
     news_msgs = newsletter.get("messages", [])
 
-    # ── 🔴 Shifts ──
-    L("## 🔴 Shifts — What changed since yesterday")
-    L("")
-
-    # Newsletter coverage shifts
     intel_keywords = [
         "iran", "israel", "hezbollah", "nato", "russia", "ukraine", "trump",
         "china", "taiwan", "north korea", "defense", "military", "war",
@@ -152,6 +149,10 @@ def build_board(date_str: str) -> str:
         and "received" in m.get("labels", [])
     ]
 
+    # ── 🔴 Shifts ──
+    L("## 🔴 Shifts — What changed since yesterday")
+    L("")
+
     for m in intel_newsletters[:6]:
         subj = m.get("subject", "?")
         frm = m.get("from", "?")
@@ -159,43 +160,33 @@ def build_board(date_str: str) -> str:
             frm = frm.split("<")[0].strip()
         L(f"- [Newsletter] {frm}: {subj}")
 
-    # Kalshi
     if isinstance(kalshi, dict) and "error" not in kalshi:
         bal = kalshi
         L(f"- [Kalshi] Balance: ${bal['total']:.2f} (${bal['cash']:.2f} cash, ${bal['portfolio']:.2f} portfolio)")
     else:
         L(f"- [Kalshi] Error: {kalshi.get('error', 'unknown')}")
 
-    # GDELT
     themes = gdelt.get("themes", {})
     total_art = gdelt.get("total_articles", 0)
-    L(f"- [GDELT] {total_art} articles across {len(themes)} query themes (24h window)")
+    has_gdelt = total_art > 0
+    L(f"- [GDELT] {total_art} articles across {len(themes)} themes (24h window)")
 
-    # Helper to extract GDELT theme data (handles old and new formats)
-    def _gdelt_theme(data):
-        if "analysis" in data:
-            return data["analysis"]
-        return data
-
-    # Top shift items (highest volume)
     sorted_themes = sorted(
         themes.items(),
         key=lambda x: _gdelt_theme(x[1]).get("article_count", 0),
         reverse=True,
     )
-    vol_seen = set()
-    for theme_key, data in sorted_themes[:6]:
-        ana = _gdelt_theme(data)
-        count = ana.get("article_count", 0)
-        vol = ana.get("volume", "none")
-        top_src = ana.get("top_sources", [])
-        src = _safe_item(top_src[0]) if top_src else "-"
-        display_name = theme_key.replace("_", " ").title()
-        if count > 0:
-            L(f"  - {display_name}: {count} articles (vol: {vol}, top source: {src})")
-        # Track for trends
-        vol_seen.add(theme_key)
 
+    if has_gdelt:
+        for theme_key, data in sorted_themes[:6]:
+            ana = _gdelt_theme(data)
+            count = ana.get("article_count", 0)
+            vol = ana.get("volume", "none")
+            top_src = ana.get("top_sources", [])
+            src = _safe_item(top_src[0]) if top_src else "-"
+            display_name = theme_key.replace("_", " ").title()
+            if count > 0:
+                L(f"  - {display_name}: {count} articles (vol: {vol}, top source: {src})")
     L("")
 
     # ── 🟡 Trends ──
@@ -203,20 +194,16 @@ def build_board(date_str: str) -> str:
     L("")
     L("| Theme | Articles (24h) | Volume |")
     L("|---|---|---|")
-    for theme_key, data in sorted_themes[:10]:
-        ana = _gdelt_theme(data)
-        count = ana.get("article_count", 0)
-        vol = ana.get("volume", "none")
-        vol_icon = {
-            "very_high": "🔴",
-            "high": "🟠",
-            "medium": "🟡",
-            "low": "🟢",
-            "none": "⚪",
-        }.get(vol, "⚪")
-        display_name = theme_key.replace("_", " ").title()
-        L(f"| {display_name} | {count} | {vol_icon} {vol} |")
-
+    if has_gdelt:
+        for theme_key, data in sorted_themes[:10]:
+            ana = _gdelt_theme(data)
+            count = ana.get("article_count", 0)
+            vol = ana.get("volume", "none")
+            vol_icon = {"very_high": "🔴", "high": "🟠", "medium": "🟡", "low": "🟢", "none": "⚪"}.get(vol, "⚪")
+            display_name = theme_key.replace("_", " ").title()
+            L(f"| {display_name} | {count} | {vol_icon} {vol} |")
+    else:
+        L("| GDELT | no data | ⚪ |")
     if isinstance(kalshi, dict) and "error" not in kalshi:
         L(f"| Kalshi Equity | ${kalshi['total']:.2f} | → |")
     L("")
@@ -231,7 +218,6 @@ def build_board(date_str: str) -> str:
         L(f"- Total Equity: ${kalshi['total']:.2f}")
     else:
         L(f"**Kalshi:** Error — {kalshi.get('error', 'unknown')}")
-
     L("")
     pm_data = get_polymarket_data()
     if pm_data:
@@ -241,114 +227,65 @@ def build_board(date_str: str) -> str:
     L("")
 
     # ── 🔍 One Deep Dive ──
-    L("## 🔍 Deep Dive: Iran-Israel-Hormuz Axis")
+    L("## 🔍 Deep Dive: Today's Top Story")
     L("")
+    L("Based on today's data, the most covered theme is analyzed below.\n")
 
-    # Build analysis based on actual data
-    iran_data = themes.get("iran_israel_hormuz", {})
-    iran_count = _gdelt_theme(iran_data).get("article_count", 0)
+    if has_gdelt and sorted_themes:
+        best_theme_key = sorted_themes[0][0]
+        best_ana = _gdelt_theme(sorted_themes[0][1])
+        best_count = best_ana.get("article_count", 0)
+        best_sources = best_ana.get("top_sources", [])
+        best_keywords = best_ana.get("top_keywords", [])
+        best_name = best_theme_key.replace("_", " ").title()
 
-    # Try to get the most data-rich theme
-    best_theme_key = sorted_themes[0][0] if sorted_themes else "iran_israel_hormuz"
-    best_data = sorted_themes[0][1] if sorted_themes else iran_data
-    best_ana = _gdelt_theme(best_data)
-    best_count = best_ana.get("article_count", 0)
-    best_sources = best_ana.get("top_sources", [])
-    best_keywords = best_ana.get("top_keywords", [])
-    best_langs = best_ana.get("top_languages", [])
-    best_name = best_theme_key.replace("_", " ").title()
+        L(f"**{best_name}** led today with {best_count} articles.")
+        if best_sources:
+            L(f"Top sources: {', '.join(_safe_item(s) for s in best_sources[:3])}")
+        if best_keywords:
+            L(f"Leading keywords: {', '.join(_safe_item(k) for k in best_keywords[:5])}")
+        L("")
+    else:
+        L("GDELT data unavailable today. See newsletter flags above for key intel signals.\n")
 
-    # Find the most interesting newsletter signals
-    iran_israel_news = [m for m in intel_newsletters
-                        if any(kw in m.get("subject", "").lower()
-                               for kw in ["iran", "israel", "hezbollah"])]
-
-    L(f"The {best_name} axis dominates today's intelligence landscape, generating "
-      f"{best_count} GDELT articles in the last 24 hours and 5+ intel newsletters "
-      f"in the Trevor inbox.")
-    L("")
-
-    L("**Key Developments:**")
-    L("")
-    L("1. **Israel-Hezbollah Non-Aggression Agreement.** President Trump announced "
-      "that Israel and Hezbollah have agreed to stop attacking each other in Lebanon "
-      "(Bloomberg, June 1). This represents the first concrete diplomatic outcome "
-      "from US-mediated talks and could signal a broader regional de-escalation track.")
-    L("")
-    L("2. **US-Iran Talks at Risk.** In a contrasting signal, Trump told Politico "
-      "he \"doesn't care\" if US-Iran talks collapse, while Iran's Tasnim news agency "
-      "reports Tehran may halt message exchanges with Washington over the Israel "
-      "situation. The mixed messaging creates uncertainty about the broader "
-      "ceasefire framework.")
-    L("")
-    L("3. **Polymarket Pricing.** The US-Iran permanent peace deal market (Dec 31) "
-      "trades at ~74%, down from a high-70s peak, reflecting trader caution about "
-      "sustained diplomatic progress despite the ceasefire extension.")
-    L("")
-
-    if iran_israel_news:
-        L("**Newsletter Signals:**")
-        for m in iran_israel_news[:3]:
+    # Newsletter highlights for the deep dive
+    if intel_newsletters:
+        L("**Newsletter Highlights:**")
+        for m in intel_newsletters[:5]:
             frm = m.get("from", "?")
             if "<" in frm:
                 frm = frm.split("<")[0].strip()
             L(f"- {frm}: {m.get('subject', '?')}")
         L("")
 
-    if best_sources:
-        L("**GDELT Source Distribution:**")
-        L(f"- Top sources: {', '.join(_safe_item_with_count(s) for s in best_sources[:3])}")
-    if best_keywords:
-        L(f"- Leading keywords: {', '.join(_safe_item(k) for k in best_keywords[:5])}")
-    if best_langs:
-        L(f"- Language coverage: {', '.join(_safe_item_with_count(l) for l in best_langs[:3])}")
-    L("")
-    L("**Forward Look:** The next 48 hours are critical. Key indicators: (1) whether "
-      "the Israel-Hezbollah hold-fire holds without violations, (2) the tone of "
-      "Iran's response to the Trump administration, and (3) Strait of Hormuz "
-      "shipping resumption status. The MEI webinar on June 4 ('The Iran War: Where "
-      "Do We Stand?') will provide expert assessment. Monitor Polymarket pricing "
-      "for real-time sentiment shifts.")
+    L("**Forward Look:** Monitor the Signals section and newsletters for "
+      "overnight developments. Next board generation: 6:00 AM PT.")
     L("")
 
     # ── ⚙️ Infrastructure ──
     L("## ⚙️ Infrastructure")
     L("")
-
-    # GDELT health
-    gdelt_errors = sum(1 for d in themes.values() if d.get("error"))
-    gdelt_total = len(themes)
-    gdelt_status = "OK" if gdelt_errors == 0 else f"Partial ({gdelt_errors}/{gdelt_total} errors)"
-    L(f"- **GDELT:** {gdelt_status} ({gdelt_total - gdelt_errors}/{gdelt_total} categories, "
+    cats_with_data = sum(1 for t in themes.values() if _gdelt_theme(t).get("article_count", 0) > 0)
+    L(f"- **GDELT:** {'OK' if has_gdelt else 'Unavailable (fallback used)'} "
+      f"({cats_with_data}/{len(themes)} categories with data, "
       f"{total_art} total articles)")
-
-    # Kalshi
     if isinstance(kalshi, dict) and "error" not in kalshi:
         L(f"- **Kalshi:** OK (${kalshi['total']:.2f} total equity)")
     else:
         L(f"- **Kalshi:** Error — {kalshi.get('error', 'unknown')}")
-
-    # AgentMail
     intel_count = len(intel_newsletters)
     L(f"- **AgentMail:** OK ({len(news_msgs)} recent, {intel_count} intel-relevant)")
-
     L("")
 
     return "\n".join(lines)
 
 
-def get_polymarket_data() -> list:
-    """Indicate Polymarket availability — web scraping JS sites is unreliable."""
-    return ["Geopolitics prediction markets active on Polymarket — see polymarket.com/events for pricing"]
-
-
-
 def main():
     import argparse
-
     parser = argparse.ArgumentParser(description="Signal Board Pipeline")
-    parser.add_argument("--date", type=str, default=None, help="Date (YYYY-MM-DD)")
-    parser.add_argument("--stdout", action="store_true", help="Print to stdout only")
+    parser.add_argument("--date", type=str, default=None)
+    parser.add_argument("--stdout", action="store_true")
+    parser.add_argument("--no-collect", action="store_true", help="Skip GDELT collection, use cached only")
     args = parser.parse_args()
 
     load_env()

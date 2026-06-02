@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-02T00:24:25.449463+00:00",
+  "timestamp": "2026-06-02T02:24:54.342461+00:00",
   "health_score": 55,
   "health_label": "SICK",
   "layers": {
     "github_backup": {
       "status": "ok",
-      "details": "14 uncommitted, 0 unpushed, last push 2.0h ago",
-      "uncommitted": 14,
+      "details": "16 uncommitted, 0 unpushed, last push 2.0h ago",
+      "uncommitted": 16,
       "unpushed": 0,
       "last_backup_age_hours": 2.0,
       "backup_status": "ok",
@@ -19,11 +19,11 @@
       "deepseek_balance": 96.22,
       "openrouter_ok": true,
       "supervisord": true,
-      "uptime": "7 days, 16 min",
+      "uptime": "7 days,  2:17",
       "load_avg": [
-        8.9,
-        5.85,
-        4.22
+        3.09,
+        3.16,
+        4.07
       ],
       "memory_used_gb": 3.0,
       "memory_available_gb": 12.0,
@@ -53,7 +53,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 4.4
+          "age_hours": 6.4
         },
         {
           "id": "ae0d522f",
@@ -62,7 +62,7 @@
           "last_error": "",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 36.4
+          "age_hours": 38.4
         },
         {
           "id": "cb039bf5",
@@ -71,7 +71,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 9.4
+          "age_hours": 11.4
         },
         {
           "id": "f10da54a",
@@ -80,7 +80,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 8.9
+          "age_hours": 10.9
         },
         {
           "id": "ddfdc590",
@@ -89,7 +89,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 7.4
+          "age_hours": 9.4
         },
         {
           "id": "c3429754",
@@ -98,7 +98,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 6.4
+          "age_hours": 8.4
         },
         {
           "id": "5026ed81",
@@ -107,7 +107,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 8.4
+          "age_hours": 10.4
         },
         {
           "id": "f5fe6ef6",
@@ -116,7 +116,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 9.4
+          "age_hours": 11.4
         },
         {
           "id": "6c54d13f",
@@ -125,7 +125,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 10.2
+          "age_hours": 12.2
         }
       ],
       "resolved_billing_jobs": 1,
@@ -147,7 +147,7 @@
             "6c54d13f"
           ],
           "root_cause": "unknown",
-          "timestamp": "2026-06-02T00:24:25.504064+00:00"
+          "timestamp": "2026-06-02T02:24:54.397067+00:00"
         },
         {
           "level": "WARNING",
@@ -157,7 +157,7 @@
             "ae0d522f"
           ],
           "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-          "timestamp": "2026-06-02T00:24:25.504080+00:00"
+          "timestamp": "2026-06-02T02:24:54.397084+00:00"
         },
         {
           "level": "WARNING",
@@ -165,7 +165,7 @@
           "message": "8/33 enabled jobs failing (24.2%)",
           "affected_jobs": [],
           "root_cause": ">20% of enabled cron jobs failing",
-          "timestamp": "2026-06-02T00:24:25.504086+00:00"
+          "timestamp": "2026-06-02T02:24:54.397090+00:00"
         }
       ]
     }
@@ -186,7 +186,7 @@
         "6c54d13f"
       ],
       "root_cause": "unknown",
-      "timestamp": "2026-06-02T00:24:25.504064+00:00"
+      "timestamp": "2026-06-02T02:24:54.397067+00:00"
     },
     {
       "level": "WARNING",
@@ -196,7 +196,7 @@
         "ae0d522f"
       ],
       "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-      "timestamp": "2026-06-02T00:24:25.504080+00:00"
+      "timestamp": "2026-06-02T02:24:54.397084+00:00"
     },
     {
       "level": "WARNING",
@@ -204,7 +204,7 @@
       "message": "8/33 enabled jobs failing (24.2%)",
       "affected_jobs": [],
       "root_cause": ">20% of enabled cron jobs failing",
-      "timestamp": "2026-06-02T00:24:25.504086+00:00"
+      "timestamp": "2026-06-02T02:24:54.397090+00:00"
     }
   ],
   "emergency": false
