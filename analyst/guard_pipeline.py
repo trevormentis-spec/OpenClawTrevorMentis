@@ -287,17 +287,17 @@ def gate_themes(analysis_dir: pathlib.Path, query: str = "geopolitical intellige
 # ═══════════════════════════════════════════════════════════════════════════════
 
 BANDS = {
-    "almost certain":      (93, 99),
-    "highly likely":       (75, 85),
-    "likely":              (55, 70),
-    "probable":            (70, 85),
-    "even chance":         (45, 55),
-    "chances about even":  (45, 55),
-    "unlikely":            (25, 35),
-    "probably not":        (25, 35),
-    "highly unlikely":     (10, 20),
-    "almost no chance":    (1, 5),
-    "remote":              (1, 5),
+    "almost certain":      (85, 100),
+    "highly likely":       (75, 90),
+    "likely":              (55, 75),
+    "probable":            (55, 75),
+    "even chance":         (35, 55),
+    "chances about even":  (35, 55),
+    "unlikely":            (15, 35),
+    "probably not":        (15, 35),
+    "highly unlikely":     (5, 15),
+    "almost no chance":    (0, 15),
+    "remote":              (0, 15),
 }
 
 

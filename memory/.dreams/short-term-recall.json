@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T12:56:16.901Z",
+  "updatedAt": "2026-06-02T16:08:51.162Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -102,13 +102,13 @@
       "endLine": 54,
       "source": "memory",
       "snippet": "4. IRGC retains operational control despite leadership divisions 5. Economic impacts deepening (Brent +2%, Asian fuel crisis, IMF recession warning) 6. White House security incident a moderate distraction risk 7. Israel-Lebanon front most likely flashpoint - **Primary hypothesis (ACH):** H2 — Managed Escalation (16 evidence items consistent) - **Most likely scenario:** Managed escalation persists (55-65%) - **Most dangerous scenario:** Full conflict resumption (20-30%) - **Best case:** Fragmented de-escalation (10-20%) - **Wildcard:** Russian-mediated breakthrough (5-10%) ### Phase 5 — Google Doc Upload ✅ - Created via Maton API Gateway (google-docs app, connection id: bad7dcb8-beaf",
-      "recallCount": 23,
+      "recallCount": 24,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.50553129149435,
+      "totalScore": 23.50553129149435,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T18:42:43.699Z",
-      "lastRecalledAt": "2026-05-31T07:50:45.526Z",
+      "lastRecalledAt": "2026-06-02T16:08:51.162Z",
       "queryHashes": [
         "0b7e24068149",
         "77ed4c792413",
@@ -132,10 +132,10 @@
         "cb0e9de10fbc",
         "d273c1eeb6e6",
         "06af7cc38b34",
-        "9f9311b31b2a"
+        "9f9311b31b2a",
+        "2dd3919693fa"
       ],
       "recallDays": [
-        "2026-04-28",
         "2026-04-29",
         "2026-04-30",
         "2026-05-02",
@@ -150,7 +150,8 @@
         "2026-05-18",
         "2026-05-24",
         "2026-05-29",
-        "2026-05-31"
+        "2026-05-31",
+        "2026-06-02"
       ],
       "conceptTags": [
         "gateway",
@@ -383,13 +384,13 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "- Google Docs API via Maton gateway: `https://gateway.maton.ai/google-docs/v1/...` (NOT `/google-docs/docs/v1/`) - MATON_API_KEY stored in `openclaw.json` at `skills.entries.api-gateway.apiKey` - maton.ai gateway (not matonic.ai for standard API) — `gateway.maton.ai/{app}/{native-path}` - Connection header: `Maton-Connection: {connection_id}` for specifying OAuth connection - Google Docs batchUpdate insertText works with plain text (40KB no problem); no markdown-to-Docs conversion available - xurl CLI available at `/home/linuxbrew/.linuxbrew/bin/xurl` but unauthenticated - web_fetch works well for BBC and Gulf News; limited for AP, Al Jazeera, Iran International (JS rendering / paywalls)",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.690475928211749,
+      "totalScore": 13.690475928211749,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-29T09:01:32.019Z",
-      "lastRecalledAt": "2026-05-29T18:21:10.629Z",
+      "lastRecalledAt": "2026-06-02T16:08:51.162Z",
       "queryHashes": [
         "326adb9da76c",
         "7b4024f16d8d",
@@ -403,7 +404,8 @@
         "b62b199ec189",
         "b2960036661c",
         "cb0e9de10fbc",
-        "06af7cc38b34"
+        "06af7cc38b34",
+        "2dd3919693fa"
       ],
       "recallDays": [
         "2026-04-29",
@@ -413,7 +415,8 @@
         "2026-05-12",
         "2026-05-15",
         "2026-05-18",
-        "2026-05-29"
+        "2026-05-29",
+        "2026-06-02"
       ],
       "conceptTags": [
         "gateway",
@@ -433,13 +436,13 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-05-18T00:00:43.319Z",
+      "lastRecalledAt": "2026-06-02T15:42:56.043Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
@@ -451,7 +454,8 @@
         "196f8419e846",
         "d76260b5998d",
         "f3aa65b3123e",
-        "1c8dc30ba712"
+        "1c8dc30ba712",
+        "9b5a567281b9"
       ],
       "recallDays": [
         "2026-05-02",
@@ -460,7 +464,8 @@
         "2026-05-05",
         "2026-05-13",
         "2026-05-14",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-06-02"
       ],
       "conceptTags": [
         "saturday",
@@ -559,13 +564,13 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
-      "recallCount": 23,
+      "recallCount": 24,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.611906618286376,
+      "totalScore": 23.611906618286376,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-29T21:19:26.644Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "d2222a517dea",
         "46ce8791f426",
@@ -589,7 +594,8 @@
         "2de51dfe8bc5",
         "cc764312eb50",
         "1493103d7969",
-        "ff5340f29559"
+        "ff5340f29559",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-04",
@@ -604,7 +610,8 @@
         "2026-05-18",
         "2026-05-19",
         "2026-05-25",
-        "2026-05-29"
+        "2026-05-29",
+        "2026-06-02"
       ],
       "conceptTags": [
         "gateway",
@@ -624,13 +631,13 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
-      "recallCount": 20,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.75178866873963,
+      "totalScore": 21.75178866873963,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T05:57:08.850Z",
-      "lastRecalledAt": "2026-05-26T06:02:30.849Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "d2222a517dea",
         "754a5e2df3c2",
@@ -651,7 +658,9 @@
         "dd22c622813d",
         "3d62a3a5d314",
         "7615a05f8cc3",
-        "9bb6a767054a"
+        "9bb6a767054a",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-04",
@@ -666,7 +675,8 @@
         "2026-05-23",
         "2026-05-24",
         "2026-05-25",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-06-02"
       ],
       "conceptTags": [
         "roderick.jones",
@@ -967,13 +977,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16,
+      "totalScore": 17,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T09:50:34.274Z",
-      "lastRecalledAt": "2026-05-27T05:08:17.429Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "b8dd5e880386",
         "31f2802656ee",
@@ -990,7 +1000,8 @@
         "b64dfec040d6",
         "766555fc1ad7",
         "9bb6a767054a",
-        "6c0fb35a93f8"
+        "6c0fb35a93f8",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-07",
@@ -1004,7 +1015,8 @@
         "2026-05-19",
         "2026-05-25",
         "2026-05-26",
-        "2026-05-27"
+        "2026-05-27",
+        "2026-06-02"
       ],
       "conceptTags": [
         "skill-scanner",
@@ -1836,13 +1848,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 14,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14,
+      "totalScore": 16,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1857,7 +1869,9 @@
         "7615a05f8cc3",
         "2ec68133263a",
         "af9c2a182f0d",
-        "51379a34d24e"
+        "51379a34d24e",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-21",
@@ -1967,19 +1981,21 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# Memory — 11 May 2026 ## Daily Briefings Pipeline — Major Lesson ### What went wrong - Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lesson",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T04:46:23.407Z",
-      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "50d95fe6b691",
         "f8d5cf7b3c91",
         "0a8ae9598584",
         "8f19cc6aa0eb",
-        "af9c2a182f0d"
+        "af9c2a182f0d",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-23",
@@ -2043,18 +2059,20 @@
       "endLine": 182,
       "source": "memory",
       "snippet": "- [central_america_caribbean] Mock judgment 1 for Central America & Caribbean: an observable forward-looking event would be stated here. (even chance; 50% / 7d) - [south_america] Mock judgment 1 for South America: an observable forward-looking event would be stated here. (likely; 60% / 7d) - [africa] Mock judgment 1 for Africa: an observable forward-looking event would be stated here. (highly likely; 78% / 7d) ## Report: leo_daily_brief — 2026-05-22 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-22.txt **Words:** 846 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T04:41:02.281Z",
-      "lastRecalledAt": "2026-05-24T04:41:02.281Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
-        "baada38f647c"
+        "baada38f647c",
+        "131f4ab60f1a"
       ],
       "recallDays": [
-        "2026-05-24"
+        "2026-05-24",
+        "2026-06-02"
       ],
       "conceptTags": [
         "central-america-caribbean",
@@ -2198,13 +2216,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
-      "recallCount": 8,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T14:08:59.640Z",
-      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "0a8ae9598584",
         "1a26325ac2fd",
@@ -2213,12 +2231,15 @@
         "a83968718a46",
         "3d62a3a5d314",
         "7615a05f8cc3",
-        "2ec68133263a"
+        "2ec68133263a",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-24",
         "2026-05-25",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-06-02"
       ],
       "conceptTags": [
         "large-scale",
@@ -2304,13 +2325,13 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
@@ -2320,7 +2341,9 @@
         "3d62a3a5d314",
         "7615a05f8cc3",
         "2ec68133263a",
-        "51379a34d24e"
+        "51379a34d24e",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-24",
@@ -2848,19 +2871,21 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "6c0fb35a93f8",
         "2ec68133263a",
         "7ccb341e4318",
         "dad41c64a83e",
-        "51379a34d24e"
+        "51379a34d24e",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-27",
@@ -3010,17 +3035,18 @@
       "endLine": 341,
       "source": "memory",
       "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-28T02:22:08.753Z",
-      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "896393cca831",
         "70f4b0e41af9",
-        "8f19cc6aa0eb"
+        "8f19cc6aa0eb",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-28",
@@ -3111,13 +3137,13 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "3. `skills/daily-intel-brief/scripts/collect.py`: add Brave Search gzip decompression fix 4. `scripts/collect_email_intel.py` line 104: fix indentation error 5. Re-run daily brief after fixes ## Memo Writes Completed This Session - `docs/ops/portfolio-overview.md` — all positions, guardrails - `docs/ops/pipeline-operations.md` — cron schedules, known issues - `docs/ops/daily-intel-process.md` — full 13-step pipeline - `docs/ops/trade-journal-2026-05-27.md` — trades executed - `docs/ops/philby-desk-architecture-plan.md` — hybrid architecture plan - `brain/memory/procedural/kalshi-trading.md` — Kalshi auth + ops doc - `MEMORY.md` — Standing Knowledge + Kalshi auth pointer + cognition bridge +",
-      "recallCount": 7,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.720Z",
-      "lastRecalledAt": "2026-05-31T01:48:17.753Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "4342f031ac3b",
         "b8c199fe7dc5",
@@ -3125,11 +3151,14 @@
         "f95bd0e2cbe4",
         "08feda2a6640",
         "aed1f43f2023",
-        "08ee5783f701"
+        "08ee5783f701",
+        "c14a55c30073",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-05-29",
-        "2026-05-31"
+        "2026-05-31",
+        "2026-06-02"
       ],
       "conceptTags": [
         "scripts/collect-email-intel.py",
@@ -3405,18 +3434,20 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "## Kalshi Trader — Cron Run (00:00 UTC) **Result:** HALT — balance too low ($0.24 < $1.00 min) **Signals detected:** 23 tradeable **Circuit breaker:** Opened after 3 low-balance failures per design **Fixes applied this session:** 1. **Circuit breaker auto-reset bug** — `_check_circuit_breaker()` checked `if cb.get(\"paused\")` before the day-change reset, so a tripped circuit never auto-recovered on new UTC day. Fixed: date check now runs before the `paused` check, resetting the breaker when a new day starts. 2. **UnboundLocalError on `_TRADER_PAUSE_SENT`** — `cmd_scan_and_trade()` used `_TRADER_PAUSE_SENT` (read + write) without `global` declaration. When the circuit was auto-reset and bal",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-31T00:31:32.357Z",
-      "lastRecalledAt": "2026-05-31T00:31:32.357Z",
+      "lastRecalledAt": "2026-06-02T15:42:56.043Z",
       "queryHashes": [
-        "08feda2a6640"
+        "08feda2a6640",
+        "9b5a567281b9"
       ],
       "recallDays": [
-        "2026-05-31"
+        "2026-05-31",
+        "2026-06-02"
       ],
       "conceptTags": [
         "0.24",
@@ -3500,16 +3531,17 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "- Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lessons - **Always check the cron pipeline script** before assuming fixes will take effect. Th",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-02T06:26:18.814Z",
-      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
       "queryHashes": [
         "8f19cc6aa0eb",
-        "af9c2a182f0d"
+        "af9c2a182f0d",
+        "131f4ab60f1a"
       ],
       "recallDays": [
         "2026-06-02"
@@ -3586,6 +3618,255 @@
         "user-agent",
         "heartbeat",
         "utc"
+      ]
+    },
+    "memory:memory/2026-06-02.md:68:104": {
+      "key": "memory:memory/2026-06-02.md:68:104",
+      "path": "memory/2026-06-02.md",
+      "startLine": 68,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "- 12:00 UTC was causing false \"no brief\" alarms multiple times per day **Schedule for today (PT = PDT = UTC-7):** - 07:15 PT (14:15 UTC) — Brief Auto-Recovery (first test with 900s timeout) - 08:00 PT (15:00 UTC) — DC Security Daily (first test with 1200s timeout) - 09:00 PT (16:00 UTC) — LEO Daily Brief (first test with 1800s timeout) - 12:00 PT (19:00 UTC) — Combined Intel Digest **QC Alerts:** None ✅ **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain **Brain** - Episodic memory from 02:09 UTC: brain maintenance ran OK, index rebuilt, no critical issues - Calibration loop firing rapidly (accuracy 2.6%) ## Heartbeat — 12:55 UTC **Cycle:** ✅ Autono",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:23:57.498Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "queryHashes": [
+        "c14a55c30073",
+        "131f4ab60f1a"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "utc-7",
+        "auto-recovery",
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "2.6",
+        "utc",
+        "was"
+      ]
+    },
+    "memory:memory/2026-05-25.md:98:119": {
+      "key": "memory:memory/2026-05-25.md:98:119",
+      "path": "memory/2026-05-25.md",
+      "startLine": 98,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "**Prevention:** Future scripts calling Brave Search should use this pattern or a shared utility function. ## AgentMail Intel Digest (11:01 UTC) 10 inbound messages processed. Saved to tasks/news_raw.md. 3 noise (NYT poem, market moves x2), 1 Africa (SA), 6 geopolitical/defense. ### New: Iran Domestic Pressure Angle **Bloomberg Politics: \"Iran's Supreme Leader Faces Toughest Test Yet\"** — Framing Khamenei's decision on the MOU as his hardest test. Adds domestic political pressure to the negotiation calculus. The supreme leader must balance: - Hardliner resistance to any deal with the US - Economic and military pressure from ongoing US siege/sanctions - Regional proxy considerations (Hezbo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:56.043Z",
+      "lastRecalledAt": "2026-06-02T15:42:56.043Z",
+      "queryHashes": [
+        "9b5a567281b9"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "tasks/news-raw.md",
+        "geopolitical/defense",
+        "siege/sanctions",
+        "prevention",
+        "future",
+        "scripts",
+        "calling",
+        "brave"
+      ]
+    },
+    "memory:memory/2026-05-25.md:116:131": {
+      "key": "memory:memory/2026-05-25.md:116:131",
+      "path": "memory/2026-05-25.md",
+      "startLine": 116,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "**Seatrade Maritime: \"Time for owners to evacuate crew stranded in Hormuz stalemate\"** — Tanker crews stuck in the Persian Gulf as the Strait remains contested. Tangible humanitarian/logistical consequence of the standoff. If evacuation orders start, it signals shipping industry expects prolonged closure. ### New: Baltic Flank — Latvia Drone Political Flux **Peter Zeihan: \"Latvia's Political Flux Caused by Drones\"** — Baltic state experiencing drone-related political instability. Context: Baltic states are NATO's eastern frontier. Drone incidents (likely Russian-aligned or Russian-origin) creating domestic political pressure. Worth monitoring for NATO Article 4/5 dynamics if incidents esca",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:56.043Z",
+      "lastRecalledAt": "2026-06-02T15:42:56.043Z",
+      "queryHashes": [
+        "9b5a567281b9"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "humanitarian/logistical",
+        "drone-related",
+        "russian-aligned",
+        "russian-origin",
+        "4/5",
+        "seatrade",
+        "maritime",
+        "time"
+      ]
+    },
+    "memory:memory/2026-05-24.md:167:195": {
+      "key": "memory:memory/2026-05-24.md:167:195",
+      "path": "memory/2026-05-24.md",
+      "startLine": 167,
+      "endLine": 195,
+      "source": "memory",
+      "snippet": "- Added dead-feed cache (`brain/memory/semantic/dead-feeds.json`) — skips feeds after 3 consecutive failures, retests after 48h - Pre-populated with 171 known-dead URLs (from SA validation + catalog) - Reduced timeout: 15s → 8s, retries: 2 → 1 (max 16s per dead feed vs 45s) - Catalog loader also filters against dead cache 2. **DEEPSEEK_API_KEY missing in test env:** Cron sources .env (line 46 of daily-text-brief.sh) — confirmed present in .env 3. **Cron registration verified:** ID `69d9d778-9de1-4d63-8697-99f0bd13353f` - Schedule: `cron 0 5 * * * @ America/Los_Angeles` (05:00 PT daily) - Task: `cd /home/ubuntu/.openclaw/workspace && bash scripts/daily-text-brief.sh` -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "queryHashes": [
+        "131f4ab60f1a"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "dead-feed",
+        "pre-populated",
+        "known-dead",
+        "deepseek-api-key",
+        "daily-text-brief.sh",
+        "america/los-angeles",
+        "home/ubuntu",
+        "openclaw/workspace"
+      ]
+    },
+    "memory:memory/2026-06-02.md:46:75": {
+      "key": "memory:memory/2026-06-02.md:46:75",
+      "path": "memory/2026-06-02.md",
+      "startLine": 46,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "**Known Issues (checklist):** - Landing page deploy verification: FIX_APPLIED, needs 3 consecutive passes - Feed rot: OPEN (298/723 working, User-Agent fix deployed May 31) - Calibration accuracy: OPEN (~3% — deeper prompt engineering issue) - ⚠️ Brief pipeline trigger: OPEN — daily-text-brief.sh has no active cron trigger in OpenClaw or OS ## Heartbeat — 13:25 UTC **Cycle:** ✅ Autonomous cycle completed (exit 1 — no brief found, tracked known issue) ✅ Autonomous fixes ran (--quiet, exit 0) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Fixes applied this cycle:** 1. **🛠️ Cron timeout fix — 3 pipeline crons** - DC Security Daily (f5fe6ef6): 300s → 120",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "queryHashes": [
+        "131f4ab60f1a"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "fix-applied",
+        "298/723",
+        "user-agent",
+        "daily-text-brief.sh",
+        "known",
+        "issues",
+        "checklist",
+        "landing"
+      ]
+    },
+    "memory:memory/2026-05-23.md:13:33": {
+      "key": "memory:memory/2026-05-23.md:13:33",
+      "path": "memory/2026-05-23.md",
+      "startLine": 13,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-23.txt **Words:** 864 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 23, 2026 ======================================================================== ═══ EXECUTI ## Daily brief — 2026-05-23 BLUF: Latvia's imminent Article 4 request, coinciding with Russian bomber redeployment to Belarus, makes NATO's Baltic cohesion the most severe test since 2022, likely forcing emergency consultations and retaliatory Kremlin rhetoric within the week. - [Europe] Latvia will formally request NATO Article 4 consultations within 7",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "queryHashes": [
+        "131f4ab60f1a"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports",
+        "leo",
+        "brief"
+      ]
+    },
+    "memory:memory/2026-05-21.md:13:46": {
+      "key": "memory:memory/2026-05-21.md:13:46",
+      "path": "memory/2026-05-21.md",
+      "startLine": 13,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- [north_america] No Sheinbaum-administration statement will link the Tijuana cartel clash to bilateral US co-operation requests within the 7-day horizon. (likely; 65% / 7d) ## Report: daily_brief — 2026-05-21 **File:** exports/daily-brief-2026-05-21.txt **Words:** 4674 | **Model:** opus-4.7 / deepseek-v4-pro **Summary:** Russia-Belarus nuclear, Iran talks, US-Cuba indictment, Bolivia protests, Colombia extractives pivot **Key judgments:** - Russia-Belarus nuclear exercise - Iran talks in final stages? - US-Cuba Raul Castro indictment **Regions:** Europe, North America, Central America, South America, Africa, Middle East, Central Asia, SE Asia, Oceania ## Report: leo_daily_brief — 2026-05",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "queryHashes": [
+        "131f4ab60f1a"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "north-america",
+        "sheinbaum-administration",
+        "co-operation",
+        "7-day",
+        "daily-brief",
+        "opus-4.7",
+        "deepseek-v4-pro",
+        "russia-belarus"
+      ]
+    },
+    "memory:memory/2026-05-31.md:1:23": {
+      "key": "memory:memory/2026-05-31.md:1:23",
+      "path": "memory/2026-05-31.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# Daily Memory — 2026-05-31 ## Capability Expansion Report (09:00 UTC cron) **Control Plane Health Score: 0/100** — gateway OOM crash cascade at 01:05-01:08 UTC (24 crashes). Stable since 01:22 UTC (7h42m+ uptime at report time). All subsystems UP. **Key Metrics:** - DeepSeek balance: $7.25 (down from $13.13 on May 29) - 2,440 sessions tracked, lifetime spend $4.14 - v4-Pro 75% discount expires TODAY — 4x price increase tomorrow - 76 skills installed, 159 Python scripts - 3 active assignments (LEO GS, RDX/C4, semiconductor) **Known Issues Update:** - Gateway OOM crash cascade this morning — worst single crash cluster since audit - Philby collector cron disabled per audit recommendations",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T16:08:51.162Z",
+      "lastRecalledAt": "2026-06-02T16:08:51.162Z",
+      "queryHashes": [
+        "2dd3919693fa"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0/100",
+        "05-01",
+        "7.25",
+        "13.13",
+        "4.14",
+        "v4-pro",
+        "rdx/c4"
       ]
     }
   }

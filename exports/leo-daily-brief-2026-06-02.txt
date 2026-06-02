@@ -1,0 +1,48 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 02, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+A Chinese LEO broadband competitor, SpaceSail, executed its first polar-orbit demo launch (Long March 12B, June 1) and placed a group of satellites designated “Polar Group #10.” This is the first concrete orbital evidence that China’s constellation — likely the GuoWang project or a commercial offshoot — is advancing beyond paper plans. If they follow the polar group numbering logic, they may already have operational satellites in other orbital planes. The launch, combined with upcoming Starlink double-header (Groups 10-43 and 17-47 on June 3), signals that LEO capacity on orbit is accelerating faster than ground infrastructure can absorb. For the ground station market, SpaceSail’s polar group represents a near-term requirement for Arctic and Antarctic gateway sites — a domain currently dominated by KSAT and, to a lesser degree, Inmarsat and Telesat — where capacity is thin and any new entrant will generate meaningful new demand.
+
+Other signals are muted: FCC activity remains a collection of incumbents and Kuiper’s shell entity (Denali 20020), with no new entrants filings. The jobs market shows only a whisper of ground segment hiring. Site risks are unchanged — 6 high-risk, no critical — but Starlink’s 38 operational sites underscore that SpaceX has already secured most of the easily permitted, high-traffic locations. The metric that matters most: with Starlink revenue already at $11.8B (2025 est) and 10M subscribers, the wider GSaaS market’s projected $2.49B by 2033 looks like a footnote — unless a new, non-Starlink constellation forces a build-buy decision for commercial ground networks. Watch for SpaceSail’s ITU coordination filings and whether they partner with Western teleport operators or pivot to Chinese Belt-and-Road terrestrial links.
+
+═══ FCC LICENSES ═══
+
+The license database remains a static picture. The notable names — AT&T, Sprint/MCI/Mx1, SES Americom, Intelsat, Inmarsat, Goonhilly, Calian Pacific Teleports — are all established GEO/MSS operators with existing earth stations. Denali 20020, LLC, the Kuiper licensing vehicle, is present; no new grant or application for additional massive gateway sites appears in this snapshot. No LEO-specific startup (beyond Kuiper) has surfaced, and no filing hints at the SpaceSail constellation. The absence of new entrants reinforces that ground segment consolidation and slow-moving regulatory processes are a brake on market fragmentation. For now, this feed is a non-event.
+
+═══ CONSTELLATION SIGNALS ═══
+
+SpaceX continues its unrelenting rhythm. Two Falcon 9 missions scheduled for June 3 — Group 10-43 from Cape Canaveral (filling the 53° inclination shell used for widespread mid-latitude coverage) and Group 17-47 from Vandenberg (filling the 70° shell for high-latitude and polar-adjacent coverage). With four Starlink launches total in the near-term pipeline, the constellation will push past 9,600 satellites; the operational fleet already produces massive gravitational pull on ground station siting, as each orbital plane demands multiple gateway locations for continuous bent-pipe connectivity.
+
+The surprise is SpaceSail. The demo flight’s polar group (#10) implies an existing deployment cadence — likely using earlier Long March 6A/8 launches from Taiyuan and Wenchang that carried “Unknown Payload.” No dedicated ground station network has been publicly announced, but the orbit choice forces them to negotiate access in the Nordic countries, Alaska, or Antarctica, all of which are politically sensitive for a Chinese entity. That need arrives as KSAT operates 15 sites in our register, many in the Arctic, and is already stretched. Even if SpaceSail initially leans on Chinese-run ground infrastructure in friendly nations (e.g., an extended South American chain or partnerships in Central Asia), the scarcity of polar capacity means they’ll have to buy service from commercial providers or attempt to build in contested regulatory environments. This is a market opening for GSaaS operators willing to accept the geopolitical risk.
+
+═══ SITE & IMAGERY ═══
+
+Site register totals hold at 240, with a risk distribution skewed moderate (34) to low (27), but 6 high-risk sites demand attention; none are critical. The operator footprint remains heavily concentrated: Starlink (38) dwarfs KSAT (15), OneWeb (10), and Leaf Space (9). Kuiper’s 5 sites are likely just the first tranche of gateways. Regional distribution shows the usual North American dominance (26), followed by Europe (18), with only token presence in Africa (5), South America (6), and the Middle East (1). No new site was added that would shift these balances.
+
+Sentinel-2 imagery feed is not configured. Ten sites were checked, zero returned usable data. Until the API is re-established, any change detection on active construction — for instance, at Kuiper’s licensed locations or at potential SpaceSail gateway candidates — relies on third-party tip-offs. This is a risk: we are blind to ground-truth building that might signal network ramps months before they become operational.
+
+═══ MARKET SIGNALS ═══
+
+Job postings: a single hit for “ground station engineer hiring 2026” indicates no broad surge in recruitment. That’s consistent with a market where the dominant operator (SpaceX) builds in-house with proprietary technology and the rest rely on a handful of specialized integrators. ITU coordination feed is empty again — either API is down or no new filings have been published. Both are quiet, but not reassuring: we need the ITU data to flag when constellations like SpaceSail begin claiming spectrum and orbital slots, which will force coordination with existing ground networks.
+
+Market sizing metrics are static: total ground station market $41.0B (2025) heading to $82.7B (2030) includes military, broadcast, and GEO infrastructure; the directly relevant LEO GSaaS sub-market is $1.72B (2024), projected to $5.33B by 2033. That trajectory relies on non-Starlink constellations and government multi-orbit initiatives. Starlink’s own $11.8B revenue dwarfs that GSaaS figure, but its ground segment is fully captive, so it does not feed the commercial GSaaS pool. The key metric to watch is whether Telesat Lightspeed or SpaceSail create enough demand to push GSaaS revenues toward that $5.33B target, or if Starlink’s dominance squeezes them out before they can build.
+
+═══ BOTTOM LINE ═══
+
+The immediate trigger is SpaceSail’s polar launch. Roderick should task us to (1) get the imagery feed fixed and scan known Arctic teleport sites for construction activity, (2) monitor ITU filings for SpaceSail’s coordination requests — if they appear at China’s MIIT, that’s the ground station equivalent of a launch license, and (3) probe European and neutral GSaaS operators (e.g., Leaf Space, KSAT) for any unusual RFIs from Chinese entities. On the Kuiper front, Denali 20020 licenses need weekly tracking; any uptick in gateway applications would signal a build-out push. The Starlink cadence is a known quantity; ignore it for now. The risk is that a Chinese constellation moves from demo to operational deployment faster than our registries capture, leaving Roderick without lead time to advise on partner selection or competitive positioning. Prioritize ITU and imagery feeds.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 02, 2026
