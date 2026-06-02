@@ -1313,5 +1313,45 @@
   "https://www.globaltimes.cn/rss": {
     "failures": 3,
     "last_failed_at": "2026-06-01T13:11:48.209196+00:00"
+  },
+  "https://www.crisisgroup.org/rss.xml": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:18:30.376184+00:00"
+  },
+  "https://www.caribbeannewsglobal.com/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:19:36.667393+00:00"
+  },
+  "https://www.nepalitimes.com/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:22:11.570242+00:00"
+  },
+  "https://www.orfonline.org/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:22:12.554274+00:00"
+  },
+  "https://www.janes.com/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:22:51.417240+00:00"
+  },
+  "https://www.rand.org/rss": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:23:04.978199+00:00"
+  },
+  "https://www.kyivpost.com/rss": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:23:12.453658+00:00"
+  },
+  "https://www.crisisgroup.org/rss-0": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:23:19.888271+00:00"
+  },
+  "https://www.stimson.org/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:23:21.784126+00:00"
+  },
+  "https://www.wilsoncenter.org/rss": {
+    "failures": 1,
+    "last_failed_at": "2026-06-02T14:23:22.378801+00:00"
   }
 }

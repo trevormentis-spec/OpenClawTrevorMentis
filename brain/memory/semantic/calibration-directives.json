@@ -1,10 +1,10 @@
 {
-  "compiled_at": "2026-06-01T19:44:46.594514+00:00Z",
+  "compiled_at": "2026-06-02T14:17:16.260769+00:00Z",
   "overall": {
     "total_judgments": 127,
     "correct": 3,
     "incorrect": 90,
-    "unresolved": 12,
+    "unresolved": 9,
     "accuracy_pct": 3.2,
     "posture": "widen_two_notches",
     "overconfidence_regions": []

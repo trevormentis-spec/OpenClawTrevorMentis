@@ -51,3 +51,12 @@ Status: FIX_APPLIED — this file exists, need to add read reference
 [2026-05-28] **Fix applied ≠ fix verified** | systemic
 Rule: After applying any fix, run it in production context once and verify output. Do not mark closed until verified in actual pipeline run.
 Status: OPEN — procedural, needs discipline
+
+[2026-06-02] **Daily brief pipeline crons timing out** | 3 crons: LEO Daily (5026ed81), DC Security (f5fe6ef6), Brief Auto-Recovery (6c54d13f)
+Fix (applied 2026-06-02 13:25 UTC):
+  - DC Security Daily timeout: 300s → 1200s (20 min)
+  - LEO Daily Brief timeout: 600s → 1800s (30 min)
+  - Brief Auto-Recovery timeout: 300s → 900s (15 min)
+  - autonomous_cycle.py deadline: 12:00 UTC → 16:30 UTC (match actual pipeline schedule)
+Still monitored: Brief Auto-Recovery fires at 07:15 PT (14:15 UTC) — will test 900s timeout
+Status: FIX_APPLIED — needs to survive one full pipeline cycle before close

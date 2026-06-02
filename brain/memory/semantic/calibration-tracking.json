@@ -5,7 +5,7 @@
   "total_judgments": 127,
   "correct": 3,
   "incorrect": 90,
-  "unresolved": 12,
+  "unresolved": 9,
   "by_confidence_band": {
     "likely": {
       "total": 115,
@@ -404,14 +404,17 @@
     },
     {
       "date": "2026-05-26",
-      "total": 5,
+      "total": 3,
       "correct": 0,
       "incorrect": 0,
-      "unresolved": 3,
+      "unresolved": 0,
       "accuracy_pct": 0.0,
       "running_accuracy_pct": 3.4,
       "horizon_expiry": "2026-06-02T12:43:17.492562+00:00",
-      "rechecked": false
+      "rechecked": true,
+      "expired_no_resolution": 3,
+      "rechecked_at": "2026-06-02T13:30:23.537406+00:00",
+      "forced_resolved": true
     },
     {
       "date": "2026-05-27",
@@ -452,7 +455,7 @@
   "verdict_schema_caveat": "Pre-May-18 'unresolved' mapped to expired_no_resolution \u2014 no forced-resolution data available for pre-migration judgments",
   "confirmed": 5,
   "disconfirmed": 15,
-  "expired_no_resolution": 22,
+  "expired_no_resolution": 25,
   "partially_confirmed": 0,
   "not_yet_testable": 0
 }

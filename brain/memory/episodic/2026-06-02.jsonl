@@ -1,1 +1,3 @@
 {"ts": "2026-06-02T02:09:00.207824Z", "text": "brain_maintenance: Index rebuilt OK. Decisions.md + episodic log checked. No critical issues. Retrieval signals still underused (now 5/3 useful only). Calibration loop firing rapidly (accuracy 2.6%)."}
+{"ts": "2026-06-02T14:15:04.769763+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 2.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}
+{"ts": "2026-06-02T14:17:16.226056+00:00", "source": "calibration_loop", "severity": "WARNING", "message": "Calibration auto-adjustment triggered: accuracy 2.5%. Reduced max KJs/region to 3, enforced min 2 bands/brief."}

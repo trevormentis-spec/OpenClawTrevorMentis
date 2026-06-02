@@ -181,11 +181,13 @@ def check_pipeline(state: dict) -> list[str]:
             findings.append(f"⚠️ Brief exists but couldn't parse: {e}")
     else:
         now_utc = datetime.now(timezone.utc)
-        brief_deadline = datetime(now_utc.year, now_utc.month, now_utc.day, 12, 0, 0, tzinfo=timezone.utc)
+        # Actual pipeline crons: DC Security at 08:00 PT (15:00 UTC), LEO Brief at 09:00 PT (16:00 UTC)
+        # Combined Intel Digest at 12:00 PT (19:00 UTC)
+        brief_deadline = datetime(now_utc.year, now_utc.month, now_utc.day, 16, 30, 0, tzinfo=timezone.utc)
         if now_utc < brief_deadline:
-            findings.append(f"ℹ️ No brief found for {today} (scheduled for 12:00 UTC)")
+            findings.append(f"ℹ️ No brief found for {today} (earliest pipeline at 15:00 UTC, deadline at 16:30 UTC)")
         else:
-            findings.append(f"🔴 No brief found for {today} — past 12:00 UTC deadline")
+            findings.append(f"🔴 No brief found for {today} — past 16:30 UTC deadline")
 
     # Check delivery — try log file first, then AgentMail inbox
     delivery_confirmed = False

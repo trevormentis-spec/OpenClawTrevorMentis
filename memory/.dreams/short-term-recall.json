@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T08:04:01.202Z",
+  "updatedAt": "2026-06-02T12:56:16.901Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1836,13 +1836,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-06-02T08:04:01.202Z",
+      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1856,7 +1856,8 @@
         "3d62a3a5d314",
         "7615a05f8cc3",
         "2ec68133263a",
-        "af9c2a182f0d"
+        "af9c2a182f0d",
+        "51379a34d24e"
       ],
       "recallDays": [
         "2026-05-21",
@@ -2303,13 +2304,13 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-05-28T14:13:12.848Z",
+      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
@@ -2318,12 +2319,14 @@
         "a83968718a46",
         "3d62a3a5d314",
         "7615a05f8cc3",
-        "2ec68133263a"
+        "2ec68133263a",
+        "51379a34d24e"
       ],
       "recallDays": [
         "2026-05-24",
         "2026-05-25",
-        "2026-05-28"
+        "2026-05-28",
+        "2026-06-02"
       ],
       "conceptTags": [
         "north-america",
@@ -2845,23 +2848,25 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-05-29T16:53:25.825Z",
+      "lastRecalledAt": "2026-06-02T12:56:16.901Z",
       "queryHashes": [
         "6c0fb35a93f8",
         "2ec68133263a",
         "7ccb341e4318",
-        "dad41c64a83e"
+        "dad41c64a83e",
+        "51379a34d24e"
       ],
       "recallDays": [
         "2026-05-27",
         "2026-05-28",
-        "2026-05-29"
+        "2026-05-29",
+        "2026-06-02"
       ],
       "conceptTags": [
         "parse-error",
@@ -3040,20 +3045,22 @@
       "endLine": 12,
       "source": "memory",
       "snippet": "## 16:48 UTC — Heartbeat - **Autonomous cycle:** All phases (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Fixed false-positive \"Brief BLUF too short\" alert - Root cause: `exec_summary.json` is a status metadata file (not brief content), missing `bluf` field - Fix: Skip BLUF length check when file has no content fields; handle `summary` as list - Status: Now exit 0 ✅ - **QC alert:** Resolved earlier today (14:14 UTC false alarm — watchdog hit intermediate brief) - **DC daily brief 2026-05-28:** Delivered with full BLUF (4854 bytes), all sections populated ✅",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T16:53:25.825Z",
-      "lastRecalledAt": "2026-06-01T17:26:17.834Z",
+      "lastRecalledAt": "2026-06-02T11:26:18.397Z",
       "queryHashes": [
         "dad41c64a83e",
-        "4e9404107946"
+        "4e9404107946",
+        "9454f266f184"
       ],
       "recallDays": [
         "2026-05-29",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-02"
       ],
       "conceptTags": [
         "false-positive",
@@ -3460,18 +3467,20 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-06-01 — Daily Memory ## Heartbeat — 02:44 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, no output) **DeepSeek Balance:** $98.33 (significant top-up from $7.25) — runway ~6.6 days **Kalshi:** $398.09 ($380.45 cash, $17.64 portfolio) — was incorrectly reported as $0.24 (stale cache from archived philby scanner). Fixed: scanner replaced with trading-system adapter wrapper. **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — all running **QC Alerts:** None ✅ **Known Issues:** Landing page deploy verification (FIX_APPLIED, awaiting 3 passes), Feed rot (OPEN, 298 working feeds), Calibration accur",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-01T17:26:17.834Z",
-      "lastRecalledAt": "2026-06-01T17:26:17.834Z",
+      "lastRecalledAt": "2026-06-02T11:26:18.397Z",
       "queryHashes": [
-        "4e9404107946"
+        "4e9404107946",
+        "9454f266f184"
       ],
       "recallDays": [
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-02"
       ],
       "conceptTags": [
         "98.33",
@@ -3514,6 +3523,69 @@
         "fixes",
         "created",
         "generate-brief-maps-v3"
+      ]
+    },
+    "memory:memory/2026-06-01.md:26:63": {
+      "key": "memory:memory/2026-06-01.md:26:63",
+      "path": "memory/2026-06-01.md",
+      "startLine": 26,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "✅ Autonomous fixes ran (--quiet, no output) **Post health-fix state (34 min after fix applied):** - Kalshi balance: $398.09 (correctly reported now) ✅ - Feed User-Agent fix deployed for WAF bypass ✅ - Landing page deploy + DailyIntelAgent crons both enabled ✅ - QC Alert: None ✅ - Calibration metric now correctly excludes expired predictions ✅ **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — no new alerts **Known Issues:** Landing page deploy (FIX_APPLIED, needs 3 passes to close), Feed rot 41.2% working (User-Agent fix deployed), Calibration ~3% **Today's plan:** - Morning brief pipeline (if scheduled) - Monitor DeepSeek balance - Continue active as",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T11:26:18.397Z",
+      "lastRecalledAt": "2026-06-02T11:56:16.224Z",
+      "queryHashes": [
+        "9454f266f184",
+        "8aff8fae5d6d"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "health-fix",
+        "398.09",
+        "user-agent",
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "fix-applied",
+        "41.2"
+      ]
+    },
+    "memory:memory/2026-06-02.md:1:22": {
+      "key": "memory:memory/2026-06-02.md:1:22",
+      "path": "memory/2026-06-02.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# 2026-06-02 — Daily Memory ## Heartbeat — 11:25 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, committed 11 files) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Digest delivery:** ⚠️ Status unclear — not found in logs or AgentMail (noted for investigation) **QC Alerts:** None ✅ **Active assignments:** leo_ground_stations (primary), rdx_c4_supply (primary), semiconductor-supply-chain (secondary) **Known Issues (checklist):** - Landing page deploy verification: FIX_APPLIED, needs 3 consecutive passes - Feed rot: OPEN (298/723 working, User-Agent fix deployed May 31) - Calibration accuracy: OPEN (~3% —",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T11:56:16.224Z",
+      "lastRecalledAt": "2026-06-02T11:56:16.224Z",
+      "queryHashes": [
+        "8aff8fae5d6d"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "fix-applied",
+        "298/723",
+        "user-agent",
+        "heartbeat",
+        "utc"
       ]
     }
   }
