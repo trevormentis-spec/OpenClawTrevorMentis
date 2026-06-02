@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-02 05:01 UTC
+# Gmail Intel Digest — 2026-06-02 07:01 UTC
+
+## لبنان يعلن وقف إطلاق نار جزئيا بين إسرائيل وحزب الله لكن الهجمات مستمرة
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Tue, 2 Jun 2026 01:01:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## Nvidia chief to Asia: 'We're still supply constrained'
 **From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
@@ -53,15 +62,6 @@ Banner for Emails Iran Crisis Update (https://d5lGTw04.na1.hubspotlinks.com/Ctc/
 **Type:** unknown | **Importance:** low
 
 ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
-
----
-
-## Editors’ Picks: Pakistan’s diplomatic pivot makes it a Trump-era power player
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Mon, 1 Jun 2026 18:00:28 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
 
 ---
 

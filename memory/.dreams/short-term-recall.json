@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T02:26:17.382Z",
+  "updatedAt": "2026-06-02T06:26:18.814Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1962,21 +1962,23 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# Memory — 11 May 2026 ## Daily Briefings Pipeline — Major Lesson ### What went wrong - Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lesson",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-23T04:46:23.407Z",
-      "lastRecalledAt": "2026-05-24T14:08:59.640Z",
+      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
       "queryHashes": [
         "50d95fe6b691",
         "f8d5cf7b3c91",
-        "0a8ae9598584"
+        "0a8ae9598584",
+        "8f19cc6aa0eb"
       ],
       "recallDays": [
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-06-02"
       ],
       "conceptTags": [
         "render-brief-magazine.py",
@@ -2608,13 +2610,13 @@
       "endLine": 262,
       "source": "memory",
       "snippet": "**File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1099 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 ======================================================================== ═══ EXECUTI ## Delivery pipe fix — 2026-05-24 **Root cause:** `daily-text-brief.sh` used `| tee -a \"$LOG\"` for long-running orchestrator command. OpenClaw cron session stdout buffer filled, pipe broke, tee died, killing shell pipeline before quality gate + delivery steps. **Fix:** Changed orchestrator, delivery, and postdiction steps to use `>> \"$LOG\" 2>&1` (direct",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-26T06:02:27.480Z",
-      "lastRecalledAt": "2026-05-31T09:00:12.263Z",
+      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
       "queryHashes": [
         "27d057b1d1c5",
         "b53ef245a31e",
@@ -2624,13 +2626,15 @@
         "ad8c1cd4fc53",
         "896393cca831",
         "08feda2a6640",
-        "6698c9c92dec"
+        "6698c9c92dec",
+        "8f19cc6aa0eb"
       ],
       "recallDays": [
         "2026-05-26",
         "2026-05-27",
         "2026-05-28",
-        "2026-05-31"
+        "2026-05-31",
+        "2026-06-02"
       ],
       "conceptTags": [
         "home/ubuntu",
@@ -2996,20 +3000,22 @@
       "endLine": 341,
       "source": "memory",
       "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-28T02:22:08.753Z",
-      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
+      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
       "queryHashes": [
         "896393cca831",
-        "70f4b0e41af9"
+        "70f4b0e41af9",
+        "8f19cc6aa0eb"
       ],
       "recallDays": [
         "2026-05-28",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-02"
       ],
       "conceptTags": [
         "scripts/leo-daily-brief.py",
@@ -3471,6 +3477,37 @@
         "380.45",
         "17.64",
         "0.24"
+      ]
+    },
+    "memory:memory/2026-05-11.md:39:55": {
+      "key": "memory:memory/2026-05-11.md:39:55",
+      "path": "memory/2026-05-11.md",
+      "startLine": 39,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "- Made extensive fixes to `render_brief_magazine.py` and created `generate_brief_maps_v3.py` but **never integrated them into the automated cron pipeline** (`daily-brief-cron.sh`) - The 5am PT cron ran the old pipeline — old maps, old render args, no Kalshi data, no charts - User got bad emails at 5:14 and 5:19 PT from the old pipeline, not my fixed versions - I sent the 4 Daily Briefings email at 10:48pm PT (Sunday night) instead of waiting for the scheduled 8am PT delivery - Changed the 4 Briefings cron to 7am PT thinking the user wanted it at that time, but they specifically said 8am PT ### Key lessons - **Always check the cron pipeline script** before assuming fixes will take effect. Th",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-02T06:26:18.814Z",
+      "lastRecalledAt": "2026-06-02T06:26:18.814Z",
+      "queryHashes": [
+        "8f19cc6aa0eb"
+      ],
+      "recallDays": [
+        "2026-06-02"
+      ],
+      "conceptTags": [
+        "render-brief-magazine.py",
+        "generate-brief-maps-v3.py",
+        "daily-brief-cron.sh",
+        "made",
+        "extensive",
+        "fixes",
+        "created",
+        "generate-brief-maps-v3"
       ]
     }
   }
