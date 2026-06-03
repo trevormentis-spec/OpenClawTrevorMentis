@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-06-02 23:01 UTC
+# Gmail Intel Digest — 2026-06-03 01:01 UTC
+
+## Iran Update Special Report, June 2, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Tue, 2 Jun 2026 20:07:14 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War The Iranian regime is likely trying to transform negotiations about ending the war with Iran into negotiations about ending the war in Lebanon. June 2, 2026 Data Cutoff: 2:00 PM ET Carolyn Moorman, Ben Rezaei, Parker Hempel, Adham Fattah, and Annika Ganzeveld TOPLINES The Iranian regime is likely trying to transform negotiations about ending the war with Iran into negotiations about ending the war in Lebanon, which Iran and Hezbollah seek to end in Israe
+
+---
+
+## Russian Offensive Campaign Assessment, June 2, 2026
+**From:** ISW Publications <publications@understandingwar.org>
+**Date:** Tue, 2 Jun 2026 19:30:32 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+Email from Institute for the Study of War Russian forces conducted yet another devastating drone and missile strike series against Ukraine on the night of June 1 to 2. June 2, 2026 Data Cutoff: 12:30 PM ET Samuel Shafiro, Anna Thacker, Grace Mappes, Jennie Olmsted, Kateryna Shynkiv, Anjou Kang-Stryker, and Frederick W. Kagan TOPLINES Russian forces conducted yet another devastating drone and missile strike series against Ukraine on the night of June 1 to 2, heavily targeting Kyiv City. The Russi
+
+---
 
 ## トランプ氏「イランとの協議継続」、報道を否定【【6月 3日】
 **From:** "Reuters.co.jp" <newsletters@email.reuters.com>

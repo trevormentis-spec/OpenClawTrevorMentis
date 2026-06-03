@@ -27,6 +27,13 @@
       "plugin_enabled": true,
       "total_or_sessions": 21,
       "new_or_sessions_since_last": 0
+    },
+    {
+      "timestamp": "2026-06-03T01:19:23.700614+00:00",
+      "plugin_status": "enabled",
+      "plugin_enabled": true,
+      "total_or_sessions": 21,
+      "new_or_sessions_since_last": 0
     }
   ],
   "or_sessions": [
@@ -199,5 +206,5 @@
       "total_tokens": 22122
     }
   ],
-  "last_scan": "2026-05-29T22:54:41.049954+00:00"
+  "last_scan": "2026-06-03T01:19:23.700614+00:00"
 }
