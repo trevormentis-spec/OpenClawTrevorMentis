@@ -1,4 +1,15 @@
-# Gmail Intel Digest — 2026-06-03 01:01 UTC
+# Gmail Intel Digest — 2026-06-03 03:04 UTC
+
+## Iran Update Evening Special Report, June 2, 2026
+**From:** CTP Publications <criticalthreats@aei.org>
+**Date:** Tue, 2 Jun 2026 21:43:17 -0400
+**Type:** unknown | **Importance:** low
+
+Your regular update about political, security, and social developments in Iran and the region.
+
+Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/VVRcLc7FrQpSW4nbVh68w6f2YW6cqVBw5PRdSZN4lQrLj3pyd0W8wLKSR6lZ3nHW229__78ZfY25W1z9LmP2vn84vVRz_vf6swpqFW2Kyyy59cYgV3V9XYzZ1TSCpPW3Ztzll87x2j8W2JbJB66rJ_SvW3bJgr56mGTsgW4crBtB3KhysYW4zxZ0W7CYBNhV5XG4d4pv0x9W972VQF2W-8hDVXXQbh5ZDp9tW6y1hJf5Ntz-RN44GB86fp8HpW2qz5Xq610j5sW3L_5pG4qvVSkW2T7RPK5xmc91W3kKbd16sFTZFM5t12kYPB__W2J6HpF
+
+---
 
 ## Iran Update Special Report, June 2, 2026
 **From:** ISW Publications <publications@understandingwar.org>
@@ -54,24 +65,9 @@ Email from Institute for the Study of War Russian forces conducted yet another d
 
 ---
 
-## Korean Peninsula Update, June 2, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Tue, 2 Jun 2026 16:03:17 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War North Korea is developing systems intended to improve its conventional artillery capabilities while dispersing its nuclear armament across hybrid platforms. June 2, 2026 Data Cutoff: June 1, 2026 Yeji Chung and Julia Irvin of the American Enterprise Institute; Alfred Han, Daniel Shats, and Jackson Karas of the Institute for the Study of War; TOPLINES North Korea is developing systems intended to improve its conventional artillery capabilities while dispe
+## AgentMail Intel — 2026-06-03 03:05 UTC
 
----
-
-## National Security Nightcap for Tuesday, June 2
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Tue,  2 Jun 2026 19:58:14 +0000
-**Type:** alert | **Importance:** high
-
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-tuesday-june-2?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=36f8886819-EMAIL_CAMPAIGN_2026_06_02_07_54&utm_medium=email&utm_term=0_-36f8886819-547824188&mc_cid=36f8886819&mc_eid=UNIQID
-
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=36f8886819-EMAIL_CAMPAIGN_2026_06_02_07_54&utm_medium
-
----
-
+### Thank you for reading
+**From:** InSight Crime <info@insightcrime.org>  
+https://insightcrime.org/?mc_cid=8ceafe7995&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=8ceafe7995&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=8ceafe7995&mc_eid=UNIQID

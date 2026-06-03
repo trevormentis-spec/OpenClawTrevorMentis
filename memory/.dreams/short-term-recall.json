@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-02T16:08:51.162Z",
+  "updatedAt": "2026-06-03T03:49:09.473Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -3071,22 +3071,24 @@
       "endLine": 12,
       "source": "memory",
       "snippet": "## 16:48 UTC — Heartbeat - **Autonomous cycle:** All phases (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Fixed false-positive \"Brief BLUF too short\" alert - Root cause: `exec_summary.json` is a status metadata file (not brief content), missing `bluf` field - Fix: Skip BLUF length check when file has no content fields; handle `summary` as list - Status: Now exit 0 ✅ - **QC alert:** Resolved earlier today (14:14 UTC false alarm — watchdog hit intermediate brief) - **DC daily brief 2026-05-28:** Delivered with full BLUF (4854 bytes), all sections populated ✅",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T16:53:25.825Z",
-      "lastRecalledAt": "2026-06-02T11:26:18.397Z",
+      "lastRecalledAt": "2026-06-03T03:49:09.473Z",
       "queryHashes": [
         "dad41c64a83e",
         "4e9404107946",
-        "9454f266f184"
+        "9454f266f184",
+        "4ff94e314a69"
       ],
       "recallDays": [
         "2026-05-29",
         "2026-06-01",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "false-positive",
@@ -3498,20 +3500,22 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-06-01 — Daily Memory ## Heartbeat — 02:44 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, no output) **DeepSeek Balance:** $98.33 (significant top-up from $7.25) — runway ~6.6 days **Kalshi:** $398.09 ($380.45 cash, $17.64 portfolio) — was incorrectly reported as $0.24 (stale cache from archived philby scanner). Fixed: scanner replaced with trading-system adapter wrapper. **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — all running **QC Alerts:** None ✅ **Known Issues:** Landing page deploy verification (FIX_APPLIED, awaiting 3 passes), Feed rot (OPEN, 298 working feeds), Calibration accur",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-01T17:26:17.834Z",
-      "lastRecalledAt": "2026-06-02T11:26:18.397Z",
+      "lastRecalledAt": "2026-06-03T03:49:09.473Z",
       "queryHashes": [
         "4e9404107946",
-        "9454f266f184"
+        "9454f266f184",
+        "4ff94e314a69"
       ],
       "recallDays": [
         "2026-06-01",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "98.33",
@@ -3867,6 +3871,99 @@
         "4.14",
         "v4-pro",
         "rdx/c4"
+      ]
+    },
+    "memory:memory/2026-06-02.md:1:36": {
+      "key": "memory:memory/2026-06-02.md:1:36",
+      "path": "memory/2026-06-02.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-06-02 — Daily Memory ## Heartbeat — 11:25 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ## Heartbeat — 11:55 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, no output — no fixes needed) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Digest delivery:** ⚠️ Same unclear status as 11:25 UTC — tracking in Known Issues **QC Alerts:** None ✅ **Active assignments:** LEO ground stations, RDX C4 supply, semiconductor supply chain ✅ Autonomous fixes ran (--quiet, committed 11 files) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Digest delivery:** ⚠",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T03:49:09.473Z",
+      "lastRecalledAt": "2026-06-03T03:49:09.473Z",
+      "queryHashes": [
+        "4ff94e314a69"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "utc",
+        "cycle",
+        "autonomous",
+        "completed",
+        "all",
+        "quiet",
+        "exit"
+      ]
+    },
+    "memory:memory/2026-06-03.md:1:8": {
+      "key": "memory:memory/2026-06-03.md:1:8",
+      "path": "memory/2026-06-03.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-06-03 ## Heartbeat: 00:48 UTC - `autonomous_cycle.py --all --quiet` — All phases completed (crons, feeds, collection, pipeline, costs, brain, digest). Exit 0. - ⚠️ Digest delivery status unclear (not found in logs or AgentMail) - `autonomous_fixes.py --quiet` — Auto-committed 10 files.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T03:49:09.473Z",
+      "lastRecalledAt": "2026-06-03T03:49:09.473Z",
+      "queryHashes": [
+        "4ff94e314a69"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "autonomous-cycle.py",
+        "autonomous-fixes.py",
+        "auto-committed",
+        "heartbeat",
+        "utc",
+        "all",
+        "quiet",
+        "phases"
+      ]
+    },
+    "memory:memory/2026-06-02.md:27:51": {
+      "key": "memory:memory/2026-06-02.md:27:51",
+      "path": "memory/2026-06-02.md",
+      "startLine": 27,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "- Feed rot: OPEN (298/723 working, User-Agent fix deployed May 31) - Calibration accuracy: OPEN (~3% — deeper prompt engineering issue) ## Heartbeat — 12:25 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 1 — pipeline phase: no brief found) ✅ Autonomous fixes ran (--quiet, exit 0) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Pipeline check:** Non-critical. No brief for June 2 yet (expected — June 1 pipeline ran 13:47–19:02 UTC). Hardcoded 12:00 UTC deadline in autonomous_cycle.py is a false alarm — actual pipeline runs later (~13:47 UTC) **Digest delivery:** ⚠️ Unclear — same status as prior heartbeats. Combined Intel Digest runs at 12",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T03:49:09.473Z",
+      "lastRecalledAt": "2026-06-03T03:49:09.473Z",
+      "queryHashes": [
+        "4ff94e314a69"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "298/723",
+        "user-agent",
+        "non-critical",
+        "autonomous-cycle.py",
+        "feed",
+        "rot",
+        "open",
+        "working"
       ]
     }
   }
