@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-06-03 09:01 UTC
+# Gmail Intel Digest — 2026-06-03 11:01 UTC
+
+## Hostilities flare up in Iran
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 06:59:19 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Quantum leap
+**From:** "Morning Bid U.S." <morningbid@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 06:30:19 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## تصاعد الأعمال القتالية في حرب إيران وسط جمود المفاوضات 
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -29,27 +47,28 @@ Iran Updates banner (https://d5lGTw04.na1.hubspotlinks.com/Ctc/GI+113/d5lGTw04/V
 
 ---
 
-## Iran Update Special Report, June 2, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Tue, 2 Jun 2026 20:07:14 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-Email from Institute for the Study of War The Iranian regime is likely trying to transform negotiations about ending the war with Iran into negotiations about ending the war in Lebanon. June 2, 2026 Data Cutoff: 2:00 PM ET Carolyn Moorman, Ben Rezaei, Parker Hempel, Adham Fattah, and Annika Ganzeveld TOPLINES The Iranian regime is likely trying to transform negotiations about ending the war with Iran into negotiations about ending the war in Lebanon, which Iran and Hezbollah seek to end in Israe
+## AgentMail Intel — 2026-06-03 11:01 UTC
 
----
+### Your weekly Defense Business Report
+**From:** Breaking Defense - Business Report <newsletters@breakingdefense.com>  
+Business news and analysis from Breaking Defense. __________________________________________________________________________________________________________________________ Breaking Defense - The Def
 
-## Russian Offensive Campaign Assessment, June 2, 2026
-**From:** ISW Publications <publications@understandingwar.org>
-**Date:** Tue, 2 Jun 2026 19:30:32 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### Establishment Dems surge, MAGA quakes
+**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
+Presented by Vapor Technology Association: The unofficial guide to official Washington. Jun 03, 2026 View in browser By Jack Blanchard with Dasha Burns Pres
 
-Email from Institute for the Study of War Russian forces conducted yet another devastating drone and missile strike series against Ukraine on the night of June 1 to 2. June 2, 2026 Data Cutoff: 12:30 PM ET Samuel Shafiro, Anna Thacker, Grace Mappes, Jennie Olmsted, Kateryna Shynkiv, Anjou Kang-Stryker, and Frederick W. Kagan TOPLINES Russian forces conducted yet another devastating drone and missile strike series against Ukraine on the night of June 1 to 2, heavily targeting Kyiv City. The Russi
+### South Korea Takes a Hard Left Turn Against America
+**From:** American Enterprise Institute <aei_today@aei.org>  
+Today's top commentary and scholarship on the issues that matter most AEI Today AEI's daily collection of independent research and analysis South Korea Takes a Hard Left Turn Against America (https
 
----
+### Should Alberta Secede from Canada? || May 27, 2026
+**From:** Peter Zeihan <peterzeihan@creator.patreon.com>  
 
+### ISS Today: Industrial-scale meth production poses new security risks for Nigeria
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+3 June 2026 [1] Industrial-scale meth production poses new security risks for Nigeria Southwestern Nigeria has largely been spared major security threats – now it faces a troubli
 
-## AgentMail Intel — 2026-06-03 09:01 UTC
-
-### Marinakis calls for dark fleet destruction, Iran claims to have attacked second MSC vessel
-**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134647&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=f7c7796d968a401d8
+### How Romania became Rheinmetall's biggest export customer yet
+**From:** Breaking Defense Daily <newsletters@breakingdefense.com>  
+Today's top news. __________________________________________________________________________________________________________________________________ Command the battlespace (https://info.breakingdef
