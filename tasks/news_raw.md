@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-03 19:49 UTC
+# Gmail Intel Digest — 2026-06-03 21:01 UTC
+
+## War clouds and tech wobbles
+**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 17:00:11 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Tokenmaxxing
 **From:** Reuters Artificial Intelligencer <reuters_ai@thomsonreuters.com>
@@ -40,35 +49,20 @@ Mapbox-Data-Wor
 
 ---
 
-## Saudi’s wartime resilience
-**From:** Reuters Gulf Currents <gulfcurrents@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 11:50:07 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-06-03 21:01 UTC
 
----
+### CSIS EVENT (06/30): CSIS Global Security Forum 2026
+**From:** CSIS Defense and Security Department <defenseoutreach@csis.org>  
+96 Please join the CSIS Defense and Security Department for the 2026 Global Security Forum on Tuesday, June 30. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
 
-## SpaceX's root beer roots 🍺
-**From:** Reuters Sustainable Finance <sustainablefinance@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 11:26:08 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### Boom and doom
+**From:** Ian Bremmer <ian@gzeromedia.com>  
+This week, I explain why markets are underpricing the most dangerous world in decades, talk to the New York Times’ Ezra Klein about what’s driving global instability, and answer your question on Trump
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-## High-profile Instagram AI chatbot breach spotlights security risks of automation
-**From:** Reuters Technology Roundup <newsletters@email.reuters.com>
-**Date:** Wed, 3 Jun 2026 11:01:16 -0400 (EDT)
-**Type:** alert | **Importance:** high
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-
-## AgentMail Intel — 2026-06-03 19:51 UTC
+### How Congress could complicate an Iran deal
+**From:** POLITICO's National Security Daily <nationalsecuritydaily@email.politico.com>  
+From the SitRoom to the E-Ring, the inside scoop on defense, national security and foreign policy. Jun 03, 2026 View in browser By Daniella Cheslow and Giselle Ruhiyyih
 
 ### Ukraine Military Situation Report | June 3
 **From:** Hudson Institute <news@hudson.org>  
@@ -85,15 +79,3 @@ Navigate the new season with exclusive features that put you ahead of the curve.
 ### 19% of Young People Turn to AI for Mental Health Advice
 **From:** RAND Policy Currents <newsletters@rand.org>  
 Policy Currents | The newsletter for policy people Web version: https://www.rand.org/policy-currents/2026/06/03.html We have a new email address. Add newsletters@rand.org to your contacts or safe se
-
-### China Report: An unexpected launch party
-**From:** SpaceNews <spacenewseletter@spacenews.com>  
-Plus: A shift change at Tiangong06/03/2026 READ IN BROWSER http://spacenews.bluelena.io/p_v.php?c=2772&m=1626&s=03dcdd84f7212aa2b9fc195de9a839f5&d=16387&v=2&l=21 https://spacenews.com https://spac
-
-### Golden Dome: Northrop Grumman, Apex team up on space-based interceptors
-**From:** SpaceNews <spacenewseletter@spacenews.com>  
-Plus: Space Force gives SpaceX Space Data Network Backbone contractREAD THIS EMAIL IN YOUR BROWSER http://spacenews.bluelena.io/p_v.php?c=2768&m=1624&s=03dcdd84f7212aa2b9fc195de9a839f5&d=16386&v=2&l=2
-
-### Critical Insights: New This Week
-**From:** CSIS Critical Minerals Security Program <criticalminerals@csis.org>  
-96 Catch up on the CSIS Critical Minerals Security Program's analysis, public events, and critical minerals news. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌

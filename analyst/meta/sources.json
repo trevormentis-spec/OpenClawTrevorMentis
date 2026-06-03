@@ -16040,6 +16040,33 @@
       "discovered": "2026-06-03",
       "signal_level": "Medium",
       "region": "europe"
+    },
+    {
+      "name": "Top 45 Homeland Security RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed nationalreview.com/national-.. Follow RSS Website nationalreview.com/national-.. National Review is a leading conservative magazine and websi",
+      "url": "https://rss.feedspot.com/homeland_security_rss_feeds/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "60 Best Political News RSS Feeds",
+      "type": "Blog/Website",
+      "focus": "RSS Feed Follow RSS Website edition.cnn.com/politics Politics at CNN features news, opinion and analysis of American and global politics Find exclusiv",
+      "url": "https://rss.feedspot.com/political_news_rss_feeds/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "north_america"
+    },
+    {
+      "name": "National Security News: Latest News and Investigations on Homeland Security, Military, Foreign Intelligence & More | NBC News",
+      "type": "Blog/Website",
+      "focus": "Find the latest Homeland Security news, videos and photos on http://www.nbcnews.com. Read national security headlines covering immigration, terrorism,",
+      "url": "https://www.nbcnews.com/politics/national-security",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "north_america"
     }
   ],
   "moltbook_sources": [
