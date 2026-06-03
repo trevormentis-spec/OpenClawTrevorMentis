@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-03 05:01 UTC
+# Gmail Intel Digest — 2026-06-03 07:09 UTC
+
+## تصاعد الأعمال القتالية في حرب إيران وسط جمود المفاوضات 
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Wed, 3 Jun 2026 01:01:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
 
 ## Marvell, a fitting name for the latest AI darling
 **From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
@@ -38,26 +47,12 @@ Email from Institute for the Study of War Russian forces conducted yet another d
 
 ---
 
-## トランプ氏「イランとの協議継続」、報道を否定【【6月 3日】
-**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
-**Date:** Tue, 2 Jun 2026 18:31:07 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+## AgentMail Intel — 2026-06-03 07:09 UTC
 
----
-
-## Editors’ Picks: There are only four great powers
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Tue, 2 Jun 2026 18:00:24 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
-
----
-
-
-## AgentMail Intel — 2026-06-03 05:01 UTC
+### Marinakis calls for dark fleet destruction, Iran claims to have attacked second MSC vessel
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134647&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=f7c7796d968a401d8
 
 ### Thank you for reading
 **From:** InSight Crime <info@insightcrime.org>  
