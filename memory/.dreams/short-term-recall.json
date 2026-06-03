@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-03T17:52:45.056Z",
+  "updatedAt": "2026-06-03T19:51:15.871Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1386,13 +1386,13 @@
       "endLine": 84,
       "source": "memory",
       "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-06-01T02:45:46.198Z",
+      "lastRecalledAt": "2026-06-03T19:51:15.871Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
@@ -1401,7 +1401,8 @@
         "13584e1c3564",
         "1493103d7969",
         "b9bf26d73c0d",
-        "343486efe044"
+        "343486efe044",
+        "c85d983c32a6"
       ],
       "recallDays": [
         "2026-05-14",
@@ -1410,7 +1411,8 @@
         "2026-05-23",
         "2026-05-25",
         "2026-05-26",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-03"
       ],
       "conceptTags": [
         "analysis/alerts",
@@ -2329,13 +2331,13 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 13,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
+      "lastRecalledAt": "2026-06-03T18:24:14.313Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
@@ -2348,7 +2350,8 @@
         "51379a34d24e",
         "c14a55c30073",
         "131f4ab60f1a",
-        "930c34d65db8"
+        "930c34d65db8",
+        "c6c8889bab61"
       ],
       "recallDays": [
         "2026-05-24",
@@ -2877,13 +2880,13 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
+      "lastRecalledAt": "2026-06-03T18:24:14.313Z",
       "queryHashes": [
         "6c0fb35a93f8",
         "2ec68133263a",
@@ -2892,7 +2895,8 @@
         "51379a34d24e",
         "c14a55c30073",
         "131f4ab60f1a",
-        "930c34d65db8"
+        "930c34d65db8",
+        "c6c8889bab61"
       ],
       "recallDays": [
         "2026-05-27",
@@ -3189,23 +3193,25 @@
       "endLine": 58,
       "source": "memory",
       "snippet": "- Saved: `config/sources/africa-osint-sources.md` - Integrated: 397 sources added to catalog (26 north_africa, 397 sub_saharan_africa) - Hardcoded in collect.py: 16 tier-1 Africa feeds - Philby collector: cycling every 30 min ### Europe (903 lines, 44 countries + EU/NATO) - Saved: `config/sources/europe-osint-sources.md` - Integrated: 450 sources extracted, 212 validated RSS feeds added to catalog - Hardcoded in collect.py: 20 multilingual Europe feeds - Philby collector: cycling every 30 min ## Continuous Cognition Bridge Wired (2026-05-27) - Before fix: cognition ran but never promoted findings to durable memory - After fix: every 15 min cycle promotes pipeline FATAL/FAILED, auth key war",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-29T17:15:37.779Z",
-      "lastRecalledAt": "2026-06-01T02:45:46.198Z",
+      "lastRecalledAt": "2026-06-03T19:51:15.871Z",
       "queryHashes": [
         "b8c199fe7dc5",
         "aed1f43f2023",
         "08ee5783f701",
-        "343486efe044"
+        "343486efe044",
+        "c85d983c32a6"
       ],
       "recallDays": [
         "2026-05-29",
         "2026-05-31",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-03"
       ],
       "conceptTags": [
         "north-africa",
@@ -4020,15 +4026,16 @@
       "endLine": 121,
       "source": "memory",
       "snippet": "- LEO — Launch Schedule: status=error - Brief Auto-Recovery: status=error - Several others also showing error (Infrastructure Alert, Daily GitHub backup, Auto Config, Dream consolidation) - Combined Intel Digest (12:00 PT): status=ok, next in ~6h **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain **Known Issues (checklist):** - Brief pipeline cron trigger: OPEN — tracked in KNOWN_ISSUES.md - Landing page deploy verification: FIX_APPLIED - Feed rot: OPEN (298/723) - Calibration accuracy: OPEN (~3%) - Several error-status OpenClaw crons may need investigation ## Report: leo_daily_brief — 2026-06-02 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-da",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-03T17:23:08.422Z",
-      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
+      "lastRecalledAt": "2026-06-03T18:24:14.313Z",
       "queryHashes": [
-        "930c34d65db8"
+        "930c34d65db8",
+        "c6c8889bab61"
       ],
       "recallDays": [
         "2026-06-03"
@@ -4073,6 +4080,37 @@
         "trading-system",
         "entry-approval",
         "auto-managed"
+      ]
+    },
+    "memory:memory/2026-06-03.md:26:41": {
+      "key": "memory:memory/2026-06-03.md:26:41",
+      "path": "memory/2026-06-03.md",
+      "startLine": 26,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "- **Briefs delivered:** LEO daily brief (16:02 UTC) ✅, DC daily brief (15:21 UTC) ✅ - **QC Alerts:** None ✅ (no qc-alert.md file) - **Active assignments:** LEO ground stations, RDX C4 supply, semiconductor supply chain — all nominal - **STATUS.md:** Stale (last generated June 1) — not critical - **DeepSeek Balance/Usage:** Not checked this cycle ## Report: leo_daily_brief — 2026-06-03 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-06-03.txt **Words:** 1082 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 03, 2026 =======================================================",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T18:24:14.313Z",
+      "lastRecalledAt": "2026-06-03T18:24:14.313Z",
+      "queryHashes": [
+        "c6c8889bab61"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "qc-alert.md",
+        "status.md",
+        "balance/usage",
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "briefs",
+        "delivered"
       ]
     }
   }

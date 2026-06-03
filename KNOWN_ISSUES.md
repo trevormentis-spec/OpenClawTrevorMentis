@@ -22,11 +22,29 @@ Status: VERIFIED_CLOSED — SSH auth confirmed working, deploy pushed successful
 Fix: Credits restored by Roderick. Monitor via infra_alert.py cron (every 4h).
 Status: OPEN — will auto-alert if credits drop again
 
+[2026-06-03] **Daily Text Brief OpenClaw cron (69d9d778) became disabled** | openclaw cron 0 5 * * *
+Fix: QC watchdog auto-re-enabled it. Added stale lockfile cleanup. Need root cause — cron may be 
+disabled by OpenClaw when timeout/lockfile prevents scheduled runs. Monitor for recurrence.
+Status: OPEN — recurred June 2→3. Next run scheduled June 4 05:00 PT.
+
+[2026-06-03] **Cognition daemon TypeError: 'str' object has no attribute 'get'** | scripts/cognition_daemon.py or cognition loop
+Fix: Some narrative or state object is being passed as a string instead of a dict. 
+Occurring 20+ times daily (tracked from 09:14 to 19:49 UTC Jun 3). Cycles continue
+successfully between errors, so the error is non-fatal but degrades narrative coverage.
+Status: OPEN — need to locate where a string is used where dict.get() is called
+
 [2026-06-03] **analyze.py crashes on None/empty LLM response** | skills/daily-intel-brief/scripts/analyze.py
 Fix: Added None-guard in `parse_json_strict()`. Retry for tier-2 regional analysis and tier-1 exec
 summary now falls back to mock payload instead of propagating crash. Single-region failure no longer
 kills the entire brief pipeline.
 Status: FIX_APPLIED — needs to survive one full pipeline run before close
+
+[2026-06-03] **Brief auto-recovery (6c54d13f) timeout set to run in agent:main session** | openclaw cron
+Fix: Cron session="session:agent:main:main" means it runs in the main agent session, not isolated.
+When the cron times out, it kills the main agent session which may have other work in progress.
+The auto-recovery should run in an isolated session like the other brief crons.
+Status: OPEN — session type mismatch, timeout kills main agent.
+Fix: Change session from "session:agent:main:main" to "isolated"
 
 ## Pipeline
 
@@ -65,4 +83,6 @@ Fix (applied 2026-06-02 13:25 UTC):
   - Brief Auto-Recovery timeout: 300s → 900s (15 min)
   - autonomous_cycle.py deadline: 12:00 UTC → 16:30 UTC (match actual pipeline schedule)
 Still monitored: Brief Auto-Recovery fires at 07:15 PT (14:15 UTC) — will test 900s timeout
-Status: FIX_APPLIED — needs to survive one full pipeline cycle before close
+Status: FIX_APPLIED — but insufficient. June 3: auto-recovery timed out at 900s despite pipeline needing ~50+ min.
+Pipeline left orphaned — all 14 regional analyses completed but exec_summary never produced.
+Fix: Increase timeout to at least 3600s (60 min), OR fix main cron (69d9d778) so auto-recovery isn't the primary path.

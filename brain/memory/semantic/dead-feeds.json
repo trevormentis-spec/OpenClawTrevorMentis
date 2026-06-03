@@ -1323,12 +1323,12 @@
     "last_failed_at": "2026-06-02T14:23:19.888271+00:00"
   },
   "https://www.stimson.org/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-06-02T14:23:21.784126+00:00"
+    "failures": 2,
+    "last_failed_at": "2026-06-03T19:19:56.315442+00:00"
   },
   "https://www.wilsoncenter.org/rss": {
-    "failures": 1,
-    "last_failed_at": "2026-06-02T14:23:22.378801+00:00"
+    "failures": 2,
+    "last_failed_at": "2026-06-03T19:19:56.917247+00:00"
   },
   "https://www.tongaworldnews.com/feed/": {
     "failures": 3,
@@ -1345,9 +1345,5 @@
   "https://www.hudson.org/feed": {
     "failures": 3,
     "last_failed_at": "2026-06-03T14:52:14.548583+00:00"
-  },
-  "https://www.caribbeannewsglobal.com/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-06-03T14:48:16.753449+00:00"
   }
 }

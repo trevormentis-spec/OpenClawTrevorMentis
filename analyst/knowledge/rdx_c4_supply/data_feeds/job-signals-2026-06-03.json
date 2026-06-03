@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "collected_at": "2026-06-03T19:50:10.965715+00:00",
+  "signals": [
+    {
+      "query": "Holston AAP",
+      "results_found": 3,
+      "status": "active_hiring"
+    },
+    {
+      "query": "Eurenco",
+      "results_found": 3,
+      "status": "active_hiring"
+    },
+    {
+      "query": "Chemring Nobel",
+      "results_found": 3,
+      "status": "active_hiring"
+    },
+    {
+      "query": "Rheinmetall",
+      "results_found": 3,
+      "status": "active_hiring"
+    },
+    {
+      "query": "Hanwha",
+      "results_found": 3,
+      "status": "active_hiring"
+    },
+    {
+      "query": "Solar Industries",
+      "results_found": 3,
+      "status": "active_hiring"
+    }
+  ]
+}

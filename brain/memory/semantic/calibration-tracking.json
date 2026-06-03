@@ -1,17 +1,27 @@
 {
   "version": 3,
   "created": "2026-05-12T05:10:00Z",
-  "last_updated": "2026-05-29T19:35:59.431604+00:00Z",
-  "total_judgments": 127,
+  "last_updated": "2026-06-03T19:46:41.567670+00:00Z",
+  "total_judgments": 132,
   "correct": 3,
   "incorrect": 90,
-  "unresolved": 9,
+  "unresolved": 13,
   "by_confidence_band": {
     "likely": {
       "total": 115,
       "correct": 3,
       "incorrect": 15,
       "unresolved": 22
+    },
+    "even chance": {
+      "total": 4,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "unlikely": {
+      "total": 1,
+      "correct": 0,
+      "incorrect": 0
     }
   },
   "by_region": {
@@ -86,6 +96,11 @@
     },
     "prediction_markets": {
       "total": 9,
+      "correct": 0,
+      "incorrect": 0
+    },
+    "unknown": {
+      "total": 5,
       "correct": 0,
       "incorrect": 0
     }
@@ -436,6 +451,17 @@
       "accuracy_pct": 0.0,
       "running_accuracy_pct": 2.8,
       "horizon_expiry": "2026-06-03T23:14:34.645070+00:00",
+      "rechecked": false
+    },
+    {
+      "date": "2026-06-03",
+      "total": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "unresolved": 4,
+      "accuracy_pct": 0.0,
+      "running_accuracy_pct": 2.3,
+      "horizon_expiry": "2026-06-10T19:46:41.567689+00:00",
       "rechecked": false
     }
   ],
