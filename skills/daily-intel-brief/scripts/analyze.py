@@ -579,8 +579,10 @@ def mock_exec(regional: dict[str, dict], date_utc: str) -> dict:
     }
 
 
-def parse_json_strict(text: str) -> dict:
+def parse_json_strict(text: str | None) -> dict:
     """DeepSeek json_mode usually returns clean JSON; be tolerant anyway."""
+    if text is None or not text.strip():
+        raise ValueError("parse_json_strict received empty/None content")
     text = text.strip()
     if text.startswith("```"):
         text = re.sub(r"^```[a-zA-Z]*\n", "", text)
@@ -883,8 +885,14 @@ def main() -> int:
                     "\n\nIMPORTANT: respond ONLY with a valid JSON object. "
                     "No prose, no markdown fences."
                 )
-                content = call_deepseek(tier2_model, strict_system, user, provider=tier2_provider)
-                payload = parse_json_strict(content)
+                try:
+                    content = call_deepseek(tier2_model, strict_system, user, provider=tier2_provider)
+                    payload = parse_json_strict(content)
+                except Exception as exc2:
+                    log(f"tier-2 retry also failed for {region}: {exc2}; falling back to mock payload")
+                    payload = mock_regional(region, incidents, date_utc)
+                    payload["_stub"] = True
+                    payload["_fail_reason"] = str(exc2)
         payload["model_used"] = tier2_model
         (analysis_dir / f"{region}.json").write_text(json.dumps(payload, indent=2))
         regional_payloads[region] = payload
@@ -908,8 +916,14 @@ def main() -> int:
                 "\n\nIMPORTANT: respond ONLY with a valid JSON object. "
                 "No prose, no markdown fences."
             )
-            content = call_deepseek(tier1_model, strict_system, user, provider=args.provider, max_input_chars=16000)
-            exec_payload = parse_json_strict(content)
+            try:
+                content = call_deepseek(tier1_model, strict_system, user, provider=args.provider, max_input_chars=16000)
+                exec_payload = parse_json_strict(content)
+            except Exception as exc2:
+                log(f"tier-1 exec summary retry also failed: {exc2}; falling back to mock payload")
+                exec_payload = mock_exec(regional_payloads, date_utc)
+                exec_payload["_stub"] = True
+                exec_payload["_fail_reason"] = str(exc2)
     # Enforce correct model metadata (override any LLM hallucination)
     exec_payload["models_used"] = [tier2_model, tier1_model]
     exec_payload["tier2_provider"] = tier2_provider

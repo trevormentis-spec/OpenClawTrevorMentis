@@ -22,6 +22,12 @@ Status: VERIFIED_CLOSED — SSH auth confirmed working, deploy pushed successful
 Fix: Credits restored by Roderick. Monitor via infra_alert.py cron (every 4h).
 Status: OPEN — will auto-alert if credits drop again
 
+[2026-06-03] **analyze.py crashes on None/empty LLM response** | skills/daily-intel-brief/scripts/analyze.py
+Fix: Added None-guard in `parse_json_strict()`. Retry for tier-2 regional analysis and tier-1 exec
+summary now falls back to mock payload instead of propagating crash. Single-region failure no longer
+kills the entire brief pipeline.
+Status: FIX_APPLIED — needs to survive one full pipeline run before close
+
 ## Pipeline
 
 [2026-05-28] **Exec summary truncation** | skills/daily-intel-brief/scripts/analyze.py
