@@ -1,4 +1,13 @@
-# Gmail Intel Digest — 2026-06-03 03:04 UTC
+# Gmail Intel Digest — 2026-06-03 05:01 UTC
+
+## Marvell, a fitting name for the latest AI darling
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 01:00:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Iran Update Evening Special Report, June 2, 2026
 **From:** CTP Publications <criticalthreats@aei.org>
@@ -47,26 +56,8 @@ Email from Institute for the Study of War Russian forces conducted yet another d
 
 ---
 
-## Advances in brain, skin and blood cancers
-**From:** Reuters Health Rounds <healthrounds@thomsonreuters.com>
-**Date:** Tue, 2 Jun 2026 17:11:09 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-## New high? Still a buy
-**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
-**Date:** Tue, 2 Jun 2026 17:00:17 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-06-03 03:05 UTC
+## AgentMail Intel — 2026-06-03 05:01 UTC
 
 ### Thank you for reading
 **From:** InSight Crime <info@insightcrime.org>  

@@ -15401,6 +15401,87 @@
       "discovered": "2026-06-03",
       "signal_level": "Medium",
       "region": "africa"
+    },
+    {
+      "name": "Latest Analysis: Conflict in the Middle East | CSIS",
+      "type": "Blog/Website",
+      "focus": "<strong>The CSIS Middle East Program and International Security Program host a roundtable on the social, political, and security challenges facing the",
+      "url": "https://www.csis.org/programs/latest-analysis-conflict-middle-east",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Reuters Middle East News | Today's Latest Stories | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Middle-East news stories and current events, ensuring our readers up to date with any breaking news d",
+      "url": "https://www.reuters.com/world/middle-east/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Central Asia\u2019s Triangular Geopolitics: Russia, China, and the West | Geopolitical Monitor",
+      "type": "Blog/Website",
+      "focus": "With their geopolitically significant positioning between Russia and China, <strong>the Central Asian Republics (Kazakhstan, Uzbekistan, Turkmenistan,",
+      "url": "https://www.geopoliticalmonitor.com/central-asias-triangular-geopolitics-russia-china-and-the-west/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Central Asia: Analysis, Research, & Events | CSIS",
+      "type": "Blog/Website",
+      "focus": "Eurasian politics and foreign policy are highly influenced by the region\u2019s critical geography at the nexus of Russia, China, South Asia, and the Middl",
+      "url": "https://www.csis.org/regions/russia-and-eurasia/central-asia",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Russia-China Relations in Central Asia - CEPA",
+      "type": "Blog/Website",
+      "focus": "Central Asia\u2019s importance to Russia is in large part due to its geopolitical position in the heart of Eurasia. As Russia seeks to maintain primacy in ",
+      "url": "https://cepa.org/commentary/sino-russian-relations-in-central-asia/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
+    },
+    {
+      "name": "Central Asia\u2019s Triangular Geopolitics: Russia, China, and the West | Geopolitical Monitor",
+      "type": "Blog/Website",
+      "focus": "With their geopolitically significant positioning between Russia and China, <strong>the Central Asian Republics (Kazakhstan, Uzbekistan, Turkmenistan,",
+      "url": "https://www.geopoliticalmonitor.com/central-asias-triangular-geopolitics-russia-china-and-the-west/",
+      "discovered": "2026-06-03",
+      "signal_level": "Medium",
+      "region": "central_asia"
     }
   ],
   "moltbook_sources": [
