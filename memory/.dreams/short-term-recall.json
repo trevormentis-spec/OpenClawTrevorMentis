@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-03T19:51:15.871Z",
+  "updatedAt": "2026-06-03T23:14:59.386Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -436,13 +436,13 @@
       "endLine": 18,
       "source": "memory",
       "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 13,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-02T19:04:40.812Z",
-      "lastRecalledAt": "2026-06-02T15:42:56.043Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
         "f513691b2bd0",
         "b2febc0de841",
@@ -455,7 +455,8 @@
         "d76260b5998d",
         "f3aa65b3123e",
         "1c8dc30ba712",
-        "9b5a567281b9"
+        "9b5a567281b9",
+        "149385e60be8"
       ],
       "recallDays": [
         "2026-05-02",
@@ -465,7 +466,8 @@
         "2026-05-13",
         "2026-05-14",
         "2026-05-18",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "saturday",
@@ -1540,23 +1542,25 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- CPCA: ALL GREEN — Starmer's problems are political/structural, not cognitive - Profile saved to brain/memory/semantic/ldap7-profiles/starmer-keir.md ## Products Delivered (2026-05-12) 1. UK Security & Intelligence Assessment — comprehensive threat analysis (7 sections, 5 KJs) 2. Starmer Leadership Analysis — descriptive profile + 30-day outlook 3. Starmer LDAP-7 Analysis — scored framework with decision-cycle diagnosis and CPCA overlay 4. Both reports scheduled for email delivery at 06:00 PT to roderick.jones@gmail.com",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T04:11:06.835Z",
-      "lastRecalledAt": "2026-05-19T05:40:21.809Z",
+      "lastRecalledAt": "2026-06-03T23:00:48.981Z",
       "queryHashes": [
         "35087ae309b1",
         "f3aa65b3123e",
         "37203b1dd7cb",
-        "cc764312eb50"
+        "cc764312eb50",
+        "afc407305e82"
       ],
       "recallDays": [
         "2026-05-14",
         "2026-05-15",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-06-03"
       ],
       "conceptTags": [
         "political/structural",
@@ -2222,13 +2226,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "## Daily brief — 2026-05-23 BLUF: Latvia's government collapse opens a Baltic political front for NATO at the same moment Russian bombers reposition to Belarus, making the next 7 days a test of alliance cohesion under hybrid pressure. - [europe] The Latvian caretaker government will request urgent NATO consultations under Article 4 within 3 days, citing Russian hybrid interference. (likely; 68% / 7d) - [europe] Russia will launch at least one more large-scale coordinated strike on Ukrainian civilian energy facilities before 30 May. (highly likely; 82% / 7d) - [europe] No formal ceasefire framework will be announced before 1 June, as both sides perceive military momentum. (highly likely; 8",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T14:08:59.640Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T23:00:52.805Z",
       "queryHashes": [
         "0a8ae9598584",
         "1a26325ac2fd",
@@ -2239,13 +2243,15 @@
         "7615a05f8cc3",
         "2ec68133263a",
         "c14a55c30073",
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "b667f8806bfc"
       ],
       "recallDays": [
         "2026-05-24",
         "2026-05-25",
         "2026-05-28",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "large-scale",
@@ -2378,13 +2384,13 @@
       "endLine": 308,
       "source": "memory",
       "snippet": "- `skills/a2a/client.py` — discovers and tasks other A2A agents (discovery confirmed working) - Agent Card serves at `/.well-known/agent-card.json` with JSON-RPC 2.0 endpoint - `config/a2a/known_agents.json` — agent registry - Limitation: SDK v1.0 protobuf types still maturing — client uses direct httpx calls. Task execution needs async tuning. - Practical value: forward-looking infrastructure. Ecosystem still nascent (150 orgs). ## Moltbook reconnected — 2026-05-24 - Status changed from DISABLED to ENABLED (Roderick directive supersedes 2026-05-23 kill order) - Account: `trevormentis` — 34 karma, 11 followers, 18 following, claimed + active - API key still valid (same as before) - New po",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T01:44:37.483Z",
-      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
         "998fb1f86453",
         "27d057b1d1c5",
@@ -2392,12 +2398,14 @@
         "748b955e8b88",
         "ac056aa0d70c",
         "0997ca51db2d",
-        "70f4b0e41af9"
+        "70f4b0e41af9",
+        "149385e60be8"
       ],
       "recallDays": [
         "2026-05-25",
         "2026-05-26",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-03"
       ],
       "conceptTags": [
         "skills/a2a/client.py",
@@ -2448,18 +2456,20 @@
       "endLine": 210,
       "source": "memory",
       "snippet": "1. Load .env (DEEPSEEK_API_KEY, AGENTMAIL_API_KEY, OPENROUTER_API_KEY) 2. Pre-collection: calibration directives + Kalshi scan 3. Collector: ~96 feeds (50 catalog + ~46 hardcoded), dead feeds skipped 4. Email intel: Gmail + AgentMail injection 5. Analysis: 10 regions × DeepSeek V4 Pro + exec summary + red team 6. Quality gate: 7 gates 7. Delivery: AgentMail to roderick.jones@gmail.com 8. Postdiction: calibration tracking Estimated runtime: 17-22 minutes (vs 9+ minutes for collection alone before fixes) ## Daily brief — 2026-05-24 BLUF: Russia's 700-drone Oreshnik-led barrage on Ukraine and Trump's claim of a 'largely negotiated' US-Iran deal create simultaneous escalation and de-escalatio",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-25T05:02:10.340Z",
-      "lastRecalledAt": "2026-05-25T05:02:10.340Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
-        "55c206f8cce9"
+        "55c206f8cce9",
+        "149385e60be8"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-03"
       ],
       "conceptTags": [
         "router",
@@ -2787,18 +2797,20 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "- [Central Asia] Estonia will announce a snap reinforcement of its border guard with reservist call‑ups within 72 hours, citing interoperability with the Latvian crisis response. (likely; 63% / 7d) - [Prediction Markets] The OMX Riga index will decline by more than 5% from its 23 May close by 31 May, reflecting political‑risk repricing. (likely; 57% / 7d) ## Daily brief — 2026-05-23 BLUF: Russia is likely to launch a major retaliatory strike on Ukraine within 48 hours, deepening the war and threatening broader escalation. - [europe] Russia will conduct a large-scale retaliatory missile and drone strike against multiple Ukrainian cities within 48 hours, exceeding the intensity of attacks o",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T04:03:02.170Z",
-      "lastRecalledAt": "2026-05-27T04:03:02.170Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
       "queryHashes": [
-        "5cd00c30f5cc"
+        "5cd00c30f5cc",
+        "c54980b9e9a9"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-06-03"
       ],
       "conceptTags": [
         "large-scale",
@@ -2818,18 +2830,20 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "- [middle_east] A formally announced US-Iran peace deal within 7 days is no better than an even chance given contradictory diplomatic and battlefield signals. (even chance; 47% / 7d) - [middle_east] Hezbollah or its affiliates will conduct at least one retaliatory attack on Israeli military targets within 7 days. (even chance; 52% / 7d) - [europe] Ukrainian forces will make further limited territorial gains in the Borova direction within 7 days. (likely; 63% / 7d) - [prediction_markets] The Gabbard DNI resignation will measurably raise prediction-market odds of at least one additional senior Trump administration departure in 2026 within 7 days. (likely; 61% / 7d) ## Daily brief — 2026-05-24",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T04:03:02.170Z",
-      "lastRecalledAt": "2026-05-27T04:03:02.170Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
       "queryHashes": [
-        "5cd00c30f5cc"
+        "5cd00c30f5cc",
+        "c54980b9e9a9"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-06-03"
       ],
       "conceptTags": [
         "middle-east",
@@ -2849,18 +2863,20 @@
       "endLine": 71,
       "source": "memory",
       "snippet": "- [europe] Russia will conduct a large-scale retaliatory missile and drone strike involving more than 50 munitions against Ukrainian critical infrastructure in at least three regions within 7 days. (likely; 67% / 7d) - [middle_east] A US-Iran peace deal will be announced within the next 7 days. (likely; 68% / 7d) - [middle_east] Hezbollah will conduct a retaliatory rocket attack into northern Israel within 7 days in response to continuing Israeli strikes. (likely; 56% / 7d) - [north_america] The United States will impose sanctions on one or more IRGC-linked individuals or entities in connection with the alleged Ivanka Trump assassination plot within 7 days. (likely; 62% / 7d) - [prediction_m",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T04:03:02.170Z",
-      "lastRecalledAt": "2026-05-27T04:03:02.170Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
       "queryHashes": [
-        "5cd00c30f5cc"
+        "5cd00c30f5cc",
+        "c54980b9e9a9"
       ],
       "recallDays": [
-        "2026-05-27"
+        "2026-05-27",
+        "2026-06-03"
       ],
       "conceptTags": [
         "large-scale",
@@ -3047,23 +3063,25 @@
       "endLine": 341,
       "source": "memory",
       "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-28T02:22:08.753Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
         "896393cca831",
         "70f4b0e41af9",
         "8f19cc6aa0eb",
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "149385e60be8"
       ],
       "recallDays": [
         "2026-05-28",
         "2026-06-01",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "scripts/leo-daily-brief.py",
@@ -3484,18 +3502,20 @@
       "endLine": 354,
       "source": "memory",
       "snippet": "`scripts/agentmail_reader.py` — mirrors Gmail Intel Reader behavior for AgentMail inbox. - Fetches last 10 messages, appends inbound intel to `tasks/news_raw.md` - Filters out Trevor's own outbound messages - 6-hour recency window - Cron registered: every 2 hours (staggered 5 min from Gmail reader) - Both inboxes now feed into incident pipeline at same cadence ## Git commit — 2026-05-24 `05c4330` → `main`. 96 files, ~32K additions. All changes from 2026-05-24 session committed. -e ## Heartbeat — 2026-05-24 23:43 UTC - Daily geopolitical brief: **DELIVERY FAILED** (QC PARSE_ERROR, empty final/ dir, no export file) - Collection + analysis completed; compilation/delivery broke - LEO daily",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-01T14:05:05.297Z",
-      "lastRecalledAt": "2026-06-01T14:05:05.297Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
-        "70f4b0e41af9"
+        "70f4b0e41af9",
+        "149385e60be8"
       ],
       "recallDays": [
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-03"
       ],
       "conceptTags": [
         "scripts/agentmail-reader.py",
@@ -3744,18 +3764,20 @@
       "endLine": 195,
       "source": "memory",
       "snippet": "- Added dead-feed cache (`brain/memory/semantic/dead-feeds.json`) — skips feeds after 3 consecutive failures, retests after 48h - Pre-populated with 171 known-dead URLs (from SA validation + catalog) - Reduced timeout: 15s → 8s, retries: 2 → 1 (max 16s per dead feed vs 45s) - Catalog loader also filters against dead cache 2. **DEEPSEEK_API_KEY missing in test env:** Cron sources .env (line 46 of daily-text-brief.sh) — confirmed present in .env 3. **Cron registration verified:** ID `69d9d778-9de1-4d63-8697-99f0bd13353f` - Schedule: `cron 0 5 * * * @ America/Los_Angeles` (05:00 PT daily) - Task: `cd /home/ubuntu/.openclaw/workspace && bash scripts/daily-text-brief.sh` -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-02T15:42:59.537Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T23:14:59.386Z",
       "queryHashes": [
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "149385e60be8"
       ],
       "recallDays": [
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "dead-feed",
@@ -3837,18 +3859,23 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- [north_america] No Sheinbaum-administration statement will link the Tijuana cartel clash to bilateral US co-operation requests within the 7-day horizon. (likely; 65% / 7d) ## Report: daily_brief — 2026-05-21 **File:** exports/daily-brief-2026-05-21.txt **Words:** 4674 | **Model:** opus-4.7 / deepseek-v4-pro **Summary:** Russia-Belarus nuclear, Iran talks, US-Cuba indictment, Bolivia protests, Colombia extractives pivot **Key judgments:** - Russia-Belarus nuclear exercise - Iran talks in final stages? - US-Cuba Raul Castro indictment **Regions:** Europe, North America, Central America, South America, Africa, Middle East, Central Asia, SE Asia, Oceania ## Report: leo_daily_brief — 2026-05",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-02T15:42:59.537Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
       "queryHashes": [
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "730499224f4d",
+        "afc407305e82",
+        "b667f8806bfc",
+        "c54980b9e9a9"
       ],
       "recallDays": [
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "north-america",
@@ -4111,6 +4138,72 @@
         "deepseek-v4-pro",
         "briefs",
         "delivered"
+      ]
+    },
+    "memory:memory/2026-05-21.md:1:19": {
+      "key": "memory:memory/2026-05-21.md:1:19",
+      "path": "memory/2026-05-21.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "## 2026-05-21 Daily Log - 05:04 UTC — Improvement Daemon hourly check: clean (no issues) ## Daily brief — 2026-05-21 BLUF: Overnight tape is dominated by a correlated oil-plus-rates repricing that converts a contained-geopolitics posture into an active regime question, while Lebanon-Hormuz signalling and a UK sanctions extension lock in higher-for-longer Western coercion clocks — all on thin, single-source collection that disciplines every band below to 'likely' or under. - [global_finance] The US 10-year yield closes the next 7 sessions above the pre-CPI level, indicating the print is being read as signal rather than noise. (likely; 60% / 7d) - [middle_east] The IRGC Hormuz exercise wil",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T23:00:48.965Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
+      "queryHashes": [
+        "730499224f4d",
+        "afc407305e82",
+        "b667f8806bfc",
+        "c54980b9e9a9"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "oil-plus-rates",
+        "contained-geopolitics",
+        "lebanon-hormuz",
+        "higher-for-longer",
+        "single-source",
+        "global-finance",
+        "10-year",
+        "pre-cpi"
+      ]
+    },
+    "memory:memory/2026-06-03.md:42:62": {
+      "key": "memory:memory/2026-06-03.md:42:62",
+      "path": "memory/2026-06-03.md",
+      "startLine": 42,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "- [north_america] The US Treasury will announce new sanctions designations against Iranian individuals or entities under existing authorities within 7 days, as a non-kinetic pressure lever after Rubio's declaration of the end of Operation Epic Fury. (even chance; 50% / 7d) - [central_america_caribbean] Roughly even chance that the U.S. Treasury will designate at least one Cuban state‑owned enterprise under sanctions within the next 7 days. (roughly even chance; 43% / 7d) - [south_america] Roughly even chance that Bolivian President Rodrigo Paz resigns within 7 days amid intensifying anti-government protests. (roughly even chance; 48% / 7d) - [north_africa] There is roughly even chance (45%)",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T23:00:52.805Z",
+      "lastRecalledAt": "2026-06-03T23:01:00.475Z",
+      "queryHashes": [
+        "b667f8806bfc",
+        "c54980b9e9a9"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "north-america",
+        "non-kinetic",
+        "central-america-caribbean",
+        "u.s",
+        "south-america",
+        "anti-government",
+        "north-africa",
+        "treasury"
       ]
     }
   }

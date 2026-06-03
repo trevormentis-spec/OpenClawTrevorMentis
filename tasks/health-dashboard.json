@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-03T21:43:16.364820+00:00",
+  "timestamp": "2026-06-03T23:13:16.216272+00:00",
   "health_score": 55,
   "health_label": "SICK",
   "layers": {
     "github_backup": {
       "status": "ok",
-      "details": "10 uncommitted, 0 unpushed, last push 1.4h ago",
-      "uncommitted": 10,
+      "details": "14 uncommitted, 0 unpushed, last push 1.4h ago",
+      "uncommitted": 14,
       "unpushed": 0,
       "last_backup_age_hours": 1.4,
       "backup_status": "ok",
@@ -16,14 +16,14 @@
       "status": "ok",
       "gateway": true,
       "disk_pct": 78,
-      "deepseek_balance": 65.33,
+      "deepseek_balance": 61.48,
       "openrouter_ok": true,
       "supervisord": true,
-      "uptime": "8 days, 21:35",
+      "uptime": "8 days, 23:05",
       "load_avg": [
-        4.11,
-        5.51,
-        4.89
+        5.94,
+        6.0,
+        4.92
       ],
       "memory_used_gb": 1.0,
       "memory_available_gb": 14.0,
@@ -53,7 +53,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 1.7
+          "age_hours": 3.2
         },
         {
           "id": "ae0d522f",
@@ -62,7 +62,7 @@
           "last_error": "",
           "last_error_reason": "billing",
           "reason": "billing error",
-          "age_hours": 81.7
+          "age_hours": 83.2
         },
         {
           "id": "cb039bf5",
@@ -71,7 +71,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 6.7
+          "age_hours": 8.2
         },
         {
           "id": "ddfdc590",
@@ -80,7 +80,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 52.7
+          "age_hours": 54.2
         },
         {
           "id": "c3429754",
@@ -89,7 +89,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 51.7
+          "age_hours": 53.2
         },
         {
           "id": "1976bd12",
@@ -98,7 +98,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 11.7
+          "age_hours": 13.2
         },
         {
           "id": "6c54d13f",
@@ -107,7 +107,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 7.5
+          "age_hours": 9.0
         },
         {
           "id": "a55b8761",
@@ -116,7 +116,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 1.7
+          "age_hours": 3.2
         },
         {
           "id": "02104a0d",
@@ -125,7 +125,7 @@
           "last_error": "Delivering to Telegram requires target <chatId>",
           "last_error_reason": "",
           "reason": "4 consecutive errors",
-          "age_hours": 11.6
+          "age_hours": 13.1
         },
         {
           "id": "7a1b2c3d",
@@ -134,7 +134,7 @@
           "last_error": "cron: job execution timed out",
           "last_error_reason": "timeout",
           "reason": "timeout",
-          "age_hours": 8.7
+          "age_hours": 10.2
         }
       ],
       "resolved_billing_jobs": 1,
@@ -156,17 +156,17 @@
             "7a1b2c3d"
           ],
           "root_cause": "unknown",
-          "timestamp": "2026-06-03T21:43:16.420273+00:00"
+          "timestamp": "2026-06-03T23:13:16.273028+00:00"
         },
         {
           "level": "WARNING",
           "layer": "cron_health",
-          "message": "1 historical billing failures (resolved \u2014 DeepSeek balance $65.33). 9 active failures remaining.",
+          "message": "1 historical billing failures (resolved \u2014 DeepSeek balance $61.48). 9 active failures remaining.",
           "affected_jobs": [
             "ae0d522f"
           ],
           "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-          "timestamp": "2026-06-03T21:43:16.420289+00:00"
+          "timestamp": "2026-06-03T23:13:16.273046+00:00"
         },
         {
           "level": "WARNING",
@@ -174,7 +174,7 @@
           "message": "9/34 enabled jobs failing (26.5%)",
           "affected_jobs": [],
           "root_cause": ">20% of enabled cron jobs failing",
-          "timestamp": "2026-06-03T21:43:16.420296+00:00"
+          "timestamp": "2026-06-03T23:13:16.273053+00:00"
         }
       ]
     }
@@ -195,17 +195,17 @@
         "7a1b2c3d"
       ],
       "root_cause": "unknown",
-      "timestamp": "2026-06-03T21:43:16.420273+00:00"
+      "timestamp": "2026-06-03T23:13:16.273028+00:00"
     },
     {
       "level": "WARNING",
       "layer": "cron_health",
-      "message": "1 historical billing failures (resolved \u2014 DeepSeek balance $65.33). 9 active failures remaining.",
+      "message": "1 historical billing failures (resolved \u2014 DeepSeek balance $61.48). 9 active failures remaining.",
       "affected_jobs": [
         "ae0d522f"
       ],
       "root_cause": "DeepSeek billing has been RESOLVED since these failures",
-      "timestamp": "2026-06-03T21:43:16.420289+00:00"
+      "timestamp": "2026-06-03T23:13:16.273046+00:00"
     },
     {
       "level": "WARNING",
@@ -213,7 +213,7 @@
       "message": "9/34 enabled jobs failing (26.5%)",
       "affected_jobs": [],
       "root_cause": ">20% of enabled cron jobs failing",
-      "timestamp": "2026-06-03T21:43:16.420296+00:00"
+      "timestamp": "2026-06-03T23:13:16.273053+00:00"
     }
   ],
   "emergency": false
