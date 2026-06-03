@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-06-03 07:09 UTC
+# Gmail Intel Digest — 2026-06-03 09:01 UTC
 
 ## تصاعد الأعمال القتالية في حرب إيران وسط جمود المفاوضات 
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -48,12 +48,8 @@ Email from Institute for the Study of War Russian forces conducted yet another d
 ---
 
 
-## AgentMail Intel — 2026-06-03 07:09 UTC
+## AgentMail Intel — 2026-06-03 09:01 UTC
 
 ### Marinakis calls for dark fleet destruction, Iran claims to have attacked second MSC vessel
 **From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
 If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134647&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=f7c7796d968a401d8
-
-### Thank you for reading
-**From:** InSight Crime <info@insightcrime.org>  
-https://insightcrime.org/?mc_cid=8ceafe7995&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=8ceafe7995&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=8ceafe7995&mc_eid=UNIQID
