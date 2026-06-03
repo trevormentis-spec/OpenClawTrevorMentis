@@ -1,0 +1,42 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 03, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+Nothing moved the needle in ground station licenses this cycle, but the contrast between orbital deployment and terrestrial infrastructure is sharpening into a warning. Three Starlink launches in the next five days will push the constellation past 9,400 active satellites; our site register credits SpaceX with only 38 known gateway sites globally. Even allowing for optical inter-satellite links reducing the need for contiguous ground coverage, the ratio implies a future capacity choke point as the subscriber base—already north of 10 million—grows toward the 14-million 2030 estimate. The silent registries (FCC, ITU) and a single soft jobs hit suggest the industry is either executing quietly through legacy instruments or has yet to commit capital to the build-out that a $5.33 billion LEO GSaaS market demands.
+
+What to watch: any sudden flurry of new filings or construction imagery—especially from Kuiper, which holds only five known sites, and from China’s opaque Long March payloads. If the Chinese constellations are real, they will require mid-latitude gateways outside their territory, and the current ITU vacuum cannot last. The bottom line is that ground segment capacity risk is underpriced; we should forecast a wave of site acquisitions or multi-operator partnerships by late 2026 and advise clients to lock in spectrum and real estate now.
+
+═══ FCC LICENSES ═══
+
+The FCC feed is a catalog of incumbents—MCI, Intelsat, Inmarsat, AT&T, SES Americom, and their corporate successors. None of the LEO-native operators (SpaceX, Amazon, Telesat, OneWeb) appear as new filers, nor do the cloud providers dipping into GSaaS. This likely reflects two things: first, Starlink's gateway footprint in the US was largely licensed by 2024 under experimental or special temporary authorizations now converted to permanent, without newsworthy changes; second, many international players avoid the FCC entirely by routing traffic through allied jurisdictions. Still, 100 active records with no fresh LEO signatures means the US regulatory front is quiet. If Kuiper intends to meet its FCC deployment milestones, it will need to surface soon—silence here is notable.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Starlink is launching at a run rate that adds roughly 120-180 satellites per week. The upcoming sequence—Group 17-47 today, 10-43 tomorrow, 17-43 on June 7—will fill shells optimized for high-inclination and mid-latitude coverage. With 9,400+ spacecraft already radiating, the ground network must handle terabits of aggregated traffic daily. Our register counts 38 Starlink-associated sites, concentrated in North America (26) and Europe (18 by region, partially overlapping with operator counts). That footprint can cover the continental US and parts of Europe well, but it leaves Asia (8 sites), Oceania (7), and South America (6) thin, and Africa (5) almost negligible. If Starlink is relying on laser crosslinks to serve underserved areas without local gateways, then latency and trunk backhaul become dependent on the health of a few key sites, increasing systemic risk in the event of a cable cut or political disruption. Meanwhile, OneWeb (10 sites) and Telesat (3) remain boutique. The two Chinese Long March launches are cryptically labelled "Unknown Payload." They are consistent with Guowang or Hongyan precursor missions, yet no associated ITU ground station filings appear, meaning either they use Russian or allied territory as gateways or they have not yet begun coordinating international spectrum—a tactic that will force a confrontation eventually.
+
+═══ SITE & IMAGERY ═══
+
+Of 240 total sites in the register, only 80 are risk-rated and operator-tagged; the remaining 160 are either unclassified or inactive in our monitoring. The classified set shows 34 sites at moderate risk and 6 at high risk—none critical. Without imagery (api_configured false, zero Sentinel-2 observations returned), we cannot verify whether any of those high-risk locations are undergoing anomalous construction, abandonment, or repurposing. That blind spot is unacceptable for a market where physical infrastructure determines service quality. The geographical distribution reinforces Starlink’s dominance but also exposes concentration risk: 26 of the 80 classified sites sit in North America, which is saturated, while the entire Indian Ocean, Caribbean, Middle East, and Arctic claim exactly one site each. If one of those high-risk, single-point gateways fails—due to weather, sabotage, or regulatory action—entire regional user bases could drop connectivity. We need to restore imagery coverage and re-score the risk register, especially for the six high-risk sites, immediately.
+
+═══ MARKET SIGNALS ═══
+
+The single job posting hit for “ground station engineer hiring 2026” is a whisper, not a shout. Either hiring is being routed through agencies our scrapers miss, or the industry is automating and consolidating—KSAT, Leaf Space, and AWS Ground Station all offer turnkey services that reduce the need for bespoke engineering teams. The ITU feed is completely dry, meaning no new frequency coordination requests for gateway sites. That aligns with a pause before a build cycle but could also indicate operators are using unlicensed bands or existing allocations without notifying the ITU, a practice that inflames interference disputes later. The market metrics paint a compelling growth story: the LEO GSaaS sub-market from $1.72 billion (2024) to $5.33 billion (2033) implies a 12% CAGR, while Starlink’s own revenue of $11.8 billion (2025 est) makes it self-funding. The missing piece is capital deployment on the ground. We forecast that by Q4 2026, a major ground station acquisition or a new public-private partnership—perhaps involving a fiber backhaul provider like Cogent or a cloud operator—will break the calm.
+
+═══ BOTTOM LINE ═══
+
+Roderick, the ground segment is a coiled spring. Starlink’s launch cadence is forcing a reckoning, and the silent FCC/ITU feeds combined with zero imagery visibility mean we could be surprised. I’d prioritize three actions: first, restart Sentinel-2 collection across all high- and moderate-risk sites with frequent revisit; second, task the team to scrape job boards in Spanish, Chinese, and French, because the next ground station build likely happens in Latin America, Africa, or Central Asia, not the US; third, prep a scenario note for clients warning that unless 15-20 new Starlink gateways come online by mid-2027, service degradation in the Southern Hemisphere will cap subscriber growth. The market is offering no discounts for this risk; take advantage.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 03, 2026

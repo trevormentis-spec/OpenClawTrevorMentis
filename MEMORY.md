@@ -156,6 +156,14 @@ Criminal-faction-universal assessment schema (zero Mexico-specific assumptions):
 
 **Recommendation:** Add a completion-flag file (e.g., `.brief_complete`) written by the pipeline after assembly. QC watchdog checks for this file before running.
 
+## 2026-06-03 — QC Watchdog — Daily Brief Cron Re-enabled
+QC Watchdog found no brief for 2026-06-03. Root cause: Daily Text Brief cron job
+(69d9d778) was DISABLED — last ran 2026-06-01, became disabled since.
+Fix: Re-enabled cron + launched manual pipeline run at ~13:12 UTC.
+Lesson: Check `openclaw cron list --all` for disabled jobs when pipeline misses
+its window. Cron job can become disabled silently (possibly after consecutive
+quality-gate blocks).
+
 ## 2026-05-31 — Philby/Kalshi Trading System — TEARDOWN
 All trading code archived to /home/ubuntu/.openclaw/workspace/archive/philby-trading-2026-05-31
 Trading crons disabled. Auth keys preserved in .env.

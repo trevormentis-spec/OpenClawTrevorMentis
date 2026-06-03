@@ -1,16 +1,16 @@
 # Trevor Health Alerts
 
-**Generated:** 2026-06-03T12:39:56.115625+00:00
-**Health Score:** SICK (50/100)
+**Generated:** 2026-06-03T16:38:17.789878+00:00
+**Health Score:** SICK (55/100)
 **Total Alerts:** 3
 
-⚠️ **[WARNING]** cron_health: Correlated error across 9 jobs: cron: job execution timed out
-   Affected jobs: 0eb2de56, cb039bf5, f10da54a, ddfdc590, c3429754
+⚠️ **[WARNING]** cron_health: Correlated error across 8 jobs: cron: job execution timed out
+   Affected jobs: 0eb2de56, cb039bf5, ddfdc590, c3429754, 1976bd12
    Root cause: unknown
 
-⚠️ **[WARNING]** cron_health: 1 historical billing failures (resolved — DeepSeek balance $79.32). 10 active failures remaining.
+⚠️ **[WARNING]** cron_health: 1 historical billing failures (resolved — DeepSeek balance $65.33). 9 active failures remaining.
    Affected jobs: ae0d522f
    Root cause: DeepSeek billing has been RESOLVED since these failures
 
-⚠️ **[WARNING]** cron_health: 10/33 enabled jobs failing (30.3%)
+⚠️ **[WARNING]** cron_health: 9/34 enabled jobs failing (26.5%)
    Root cause: >20% of enabled cron jobs failing

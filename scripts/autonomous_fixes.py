@@ -190,11 +190,19 @@ def fix_dead_feed_prune(state: dict) -> None:
     except Exception:
         return
 
+    # Handle both list and dict formats for the catalog
+    if isinstance(catalog, list):
+        sources = catalog
+    elif isinstance(catalog, dict):
+        sources = catalog.get("sources", [])
+    else:
+        return
+
     pruned = 0
     for url, info in dead.items():
         if info.get("failures", 0) >= 7:
             # Mark as non-working in catalog
-            for s in catalog.get("sources", []):
+            for s in sources:
                 if s.get("rss") == url and s.get("status") == "working":
                     s["status"] = "dead_pruned"
                     s["pruned_at"] = NOW.isoformat()
@@ -204,8 +212,9 @@ def fix_dead_feed_prune(state: dict) -> None:
                     break
 
     if pruned:
-        catalog["working_feeds"] = sum(1 for s in catalog["sources"] if s.get("status") == "working")
-        catalog["failed_feeds"] = sum(1 for s in catalog["sources"] if s.get("status") != "working")
+        if isinstance(catalog, dict):
+            catalog["working_feeds"] = sum(1 for s in sources if s.get("status") == "working")
+            catalog["failed_feeds"] = sum(1 for s in sources if s.get("status") != "working")
         CATALOG.write_text(json.dumps(catalog, indent=2))
         alert(f"🧹 Auto-pruned {pruned} dead feeds from catalog")
         FIXES_APPLIED.append(f"dead_feed_prune: {pruned} feeds pruned")
@@ -340,7 +349,18 @@ def fix_source_gaps(state: dict) -> None:
 
     try:
         catalog = json.loads(CATALOG.read_text())
-        regions = catalog.get("regions_breakdown", {})
+        if isinstance(catalog, list):
+            # Compute regions breakdown from source list
+            region_counts = {}
+            for s in catalog:
+                r = s.get("region", "unknown")
+                if s.get("status") in ("working", "ok", ""):
+                    region_counts[r] = region_counts.get(r, 0) + 1
+            regions = region_counts
+        elif isinstance(catalog, dict):
+            regions = catalog.get("regions_breakdown", {})
+        else:
+            return
     except Exception:
         return
 
@@ -509,7 +529,12 @@ EXPECTED_REGIONS = [
 ]
 
 def fix_pipeline_recovery(state: dict) -> None:
-    """If pipeline died mid-analysis, attempt to resume from last completed region."""
+    """If pipeline died mid-analysis, re-run full analyze.py once per day.
+
+    NOTE: analyze.py does not support --single-region or --exec-summary-only flags,
+    so the only viable recovery strategy is a full re-run. This is guarded to
+    run at most once per day to avoid runaway costs.
+    """
     today = NOW.strftime("%Y-%m-%d")
     brief_dir = pathlib.Path(os.path.expanduser(f"~/trevor-briefings/{today}"))
     analysis_dir = brief_dir / "analysis"
@@ -532,58 +557,64 @@ def fix_pipeline_recovery(state: dict) -> None:
     if len(completed) == 0:
         return  # Nothing started — no partial state to recover
 
-    # If some complete but not all, we have a partial run
-    # Only attempt recovery once
+    # Only attempt recovery once per day
     recovery_key = f"recovery_{today}"
     if state.get(recovery_key):
         return
 
     log(f"Partial pipeline detected: {len(completed)}/{len(EXPECTED_REGIONS)} regions complete")
     log(f"Missing: {', '.join(missing)}")
+    log("Re-running full analyze.py to recover all regions...")
 
-    # Attempt to resume analysis for missing regions
     deepseek_key = get_api_key("DEEPSEEK_API_KEY")
     if not deepseek_key:
+        log("Cannot recover: DEEPSEEK_API_KEY missing")
+        state[recovery_key] = "aborted_no_key"
         return
 
-    for region in missing[:3]:  # Max 3 per cycle
-        log(f"Attempting recovery for {region}...")
-        try:
-            result = subprocess.run([
-                "python3", str(REPO / "skills" / "daily-intel-brief" / "scripts" / "analyze.py"),
-                "--working-dir", str(brief_dir),
-                "--regions", str(REPO / "skills" / "daily-intel-brief" / "references" / "regions.json"),
-                "--model", "deepseek/deepseek-v4-pro",
-                "--provider", "deepseek",
-                "--tier2-model", "deepseek/deepseek-v4-pro",
-                "--tier2-provider", "deepseek",
-                "--single-region", region,
-            ], capture_output=True, text=True, timeout=120,
-            )
-            if result.returncode == 0:
-                completed.append(region)
-                FIXES_APPLIED.append(f"pipeline_recovery: resumed {region}")
-        except Exception as e:
-            log(f"Recovery for {region} failed: {e}")
+    try:
+        result = subprocess.run([
+            "python3", str(REPO / "skills" / "daily-intel-brief" / "scripts" / "analyze.py"),
+            "--working-dir", str(brief_dir),
+            "--regions", str(REPO / "skills" / "daily-intel-brief" / "references" / "regions.json"),
+            "--prompts", str(REPO / "skills" / "daily-intel-brief" / "references" / "deepseek-prompts.md"),
+            "--model", "deepseek/deepseek-v4-pro",
+            "--provider", "deepseek",
+            "--tier2-model", "deepseek/deepseek-v4-pro",
+            "--tier2-provider", "deepseek",
+        ], capture_output=True, text=True, timeout=600,
+        )
+    except subprocess.TimeoutExpired:
+        log("Pipeline recovery timed out after 600s")
+        state[recovery_key] = "timed_out"
+        return
+    except Exception as e:
+        log(f"Pipeline recovery failed: {e}")
+        state[recovery_key] = "crashed"
+        return
 
-    if len(completed) == len(EXPECTED_REGIONS):
-        alert("✅ Pipeline auto-recovered — all regions now complete")
-        # Trigger exec summary generation
-        try:
-            subprocess.run([
-                "python3", str(REPO / "skills" / "daily-intel-brief" / "scripts" / "analyze.py"),
-                "--working-dir", str(brief_dir),
-                "--regions", str(REPO / "skills" / "daily-intel-brief" / "references" / "regions.json"),
-                "--model", "deepseek/deepseek-v4-pro",
-                "--provider", "deepseek",
-                "--exec-summary-only",
-            ], capture_output=True, timeout=120,
-            )
-            FIXES_APPLIED.append("pipeline_recovery: regenerated exec summary")
-        except Exception:
-            pass
+    # Re-check what got completed
+    completed_after = []
+    for region in EXPECTED_REGIONS:
+        if (analysis_dir / f"{region}.json").exists():
+            completed_after.append(region)
 
-    state[recovery_key] = f"recovered_{len(completed)}_of_{len(EXPECTED_REGIONS)}"
+    exec_exists = (analysis_dir / "exec_summary.json").exists()
+
+    if result.returncode == 0 and exec_exists:
+        alert(f"✅ Pipeline auto-recovered — {len(completed_after)}/{len(EXPECTED_REGIONS)} regions + exec summary")
+        FIXES_APPLIED.append(f"pipeline_recovery: full re-run succeeded ({len(completed_after)} regions + exec)")
+        state[recovery_key] = f"recovered_{len(completed_after)}_of_{len(EXPECTED_REGIONS)}_with_exec"
+    elif exec_exists:
+        alert(f"⚠️ Pipeline recovery partial: {len(completed_after)} regions + exec summary (exit={result.returncode})")
+        FIXES_APPLIED.append(f"pipeline_recovery: partial ({len(completed_after)} regions + exec)")
+        state[recovery_key] = f"partial_{len(completed_after)}_of_{len(EXPECTED_REGIONS)}_with_exec"
+    else:
+        log(f"Pipeline recovery incomplete: {len(completed_after)} regions, no exec summary (exit={result.returncode})")
+        state[recovery_key] = f"failed_{len(completed_after)}_of_{len(EXPECTED_REGIONS)}_no_exec"
+        # Log stderr for debugging
+        if result.stderr:
+            log(f"Recovery stderr (first 500 chars): {result.stderr[:500]}")
 
 
 # ═══════════════════════════════════════════════════════════════════

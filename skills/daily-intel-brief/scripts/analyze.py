@@ -250,7 +250,7 @@ def call_deepseek(model: str, system: str, user: str,
     
     # OpenAI-compatible providers (DeepSeek, OpenRouter) — subprocess with hard kill timeout
     import subprocess as _sp, json as _json2
-    API_TIMEOUT = 240  # hard timeout seconds (4 min per region call)
+    API_TIMEOUT = 600  # hard timeout seconds (10 min per call)
     
     _helper = pathlib.Path(__file__).resolve().parent.parent.parent.parent / "scripts" / "_api_call.py"
     _cmd = [

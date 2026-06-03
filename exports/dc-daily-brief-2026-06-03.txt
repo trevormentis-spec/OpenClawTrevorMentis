@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-03
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single highest systemic risk to US data center operations today. Eight Equinix facilities across Ashburn, Dallas, San Jose, Chicago, LA, and New York all hit 56/100 composite risk, driven by grid constraints. Transformer lead times at 18-24 months and a 122 GW PJM interconnection queue mean new builds in these clusters face 4-6 year delays. This is not a flash event — it's a structural bottleneck that will define capacity availability for the next 24-36 months. Operators should be locking in power purchase agreements and backup generation now.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported in the last 24 hours. The 694-cable global inventory is stable. Key routes serving the highest-risk US clusters: Ashburn relies on the MAREA and Dunant cables for transatlantic connectivity; New York hubs (60 Hudson, 111 8th) are served by multiple landings including the TAT-14 and FLAG Atlantic-1. No congestion signals from any major IX serving these hubs. Monitor the Pacific routes — LA and San Jose are dependent on transpacific cables (e.g., SEA-ME-WE 3, FASTER) which have seen increased repair activity in Q2 2026. No new cable announcements today.
+
+═══ POWER & GRID ═══
+Grid constraints remain the dominant risk driver. PJM interconnection queue at 122 GW — new DC builds face 4-6 year delays. Transformer lead times worsening at 18-24 months for >50 MVA units; switchgear at 12-18 months; generators at 8-12 months. The eight Equinix facilities at 56/100 risk are all grid-driven. Northern Virginia cluster (world's largest) rated MODERATE due to PJM strain. No energy price spikes reported in the last 24 hours, but the structural bottleneck is unchanged. Operators in US hyperscale hubs should assume no new grid capacity for at least 3 years and plan accordingly.
+
+═══ NATURAL HAZARD WATCH ═══
+No active natural hazard threats to major DC clusters in the last 24 hours. Hurricane season is active in the Atlantic (June-November) — monitor Florida and Gulf Coast facilities. California wildfire season is approaching (typically peaks August-October) — San Jose and LA facilities are in elevated risk zones. No earthquake activity reported near any Tier 1 sites. Sentinel-2 imagery shows no flood or ground disturbance at any of the 25 monitored Tier 1 sites.
+
+═══ PHYSICAL SECURITY ═══
+No physical security incidents reported at any Tier 1 or high-risk facilities in the last 24 hours. No protests, construction disruptions, or access incidents near major DC corridors. Standard monitoring continues.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours. AWS, Azure, Google Cloud, and Oracle all green. No fiber route disruptions reported on backbone routes serving major DC clusters. Standard monitoring continues.
+
+═══ ASSET WATCH ═══
+No new DC announcements or construction starts in the last 24 hours. The 1450 MW active pipeline remains unchanged: AirTrunk SYD2 (150 MW, announced), AWS us-east-3 Ohio (1200 MW, permit filed), Digital Realty FRA14 Frankfurt (35 MW, under construction), Equinix NY9 New York (25 MW, operational), CyrusOne HOU2 Houston (40 MW, under construction). No risk rating changes. No operator changes.
+
+═══ MARKET SIGNALS ═══
+No colo pricing or capacity availability changes reported in the last 24 hours. Supply chain tracker unchanged: transformer lead times 18-24 months, switchgear 12-18 months, generators 8-12 months. Lithium-ion UPS battery supply stable; lead-acid still constrained. No new signals from Schneider Electric, Eaton, or Caterpillar.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-03

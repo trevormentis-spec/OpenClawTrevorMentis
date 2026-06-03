@@ -835,20 +835,20 @@
     "source": "El Mercurio / Emol"
   },
   "https://www.arabnews.com/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:53:55.736606+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:18:04.183606+00:00"
   },
   "https://www.newarab.com/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:53:55.867709+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:18:04.341023+00:00"
   },
   "https://www.thecontinent.co.za/feed": {
     "failures": 2,
     "last_failed_at": "2026-05-24T12:24:22.160377+00:00"
   },
   "https://www.africa-confidential.com/rss": {
-    "failures": 2,
-    "last_failed_at": "2026-05-24T12:24:41.674532+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-03T14:25:46.239188+00:00"
   },
   "https://acleddata.com/feed": {
     "failures": 2,
@@ -873,10 +873,6 @@
   "https://thehill.com/rss/syndicator/191": {
     "failures": 2,
     "last_failed_at": "2026-05-24T12:25:15.406929+00:00"
-  },
-  "https://www.cbc.ca/cmlink/rss-world": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:56:13.001059+00:00"
   },
   "https://www.elheraldo.hn/rss.xml": {
     "failures": 2,
@@ -987,228 +983,228 @@
     "last_failed_at": "2026-05-24T12:28:35.219381+00:00"
   },
   "https://www.kompas.com/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:13.133214+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:06.109133+00:00"
   },
   "https://www.detik.com/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:15.921434+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:09.700945+00:00"
   },
   "https://jakartaglobe.id/feed/": {
     "failures": 2,
     "last_failed_at": "2026-05-24T12:28:40.827629+00:00"
   },
   "https://www.tempo.co/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:56:56.382372+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:20:47.026854+00:00"
   },
   "https://www.khmertimeskh.com/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:56:57.445472+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:20:48.189981+00:00"
   },
   "https://www.vientianetimes.org.la/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:00.095331+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:20:52.702604+00:00"
   },
   "https://tribune.com.pk/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:01.782585+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:20:54.435318+00:00"
   },
   "https://tashkenttimes.uz/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:06.843901+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:00.111945+00:00"
   },
   "https://www.inform.kz/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:09.227370+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:02.299677+00:00"
   },
   "https://en.trend.az/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:13.745619+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:04.090743+00:00"
   },
   "https://www.fijivillage.com/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:18.509578+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:08.812336+00:00"
   },
   "https://www.solomonstarnews.com/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:19.602519+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:10.190095+00:00"
   },
   "https://www.dailypost.vu/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:20.051732+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:10.659921+00:00"
   },
   "https://www.samoaobserver.ws/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:20.839838+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:11.951368+00:00"
   },
   "https://www.omanobserver.om/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:28.142595+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:17.638700+00:00"
   },
   "https://www.jordantimes.com/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:28.424513+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:18.174878+00:00"
   },
   "https://www.sabanew.net/rss/en.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:57:35.332860+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:26.750065+00:00"
   },
   "https://www.aljazeera.net/xml/rss/all.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:00.480844+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:56.035237+00:00"
   },
   "https://www3.nhk.or.jp/nhkworld/en/news/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:01.316469+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:57.299294+00:00"
   },
   "https://www3.nhk.or.jp/news/rss/news/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:03.287694+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:21:59.247391+00:00"
   },
   "https://french.cgtn.com/rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:04.744994+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:01.637939+00:00"
   },
   "https://efe.com/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:10.774884+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:09.931471+00:00"
   },
   "https://english.kyodonews.net/rss/news.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:12.089156+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:11.352220+00:00"
   },
   "https://www.liberation.fr/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:13.556072+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:12.944263+00:00"
   },
   "http://www.xinhuanet.com/politics/xhll.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:19.389925+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:20.086865+00:00"
   },
   "https://rss.caixin.com/caixin.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:20.717472+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:24.413507+00:00"
   },
   "https://www.nikkei.com/rss/index.do": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:23.905314+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:28.171229+00:00"
   },
   "https://www.yomiuri.co.jp/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:25.574624+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:29.679866+00:00"
   },
   "https://www.yna.co.kr/RSS/news.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:29.762531+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:34.105409+00:00"
   },
   "https://www.chosun.com/arc/outboundfeeds/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:30.557660+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:35.043678+00:00"
   },
   "https://news.kbs.co.kr/rss/rss.jsp?ch=ko": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:31.922505+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:36.725288+00:00"
   },
   "https://www.alarabiya.net/.mrss/ar.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:32.063812+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:37.116556+00:00"
   },
   "https://www.elkhabar.com/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:33.767231+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:43.349025+00:00"
   },
   "https://www.almasryalyoum.com/rss/RssFeeds.aspx": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:58:34.100029+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:22:43.690599+00:00"
   },
   "https://static.rbc.ru/rbc/internal/rss.rbc.ru/rbc.ru/mainnews.rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:02.409123+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:07.612211+00:00"
   },
   "https://novayagazeta.eu/rss/all": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:06.343497+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:11.704447+00:00"
   },
   "https://www.eluniversal.com.mx/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:13.105663+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:17.694932+00:00"
   },
   "https://oglobo.globo.com/rss/ultimas/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:21.998755+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:26.604490+00:00"
   },
   "https://www.estadao.com.br/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:23.902640+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:27.618721+00:00"
   },
   "https://www.publico.pt/rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:25.708144+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:28.853691+00:00"
   },
   "https://www.ilsole24ore.com/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:32.406418+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:36.367940+00:00"
   },
   "https://www.tasnimnews.com/en/rss/feed/0/8/0": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T18:59:56.868652+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:53.081336+00:00"
   },
   "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederRSS": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:02.125924+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:55.798266+00:00"
   },
   "https://www.timesofisrael.com/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:02.322149+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:55.986043+00:00"
   },
   "https://www.rp.pl/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:02.822429+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:56.327561+00:00"
   },
   "https://wiadomosci.onet.pl/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:03.551640+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:57.311888+00:00"
   },
   "https://hromadske.ua/rss.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:05.557644+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:23:59.382625+00:00"
   },
   "https://kyivindependent.com/feed/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:08.055572+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:00.646275+00:00"
   },
   "https://ndtv.in/rss/feeds": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:08.420452+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:01.118340+00:00"
   },
   "https://www.jagran.com/rss/news.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:09.155754+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:02.007735+00:00"
   },
   "https://tamil.thehindu.com/feeder/default.rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:10.332139+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:03.299939+00:00"
   },
   "https://www.dawnnews.tv/rss/": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:12.609673+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:05.514687+00:00"
   },
   "https://www.bangkokpost.com/rss/data/topstories.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:21.153837+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:14.448943+00:00"
   },
   "http://en.people.cn/rss/politics.xml": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:32.492444+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:24.748517+00:00"
   },
   "https://www.osw.waw.pl/pl/rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:35.091095+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:27.242786+00:00"
   },
   "https://www.trtworld.com/rss": {
-    "failures": 6,
-    "last_failed_at": "2026-05-31T19:00:35.575163+00:00"
+    "failures": 7,
+    "last_failed_at": "2026-06-03T14:24:28.800983+00:00"
   },
   "https://www.cbc.ca/cmlink/rss-topstories": {
     "failures": 3,
@@ -1234,45 +1230,41 @@
     "failures": 1,
     "last_failed_at": "2026-05-27T12:09:09.851920+00:00"
   },
-  "https://www.sabanews.net/en/rss.xml": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:13:55.153132+00:00"
-  },
   "https://www.khaleejtimes.com/rss/feed": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:13:55.897024+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:18:11.062243+00:00"
   },
   "https://amwaj.media/feed": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:13:58.095415+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:18:13.368100+00:00"
   },
   "https://today.lorientlejour.com/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:13:58.410818+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:18:13.687762+00:00"
   },
   "https://www.chathamhouse.org/rss.xml": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:15:06.842129+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:18:51.233211+00:00"
   },
   "https://www.thearcticinstitute.org/feed/": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:19:32.412479+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:24:29.313984+00:00"
   },
   "https://www.highnorthnews.com/rss.xml": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:19:33.403691+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:24:30.102578+00:00"
   },
   "https://gisaid.org/feed/": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:19:36.351629+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:24:34.080133+00:00"
   },
   "https://www.nikkei.com/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:19:41.779581+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:24:42.600311+00:00"
   },
   "https://www.haaretz.com/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:20:10.669718+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:25:12.197834+00:00"
   },
   "https://english.aawsat.com/rss": {
     "failures": 3,
@@ -1287,40 +1279,24 @@
     "last_failed_at": "2026-06-01T12:20:29.037348+00:00"
   },
   "https://thehill.com/homenews/house/5891863-congressional-probe-prediction-markets/": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:20:31.001661+00:00"
-  },
-  "https://www.tehrantimes.com/rss/": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:25:39.988895+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:25:34.865413+00:00"
   },
   "https://perureports.com/feed/": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:26:44.620903+00:00"
-  },
-  "https://www.mehrnews.com/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:29:37.226153+00:00"
-  },
-  "https://en.irna.ir/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:29:47.542704+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:19:32.689062+00:00"
   },
   "https://www.cgtn.com/rss": {
-    "failures": 3,
-    "last_failed_at": "2026-06-01T12:49:18.431184+00:00"
+    "failures": 4,
+    "last_failed_at": "2026-06-03T14:43:57.209843+00:00"
   },
   "https://www.globaltimes.cn/rss": {
     "failures": 3,
     "last_failed_at": "2026-06-01T13:11:48.209196+00:00"
   },
   "https://www.crisisgroup.org/rss.xml": {
-    "failures": 1,
-    "last_failed_at": "2026-06-02T14:18:30.376184+00:00"
-  },
-  "https://www.caribbeannewsglobal.com/feed": {
-    "failures": 1,
-    "last_failed_at": "2026-06-02T14:19:36.667393+00:00"
+    "failures": 3,
+    "last_failed_at": "2026-06-03T14:39:17.197089+00:00"
   },
   "https://www.nepalitimes.com/feed": {
     "failures": 1,
@@ -1353,5 +1329,25 @@
   "https://www.wilsoncenter.org/rss": {
     "failures": 1,
     "last_failed_at": "2026-06-02T14:23:22.378801+00:00"
+  },
+  "https://www.tongaworldnews.com/feed/": {
+    "failures": 3,
+    "last_failed_at": "2026-06-03T14:49:55.090444+00:00"
+  },
+  "https://www.africaintelligence.com/rss": {
+    "failures": 1,
+    "last_failed_at": "2026-06-03T14:25:47.197434+00:00"
+  },
+  "https://www.chathamhouse.org/rss": {
+    "failures": 3,
+    "last_failed_at": "2026-06-03T14:52:13.809134+00:00"
+  },
+  "https://www.hudson.org/feed": {
+    "failures": 3,
+    "last_failed_at": "2026-06-03T14:52:14.548583+00:00"
+  },
+  "https://www.caribbeannewsglobal.com/feed": {
+    "failures": 1,
+    "last_failed_at": "2026-06-03T14:48:16.753449+00:00"
   }
 }
