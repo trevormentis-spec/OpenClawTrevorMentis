@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-03T15:22:52.611Z",
+  "updatedAt": "2026-06-03T17:52:45.056Z",
   "entries": {
     "memory:memory/2026-04-25.md:1:8": {
       "key": "memory:memory/2026-04-25.md:1:8",
@@ -1067,13 +1067,13 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "- [europe] Russia will conduct at least one large-scale drone or missile strike against Ukrainian territory within the next 7 days. (likely; 65% / 7d) - [asia] Former President Trump will arrive in China for a diplomatic visit before 16 May 2026. (likely; 60% / 7d) - [middle_east] The United States and Iran will not publicly announce a mutually agreed framework document for ending hostilities by 16 May 2026. (likely; 65% / 7d) - [north_america] Within 7 days, the U.S. government will formally request Mexican cooperation in investigating the CIA officers' deaths, and Mexican authorities will publicly agree to a joint probe. (likely; 65% / 7d) - [south_central_america] Fuel shortages in Cuba w",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:42:22.263Z",
-      "lastRecalledAt": "2026-05-25T01:44:37.483Z",
+      "lastRecalledAt": "2026-06-03T17:52:45.056Z",
       "queryHashes": [
         "f7d1f8923a5d",
         "3c68673febfe",
@@ -1081,12 +1081,14 @@
         "4fdd6eb8041e",
         "b5deefa4bb81",
         "b84acb705a0f",
-        "998fb1f86453"
+        "998fb1f86453",
+        "1ddbc93f1f72"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-12",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-03"
       ],
       "conceptTags": [
         "large-scale",
@@ -1848,13 +1850,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Cron schedules matter.** User gets GSIB at ~7am PT, 4 Briefings at 8am PT. Don't second-guess these times. - **A `.venv_pdf/bin/python` venv is used** for PDF rendering in the cron path — check it's actually the same Python/system. - The cron at 250765ae-d951-490c-b3d0-109fca300053 fires at 5am PT and runs `daily-brief-cron.sh`. ### What I fixed - Updated `daily-brief-cron.sh` to use: - `generate_brief_maps_v3.py` instead of old `generate_brief_maps.py` - `generate_brief_charts.py` added as Step 2c - Full render args: `--kalshi-json`, `--charts-dir`, `--maps-dir`, `--images-json` - GeoJSON data at `~/trevor-briefings/theatre_geodata.json` - Fixed 4 Briefings cron to fire at 8am",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16,
+      "totalScore": 17,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T04:20:33.705Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
       "queryHashes": [
         "f6d1fca16aa8",
         "50d95fe6b691",
@@ -1871,7 +1873,8 @@
         "af9c2a182f0d",
         "51379a34d24e",
         "c14a55c30073",
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "930c34d65db8"
       ],
       "recallDays": [
         "2026-05-21",
@@ -1879,7 +1882,8 @@
         "2026-05-24",
         "2026-05-25",
         "2026-05-28",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "second-guess",
@@ -2325,13 +2329,13 @@
       "endLine": 241,
       "source": "memory",
       "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-24T22:03:16.119Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
       "queryHashes": [
         "33046e596a0d",
         "1a26325ac2fd",
@@ -2343,13 +2347,15 @@
         "2ec68133263a",
         "51379a34d24e",
         "c14a55c30073",
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "930c34d65db8"
       ],
       "recallDays": [
         "2026-05-24",
         "2026-05-25",
         "2026-05-28",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "north-america",
@@ -2871,13 +2877,13 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "# 2026-05-26 ## 07:42 UTC — Heartbeat - **Autonomous cycle:** All phases ran (crons, feeds, collection, pipeline, costs, brain) — exit 0 ✅ - **Autonomous fixes:** Ran quiet — exit 0 ✅ - **Note from cycle:** Delivery status unclear — not found in logs or AgentMail (likely landing page deploy PAT issue) - **Status snapshot:** GitHub PAT still needs rotation (landing page deploy blocked). Feed rot, calibration, postdiction, QC PARSE_ERROR all unchanged. All 3 active assignments running. - **Cost:** ~$0.37/day, ~$84 balance remaining ## Report: leo_daily_brief — 2026-05-26 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-26.txt **Words:** 828 | **Model:** deepseek-v4",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-27T05:08:17.429Z",
-      "lastRecalledAt": "2026-06-02T15:42:59.537Z",
+      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
       "queryHashes": [
         "6c0fb35a93f8",
         "2ec68133263a",
@@ -2885,13 +2891,15 @@
         "dad41c64a83e",
         "51379a34d24e",
         "c14a55c30073",
-        "131f4ab60f1a"
+        "131f4ab60f1a",
+        "930c34d65db8"
       ],
       "recallDays": [
         "2026-05-27",
         "2026-05-28",
         "2026-05-29",
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "parse-error",
@@ -3501,18 +3509,19 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-06-01 — Daily Memory ## Heartbeat — 02:44 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, no output) **DeepSeek Balance:** $98.33 (significant top-up from $7.25) — runway ~6.6 days **Kalshi:** $398.09 ($380.45 cash, $17.64 portfolio) — was incorrectly reported as $0.24 (stale cache from archived philby scanner). Fixed: scanner replaced with trading-system adapter wrapper. **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — all running **QC Alerts:** None ✅ **Known Issues:** Landing page deploy verification (FIX_APPLIED, awaiting 3 passes), Feed rot (OPEN, 298 working feeds), Calibration accur",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-01T17:26:17.834Z",
-      "lastRecalledAt": "2026-06-03T15:22:52.611Z",
+      "lastRecalledAt": "2026-06-03T17:52:45.056Z",
       "queryHashes": [
         "4e9404107946",
         "9454f266f184",
         "4ff94e314a69",
-        "592d6ab87b31"
+        "592d6ab87b31",
+        "1ddbc93f1f72"
       ],
       "recallDays": [
         "2026-06-01",
@@ -3570,19 +3579,21 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "✅ Autonomous fixes ran (--quiet, no output) **Post health-fix state (34 min after fix applied):** - Kalshi balance: $398.09 (correctly reported now) ✅ - Feed User-Agent fix deployed for WAF bypass ✅ - Landing page deploy + DailyIntelAgent crons both enabled ✅ - QC Alert: None ✅ - Calibration metric now correctly excludes expired predictions ✅ **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — no new alerts **Known Issues:** Landing page deploy (FIX_APPLIED, needs 3 passes to close), Feed rot 41.2% working (User-Agent fix deployed), Calibration ~3% **Today's plan:** - Morning brief pipeline (if scheduled) - Monitor DeepSeek balance - Continue active as",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-02T11:26:18.397Z",
-      "lastRecalledAt": "2026-06-02T11:56:16.224Z",
+      "lastRecalledAt": "2026-06-03T17:52:45.056Z",
       "queryHashes": [
         "9454f266f184",
-        "8aff8fae5d6d"
+        "8aff8fae5d6d",
+        "1ddbc93f1f72"
       ],
       "recallDays": [
-        "2026-06-02"
+        "2026-06-02",
+        "2026-06-03"
       ],
       "conceptTags": [
         "health-fix",
@@ -3945,16 +3956,17 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "- Feed rot: OPEN (298/723 working, User-Agent fix deployed May 31) - Calibration accuracy: OPEN (~3% — deeper prompt engineering issue) ## Heartbeat — 12:25 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 1 — pipeline phase: no brief found) ✅ Autonomous fixes ran (--quiet, exit 0) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Pipeline check:** Non-critical. No brief for June 2 yet (expected — June 1 pipeline ran 13:47–19:02 UTC). Hardcoded 12:00 UTC deadline in autonomous_cycle.py is a false alarm — actual pipeline runs later (~13:47 UTC) **Digest delivery:** ⚠️ Unclear — same status as prior heartbeats. Combined Intel Digest runs at 12",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-06-03T03:49:09.473Z",
-      "lastRecalledAt": "2026-06-03T15:22:52.611Z",
+      "lastRecalledAt": "2026-06-03T17:52:45.056Z",
       "queryHashes": [
         "4ff94e314a69",
-        "592d6ab87b31"
+        "592d6ab87b31",
+        "1ddbc93f1f72"
       ],
       "recallDays": [
         "2026-06-03"
@@ -3999,6 +4011,68 @@
         "semiconductor-supply-chain",
         "heartbeat",
         "utc"
+      ]
+    },
+    "memory:memory/2026-06-02.md:98:121": {
+      "key": "memory:memory/2026-06-02.md:98:121",
+      "path": "memory/2026-06-02.md",
+      "startLine": 98,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "- LEO — Launch Schedule: status=error - Brief Auto-Recovery: status=error - Several others also showing error (Infrastructure Alert, Daily GitHub backup, Auto Config, Dream consolidation) - Combined Intel Digest (12:00 PT): status=ok, next in ~6h **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain **Known Issues (checklist):** - Brief pipeline cron trigger: OPEN — tracked in KNOWN_ISSUES.md - Landing page deploy verification: FIX_APPLIED - Feed rot: OPEN (298/723) - Calibration accuracy: OPEN (~3%) - Several error-status OpenClaw crons may need investigation ## Report: leo_daily_brief — 2026-06-02 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-da",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T17:23:08.422Z",
+      "lastRecalledAt": "2026-06-03T17:23:08.422Z",
+      "queryHashes": [
+        "930c34d65db8"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "backup",
+        "auto-recovery",
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "known-issues.md",
+        "fix-applied",
+        "298/723"
+      ]
+    },
+    "memory:memory/2026-06-01.md:56:80": {
+      "key": "memory:memory/2026-06-01.md:56:80",
+      "path": "memory/2026-06-01.md",
+      "startLine": 56,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "**Words:** 951 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === This week's most important signal is the Reuters report that an Indian company shipped explosives to Russia despite warnings from the United States government. This is the f **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds ## Health Fix — Comprehensive (16:40-16:51 UTC) ### Issues Fixed 1. **Kalshi balance: $398.09 (was $0.24)** — scanner was archived, replaced with trading-system adapter wrapper 2. **Trade confirmation: entry-approval only** — exits auto-managed. `/enter` and `/skip` commands. 3. **Feed health: 403 WAF blocking** — User-Agent fixed to Chrome 125 browser UA in 3 scripts",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-03T17:52:45.056Z",
+      "lastRecalledAt": "2026-06-03T17:52:45.056Z",
+      "queryHashes": [
+        "1ddbc93f1f72"
+      ],
+      "recallDays": [
+        "2026-06-03"
+      ],
+      "conceptTags": [
+        "opus-4.7",
+        "rdx/c4",
+        "40-16",
+        "398.09",
+        "0.24",
+        "trading-system",
+        "entry-approval",
+        "auto-managed"
       ]
     }
   }

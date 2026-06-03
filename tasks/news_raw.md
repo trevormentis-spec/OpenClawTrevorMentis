@@ -1,4 +1,31 @@
-# Gmail Intel Digest — 2026-06-03 15:21 UTC
+# Gmail Intel Digest — 2026-06-03 17:01 UTC
+
+## When street soccer becomes survival
+**From:** Reuters One Essential Read <dailybriefing@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 12:00:25 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.row-content{width:100%!important}.stack .column{width:100%;display:block}.mobile_hide{min-height:0;max-
+
+---
+
+## Saudi’s wartime resilience
+**From:** Reuters Gulf Currents <gulfcurrents@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 11:50:07 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## SpaceX's root beer roots 🍺
+**From:** Reuters Sustainable Finance <sustainablefinance@thomsonreuters.com>
+**Date:** Wed, 3 Jun 2026 11:26:08 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## High-profile Instagram AI chatbot breach spotlights security risks of automation
 **From:** Reuters Technology Roundup <newsletters@email.reuters.com>
@@ -27,44 +54,16 @@
 
 ---
 
-## S&P, Dow futures edge lower on Middle East stalemate
-**From:** Reuters Business <newsletters@email.reuters.com>
-**Date:** Wed, 3 Jun 2026 08:01:19 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+## AgentMail Intel — 2026-06-03 17:01 UTC
 
----
+### Trump tries tariffs... again
+**From:** GZERO Daily <gzerodaily@gzeromedia.com>  
+Today, we’re breaking down what a new flurry of diplomatic action between the US and Iran means and how likely it is to lead to a deal. We’re also covering the latest turmoil in Bolivia, the excellent
 
-## US cites forced labor concerns as grounds for new tariffs
-**From:** Reuters Tariff Watch <newsletters@email.reuters.com>
-**Date:** Wed, 3 Jun 2026 08:02:09 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
-
----
-
-## Hostilities flare up in Iran
-**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 06:59:19 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-## Quantum leap
-**From:** "Morning Bid U.S." <morningbid@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 06:30:19 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-06-03 15:23 UTC
+### MEI Webinar Tomorrow | The Iran War: Where Do We Stand? | June 4th 11:00 AM
+**From:** Middle East Institute <events@mei.edu>  
+Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients. Email not displaying correctly? View it in y
 
 ### Watch Live Now: CSIS Korea Chair The Impossible State Live Podcast- The CRINK Challenge: Implications for North Korea and Global Security (June 3)
 **From:** CSIS Korea Chair <koreachair@csis.org>  
@@ -77,11 +76,3 @@ Your daily briefing of the nuclear policy news and analysis. Email not displayin
 ### New Publication: Location Is Everything: The Promises and Limits of China’s Development Zones
 **From:** CSIS Trustee Chair in Chinese Business and Economics <cbe@csis.org>  
 96 In this blog post, Ryan Featherston examines trends in China's defined economic development zones, evaluates the evidence on their effectiveness, and traces early efforts to build regional cluster
-
-### Explore Critical Minerals Security with CSIS Executive Education
-**From:** CSIS Executive Education <aila@csis.org>  
-Understand the economic, geopolitical, and social considerations of securing critical minerals. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
-
-### Muon Space unveils a Starship-class bus
-**From:** SpaceNews FIRST UP <spacenewseletter@spacenews.com>  
-Plus: A confirmation hearing for the NRO director nominee 06/03/2026 READ IN BROWSER http://spacenews.bluelena.io/p_v.php?c=2770&m=1625&s=03dcdd84f7212aa2b9fc195de9a839f5&d=16377&v=2&l=8 https://spa
