@@ -1,4 +1,4 @@
-# Gmail Intel Digest — 2026-06-04 05:01 UTC
+# Gmail Intel Digest — 2026-06-04 07:01 UTC
 
 ## اتفاق بين إسرائيل ولبنان على تنفيذ وقف لإطلاق النار
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -87,7 +87,11 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 ---
 
 
-## AgentMail Intel — 2026-06-04 05:01 UTC
+## AgentMail Intel — 2026-06-04 07:01 UTC
+
+### Iran oil exports plunge as US blockade bites, Resilience and flexibility key to surviving disruption
+**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
+If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134669&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=ddabfc0d18e5458ea
 
 ### 👉The Next Generation of Organized Crime in Mexico
 **From:** InSight Crime <info@insightcrime.org>  
