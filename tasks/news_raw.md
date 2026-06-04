@@ -1,4 +1,22 @@
-# Gmail Intel Digest — 2026-06-04 03:01 UTC
+# Gmail Intel Digest — 2026-06-04 05:01 UTC
+
+## اتفاق بين إسرائيل ولبنان على تنفيذ وقف لإطلاق النار
+**From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
+**Date:** Thu, 4 Jun 2026 01:01:05 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## A ceasefire too far for markets
+**From:** Reuters Morning Bid Europe <morningbid@thomsonreuters.com>
+**Date:** Thu, 4 Jun 2026 01:00:10 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
 
 ## Iran Update Evening Special Report, June 3, 2026
 **From:** CTP Publications <criticalthreats@aei.org>
@@ -68,22 +86,9 @@ X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsl
 
 ---
 
-## Tokenmaxxing
-**From:** Reuters Artificial Intelligencer <reuters_ai@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 15:16:09 -0400 (EDT)
-**Type:** unknown | **Importance:** low
 
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+## AgentMail Intel — 2026-06-04 05:01 UTC
 
----
-
-
-## AgentMail Intel — 2026-06-04 03:01 UTC
-
-### North Korea Sees a New Solar Power Push
-**From:** 38 North <noreply@stimson.org>  
-The latest analysis from 38 North ** 38 North Today ------------------------------------------------------------ ** The latest from 38 North delivered as we publish -------------------------------
-
-### New Event: Navigating Lebanon's Troubled Economic Recovery: A Conversation with Lebanon's Minister of Economy and Trade, H.E. Amer Bisat
-**From:** Mona Yacoubian <middleeaststudies@csis.org>  
-96 Join us for a conversation with H.E. Amer Bisat, Minister of Economy and Trade for the Republic of Lebanon ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+### 👉The Next Generation of Organized Crime in Mexico
+**From:** InSight Crime <info@insightcrime.org>  
+https://insightcrime.org?mc_cid=a990b0f132&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=a990b0f132&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=a990b0f132&mc_eid=UNIQID h

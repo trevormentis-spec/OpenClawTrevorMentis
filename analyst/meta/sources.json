@@ -16337,6 +16337,87 @@
       "discovered": "2026-06-04",
       "signal_level": "Medium",
       "region": "south_america"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "<strong>The general in charge of the Sudanese Armed Forces had instructed some allied groups to prepare Sudan&#x27;s political transition and the form",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "RSS feeds - Africa Intelligence",
+      "type": "Blog/Website",
+      "focus": "<strong>Africa Intelligence</strong> brings you exclusive coverage of the major political, economic and diplomatic issues at stake on the African cont",
+      "url": "https://www.africaintelligence.com/info/rss",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Security : latest news | The Africa Report",
+      "type": "Blog/Website",
+      "focus": "A veteran diplomat turned intelligence insider, Paul Chikawa steps into the top security job at a politically sensitive moment, with the CIO under scr",
+      "url": "https://www.theafricareport.com/sections/security/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Africa Intelligence: exclusive news on Africa",
+      "type": "Blog/Website",
+      "focus": "<strong>The general in charge of the Sudanese Armed Forces had instructed some allied groups to prepare Sudan&#x27;s political transition and the form",
+      "url": "https://www.africaintelligence.com/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "africa"
+    },
+    {
+      "name": "Middle East Conflict Monitor | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s Middle East Assistant Research Manager Nasser Khdour comments on rise in settler violence in the West Bank ... April was the deadliest month i",
+      "url": "https://acleddata.com/monitor/middle-east-conflict-monitor",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Reuters Middle East News | Today's Latest Stories | Reuters",
+      "type": "Blog/Website",
+      "focus": "Reuters.com is your online source for the latest Middle-East news stories and current events, ensuring our readers up to date with any breaking news d",
+      "url": "https://www.reuters.com/world/middle-east/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "middle_east"
+    },
+    {
+      "name": "Middle East | ACLED",
+      "type": "Blog/Website",
+      "focus": "ACLED\u2019s latest data and analysis on the Middle East. ... April was the deadliest month in Gaza this year, conflict in Iraq took on its own trajectory,",
+      "url": "https://acleddata.com/region/middle-east",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "middle_east"
     }
   ],
   "moltbook_sources": [

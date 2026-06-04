@@ -57,6 +57,38 @@
       "severity": "direct",
       "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/escalation-memos/critical-062456.md",
       "incidents_available": 0
+    },
+    {
+      "timestamp": "2026-06-04T04:04:00.127679+00:00Z",
+      "region": "ukraine",
+      "trigger": "ukraine_energy_infrastructure_strikes confidence swing -28pts (78% \u2192 50%)",
+      "severity": "direct",
+      "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/escalation-memos/ukraine-040400.md",
+      "incidents_available": 0
+    },
+    {
+      "timestamp": "2026-06-04T04:04:00.416727+00:00Z",
+      "region": "us",
+      "trigger": "us_china_tech_decoupling confidence swing -32pts (82% \u2192 50%)",
+      "severity": "direct",
+      "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/escalation-memos/us-040400.md",
+      "incidents_available": 0
+    },
+    {
+      "timestamp": "2026-06-04T04:04:00.568969+00:00Z",
+      "region": "mexico",
+      "trigger": "mexico_cartel_violence_trend confidence swing -22pts (72% \u2192 50%)",
+      "severity": "direct",
+      "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/escalation-memos/mexico-040400.md",
+      "incidents_available": 0
+    },
+    {
+      "timestamp": "2026-06-04T04:04:00.947049+00:00Z",
+      "region": "critical",
+      "trigger": "critical_mineral_supply_chain confidence swing -22pts (72% \u2192 50%)",
+      "severity": "direct",
+      "memo_path": "/home/ubuntu/.openclaw/workspace/analysis/escalation-memos/critical-040400.md",
+      "incidents_available": 0
     }
   ],
   "source_trust_changes": [],
@@ -68,7 +100,7 @@
     }
   ],
   "autonomous_prioritizations": [],
-  "last_updated": "2026-05-26T06:24:56.173416+00:00Z",
+  "last_updated": "2026-06-04T04:04:00.947056+00:00Z",
   "collection_campaigns": [
     {
       "campaign_id": "20260513-051444",
