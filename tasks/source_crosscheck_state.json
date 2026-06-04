@@ -6,54 +6,6 @@
       "overlap": 0.0,
       "api_headlines": 0,
       "rss_headlines": 0,
-      "checked_at": "2026-05-19T23:50:57.394168+00:00",
-      "api_samples": [],
-      "rss_samples": []
-    },
-    {
-      "source": "bbc-news",
-      "status": "API_EMPTY",
-      "overlap": 0.0,
-      "api_headlines": 0,
-      "rss_headlines": 34,
-      "checked_at": "2026-05-19T23:50:58.048505+00:00",
-      "api_samples": [],
-      "rss_samples": [
-        "Surrey Police investigating child sex abuse allegations after Epstein files release",
-        "Channel 4 contacted by police after Married at First Sight UK rape claims",
-        "Twenty-two years in the making - how Arsenal celebrated title win"
-      ]
-    },
-    {
-      "source": "reuters",
-      "status": "BOTH_EMPTY",
-      "overlap": 0.0,
-      "api_headlines": 0,
-      "rss_headlines": 0,
-      "checked_at": "2026-05-19T23:52:26.653745+00:00",
-      "api_samples": [],
-      "rss_samples": []
-    },
-    {
-      "source": "bbc-news",
-      "status": "API_EMPTY",
-      "overlap": 0.0,
-      "api_headlines": 0,
-      "rss_headlines": 34,
-      "checked_at": "2026-05-19T23:52:27.507425+00:00",
-      "api_samples": [],
-      "rss_samples": [
-        "Surrey Police investigating child sex abuse allegations after Epstein files release",
-        "Channel 4 contacted by police after Married at First Sight UK rape claims",
-        "Twenty-two years in the making - how Arsenal celebrated title win"
-      ]
-    },
-    {
-      "source": "reuters",
-      "status": "BOTH_EMPTY",
-      "overlap": 0.0,
-      "api_headlines": 0,
-      "rss_headlines": 0,
       "checked_at": "2026-05-21T12:15:59.380418+00:00",
       "api_samples": [],
       "rss_samples": []
@@ -599,7 +551,55 @@
         "Key moments from police bodycam footage",
         "Three quarters of workers not on track for 'moderate' pension income, report suggests"
       ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-06-04T03:02:54.110570+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-06-04T03:02:54.444436+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Police chief apologises to Henry Nowak's family over handcuffing and arrest",
+        "PM accuses Farage of exploiting Nowak case and denies 'two-tier policing' claim",
+        "US House votes to halt Iran war, in rebuke to Trump"
+      ]
+    },
+    {
+      "source": "reuters",
+      "status": "BOTH_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 0,
+      "checked_at": "2026-06-04T03:02:57.160039+00:00",
+      "api_samples": [],
+      "rss_samples": []
+    },
+    {
+      "source": "bbc-news",
+      "status": "API_EMPTY",
+      "overlap": 0.0,
+      "api_headlines": 0,
+      "rss_headlines": 36,
+      "checked_at": "2026-06-04T03:02:57.519860+00:00",
+      "api_samples": [],
+      "rss_samples": [
+        "Police chief apologises to Henry Nowak's family over handcuffing and arrest",
+        "PM accuses Farage of exploiting Nowak case and denies 'two-tier policing' claim",
+        "US House votes to halt Iran war, in rebuke to Trump"
+      ]
     }
   ],
-  "last_updated": "2026-06-03T03:05:06.991193+00:00"
+  "last_updated": "2026-06-04T03:02:57.520105+00:00"
 }
