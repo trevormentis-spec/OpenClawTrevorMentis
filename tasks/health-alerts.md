@@ -1,6 +1,6 @@
 # Trevor Health Alerts
 
-**Generated:** 2026-06-04T07:13:16.983066+00:00
+**Generated:** 2026-06-04T09:13:17.215418+00:00
 **Health Score:** SICK (55/100)
 **Total Alerts:** 3
 
@@ -8,7 +8,7 @@
    Affected jobs: 0eb2de56, f602aac6, cb039bf5, ddfdc590, c3429754
    Root cause: unknown
 
-⚠️ **[WARNING]** cron_health: 1 historical billing failures (resolved — DeepSeek balance $61.48). 10 active failures remaining.
+⚠️ **[WARNING]** cron_health: 1 historical billing failures (resolved — DeepSeek balance $52.80). 10 active failures remaining.
    Affected jobs: ae0d522f
    Root cause: DeepSeek billing has been RESOLVED since these failures
 

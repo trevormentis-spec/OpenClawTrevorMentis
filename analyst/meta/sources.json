@@ -16526,6 +16526,87 @@
       "discovered": "2026-06-04",
       "signal_level": "Medium",
       "region": "south_east_asia"
+    },
+    {
+      "name": "The new geopolitics of the Pacific Island nations - FES Asia",
+      "type": "Blog/Website",
+      "focus": "Several countries in Oceania (The Marshall Islands, Nauru, Palau, and Tuvalu) recognize Taiwan as a sovereign country. Chinese outreach and developmen",
+      "url": "https://asia.fes.de/news/geopolitics-pacific-islands.html",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Oceania | Council on Foreign Relations",
+      "type": "Blog/Website",
+      "focus": "Trump Tariffs on Australia and New Zealand Risk U.S. Pacific Strategy",
+      "url": "https://www.cfr.org/oceania",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "Geopolitics in the Pacific Islands: Playing for advantage | Lowy Institute",
+      "type": "Blog/Website",
+      "focus": "Not all will participate, but regional initiatives can raise standards and deter geopolitical competition from driving down quality. This is not only ",
+      "url": "https://www.lowyinstitute.org/publications/geopolitics-pacific-islands-playing-advantage",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "oceania"
+    },
+    {
+      "name": "What Can Prediction Markets Tell Us About the California Governor\u2019s Race? | KQED",
+      "type": "Blog/Website",
+      "focus": "Major media outlets like CNN and Fox News now include the probabilities listed on Kalshi as part of their election coverage. And earlier this year, Po",
+      "url": "https://www.kqed.org/news/12084937/polymarket-kalshi-prediction-markets-elections-california-primary-governor-vote",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Complete Prediction Markets & Event Contract Trading Guide for June 2026",
+      "type": "Blog/Website",
+      "focus": "There are records of political betting on Wall Street going back to 1884. The modern digital version started with the University of Iowa&#x27;s Electr",
+      "url": "https://ftw.usatoday.com/story/sports/2026/05/31/prediction-markets-june-2026/89827743007/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "What Can Prediction Markets Tell Us About the California Governor\u2019s Race? | KQED",
+      "type": "Blog/Website",
+      "focus": "Major media outlets like CNN and Fox News now include the probabilities listed on Kalshi as part of their election coverage. And earlier this year, Po",
+      "url": "https://www.kqed.org/news/12084937/polymarket-kalshi-prediction-markets-elections-california-primary-governor-vote",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Kalshi - Prediction Market for Trading the Future",
+      "type": "Blog/Website",
+      "focus": "Kalshi is <strong>a regulated exchange &amp; prediction market where you can trade on the outcome of real-world events</strong>. Buy and sell Event Co",
+      "url": "https://kalshi.com/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
+    },
+    {
+      "name": "Complete Prediction Markets & Event Contract Trading Guide for June 2026",
+      "type": "Blog/Website",
+      "focus": "There are records of political betting on Wall Street going back to 1884. The modern digital version started with the University of Iowa&#x27;s Electr",
+      "url": "https://ftw.usatoday.com/story/sports/2026/05/31/prediction-markets-june-2026/89827743007/",
+      "discovered": "2026-06-04",
+      "signal_level": "Medium",
+      "region": "prediction_markets"
     }
   ],
   "moltbook_sources": [
