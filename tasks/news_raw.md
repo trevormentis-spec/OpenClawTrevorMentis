@@ -1,4 +1,40 @@
-# Gmail Intel Digest — 2026-06-04 09:01 UTC
+# Gmail Intel Digest — 2026-06-04 11:01 UTC
+
+## Lebanon ceasefire raises hopes
+**From:** Reuters Daily Briefing <dailybriefing@thomsonreuters.com>
+**Date:** Thu, 4 Jun 2026 06:58:22 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Summer clouds
+**From:** "Morning Bid U.S." <morningbid@thomsonreuters.com>
+**Date:** Thu, 4 Jun 2026 06:32:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
+
+---
+
+## Lebanon ceasefire raises hopes of progress for Iran deal
+**From:** Reuters Iran Briefing <newsletters@email.reuters.com>
+**Date:** Thu, 4 Jun 2026 06:32:06 -0400 (EDT)
+**Type:** unknown | **Importance:** low
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:520px){.mobile_hide{display:none}.row-content{width:100%!important}.stack .column{width:100%;display:block}.mob
+
+---
+
+## ⚡ FLASH SALE! Take $148 off
+**From:** Foreign Policy <reply@foreignpolicy.com>
+**Date:** Thu, 4 Jun 2026 06:31:46 -0400 (EDT)
+**Type:** alert | **Importance:** high
+
+96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
+
+---
 
 ## اتفاق بين إسرائيل ولبنان على تنفيذ وقف لإطلاق النار
 **From:** "نشرة رويترز اليومية لأهم الأنباء" <newsletters@email.reuters.com>
@@ -47,56 +83,24 @@ Email from Institute for the Study of War The Russian ultranationalist community
 
 ---
 
-## National Security Nightcap for Wednesday, June 3
-**From:** The Cipher Brief <dailybrief@thecipherbrief.com>
-**Date:** Wed,  3 Jun 2026 22:49:20 +0000
-**Type:** alert | **Importance:** high
 
-View this email in your browser (https://mailchi.mp/thecipherbrief/national-security-nightcap-for-wednesday-june-3?e=829f311d89)
-https://www.thecipherbrief.com?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=afa8b084c5-EMAIL_CAMPAIGN_2026_06_03_07_48&utm_medium=email&utm_term=0_-afa8b084c5-547824188&mc_cid=afa8b084c5&mc_eid=UNIQID
+## AgentMail Intel — 2026-06-04 11:01 UTC
 
-X (https://twitter.com/thecipherbrief?utm_source=The+Cipher+Brief+Nightcap+Newsletter&utm_campaign=afa8b084c5-EMAIL_CAMPAIGN_2026_06_03_07_48&utm_medi
+### Todd Blanche’s next big fight
+**From:** POLITICO Playbook <politicoplaybook@email.politico.com>  
+Presented by Vapor Technology Association: The unofficial guide to official Washington. Jun 04, 2026 View in browser By Jack Blanchard with Dasha Burns Pres
 
----
+### ISS Weekly 4 June 2026
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+[1] Français 4 JUNE 2026 [2] FEATURE [3] Industrial-scale meth production poses new security risks for Nigeria by Oluwole Ojewale and Freedom Onuoha Southwester
 
-## イラン協議、数日中に進展の可能性＝トランプ氏【【6月 4日】
-**From:** "Reuters.co.jp" <newsletters@email.reuters.com>
-**Date:** Wed, 3 Jun 2026 18:31:08 -0400 (EDT)
-**Type:** unknown | **Importance:** low
+### The Future of Drone Tech: Israel's Iron Dome || May 28, 2026
+**From:** Peter Zeihan <peterzeihan@creator.patreon.com>  
 
-ロイターニュースメール【{date('yyyy年 M月 d日')】 body {margin: 0;padding: 0;-ms-text-size-adjust: none;-webkit-text-size-adjust:none;font-family: sans-serif;} table {border-spacing: 0;} table td {border-collapse: collapse;} .ExternalClass {width: 100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} .ReadMsgBody { width: 100%; background-color: #ebebeb;} table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;} img {-ms-interpo
+### Can Turkey Find Its Way Back to Freedom?
+**From:** American Enterprise Institute <aei_today@aei.org>  
+Today's top commentary and scholarship on the issues that matter most AEI Today AEI's daily collection of independent research and analysis Can Turkey Find Its Way Back to Freedom? (https://d5lGTw0
 
----
-
-## Editors’ Picks: Why is Trump targeting Brazilian gangs?
-**From:** Foreign Policy <newsletters@foreignpolicy.com>
-**Date:** Wed, 3 Jun 2026 18:00:16 -0400 (EDT)
-**Type:** newsletter | **Importance:** medium
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0} @media (max-width:620px){.image_block div.fullWidth{max-width:100%!important}.row-content{width:100%!important}.stack .column{wid
-
----
-
-## War clouds and tech wobbles
-**From:** Reuters Trading Day <tradingday@thomsonreuters.com>
-**Date:** Wed, 3 Jun 2026 17:00:11 -0400 (EDT)
-**Type:** unknown | **Importance:** low
-
-96 *{box-sizing:border-box}body{margin:0;padding:0}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-height:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}.image_block img+div{display:none}sub,sup{font-size:75%;line-height:0}#converted-body .list_block ol,#converted-body .list_block ul,.body [class~=x_list_block] ol,.body [class~=x_list_block] ul,u+.bod
-
----
-
-
-## AgentMail Intel — 2026-06-04 09:01 UTC
-
-### Your field guide to spring. Save: $50/yr.
-**From:** The New York Times <nytimes@e.newyorktimes.com>  
-Navigate the new season with exclusive features that put you ahead of the curve. Save on the full Times experience today. ----------------------------------------------------------------- -- The New
-
-### Iran oil exports plunge as US blockade bites, Resilience and flexibility key to surviving disruption
-**From:** Seatrade Maritime News <seatrademaritimenews@go03.informamarkets.com>  
-If you are having trouble reading this email, read the online version <https://app.go03.informamarkets.com/e/es?s=1828732313&e=134669&elqTrackId=c1fadc6bcf84407ea7371fda7222da72&elq=ddabfc0d18e5458ea
-
-### 👉The Next Generation of Organized Crime in Mexico
-**From:** InSight Crime <info@insightcrime.org>  
-https://insightcrime.org?mc_cid=a990b0f132&mc_eid=UNIQID https://www.linkedin.com/company/insight-crime/?mc_cid=a990b0f132&mc_eid=UNIQID https://x.com/InSightCrime?mc_cid=a990b0f132&mc_eid=UNIQID h
+### ISS Today: JNIM’s blockade tactics threaten West Africa’s trade corridors
+**From:** The Institute for Security Studies <webmaster@issafrica.org>  
+4 June 2026 [1] JNIM’s blockade tactics threaten West Africa’s trade corridors Recent terror attacks across Mali have intensified JNIM’s blockades of vital transport routes conne
