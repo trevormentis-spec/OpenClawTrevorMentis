@@ -1,40 +1,17 @@
-# HEARTBEAT.md — Trevor periodic collection cycle
+# HEARTBEAT.md — Dormant Mode
 
-Trevor runs a full collection cycle on heartbeat.
-Each fire: run one phase, report, rotate to next phase.
-Goal: every source pulled at least once per day.
+Trevor runs no heartbeat cycles in dormant mode. All autonomous cycles, health checks, source discovery, and collection rotation are disabled.
 
-## Phases (rotate through; one per heartbeat fire)
+## What happens
 
-- [ ] Phase A — RSS feed health audit (test all 260+ feeds, flag dead/slow)
-- [ ] Phase B — Source discovery (find new RSS/Substack feeds for gap regions)
-- [ ] Phase C — Source pruning (remove dead feeds, add replacements from discovery)
-- [ ] Phase D — Collection state + cost snapshot + brain reindex
-- [ ] Phase E — Geopolitics RSS digest (keyword-filtered, 6h window, saves to exports/rss-digest/)
+- Brief deliveries fire on their cron schedule (LEO 09:00 PT daily, DC 08:00 PT daily, RDX 08:00 PT Monday)
+- AgentMail inbox sweep fires every 2h
+- Everything else is disabled
 
-After all phases complete, cycle resets. Each phase contributes to a continuous improvement loop:
-test → discover → add → prune, keeping the feed list healthy and coverage balanced.
+## If you receive a heartbeat wake
 
-After all phases complete, cycle resets.
+Reply with NO_REPLY and continue. The dormant-mode heartbeat is a no-op.
 
 ## State
 
-State file: memory/heartbeat-state.json
-This file tracks which phase to run next and when the last full
-cycle completed.
-
-## Priority
-
-If any phase fails, log the failure and continue to next fire.
-Do not stop the cycle on non-critical failures.
-
-## Full cycle override
-
-bash scripts/collection-cycle.sh  # runs ALL phases immediately
-
-## Phase E — Geopolitics RSS Digest
-
-```bash
-bash scripts/rss-digest-heartbeat.sh
-# Output: exports/rss-digest/YYYY-MM-DD.md
-```
+State file: `memory/heartbeat-state.json` — archived at `archive/dormant-2026-06-02/heartbeat-state.json`.
