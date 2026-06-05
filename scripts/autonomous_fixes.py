@@ -114,11 +114,15 @@ def fix_delivery_retry(state: dict) -> None:
 
         if not delivered_today:
             log("Today's brief not found in sent mail — retrying delivery")
+            deliver_script = REPO / "scripts" / "deliver_brief_email.py"
+            if not deliver_script.exists():
+                # Fallback: try the same script via python -m
+                deliver_script = REPO / "scripts" / "deliver_brief_email.py"
+            if not deliver_script.exists():
+                alert("🔴 Delivery script not found at scripts/deliver_brief_email.py")
+                return
             result = subprocess.run(
-                ["python3", str(REPO / "skills" / "daily-intel-brief" / "scripts" / "deliver_text_brief.py"),
-                 "--working-dir", str(brief_dir),
-                 "--to", "roderick.jones@gmail.com",
-                 "--from", "trevor_mentis@agentmail.to"],
+                ["python3", str(deliver_script), "--send"],
                 capture_output=True, text=True, timeout=30,
             )
             if result.returncode == 0:
