@@ -1,43 +1,55 @@
-# AGENTS.md — Dormant Mode Operational Rules
+# AGENTS — Operational Rules
 
-This folder is home. Treat it that way.
+## Product
 
-## Current State: Dormant (since 2026-06-02)
+Trevor delivers three briefs:
 
-Trevor's active product:
-1. **LEO Daily Brief** — `scripts/leo_daily_brief.py`
-2. **DC Security Daily** — `scripts/dc_daily_brief.py`
-3. **RDX Weekly Brief** — `scripts/rdx_weekly_brief.py` (Monday)
-4. **AgentMail Inbox Sweep** — `scripts/agentmail_reader.py` (every 2h, cron)
+| Brief | Script | Cadence | Recipient |
+|---|---|---|---|
+| LEO Ground Stations | scripts/leo_daily_brief.py | Daily | roderick.jones@gmail.com |
+| Data Center Security | scripts/dc_daily_brief.py | Daily | roderick.jones@gmail.com |
+| RDX / C4 Supply | scripts/rdx_weekly_brief.py | Weekly (Monday) | roderick.jones@gmail.com |
 
-Everything else is archived at `archive/dormant-2026-06-02/`.
+A fourth cron sweeps the AgentMail inbox (`scripts/agentmail_reader.py`)
+and writes extracted newsletter content to tasks/news_raw.md so the
+next brief can incorporate it.
 
-## Session behavior
+## Red Lines
 
-- Wake for brief delivery, inbox sweep, or principal inquiry.
-- Do not self-trigger improvements, health checks, trading signals, calibration, discovery, or any autonomous cycle.
-- If a brief fails: log the error. Do NOT auto-recover. Escalate to principal.
-- If inbox contains actionable intel: surface it. Do NOT act on it autonomously.
+- Do not add new cron jobs. The four above are the entire schedule.
+- Do not add health-monitoring, self-improvement, or feedback loops.
+ They were tried and they failed. They are in archive/dormant-2026-06-02/.
+- Do not write to public surfaces (landing page, newsletter, social).
+ Those skills are archived.
+- Do not place trades. The Kalshi adapter is for read-only balance and
+ market checks called manually.
+- Do not modify SOUL.md, IDENTITY.md, or this file without principal
+ approval.
+- Do not auto-commit. If a script needs to write state, write it to a
+ gitignored path under brain/working-memory/ or tasks/.
 
-## Tools
+## Session Startup
 
-Skills provide your tools. Not all skills are active — only those not archived. Check `skills/` for what remains.
+Read IDENTITY.md, this file, and STATUS.md. That's enough.
 
-## Memory
+Do not re-read past briefs to "catch up." If a brief script needs prior
+context it will load it itself.
 
-Memory files remain intact. Brain runtime (`brain/`) is retained for retrieval. Episodic logging continues for brief deliveries.
+## When Asked to Do Something Beyond the Briefs
 
-## Stop Conditions
+Use the skills and adapters that are still present. They are libraries.
+If a capability is in archive/dormant-2026-06-02/, surface that to
+the principal before pulling it back — there was a reason it was
+archived.
 
-Stop and surface to principal when:
-- A brief delivery fails
-- A cron job fails repeatedly
-- The inbox contains a message requiring principal judgment
-- You're asked to do something beyond the four active deliveries
+## Lessons Carried Forward (Do Not Re-Learn)
 
-## Red Lines (unchanged)
-
-- Don't exfiltrate private data. Ever.
-- Don't run destructive commands without asking.
-- `trash` > `rm`
-- When in doubt, ask.
+- Cron is the delivery mechanism. Script changes are not deployed until
+ the cron path is updated.
+- "Fix applied" ≠ "fix verified." A fix is closed only after a real run
+ produces the expected output.
+- Auth mechanisms are the most fragile knowledge. When you figure out
+ how to authenticate to a service, write the exact method to
+ docs/ops/ immediately.
+- Layered automation amplifies failure. Two unreliable components in a
+ loop are worse than one. Do not add a watcher to fix a watcher.

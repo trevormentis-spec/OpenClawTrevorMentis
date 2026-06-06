@@ -1,59 +1,78 @@
-# Archive — Dormant Mode 2026-06-02
+# Dormant-Mode Archive — 2026-06-02
 
-## Decision
+Everything in this directory was archived from active use during the
+2026-06-02 dormant-mode triage. Nothing was deleted; everything is
+recoverable.
 
-Per principal directive (Roderick Jones, 2026-06-02), Trevor's operational
-scope has been reduced to three brief deliveries and one inbox sweep.
-Everything else — autonomy loops, health monitoring, trading infrastructure,
-publishing pipelines, skill generators, signal boards — has been moved here.
+## Why this happened
 
-Nothing has been deleted. Every file is recoverable by `git mv` back to its
-original path.
+Trevor accumulated control systems faster than reliability. By
+2026-06-02 he had:
 
-## Previous product surface (pre-2026-06-02)
+- 15+ health-monitoring systems watching each other
+- 5+ feedback loops (calibration, I&W, reasoning, autonomy tracker,
+  weekly meta-review) silently adjusting each other
+- An autonomous trading desk (philby) with $0.24 balance and 276
+  recent insufficient_balance failures
+- A Signal Board, an OSINT business plan, an OSINT product launch
+  plan, a landing page deploy chain, a Buttondown newsletter, social
+  posting across 6 platforms — none of which the principal asked for
+- A daily brief pipeline (`skills/daily-intel-brief/`) that hung on
+  model calls, produced empty BLUFs when it ran, and required
+  cron-timeout doubling/tripling to compensate
+- 313 commits in the 4 days before the triage, ~3/hour, almost all
+  auto: self-modifications
 
-Trevor ran:
-- Autonomous operation cycles (every 4h)
-- Health engine (every 15m / every 1h / every 6h)
-- Trading system (philby desks, Kalshi execution, Polymarket monitoring)
-- Daily Intel Brief (multi-stage pipeline with quality gate)
-- Social publishing (newsletter, Twitter/Farcaster cross-posting, landing page)
-- Calibration loops, postdiction tracking, I&W feedback
-- Dream / memory consolidation (daily)
-- Source discovery, feed health checks, narrative freshness
-- Signal board, OSINT plans, social posting protocol
-- Capability expansion, continuous improvement daemon
+The principal's actual need was three private briefs in his inbox.
 
-## What remains active
+## What was archived
 
-| Product | Script | Cadence (PT) |
-|---------|--------|-------------|
-| DC Security Daily | `scripts/dc_daily_brief.py` | Daily 08:00 |
-| LEO Daily Brief | `scripts/leo_daily_brief.py` | Daily 09:00 |
-| RDX Weekly Brief | `scripts/rdx_weekly_brief.py` | Monday 08:00 |
-| AgentMail Inbox Sweep | `scripts/agentmail_reader.py` | Every 2h |
+| Subdirectory | Contents |
+|---|---|
+| scripts/ | autonomy loops, health monitors, pivot artifacts (signal_board, postdict, behavioral_state, calibration_loop, iw_feedback_loop, reasoning_loop, weekly_meta_review, control-plane-health, health_engine, write-health-state, ...) |
+| skills/ | publishing/social/pivot skills (daily-intel-brief, skill-generator, genviral, newsletter, social-poster, cross-poster, landing-page-generator, content-marketing, visual_production, akashic-doc-analyzer, oraclaw-graph, ...) |
+| plans/ | osint-business-plan.md, osint-product-launch.md, social-posting-protocol.md |
+| philby-trader/, philby-desks/, philby-scripts/ | autonomous prediction-market trading |
+| trading-system/ | autonomous trading orchestration (paper_fill, daily_reconciliation, edge, exit, guardrails, llm, intel, audit, calibration, tests, config) |
+| root-artifacts/ | philby-brief.html, philby-dc.html, philby-hero.jpg |
 
-## How to re-activate archived components
+## What was kept active
 
-1. `git mv archive/dormant-2026-06-02/<path> <original-path>`
-2. Re-enable the corresponding OpenClaw cron job
-3. Check `config/` for any routing or budget config that was also archived
+Repository root for the active product. In particular:
 
-## Archive layout
+- The three brief scripts (`scripts/leo_daily_brief.py`,
+  dc_daily_brief.py, `rdx_weekly_brief.py`)
+- The inbox sweep (`scripts/agentmail_reader.py`)
+- All API adapters and .env (untouched)
+- All skills not listed above
+- trading-system/execution/kalshi_adapter.py and gated_client.py —
+  the Kalshi pull capability, callable manually
+- analyst/, brain/, config/topics/ — unchanged
+- The source inventories and entity tables for LEO and RDX — these
+  represent real analytical scaffolding worth keeping
 
-```
-archive/dormant-2026-06-02/
-├── brain/            — autonomous state, calibration directives, collection state, dead feeds, etc.
-├── health/           — health alerts, health dashboard, infra alert state, QC alerts
-├── pivot-artifacts/  — signal board, indicator boards, polymarket artifacts, philby HTML/images
-├── plans/            — OSINT business plan, product launch, social posting protocol
-├── root-artifacts/   — philby-brief.html, philby-dc.html, philby-hero.jpg
-├── scripts/          — all ~200 scripts except the 6 brief/inbox/dependency scripts
-├── skills/           — 22 archived skills (trading, publishing, genviral, etc.)
-├── trading-system/   — full philby + trading-system except kalshi adapter
-├── trading/          — philby trader calibration stamp
-├── publishing/       — (empty, reserved)
-├── .dreams/          — short-term recall, events
-├── heartbeat-state.json
-└── llm-routing-log.jsonl
-```
+## Pulling something back
+
+If a capability needs to come back, surface that to the principal
+first. There was a reason it was archived. Then git mv it back —
+the import paths from the active scripts are unchanged so most
+things should work without modification.
+
+## The decision tree, recorded
+
+The triage went through these decisions:
+
+1. Keep all API access and adapters. The wiring was the hard part.
+2. Keep skills accessible. They are a library.
+3. Briefs deliver via the existing per-beat scripts, not the broken
+   multi-stage pipeline.
+4. Newsletter inbox sweep stays — useful, contained, single-purpose.
+5. Calibration / Sherman Kent / postdiction loop dropped — 3% accuracy
+   over months said it wasn't actually serving the product.
+6. Brain memory stays available but no autonomous reindexing — manual
+   invocation only.
+7. Trading: Kalshi adapter stays as a library; autonomous trader gone.
+
+Repo size before triage: 107M, ~2000 tracked files. After: roughly
+half that, with the heavy lifting being directory moves rather than
+deletions.

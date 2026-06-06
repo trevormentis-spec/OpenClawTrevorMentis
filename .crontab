@@ -1,21 +1,33 @@
 # ========================================================================
-# Trevor Crontab — Dormant Mode (since 2026-06-02)
-# ========================================================================
-# Active crons are managed via OpenClaw cron registry.
-# This file serves as documentation of what's running.
-# All autonomy loops, health checks, trading, publishing, and
-# self-improvement crons have been disabled.
-# Archives at: archive/dormant-2026-06-02/
+# Trevor Crontab — dormant mode (2026-06-02)
+#
+# Four jobs. Do not add more without principal approval.
+# This file is the single source of truth — also push the same entries
+# to the OpenClaw cron registry. If they diverge, this file wins.
 # ========================================================================
 
-# ── DC Security Daily Brief (08:00 PT) ──
-# OpenClaw cron ID: f5fe6ef6-f1e3-4f2b-8b25-f4f0e7239d8d
+# ── Inbox sweep (hourly at :05) ─────────────────────────────────────────
+# Pulls newsletter/inbox content into tasks/news_raw.md for the next brief.
+5 * * * * cd /home/ubuntu/.openclaw/workspace && python3 scripts/agentmail_reader.py --max 20 --save
 
-# ── LEO Daily Brief (09:00 PT) ──
-# OpenClaw cron ID: 5026ed81-5d51-4fa9-9a16-bf62dd475ac6
+# ── LEO Ground Stations brief (daily at 13:00 UTC = 06:00 PT) ───────────
+0 13 * * * cd /home/ubuntu/.openclaw/workspace && python3 scripts/leo_daily_brief.py
 
-# ── RDX Weekly Brief (Monday 08:00 PT) ──
-# OpenClaw cron ID: 0242e59b-cd1e-4fc8-a36f-b741ca198680
+# ── DC Security brief (daily at 13:30 UTC = 06:30 PT) ───────────────────
+30 13 * * * cd /home/ubuntu/.openclaw/workspace && python3 scripts/dc_daily_brief.py
 
-# ── AgentMail Inbox Sweep (every 2h) ──
-# OpenClaw cron ID: f082ad3a-f5fd-47c7-afdb-a6c55a8a64c5
+# ── RDX / C4 Supply brief (weekly Monday at 15:00 UTC = 08:00 PT) ───────
+0 15 * * 1 cd /home/ubuntu/.openclaw/workspace && python3 scripts/rdx_weekly_brief.py
+
+# ========================================================================
+# Disabled — kept here for reference. DO NOT RE-ENABLE without principal approval.
+# These were the cause of cron timeouts, repo churn, and 50/100 SICK health.
+# ========================================================================
+# */10 * * * * scripts/runtime-health.sh
+# */5 * * * * skills/kalshi-trader/scripts/cron-monitor.sh # autonomous trading
+# 30 */4 * * * python3 scripts/autonomous_cycle.py --all # self-improvement loop
+# 0 12 * * * scripts/daily-text-brief.sh # broken multi-stage pipeline
+# 15 */6 * * * scripts/runtime-report.sh
+# 45 */6 * * * python3 skills/rss-feed-digest/scripts/rss_digest.py
+# 0 2 * * * python3 -m execution.daily_reconciliation # autonomous trading
+# 0 3 * * * python3 brain/scripts/brain.py reindex # brain reindex; manual only now
