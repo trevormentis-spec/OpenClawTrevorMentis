@@ -1,0 +1,16 @@
+label: Narrative and literary nonfiction
+description: Personal essays, reported narratives, criticism, and literary nonfiction.
+version: "1.0"
+weights:
+  rhetorical_fit: 7
+  motive: 9
+  controlling_idea: 8
+  development: 8
+  support: 12
+  complexity: 7
+  macrostructure: 10
+  paragraph_cohesion: 7
+  sentence_craft: 12
+  diction: 10
+  voice_ethos: 7
+  conventions: 3

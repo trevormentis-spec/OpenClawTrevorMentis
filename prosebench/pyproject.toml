@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prosebench"
+version = "0.1.0"
+description = "Transparent, rubric-driven prose assessment and controlled revision."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Roderick" }]
+keywords = ["writing", "prose", "assessment", "revision", "rubric", "openai", "codex"]
+dependencies = [
+  "pydantic>=2.10,<3",
+  "python-dotenv>=1.0,<2",
+  "pyyaml>=6.0,<7",
+  "rich>=13.9,<15",
+  "typer>=0.15,<1",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=2.15,<3"]
+dev = ["pytest>=8.3,<10"]
+
+[project.scripts]
+prosebench = "prosebench.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["prosebench*"]
+
+[tool.setuptools.package-data]
+prosebench = ["rubric_data/*.yaml"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]

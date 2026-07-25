@@ -1,0 +1,16 @@
+label: Academic argument
+description: Evidence-based analytical or scholarly prose.
+version: "1.0"
+weights:
+  rhetorical_fit: 8
+  motive: 8
+  controlling_idea: 10
+  development: 12
+  support: 10
+  complexity: 7
+  macrostructure: 10
+  paragraph_cohesion: 8
+  sentence_craft: 10
+  diction: 7
+  voice_ethos: 5
+  conventions: 5

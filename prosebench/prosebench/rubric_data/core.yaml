@@ -1,0 +1,121 @@
+version: "1.0"
+criteria:
+  - id: rhetorical_fit
+    label: Rhetorical fit
+    question: Does the prose do the right kind of work for its intended reader, purpose, genre, and situation?
+    anchors:
+      "4": Choices are deliberate, audience-aware, genre-appropriate, and mutually reinforcing.
+      "3": The prose is effective for its situation with minor localized mismatches.
+      "2": Purpose is visible, but audience assumptions, genre, tone, or selection are uneven.
+      "1": The prose is mostly generic, mismatched, or template-driven.
+      "0": The response is fundamentally off-task or cannot be evaluated for the assigned situation.
+
+  - id: motive
+    label: Motive, problem, or stakes
+    question: Why does this piece need to exist for this reader now?
+    anchors:
+      "4": A consequential problem, tension, need, or dramatic pressure generates the whole piece.
+      "3": The stakes are clear and relevant, with minor underdevelopment.
+      "2": An interesting subject is present, but the stakes remain generic or intermittently connected.
+      "1": The topic is announced without a real question, tension, need, or pressure.
+      "0": No meaningful motive or stakes can be identified.
+
+  - id: controlling_idea
+    label: Controlling idea, claim, or tension
+    question: What gives the piece direction and organizes its major choices?
+    anchors:
+      "4": A specific, consequential, appropriately qualified center organizes and develops across the piece.
+      "3": The direction is clear and mostly sustained.
+      "2": A recognizable center exists but is broad, predictable, split, or inconsistently sustained.
+      "1": The prose has competing or vague centers that do not guide development.
+      "0": No controlling direction can be identified.
+
+  - id: development
+    label: Development, reasoning, or narrative movement
+    question: Does the piece earn its effects and conclusions rather than merely announcing them?
+    anchors:
+      "4": The chain of reasoning, interpretation, causation, or narrative movement is convincing and fully developed.
+      "3": Development is effective with minor gaps or compressed steps.
+      "2": Meaningful development is mixed with summary, assertion, repetition, or logical leaps.
+      "1": Conclusions or effects are mostly announced without adequate development.
+      "0": Development is absent, incoherent, or contradictory.
+
+  - id: support
+    label: Support, evidence, and concrete particulars
+    question: Has the writer supplied the material needed to make the prose credible, intelligible, or vivid?
+    anchors:
+      "4": Support is relevant, sufficient, representative, traceable where required, and productively integrated.
+      "3": Support is effective with limited thinness, repetition, or integration problems.
+      "2": Relevant support exists but remains thin, abstract, repetitive, or underinterpreted.
+      "1": Material claims or effects rely primarily on unsupported assertion or generic detail.
+      "0": Support is absent, materially false, fabricated, or unusable.
+
+  - id: complexity
+    label: Complexity, qualification, and counterpressure
+    question: Does the prose acknowledge genuine difficulty without dissolving into indecision or false balance?
+    anchors:
+      "4": Alternatives, limits, ambiguity, counterarguments, and confidence are handled precisely and proportionately.
+      "3": Complexity is treated fairly with minor simplification.
+      "2": The piece gestures toward complexity but does not integrate it, or hedges without clarifying scope.
+      "1": The prose relies on false certainty, token objections, caricature, or evasive qualification.
+      "0": Material contradiction or distortion prevents a responsible judgment.
+
+  - id: macrostructure
+    label: Macrostructure and sequence
+    question: Does the order of the whole piece help the reader think, act, or experience the material?
+    anchors:
+      "4": Sequence, pacing, proportion, and ending arise from the task and guide the reader with strong control.
+      "3": The architecture is effective with minor issues of placement or proportion.
+      "2": The sequence is understandable but partly arbitrary, repetitive, delayed, or formulaic.
+      "1": Major ideas or events are poorly ordered and the structure obstructs comprehension.
+      "0": No usable progression can be identified.
+
+  - id: paragraph_cohesion
+    label: Paragraph and section cohesion
+    question: Does each unit perform a clear function and move information intelligibly to the next unit?
+    anchors:
+      "4": Units have distinct purposes, sufficient development, and meaningful conceptual transitions.
+      "3": Cohesion is effective with a few overloaded, thin, or abrupt units.
+      "2": Most units are intelligible, but several are underdeveloped, overloaded, mechanically linked, or repetitive.
+      "1": Breaks and transitions do not reliably represent changes in meaning or function.
+      "0": Paragraph or section organization makes the prose unusable.
+
+  - id: sentence_craft
+    label: Sentence clarity, emphasis, and rhythm
+    question: Do sentences carry thought accurately and direct the reader's attention?
+    anchors:
+      "4": Syntax, emphasis, complexity, and rhythm are controlled and suited to the subject and genre.
+      "3": Sentences are clear and effective with minor localized friction.
+      "2": The prose is generally readable but repeatedly ambiguous, monotonous, choppy, or overpacked.
+      "1": Persistent sentence-level problems substantially burden the reader.
+      "0": Sentence structure prevents reliable recovery of meaning.
+
+  - id: diction
+    label: Diction, precision, and economy
+    question: Are the words exact, proportionate, and necessary for this reader and purpose?
+    anchors:
+      "4": Diction is precise, concrete where needed, economical without flattening nuance, and appropriately specialized.
+      "3": Word choice is effective with minor abstraction, redundancy, cliché, or register mismatch.
+      "2": Meaning is available, but recurring inflation, vagueness, abstraction, or imprecise variation weakens it.
+      "1": Word choice repeatedly obscures, distorts, or decorates instead of communicating.
+      "0": Diction materially prevents or falsifies meaning.
+
+  - id: voice_ethos
+    label: Voice, ethos, and originality of perception
+    question: Is there an accountable intelligence behind the prose whose judgments fit the genre?
+    anchors:
+      "4": The prose demonstrates earned confidence, intellectual honesty, recognizable priorities, and non-interchangeable perception.
+      "3": The voice and ethos are credible and appropriate with minor generic or inconsistent moments.
+      "2": The prose is competent but generic, unevenly positioned, or reliant on borrowed authority.
+      "1": The stance is theatrical, imitative, falsely intimate, promotional, or difficult to trust.
+      "0": Fabricated experience, gross misrepresentation, or absence of accountable judgment invalidates the dimension.
+
+  - id: conventions
+    label: Conventions, accessibility, and presentation
+    question: Do linguistic and presentational choices help the intended reader enter, understand, and use the work?
+    anchors:
+      "4": Relevant conventions, citation, formatting, language variety, and accessibility are controlled and purposeful.
+      "3": Presentation is effective with minor inconsistencies or friction.
+      "2": Local patterns of error or design create recurring but repairable obstacles.
+      "1": Conventions and presentation substantially obstruct use or credibility.
+      "0": The document cannot be reliably read, navigated, or interpreted in its intended context.
