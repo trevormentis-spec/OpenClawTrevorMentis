@@ -1,0 +1,16 @@
+label: Professional and expository prose
+description: Memos, reports, explainers, recommendations, and decision-oriented writing.
+version: "1.0"
+weights:
+  rhetorical_fit: 12
+  motive: 6
+  controlling_idea: 10
+  development: 10
+  support: 8
+  complexity: 5
+  macrostructure: 14
+  paragraph_cohesion: 8
+  sentence_craft: 8
+  diction: 10
+  voice_ethos: 4
+  conventions: 5
