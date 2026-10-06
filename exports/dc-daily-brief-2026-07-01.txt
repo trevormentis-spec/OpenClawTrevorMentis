@@ -1,0 +1,44 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-07-01
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+Grid interconnection queues and transformer supply chains are the single greatest constraint on data center expansion. PJM’s 122 GW backlog — a 4–6 year gate for new builds — merges with 18–24 month lead times on >50 MVA transformers, directly threatening timelines for the 1 200 MW AWS Ohio campus and any large-scale additions in Northern Virginia. Without relief, expect more projects to pause at the permit stage and colocation pricing to tighten across Tier-1 US markets by Q4.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No active cable cuts or maintenance outages reported across the 694 monitored subsea systems. Landing stations serving the three largest US clusters — Virginia Beach, New York/New Jersey, and the Los Angeles Basin — remain fully operational. The normal summer pattern of anchor dragging and trawler incidents has not yet materialized. 1917 landing stations globally, but the Northern Virginia corridor’s 15+ cable concentration makes it the most single-point-of-failure nexus. Maintain heightened watch on the Atlantic routes as tropical activity picks up.
+
+═══ POWER & GRID ═══
+Every high-risk facility in the registry (all at 56/100) is flagged for grid-driven exposure — Equinix Ashburn, Dallas, San Jose, Chicago, Los Angeles, Newark, and New York’s carrier hotels. The proximate cause is PJM and CAISO capacity scarcity, compounded by interconnection queues that have become de facto moratoriums. ERCOT (Houston, Dallas) is running a slightly healthier reserve margin but Texas legislative uncertainty around large-load connections is rising. Wholesale day-ahead prices in PJM have trended 12–15% above five-year seasonal averages; no spike events yet, but structural strain is baked in. Transformer lead times (18–24 months) and switchgear (12–18 months) make this a multi-year squeeze, not a summer-only problem.
+
+═══ NATURAL HAZARD WATCH ═══
+Atlantic hurricane season is five weeks old and the main development region is warming. Miami (NOTA), Houston (HOU2), and the Ashburn cluster (remnant flooding potential) are the logical Tier-1 concerns. No named storms threatening. On the West Coast, wildfire risk is elevated for San Jose and Los Angeles clusters; CalFire’s early-season activity is above the 10-year average. Earthquake risk across California is background — no anomalous seismicity, but the Hayward Fault runs within 15 miles of Equinix SV1/SV5/SV10. No flood watches active in Chicago or Frankfurt.
+
+═══ PHYSICAL SECURITY ═══
+No protests, fence-line incidents, or construction disruptions affecting major data center corridors in the reporting period. The lone exception is routine alerting around the New York carrier hotels (60 Hudson, 111 8th Ave) — access control remains tight due to fiber-build contractor activity, but no breaches. Satellite monitoring of perimeters at the 25 Tier-1 sites returns no activity anomalies.
+
+═══ CLOUD & NETWORK ═══
+No major provider outages. AWS, Azure, GCP, and OCI status dashboards show all regions operational. Global fiber backbone scans indicate normal jitter and latency on the major transcontinental routes. The only signal of note is increased backhaul traffic on the U.S. east–west routes, consistent with summer content delivery loads — not disruptive, but worth watching if combined with heat-induced fiber attenuations.
+
+═══ ASSET WATCH ═══
+New construction pipeline stays at 1 450 MW:
+- AWS us-east-3 (Ohio) 1 200 MW moved to “permit filed” — the largest single-campus filing to date. Timeline to power uncertain given PJM queue.
+- AirTrunk SYD2 (150 MW) announced — reinforces Sydney’s hyperscale status.
+- Digital Realty FRA14 (35 MW) under construction — on schedule.
+- Equinix NY9 (25 MW) now operational, adding capacity in the Manhattan/Newark edge.
+- CyrusOne HOU2 (40 MW) under construction, targeting Q4 energization if generator delivery holds.
+
+Risk scores unchanged. The “MODERATE” flag on Northern Virginia remains the most consequential rating, driven entirely by PJM grid fragility.
+
+═══ MARKET SIGNALS ═══
+Colocation pricing in Ashburn and Dallas is firming; asking rates on 250 kW+ deployments have risen 4–6% QoQ. Leasing velocity in secondary markets (Ohio, Phoenix) is accelerating as hyperscalers seek to bypass grid-constrained primary hubs. Generator and switchgear allocations are now being tied to 24-month power delivery commitments by manufacturers — supply chain risk is shifting from production to allocation politics. Lithium-ion UPS supply is healthy, but VRLA lead-acid inventory remains tight, especially for replacement cycles. No distress pricing detected.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-07-01

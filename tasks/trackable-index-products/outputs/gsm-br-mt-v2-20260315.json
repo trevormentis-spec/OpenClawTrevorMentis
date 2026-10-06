@@ -1,0 +1,72 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-03-15",
+  "regions": [
+    {
+      "region_id": "BR-MT",
+      "region_name": "Brazil Mato Grosso",
+      "crops": [
+        "soybeans",
+        "corn"
+      ],
+      "ndvi": {
+        "current": 0.3834,
+        "median": 0.3834,
+        "std": 0.0,
+        "samples": [
+          {
+            "name": "MT South",
+            "bbox": [
+              -56.0,
+              -16.0,
+              -55.5,
+              -15.5
+            ],
+            "ndvi": 0.38340221603428476,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 50.0,
+        "band": "NEAR_NORMAL",
+        "years": 4,
+        "values": [
+          0.4263,
+          0.4374,
+          0.3453,
+          0.3463
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0752,
+        "prior": 0.3082,
+        "dir": "INCREASING",
+        "date": "2026-02-13"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "CONAB"
+        ]
+      },
+      "confidence": {
+        "nato": "B1",
+        "source": "B",
+        "info": "1"
+      },
+      "alert": false,
+      "status": "OK"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

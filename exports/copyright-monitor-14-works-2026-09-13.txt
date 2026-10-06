@@ -1,0 +1,78 @@
+COPYRIGHT-MONITORING PROBE — RESULTS
+14 works submitted by Roderick | run 2026-09-13 | Victoria/OpenClaw
+Method: Internet Archive advancedsearch + metadata, direct file download + local content
+verification (pdfinfo/pdftotext, title/author/pages/text), Google Books/OpenLibrary,
+HathiTrust, publisher sites. No paywall/CAPTCHA/access-control bypass was used.
+
+===================== VERIFIED FULL PUBLIC COPIES (downloadable) =====================
+
+1) War in European History — Michael Howard
+   A. https://archive.org/details/in.ernet.dli.2015.117903
+      direct: https://ia800909.us.archive.org/28/items/in.ernet.dli.2015.117903/2015.117903.War-In-European-History_text.pdf
+      [171 pp, 7.9 MB; text-verified; DLI scan, free]
+   B. https://archive.org/details/war-in-european-history-updated-0199546193-9780199546190_compress
+      [updated edition, 186 pp, 9.8 MB; text-verified; opensource collection]
+
+2) Titan: The Life of John D. Rockefeller, Sr. — Ron Chernow
+   https://archive.org/details/titan-the-life-of-john-d.-rockefeller-ron-chernow_202512
+   PDF: https://archive.org/download/titan-the-life-of-john-d.-rockefeller-ron-chernow_202512/Titan%20-%20the%20life%20of%20John%20D.%20Rockefeller%20-%20Ron%20Chernow.pdf
+   EPUB: same folder, .epub variant
+   [836 pp PDF (51.8 MB) / EPUB 20.7 MB; meta title "Chernow, Ron"; opensource collection]
+
+3) The Prize: The Epic Quest for Oil, Money & Power — Daniel Yergin
+   http://arnosworld.free.fr/sustainability/Daniel%20Yergin%20-%20The%20Prize%20-%20The%20Epic%20Quest%20for%20Oil,%20Money,%20&%20Power%20(1991).pdf
+   [945 pp, 20.1 MB; meta title/author "The Prize… / Daniel Yergin"; text-verified]
+   (secondary, partial: https://www.shellnews.net/wikipedia/THEPRIZE2.pdf = front matter only, 11 pp)
+
+4) The Stack: On Software and Sovereignty — Benjamin H. Bratton
+   A. https://kyl.neocities.org/books/%5BSOC%20BRA%5D%20the%20stack%20-%20on%20software%20and%20sovereignty.pdf
+      [727 pp, 5.2 MB; meta "The Stack… / Benjamin H. Bratton"]
+   B. https://archandai.org/wp-content/uploads/2020/10/benjamin-h-bratton-the-stack-on-software-and-sovereignty.pdf
+      [523 pp, 8.2 MB; same text]
+
+5) Charles VII — M. G. A. Vale
+   https://archive.org/details/bub_gb_6qwRJs3JkNIC
+   direct: https://archive.org/download/bub_gb_6qwRJs3JkNIC/bub_gb_6qwRJs3JkNIC.pdf
+   [288 pp, 20.7 MB; meta "Charles VII / Vale, M. G. A."; text-verified; americana]
+
+6) Histoire de Charles VII, Tome I (1407-1444) — Thomas Basin, ed./tr. Charles Samaran
+   https://archive.org/details/histoiredecharle00basi
+   direct: https://archive.org/download/histoiredecharle00basi/histoiredecharle00basi.pdf
+   [368 pp, 17.9 MB; text-verified; Boston Public Library scan]
+   Tome II (1445-1450): NOT found free (only lending-restricted copies).
+
+===================== NOT FOUND / OTHER =====================
+
+7) Ordonnances des Roys de France, 3e race, t. XIII (1782) — ordonnance 2 Nov 1439
+   Public domain; legitimately free. Gallica hosts the series but blocks automated
+   requests (HTTP 403), so the exact t.XIII ark was not auto-resolved. IA has vols
+   1/15/16/18 of the series (free), not t.13. NO unauthorized copy at issue.
+
+8) The Fiscal System of Renaissance France — Martin Wolfe — no free copy found
+   (reviews + retail only).
+
+9) Royal Taxation in Fourteenth-Century France — John Bell Henneman
+   dokumen.pub page shows full text/TOC but file is token-gated (unverified):
+   https://dokumen.pub/royal-taxation-in-fourteenth-century-france-the-development-of-war-financing-1322-1359-princeton-legacy-library-1443-0691051887-9780691051888.html
+
+10) Representative Government in Early Modern France — J. Russell Major — no free copy found.
+
+11) Antitrust and the Oil Monopoly — Bruce Bringhurst — IA copy is lending/print-disabled
+    (restricted); no free copy found.
+
+12) The Texas Railroad Commission — William R. Childs — no free copy found
+    (only IA lending-restricted + journal articles).
+
+13) Contamine, "Un regard sur le Recouvrement de Normendie (1450)…"
+    = chapter in La guerre en Normandie (XIe-XVe s.), eds. Curry & Gazeau, PUC, 2018.
+    Official page (bot-gated / not free): https://books.openedition.org/puc/11912
+
+14) "Article on the Recouvrement de Normendie source tradition" — Françoise
+    Michaud-Fréjaville: NO such article identified (GAP). Her published bibliography
+    (SIEFAR/Persée/Cairn) contains nothing on this text. Likely misattribution.
+
+===============================================================================
+TALLY: 7 works with verified full public copies (Howard, Chernow, Yergin, Bratton,
+Vale, Basin T.I; Howard has 2). 5 in-copyright academic books with no free copy
+located. 1 public-domain (Gallica, authorized). 1 chapter identified (paywalled).
+1 reference could not be identified (possible misattribution).

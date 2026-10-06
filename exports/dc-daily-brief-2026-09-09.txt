@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-09-09
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+No active service-impacting event in today's feed. The dominant risk is structural: US grid constraints are the sole risk driver for all eight highest-risk facilities—Equinix US carrier hotels in Ashburn, Dallas, San Jose, Chicago, LA, Newark, and New York. PJM's 122 GW interconnection queue plus 18–24 month transformer lead times make power delivery the most likely constraint on data center operations and expansion over the next 6–24 months. Satellite imagery is clean, but only 25 of 305 Tier 1 hyperscale hubs are monitored—a coverage gap that leaves the world's largest compute concentration under-watched.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new subsea cable outage, repair, or fault reports in today's registry: 694 cables, 1,917 landing stations. The highest-concentration US East Coast clusters—Northern Virginia and New York/New Jersey—remain heavily dependent on transatlantic subsea landings; any Mid-Atlantic landing fault would immediately stress the Ashburn and New York metro corridors. No congestion anomalies reported. Structural connectivity limits persist in island markets, but no active incident.
+
+═══ POWER & GRID ═══
+US grid strain is the top operational risk. PJM interconnection queue stands at 122 GW, with 4–6 year delays for new data center builds. Northern Virginia—the world's largest cluster—is rated MODERATE specifically because of PJM strain. All eight highest-risk facilities are US Equinix sites scoring 56/100 with driver=grid. Existing US hyperscale capacity is registered at 1,563 MW, but new demand is piling into queues behind grid constraints. Transformer lead time is the critical choke point: 18–24 months for >50 MVA units, and worsening. Flag: CA/NL/FR/JP/HK all show 0 MW hyperscale capacity in registry—treat as data lag, not actual zero.
+
+═══ NATURAL HAZARD WATCH ═══
+Atlantic hurricane season is at climatological peak in mid-September. Miami NOTA and the Gulf Coast/Houston corridor—including CyrusOne HOU2 under construction—are the highest watch items for tropical cyclone exposure; no active landfall in feed. California wildfire/earthquake exposure remains for San Jose and Los Angeles sites, but no active fire or seismic event reported. Sentinel-2 batch: 25/25 Tier 1 sites checked, no NDVI anomalies, ground disturbance, or flooding signature—clean. Coverage gap persists: only 25 of 305 hyperscale hubs are monitored.
+
+═══ PHYSICAL SECURITY ═══
+No access incidents, protests, or construction-related security events reported at major DC corridors in this batch. Watch items: Equinix Ashburn DC1-DC15 remains the densest single campus in the registry and the most consequential physical target. New York and Chicago carrier hotels carry elevated foot-traffic exposure due to multi-tenant carrier facilities. Construction at CyrusOne HOU2 and Digital Realty FRA14 increases perimeter complexity but has not produced incident data.
+
+═══ CLOUD & NETWORK ═══
+No active major cloud provider outage in feed. No fiber route cuts reported on the 513 terrestrial backbone routes. Geopolitical risk remains structural: Hong Kong/China is flagged as a non-grid risk driver—data sovereignty laws, export controls, and sanctions can shift traffic patterns without kinetic warning. Monitor AWS us-east-3: the 1,200 MW Ohio permit filing is a strategic expansion that could reroute cloud traffic and partially relieve Ashburn pressure if it clears interconnection—but it also creates a new critical node in Ohio.
+
+═══ ASSET WATCH ═══
+Pipeline stands at 1,450 MW. AWS us-east-3 Ohio (1,200 MW, permit_filed) dominates the queue and would materially rebalance US cloud capacity away from Virginia if built. AirTrunk SYD2 (150 MW, announced) expands Australia capacity. Digital Realty FRA14 (35 MW, under_construction) and CyrusOne HOU2 (40 MW, under_construction) are near-term additions. Equinix NY9 (25 MW, operational) is now live. No risk rating changes in this batch; top-risk list remains unchanged—all Equinix grid-constrained US sites.
+
+═══ MARKET SIGNALS ═══
+Transformer lead time is the single biggest supply chain constraint: 18–24 months for >50 MVA units and worsening. Switchgear sits at 12–18 months, generators at 8–12 months. Schneider Electric and Eaton both report extended switchgear delivery. Lithium-ion UPS battery supply is stable; lead-acid remains constrained. Expect colo pricing in core US hubs—Ashburn, Dallas, San Jose—to continue escalating as grid queue and procurement lead times limit new capacity. Secondary markets with available power headroom will gain pricing power. No direct colo pricing print in feed, but the supply chain signal is unambiguous.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-09-09

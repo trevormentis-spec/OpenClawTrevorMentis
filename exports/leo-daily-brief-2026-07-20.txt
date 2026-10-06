@@ -1,0 +1,46 @@
+========================================================================
+  LEO GROUND STATION DAILY — July 20, 2026
+========================================================================
+
+═ EXECUTIVE SUMMARY ═══
+
+Quiet week. The feeds are humming but the signals are weak—no new FCC earth-station licenses of LEO significance, empty ITU docket, and a job-post scan returning a single hit on a generic query. The launch manifest is stale (top five all had NET dates in early June and are presumably flown) and the Sentinel-2 API is down, zero sites imaged. The only vibrancy is in the market metrics: Starlink passed 10 M subscribers, runs 9,400+ satellites, and is projected to generate $11.8 B in 2025 revenue. That tempo demands ground-segment expansion, but our risk register shows Starlink already operates 38 sites—more than the next four operators combined—and no critical risks. So while the data flow has gaps, the physical layer looks stable.
+
+What to watch: First, the Chinese unknown payloads on Long March 6A/8 out of Taiyuan and Wenchang; these could be low-rate initial production for the Guowang or Hongyan broadband constellations, which would trigger a wave of ITU filings and ground-station procurement in Asia-Pacific. Second, the imagery outage must be fixed before we get blind-sided by undeclared construction. Third, Kuiper sits at only five sites in the register; if that number doesn’t climb soon, their 2026 service timeline is fiction. Recommend tasking Roderick to light a fire under the imagery feed and to task me a quick scrub of any Chinese state-owned ground-station contractor hiring.
+
+═══ FCC LICENSES ═══
+
+Nothing new. The 100-record pull is dominated by legacy GEO operators—Intelsat, Inmarsat, SES Americom, Mx1—and terrestrial fiber owners like Cogent and AT&T. The inclusion of Goonhilly Inc. and Calian Pacific Teleports is normal housekeeping. Denali 20020, LLC (Kuiper’s gateway subsidiary) appears with no new applications; they’ve had a handful of experimental and gateway licenses for months. No Starlink, OneWeb, or Telesat filings. If anything, this confirms that the FCC licensing ground for LEO earth stations has reached steady state: the incumbents have their sites built, and major new entrants aren’t filing through traditional Part 25 fixed-earth-station paths but through U.S.-market-access grants. Skip.
+
+═══ CONSTELLATION SIGNALS ═══
+
+The launch feed counts 357 upcoming missions, but the top five are all dated 3–7 June 2026, meaning they’ve likely burned and are no longer “upcoming” in any meaningful sense. Three were Starlink groups (17-47, 10-43, 17-43) aboard Falcon 9; two were Chinese unknowns on Long March 6A and 8. The “7 Starlink launches” total suggests four more Starlink missions are in the pipeline beyond those first three, likely to maintain the ~60-satellite-per-week replenishment rate. With 9,400+ satellites already on orbit and the constellation effectively operational, launch activity is just sustaining the shell, not expanding aggregate capacity. That means the ground segment is the limiting factor for Starlink’s subscriber growth, which the metrics say is still climbing (10M+ subscribers in Feb ’26, ~$11.8B revenue run rate). No ground-station construction surge yet correlates with that subscriber curve, implying they’re squeezing more throughput out of existing sites or laying fiber to gateway hubs we don’t see.
+
+The Chinese unknown payloads are the wildcard. The Long March 6A and 8 are medium-lift vehicles capable of deploying 30–60 smallsats each, settings consistent with early phase broadband test networks. No ITU filings and no earth-station license activity in Asia this week, so either the payloads are remote sensing, or the ground component is being built entirely within the domestic PLA/state-owned ecosystem, hidden from our feeds.
+
+═══ SITE & IMAGERY ═══
+
+Risk register holds at 240 total sites. Breakdown by risk: 6 High, 0 Critical, 34 Moderate, 27 Low, 13 Negligible. That’s unchanged from last month. The High-risk sites should be in Roderick’s notebook; they’re likely coastal or conflict-zone locations, but without a drill-down I can’t flag a new concern. By operator, Starlink dominates with 38 sites, followed by KSAT (15), OneWeb (10), Leaf Space (9), Kuiper (5), Telesat (3). The geographic spread is heavily North America (26) and Europe (18), with underweight in Asia (8), South America (6), Africa (5). That imbalance could become acute if Kuiper or Chinese constellations need equatorial gateway sites for low-latency interconnects.
+
+Imagery is a dead feed. `api_configured: false` means the Sentinel-2 connector didn’t authenticate or we’re over the rate limit. Zero of 10 sites queried returned data. This is a genuine risk because it leaves us blind to construction at sites on the High and Moderate risk lists. Without imagery, our “site register” is a paper exercise.
+
+═══ MARKET SIGNALS ═══
+
+Job postings: the query `ground station engineer hiring 2026` returned one hit, tagged “recent.” That’s noise. Either operators are not hiring through public channels, or they’ve finished staffing for the current build phase. The ITU feed is empty, meaning no new coordination requests for earth stations in the reporting window. That’s unusually quiet and may indicate a data ingestion failure; the ITU database doesn’t normally go weeks without a filing for NGSO systems. The market metrics confirm the sector is still in a growth arc: total ground station market $41.0B (2025) → $82.7B (2030), LEO GSaaS sub-market $1.72B (2024) → $5.33B (2033). Starlink’s numbers anchor that growth, but the broader GSaaS market ($520M→$2.49B) suggests other LEO operators are still small. No contradictory signals.
+
+═══ BOTTOM LINE ═══
+
+Tell Roderick that the ground station landscape is in stasis—no licensing movements, no site expansions, muted hiring. The biggest threat is a data integrity failure: stale launches, empty ITU, dead imagery. His priority should be restoring the Sentinel-2 pipeline and confirming the ITU crawler is still ingesting. For the watch list, add a trigger on Long March 6A/8 missions out of Taiyuan and Wenchang: if either transitions from “Unknown Payload” to a named communications constellation, we need to map the implied ground network footprint immediately, because Asia-Pacific ground capacity is where the next scramble will happen.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | July 20, 2026

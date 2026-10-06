@@ -1,0 +1,65 @@
+========================================================================
+  LEO GROUND STATION DAILY — September 14, 2026
+========================================================================
+
+1. EXECUTIVE SUMMARY
+
+The dominant change this cycle is terrestrial, not orbital. FCC data show 50 Kuiper-linked filings under the Denali 20020, LLC shell, with ten active C-band licenses certified 2026-09-10 across two US gateway clusters. That is a material ground buildout signal: Kuiper still shows only five assessed sites in the site register against a multi-thousand-satellite plan. The other big theme is risk coverage: the site register assesses 80 of 129 referenced sites (62.0%), leaving 49 unassessed. Market metrics remain internally inconsistent on GSaaS sizing, and imagery remains blind with API not configured.
+
+What it means: Kuiper is moving from paper constellation to physical gateway infrastructure faster than our register captures. The unassessed 49 sites mean our risk register currently understates exposure, especially if any high-risk or Kuiper-related sites are in the unassessed pool. Watch the reconciliation of FCC filings against the site register, the two Denali clusters, and the metrics owner's fix on GSaaS numbers.
+
+═══ SECTION ═══
+
+2. FCC LICENSES
+
+The FCC feed is dominated by Kuiper-linked activity. The kuiper_watch block counts 50 Kuiper-linked filings out of 100 total FCC records in this collection. Ten specific active filings are surfaced, all certified 2026-09-10 under three name variants of the known Amazon shell: DENALI 20020, LLC, Denali 20020, LLC, and Denali 20020. LLC (note the period variant, likely a data-entry irregularity).
+
+The ten licenses cluster into two physical sites:
+
+- Northeast US cluster: 41.201–41.202 N, 74.525–74.527 W; C-band 3,700–4,200 MHz; antenna gains 52.5–54.1 dBi; call sign WB81. Five filings.
+
+- Pacific Northwest cluster: 48.1466–48.1476 N, 119.6919–119.693 W; same C-band downlink band; antenna gains 44.2–55.9 dBi; call signs E000061, E191158, E920585. Five filings.
+
+Kuiper-linked filing count of 50 against only five assessed Kuiper sites in the site register signals the register is not yet capturing the full ground footprint. Kuiper has only 5 registered sites against a multi-thousand-satellite plan — ground buildout is the vector. The other licensees in the feed — AT&T, Calian, Cogent/Sprint, Goonhilly, Inmarsat, Intelsat, SES, TowerStream — are incumbents maintaining active registrations; nothing in this collection shows a step-change from them.
+
+═══ SECTION ═══
+
+3. CONSTELLATION SIGNALS
+
+Launch feed is fresh (collected 2026-09-14T13:00 UTC). The only completed event in the next-five window is O3b mPower 11-13 on Falcon 9, successful from Cape Canaveral on 2026-09-13. That is MEO communications, not LEO broadband, and likely lands on existing SES gateway infrastructure rather than triggering new LEO ground capacity demand. Upcoming launches are Vega-C Sentinel-3C/FLEX (Earth science), two Chinese unknown payloads on Zhuque-2E and Gravity-1, and a classified USSF-259 Falcon 9 from Vandenberg. None of these point to new LEO broadband ground station demand. Total upcoming across the feed is 363, but only one Starlink launch is listed, suggesting a quiet Starlink launch interval relative to the broader manifest. That does not indicate ground station contraction; it simply means this cycle's launch activity is not adding near-term LEO capacity stress.
+
+═══ SECTION ═══
+
+4. SITE & IMAGERY
+
+Risk register status: assessed 80 of 129 referenced sites, coverage 62.0%, leaving 49 unassessed. Risk breakdown of assessed sites: Critical 0, High 6, Moderate 34, Low 27, Negligible 13. Operator distribution: Starlink 38, KSAT 15, OneWeb 10, Leaf Space 9, Kuiper 5, Telesat 3. Geographic concentration: N. America 26, Europe 18, Asia 8, Oceania 7, South America 6, Africa 5, with smaller counts elsewhere. No critical-rated assessed sites is mildly reassuring, but with 38% of referenced sites unassessed and 6 high-risk assessed, the picture is incomplete.
+
+Imagery: Sentinel-2 yielded no findings. API is not configured; 10 sites were checked but zero returned data. This is a capability gap, not a clean bill. High-risk and unassessed sites cannot be remotely verified until the imagery feed is enabled.
+
+═══ SECTION ═══
+
+5. MARKET SIGNALS
+
+Jobs: the single active query "ground station engineer hiring 2026" returned one hit, marked recent. That is effectively no hiring pulse. ITU: empty. Either international coordination data is not being collected or there is no material ITU activity in this slice. Market metrics:
+
+- Total Ground Station Market: $41.0B (2025) to $82.7B (2030).
+- LEO GSaaS Sub-Market: $1.72B (2024) to $5.33B (2033).
+- Broader GSaaS Market: $520M (2024) to $2.49B (2033).
+- Starlink Subscribers: 10M+ (Feb 2026) to 14M (2030 est).
+- Starlink Revenue: $11.8B (2025 est).
+- Starlink Satellites: 9,400+ (Jan 2026) to 12,000–34,400.
+
+Metrics flag, restated verbatim: "GSaaS metric inconsistency — LEO GSaaS sub-market ($1.72B (2024)) is larger than the broader GSaaS market ($520M (2024)), which is logically impossible if the broader figure includes LEO. At least one
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | September 14, 2026

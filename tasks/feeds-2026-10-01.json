@@ -1,0 +1,913 @@
+{
+ "generated": "2026-10-01T14:00:09+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "[AINews] Gemini 4 Argon: GDM\u2019s answer to Astra/Fable, with 1M output",
+   "link": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+   "date": "Thu, 01 Oct 2026 06:45:05 GMT",
+   "text": "GDM last shipped a larger-than-Flash model in February ( 3.1 Pro ), and after successive incremental 3.x Flash versions and the big GDM management shakeup last month, the largest question for GDM was when they would catch up to peers who have in the meantime launched Fable and Astra class models. \n Well, Argon's here , with VERY respectable benchmarks (SOTA in 13 of 19 credible benchmarks)&#8230; but only accessible in limited cybersecurity preview, though access is promised \" as soon as possible \":\n \n We like the experimental Long Decode Continuation , which increases output tokens up to 1M as an industry first.\n \n AI News for 9/29/2026-9/30/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\n \n AI Twitter Recap Gemini 4 Argon: Google Returns to the Frontier \n Launch : Google DeepMind introduced Gemini 4 Argon for coding, enterprise knowledge work and cyber defense ( @GoogleDeepMind , @sundarpichai ).\n Availability : Access starts with government users and trusted cyber defenders in the Fairwind Program. Google says it will refine guardrails before opening access to developers, enterprises and consumers ( @Google , @demishassabis ).\n\n Output limit : Google cites an industry-leading 1M-token output limit, up from 64K ( @GoogleAI , @TheRundownAI ).\n Measurement note : Vals lists 262K max output. Artificial Analysis reached 1M output tokens through Long Decode Continuation, a new API feature that pauses long responses and resumes them across calls ( @ValsAI , @ArtificialAnlys ).\n\n \n Pricing : Standard pricing is $4/$20 per 1M input/output tokens. A 50% introductory discount brings it to $2/$10, with no end date announced. Cached input gets a 95% discount ( @_philschmid , @ArtificialAnlys ).\n\n \n Google's claimed results : Argon takes first place on 13 of 19 published benchmarks against GPT-6 Astra and Claude Opus 5.5. On DeepSWE it scores 77.9%, versus 74.2% for Opus 5.5 and 74.1% for Astra ( @TheRundownAI ).\n Internal deployments : Google reports that Argon agents freed more than 300 TiB of data-center memory and are migrating more than 800K lines of C/C++ kernel code to Rust ( @kimmonismus ).\n Video decoder : Agents replaced 32K lines of SIMD code with safe Rust, making the existing Rust port 2.7x faster with identical output.\n\n \n Research use : The team says internal agent loops built on Argon helped complete the CK conjecture ( @mirrokni ).\n\n \n Artificial Analysis evaluation : Argon scores 53 on the Intelligence Index, matching GPT-6 Astra (53) and edging GPT-6.1 Sol (52) ( @ArtificialAnlys ).\n Cost per task : At discounted pricing it costs $1.99 per task versus $3.26 for Astra; standard pricing would raise this to $3.98.\n Token use : The savings come from price, not efficiency. Argon averages 62K output tokens per task against Astra's 27K.\n\n \n Agentic work : It ranks #1 on AutomationBench-AA at 77.5% and scores 57% on Terminal Bench 4, behind Sonnet 5.5, Opus 5.5 and Astra.\n\n Hallucination : Its 15% rate on AA-Omniscience compares with 51% for Astra. The tradeoff is lower accuracy: 50% versus Astra's 63% ( @aipulseda1ly ).\n\n \n Vals evaluation : Argon is #1 on the Vals Index at 68.9%, at an average $15.68 per task ( @ValsAI , @ValsAI ).\n Coding : It built 30 Vibe Code Bench apps perfectly, against 25 for Opus 5 and 24 for Astra ( @ValsAI ).\n\n Terminal and security : Terminal-Bench 4.0 rose from 19.0% to 57.6%. It scores 70% on CyberBench proof-of-concept tasks and 100% on IOI 2024&#8211;2026 ( @ValsAI ).\n\n Efficiency : It uses about a quarter of Sonnet 5.5's output tokens on Vals Index tasks ( @ValsAI ).\n\n \n Arena and other evals : Argon is #1 in Text Arena at 1525 and #8 in Code Arena WebDev at 1679 ( @arena ).\n Agent Arena : It ranks #8 overall and #1 for steerability on a preliminary 3K sessions ( @arena ).\n\n PostTrainBench : It scores 45.3%, up from 21.99% for Gemini 3.1 Pro ( @karinanguyen ).\n\n \n Skepticism : Some observers questioned the published numbers.\n Legal benchmark : Argon's reported 19.6% on Harvey's legal benchmark trails Muse Spark 1.2's listed 25.42% ( @BlackHC ).\n\n Other critiques : Commentators raised possible preference-data benchmaxxing and objected to some figures, including DeepSWE ( @teortaxesTex , @teortaxesTex ).\n\n \n GPT-6.1 Sol and OpenAI's DevDay Agent Stack \n Independent evals : GPT-6.1 Sol is the new #1 on MathArena ( @j_dekoninck ).\n Code Arena : It ranks #3 on WebDev at 1759, 70 points above GPT-6 Sol for the same $2/$10 pricing ( @arena ).\n\n Cost per task : Artificial Analysis measures $0.72 per task at max effort, versus $3.26 for Astra and $1.04 for GPT-6 Sol ( @ArtificialAnlys ).\n Source of savings : Sol uses fewer turns and has a lower cache-read price ( @ArtificialAnlys ).\n\n \n Luna bug fix : OpenAI fixed an image-encoding bug, adding 1 Intelligence Index point to GPT-6 Luna.\n\n \n Ultrafast inference : OpenA",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week",
+   "link": "https://www.latent.space/p/devday-2026",
+   "date": "Wed, 30 Sep 2026 22:23:40 GMT",
+   "text": "Three months ago Dwarkesh, who has been posting incredible blogs and episodes about RL, posted a framing question for his video essay on RLVR which upset a lot of Computer Use folks:\n \n We are no strangers to learning in public and are no strangers to the stress of getting things wrong when you have a big platform. However, we were at Anthropic for the Computer Use launch , there for Claude Cowork with the first big podcast on it, organized the first Computer Use track at AIE presenting the state of the art, and were close to the OpenAI-Sky Software acquisition that now powers the complete domination of computer use that Codex enjoys today. This is why we're excited to bring you today's first guest, Ari Weinstein , cofounder of Sky and now leading all the amazing CUA progress that casuals might miss:\n \n Ari explains why Computer Use is now \"180 degrees different\" from where it was months ago, how agents are learning to debug and recover from failures, why combining screenshots with accessibility data, the DOM, Playwright, and generated code changes the speed equation, and why the next frontier is making agents literally superhuman at using software.\n \n OpenAI clones Jev In the second half, Nikunj Handa from OpenAI's API team breaks down the new developer stack: async tool calling, mid-turn steering, WebSockets, UltraFast inference, the Decisions API, prompt caching, pre-warming, compaction, and the Agents API . Given that we were the first Jev podcast , we particularly focus on the unusually fast sprint on the Decisions API:\n \n And why it is just a Luna wrapper for now but the team is motivated and egoless enough to clone what they consider to be good patterns.\n \n \n\n \n We discuss: Why OpenAI thinks Computer Use has changed dramatically in just the last few months\n\n Dots and what changes when every agent gets its own Linux computer \n\n Why Computer Use can now complete some tasks faster than the average human \n\n The path from human-level to \"literally superhuman\" computer use \n\n Why modern agents are much better at debugging and recovering from failure \n\n How screenshots, accessibility trees, the DOM, Playwright, and generated JavaScript work together\n\n App Shots and why they give models much richer context than ordinary screenshots\n\n Why Computer Use can close the loop between writing software and testing it \n\n Trust, permissions, and safety when agents can make payments and operate websites \n\n Async function calling and why models no longer need to stop reasoning while tools run\n\n Mid-turn steering, WebSockets, and the architecture behind more responsive agents \n\n UltraFast inference and how OpenAI is pushing frontier models toward much lower latency\n\n The rapid internal story behind the Decisions API \n\n Why Decisions API is more than structured outputs at low latency \n\n GPT Live, fast tool calling, and real-time computer control \n\n How OpenAI is already using Decisions API for support classification and internal workflows \n\n Longer prompt caching, cache pre-warming , and cache-aware applications\n\n Server-side compaction vs manual compaction for long-running agent threads \n\n What should live inside an Agents API versus a developer's own harness\n\n OpenAI as an \"AI cloud\" and the search for higher-level primitives beyond raw model APIs\n\n \n Ari Weinstein Product & Engineering, Computer Use at OpenAI\n\n X: https://x.com/AriX \n\n LinkedIn: https://www.linkedin.com/in/weinsteinari/ \n\n Nikunj Handa Product, API at OpenAI\n\n X: https://x.com/nikunjhanda \n\n LinkedIn: https://www.linkedin.com/in/nikunjhanda/ \n\n \n Timestamps 00:00:00 OpenAI DevDay: Dots, GPT-6.1, Agents API, and Decisions API\n 00:02:52 Dots and Personal Cloud Computers\n 00:04:59 Why Computer Use Is \"180 Degrees Different\"\n 00:06:04 From Sky to Self-Debugging Computer Use Agents\n 00:09:24 How Computer Use Sees and Operates Software\n 00:12:09 From Faster Than Humans to Superhuman Computer Use\n 00:16:03 Agents API: Trust, Permissions, and Safety\n 00:17:31 Computer Use for Coding, Testing, and QA\n 00:19:14 GPT-6 APIs, Async Tool Calling, and UltraFast Inference\n 00:23:21 The Rapid Story Behind Decisions API\n 00:25:32 What Decisions API Is and How It Works\n 00:30:24 What OpenAI Is Building With the New APIs\n 00:32:23 Prompt Caching, Pre-Warming, and API Performance\n 00:35:20 Context Compaction for Long-Running Agents\n 00:37:13 Memory, Higher-Level APIs, and the AI Cloud\n \n Transcript Introduction: OpenAI DevDay and the New Agent Stack Vibhu [00:00:00]: Okay. We're very excited to be here. Today is OpenAI DevDay. Special podcast\n Swyx [00:00:08]: We're the first podcast after your livestream.\n Vibhu [00:00:10]: First podcast. We have Ari here, who leads the product and engineering team for Computer Use agents. Before we kick in and dive deep on Computer Use, you wanna give a quick recap? What was announced? What's the quick slew of announcements you guys had today?\n Ari Weinstein [00:00:24]: Yeah. yeah, it was a super exciting day. we just got out of the keyno",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "09. Hybrid, Rocks, Stars",
+   "link": "https://activefaults.substack.com/p/09-hybrid-rocks-stars",
+   "date": "Wed, 30 Sep 2026 17:02:51 GMT",
+   "text": "Hi there. Welcome to Active Faults.\n I presume many of you have seen the shitshow that was Hyrox Beijing&#8212;pun very much intended. To put it mildly, a contestant experienced bowel incontinence during the competition, proceeded to continue finishing the sets, soiled the equipment and won. The internet is rightly contesting the fairness of such a win, especially since the performances of other contestants have been grossly undermined by the incident. Meanwhile, Hyrox Official is trying to reframe the story as one of \"grit\" and athleticism instead of what it actually was: a biohazard, an egomaniacal display of entitlement, a serious corporate misconduct originated from a contemptuous belief that the Chinese market could be easily and perfunctorily pacified.\n This might seem irrelevant to this publication at first glance. But hopefully by the end of this issue, I would've convinced you that there are more complications between the fitness and the entertainment industry than you think. \n Active Faults is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.\n\n \n \n\n \n\n \n Since I wrote this introduction, Hyrox Official has released a condescending statement threatening to impose a permanent ban on anyone who criticises the winner, which further enraged the community and the wider public. A co-founder of Hyrox then stated on Instagram that the silencing of criticism was necessary when he deemed them \"inhuman\", before admitting that they've made a mistake and mishandled the situation. The whole brand quickly backpedalled in the same week by refunding everyone who attended the event, while the winner herself apologised after her celebratory post was called out for being insensitive. The internet didn't buy any of it, though. The top-voted comment on the refund post reads: \"I can't see the sincerity in this. They simply turned a self-funded shit-smelling event into a free shit-smelling event\". People also suspected that the winner only spoke up because her sponsorship deals with Puma were endangered, not out of genuine regrets. Looking at the scale of the admonishment, I doubt Hyrox could make a return to China without significant pushback and boycott.\n What is particularly upsetting to me is how the winner attributed her incontinence to the \"exotic\" city tour she went on the day before, when she tried the Beijing delicacy of fermented soya milk that generations of us have enjoyed without causing a public shitshow. Not only was it a feeble and nonsensical excuse, it was also feeding into the relentless, centuries-old stereotype that the Far East is filthy, disease-ridden and uncivilised, full of menacing savagery that's out to get a superior race. And yes it is that deep: the fact that local foods were scapegoated for her misconduct is evident enough that this incident is racialised. I don't think a contestant of a different, darker race would have been treated with the same kind of leniency and understanding by the organisers, receive the same level of sympathy or euphemistic newspaper headlines. I also don't think Hyrox would have handled the situation in the same way had it occurred in Europe or the States. Chinese netizens are keenly aware of this, hence my deduction that its market in mainland is unsalvageable.\n The Paper's piece on the incident correctly pointed out that Hyrox nowadays is less about fitness than it is about \"matchifying sports\". It is designed to occlude the straining human body with metrics and rankings all under the watchful eye of professional cameras, priming you up for the Gram to maximise your online presence. It's what I anticipated when I wrote about the tyranny of spin classes in high-end London gyms, but my imagination didn't dare venture thus far, where finance bros could go from competing like livestocks in a live stock market to competing in a fecal Colosseum in exchange for reel views and LinkedIn reactions. \n \n There's something sinister&#8212;and so very depressing&#8212;about how the fitness industry functions right now, as everything becomes a data-driven, dopamine-inducing hamster wheel intended for the internet's perusal. Like spinning, Hyrox is alluringly, startlingly easy to \"learn\" and pick up for anyone who's reasonably healthy. There are virtually no entry requirements to compete on a \"professional\" level, and the sense of achievement is almost disproportionately, exponentially high as you watch the stats stack up to spell out your indisputable excellence. And above all else, you secure a kind of success so typical to this new age: instantaneous, quantifiable, visible and shareable. It fits in neatly with the current hyperfixation of \"&#20986;&#29255;\" : pictures or content-generating, where every activity must lead to some kind of aesthetically pleasing and palatable social media post.\n ELLEMEN took a step further and called Hyrox the latest middle-class signifier, in the same way that frisbee, pickleba",
+   "feed": "Active Faults",
+   "category": "china"
+  },
+  {
+   "title": "A journey without a map",
+   "link": "https://samf.substack.com/p/a-journey-without-a-map",
+   "date": "Thu, 01 Oct 2026 07:58:40 GMT",
+   "text": "The best employment advice I've ever heard is to choose your predecessors wisely. Andy Burnham's speech on Tuesday was well constructed and delivered with poise and emotion; it would have got good reviews regardless. But the rapturous reception in the hall and in much of the press owed a lot to the contrast with poor Keir Starmer's tortured performances.\n Back in June, when Starmer stepped down, I said I found it odd that so many people thought Burnham would be the same but with a northern accent and a TikTok account. It is even more surprising that some people are still saying it. The two men face many of the same problems, of course, but their approaches are very different. Burnham's priorities were already clear when I wrote that June post, and they were there again in his speech: social care, electoral reform, devolution, social housing, technical education and public control of utilities. Even after two years in power, it was impossible to know if Starmer had any. You might disagree with Burnham's beliefs, but they are consistent and genuinely held.\n The importance of this is evident to anyone who speaks to Downing Street advisers and officials, many of whom were held over from Starmer. They talk of a PM who is interested in what they are doing, wants to discuss policy and find the best way to convince the public of an argument. This is a complete transformation from the first half of the year. None of this should be particularly worthy of note; it should be the minimum requirement for a prime minister, but it wasn't there and now it is. Without priorities or purpose, any government will just get buffeted around by events. Having some allows you to keep returning to the core mission when things get difficult. And it allows ministers to make independent decisions that broadly fit an overall narrative.\n But having a general sense of where you want to go is different from being sure of the exact destination or knowing how to get there. To make it work, you need a map.\n There's a reasonably clear route to some of Burnham's objectives, especially those without fiscal implications. Proportional representation can be debated, stuck in the next manifesto and legislated for quickly if he wins. Much can be done on devolution over the next three years, and there has already been a big shift within government. When it comes to changing the economy, though, or transforming public services, there is not much he can do now, and little clarity over what will happen by when. A highly constrained budget to be followed by an even more painful spending review remains the defining reality of this parliament, and much of Tuesday's speech was an implicit acknowledgement that change in many areas is a long way off.\n Then there is a broader question about what this all means in practice. What do all the different themes he keeps coming back to, especially the vaguer ones like reindustrialisation and \"a new economy\", mean? The framing of the speech, again unchanged since this summer, is that we have been going in the wrong direction for the last forty years. But how much is he really intending to change? Is this a genuine reversal from \"neoliberalism\"? What would that even look like?\n In the rest of the post, I'll look at the next steps on the journey, including the budget and spending review. And the questions he still needs to answer about where we are going.\n\n \n \n Read more",
+   "feed": "Comment is Freed (Sam Freedman)",
+   "category": "policy"
+  },
+  {
+   "title": "Trump\u2019s Vanity Summit With Xi",
+   "link": "https://stephenroach.substack.com/p/trumps-vanity-summit-with-xi",
+   "date": "Wed, 30 Sep 2026 20:15:19 GMT",
+   "text": "While expectations for the September 24 summit between US President Donald Trump and Chinese President Xi Jinping were low, it was disappoionting to watch them proioritize pageantry over substance. Trump's cringe-worthy declarations of heartfelt admiration for Xi reflect his twisted sense that the trappings of power are power, itslf. \n NEW HAVEN&#8212;Long on ceremony but short on substance, the eagerly anticipated summit between US President Donald Trump and Chinese President Xi Jinping was a disappointment. Perhaps not a major disappointment, as expectations were generally low and as some talk is certainly better than no talk. But on the major issues of trade, AI, Taiwan, and addressing China's role in two theaters of war, there was little or no progress. Instead, ceremonial flourishes substituted for substance, unmasking the summit as yet another Trump vanity project.\n On trade, the two-month extension of the current truce&#8212;initially negotiated nearly a year ago in South Korea&#8212;was surprisingly short, implying that tariff uncertainty remains high. Pre-summit chatter hinted at an extension of 6&#8211;12 months. Moreover, there were expectations of another round of Chinese purchases of US agricultural exports. Instead, the two nations made a joint post-summit announcement to cut tariffs on a total of $60 billion of \"non-sensitive\" goods, including trivial products such as US imports of electric blankets and magic tricks and Chinese imports of eels and emus.\n On AI, the biggest issue facing civilization, there was no meeting of the minds. The two superpowers committed to a loosely structured dialogue and dangled the possibility of an unspecified \" hotline \" for AI-related national-security issues. This bare-minimum achievement is far from the major breakthrough on AI safety many had hoped for&#8212;especially in the aftermath of the recent Hugging Face hacking incident and reports of other intrusions that have led some AI insiders to raise human extinction concerns. The disappointing outcome of the summit &#8212; which merely paid lip service to such risks &#8212; is hardly surprising considering that Trump has doubled down on his hands-off approach to AI regulation.\n On Taiwan, Xi attempted to press the advantage he gained after the Beijing summit in May, when Trump described the pending $14 billion US arms package to Taiwan as a \" good negotiating chip .\" In view of America's normally staunch commitment to arming Taiwan, the Chinese side saw this as a major concession, especially given that the deal already had received congressional approval. In his opening speech to last week's summit, Xi urged the US to \"adhere to the correct position of opposing Taiwan independence.\" But doing so would be a stunning about-face on the \"strategic ambiguity\" that has long shaped US strategy toward Taiwanese sovereignty.\n Finally, China's role in the wars in Ukraine and Iran escaped scrutiny. As the buyer of some 90% of Iran's oil exports and about 50% of Russia's, China is a major funder of both countries' military efforts. A new law gives the US president broad authority to address this activity through secondary sanctions and tariffs on those countries like China, that indirectly support these illegal wars. Don't count on it. Fearful of spoiling the summit's optics, Trump made no mention of this political hot potato.\n By making little effort on the big issues, both in terms of staff preparation and bilateral talks, Trump was painfully transparent about what mattered most to him: impressing Xi and his entourage. Ironically, while the tightly controlled Chinese press delivered enthusiastic messaging back home of Xi's great successes at the summit, the US broadcast media was muted by Trump's White House ban on three major news outlets, a shocking crackdown on free speech.\n As was the case in Beijing, Trump once again abandoned any semblance of protocol in his cringe-worthy declarations of heartfelt admiration for his \" truly great \" friend's leadership skills. The hyperbole was embellished by physical demonstrations of Trump's affection. Washington's profusion of red carpets would put even China to shame, while the glitzy state dinner with Big Tech \"broligarchs\" was missing only the grand setting of a Chinese-style ballroom.\n \n\n\n \n Trump attempted to compensate for that by offering Xi a personal tour of his new vanity projects in the White House: the new granite helipad, the ballroom construction project, and his rogues' gallery of annotated presidential portraits. Xi was shown in a rare state of laughter when he came to Trump's crude and derisive depiction of former US President Joe Biden as an \"autopen\"&#8212;suggesting that the two leaders may share more personality traits than we have been led to believe.\n I am hardly the first to bemoan the autocratic symbolism of political leaders' vanity projects. But there is something considerably more vulgar about Trump's approach. It consumes him as he approaches the ",
+   "feed": "Conflict (Stephen Roach)",
+   "category": "security"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/economic-and-financial-indicators/2026/10/01/economic-data-commodities-and-markets",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/obituary/2026/10/01/stanislas-hutin-knew-he-must-not-stay-silent",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/10/01/why-supplements-need-supplemental-disclosures",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/10/01/why-singing-is-note-worthy-even-if-youre-bad-at-it",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/10/01/what-a-rural-american-cooking-contest-reveals-about-food-culture",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/10/01/can-you-really-perform-a-tracheotomy-with-a-pen",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/business/2026/10/01/youre-not-sending-an-email-youre-training-a-model",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/business/2026/10/01/the-swiss-watch-industry-is-shrinking-but-getting-swankier",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/china/2026/10/01/chinese-students-abroad-are-more-liberal-than-at-home",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/asia/2026/10/01/japans-tea-farmers-enjoy-a-matcha-boom",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/china/2026/10/01/china-lavishes-attention-on-a-little-known-competition",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/asia/2026/10/01/a-huge-increase-in-tourists-visiting-komodo-bring-new-dangers",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/asia/2026/10/01/vietnams-high-tech-dreams-come-with-an-electricity-problem",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/the-americas/2026/10/01/a-new-museum-for-mexicos-armed-forces-prompts-a-backlash",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/the-americas/2026/10/01/the-worlds-busiest-migration-route-has-gone-quiet",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/10/01/jared-kushner-has-a-245bn-recovery-plan-for-gaza",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/10/01/nigerians-dislike-their-president-but-may-re-elect-him-anyway",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/01/abolish-the-white-house-press-corps",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/01/florida-has-put-americas-boldest-tax-cut-on-the-ballot",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/01/the-pointless-war-on-narco-terrorists-is-growing-more-collaborative",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/01/whats-even-more-politically-toxic-than-high-prices-at-the-pump",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/01/the-coming-fight-over-free-speech",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/10/01/the-eu-budget-is-where-grand-strategy-meets-petty-squabbling",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/10/01/finland-is-digging-a-forever-nuclear-dump",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/10/01/a-row-over-a-march-in-northern-ireland-could-upend-its-government",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/10/01/britain-implements-a-rule-the-grenfell-inquiry-never-recommended",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/10/01/britains-taxes-are-strewn-with-loopholes-and-perverse-incentives",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/briefing/2026/10/01/china-is-giving-its-economy-a-big-shot-in-the-arm",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/leaders/2026/10/01/mirror-life-is-dangerous-regulators-must-act-before-it-becomes-real",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/letters/2026/10/01/brazils-complicated-finances",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/leaders/2026/10/01/chinas-new-infrastructure-push-will-help-itself-and-the-world",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/the-world-this-week/2026/10/01/business",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/the-world-this-week/2026/10/01/politics",
+   "date": "Thu, 01 Oct 2026 12:45:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/business/2026/10/01/a-rocket-shortage-gives-spacexs-competitors-an-opportunity",
+   "date": "Thu, 01 Oct 2026 12:44:46 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/01/trial-and-terror-russia-escalates-kyiv-campaign",
+   "date": "Thu, 01 Oct 2026 10:57:29 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/asia/2026/10/01/allegations-of-bias-are-rocking-indias-electoral-watchdog",
+   "date": "Thu, 01 Oct 2026 10:08:10 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/leaders/2026/10/01/a-hurricane-is-coming-to-tax-systems",
+   "date": "Thu, 01 Oct 2026 09:55:56 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/leaders/2026/10/01/dont-put-donald-trump-and-kim-jong-un-in-a-room-together",
+   "date": "Thu, 01 Oct 2026 09:53:14 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/leaders/2026/10/01/effective-altruism-is-this-centurys-biggest-idea",
+   "date": "Thu, 01 Oct 2026 09:39:16 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world",
+   "date": "Thu, 01 Oct 2026 09:37:47 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/10/01/governments-want-to-hold-americas-shares-more-than-its-debts",
+   "date": "Thu, 01 Oct 2026 09:08:56 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/10/01/research-on-grasping-bureaucrats-startles-singapore",
+   "date": "Thu, 01 Oct 2026 09:07:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/10/01/financial-astrology-is-a-serious-business-in-india",
+   "date": "Thu, 01 Oct 2026 09:05:52 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/01/the-mafia-may-keep-fentanyl-out-of-italy",
+   "date": "Thu, 01 Oct 2026 09:00:00 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/business/2026/09/30/the-era-of-speedball-capitalism-has-dawned",
+   "date": "Wed, 30 Sep 2026 19:06:34 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/science-and-technology/2026/09/30/simulating-death-can-reduce-peoples-fear-of-dying",
+   "date": "Wed, 30 Sep 2026 18:24:14 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/science-and-technology/2026/09/30/it-may-soon-be-possible-to-create-mirror-life",
+   "date": "Wed, 30 Sep 2026 18:23:51 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/09/30/andy-burnham-faux-heretic",
+   "date": "Wed, 30 Sep 2026 17:27:45 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/09/30/how-will-ai-philanthropy-change-development-aid",
+   "date": "Wed, 30 Sep 2026 16:02:54 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/09/30/manchester-city-found-guilty-of-cheating-stares-into-the-abyss",
+   "date": "Wed, 30 Sep 2026 15:51:24 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/30/carlo-rovelli-on-what-physicists-get-wrong",
+   "date": "Wed, 30 Sep 2026 15:47:11 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/09/30/bond-markets-whack-france-for-fiscal-irresponsibility",
+   "date": "Wed, 30 Sep 2026 15:15:28 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/china/2026/09/30/in-an-ai-crisis-would-china-answer-the-phone",
+   "date": "Wed, 30 Sep 2026 15:03:27 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/1843/2026/09/30/introducing-our-economist-weekend-newsletter",
+   "date": "Wed, 30 Sep 2026 14:18:10 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "Voter Fraud We\u2019ve Identified So Far",
+   "link": "https://www.newyorker.com/humor/shouts-murmurs/voter-fraud-weve-identified-so-far",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "After scouring billions of ballots, we have identified countless instances of voter fraud. They are countless, in part, because we are unwilling and unable to count past thirty-four.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Tom Cruise-a-Palooza",
+   "link": "https://www.newyorker.com/podcast/critics-at-large/tom-cruise-a-palooza",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "Iconic roles and death-defying stunts have made Tom Cruise\u2019s name synonymous with movie magic. In \u201cDigger,\u201d he breaks his action streak to show us something new\u2014for better or for worse.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Colm T\u00f3ib\u00edn Reads Tobias Wolff",
+   "link": "https://www.newyorker.com/podcast/fiction/colm-toibin-reads-tobias-wolff",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "The author joins Deborah Treisman to read and discuss \u201cAwaiting Orders,\u201d which was published in The New Yorker in 2005.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Zoe Kazan\u2019s Heady and Bighearted \u201cEast of Eden\u201d",
+   "link": "https://www.newyorker.com/magazine/2026/10/12/east-of-eden-tv-review-netflix",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "While Christopher Abbott and Mike Faist duke it out as John Steinbeck\u2019s Trask brothers, Florence Pugh\u2019s Cathy is a gothic villain you can\u2019t help but root for.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "How the \u201cCornell Seven\u201d Rape Case Became a National Scandal",
+   "link": "https://www.newyorker.com/news/the-lede/how-the-cornell-seven-rape-case-became-a-national-scandal",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "The dismal responses from both the D.A. and the university reveal a larger pattern of institutional carelessness.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why Susan Collins Has Lasted So Long",
+   "link": "https://www.newyorker.com/podcast/political-scene/why-susan-collins-has-lasted-so-long",
+   "date": "Thu, 01 Oct 2026 01:00:00 +0000",
+   "text": "Even if Maine\u2019s longtime senator is finally defeated by a Democrat, her lengthy tenure speaks to the power of bringing federal money home\u2014and asking voters to overlook other misgivings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why Trump Delayed Cancelling Legal Status for Salvadorans",
+   "link": "https://www.newyorker.com/news/the-lede/why-trump-delayed-cancelling-legal-status-for-salvadorans",
+   "date": "Wed, 30 Sep 2026 23:30:55 +0000",
+   "text": "The White House has quietly paused an order to end Temporary Protected Status for thousands of immigrants from El Salvador, a move that came after months of lobbying from the construction industry and other interest groups.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "\u201cVerity\u201d Is a Criminal Waste of Talent",
+   "link": "https://www.newyorker.com/culture/the-front-row/verity-is-a-criminal-waste-of-talent",
+   "date": "Wed, 30 Sep 2026 17:38:16 +0000",
+   "text": "The melodramatic power of Dakota Johnson and Anne Hathaway is squandered in a romantic tale that\u2019s ludicrously muddled by suspicions of monstrous misdeeds.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Daily Cartoon: Wednesday, September 30th",
+   "link": "https://www.newyorker.com/cartoons/daily-cartoon/wednesday-september-30th-kindergarten-ai",
+   "date": "Wed, 30 Sep 2026 14:26:43 +0000",
+   "text": "A drawing that riffs on the latest news and happenings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "What\u2019s the Best Kindle of 2026 (So Far)?",
+   "link": "https://www.wired.com/gallery/best-kindle/",
+   "date": "Thu, 01 Oct 2026 13:00:00 +0000",
+   "text": "I\u2019ve tested every single Kindle. Here\u2019s how Amazon\u2019s ebook readers stack up.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Amazon Kindle, Paperwhite, and Colorsoft 2026: Specs, Price, Release Date",
+   "link": "https://www.wired.com/story/amazon-kindle-paperwhite-colorsoft-2026-refresh/",
+   "date": "Thu, 01 Oct 2026 13:00:00 +0000",
+   "text": "Ahead of the Kindle\u2019s 20th anniversary next year, Amazon is refreshing its entire range of e-readers with fresh colors, an aluminum build, and a new frame design that\u2019s both thinner and lighter.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Best Early Amazon Echo Deals (and the Worst) Ahead of Prime Big Deal Days",
+   "link": "https://www.wired.com/story/best-amazon-alexa-device-deals-prime-day/",
+   "date": "Thu, 01 Oct 2026 13:00:00 +0000",
+   "text": "Amazon raised prices across its devices in August. Here are the early device deals ahead of Prime Day that are still worth it\u2014and which aren\u2019t.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "2 Driverless Cars Crashed Going 155 mph. That Could Be a Good Thing",
+   "link": "https://www.wired.com/story/2-driverless-cars-crashed-going-155-mph-that-could-be-a-good-thing/",
+   "date": "Thu, 01 Oct 2026 12:15:00 +0000",
+   "text": "Only two of five vehicles finished the race around a notoriously difficult Formula 1 track, exposing what happens when autonomous systems meet blind corners, sensor failures, and physics.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Measles Is Forcing Hospitals to Adapt to a New Normal",
+   "link": "https://www.wired.com/story/measles-is-forcing-hospitals-to-adapt-to-a-new-normal/",
+   "date": "Thu, 01 Oct 2026 12:00:00 +0000",
+   "text": "The US resurgence of measles is forcing hospitals and health systems to adopt new protocols and procedures to deal with a disease they thought was in the past.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Gifts for Parents (and Their Babies): Bottle Washers, Prepared Meals, and More",
+   "link": "https://www.wired.com/story/gifts-for-parents-2026/",
+   "date": "Thu, 01 Oct 2026 11:30:00 +0000",
+   "text": "If your friend is in the depths of newborn survival, these gifts and gadgets can go a long way to make parenting a little easier.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Wi-Fi Routers (2026): My Honest Picks After Testing 50+",
+   "link": "https://www.wired.com/gallery/best-wifi-routers/",
+   "date": "Thu, 01 Oct 2026 11:30:00 +0000",
+   "text": "Don\u2019t suffer the buffer. These WIRED-tested home routers will deliver reliable internet across your home, whatever your needs or budget.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Real Threat to the Midterms Is Regular Americans Thinking Violence Is the Answer",
+   "link": "https://www.wired.com/story/the-real-threat-to-the-midterms-is-regular-americans-thinking-violence-is-the-answer/",
+   "date": "Thu, 01 Oct 2026 11:30:00 +0000",
+   "text": "Robert A. Pape, a leading authority on political violence, wants Americans to understand that the threat is coming not from the fringes, but from the mainstream.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Tractive Cat 6 Mini Review: A Fitbit for Your Cat",
+   "link": "https://www.wired.com/review/tractive-cat-6-mini/",
+   "date": "Thu, 01 Oct 2026 11:03:00 +0000",
+   "text": "Cats are finally getting the dog treatment. This smart cat collar features GPS location, activity, and sleep tracking, plus all-new heart and respiratory rate monitoring.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Exclusive: Neurable\u2019s First Brain-Scanning Headphones Want to Fine-Tune Your Focus",
+   "link": "https://www.wired.com/story/exclusive-neurable-one-brain-scanning-headphones-want-to-fix-your-focus/",
+   "date": "Thu, 01 Oct 2026 11:00:00 +0000",
+   "text": "The company claims that its new device, the Neurable One, can keep you in the zone, calculate the best time to take a break, and tell you when your \u201cbrain battery\u201d needs a recharge.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Madison Square Garden\u2019s James Dolan Is Spending Big on New York\u2019s Governor Race",
+   "link": "https://www.wired.com/story/madison-square-gardens-james-dolan-is-spending-big-on-new-yorks-governor-race/",
+   "date": "Thu, 01 Oct 2026 10:30:00 +0000",
+   "text": "James Dolan has put surveillance at the center of his sports and entertainment empire. Now he\u2019s getting involved in GOP politics by backing a candidate who supports Flock, ICE, and AI data centers.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Apple Mac Studio (M5 Ultra) Review: Unlimited Power",
+   "link": "https://www.wired.com/review/apple-mac-studio-m5-ultra-2026/",
+   "date": "Thu, 01 Oct 2026 10:00:00 +0000",
+   "text": "The Mac Studio can run frontier-level AI language models locally. It\u2019s only a preview of what\u2019s to come.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Secrets of the US Spyware King",
+   "link": "https://www.wired.com/story/the-secrets-of-the-us-spyware-king/",
+   "date": "Thu, 01 Oct 2026 09:30:00 +0000",
+   "text": "In an exclusive interview with WIRED, Paragon Solutions CEO Andrew Boyd reveals the limits of the company\u2019s promise to keep bad actors from abusing its powerful espionage tool.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Casio\u2019s Crystal G-Shock Is the Most Expensive Ever Made",
+   "link": "https://www.wired.com/story/casio-crystal-g-shock-is-the-most-expensive-ever-made/",
+   "date": "Thu, 01 Oct 2026 09:00:00 +0000",
+   "text": "Meet the full-blue sapphire MRG-D5000, a crazy G-Shock that costs more than a Patek Philippe or Porsche Macan.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Dell Coupon Codes: 20% Off for October 2026",
+   "link": "https://www.wired.com/story/dell-coupon-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Get 20% off with verified Dell promo code, plus today\u2019s coupons for up to $600 off laptops, Alienware monitors, and all things tech.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Mountain Hardwear Coupon Code 15% Off October",
+   "link": "https://www.wired.com/story/mountain-hardwear-promo-codes/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "High-performance mountaineering and hiking apparel doesn't have to break the bank.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Booking.com Promo Codes: 20% Off | October 2026",
+   "link": "https://www.wired.com/story/booking-com-promo-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Enjoy big savings on your next adventure with our Booking.com promo codes, coupons, and handpicked travel deals.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Paramount+ Coupon Codes and Deals for 2026",
+   "link": "https://www.wired.com/story/paramount-plus-coupon-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Save on streaming with the latest Paramount+ promo codes and deals, including 50% off subscriptions, free trials, and more.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "20% Off Samsung Promo Code | October 2026",
+   "link": "https://www.wired.com/story/samsung-promo-codes/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Save 30% or 10% with Samsung coupon codes, up to $1,000 on appliances, plus limited-time deals on the Galaxy Z Fold7, Flip7, and S25.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Newegg Promo Codes and Coupons for October 2026",
+   "link": "https://www.wired.com/story/newegg-promo-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Enjoy up to 10% off your entire order with today\u2019s Newegg promo code and discount codes. Save with the latest deals for gaming PCs, laptops, and computer parts.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "eBay Coupons: 20% Off in October 2026",
+   "link": "https://www.wired.com/story/ebay-coupon-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Save up to 60% on a selection of items at eBay, including electronics, home products, card games, car parts and more.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "AT&T Promo Codes: $50 Off This October 2026",
+   "link": "https://www.wired.com/story/att-promo-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Whether you\u2019re looking to upgrade your internet or get the latest phone, we\u2019ve got you covered with our selection of AT&T coupons and deals.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Dyson Promo Codes: 25% Off in October 2026",
+   "link": "https://www.wired.com/story/dyson-cordless-vacuum-promo-code/",
+   "date": "Thu, 01 Oct 2026 05:00:00 +0000",
+   "text": "Get 25% off with a Dyson coupon code, plus save up to $600 with discounts on vacuums, $150 off Airwraps, and more.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The White House Is Starting to Panic Over the Midterms",
+   "link": "https://www.wired.com/story/the-white-house-is-starting-to-panic-over-the-midterms/",
+   "date": "Wed, 30 Sep 2026 21:00:00 +0000",
+   "text": "President Donald Trump still thinks Republicans have a shot. His aides are less convinced.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Trump\u2019s AI Safety \u2018Accord\u2019 Is a Fancy Pinky-Swear",
+   "link": "https://www.wired.com/story/trumps-ai-safety-accord-is-a-fancy-pinky-swear/",
+   "date": "Wed, 30 Sep 2026 20:30:09 +0000",
+   "text": "Six major AI companies signed a voluntary agreement with the White House this week vowing to implement safeguards. It\u2019s unclear how much that matters.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Battle to Be Your Personal AI Agent Is Here",
+   "link": "https://www.wired.com/story/ai-agents-dots-devday-muse-battling-it-out/",
+   "date": "Wed, 30 Sep 2026 19:30:00 +0000",
+   "text": "OpenAI's Dots and Meta's Muse are vying to be your AI agent of choice. I've tried both\u2014and I suspect you will too.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Furry Airline Pilots Are Just Minding Their Own Business",
+   "link": "https://www.wired.com/story/furry-airline-pilots-are-just-minding-their-own-business/",
+   "date": "Wed, 30 Sep 2026 19:09:57 +0000",
+   "text": "\u201cWe\u2019re furries at home, and we\u2019re airline pilots at work, and these are two separate things,\u201d says one member of the community in response to senator Tommy Tuberville's recent rant.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "There Are Plenty of Reasons to Be Concerned About Bioweapons Development\u2014Even Without AI",
+   "link": "https://www.wired.com/story/you-dont-need-ai-to-be-concerned-about-bioweapons-development-but-it-helps/",
+   "date": "Wed, 30 Sep 2026 19:00:00 +0000",
+   "text": "In her new book on biological warfare, Annie Jacobsen didn\u2019t even discuss AI because scientists can already warp Mother Nature to create extinction-level events.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "A Biotech Founder Makes the Moral Case for Gene-Editing Human Embryos",
+   "link": "https://www.wired.com/story/biotech-founder-cathy-tie-moral-case-gene-editing-human-embryos/",
+   "date": "Wed, 30 Sep 2026 14:30:00 +0000",
+   "text": "The practice of editing the genes of embryos remains highly controversial and risky, but Origin Genomics founder Cathy Tie argues its a \u201cmoral imperative\u201d to address hereditary diseases.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "A war of finely crafted words - newstatesman.com",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOUo2dC1zeG92cGx6WGdwa1VRZW5mNWROczZacFgxcjFKMGkwZ0VyVFZreGlfNFhPME55U3hkWmo3R0RWVmtOWTlpOXYwNHA0VzNEMkdhLVVTOTR5dU56T3MtclRYYTVDZ0pQLVRkVmNFWnVGck1aWEhtdGxpdHRxU2JqUQ?oc=5",
+   "date": "Thu, 01 Oct 2026 06:42:18 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxOOUo2dC1zeG92cGx6WGdwa1VRZW5mNWROczZacFgxcjFKMGkwZ0VyVFZreGlfNFhPME55U3hkWmo3R0RWVmtOWTlpOXYwNHA0VzNEMkdhLVVTOTR5dU56T3MtclRYYTVDZ0pQLVRkVmNFWnVGck1aWEhtdGxpdHRxU2JqUQ?oc=5\" target=\"_blank\"&gt;A war of finely crafted words&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;newstatesman.com&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "Celebrity Traitors has tamed our national id - newstatesman.com",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcUFUZVdXVnFUa293RDcxQ1RGSnVUWW4xOWxkUWg0eXpnWE1VNTBNNTJjZHJVNXBkX0dLd2pBUm9uN0U4UjFuWHZwd2NjMlZ5eWtMUUFKbGhhbmc1dEloQ0pYNGtCWThrcEh4a0pjWXM1Z0o1bG94a2tiZTNBMjA2RTZBYmlTazJiNWRzb1dkSXJrZjhyVFI4?oc=5",
+   "date": "Thu, 01 Oct 2026 10:06:28 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNcUFUZVdXVnFUa293RDcxQ1RGSnVUWW4xOWxkUWg0eXpnWE1VNTBNNTJjZHJVNXBkX0dLd2pBUm9uN0U4UjFuWHZwd2NjMlZ5eWtMUUFKbGhhbmc1dEloQ0pYNGtCWThrcEh4a0pjWXM1Z0o1bG94a2tiZTNBMjA2RTZBYmlTazJiNWRzb1dkSXJrZjhyVFI4?oc=5\" target=\"_blank\"&gt;Celebrity Traitors has tamed our national id&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;newstatesman.com&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "This Manchester City scandal is the biggest in British sporting history - newstatesman.com",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeS1VenJESmhOc2hMRHpkRXh0VXFMTTNkak5jbFp3UnNpaHY3OW1mRWEzOUhnWnNvT01EMFQ5QzYyd2JPS1RRc0huMGhFOTBaR3JqcGVQbWU3bE1xOFZOdXlGQUNoUmNKZ3RGbW9kVEhrNnBfdVZOQ0ZZVjFWN0RPcnlqRFJxY1Nsa3V4SWtmNm5BQklhdURuSUlRMlEtc0FiOG5sR2N0eV9RcUo2ZW5Dc2RMTldMa3J1VWhhdVVQdw?oc=5",
+   "date": "Wed, 30 Sep 2026 16:15:46 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNeS1VenJESmhOc2hMRHpkRXh0VXFMTTNkak5jbFp3UnNpaHY3OW1mRWEzOUhnWnNvT01EMFQ5QzYyd2JPS1RRc0huMGhFOTBaR3JqcGVQbWU3bE1xOFZOdXlGQUNoUmNKZ3RGbW9kVEhrNnBfdVZOQ0ZZVjFWN0RPcnlqRFJxY1Nsa3V4SWtmNm5BQklhdURuSUlRMlEtc0FiOG5sR2N0eV9RcUo2ZW5Dc2RMTldMa3J1VWhhdVVQdw?oc=5\" target=\"_blank\"&gt;This Manchester City scandal is the biggest in British sporting history&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;newstatesman.com&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "Britain in the crosshairs - newstatesman.com",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNc0tUNnhvOFh4dG1tVUhUV0RVVzF1enkxV0ZhbEJ5d0ZRRVN1YjNTMUwzZ0dNZVpyMGtKemlpVUFTY1Myek9hLTlvY0t2cnl6cEFqNEM0U0R1emFKRDA4dHJjT3oxUFV2eTJ5TXR0eFVzREp4UG9QTDBUWTVuejZqSVdTZ2V5MXFJTXMzbi1n?oc=5",
+   "date": "Wed, 30 Sep 2026 15:11:47 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNc0tUNnhvOFh4dG1tVUhUV0RVVzF1enkxV0ZhbEJ5d0ZRRVN1YjNTMUwzZ0dNZVpyMGtKemlpVUFTY1Myek9hLTlvY0t2cnl6cEFqNEM0U0R1emFKRDA4dHJjT3oxUFV2eTJ5TXR0eFVzREp4UG9QTDBUWTVuejZqSVdTZ2V5MXFJTXMzbi1n?oc=5\" target=\"_blank\"&gt;Britain in the crosshairs&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;newstatesman.com&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (2 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (54 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (9 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (29 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (4 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (0 new)"
+  }
+ ]
+}

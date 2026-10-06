@@ -1,0 +1,287 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-06-01",
+  "regions": [
+    {
+      "region_id": "US-CB",
+      "region_name": "US Corn Belt",
+      "crops": [
+        "corn",
+        "soybeans"
+      ],
+      "ndvi": {
+        "current": 0.2515,
+        "median": 0.2559,
+        "std": 0.0145,
+        "samples": [
+          {
+            "name": "Iowa Central",
+            "bbox": [
+              -94.5,
+              41.5,
+              -94.0,
+              42.0
+            ],
+            "ndvi": 0.2665978756551659,
+            "tiles": 3
+          },
+          {
+            "name": "Illinois Central",
+            "bbox": [
+              -89.5,
+              40.0,
+              -89.0,
+              40.5
+            ],
+            "ndvi": 0.23189051477983297,
+            "tiles": 3
+          },
+          {
+            "name": "Nebraska East",
+            "bbox": [
+              -97.0,
+              40.5,
+              -96.5,
+              41.0
+            ],
+            "ndvi": 0.2559160952169316,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 0.0,
+        "band": "WELL_BELOW_NORMAL",
+        "years": 4,
+        "values": [
+          0.266,
+          0.3242,
+          0.3139,
+          0.2966
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0377,
+        "prior": 0.2138,
+        "dir": "INCREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "USDA WASDE",
+          "USDA Crop-CASMA"
+        ]
+      },
+      "confidence": {
+        "nato": "A1",
+        "source": "A",
+        "info": "1"
+      },
+      "alert": true,
+      "status": "OK"
+    },
+    {
+      "region_id": "BR-MT",
+      "region_name": "Brazil Mato Grosso",
+      "crops": [
+        "soybeans",
+        "corn"
+      ],
+      "ndvi": {
+        "current": 0.3988,
+        "median": 0.3988,
+        "std": 0.0101,
+        "samples": [
+          {
+            "name": "MT Central",
+            "bbox": [
+              -55.5,
+              -13.5,
+              -55.0,
+              -13.0
+            ],
+            "ndvi": 0.40895656420356663,
+            "tiles": 3
+          },
+          {
+            "name": "MT South",
+            "bbox": [
+              -56.0,
+              -16.0,
+              -55.5,
+              -15.5
+            ],
+            "ndvi": 0.38872806851406205,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 100.0,
+        "band": "WELL_ABOVE_NORMAL",
+        "years": 4,
+        "values": [
+          0.3095,
+          0.3488,
+          0.3286,
+          0.3561
+        ]
+      },
+      "delta_30d": {
+        "change": -0.0748,
+        "prior": 0.4737,
+        "dir": "DECREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "CONAB"
+        ]
+      },
+      "confidence": {
+        "nato": "A1",
+        "source": "A",
+        "info": "1"
+      },
+      "alert": true,
+      "status": "OK"
+    },
+    {
+      "region_id": "UA-UK",
+      "region_name": "Ukraine Steppe",
+      "crops": [
+        "winter wheat",
+        "corn",
+        "sunflower"
+      ],
+      "ndvi": {
+        "current": 0.3466,
+        "median": 0.3466,
+        "std": 0.0,
+        "samples": [
+          {
+            "name": "Central Ukraine",
+            "bbox": [
+              30.5,
+              48.5,
+              31.0,
+              49.0
+            ],
+            "ndvi": 0.3466006937113712,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 75.0,
+        "band": "ABOVE_NORMAL",
+        "years": 4,
+        "values": [
+          0.3262,
+          0.3492,
+          0.2496,
+          0.2969
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0207,
+        "prior": 0.3259,
+        "dir": "INCREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": false,
+        "sources": [
+          "FAO GIEWS"
+        ]
+      },
+      "confidence": {
+        "nato": "B2",
+        "source": "B",
+        "info": "2"
+      },
+      "alert": false,
+      "status": "OK"
+    },
+    {
+      "region_id": "EU-FR",
+      "region_name": "EU France-Germany Belt",
+      "crops": [
+        "soft wheat",
+        "barley",
+        "corn"
+      ],
+      "ndvi": {
+        "current": 0.478,
+        "median": 0.478,
+        "std": 0.0138,
+        "samples": [
+          {
+            "name": "Beauce (France)",
+            "bbox": [
+              1.5,
+              48.0,
+              2.0,
+              48.5
+            ],
+            "ndvi": 0.4917440125580702,
+            "tiles": 2
+          },
+          {
+            "name": "Lower Saxony (Germany)",
+            "bbox": [
+              8.0,
+              52.0,
+              8.5,
+              52.5
+            ],
+            "ndvi": 0.46421738234195203,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 100.0,
+        "band": "WELL_ABOVE_NORMAL",
+        "years": 4,
+        "values": [
+          0.4527,
+          0.4394,
+          0.3651,
+          0.4531
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0432,
+        "prior": 0.4348,
+        "dir": "INCREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "EU MARS (JRC)"
+        ]
+      },
+      "confidence": {
+        "nato": "A1",
+        "source": "A",
+        "info": "1"
+      },
+      "alert": true,
+      "status": "OK"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

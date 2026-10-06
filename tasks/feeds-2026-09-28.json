@@ -1,0 +1,369 @@
+{
+ "generated": "2026-09-28T14:00:09+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "AI existential risk probabilities are (still) too unreliable to inform policy",
+   "link": "https://www.normaltech.ai/p/p-doom",
+   "date": "Mon, 28 Sep 2026 11:13:47 GMT",
+   "text": "Over two years ago we wrote a detailed deconstruction of p(doom) and argued that its primary effect is to launder vague intuitions and fears through a facade of quantification. The essay has fresh relevance today as p(doom) rhetoric is driving public discourse and policy attention to an unprecedented degree. Unsurprisingly, today's probability estimates of AI existential risk are no more rigorous than the ones from 2024. Hence this repost.\n We should be clear about what we're not saying.\n We aren't saying forecasters (or others who attempt to quantify AI x-risk) intend to mislead. Unfortunately, we think the effect is misleading nonetheless.\n\n In general, being quantitative about forecasts is good. In fact, Arvind has been serving as an advisor to the Forecasting Research Institute's Longitudinal Expert AI Panel , an effort he thinks is extremely valuable. As the essay makes clear, the infeasibility of building useful quantitative models is specific to forecasts of AI x-risk, not forecasting in general.\n\n Our goal here is not to try to push AI safety advocates to stop communicating in terms of probabilities (not that we'd succeed even if we tried). Rather, our hope in publishing this is for those at the receiving end of these probabilities &#8212; especially policymakers &#8212; to recognize that unlike almost every other quantitative forecast that we encounter, they are not the result of a validated model or method.\n\n That said, we think the whole p(doom) culture is emblematic of a particular view of AI safety that centers existential risk and superintelligence in a way that is actively counterproductive to a broader conception of safety. In a few days we'll publish a follow-up essay making that argument and advocating for a \"big tent\" safety movement.\n The original essay appears below.\n \n AI existential risk probabilities are too unreliable to inform policy How seriously should governments take the threat of existential risk from AI, given the lack of consensus among researchers? On the one hand, existential risks (x-risks) are necessarily somewhat speculative: by the time there is concrete evidence, it may be too late. On the other hand, governments must prioritize &#8212; after all, they don't worry too much about x-risk from alien invasions.\n The AI safety community relies heavily on forecasting the probability of human extinction due to AI (in a given timeframe) in order to inform decision making and policy. An estimate of 10% over a few decades, for example, would obviously be high enough for the issue to be a top priority for society. \n Our central claim is that AI x-risk forecasts are far too unreliable to be useful for policy, and in fact highly misleading.\n Look behind the curtain If the two of us predicted an 80% probability of aliens landing on earth in the next ten years, would you take this possibility seriously? Of course not. You would ask to see our evidence. As obvious as this may seem, it seems to have been forgotten in the AI x-risk debate that probabilities carry no authority by themselves. Probabilities are usually derived from some grounded method, so we have a strong cognitive bias to view quantified risk estimates as more valid than qualitative ones. But it is possible for probabilities to be nothing more than guesses. Keep this in mind throughout this essay (and more broadly in the AI x-risk debate).\n If we predicted odds for the Kentucky Derby, we don't have to give you a reason &#8212; you can take it or leave it. But if a policymaker takes actions based on probabilities put forth by a forecaster, they had better be able to explain those probabilities to the public (and that explanation must in turn come from the forecaster). Justification is essential to legitimacy of government and the exercise of power. A core principle of liberal democracy is that the state should not limit people's freedom based on controversial beliefs that reasonable people can reject. \n Explanation is especially important when the policies being considered are costly, and even more so when those costs are unevenly distributed among stakeholders. A good example is restricting open releases of AI models. Can governments convince people and companies who stand to benefit from open models that they should make this sacrifice because of a speculative future risk?\n The main aim of this essay is analyzing whether there is any justification for any of the specific x-risk probability estimates that have been cited in the policy debate. We have no objection to AI x-risk forecasting as an academic activity, and forecasts may be helpful to companies and other private decision makers. We only question its use in the context of public policy.\n There are basically only three known ways by which a forecaster can try to convince a skeptic: inductive, deductive, and subjective probability estimation. We consider each of these in the following sections. All three require both parties to agree on some basic assumptions abou",
+   "feed": "AI as Normal Technology",
+   "category": "ai"
+  },
+  {
+   "title": "Notes on NVIDIA Nemotron",
+   "link": "https://cameronrwolfe.substack.com/p/nemotron",
+   "date": "Mon, 28 Sep 2026 09:33:59 GMT",
+   "text": "(from [3, 4, 6, 7, 9]) \n Throughout the history of AI, open research has played a critical role in driving progress. Today, many key details of frontier large language models (LLMs) remain proprietary, but open-weights model families&#8212; such as DeepSeek , Kimi , and MiMo &#8212;continue to provide a valuable window into the development process for modern LLMs. Among these resources, the NVIDIA Nemotron model series is especially useful due to its transparency. Many open-weight releases provide limited details beyond the model itself, but Nemotron releases often include detailed tech reports, code, training recipes, and even data in some cases.\n \"Nemotron is not just a model, it's all of our AI technology that helps us build the GPUs and systems for the future&#8230; we're trying to make the most open approach to AI development that the world has ever seen.\" - source \n In this overview, we will make the most of this openness by studying the majority of Nemotron tech reports published over the last few years, focusing primarily on the post-training process . While studying this work, we will capture the high-level trends in how LLM post-training has evolved over time. However, we will go beyond these broader trends by also covering practical implementation details that are necessary for these methods to work&#8212; curriculum and reward design, data curation techniques, training infrastructure, loss formulations, and much more . These details are essential for learning how to train LLMs at scale, but they are difficult to learn without detailed accounts from teams that have actually trained frontier-scale models. NVIDIA Nemotron provides us with a rare opportunity to study these details directly and gain an understanding of how LLM post-training actually works .\n Join many others who use Deep (Learning) Focus to understand AI research. Consider a paid subscription if you would like to help support the newsletter.\n\n \n \n\n \n\n \n Key Themes for Nemotron Post-Training Before covering each paper individually, we will briefly highlight key themes in post-training that will be developed throughout the series of Nemotron papers we will study. Although this overview will outline a variety of training recipes, the post-training recipes covered in this post&#8212; and for many other LLMs as well &#8212;can be roughly understood through three key methodologies:\n Supervised Finetuning (SFT) .\n\n Reinforcement Learning (RL) .\n\n Multi-Teacher On-Policy Distillation (MOPD) .\n\n The third methodology listed above is a newer component that has begun to appear more frequently in recent model reports (e.g., Nemotron 3 Ultra [7] and DeepSeek-V4 ) to scale the post-training process across a much wider set of domains. Although the exact recipe may change substantially between model families or reports, these underlying building blocks continue to be used over time . \n SFT provides an initial foundation by teaching the model useful reasoning and behavior patterns from supervised trajectories. Across the papers we will see in this overview, SFT data is usually curated via some variation of a generate-then-filter pipeline. We begin with a set of diverse prompts sourced from public data across several domains&#8212; or generated synthetically &#8212;and sample multiple candidate trajectories per prompt from a strong teacher model. Then, we retain only high-quality trajectories by using a domain-specific verifier to assess correctness. For example, math solutions can be checked with string matching or symbolic verification against a ground-truth answer, code solutions can be checked with test cases, and open-ended problems can be checked with an LLM judge.\n Importantly, a single prompt does not always correspond to a single training example. The teacher can produce multiple valid completions per prompt, allowing several examples or valid reasoning strategies to be included in the dataset. When including multiple completions to a single prompt in our data, we can select examples based upon their diversity to avoid duplicate trajectories from being present in our SFT dataset. Additionally, completions can be sourced from a pool of different teacher models to improve their diversity. Given that new models are frequently released, refreshing the SFT dataset by running the same pipeline with trajectories sampled from a recent model pool is common practice. \n RL is used to improve a model's capabilities beyond those demonstrated in teacher-provided trajectories by allowing the model to explore and learn from task-specific rewards. Throughout the papers in this overview, verifiable rewards are used for RL whenever possible, matching recent trends in post-training . For certain domains, however, we cannot deterministically verify a solution and must instead use a reward model or LLM judge to guide the learning process.\n As we will see, the data used for RL can be more important than the algorithm itself . When running RL, prompts are frequently",
+   "feed": "Deep (Learning) Focus",
+   "category": "ai"
+  },
+  {
+   "title": "The Price of Pageantry",
+   "link": "https://juliangewirtz.substack.com/p/the-price-of-pageantry",
+   "date": "Mon, 28 Sep 2026 13:11:53 GMT",
+   "text": "Welcome to Paper Tiger. Three consequential stories and a cultural discovery on Mondays, plus occasional essays connecting today's headlines to the history behind them. Know someone who'd enjoy Paper Tiger? Forward them this edition.\n Share \n The Price of Pageantry : Was Xi Jinping's visit to Washington really just an expensive photo op? The prominent Chinese international relations scholar Da Wei argued on X that Americans criticizing Trump's lavish reception of Xi were missing the point. \"True confidence doesn't obsess over symbols,\" he wrote.\n\nThere is a reasonable point here. Hosting a Chinese leader is not inherently a concession, and stabilization can reduce the danger of conflict and buy time to address deeper problems.\n\n But time bought can become time squandered . Since last year's trade truce, instead of using this breathing space to strengthen America's domestic foundations and alliances, Trump has launched a war of choice against Iran that has consumed American attention and military resources, stoked domestic divisions, and alienated allies. He is squandering the time he has bought.\n\nWithin the relationship itself, warmer ties at the top can coexist with intensifying competition underneath, as I argued in my essay on the K-shaped U.S.-China relationship . Trump increasingly seems to mistake the upward leg for the whole relationship, collapsing the vast challenge of U.S.-China relations into the narrow question of his personal relationship with Xi. The concern is that maintaining this \"friendship\" becomes the goal against which other American interests are weighed.\n \n The pageantry also sends a signal to American allies. Chinese state media is already starting to use Xi's visit to push American allies to hedge their bets&#8212;particularly the Europeans who are considering tougher trade actions against China. Beijing's pitch is deceptively simple: If America is warming ties with China, shouldn't you do the same? For example, the China Daily cites one commentator who said, \"Europe and the United Kingdom should take particular note of the recent signs of greater engagement between Beijing and Washington and seek more cooperation with China themselves.\" Beijing has every incentive to press the same argument privately with European officials. The question is whether America's allies read Trump's warm welcome for Xi as a reason to lower their guard. \n \n\n\n Donald Trump, Melania Trump and Xi Jinping at the White House on September 24, 2026. &#169; Evan Vucci/Reuters \n\n Arms for Xi? : Speaking after the summit, U.S. Ambassador to China David Perdue offered an extraordinary account to Fox News : Trump had asked Xi whether he wanted to buy American weapons. It is unclear whether this was a joke or an improvised sales pitch. But the fact that the latter is plausible is itself a problem, and it deserves an explanation beyond the State Department saying there is \"no offer or plan\" to sell arms to China.\n\nTrump may see selling arms to China as simply another means to reduce the bilateral trade deficit, but it is a preposterous suggestion running headlong into decades of history. During the 1980s, Washington pursued military cooperation with Beijing as part of their shared opposition to the Soviet Union. After the Tiananmen crackdown in June 1989, the United States suspended arms sales. Congress subsequently codified restrictions on defense exports to China, and current U.S. regulations subject them to a policy of denial. Of course, there is no strategic logic to reopening this issue; what American interest would be served by improving the capabilities of the People's Liberation Army? It is all the more troubling as a $14 billion arms package for Taiwan that Trump has called \"a very good negotiating chip\" remains in limbo.\n \n\n\n \n\n An Unequal Trip Down Memory Lane? : Trump and Xi ended the three-day visit at the National Archives, where they viewed America's founding documents. But the China-related materials reportedly assembled for the occasion, including copies of the 1844 Treaty of Wanghia and the 1858 Treaty of Tientsin, pointed toward a darker history. They are American examples of the \"unequal treaties\" negotiated in the shadow of the Opium Wars, which secured foreign commercial and legal privileges at China's expense. Their official names sound benign&#8212;Wanghia is formally known as a \"treaty of peace, amity, and commerce\"&#8212;but Chinese schoolchildren learn about them as symbols of China's Century of Humiliation, a core part of the Chinese Communist Party's historical narrative.\n\nExactly what Xi saw remains unclear. RealClearPolitics reported that staff removed a table of China-related artifacts at the Archives. The Taipei Times , citing unnamed Washington sources, separately reported that Chinese objections to another planned exhibit&#8212;the 1951 Treaty of San Francisco&#8212;led to the visit being cut short. We can't assume there was any sort of deliberate affront. But, at a minimum, the sele",
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "category": "china"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/28/foiled-plot-did-iran-plan-british-base-attack",
+   "date": "Mon, 28 Sep 2026 09:34:11 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/28/americas-departure-from-the-middle-east",
+   "date": "Mon, 28 Sep 2026 08:37:57 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/09/27/ireland-is-helping-supply-russias-war-machine",
+   "date": "Sun, 27 Sep 2026 18:29:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/09/27/can-jesus-christ-sell-moderates-on-democrats",
+   "date": "Sun, 27 Sep 2026 14:38:55 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "Cookie Monster Tries to Meet His A.I. Mandate",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/cookie-monster-tries-to-meet-his-ai-mandate",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Me confused. Me know cookie inside and out! Now me has to use A.I. for cookie work?",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Letters from Our Readers",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/letters-from-the-october-5-2026-issue",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Readers respond to M. R. O\u2019Connor\u2019s story about smokejumpers, Kelefa Sanneh\u2019s piece about A.I. music, Jennifer Wilson\u2019s article about lingerie, and Anna Holmes\u2019s home-ownership essay.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Briefly Noted Book Reviews",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/the-radiance-cloudthief-dear-dealer-citizen-beast",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "\u201cThe Radiance,\u201d \u201cCloudthief,\u201d \u201cDear Dealer,\u201d and \u201cCitizen Beast.\u201d",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "How Pawe\u0142 Pawlikowski Learned to Film Europe\u2019s Fractures",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/pawel-pawlikowski-profile",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "The Polish director has made a career out of examining the mysteries of borders, both spiritual and political.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Victoria Tentler-Krylov\u2019s \u201cFlower District\u201d",
+   "link": "https://www.newyorker.com/culture/cover-story/cover-story-2026-10-05",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "An oasis in the middle of the city.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why Doesn\u2019t Anyone Want to Fix One of America\u2019s Scariest Roads?",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/why-doesnt-anyone-want-to-fix-one-of-americas-scariest-roads",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "The Million Dollar Highway, prone to rockfall and avalanches, is the site of horrific crashes and courageous rescues.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "At the Department of Justice, Many Lawyers Are Wondering If It\u2019s Time to Quit",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/should-i-stay-or-should-i-go",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "The quandary faced by government lawyers who think that the Trump Administration is subverting justice.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "How America Became Antifascist",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/a-shadow-over-the-world-william-i-hitchcock-book-review",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Franklin D. Roosevelt was slow to confront the threat of Fascism. A new history explores how he\u2014and the country\u2014finally came around.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Detecting Notes of . . . Citi Field?",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/detecting-notes-of-citi-field",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "In the parking lot outside a Mets game, the TikTok sommeliers Ryan and Chris Goydos, of SuperVinoBros, crack open a mystery wine and guess its provenance.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Your Guide to Navigating the Parent Group Chat",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/your-guide-to-navigating-the-parent-group-chat",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "From the kind and competent to the scheming and lost, meet all the characters blowing up your phone.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Hockey Dads and Hockey Sons",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/hockey-dads-and-hockey-sons",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Parenting is a practice. You learn from your mistakes and then repeat them anyway.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why America Looks the Way It Does",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/property-values-joshua-specht-book-review",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "From vast grids to winding suburbs, Americans have spent two centuries remaking the landscape around property.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "More Sunshine with Joey Arias and Basil Twist",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/more-sunshine-with-joey-arias-and-basil-twist",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "The performance artist and the puppeteer are reviving their avant-garde cabaret show, a leggy fantasia beloved by Cyndi Lauper and the late Paul Reubens.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Cartoon Recession Indicators",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/cartoon-recession-indicators",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Is your life savings a single moth? Are you afflicted with moola eyes? It might be a sign we\u2019re in a downturn.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Cellmate Who Taught Me the Codes of Russian Prison",
+   "link": "https://www.newyorker.com/culture/essay/the-cellmate-who-taught-me-the-codes-of-russian-prison",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "On the outside, we would have never been friends. But in our small shared space we established a delicate rapport.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Caleb Hammer\u2019s Humiliation Economy",
+   "link": "https://www.newyorker.com/culture/infinite-scroll/caleb-hammers-humiliation-economy",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "The host of \u201cFinancial Audit,\u201d a popular YouTube series, claims that his goal is to make his viewers more financially literate, with his down-and-out interviewees serving as extreme test cases for what not to do.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Best External Hard Drives (2026): SanDisk, Samsung, and More",
+   "link": "https://www.wired.com/story/best-portable-external-storage-drives/",
+   "date": "Mon, 28 Sep 2026 13:15:00 +0000",
+   "text": "Need an ultrafast drive for video editing or a rugged option to back up your photos in the field? We\u2019ve got a solution for every situation.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Bose Launches New Wired Earbuds After More Than a Decade",
+   "link": "https://www.wired.com/story/bose-to-release-wired-headphones-after-10-years/",
+   "date": "Mon, 28 Sep 2026 13:00:00 +0000",
+   "text": "The Bose Noise Cancelling Wired Earbuds are the first new wired headphones from the brand since 2015, inspired directly by teen preferences. We got an early listen.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
+   "link": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
+   "date": "Mon, 28 Sep 2026 11:32:19 +0000",
+   "text": "Sam Altman says the company \u201chave not been as fast as we would have liked\u201d at dealing with security breaches, after news of further incidents over the summer forces another temporary halt.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Space Lasers Are About to Get Their First Real Test Generating Energy",
+   "link": "https://www.wired.com/story/space-lasers-are-about-to-get-their-first-real-test-generating-energy/",
+   "date": "Mon, 28 Sep 2026 11:00:00 +0000",
+   "text": "Startup Star Catcher is launching a system that, if successful, would be the first time energy has been beamed between two separate spacecraft.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Apple Watch: Series 12, Ultra 4, and SE 3 (2026)",
+   "link": "https://www.wired.com/story/best-apple-watch/",
+   "date": "Mon, 28 Sep 2026 10:36:00 +0000",
+   "text": "From the latest Ultra to last year\u2019s SE, these are the Apple Watches worth considering.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "I've Tested Over 100 Home Security Cameras. Here's Which to Buy",
+   "link": "https://www.wired.com/story/best-security-cameras/",
+   "date": "Mon, 28 Sep 2026 10:30:00 +0000",
+   "text": "Keep an eye on home wherever you are with the best security cameras, including indoor and outdoor, subscription services, AI smarts, and local recording options.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "AI Agents Are About to Flood the Workforce. No One\u2019s Ready for It",
+   "link": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
+   "date": "Mon, 28 Sep 2026 10:00:00 +0000",
+   "text": "Your next coworker might well be an AI agent\u2014and will require a whole new model of workplace interactions.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Solving Math\u2019s Greatest Problems Was an Art Form. Then Came AI",
+   "link": "https://www.wired.com/story/solving-maths-greatest-problems-was-an-art-form-until-ai/",
+   "date": "Mon, 28 Sep 2026 09:30:00 +0000",
+   "text": "Mathematics has been one of humanity\u2019s most creative endeavors, akin to painting and poetry. Now, mathematicians are trying to save it from the brute force of AI.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Next Evolution of AI Is Learning From Your Dodgy Gaming Skills",
+   "link": "https://www.wired.com/story/the-next-evolution-of-ai-is-learning-from-your-dodgy-gaming-skills/",
+   "date": "Mon, 28 Sep 2026 09:00:00 +0000",
+   "text": "A British startup is shaping video game inputs into training data for AI models that can navigate the physical world.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Nvidia\u2019s Answer to Rogue Agents Is an Open-Source AI Security System",
+   "link": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+   "date": "Mon, 28 Sep 2026 09:00:00 +0000",
+   "text": "In the wake of a series of high-profile AI safety incidents, Nvidia is introducing a new software tool that helps keep agents from escaping containment.",
+   "feed": "Wired",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (4 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (16 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (10 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (0 new)"
+  }
+ ]
+}

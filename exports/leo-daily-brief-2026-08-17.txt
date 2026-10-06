@@ -1,0 +1,46 @@
+========================================================================
+  LEO GROUND STATION DAILY — August 17, 2026
+========================================================================
+
+═══ 1. EXECUTIVE SUMMARY ═══
+The ground segment picture is quiet in licensing but active in orbit. The FCC feed shows no new Kuiper-linked filings — the three Denali 20020, LLC records remain the August 2025 set — and the site register still holds only 80 assessed sites against 129 referenced, meaning 49 sites are unassessed. That is the real coverage gap: 62 percent. The launch manifest, by contrast, is fresh and shows three Falcon 9 Starlink missions in four days, which will stress ground entry points even without new gateway filings.
+
+The most important structural signal remains Kuiper. With only 5 assessed Kuiper sites in the register and no new Denali filings since mid-2025, the ground buildout is not yet happening at scale — yet the satellite plan is multi-thousand. That mismatch is the strategic indicator to track. Separately, the market metrics feed contains a contradiction in GSaaS sizing that invalidates the LEO-versus-broader comparison until corrected. Bottom line: the ground picture is being under-assessed, and the Kuiper ground vector is still the main event.
+
+═══ 2. FCC LICENSES ═══
+No new Kuiper-linked FCC filings appear in this snapshot. The kuiper_watch block reports three Denali 20020, LLC records, all certified 12 August 2025 and unchanged. Two are paired under call sign E140070 at 48.1487/−119.7005 and 48.1484/−119.7005, both 3.625–4.2 GHz with 52.50 dBi gain. The third, call sign E960222 at 48.1466/−119.6919, is 3.7–4.2 GHz at 42.00 dBi. That is a small multi-antenna C-band cluster in north-central Washington, not a buildout.
+
+Kuiper Watch: Denali 20020, LLC is the known Amazon shell, but these filings are a year old. Meanwhile the site register assigns only 5 sites to Kuiper against a multi-thousand-satellite plan. Ground buildout is the vector — if this stays at 3 FCC filings and 5 assessed sites while Amazon launches, gateways become the bottleneck and the lead indicator. The rest of the FCC list — AT&T, Intelsat, SES, Inmarsat, Calian, TowerStream, etc. — is legacy FSS inventory; nothing else rises to signal.
+
+═══ 3. CONSTELLATION SIGNALS ═══
+Launch feed is fresh as of 2026-08-17T20:38:43Z; no staleness discount applies. The manifest shows 363 upcoming launches and 5 Starlink launches in the active set. The near-term sequence matters: Starlink Group 17-50 on 19 August from Vandenberg, Group 10-39 on 20 August from Cape Canaveral, and Group 15-20 on 22 August from Vandenberg. That is three Starlink missions within four days across both US coasts.
+
+Ground implication: each Starlink batch adds dozens of satellites needing TT&C and gateway downlink. With no new FCC ground filings accompanying these launches, capacity is either pre-positioned or being absorbed by existing sites. Watch Vandenberg and Cape gateway complexes for congestion signals after this stretch. The Chinese LM-2C Earth-observation launch and Zhuque-3 test flight are not direct LEO ground-station drivers for our register.
+
+═══ 4. SITE & IMAGERY ═══
+Risk register status: 80 assessed, 129 referenced, 49 unassessed, coverage 62.0 percent. The risk distribution is Critical 0, High 6, Moderate 34, Low 27, Negligible 13. Moderate is the largest bucket, but the six High sites are the known near-term liabilities. The larger problem is the 49 unassessed sites — 38 percent of the referenced total — because the true High and Critical counts are probably understated. Operator distribution: Starlink 38, KSAT 15, OneWeb 10, Leaf Space 9, Kuiper 5, Telesat 3. Geographic concentration: North America 26, Europe 18, Asia 8, Oceania 7, South America 6, Africa 5, with thinner coverage in the Pacific, Arctic, Caribbean, Central Asia, Polar, Middle East, Indian Ocean, and Atlantic.
+
+Sentinel-2: no new findings. The imagery API is not configured, imagery.sites_checked is 10, and sites_with_data is 0. That means zero independent visual confirmation of construction, antenna installation, or changes at the registered sites. The risk register is therefore entirely dependent on non-imagery sources this cycle.
+
+═══ 5. MARKET SIGNALS ═══
+Job postings: one active query returned one hit for “ground station engineer hiring 2026,” signal “recent.” That is too thin to call a hiring trend. ITU activity is empty — no coordination signals this cycle.
+
+Market metrics: total ground station market is $41.0B in 2025, projected to $82.7B by 2030. Starlink subscriber count is 10M+ as of February 2026, projected 14M by 2030, with $11.8B estimated 2025 revenue and 9,400+ satellites in January 2026. The LEO GSaaS sub-market is listed at $1.72B in 2024, projecting to $5.33B in 2033, while the broader GSaaS market is listed at $520M in 2024, projecting to $2.49B in 2033.
+
+Market metrics flag, restated verbatim: “GSaaS metric inconsistency: LEO GSaaS sub-market ($1.72B (2024)) is larger than the broader GSaaS market ($520M (2024)), which is logically impossible if the broader figure includes LEO. At least one metric is mislabeled or wrong. Flag to metrics owner before any thesis relies on it.” I would not use the LEO-versus-broader GSaaS breakdown for any ground-station sizing until this is corrected. The total market and Starlink top-line are usable; the GSaaS split is not.
+
+═══ 6. BOTTOM LINE ═══
+Make the 49 unassessed sites the immediate priority intelligence task — assign collection against all 49 before updating the risk register or drawing conclusions about High/Critical exposure. Escalate Kuiper watch: any new Denali 20020, LLC filing or any increase above 5 Kuiper sites is the signal that ground buildout has started, and that will be the real bottleneck for Amazon’s multi-thousand-satellite plan. Flag the GSaaS inconsistency to the metrics owner now and hold any thesis that depends on the LEO versus broader GSaaS numbers. Enable the Sentinel-2 imagery API; without it, the site register is blind and cannot verify ground segment expansion. Finally, monitor post-launch gateway stress at Vandenberg and Cape after the 19–22 August Starlink sequence for early indicators of capacity limits in the existing US ground network.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | August 17, 2026

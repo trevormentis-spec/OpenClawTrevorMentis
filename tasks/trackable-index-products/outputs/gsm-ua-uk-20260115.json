@@ -1,0 +1,84 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-01-15",
+  "regions": [
+    {
+      "region_id": "UA-UK",
+      "region_name": "Ukraine Steppe",
+      "crops": [
+        "winter wheat",
+        "corn",
+        "sunflower"
+      ],
+      "ndvi": {
+        "current": 0.0258,
+        "median": 0.0258,
+        "std": 0.006,
+        "samples": [
+          {
+            "name": "Central Ukraine",
+            "bbox": [
+              30.5,
+              48.5,
+              31.0,
+              49.0
+            ],
+            "ndvi": 0.031847108904463926,
+            "tiles": 3
+          },
+          {
+            "name": "Southern Ukraine",
+            "bbox": [
+              33.5,
+              46.5,
+              34.0,
+              47.0
+            ],
+            "ndvi": 0.019762048121695276,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 0.0,
+        "band": "WELL_BELOW_NORMAL",
+        "years": 4,
+        "values": [
+          0.1067,
+          0.1956,
+          0.1169,
+          0.1417
+        ]
+      },
+      "delta_30d": {
+        "change": -0.1216,
+        "prior": 0.1474,
+        "dir": "DECREASING",
+        "date": "2025-12-16"
+      },
+      "ground_truth": {
+        "available": false,
+        "sources": [
+          "FAO GIEWS"
+        ]
+      },
+      "confidence": {
+        "nato": "A2",
+        "source": "A",
+        "info": "2"
+      },
+      "alert": true,
+      "status": "OK"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

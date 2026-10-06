@@ -1,0 +1,425 @@
+{
+ "generated": "2026-10-02T14:00:09+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "A big-tent or small-tent AI safety movement?",
+   "link": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+   "date": "Thu, 01 Oct 2026 16:34:51 GMT",
+   "text": "In recent weeks, two narratives about AI safety have emerged: either AI existential risk is real and imminent, or AI leaders' and whistleblowers' claims to that effect are insincere &#8212; a \"psyop\" or hype or a twisted form of regulatory capture.\n Few have considered the third possibility that x-risk warnings are sincere but simply wrong and counterproductive to AI safety . It's as if everyone takes for granted that those raising the alarm are geniuses, and the only question is whether they're the benevolent or the evil kind of genius.\n We subscribe to neither narrative. In our writing on AI safety , we've consistently tried to take the arguments seriously but rebut the many claims we think are unsound while highlighting safety concerns that we think are real. This essay is a continuation of that agenda.\n It is true that we systematically underinvest in resilience against catastrophic and systemic risks Let's start by steelmanning a subset of AI safety and Effective Altruist (EA) arguments. Something is deeply wrong in the world when it comes to how much we invest in defending against catastrophic risks, and the safety and EA communities are right about that. Take superintelligence out of the equation entirely and it remains true that evidence-grounded risk arguments have been made for years and not produced a commensurate policy response.\n The most well known example is the failure to prepare for pandemics. We had years of warnings and quantitative estimates. A 2019 report convened by the WHO/World Bank &#8212; before COVID &#8212; began by saying there is a \"very real threat ... of a respiratory pathogen killing 50 to 80 million people and wiping out nearly 5% of the world's economy.\" It estimated the cost of adequate preparedness at a mere $1&#8211;2 per person per year for most countries.\n Since the 2009 H1N1 pandemic, at least 11 high-level panels and commissions have made specific recommendations to improve global pandemic preparedness, and yet \" the majority of recommendations were never implemented \". More remarkably, even after COVID, only a fraction of the need was funded. The same independent panel wrote in 2024 that \"There is a cynical attraction to providing significant and immediate resources during a crisis, rather than proactively preventing one. Yet history shows this will not end well.\" The root cause seems to be that voters reward spending on relief, not preparedness .\n To be clear, the inadequacy of pandemic preparedness is by no means a uniquely Effective Altruist insight, let alone AI safety. But EA does deserve credit for championing the cause. It's also true that EA's consequentialist moral framework that centers expected-utility calculations is highly effective at revealing and quantifying our underpreparedness. The framework is highly controversial, but we don't think there's anything wrong with it or its application to areas like biorisk. We do, however, strongly disagree with its extensions to longtermism and AI existential risk. We also disagree with the tendency to reframe problems such as AI's amplification of biorisk as \"AI safety\" problems to be solved through methods such as alignment. Our view is that AI is an amplifier of existing systemic risks.\n The underpreparedness problem is also true of cybersecurity &#8212; actually, it's worse. Unlike pandemics or finance, there is no culture of modeling systemic or catastrophic risks in the cybersecurity community. The economic approach we described in the previous essay has been successful in keeping the expected losses from everyday attacks at a manageable level, but markets are notoriously bad at appropriately pricing tail risks and externalities.\n Insurance companies know this. Lloyd's is pretty blunt about the fact that \"losses have the potential to greatly exceed what the insurance market is able to absorb\", and does not insure against severe state-backed cyberattacks (that was in 2022).\n Once again, this has little to do with AI's recent capabilities. Five years ago, before AI was in the picture, when teaching undergraduate information security at Princeton, Arvind emphasized that cascading failures and catastrophic risks are possible, resulting in essentially the whole internet going down for an extended period, with potentially civilization-altering consequences. 1 \n (Looking back at the speaker notes in my slides, I'm reminded that I apologized for presenting original research in an undergrad class that's supposed to be about basics, but explained that this is because the near-total lack of attention to this critical topic in the security community left me no choice. &#8212; AN.) \n In other words, Dario Amodei's claim about agent swarms potentially being capable of \" taking over the entire internet \", while worded somewhat hyperbolically, is not obviously outside the realm of possibility, and deserves study at the very least. The cybersecurity community has the right skillset to do that, but unfortunately they don't s",
+   "feed": "AI as Normal Technology",
+   "category": "ai"
+  },
+  {
+   "title": "[AINews] Pi 1.0, Pi Durable, and AIE NYC",
+   "link": "https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc",
+   "date": "Fri, 02 Oct 2026 06:40:53 GMT",
+   "text": "Last call for regular tickets for AI Engineer NYC ! See you in 2 weeks! \n As an exclusive for Latent Space subscribers, the first 30 of you can take a 30% off code if it helps (for new tickets only, no refunds). \n \n Pi is often mentioned in the same breath as OpenClaw, as we did earlier this year :\n \n\n but today is time for the increasingly well regarded Earendil , which Pi joined, to have its day in the sun, with both Pi 1.0 and Pi Durable hitting the front page of HN.\n Pi 1.0 : \n Codemode (native support for MCP, Jev and image models)\n\n Extension support for virtual models \n\n Deferred tool loading\n\n Cache warming for anthropic models\n\n Mid-conversation system messages (transcript-aware prompt and tool changes)\n\n A new TUI theme\n\n Full-screen mode by default\n\n Pi Durable ports Pi to TypeScript and externalizes all stateful components of Pi:\n Crash Survival: Every step is recorded as a checkpointed task. If a process fails or restarts, agents and subagents automatically resume from their last exact state.\n\n Portability: It runs anywhere with a JavaScript runtime (like Node, Bun, or Cloudflare) and uses pluggable storage backends (Memory, SQLite, JSONL) and flexible remote or local execution environments.\n\n Concurrency: A single harness can run multiple parallel, branching conversations&#8212;such as a main channel and separate threads&#8212;without blocking one another.\n\n Extensibility: Developers can bundle custom system prompts, tools, hooks, and durable tasks (e.g., multi-step checkout processes with rollback capabilities) into installable \"Extensions.\"\n\n Context Management: Automatic background compaction summarizes older messages to maintain token limits without pausing the agent's active work.\n\n Multiplayer & State Sync: Application state (like a to-do list) is stored in documents directly alongside the conversation transcripts, allowing multiple users or UIs to connect, watch, and steer the same agent simultaneously.\n\n Hot-Swapping: Tool and extension code can be updated dynamically while the agent is running, with the next tool call automatically picking up the new code.\n\n \n \n AI News for 10/01/2026-9/30/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\n \n AI Twitter Recap Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3 \n Gemini 4 Argon : Google announced a new generation of Gemini, with contributors highlighting revised pretraining mixtures, long-horizon post-training data, and internal applications in memory optimization, code migration and mathematics. These are developer accounts of how the model was built and used&#8212;not independent evidence of general superiority ( Google researcher ).\n Validation : Google says new Gemini revisions now undergo weeks of testing by thousands of internal software engineers before release ( Logan Kilpatrick ).\n\n Contested readiness : A circulated Bloomberg report attributed coding weaknesses to anonymous insiders; a subsequent post reported a senior DeepMind engineer rejecting that account. Treat the practical coding-quality dispute as unresolved, rather than interpreting either benchmarks or employee reactions as decisive ( reported criticism , reported rebuttal ).\n\n \n GPT-6.1 Sol : OpenAI's update is primarily an efficiency story. Sam Altman called it the company's fastest-growing model and said serving performance had improved after launch-time load problems ( update ).\n Measured economics : Artificial Analysis reports $0.72 per Intelligence Index task at maximum effort, versus $1.04 for GPT-6 Sol and $3.26 for Astra. Fewer turns and cheaper cache reads&#8212;not simply fewer generated tokens&#8212;drive the improvement ( results , explanation ).\n\n Multimodal fix : OpenAI also corrected image encoding for Luna and Sol. Luna gained one Intelligence Index point, including improvements on visual-document and knowledge-work evaluations; Sol changed negligibly ( measurement ).\n\n \n Solar Mini 4 : Upstage's proprietary text-only reasoning model reports 35B total/3B active parameters, a 1M-token context window and 262K maximum output. Weights are not released, so parameter counts remain vendor-reported ( analysis ).\n Pricing : $0.10/$0.40/$0.01 per million input/output/cache-hit tokens.\n\n Trade-offs : Artificial Analysis scores it 24 overall and 83% on long-context reasoning, but only 1% on Terminal-Bench 4.0. Despite 208 tokens/s output, approximately 88K output tokens per task produce a 7.1-minute average completion time and roughly five times Luna's task cost.\n\n \n FLUX 3 Image : Black Forest Labs launched native generation up to 4K, up to ten reference images, bounding-box layout control and targeted multi-turn editing. Preserving every untouched pixel is a vendor capability claim, not independently established here ( announcement ).\n Availability : Commercial weights are av",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "Academia is for Ambition \u2014 Alex Zhang, MIT",
+   "link": "https://www.latent.space/p/rlm",
+   "date": "Fri, 02 Oct 2026 00:28:04 GMT",
+   "text": "Last call for regular tickets for AI Engineer NYC ! As an exclusive for Latent Space subscribers, the first 30 of you can take a 30% off code if it helps - for new tickets only, no refunds! See you in 2 weeks! \n \n While we tend to cover industry on the pod, every so often we celebrate a clearly emerging superstar PhD. In 2024 we featured Shunyu Yao , who went on to build Operator at OpenAI and is now Chief AI Scientist of Tencent . In 2025 we featured Jack Morris , who went on to cofound Engram at $600m and is now a leading voice on continual learning . \n This year we are proud to feature the work of Alex Zhang of MIT.\n \n\n From GPU kernels and KernelBench to Recursive Language Models , Mismanaged Geniuses , and massive multi-agent swarms, Alex Zhang is exploring how much capability we're leaving on the table by wrapping increasingly powerful models in primitive systems. \n RLMs took over the timeline early this year:\n \n and an RLM based harness was the first to ~solve ARC-AGI-3 before OpenAI's Astra: \n \n and is even today, influencing new research that has more extreme implications than RLMs:\n \n \n We go deep on GPU Mode and AI-written kernels, research taste and why academics should take bets industry labs won't, GEV and alternatives to the standard autoregressive language model, and the idea of harnesses as compositional generalizers. Alex explains RLMs, context offloading, programmatic subagent calling, Prime Agent, persistent subagents, and why the \"language model\" of the future may actually be an invisible swarm of agents underneath a simple interface. We also discuss OpenAI's massive agent experiments, Kimi swarms, open-ended research at Sakana AI, speculative programmatic tool calling, capability overhang, Neuralese, and where Alex thinks the next big research opportunities may lie.\n \n We discuss: Why AI-generated GPU kernels still leave substantial room for human expertise\n\n How one expert insight can potentially replace enormous amounts of brute-force token search \n\n Why PhD students should take research bets that initially look trivial, weird, or pointless\n\n What SWE-bench, RLMs, ReAct, and Quiet-STaR reveal about research taste\n\n GEV and why a language model does not have to mean an autoregressive text-to-text decoder\n\n Why Claude Code, Codex, and Pi are structurally more similar than they look\n\n How harness design can improve compositional generalization across tasks and domains\n\n RLMs: context offloading, code execution, recursive subagents, and shared memory \n\n Prime Agent, continual harnesses, and persistent agent-to-agent communication \n\n Why the model you query in the future may secretly be an entire swarm or scaffold \n\n OpenAI's 10,000-agent experiment, 130B output tokens, and ~$40M-equivalent problem solving\n\n Why much of an agent swarm may be wasted search &#8212; and why convergence is still hard\n\n Kimi versus OpenAI and different approaches to multi-agent systems\n\n Open-endedness, Sakana AI , and finding hidden gems in enormous amounts of generated work\n\n Why current frontier models may already have a large capability overhang \n\n Speculative programmatic tool calling and overlapping tool execution with generation\n\n Whether English, code, or an entirely new \"Neuralese\" constrains how models reason\n\n AI for science , fast-moving benchmarks, and how Alex chooses what research problems to bet on\n\n \n Alex Zhang Website: alexzhang13.github.io\n\n X: @a1zhang\n\n \n Timestamps 00:00:00 Introduction\n 00:00:49 GPU Mode, KernelBench, and AI-Written Kernels\n 00:07:38 Human Expertise vs. Brute-Force AI Search\n 00:13:20 Research Taste and Taking Big Bets\n 00:19:28 GEV and Rethinking the Language Model\n 00:29:03 Video Game Agents and the Harness Problem\n 00:31:01 Why Claude Code, Codex, and Pi Are So Similar\n 00:36:42 Harnesses as Compositional Generalizers\n 00:44:24 RLMs Explained\n 00:52:01 Prime Agent and Persistent Subagents\n 00:57:41 RLMs in the Wild\n 01:00:30 OpenAI Swarms and the Future of Language Models\n 01:07:26 Open-Endedness and Sakana AI\n 01:15:52 Kimi vs. OpenAI Agent Swarms\n 01:20:06 Capability Overhang and Speculative Tool Calling\n 01:28:19 Neuralese, Future Research, and AI for Science\n Transcript Introduction: Alex Zhang, RLMs, and GPU Mode Swyx [00:00:00]: All right, we're here in the studio with Alex Zhang, I guess most famously of, RLMs, but you have a few other affiliations. Welcome to the show.\n Alex Zhang [00:00:12]: Yeah. Thank you for having me.\n Swyx [00:00:13]: Yeah. I guess GPU Mode as well?\n Alex Zhang [00:00:15]: Yes, GPU Mode as well.\n Swyx [00:00:16]: You were shepherded in by Mark Saroufim. Not everyone gets that kind of welcome.\n Alex Zhang [00:00:19]: Yep. Yeah. Yeah. I'm very close to all the people in GPU Mode, so yeah\n Swyx [00:00:23]: Yeah\n Alex Zhang [00:00:23]: We often end up working together in various capacities, like even beyond just GPU Mode itself, so.\n Swyx [00:00:29]: Yeah. Can we explain, so people who are not that close Don't know about this. It's just a--",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "Si Sheppard \u2013 How did a few hundred Spanish soldiers topple two empires?",
+   "link": "https://www.dwarkesh.com/p/si-sheppard",
+   "date": "Thu, 01 Oct 2026 15:28:28 GMT",
+   "text": "New episode with military historian Si Sheppard .\n The conquests of the Aztec and Inca empires might be the most shocking events in human history.\n Hernan Cort&#233;s and some hundreds of Conquistadors landed on a new continent they knew basically nothing about, and within 2 and a half years, conquered the 6 million strong Aztec empire.\n Then, a decade later, Francisco Pizarro did the same thing to an Incan Empire of some 10 million inhabitants.\n In both cases, the Conquistadors consistently beat native armies while being literally 100x (or even in some cases 1000x) outnumbered - and in many cases, did so without taking a single casualty.\n And they did this with 99% of their military forces being made up of the very natives they were trying to subjugate.\n We often forget how wild human history is. People talk about AI takeover as if it would be some crazy, unprecedented sci-fi outcome. But this would not be the first time an alien force whose motives the defenders barely understand use more advanced technology and diplomatic cunning to outmaneuver and then take over a much larger and long established existing order.\n Watch on YouTube ; listen on Apple Podcasts or Spotify .\n \n\n Sponsors Jane Street 's intern projects are even more ambitious than I realized. One intern spent his summer researching LLM memorization, figuring out how to quantify and reduce it. This matters because, when Jane Street tests their models on historical data, they need to know that performance reflects predictive power, not just memorized outcomes. Another intern spent his time developing a new activation checkpointing scheme: his custom version ended up outperforming PyTorch's native one. If you want to read about more 2026 intern projects or apply for Jane Street's 2027 internships, go to janestreet.com/dwarkesh \n\n Grok Bot can tackle the tasks you've been meaning to handle but just haven't gotten around to. For example, SpaceXAI recently gave Grok Bot access to their procurement contracts, vendor spend, and usage data: it ended up identifying over $100,000 in potential savings for them. I decided to try this on my own spend, and Grok Bot found over $5,000 of savings for me, even though I run a pretty small team. Try it out yourself at x.ai/bot \n\n Antithesis solves one of the biggest problems with traditional software testing: to test for a bug, you first have to be able to imagine it. Antithesis runs your system through thousands of parallel histories and steers your tests for you, injecting faults and generally trying to make everything as adversarial as possible. That way, your software gets tested against scenarios you'd never imagine but that could still arise in the real world. Learn more at antithesis.com/dwarkesh \n\n Timestamps (00:00:00) &#8211; Cort&#233;s's conquest of the Aztecs\n (00:22:39) &#8211; Pizarro's conquest of the Inca\n (00:26:59) &#8211; Explaining Conquistador military superiority\n (00:34:39) &#8211; Could the natives have beat the Conquistadors?\n (00:48:56) &#8211; The Aztecs and Incas did not learn from each other\n (00:56:11) &#8211; Why Spain still lost in the long run\n (01:07:47) &#8211; Why didn't the Aztecs/Incas adapt better to European warfare?\n (01:14:16) &#8211; Conquistador motivation\n (01:26:22) &#8211; Why Mughal India also couldn't play the Europeans off each other\n (01:33:42) &#8211; Diplomacy was just as important as technology\n Transcript 00:00:00 &#8211; Cort&#233;s's conquest of the Aztecs Dwarkesh Patel \n Today I'm chatting with professor and military historian Si Sheppard . I want to talk to you about the conquest of the Aztec and the Inca Empires because these are some of the most shocking events in human history, unparalleled among all the military and diplomatic achievements ever made. A few hundred conquistadors show up to a new continent they know nothing about. Within a matter of years, they subjugate empires which have millions of inhabitants in them. In the process of doing so, they are often winning battles where they are outnumbered 100 to 1, 1,000 to 1, and in many cases not even taking a single casualty. They're doing this while upwards of 99% of their fighting forces are made up of the very natives that they're going to subjugate.\n I wanted to have you on to talk about something this episode. We're not going to focus on it, we're mostly talking about history here, but people think of AI takeover as this crazy sci-fi scenario but this would not be the first time in history that an alien force, with motivations that the natives don't understand, is able to use diplomatic cunning and technological advantages to outmaneuver and then take over a much larger and well-established order. I wanted to have you on to understand what happened here.\n First, I would love to hear the stories. What did Cort&#233;s do? What did Pizarro do? How did these conquests actually go down?\n Si Sheppard \n Thank you. It's a great pleasure to be here. Yes, we're talking about the birth of our modern worl",
+   "feed": "Dwarkesh Podcast",
+   "category": "ai"
+  },
+  {
+   "title": "A New Staff is Still a Staff",
+   "link": "https://justinmc.substack.com/p/a-new-staff-is-still-a-staff",
+   "date": "Thu, 01 Oct 2026 19:46:48 GMT",
+   "text": "On September 30th, New Fiscal Year's Eve, we got the State of the Force 2.0. In what is becoming an annual tradition Secretary Hegseth called flag officers from across the U.S. Military to Quantico for a discussion of the force. He repeated his claim of getting rid of fat generals and admirals. He discussed, again, being against beards, because apparently, we should return to our traditions with the exception of that one. He promised to cut 20% of flag officer positions in an effort to resize the force, then proceeded to announce six new endeavors that would likely see the force and the budget grow. \n Subscribe now \n I don't have to say that Fortress America sounds like Fortress Europe, but I guess I just did. I am interested to see if \"The Next Great American Base\" will be the U.S.'s answer to \"The Great British Bake Off.\" The tagline can be, \"Which governor will get the Hegseth Handshake?\" These are all pressing questions I have, but the thing I think is the most important outcome from today is the announcement of Project Agincourt . \n \n\n\n This week our Home Bakers will attempt to make Pentagon Dough \n I am not sure why we chose to name our Autonomous Command Project Agincourt. There was nothing notably autonomous about Henry V's victory over the French. Unless you think of the horse as autonomous, but it was France that had mounted cavalry at this battle; the English had almost none. The English won, so maybe they just picked a battle that started with an \"A.\"\n That aside, Secretary Hegseth announced the development of a pathway to create a four-star command responsible for autonomous weapons. The reason this couched language is necessary is that the executive can create unified combatant-level commands. However, the Senate must give its advice and consent for any four-star officer to serve in a command position, and Congress will be responsible for creating the authorities that underpin the commands legitimacy and ability to build and action any new acquisition pathways. For the sake of analyzing the merits of the plan, let's assume the next Congress agrees.\n Autonomous systems are working in the Strait of Hormuz in support of Central Command. The Anduril Dive-LD that Iran recently recovered had operated for four months, and a Saronic vessel saved two AH-64 pilots in the Persian Gulf. So, we already have autonomous systems flowing into the force via decentralized experimentation. Centralizing this would risk pulling us further away from ubiquity by slowing down the experiments necessary to develop both the technology and the doctrine required for a future fight. Autonomy is not a distinct warfighting function. It is a capability that needs to be ubiquitous across the force. \n Creating a four-star command to oversee the development, testing, and implementation of autonomous weapons would signal that the U.S. sees autonomous weapons as both very unique and very dangerous. The only other class of weapon in the U.S. arsenal that has a four-star command overseeing it is the nuclear arsenal under Strategic Command. It controls nuclear missiles and the early warning systems that help manage the U.S. nuclear arsenal. For autonomous weapons to require the same level of command would mean that we consider them roughly equal, which I think is wrong.\n The central thrust here seems to be that a four-star-level command will be able to move quickly and speed up procurement to ensure that we are getting these weapons into the force in a timely manner. I am not sure this is true. It is true that when a four-star commander decides that he wants something the staff moves heaven and earth to try and get it. However, I have also seen those same staffs exercise the staff veto to keep things they disagree with from ever reaching the boss. A new staff is still a staff. \n The larger issue from my perspective is this Project Agincourt is treating acquisition speed as an organizational problem. It isn't. I wrote about it last week in Anduril and the Limits of Build First, Buy Later. The Pentagon will not be able to meaningfully move faster without Congress, and this Pentagon has not made a priority of winning friends in congress, from Bridge Colby's recent testimony to the general turn against the conduct of the Iran War. The Pentagon cannot, by itself, speed acquisition without congress. The exception that proves the rule for this is Overseas Contingency Operations funds. These were fondly known as OCO funds during the Global War on Terror.\n \n These funds started as emergency supplemental funding in 2001 after September 11th and were renamed under the Obama administration as OCO funds. By 2019, the Congressional Budget Office estimated that Congress had authorized more than $2 trillion in discretionary spending. At their height, OCO accounted for 28% of the Pentagon's annual budget. These are the funds that underpinned the one project the Pentagon points to when it talks about the ability to move fast and solve problems: the fie",
+   "feed": "Mind of Things",
+   "category": "security"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/02/coffer-stop-ai-may-shrink-tax-base",
+   "date": "Fri, 02 Oct 2026 10:27:50 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/by-invitation/2026/10/02/what-brazil-must-do-to-kick-the-corruption-habit",
+   "date": "Fri, 02 Oct 2026 09:24:30 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/10/02/middle-east-dispatch-newsletter-the-new-judaism-reshaping-israel",
+   "date": "Fri, 02 Oct 2026 08:56:06 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/interactive/1843/2026/10/02/the-muslim-country-churning-out-catholic-priests",
+   "date": "Fri, 02 Oct 2026 08:07:37 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/01/how-to-short-ai-with-carson-block",
+   "date": "Thu, 01 Oct 2026 16:06:27 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "The Well-Funded Fight to Keep Latinos Voting Republican",
+   "link": "https://www.newyorker.com/news/the-lede/the-well-funded-fight-to-keep-latinos-voting-republican",
+   "date": "Fri, 02 Oct 2026 10:00:00 +0000",
+   "text": "Amid deportations and Trump\u2019s lagging popularity, one Koch-backed group has recruited Michigan Latinos to reach more than a hundred thousand voters for Mike Rogers.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Quiet Unravelling of a Haitian Life in America",
+   "link": "https://www.newyorker.com/news/our-local-correspondents/the-quiet-unravelling-of-a-haitian-life-in-america",
+   "date": "Fri, 02 Oct 2026 10:00:00 +0000",
+   "text": "Emmanuella was the only one in her family on Temporary Protected Status. Now that it\u2019s gone, she\u2019s leaving her job without a word, desperately dating to find a husband, and beginning to go underground.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Justine Kurland\u2019s Photographs Keep Us on Edge",
+   "link": "https://www.newyorker.com/culture/goings-on/justine-kurlands-photographs-keep-us-on-edge",
+   "date": "Fri, 02 Oct 2026 10:00:00 +0000",
+   "text": "Also: the progressive R. & B. of Kelela, the art of Jessica Lange, the Australian Ballet on Oscar Wilde, and more.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Will A.I. Still Take Our Jobs?",
+   "link": "https://www.newyorker.com/culture/open-questions/will-ai-still-take-our-jobs",
+   "date": "Fri, 02 Oct 2026 10:00:00 +0000",
+   "text": "The jobs apocalypse hasn\u2019t arrived. Something else is happening instead.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why the War in Iran Is Likely to Heat Up Again",
+   "link": "https://www.newyorker.com/news/q-and-a/why-the-war-in-iran-is-likely-to-heat-up-again",
+   "date": "Fri, 02 Oct 2026 00:16:05 +0000",
+   "text": "Oil exports in the Gulf have rebounded as the U.S. escorts ships through the Strait of Hormuz. But the obstacles to a lasting peace are greater than ever.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Pete Hegseth Just Declared Victory in the Wrong War",
+   "link": "https://www.newyorker.com/news/letter-from-trumps-washington/pete-hegseth-just-declared-victory-in-the-wrong-war",
+   "date": "Thu, 01 Oct 2026 22:36:56 +0000",
+   "text": "The combative culture warrior in the Pentagon may soon be Congress\u2019s top target.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Daily Cartoon: Thursday, October 1st",
+   "link": "https://www.newyorker.com/cartoons/daily-cartoon/thursday-october-1st-only-poll",
+   "date": "Thu, 01 Oct 2026 14:39:43 +0000",
+   "text": "A drawing that riffs on the latest news and happenings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Amazon Says It\u2019s No Longer Using NDAs for Data Centers",
+   "link": "https://www.wired.com/story/amazon-says-it-is-going-to-stop-using-ndas-for-data-centers/",
+   "date": "Fri, 02 Oct 2026 11:47:58 +0000",
+   "text": "The company announced it has stopped using secret agreements with county officials and acknowledged that community backlash is leading to data center moratoriums across the country.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Smart Cat Trackers of 2026: Fi Mini vs. Tractive",
+   "link": "https://www.wired.com/story/best-smart-cat-tracker/",
+   "date": "Fri, 02 Oct 2026 11:35:00 +0000",
+   "text": "After months of monitoring Basil\u2019s activity and sleep, I found that Fi and Tractive cat trackers come with their own trade-offs.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Your Driverless Cab Is Spying on You",
+   "link": "https://www.wired.com/story/when-the-robotaxis-are-watching-you/",
+   "date": "Fri, 02 Oct 2026 10:30:00 +0000",
+   "text": "Self-driving cars from Waymo, Zoox, and Tesla are studded with cameras and sensors. Some of them are pointing at riders.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Election Deniers Think the GOP\u2019s Terrible Midterm Polling Is a \u2018Psyop\u2019",
+   "link": "https://www.wired.com/story/election-deniers-think-the-gops-terrible-midterm-polling-is-a-psyop/",
+   "date": "Fri, 02 Oct 2026 10:00:00 +0000",
+   "text": "Dozens and dozens of high profile MAGA influencers and pundits have weighed in. \u201cThe laughable fake polls are rolling out,\u201d Catturd posted on X.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "A Flaw in ChatGPT\u2019s Mac App Could Have Let Hackers Grab Sensitive Data",
+   "link": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/",
+   "date": "Fri, 02 Oct 2026 09:45:00 +0000",
+   "text": "While the focus has been on AI agents\u2019 hacking capabilities, a recently patched vulnerability in a ChatGPT app shows that AI software is itself an inviting\u2014and vulnerable\u2014target.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Health Care Workers Are Tired of Cleaning Up Palantir\u2019s Mess",
+   "link": "https://www.wired.com/story/healthcare-workers-are-tired-of-cleaning-up-palantirs-mess/",
+   "date": "Fri, 02 Oct 2026 09:30:00 +0000",
+   "text": "A hospital giant and radiology network turned to Palantir to streamline scheduling, but nurses and other staff say the new software is causing errors, burnout, and frustration.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "31 Best STEM Toys for Kids (2026): Learning Made Fun",
+   "link": "https://www.wired.com/gallery/best-stem-toys-for-kids/",
+   "date": "Fri, 02 Oct 2026 09:30:00 +0000",
+   "text": "We found lots of math-filled and science-rich toys for tiny nerds to assemble, bake, squish\u2014or even tear apart and rebuild.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Uber Eats Promo Codes: $15 Off\u2502October 2026",
+   "link": "https://www.wired.com/story/uber-eats-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Hunger meets savings. Discover verified Uber Eats promo codes, new user offers, and Uber One discounts to slash your delivery fees and meal costs.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Peacock Promo Codes: 40% Off October 2026",
+   "link": "https://www.wired.com/story/peacock-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Stream your favorite shows for up to $80 off this month, and save on subscription plans with the latest Peacock TV coupons from WIRED.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Wayfair Coupons: Up to 80% Off October 2026",
+   "link": "https://www.wired.com/story/wayfair-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Get 10% off with Wayfair promo code, up to 80% off furniture, and more top coupons.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Nike Promo Codes and Discounts: 30% for October 2026",
+   "link": "https://www.wired.com/story/nike-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Check out our deals for Nike this October 2026, including 15% off select purchases.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Google Workspace Promo Codes: 14% Off for October 2026",
+   "link": "https://www.wired.com/story/google-workspace-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Boost your productivity and save with exclusive Google Workspace coupons from WIRED. Get up to 14% off plans for three months, including Starter, Standard, and Plus tiers.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Motley Fool Promo Code: $200 Off on Stock Advisor October 2026",
+   "link": "https://www.wired.com/story/the-motley-fool-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Scale your portfolio for less with these verified The Motley Fool membership discounts, stock advisor promo codes, and Epic Bundle deals.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Hotels.com Coupon Codes for October 2026",
+   "link": "https://www.wired.com/story/hotels-com-coupon/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Unlock significant savings on hotels, resorts, and getaways with our verified Hotels.com promo codes and gift card discounts. Plan your perfect trip today!",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Columbia Promo Codes: 15% Off | October 2026",
+   "link": "https://www.wired.com/story/columbia-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Explore current Columbia deals on jackets, outdoor gear, and apparel. Find active Columbia promo codes, student discounts, and free shipping offers to save on your next adventure.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Whoop Promo Codes: 20% Off This October 2026",
+   "link": "https://www.wired.com/story/whoop-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Whether you're looking for a Whoop free trial, student discount, or military savings, our guide to Whoop promo codes will help you maximize your membership benefits. Stay on top of your fitness goals for less.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Squarespace Promo Codes: 20% Off in October 2026",
+   "link": "https://www.wired.com/story/squarespace-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Get 20% off your next website, 10% off with exclusive Squarespace discount code, 50% off plans, and more top coupons from WIRED.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Design Within Reach Promo Codes: 30% Off | October 2026",
+   "link": "https://www.wired.com/story/design-within-reach-promo-code/",
+   "date": "Fri, 02 Oct 2026 05:00:00 +0000",
+   "text": "Get 30% off, 20% off, and free shipping with our Design Within Reach coupon codes, plus up to 50% off furniture with these special discounts.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Whatever AI Safety Is, It\u2019s Not This",
+   "link": "https://www.wired.com/story/whatever-ai-safety-looks-like-its-not-this/",
+   "date": "Thu, 01 Oct 2026 22:10:42 +0000",
+   "text": "Asking AI companies to self-regulate is a great way to pretend like you\u2019ve accomplished something.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Best Early Prime Day Deals Ahead of Amazon\u2019s Second Sale (2026)",
+   "link": "https://www.wired.com/story/amazon-prime-day-early-deals-10-01-2026/",
+   "date": "Thu, 01 Oct 2026 20:53:32 +0000",
+   "text": "Amazon Prime Big Deal Days officially begin on October 6 and 7, but I\u2019ve already spotted early discounts on gear our team recommends.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Trump\u2019s \u2018Morally Binding\u2019 AI \u2018Accord,\u2019 the Rise of AI Agents, and Extremists on the Ballot",
+   "link": "https://www.wired.com/story/uncanny-valley-podcast-trumps-pinky-swear-ai-safety-accord-an-ai-agent-worth-the-risk/",
+   "date": "Thu, 01 Oct 2026 19:58:31 +0000",
+   "text": "This week on \u201cUncanny Valley,\u201d we discuss the voluntary AI safety agreement tech executives signed, AI agents for normies, and extremist candidates running for office in the US midterms.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Experience What It\u2019s Like to Travel in the Occupied West Bank",
+   "link": "https://www.wired.com/story/experience-what-its-like-to-travel-in-the-occupied-west-bank/",
+   "date": "Thu, 01 Oct 2026 18:00:00 +0000",
+   "text": "Traverse barriers and checkpoints in the occupied West Bank\u2014your choices reflect the reality of nearly 3.5 million Palestinians who live there.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+   "link": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+   "date": "Thu, 01 Oct 2026 16:00:00 +0000",
+   "text": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he\u2019s back in character to shill a supplement called \u201cCrab Salts.\u201d",
+   "feed": "Wired",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (2 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (5 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (7 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (23 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (0 new)"
+  }
+ ]
+}

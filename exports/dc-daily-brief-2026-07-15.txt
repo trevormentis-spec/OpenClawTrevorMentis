@@ -1,0 +1,44 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-07-15
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+US hyperscale expansion is on a collision course with a grid that can’t keep pace. PJM’s 122 GW interconnection queue and 18–24 month transformer lead times are the single largest threat to operational reliability and construction timelines across the world’s densest data center clusters. If you’re betting on capacity in Northern Virginia, Dallas, or Ohio coming online on schedule, you’re betting against the laws of physics and supply chain reality.
+
+═══ SUBSEA CABLE INTELLIGENCE ═══
+No active cable breaks or major repair operations affecting high-capacity DC corridors. The transatlantic and transpacific routes serving New York/New Jersey, Northern Virginia, and Silicon Valley remain clean. That said, the Equinix Ashburn cluster’s dependence on cables landing in Virginia Beach (e.g., MAREA, BRUSA, Dunant) is a single-point-of-failure concern—any simultaneous cut would isolate a significant chunk of US East Coast cloud capacity. Monitoring the CLS-integrated landing stations for seismic or maritime activity is warranted; nothing flags today. The Hong Kong landing hub continues to see congestion due to regional cable overprovisioning without matching terrestrial upgrades—latency spikes into Singapore have been persistent, though not disruptive to SLA.
+
+═══ POWER & GRID ═══
+PJM grid strain is now a Tier 1 operational risk, not a future planning item. The 122 GW queue means a new DC build in Loudoun County faces 4–6 years for transmission interconnection, assuming transformers can even be sourced. Transformer lead times just extended to 24 months for >50 MVA units; switchgear is out to 18 months. This makes the 56/100 risk score on every Equinix US metro an understatement—those scores treat grid as a 30% weight, but when the grid fails to deliver, connectivity and hazard scores become irrelevant.
+
+ERCOT (Dallas, Houston) is a separate headache. Summer 2026 load forecasts put reserve margins at 8%, which means emergency alerts are a matter of when, not if. The Equinix DA1 Infomart facility—rated 56/100—will be first in line for load shed if rotating outages hit. In Ohio, the 1,200 MW AWS us-east-3 permit filing is a grid-buster: AEP’s transmission study for that site won’t be complete until 2028, and the region’s coal retirements are accelerating. No energy price spikes today, but forward curves for PJM on-peak power are up 12% month-on-month.
+
+═══ NATURAL HAZARD WATCH ═══
+North Atlantic hurricane season is entering its active phase. NOAA’s July update calls for 19 named storms, 9 hurricanes, 4 major—well above average. The Ashburn cluster is landfall-adjacent for any storm tracking up the Chesapeake; backup generators are tested, but fuel supply chains during a major event would constrain runtime beyond 72 hours. The Miami NOTA facility is in the cone for any Gulf or Atlantic storm—Equinix MI1 should be on generator readiness protocol now.
+
+Wildfire threat to San Jose/Santa Clara (SV1/SV5/SV10) is moderate and climbing with an incoming heat dome. Utility-initiated Public Safety Power Shutoffs (PSPS) are likely by late week, directly impacting these sites. San Andreas fault activity remains background, no new seismic signals of concern. Chicago and Dallas face severe thunderstorm risk (tornado/hail) this afternoon—standard precautions, but repeated hail events have damaged rooftop cooling units at Infomart before.
+
+═══ PHYSICAL SECURITY ═══
+No reported protests, intrusions, or construction incidents directly impacting Tier 1 sites. The security environment is quiet. However, the pace of hyperscale construction in Ashburn is creating access bottlenecks; utility trenching along Waxpool Road is a recurrent cause of fiber strikes. We’re tracking three new permit applications for fence-line expansions at Equinix DC1-DC15 that will disrupt security patrol routes for the next six months—adjust patrol schedules accordingly. No credible threats to European or APAC facilities.
+
+═══ CLOUD & NETWORK ═══
+All major cloud providers report nominal status. No ongoing region-level outages. Behind the scenes, AWS us-east-1 is increasingly constrained on new instance availability due to power delivery bottlenecks within the cluster—internal churn, not public outage, but it’s driving spot instance pricing volatility. Google’s us-east4 (Ashburn) is also showing elevated API latency during peak grid load hours, likely correlating with voltage sags. On the fiber front, a backbone fiber cut on a Zayo route between Ashburn and Richmond late yesterday caused a 9-minute BGP flap for one major CDN; it’s since re-routed, but it underscores the fragility of the I-95 fiber corridor that feeds the entire NoVA cluster. This is a multi-operator risk; no single provider owns the trench.
+
+═══ ASSET WATCH ═══
+- AWS us-east-3 (Ohio, 1,200 MW) moves from permit_filed to utility opposition. AEP and PUCO are signaling that the load may not be serviceable until 2031 at current interconnection rates. We’re downgrading this project’s probability of 2028 operational date to 35%.
+- AirTrunk SYD2 (150 MW) is on track for Q4 2026 delivery; transformer procurement was locked in early, a smart move. This will materially tighten Sydney colo supply, which is already pricing above secondary US markets.
+- Equinix NY9 (25 MW) is now operational, adding crucial Manhattan capacity, but it’s already 80% pre-leased, so don’t expect relief.
+- Risk score adjustments: none formally released, but we’re flagging Equinix Ashburn, Dallas, and San Jose for likely upgrade from MODERATE to HIGH within 90 days if PJM reform legislation stalls. The models lag reality.
+
+═══ MARKET SIGNALS ═══
+US colo pricing in primary markets (NoVA, Silicon Valley, Dallas) rose 8% YoY, with power capacity surcharges now embedded in standard contracts. Capacity availability in Ashburn is at an all-time low; 4-6 MW turnkey deployments are seeing 18-month delivery promises. Supply chain signals are uniformly bearish: Eaton’s switchgear allocation for data center orders is reportedly oversubscribed through 2028, and Caterpillar is prioritizing containerized genset orders for hyperscale mega-deals, leaving colo operators with 12-month waits. The takeaway: if you haven’t already locked in power infrastructure orders, your expansion is a wish, not a plan. Hong Kong’s hyperscale capacity at 0 MW is a geopolitical statement, not a data error—investment is frozen by sovereignty law uncertainty, shifting regional load to Singapore (27 MW and growing).
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-07-15

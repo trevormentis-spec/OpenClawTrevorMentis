@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-13
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single most pressing operational risk for US hyperscale operators today. The 122 GW interconnection queue backlog means new builds in Northern Virginia, Ohio, and Chicago face 4-6 year delays. Existing facilities in Ashburn, Chicago, and Dallas are already at MODERATE risk due to grid constraints. If you have capacity in these markets, hold it. If you're planning new builds, look at secondary markets with faster interconnection — Texas (ERCOT) or the Southeast (MISO/Southern).
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported in the last 24 hours. The 694-cable global inventory is stable. Key routes to watch: the transatlantic cables serving Ashburn (MAREA, Dunant, Grace Hopper) and the transpacific cables serving Los Angeles and San Jose (Faster, SEA-ME-WE 3, New Cross Pacific). No congestion signals from major IXes. The 900 IX inventory is nominal.
+
+═══ POWER & GRID ═══
+PJM interconnection queue at 122 GW — this is the critical number. New DC builds in PJM territory (Northern VA, Ohio, Chicago) face 4-6 year delays. Transformer lead times remain at 18-24 months for >50 MVA units — single biggest bottleneck. Switchgear at 12-18 months, generators at 8-12 months. No energy price spikes reported in the last 24 hours, but the grid risk driver is structural, not transient. The 8 highest-risk facilities (all Equinix, all 56/100) are grid-driven. If you're operating in PJM, plan for capacity constraints through 2028.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hurricane, earthquake, or wildfire threats to major DC clusters in the last 24 hours. The Atlantic hurricane season is active but no named storms currently threatening US East Coast hubs. California wildfire season is building — San Jose and Los Angeles facilities (Equinix SV1/SV5/SV10, LA1) are at MODERATE composite risk but hazard is not the primary driver. Monitor Santa Ana wind forecasts.
+
+═══ PHYSICAL SECURITY ═══
+No protests, construction disruptions, or access incidents reported near major DC corridors in the last 24 hours. Satellite imagery of all 25 Tier 1 hyperscale hubs is clean — no ground disturbance, flooding, or activity anomalies. Imagery quality is good (115-225 MB per scene). No new construction activity detected at monitored sites.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours. AWS, Azure, GCP, OCI, and Alibaba all nominal. No fiber route cuts or congestion reported on backbone routes serving major DC clusters. The 513 terrestrial fiber routes are stable.
+
+═══ ASSET WATCH ═══
+New: AWS filed permit for 1200 MW in Ohio (us-east-3). This is a massive build — watch for grid interconnection delays. AirTrunk announced 150 MW in Sydney (SYD2). Digital Realty is under construction on 35 MW in Frankfurt (FRA14). CyrusOne is under construction on 40 MW in Houston (HOU2). Equinix brought 25 MW online in New York (NY9). No risk rating changes today — the 8 highest-risk facilities remain at 56/100 (grid-driven).
+
+═══ MARKET SIGNALS ═══
+Colo pricing is tightening in PJM markets due to capacity constraints. Expect 10-15% price increases in Ashburn and Chicago over the next 12 months. Supply chain remains the binding constraint — transformer lead times are worsening, not improving. If you're procuring equipment for 2027-2028 builds, order now. The 1450 MW active pipeline is heavily concentrated in Ohio (AWS) and Sydney (AirTrunk) — watch for secondary market opportunities in Texas and the Southeast.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-13

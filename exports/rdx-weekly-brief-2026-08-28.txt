@@ -1,0 +1,61 @@
+=== EXECUTIVE SUMMARY ===
+
+The most important development this week is the announcement of an $8.8 billion contract award to BAE Systems to continue operating the Holston Army Ammunition Plant in Tennessee. Holston is the only facility in the United States that produces RDX (Research Department Explosive) and HMX (High Melting Explosive), the two main military explosive fillers used in artillery shells, bombs, and demolition charges such as C4 (Composition 4). The size and duration of this award signal a long-term US government commitment to rebuilding domestic explosives capacity, not a short-term surge. It effectively locks in Holston's modernization program through the early 2030s and confirms that Washington views the current artillery ammunition shortfall as a structural, multi-year problem rather than a temporary spike driven by the war in Ukraine.
+
+Hiring remains active across every Western producer we track, and no new Russian plant strikes were reported this week, suggesting a pause in the pattern of Ukrainian long-range attacks on Russian explosives infrastructure that dominated March through May 2026.
+
+The bottom line: Western supply is being scaled up on a decade-long timeline, precursor chemical trade cases are tightening, and Russian production has not been hit again in the past week but remains degraded from earlier strikes.
+
+=== PRODUCER ACTIVITY ===
+
+Holston Army Ammunition Plant, Tennessee: BAE Systems, the plant's Government-Owned Contractor-Operated (GOCO) partner, secured the $8.8 billion follow-on contract. This extends operations and funds ongoing modernization, which includes replacing 1940s-era batch production lines with continuous-flow chemistry. Active hiring continues.
+
+Eurenco, Bergerac, France: Continues active hiring. The Bergerac line, restarted specifically to feed Ukraine-bound artillery, remains the anchor of European RDX supply.
+
+Chemring Nobel, Norway: Active hiring. Chemring produces RDX, HMX, and PETN (Pentaerythritol Tetranitrate), a booster explosive.
+
+Rheinmetall, Varpalota, Hungary: Active hiring, consistent with commissioning activity at the new plant.
+
+Nitro-Chem, Poland: No new signals this week. The company remains the only NATO producer of TNT (Trinitrotoluene) and is delivering against its $310 million US contract for 18,000 tons through 2029.
+
+Hanwha, South Korea, and Solar Industries, India: Both hiring actively, consistent with continued Asia-Pacific expansion driven by mining demand and military exports.
+
+Russian facilities: No new strike events reported this week at Sverdlov, Bryansk Chemical, or JSC Promsintez. All three remain in varying states of damage from earlier 2026 attacks.
+
+=== SIGNALS & INDICATORS ===
+
+News flow (GDELT, the Global Database of Events, Language, and Tone): Two relevant articles this cycle. The Holston contract is the dominant signal. The second article, a medical case report on seizures from ingesting C4, is not market-relevant.
+
+Hiring: Six of the major Western and allied producers are simultaneously hiring. This is the strongest coincident indicator of capacity expansion we track, because explosives plants cannot ramp output without trained chemical operators, and those positions take months to fill and certify.
+
+Patents: This week's patent pull is heavily weighted toward insensitive munitions, meaning explosives designed not to detonate accidentally from fire, impact, or shrapnel. Five of the five patents surfaced touch this area. This confirms the ongoing industry shift away from traditional Composition B toward IMX (Insensitive Munitions Explosive) family formulations, which use RDX and HMX in polymer-bonded matrices.
+
+Trade remedies: The US International Trade Commission (USITC) is actively pursuing antidumping duties on hexamine, a key precursor for RDX manufacture. Final affirmative determinations have been issued. Separately, the USITC declined to find injury on Urea Ammonium Nitrate imports from Russia and Trinidad and Tobago, which will keep that precursor flowing. Net effect: hexamine sourcing for US RDX production is being deliberately reshored, which will raise input costs at Holston but reduce dependence on Chinese hexamine.
+
+Environmental Protection Agency Toxics Release Inventory: Data for Holston and Radford Army Ammunition Plants remains unavailable this cycle, so we cannot use effluent reporting as a production proxy this week.
+
+Conflict Armament Research: No new field tracing reports this week beyond standing publications.
+
+=== WHAT TO WATCH ===
+
+1. Follow-on subcontractor awards flowing from the $8.8 billion Holston contract. Highly likely (75-85%) that BAE Systems announces at least one major equipment or engineering subcontract within 30 days, which will reveal which parts of the modernization are being accelerated.
+
+2. A new Ukrainian strike on a Russian explosives or precursor facility. Likely (55-70%) given the March-May 2026 pattern and the resumption of long-range strike campaigns in prior summers. A hit on a fourth site would further tighten Russian artillery filler supply into the fall.
+
+3. Hexamine price movement in US chemical spot markets following the USITC final affirmative antidumping determination. Highly likely (75-85%) that domestic hexamine prices rise measurably within 30 days, feeding through to RDX input costs by late 2026.
+
+4. A commissioning announcement or first-output milestone from Rheinmetall's Varpalota plant in Hungary. Likely (55-70%) within 30 days given active hiring and the publicly stated 2026 schedule.
+
+5. New Eurenco announcements on French or Swedish capacity expansion. Likely (55-70%) that Eurenco discloses either an additional line restart or a supply contract with a specific NATO customer, given continued hiring and political pressure to close the European nitrocellulose gap (current European output is 4,500 to 10,000 tons per year against a stated target of 20,000 tons).
+
+=== SOURCES ===
+
+GDELT (Global Database of Events, Language, and Tone) news monitoring
+Public job posting boards for Holston Army Ammunition Plant, Eurenco, Chemring Nobel, Rheinmetall, Hanwha, and Solar Industries
+Google Patents database
+United States International Trade Commission (USITC) case dockets on hexamine and urea ammonium nitrate
+Conflict Armament Research publications
+Environmental Protection Agency Toxics Release Inventory (data unavailable this cycle for Holston and Radford)
+Open-source intelligence monitoring of Russian explosives plants (Sverdlov, Bryansk Chemical, JSC Promsintez)
+Shephard Media defense industry reporting
+Standing producer tracker for Holston, Eurenco, Nitro-Chem, Chemring Nobel, Rheinmetall, Hanwha, Solar Industries

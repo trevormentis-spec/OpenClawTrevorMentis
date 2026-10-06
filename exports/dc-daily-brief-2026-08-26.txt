@@ -1,0 +1,15 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-08-26
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+The single most important development today isn’t an outage or intrusion — it’s the US power grid. All eight highest-risk facilities are Equinix US assets at 56/100, every one driven by grid; transformer lead times have worsened to 18–24 months; and the PJM interconnection queue now sits at 122 GW, translating into 4–6 year delays for new data center builds. If you operate or lease in Ashburn, Dallas, Silicon Valley, Chicago, LA, or NY/NJ, power is the scarce resource — plan for it and price for it.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+Subsea is quiet this cycle. No active cable fault, repair, or outage notice in the feed; baseline remains 694 cables and 1,917 landing stations. The transatlantic corridor serving the US East Coast clusters (Ashburn, Newark, New York) shows no disruption, and no Asia-Pacific cable fault is reported. Caveat: subsea telemetry is under-sampled — “quiet” here means absence of reported events, not verified cable health.
+
+═══ POWER & GRID ═══
+PJM is the pressure point. The 122 GW interconnection queue means new builds in Northern Virginia and the AWS us-east-3 Ohio footprint face 4–6 year delays. Northern Virginia remains rated MODERATE on PJM strain. Hyperscale capacity: US 1,563 MW, GB 219 MW, AU 130 MW, DE 32 MW, SG 27 MW. Treat CA/NL/FR/JP/HK at 0 MW as registry undercount, not physical reality. Supply chain: transformers 18–24 months (worsening), switchgear 12–18 months, generators 8–12 months; Schneider/Eaton and Caterpillar backlogs are actively stretching project timelines. No real-time energy price data in this feed, but structural scarcity should be assumed in PJM and Texas/Gulf Coast markets.
+
+═══ NATURAL HAZARD WATCH ═══
+Seasonal exposure is elevated, but no active incidents are present in the feed. Late August

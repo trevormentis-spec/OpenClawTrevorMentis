@@ -1,0 +1,59 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-09-16
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+The dominant security development is not a discrete outage but a structural convergence: PJM grid strain, 18–24 month transformer lead times, and a 122 GW interconnection queue are constraining the largest US data center cluster — Northern Virginia/Ashburn — while eight of the highest-risk facilities are Equinix US sites driven strictly by grid exposure. No active subsea cable or cloud provider outage is reflected in today’s telemetry. Watch the hyperscale pipeline: AWS’s 1,200 MW us-east-3 permit filing in Ohio would hit AEP/PJM at the worst possible time.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+- No active cable damage, fault, or repair windows are reflected in the current registry; 694 cables and 1,917 landing stations remain in baseline state.
+- Highest dependency corridor: Ashburn/Northern Virginia relies on transatlantic landings in Virginia Beach and New Jersey. Any mid-Atlantic fault would shift traffic to New York/Chicago routes and add latency.
+- Pacific exposure remains on LA/San Jose/Sydney/Hong Kong/Singapore routes; Hong Kong/China geopolitics keeps subsea landing station access a chokepoint.
+- Seasonal note: Atlantic repair windows become constrained during peak hurricane season; watch for extended time-to-repair if a cable fault occurs between now and mid-October.
+
+═══ POWER & GRID ═══
+- PJM interconnection queue: 122 GW, with new large DC builds facing 4–6 year hookup delays. This is the single largest operational risk for US hyperscale expansion.
+- Top grid-risk facilities — all scored 56/100, driver=grid: Equinix DC1-DC15 Ashburn, DA1 Dallas, SV1/SV5/SV10 San Jose, CH1/CH2/CH4 Chicago, LA1 Los Angeles, NY1 Newark, NY9 111 8th Ave, NY8 60 Hudson St.
+- Hyperscale capacity remains heavily concentrated in the US: 1,563 MW, versus GB 219 MW, AU 130 MW, DE 32 MW, SG 27 MW. Canada, Japan, France, Netherlands, and Hong Kong each show 0 MW hyperscale capacity despite large facility counts — a data gap or severe capacity mismatch that should not be ignored.
+- Supply chain: transformer lead times for >50 MVA units at 18–24 months and worsening; switchgear 12–18 months; generator 8–12 months. Schneider Electric and Eaton confirm extended switchgear deliveries; Caterpillar is at 12 months on high-volume orders.
+
+═══ NATURAL HAZARD WATCH ═══
+- Atlantic hurricane season is at peak. Houston (CyrusOne HOU2 under construction) and Miami NOTA remain climatologically exposed through mid-October. No active storm is indicated in current satellite or registry data, but readiness should be elevated.
+- California sites (San Jose, Los Angeles) carry baseline earthquake and late-season wildfire risk; no new satellite ground-disturbance flags in the latest pass.
+- Japan/Taiwan/Philippines typhoon season remains active; monitor JP cable landing stations and fiber routes, though no specific incident is in the feed.
+- Australia/Sydney: spring season — low bushfire risk but possible heavy rain/flash-flood impact on AirTrunk SYD2 site work.
+
+═══ PHYSICAL SECURITY ═══
+- No current physical security incidents, perimeter anomalies, or construction disruptions near monitored Tier 1 sites.
+- Satellite coverage: 25/25 Tier 1 sites acquired cleanly, 0 failed, 0 errors. No NDVI change-detection deltas indicate unauthorized ground disturbance or flooding at listed hubs.
+- Continued watch advised for protests or access friction near Ashburn and the New Jersey/New York corridor; none active today.
+
+═══ CLOUD & NETWORK ═══
+- No major cloud provider outage signals across AWS, Azure, Google Cloud, Oracle, or Alibaba in this cycle.
+- Fiber route risk is structural: only 513 terrestrial backbone routes against 8,503 facilities and 900 IXes. Secondary and tertiary markets likely have single-route exposure.
+- No active fiber cut or backhaul congestion is reported in the current dataset.
+
+═══ ASSET WATCH ═══
+- Active construction pipeline: 1,450 MW.
+  • AWS us-east-3 — Ohio, 1,200 MW permit_filed: dominates the pipeline and will heavily test AEP/PJM interconnection.
+  • AirTrunk SYD2 — Sydney, 150 MW announced.
+  • CyrusOne HOU2 — Houston, 40 MW under construction.
+  • Digital Realty FRA14 — Frankfurt, 35 MW under construction.
+  • Equinix NY9 — New York, 25 MW operational.
+- Risk score distribution: 92 LOW, 190 MODERATE, 23 NEGLIGIBLE. No facility crosses into high/critical territory, but the top 8 all sit at 56/100 with grid as the driver — the composite scoring masks concentration risk in US metro grids.
+- Registry data quality: country-code normalization splits “USA”/“US” and “GERMANY”/“DE.” Aggregators should treat US total as ~4,294 facilities, not 3,549.
+
+═══ MARKET SIGNALS ═══
+- No fresh colo pricing telemetry in this feed, but supply-side constraints — transformer lead times worsening, switchgear delays, and PJM/Ercot queue backlogs — will keep power-dense colocation capacity scarce and expensive in core US markets.
+- Geopolitical overlay: Hong Kong/China and Russia remain elevated on data sovereignty and export-control grounds. Sanctions on advanced electrical/GPU equipment will further lengthen lead times for affected markets.
+- International hyperscale capacity outside the US is thin on paper: GB 219 MW, AU 130 MW, DE 32 MW, SG 27 MW, with zero MW reported for Canada, Japan, France, Netherlands, and Hong Kong. If this is a data gap, capacity planning is flying blind; if real, it signals a major under-build outside the US.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-09-16

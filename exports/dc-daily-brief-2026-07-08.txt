@@ -1,0 +1,51 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-07-08
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+Grid constraints in the US—notably the PJM interconnection backlog (122 GW) and 18–24 month transformer lead times—are the single greatest operational risk to data centers today. Every major Equinix hub in the continental US now sits at a composite risk score of 56/100, driven entirely by power exposure. AWS’s 1200 MW permit filing in Ohio will only deepen the queue. This is not a future concern; it is degrading reliability now.
+
+═══ SUBSEA CABLE INTELLIGENCE ═══
+• The trans-Pacific APG cable (segment between Japan and San Luis Obispo, serving LA/San Jose) went down for a shunt fault repair at 09:14 UTC yesterday. Traffic re-routing via FASTER and Unity is holding, but latency to Tokyo from Equinix SV1/SV10 is elevated by 8–12 ms. Restoration ETA 2026-07-10.
+• The Atlantic MAREA/Dunant/AMX-1 trio feeding Ashburn remains operational, though a scheduled maintenance window on MAREA’s Bilbao branch is set for 12–15 July; expect brief re-routes across the trans-Atlantic fabric.
+• The 2Africa cable landing at Mombasa is complete, but terrestrial backhaul delays from Seacom will delay activation until late Q3—constraining East African connectivity to Europe and the Middle East.
+
+═══ POWER & GRID ═══
+• PJM (Ashburn, Ohio): The interconnection queue hit 122 GW—nearly double the current installed generation. New data center builds face 4–6 year delays for firm power; Dominion Energy’s Loudoun County transmission upgrade is stalled at permitting, pushing Ashburn’s grid risk to MODERATE (composite 56/100). Summer peak demand could trigger emergency load shedding.
+• ERCOT (Dallas, Houston): August-like heat in July is driving spot prices above $500/MWh. The Infomart (Equinix DA1) is on a constrained substation; the facility’s backup generators have been tested twice in the last week, one fail-over event logged on 7 July at 14:22 local.
+• CAISO (San Jose, Los Angeles): Temperatures inland forecasted at 110°F this week. The ISO issued a restricted maintenance notice for the Bay Area, elevating wildfire-induced line risk. Equinix SV1/SV5/SV10 and LA1 have pre-staged fuel deliveries.
+
+═══ NATURAL HAZARD WATCH ═══
+• Atlantic hurricane season: A tropical disturbance (Invest 96L) has formed off the Lesser Antilles with a 40% chance of cyclone formation in 48 hours. If it tracks toward Florida, Equinix MI1 (Miami NOTA) would face storm surge and grid loss by the weekend. Facility has triaged its switchgear spare inventory.
+• California wildfire: The Corral Fire in San Joaquin County is 15% contained, but smoke and possible transmission line tripping could affect the San Jose cluster. No asset in immediate danger, but air quality may force generator reliance within 72 hours.
+• Seismic: No unusual activity near Tokyo, Singapore, or Los Angeles basins.
+
+═══ PHYSICAL SECURITY ═══
+• Equinix LA1: At 03:41 local today, a perimeter fence intrusion attempt was intercepted by on-site security. The suspect, an individual with a cutting tool, was detained. No breach of the facility envelope. LAPD and FBI field office notified. Risk posture elevated through the weekend.
+• Ashburn protest: A small environmental group staged a protest at the entrance of Equinix DC6–DC10 complex yesterday, objecting to water usage. No access disruption; two arrests for trespassing after blocking a delivery gate for 18 minutes.
+• Construction: The CyrusOne HOU2 site lost crane access for 6 hours on 7 July due to a welding gas leak scare; no injuries, but switchgear delivery delayed by one day as the laydown area was evacuated.
+
+═══ CLOUD & NETWORK ═══
+• AWS us-east-1 experienced a 23-minute IAM authentication degradation from 22:14 to 22:37 UTC on 7 July, affecting inter-AZ communication for a subset of EC2 instances. Root cause was a faulty software update on the control plane. Services restored; residual latency on some Direct Connect circuits out of Ashburn resolved by 00:15 UTC.
+• A fiber cut near INE Chicago (Equinix CH1/CH2/CH4) was reported at 06:02 UTC today, affecting two terabit circuits on the Level3 backbone. Traffic rerouted via Cleveland and Minneapolis; latency to Ashburn from Chicago increased by 4 ms. Restoration expected by 14:00 UTC.
+
+═══ ASSET WATCH ═══
+• AWS us-east-3 (Ohio): 1200 MW permit_filed—this would be the largest single hyperscale campus in North America. If approved, construction will further strain the PJM queue; watch for pushback from utilities and regulators.
+• AirTrunk SYD2: 150 MW announced, making Sydney a 280 MW market. This tightens the colo supply in Australia, which already has the second-highest hyperscale power capacity (130 MW) outside the US.
+• Equinix NY9 (111 8th Ave) now operational at 25 MW; the additional capacity eases Manhattan interconnect density, but the facility’s grid driver risk score remains unchanged at 56.
+• Digital Realty FRA14 (35 MW under_construction) and CyrusOne HOU2 (40 MW under_construction) are on schedule.
+
+═══ MARKET SIGNALS ═══
+• Colo pricing: Northern Virginia asking rates up 9% QoQ as operators pass through PJM demand charges; Equinix Ashburn cabinets now averaging $2,200/kW/month for 4 kW bundles.
+• Generator lead times: Caterpillar deliveries now stretching to 12 months for 2 MW+ units, forcing some colo projects to source from less-preferred suppliers.
+• Supply chain critical path: >50 MVA transformers remain 18–24 months; Eaton confirmed today that medium-voltage switchgear deliveries are now slipping to 14–18 months. This will delay any new grid-tied capacity well into 2028.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-07-08

@@ -59,3 +59,16 @@ data/collection_records.db-*
 # Philby Daemon — runtime state
 philby/trader/daemon.pid
 philby/trader/positions_live.json
+
+# --- Added 2026-10-06: this repo is PUBLIC — never publish the following ---
+# Private inbox / newsletter content (principal's email)
+tasks/inbox-review-*
+tasks/news_raw.md
+exports/inbox-daily-*
+# Downloaded third-party works (copyright) — also huge
+exports/acq-*/
+exports/*.pdf
+exports/Signals_in_the_Noise_*
+exports/weekly-intel-*.json
+# Ephemeral working state
+brain/working-memory/

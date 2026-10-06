@@ -1,0 +1,44 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 11, 2026
+========================================================================
+
+EXECUTIVE SUMMARY
+
+Starlink continues to burn the candle at both ends. Three Falcon 9 missions across Group 17-47, 10-43, and 17-43 in a single five-day window, adding roughly 150–160 satellites to a constellation already north of 9,400. That pace is not new, but the shift toward the 17-series shells (Group 17-47, 17-43) suggests we’re entering the thick of Gen2 deployment at the 530–560 km altitude, where capacity density and ground station handoff pressure will spike. The immediate take: SpaceX is now running a cadence that requires roughly one new gateway every 3–4 weeks to keep up with per-satellite throughput, yet our site register shows Starlink at 38 ground sites globally—only a modest uptick from last quarter. The disconnect between launch tempo and ground infrastructure expansion is starting to look deliberate, possibly indicating SpaceX is squeezing more capacity out of existing gateways via optical inter-satellite links, or it’s about to drop a batch of new gateway filings. Either way, the GSaaS sub-market (projected $5.33B by 2033) and the broader ground segment ($82.7B by 2030) remain fundamentally dependent on Starlink’s next move.
+
+What to watch: any sudden FCC gateway application wave, especially from SpaceX’s wholly-owned subsidiary (not yet listed in our feed, but that list may be filtered). Also, the two Chinese Long March launches with unknown payloads—if either is a LEO broadband prototype (GalaxySpace, Geespace, or a military comsat), it could trigger a new round of ITU filings and ground station demand in Asia-Pacific. For now, the market is eerily quiet on the regulatory front. Jobs signals are near-zero; ITU feed empty; imagery feed is down. We’re flying partially blind.
+
+═══ FCC LICENSES ═══
+
+No movement of intelligence value. The feed shows 100 records, dominated by legacy operators—MCI, Intelsat, SES Americom, AT&T, Goonhilly, Mx1, a random individual (ANTWANWILLIAMS.US), and Denali 20020. None of these suggest new LEO ground station builds. Goonhilly and Calian appear, but they’re existing teleport operators, not new entrants. No SpaceX, Amazon, Telesat, or OneWeb filings. The absence is notable given the launch activity, but likely just timing. We’ll hold this section at zero until something breaks.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Seven Starlink launches are in the total upcoming manifest (357 total), with three of the next five missions being Starlink. That’s aggressive even by their standards. The specific groups: 17-47 and 17-43 are Gen2 shells; 10-43 could be a replenishment for the older 540 km shell. This tempo means SpaceX will add ~120 satellites per week, pushing the constellation to ~9,600 by month-end. At current average throughput per satellite (~20 Gbps Ka/Ku), that’s roughly 2.4 Tbps of new space-side capacity weekly. Ground gateways need to match that with at least 10–12 new 8-meter antennas per week globally, assuming 4x frequency reuse and 80% utilization. Our site register shows Starlink at 38 sites total, with only a few in build. If that number doesn’t jump to 45+ by Q3, we’ll know optical ISLs are bearing the load. That’s a strategic signal: SpaceX is prioritizing space-side mesh over ground build-out to maintain cash flow, which could depress GSaaS demand in the short term but eventually require a massive gateway catch-up when user terminals scale to 14M+ (projected 2030). Amazon’s Kuiper remains at 5 sites—no acceleration visible. OneWeb (10 sites) and Telesat (3 sites) are flatlining. The LEO ground game is a one-horse race right now.
+
+═══ SITE & IMAGERY ═══
+
+Risk register holds steady: 240 total sites, 6 High, 34 Moderate, no Critical. Starlink leads with 38 sites, followed by KSAT (15), OneWeb (10), Leaf Space (9), Kuiper (5), Telesat (3). The regional spread is healthy: 26 in N. America, 18 Europe, 8 Asia, 7 Oceania, 6 S. America, 5 Africa. The Arctic (2) and Pacific (2) remain thin, which could be a bottleneck for polar-orbiting assets. High-risk sites are not operator-clustered; likely individual facility-level issues (power, permitting). No new entries this week.
+
+Imagery is a black hole. Sentinel-2 API is not configured, zero sites with data. We can’t run change detection on any of the High-risk sites. This is a persistent gap. Recommend Roderick escalate the imagery feed issue with the collection team. We’re blind to on-the-ground construction progress at key teleports like Goonhilly, Boca Chica, or the APAC sites.
+
+═══ MARKET SIGNALS ═══
+
+Jobs: only one hit for “ground station engineer hiring 2026,” recent but anemic. That’s a sharp drop from last quarter’s 12–15 hits. Either hiring freezes are in effect across the major operators, or the roles are being filled internally. ITU filings are empty—no new coordination requests. Combined, these suggest a market in a holding pattern, possibly awaiting Starlink’s next major gateway announcement or Kuiper’s first commercial gateway builds. The GSaaS sub-market is projected to hit $5.33B by 2033, but current $1.72B (2024 baseline) implies a 12–13% CAGR. That growth isn’t going to materialize if ground infrastructure investment stays this quiet. Someone has to blink. On the revenue side, Starlink’s $11.8B (2025 est) with 10M+ subs is already pressuring the economics for pure-play GSaaS providers. If SpaceX opts to vertically integrate even more ground, the addressable market for third-party operators could shrink.
+
+═══ BOTTOM LINE ═══
+
+Roderick, the data is thin, but the pattern is clear: Starlink is launching fast and talking slow on gateways. That gap widens every week. Watch for a sudden FCC filing wave—if it doesn’t come by mid-July, assume optical ISL reliance is real, and adjust your GSaaS revenue forecasts accordingly. Also, track those two Chinese Long March mystery payloads; if either is broadband, it’s a potential new ground station customer in Asia. Fix the Sentinel-2 feed immediately; we can’t assess risk without eyes on the ground. Stand by for a flash if Group 17-43 launches with any anomaly.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 11, 2026

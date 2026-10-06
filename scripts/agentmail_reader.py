@@ -17,16 +17,59 @@ import sys
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW_NEWS_FILE = REPO_ROOT / "tasks" / "news_raw.md"
+PROCESSED_IDS_FILE = REPO_ROOT / "brain" / "working-memory" / "agentmail-processed-ids.json"
+MAX_PROCESSED_IDS = 500
 
 # Noise senders — these are NOT intelligence content and should be filtered out
-# before writing to news_raw.md
+# before writing to news_raw.md. Pruned 2026-08-15 against actual inbox traffic
+# (2,328 msgs / 207 senders). Kept all intel-relevant senders (CSIS, RAND, Hudson,
+# Brookings, AEI, Cato, CNAS, Lawfare, War on the Rocks, Breaking Defense,
+# SpaceNews, Payload, Data Center Frontier, Kyiv Independent, InSight Crime, ISS
+# Africa, ChinaTalk, Sinocism, GZERO, Canary Media, Seatrade, etc.).
 NOISE_SENDERS = [
+    # --- NYT family (only the noise/lifestyle/marketing variants) ---
     "wirecutter@nytimes.com",           # Product recommendations
     "nytdirect@nytimes.com",            # NYT newsletters (Morning, etc.)
-    "noreply@news.bloomberg.com",       # Bloomberg newsletters
+    "editorpicks@nytimes.com",          # NYT Editor Picks (news digest)
+    "yourplaces-globalupdate",          # NYT Your Places (travel/lifestyle)
+    "nyt@e.nytimes.com",                # NYT marketing
+    "nytimes@e.newyorktimes.com",       # NYT marketing
+    # --- Bloomberg (all variants) ---
     "bloomberg.com",                    # Any Bloomberg newsletter
     "citylab@bloomberg.com",            # CityLab
-    "substack.com",                     # Substack promotions (keep actual content)
+    # --- POLITICO gossip (NatSec Daily stays — it's intel) ---
+    "politicoplaybook",                 # Playbook + Playbook PM (DC insider gossip)
+    "info.politicopro.com",             # POLITICO Pro marketing
+    "events@live.politico.com",         # POLITICO Live event promos
+    # --- Finance/trading digests (not intel) ---
+    "execsum.co",                       # Exec Sum - Litquidity
+    "cryptosum@mail.beehiiv.com",       # Crypto Sum - Litquidity
+    "schiffsovereign",                  # Schiff Sovereign (goldbug economics)
+    "robotwealth.com",                  # Kris / Robot Wealth
+    "institutionalinvestor.com",        # Essential II (Institutional Investor)
+    "kalshi@mail",                      # Kalshi market promos (scanner covers this)
+    # --- Insurance/reinsurance trade rags (not intel) ---
+    "reinsurancene.ws",                 # Reinsurance News
+    "artemis.bm",                       # Artemis (cat bonds)
+    "insuranceinsider.com",             # Insurance Insider
+    # --- Tech digest noise ---
+    "tldrnewsletter.com",               # TLDR + TLDR AI
+    # --- Platform/marketing noise ---
+    "no-reply@substack.com",            # Substack platform notifications
+    "no-reply@info.patreon.com",        # Patreon platform notifications
+    "no-reply@updates.patreon.com",     # Patreon platform notifications
+    "aila@csis.org",                    # CSIS Executive Education promos
+    "externalrelations@csis.org",       # CSIS External Relations promos
+    "events@mei.edu",                   # MEI event invitations
+    "events@hudson.org",                # Hudson event invitations
+    "events@brookings.edu",             # Brookings events
+    "events@spacenews.com",             # SpaceNews events
+    "events@news.payloadspace.com",     # Payload events
+    "events@latitudemedia.com",         # Latitude events
+    "customer.care@theafricareport.com",# The Africa Report marketing (content sender stays)
+    "breaking defense - webinar",       # Breaking Defense webinar promos
+    "breaking defense webinar",         # Breaking Defense Webinar (no hyphen variant)
+    "webinar",                          # Any other webinar promo sender
     "medium.com",                       # Medium digest
 ]
 
@@ -41,6 +84,32 @@ NOISE_SUBJECT_PATTERNS = [
 def log(msg: str) -> None:
     ts = dt.datetime.now(dt.timezone.utc).strftime("%H:%M:%S")
     print(f"[agentmail-read {ts}] {msg}", file=sys.stderr, flush=True)
+
+def load_processed_ids() -> set:
+    """Load set of already-processed message IDs from state file."""
+    if not PROCESSED_IDS_FILE.exists():
+        return set()
+    try:
+        data = json.loads(PROCESSED_IDS_FILE.read_text())
+        return set(data.get("processed_ids", []))
+    except (json.JSONDecodeError, KeyError, OSError) as e:
+        log(f"Could not load processed IDs: {e} — starting fresh")
+        return set()
+
+
+def save_processed_ids(processed: set) -> None:
+    """Persist processed message IDs to state file.
+    Keeps only the most recent MAX_PROCESSED_IDS entries."""
+    # Keep only the last N (oldest entries dropped when we trim at save time)
+    entries = list(processed)[-MAX_PROCESSED_IDS:]
+    state = {
+        "processed_ids": entries,
+        "count": len(entries),
+        "updated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+    }
+    PROCESSED_IDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    PROCESSED_IDS_FILE.write_text(json.dumps(state, indent=2))
+
 
 def get_api_key() -> str:
     key = os.environ.get("AGENTMAIL_API_KEY", "")
@@ -98,7 +167,10 @@ def fetch_messages(api_key: str, max_msgs: int = 10) -> list[dict]:
             if is_noise:
                 continue
 
+            mid = getattr(m, "message_id", "") or ""
+
             results.append({
+                "message_id": mid,
                 "from": from_addr,
                 "subject": subject,
                 "body": (m.preview or "")[:500],
@@ -109,9 +181,13 @@ def fetch_messages(api_key: str, max_msgs: int = 10) -> list[dict]:
         log(f"Fetch failed: {e}")
         return []
 
-def save_news_raw(messages: list[dict]) -> int:
-    """Append intel items to tasks/news_raw.md."""
-    if not messages:
+def save_news_raw(messages: list[dict], processed: set) -> int:
+    """Append only new (unseen) intel items to tasks/news_raw.md.
+    Returns count of newly written items."""
+    # Filter to only unseen messages
+    new_messages = [m for m in messages if m.get("message_id", "") not in processed]
+
+    if not new_messages:
         return 0
 
     now = dt.datetime.now(dt.timezone.utc)
@@ -122,12 +198,14 @@ def save_news_raw(messages: list[dict]) -> int:
     lines.append(f"\n## AgentMail Intel — {date_str} {ts}")
     lines.append("")
 
-    for msg in messages:
+    for msg in new_messages:
         subject = msg.get("subject", "").strip()
         body = msg.get("body", "").strip()
         sender = msg.get("from", "unknown")
+        mid = msg.get("message_id", "")
         lines.append(f"### {subject}")
         lines.append(f"**From:** {sender}  ")
+        lines.append(f"*MsgID: {mid}*  ")
         if body:
             # Extract key sentences
             clean = re.sub(r'<[^>]+>', '', body)
@@ -140,7 +218,11 @@ def save_news_raw(messages: list[dict]) -> int:
     with open(RAW_NEWS_FILE, "a") as f:
         f.write(content)
 
-    return len(messages)
+    # Mark as processed
+    for msg in new_messages:
+        processed.add(msg.get("message_id", ""))
+
+    return len(new_messages)
 
 def main():
     parser = argparse.ArgumentParser(description="AgentMail Reader — fetch and inject intel")
@@ -158,17 +240,47 @@ def main():
     messages = fetch_messages(api_key, args.max)
     log(f"Found {len(messages)} recent inbound messages")
 
+    # Load processed message IDs so we can skip duplicates
+    processed = load_processed_ids()
+    log(f"Tracking {len(processed)} previously processed message IDs")
+
+    # Filter to only new messages before any action
+    new_messages = [m for m in messages if m.get("message_id", "") not in processed]
+    skipped = len(messages) - len(new_messages)
+    if skipped:
+        log(f"Skipping {skipped} already-processed messages")
+
     if args.stdout:
-        for msg in messages:
+        for msg in new_messages:
             print(f"\n### {msg['subject']}")
             print(f"From: {msg['from']}")
             print(f"Date: {msg['created_at']}")
             print(msg['body'][:300])
     elif args.save:
-        saved = save_news_raw(messages)
-        log(f"Saved {saved} items to {RAW_NEWS_FILE}")
+        saved = save_news_raw(new_messages, processed)
+        if saved:
+            log(f"Saved {saved} new items to {RAW_NEWS_FILE}")
+            save_processed_ids(processed)
+            log(f"Updated processed-IDs tracker ({len(processed)} entries)")
+        else:
+            log("No new messages to save")
     else:
         log("No action specified. Use --save or --stdout.")
+
+    # Low-balance watchdogs: ride this existing hourly job (no new cron).
+    # Non-fatal — never let a balance check break inbox ingestion.
+    for watchdog in ("deepseek_balance_alert.py", "openrouter_balance_alert.py"):
+        try:
+            import subprocess
+            proc = subprocess.run(
+                [sys.executable, str(REPO_ROOT / "scripts" / watchdog)],
+                capture_output=True, text=True, timeout=60,
+            )
+            out = (proc.stdout or "").strip().splitlines()
+            if out:
+                log(f"balance watchdog ({watchdog}): {out[-1]}")
+        except Exception as e:
+            log(f"balance watchdog ({watchdog}) skipped: {e}")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,95 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-06-01",
+  "regions": [
+    {
+      "region_id": "US-CB",
+      "region_name": "US Corn Belt",
+      "crops": [
+        "corn",
+        "soybeans"
+      ],
+      "ndvi": {
+        "current": 0.2515,
+        "median": 0.2559,
+        "std": 0.0145,
+        "samples": [
+          {
+            "name": "Iowa Central",
+            "bbox": [
+              -94.5,
+              41.5,
+              -94.0,
+              42.0
+            ],
+            "ndvi": 0.2665978756551659,
+            "tiles": 3
+          },
+          {
+            "name": "Illinois Central",
+            "bbox": [
+              -89.5,
+              40.0,
+              -89.0,
+              40.5
+            ],
+            "ndvi": 0.23189051477983297,
+            "tiles": 3
+          },
+          {
+            "name": "Nebraska East",
+            "bbox": [
+              -97.0,
+              40.5,
+              -96.5,
+              41.0
+            ],
+            "ndvi": 0.2559160952169316,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 0.0,
+        "band": "WELL_BELOW_NORMAL",
+        "years": 4,
+        "values": [
+          0.266,
+          0.3242,
+          0.3139,
+          0.2966
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0377,
+        "prior": 0.2138,
+        "dir": "INCREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "USDA WASDE",
+          "USDA Crop-CASMA"
+        ]
+      },
+      "confidence": {
+        "nato": "A1",
+        "source": "A",
+        "info": "1"
+      },
+      "alert": true,
+      "status": "OK"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

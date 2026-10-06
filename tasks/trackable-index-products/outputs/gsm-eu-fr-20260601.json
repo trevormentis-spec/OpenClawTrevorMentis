@@ -1,0 +1,84 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-06-01",
+  "regions": [
+    {
+      "region_id": "EU-FR",
+      "region_name": "EU France-Germany Belt",
+      "crops": [
+        "soft wheat",
+        "barley",
+        "corn"
+      ],
+      "ndvi": {
+        "current": 0.478,
+        "median": 0.478,
+        "std": 0.0138,
+        "samples": [
+          {
+            "name": "Beauce (France)",
+            "bbox": [
+              1.5,
+              48.0,
+              2.0,
+              48.5
+            ],
+            "ndvi": 0.4917440125580702,
+            "tiles": 2
+          },
+          {
+            "name": "Lower Saxony (Germany)",
+            "bbox": [
+              8.0,
+              52.0,
+              8.5,
+              52.5
+            ],
+            "ndvi": 0.46421738234195203,
+            "tiles": 3
+          }
+        ]
+      },
+      "historical": {
+        "percentile": 100.0,
+        "band": "WELL_ABOVE_NORMAL",
+        "years": 4,
+        "values": [
+          0.4527,
+          0.4394,
+          0.3651,
+          0.4531
+        ]
+      },
+      "delta_30d": {
+        "change": 0.0432,
+        "prior": 0.4348,
+        "dir": "INCREASING",
+        "date": "2026-05-02"
+      },
+      "ground_truth": {
+        "available": true,
+        "sources": [
+          "EU MARS (JRC)"
+        ]
+      },
+      "confidence": {
+        "nato": "A1",
+        "source": "A",
+        "info": "1"
+      },
+      "alert": true,
+      "status": "OK"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

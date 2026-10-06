@@ -1,0 +1,34 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 09, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+Starlink maintains an aggressive launch tempo—three Falcon 9 missions in the next five—as total satellite count pushes past 9,400. The real signal this week is China: two Long March launches (6A and 8) carrying unknown payloads. That pattern often precedes new LEO constellation deployments, potentially a broadband or recon system. On the ground side, nothing broke in the FCC license pool; incumbents like MCI, Intelsat, and AT&T hold the cards. No new entrants or experimental permits surfaced, suggesting the US regulatory front is static. The risk register holds steady at 240 sites with six flagged High, none Critical—tolerable but worth monitoring. Imagery collection is down, blinding us to construction progress. Market projections underscore the opportunity: LEO GSaaS alone runs at a 13% CAGR through 2033, and Starlink’s $11.8B revenue base gives it cash to accelerate site buildout. The bottom line: China’s payloads demand immediate attention; a new constellation would fracture the GSaaS demand picture and pressure all operators.
+
+═══ FCC LICENSES ═══
+Quiet. The snapshot of 100 records reads like a who’s‑who of legacy satcom and fiber: MCI Communications, Inmarsat, Intelsat, Cogent Fiber (ex‑Sprint), Denali 20020 (likely an Alaskan data‑center play), AT&T, Goonhilly, SES Americom, MX1. No first‑time applicants, no experimental authorization requests, no license modifications that hint at new ground station builds for LEO. The list reinforces how terrestrial fiber owners and GEO operators dominate the FCC earth station registry. If LEO‑only players like Starlink or Kuiper are expanding their own gateways, that activity isn’t surfacing here—likely handled under blanket licenses or overseas. Watch for any change, but this week the register is a snooze.
+
+═══ CONSTELLATION SIGNALS ═══
+The 357‑launch upcoming manifest is back‑loaded with Starlink: seven dedicated Falcon 9 flights appear in the near‑term stream. The next five include three Starlink missions (Groups 17‑47, 10‑43, 17‑43) from Vandenberg and the Cape, plus two Chinese Long March vehicles. The Chinese launches are the wildcard. A Long March 6A out of Taiyuan and a Long March 8 from Wenchang, both carrying “Unknown Payload,” point to either a classified reconnaissance series or the early phases of a new LEO broadband constellation (Guowang or something akin to it). If it’s a broadband system, expect a parallel ground‑station push in Asia and partner nations within 12–18 months, altering regional GSaaS demand. Starlink itself continues to add capacity, and with 10M subscribers and revenue of $11.8B, its appetite for gateway sites will keep KSAT, Leaf, and others busy. The launch rate also stresses the need for more ground entry points in underserved regions—Oceania, Africa, South America—where the site register already shows thin coverage.
+
+═══ SITE & IMAGERY ═══
+The site risk register shows 240 tracked locations. The six High‑risk sites (none Critical) bear watching; a single failure could cascade if they serve a busy constellation. Starlink dominates the operator count with 38 sites, followed by KSAT (15), OneWeb (10), Leaf Space (9), Kuiper (5), Telesat (3). The Moderate‑risk bucket (34 sites) is large enough to hide emerging problems, but no acute triggers fire this cycle. Imagery is offline—API not configured, zero of ten checked sites returned usable data. Without visual confirmation, we cannot verify construction status or antenna upgrades. Restore the Sentinel‑2 feed as a priority; several new sites in the Pacific and Africa regions could be breaking ground unseen.
+
+═══ MARKET SIGNALS ═══
+A single job hit for “ground station engineer hiring 2026” registers as noise rather than trend. The quiet job postings may reflect the GSaaS sector’s reliance on a small, stable contractor base rather than a hiring surge. ITU filings are null—no coordination requests on file, suggesting no operator is initiating new spectrum filings for ground stations this week. Market metrics tell a stronger story: the LEO GSaaS sub‑market projects from $1.72B in 2024 to $5.33B by 2033, a 13.4% CAGR. Broader GSaaS (not LEO‑specific) sees even steeper growth from $520M to $2.49B in the same window—likely pulled upward by LEO demand. Starlink’s 10M subscriber milestone and $11.8B estimated 2025 revenue underline its ability to self‑fund a massive ground network without relying on GSaaS providers. For third‑party operators, the opportunity lies in serving emerging constellations (Telesat, Kuiper, China’s unknown) and multi‑orbit aggregation plays that integrate GEO, MEO, and LEO traffic.
+
+═══ BOTTOM LINE ═══
+Treat the Chinese Long March payloads as a proto‑constellation threat. If either launch places a broadband demo or operational satellites, we must re‑score the GSaaS demand model for a new, potentially non‑Western provider. Immediately task SIGINT or open‑source tracking for payload identification. Reignite the imagery feed to watch for ground‑station construction in Asia and China’s partner nations. The FCC’s quiet profile means near‑term US competitive dynamics are frozen, but a Chinese entry would fracture the export‑control and partnership landscape. Keep the six High‑risk sites under quarterly review, and flag any increase in the Moderate bucket. Finally, monitor Starlink’s launch schedule for any sudden surge in polar‑orbit missions—that would signal a push into high‑latitude gateways and increase the strategic value of Arctic and Antarctic sites.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 09, 2026

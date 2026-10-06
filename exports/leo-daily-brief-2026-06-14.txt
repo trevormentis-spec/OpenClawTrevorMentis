@@ -1,0 +1,42 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 14, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+The LEO ground station landscape remains a single-constellation story with a looming challenger. Starlink now fields 9,400+ satellites and at least 38 of the 240 sites in our risk register — more than the next four operators combined. Its subscriber base crossed 10 million in February, generating an estimated $11.8B in 2025 revenue that fuels rapid, vertically integrated gateway expansion. The only material shift this cycle is the appearance of Denali 20020, LLC in FCC licensee rolls, confirming that Amazon’s Kuiper is progressing from prototype to production-scale ground infrastructure. No critical-risk sites exist, but six high-risk sites and a stubbornly moderate count of 34 demand monitoring as new buildouts in Asia and Africa accelerate.
+
+The data suggests a quiet quarter for new multinational coordination and a weak hiring pulse. ITU filings are empty, and job postings returned a single hit for ground station engineers. Market metrics reinforce the structural trend: LEO Ground Segment as a Service (GSaaS) is projected to triple from $1.72B (2024) to $5.33B by 2033, driven almost entirely by the two mega-constellations. The near-term question is whether Kuiper’s ground network buildout will create a second demand wave for third-party teleport operators, or remain as captive as Starlink’s. Watch for Kuiper gateway construction starts in North America and later Europe, and for any regulatory pushback on orbital crowding affecting ground station siting.
+
+═══ FCC LICENSES ═══
+
+Nothing radical. The 100-record licensee extract reads as a legacy carrier roster — MCI, AT&T, Intelsat, Inmarsat, SES Americom, Cogent Fiber — plus two names that matter. Denali 20020, LLC appears for the first time as a notable licensee. That entity is Amazon’s shell for Kuiper ground infrastructure, so its presence indicates active licensing of gateway earth stations in the U.S. No filings are attached, but the emergence from the noise is the signal. GOONHILLY INC. also makes the cut, hinting at international providers eyeing the U.S. market. The absence of SpaceX or Starlink-specific entities is expected; they typically work under experimental or blanket authorizations and don’t show up in this particular feed. No new Starlink gateway applications are visible, which may mean the current build rate is sufficient to keep pace with 7 upcoming Starlink launches. The FCC section is notable only for the Kuiper thread. All else is background noise.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Launch cadence remains Starlink’s metronome. Of the 357 upcoming orbital launches globally, only 7 are tagged Starlink, but those are high-confidence Falcon 9 missions all targeting next-week windows. The next-five schedule is curiously stale for a June 14 briefing — the top two entries (Starlink Group 17-47 and 10-43) have already lifted off if their listed dates held — implying the feed is not live. Still, the pattern is intact: continuous replenishment and expansion. Each batch adds Gateway demand, especially in under-served low-latency regions. The Chinese Long March 6A and 8 listings with unknown payloads could be Guowang constellation launches, but without confirmation it’s background static. No other LEO constellation (OneWeb, Telesat Lightspeed, IRIS²) shows near-term launch activity. Kuiper has yet to launch a production satellite, though its proto-flight campaign is behind it. The ground segment implications are clear: Starlink’s gateway footprint will keep growing organically, while Kuiper’s ground infrastructure must be ready before its satellite ramp begins. Expect a burst of Kuiper gateway construction once its first batch of operational satellites manifests.
+
+═══ SITE & IMAGERY ═══
+
+The risk register holds steady at 240 sites. Starlink dominates ownership with 38 sites, KSAT runs 15, OneWeb 10, Leaf Space 9, Kuiper 5, Telesat 3. The 5 Kuiper sites are the leading indicator of the next wave; they likely represent initial U.S. teleports in licensed bands. By risk level, 6 sites remain High, none Critical, 34 Moderate. North America (26 sites) and Europe (18) are the densest regions, but we are seeing marginal growth in Oceania (7) and S. America (6). Imagery was non-functional this cycle — the Sentinel-2 API was not configured, so no new construction or change-detection outputs. This is an operational gap; Roderick’s team needs to rectify it before the next cycle, because the only way to independently verify Kuiper site progress is via overhead collections. Until then, risk posture is unchanged and no new site alerts can be generated.
+
+═══ MARKET SIGNALS ═══
+
+Job postings returned a single, recent hit for “ground station engineer hiring 2026” — too thin a reed for any trend, but consistent with Kuiper or a GSaaS provider quietly staffing up. ITU coordination activity is blank; the master international frequency register appears static, suggesting no new system filings for LEO ground networks in this window. The market metric deck is more revealing. LEO GSaaS stands at $1.72B (2024) and the broader GSaaS market at $520M, implying that Starlink’s internal gateway spending dwarfs all third-party ground-as-a-service revenue. The projected tripling to $5.33B by 2033 will come mainly from Kuiper and government multi-orbit programs, but only if those players deflate Starlink’s build-it-yourself model. Starlink itself already hit 10M subscribers and $11.8B in 2025 revenue — numbers that suggest it could continue to self-finance gateways without external GSaaS providers for the foreseeable future. The only threat to that closed loop is Kuiper’s decision to lease ground capacity instead of building everything, a topic we should watch in future ITU or FCC filings.
+
+═══ BOTTOM LINE ═══
+
+Focus on Denali 20020, LLC. Track every new FCC application from that entity — it’s the most concrete proxy for Kuiper gateway deployment. Cross-reference with construction imagery once the API is repaired. Starlink’s own gateway buildout is a known quantity and doesn’t need active chasing unless we spot anomalies in risk register counts. The job posting and ITU emptiness confirm the market is in a consolidation lull before the Kuiper storm. Prepare a one-pager mapping all known Denali sites against Kuiper’s expected first shell to forecast coverage gaps and potential third-party GSaaS opportunities for the next 12 months.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 14, 2026

@@ -1,0 +1,50 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 08, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+Stasis. The 06/08 data feed offers almost no delta from last cycle. The risk register holds at 240 sites, with 6 High-risk and zero Critical—nothing moved. FCC license activity is a re-run of legacy GEO names; no LEO operator filed for new gateways. ITU empty. Job postings near-zero. Starlink’s launch machine, however, hasn’t idled: three missions in the immediate window (Groups 17-47, 10-43, 17-43) piled roughly 180 more satellites onto an already 9,400+ constellation. What’s missing is the ground-side yelp that should accompany such a push. This quiet is itself a signal: either Starlink’s 38 registered sites are absorbing the growth (pushing the limits of gateway density), or the company is building capacity under existing grants and we’re blind to it because imagery is dead and FCC data didn’t pick it up. For Roderick, the absence of noise from Kuiper and Telesat is equally loud—if they don’t start laying ground soon, the gap widens.
+
+Watch for: (1) a sudden jump in Starlink site count when the imagery API comes back or a batch filing hits the FCC; (2) any ITU coordination from Kuiper/Telesat ground segments, which will be the first real footprint of their deployment; (3) job posts—a single hit for “ground station engineer” is pathetic, but a spike would signal construction. The market metrics remind us the prize is real: $5.33B LEO GSaaS sub-market by 2033, but right now the action is all in-house.
+
+═══ FCC LICENSES ═══
+
+Nothing news. The extract is a who’s-who of legacy operators—MCI, Intelsat, AT&T, SES Americom, Calian, Goonhilly. No Starlink, Kuiper, OneWeb, or Leaf Space appeared. Trend: flat. Either these LEO players operate under umbrella authorizations (e.g., Starlink’s blanket earth-station license) or the database capture missed their recent filings. For our purposes, FCC this week is a non-event.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Starlink keeps throwing mass at orbit. The next-5 list shows three Falcon 9 Starlink missions June 3–7 (all LEO communications), with two from Vandenberg and one from the Cape. That’s a cadence of roughly one every 48 hours, consistent with the 7 total Starlink launches in the broader upcoming queue. Total upcoming launches across all operators: 357, so the global queue is deep but dominated by opaque Chinese Long March payloads. No Kuiper or Telesat launches in the window; they remain on the pad, not in the sky.
+
+Ground implication: Each new shell of Starlink sats demands either fresh gateway sites (if bent-pipe architecture holds) or a reliance on laser links to offload traffic. The 38 Starlink sites in our risk register haven’t budged. If the gateway count stays flat while satellite count climbs, either SpaceX is sweating existing assets, deploying temporary “spot” gateways not yet registered in our feeds, or genuinely migrating more traffic via inter-satellite links. Watch the ratio of satellites per gateway—it’s rising, and eventually something has to give.
+
+═══ SITE & IMAGERY ═══
+
+Risk register unchanged: 240 sites, 6 High, 13 Negligible, 34 Moderate, 27 Low. The operator split remains Starlink-heavy (38), dwarfing KSAT (15), Leaf Space (9), OneWeb (10), and Kuiper (5). Geographic skew persists: North America (26) and Europe (18) soak up capacity, while Africa (5), South America (6), and Asia (8) lag. That imbalance matters if low-latency global coverage is the goal—Starlink’s 10M+ subscribers are concentrated but growing elsewhere. No critical-designation sites; the six High-risk entries are likely geopolitical or infrastructure-exposed locations we’ve flagged before.
+
+Imagery: API down (configured false). 10 sites checked, zero with data. This is a blind spot. Without Sentinel-2, we cannot verify new construction. Until imagery is restored, assume no change, but that assumption is brittle.
+
+═══ MARKET SIGNALS ═══
+
+Jobs: virtually silent. A single hit for “ground station engineer hiring 2026” with no detail suggests either a stale listing or a quiet market. This is surprising given the LEO GSaaS projection of $5.33B by 2033. It may reflect that the large operators (SpaceX, Amazon) hire through internal pipelines or that construction is being outsourced to firms that don’t crack our job-post filter. For now, low signal.
+
+ITU: blank. No coordination filings appeared. That’s unusual if Kuiper is ramping; their ground network filings would normally show up as GSO/NGSO coordinate requests. Either they’re not moving, or our feed missed them.
+
+Market metrics: Stark. Starlink’s 2025 estimated revenue of $11.8B already dwarfs the entire GSaaS market ($1.72B in 2024). This underscores that Starlink is a vertically integrated behemoth—its ground infrastructure is capex, not a service buy. The broader GSaaS growth to $2.49B by 2033 will depend on multi-tenant networks serving Kuiper, Telesat, and smaller constellations. If those operators are silent, the third-party market’s growth trajectory is on paper only. We’re in a “wait for Kuiper” moment.
+
+═══ BOTTOM LINE ═══
+
+Nothing to escalate. The risk board is stable, regulatory/job indicators are null, and launch activity is routine. The tension, as always, is between Starlink’s relentless satellite deployment (now 9,400+ birds) and its apparently static ground footprint. Roderick should push to re-activate the imagery feed immediately—construction of new gateways is the canary we’re missing. Also, assign a watch on the FCC experimental docket for Kuiper gateway tests; that’s where the first sign of life will appear. No immediate moves needed, but this quiet won’t hold for long.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 08, 2026

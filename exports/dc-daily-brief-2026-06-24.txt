@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-24
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+North American hyperscale expansion faces a critical supply chain chokehold as transformer lead times stretch to 24 months—the worst level recorded—while PJM’s 122 GW interconnection queue pushes new build delays to 4–6 years. This directly imperils the 1,200 MW AWS Ohio project and compounds grid risk at Equinix’s flagship Ashburn, Dallas, Chicago, and San Jose campuses, all rated 56/100 MODERATE and driven entirely by US grid constraints.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No active cable cuts or repair operations reported in the last 24 hours. All 25 Tier‑1 hyperscale hubs monitored by Sentinel‑2 appear nominal, including facilities adjacent to major landing stations. Miami NOTA (Equinix MI1) — a key Americas cable termination for BSC‑1 and AMX‑1 — shows no ground disturbance. The Pacific theatre remains a latent disruptor: Hong Kong and Singapore, flagged for connectivity‑limitation risk, remain heavily dependent on a few high‑capacity systems (SEA‑ME‑WE 5, AAE‑1). A single cable fault there would rapidly congest remaining routes and degrade latency for the entire Asia‑Pacific cloud edge.
+
+═══ POWER & GRID ═══
+Grid constraints are the overwhelming risk driver for the world’s largest data center cluster. Northern Virginia (Ashburn) is rated MODERATE specifically because of PJM strain, and the interconnection queue has ballooned to 122 GW — new commercial commitments are impossible on any timeline shorter than four years. Transformer procurement is the single‑tightest link: lead times for >50 MVA units are 18–24 months and worsening. Switchgear delivery now 12–18 months, and Caterpillar generators push to 12 months on volume orders. These delays will cascade into commissioning dates across the 1,450 MW active construction pipeline. In the near term, no relief is visible; energy price spikes in PJM and ERCOT are likely this summer as load growth outpaces transmission upgrades.
+
+═══ NATURAL HAZARD WATCH ═══
+Atlantic hurricane season is officially underway. Southeast US clusters — Miami NOTA and the 40 MW CyrusOne HOU2 under construction in Houston — are in storm‑surge and flood‑exposed zones and warrant elevated monitoring. On the West Coast, wildfire season is ramping; San Jose (Equinix SV1/SV5/SV10) and Los Angeles (Equinix LA1) sit in wildland‑urban interface areas. The Hayward Fault near San Jose remains a persistent seismic long‑tail threat for the Silicon Valley cluster, though no heightened seismicity is reported today. No active earthquake, flood, or wildfire is currently impacting any Tier‑1 facility.
+
+═══ PHYSICAL SECURITY ═══
+No physical security incidents reported at major data center corridors in the last 24 hours. Sentinel‑2 surface‑reflectance baselines for all 25 monitored hyperscale hubs show no anomalous ground disturbance, unauthorized construction, or flooding. Access control and perimeter integrity remain intact. Low protest activity globally; there are no known threats to facilities in the current reporting window.
+
+═══ CLOUD & NETWORK ═══
+No cloud‑provider outages affecting DC operations this period. All 900 monitored internet exchanges report stable traffic and peering. Terrestrial fiber backbones serving the largest clusters — Ashburn, Dallas, Chicago, New York — are free of cuts or congestion events. Trans‑Atlantic capacity remains ample, but spot congestion on the Pacific leg toward Singapore is a watch item as regional cloud capacity expands (AirTrunk SYD2 150 MW announced). No major route flaps or BGP instability observed.
+
+═══ ASSET WATCH ═══
+Pipeline highlights: AWS us‑east‑3 (Ohio, 1,200 MW) enters the permit‑filed stage — its dependence on PJM’s stalled queue makes it the most schedule‑sensitive mega‑project in North America. AirTrunk SYD2 (Sydney, 150 MW) announced, deepening the Australian hyperscale node. Digital Realty FRA14 (Frankfurt, 35 MW) under construction; Equinix NY9 (New York, 25 MW) reached operational status; CyrusOne HOU2 (Houston, 40 MW) under construction. Risk‑score distribution unchanged: 92 LOW, 190 MODERATE, 23 NEGLIGIBLE. All eight facilities scoring 56/100 MODERATE are US Equinix campuses driven entirely by grid exposure. No facility has yet breached the MODERATE band, but the trend is upward as grid pressures intensify.
+
+═══ MARKET SIGNALS ═══
+Supply chain paralysis is translating into harder colocation pricing. Transformer and switchgear backlogs are adding 6–9 months of schedule float to new build deliveries, diverting demand into existing capacity and tightening vacancy rates in top US markets. Ashburn and Silicon Valley are effectively sold out through 2027 at current absorption rates. Secondary markets (Ohio, Houston) are seeing pre‑lease activity accelerate. Generator and UPS constraints are forcing operators to secure equipment 18 months before planned energization, tying up capital and shrinking developer margins. No near‑term softening is foreseen; the hyperscale land‑grab continues unabated but is now firmly supply‑constrained.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-24

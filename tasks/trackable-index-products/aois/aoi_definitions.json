@@ -1,0 +1,102 @@
+{
+  "regions": [
+    {
+      "id": "US-CB",
+      "name": "US Corn Belt",
+      "country": "USA",
+      "crops": ["corn", "soybeans"],
+      "growing_season": {"start": "04-15", "end": "10-15"},
+      "description": "Iowa, Illinois, Indiana, Nebraska, Minnesota, Ohio",
+      "sampling_regions": [
+        {"name": "Iowa Central", "bbox": [-94.5, 41.5, -94.0, 42.0]},
+        {"name": "Illinois Central", "bbox": [-89.5, 40.0, -89.0, 40.5]},
+        {"name": "Nebraska East", "bbox": [-97.0, 40.5, -96.5, 41.0]}
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.0, 40.0],
+          [-87.0, 40.0],
+          [-87.0, 44.0],
+          [-97.0, 44.0],
+          [-97.0, 40.0]
+        ]]
+      },
+      "primary_sources": ["USDA WASDE", "USDA Crop-CASMA", "USDA FAS Crop Explorer"],
+      "notes": "Primary corn/soy region. ~40% of global corn exports. Sampled across 3 sub-regions."
+    },
+    {
+      "id": "BR-MT",
+      "name": "Brazil Mato Grosso",
+      "country": "Brazil",
+      "crops": ["soybeans", "corn"],
+      "growing_season": {"start": "09-15", "end": "03-15"},
+      "description": "Mato Grosso state, central Brazil cerrado",
+      "sampling_regions": [
+        {"name": "MT Central", "bbox": [-55.5, -13.5, -55.0, -13.0]},
+        {"name": "MT South", "bbox": [-56.0, -16.0, -55.5, -15.5]}
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-60.0, -18.0],
+          [-50.0, -18.0],
+          [-50.0, -7.0],
+          [-60.0, -7.0],
+          [-60.0, -18.0]
+        ]]
+      },
+      "primary_sources": ["CONAB", "USDA FAS"],
+      "notes": "Heavy cloud Dec-Feb. Confidence degrades B3 in wet season. Sampled 2 sub-regions."
+    },
+    {
+      "id": "UA-UK",
+      "name": "Ukraine Steppe",
+      "country": "Ukraine",
+      "crops": ["winter wheat", "corn", "sunflower"],
+      "growing_season": {"start": "04-01", "end": "09-30"},
+      "description": "Central and southern Ukraine, Dnipro river basin",
+      "sampling_regions": [
+        {"name": "Central Ukraine", "bbox": [30.5, 48.5, 31.0, 49.0]},
+        {"name": "Southern Ukraine", "bbox": [33.5, 46.5, 34.0, 47.0]}
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [29.0, 46.0],
+          [38.0, 46.0],
+          [38.0, 51.0],
+          [29.0, 51.0],
+          [29.0, 46.0]
+        ]]
+      },
+      "primary_sources": ["USDA FAS (ad-hoc)", "FAO GIEWS"],
+      "notes": "War-affected ground surveys. Satellite primary source. Ukrainian AgMin data may be delayed. Sampled 2 sub-regions."
+    },
+    {
+      "id": "EU-FR",
+      "name": "EU France-Germany Belt",
+      "country": "EU (France/Germany)",
+      "crops": ["soft wheat", "barley", "corn"],
+      "growing_season": {"start": "10-01", "end": "08-31"},
+      "description": "Northern France, Benelux, western Germany",
+      "sampling_regions": [
+        {"name": "Beauce (France)", "bbox": [1.8, 48.0, 2.3, 48.4]},
+        {"name": "Champagne (France)", "bbox": [3.8, 48.5, 4.3, 49.0]},
+        {"name": "Lower Saxony (Germany)", "bbox": [8.0, 52.0, 8.5, 52.5]}
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [1.0, 47.0],
+          [10.0, 47.0],
+          [10.0, 52.0],
+          [1.0, 52.0],
+          [1.0, 47.0]
+        ]]
+      },
+      "primary_sources": ["EU MARS (JRC)", "FranceAgriMer", "USDA WASDE"],
+      "notes": "Good ground-truth coverage. EU MARS provides weekly bulletins during growing season. Sampled 2 sub-regions."
+    }
+  ]
+}

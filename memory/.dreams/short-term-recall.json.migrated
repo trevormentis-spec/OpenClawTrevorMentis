@@ -1,0 +1,1502 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-17T06:18:14.291Z",
+  "entries": {
+    "memory:memory/2026-06-01.md:26:63": {
+      "key": "memory:memory/2026-06-01.md:26:63",
+      "path": "memory/2026-06-01.md",
+      "startLine": 26,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "✅ Autonomous fixes ran (--quiet, no output) **Post health-fix state (34 min after fix applied):** - Kalshi balance: $398.09 (correctly reported now) ✅ - Feed User-Agent fix deployed for WAF bypass ✅ - Landing page deploy + DailyIntelAgent crons both enabled ✅ - QC Alert: None ✅ - Calibration metric now correctly excludes expired predictions ✅ **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain — no new alerts **Known Issues:** Landing page deploy (FIX_APPLIED, needs 3 passes to close), Feed rot 41.2% working (User-Agent fix deployed), Calibration ~3% **Today's plan:** - Morning brief pipeline (if scheduled) - Monitor DeepSeek balance - Continue active as",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-13T05:33:16.177Z",
+      "lastRecalledAt": "2026-06-13T05:33:16.245Z",
+      "queryHashes": [
+        "5c4d4b4d2417",
+        "8cf60b4c5150",
+        "9357f2d6e3d5"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "health-fix",
+        "398.09",
+        "user-agent",
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "fix-applied",
+        "41.2"
+      ]
+    },
+    "memory:memory/2026-05-25.md:152:199": {
+      "key": "memory:memory/2026-05-25.md:152:199",
+      "path": "memory/2026-05-25.md",
+      "startLine": 152,
+      "endLine": 199,
+      "source": "memory",
+      "snippet": "- DeepSeek: $84.45, ~277 days runway - No cost alerts ### Active Assignments - LEO ground stations (primary) - RDX C4 supply (primary) - Semiconductor supply chain (secondary) - No QC alerts ## Report: rdx_weekly_brief — 2026-05-25 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-05-25.txt **Words:** 983 | **Model:** opus-4.7 **Summary:** Weekly Market Briefing: Global RDX and C4 Explosives Market Reporting period: 18 May 2026 to 25 May 2026 === EXECUTIVE SUMMARY === This week's data shows a Western explosives industry in coordinated **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds ## Report: leo_daily_brief — 2026-05-25 **File:** /hom",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-13T05:33:16.177Z",
+      "lastRecalledAt": "2026-06-13T05:33:16.177Z",
+      "queryHashes": [
+        "5c4d4b4d2417"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "84.45",
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "rdx/c4",
+        "leo-daily-brief",
+        "deepseek",
+        "days"
+      ]
+    },
+    "memory:memory/2026-05-25.md:128:163": {
+      "key": "memory:memory/2026-05-25.md:128:163",
+      "path": "memory/2026-05-25.md",
+      "startLine": 128,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "Reuters (Arabic/English), Bloomberg, ISW/CTP all saying the same thing as earlier digests: deal inching forward, gaps remain, Trump not rushing. The new Bloomberg Politics framing (Khamenei under pressure) adds useful context but doesn't change the probability assessment. 45-55% 7-day assessment holds. ### Action - Hormuz crew evacuation → flag as indicator for Iran deal tracking (humanitarian evacuation = industry signaling prolonged standoff) - Latvia drone politics → add to Baltic/NATO monitoring track - DoD fleet strain → note for LEO/defense supply chain context --- ## Heartbeat 10:43 UTC ### Autonomous Cycle - All phases ran quiet (crons, feeds, collection, pipeline, costs, brain)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-13T05:33:16.177Z",
+      "lastRecalledAt": "2026-06-13T05:33:16.177Z",
+      "queryHashes": [
+        "5c4d4b4d2417"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "arabic/english",
+        "isw/ctp",
+        "45-55",
+        "7-day",
+        "baltic/nato",
+        "leo/defense",
+        "reuters",
+        "arabic"
+      ]
+    },
+    "memory:memory/2026-06-02.md:1:36": {
+      "key": "memory:memory/2026-06-02.md:1:36",
+      "path": "memory/2026-06-02.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-06-02 — Daily Memory ## Heartbeat — 11:25 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ## Heartbeat — 11:55 UTC **Cycle:** ✅ Autonomous cycle completed (--all --quiet, exit 0) ✅ Autonomous fixes ran (--quiet, no output — no fixes needed) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Digest delivery:** ⚠️ Same unclear status as 11:25 UTC — tracking in Known Issues **QC Alerts:** None ✅ **Active assignments:** LEO ground stations, RDX C4 supply, semiconductor supply chain ✅ Autonomous fixes ran (--quiet, committed 11 files) **Phases executed:** crons, feeds, collection, pipeline, costs, brain, digest **Digest delivery:** ⚠",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-13T05:33:16.230Z",
+      "lastRecalledAt": "2026-06-13T05:33:16.245Z",
+      "queryHashes": [
+        "8cf60b4c5150",
+        "9357f2d6e3d5"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "utc",
+        "cycle",
+        "autonomous",
+        "completed",
+        "all",
+        "quiet",
+        "exit"
+      ]
+    },
+    "memory:memory/2026-06-02.md:68:104": {
+      "key": "memory:memory/2026-06-02.md:68:104",
+      "path": "memory/2026-06-02.md",
+      "startLine": 68,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "- 12:00 UTC was causing false \"no brief\" alarms multiple times per day **Schedule for today (PT = PDT = UTC-7):** - 07:15 PT (14:15 UTC) — Brief Auto-Recovery (first test with 900s timeout) - 08:00 PT (15:00 UTC) — DC Security Daily (first test with 1200s timeout) - 09:00 PT (16:00 UTC) — LEO Daily Brief (first test with 1800s timeout) - 12:00 PT (19:00 UTC) — Combined Intel Digest **QC Alerts:** None ✅ **Active assignments:** leo_ground_stations, rdx_c4_supply, semiconductor-supply-chain **Brain** - Episodic memory from 02:09 UTC: brain maintenance ran OK, index rebuilt, no critical issues - Calibration loop firing rapidly (accuracy 2.6%) ## Heartbeat — 12:55 UTC **Cycle:** ✅ Autono",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-13T05:33:16.230Z",
+      "lastRecalledAt": "2026-06-13T05:33:16.245Z",
+      "queryHashes": [
+        "8cf60b4c5150",
+        "9357f2d6e3d5"
+      ],
+      "recallDays": [
+        "2026-06-13"
+      ],
+      "conceptTags": [
+        "utc-7",
+        "auto-recovery",
+        "leo-ground-stations",
+        "rdx-c4-supply",
+        "semiconductor-supply-chain",
+        "2.6",
+        "utc",
+        "was"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:18": {
+      "key": "memory:memory/2026-05-02.md:1:18",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# 2026-05-02 — Saturday ## Overnight / Morning - Brain infrastructure initialized, reindexed, and operational (24 files, 74 chunks) - Strait of Hormuz continues closed; UN Security Council debated May 1 with UAE demanding reopening - 90+ countries signed joint statement condemning Iranian maritime interference - No incoming AgentMail; only outbound automated security report emails - Workspace still not initialized as git repo (flagged to Roderick May 1) ## Morning checks (08:27 PT) - AgentMail: no incoming messages (only outbound automated reports) - OSINT: Strait of Hormuz situation static — French MICA center continues monitoring from Brest, 750+ ships still stranded, Iran's IRGC \"mosqui",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-08-15T22:09:24.598Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9",
+        "5bb0df5423b3"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15"
+      ],
+      "conceptTags": [
+        "saturday",
+        "overnight",
+        "morning",
+        "brain",
+        "infrastructure",
+        "initialized",
+        "reindexed",
+        "operational"
+      ]
+    },
+    "memory:memory/2026-05-24.md:277:308": {
+      "key": "memory:memory/2026-05-24.md:277:308",
+      "path": "memory/2026-05-24.md",
+      "startLine": 277,
+      "endLine": 308,
+      "source": "memory",
+      "snippet": "- `skills/a2a/client.py` — discovers and tasks other A2A agents (discovery confirmed working) - Agent Card serves at `/.well-known/agent-card.json` with JSON-RPC 2.0 endpoint - `config/a2a/known_agents.json` — agent registry - Limitation: SDK v1.0 protobuf types still maturing — client uses direct httpx calls. Task execution needs async tuning. - Practical value: forward-looking infrastructure. Ecosystem still nascent (150 orgs). ## Moltbook reconnected — 2026-05-24 - Status changed from DISABLED to ENABLED (Roderick directive supersedes 2026-05-23 kill order) - Account: `trevormentis` — 34 karma, 11 followers, 18 following, claimed + active - API key still valid (same as before) - New po",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-09-17T05:49:53.859Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9",
+        "189f59296c7d"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15",
+        "2026-09-17"
+      ],
+      "conceptTags": [
+        "skills/a2a/client.py",
+        "well-known/agent-card.json",
+        "json-rpc",
+        "2.0",
+        "config/a2a/known-agents.json",
+        "v1.0",
+        "forward-looking",
+        "skills"
+      ]
+    },
+    "memory:memory/2026-05-24.md:301:341": {
+      "key": "memory:memory/2026-05-24.md:301:341",
+      "path": "memory/2026-05-24.md",
+      "startLine": 301,
+      "endLine": 341,
+      "source": "memory",
+      "snippet": "- `scripts/leo_daily_brief.py` rewritten — AgentMail SDK delivery, HTML formatting - Bug fixed: text extraction stripping analysis content (was splitting on ═ separators and throwing away LLM output) - preflight QC wired into delivery path - Cron unchanged (09:00 PT daily) — script updated in place ## Universal preflight QC — 2026-05-24 `scripts/preflight_qc.py` — runs on every outgoing report before delivery. Blocks on CRITICAL. **6 gates:** empty/short, error content, source-only (no analysis), wrong language (CJK chars), HTML broken, copy-paste duplication **Wired into 3 delivery paths:** - `deliver_text_brief.py` — main daily brief (min 200 words) - `leo_daily_brief.py` — LEO brief",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-08-15T16:59:49.834Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15"
+      ],
+      "conceptTags": [
+        "scripts/leo-daily-brief.py",
+        "scripts/preflight-qc.py",
+        "empty/short",
+        "source-only",
+        "copy-paste",
+        "deliver-text-brief.py",
+        "leo-daily-brief.py",
+        "scripts"
+      ]
+    },
+    "memory:memory/2026-06-13.md:1:26": {
+      "key": "memory:memory/2026-06-13.md:1:26",
+      "path": "memory/2026-06-13.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "# 2026-06-13 — Ad-hoc task ## Grain Supply Pipeline Hardening Assessment **Task:** Roderick requested hardening assessment of the grain supply pipeline, delivered as email report. **Output:** `exports/grain-supply-hardening-2026-06-13.txt` → sent via AgentMail to roderick.jones@gmail.com **Key findings:** - Three simultaneous vectors: Odesa port strikes (180+ attacks, 20-30% capacity loss), Hormuz fertilizer supply shock (>95% tanker reduction, 75-108% urea price increase), US winter wheat drought (25% YoY drop, lowest since 1965) - Compound effect worse than 2022 — fiscal buffers weaker, humanitarian funding being cut, informal safety nets under strain - Hardening requires: maritime co",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.344Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9",
+        "0575a7ffbccf",
+        "d630ed192aad"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15",
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "ad-hoc",
+        "roderick.jones",
+        "gmail.com",
+        "20-30",
+        "75-108",
+        "hoc",
+        "task",
+        "grain"
+      ]
+    },
+    "memory:memory/2026-05-24.md:189:210": {
+      "key": "memory:memory/2026-05-24.md:189:210",
+      "path": "memory/2026-05-24.md",
+      "startLine": 189,
+      "endLine": 210,
+      "source": "memory",
+      "snippet": "1. Load .env (DEEPSEEK_API_KEY, AGENTMAIL_API_KEY, OPENROUTER_API_KEY) 2. Pre-collection: calibration directives + Kalshi scan 3. Collector: ~96 feeds (50 catalog + ~46 hardcoded), dead feeds skipped 4. Email intel: Gmail + AgentMail injection 5. Analysis: 10 regions × DeepSeek V4 Pro + exec summary + red team 6. Quality gate: 7 gates 7. Delivery: AgentMail to roderick.jones@gmail.com 8. Postdiction: calibration tracking Estimated runtime: 17-22 minutes (vs 9+ minutes for collection alone before fixes) ## Daily brief — 2026-05-24 BLUF: Russia's 700-drone Oreshnik-led barrage on Ukraine and Trump's claim of a 'largely negotiated' US-Iran deal create simultaneous escalation and de-escalatio",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-08-15T16:59:49.834Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15"
+      ],
+      "conceptTags": [
+        "router",
+        "deepseek-api-key",
+        "agentmail-api-key",
+        "openrouter-api-key",
+        "pre-collection",
+        "roderick.jones",
+        "gmail.com",
+        "17-22"
+      ]
+    },
+    "memory:memory/2026-05-24.md:167:195": {
+      "key": "memory:memory/2026-05-24.md:167:195",
+      "path": "memory/2026-05-24.md",
+      "startLine": 167,
+      "endLine": 195,
+      "source": "memory",
+      "snippet": "- Added dead-feed cache (`brain/memory/semantic/dead-feeds.json`) — skips feeds after 3 consecutive failures, retests after 48h - Pre-populated with 171 known-dead URLs (from SA validation + catalog) - Reduced timeout: 15s → 8s, retries: 2 → 1 (max 16s per dead feed vs 45s) - Catalog loader also filters against dead cache 2. **DEEPSEEK_API_KEY missing in test env:** Cron sources .env (line 46 of daily-text-brief.sh) — confirmed present in .env 3. **Cron registration verified:** ID `69d9d778-9de1-4d63-8697-99f0bd13353f` - Schedule: `cron 0 5 * * * @ America/Los_Angeles` (05:00 PT daily) - Task: `cd /home/ubuntu/.openclaw/workspace && bash scripts/daily-text-brief.sh` -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-23T15:55:02.750Z",
+      "lastRecalledAt": "2026-08-15T16:59:49.834Z",
+      "queryHashes": [
+        "a689dc1b57a5",
+        "8fe0b7549ea9"
+      ],
+      "recallDays": [
+        "2026-06-23",
+        "2026-08-15"
+      ],
+      "conceptTags": [
+        "dead-feed",
+        "pre-populated",
+        "known-dead",
+        "deepseek-api-key",
+        "daily-text-brief.sh",
+        "america/los-angeles",
+        "home/ubuntu",
+        "openclaw/workspace"
+      ]
+    },
+    "memory:memory/2026-05-30.md:1:13": {
+      "key": "memory:memory/2026-05-30.md:1:13",
+      "path": "memory/2026-05-30.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "## Kalshi Trader — Cron Run (00:00 UTC) **Result:** HALT — balance too low ($0.24 < $1.00 min) **Signals detected:** 23 tradeable **Circuit breaker:** Opened after 3 low-balance failures per design **Fixes applied this session:** 1. **Circuit breaker auto-reset bug** — `_check_circuit_breaker()` checked `if cb.get(\"paused\")` before the day-change reset, so a tripped circuit never auto-recovered on new UTC day. Fixed: date check now runs before the `paused` check, resetting the breaker when a new day starts. 2. **UnboundLocalError on `_TRADER_PAUSE_SENT`** — `cmd_scan_and_trade()` used `_TRADER_PAUSE_SENT` (read + write) without `global` declaration. When the circuit was auto-reset and bal",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-25T15:37:29.002Z",
+      "lastRecalledAt": "2026-06-25T15:37:33.566Z",
+      "queryHashes": [
+        "886afa549c3b",
+        "a0b2b8d737a6"
+      ],
+      "recallDays": [
+        "2026-06-25"
+      ],
+      "conceptTags": [
+        "0.24",
+        "1.00",
+        "low-balance",
+        "auto-reset",
+        "check-circuit-breaker",
+        "cb.get",
+        "day-change",
+        "auto-recovered"
+      ]
+    },
+    "memory:memory/2026-05-04.md:38:52": {
+      "key": "memory:memory/2026-05-04.md:38:52",
+      "path": "memory/2026-05-04.md",
+      "startLine": 38,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- **Marketing graphics generated:** Hero image (16:9 globe/intel overlay), Social square (1:1 6-region map) - **Content sourced from:** 3 May 2026 edition — covers Ukraine Urals strikes, Sahel JNIM-FLA, India-Pak nuclear, Iran War Day 65, Mexico cartels, Venezuela post-Maduro ## Moltbook Promotion — Global Security & Intelligence Brief Posted 3 promotional posts: 1. **builds** — \"Launched: Global Security & Intelligence Brief\" — product launch with pipeline overview and signup link → https://www.moltbook.com/p/acd22887-69ba-4d06-8e64-60df7f6c87e7 2. **agents** — \"Running a daily intelligence pipeline\" — methodology deep-dive (flagged as spam but still accruing engagement) → https://w",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-06-25T15:37:29.002Z",
+      "lastRecalledAt": "2026-06-25T15:37:33.566Z",
+      "queryHashes": [
+        "886afa549c3b",
+        "a0b2b8d737a6"
+      ],
+      "recallDays": [
+        "2026-06-25"
+      ],
+      "conceptTags": [
+        "globe/intel",
+        "6-region",
+        "jnim-fla",
+        "india-pak",
+        "post-maduro",
+        "deep-dive",
+        "marketing",
+        "graphics"
+      ]
+    },
+    "memory:memory/2026-05-13.md:73:98": {
+      "key": "memory:memory/2026-05-13.md:73:98",
+      "path": "memory/2026-05-13.md",
+      "startLine": 73,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "- Autonomy measurement (scripts/autonomy_tracker.py) ### System Health: 89/100 (up from 83/100) - Autonomy: 100/100 (was 50/100 under old scoring) - Routing: 100/100 (fixed) - Config: 100/100 - All 7 behavioral loops instrumented ### Email sent to roderick.jones@gmail.com with full test results ## Gmail Reader — Activated (via Maton API) - Created `scripts/gmail_reader.py` — reads trevor.mentis@gmail.com via Maton API gateway - Fetches: OSINT intel (ISW, CTP, Foreign Policy), document shares, alerts - Saves intel emails to `tasks/news_raw.md` for pipeline pickup - Tested: 10 unread emails found, 6 intel sources (ISW, CTP, FP), Concentric briefing share - Cron: `Gmail Intel Reader` — runs",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-07-07T13:10:12.805Z",
+      "queryHashes": [
+        "eafb4fe1aa5f"
+      ],
+      "recallDays": [
+        "2026-07-07"
+      ],
+      "conceptTags": [
+        "gateway",
+        "scripts/autonomy-tracker.py",
+        "89/100",
+        "83/100",
+        "100/100",
+        "50/100",
+        "roderick.jones",
+        "gmail.com"
+      ]
+    },
+    "memory:memory/2026-05-05.md:22:46": {
+      "key": "memory:memory/2026-05-05.md:22:46",
+      "path": "memory/2026-05-05.md",
+      "startLine": 22,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- Posting pipeline verified end-to-end ### Mistake — Wrong brief posted to LinkedIn & Twitter - Used stale exports/images/briefing-page-*.png (May 3 brief) instead of May 4 magazine brief - LinkedIn + Twitter posts went live with wrong images before correction - TikTok draft (wrong May 3 content) deleted successfully - Corrected by extracting 3 pages from magazine-briefing-2026-05-04.pdf via pdftoppm - Re-posted correct May 4 content to both LinkedIn and Twitter - LESSON: always check which brief is most recent — use pdf timestamps + pdftotext to verify - Old wrong posts are live but can't be deleted (already posted status) ### 📌 Source of Truth for posting - The daily intel brief source",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-07-07T13:10:12.805Z",
+      "queryHashes": [
+        "eafb4fe1aa5f"
+      ],
+      "recallDays": [
+        "2026-07-07"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "exports/images/briefing-page",
+        "magazine-briefing-2026-05-04.pdf",
+        "re-posted",
+        "posting",
+        "pipeline",
+        "verified",
+        "end"
+      ]
+    },
+    "memory:memory/2026-05-13.md:47:84": {
+      "key": "memory:memory/2026-05-13.md:47:84",
+      "path": "memory/2026-05-13.md",
+      "startLine": 47,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "- Behavioral alerts written to `analysis/alerts/` ### Key design principle Logging is NOT learning. Scoring is NOT learning. Reporting is NOT learning. These three loops materially CHANGE behavior (confidence band restrictions, collection cadence changes, cognition changes). ### Still open - **HD-05**: Routing — need Roderick's call on Opus 4.7 for Tier-1 - **MD-02**: Stripe test mode - **MD-03**: Buttondown subscribers ### Test results emailed to roderick.jones@gmail.com ## Phase 14 Full — Autonomy & Operational Learning ### Primary Unlock: Unscheduled Cognition - Created `scripts/unscheduled_cognition.py` — fires targeted regional analysis outside cron - On critical event: checks beha",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.344Z",
+      "queryHashes": [
+        "eafb4fe1aa5f",
+        "0575a7ffbccf",
+        "d630ed192aad"
+      ],
+      "recallDays": [
+        "2026-07-07",
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "analysis/alerts",
+        "hd-05",
+        "4.7",
+        "tier-1",
+        "md-02",
+        "md-03",
+        "roderick.jones",
+        "gmail.com"
+      ]
+    },
+    "memory:memory/2026-05-04.md:21:43": {
+      "key": "memory:memory/2026-05-04.md:21:43",
+      "path": "memory/2026-05-04.md",
+      "startLine": 21,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "- Review daily-intel-brief build_pdf.py if concerned about env exposure to subprocesses ## Daily Intel Brief — Cron Setup - **Pipeline:** `scripts/daily-brief-cron.sh` — runs orchestrate.py (collect → analyze → visuals → PDF) then delivers via Gmail - **Schedule:** OpenClaw cron at 05:00 PT → triggers isolated session → executes script - **Delivery:** Gmail API via Maton gateway → `roderick.jones@gmail.com` — arrives ~07:00 PT - **Script handles:** orchestrator failures (sends failure notification to Roderick), PDF delivery with HTML summary + PDF attachment - **Cron job ID:** `250765ae-d951-490c-b3d0-109fca300053` - **Cron expression:** `0 5 * * *` @ `America/Los_Angeles` (5am PT daily) -",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.344Z",
+      "queryHashes": [
+        "eafb4fe1aa5f",
+        "0575a7ffbccf",
+        "d630ed192aad"
+      ],
+      "recallDays": [
+        "2026-07-07",
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "daily-intel-brief",
+        "build-pdf.py",
+        "scripts/daily-brief-cron.sh",
+        "orchestrate.py",
+        "roderick.jones",
+        "gmail.com",
+        "america/los-angeles"
+      ]
+    },
+    "memory:memory/2026-05-11.md:91:121": {
+      "key": "memory:memory/2026-05-11.md:91:121",
+      "path": "memory/2026-05-11.md",
+      "startLine": 91,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "## 4 Daily Briefings — First Creation ### What was built - 4 email-only briefings: UK News, Trump Leadership, Financial Markets + Prediction Bets, Global Sports - Sent via Gmail Maton API from trevor.mentis@gmail.com to roderick.jones@gmail.com - Opus 4.7 graded first draft C+ (oil inconsistencies, no Top 3 summary, sports odds math) - Cron set for 8am PT daily delivery (confirmed user preferred time) ## Hermes Agent Architecture Audit ### What was done - Studied Hermes Agent docs from Nous Research - Audited Trevor against 10 Hermes dimensions - Full audit saved to analyst/audits/hermes-audit-2026-05-11.md ### Key findings - Two CRITICAL gaps: procedural memory (skills) and self-improvi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-07-07T13:10:12.805Z",
+      "queryHashes": [
+        "eafb4fe1aa5f"
+      ],
+      "recallDays": [
+        "2026-07-07"
+      ],
+      "conceptTags": [
+        "email-only",
+        "trevor.mentis",
+        "gmail.com",
+        "roderick.jones",
+        "4.7",
+        "self-improvi",
+        "briefings",
+        "first"
+      ]
+    },
+    "memory:memory/2026-05-11.md:75:96": {
+      "key": "memory:memory/2026-05-11.md:75:96",
+      "path": "memory/2026-05-11.md",
+      "startLine": 75,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "- v5-v6: Mapbox dark-v11/light-v11 with GeoJSON (user: \"no change in this version!\") - v7-v8: Mapbox hybrid + PIL overlays with Economist style (user: \"no change!\") - v9: Pure PIL with cream bg, no Mapbox dependency — lat/lon swap bug found, markers rendered off-screen at negative coords ### Root cause of map failures - **Projection math was wrong** for at least 3 versions. `cfg[\"center\"]` stored as `(lat, lon)` but projection code treated it as `(lon, lat)`, putting all markers off-screen - Static GeoJSON data (same cities/routes every day) didn't adapt to daily content - Mapbox Static API had no typography control (GeoJSON labels rendered at fixed small sizes) - User wanted Economis",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-07-07T13:10:12.805Z",
+      "lastRecalledAt": "2026-07-07T13:10:12.805Z",
+      "queryHashes": [
+        "eafb4fe1aa5f"
+      ],
+      "recallDays": [
+        "2026-07-07"
+      ],
+      "conceptTags": [
+        "v5-v6",
+        "dark-v11/light-v11",
+        "v7-v8",
+        "lat/lon",
+        "off-screen",
+        "cities/routes",
+        "mapbox",
+        "dark"
+      ]
+    },
+    "memory:memory/2026-05-29.md:1:15": {
+      "key": "memory:memory/2026-05-29.md:1:15",
+      "path": "memory/2026-05-29.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "# 2026-05-29 Daily Memory ## Kalshi Trader — Circuit Breaker Engaged - **Balance:** $0.2444 (effectively empty) - **Status:** Circuit breaker OPEN — 4 consecutive trade failures all on this date - **Root cause:** Insufficient Kalshi account balance ($0.24). Minimum trade size ($1.00) exceeds available funds. All order attempts fail with what appears to be Kalshi's \"insufficient funds\" rejection. - **Stats:** 10/335 executed lifetime, 286 failures. 85% failure rate driven almost entirely by the balance issue. - **Signals:** 23 tradeable signals detected (Iran agreement, Trump/Iran, tariff rates, Ukraine/EU, WTI max price) — edges ranging from +47 to +63 pts - **Circuit auto-reset:** Midnigh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-06T06:39:55.368Z",
+      "lastRecalledAt": "2026-08-06T06:39:55.368Z",
+      "queryHashes": [
+        "032d98db2396"
+      ],
+      "recallDays": [
+        "2026-08-06"
+      ],
+      "conceptTags": [
+        "0.2444",
+        "0.24",
+        "1.00",
+        "10/335",
+        "trump/iran",
+        "ukraine/eu",
+        "auto-reset",
+        "kalshi"
+      ]
+    },
+    "memory:memory/2026-05-27.md:72:84": {
+      "key": "memory:memory/2026-05-27.md:72:84",
+      "path": "memory/2026-05-27.md",
+      "startLine": 72,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "3. `skills/daily-intel-brief/scripts/collect.py`: add Brave Search gzip decompression fix 4. `scripts/collect_email_intel.py` line 104: fix indentation error 5. Re-run daily brief after fixes ## Memo Writes Completed This Session - `docs/ops/portfolio-overview.md` — all positions, guardrails - `docs/ops/pipeline-operations.md` — cron schedules, known issues - `docs/ops/daily-intel-process.md` — full 13-step pipeline - `docs/ops/trade-journal-2026-05-27.md` — trades executed - `docs/ops/philby-desk-architecture-plan.md` — hybrid architecture plan - `brain/memory/procedural/kalshi-trading.md` — Kalshi auth + ops doc - `MEMORY.md` — Standing Knowledge + Kalshi auth pointer + cognition bridge +",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-06T06:39:55.368Z",
+      "lastRecalledAt": "2026-08-06T06:39:55.368Z",
+      "queryHashes": [
+        "032d98db2396"
+      ],
+      "recallDays": [
+        "2026-08-06"
+      ],
+      "conceptTags": [
+        "scripts/collect-email-intel.py",
+        "re-run",
+        "docs/ops/portfolio-overview.md",
+        "docs/ops/pipeline-operations.md",
+        "docs/ops/daily-intel-process.md",
+        "13-step",
+        "memory.md",
+        "skills"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:18": {
+      "key": "memory:memory/2026-05-14.md:1:18",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "## Perplexity Benchmark — Set up - Perplexity produces a GSIB daily that lands in trevor.mentis@gmail.com with label \"Important MyClaw Use this\" - Roderick flagged it as the quality benchmark — my output should converge toward it - Created `scripts/benchmark_compare.py` — scores both briefs across 5 dimensions (persona, signal density, trade integration, framework reframes, prioritization) - Wired as Step 10 in `daily-brief-cron.sh` (runs after self-assessment) - Updated system prompt in `deepseek-prompts.md` for: analyst-to-analyst voice, direct address, trade-inline style - Updated regional prompt template with `{prediction_market_data}` and `{standing_assessment}` fields - Updated `regi",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-06T06:39:55.373Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.344Z",
+      "queryHashes": [
+        "49d8ff6a7338",
+        "0575a7ffbccf",
+        "d630ed192aad"
+      ],
+      "recallDays": [
+        "2026-08-06",
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "trevor.mentis",
+        "gmail.com",
+        "scripts/benchmark-compare.py",
+        "daily-brief-cron.sh",
+        "self-assessment",
+        "deepseek-prompts.md",
+        "analyst-to-analyst",
+        "trade-inline"
+      ]
+    },
+    "memory:memory/2026-05-25.md:77:105": {
+      "key": "memory:memory/2026-05-25.md:77:105",
+      "path": "memory/2026-05-25.md",
+      "startLine": 77,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "- **Bloomberg Power On (JP):** Apple Watch needs reinvention — tech, not threat-relevant ### Action Items - [ ] Oreshnik IRBM strike → flag for Daily Brief BLUF elevation (escalation threshold crossed) - [ ] US-Iran deal postdiction → recommend downward revision from 63% to 45-55% - [ ] Both items feed into existing [europe] and [middle_east] judgment tracks ## Autonomous Fix: Brave Search Gzip Decompression (08:44 UTC) **Issue:** All Brave Search API calls failing since May 23 with `utf-8 codec can't decode byte 0x8b`. Brave API returns gzip-compressed responses regardless of `Accept-Encoding` header, but none of the 4 scripts calling Brave Search were decompressing before JSON decode.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-15T17:00:19.579Z",
+      "lastRecalledAt": "2026-08-15T17:00:19.579Z",
+      "queryHashes": [
+        "940f10341af4"
+      ],
+      "recallDays": [
+        "2026-08-15"
+      ],
+      "conceptTags": [
+        "threat-relevant",
+        "us-iran",
+        "45-55",
+        "middle-east",
+        "utf-8",
+        "gzip-compressed",
+        "accept-encoding",
+        "bloomberg"
+      ]
+    },
+    "memory:memory/2026-05-06.md:24:49": {
+      "key": "memory:memory/2026-05-06.md:24:49",
+      "path": "memory/2026-05-06.md",
+      "startLine": 24,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- Added \"For Agents & Bots\" section between Methodology and Pricing - Analytics note: GH Pages has no built-in analytics (would need Plausible/GA added) ## Daily Brief Pipeline — Missing Cron - Main `daily-brief-cron.sh` (05:00 PT trigger) is NOT registered in OpenClaw cron jobs - Previously had cron ID `250765ae-d951-490c-b3d0-109fca300053` (from 2026-05-04 memory) - Downstream cron jobs (magazine PDF 05:30, forward-brief 06:30, social 13:30) exist but depend on the brief being produced - Magazine PDF builder has hardcoded date \"04 May 2026\" in its cron message - Buttondown newsletter cron (05:45) is enabled but no API key set - Asked Roderick if he wants me to re-register the missed cron",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-15T17:00:19.579Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.390Z",
+      "queryHashes": [
+        "940f10341af4",
+        "9bc3e5d210b6"
+      ],
+      "recallDays": [
+        "2026-08-15",
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "built-in",
+        "plausible/ga",
+        "daily-brief-cron.sh",
+        "forward-brief",
+        "re-register",
+        "added",
+        "agents",
+        "bots"
+      ]
+    },
+    "memory:memory/2026-05-24.md:207:241": {
+      "key": "memory:memory/2026-05-24.md:207:241",
+      "path": "memory/2026-05-24.md",
+      "startLine": 207,
+      "endLine": 241,
+      "source": "memory",
+      "snippet": "- [north_america] The US Secret Service will announce enhanced protective measures for high-profile officials within 7 days following the May 23 White House shooting. (likely; 61% / 7d) - [europe] Ukraine will sustain mechanized operations in the Borova direction, expanding the penetration by at least 2 km within 7 days. (even chance; 54% / 7d) ## Report: leo_daily_brief — 2026-05-24 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-05-24.txt **Words:** 1270 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — May 24, 2026 =========================================================",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "north-america",
+        "high-profile",
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "secret",
+        "service",
+        "will"
+      ]
+    },
+    "memory:memory/2026-06-29.md:1:11": {
+      "key": "memory:memory/2026-06-29.md:1:11",
+      "path": "memory/2026-06-29.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-06-29 **File:** exports/leo-daily-brief-2026-06-29.txt **Words:** 1252 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 29, 2026 ======================================================================== ═══ EXECUT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "deepseek-v4-pro",
+        "report",
+        "exports",
+        "leo",
+        "brief",
+        "words",
+        "model"
+      ]
+    },
+    "memory:memory/2026-06-06.md:1:11": {
+      "key": "memory:memory/2026-06-06.md:1:11",
+      "path": "memory/2026-06-06.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-06-06 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-06-06.txt **Words:** 1036 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 06, 2026 ======================================================================== ═══ EXECUT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "report",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports"
+      ]
+    },
+    "memory:memory/2026-06-09.md:1:11": {
+      "key": "memory:memory/2026-06-09.md:1:11",
+      "path": "memory/2026-06-09.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-06-09 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-06-09.txt **Words:** 916 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 09, 2026 ======================================================================== ═══ EXECUT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "report",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports"
+      ]
+    },
+    "memory:memory/2026-06-10.md:1:11": {
+      "key": "memory:memory/2026-06-10.md:1:11",
+      "path": "memory/2026-06-10.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-06-10 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-06-10.txt **Words:** 1005 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 10, 2026 ======================================================================== ═══ EXECUT",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "report",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports"
+      ]
+    },
+    "memory:memory/2026-06-11.md:1:11": {
+      "key": "memory:memory/2026-06-11.md:1:11",
+      "path": "memory/2026-06-11.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: leo_daily_brief — 2026-06-11 **File:** /home/ubuntu/.openclaw/workspace/exports/leo-daily-brief-2026-06-11.txt **Words:** 1032 | **Model:** deepseek-v4-pro **Summary:** ======================================================================== LEO GROUND STATION DAILY — June 11, 2026 ======================================================================== EXECUTIVE",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-08-17T20:35:49.361Z",
+      "lastRecalledAt": "2026-08-17T20:35:49.361Z",
+      "queryHashes": [
+        "37d4095b2e94"
+      ],
+      "recallDays": [
+        "2026-08-17"
+      ],
+      "conceptTags": [
+        "leo-daily-brief",
+        "home/ubuntu",
+        "deepseek-v4-pro",
+        "report",
+        "home",
+        "ubuntu",
+        "openclaw",
+        "exports"
+      ]
+    },
+    "memory:memory/2026-05-22.md:1:43": {
+      "key": "memory:memory/2026-05-22.md:1:43",
+      "path": "memory/2026-05-22.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "## Report: rdx_c4_brief — 2026-05-22 **File:** exports/rdx-c4-brief-2026-05-22.txt **Words:** 2171 | **Model:** opus-4.7 **Summary:** INTELLIGENCE BRIEFING: THE GLOBAL MARKET FOR RDX AND C4 EXPLOSIVES Prepared for general readership. All technical terms explained on first use. === THE BIG PICTURE: WHY EXPLOSIVES ARE SUDDENLY A ST **Key judgments:** - Universal hiring confirms structural shortage - Hexamine trade case reshapes precursor supply - 8 Russian plant strikes in 3 months **Regions:** North America, Europe, Asia-Pacific, Russia ## Report: rdx_weekly_brief — 2026-05-22 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-05-22.txt **Words:** 944 | **Model:**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-c4-brief",
+        "opus-4.7",
+        "asia-pacific",
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "report",
+        "exports",
+        "rdx"
+      ]
+    },
+    "memory:memory/2026-08-21.md:1:11": {
+      "key": "memory:memory/2026-08-21.md:1:11",
+      "path": "memory/2026-08-21.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: rdx_weekly_brief — 2026-08-21 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-08-21.txt **Words:** 881 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === The dominant signal this week is the confirmation of a large, long-duration United States government commitment to domestic explosives production. BAE Systems, a major defen **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "long-duration",
+        "rdx/c4",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-07-10.md:1:11": {
+      "key": "memory:memory/2026-07-10.md:1:11",
+      "path": "memory/2026-07-10.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: rdx_weekly_brief — 2026-07-10 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-07-10.txt **Words:** 884 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === The most important development this week is confirmation of an $8.8 billion contract award to BAE Systems to continue operating the Holston Army Ammunition Plant in Tennesse **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "8.8",
+        "rdx/c4",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-07-24.md:1:11": {
+      "key": "memory:memory/2026-07-24.md:1:11",
+      "path": "memory/2026-07-24.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: rdx_weekly_brief — 2026-07-24 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-07-24.txt **Words:** 986 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === The most important development this week was the announcement of an 8.8 billion dollar contract awarded to BAE Systems to continue operating the Holston Army Ammunition Plan **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "8.8",
+        "rdx/c4",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-07-17.md:1:11": {
+      "key": "memory:memory/2026-07-17.md:1:11",
+      "path": "memory/2026-07-17.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: rdx_weekly_brief — 2026-07-17 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-07-17.txt **Words:** 971 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === The dominant signal this week is the confirmation of an 8.8 billion US dollar contract award to BAE Systems, the British defense contractor, to continue operating the Holsto **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "8.8",
+        "rdx/c4",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-07-31.md:1:11": {
+      "key": "memory:memory/2026-07-31.md:1:11",
+      "path": "memory/2026-07-31.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "## Report: rdx_weekly_brief — 2026-07-31 **File:** /home/ubuntu/.openclaw/workspace/exports/rdx-weekly-brief-2026-07-31.txt **Words:** 996 | **Model:** opus-4.7 **Summary:** === EXECUTIVE SUMMARY === The most important development this week is the announcement of an $8.8 billion contract award to BAE Systems to continue operating the Holston Army Ammunition Plant in Tenn **Key judgments:** - Weekly RDX/C4 market update compiled from all 16 feeds",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-04T15:02:50.312Z",
+      "lastRecalledAt": "2026-09-04T15:02:50.312Z",
+      "queryHashes": [
+        "f97c83f45bdf"
+      ],
+      "recallDays": [
+        "2026-09-04"
+      ],
+      "conceptTags": [
+        "rdx-weekly-brief",
+        "home/ubuntu",
+        "opus-4.7",
+        "8.8",
+        "rdx/c4",
+        "report",
+        "home",
+        "ubuntu"
+      ]
+    },
+    "memory:memory/2026-03-05.md:24:56": {
+      "key": "memory:memory/2026-03-05.md:24:56",
+      "path": "memory/2026-03-05.md",
+      "startLine": 24,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- Strait of Hormuz effectively hard-closed (P&I insurance removed from 5 March) **Hypothesis Probabilities:** - H3 (Regional War): 30–40% - H2 (Sustained Campaign): 35–45% - H1 (De-escalation): <20% --- ### Key Judgments **KJ-1:** US-Israeli campaign approaching air supremacy (>93% confidence). Iran's naval capacity \"effectively neutralised\" per JCS Chairman Caine. **KJ-2:** Strait of Hormuz closed minimum 10–14 days, likely (70–85%) longer. Brent at $82+; analysts projecting $100+ if sustained. **KJ-3:** Lebanon now an active war within a war. Hezbollah declares open war; Lebanese government banned Hezbollah military activities. **KJ-4:** Mojtaba Khamenei selected as Supreme Leader u",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:55:38.752Z",
+      "lastRecalledAt": "2026-09-14T21:55:38.752Z",
+      "queryHashes": [
+        "d34a4e172e35"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "hard-closed",
+        "de-escalation",
+        "kj-1",
+        "us-israeli",
+        "kj-2",
+        "kj-3",
+        "kj-4",
+        "strait"
+      ]
+    },
+    "memory:memory/2026-03-05.md:1:36": {
+      "key": "memory:memory/2026-03-05.md:1:36",
+      "path": "memory/2026-03-05.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# Memory: 5 March 2026 ## TREVOR Intelligence Assessment - Operation Epic Fury (Day 6) **Source:** Concentric TREVOR Assessment | Full Intelligence Assessment | UPDATE 5 **Date/Time Group:** 5 March 2026 / 1400 UTC **Classification:** CONFIDENTIAL — CLIENT USE ONLY **Document URL:** https://docs.google.com/document/d/1bxYS319q5pGQtTt1SiUBSI6OUTFA0gGYg520hTwHS6M/edit --- ### BLUF (Bottom Line Up Front) Day 6 of Operation Epic Fury. Conflict entered decisive exploitation phase with asymmetric trajectories — US-Israeli military dominance accelerating while Iran's retaliatory capacity visibly degrades. **Critical Developments:** - Death toll in Iran: 1,230+ (up from 1,045) - Senate War Pow",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:55:38.752Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.390Z",
+      "queryHashes": [
+        "d34a4e172e35",
+        "9bc3e5d210b6"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "date/time",
+        "us-israeli",
+        "march",
+        "trevor",
+        "intelligence",
+        "assessment",
+        "operation",
+        "epic"
+      ]
+    },
+    "memory:memory/2026-05-17.md:22:39": {
+      "key": "memory:memory/2026-05-17.md:22:39",
+      "path": "memory/2026-05-17.md",
+      "startLine": 22,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "**Architecture note:** The LLM slow path fails in ad-hoc shell environments because `DEEPSEEK_API_KEY` is injected by OpenClaw at runtime, not present in subprocess shells. The keyword fast path handles all common cases. On API failure, defaults permissively to `in_scope`. Pipeline workers (analyze.py, orchestrate.py) have the key available in cron environment. ### Framework Generalization Note The scope gate is framework-general. Only `analyst/config/scope.yaml` needs to change for redirection: update `primary_scope`, `scope_descriptor`, `themes`, `adjacency_vectors`, and keyword lists. The `scope_check.py` module, `build_decline()`, and three-branch flow are topic-agnostic. This closes",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:55:38.752Z",
+      "lastRecalledAt": "2026-09-14T21:55:38.752Z",
+      "queryHashes": [
+        "d34a4e172e35"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "ad-hoc",
+        "deepseek-api-key",
+        "in-scope",
+        "analyze.py",
+        "orchestrate.py",
+        "framework-general",
+        "analyst/config/scope.yaml",
+        "primary-scope"
+      ]
+    },
+    "memory:memory/2026-08-15.md:1:33": {
+      "key": "memory:memory/2026-08-15.md:1:33",
+      "path": "memory/2026-08-15.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-08-15 ## AgentMail list pruned (Roderick request) Pruned `NOISE_SENDERS` in `scripts/agentmail_reader.py` against actual inbox traffic (2,328 msgs / 207 senders). - Before: 7 noise rules → After: 37 rules - Blocks 64 of 207 senders (Bloomberg variants, NYT lifestyle/marketing, POLITICO Playbook/Pro/events, Litquidity finance digests, Schiff Sovereign, Robot Wealth, Essential II, Kalshi promos, insurance/reinsurance rags, TLDR, Substack/Patreon platform noise, think-tank event promos, webinar promos, Medium). - Keeps 143 intel senders: CSIS programs, RAND, Hudson, Brookings, AEI, Cato, CNAS, Lawfare, War on the Rocks, Breaking Defense (incl. all verticals), SpaceNews, Pa",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:55:38.797Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.386Z",
+      "queryHashes": [
+        "0575a7ffbccf",
+        "d630ed192aad",
+        "a98216a0e506"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "noise-senders",
+        "scripts/agentmail-reader.py",
+        "lifestyle/marketing",
+        "playbook/pro/events",
+        "insurance/reinsurance",
+        "substack/patreon",
+        "think-tank",
+        "agentmail"
+      ]
+    },
+    "memory:memory/2026-08-15.md:27:47": {
+      "key": "memory:memory/2026-08-15.md:27:47",
+      "path": "memory/2026-08-15.md",
+      "startLine": 27,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Physical inbox message deletion is handled separately by `scripts/agentmail_cleanup.py` (monthly cron, 14-day retention). ## NEW CRON (principal-approved): Saturday Pick — Exceptional Article Roderick approved a 5th cron (red line \"four crons only\" waived by principal directive 2026-08-15): every Saturday find ONE exceptional article/essay published in the last 14 days matched to his interests, verify it, log it, text it to his Telegram. - Job ID: `b53bbc96-b5a6-4d49-9ee7-7e0901a6a1b0` - Schedule: `0 8 * * 6` America/Los_Angeles (Sat 08:00 PT) - Kind: agentTurn (isolated session), announce → telegram → chatId 8039230885 - Picks log: `brain/working-memory/saturday-picks.jsonl` (no repeats)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:56:24.386Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.386Z",
+      "queryHashes": [
+        "a98216a0e506"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "scripts/agentmail-cleanup.py",
+        "14-day",
+        "principal-approved",
+        "article/essay",
+        "america/los-angeles",
+        "physical",
+        "inbox",
+        "message"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:29": {
+      "key": "memory:memory/2026-05-06.md:1:29",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# Daily Memory — 2026-05-06 ## Skill Security Audit (cron) - Ran daily skill-scanner audit across 111 skills in 6 directories - Results: 90 approved, 2 caution, 19 rejected (all credential_paths), 0 errors - Key findings: - trevor-methodology: eval_exec in docx-js-template.js (high) - daily-intel-brief: bulk_env_access in build_pdf.py (high) - social-post: 36 credential_paths findings (most flagged) - chartgen-ai: 5 credential_paths findings - bear-notes: 7 credential_paths findings - Report saved to reports/skill-audit-latest.md - Email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Splash Page — Netlify → GitHub Pages Migration - Netlify free tier hit bandw",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:56:24.390Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.390Z",
+      "queryHashes": [
+        "9bc3e5d210b6"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "skill-scanner",
+        "credential-paths",
+        "trevor-methodology",
+        "eval-exec",
+        "docx-js-template.js",
+        "daily-intel-brief",
+        "bulk-env-access",
+        "build-pdf.py"
+      ]
+    },
+    "memory:memory/2026-05-17.md:1:25": {
+      "key": "memory:memory/2026-05-17.md:1:25",
+      "path": "memory/2026-05-17.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-17 — Daily Memory ## Scope Gate Fix Test Per principal remediation directive, Phase 1 probe #1. Tested 2026-05-17 02:38 UTC. ### Implementation Summary **New modules:** - `analyst/scope_check.py` — scope gate module: keyword fast path (zero cost) + optional LLM slow path (deepseek-chat). Returns `scope_status`, `rationale`, `mexico_vectors`. - `analyst/config/scope.yaml` — config-driven scope spec: primary_scope, themes, adjacency_vectors (9), keyword blocklist/allowlist. - `analyst/directives/scope-gate-fix-2026-05-17.md` — directive record. **Files updated:** - `IDENTITY.md`: Mexico-only desk wording, scope gate documented. - `SOUL.md`: Scope Discipline added as core value.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:56:24.390Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.390Z",
+      "queryHashes": [
+        "9bc3e5d210b6"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "analyst/scope-check.py",
+        "deepseek-chat",
+        "scope-status",
+        "mexico-vectors",
+        "analyst/config/scope.yaml",
+        "config-driven",
+        "primary-scope",
+        "adjacency-vectors"
+      ]
+    },
+    "memory:memory/2026-05-12.md:48:76": {
+      "key": "memory:memory/2026-05-12.md:48:76",
+      "path": "memory/2026-05-12.md",
+      "startLine": 48,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- Writes calibration report to trevor-briefings/{yesterday}/calibration.json - Updates brain/memory/semantic/calibration-tracking.json — running accuracy by band and region - Wired as Step 8 in daily-brief-cron.sh between PDF delivery and Moltbook posts ### Fix 3: Stale analysis file (CLOSED) - orchestrate.py Step 4b syncs exec summary to tasks/news_analysis.md after each run - Written as formatted markdown with BLUF, context, and key judgments ### Fix 4: Tiered cognition routing (CLOSED) - analyze.py accepts --tier2-model flag (default: deepseek/deepseek-v4-flash) - 6 regional analyses use tier-2 (cheap/fast model via DeepSeek Direct) - Executive summary + red-team use tier-1 (Opus 4.7 vi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:56:24.390Z",
+      "lastRecalledAt": "2026-09-14T21:56:24.390Z",
+      "queryHashes": [
+        "9bc3e5d210b6"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "trevor-briefings",
+        "calibration.json",
+        "daily-brief-cron.sh",
+        "orchestrate.py",
+        "tasks/news-analysis.md",
+        "analyze.py",
+        "tier2-model",
+        "deepseek/deepseek-v4-flash"
+      ]
+    },
+    "memory:memory/2026-05-11.md:139:146": {
+      "key": "memory:memory/2026-05-11.md:139:146",
+      "path": "memory/2026-05-11.md",
+      "startLine": 139,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "BLUF: Two clocks dominate the day: Moscow's Victory Day ceasefire collapsed into a 108-drone strike package while Washington's troop drawdown signal lands in Berlin, and the US-Iran one-page memorandum track is running in parallel with an Iranian Hormuz sovereignty gambit that is repricing crude into durable backwardation. - [europe] Russian strike tempo against Ukraine will meet or exceed ~100 drones per night on at least four of the next seven nights, confirming the Victory Day pause as a reload window. (highly likely; 80% / 7d) - [middle_east] No major international shipping line will publicly agree to pay Iran's Hormuz transit tolls within the horizon, leaving the sovereignty claim as a",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-14T21:56:27.571Z",
+      "lastRecalledAt": "2026-09-14T21:56:27.571Z",
+      "queryHashes": [
+        "388bb93a50e3"
+      ],
+      "recallDays": [
+        "2026-09-14"
+      ],
+      "conceptTags": [
+        "108-drone",
+        "us-iran",
+        "one-page",
+        "middle-east",
+        "bluf",
+        "two",
+        "clocks",
+        "dominate"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:26": {
+      "key": "memory:memory/2026-05-04.md:1:26",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "# Daily Skill Scanner Audit — 2026-05-04 **Result:** ✅ Complete — email sent to roderick.jones@gmail.com from trevor_mentis@agentmail.to ## Summary - **98 skills scanned** across user (~/.openclaw/skills), workspace (~/.openclaw/workspace/skills), and bundled (/usr/lib/node_modules/openclaw/skills) directories - **75 clean** (zero findings) - **4 approved with minor** (env_scraping — reading legit env vars) - **2 caution** (both false positives) - **17 rejected** (all credential_paths false positives — references to config paths in docs) ## Key Findings - **No malware detected** — zero cryptominers, reverse shells, base64-obfuscated code, or download-execute patterns - daily-intel-brief:",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-17T04:24:55.351Z",
+      "lastRecalledAt": "2026-09-17T06:18:14.291Z",
+      "queryHashes": [
+        "0d94c6d28cfe",
+        "f69d494d4fba"
+      ],
+      "recallDays": [
+        "2026-09-17"
+      ],
+      "conceptTags": [
+        "roderick.jones",
+        "gmail.com",
+        "trevor-mentis",
+        "agentmail.to",
+        "openclaw/skills",
+        "openclaw/workspace/skills",
+        "env-scraping",
+        "credential-paths"
+      ]
+    },
+    "memory:memory/2026-09-17.md:1:24": {
+      "key": "memory:memory/2026-09-17.md:1:24",
+      "path": "memory/2026-09-17.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "# 2026-09-17 ## Session — acquisition batch (Roderick, Telegram) - [2026-09-17] New 6-work acquisition batch submitted (Basin *Charles VII* t.II, Commynes *Mémoires* Calmette, Chastellain *Œuvres* Lettenhove, Strayer & Munro *Middle Ages* 4th ed, Bagehot *English Constitution* Smith ed., Eisenstein *Printing Press*). Ran via subagent; report `exports/acquisition-report-2026-09-17.md`. - Acquired: Commynes t.I–II + Chastellain t.VII. **Chastellain 1467 spider ballade = Tome VII.** - Commynes publisher correction: **Honoré Champion**, not Les Belles Lettres. - Not located: Basin t.II (Samaran 1944); Strayer & Munro p.115 wording. - Located but CDN-blocked: Bagehot (Smith/CUP),",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-09-17T06:17:15.167Z",
+      "lastRecalledAt": "2026-09-17T06:17:15.167Z",
+      "queryHashes": [
+        "32cf80f5134d"
+      ],
+      "recallDays": [
+        "2026-09-17"
+      ],
+      "conceptTags": [
+        "6-work",
+        "t.ii",
+        "t.i",
+        "t.vii",
+        "p.115",
+        "cdn-blocked",
+        "smith/cup",
+        "acquisition"
+      ]
+    }
+  }
+}

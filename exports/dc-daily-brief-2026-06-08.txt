@@ -1,0 +1,44 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-08
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single greatest operational risk to US hyperscale operations today. Eight Equinix facilities across Ashburn, Dallas, San Jose, Chicago, LA, and New York all hit 56/100 composite risk, driven entirely by grid constraints. Transformer lead times are now 18-24 months, and the PJM interconnection queue sits at 122 GW—meaning any new build in Northern Virginia faces 4-6 year delays. If you have capacity in Ashburn or Dallas, hold it. If you're planning new builds, look at Ohio (AWS us-east-3) or Houston (CyrusOne HOU2) where grid access is less constrained.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported today. The 694-cable global inventory is stable. Key routes serving the highest-risk US clusters: Ashburn relies on the MAREA and Dunant cables (Virginia Beach landings); New York hubs (111 8th Ave, 60 Hudson) are served by multiple transatlantic cables including TAT-14, HAVFRUE, and Grace Hopper. No congestion or disruption on these routes. Keep an eye on the Asia-Pacific corridor—Hong Kong/China geopolitical risk remains elevated, but no cable incidents today.
+
+═══ POWER & GRID ═══
+Grid constraints are the dominant risk driver. The eight highest-risk facilities (all Equinix, all 56/100) are in PJM, ERCOT, and CAISO territories. PJM's 122 GW interconnection queue is the worst bottleneck—new DC builds in Northern Virginia face 4-6 year delays. Transformer lead times at 18-24 months for >50 MVA units are the single biggest supply chain constraint. Switchgear (12-18 months) and generators (8-12 months) are also extended. If you're operating in Ashburn, Dallas, or San Jose, expect no relief on grid capacity for at least 2-3 years. Ohio (AWS us-east-3) and Houston (CyrusOne HOU2) are better positioned—PJM's queue is slightly shorter in those regions, and local utility capacity is less strained.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hurricane, earthquake, or wildfire threats to major DC clusters today. Sentinel-2 imagery shows no flooding or ground disturbance at any of the 25 Tier 1 sites checked. The Atlantic hurricane season is ramping up—monitor the Gulf Coast (Houston, Miami) and East Coast (Ashburn, New York) for tropical activity in the coming weeks. California wildfire season is also approaching; San Jose and LA facilities should review their fire mitigation plans.
+
+═══ PHYSICAL SECURITY ═══
+No protests, construction disruptions, or access incidents reported at major DC corridors today. All 25 Tier 1 sites show normal activity in satellite imagery. No anomalies detected at Ashburn, Dallas, San Jose, Chicago, LA, New York, Toronto, or Miami. Standard vigilance remains—no elevated threat.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported today. AWS, Azure, Google Cloud, and Oracle all green. No fiber route disruptions on backbone routes serving Ashburn, Dallas, or New York. The 513 terrestrial fiber routes are stable. No congestion at the 900 internet exchanges.
+
+═══ ASSET WATCH ═══
+New construction and announcements:
+- AirTrunk SYD2 (Sydney, 150 MW) — announced. Sydney is a growing market but faces connectivity limitations as an island market. Risk: moderate.
+- AWS us-east-3 (Ohio, 1200 MW) — permit filed. This is the largest single pipeline entry. Ohio has better grid access than Northern Virginia. Watch for local utility capacity constraints.
+- Digital Realty FRA14 (Frankfurt, 35 MW) — under construction. Frankfurt is a strong European hub with good grid and connectivity.
+- Equinix NY9 (New York, 25 MW) — operational. New York grid is strained but this is a small addition.
+- CyrusOne HOU2 (Houston, 40 MW) — under construction. Houston has ERCOT grid constraints but less severe than PJM.
+
+Risk rating changes: None today. All 23 facilities remain at NEGLIGIBLE, 190 at MODERATE, 92 at LOW. No facilities moved to HIGH.
+
+═══ MARKET SIGNALS ═══
+Colo pricing is tightening in US Tier 1 markets due to grid constraints. Expect 5-10% price increases in Ashburn and Dallas over the next 12 months. Capacity is scarce—any available space in these markets will command a premium. Supply chain signals: transformer lead times are worsening (18-24 months), switchgear (12-18 months), generators (8-12 months). Lithium-ion UPS battery supply is stable, but lead-acid remains constrained. If you're planning new builds, order transformers and switchgear now—delays will only get worse.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-08

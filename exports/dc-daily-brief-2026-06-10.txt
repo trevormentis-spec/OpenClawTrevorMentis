@@ -1,0 +1,45 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-10
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single most pressing operational risk for US hyperscale clusters. The Northern Virginia (Ashburn) and Chicago Equinix facilities all hit 56/100 composite risk, driven entirely by grid constraints. Transformer lead times remain at 18-24 months for >50 MVA units, and the PJM interconnection queue sits at 122 GW — meaning any new build in that region faces 4-6 year delays. If you have capacity in Ashburn or Chicago, hold it. If you're planning new builds outside PJM, accelerate permitting now.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repairs reported in the last 24 hours. The 694-cable global inventory is stable. Key routes serving the highest-risk US clusters (Ashburn, Chicago, Dallas) are primarily terrestrial — subsea risk is low for these. However, the Atlantic and Pacific cable systems serving NY/NJ (Equinix NY1, NY8, NY9) and Los Angeles (Equinix LA1) are worth monitoring: any disruption to the TAT-14 or SEA-ME-WE 5 clusters would impact transatlantic and transpacific latency. No activity flagged.
+
+═══ POWER & GRID ═══
+Grid risk is the dominant driver across the top 8 highest-risk facilities — all Equinix sites in Ashburn, Dallas, San Jose, Chicago, Los Angeles, and New York/Newark. The PJM queue at 122 GW is a structural bottleneck; new DC builds in that footprint face 4-6 year interconnection delays. Outside the US, the situation is less acute: GB (219 MW hyperscale capacity) and AU (130 MW) have manageable queues. No energy price spikes reported in the last 24 hours, but the transformer lead time (18-24 months) remains the single biggest supply chain constraint for new capacity anywhere.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hurricane, earthquake, or wildfire threats to major DC clusters in the last 24 hours. The Atlantic hurricane season is underway (June-November), but no named storms are currently tracking toward US East Coast or Gulf Coast facilities. California wildfire season is also active — San Jose (Equinix SV1/SV5/SV10) and Los Angeles (Equinix LA1) are in moderate-risk zones, but no current fires reported near those sites. Monitor PG&E public safety power shutoff (PSPS) alerts for California.
+
+═══ PHYSICAL SECURITY ═══
+No protests, construction disruptions, or access incidents reported near any Tier 1 facilities in the last 24 hours. Satellite imagery (Sentinel-2) for all 25 Tier 1 sites is clean — no ground disturbance, flooding, or activity anomalies. Equinix DC1-DC15 (Ashburn) and NY8 (60 Hudson St) both show normal operations. No change from baseline.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported in the last 24 hours. AWS (us-east-3 Ohio), Microsoft Azure, Google Cloud, and Alibaba Cloud all nominal. No fiber route cuts or congestion flagged on backbone routes serving Ashburn, Chicago, or New York. The terrestrial fiber routes (513 total) are stable.
+
+═══ ASSET WATCH ═══
+- AWS us-east-3 (Ohio): 1200 MW permit filed — this is the largest single pipeline entry. If approved, it will significantly ease pressure on the US East Coast, but the PJM queue (122 GW) means 4-6 year delays are likely. Watch for regulatory pushback.
+- AirTrunk SYD2 (Sydney): 150 MW announced — Australia's hyperscale capacity is growing, but the grid (130 MW total) is already constrained. Expect similar interconnection delays.
+- Digital Realty FRA14 (Frankfurt): 35 MW under construction — Germany's grid is stable (32 MW hyperscale), but European energy prices remain elevated.
+- Equinix NY9 (New York): 25 MW operational — this adds capacity to the NY/NJ cluster, but grid risk remains high (56/100).
+- CyrusOne HOU2 (Houston): 40 MW under construction — Texas (ERCOT) grid is independent of PJM, but summer heat waves could strain capacity.
+
+Risk rating changes: None. All 8 highest-risk facilities remain at 56/100 (grid-driven). No facilities moved to HIGH or CRITICAL.
+
+═══ MARKET SIGNALS ═══
+- Colo pricing: Expect upward pressure in Ashburn, Chicago, and NY/NJ due to grid constraints. If you're negotiating leases, lock in rates now — capacity is tightening.
+- Supply chain: Transformer lead times (18-24 months) are the single biggest bottleneck. Switchgear (12-18 months) and generators (8-12 months) are also extended. Lithium-ion UPS battery supply is stable, but lead-acid remains constrained.
+- Capacity availability: Outside PJM, look at Ohio (AWS us-east-3), Texas (CyrusOne HOU2), and Australia (AirTrunk SYD2) for near-term opportunities. Europe (Frankfurt, London) is stable but expensive.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-10

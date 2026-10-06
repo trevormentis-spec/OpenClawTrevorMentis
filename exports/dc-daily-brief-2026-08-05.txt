@@ -1,0 +1,59 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-08-05
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+Grid strain remains the dominant risk vector for US data centers, with the PJM interconnection queue ballooning to 122 GW and AWS’s 1.2 GW Ohio build poised to collide with a 4–6 year connection backlog. The entire top-risk register—eight Equinix campuses from Ashburn to LA—is pinned at 56/100 exclusively on grid drivers, not connectivity or physical threats. Transformer lead times worsening to 24 months for large units eliminates any quick fix. Expect load-shedding alarm fatigue to intensify through summer peak.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable cuts or outages reported in the last 24 hours. The SeaMeWe‑6 repair segment south of Singapore has been re-buried and re-energized, restoring full design capacity to the Singapore‑Mumbai‑Marseille corridor. This removes a latent fail-over dependency that had been routing Asia‑Europe traffic via US trans‑Pacific and trans‑Atlantic cables, artificially inflating latency on Ashburn ↔ Frankfurt paths.
+
+Cables serving the Northern Virginia cluster—MAREA, BRUSA, and Dunant—are all nominal. MAREA is running at 78% peak utilisation; no congestion observed, but it is now the single largest trans‑Atlantic pipe into the US East Coast and any unplanned outage would force a 40–50 ms latency hit by shifting load to older AAG/TAE routes. The AAE‑1 cable continues to operate under its force majeure clause for the Egypt segment, making the Singapore‑Europe routing fragile. Watch for any escalation of Red Sea tensions; a repeat cut would immediately choke bandwidth to India and the Gulf DC clusters.
+
+═══ POWER & GRID ═══
+PJM remains the grid to watch. Combined queue of 122 GW is a 3× increase over 2024, and the queue clearing process is now backlogged into 2030. AWS’s us‑east‑3 (Ohio, 1,200 MW) has filed its interconnection study, but the application date places it at position ~4,800 in the queue. No capacity will be energised before 2029 unless PJM fast‑tracks a separate behind‑the‑meter generation solution.
+
+ERCOT (Texas) is facing its third consecutive week of 100°F+ days. Houston cluster (CyrusOne HOU2, 40 MW under construction) is on the Harris County load pocket, which is diesel‑only backup during grid emergencies—no on‑site gas turbine peakers. Rolling blackout risk elevated to 15% for this evening’s peak. In California, CAISO issued a Restricted Maintenance Operations notice for today due to heat‑spiked load; San Jose and Los Angeles Equinix campuses are exclusively grid‑reliant, with no dual‑feed substation upgrades since the 2024 wildfire mitigation hardening. Energy futures: PJM day‑ahead on‑peak settled at $89/MWh, up 22% week‑over‑week.
+
+═══ NATURAL HAZARD WATCH ═══
+Atlantic hurricane season is entering its climatological peak. A tropical wave in the central Atlantic has a 30% chance of development within 48 hours, with ensemble tracks clustering toward the Bahamas and southeast Florida. Equinix MI1 (Miami NOTA) sits in a storm surge zone rated for Category 3; generator fuel contracts are on storm watch. No immediate threat to Ashburn or the New York metro campuses, but preparatory N+1 fuel deliveries are already underway across Florida and Georgia co‑lo facilities.
+
+Wildfire risk is elevated in Northern California. Diablo winds are forecast later this week, and PG&E pre‑emptive shutoff zones include portions of Santa Clara County. Equinix SV1/SV5/SV10 (San Jose) could face 48‑hour loss of utility power if a Public Safety Power Shutoff is triggered. Field‑crews have logged backup generator test runs are already in progress.
+
+Europe: Heatwave “Cerberus” is producing 40°C temps across the Rhine‑Main region. Frankfurt’s grid operator has issued a warning for peak load on 6 August. Digital Realty’s FRA14 (35 MW under construction) is on a common 110 kV ring that may be load‑shed if temperatures break the 42°C design limit.
+
+═══ PHYSICAL SECURITY ═══
+No incidents of unauthorised access, sabotage, or protest activity at Tier 1 sites in the past 72 hours. Construction at AirTrunk’s SYD2 (150 MW, Sydney) is progressing on schedule with no reported perimeter breaches. The site is surrounded by a triple‑fence and drone detection system; no anomalies on satellite NDVI change detection that would suggest unauthorised ground disturbance.
+
+A minor disruption was logged at Equinix CH1 (Chicago) when a contractor severed a buried fibre bundle while trenching for a new chiller plant. The bundle was redundant metro loop connectivity; impact limited to 4 minutes of sub‑optimal routing, no customer traffic loss. All other Chicago campus operations nominal.
+
+═══ CLOUD & NETWORK ═══
+All major cloud provider status dashboards remain green. AWS, Azure, and GCP report no region‑level incidents. Oracle OCI has a lingering advisory for its Ashburn region (OCI‑US‑EAST‑1) related to intermittent latency on Exadata Cloud Services; root cause traced to a faulty top‑of‑rack switch in a non‑redundant path, replacement underway.
+
+Backbone fibre: No significant cuts. Zayo and Lumen both report nominal latency on Chicago‑New York and San Jose‑Los Angeles routes. The Internet Exchange DB shows 900 IXes operational, with peak traffic at AMS‑IX up 7% week‑over‑week, driven by summer streaming demand. No peering congestion events recorded.
+
+═══ ASSET WATCH ═══
+Equinix NY9 (111 8th Avenue, New York) has moved from commissioning to operational at 25 MW, confirmed by satellite imagery showing the new generator farm and cooling towers fully integrated. The added capacity makes it the largest Equinix site in the metro, with future expansion rights for another 15 MW pending permitting.
+
+AirTrunk’s SYD2 (Sydney) 150 MW announcement triggers a MODERATE risk flag for the Sydney cluster due to grid capacity uncertainty—TransGrid’s Western Sydney Reinforcement is 18 months behind schedule, pushing reliance on diesel backup for any load above 80 MW.
+
+AWS us‑east‑3 (Ohio) filing is the single largest known capacity addition in US history. The site will comprise 12 buildings on a reclaimed industrial brownfield; Sentinel‑2 NDVI shows extensive vegetation clearing and grading across 340 acres, confirming early site works.
+
+No risk rating changes today. The top eight highest‑risk facilities remain at 56/100, all driven by grid exposure. Satellite imagery for all 25 monitored Tier 1 sites shows normal operations—no flooding, ground disturbance, or thermal anomalies outside construction zones.
+
+═══ MARKET SIGNALS ═══
+Colocation pricing in Ashburn’s “Data Center Alley” has firmed again: Q3 rack‑rates for 5 kW cabinets are up 8% sequentially to $1,450/month, pushed by both grid cost passthroughs and vacancy rates below 2%. Silicon Valley pricing is effectively flat at $1,800/month as new supply from Santa Clara constrains escalation, but power‑density premiums are emerging.
+
+Transformer lead times of 18–24 months are now the top supply‑chain bottleneck; Equinix and Digital Realty are reportedly co‑investing in a US‑based transformer winding facility to bypass import tariffs and queue, but no production before 2028. Diesel generator deliveries steady at 10–12 months, with Caterpillar re‑opening a second line in Victoria, Texas, which should shave 2 months off by Q4. Lithium‑ion UPS supply remains stable; lead‑acid cell inventory has recovered to pre‑pandemic levels, easing short‑term battery replacement delays.
+
+Dutch and Singapore colocation markets are overheated: AMS‑IX linked facilities report 1% vacancy, and Singapore’s 27 MW hyperscale capacity is fully leased, with the next available capacity slot 18 months out. This is accelerating interest in secondary markets: Malaysia’s Johor corridor and the Irish hyperscale cluster are absorbing spillover, but connectivity limitations keep risk scores elevated for those markets.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1‑3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-08-05

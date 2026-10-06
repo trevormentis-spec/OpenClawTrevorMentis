@@ -1,0 +1,46 @@
+========================================================================
+  LEO GROUND STATION DAILY — June 13, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+The 13 June 2026 snapshot paints a LEO ground station market in steady, relentless expansion—no shocks, just the drumbeat of Starlink’s dominance and the early stirrings of a Chinese response. Starlink crossed 10M subscribers in February, pulling $11.8B in estimated 2025 revenue off a fleet now exceeding 9,400 birds. This subscriber milestone translates directly to ground segment pressure: more gateways, more backhaul, more Ka/Ku-band terminals. Meanwhile, Denali (Amazon Kuiper) continues planting FCC licenses, and China lobs up Long March 6A/8 payloads that scream early-stage LEO broadband deployment. The market metrics reaffirm the thesis: LEO GSaaS alone tracks from $1.72B (2024) to $5.33B by 2033, but the real prize is the $41B-to-$82.7B total ground station market, where LEO is the fastest-growing wedge.
+
+What’s changed: Starlink’s subscriber number now officially huge, making the ground network a bottleneck rather than an afterthought. Kuiper’s licensing pace is worth watching—if their ground station count jumps, the GSaaS supply-demand balance tilts. The empty ITU feed and single engineering job hit suggest either a lull or intelligence collection gaps. Strongly advise Roderick to: 1) task a Denali license deep-dive, 2) red-team the Chinese launch cadence for ground station implications, and 3) verify the ITU pipeline. The risk register remains quiet, but six high-risk sites demand location-specific analysis before a problem hits.
+
+═══ FCC LICENSES ═══
+
+The 100-record FCC snapshot shows routine earth station license activity. The licensee list is a who’s-who of US telecom and satellite incumbents: MCI, AT&T, Intelsat, SES, Inmarsat, Cogent, Sprint—no surprise. Notable, however, is Denali 20020, LLC, an Amazon shell known for Kuiper gateway filings. Its appearance confirms Kuiper’s ground network build-out continues, though the raw count doesn’t reveal how many sites were added. Other names like Calian Pacific Teleports and GOONHILLY indicate some international gateway interest. No LEO constellations beyond Starlink and Kuiper make a showing in this batch. No unusual regulatory friction or spectrum conflicts evident. Bottom line: business as usual, but Denali’s filings are the canary—monitor for an acceleration that could strain available gateway real estate and skilled operators.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Launch activity remains dominated by Starlink: three Falcon 9 missions (Groups 17-47, 10-43, 17-43) within the next five launch windows, part of a total of seven Starlink launches in the upcoming 357-launch queue. Assuming 22-23 satellites per launch, that’s roughly 150-160 new on-orbit assets per month, pushing the constellation toward the 10,000-satellite mark by early Q3 2026. Each new satellite demands backend ground capacity—scale that to 12,000 or beyond, and the gateway network faces a compound stress test. Starlink owns 38 ground stations in our register, but that’s just the known count; expect SpaceX to press for additional sites, especially in under-served Asia-Pacific and African markets.
+
+More intriguing: two Chinese Long March launches with “Unknown Payload” on 4 and 5 June. While deliberately opaque, the context points to early deployments of China’s Guowang LEO broadband constellation (or a test bed like Spacesail). If Guowang targets 13,000 satellites, the ground infrastructure requirements—both domestic and along BRI corridors—will become a strategic play. This could mean a burst of ITU coordination filings, earth station licenses across Central Asia, Middle East, and Africa, and a scramble for partnership deals. The ground market isn’t pricing this in yet; the first clear signal will be ITU filings or public disclosure from Chinese entities.
+
+═══ SITE & IMAGERY ═══
+
+Sentinel-2 imagery feed inactive (API not configured), so no new visual confirmations of site construction or expansion. The risk register holds 240 sites globally: 34 moderate, 27 low, 13 negligible, 6 high-risk, 0 critical. Operator breakdown: Starlink (38), KSAT (15), OneWeb (10), Leaf Space (9), Kuiper (5), Telesat (3). Geography skews to N. America (26) and Europe (18), but every other region touches at least 5 sites except Caribbean, Central Asia, Middle East, and Arctic (1-2 each). The six high-risk sites are a priority—without imagery or incident reports, we lack context, but high risk usually means geopolitical exposure (e.g., near conflict zones), environmental hazard, or single points of failure in the network. Recommend a targeted review: identify which operator sites are flagged high-risk and assess contingency plans. No critical, which is good, but complacency kills.
+
+═══ MARKET SIGNALS ═══
+
+Job postings: a single hit for “ground station engineer hiring 2026” with “recent” signal. That’s surprisingly quiet for a market that’s supposed to be more than doubling in five years. Possible explanations: hiring is concentrated in smaller, private networks not captured by the query; or consolidation among GSaaS providers means fewer, larger teams. Either way, it doesn’t signal a talent crunch—yet. ITU feed empty; if this is a data pipeline failure, it’s a blind spot on international coordination, where new filings often precede public announcements by months. Needs immediate technical check.
+
+Market metrics remain on trajectory. Starlink’s $11.8B revenue (2025 est) and 10M+ subscribers (Feb 2026) make it the dominant anchor tenant for global ground capacity. The LEO GSaaS sub-market, projected to grow from $1.72B to $5.33B by 2033, is understated if anything—it doesn’t fully capture the vertical integration play where constellation operators own their gateways. Broader GSaaS at $520M to $2.49B reflects third-party provider opportunity. Keep an eye on Starlink’s possible moves to externalize ground services; that could reshape the GSaaS landscape overnight.
+
+═══ BOTTOM LINE ═══
+
+No immediate fires. Roderick should initiate a focused task: pull the full FCC filing details for Denali 20020, LLC—count sites, locations, frequencies requested—to estimate Kuiper’s ground network timeline and capacity impact. Simultaneously stand up a China watch: monitor ITU filings from Chinese administration for LEO earth station coordination, and track any public partnerships between Chinese launch/constellation entities and ground network operators. The empty ITU feed and low job hit rate suggest our collection might be throttled; validate the pipelines. The six high-risk sites warrant a quick desk audit; if any are Starlink or OneWeb, they could become chokepoints. Steady as she goes, but the China piece could shift fast.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | June 13, 2026

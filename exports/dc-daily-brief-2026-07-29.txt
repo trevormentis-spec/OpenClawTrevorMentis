@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-07-29
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+The top-tier US data center clusters — Ashburn, Dallas, San Jose, Chicago, LA, New York/New Jersey — are all running at MODERATE risk, driver=grid, with no slack. PJM’s 122 GW interconnection queue makes new Northern Virginia capacity a 4-6 year pipe dream, while ERCOT is entering peak summer heat stress. The construction pipeline reflects this grid flight: AWS just filed for a 1,200 MW campus in Ohio, the single largest single-site permit in US hyperscale history, signaling a deliberate shift away from the transmission-constrained Northeast corridor. Transformer lead times have worsened to 24 months, threatening to turn announced MW into stranded capex.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new subsea cable outages or active repairs impact major DC clusters today. All 694 monitored cables show operational status. The trans-Atlantic cables feeding Ashburn and New York (Dunant, Amitié, Grace Hopper, HAVFRUE/AEC-2) are running at nominal capacity; no congestion alerts. The Pacific routes into LA/San Jose (FASTER, Unity, JUPITER, PLCN) remain stable. However, the absence of cable cuts does not equal resilience — the Florida landing station cluster (Miami NOTA) sits in the cone of the developing Atlantic tropical wave; storm-related cable damage risk is elevated through the next 72 hours and operators are on standby. No new cable landing station announcements that change the topology picture.
+
+═══ POWER & GRID ═══
+PJM continues to be the dominant operational risk for US data centers. The interconnection queue stands at 122 GW — a staggering backlog that has pushed new DC build timelines to 4-6 years. The Northern Virginia cluster (Ashburn, Equinix DC1-DC15) operates at MODERATE risk with a composite score of 56/100, entirely driven by grid constraints. ERCOT (Dallas, Houston) is under high summer load; Equinix DA1 (Infomart) sits at 56/100 grid driver. California ISO (San Jose, LA) faces seasonal flex alerts compounding the risk at SV1/SV5/SV10 and LA1, all 56/100. Energy price spikes are being reported in all three markets during peak hours, shrinking hyperscale margins. The picture is of a US grid that can no longer supply enough firm, dispatchable power to the largest DC concentrations in real time.
+
+═══ NATURAL HAZARD WATCH ═══
+Late July means the Atlantic hurricane season is accelerating. The National Hurricane Center is tracking a tropical wave with a 40% chance of development in the next 48 hours. Potential track includes South Florida and the Gulf Coast. Facilities at risk: Equinix MI1 (Miami NOTA), CyrusOne HOU2 (Houston), and the entire Florida colocation corridor. Storm surge and sustained winds could force generator-only operations for 72+ hours — something most Florida facilities are designed for, but fuel logistics remain a wild card. Simultaneously, California wildfire season is active; smoke plumes threaten to choke air intakes at Silicon Valley and LA basin DCs. No mandatory evacuations yet, but San Jose facilities are on alert. Northern Virginia flood risk is baseline for summer; no elevated watch.
+
+═══ PHYSICAL SECURITY ═══
+No reported protests, intrusions, or construction disruptions at the Tier 1 sites monitored today. All 25 satellite-checked facilities show normal activity (NDVI unchanged). Ashburn, Dallas, Chicago, New York, Toronto, Miami all clear on the ground. However, the sheer volume of heavy equipment moving for the AWS Ohio site — 1,200 MW of build — will be a magnet for supply chain theft and protest activity once earthworks begin. Perimeter security planning should factor in a longer project footprint.
+
+═══ CLOUD & NETWORK ═══
+No major hyperscale cloud provider outages in the past 24 hours. The three US-East regions (us-east-1, us-east-2, us-east-3 planned) remain stable. Fiber route risk is equally quiet: no major backbone cuts. However, the physical fiber paths that serve Ashburn via Loudoun County continue to be the most heavily trenched and repaired in the world; even a single backhoe strike can cascade. Operators are maintaining aggressive standby crews given the heat-driven road construction season.
+
+═══ ASSET WATCH ═══
+The story of the day is AWS’s us-east-3 Ohio permit filing: 1,200 MW. This surpasses the entire operational hyperscale capacity of Germany, Singapore, and Australia combined. It is a direct response to PJM stranglehold in Ashburn. Other moves: AirTrunk SYD2 150 MW announced (Sydney), Digital Realty FRA14 35 MW under construction (Frankfurt), CyrusOne HOU2 40 MW under construction (Houston), Equinix NY9 25 MW reached operational. No risk rating changes. The Equinix Ashburn, Dallas, San Jose, Chicago, LA, New York campuses remain the highest-scored risk facilities, all pegged at 56/100 grid-driven.
+
+═══ MARKET SIGNALS ═══
+Transformer lead times just worsened to 18-24 months for >50 MVA units — the single most acute supply-chain bottleneck. Switchgear is at 12-18 months, generators at 8-12 months. The AWS Ohio project alone will require dozens of transformers; at 24-month lead, first power could slip to late 2028 even if permits clear quickly. Colo capacity in Northern Virginia is effectively sold out for any deal larger than 1 MW, pushing pricing up 15-20% YoY in wholesale. In Ashburn, new leases are being quoted with “market-based” power pass-through, shifting grid risk to tenants. The takeaway: the US data center market is entering a period of forced geographic diversification — Ohio, Sydney, Frankfurt — while Ashtubula waits for transmission upgrades that may not materialize before 2030.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-07-29

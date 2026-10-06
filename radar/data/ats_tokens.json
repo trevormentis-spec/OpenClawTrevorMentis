@@ -1,0 +1,253 @@
+{
+ "Airbnb, Inc.": {
+  "ats": "greenhouse",
+  "jobs": 161,
+  "token": "airbnb",
+  "verified_at": "2026-09-22T04:19:01+00:00"
+ },
+ "American Outdoor Brands, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "BEST BUY CO INC": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "BEYOND MEAT, INC.": {
+  "ats": "greenhouse",
+  "jobs": 2,
+  "token": "beyond",
+  "verified_at": "2026-09-22T04:19:16+00:00"
+ },
+ "Booz Allen Hamilton Holding Corp": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Byrna Technologies Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "CACI INTERNATIONAL INC /DE/": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "CARDINAL HEALTH INC": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "CHEVRON CORP": {
+  "ats": "greenhouse",
+  "jobs": 43,
+  "token": "cvx",
+  "verified_at": "2026-09-22T04:19:19+00:00"
+ },
+ "CISCO SYSTEMS, INC.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "CVS HEALTH Corp": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "CVS Health": {
+  "ats": "workday",
+  "jobs": 8833,
+  "token": "cvshealth.wd1/CVS_Health_Careers",
+  "verified_at": "2026-09-22T04:22:55+00:00"
+ },
+ "Cencora, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "DEVON ENERGY CORP/DE": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "DoorDash, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "DuPont de Nemours, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "ENTERGY CORP /DE/": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "EXELON CORP": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "FEDEX CORP": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "FLEX LTD.": {
+  "ats": "greenhouse",
+  "jobs": 39,
+  "token": "flex",
+  "verified_at": "2026-09-22T04:18:14+00:00"
+ },
+ "FORD MOTOR CO": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "GameStop Corp.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Gemini Space Station, Inc.": {
+  "ats": "greenhouse",
+  "jobs": 40,
+  "token": "gemini",
+  "verified_at": "2026-09-22T04:18:53+00:00"
+ },
+ "HA Sustainable Infrastructure Capital, Inc.": {
+  "ats": "lever",
+  "jobs": 9,
+  "token": "hasi",
+  "verified_at": "2026-09-22T04:19:07+00:00"
+ },
+ "Kenvue Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Knightscope, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "LEAR CORP": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Lazard, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "MARRIOTT INTERNATIONAL INC /MD/": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Medtronic plc": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Meta Platforms, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "MiniMed Group, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "NEWS CORP": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "NORTHROP GRUMMAN CORP /DE/": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "NVIDIA": {
+  "ats": "workday",
+  "jobs": 378,
+  "token": "nvidia.wd5/NVIDIAExternalCareerSite",
+  "verified_at": "2026-09-22T04:22:52+00:00"
+ },
+ "NVIDIA CORP": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "NextPlat Corp": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "PROCTER & GAMBLE Co": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "PUBLIC SERVICE ENTERPRISE GROUP INC": {
+  "ats": "greenhouse",
+  "jobs": 2,
+  "token": "public",
+  "verified_at": "2026-09-22T04:18:53+00:00"
+ },
+ "ROYAL CARIBBEAN CRUISES LTD": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "S&P Global Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "SHOE CARNIVAL INC": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "SOUTHERN CO": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Sadot Group Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "Salesforce": {
+  "ats": "workday",
+  "jobs": 292,
+  "token": "salesforce.wd12/External_Career_Site",
+  "verified_at": "2026-09-22T04:22:53+00:00"
+ },
+ "Salesforce, Inc.": {
+  "ats": "greenhouse",
+  "jobs": 1,
+  "token": "crm",
+  "verified_at": "2026-09-22T04:19:19+00:00"
+ },
+ "TAKE TWO INTERACTIVE SOFTWARE INC": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ },
+ "United Airlines Holdings, Inc.": {
+  "ats": "ATS_UNKNOWN",
+  "jobs": null,
+  "token": null
+ }
+}

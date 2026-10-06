@@ -1,0 +1,42 @@
+========================================================================
+  LEO GROUND STATION DAILY — August 10, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+The ground segment picture remains static as of 10 August 2026, with no new FCC licensing activity of consequence and zero ITU coordination filings. What has changed is the sheer weight of Starlink: 38 operational ground sites now support 9,400+ satellites and 10M+ subscribers, while 7 more dedicated launches sit in the upcoming manifest. The risk register holds 6 High-risk sites but no Critical—yet the geographic imbalance, with only 8 sites in Asia and 5 in Africa, contrasts sharply with Starlink’s subscriber growth trajectory. This mismatch is the primary stress point.
+
+Market projections reinforce the urgency: the LEO GSaaS sub-market is forecast to triple to $5.33B by 2033, but current capacity appears flat. No strong hiring signal (only one relevant job hit) suggests operators are either overconfident in existing infrastructure or constrained by licensing lag. Watch for a sudden uptick in FCC earth station applications, especially from Starlink, Kuiper (only 5 sites currently), or new entrants—that will be the leading indicator of real capacity expansion.
+
+═══ FCC LICENSES ═══
+
+Quiet. The licensee list is a roll-call of legacy GEO and teleport operators: MCI, Intelsat, SES, AT&T, Goonhilly, Calian, Cogent, Sprint/Denali. No LEO-focused filers appear. The 100 records are almost certainly historical, reflecting a mature, slow-moving regulatory environment. The only notable oddity is “ANTWANWILLIAMS.US,” likely a vanity or experimental license of negligible analytical value. We can ignore this feed until provisioning for next-gen constellations forces fresh applications.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Launch activity is robust: 357 upcoming missions across all providers, with 7 Starlink-dedicated Falcon 9 flights still queued. The next-five list (dated June 2026, a probable data artifact) shows three Starlink groups and two Chinese Long March payloads—underscoring sustained injection of comms satellites. With 9,400+ Starlink birds already on orbit and a projected ceiling of 34,400, the ground network of 38 sites is reaching a point where throughput per site becomes a constraint, especially for low-latency services. Kuiper sits at only 5 sites, Telesat at 3—their constellations remain nascent, but the launch backlog suggests they will surface quickly. The ground system is not scaling in lockstep; this is the classic bottleneck pattern.
+
+═══ SITE & IMAGERY ═══
+
+The 240-site register breaks down by risk: 13 Negligible, 27 Low, 34 Moderate, 6 High, 0 Critical. Starlink operates 38; KSAT (a ground service provider) 15; OneWeb 10; Leaf Space 9; Kuiper 5; Telesat 3. Regional distribution shows heavy reliance on N. America (26) and Europe (18), with thin coverage in Asia (8), S. America (6), Africa (5), Oceania (7), and the Middle East (1). The 6 High-risk sites need individual scrutiny—they are likely in politically volatile or disaster-prone areas, and any outage would degrade regional service. Sentinel-2 imagery is unavailable (API not configured); no change detection or construction monitoring possible this cycle.
+
+═══ MARKET SIGNALS ═══
+
+Job postings yield a single hit for “ground station engineer hiring 2026,” too weak to infer a hiring surge. ITU is empty. The market metrics tell the bigger story: the total ground station market doubles from $41.0B (2025) to $82.7B (2030), with the LEO GSaaS sub-segment accelerating from $1.72B (2024) to $5.33B (2033). Starlink’s financial footprint—$11.8B revenue in 2025, 10M+ subscribers—provides the capital to build, but the absence of licensing or land-acquisition signals suggests restraint or redirection toward in-orbit inter-satellite links. Kuiper’s ground development is conspicuously slow; its 5 sites are inadequate for a service launch anytime soon. The broader GSaaS market’s projected $2.49B by 2033 indicates that traditional ground-segment-as-a-service (typified by KSAT and Leaf Space) is a viable but smaller play than the vertically integrated model.
+
+═══ BOTTOM LINE ═══
+
+Roderick, the ground segment is not keeping pace with constellation growth, and the data veil is thickening—no FCC newness, no ITU whispers, no satellite imagery, thin hiring. The actionable priority is to watch for a burst of earth station license applications, particularly from Starlink and Kuiper, in Asia and Africa. If those don’t materialize within 6 months, the capacity crunch will manifest as degraded service levels for LEO broadband, favoring competitors who invest in ground infrastructure now. Consider commissioning targeted imagery of the 6 High-risk sites and direct queries to ground-service providers for expansion plans. The market is moving; the ground is not. That’s the signal.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | August 10, 2026

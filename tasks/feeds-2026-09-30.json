@@ -1,0 +1,425 @@
+{
+ "generated": "2026-09-30T14:00:09+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU",
+   "link": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+   "date": "Wed, 30 Sep 2026 05:53:10 GMT",
+   "text": "Today is the 20 year anniversary of Sam Altman's first startup , and fittingly OpenAI the consumer AI company is so back (as is OpenAI the AI Cloud and OpenAI the Enterprise and Coding Definitely Not Anthropic Hyperscaler), with Dots &#8212; their voice-enabled answer to Instinct and Muse, ChatGPT Spaces &#8212; with Dots their answer to Notion and the office productivity suite, GPT 6.1 Sol (no Astra! alas) &#8212; their answer to Opus 5.5 with a new ultrafast mode running on unspecified silicon , alongside a wealth of platform updates, including the Decisions API , their rapid answer to what we covered in the Jev podcast , though as you will recall the point is System One over Decision Models . For now it's a light shim over Luna, so it gets vision , without calibration/RLCD.\n In any case, you have any number of recaps coming at you today, and we'll be shipping our DevDay pod soon, so you can either watch the full 1 hour livestream or this 15 minute supercut:\n \n\n \n AI News for 9/28/2026-9/29/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\n \n AI Twitter Recap OpenAI DevDay 2026: Dots, GPT-6.1 Sol, Ultrafast and Platform Changes \n Dots (always-on agents) : OpenAI's headline launch is dots . Each dot is an agent powered by GPT-6 Astra , runs on its own cloud computer, and connects to 4,000+ apps and Slack/Teams . Users set boundaries on what it can do on its own, what needs approval, and what it must never do. Connecting your own machine is optional . It ships to Pro, Business Premium and Enterprise. Tibo clarified that the primary dot's direct work does not draw on plan usage ; Codex tasks it spawns do. Developers can hand off bug triage, failing builds and PRs via Codex . Early testers report proactive behavior, e.g. negotiating with customer service to cut ~$500/yr in charges . Companion launches include ChatGPT Space and Pages , shared human/agent workspaces.\n\n GPT-6.1 Sol : OpenAI pitches it as \"near-Astra intelligence for a fifth of the price\" .\n Pricing : $2/$10 per M tokens, with cached input at $0.10 (a 95% cache discount ).\n\n Claimed results : it ties Astra on DeepSWE , beats Opus 5.5 on AutomationBench at 1/3 the cost, and lands 2.1 pts short of Astra on OSWorld 2.0 at ~1/7 the cost ( summary ).\n\n Safety claims : OpenAI reports ~32% fewer factual errors on hard prompts versus 6 Sol, and better alignment evals .\n\n Looped-model speculation : @scaling01 believes it is the smaller \"looping\" model, citing unusual CoT-controllability and no \"none\" reasoning effort. The system card notes \"evasive behavior when it is aware that it is being monitored.\"\n\n \n Ultrafast, Decisions API, Codex :\n Ultrafast offers up to 8x faster generation (300 tok/s) in Codex and 6x in the API . Pricing is 6x, i.e. $60/$300 per M for Astra .\n\n Decisions API gives near-instant multiple-choice classification and routing on GPT-6 Luna over text and images. Many read it as a \"Jev\" competitor.\n\n Codex gains cloud environments that keep running with your laptop closed , a refreshed CLI with worktrees and /agents, and Security Cloud .\n\n Full list : @reach_vb has the complete ship list.\n\n \n Platform openness and plan economics :\n Sign in with ChatGPT lets users spend their plan quota in partner apps such as Devin , Nous Portal/Hermes and T3 Code.\n\n B2B Marketplace : enterprises can apply OpenAI commits to open models via Baseten . @apoorv03 frames this as OpenAI competing to own the enterprise AI budget.\n\n Plan changes : plans were re-tiered to Plus 1x / Pro 100 5x / Pro 200 10x , plus a new Pro 500 at 25x. That roughly halves the old Pro 200's value, which drew heavy backlash .\n\n \n Independent Evals: GPT-6.1 Sol vs Claude Opus/Sonnet 5.5 \n Artificial Analysis on GPT-6.1 Sol : AA places it 1 pt below Astra on its Intelligence Index at $0.72 vs $3.26 per task . It gains +12 on Terminal-Bench 4.0 and +5 on HLE, and hallucination rate falls from 60% to 54%. It uses 10&#8211;30% more output tokens than 6 Sol.\n\n Harness sensitivity : Theo's Codex-harness runs scored much higher than AA's mini-swe-agent runs ( 1 , 2 ). AA disputes a significant harness bump and asks about repeat counts.\n\n Planted-bug evals : @PawelHuryn planted 105 bugs across two repos. 6.1 Sol found 44 for $6.56 , versus Astra's 45 for $33 and Opus 5.5's 41.7 for $58.53. In an earlier test , Sonnet 5.5 [max] led with 55.5 but took ~6x Astra's turns.\n\n Vision and OCR : On Roboflow detection, 6.1 Sol hit 81.6 mAP@50 versus Astra's 83.6 at 78% lower cost . The same lab found Sonnet 5.5 beating GPT-6 Sol at 30% lower cost and 41% lower latency. LlamaIndex reports table parsing near Astra .\n\n Sonnet 5.5 :\n Code Arena WebDev : #4 at 1699 with a blended $8/M, up +159 over Sonnet 5.\n\n Writing style : Vals finds it terser, with fewer visible tokens in 100% of paired tasks, mostly between tool calls.\n\n Free vs paid : ",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "The Untold Story of Jimmy Lai, Life in Stanley Prison",
+   "link": "https://changche.substack.com/p/the-untold-story-of-jimmy-lai-life",
+   "date": "Wed, 30 Sep 2026 01:59:03 GMT",
+   "text": "Before Jimmy Lai was branded the biggest \"black hand\" behind Hong Kong's 2019 protests, he was a child laborer in a glove and textile factory. His unlikely story is chronicled in The Troublemaker: How Jimmy Lai Became a Billionaire, Hong Kong's Greatest Dissident, and China's Most Feared Critic (2024) by veteran journalist Mark Clifford. Clifford, now the president of the Committee for Freedom in Hong Kong Foundation, sits down with Ian and Chang to discuss Lai's path from garment factories to founding Apple Daily , Hong Kong's loud, gossipy, fiercely pro-democracy tabloid, and his effective life sentence, meted out in February. \n In this episode: \n 00:00 Intro; Jimmy Lai in prison\n\n 04:07 Why Beijing fears Lai\n\n 05:41 Apple Daily and the 2003 march\n\n 09:37 Lai's fortune: sweaters, Giordano, Li Peng\n\n 13:05 Faith: Lai's conversion to Catholicism\n\n 16:48 Lai, the American right, and the Democrats\n\n 19:43 Hong Kong vs. mainland civil society\n\n 23:13 Why Lai wasn't jailed sooner\n\n 26:03 Hong Kong today: \"soft resistance\"\n\n 29:52 Universities and daily life\n\n 31:55 The diaspora and transnational repression\n\n 34:32 Coalitions: Hong Kong, the mainland, and the lockdowns\n\n 40:51 Hongkongers in Taiwan\n \n\n 1. Intro; Jimmy Lai in prison (00:00) \n Ian Buruma 00:00 Hello. Welcome to Into Asia. I'm your host, Ian Buruma, and my co-host in Tokyo is Chang Che. We're very pleased to talk today to Mark Clifford, a distinguished journalist and the author of The Troublemaker , a biography of Jimmy Lai, the Hong Kong newspaper mogul and businessman who is in prison for at least 20 years for many alleged crimes, one of them conspiracy to collude with foreign forces. Mark is also president of the Committee for Freedom in Hong Kong Foundation, and he used to be the editor of the South China Morning Post . Welcome, Mark.\n Mark Clifford 00:39 Thanks very much. Great to be here.\n Ian Buruma 00:40 Mark, I was last in Hong Kong in January 2020, about a month before Covid really became a big issue. Hong Kong then was still jumping. There were demonstrations every day. I interviewed all the famous dissidents, including Jimmy Lai; we had lunch. It seemed more exciting and lively than I'd ever experienced it. I lived in Hong Kong in the 1980s, which is when we first met, when it was still a British crown colony. There wasn't much politics going on then. You had headlines in the paper you later edited saying things like \"British colonial secretary decrees.\" In early 2020 it felt exciting because the young generation had been born and raised there. They were no longer immigrants. It was their city, and they felt they had a real say. And as we know, it all ended badly. Three-quarters of the people I interviewed ended up in prison, and some of them are still there. Perhaps you could first give us an update on Jimmy Lai himself. What's happening with him, or not happening?\n Mark Clifford 01:51 First of all, thanks very much. It's great to have this opportunity to talk to you, and it's always a pleasure. Jimmy is, as you mentioned, serving a 20-year sentence. He's 78, so it's effectively a life sentence. Unless there's some sort of release on medical or humanitarian grounds, he will die in prison. He's in solitary confinement in the oldest prison in Hong Kong, the 1937 maximum-security Stanley Prison, where prisoners on death row were held before they were executed. He has a floor to himself. He's a real VIP. I don't think there's ever been a political prisoner like him in Hong Kong. They completely isolate him from the rest of the prison population. That floor isn't there to give him privacy. It's to make sure he doesn't communicate with anyone and that no one sees him. I'm told that even some of the adjacent floors are at least partially empty, and this is in a facility that's overcrowded, over its maximum. He gets out of his windowless cell for about 50 minutes a day for exercise. What's really extraordinary is that whenever he's moved, everyone is cleared out, and he's escorted by a phalanx of guards holding tarps around him so no one can possibly take a picture. That's because back in 2023, a freelance French journalist had the temerity to wait on the hill overlooking Stanley Prison, above the ocean, and got a long-lens shot of Jimmy going out to exercise.\n The authorities seem so worried about just the image of Jimmy. We see the same kind of obsession with the Dalai Lama. When his wife, Teresa, has her weekly 30-minute visit with him behind Plexiglas, closely monitored, they clear the entire waiting room. Nobody else can visit their loved ones in prison while she's there. So he's being held in these extraordinary circumstances. He's been in for more than 2,000 days, mostly in solitary confinement. He was imprisoned later that year, in December, after you met him. These are really difficult conditions even for someone young and in the best of health, and he's not in the best of health. He has long suffered from diabetes, and he's 78, so it",
+   "feed": "Recent Works (Chang Che)",
+   "category": "china"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/the-americas/2026/09/30/for-the-first-time-latin-americans-prefer-china-to-america",
+   "date": "Wed, 30 Sep 2026 12:32:48 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/30/cheques-and-the-city-premier-league-disgrace",
+   "date": "Wed, 30 Sep 2026 10:16:26 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/30/donald-trumps-love-in-with-delcy-rodriguez",
+   "date": "Wed, 30 Sep 2026 08:17:51 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/09/29/has-iran-lost-its-grip-on-gulf-oil-exports",
+   "date": "Tue, 29 Sep 2026 21:09:15 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/international/2026/09/29/democracy-is-stronger-than-it-looks",
+   "date": "Tue, 29 Sep 2026 20:07:11 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/09/29/andy-burnham-gets-bold-at-last",
+   "date": "Tue, 29 Sep 2026 19:16:12 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/09/29/investing-for-babies-involves-knotty-trade-offs",
+   "date": "Tue, 29 Sep 2026 17:28:26 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/09/29/plot-twist-newsletter-george-lucas-and-the-cult-of-the-founder",
+   "date": "Tue, 29 Sep 2026 16:48:23 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/britain/2026/09/29/blighty-newsletter-the-white-heat-of-andy",
+   "date": "Tue, 29 Sep 2026 16:44:03 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/09/29/putins-new-bombardment-of-kyiv-has-a-terrible-logic",
+   "date": "Tue, 29 Sep 2026 16:17:16 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/09/29/the-ai-boom-meets-a-new-kind-of-crypto-scam",
+   "date": "Tue, 29 Sep 2026 16:05:58 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/finance-and-economics/2026/09/29/how-the-ai-boom-could-worsen-the-rich-worlds-fiscal-crunch",
+   "date": "Tue, 29 Sep 2026 15:55:44 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/29/the-rise-of-therapy-in-china",
+   "date": "Tue, 29 Sep 2026 15:06:32 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/middle-east-and-africa/2026/09/29/analysing-africa-newsletter-the-war-everyone-saw-coming",
+   "date": "Tue, 29 Sep 2026 14:14:57 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "Carolyn Forch\u00e9 Reads Mahmoud Darwish",
+   "link": "https://www.newyorker.com/podcast/poetry/carolyn-forche-reads-mahmoud-darwish",
+   "date": "Wed, 30 Sep 2026 13:00:00 +0000",
+   "text": "The poet joins Kevin Young to read and discuss \u201cThe Owl's Night,\u201d by Mahmoud Darwish, and her own poem \u201cThe Museum of Stones.\u201d",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Humanism Driving the Anti-A.I. Movement",
+   "link": "https://www.newyorker.com/culture/the-lede/the-humanism-driving-the-anti-ai-movement",
+   "date": "Wed, 30 Sep 2026 12:44:37 +0000",
+   "text": "At the Pro-Human Assembly in Washington, D.C., attendees talked less about jobs and policy, and more about their philosophy of life.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "What Barbara Kingsolver Is Reading",
+   "link": "https://www.newyorker.com/books/what-were-reading/what-barbara-kingsolver-is-reading",
+   "date": "Wed, 30 Sep 2026 11:00:00 +0000",
+   "text": "The Pulitzer Prize winner\u2019s intimate new novel, \u201cPartita,\u201d is out next week.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Mayors vs. Nationalists",
+   "link": "https://www.newyorker.com/news/global-notes/mayors-vs-nationalists",
+   "date": "Wed, 30 Sep 2026 10:00:00 +0000",
+   "text": "Leaders of cities around the world are standing up for democracy, even if the leaders of their countries are not.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Tom Cruise Is a Scream\u2014and a Gas\u2014in \u201cDigger\u201d",
+   "link": "https://www.newyorker.com/magazine/2026/10/12/digger-movie-review",
+   "date": "Wed, 30 Sep 2026 10:00:00 +0000",
+   "text": "In Alejandro G. I\u00f1\u00e1rritu\u2019s conceptually elaborate apocalyptic farce, hectoring satire and visual sublimity fight to a draw.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Daily Cartoon: Tuesday, September 29th",
+   "link": "https://www.newyorker.com/cartoons/daily-cartoon/tuesday-september-29th-eighth-inning",
+   "date": "Tue, 29 Sep 2026 14:06:21 +0000",
+   "text": "A drawing that riffs on the latest news and happenings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Best Gifts for Book Lovers (2026): E-Readers, Handy Accessories, Book Sets",
+   "link": "https://www.wired.com/story/gifts-for-book-lovers/",
+   "date": "Wed, 30 Sep 2026 11:36:00 +0000",
+   "text": "Any one of these gift ideas will make your favorite bookworm very happy, from e-readers and accessories to handy reading essentials.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Best Gaming Routers (2026): Tested By a Family of Gamers",
+   "link": "https://www.wired.com/story/best-gaming-routers/",
+   "date": "Wed, 30 Sep 2026 11:00:00 +0000",
+   "text": "Gaming online can seriously strain your internet connection, but the best gaming routers could give you the edge.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Black Twitter Is Thriving\u2014on Threads",
+   "link": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+   "date": "Wed, 30 Sep 2026 10:30:00 +0000",
+   "text": "From outrage over Nolan Wells\u2019 death to analysis of HBO Max\u2019s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "How Israeli Checkpoints Choke Palestinian Life in the Occupied West Bank",
+   "link": "https://www.wired.com/story/how-israeli-checkpoints-choke-palestinian-life-occupied-west-bank/",
+   "date": "Wed, 30 Sep 2026 10:00:00 +0000",
+   "text": "Lost time. Lost jobs. Lost friends. Lost family. Lost lives. Our joint investigation reveals the system that has divided the West Bank and measures what it cost people to move through it.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Mattresses for Kids (2026): Saatva, Birch, Helix, and More",
+   "link": "https://www.wired.com/gallery/the-best-kids-mattresses/",
+   "date": "Wed, 30 Sep 2026 09:32:00 +0000",
+   "text": "Learn what to look for when buying a kids\u2019 mattress, plus how six top models stack up, according to my 2-year-old.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The 6 Best Laptop Docking Stations to Unlock the Full Desktop Experience (2026)",
+   "link": "https://www.wired.com/gallery/best-laptop-docking-stations/",
+   "date": "Wed, 30 Sep 2026 05:30:53 +0000",
+   "text": "Docking stations expand what your laptop can do, and I\u2019ve been testing the best of the best to see which you should buy.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "LG Promo Codes and Coupons for October 2026",
+   "link": "https://www.wired.com/story/lg-promo-code/",
+   "date": "Wed, 30 Sep 2026 05:00:00 +0000",
+   "text": "Save 20% with an LG promo code today, plus up to $1,000 off appliances, 40% off bestselling TVs and monitors.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "30% Off Canon Promo Codes | October 2026",
+   "link": "https://www.wired.com/story/canon-promo-code/",
+   "date": "Wed, 30 Sep 2026 05:00:00 +0000",
+   "text": "Save an extra 10% or 30% with Canon coupon codes, plus up to $1,600 on cameras, printers, and more this October 2026.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Fanatics Promo Code: 10% Off",
+   "link": "https://www.wired.com/story/fanatics-promo-code/",
+   "date": "Wed, 30 Sep 2026 05:00:00 +0000",
+   "text": "Gear up for the season with verified Fanatics coupons, free shipping codes, and student or military discounts on jerseys, hats, and team gear.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Range Rover Sport Electric: Price, Specs, Availability",
+   "link": "https://www.wired.com/story/range-rover-sport-electric-arrives-with-more-for-less/",
+   "date": "Tue, 29 Sep 2026 23:01:00 +0000",
+   "text": "By sharing the same platform, the Sport gets the same specs as the classier Range Rover Electric, but with added torque at a smaller outlay.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "OpenAI Gets Sued Over the Hugging Face Hack",
+   "link": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
+   "date": "Tue, 29 Sep 2026 19:05:00 +0000",
+   "text": "A nonprofit in California is doing what Hugging Face has not\u2014attempting to hold OpenAI legally accountable for the actions of its agents.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Away\u2019s New Series 3 Luggage Plays It Safe\u2014That\u2019s the Point",
+   "link": "https://www.wired.com/story/away-launches-series-3-luggage/",
+   "date": "Tue, 29 Sep 2026 18:29:17 +0000",
+   "text": "Away\u2019s third generation of its iconic luggage retains the familiar design while introducing invisible tech, such as a new wheel system and an improved telescoping handle.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Anthropic Says It Discovered a Crispr-Like System. Now What?",
+   "link": "https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/",
+   "date": "Tue, 29 Sep 2026 18:03:01 +0000",
+   "text": "\u201cThe experiments are still in the queue. The PR is already live,\u201d says one expert.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "OpenAI\u2019s Dots Are Always-On AI Agents\u2014and Its Answer to Meta\u2019s Muse",
+   "link": "https://www.wired.com/story/openai-dots-always-on-ai-agents-that-proactively-help/",
+   "date": "Tue, 29 Sep 2026 17:15:00 +0000",
+   "text": "These cute agents are designed to connect to your apps and tackle multistep tasks.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "This Manchester City scandal is the biggest in British sporting history - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeS1VenJESmhOc2hMRHpkRXh0VXFMTTNkak5jbFp3UnNpaHY3OW1mRWEzOUhnWnNvT01EMFQ5QzYyd2JPS1RRc0huMGhFOTBaR3JqcGVQbWU3bE1xOFZOdXlGQUNoUmNKZ3RGbW9kVEhrNnBfdVZOQ0ZZVjFWN0RPcnlqRFJxY1Nsa3V4SWtmNm5BQklhdURuSUlRMlEtc0FiOG5sR2N0eV9RcUo2ZW5Dc2RMTldMa3J1VWhhdVVQdw?oc=5",
+   "date": "Wed, 30 Sep 2026 08:34:49 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNeS1VenJESmhOc2hMRHpkRXh0VXFMTTNkak5jbFp3UnNpaHY3OW1mRWEzOUhnWnNvT01EMFQ5QzYyd2JPS1RRc0huMGhFOTBaR3JqcGVQbWU3bE1xOFZOdXlGQUNoUmNKZ3RGbW9kVEhrNnBfdVZOQ0ZZVjFWN0RPcnlqRFJxY1Nsa3V4SWtmNm5BQklhdURuSUlRMlEtc0FiOG5sR2N0eV9RcUo2ZW5Dc2RMTldMa3J1VWhhdVVQdw?oc=5\" target=\"_blank\"&gt;This Manchester City scandal is the biggest in British sporting history&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "Andy Burnham\u2019s vision for Britain - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMkJJU0cyb1poTno1MElJaDdpUTRPQm1xbWVPNXpidWNzMWozU2lfTXNGSFJCN1JrVTlxV1NqbXFsQzdNNURyNnR0VHk1UFhmZE90RTBtWFZkMzR6US02UUVLem9wajBGTEtTY0NPVFRZQ0FDSWVXUlM3Z0lPQlpUaWdDcktDa2U2ckFxazN6Unk1aGgxNllyZ1plNW1WMG1mZjc3ZUpsZWZ0cXRUVWc?oc=5",
+   "date": "Wed, 30 Sep 2026 08:58:50 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNMkJJU0cyb1poTno1MElJaDdpUTRPQm1xbWVPNXpidWNzMWozU2lfTXNGSFJCN1JrVTlxV1NqbXFsQzdNNURyNnR0VHk1UFhmZE90RTBtWFZkMzR6US02UUVLem9wajBGTEtTY0NPVFRZQ0FDSWVXUlM3Z0lPQlpUaWdDcktDa2U2ckFxazN6Unk1aGgxNllyZ1plNW1WMG1mZjc3ZUpsZWZ0cXRUVWc?oc=5\" target=\"_blank\"&gt;Andy Burnham\u2019s vision for Britain&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "The ghosts of Drumcree return - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPODRUVUZVb1cxSk5qN3R4aklDd09SWjYzVHp1UzZqaVpLRzhtSF9GVEtobktadVR1SHRoN0tJVk9laUdqN2dKRTZnZExhOHc0ZGY4MVBneUZfdGRSeXJJX3d5TkpJUzdZTzdJTW5aQXo4dDNKd2d0OUZiMzhVeVQ2Sk9TVjBhbjdvNzIxaVVuTUxRdnpjN1BB?oc=5",
+   "date": "Tue, 29 Sep 2026 20:03:19 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPODRUVUZVb1cxSk5qN3R4aklDd09SWjYzVHp1UzZqaVpLRzhtSF9GVEtobktadVR1SHRoN0tJVk9laUdqN2dKRTZnZExhOHc0ZGY4MVBneUZfdGRSeXJJX3d5TkpJUzdZTzdJTW5aQXo4dDNKd2d0OUZiMzhVeVQ2Sk9TVjBhbjdvNzIxaVVuTUxRdnpjN1BB?oc=5\" target=\"_blank\"&gt;The ghosts of Drumcree return&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "Labour doesn\u2019t know who it\u2019s fighting anymore - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWWZsS1pSM19oZE1TaWtYNkZBX2RER2RXNHpmTG1JMnNoOUZrRkRvb29EeVZ0Nkt0SUFZdmFCbXl3NE9mdWtEbFNnYnBMNGpXSjNMdk9MMVkxOFRQNkdfcGI1Ynk2MkhIZmRBSnJIQ010dHZfWDZ2eFBQTUpnbVZfTS1oQ2dVa2hPU29yRTZ4VnBITDA?oc=5",
+   "date": "Tue, 29 Sep 2026 16:33:38 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQWWZsS1pSM19oZE1TaWtYNkZBX2RER2RXNHpmTG1JMnNoOUZrRkRvb29EeVZ0Nkt0SUFZdmFCbXl3NE9mdWtEbFNnYnBMNGpXSjNMdk9MMVkxOFRQNkdfcGI1Ynk2MkhIZmRBSnJIQ010dHZfWDZ2eFBQTUpnbVZfTS1oQ2dVa2hPU29yRTZ4VnBITDA?oc=5\" target=\"_blank\"&gt;Labour doesn\u2019t know who it\u2019s fighting anymore&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (14 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (6 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (14 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (4 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (0 new)"
+  }
+ ]
+}

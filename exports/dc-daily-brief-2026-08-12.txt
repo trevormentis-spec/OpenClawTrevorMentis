@@ -1,0 +1,42 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-08-12
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+The 1200MW AWS Ohio filing shatters the illusion that hyperscale growth can outrun U.S. grid inertia. PJM’s 122 GW interconnection queue and 24-month transformer lead times are colliding to push greenfield timelines well past 2030. The risk concentration in top Equinix facilities—all 56/100 grid-driven—is no longer a tail event; it’s the new baseline for U.S. deployments. Operators betting on “permit and pray” will see project IRRs gutted by rising power costs and forced standby generation.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No cable faults or scheduled repairs affecting major DC corridors. Trans‑Atlantic routes serving New York and Northern Virginia (AEC‑1, Dunant, Grace Hopper) are clean; latency maps show no reroutes. Landing stations at Virginia Beach (AEC‑1, BRUSA) and Wall, NJ (Seabras‑1, TGN‑Atlantic) are clear on today’s Sentinel‑2 passes. Only notable vessel: cable ship Global Sentinel remains in port in Portland, UK—no active mission near prime corridors. South‑East Asia cables (SEA‑ME‑WE 5, AAE‑1) are stable despite a M4.3 swarm off Taiwan; no threat to fiber.
+
+═══ POWER & GRID ═══
+U.S. grid strain is the top risk driver. PJM: 122 GW in queue, 4–6-year waits for new builds. AWS Ohio will connect to AEP Ohio, where transmission congestion is already flagged at 69 kV and 138 kV substations. Equinix Ashburn (DC1‑DC15)—world’s largest cluster—remains 56/100 on grid alone; PJM’s planned upgrades for NOVA won’t hit COD before 2029. ERCOT is still the path of least resistance but faces the same transformer bottleneck: 50 MVA+ units now 24 months out. CAISO: Equinix San Jose (SV1/5/10) is operating under heat‑watch; a flex alert is likely 14–15 Aug. MISO Chicago: wholesale on‑peak power jumped 32% week‑on‑week; pass‑through costs at CH1/2/4 will spike. Europe’s grid is comparatively benign—Germany’s 32 MW hyperscale base is tiny, but FRA14 (35 MW) was ordered in 2024 when transformer lead times were already 12 months; delivery now likely Q4 2026, pushing completion into 2027.
+
+═══ NATURAL HAZARD WATCH ═══
+Atlantic hurricane season: Depression SEVEN in central Atlantic, modeled to turn north before reaching the Antilles—no threat to U.S. coast. Gulf Coast (Houston’s HOU2 construction site) is in clear; any storm entering the Gulf later this month would delay roofing and MEP installation. Wildfires: California’s Sawtooth Complex near Idyllwild is 75% contained; air quality near LA1/LA2 is improving. Monsoon: Mumbai IX cluster saw minor localized flooding 11 Aug; Netmagic and STT DCs report no water ingress. Seismic: San Andreas quiet, no tremor detected near SV1/5/10. Japan‑Taiwan region M4.3 swarm is typical; all subsea cables are outside the surface projection.
+
+═══ PHYSICAL SECURITY ═══
+No protest activity or access incidents near any Tier‑1 DC corridor. FRA14 site in Frankfurt had a brief construction worker strike on 11 Aug (wages), resolved in 8 hours—no delay to slab pour. Equinix NY9 (111 8th Ave) operational commissioning is increasing vehicle traffic but no perimeter breach attempts. All other sites remain green on physical security checks.
+
+═══ CLOUD & NETWORK ═══
+AWS, Azure, GCP, Oracle and Alibaba status pages all green. No major provider‑incident impacting DC operations. U.S. backbone carriers (Lumen, Zayo, Cogent) report no planned fiber maintenance on routes serving Ashburn, Dallas or San Jose. Construction on I‑95 widening in Loudoun County is past the fiber‑diversion phase; risk of accidental cuts is negligible. European backbones stable; no congestion alerts on DE‑CIX or NYC peering fabrics.
+
+═══ ASSET WATCH ═══
+• AWS us‑east‑3 (Ohio): 1200 MW permit filed—largest single hyperscale commitment globally. Would nearly double U.S. hyperscale nameplate (1563 MW) if fully built. AEP Ohio transmission study will be the key gate; we expect severe queuing.
+• AirTrunk SYD2 (Sydney): 150 MW announced, targeting 2028. Adds pressure to the Australian NEM, where existing hyperscale capacity is just 130 MW.
+• Equinix NY9 (Manhattan): 25 MW now operational, filling a critical carrier‑hotel deficit.
+• Digital Realty FRA14 (Frankfurt): 35 MW under construction, transformer delivery likely late 2026, COD Q1 2027.
+• CyrusOne HOU2 (Houston): 40 MW under construction, on track for Q3 2026 CO.
+• Risk ratings: No changes today. Ashburn/NOVA remains MODERATE (grid). Any future interconnection application in PJM will likely push those scores higher.
+
+═══ MARKET SIGNALS ═══
+Transformer lead times are now the single most powerful supply‑chain signal: 24 months for ≥50 MVA units forces operators to order before final zoning, driving speculative capex. Generator lead times stretching to 12 months are prompting pre‑orders from major developers. Colo pricing: Ashburn and Santa Clara effective vacancy near zero; Equinix NY9 pre‑leased at record $/kW. DC construction cost index up 18% YoY, dominated by electrical gear inflation. Land acquisition activity spiking in Central Ohio following the AWS filing—expect speculative colo announcements within 90 days.
+
+══════════════════════════════════════════════════════════
+DATA SOURCES
+══════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-08-12

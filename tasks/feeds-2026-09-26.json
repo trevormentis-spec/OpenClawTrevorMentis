@@ -1,0 +1,377 @@
+{
+ "generated": "2026-09-26T14:00:08+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "OpenRouter: from Seed to Stripe \u2014 with OpenRouter\u2019s Alex Atallah & AMP\u2019s Anjney Midha",
+   "link": "https://www.latent.space/p/openrouter",
+   "date": "Fri, 25 Sep 2026 23:14:41 GMT",
+   "text": "From the earliest days of open-weight models to becoming the neutral routing layer for more than 10 million developers , OpenRouter is one of the clearest bets that the future of AI will be multi-model. In this episode, OpenRouter co-founder & CEO Alex Atallah, with AMP's Anjney Midha returning with swyx to unpack how OpenRouter emerged from the first wave of Llama , Alpaca, Mistral, and Midjourney, why model diversity mattered before it was consensus, and how a company dismissed as \"just a wrapper\" became critical infrastructure for the AI ecosystem. \n \n\n We go deep on the product and distribution lessons behind OpenRoute r: why model labs can spend billions training a checkpoint and still struggle to get it into developers' hands, how Mistral helped prove the value of a competitive inference marketplace, why OpenRouter chose focus over expanding into fine-tuning, memory, and other adjacent products, and how its rankings became a real-time map of how AI usage was changing. Alex also explains OpenRouter's early experiments with model fusion , why they deleted the first version and brought it back years later, and how the platform grew to more than 10 trillion tokens per day.\n Finally, Anjney explains why Stripe and OpenRouter fit together , why token fraud may become one of the defining security problems of the AI economy , and why the next wave of fraud won't just come from humans but from autonomous agents attacking increasingly valuable token flows .\n \n We discuss: Why OpenRouter bet early that no single AI model would win everything \n\n Alpaca, Llama, and open models becoming impossible to ignore\n\n Why Discord's early AI deployments exposed the limitations of closed models \n\n Why model labs can spend billions on training and still fail at distribution\n\n How OpenRouter became a neutral distribution layer for model developers\n\n Why VCs dismissed OpenRouter as \"just a marketplace\" or \"just a wrapper\" \n\n The Mistral price war and the first real proof of an inference marketplace\n\n How Midjourney scaled through Discord and what it taught the AI ecosystem\n\n Why crypto infrastructure became a dress rehearsal for generative AI \n\n OpenRouter vs. LM Arena and why their missions are fundamentally different\n\n Why focus became one of OpenRouter's biggest strategic advantages\n\n Anthropic's early focus on AI pair programming and coding \n\n The OpenRouter products that were prototyped but never launched \n\n MOM, OpenRouter's early Mixture of Models experiment\n\n Why model fusion failed in 2024 &#8212; and why it works much better now\n\n How OpenRouter's leaderboard became a live map of the AI industry \n\n OpenClaw, auto-routing, and agents reshaping AI usage\n\n How OpenRouter reached 10+ trillion tokens per day \n\n Why inference gateways are increasingly becoming targets for fraud \n\n Why Stripe's fraud infrastructure is strategically important to OpenRouter\n\n The coming rise of agentic fraud and attacks on the token economy\n\n What changes and what stays the same as OpenRouter joins Stripe \n\n \n Alex Atallah LinkedIn: https://www.linkedin.com/in/alexatallah/ \n\n X: https://x.com/alexatallah \n\n Website: https://alexatallah.com \n Anjney Midha \n LinkedIn: https://www.linkedin.com/in/anjney/ \n\n X: https://x.com/AnjneyMidha \n\n AMP: https://www.amppublic.com/ \n\n \n Timestamps 00:00:00 Introduction\n 00:02:12 Alpaca, Llama, and the Multi-Model Bet\n 00:06:04 Discord, Open Models, and OpenRouter's Origins\n 00:14:28 Why \"One Model Wins\" Was the Wrong Bet\n 00:17:27 Why Model Labs Struggle With Distribution\n 00:23:04 \"Just a Wrapper\": Why VCs Misunderstood OpenRouter\n 00:27:58 Bootstrapping OpenRouter Through Community\n 00:36:16 Crypto, Midjourney, and the Early Generative AI Ecosystem\n 00:43:38 Mistral and the Birth of the Inference Marketplace\n 00:47:10 OpenRouter vs. LM Arena\n 00:52:08 Focus, Anthropic, and Roads Not Taken\n 00:59:34 Mixture of Models and Model Fusion\n 01:02:44 Sonnet, OpenClaw, and OpenRouter's Explosive Growth\n 01:09:03 Why Stripe Acquired OpenRouter\n 01:12:45 Fraud and the Emerging Token Economy\n 01:17:47 The Coming Wave of Agentic Fraud\n 01:19:07 What's Next for OpenRouter at Stripe\n \n Transcript Introduction: OpenRouter, Marketplaces, and Pub-Sub as a Product Principle Swyx [00:00:00]: Okay, we are here in Anja's house, which is where all big startups in San Francisco start.\n Anjney Midha [00:00:08]: Howdy.\n Swyx [00:00:08]: And, congrats on Cursor, Mistral. I don'- God knows what else. You got so much stuff going on.\n Anjney Midha [00:00:17]: There's, there's a lot going on. Well, OpenRouter is probably the - has been the most, I would say, like, one I'm excited about recently.\n Swyx [00:00:24]: Yeah. And we have Alex, first time on the pod, but,\n Anjney Midha [00:00:27]: Thanks for having me.\n Swyx [00:00:27]: You've been in the IE a few times. I appreciate every time you've shown up, for the community. Congrats. I just, like, what a journey. When I was looking back at your past posts, one of the earliest principles th",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "On the anti-corruption campaigns",
+   "link": "https://kamilkazani.substack.com/p/on-the-anti-corruption-campaigns",
+   "date": "Fri, 25 Sep 2026 17:22:06 GMT",
+   "text": "Some notes on the anti-corruption campaigns of Xi Jinping\n There are two primary reasons for launching an anti corruption campaign\n First, is more obvious & I would say more universal. That is, destruction of the opponent/disloyal factions\n We need to once again recall what we have learnt about the nature of political strife. Namely, that its primary actors, and primary units of selection are not individuals, but rather groups, factions, cliques, united by the informal ties with each other.\n It's not so much about knights competing with each other in a duel like one-on-one struggle, but rather a collective clash, between the groups of people\n \n\n\n \n False \n \n\n\n \n Correct \n So, the ruling faction needs to attack the competing ones. And, once its done with all the actual competitors, it needs to stomp on all the potential, and theoretical competitors. Which, again, means, other factions within the ruling regime\n Now what is so good about the accusations of corruption is that they are all universally true.\n Every accusation is by definition true\n\n Every single faction to ever get a taste of power, has, of course, been overstepping its legal authority, entering in some un-transparent financial dealings, and so on and so forth. Fundamentally, every actor that could ever compete for power is - more or less by definition - corrupt\n And if it is not corrupt, then it is a foreign agent. Because where the hell are they getting their resources from\n And that makes the anti corruption investigations a universal instrument of political strife, in Russia, in China, in India, everywhere. Everywhere, political opponents whom you want gone, can be best targeted via the anti corruption investigations. And, a fair deal of Chinese anti-corruption campaign surely follow the same logic. \n That will make a part of the answer. That, however, does not give a full explanation for what has been happening under Xi Jinping. \n What is interesting about China, is the sheer scale & depth of purges, that goes far beyond political figures that did of even potentially could endanger Xi Jinping at some point.\n When Vladimir Putin, or Narendra Modi fight corruption, they are largely hypocritical\n When Xi Jinping does, he is largely honest. He means something by it\n So what does he mean\n I think, I have an educated guess\n With the economic reforms of the 1980-1990s, the decline of central planning, and the advent of market mechanisms, former Communist regimes entered into the stage of bandit capitalism. That is very well known regarding Russia & the post-Soviets. Economic crisis. Bandit privatisation. Large swaths of property falling under the criminal official-cop-gangster ouroboros.\n What is less well known though, is that the same has been happening in China, to a very significant degree. It had its own privatisation. It had its own plunder of the state-owned enterprises and the former socialist property. It had its own era of banditry and of bandit entrepreneurs.\n \n\n\n \n Once again, I am strongly urging you to watch the movies of Jia Zhangke. If you want to watch one single movie (or rather mini-series) from Russia, watch Slovo Patsana. If you want to watch one single movie from China, watch the \"Ash is purest white\". That is the English translation. The original Chinese would be closer to something like \"The Sons and Daughters of the Underworld\". It is covering some aspects of the Chinese socio-economic history that the white people know absolutely nothing about. \n ***\n Until this point, I have been talking of what China and Russia have in common\n Now I will cover what they are different in\n The primary difference between Russia and China, is the almost complete interruption of Soviet nomenklatura continuity in the former. In China, nomenklatura is very much alive. But that is not really the case in Russia\n \n\n\n \n I do not think that the primary point of bifurcation between the two came in 1991, but rather in 1993. Imagine the bloody conflict between the emperor and the senate, resulting in the emperor destroying the senate altogether. That is what happened in Russia. And the primary result was: demotion of the higher ranked nomenklatura, and their replacement with the younger, ignoble upstarts, who could not challenge the supreme ruler even theoretically\n Power of the Communist nomenklatura was not broken in 1991, but in 1993\n\n (In this light, the decision to hand all the power to the FSB makes perfect sense. In Russia, the ruling agent, that is the Communist Party, killed itself. In China it did not)\n As a result, the continuity of the nomenklatura much, much, much more uninterrupted in China, than it is in Russia. Although, China did descend into the era of bandit capitalism, there still remained a fair deal of red nobility who stood above it all, and, in a sense, did not feel any need to earn their own living. They did not feel any need to hustle\n In Russia, there were no such people\n \n\n\n \n That is the primary difference between Putin & X",
+   "feed": "kamilkazani",
+   "category": "china"
+  },
+  {
+   "title": "Trump\u2019s Vanity Summit",
+   "link": "https://stephenroach.substack.com/p/trumps-vanity-summit",
+   "date": "Fri, 25 Sep 2026 22:01:54 GMT",
+   "text": "Long on ceremony a but short on substance, the long-awaited Trump-Xi summit was a disappointment. I wouldn't call it a major disappointment, since pre-summit expectations were generally low. But on the big issues of trade, AI, Taiwan, and addressing two serious wars, there was little or no progress. That is what disappointment looks like.\n On trade, a two-month extension of the truce &#8212; negotiated nearly a year ago in Busan, South Korea &#8212; was surprisingly short. Pre-summit chatter on the extension had been in the range of six to twelve months. Moreover, expectations had focused on another round of Chinese purchases of US exports. Normally those negotiations are completed before a summit even begins. Not so this time. US Trade Representative Jamieson Greer has hinted we may see something on incremental purchases in a few days. But don't hold your breath for successful implementation, even if that happens. The Phase I trade deal failed miserably on that count and recent reports of farm goods purchases are tracking well below earlier Chinese promises. The bottom line on trade: Limited truce extension implies that tariff uncertainty remains high.\n \n\n\n \n On AI, the two superpowers have done the minimum. They committed to ongoing discussions, rather than a formally structured dialog. And they dangled the possibility of an unspecified AI communications \"hot line .\" The likelihood of a major breakthrough on AI safety, as a result, is lower than many had hoped for &#8212; especially in the aftermath of the recent Hugging Face hacking incident and reports of other AI intrusions. However, in light of President Trump's recent \"hands-off\" statement on US intervention in domestic AI security, this week's summit outcome on AI cannot be considered a major disappointment.\n On Taiwan, Xi gets the nod from the standpoint of power projection. He continued to press the advantage he gained from Trump last May, when on the plane ride back home from the Beijing summit, the US president described the pending $14 billion arms sale to Taiwan as a good \"negotiating chip.\" The Chinese side considered this as a major concession from America's previous unwavering commitment to delivering on defensive arms packages that had already been approved by the Congress. In his opening speech to this week's summit, Xi was very clear in stressing that the US should \"adhere to the correct position of opposing Taiwan independence.\" This would be a stunning backtracking from the \"strategic ambiguity\" that has long shaped US strategy toward Taiwanese sovereignty.\n Finally, there appears to have been no attention addressed to China's key role in supporting the serious wars in Ukraine and Iran. As the buyer of 90% of Iran's oil exports and about 40% of the oil sent abroad by Russia, China has played a major role in funding the aggressive military operations of both nations. Passage of a recent bill on secondary sanctions now gives the US president broad authority to address this activity through highly punitive tariffs. Don't count on it. There appears to have been no mention of this \"hot potato\" at yesterday's summit.\n By doing the minimum on the big issues, both in terms of staff preparation and in short bilateral chats, Donald Trump was painfully transparent on what mattered most to him in this summit. He went beyond any semblance of normal protocol in declaring heartfelt admiration for his \" truly great \" friend. Add to that, a multiplicity of red carpets that would even put China to shame, the glitzy State dinner with all the tech bros, and his personal tour of Xi to show him all the new vanity projects in the White House &#8212; the granite helipad, the ballroom construction project, and a walkthrough of his rogues' gallery of annotated presidential portraits &#8212; there can be little doubt of how the Trump-Xi Summit of September 24, 2026, summit will be remembered. It was America's first vanity summit.",
+   "feed": "Conflict (Stephen Roach)",
+   "category": "security"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/26/shire-folk",
+   "date": "Sat, 26 Sep 2026 07:00:00 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/international/2026/09/25/america-and-chinas-leaders-indulge-in-pageantry-as-crises-mount",
+   "date": "Fri, 25 Sep 2026 20:47:05 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/science-and-technology/2026/09/25/are-weighted-blankets-really-beneficial",
+   "date": "Fri, 25 Sep 2026 18:34:16 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/international/2026/09/25/the-war-room-newsletter-the-soviet-unions-greatest-war-reporter",
+   "date": "Fri, 25 Sep 2026 15:41:04 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/09/25/hollywoods-novel-obsession-with-literary-adaptations",
+   "date": "Fri, 25 Sep 2026 15:37:28 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/09/25/how-voters-feel-about-donald-trumps-policies",
+   "date": "Fri, 25 Sep 2026 15:12:18 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "A Night Living in Penn Station",
+   "link": "https://www.newyorker.com/news/the-weekend-essay/a-night-living-in-penn-station",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "For the outreach workers trying to place homeless New Yorkers in shelters, each evening presents familiar faces and fresh challenges.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Teen Portraits That Captivated Sofia Coppola",
+   "link": "https://www.newyorker.com/culture/photo-booth/the-teen-portraits-that-captivated-sofia-coppola",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "Joseph Szabo\u2019s pictures capture American adolescents\u2019 spontaneous presence and loose-limbed, insouciant grace.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Are Public Spaces Really for the Public?",
+   "link": "https://www.newyorker.com/magazine/2026/10/05/are-public-spaces-really-for-the-public",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "A group of locals is trying to reclaim city spots for the people\u2014including lobbying to turn vacant lots into gardens and fighting the event venue Guastavino\u2019s over a courtyard.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Nolan Wells\u2019s Family Still Wants Answers",
+   "link": "https://www.newyorker.com/news/the-lede/nolan-wells-family-still-wants-answers",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "A Mississippi grand jury declined to bring charges in connection with the death of a Black teen-ager during a boating trip, but it\u2019s still unclear exactly how he died.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Taryn Simon\u2019s Father Figures",
+   "link": "https://www.newyorker.com/culture/critics-notebook/taryn-simons-father-figures",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "In a new show at the Guggenheim, the artist grapples with patriotism and patriarchy through the long career of an anonymous F.B.I. agent.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Susan Collins\u2019s Maine Money Machine",
+   "link": "https://www.newyorker.com/news/the-lede/susan-collinss-maine-money-machine",
+   "date": "Fri, 25 Sep 2026 22:06:29 +0000",
+   "text": "The senator uses her seniority in Congress to bring significant resources to her state. Is that enough for voters who hate her party?",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Ari Emanuel on Donald Trump, Elon Musk, and Mixing Business with Politics",
+   "link": "https://www.newyorker.com/podcast/the-new-yorker-radio-hour/ari-emanuel-on-donald-trump-elon-musk-and-mixing-business-with-politics",
+   "date": "Fri, 25 Sep 2026 18:11:57 +0000",
+   "text": "The entertainment agent and executive talks with David Remnick about his dealings with the President, the tech mogul, and Mohammed bin Salman, and operating within \u201cshades of gray.\u201d",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The New York Film Festival, Week One: Better Late Than Never",
+   "link": "https://www.newyorker.com/culture/the-front-row/the-new-york-film-festival-week-one-better-late-than-never",
+   "date": "Fri, 25 Sep 2026 18:09:44 +0000",
+   "text": "This year\u2019s prime offerings include the festival d\u00e9but of an overlooked great director and startling new work by acclaimed filmmakers.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Min Jin Lee on \u201cAmerican Hagwon,\u201d Her First Novel After the Phenomenon of \u201cPachinko\u201d",
+   "link": "https://www.newyorker.com/podcast/the-new-yorker-radio-hour/min-jin-lee-on-american-hagwon-her-first-novel-after-the-phenomenon-of-pachinko",
+   "date": "Fri, 25 Sep 2026 18:07:29 +0000",
+   "text": "The author talks with David Remnick about leaving corporate law to become a novelist, and making Korean culture and experiences legible to readers around the globe.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "I\u2019ll Have What Xi\u2019s Having",
+   "link": "https://www.newyorker.com/cartoons/blitts-kvetchbook/ill-have-what-xis-having",
+   "date": "Fri, 25 Sep 2026 14:38:27 +0000",
+   "text": "When Donald met Jinping.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Daily Cartoon: Friday, September 25th",
+   "link": "https://www.newyorker.com/cartoons/daily-cartoon/friday-september-25th-campaign-spam",
+   "date": "Fri, 25 Sep 2026 14:10:14 +0000",
+   "text": "A drawing that riffs on the latest news and happenings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Old-School Credit Card Scams Are Far From Dead",
+   "link": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
+   "date": "Sat, 26 Sep 2026 12:00:00 +0000",
+   "text": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "12 Best White Elephant Gifts, Plus a Prank Box to Put Them In (2026)",
+   "link": "https://www.wired.com/gallery/best-white-elephant-gifts-2026/",
+   "date": "Sat, 26 Sep 2026 11:36:00 +0000",
+   "text": "Bring the gift everyone will want to win from this year\u2019s holiday party, from a cute jacket for a beer can to magnets they\u2019ll wish they could eat.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Mesh Wi-Fi Systems (2026): I Tested Them All",
+   "link": "https://www.wired.com/story/best-mesh-wifi-routers/",
+   "date": "Sat, 26 Sep 2026 11:00:00 +0000",
+   "text": "Forget about patchy internet connections and dead spots in the house. These WIRED-tested, multi-room mesh Wi-Fi systems will keep your whole house online.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Meta\u2019s Muse Is Adults-Only. Why Does It Look Like a Kids\u2019 Toy?",
+   "link": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
+   "date": "Sat, 26 Sep 2026 10:30:00 +0000",
+   "text": "Meta says Muse is just for adults, though its cuddly, Labubu-like mascot\u2014and upcoming Tamagotchi-style AI device\u2014may be disarming for users of all ages.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "This Browser Extension Lets You Snooze Open Tabs Until Later",
+   "link": "https://www.wired.com/story/tuck-browser-extension-lets-you-snooze-open-tabs-until-later/",
+   "date": "Sat, 26 Sep 2026 10:00:00 +0000",
+   "text": "The free add-on Tuck brings one of the best features of modern email\u2014the ability to hide something for a bit\u2014to that tangle of tabs in your browser.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "A Gravitational Battle Within the Earth Is Changing the Length of Days",
+   "link": "https://www.wired.com/story/gravitational-struggle-deep-in-earth-is-changing-length-of-days/",
+   "date": "Sat, 26 Sep 2026 09:30:00 +0000",
+   "text": "A competition between the gravity of the inner core and other forces in the mantle is altering the Earth's rotation.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Best Early Prime Day Deals Ahead of Amazon\u2019s Second Sale (2026)",
+   "link": "https://www.wired.com/story/amazon-prime-day-early-deals-09-26-2026/",
+   "date": "Sat, 26 Sep 2026 09:05:00 +0000",
+   "text": "Amazon Prime Big Deal Days officially begin on October 6 and 7, but I\u2019ve already spotted early discounts on gear our team recommends.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Quince Luggage Is Affordable but Doesn\u2019t Feel Cheap (2026)",
+   "link": "https://www.wired.com/story/quince-wants-to-be-your-new-away-luggage/",
+   "date": "Sat, 26 Sep 2026 00:02:00 +0000",
+   "text": "Is Quince the Away alternative we\u2019ve been waiting for? I tested its luggage to find out, and the price difference is hard to ignore.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Thieves Stole \u2018Nvidia\u2019 Trailers. They Got 20 Tons of Sand",
+   "link": "https://www.wired.com/story/thieves-stole-nvidia-trailers-they-got-20-tons-of-sand/",
+   "date": "Fri, 25 Sep 2026 20:30:40 +0000",
+   "text": "They wanted the silicon. They got the sand.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
+   "link": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+   "date": "Fri, 25 Sep 2026 16:58:20 +0000",
+   "text": "The AI lab had argued multiple violations of its rights, but a divided panel of judges sided with the Trump administration.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "War Bros Didn\u2019t Always Rule Silicon Valley",
+   "link": "https://www.wired.com/story/war-bros-didnt-always-rule-silicon-valley/",
+   "date": "Fri, 25 Sep 2026 15:00:00 +0000",
+   "text": "Some say that tech was always about the money and the military. Don\u2019t buy that argument.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The last football hooligans - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQS2dxQndWa1VLUm1PamtnSjMzZ0E2Y3EzV1JyWHBtZ2hXRkJ0ZFVsX3RnNlh6emZraDdmR0pqNFVBOGFNQXJGYUxJN185ZU05WmIyMkFPOGQzbTdYMjRZZnNUeU9ISVZERmo0VElZZklZaTBWT0gtbTBMMW12Ny1HYnN4THE?oc=5",
+   "date": "Sat, 26 Sep 2026 10:51:01 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxQS2dxQndWa1VLUm1PamtnSjMzZ0E2Y3EzV1JyWHBtZ2hXRkJ0ZFVsX3RnNlh6emZraDdmR0pqNFVBOGFNQXJGYUxJN185ZU05WmIyMkFPOGQzbTdYMjRZZnNUeU9ISVZERmo0VElZZklZaTBWT0gtbTBMMW12Ny1HYnN4THE?oc=5\" target=\"_blank\"&gt;The last football hooligans&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "What was Charles Spencer thinking? - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdGRLbjJzU3llZk1YTlhIMmQ5d3kwMm5ELVNSeW9saHFKV1JMaThVbWNMMmQtQk1DakFWeGJuSEdfWTdyU1l4b3VTc1VjV0tnYVZzM1Bqcmk4UHZKRFFQWHFoVm1WVUVPMEFHRWlaQzhLajlFN3h6TE1OSkVYNHFvODNrVTZIQjk4M1NSSA?oc=5",
+   "date": "Sat, 26 Sep 2026 05:04:58 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNdGRLbjJzU3llZk1YTlhIMmQ5d3kwMm5ELVNSeW9saHFKV1JMaThVbWNMMmQtQk1DakFWeGJuSEdfWTdyU1l4b3VTc1VjV0tnYVZzM1Bqcmk4UHZKRFFQWHFoVm1WVUVPMEFHRWlaQzhLajlFN3h6TE1OSkVYNHFvODNrVTZIQjk4M1NSSA?oc=5\" target=\"_blank\"&gt;What was Charles Spencer thinking?&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  },
+  {
+   "title": "Spectator Writers\u2019 Dinner with Lord Young of Acton, Thursday 19 November, 6.30 for 7pm - The Spectator Shop",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWXZVWloxeGI4X1pnNTh1YkctYzJ4WG42MW02dm9JMlgtM2daazR1Rk8tbjJ3RkFlZDlVZGJFbEotSHF0d0RFd3h4eFV0dFJmYmZsRXdDUlZtV1FQVFlhSlhFY3k1cDZjNGtwVExSNS1iRXN4ZXQtRDlEWEEzODNPS2UyeXp1R2hXWGVUSVNnUEdZeXZIRmhZcEFzT0xoSDlUSGFxY29Vd193aW5JYVlfeUZn?oc=5",
+   "date": "Fri, 25 Sep 2026 20:44:02 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOWXZVWloxeGI4X1pnNTh1YkctYzJ4WG42MW02dm9JMlgtM2daazR1Rk8tbjJ3RkFlZDlVZGJFbEotSHF0d0RFd3h4eFV0dFJmYmZsRXdDUlZtV1FQVFlhSlhFY3k1cDZjNGtwVExSNS1iRXN4ZXQtRDlEWEEzODNPS2UyeXp1R2hXWGVUSVNnUEdZeXZIRmhZcEFzT0xoSDlUSGFxY29Vd193aW5JYVlfeUZn?oc=5\" target=\"_blank\"&gt;Spectator Writers\u2019 Dinner with Lord Young of Acton, Thursday 19 November, 6.30 for 7pm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Spectator Shop&lt;/font&gt;",
+   "feed": "The Spectator",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (6 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (11 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (11 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (2 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (1 new)"
+  }
+ ]
+}

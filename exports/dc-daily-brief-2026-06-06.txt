@@ -1,0 +1,37 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-06-06
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+PJM grid strain is the single highest systemic risk to US DC operations today, driving all eight top risk scores (56/100) across Equinix’s core Ashburn, Dallas, San Jose, Chicago, LA, and NY/NJ hubs. Transformer lead times (18-24 months) and a 122 GW interconnection queue mean new capacity is 4-6 years out. No new cable outages or natural hazard alerts, but the power constraint is structural and worsening.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No new cable outages or repair activity reported in the last 24 hours. Key cables serving the highest-risk US clusters (Ashburn, NY/NJ) include the MAREA, Dunant, and Havfrue systems — all operational. The Northern Virginia cluster (world’s largest) is heavily dependent on transatlantic capacity; any disruption to those cables would cascade quickly. No congestion flags on major routes. Monitor the Asia-Africa-Europe-1 (AAE-1) for geopolitical tension near Egypt.
+
+═══ POWER & GRID ═══
+Grid constraint is the dominant risk driver. PJM interconnection queue sits at 122 GW — new DC builds face 4-6 year delays. All eight highest-risk facilities (56/100) are grid-driven. US hyperscale power capacity (1563 MW) dwarfs all other markets; GB (219 MW) and AU (130 MW) are distant seconds. Transformer lead times remain at 18-24 months for >50 MVA units — single biggest bottleneck. Switchgear (12-18 months) and generators (8-12 months) also extended. No energy price spikes reported today, but PJM capacity auction results due next quarter could tighten.
+
+═══ NATURAL HAZARD WATCH ═══
+No active threats to major DC clusters today. Atlantic hurricane season is active but no systems currently threatening US Gulf or East Coast hubs. California wildfire season is early; San Jose (Equinix SV1/SV5/SV10) is in a high-risk zone — monitor PG&E public safety power shutoff (PSPS) alerts. No earthquake or flood warnings for any Tier 1 sites.
+
+═══ PHYSICAL SECURITY ═══
+No reported incidents at any Tier 1 facility in the last 24 hours. Satellite imagery confirms no ground disturbance or access anomalies at all 25 monitored sites. Ashburn, Dallas, San Jose, Chicago, LA, NY/NJ, Toronto, and Miami all clear. No protest activity near major DC corridors.
+
+═══ CLOUD & NETWORK ═══
+No major cloud provider outages reported. AWS, Azure, GCP, Oracle, and Alibaba all nominal. No fiber route disruptions on backbone routes serving Ashburn, Dallas, or NY/NJ. Monitor the Equinix NY8 (60 Hudson St) and NY9 (111 8th Ave) facilities — these are dense interconnection points; any local fiber cut would impact a large number of tenants.
+
+═══ ASSET WATCH ═══
+Construction pipeline remains active at 1450 MW. AWS us-east-3 (Ohio, 1200 MW) is the largest single project — permit filed, but PJM queue delays apply. AirTrunk SYD2 (Sydney, 150 MW) announced. Digital Realty FRA14 (Frankfurt, 35 MW) and CyrusOne HOU2 (Houston, 40 MW) both under construction. Equinix NY9 (25 MW) now operational. No risk rating changes today.
+
+═══ MARKET SIGNALS ═══
+Colo pricing continues to rise in constrained markets (Northern Virginia, Silicon Valley, NY/NJ) due to power availability limits. Supply chain signals remain bearish: transformer lead times worsening, switchgear and generator deliveries extended. Lithium-ion UPS battery supply stable — lead-acid still tight. Expect continued upward pressure on lease rates in PJM and CAISO markets.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-06-06

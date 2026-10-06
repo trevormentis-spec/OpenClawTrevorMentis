@@ -1,0 +1,34 @@
+========================================================================
+  LEO GROUND STATION DAILY — July 06, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+This cycle’s data is asymmetric: the market metrics confirm a healthy trajectory (LEO GSaaS sub-market projected at $5.33B by 2033), but operational signals are thin. Starlink’s subscriber base now exceeds 10M, generating an estimated $11.8B in revenue—cementing it as the dominant LEO force with a largely captive ground segment. Meanwhile, Kuiper remains at just 5 registered sites globally, with no new FCC earth station filings or ITU coordination visible, suggesting deployment delays or a deliberate stealth phase. The only hiring pulse is a single generic “ground station engineer” hit, too weak to indicate a recruitment wave. The risk register is stable: 6 high-risk sites, but none critical. Imagery feed remains offline, robbing us of ground truth for site construction. The bottom line: market fundamentals are strong, but near-term competitive signals from non-Starlink constellations are absent. Watch for a step-change in Kuiper’s ground infrastructure filings or a flurry of ITU submissions—these would be the leading indicators of a market pivot.
+
+═══ FCC LICENSES ═══
+Nothing new. The licensee list is a museum of legacy telecom and GEO/MEO satcom: MCI, Sprint, AT&T, Intelsat, Inmarsat, SES Americom. Fordham University, GOONHILLY INC., and ANTWANWILLIAMS.US are curiosities, likely fixed-site educational or vanity licenses, not LEO constellations. Zero filings from SpaceX, Amazon, or any LEO broadband operator. This confirms that U.S. earth station licensing for LEO gateways is either proceeding outside the public FCC docket (e.g., under experimental or blanket grant) or that new builds aren’t yet in the pipeline. One possibility: Kuiper’s gateway deployment may rely on commercial agreements with existing satellite operators (like Intelsat or KSAT) rather than filing for new licenses themselves, which would explain the absence. For now, the FCC feed is a dead end for LEO ground station intelligence.
+
+═══ CONSTELLATION SIGNALS ═══
+The launch manifest data is stale—the “next 5” missions all date from early June 2026—but the aggregate numbers remain valid. There are 7 Starlink launches in the upcoming queue (out of 357 total across all providers), and with the constellation already at 9,400+ satellites as of January, the in-orbit count is probably approaching 9,700 by now. This relentless cadence (roughly one launch every 4–6 days) exerts steady, incremental pressure on gateway capacity: each batch of 20–22 satellites adds ~160–200 Gbps of feeder link demand. Starlink’s own 38 registered sites (per the site register) likely absorb this via in-band expansions, but we should assume SpaceX is continually adding new gateway earth stations, even if not visible in the public FCC record today. OneWeb and Telesat remain static at 10 and 3 sites, respectively. The two Chinese Long March launches listed as “Unknown Payload” from Taiyuan and Wenchang are almost certainly military or intelligence birds—zero relevance to commercial ground station markets. In summary, launch activity reinforces Starlink’s capacity lead but offers no fresh signal for multi-tenant ground station demand.
+
+═══ SITE & IMAGERY ═══
+Imagery feed is non-functional (API not configured; 10 sites checked, 0 with data). This is a persistent gap and prevents us from verifying site construction or expansion. The site register shows 240 total sites, with a risk distribution: 13 negligible, 27 low, 34 moderate, 6 high, 0 critical. The 6 high-risk sites merit attention, though without imagery we can’t assess recent activity. Geographically, North America dominates (26 sites), followed by Europe (18), Asia (8), and Oceania (7). The operator breakdown confirms Starlink’s outsized footprint (38), then KSAT (15), OneWeb (10), Leaf Space (9), Kuiper (5), and Telesat (3). The Kuiper number has been stagnant for three cycles—this is the single most important leading indicator for a second major LEO ground station build-out. Until it ticks upward, the total addressable market for commercial GSaaS providers remains constrained to the small footprints of OneWeb, Telesat, and Earth observation operators.
+
+═══ MARKET SIGNALS ═══
+Job postings: a single active hit for “ground station engineer hiring 2026,” tagged as recent. This is noise, not signal—likely a single position at a small Earth station operator or a legacy satcom firm refreshing a role. A genuine ramp-up by Kuiper or OneWeb would generate dozens of postings for RF, network, and site engineering roles; we aren’t seeing that. ITU filings: empty. This deserves emphasis: no coordination requests at all, for any band, from any LEO operator. In a normal growth phase, you’d expect regular filings for new gateway sites or frequency assignments. The silence suggests that either operators are relying entirely on existing filings (e.g., Starlink’s massive earlier ITU approvals) or that they’re in a planning lull. Market metrics: The LEO GSaaS sub-market was $1.72B in 2024, projected to $5.33B by 2033 (CAGR ~13%). That’s a fast-growing niche, but it’s dwarfed by Starlink’s direct consumer revenue. The broader GSaaS market ($520M in 2024, projected $2.49B in 2033) indicates that multi-tenant ground services will still be a fraction of the total ground station spend, with most value captured by vertically integrated constellations.
+
+═══ BOTTOM LINE ═══
+Roderick, the data tells us the market is unfolding as expected, but the inflection point for third-party ground station operators hasn’t arrived. Kuiper’s ground rollout remains the key watch item: if its site count jumps from 5 to 15+ in a quarter, that’s your trigger to drill down on supplier contracts and ITU filings. In the meantime, set up a manual Amazon job-scrape (search “Project Kuiper ground station” and related terms) and a weekly ITU database check for Ka-band gateway coordinations. Restore the Sentinel-2 imagery feed; we’re blind without it. No fire alarms this week, but the silence on Kuiper is getting loud.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | July 06, 2026

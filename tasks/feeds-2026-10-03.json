@@ -1,0 +1,417 @@
+{
+ "generated": "2026-10-03T14:00:09+00:00",
+ "hours": 24,
+ "feeds_total": 24,
+ "items": [
+  {
+   "title": "Hundreds of millions of AI agents are coming. Is there work for them?",
+   "link": "https://epochai.substack.com/p/hundreds-of-millions-of-ai-agents",
+   "date": "Fri, 02 Oct 2026 19:11:16 GMT",
+   "text": "This is a summary of a longer report on our website. \n \n Anthropic's Dario Amodei has described a future \"country of geniuses in a datacenter\", but could we actually see AI spitting out a country's worth of labor in the next few years?\n AI companies are shelling out hundreds of billions of dollars each year on chips and data centers, betting that the massive compute buildouts will run AI agents capable of doing work that people do today. How much work could that hardware actually do?\n Our research found that the compute produced over the next two years could support tens to hundreds of millions of AI agents using today's most capable models, or billions running cheaper ones. At that scale, AI agents could easily log more hours than all US knowledge workers combined do today.\n \n\n\n \n Subscribe now \n Since AI compute hardware production is bottlenecked by the availability of high-bandwidth memory (HBM), we used projected HBM shipments from 2025 through 2027 to calculate the number of GB300-equivalent GPUs that could be produced. Data center construction and other deployment constraints could delay when this hardware comes online.\n We multiplied that GPU count by the number of concurrent AI agents that could be run per GB300-equivalent GPU. An agent here is one continuously running session of a model like those behind Claude Code, OpenAI Codex, or Meta's Muse.\n Running nonstop, including nights and weekends, these top-tier agents would supply as many weekly working hours as about 140 million to 700 million full-time employees.\n With more efficient models, that same hardware could support billions of agents. Applying DeepSeek V4 Pro serving benchmarks to the projected hardware supply gives approximately 1.9 billion concurrent agents under our central hardware assumption. Running nonstop, these agents could match the working hours of 8 billion full-time workers.\n For scale, the United States has a population of 342 million and an estimated 100 million knowledge workers. Furthermore, the above comparisons count working hours alone. Agents can also work much faster than humans, though the quality of that work varies.\n AI companies could earn immense amounts from this digital workforce. Leading model developers' revenues were already growing faster than those of any company their size in history. If they continue the recent fivefold annual growth, their annualized revenues will reach roughly $1 trillion by the end of 2027.\n Yet, our estimates imply companies may be building for an even faster growth rate. If we conservatively assume that only 20% of the total compute serves revenue-generating inference at current API prices, our main estimate would imply between $2.6 and $5.3 trillion in annual revenues.\n However, there's no guarantee AI companies will actually earn that much. The key uncertainty is whether demand grows fast enough to justify the investment or whether the exploding supply leaves a glut of AI agents.\n This is a summary of a longer report on our website. \n Thanks for reading! Subscribe for free to receive new posts.",
+   "feed": "Epoch AI",
+   "category": "ai"
+  },
+  {
+   "title": "[AINews] not much happened today",
+   "link": "https://www.latent.space/p/ainews-not-much-happened-today-cee",
+   "date": "Sat, 03 Oct 2026 08:45:15 GMT",
+   "text": "If you're even seeing this, you should probably just go enjoy your weekend.\n \n AI News for 10/1/2026-10/2/2026. We checked 12 subreddits, 544 Twitters and no further Discords. AINews' website lets you search all past issues. As a reminder, AINews is now a section of Latent Space . You can opt in/out of email frequencies!\n \n AI Twitter Recap GPT-6.1 Sol and Sonnet 5.5 Reshape the Cost&#8211;Performance Frontier \n GPT-6.1 Sol launch : OpenAI priced Sol at $2/$10 per million input/output tokens, compared with $10/$50 for Astra ( pricing summary ).\n Claimed results : It reportedly beats GPT-6 Sol by 6.4 points on DeepSWE v1.1 and Opus 5.5 by 2.2 points on AutomationBench ( summary ).\n\n Positioning : OpenAI staff describe it as \"good, cheap AND fast\" ( @reach_vb ).\n\n Codex usage : A global Codex usage reset was set for Oct 2 at 10AM PT ( @reach_vb ).\n\n Tool use : Sol reportedly \"REALLY loves codemode,\" consistent with GPT models being trained on it ( @badlogicgames , codemode note ).\n\n \n Agent Arena placements : Sol [Max] entered at #5 (+11.23%) with a $0.56 median cost per task ( @arena ).\n Sol cost comparison : That is 39% cheaper than GPT-6 Sol while scoring 1.52 points higher. It is 81% cheaper than Astra while landing within 1.04 points.\n\n Sonnet 5.5 : Sonnet 5.5 [Max] debuted at #3 (+12.5%) and ranked #1 in the Chat category. It costs $2.74 per task, versus $1.58 for #2 Opus 5.5, which keeps it off the Pareto frontier ( debut , frontier ).\n\n Anthropic's position : Anthropic models now hold the top three Agent Arena spots.\n\n \n Code and Text Arena : Sol briefly entered WebDev at #3 before Sonnet 5.5 pushed it to #4 ( weekly recap ).\n Sonnet on WebDev : Sonnet now sits 2 points behind GPT-6 Astra [Max] at 80% lower cost.\n\n Gemini 4 Argon : Argon [High] took #1 in Text Arena.\n\n Open models : MiMo-V2.6-Pro and Flash entered Agent Arena at #5 and #9 among open models.\n\n \n Other independent evals : WeirdML v3 finds Sol very token-efficient, close to Astra but with a lower peak. On the same benchmark, Sonnet 5.5 beats Opus 5 and Grok 4.7 beats Kimi-K3; these results are incomplete ( @htihle ).\n Reasoning style : Design Arena read 324 thinking summaries. It found that Astra hedges about 20&#215; as often as Opus 5.5, while Opus commits early in about 4 of 5 summaries ( @DesignArena ).\n\n Step 5 Preview : StepFun's model ranks #7 among open-weight models on Vals at $2.54 per task. It averages nearly two hours per task and has a 1M-token context window ( Vals , details ).\n\n \n Rumors (unconfirmed) :\n Fable 5.5 : Claude Fable 5.5 is rumored for next week and said to outperform an \"Astra 6.1\" that was reportedly delayed over security concerns. The poster says he cannot verify either claim ( @kimmonismus , follow-up ).\n\n GPT-6 Astra Lite : A \"GPT-6 Astra Lite\" listing has been spotted, which @scaling01 speculates is the same model as Sol ( @scaling01 ).\n\n \n Decision models and open weights : llama.cpp added a /v1/systemone endpoint for local \"Jev-style\" decision-model inference ( @ggerganov ).\n Running locally : Models are launched with llama serve -hf ggml-org/Kev-4B-GGUF ( @ClementDelangue ). Jared Palmer published a post on how Kev 1.0 works ( post ).\n\n Ecosystem : Perplexity claims pplx-decider-v1-27b averages 85.7% across 11 benchmarks, ahead of Jev ( @AravSrinivas ). Clef decision models are now on Ollama ( @lucataco ).\n\n Skeptical view : @mervenoyann calls decision models a rebrand of zero-shot classifiers ( tweet ).\n\n Calibration analysis : A blog post links Jev-style calibration to value and Q-function prediction ( @SOURADIPCHAKR18 ).\n\n webAI TwIL-LM3-Pro : This 3.66B model is post-trained from Granite 4.2. In webAI's tests it roughly matches Qwen3-8B on formal logic. The Q4 GGUF is 2.09 GiB and the license is non-commercial ( @kimmonismus ).\n\n Reka RIDM : Reka released an inverse dynamics model under Apache 2.0. It is trained on games, generalizes to real video and extracts motor and camera actions ( @RekaAILabs ).\n\n \n Agent Harnesses, Assistants and Developer Tooling \n OpenAI dots : Sam Altman calls dot his favorite OpenAI product, saying it improves daily as it learns his workflow ( @sama ).\n Capabilities : Dot keeps context across apps, coordinates Codex tasks and flags items that need attention ( @OpenAIDevs ).\n\n Comparisons : One user prefers Grokbot's multi-agent \"chief of staff\" setup ( @kimmonismus ). A DIY clone uses Pi, a Telegram gateway and any model ( @_alejandroao ).\n\n \n Muse Gadgets : Meta open-sourced ESP32 firmware and a Linux SDK for building hardware that works with Muse ( @natfriedman ).\n Muse Home Link : Meta made 5,000 units of its own smart-home bridge, free for subscribers while supplies last ( @alexandr_wang , shipping ).\n\n \n Extensible harnesses : DeepSeek Harness shipped desktop builds for macOS and Windows; Linux users install @deepseek-ai/dsh from npm ( @deepseek_ai ).\n Claude Code mods : Mods are plugins with middleware-like hooks into Claude Code ( @lydiahallie ). The new \"You shou",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience",
+   "link": "https://www.latent.space/p/airbnb",
+   "date": "Fri, 02 Oct 2026 14:04:49 GMT",
+   "text": "Prior to joining Airbnb as CTO in January, Ahmad Al-Dahle was head of generative AI at Meta and led the launch of its open source Llama models over 2023-2025. Now Al-Dahle is in charge of turning Airbnb into an \"AI-native company\".\n What that means in practice is using AI internally to speed up product development, then using those same capabilities to transform the customer experience . We're calling this an \"inside-out AI\" approach and in this article we'll dig into the details.\n \n\n\n An example of inside-out AI: Airbnb used a custom internal tool called Everest to help accelerate the launch of a new external service. (Diagram by Latent Space) \n Al-Dahle spoke with Latent Space about Airbnb's AI transformation. We began by asking him why he made the shift from building frontier models at Meta to deploying them at Airbnb .\n \"Fundamentally, I like to chase where I believe the hard frontiers live ,\" he replied, pun perhaps intended. \"We kind of knew [at Meta] what the flywheel looks like, we understood how to improve the model capabilities, generation on generation.\"\n \n\n\n Al-Dahle's tweet in January on joining Airbnb from Meta \n The next challenge, Al-Dahle thinks, is deploying models at scale. At Airbnb, his goals are to \" push people to work differently , because these tools are transforming how you work,\" and to \" take these systems and deploy them in production , in creative ways that actually add value to a core user experience.\"\n Jumping to prototypes, code is the artifact From its launch in 2008, Airbnb has been considered a technology company operating in the hospitality industry. The company went public in 2020 and now has a market capitalization of approximately $93 billion (at time of writing). So it's a big operation to try and make \"AI-native.\"\n Al-Dahle reeled off a few statistics to show that Airbnb is AI-pilled now: 60% of its code is now AI-authored , it has shipped nearly 80% more features and improvements year over year, and pull-request throughput for the average engineer is up about 1.6x .\n \n\n\n \n But how exactly has Airbnb done all this?\n Firstly, he said it's about changing the organizational process for software engineering . Traditionally, you might do product requirements, then design work in Figma, then engineering implementation, and eventually production testing. In the past, these would've required handoffs from one team to another. But now, Airbnb has its product, design and engineering teams move directly to working with prototypes .\n \"Breaking that time down is actually one of the biggest savings that a lot of traditional software companies have to make the leap to do,\" said Al-Dahle. \"And so we made that leap and it actually ended up adding a ton of tailwind to our product development process.\"\n A byproduct of this change is that teams deal directly with code , rather than dealing with \"artifacts\" like a product requirements document.\n \"We moved away from excessive artifact generation to the code being the artifact that we reason upon, and prototypes ,\" he said.\n AI resolves roughly half of support tickets Al-Dahle told us that customer support was the first user-facing area that it introduced AI into. He described it as \"the hardest problem to deploy,\" because \"the stakes and the consequences of a mistake are really high.\"\n Roughly half of Airbnb's support tickets are now resolved purely by AI , said Al-Dahle (this is in line with the company's Q2 results , which put the figure at nearly 45%).\n The key to this, he says, is using synthetic data to thoroughly test the system before taking it to production.\n \"We start with: build a model, build the agent, and begin to generate a battery of synthetic data before you ever go into production.\"\n \n\n\n \n He notes that although agents handle about half of customer support queries, they are careful about what requires human assistance &#8212; with safety issues, for example.\n \"So while we solve 50% of the tickets, we're actually deliberate about the tickets we don't choose to solve yet [with agents].\"\n Everest, Airbnb's AI context graph Two Airbnb Services projects you may not be familiar with yet are grocery deliveries and airport pickups (the grocery service has just been expanded to more cities ). Both were launched earlier this year, thanks in part to Airbnb's inside-out AI approach.\n It was an internal organizational context graph called Everest that helped bring these products to market quickly. Al-Dahle said that Everest uses technologies such as LLMs, embeddings and AI-based retrieval to build and query the graph.\n He explained that the grocery delivery and airport pickup services are \"kind of similar services &#8212; API integrations with partner services [external companies] that integrated onto our platform.\" \n \n\n\n Airbnb's new grocery delivery service \n The grocery service was built first, and learnings from it were made available in Everest. That enabled the airport pickup team to do its project much more quickly. In its Q2 ",
+   "feed": "Latent.Space",
+   "category": "ai"
+  },
+  {
+   "title": "Remembering Tung Che Hwa",
+   "link": "https://stephenroach.substack.com/p/remembering-tung-che-hwa",
+   "date": "Fri, 02 Oct 2026 15:05:58 GMT",
+   "text": "The world has lost a great stateman in Tung Chee Hwa, Hong Kong's first Chief Executive following the British handover in 1997, who passed away on 6 September 2026. I have lost a dear friend and a strong ally in our shared commitment to addressing the challenges and opportunities of the US-China relationship. \n CH was tenacious in his commitment to free and open debate. He welcomed and encouraged outside views on China and Hong Kong from those of us from the West. He was utterly determined to find a constructive path for Sino-American re-engagement. And he was inherently optimistic that such a resolution was not just essential, but both possible and likely. \n The following was published in \" China-US Focus ,\" a flagship effort of the China-US Exchange Foundation founded by Tung Chee Hwa in 2008. \n \n Tung Chee Hwa's Strategic Insights \n My first in-depth interaction with Tung Chee Hwa came at a time of crisis. In April 2001, an American EP-3 spy plane had just collided with a Chinese military jet and was forced to make an emergency landing in Hainan Island. At the time, I was running a Morgan Stanley investment tour of China for about fifteen of the world's most prominent and deep-pocketed investors, most of whom had never been to China before.\n Our carefully orchestrated field trip was quickly in shambles. Many of our meetings on the Mainland were downgraded or canceled as a demonstration of protest by the Chinese government over the spy plane incident. Fortunately, that was not the case at our final stop in Hong Kong, where we were warmly greeted by Chief Executive Tung.\n \n\n\n \n He quickly focused on three aspects of this crisis: He apologized for any inconveniences that had disrupted our carefully planned schedule. He also underscored his deep admiration for the United States, not just for its values as the bastion of Western democracy but also the birthplace of his three children. Lastly, he noted that while this incident will surely blow over, it should also be taken as a warning of more trouble to come if Washington and Beijing were not more attentive to the complexities of their vitally important relationship.\n It was an uplifting end to our trip and as I shepherded the investors out of the room, Tung Chee Hwa asked me to stay behind. He encouraged me, and by inference our influential group, to play a more active role in resolving this crisis. I was a bit aghast over this suggestion but asked him if he had any advice on a course of action. His quick response was a name &#8212; Paul Wolfowitz, newly installed US Deputy Secretary of Defense and one of America's leading hardline neocons. Mr. Tung knew this was more of a military than a diplomatic issue and suggested we should get in touch with Wolfowitz to press our case. He urged me to fill him in on the outcome. He also insisted that henceforth I call him \"CH.\"\n I drafted a letter to Wolfowitz on the plane trip back to the US, and much to my surprise he quickly accepted our meeting request. In the end, there was a last-minute conflict that forced him to send a substitute. That turned out to be a most fortuitous adjustment. We ended up meeting with the legendary Andy Marshall, Director of the Pentagon's Office of Net Assessment who ran a renowned civilian strategic think tank for the US military. When I chatted with CH a few days later and told him of this meeting, without revealing the substance of the discussion, he was very encouraged. My notes say he said, \"You were able to get this issue in front of the Pentagon's most important strategic thinker, exactly what was needed in this case.\"\n This meeting was pivotal for me. It opened the door for a long-standing relationship with Andy Marshall that over the years was of immense help to me in grappling with geopolitical tensions, especially insofar as China was concerned. But it was also a demonstration of CH Tung's uncanny knack for grasping the critical strategic implications of the US-China relationship. For the next twenty years, only cut short by his failing health after 2020, CH and I had frequent meetings and late-night telephone conversations, grappling with the very strategic issues he warned of during our initial encounter in 2001.\n In his heart, CH was a strong believer in the overarching concept of \"grand strategy\" as a unifying framework to think about relationships between major powers, especially the Sino-American relationship. To some extent that was an outgrowth of his long-standing relationship with Henry Kissinger who viewed grand strategy through a balance-of-power lens. CH constantly urged me to think about US-China relationship problems in that same strategic construct. He was most emphatic in stressing the critical importance of this relationship between the two superpowers. Many times, he ended our conversations by saying something like, \"We have to do everything in our power to get this relationship right.\"\n \n\n\n \n By establishing the China-US Exchange Foundation (CUSEF) in 2008 at",
+   "feed": "Conflict (Stephen Roach)",
+   "category": "security"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/03/memory-lane",
+   "date": "Sat, 03 Oct 2026 08:30:00 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/graphic-detail/2026/10/02/the-most-innovative-countries-in-the-world",
+   "date": "Fri, 02 Oct 2026 20:00:04 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/europe/2026/10/02/schoolyard-protests-are-setting-france-ablaze",
+   "date": "Fri, 02 Oct 2026 16:26:53 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/united-states/2026/10/02/americas-grim-record-of-failed-executions",
+   "date": "Fri, 02 Oct 2026 15:42:55 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/science-and-technology/2026/10/02/should-you-be-using-a-tongue-scraper",
+   "date": "Fri, 02 Oct 2026 15:12:01 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/culture/2026/10/02/what-to-watch-this-week",
+   "date": "Fri, 02 Oct 2026 14:54:25 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "",
+   "link": "https://www.economist.com/podcasts/2026/10/02/donald-trump-is-trying-to-reshape-the-media",
+   "date": "Fri, 02 Oct 2026 14:15:29 +0000",
+   "text": "",
+   "feed": "The Economist",
+   "category": "press"
+  },
+  {
+   "title": "\u201cThe Swan\u201d Gets a Superficial Reckoning",
+   "link": "https://www.newyorker.com/culture/critics-notebook/the-swan-gets-a-superficial-reckoning",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "A new documentary about the reality series, which gave participants extreme makeovers before pitting them against one another in a beauty pageant, fails to grapple with the show\u2019s cruelty, or with the culture that enabled it.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Gerald Cyrus\u2019s Magnificent Images of Black Life",
+   "link": "https://www.newyorker.com/culture/photo-booth/gerald-cyruss-magnificent-images-of-black-life",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "Cyrus began consistently documenting New York City in the nineties. His images of Harlem\u2014its streets, its jazz clubs, its dark, soulful nights\u2014evoke the place like nothing else.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Olive Garden Is the Real True North",
+   "link": "https://www.newyorker.com/magazine/2026/10/12/olive-garden-is-the-real-true-north",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "Two guys created a compass that points to the restaurant\u2019s Times Square location. On a trek rivalling the Odyssey\u2014and with breadsticks on the line\u2014they navigate all the way from Staten Island.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The Constant Rediscovery of Barbara Trapido",
+   "link": "https://www.newyorker.com/culture/the-weekend-essay/the-constant-rediscovery-of-barbara-trapido",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "The cult novelist is planning a sequel to \u201cBrother of the More Famous Jack.\u201d What accounts for her persistent appeal?",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Let Cathy Ames Be a Monster",
+   "link": "https://www.newyorker.com/culture/the-lede/let-cathy-ames-be-a-monster",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "In the captivating new \u201cEast of Eden,\u201d only one note rings false: the softening of John Steinbeck\u2019s most evil character.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Why Adults Are Playing with Toys",
+   "link": "https://www.newyorker.com/culture/the-lede/why-adults-are-playing-with-toys",
+   "date": "Sat, 03 Oct 2026 10:00:00 +0000",
+   "text": "After decades of depending on customers who had to beg their parents for pocket money\u2014and who would eventually grow up\u2014the toy industry has found a savior in \u201ckid-ults.\u201d",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Can Europe Still Trust America?",
+   "link": "https://www.newyorker.com/podcast/political-scene/can-europe-still-trust-america",
+   "date": "Sat, 03 Oct 2026 03:59:00 +0000",
+   "text": "Russia is escalating its provocations in NATO territory. Poland's foreign minister has a message for the U.S.: \u201cYou may have affairs elsewhere, but to us, Europe, you are married.\u201d",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "An American Journalist Imprisoned as a Spy in Russia",
+   "link": "https://www.newyorker.com/podcast/the-new-yorker-radio-hour/an-american-journalist-imprisoned-as-a-spy-in-russia",
+   "date": "Fri, 02 Oct 2026 18:08:11 +0000",
+   "text": "Evan Gershkovich, a foreign correspondent for the Wall Street Journal who was convicted on false charges of espionage, talks about his time in a Russian prison.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Jeremy Strong on Playing Mark Zuckerberg and Other Unpopular Characters",
+   "link": "https://www.newyorker.com/culture/the-new-yorker-interview/jeremy-strong-is-not-quite-over-it",
+   "date": "Fri, 02 Oct 2026 18:00:00 +0000",
+   "text": "One of the great actors of the era on finding sympathy for Mark Zuckerberg, Kendall Roy, and Roy Cohn\u2014and why the New Yorker Profile of him still stings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "The New York Film Festival, Week Two: Loose Talk, Bold Action",
+   "link": "https://www.newyorker.com/culture/the-front-row/the-new-york-film-festival-week-two-loose-talk-bold-action",
+   "date": "Fri, 02 Oct 2026 17:07:48 +0000",
+   "text": "New movies from around the world treat sharp-minded talkers of all ages as agents of drama and danger.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Daily Cartoon: Friday, October 2nd",
+   "link": "https://www.newyorker.com/cartoons/daily-cartoon/friday-october-2nd-stand-it",
+   "date": "Fri, 02 Oct 2026 14:19:15 +0000",
+   "text": "A drawing that riffs on the latest news and happenings.",
+   "feed": "The New Yorker",
+   "category": "press"
+  },
+  {
+   "title": "Muse Creates Detailed Profiles of All Your Friends and Family",
+   "link": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+   "date": "Sat, 03 Oct 2026 12:00:00 +0000",
+   "text": "Millions have downloaded Meta\u2019s AI agent Muse. But getting it to do your bidding comes with privacy costs.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "How to Collect CDs",
+   "link": "https://www.wired.com/story/how-to-collect-cds/",
+   "date": "Sat, 03 Oct 2026 11:30:00 +0000",
+   "text": "Fed up with paying to stream music you\u2019ll never actually own? Give the little silver disc a spin. Here\u2019s how to start a CD collection or get more out of one you already have.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The Best E-Readers That Aren't a Kindle (2026): Kobo, Boox",
+   "link": "https://www.wired.com/gallery/best-ereaders/",
+   "date": "Sat, 03 Oct 2026 11:05:00 +0000",
+   "text": "Want to untether your reading from Amazon? These Kindle alternatives deserve a spot on your nightstand.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Best Mosquito Repellents for Your Yard: What Works and What Doesn\u2019t (2026)",
+   "link": "https://www.wired.com/story/best-mosquito-repellents/",
+   "date": "Sat, 03 Oct 2026 10:03:00 +0000",
+   "text": "After years of testing repellents, traps, and sprays, I found a few ways to keep the bugs at bay\u2014and plenty that aren\u2019t worth the effort.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "A Decade-Long Experiment Is Unlocking the Mysteries of the Ocean\u2019s \u2018Deep Reefs\u2019",
+   "link": "https://www.wired.com/story/inside-decade-long-experiment-to-understand-oceans-mysterious-deep-reefs/",
+   "date": "Sat, 03 Oct 2026 09:00:00 +0000",
+   "text": "Scientists left structures up to 100 meters under the surface. Here\u2019s what they found when they retrieved them 10 years later.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "20% Off Brooks Promo Code | October 2026",
+   "link": "https://www.wired.com/story/brooks-promo-code/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Enjoy 20% off your first order with a Brooks coupon code, plus top discounts and deals on our favorite Brooks running shoes.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "50% Off DoorDash Promo Code | October 2026",
+   "link": "https://www.wired.com/story/doordash-promo-code/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Explore today\u2019s top DoorDash promo codes for $25 off your first order, free delivery, and 50% off DashPass for students and select users.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Surfshark Promo Codes: 87% Off | October 2026",
+   "link": "https://www.wired.com/story/surfshark-coupon/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Save up to 87% with a Surfshark coupon code, 3 months of VPN free today, and more from WIRED.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Klook Promo Code: 25% Off October 2026",
+   "link": "https://www.wired.com/story/klook-promo-code/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Maximize your travel budget with our expert guide to finding Klook coupons, app-exclusive deals, and payment discounts on tours, hotels, and transport.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Hoka Coupon Codes: 30% Off in October 2026",
+   "link": "https://www.wired.com/story/hoka-coupon-code/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Unlock free expedited shipping or 10% off with today\u2019s Hoka discount codes, plus save up to 30% with the best discounts for October 2026.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Chewy Promo Codes: $20 Off October 2026",
+   "link": "https://www.wired.com/story/chewy-promo-code/",
+   "date": "Sat, 03 Oct 2026 05:00:00 +0000",
+   "text": "Explore Chewy coupon codes for $30 off, $20 off your first order of $49, 50% off pet food, and more October 2026 discounts.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "ICE Has Been Dumping Protester Photos Into a Palantir Database",
+   "link": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
+   "date": "Fri, 02 Oct 2026 19:52:36 +0000",
+   "text": "DHS agents not only tracked and intimidated people observing ICE activity in Maine, but stored information about them in a Palantir-built database, newly unsealed court filings say.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "This Shoe Company\u2019s Instagram Ad With a Frat Is Pissing People Off",
+   "link": "https://www.wired.com/story/this-shoe-companys-instagram-ad-with-a-frat-is-pissing-people-off/",
+   "date": "Fri, 02 Oct 2026 18:19:53 +0000",
+   "text": "A collaborative Instagram post between footwear line HeyDude and a University of Florida frat is sparking backlash due to sexual cyber-harassment allegations against two former members.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "The NHL Is Releasing Its Own \u2018Hot\u2019 Fanfic. Romance Lovers Hate It",
+   "link": "https://www.wired.com/story/the-nhl-is-releasing-its-own-hot-fanfic-romance-lovers-hate-it/",
+   "date": "Fri, 02 Oct 2026 16:37:32 +0000",
+   "text": "The league is releasing romance-style audio stories to promote games. Critics say it\u2019s cheap pandering that doesn\u2019t address toxic masculinity in the sport.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "These AI Experts Want to Do High-Stakes Research Out in the Open",
+   "link": "https://www.wired.com/story/trillium-labs-wants-to-do-high-risk-ai-research-in-the-open/",
+   "date": "Fri, 02 Oct 2026 16:00:00 +0000",
+   "text": "Many frontier labs keep their risky research locked away. Trillium Labs wants to show off its work when it comes to self-improvement and model behavior.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Trump\u2019s Crazy AI Rebrand Was a Loyalty Test for Tech Execs\u2014and It Worked",
+   "link": "https://www.wired.com/story/trumps-crazy-ai-rebrand-was-a-loyalty-test-for-tech-execs-and-it-worked/",
+   "date": "Fri, 02 Oct 2026 15:00:00 +0000",
+   "text": "For years these billionaires gushed obsessively about AI. But they meekly went along when Trump canceled the term.",
+   "feed": "Wired",
+   "category": "press"
+  },
+  {
+   "title": "Joyce Carol Oates contradicts herself - New Statesman",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLThUV01Dc05uc1ZrN0xVN2U1TVR0SGQ5ZzVsOHhXM2NUZEZ3QVVnbXFPc1VLdnZDaERsSjhPWFJPaUpCOUhyN3BZNTJaMmw2TU83ZWVFbnJUbm9KcGNFeEZscU55YlJ2UU5LWjgwMUJob0ZJVVJSV3hSX3lHa3hFZ3NZclFtcWhPWk5GMVJ6M2FyX2RxLWtNNzNOY2Y?oc=5",
+   "date": "Sat, 03 Oct 2026 02:39:32 GMT",
+   "text": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxQLThUV01Dc05uc1ZrN0xVN2U1TVR0SGQ5ZzVsOHhXM2NUZEZ3QVVnbXFPc1VLdnZDaERsSjhPWFJPaUpCOUhyN3BZNTJaMmw2TU83ZWVFbnJUbm9KcGNFeEZscU55YlJ2UU5LWjgwMUJob0ZJVVJSV3hSX3lHa3hFZ3NZclFtcWhPWk5GMVJ6M2FyX2RxLWtNNzNOY2Y?oc=5\" target=\"_blank\"&gt;Joyce Carol Oates contradicts herself&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;New Statesman&lt;/font&gt;",
+   "feed": "New Statesman",
+   "category": "press"
+  }
+ ],
+ "feed_health": [
+  {
+   "feed": "Epoch AI",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "AI as Normal Technology",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Ahead of AI (Raschka)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Deep (Learning) Focus",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Latent.Space",
+   "status": "ok (2 new)"
+  },
+  {
+   "feed": "Dwarkesh Podcast",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Rising Tide (Helen Toner)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Paper Tiger (Julian Gewirtz)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Recent Works (Chang Che)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "UnderReported China",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Peking Hotel",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "kamilkazani",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Active Faults",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Comment is Freed (Sam Freedman)",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chris Miller's Newsletter",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Chips, Guns, and Money",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Conflict (Stephen Roach)",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "Mind of Things",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "Roots of Progress",
+   "status": "ok (0 new)"
+  },
+  {
+   "feed": "The Economist",
+   "status": "ok (7 new)"
+  },
+  {
+   "feed": "The New Yorker",
+   "status": "ok (11 new)"
+  },
+  {
+   "feed": "Wired",
+   "status": "ok (16 new)"
+  },
+  {
+   "feed": "New Statesman",
+   "status": "ok (1 new)"
+  },
+  {
+   "feed": "The Spectator",
+   "status": "ok (0 new)"
+  }
+ ]
+}

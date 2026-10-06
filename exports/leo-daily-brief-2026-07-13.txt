@@ -1,0 +1,42 @@
+========================================================================
+  LEO GROUND STATION DAILY — July 13, 2026
+========================================================================
+
+═══ EXECUTIVE SUMMARY ═══
+
+Two shifts. First, Amazon’s Kuiper has surfaced in the FCC database via Denali 20020, LLC—the first tangible licensing evidence that their ground network is moving from planning to deployment. Second, China’s Long March 6A and 8 are lofting unknown payloads from Taiyuan and Wenchang, likely the GuoWang or Hongyan LEO broadband prototypes. If confirmed, they represent a new demand vector for ground services outside the U.S.-centric market. The rest of the landscape holds steady: Starlink’s launch cadence remains aggressive (7 missions in the pipe), the tracked site register shows no critical risks, and hiring signals are tepid. Imagery is down, so we’re blind to construction progress at known gateway sites.
+
+What it means: Kuiper’s move into licensing signals that ground station operators—especially those with assets in N. America and Europe—should brace for competitive lease negotiations and spectrum coordination tangles. The Chinese unknowns might be testing early, but if they follow the Starlink playbook, expect a scramble for global gateway locations within 12-18 months. Watch for ITU coordination filings (currently nil) and surges in ground engineer job postings as lead indicators of buildout pace. The market metrics continue to forecast a $5.33B LEO GSaaS sub-market by 2033, but the near-term action is in who secures the real estate and spectrum first.
+
+═══ FCC LICENSES ═══
+
+Notable new entry: Denali 20020, LLC—Amazon’s Kuiper licensing entity—appears in the licensee list. This is the first time we’ve seen them in this feed, confirming active earth station filings. The other 90+ records are renewals or amendments from incumbents (MCI, Inmarsat, Intelsat, AT&T, SES, Goonhilly, etc.). Starlink is conspicuously absent; they likely file under a different rubric or hold blanket authorizations. Mx1 Inc and MX1 Inc are duplicates, probable data artifact. No other disruptive licensees. Bottom line: Kuiper is real and moving through the regulatory pipeline; we need to map which sites they’re targeting and correlate with our risk register.
+
+═══ CONSTELLATION SIGNALS ═══
+
+Launches tell a mixed story. Starlink accounts for 7 of the 357 upcoming missions, maintaining a weekly rhythm. The next-five list includes three Starlink groups (17-47, 10-43, 17-43) with June nets that have almost certainly flown by now, so the feed lags. However, the cumulative effect is that Starlink’s on-orbit count is pushing past 9,400 toward the 12,000 mark, which demands additional ground gateways—especially for the polar shells. The real news is the two Chinese Long March launches: a 6A from Taiyuan and an 8 from Wenchang, both with “Unknown Payload.” Given the lack of transparency, these are almost certainly LEO broadband test satellites. GuoWang (the national constellation) or Hongyan (CASC’s project) are the likely candidates. Ground segment implications: China will need offshore gateways to achieve global coverage, creating opportunities at sites in friendly jurisdictions (e.g., BRI-aligned nations). We’ll track for ITU filings in the coming weeks.
+
+═══ SITE & IMAGERY ═══
+
+The risk register is static: 240 sites total, 6 high-risk (none critical), 34 moderate. Starlink dominates with 38 sites, followed by KSAT (15), OneWeb (10), and Leaf Space (9). Kuiper at 5 reflects their early build phase. Geographic distribution is heaviest in N. America (26) and Europe (18), with thin coverage in the Global South. No new risk flags or site additions this cycle. Imagery is a blank: Sentinel-2 API is misconfigured, zero of 10 sites returned data. We’re blind to construction progress at key locations like the Kuiper sites in the Pacific or the new OneWeb Arctic sites. This needs immediate fix—without eyes-on, we can’t ground-truth license filings or detect unannounced builds.
+
+═══ MARKET SIGNALS ═══
+
+Job postings for “ground station engineer hiring 2026” returned exactly one recent hit. This is consistent with a market in consolidation: the major players have completed their initial buildouts and are shifting to operations. However, if Kuiper and China accelerate, expect this number to spike within 6-9 months. ITU is quiet—no new coordination filings in this cycle, which may indicate a lull before a wave of filings tied to Kuiper and Chinese constellations. Market metrics reaffirm the macro bull case: Starlink revenue hit an estimated $11.8B in 2025 on 10M+ subscribers, and the LEO GSaaS sub-market is forecast to triple by 2033. The broader GSaaS market (which includes legacy GEO transition) could hit $2.49B, but the real story is the shift from proprietary ground to multi-tenant services—something our site register’s operator diversity already reflects.
+
+═══ BOTTOM LINE ═══
+
+Three actions. First, task a resource to pull the full FCC application from Denali 20020, LLC—we need site coordinates, antenna specs, and schedule to update the risk register and anticipate where Kuiper will push for leases. Second, run a deep-dive on the Chinese Long March payloads: correlate launch windows with NOTAMs, AIS data for drop zones, and any leaked documentation from launch insurers. Third, restore Sentinel-2 imagery immediately; until then, triage high-risk sites (the 6) with commercial imagery or open-source ground photography to monitor for construction. The next 90 days could see a cascade of activity as Kuiper moves from paper to steel and China tips its hand. Stay agile.
+
+════════════════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════════════════
+  • FCC opendata: Protected FSS earth station registrations
+  • Launch Library 2: Upcoming global launch manifest
+  • Spaceflight Now: Space industry RSS feed
+  • Copernicus Sentinel-2: Satellite imagery via Data Space Ecosystem
+  • Concentric 80-site risk register + market opportunity assessment
+  • Job board search: 15 operators, 4 query types
+  • Analysis: DeepSeek V4 Pro (deepseek/deepseek-v4-pro) via Direct API
+
+-- Trevor | LEO Ground Station Desk | July 13, 2026

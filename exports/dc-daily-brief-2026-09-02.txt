@@ -1,0 +1,38 @@
+══════════════════════════════════════════════════════════
+  DATA CENTER SECURITY DAILY — 2026-09-02
+══════════════════════════════════════════════════════════
+
+═══ BLUF ═══
+Grid is the primary operational risk today, not kinetic attack. All eight highest-risk facilities are US Equinix metro sites scored 56/100, every one driver=grid; transformer lead times worsened to 18–24 months and PJM’s interconnection queue is 122 GW, meaning new Northern Virginia/Ohio builds face 4–6 year energization delays. No active subsea cable cuts, physical security incidents, or cloud outages are in the feed. Registry data integrity also needs immediate attention: USA vs US and GERMANY vs DE are double-counted in cluster rolls, inflating US and German exposure.
+
+═══ SUbSEA CABLE INTELLIGENCE ═══
+No cable faults, outages, or repair operations are flagged across 694 cables / 1,917 landing stations. The largest DC clusters remain reliant on transatlantic systems for US East (Ashburn/New York/Newark), transpacific and California landing corridors for US West (San Jose/LA), Southern Cross and intra-Asia systems for Sydney/Singapore/Hong Kong. No congestion or rerouting event is tracked today. Hong Kong and Singapore landing stations remain watch items due to geopolitical risk, but current state is nominal.
+
+═══ POWER & GRID ═══
+US grid constraints are the single largest risk driver. The eight highest-risk facilities — Equinix DC1-DC15 Ashburn, DA1 Dallas, SV1/SV5/SV10 San Jose, CH1/CH2/CH4 Chicago, LA1, NY1 Newark, NY9 111 8th Ave, NY8 60 Hudson St — all score 56/100 with driver=grid. Northern Virginia is rated MODERATE specifically due to PJM grid strain. PJM interconnection queue: 122 GW; new data center energization timeline: 4–6 years. US hyperscale power capacity is 1,563 MW, roughly 7x the next-largest market (GB 219 MW). Transformer lead times are 18–24 months and worsening; switchgear 12–18 months; generators 8–12 months. Power availability will remain the gating constraint for new US leases through at least 2027.
+
+═══ NATURAL HAZARD WATCH ═══
+No active hazard event is present in today’s feed, and Sentinel-2 checks of 25 Tier 1 sites show no flooding, ground disturbance, or construction anomaly. Seasonal posture: Atlantic hurricane peak is a watch item for Miami NOTA and Houston; Western US fire/smoke exposure for San Jose/LA corridors; seismic exposure for Tokyo and Hong Kong. None are active today; baseline hazard posture maintained.
+
+═══ PHYSICAL SECURITY ═══
+No physical security incidents, protests, or access disruptions near major DC corridors are reported in the 24-hour feed. Satellite checks all pass. Construction at AirTrunk SYD2, CyrusOne HOU2, Digital Realty FRA14, and AWS us-east-3 Ohio is generating site-perimeter change only; no security issues observed.
+
+═══ CLOUD & NETWORK ═══
+No major provider outage or fiber route cut is reported. Terrestrial fiber route inventory: 513. Internet exchanges: 900. Connectivity limitations in island markets remain a structural risk driver, but no active incidents. Top operator footprints: Equinix 55, Digital Realty 20, AWS 20, Microsoft Azure 18, Google Cloud 15, Alibaba Cloud 11, Oracle Cloud Infrastructure 10, AirTrunk 8; no provider-specific degradation in feed.
+
+═══ ASSET WATCH ═══
+Active pipeline: 1,450 MW. AirTrunk SYD2 Sydney 150MW announced; AWS us-east-3 Ohio 1,200MW permit_filed; Digital Realty FRA14 Frankfurt 35MW under_construction; CyrusOne HOU2 Houston 40MW under_construction; Equinix NY9 New York 25MW operational. Risk band distribution: 92 LOW, 190 MODERATE, 23 NEGLIGIBLE. No facilities crossed into HIGH today. Registry data quality: duplicate country entries — USA vs US, GERMANY vs DE — inflate cluster counts and should be reconciled before national risk rollups or exposure rankings are used.
+
+═══ MARKET SIGNALS ═══
+No colo pricing update in today’s feed, but supply chain data signals continued upward cost and schedule pressure. Transformer lead time is the hard constraint: 18–24 months, worsening. Schneider Electric and Eaton report extended switchgear delivery. Caterpillar generator deliveries at 12 months on high-volume orders. Lithium-ion UPS batteries stable; lead-acid constrained. With PJM queue at 122 GW and 1,450 MW active pipeline, expect scarcity pricing in power-constrained US metros — especially Northern Virginia, San Jose, and Dallas.
+
+════════════════════════════════════════════════════════════
+DATA SOURCES
+════════════════════════════════════════════════════════════
+  • Global Data Center Census (Tier 1-3): 8503 facilities
+  • Submarine Cable Map: 694 cables
+  • Internet Exchange Database: 900 IXes
+  • Sentinel-2 satellite batch: 25/305 Tier 1 sites imaged, 0 failures
+  • Analysis: DeepSeek V4 Pro
+
+-- Trevor | Data Center Security Desk | 2026-09-02

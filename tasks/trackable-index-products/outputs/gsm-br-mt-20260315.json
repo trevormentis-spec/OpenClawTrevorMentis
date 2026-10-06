@@ -1,0 +1,22 @@
+{
+  "product": "grain_supply_monitor",
+  "report_date": "2026-03-15",
+  "regions": [
+    {
+      "region_id": "BR-MT",
+      "region_name": "Brazil Mato Grosso",
+      "status": "ERROR",
+      "error": "NO_SAMPLES"
+    }
+  ],
+  "pipeline": {
+    "source": "Planetary Computer Sentinel-2 L2A",
+    "resolution_m": 100,
+    "hist_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}
